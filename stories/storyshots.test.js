@@ -9,6 +9,7 @@ function createNodeMock (element) {
     return {
       __consolidated_events_handlers__: null,
       addEventListener: () => 1,
+      removeEventListener: () => true,
       querySelectorAll: () => [],
       style: {
         height: 0,
