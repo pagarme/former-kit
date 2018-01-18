@@ -35,6 +35,20 @@ global.getComputedStyle = () => ({
   styleSheets: {},
 })
 
+
+jest.mock('former-kit-skin-pagarme', () => {
+  const buildProxy = value =>
+    new Proxy(
+      {},
+      { get: (_, name) => value || name }
+    )
+
+  return {
+    name: 'Pagar.me',
+    theme: buildProxy(buildProxy()),
+  }
+})
+
 jest.mock('shortid', () => ({
   generate: () => 'shortid-mock',
 }))
@@ -44,3 +58,4 @@ jest.mock('react-modal', () => (
     <div className="modal">{children}</div>
   )
 ))
+
