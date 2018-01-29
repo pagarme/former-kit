@@ -1,9 +1,0 @@
-@import "../../../theme-pagarme/colors.css";
-
-:root {
-  --search-field-input-padding: 6px;
-  --search-field-button-icon-size: 20px;
-  --search-field-button-background: var(--color-light-silver-100);
-  --search-field-button-active-background-color: var(--color-light-coal-100);
-  --search-field-button-color: var(--color-light-coal-100);
-}

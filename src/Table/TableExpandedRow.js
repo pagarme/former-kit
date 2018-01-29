@@ -15,11 +15,12 @@ import {
   isNil,
   path,
 } from 'ramda'
-import { themr } from 'react-css-themr'
 import classNames from 'classnames'
+
+import ThemeConsumer from '../ThemeConsumer'
 import TableExpandedItem from './TableExpandedItem'
 
-const applyThemr = themr('UITable')
+const consumeTheme = ThemeConsumer('UITable')
 
 const getRenderedItem = ifElse(
   isNil,
@@ -135,4 +136,4 @@ TableExpandedRow.defaultProps = {
   theme: {},
 }
 
-export default applyThemr(TableExpandedRow)
+export default consumeTheme(TableExpandedRow)

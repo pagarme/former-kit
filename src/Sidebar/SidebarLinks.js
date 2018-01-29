@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { themr } from 'react-css-themr'
 
-const applyThemr = themr('UISidebar')
+import ThemeConsumer from '../ThemeConsumer'
+
+const consumeTheme = ThemeConsumer('UISidebar')
 
 const SidebarLinks = ({ theme, children }) => (
   <nav className={theme.items}>
@@ -23,4 +24,4 @@ SidebarLinks.defaultProps = {
   theme: {},
 }
 
-export default applyThemr(SidebarLinks)
+export default consumeTheme(SidebarLinks)

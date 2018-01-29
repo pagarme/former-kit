@@ -9,11 +9,9 @@ import {
   merge,
 } from 'ramda'
 
-import { themr } from 'react-css-themr'
+import ThemeConsumer from '../ThemeConsumer'
 
-const applyThemr = themr('UICard')
-
-export { default as CardSection } from './CardSection'
+const consumeTheme = ThemeConsumer('UICard')
 
 export const CardTitle = ({
   title,
@@ -78,4 +76,4 @@ CardTitle.defaultProps = {
   onClick: null,
 }
 
-export default applyThemr(CardTitle)
+export default consumeTheme(CardTitle)

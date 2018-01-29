@@ -7,7 +7,7 @@ import {
 } from 'prop-types'
 
 import classnames from 'classnames'
-import { themr } from 'react-css-themr'
+import ThemeConsumer from '../ThemeConsumer'
 
 const defaultStrings = {
   on: 'on',
@@ -21,7 +21,7 @@ function getStrings (strings) {
   }
 }
 
-const applyThemr = themr('UISwitch')
+const consumeTheme = ThemeConsumer('UISwitch')
 
 function Switch ({
   disabled,
@@ -76,4 +76,4 @@ Switch.defaultProps = {
   strings: defaultStrings,
 }
 
-export default applyThemr(Switch)
+export default consumeTheme(Switch)

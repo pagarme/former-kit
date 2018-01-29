@@ -11,9 +11,9 @@ import {
   ModalTitle,
   ModalContent,
   ModalActions,
-} from '../../src/components/Modal'
+} from '../../src/Modal'
 
-import Button from '../../src/components/Button'
+import Button from '../../src/Button'
 
 class ModalWithState extends Component {
   constructor () {

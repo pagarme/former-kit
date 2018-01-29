@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { themr } from 'react-css-themr'
+import ThemeConsumer from '../ThemeConsumer'
 
-const applyThemr = themr('UIHeader')
+const consumeTheme = ThemeConsumer('UIHeader')
 
 const Header = ({ theme, children }) => (
   <header className={theme.header}>
@@ -21,4 +21,4 @@ Header.defaultProps = {
   theme: {},
 }
 
-export default applyThemr(Header)
+export default consumeTheme(Header)

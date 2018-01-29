@@ -6,9 +6,10 @@ import {
   shape,
 } from 'prop-types'
 import shortid from 'shortid'
-import { themr } from 'react-css-themr'
 
-const applyThemr = themr('UISegmentedSwitch')
+import ThemeConsumer from '../ThemeConsumer'
+
+const consumeTheme = ThemeConsumer('UISegmentedSwitch')
 
 class SegmentedSwitch extends React.PureComponent {
   constructor (props) {
@@ -78,4 +79,4 @@ SegmentedSwitch.defaultProps = {
   selected: '',
 }
 
-export default applyThemr(SegmentedSwitch)
+export default consumeTheme(SegmentedSwitch)

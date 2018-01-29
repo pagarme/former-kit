@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import cx from 'classnames'
-import { themr } from 'react-css-themr'
 import {
   pipe,
   split,
@@ -11,7 +10,9 @@ import {
   head,
 } from 'ramda'
 
-const applyThemr = themr('UILegend')
+import ThemeConsumer from '../ThemeConsumer'
+
+const consumeTheme = ThemeConsumer('UILegend')
 
 const defineInitials = pipe(
   split(' '),
@@ -74,4 +75,4 @@ Legend.defaultProps = {
   hideLabel: false,
 }
 
-export default applyThemr(Legend)
+export default consumeTheme(Legend)

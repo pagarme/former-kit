@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import Legend from '../../src/components/Legend'
+import Legend from '../../src/Legend'
 
 
 const hidingLabel = [

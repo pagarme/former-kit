@@ -35,9 +35,10 @@ import {
 } from 'ramda'
 import classNames from 'classnames'
 import shortid from 'shortid'
-import { themr } from 'react-css-themr'
 
-const applyThemr = themr('UIPagination')
+import ThemeConsumer from '../ThemeConsumer'
+
+const consumeTheme = ThemeConsumer('UIPagination')
 
 const convertToNumber = unless(anyPass([isNil, isEmpty]), Number)
 
@@ -351,4 +352,4 @@ Pagination.defaultProps = {
   icons: {},
 }
 
-export default applyThemr(Pagination)
+export default consumeTheme(Pagination)

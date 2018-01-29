@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { themr } from 'react-css-themr'
+import ThemeConsumer from '../ThemeConsumer'
 
-const applyThemr = themr('UIFooter')
+const consumeTheme = ThemeConsumer('UIFooter')
 
 const Footer = ({ theme, children, links }) => (
   <footer className={theme.footer}>
@@ -41,4 +41,4 @@ Footer.defaultProps = {
   theme: {},
 }
 
-export default applyThemr(Footer)
+export default consumeTheme(Footer)

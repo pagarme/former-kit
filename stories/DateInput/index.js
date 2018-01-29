@@ -3,8 +3,8 @@ import { storiesOf } from '@storybook/react'
 import moment from 'moment'
 
 import IconCalendar from 'react-icons/lib/fa/calendar'
-import DateInput from '../../src/components/DateInput'
-import Button from '../../src/components/Button'
+import DateInput from '../../src/DateInput'
+import Button from '../../src/Button'
 
 import presets from './datePresets'
 import style from './style.css'

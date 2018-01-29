@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { themr } from 'react-css-themr'
+import ThemeConsumer from '../ThemeConsumer'
 
-const applyThemr = themr('UISidebar')
+const consumeTheme = ThemeConsumer('UISidebar')
 
 const SidebarHeader = ({ theme, children }) => (
   <header className={theme.header}>
@@ -21,4 +21,4 @@ SidebarHeader.defaultProps = {
   theme: {},
 }
 
-export default applyThemr(SidebarHeader)
+export default consumeTheme(SidebarHeader)

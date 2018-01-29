@@ -1,10 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
-import { themr } from 'react-css-themr'
 import { isNil } from 'ramda'
 
-const applyThemr = themr('UIButton')
+import ThemeConsumer from '../ThemeConsumer'
+
+const consumeTheme = ThemeConsumer('UIButton')
 
 function Button ({
   base,
@@ -93,4 +94,4 @@ Button.defaultProps = {
   type: 'button',
 }
 
-export default applyThemr(Button)
+export default consumeTheme(Button)

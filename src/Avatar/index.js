@@ -1,9 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { themr } from 'react-css-themr'
 import classnames from 'classnames'
 
-const applyThemr = themr('UIAvatar')
+import ThemeConsumer from '../ThemeConsumer'
+
+const consumeTheme = ThemeConsumer('UIAvatar')
 
 const Avatar = ({
   theme,
@@ -47,4 +48,4 @@ Avatar.defaultProps = {
   icon: null,
 }
 
-export default applyThemr(Avatar)
+export default consumeTheme(Avatar)

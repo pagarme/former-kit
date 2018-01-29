@@ -21,8 +21,8 @@ import {
 import moment from 'moment'
 import MaskedInput from 'react-maskedinput'
 import clickOutside from 'react-click-outside'
-import { themr } from 'react-css-themr'
 
+import ThemeConsumer from '../ThemeConsumer'
 import DateSelector from '../DateSelector'
 
 import {
@@ -40,7 +40,7 @@ import {
   endClasses,
 } from './classNames'
 
-const applyThemr = themr('UIDateInput')
+const consumeTheme = ThemeConsumer('UIDateInput')
 
 class DateInput extends React.Component {
   constructor (props) {
@@ -374,4 +374,4 @@ DateInput.defaultProps = {
   presets: [],
 }
 
-export default applyThemr(clickOutside(DateInput))
+export default consumeTheme(clickOutside(DateInput))

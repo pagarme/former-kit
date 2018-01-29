@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { themr } from 'react-css-themr'
 import {
   func,
   string,
@@ -17,12 +16,13 @@ import {
 } from 'react-dates'
 import 'react-dates/lib/css/_datepicker.css'
 
+import ThemeConsumer from '../ThemeConsumer'
 import Button from '../Button'
 import normalizeDates from './normalizeDates'
 import calculatePreset from './calculatePreset'
 
 const START_DATE = 'startDate'
-const applyThemr = themr('UIDateSelector')
+const consumeTheme = ThemeConsumer('UIDateSelector')
 
 const defaultStrings = {
   cancel: 'cancel',
@@ -339,4 +339,4 @@ DateSelector.defaultProps = {
   strings: defaultStrings,
 }
 
-export default applyThemr(DateSelector)
+export default consumeTheme(DateSelector)

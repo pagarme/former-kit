@@ -5,8 +5,8 @@ import {
 } from 'ramda'
 import IconVisa from 'react-icons/lib/fa/cc-visa'
 import IconMaster from 'react-icons/lib/fa/cc-mastercard'
-import Legend from '../../src/components/Legend'
-import Button from '../../src/components/Button'
+import Legend from '../../src/Legend'
+import Button from '../../src/Button'
 import style from './style.css'
 
 const isVisa = equals('visa')

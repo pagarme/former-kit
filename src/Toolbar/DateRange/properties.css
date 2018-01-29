@@ -1,7 +1,0 @@
-@import "./../../../theme-pagarme/colors.css";
-@import "./../../../theme-pagarme/typography.css";
-@import "../properties.css";
-
-:root {
-  --date-range-label-padding: 7px 19px;
-}

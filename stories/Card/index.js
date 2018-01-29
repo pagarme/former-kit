@@ -6,7 +6,6 @@ import Icon from 'react-icons/lib/md/insert-invitation'
 import IconArrowUp from 'react-icons/lib/md/keyboard-arrow-up'
 import IconArrowDown from 'react-icons/lib/md/keyboard-arrow-down'
 
-import '../../src/theme-pagarme/index.css'
 import style from './style.css'
 
 import {
@@ -16,9 +15,9 @@ import {
   CardGraphic,
   CardActions,
   CardSection,
-} from '../../src/components/Card'
+} from '../../src/Card'
 
-import Button from '../../src/components/Button'
+import Button from '../../src/Button'
 
 const TitleText = () => (
   <div className={style.showcase}>

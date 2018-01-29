@@ -1,12 +1,13 @@
 import React from 'react'
-import { themr } from 'react-css-themr'
 import {
   shape,
   string,
 } from 'prop-types'
 import classNames from 'classnames'
 
-const applyThemr = themr('UITable')
+import ThemeConsumer from '../ThemeConsumer'
+
+const consumeTheme = ThemeConsumer('UITable')
 
 const TableEmptyItem = ({ theme, className }) => (
   <span className={classNames(theme.empty, className)} />
@@ -24,4 +25,4 @@ TableEmptyItem.defaultProps = {
   className: '',
 }
 
-export default applyThemr(TableEmptyItem)
+export default consumeTheme(TableEmptyItem)

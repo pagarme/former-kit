@@ -4,7 +4,7 @@ import IconCheck from 'react-icons/lib/md/check'
 import IconInfo from 'react-icons/lib/md/info-outline'
 import IconWarning from 'react-icons/lib/md/warning'
 import IconClear from 'react-icons/lib/md/clear'
-import Alert from '../../src/components/Alert'
+import Alert from '../../src/Alert'
 
 
 storiesOf('Alerts', module)

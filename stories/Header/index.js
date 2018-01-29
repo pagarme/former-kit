@@ -13,8 +13,8 @@ import {
   HeaderLink,
   HeaderTitle,
   HeaderMenu,
-} from '../../src/components/Header'
-import Avatar from '../../src/components/Avatar'
+} from '../../src/Header'
+import Avatar from '../../src/Avatar'
 
 const HeaderContentExample = ({ photo }) => (
   <HeaderContent>

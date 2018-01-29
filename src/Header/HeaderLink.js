@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { themr } from 'react-css-themr'
+import ThemeConsumer from '../ThemeConsumer'
 
-const applyThemr = themr('UIHeader')
+const consumeTheme = ThemeConsumer('UIHeader')
 
 const HeaderLink = ({
   theme,
@@ -35,4 +35,4 @@ HeaderLink.defaultProps = {
   children: null,
 }
 
-export default applyThemr(HeaderLink)
+export default consumeTheme(HeaderLink)

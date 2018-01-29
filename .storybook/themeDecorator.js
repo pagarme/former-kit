@@ -1,12 +1,15 @@
 import React from 'react'
-import { ThemeProvider } from 'react-css-themr'
 import { storiesOf, addDecorator } from '@storybook/react'
+import theme from 'former-kit-skin-pagarme'
 
-import theme from '../src/theme-pagarme'
+import ThemeProvider from '../src/ThemeProvider'
+import Typeset from '../src/Typeset'
 
 const ThemeDecorator = (storyFn) => (
   <ThemeProvider theme={theme}>
-    {storyFn()}
+    <Typeset>
+      {storyFn()}
+    </Typeset>
   </ThemeProvider>
 )
 

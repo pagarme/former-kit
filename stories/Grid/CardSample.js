@@ -3,7 +3,7 @@ import React from 'react'
 import {
   Card,
   CardGraphic,
-} from '../../src/components/Card'
+} from '../../src/Card'
 
 import style from './CardSample.style.css'
 

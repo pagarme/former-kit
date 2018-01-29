@@ -7,9 +7,9 @@ import {
   shape,
   string,
 } from 'prop-types'
-import { themr } from 'react-css-themr'
+import ThemeConsumer from '../ThemeConsumer'
 
-const applyThemr = themr('UIAlert')
+const consumeTheme = ThemeConsumer('UIAlert')
 
 function Alert ({
   children,
@@ -70,4 +70,4 @@ Alert.defaultProps = {
   theme: {},
 }
 
-export default applyThemr(Alert)
+export default consumeTheme(Alert)

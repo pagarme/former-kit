@@ -27,13 +27,13 @@ import {
   without,
 } from 'ramda'
 import classNames from 'classnames'
-import { themr } from 'react-css-themr'
+import ThemeConsumer from '../ThemeConsumer'
 
 import TableHead from './TableHead'
 import TableRow from './TableRow'
 import TableExpandedRow from './TableExpandedRow'
 
-const applyThemr = themr('UITable')
+const consumeTheme = ThemeConsumer('UITable')
 
 const toggleItem = item => ifElse(
   contains(item),
@@ -355,4 +355,4 @@ Table.defaultProps = {
   theme: {},
 }
 
-export default applyThemr(Table)
+export default consumeTheme(Table)

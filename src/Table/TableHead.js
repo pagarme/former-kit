@@ -11,11 +11,12 @@ import {
 } from 'prop-types'
 import { equals } from 'ramda'
 import classNames from 'classnames'
-import { themr } from 'react-css-themr'
 import shortid from 'shortid'
 import Checkbox from '../Checkbox'
 
-const applyThemr = themr('UITable')
+import ThemeConsumer from '../ThemeConsumer'
+
+const consumeTheme = ThemeConsumer('UITable')
 const isAscending = equals('ascending')
 
 class TableHead extends Component {
@@ -170,4 +171,4 @@ TableHead.defaultProps = {
   theme: {},
 }
 
-export default applyThemr(TableHead)
+export default consumeTheme(TableHead)

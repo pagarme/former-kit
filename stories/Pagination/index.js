@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { storiesOf } from '@storybook/react'
 import ArrowLeft from 'react-icons/lib/md/keyboard-arrow-left'
 import ArrowRight from 'react-icons/lib/md/keyboard-arrow-right'
-import Pagination from '../../src/components/Pagination'
+import Pagination from '../../src/Pagination'
 
 class PaginationState extends React.Component {
   constructor (props) {

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 import { storiesOf } from '@storybook/react'
 
-import Switch from '../../src/components/Switch'
+import Switch from '../../src/Switch'
 
 import style from './style.css'
 

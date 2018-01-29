@@ -62,7 +62,6 @@
     "react": "15.6.1",
     "react-addons-shallow-compare": "15.6.2",
     "react-click-outside": "3.0.0",
-    "react-css-themr": "2.1.2",
     "react-dates": "12.6.0",
     "react-dev-utils": "4.0.1",
     "react-dom": "15.6.1",
@@ -95,5 +94,8 @@
     "percy": "build-storybook && percy-storybook --widths=1024,1920; true",
     "build-storybook": "build-storybook",
     "publish-preview": "storybook-to-ghpages"
+  },
+  "devDependencies": {
+    "former-kit-skin-pagarme": "0.0.2"
   }
 }

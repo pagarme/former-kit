@@ -4,7 +4,7 @@ import moment from 'moment'
 import IconArrowLeft from 'react-icons/lib/fa/angle-left'
 import IconArrowRight from 'react-icons/lib/fa/angle-right'
 
-import DateSelector from '../../src/components/DateSelector'
+import DateSelector from '../../src/DateSelector'
 
 import style from './style.css'
 

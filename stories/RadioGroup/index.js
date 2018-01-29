@@ -2,7 +2,7 @@ import React from 'react'
 
 import { storiesOf } from '@storybook/react'
 
-import RadioGroup from '../../src/components/RadioGroup'
+import RadioGroup from '../../src/RadioGroup'
 import style from '../style.css'
 
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import LinearProgress from '../../src/components/LinearProgress'
+import LinearProgress from '../../src/LinearProgress'
 
 import style from './style.css'
 

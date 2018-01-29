@@ -1,6 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import Checkbox from '../../src/components/Checkbox/form'
+import Checkbox from '../../src/Checkbox/form'
 import style from '../style.css'
 
 class CheckboxState extends React.Component {

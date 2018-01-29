@@ -1,6 +1,6 @@
-import { themr } from 'react-css-themr'
+import ThemeConsumer from '../../ThemeConsumer'
 import Checkbox from '../Checkbox'
 
-const applyThemr = themr('UICheckboxForm')
+const consumeTheme = ThemeConsumer('UICheckboxForm')
 
-export default applyThemr(Checkbox)
+export default consumeTheme(Checkbox)

@@ -5,7 +5,7 @@ import MdVisibilityOff from 'react-icons/lib/md/visibility-off'
 import MdVisibility from 'react-icons/lib/md/visibility'
 import FaPlane from 'react-icons/lib/fa/plane'
 
-import Input from '../../src/components/Input'
+import Input from '../../src/Input'
 import style from '../style.css'
 
 

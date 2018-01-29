@@ -17,7 +17,7 @@ import IconLongArrowDown from 'react-icons/lib/fa/long-arrow-down'
 import IconLongArrowUp from 'react-icons/lib/fa/long-arrow-up'
 import IconSort from 'react-icons/lib/fa/sort'
 
-import Table from '../../src/components/Table'
+import Table from '../../src/Table'
 import style from './style.css'
 import getMock from './tableMock'
 

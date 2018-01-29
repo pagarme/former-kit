@@ -1,13 +1,14 @@
 import React from 'react'
 import classNames from 'classnames'
-import { themr } from 'react-css-themr'
 import {
   shape,
   string,
   node,
 } from 'prop-types'
 
-const applyThemr = themr('UIGrid')
+import ThemeConsumer from '../ThemeConsumer'
+
+const consumeTheme = ThemeConsumer('UIGrid')
 
 const classnames = ({ theme, className }) =>
   classNames(
@@ -35,4 +36,4 @@ Grid.defaultProps = {
   className: null,
 }
 
-export default applyThemr(Grid)
+export default consumeTheme(Grid)

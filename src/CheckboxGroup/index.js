@@ -13,11 +13,10 @@ import {
   splitEvery,
 } from 'ramda'
 
-import { themr } from 'react-css-themr'
-
+import ThemeConsumer from '../ThemeConsumer'
 import Checkbox from '../Checkbox/form'
 
-const applyThemr = themr('UICheckboxGroup')
+const consumeTheme = ThemeConsumer('UICheckboxGroup')
 
 class CheckboxGroup extends React.Component {
   constructor (props) {
@@ -143,4 +142,4 @@ CheckboxGroup.defaultProps = {
   columns: 1,
 }
 
-export default applyThemr(CheckboxGroup)
+export default consumeTheme(CheckboxGroup)

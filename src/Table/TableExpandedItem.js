@@ -1,5 +1,4 @@
 import React from 'react'
-import { themr } from 'react-css-themr'
 import {
   arrayOf,
   node,
@@ -9,9 +8,10 @@ import {
   string,
 } from 'prop-types'
 
+import ThemeConsumer from '../ThemeConsumer'
 import TableEmptyItem from './TableEmptyItem'
 
-const applyThemr = themr('UITable')
+const consumeTheme = ThemeConsumer('UITable')
 
 const renderItem = (theme, text, children) => {
   if (children) {
@@ -53,4 +53,4 @@ TableExpandedItem.defaultProps = {
   children: null,
 }
 
-export default applyThemr(TableExpandedItem)
+export default consumeTheme(TableExpandedItem)

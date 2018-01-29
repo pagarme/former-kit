@@ -2,7 +2,7 @@ import React from 'react'
 
 import { storiesOf } from '@storybook/react'
 
-import Tag from '../../src/components/Tag'
+import Tag from '../../src/Tag'
 
 import style from './style.css'
 

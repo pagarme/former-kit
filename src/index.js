@@ -1,18 +1,28 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import { ThemeProvider } from 'react-css-themr'
+export { default as Alert } from './Alert'
+export { default as Avatar } from './Avatar'
+export { default as Button } from './Button'
+export { default as Checkbox } from './Checkbox'
+export { default as CheckboxGroup } from './CheckboxGroup'
+export { default as DateInput } from './DateInput'
+export { default as DateSelector } from './DateSelector'
+export { default as Dropdown } from './Dropdown'
+export { default as Footer } from './Footer'
+export { default as Header } from './Header'
+export { default as Input } from './Input'
+export { default as Legend } from './Legend'
+export { default as LinearProgress } from './LinearProgress'
+export { default as Pagination } from './Pagination'
+export { default as RadioGroup } from './RadioGroup'
+export { default as SegmentedSwitch } from './SegmentedSwitch'
+export { default as Switch } from './Switch'
+export { default as Table } from './Table'
+export { default as Tag } from './Tag'
+export { default as ThemeConsumer } from './ThemeConsumer'
+export { default as ThemeProvider } from './ThemeProvider'
+export { default as Typeset } from './Typeset'
 
-import registerServiceWorker from './registerServiceWorker'
-
-import pagarmeTheme from './theme-pagarme'
-
-const App = () => (
-  <ThemeProvider theme={pagarmeTheme}>
-    <h1>Hello world</h1>
-  </ThemeProvider>
-)
-
-
-ReactDOM.render(<App />, document.getElementById('root'))
-registerServiceWorker()
-
+export * from './Card'
+export * from './Grid'
+export * from './Modal'
+export * from './Sidebar'
+export * from './TabBar'

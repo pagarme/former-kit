@@ -4,7 +4,7 @@ import IconAdd from 'react-icons/lib/fa/plus'
 
 import { storiesOf } from '@storybook/react'
 
-import Button from '../../src/components/Button'
+import Button from '../../src/Button'
 
 import styles from './style.css'
 

@@ -1,14 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
-import { themr } from 'react-css-themr'
 import {
   anyPass,
   isNil,
   propSatisfies,
 } from 'ramda'
 
-const applyThemr = themr('UISidebar')
+import ThemeConsumer from '../ThemeConsumer'
+
+const consumeTheme = ThemeConsumer('UISidebar')
 
 const Arrow = ({ active, icons }) => {
   const { collapse, expand } = icons
@@ -111,4 +112,4 @@ SidebarLink.defaultProps = {
   icons: {},
 }
 
-export default applyThemr(SidebarLink)
+export default consumeTheme(SidebarLink)

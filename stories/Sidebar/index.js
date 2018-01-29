@@ -15,10 +15,10 @@ import {
   SidebarLinks,
   SidebarLink,
   SidebarSections,
-} from '../../src/components/Sidebar'
+} from '../../src/Sidebar'
 
-import Tag from '../../src/components/Tag'
-import SegmentedSwitch from '../../src/components/SegmentedSwitch'
+import Tag from '../../src/Tag'
+import SegmentedSwitch from '../../src/SegmentedSwitch'
 
 const items = [
   {

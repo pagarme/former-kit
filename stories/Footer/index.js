@@ -5,7 +5,7 @@ import GoRepoClone from 'react-icons/lib/go/repo-clone'
 import GoSquirrel from 'react-icons/lib/go/squirrel'
 import GoHubot from 'react-icons/lib/go/hubot'
 
-import Footer from '../../src/components/Footer'
+import Footer from '../../src/Footer'
 
 const links = [
   {

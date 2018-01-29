@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
-import { themr } from 'react-css-themr'
+import ThemeConsumer from '../ThemeConsumer'
 
-const applyThemr = themr('UICard')
+const consumeTheme = ThemeConsumer('UICard')
 
 const CardActions = ({ className, children, theme }) => (
   <div className={classNames(className, theme.actions)}>
@@ -25,4 +25,4 @@ CardActions.defaultProps = {
   className: null,
 }
 
-export default applyThemr(CardActions)
+export default consumeTheme(CardActions)

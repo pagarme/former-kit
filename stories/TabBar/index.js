@@ -7,7 +7,7 @@ import IconLetter from 'react-icons/lib/md/assignment'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 
-import { TabBar, TabItem } from '../../src/components/TabBar'
+import { TabBar, TabItem } from '../../src/TabBar'
 
 
 const i18n = {

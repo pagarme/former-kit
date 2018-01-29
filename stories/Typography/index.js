@@ -3,47 +3,21 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 
 import style from './style.css'
-import typography from '../../src/theme-pagarme/typography.css'
-import '../../src/theme-pagarme/index.css'
 
 storiesOf('Typography', module)
   .add('Famílias de Fonte', () => (
     <div className={style.fontBook}>
       <div>
-        <span>Display 4</span>
-        <span className={`${style.display4} ${typography.display}`}>
-          Assistant 72
-        </span>
+        <span>Heading 1</span>
+        <h1>Assistant 24</h1>
       </div>
       <div>
-        <span>Display 3</span>
-        <span className={`${style.display3} ${typography.display}`}>
-          Assistant 60
-        </span>
+        <span>Heading 2</span>
+        <h2>Assistant 20</h2>
       </div>
       <div>
-        <span>Display 2</span>
-        <span className={`${style.display2} ${typography.display}`}>
-          Assistant 48
-        </span>
-      </div>
-      <div>
-        <span>Display 1</span>
-        <span className={`${style.display1} ${typography.display}`}>
-          Assistant 36
-        </span>
-      </div>
-      <div>
-        <span>Headline</span>
-        <span className={`${style.headline} ${typography.headline}`}>
-          Assistant 30
-        </span>
-      </div>
-      <div>
-        <span>Title</span>
-        <h1>
-          Assistant 24
-        </h1>
+        <span>Heading 3</span>
+        <h3>Assistant 18</h3>
       </div>
       <div>
         <span>Body</span>

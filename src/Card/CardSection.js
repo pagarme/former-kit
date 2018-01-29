@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
-import { themr } from 'react-css-themr'
+import ThemeConsumer from '../ThemeConsumer'
 
-const applyTheme = themr('UICard')
+const applyTheme = ThemeConsumer('UICard')
 
 class CardSection extends Component {
   constructor (props) {

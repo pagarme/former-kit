@@ -12,13 +12,15 @@ import {
 } from 'prop-types'
 import { has, path } from 'ramda'
 import classNames from 'classnames'
-import { themr } from 'react-css-themr'
 import shortid from 'shortid'
+
 import Button from '../Button'
 import Checkbox from '../Checkbox'
+import ThemeConsumer from '../ThemeConsumer'
 import TableEmptyItem from './TableEmptyItem'
 
-const applyThemr = themr('UITable')
+
+const consumeTheme = ThemeConsumer('UITable')
 
 const hasRenderer = has('renderer')
 
@@ -233,4 +235,4 @@ TableRow.defaultProps = {
   theme: {},
 }
 
-export default applyThemr(TableRow)
+export default consumeTheme(TableRow)

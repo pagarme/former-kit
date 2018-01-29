@@ -2,7 +2,7 @@ import React from 'react'
 
 import { storiesOf } from '@storybook/react'
 
-import CheckboxGroup from '../../src/components/CheckboxGroup'
+import CheckboxGroup from '../../src/CheckboxGroup'
 import style from '../style.css'
 
 

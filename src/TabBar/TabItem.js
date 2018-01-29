@@ -11,14 +11,14 @@ import {
   oneOf,
 } from 'prop-types'
 
-import { themr } from 'react-css-themr'
+import ThemeConsumer from '../ThemeConsumer'
 
 import {
   variantList,
   variantDefault,
 } from './shapes'
 
-const applyThemr = themr('UITabBar')
+const consumeTheme = ThemeConsumer('UITabBar')
 
 class TabItem extends React.PureComponent {
   constructor (props) {
@@ -109,4 +109,4 @@ TabItem.defaultProps = {
   variant: variantDefault,
 }
 
-export default applyThemr(TabItem)
+export default consumeTheme(TabItem)

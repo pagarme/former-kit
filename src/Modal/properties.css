@@ -1,5 +1,3 @@
-@import "../../theme-pagarme/colors";
-@import "../../theme-pagarme/spacing";
 
 :root {
   --modal-frame-background-color: var(--color-light-smoke-50);

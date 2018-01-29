@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import ArrowIcon from 'react-icons/lib/fa/angle-down'
-import Dropdown from '../../src/components/Dropdown'
+import Dropdown from '../../src/Dropdown'
 
 import style from '../style.css'
 

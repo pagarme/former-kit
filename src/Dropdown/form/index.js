@@ -1,7 +1,7 @@
-import { themr } from 'react-css-themr'
+import ThemeConsumer from '../../ThemeConsumer'
 
 import Dropdown from '../Dropdown'
 
-const applyThemr = themr('UIDropdownForm')
+const consumeTheme = ThemeConsumer('UIDropdownForm')
 
-export default applyThemr(Dropdown)
+export default consumeTheme(Dropdown)

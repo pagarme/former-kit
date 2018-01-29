@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import ReactModal from 'react-modal'
-import { themr } from 'react-css-themr'
+import ThemeConsumer from '../ThemeConsumer'
 
-const applyThemr = themr('UIModal')
+const consumeTheme = ThemeConsumer('UIModal')
 
 const Modal = ({
   theme,
@@ -41,4 +41,4 @@ Modal.defaultProps = {
   onRequestClose: null,
 }
 
-export default applyThemr(Modal)
+export default consumeTheme(Modal)

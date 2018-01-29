@@ -1,9 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { themr } from 'react-css-themr'
 import classNames from 'classnames'
 
-const applyThemr = themr('UISidebar')
+import ThemeConsumer from '../ThemeConsumer'
+
+const consumeTheme = ThemeConsumer('UISidebar')
 
 const Sidebar = ({ theme, collapsed, children }) => (
   <aside
@@ -29,4 +30,4 @@ Sidebar.defaultProps = {
   collapsed: false,
 }
 
-export default applyThemr(Sidebar)
+export default consumeTheme(Sidebar)

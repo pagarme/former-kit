@@ -2,10 +2,9 @@ import React from 'react'
 
 import { storiesOf } from '@storybook/react'
 
-import { Grid, Row, Col } from '../../src/components/Grid'
+import { Grid, Row, Col } from '../../src/Grid'
 import CardSample from './CardSample'
 
-import '../../src/theme-pagarme/index.css'
 import style from './style.css'
 
 const reallyLongString = [

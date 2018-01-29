@@ -3,7 +3,6 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import R from 'ramda'
 
-import '../../src/theme-pagarme/index.css'
 import style from './style.css'
 
 const groupByColorName = R.groupBy(prop => prop.split('-')[4])

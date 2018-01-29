@@ -2,7 +2,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import FaUser from 'react-icons/lib/fa/user-md'
 
-import Avatar from '../../src/components/Avatar'
+import Avatar from '../../src/Avatar'
 import styles from './styles.css'
 
 storiesOf('Avatar', module)

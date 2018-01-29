@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { themr } from 'react-css-themr'
 import shortid from 'shortid'
 
+import ThemeConsumer from '../ThemeConsumer'
 import Button from '../Button'
 
-const applyThemr = themr('UISidebar')
+const consumeTheme = ThemeConsumer('UISidebar')
 
 class SidebarSections extends React.PureComponent {
   constructor () {
@@ -58,4 +58,4 @@ SidebarSections.defaultProps = {
   theme: {},
 }
 
-export default applyThemr(SidebarSections)
+export default consumeTheme(SidebarSections)

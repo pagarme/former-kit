@@ -1,5 +1,3 @@
-import '../src/locale'
-
 import './Alert'
 import './Avatar'
 import './Button'
@@ -9,7 +7,6 @@ import './Colors'
 import './DateInput'
 import './DateSelector'
 import './Dropdown'
-import './Filters'
 import './Footer'
 import './Grid'
 import './Header'

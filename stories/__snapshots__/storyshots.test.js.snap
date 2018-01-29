@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Alerts All types 1`] = `
-<div>
+<div
+  className=""
+>
   <p>
     Warning
   </p>
@@ -167,7 +169,7 @@ exports[`Storyshots Alerts All types 1`] = `
 
 exports[`Storyshots Avatar All types 1`] = `
 <div
-  className={undefined}
+  className=""
 >
   <div
     className=""
@@ -211,7 +213,7 @@ exports[`Storyshots Avatar All types 1`] = `
 
 exports[`Storyshots Buttons defaultTheme 1`] = `
 <div
-  className={undefined}
+  className=""
 >
   <h2>
     Default Button
@@ -1328,7 +1330,9 @@ exports[`Storyshots Buttons defaultTheme 1`] = `
 `;
 
 exports[`Storyshots Cards default theme 1`] = `
-<div>
+<div
+  className=""
+>
   <section>
     <h2>
       Title and content
@@ -1728,7 +1732,7 @@ feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
 
 exports[`Storyshots Checkbox Group Default 1`] = `
 <div
-  className={undefined}
+  className=""
 >
   <h2>
     CheckboxGroup
@@ -2090,7 +2094,7 @@ exports[`Storyshots Checkbox Group Default 1`] = `
 
 exports[`Storyshots Colors all 1`] = `
 <div
-  className={undefined}
+  className=""
 >
   <h1>
     Light Theme
@@ -2103,7 +2107,7 @@ exports[`Storyshots Colors all 1`] = `
 
 exports[`Storyshots DateInput All styles 1`] = `
 <div
-  className={undefined}
+  className=""
 >
   <h1>
     DateInput usage
@@ -2225,14 +2229,14 @@ exports[`Storyshots DateInput All styles 1`] = `
             onKeyDown={[Function]}
             onKeyPress={[Function]}
             onPaste={[Function]}
-            placeholder="30/09/2017"
+            placeholder="09/30/2017"
             size="8"
-            value="30/09/2017"
+            value="09/30/2017"
           />
           <span
             className={undefined}
           >
-            30/09/2017
+            09/30/2017
           </span>
         </div>
       </div>
@@ -2294,14 +2298,14 @@ exports[`Storyshots DateInput All styles 1`] = `
             onKeyDown={[Function]}
             onKeyPress={[Function]}
             onPaste={[Function]}
-            placeholder="23/09/2017"
+            placeholder="09/23/2017"
             size="8"
-            value="23/09/2017"
+            value="09/23/2017"
           />
           <span
             className={undefined}
           >
-            23/09/2017
+            09/23/2017
           </span>
         </div>
         <div
@@ -2323,12 +2327,12 @@ exports[`Storyshots DateInput All styles 1`] = `
             onPaste={[Function]}
             placeholder="Fim"
             size="8"
-            value="30/09/2017"
+            value="09/30/2017"
           />
           <span
             className={undefined}
           >
-            30/09/2017
+            09/30/2017
           </span>
         </div>
       </div>
@@ -2390,14 +2394,14 @@ exports[`Storyshots DateInput All styles 1`] = `
             onKeyDown={[Function]}
             onKeyPress={[Function]}
             onPaste={[Function]}
-            placeholder="23/09/2017"
+            placeholder="09/23/2017"
             size="8"
-            value="23/09/2017"
+            value="09/23/2017"
           />
           <span
             className={undefined}
           >
-            23/09/2017
+            09/23/2017
           </span>
         </div>
         <div
@@ -2443,7 +2447,7 @@ exports[`Storyshots DateInput All styles 1`] = `
 
 exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
 <div
-  className={undefined}
+  className=""
 >
   <div
     className={undefined}
@@ -2603,7 +2607,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                     }
                   >
                     <small>
-                      dom
+                      Su
                     </small>
                   </li>
                   <li
@@ -2614,7 +2618,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                     }
                   >
                     <small>
-                      seg
+                      Mo
                     </small>
                   </li>
                   <li
@@ -2625,7 +2629,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                     }
                   >
                     <small>
-                      ter
+                      Tu
                     </small>
                   </li>
                   <li
@@ -2636,7 +2640,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                     }
                   >
                     <small>
-                      qua
+                      We
                     </small>
                   </li>
                   <li
@@ -2647,7 +2651,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                     }
                   >
                     <small>
-                      qui
+                      Th
                     </small>
                   </li>
                   <li
@@ -2658,7 +2662,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                     }
                   >
                     <small>
-                      sex
+                      Fr
                     </small>
                   </li>
                   <li
@@ -2669,7 +2673,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                     }
                   >
                     <small>
-                      sáb
+                      Sa
                     </small>
                   </li>
                 </ul>
@@ -2691,7 +2695,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                     }
                   >
                     <small>
-                      dom
+                      Su
                     </small>
                   </li>
                   <li
@@ -2702,7 +2706,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                     }
                   >
                     <small>
-                      seg
+                      Mo
                     </small>
                   </li>
                   <li
@@ -2713,7 +2717,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                     }
                   >
                     <small>
-                      ter
+                      Tu
                     </small>
                   </li>
                   <li
@@ -2724,7 +2728,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                     }
                   >
                     <small>
-                      qua
+                      We
                     </small>
                   </li>
                   <li
@@ -2735,7 +2739,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                     }
                   >
                     <small>
-                      qui
+                      Th
                     </small>
                   </li>
                   <li
@@ -2746,7 +2750,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                     }
                   >
                     <small>
-                      sex
+                      Fr
                     </small>
                   </li>
                   <li
@@ -2757,7 +2761,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                     }
                   >
                     <small>
-                      sáb
+                      Sa
                     </small>
                   </li>
                 </ul>
@@ -2860,7 +2864,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                         className="CalendarMonth__caption js-CalendarMonth__caption"
                       >
                         <strong>
-                          agosto 2017
+                          August 2017
                         </strong>
                       </caption>
                       <tbody
@@ -2879,7 +2883,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="terça-feira, 1 de agosto de 2017"
+                              aria-label="Tuesday, August 1, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -2901,7 +2905,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="quarta-feira, 2 de agosto de 2017"
+                              aria-label="Wednesday, August 2, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -2923,7 +2927,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="quinta-feira, 3 de agosto de 2017"
+                              aria-label="Thursday, August 3, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -2945,7 +2949,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="sexta-feira, 4 de agosto de 2017"
+                              aria-label="Friday, August 4, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -2967,7 +2971,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="sábado, 5 de agosto de 2017"
+                              aria-label="Saturday, August 5, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -2991,7 +2995,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="domingo, 6 de agosto de 2017"
+                              aria-label="Sunday, August 6, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3013,7 +3017,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="segunda-feira, 7 de agosto de 2017"
+                              aria-label="Monday, August 7, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3035,7 +3039,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="terça-feira, 8 de agosto de 2017"
+                              aria-label="Tuesday, August 8, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3057,7 +3061,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="quarta-feira, 9 de agosto de 2017"
+                              aria-label="Wednesday, August 9, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3079,7 +3083,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="quinta-feira, 10 de agosto de 2017"
+                              aria-label="Thursday, August 10, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3101,7 +3105,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="sexta-feira, 11 de agosto de 2017"
+                              aria-label="Friday, August 11, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3123,7 +3127,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="sábado, 12 de agosto de 2017"
+                              aria-label="Saturday, August 12, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3147,7 +3151,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="domingo, 13 de agosto de 2017"
+                              aria-label="Sunday, August 13, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3169,7 +3173,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="segunda-feira, 14 de agosto de 2017"
+                              aria-label="Monday, August 14, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3191,7 +3195,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="terça-feira, 15 de agosto de 2017"
+                              aria-label="Tuesday, August 15, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3213,7 +3217,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="quarta-feira, 16 de agosto de 2017"
+                              aria-label="Wednesday, August 16, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3235,7 +3239,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="quinta-feira, 17 de agosto de 2017"
+                              aria-label="Thursday, August 17, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3257,7 +3261,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="sexta-feira, 18 de agosto de 2017"
+                              aria-label="Friday, August 18, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3279,7 +3283,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="sábado, 19 de agosto de 2017"
+                              aria-label="Saturday, August 19, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3303,7 +3307,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="domingo, 20 de agosto de 2017"
+                              aria-label="Sunday, August 20, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3325,7 +3329,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="segunda-feira, 21 de agosto de 2017"
+                              aria-label="Monday, August 21, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3347,7 +3351,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="terça-feira, 22 de agosto de 2017"
+                              aria-label="Tuesday, August 22, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3369,7 +3373,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="quarta-feira, 23 de agosto de 2017"
+                              aria-label="Wednesday, August 23, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3391,7 +3395,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="quinta-feira, 24 de agosto de 2017"
+                              aria-label="Thursday, August 24, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3413,7 +3417,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="sexta-feira, 25 de agosto de 2017"
+                              aria-label="Friday, August 25, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3435,7 +3439,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="sábado, 26 de agosto de 2017"
+                              aria-label="Saturday, August 26, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3459,7 +3463,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="domingo, 27 de agosto de 2017"
+                              aria-label="Sunday, August 27, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3481,7 +3485,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="segunda-feira, 28 de agosto de 2017"
+                              aria-label="Monday, August 28, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3503,7 +3507,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="terça-feira, 29 de agosto de 2017"
+                              aria-label="Tuesday, August 29, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3525,7 +3529,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="quarta-feira, 30 de agosto de 2017"
+                              aria-label="Wednesday, August 30, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3547,7 +3551,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="quinta-feira, 31 de agosto de 2017"
+                              aria-label="Thursday, August 31, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3574,7 +3578,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                         className="CalendarMonth__caption js-CalendarMonth__caption"
                       >
                         <strong>
-                          setembro 2017
+                          September 2017
                         </strong>
                       </caption>
                       <tbody
@@ -3596,7 +3600,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="sexta-feira, 1 de setembro de 2017"
+                              aria-label="Friday, September 1, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3618,7 +3622,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="sábado, 2 de setembro de 2017"
+                              aria-label="Saturday, September 2, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3642,7 +3646,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="domingo, 3 de setembro de 2017"
+                              aria-label="Sunday, September 3, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3664,7 +3668,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="segunda-feira, 4 de setembro de 2017"
+                              aria-label="Monday, September 4, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3686,7 +3690,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="terça-feira, 5 de setembro de 2017"
+                              aria-label="Tuesday, September 5, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3708,7 +3712,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="quarta-feira, 6 de setembro de 2017"
+                              aria-label="Wednesday, September 6, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3730,7 +3734,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="quinta-feira, 7 de setembro de 2017"
+                              aria-label="Thursday, September 7, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3752,7 +3756,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="sexta-feira, 8 de setembro de 2017"
+                              aria-label="Friday, September 8, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3774,7 +3778,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="sábado, 9 de setembro de 2017"
+                              aria-label="Saturday, September 9, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3798,7 +3802,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="domingo, 10 de setembro de 2017"
+                              aria-label="Sunday, September 10, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3820,7 +3824,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="segunda-feira, 11 de setembro de 2017"
+                              aria-label="Monday, September 11, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3842,7 +3846,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="terça-feira, 12 de setembro de 2017"
+                              aria-label="Tuesday, September 12, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3864,7 +3868,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="quarta-feira, 13 de setembro de 2017"
+                              aria-label="Wednesday, September 13, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3886,7 +3890,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="quinta-feira, 14 de setembro de 2017"
+                              aria-label="Thursday, September 14, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3908,7 +3912,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="sexta-feira, 15 de setembro de 2017"
+                              aria-label="Friday, September 15, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3930,7 +3934,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="sábado, 16 de setembro de 2017"
+                              aria-label="Saturday, September 16, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3954,7 +3958,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="domingo, 17 de setembro de 2017"
+                              aria-label="Sunday, September 17, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3976,7 +3980,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="segunda-feira, 18 de setembro de 2017"
+                              aria-label="Monday, September 18, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -3998,7 +4002,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="terça-feira, 19 de setembro de 2017"
+                              aria-label="Tuesday, September 19, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -4020,7 +4024,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="quarta-feira, 20 de setembro de 2017"
+                              aria-label="Wednesday, September 20, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -4042,7 +4046,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="quinta-feira, 21 de setembro de 2017"
+                              aria-label="Thursday, September 21, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -4064,7 +4068,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="sexta-feira, 22 de setembro de 2017"
+                              aria-label="Friday, September 22, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -4086,7 +4090,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="sábado, 23 de setembro de 2017"
+                              aria-label="Saturday, September 23, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -4110,7 +4114,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="domingo, 24 de setembro de 2017"
+                              aria-label="Sunday, September 24, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -4132,7 +4136,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="segunda-feira, 25 de setembro de 2017"
+                              aria-label="Monday, September 25, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -4154,7 +4158,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="terça-feira, 26 de setembro de 2017"
+                              aria-label="Tuesday, September 26, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -4176,7 +4180,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="quarta-feira, 27 de setembro de 2017"
+                              aria-label="Wednesday, September 27, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -4198,7 +4202,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="quinta-feira, 28 de setembro de 2017"
+                              aria-label="Thursday, September 28, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -4220,7 +4224,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="sexta-feira, 29 de setembro de 2017"
+                              aria-label="Friday, September 29, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -4242,7 +4246,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="sábado, 30 de setembro de 2017"
+                              aria-label="Saturday, September 30, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -4267,7 +4271,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                         className="CalendarMonth__caption js-CalendarMonth__caption"
                       >
                         <strong>
-                          outubro 2017
+                          October 2017
                         </strong>
                       </caption>
                       <tbody
@@ -4284,7 +4288,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="domingo, 1 de outubro de 2017"
+                              aria-label="Sunday, October 1, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -4306,7 +4310,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="segunda-feira, 2 de outubro de 2017"
+                              aria-label="Monday, October 2, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -4328,7 +4332,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="terça-feira, 3 de outubro de 2017"
+                              aria-label="Tuesday, October 3, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -4350,7 +4354,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="quarta-feira, 4 de outubro de 2017"
+                              aria-label="Wednesday, October 4, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -4372,7 +4376,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="quinta-feira, 5 de outubro de 2017"
+                              aria-label="Thursday, October 5, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -4394,7 +4398,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="sexta-feira, 6 de outubro de 2017"
+                              aria-label="Friday, October 6, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -4416,7 +4420,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="sábado, 7 de outubro de 2017"
+                              aria-label="Saturday, October 7, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -4440,7 +4444,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="domingo, 8 de outubro de 2017"
+                              aria-label="Sunday, October 8, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -4462,7 +4466,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="segunda-feira, 9 de outubro de 2017"
+                              aria-label="Monday, October 9, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -4484,7 +4488,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="terça-feira, 10 de outubro de 2017"
+                              aria-label="Tuesday, October 10, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -4506,7 +4510,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="quarta-feira, 11 de outubro de 2017"
+                              aria-label="Wednesday, October 11, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -4528,7 +4532,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="quinta-feira, 12 de outubro de 2017"
+                              aria-label="Thursday, October 12, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -4550,7 +4554,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="sexta-feira, 13 de outubro de 2017"
+                              aria-label="Friday, October 13, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -4572,7 +4576,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="sábado, 14 de outubro de 2017"
+                              aria-label="Saturday, October 14, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -4596,7 +4600,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="domingo, 15 de outubro de 2017"
+                              aria-label="Sunday, October 15, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -4618,7 +4622,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="segunda-feira, 16 de outubro de 2017"
+                              aria-label="Monday, October 16, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -4640,7 +4644,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="terça-feira, 17 de outubro de 2017"
+                              aria-label="Tuesday, October 17, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -4662,7 +4666,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="quarta-feira, 18 de outubro de 2017"
+                              aria-label="Wednesday, October 18, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -4684,7 +4688,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="quinta-feira, 19 de outubro de 2017"
+                              aria-label="Thursday, October 19, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -4706,7 +4710,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="sexta-feira, 20 de outubro de 2017"
+                              aria-label="Friday, October 20, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -4728,7 +4732,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="sábado, 21 de outubro de 2017"
+                              aria-label="Saturday, October 21, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -4752,7 +4756,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="domingo, 22 de outubro de 2017"
+                              aria-label="Sunday, October 22, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -4774,7 +4778,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="segunda-feira, 23 de outubro de 2017"
+                              aria-label="Monday, October 23, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -4796,7 +4800,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="terça-feira, 24 de outubro de 2017"
+                              aria-label="Tuesday, October 24, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -4818,7 +4822,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="quarta-feira, 25 de outubro de 2017"
+                              aria-label="Wednesday, October 25, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -4840,7 +4844,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="quinta-feira, 26 de outubro de 2017"
+                              aria-label="Thursday, October 26, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -4862,7 +4866,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="sexta-feira, 27 de outubro de 2017"
+                              aria-label="Friday, October 27, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -4884,7 +4888,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="sábado, 28 de outubro de 2017"
+                              aria-label="Saturday, October 28, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -4908,7 +4912,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="domingo, 29 de outubro de 2017"
+                              aria-label="Sunday, October 29, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -4930,7 +4934,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="segunda-feira, 30 de outubro de 2017"
+                              aria-label="Monday, October 30, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -4952,7 +4956,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="terça-feira, 31 de outubro de 2017"
+                              aria-label="Tuesday, October 31, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -4981,7 +4985,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                         className="CalendarMonth__caption js-CalendarMonth__caption"
                       >
                         <strong>
-                          novembro 2017
+                          November 2017
                         </strong>
                       </caption>
                       <tbody
@@ -5001,7 +5005,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="quarta-feira, 1 de novembro de 2017"
+                              aria-label="Wednesday, November 1, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -5023,7 +5027,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="quinta-feira, 2 de novembro de 2017"
+                              aria-label="Thursday, November 2, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -5045,7 +5049,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="sexta-feira, 3 de novembro de 2017"
+                              aria-label="Friday, November 3, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -5067,7 +5071,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="sábado, 4 de novembro de 2017"
+                              aria-label="Saturday, November 4, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -5091,7 +5095,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="domingo, 5 de novembro de 2017"
+                              aria-label="Sunday, November 5, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -5113,7 +5117,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="segunda-feira, 6 de novembro de 2017"
+                              aria-label="Monday, November 6, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -5135,7 +5139,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="terça-feira, 7 de novembro de 2017"
+                              aria-label="Tuesday, November 7, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -5157,7 +5161,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="quarta-feira, 8 de novembro de 2017"
+                              aria-label="Wednesday, November 8, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -5179,7 +5183,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="quinta-feira, 9 de novembro de 2017"
+                              aria-label="Thursday, November 9, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -5201,7 +5205,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="sexta-feira, 10 de novembro de 2017"
+                              aria-label="Friday, November 10, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -5223,7 +5227,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="sábado, 11 de novembro de 2017"
+                              aria-label="Saturday, November 11, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -5247,7 +5251,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="domingo, 12 de novembro de 2017"
+                              aria-label="Sunday, November 12, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -5269,7 +5273,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="segunda-feira, 13 de novembro de 2017"
+                              aria-label="Monday, November 13, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -5291,7 +5295,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="terça-feira, 14 de novembro de 2017"
+                              aria-label="Tuesday, November 14, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -5313,7 +5317,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="quarta-feira, 15 de novembro de 2017"
+                              aria-label="Wednesday, November 15, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -5335,7 +5339,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="quinta-feira, 16 de novembro de 2017"
+                              aria-label="Thursday, November 16, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -5357,7 +5361,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="sexta-feira, 17 de novembro de 2017"
+                              aria-label="Friday, November 17, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -5379,7 +5383,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="sábado, 18 de novembro de 2017"
+                              aria-label="Saturday, November 18, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -5403,7 +5407,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="domingo, 19 de novembro de 2017"
+                              aria-label="Sunday, November 19, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -5425,7 +5429,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="segunda-feira, 20 de novembro de 2017"
+                              aria-label="Monday, November 20, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -5447,7 +5451,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="terça-feira, 21 de novembro de 2017"
+                              aria-label="Tuesday, November 21, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -5469,7 +5473,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="quarta-feira, 22 de novembro de 2017"
+                              aria-label="Wednesday, November 22, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -5491,7 +5495,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="quinta-feira, 23 de novembro de 2017"
+                              aria-label="Thursday, November 23, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -5513,7 +5517,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="sexta-feira, 24 de novembro de 2017"
+                              aria-label="Friday, November 24, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -5535,7 +5539,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="sábado, 25 de novembro de 2017"
+                              aria-label="Saturday, November 25, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -5559,7 +5563,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="domingo, 26 de novembro de 2017"
+                              aria-label="Sunday, November 26, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -5581,7 +5585,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="segunda-feira, 27 de novembro de 2017"
+                              aria-label="Monday, November 27, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -5603,7 +5607,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="terça-feira, 28 de novembro de 2017"
+                              aria-label="Tuesday, November 28, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -5625,7 +5629,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="quarta-feira, 29 de novembro de 2017"
+                              aria-label="Wednesday, November 29, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -5647,7 +5651,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                             }
                           >
                             <button
-                              aria-label="quinta-feira, 30 de novembro de 2017"
+                              aria-label="Thursday, November 30, 2017"
                               className="CalendarDay__button"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
@@ -5706,7 +5710,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
 
 exports[`Storyshots Dropdown Default 1`] = `
 <div
-  className={undefined}
+  className=""
 >
   <h2>
     Dropdown
@@ -6004,7 +6008,7 @@ exports[`Storyshots Dropdown Default 1`] = `
 
 exports[`Storyshots Dropdown Form 1`] = `
 <div
-  className={undefined}
+  className=""
 >
   <h2>
     Dropdown
@@ -6444,216 +6448,6 @@ exports[`Storyshots Dropdown Form 1`] = `
 </div>
 `;
 
-exports[`Storyshots Filters Default 1`] = `
-<div
-  className={undefined}
->
-  <div
-    className=""
-  >
-    <form
-      action="/"
-      method="post"
-      onSubmit={[Function]}
-    >
-      <div
-        className=""
-      >
-        <i
-          className={undefined}
-        >
-          <svg
-            fill="currentColor"
-            height="1em"
-            preserveAspectRatio="xMidYMid meet"
-            style={
-              Object {
-                "color": undefined,
-                "verticalAlign": "middle",
-              }
-            }
-            viewBox="0 0 40 40"
-            width="1em"
-          >
-            <g>
-              <path
-                d="m35.8 6.6q0.4 0.9-0.3 1.5l-11 11.1v16.5q0 1-0.9 1.3-0.3 0.1-0.5 0.1-0.6 0-1-0.4l-5.7-5.7q-0.5-0.4-0.5-1v-10.8l-11-11q-0.7-0.7-0.3-1.6 0.4-0.9 1.3-0.9h28.6q0.9 0 1.3 0.9z"
-              />
-            </g>
-          </svg>
-        </i>
-        <h3>
-          Filtros
-        </h3>
-      </div>
-      <div
-        className=""
-      >
-        <div
-          className={undefined}
-        >
-          <div
-            className=""
-          >
-            <div
-              className={undefined}
-            >
-              <svg
-                fill="currentColor"
-                height="1em"
-                preserveAspectRatio="xMidYMid meet"
-                style={
-                  Object {
-                    "color": undefined,
-                    "verticalAlign": "middle",
-                  }
-                }
-                viewBox="0 0 40 40"
-                width="1em"
-              >
-                <g>
-                  <path
-                    d="m4.4 37.1h6.4v-6.4h-6.4v6.4z m7.8 0h7.2v-6.4h-7.2v6.4z m-7.8-7.8h6.4v-7.2h-6.4v7.2z m7.8 0h7.2v-7.2h-7.2v7.2z m-7.8-8.6h6.4v-6.4h-6.4v6.4z m16.4 16.4h7.1v-6.4h-7.1v6.4z m-8.6-16.4h7.2v-6.4h-7.2v6.4z m17.2 16.4h6.4v-6.4h-6.4v6.4z m-8.6-7.8h7.1v-7.2h-7.1v7.2z m-7.9-19.3v-6.4q0-0.3-0.2-0.5t-0.5-0.2h-1.4q-0.3 0-0.5 0.2t-0.2 0.5v6.4q0 0.3 0.2 0.5t0.5 0.2h1.4q0.3 0 0.5-0.2t0.2-0.5z m16.5 19.3h6.4v-7.2h-6.4v7.2z m-8.6-8.6h7.1v-6.4h-7.1v6.4z m8.6 0h6.4v-6.4h-6.4v6.4z m0.7-10.7v-6.4q0-0.3-0.2-0.5t-0.5-0.2h-1.5q-0.3 0-0.5 0.2t-0.2 0.5v6.4q0 0.3 0.2 0.5t0.5 0.2h1.5q0.2 0 0.5-0.2t0.2-0.5z m8.5-1.4v28.5q0 1.2-0.8 2.1t-2 0.8h-31.4q-1.2 0-2.1-0.9t-0.8-2v-28.5q0-1.2 0.8-2t2.1-0.9h2.8v-2.1q0-1.5 1.1-2.6t2.5-1h1.4q1.5 0 2.5 1.1t1.1 2.5v2.1h8.6v-2.1q0-1.5 1-2.6t2.5-1h1.5q1.4 0 2.5 1.1t1 2.5v2.1h2.9q1.1 0 2 0.9t0.8 2z"
-                  />
-                </g>
-              </svg>
-            </div>
-            <div
-              className=""
-            >
-              <input
-                className={undefined}
-                id="shortid-mock-startDate"
-                mask="11/11/1111"
-                maxLength={10}
-                name="startDate"
-                onBlur={[Function]}
-                onChange={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyPress={[Function]}
-                onPaste={[Function]}
-                placeholder="Selecione uma data ou periodo"
-                size="8"
-                value=""
-              />
-              <span
-                className={undefined}
-              >
-                Selecione uma data ou periodo
-              </span>
-            </div>
-          </div>
-          <div
-            className=""
-          >
-            <div
-              className={undefined}
-            >
-              <svg
-                fill="currentColor"
-                height="1em"
-                preserveAspectRatio="xMidYMid meet"
-                style={
-                  Object {
-                    "color": undefined,
-                    "verticalAlign": "middle",
-                  }
-                }
-                viewBox="0 0 40 40"
-                width="1em"
-              >
-                <g>
-                  <path
-                    d="m27.2 18.6q0-4.2-2.9-7.1t-7.1-2.9-7 2.9-3 7.1 2.9 7 7.1 3 7.1-3 2.9-7z m11.4 18.5q0 1.2-0.8 2.1t-2 0.8q-1.2 0-2-0.8l-7.7-7.7q-4 2.8-8.9 2.8-3.2 0-6.1-1.3t-5-3.3-3.4-5-1.2-6.1 1.2-6.1 3.4-5.1 5-3.3 6.1-1.2 6.1 1.2 5 3.3 3.4 5.1 1.2 6.1q0 4.9-2.7 8.9l7.6 7.6q0.8 0.9 0.8 2z"
-                  />
-                </g>
-              </svg>
-            </div>
-            <div
-              className={undefined}
-            >
-              <div
-                className=""
-              >
-                <input
-                  disabled={false}
-                  id="-shortid-mock"
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  onFocus={[Function]}
-                  placeholder="Filtre por ID, CPF, nome e e-mail."
-                  type="text"
-                  value=""
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="undefined"
-        >
-          <div
-            className="undefined"
-            onClick={[Function]}
-            role="button"
-            tabIndex="0"
-          >
-            <span>
-              Mais filtros
-              <span
-                className={undefined}
-              >
-                <svg
-                  fill="currentColor"
-                  height="1em"
-                  preserveAspectRatio="xMidYMid meet"
-                  style={
-                    Object {
-                      "color": undefined,
-                      "verticalAlign": "middle",
-                    }
-                  }
-                  viewBox="0 0 40 40"
-                  width="1em"
-                >
-                  <g>
-                    <path
-                      d="m12.3 13l7.7 7.7 7.7-7.7 2.3 2.4-10 10-10-10z"
-                    />
-                  </g>
-                </svg>
-              </span>
-            </span>
-            
-          </div>
-        </div>
-      </div>
-      <div
-        className=""
-      >
-        <button
-          className=""
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        >
-          Limpar filtros
-        </button>
-        <button
-          className=""
-          disabled={true}
-          onClick={null}
-          type="submit"
-        >
-          Filtrar
-        </button>
-      </div>
-    </form>
-  </div>
-</div>
-`;
-
 exports[`Storyshots Footer defaultTheme 1`] = `
 <footer
   className={undefined}
@@ -6768,7 +6562,7 @@ exports[`Storyshots Footer defaultTheme 1`] = `
 
 exports[`Storyshots Grid Column sizes 1`] = `
 <div
-  className={undefined}
+  className=""
 >
   <div
     className=""
@@ -7091,7 +6885,7 @@ exports[`Storyshots Grid Column sizes 1`] = `
 
 exports[`Storyshots Grid Flexible 1`] = `
 <div
-  className={undefined}
+  className=""
 >
   <div
     className=""
@@ -7240,7 +7034,7 @@ exports[`Storyshots Grid Flexible 1`] = `
 
 exports[`Storyshots Grid Proportional sizes 1`] = `
 <div
-  className={undefined}
+  className=""
 >
   <div
     className=""
@@ -7891,7 +7685,7 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
 
 exports[`Storyshots Grid Responsive 1`] = `
 <div
-  className={undefined}
+  className=""
 >
   <div
     className=""
@@ -8166,7 +7960,7 @@ exports[`Storyshots Grid Responsive 1`] = `
 
 exports[`Storyshots Grid Size combinations 1`] = `
 <div
-  className={undefined}
+  className=""
 >
   <div
     className=""
@@ -8465,6 +8259,7 @@ exports[`Storyshots Grid Size combinations 1`] = `
 
 exports[`Storyshots Header defaultTheme 1`] = `
 <div
+  className=""
   style={
     Object {
       "background": "#e4e4e4",
@@ -8764,7 +8559,7 @@ exports[`Storyshots Header defaultTheme 1`] = `
 
 exports[`Storyshots Inputs Default 1`] = `
 <div
-  className={undefined}
+  className=""
 >
   <h2>
     Form Inputs
@@ -9616,7 +9411,7 @@ exports[`Storyshots Inputs Default 1`] = `
 
 exports[`Storyshots Inputs Form 1`] = `
 <div
-  className={undefined}
+  className=""
 >
   <h2>
     Form Inputs
@@ -10467,7 +10262,9 @@ exports[`Storyshots Inputs Form 1`] = `
 `;
 
 exports[`Storyshots Legend defaultTheme 1`] = `
-<div>
+<div
+  className=""
+>
   <div>
     Without acronym prop
     <div
@@ -10803,7 +10600,7 @@ exports[`Storyshots Legend defaultTheme 1`] = `
 
 exports[`Storyshots Modal default 1`] = `
 <div
-  className={undefined}
+  className=""
 >
   <div>
     <button
@@ -10903,7 +10700,9 @@ exports[`Storyshots Modal default 1`] = `
 `;
 
 exports[`Storyshots Pagination defaultTheme 1`] = `
-<div>
+<div
+  className=""
+>
   <h1>
     Pagination usage
   </h1>
@@ -11599,7 +11398,7 @@ exports[`Storyshots Pagination defaultTheme 1`] = `
 
 exports[`Storyshots Progress Linear 1`] = `
 <div
-  className={undefined}
+  className=""
 >
   <section>
     <h2>
@@ -11996,7 +11795,7 @@ exports[`Storyshots Progress Linear 1`] = `
 
 exports[`Storyshots Radio Group Default 1`] = `
 <div
-  className={undefined}
+  className=""
 >
   <h2>
     Radio Button Group
@@ -12318,7 +12117,7 @@ exports[`Storyshots Radio Group Default 1`] = `
 
 exports[`Storyshots SegmentedSwitch All styles 1`] = `
 <div
-  className={undefined}
+  className=""
 >
   <section>
     <h2>
@@ -12661,7 +12460,7 @@ exports[`Storyshots Sidebar defaultTheme 1`] = `
 
 exports[`Storyshots Switch All styles 1`] = `
 <div
-  className={undefined}
+  className=""
 >
   <section>
     <h2>
@@ -12737,7 +12536,9 @@ exports[`Storyshots Switch All styles 1`] = `
 `;
 
 exports[`Storyshots TabBar All styles 1`] = `
-<div>
+<div
+  className=""
+>
   <section>
     <p>
       Texto
@@ -14951,7 +14752,9 @@ exports[`Storyshots Table Simple 1`] = `
 `;
 
 exports[`Storyshots Tags defaultTheme 1`] = `
-<section>
+<section
+  className=""
+>
   <p>
     Only style
   </p>
@@ -14988,7 +14791,9 @@ exports[`Storyshots Tags defaultTheme 1`] = `
 `;
 
 exports[`Storyshots Typography Aplicações 1`] = `
-<div>
+<div
+  className=""
+>
   <h1>
     Parágrafo
   </h1>
@@ -15039,65 +14844,31 @@ exports[`Storyshots Typography Aplicações 1`] = `
 
 exports[`Storyshots Typography Famílias de Fonte 1`] = `
 <div
-  className={undefined}
+  className=""
 >
   <div>
     <span>
-      Display 4
-    </span>
-    <span
-      className="undefined undefined"
-    >
-      Assistant 72
-    </span>
-  </div>
-  <div>
-    <span>
-      Display 3
-    </span>
-    <span
-      className="undefined undefined"
-    >
-      Assistant 60
-    </span>
-  </div>
-  <div>
-    <span>
-      Display 2
-    </span>
-    <span
-      className="undefined undefined"
-    >
-      Assistant 48
-    </span>
-  </div>
-  <div>
-    <span>
-      Display 1
-    </span>
-    <span
-      className="undefined undefined"
-    >
-      Assistant 36
-    </span>
-  </div>
-  <div>
-    <span>
-      Headline
-    </span>
-    <span
-      className="undefined undefined"
-    >
-      Assistant 30
-    </span>
-  </div>
-  <div>
-    <span>
-      Title
+      Heading 1
     </span>
     <h1>
       Assistant 24
     </h1>
+  </div>
+  <div>
+    <span>
+      Heading 2
+    </span>
+    <h2>
+      Assistant 20
+    </h2>
+  </div>
+  <div>
+    <span>
+      Heading 3
+    </span>
+    <h3>
+      Assistant 18
+    </h3>
   </div>
   <div>
     <span>
