@@ -150,7 +150,7 @@ Dropdown.propTypes = {
   }),
   disabled: PropTypes.bool,
   error: PropTypes.string,
-  icons: Proptypes.shape({
+  icons: PropTypes.shape({
     expand: PropTypes.element,
   }),
   label: PropTypes.string,
