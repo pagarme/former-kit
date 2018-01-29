@@ -54,6 +54,15 @@ const preventInvalidKeys = (event) => {
   }
 }
 
+const defaultStrings = {
+  of: 'of',
+}
+
+const getStrings = strings => ({
+  ...defaultStrings,
+  ...strings,
+})
+
 class Pagination extends React.Component {
   constructor (props) {
     super(props)
@@ -262,10 +271,13 @@ class Pagination extends React.Component {
 
   render () {
     const {
-      totalPages,
-      theme,
       icons,
+      strings,
+      theme,
+      totalPages,
     } = this.props
+
+    const translatedStrings = getStrings(strings)
 
     const inputPage = +this.state.inputPage
 
@@ -307,7 +319,9 @@ class Pagination extends React.Component {
               {totalPages}
             </span>
           </span>
-          <span className={theme.separator}>de</span>
+          <span className={theme.separator}>
+            {translatedStrings.of}
+          </span>
           <span className={theme.totalPages}>
             {totalPages}
           </span>
@@ -338,18 +352,22 @@ Pagination.propTypes = {
     expander: PropTypes.string,
     separator: PropTypes.string,
   }),
+  currentPage: PropTypes.number.isRequired,
   icons: PropTypes.shape({
     previous: PropTypes.element.isRequired,
     next: PropTypes.element.isRequired,
   }),
-  currentPage: PropTypes.number.isRequired,
-  totalPages: PropTypes.number.isRequired,
   onPageChange: PropTypes.func.isRequired,
+  strings: PropTypes.shape({
+    of: PropTypes.string,
+  }),
+  totalPages: PropTypes.number.isRequired,
 }
 
 Pagination.defaultProps = {
   theme: {},
   icons: {},
+  strings: defaultStrings,
 }
 
 export default consumeTheme(Pagination)
