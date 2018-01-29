@@ -75,7 +75,7 @@ class Dropdown extends React.Component {
     const {
       disabled,
       error,
-      icon,
+      icons,
       label,
       placeholder,
       success,
@@ -124,7 +124,7 @@ class Dropdown extends React.Component {
         </select>
 
         <span className={theme.arrow}>
-          {icon}
+          {icons.arrow}
         </span>
 
         {hasSecondaryText &&
@@ -150,7 +150,9 @@ Dropdown.propTypes = {
   }),
   disabled: PropTypes.bool,
   error: PropTypes.string,
-  icon: PropTypes.node.isRequired,
+  icons: Proptypes.shape({
+    expand: PropTypes.element,
+  }),
   label: PropTypes.string,
   name: PropTypes.string.isRequired,
   options: PropTypes.arrayOf(
@@ -173,6 +175,7 @@ Dropdown.defaultProps = {
   error: '',
   success: '',
   label: '',
+  icons: {},
 }
 
 export default Dropdown
