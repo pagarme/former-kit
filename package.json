@@ -1,14 +1,14 @@
 {
-  "name": "greenphoenix",
-  "version": "0.1.0",
-  "private": true,
+  "name": "former-kit",
+  "version": "0.0.6",
   "license": "(CC-BY-4.0 OR Apache-2.0)",
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pagarme/pilot.git"
+    "url": "https://github.com/pagarme/former-kit.git"
   },
-  "homepage": "https://github.com/pagarme/pilot",
-  "bugs": "https://github.com/pagarme/pilot/issues",
+  "homepage": "https://github.com/pagarme/former-kit",
+  "bugs": "https://github.com/pagarme/former-kit/issues",
   "dependencies": {
     "@percy-io/in-percy": "0.1.9",
     "@percy-io/percy-storybook": "1.2.4",
@@ -84,8 +84,7 @@
     "whatwg-fetch": "2.0.3"
   },
   "scripts": {
-    "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
+    "build": "env NODE_ENV=production babel src -d dist --ignore spec.js,test.js",
     "lint": "eslint './{src,stories}/**/*.js' && stylelint './{src,stories}/**/*.css'",
     "test": "node scripts/test.js --env=jsdom",
     "test-coverage": "node scripts/test.js --env=jsdom --coverage",
@@ -96,6 +95,7 @@
     "publish-preview": "storybook-to-ghpages"
   },
   "devDependencies": {
+    "babel-cli": "6.26.0",
     "former-kit-skin-pagarme": "0.0.2"
   }
 }

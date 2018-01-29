@@ -1,4 +1,5 @@
-# See https://help.github.com/ignore-files/ for more about ignoring files.
+# storybook builds
+./storybook-static/
 
 # dependencies
 /node_modules
@@ -7,7 +8,7 @@
 /coverage
 
 # production
-/build
+/dist
 
 # misc
 .DS_Store
@@ -23,7 +24,9 @@ yarn-error.log*
 # git generated files
 *.orig
 
-*.swp
+# nvim ignores
+*.swm
+*.swn
 *.swo
+*.swp
 
-./storybook-static/
