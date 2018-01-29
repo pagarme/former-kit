@@ -1,4 +1,4 @@
-const paths = require('./paths.js')
+const path = require('path')
 const eslintFormatter = require('react-dev-utils/eslintFormatter')
 const stylelintFormatter = require('./stylelintFormatter')
 const postcssUrlRebase = require('./postcssUrlRebase')
@@ -18,7 +18,7 @@ module.exports = {
             loader: require.resolve('eslint-loader'),
           },
         ],
-        include: paths.appSrc,
+        include: path.resolve(__dirname, '../src'),
       },
       {
         test: /\.css$/,
