@@ -33,6 +33,7 @@ const SidebarLink = ({
   onClick,
   active,
   collapsed,
+  icon,
   icons,
 }) => (
   <li
@@ -46,7 +47,7 @@ const SidebarLink = ({
       tabIndex="0"
     >
       <div className={theme.title}>
-        <span className={theme.icon}>{icons.link}</span>
+        <span className={theme.icon}>{icon}</span>
         {!collapsed && title}
 
         {(!collapsed && !subtitle && children) &&
@@ -95,21 +96,23 @@ SidebarLink.propTypes = {
   }),
   active: PropTypes.bool,
   children: PropTypes.node,
-  subtitle: PropTypes.string,
-  onClick: PropTypes.func,
-  title: PropTypes.string.isRequired,
   collapsed: PropTypes.bool,
+  icon: PropTypes.element,
   icons: hasNecessaryIcons,
+  onClick: PropTypes.func,
+  subtitle: PropTypes.string,
+  title: PropTypes.string.isRequired,
 }
 
 SidebarLink.defaultProps = {
   theme: {},
   active: false,
   children: null,
+  collapsed: false,
+  icon: null,
+  icons: {},
   onClick: null,
   subtitle: '',
-  collapsed: false,
-  icons: {},
 }
 
 export default consumeTheme(SidebarLink)

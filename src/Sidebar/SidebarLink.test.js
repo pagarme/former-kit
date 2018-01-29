@@ -48,9 +48,7 @@ describe('SidebarLink', () => {
       <SidebarLink
         theme={{}}
         title="Hello"
-        icons={{
-          link: <MdMenu />,
-        }}
+        icon={<MdMenu />}
       />
     )
 
@@ -213,9 +211,7 @@ describe('SidebarLink', () => {
       <SidebarLink
         theme={{}}
         title="Hello"
-        icons={{
-          link: <MdMenu />,
-        }}
+        icon={<MdMenu />}
         collapsed
       />
     )
