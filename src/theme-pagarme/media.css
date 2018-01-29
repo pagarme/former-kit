@@ -1,4 +1,0 @@
-@custom-media --media-tv screen and (width >= 1920px);
-@custom-media --media-desk screen and (width >= 1366px) and (width < 1920px);
-@custom-media --media-tablet screen and (width > 640px) and (width < 1366px);
-@custom-media --media-palm screen and (width <= 640px);

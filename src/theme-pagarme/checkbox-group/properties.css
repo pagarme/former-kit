@@ -1,8 +1,0 @@
-@import "../colors.css";
-
-:root {
-  --checkbox-group-secondary-text-font-size: 12px;
-  --checkbox-group-secondary-text-margin-left: 10px;
-  --checkbox-group-secondary-text-color-error: var(--color-light-error);
-  --checkbox-group-secondary-text-color-success: var(--color-light-success);
-}

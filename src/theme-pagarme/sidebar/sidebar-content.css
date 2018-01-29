@@ -1,9 +1,0 @@
-@import "../colors.css";
-@import "./properties.css";
-
-.content {
-  display: flex;
-  justify-content: center;
-  padding-bottom: var(--sidebar-switch-container-padding-bottom);
-  padding-top: var(--sidebar-switch-container-padding-top);
-}

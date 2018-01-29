@@ -1,9 +1,0 @@
-@import "../colors.css";
-@import "./properties.css";
-
-.title {
-  color: var(--header-title-color);
-  font-weight: var(--header-title-font-weight);
-  font-size: var(--header-title-font-size);
-  text-transform: uppercase;
-}
