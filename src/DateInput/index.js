@@ -13,7 +13,6 @@ import {
   element,
   func,
   instanceOf,
-  node,
   shape,
   string,
 } from 'prop-types'
@@ -209,7 +208,7 @@ class DateInput extends React.Component {
       active,
       icon,
       limits,
-      selectorIcons,
+      icons,
       theme,
     } = this.props
 
@@ -308,7 +307,7 @@ class DateInput extends React.Component {
               onFocusChange={this.handleSelectorFocus}
               focusedInput={this.state.focusedInput}
               presets={this.props.presets}
-              icons={selectorIcons}
+              icons={icons}
             />
           </div>
           : null
@@ -336,7 +335,7 @@ DateInput.propTypes = {
     start: instanceOf(moment),
     end: instanceOf(moment),
   }),
-  icon: node,
+  icon: element,
   limits: shape({
     upper: instanceOf(moment),
     lower: instanceOf(moment),
@@ -352,7 +351,7 @@ DateInput.propTypes = {
       key: string,
     })),
   })),
-  selectorIcons: shape({
+  icons: shape({
     leftArrow: element,
     rightArrow: element,
   }),
@@ -366,7 +365,7 @@ DateInput.defaultProps = {
     end: null,
   },
   icon: null,
-  selectorIcons: {},
+  icons: {},
   limits: {
     upper: moment('2100-01-01', 'YYYY-MM-DD'),
     lower: moment('1900-01-01', 'YYYY-MM-DD'),
