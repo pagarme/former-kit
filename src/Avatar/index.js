@@ -10,7 +10,7 @@ const Avatar = ({
   theme,
   photo,
   size,
-  icon,
+  icons,
 }) => {
   if (photo) {
     return (
@@ -26,7 +26,7 @@ const Avatar = ({
 
   return (
     <div className={classnames(theme.avatar, theme.placeholder)}>
-      {icon}
+      {icons.placeholder}
     </div>
   )
 }
@@ -38,14 +38,16 @@ Avatar.propTypes = {
   }),
   size: PropTypes.number,
   photo: PropTypes.string,
-  icon: PropTypes.element,
+  icons: PropTypes.shape({
+    placeholder: PropTypes.element,
+  }),
 }
 
 Avatar.defaultProps = {
   theme: {},
   photo: null,
   size: 26,
-  icon: null,
+  icons: {},
 }
 
 export default consumeTheme(Avatar)
