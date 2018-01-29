@@ -5,12 +5,12 @@ import ThemeConsumer from '../ThemeConsumer'
 const consumeTheme = ThemeConsumer('UIHeader')
 
 const HeaderBackButton = ({
-  icon,
+  icons,
   onClick,
   theme,
 }) => (
   <button className={theme.backButton} onClick={onClick}>
-    {icon}
+    {icons.back}
   </button>
 )
 
@@ -18,12 +18,13 @@ HeaderBackButton.propTypes = {
   theme: PropTypes.shape({
     backButton: PropTypes.string,
   }),
-  icon: PropTypes.element.isRequired,
+  icons: PropTypes.shape({ back: PropTypes.element }),
   onClick: PropTypes.func.isRequired,
 }
 
 HeaderBackButton.defaultProps = {
   theme: {},
+  icons: {},
 }
 
 export default consumeTheme(HeaderBackButton)

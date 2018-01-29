@@ -8,7 +8,7 @@ const HeaderMenu = ({
   children,
   theme,
   onClick,
-  icon,
+  icons,
 }) => (
   <div
     className={theme.menu}
@@ -17,7 +17,7 @@ const HeaderMenu = ({
     tabIndex="0"
   >
     {children}
-    {icon}
+    {icons.expand}
   </div>
 )
 
@@ -27,11 +27,14 @@ HeaderMenu.propTypes = {
   }),
   onClick: PropTypes.func.isRequired,
   children: PropTypes.node.isRequired,
-  icon: PropTypes.element.isRequired,
+  icons: PropTypes.shape({
+    expand: PropTypes.element,
+  }),
 }
 
 HeaderMenu.defaultProps = {
   theme: {},
+  icons: {},
 }
 
 export default consumeTheme(HeaderMenu)
