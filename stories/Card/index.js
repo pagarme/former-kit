@@ -3,8 +3,6 @@ import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 
 import Icon from 'react-icons/lib/md/insert-invitation'
-import IconArrowUp from 'react-icons/lib/md/keyboard-arrow-up'
-import IconArrowDown from 'react-icons/lib/md/keyboard-arrow-down'
 
 import style from './style.css'
 
@@ -181,10 +179,6 @@ class CollapsableSection extends React.Component {
                 collapsed => this.setState({ collapsed: !collapsed })
               }
               subTitle="It's over 9000!"
-              icons={{
-                collapse: <IconArrowUp />,
-                expand: <IconArrowDown />,
-              }}
             >
               {loremIpsum}
             </CardSection>
