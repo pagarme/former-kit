@@ -114,10 +114,6 @@ class SidebarState extends React.Component {
               subtitle={showInfos ? 'ocultar saldo' : 'mostrar saldo'}
               active={showInfos}
               onClick={() => this.setState({ showInfos: !showInfos })}
-              icons={{
-                collapse: <IconArrowUp />,
-                expand: <IconArrowDown />,
-              }}
             >
               <SidebarSections sections={sections.data} />
             </SidebarLink>
@@ -129,9 +125,7 @@ class SidebarState extends React.Component {
               title={item.title}
               active={item.value === this.state.active}
               onClick={() => this.setState({ active: item.value })}
-              icons={{
-                link: item.icon,
-              }}
+              icon={item.icon}
               collapsed={collapsed}
             />
           ))}
