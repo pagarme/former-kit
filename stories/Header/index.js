@@ -1,6 +1,5 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import MdKeyboardArrowLeft from 'react-icons/lib/md/keyboard-arrow-left'
 import IconAlert from 'react-icons/lib/md/add-alert'
 import MdMessage from 'react-icons/lib/md/message'
 import FaUser from 'react-icons/lib/fa/user-md'
@@ -54,7 +53,6 @@ storiesOf('Header', module)
         <h3 style={{ margin: 0, padding: 15 }}>Segundo nível</h3>
         <Header>
           <HeaderBackButton
-            icons={{ back: <MdKeyboardArrowLeft /> }}
             onClick={() => null}
           />
 
