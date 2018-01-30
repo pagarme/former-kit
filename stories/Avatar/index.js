@@ -8,7 +8,7 @@ import styles from './styles.css'
 storiesOf('Avatar', module)
   .add('All types', () => (
     <div className={styles.box}>
-      <Avatar icons={{placeholder: <FaUser size={26} />}} />
+      <Avatar icons={{ placeholder: <FaUser size={26} /> }} />
       <Avatar photo="https://i.imgur.com/V9mgrCp.jpg" />
       <Avatar
         photo="https://i.imgur.com/V9mgrCp.jpg"
