@@ -124,7 +124,7 @@ class Dropdown extends React.Component {
         </select>
 
         <span className={theme.arrow}>
-          {icons.arrow}
+          {icons.expand}
         </span>
 
         {hasSecondaryText &&
