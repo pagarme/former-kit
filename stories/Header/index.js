@@ -25,7 +25,7 @@ const HeaderContentExample = ({ photo }) => (
       onClick={() => null}
       icon={<MdMessage />}
     />
-    <HeaderMenu onClick={() => null} iconw={{expand: <IconArrowDown />}}>
+    <HeaderMenu onClick={() => null} iconw={{ expand: <IconArrowDown /> }}>
       <Avatar photo={photo} icon={<FaUser size={26} />} />
       <span>Nome da Pessoa</span>
     </HeaderMenu>
@@ -54,7 +54,7 @@ storiesOf('Header', module)
         <h3 style={{ margin: 0, padding: 15 }}>Segundo nível</h3>
         <Header>
           <HeaderBackButton
-            icons={{back: <MdKeyboardArrowLeft />}}
+            icons={{ back: <MdKeyboardArrowLeft /> }}
             onClick={() => null}
           />
 

@@ -17,7 +17,7 @@ describe('Header', () => {
     mount(
       <Header>
         <HeaderBackButton
-          icons={{back: <MdKeyboardArrowLeft />}}
+          icons={{ back: <MdKeyboardArrowLeft /> }}
           onClick={() => {}}
         />
 
