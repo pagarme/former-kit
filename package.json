@@ -96,6 +96,6 @@
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
-    "former-kit-skin-pagarme": "0.0.2"
+    "former-kit-skin-pagarme": "0.0.3"
   }
 }

@@ -3782,9 +3782,9 @@ form-data@~2.3.1:
     combined-stream "^1.0.5"
     mime-types "^2.1.12"
 
-former-kit-skin-pagarme@0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/former-kit-skin-pagarme/-/former-kit-skin-pagarme-0.0.2.tgz#2861b11561413d804a598f898f7cf8e7b29957ec"
+former-kit-skin-pagarme@0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/former-kit-skin-pagarme/-/former-kit-skin-pagarme-0.0.3.tgz#5b490c39a033df3f117b7318b49a83f2be183c7f"
 
 forwarded@~0.1.2:
   version "0.1.2"
