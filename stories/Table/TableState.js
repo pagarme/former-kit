@@ -155,13 +155,6 @@ class TableState extends Component {
           orderColumn={orderColumn}
           onExpandRow={this.handleExpandRow}
           onRowClick={onRowClick}
-          icons={{
-            expand: <IconArrowDown />,
-            collapse: <IconArrowUp />,
-            descending: <IconLongArrowDown />,
-            ascending: <IconLongArrowUp />,
-            orderable: <IconSort />,
-          }}
         />
 
         <div className={style.texts}>
