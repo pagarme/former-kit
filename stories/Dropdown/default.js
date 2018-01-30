@@ -39,7 +39,7 @@ class DropdownState extends React.Component {
           placeholder={this.props.placeholder}
           error={this.props.error}
           success={this.props.success}
-          icons={{ expand: <ArrowIcon size={20} />}}
+          icons={{ expand: <ArrowIcon size={20} /> }}
         />
         <p>Selecionado: {this.state.selected}</p>
       </div>

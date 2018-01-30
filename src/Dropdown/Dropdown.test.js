@@ -30,7 +30,7 @@ describe('Dropdown', () => {
         name="artefatos"
         label="Selecione um"
         onChange={onChange}
-        icons={{expand:<ArrowIcon />}}
+        icons={{ expand: <ArrowIcon /> }}
       />
     ).dive()
 
@@ -55,7 +55,7 @@ describe('Dropdown', () => {
         disabled
         label="Selecione um"
         onChange={onChange}
-        icons={{expand:<ArrowIcon />}}
+        icons={{ expand: <ArrowIcon /> }}
       />
     )
 
@@ -81,7 +81,7 @@ describe('Dropdown', () => {
         success="mock text"
         label="Selecione um"
         onChange={onChange}
-        icons={{expand:<ArrowIcon />}}
+        icons={{ expand: <ArrowIcon /> }}
       />
     )
 
@@ -106,7 +106,7 @@ describe('Dropdown', () => {
         error="mock text"
         label="Selecione um"
         onChange={onChange}
-        icons={{expand:<ArrowIcon />}}
+        icons={{ expand: <ArrowIcon /> }}
       />
     ).dive()
 
@@ -133,7 +133,7 @@ describe('Dropdown', () => {
         value="something"
         title="title here"
         onChange={onChange}
-        icons={{expand:<ArrowIcon />}}
+        icons={{ expand: <ArrowIcon /> }}
       />
     ).dive()
 
@@ -161,7 +161,7 @@ describe('Dropdown', () => {
         disabled
         title="title here"
         onChange={onChange}
-        icons={{expand:<ArrowIcon />}}
+        icons={{ expand: <ArrowIcon /> }}
       />
     )
 
