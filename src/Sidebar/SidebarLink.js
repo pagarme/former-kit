@@ -12,7 +12,7 @@ import ThemeConsumer from '../ThemeConsumer'
 const consumeTheme = ThemeConsumer('UISidebar')
 
 const Arrow = ({ active, icons }) => {
-  const { collapse, expand } = icons
+  const { collapse = null, expand = null } = icons
 
   return active ? collapse : expand
 }
@@ -22,7 +22,11 @@ Arrow.propTypes = {
   icons: PropTypes.shape({
     collapse: PropTypes.element,
     expand: PropTypes.element,
-  }).isRequired,
+  }),
+}
+
+Arrow.defaultProps = {
+  icons: {},
 }
 
 const SidebarLink = ({

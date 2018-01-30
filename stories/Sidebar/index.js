@@ -4,8 +4,6 @@ import { storiesOf } from '@storybook/react'
 import MdMenu from 'react-icons/lib/md/menu'
 import MdEventNote from 'react-icons/lib/md/event-note'
 import MdFreeBreakfast from 'react-icons/lib/md/free-breakfast'
-import IconArrowUp from 'react-icons/lib/md/keyboard-arrow-up'
-import IconArrowDown from 'react-icons/lib/md/keyboard-arrow-down'
 import shortid from 'shortid'
 
 import {
