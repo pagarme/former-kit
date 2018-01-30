@@ -4,11 +4,11 @@ import { object } from 'prop-types'
 export default function ThemeConsumer (name) {
   return (Component) => {
     const themed = function Themed (props, context) {
-      const theme = context.theme ? context.theme.theme : {}
-
+      const { styles, icons } = context.theme ? context.theme : {}
       return (
         <Component
-          theme={theme[name]}
+          theme={styles[name]}
+          icons={icons[name]}
           {...props}
         />
       )

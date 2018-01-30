@@ -21,7 +21,8 @@ ThemeProvider.childContextTypes = {
   theme: shape({
     name: string,
     version: string,
-    theme: object, // eslint-disable-line
+    styles: object, // eslint-disable-line
+    icons: object, // eslint-disable-line
   }),
 }
 
@@ -29,7 +30,8 @@ ThemeProvider.propTypes = {
   theme: shape({
     name: string,
     version: string,
-    theme: object, // eslint-disable-line
+    styles: object, // eslint-disable-line
+    icons: object, // eslint-disable-line
   }).isRequired,
   children: node.isRequired,
 }
