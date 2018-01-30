@@ -321,11 +321,14 @@ describe('Pagination', () => {
       />
     )
 
-    const input = component.find('input').first()
+    let input = component.find('input').first()
     input.simulate('change', { target: { value: '14' } })
     input.simulate('keydown', { key: 'Enter' })
     input.simulate('keydown', { key: 'Enter' })
     input.simulate('keydown', { key: 'Enter' })
+
+
+    input = component.find('input').first()
 
     expect(input.prop('value')).toBe('14')
     expect(page).toBe(3)
@@ -343,8 +346,10 @@ describe('Pagination', () => {
       />
     )
 
-    const input = component.find('input').first()
+    let input = component.find('input').first()
     input.simulate('change', { target: { value: '08' } })
+
+    input = component.find('input').first()
 
     expect(input.prop('value')).toBe('8')
   })

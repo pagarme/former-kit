@@ -29,7 +29,7 @@ describe.only('Table', () => {
 
         const dataColumns = firstRow
           .findWhere(node =>
-            node.type() === 'td' &&
+            node.length > 0 && node.type() === 'td' &&
             !node.find(Checkbox).exists() &&
             !node.find(Button).exists()
           )
@@ -139,7 +139,7 @@ describe.only('Table', () => {
           const headerColumns = header
             .find('th')
             .findWhere(node =>
-              node.type() === 'div' &&
+              node.length > 0 && node.type() === 'div' &&
               node.find('span').length > 0)
 
           headerColumns.forEach((colElement, index) => {
@@ -176,7 +176,7 @@ describe.only('Table', () => {
             .first()
           const cell = line
             .findWhere(node =>
-              node.type() === 'td' &&
+              node.length > 0 && node.type() === 'td' &&
               !node.find(Checkbox).exists() &&
               !node.find(Button).exists()
             )
@@ -213,7 +213,7 @@ describe.only('Table', () => {
 
         const cells = firstRow
           .findWhere(node =>
-            node.type() === 'td' &&
+            node.length > 0 && node.type() === 'td' &&
             !node.find(Checkbox).exists() &&
             !node.find(Button).exists()
           )
@@ -314,11 +314,12 @@ describe.only('Table', () => {
       cases('should render falsy cells with a dash ', ({ component, rows, columns }) => {
         const renderedRows = component.find(TableRow)
         renderedRows.forEach((renderedRow, rowIndex) => {
-          const cells = renderedRow.findWhere(node =>
-            node.type() === 'td' &&
+          const cells = renderedRow.findWhere(node => (
+            node.length > 0 && node.type() === 'td' &&
             !node.find(Checkbox).exists() &&
-            !node.find(Button).exists()
+            !node.find(Button).exists())
           )
+
           const row = rows[rowIndex]
           cells.forEach((cell, index) => {
             const column = columns[index]

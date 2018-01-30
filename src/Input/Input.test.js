@@ -19,6 +19,7 @@ describe('Input', () => {
           name="name"
           label="Name"
           onChange={onChange}
+          value=""
         />
       )
 
@@ -41,10 +42,12 @@ describe('Input', () => {
           label="Name"
           onChange={onChange}
           disabled
+          value=""
         />
       )
 
       component
+        .dive()
         .find('input')
         .first()
         .simulate('change', value)
@@ -63,6 +66,7 @@ describe('Input', () => {
           onChange={onChange}
           success="Success"
           theme={theme}
+          value=""
         />
       )
 
@@ -87,6 +91,7 @@ describe('Input', () => {
           onChange={onChange}
           error="Error"
           theme={theme}
+          value=""
         />
       )
 
@@ -139,6 +144,7 @@ describe('Input', () => {
           label="Name"
           multiline
           onChange={onChange}
+          value=""
         />
       )
 
@@ -162,6 +168,7 @@ describe('Input', () => {
           onChange={onChange}
           multiline
           disabled
+          value=""
         />
       )
 
@@ -186,6 +193,7 @@ describe('Input', () => {
           multiline
           success="Success"
           theme={theme}
+          value=""
         />
       )
 
@@ -211,6 +219,7 @@ describe('Input', () => {
           multiline
           error="Error"
           theme={theme}
+          value=""
         />
       )
 

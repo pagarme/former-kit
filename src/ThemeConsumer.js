@@ -8,6 +8,7 @@ export default function ThemeConsumer (name) {
         styles = {},
         icons = {},
       } = context.theme ? context.theme : {}
+
       return (
         <Component
           theme={styles[name]}

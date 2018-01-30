@@ -12,6 +12,7 @@ describe('ContextSwitch', () => {
         items={['test', 'live']}
         onChange={onChange}
         name="live-test"
+        selected="test"
       />
     ).dive()
 
@@ -30,6 +31,7 @@ describe('ContextSwitch', () => {
         items={['yo', 'test', 'live']}
         onChange={onChange}
         name="live-test"
+        selected="test"
       />
     ).dive()
 

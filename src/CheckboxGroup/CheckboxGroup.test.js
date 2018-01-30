@@ -1,5 +1,5 @@
 import React from 'react'
-import { shallow, mount } from 'enzyme'
+import { mount } from 'enzyme'
 
 import CheckboxGroup from './index'
 
@@ -38,6 +38,7 @@ describe('CheckboxGroup', () => {
 
     component
       .find('[name="pessoas-predio"]')
+      .at(2)
       .simulate('change')
 
     expect(onChange).toHaveBeenCalled()
@@ -62,6 +63,7 @@ describe('CheckboxGroup', () => {
 
     component
       .find('[name="pessoas-predio"]')
+      .at(2)
       .simulate('change')
 
     expect(onChange).toHaveBeenLastCalledWith(['sofa'])
@@ -72,7 +74,7 @@ describe('CheckboxGroup', () => {
 
     const values = ['sofa', 'predio']
 
-    const component = shallow(
+    const component = mount(
       <CheckboxGroup
         options={options}
         name="pessoas"
@@ -85,7 +87,7 @@ describe('CheckboxGroup', () => {
     )
 
     component
-      .find('input[type="radio"]')
+      .find('input[type="checkbox"]')
       .first()
       .simulate('change')
 

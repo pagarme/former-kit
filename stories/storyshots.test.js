@@ -46,7 +46,8 @@ jest.mock('former-kit-skin-pagarme', () => {
 
   return {
     name: 'Pagar.me',
-    theme: buildProxy(buildProxy()),
+    styles: buildProxy(buildProxy()),
+    icons: buildProxy(buildProxy(<img />)),
   }
 })
 

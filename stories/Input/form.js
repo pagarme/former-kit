@@ -69,6 +69,7 @@ storiesOf('Inputs', module)
           hint="Texto secundário"
           placeholder="eae"
           onChange={action('text changed')}
+          value=""
         />
       </section>
 
@@ -96,6 +97,7 @@ storiesOf('Inputs', module)
           placeholder="eae"
           disabled
           onChange={action('text changed')}
+          value=""
         />
       </section>
 
@@ -123,6 +125,7 @@ storiesOf('Inputs', module)
           disabled
           icon={<FaPlane size={20} />}
           onChange={action('text changed')}
+          value=""
         />
       </section>
 
@@ -151,6 +154,7 @@ storiesOf('Inputs', module)
           disabled
           icon={<FaPlane size={20} />}
           onChange={action('text changed')}
+          value=""
         />
       </section>
 
@@ -179,6 +183,7 @@ storiesOf('Inputs', module)
           placeholder="eae"
           hint="Minimo de 12 pixels"
           onChange={action('text changed')}
+          value=""
         />
       </section>
 

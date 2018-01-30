@@ -40,7 +40,7 @@ describe('SidebarLink', () => {
       />
     )
 
-    expect(component.dive().find('div').at(2).text()).toBe('Hi')
+    expect(component.dive().find('div').at(1).text()).toBe('Hi')
   })
 
   it('should display icon', () => {
@@ -131,7 +131,7 @@ describe('SidebarLink', () => {
       </SidebarLink>
     )
 
-    component.dive().find('[role="button"]').simulate('click')
+    component.dive().find('button').simulate('click')
     expect(onClick).toHaveBeenCalled()
   })
 

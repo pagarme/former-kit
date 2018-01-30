@@ -60,6 +60,7 @@ describe('Dropdown', () => {
     )
 
     component
+      .dive()
       .find('select')
       .first()
       .simulate('change', {
@@ -86,6 +87,7 @@ describe('Dropdown', () => {
     )
 
     component
+      .dive()
       .find('select')
       .first()
       .simulate('change', {
@@ -166,6 +168,7 @@ describe('Dropdown', () => {
     )
 
     component
+      .dive()
       .find('select')
       .first()
       .simulate('change', {

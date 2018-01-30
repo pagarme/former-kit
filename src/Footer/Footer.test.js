@@ -47,6 +47,6 @@ describe('Footer', () => {
       </Footer>
     )
 
-    expect(component.find('nav').first().find('a')).toHaveLength(links.length)
+    expect(component.find('nav').first().find('button')).toHaveLength(links.length)
   })
 })

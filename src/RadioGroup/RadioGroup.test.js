@@ -67,6 +67,7 @@ describe('RadioGroup', () => {
     )
 
     component
+      .dive()
       .find('input[type="radio"]')
       .first()
       .simulate('change', {

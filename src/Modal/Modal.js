@@ -12,6 +12,7 @@ const Modal = ({
   onRequestClose,
 }) => (
   <ReactModal
+    appElement={document.body}
     isOpen={isOpen}
     role="dialog"
     parentSelector={() => document.body}
