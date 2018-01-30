@@ -81,9 +81,10 @@ const hasNoArrows = anyPass([
 const hasNecessaryIcons = ({ icons, children }, propName) => {
   if (propName === 'icons') {
     if (!isNil(children) && hasNoArrows(icons)) {
-      throw new Error(
-        'The prop icons must have collapse and expand props when children prop is not empty'
-      )
+      throw new Error(`
+        The prop icons must have collapse and
+        expand props when children prop is not empty
+      `)
     }
   }
 }

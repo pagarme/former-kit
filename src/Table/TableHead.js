@@ -52,12 +52,10 @@ class TableHead extends Component {
     } = this.props
     const selected = orderColumn === index
     const { orderable } = column
-    const columnClasses = classNames(
-      {
-        [theme.active]: selected,
-        [theme.orderable]: orderable,
-      }
-    )
+    const columnClasses = classNames({
+      [theme.active]: selected,
+      [theme.orderable]: orderable,
+    })
 
     if (!orderable) {
       return (

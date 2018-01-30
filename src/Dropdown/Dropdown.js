@@ -155,12 +155,10 @@ Dropdown.propTypes = {
   }),
   label: PropTypes.string,
   name: PropTypes.string.isRequired,
-  options: PropTypes.arrayOf(
-    PropTypes.shape({
-      value: PropTypes.string,
-      name: PropTypes.string,
-    })
-  ).isRequired,
+  options: PropTypes.arrayOf(PropTypes.shape({
+    value: PropTypes.string,
+    name: PropTypes.string,
+  })).isRequired,
   onChange: PropTypes.func.isRequired,
   placeholder: PropTypes.string,
   success: PropTypes.string,

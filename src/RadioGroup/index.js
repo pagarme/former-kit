@@ -83,12 +83,10 @@ RadioGroup.propTypes = {
     secondaryText: PropTypes.string,
     label: PropTypes.string,
   }),
-  options: PropTypes.arrayOf(
-    PropTypes.shape({
-      name: PropTypes.string,
-      value: PropTypes.value,
-    })
-  ).isRequired,
+  options: PropTypes.arrayOf(PropTypes.shape({
+    name: PropTypes.string,
+    value: PropTypes.value,
+  })).isRequired,
   name: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
   value: PropTypes.string,
