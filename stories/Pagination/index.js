@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes, { string } from 'prop-types'
+import PropTypes from 'prop-types'
 import { storiesOf } from '@storybook/react'
 import ArrowLeft from 'react-icons/lib/md/keyboard-arrow-left'
 import ArrowRight from 'react-icons/lib/md/keyboard-arrow-right'
@@ -120,7 +120,7 @@ storiesOf('Pagination', module)
           currentPage={1}
           totalPages={10}
           strings={{
-            of:'de'
+            of: 'de',
           }}
         />
       </section>
