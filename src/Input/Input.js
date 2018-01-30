@@ -61,26 +61,22 @@ class Input extends React.PureComponent {
 
     if (this.state.showPassword) {
       return (
-        <span
+        <button
           className={theme.displayPasswordIcon}
           onClick={() => this.setState({ showPassword: false })}
-          role="button"
-          tabIndex="0"
         >
           {icons.hidePassword}
-        </span>
+        </button>
       )
     }
 
     return (
-      <span
+      <button
         className={theme.displayPasswordIcon}
         onClick={() => this.setState({ showPassword: true })}
-        role="button"
-        tabIndex="0"
       >
         {icons.showPassword}
-      </span>
+      </button>
     )
   }
 
@@ -244,7 +240,6 @@ Input.defaultProps = {
   success: '',
   theme: {},
   type: 'text',
-  value: '',
   onBlur: null,
   onFocus: null,
 }

@@ -131,7 +131,6 @@ CardSection.defaultProps = {
   collapsed: false,
   onTitleClick: null,
   subTitle: '',
-  base: 'light',
   icons: {},
 }
 

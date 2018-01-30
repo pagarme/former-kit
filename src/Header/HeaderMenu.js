@@ -10,15 +10,14 @@ const HeaderMenu = ({
   onClick,
   icons,
 }) => (
-  <div
+  <button
     className={theme.menu}
     onClick={onClick}
-    role="button"
-    tabIndex="0"
+    role="link"
   >
     {children}
     {icons.expand}
-  </div>
+  </button>
 )
 
 HeaderMenu.propTypes = {

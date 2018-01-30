@@ -45,10 +45,9 @@ const SidebarLink = ({
       [theme.active]: active,
     })}
   >
-    <div
+    <button
       onClick={onClick}
-      role="button"
-      tabIndex="0"
+      role="link"
     >
       <div className={theme.title}>
         <span className={theme.icon}>{icon}</span>
@@ -68,7 +67,7 @@ const SidebarLink = ({
           {children && <Arrow active={active} icons={icons} />}
         </div>
       }
-    </div>
+    </button>
 
     {active && children}
   </li>

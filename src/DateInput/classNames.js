@@ -1,6 +1,11 @@
 import classNames from 'classnames'
 
-export const inputClasses = ({ theme, focused, active, error }) => classNames(
+export const inputClasses = ({
+  theme,
+  focused,
+  active,
+  error,
+}) => classNames(
   theme.dateInput,
   {
     [theme.focus]: !error && focused,

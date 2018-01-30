@@ -131,7 +131,6 @@ TableExpandedRow.propTypes = {
 
 TableExpandedRow.defaultProps = {
   className: '',
-  onExpandableButtonClick: null,
   parity: '',
   theme: {},
 }

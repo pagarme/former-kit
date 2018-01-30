@@ -15,7 +15,7 @@ CardGraphic.propTypes = {
   theme: PropTypes.shape({
     base: PropTypes.string,
     graphic: PropTypes.string,
-  }).isRequired,
+  }),
   children: PropTypes.node.isRequired,
   className: PropTypes.string,
 }

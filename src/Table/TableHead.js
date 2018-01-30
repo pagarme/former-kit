@@ -51,7 +51,7 @@ class TableHead extends Component {
       icons,
     } = this.props
     const selected = orderColumn === index
-    const orderable = column.orderable
+    const { orderable } = column
     const columnClasses = classNames(
       {
         [theme.active]: selected,

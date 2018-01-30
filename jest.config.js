@@ -3,7 +3,8 @@ module.exports = {
     "src/**/*.{js,jsx}"
   ],
   setupFiles: [
-    "<rootDir>/config/polyfills.js"
+    "<rootDir>/config/polyfills.js",
+    "<rootDir>/config/jest/enzyme.js"
   ],
   testMatch: [
     "<rootDir>/src/**/?(*.)(spec|test).js?(x)",

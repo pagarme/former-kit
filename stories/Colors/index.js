@@ -1,15 +1,19 @@
 import React from 'react'
 
 import { storiesOf } from '@storybook/react'
-import R from 'ramda'
+import {
+  groupBy,
+  mapObjIndexed,
+  pipe,
+} from 'ramda'
 
 import style from './style.css'
 
-const groupByColorName = R.groupBy(prop => prop.split('-')[4])
+const groupByColorName = groupBy(prop => prop.split('-')[4])
 const sortColorNumber = (a, b) => +a.split('-')[5] < +b.split('-')[5]
-const groupItemsAndSort = R.pipe(
+const groupItemsAndSort = pipe(
   groupByColorName,
-  R.mapObjIndexed(colorList => colorList.sort(sortColorNumber))
+  mapObjIndexed(colorList => colorList.sort(sortColorNumber))
 )
 
 const getThemeColors = (theme) => {

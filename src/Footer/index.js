@@ -8,15 +8,14 @@ const Footer = ({ theme, children, links }) => (
   <footer className={theme.footer}>
     <nav>
       {links.map(link => (
-        <a
+        <button
           key={link.title}
           onClick={link.onClick}
           title={link.title}
           role="link"
-          tabIndex="0"
         >
           {link.title}
-        </a>
+        </button>
       ))}
     </nav>
 

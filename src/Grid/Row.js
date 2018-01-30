@@ -33,7 +33,13 @@ const Row = ({
   stretch,
   className,
 }) => (
-  <div className={classnames({ theme, flex, stretch, className })}>
+  <div className={classnames({
+    theme,
+    flex,
+    stretch,
+    className,
+    })}
+  >
     {children}
   </div>
 )

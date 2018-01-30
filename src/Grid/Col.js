@@ -12,7 +12,15 @@ import ThemeConsumer from '../ThemeConsumer'
 
 const consumeTheme = ThemeConsumer('UIGrid')
 
-const classnames = ({ theme, className, desk, tv, tablet, palm, alignEnd }) =>
+const classnames = ({
+  theme,
+  className,
+  desk,
+  tv,
+  tablet,
+  palm,
+  alignEnd,
+}) =>
   classNames(
     className,
     theme.col,

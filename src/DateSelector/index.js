@@ -52,15 +52,6 @@ class DateSelector extends Component {
     this.handleCancel = this.handleCancel.bind(this)
   }
 
-  componentWillReceiveProps (props) {
-    if (props && props.dates) {
-      const { dates } = props
-      if (dates) {
-        this.setState({ dates })
-      }
-    }
-  }
-
   getStrings () {
     return {
       ...defaultStrings,
@@ -126,7 +117,12 @@ class DateSelector extends Component {
   }
 
   renderPresets (presets) {
-    return presets.map(({ date, items, key, title }) => {
+    return presets.map(({
+      date,
+      items,
+      key,
+      title,
+    }) => {
       if (items) {
         return (
           <ol key={`${key}${title}`}>

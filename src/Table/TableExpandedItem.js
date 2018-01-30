@@ -29,7 +29,12 @@ const renderItem = (theme, text, children) => {
   return <TableEmptyItem className={theme.text} />
 }
 
-const TableExpandedItem = ({ theme, title, text, children }) => (
+const TableExpandedItem = ({
+  theme,
+  title,
+  text,
+  children,
+}) => (
   <div className={theme.expandedItem}>
     <span className={theme.title}>{title}</span>
     { renderItem(theme, text, children) }

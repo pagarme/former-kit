@@ -76,7 +76,6 @@ SegmentedSwitch.propTypes = {
 
 SegmentedSwitch.defaultProps = {
   theme: {},
-  selected: '',
 }
 
 export default consumeTheme(SegmentedSwitch)

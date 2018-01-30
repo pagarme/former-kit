@@ -10,14 +10,13 @@ const HeaderLink = ({
   icon,
   children,
 }) => (
-  <div
+  <button
     onClick={onClick}
-    role="button"
-    tabIndex="0"
+    role="link"
     className={theme.link}
   >
     {icon || children}
-  </div>
+  </button>
 )
 
 HeaderLink.propTypes = {

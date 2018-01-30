@@ -339,7 +339,6 @@ Table.propTypes = {
 
 Table.defaultProps = {
   className: '',
-  columns: [],
   expandable: false,
   expandedRows: [],
   icons: {},
@@ -349,7 +348,6 @@ Table.defaultProps = {
   onSelectRow: null,
   orderColumn: 0,
   orderSequence: 'ascending',
-  rows: [],
   selectable: false,
   selectedRows: [],
   theme: {},
