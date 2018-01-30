@@ -42,7 +42,6 @@ class InputState extends React.Component {
         success={success}
         type={type}
         value={email}
-        icons={icons}
       />
     )
   }
@@ -180,10 +179,6 @@ storiesOf('Inputs', module)
           placeholder="eae"
           hint="Minimo de 12 pixels"
           onChange={action('text changed')}
-          icons={{
-            hidePassword: <MdVisibilityOff />,
-            showPassword: <MdVisibility />,
-          }}
         />
       </section>
 
@@ -191,10 +186,6 @@ storiesOf('Inputs', module)
         <h3>Password default</h3>
         <InputState
           type="password"
-          icons={{
-            hidePassword: <MdVisibilityOff />,
-            showPassword: <MdVisibility />,
-          }}
         />
       </section>
 
@@ -203,10 +194,6 @@ storiesOf('Inputs', module)
         <InputState
           type="password"
           error="Digite mais caracteres"
-          icons={{
-            hidePassword: <MdVisibilityOff />,
-            showPassword: <MdVisibility />,
-          }}
         />
       </section>
 
@@ -215,10 +202,6 @@ storiesOf('Inputs', module)
         <InputState
           type="password"
           success="Boa rapá"
-          icons={{
-            hidePassword: <MdVisibilityOff />,
-            showPassword: <MdVisibility />,
-          }}
         />
       </section>
     </div>

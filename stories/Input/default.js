@@ -13,11 +13,6 @@ class InputState extends React.Component {
   constructor (props) {
     super(props)
     this.state = { email: 'Leo' }
-
-    this.icons = {
-      hidePassword: <MdVisibilityOff />,
-      showPassword: <MdVisibility />,
-    }
   }
 
   render () {
@@ -46,7 +41,6 @@ class InputState extends React.Component {
         success={success}
         type={type}
         value={email}
-        icons={this.icons}
       />
     )
   }
