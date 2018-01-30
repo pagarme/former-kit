@@ -1,7 +1,16 @@
-const path = require('path')
 const eslintFormatter = require('react-dev-utils/eslintFormatter')
 const stylelintFormatter = require('./stylelintFormatter')
 const postcssUrlRebase = require('./postcssUrlRebase')
+const paths = require('./paths')
+
+const postCSSPlugins = [
+  require('postcss-sass-each'),
+  require('postcss-hexrgba'),
+  require('postcss-import'),
+  require('postcss-url')({
+    url: postcssUrlRebase,
+  }),
+]
 
 module.exports = {
   module: {
@@ -18,7 +27,7 @@ module.exports = {
             loader: require.resolve('eslint-loader'),
           },
         ],
-        include: path.resolve(__dirname, '../src'),
+        include: paths.appSrc,
       },
       {
         test: /\.css$/,
@@ -31,12 +40,7 @@ module.exports = {
               formatter: stylelintFormatter,
               plugins: () => [
                 require('stylelint'),
-                require('postcss-sass-each'),
-                require('postcss-hexrgba'),
-                require('postcss-import'),
-                require('postcss-url')({
-                  url: postcssUrlRebase,
-                }),
+                ...postCSSPlugins,
                 require('postcss-cssnext')({
                   features: {
                     customProperties: {
@@ -67,12 +71,7 @@ module.exports = {
             options: {
               ident: 'postcss',
               plugins: () => [
-                require('postcss-sass-each'),
-                require('postcss-import'),
-                require('postcss-hexrgba'),
-                require('postcss-url')({
-                  url: postcssUrlRebase,
-                }),
+                ...postCSSPlugins,
                 require('postcss-cssnext')({
                   // We don't transpile CSS variables module in Storybook
                   features: {
@@ -104,12 +103,7 @@ module.exports = {
             options: {
               ident: 'postcss',
               plugins: () => [
-                require('postcss-sass-each'),
-                require('postcss-hexrgba'),
-                require('postcss-import'),
-                require('postcss-url')({
-                  url: postcssUrlRebase,
-                }),
+                ...postCSSPlugins,
                 require('postcss-cssnext')({
                   // We don't transpile CSS variables module in Storybook
                   features: {
