@@ -202,6 +202,7 @@ class Table extends Component {
     const isExpanded = contains(index, expandedRows)
     const isSelected = contains(index, selectedRows)
     const parityClass = getParityClass(index)
+    const key = `row_${index}`
     const rowProps = {
       columns: columns.slice(0, maxColumns),
       clickable: !!onRowClick,
@@ -210,7 +211,7 @@ class Table extends Component {
       expanded: isExpanded,
       expandable,
       index,
-      key: `$row_${index}`,
+      key,
       onClick: this.handleRowClick,
       onExpand: this.handleRowExpand,
       onSelect: this.handleRowSelect,
@@ -231,7 +232,7 @@ class Table extends Component {
       const hoverClass = classNames({
         [theme.hoverRow]: equals(index, this.state.hoveredRow),
       })
-
+      const expandedKey = `expanded_${key}`
       return [
         (
           <TableRow
@@ -247,6 +248,7 @@ class Table extends Component {
             columns={drop(maxColumns, columns)}
             data={row}
             index={index}
+            key={expandedKey}
             parity={parityClass}
             onMouseEnter={this.handleRowMouseEnter}
             onMouseLeave={this.handleRowMouseLeave}

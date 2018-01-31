@@ -60,7 +60,7 @@ class TableHead extends Component {
     if (!orderable) {
       return (
         <th
-          key={`column_${index + 1}`}
+          key={`header_column_${index + 1}`}
           className={columnClasses}
         >
           <div className={theme.tableHeadItem}>

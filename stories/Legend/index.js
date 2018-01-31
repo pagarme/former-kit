@@ -73,7 +73,13 @@ const createLegends = (title, status) => (
   <div>
     {title}
 
-    {status.map(({ color, text, outline, acronym, hideLabel }) => (
+    {status.map(({
+      color,
+      text,
+      outline,
+      acronym,
+      hideLabel,
+    }) => (
       <div key={text} style={{ margin: '10px' }}>
         <Legend
           color={color}

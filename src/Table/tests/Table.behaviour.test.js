@@ -44,7 +44,12 @@ describe('Table', () => {
       })
 
       describe('should throw the surplus columns in the expansible space', () => {
-        const { component, rows, columns, visibleColumnsCount } = createComponents({
+        const {
+          component,
+          rows,
+          columns,
+          visibleColumnsCount,
+        } = createComponents({
           selectable: false,
           expandable: true,
           expandedRows: [0],

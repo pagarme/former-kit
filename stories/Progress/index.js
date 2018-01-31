@@ -16,7 +16,7 @@ storiesOf('Progress', module)
         {percentages.map(percent => (
           <div key={`mock${percent}`}>
             <LinearProgress
-              label={'Lorem Label'}
+              label="Lorem Label"
               percent={percent}
             />
           </div>
@@ -28,7 +28,7 @@ storiesOf('Progress', module)
           <div key={`mock${percent}`}>
             <LinearProgress
               disabled
-              label={'Lorem Label'}
+              label="Lorem Label"
               percent={percent}
             />
           </div>

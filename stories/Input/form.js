@@ -1,8 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
-import MdVisibilityOff from 'react-icons/lib/md/visibility-off'
-import MdVisibility from 'react-icons/lib/md/visibility'
 import FaPlane from 'react-icons/lib/fa/plane'
 
 import Input from '../../src/Input/form'
@@ -22,7 +20,6 @@ class InputState extends React.Component {
       multiline,
       success,
       type,
-      icons,
     } = this.props
 
     const {

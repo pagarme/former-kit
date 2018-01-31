@@ -44,11 +44,13 @@ storiesOf('Typography', module)
       <h1>Parágrafo</h1>
       <p>
         Curabitur at finibus neque. In efficitur sapien ut lectus suscipit
-        consequat. Proin eget aliquam leo. <a href="">Maecenas mattis</a>&nbsp;
+        consequat. Proin eget aliquam leo.
+        <a href="http://www.lipsum.com">Maecenas mattis</a>&nbsp;
         quis nisi vel venenatis. Proin sit amet purus nec magna ornare
         iaculis. Curabitur at finibus neque. In efficitur sapien ut lectus
         suscipit consequat. Proin eget aliquam leo. Maecenas mattis quis nisi
-        vel venenatis. Proin sit amet ec <a href="">magna ornare</a> iaculis.
+        vel venenatis. Proin sit amet ec
+        <a href="http://www.lipsum.com">magna ornare</a> iaculis.
       </p>
       <h1>Listas</h1>
       <ul>

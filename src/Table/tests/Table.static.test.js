@@ -144,7 +144,7 @@ describe.only('Table', () => {
 
           headerColumns.forEach((colElement, index) => {
             const sp = colElement.find('span').first()
-            const title = columns[index].title
+            const { title } = columns[index]
 
             expect(sp.text().trim()).toBe(title)
           })
@@ -218,7 +218,7 @@ describe.only('Table', () => {
             !node.find(Button).exists()
           )
         cells.forEach((cell, index) => {
-          const acessor = columns[index].acessor
+          const { acessor } = columns[index]
           if (acessor) {
             expect(cell.text()).toBe(path(acessor, firstRowData))
           }
@@ -315,7 +315,8 @@ describe.only('Table', () => {
         const renderedRows = component.find(TableRow)
         renderedRows.forEach((renderedRow, rowIndex) => {
           const cells = renderedRow.findWhere(node => (
-            node.length > 0 && node.type() === 'td' &&
+            node.length > 0 &&
+            node.type() === 'td' &&
             !node.find(Checkbox).exists() &&
             !node.find(Button).exists())
           )

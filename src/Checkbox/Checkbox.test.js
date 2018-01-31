@@ -15,8 +15,8 @@ describe('Checkbox', () => {
         label="Leonardo"
         checked={false}
         onChange={onChange}
-        error={'error'}
-        success={'success'}
+        error="error"
+        success="success"
       />
     )
 
@@ -43,8 +43,8 @@ describe('Checkbox', () => {
         checked={false}
         disabled
         onChange={onChange}
-        error={'error'}
-        success={'success'}
+        error="error"
+        success="success"
       />
     )
 

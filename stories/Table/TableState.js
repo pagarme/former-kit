@@ -11,11 +11,6 @@ import {
   sortBy,
   toLower,
 } from 'ramda'
-import IconArrowDown from 'react-icons/lib/md/keyboard-arrow-down'
-import IconArrowUp from 'react-icons/lib/md/keyboard-arrow-up'
-import IconLongArrowDown from 'react-icons/lib/fa/long-arrow-down'
-import IconLongArrowUp from 'react-icons/lib/fa/long-arrow-up'
-import IconSort from 'react-icons/lib/fa/sort'
 
 import Table from '../../src/Table'
 import style from './style.css'

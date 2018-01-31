@@ -42,7 +42,7 @@ const testDateProp = (datesReceived, key, expected) => {
 }
 
 const testDatesProp = (onChange, start, end) => {
-  const calls = onChange.mock.calls
+  const { calls } = onChange.mock
   const lastCall = calls[calls.length - 1]
   const datesReceived = lastCall[0]
 
