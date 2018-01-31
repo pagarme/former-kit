@@ -13,7 +13,6 @@ storiesOf('Alerts', module)
       <p>Warning</p>
       <Alert
         type="warning"
-        base="light"
         icon={<IconWarning size={16} />}
       >
         <p><strong>Warning</strong> something is going on!</p>
@@ -21,7 +20,6 @@ storiesOf('Alerts', module)
       <p>Info</p>
       <Alert
         type="info"
-        base="light"
         icon={<IconInfo size={16} />}
       >
         <p><strong>Info</strong> you can do it better!</p>
@@ -29,7 +27,6 @@ storiesOf('Alerts', module)
       <p>Error</p>
       <Alert
         type="error"
-        base="light"
         icon={<IconClear size={16} />}
       >
         <p><strong>Error</strong> something went wrong!</p>
@@ -37,7 +34,6 @@ storiesOf('Alerts', module)
       <p>Success</p>
       <Alert
         type="success"
-        base="light"
         icon={<IconCheck size={16} />}
       >
         <p><strong>Success</strong> awesome, it worked!</p>

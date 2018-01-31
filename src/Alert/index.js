@@ -11,16 +11,17 @@ import ThemeConsumer from '../ThemeConsumer'
 
 const consumeTheme = ThemeConsumer('UIAlert')
 
+/**
+ * The Alert component is used to create alerts of all kinds, such as "errors", "warnings", etc.
+*/
 function Alert ({
   children,
-  base,
   icon,
   theme,
   type,
 }) {
   const iconClassName = classNames(
     theme.icon,
-    theme[base],
     theme[type]
   )
 
@@ -39,34 +40,40 @@ function Alert ({
 }
 
 Alert.propTypes = {
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper.
+   */
   theme: shape({
     alert: string,
     icon: string,
     content: string,
-    light: string,
-    dark: string,
     warning: string,
     info: string,
     error: string,
     success: string,
   }),
+  /**
+   * The alert icon. It should contain a React element.
+   */
   icon: element,
+  /**
+   * The types the alert can have. The background color
+   * of the icon box changes based on the class related to the defined type.
+   */
   type: oneOf([
     'warning',
     'info',
     'error',
     'success',
   ]).isRequired,
+  /**
+   * The children element. It should contain a React element.
+   */
   children: element.isRequired,
-  base: oneOf([
-    'dark',
-    'light',
-  ]),
 }
 
 Alert.defaultProps = {
   icon: null,
-  base: 'light',
   theme: {},
 }
 

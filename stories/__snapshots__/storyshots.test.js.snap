@@ -11,7 +11,7 @@ exports[`Storyshots Alerts All types 1`] = `
     className="alert"
   >
     <div
-      className="icon light warning"
+      className="icon warning"
     >
       <svg
         fill="currentColor"
@@ -51,7 +51,7 @@ exports[`Storyshots Alerts All types 1`] = `
     className="alert"
   >
     <div
-      className="icon light info"
+      className="icon info"
     >
       <svg
         fill="currentColor"
@@ -91,7 +91,7 @@ exports[`Storyshots Alerts All types 1`] = `
     className="alert"
   >
     <div
-      className="icon light error"
+      className="icon error"
     >
       <svg
         fill="currentColor"
@@ -131,7 +131,7 @@ exports[`Storyshots Alerts All types 1`] = `
     className="alert"
   >
     <div
-      className="icon light success"
+      className="icon success"
     >
       <svg
         fill="currentColor"
