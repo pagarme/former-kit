@@ -10,7 +10,11 @@ import {
   prop,
   defaultTo,
 } from 'ramda'
-
+/**
+ * Single value selector which shows a list of selectable options.
+ * A callback (received in props) is fired when an option is selected. The callback receives
+ * the value for the option selected.
+ */
 class Dropdown extends React.Component {
   constructor (props) {
     super(props)
@@ -138,6 +142,9 @@ class Dropdown extends React.Component {
 }
 
 Dropdown.propTypes = {
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper.
+   */
   theme: PropTypes.shape({
     arrow: PropTypes.string,
     disabled: PropTypes.string,
@@ -148,20 +155,65 @@ Dropdown.propTypes = {
     secondaryText: PropTypes.string,
     success: PropTypes.string,
   }),
+  /**
+   * Disables the component.
+   */
   disabled: PropTypes.bool,
+  /**
+   * Error message which adds error classes to the component.
+   * This message stays under the value selector.
+   */
   error: PropTypes.string,
+  /**
+   * Default component icons. These icons must be changed in the theme.
+   */
   icons: PropTypes.shape({
+    /**
+     * Icons at the right side of the selector.
+     */
     expand: PropTypes.element,
   }),
+  /**
+   * Text used as placeholder until the component receives focus.
+   * When the component is focused this text stays over the component.
+   * This behavior is used only in the form component variant.
+   */
   label: PropTypes.string,
+  /**
+   * Component name used to create the component id.
+   */
   name: PropTypes.string.isRequired,
+  /**
+   * List of objects which will be the base for the component options.
+   */
   options: PropTypes.arrayOf(PropTypes.shape({
+    /**
+     * Option value, which will be returned in the select function.
+     */
     value: PropTypes.string,
+    /**
+     * Option name shown in the options list.
+     */
     name: PropTypes.string,
   })).isRequired,
+  /**
+   * Triggered when an option is selected.
+   * @param {string} value
+   */
   onChange: PropTypes.func.isRequired,
+  /**
+   * Text which will be shown when none option is selected
+   * (in the form variant the label may replace the placeholder)
+   */
   placeholder: PropTypes.string,
+  /**
+   * Success message which adds success classes to the component.
+   * The message stays under the value selector.
+   */
   success: PropTypes.string,
+  /**
+   * Selected value. If it is not set, the placeholder will be shown.
+   */
   value: PropTypes.string,
 }
 
