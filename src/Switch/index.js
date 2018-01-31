@@ -22,7 +22,12 @@ function getStrings (strings) {
 }
 
 const consumeTheme = ThemeConsumer('UISwitch')
-
+/**
+ * Binary value selector, used mainly when you need a true
+ * or false condition.
+ * Triggers a received onChange function when a value is
+ * changed and returns a boolean value
+ */
 function Switch ({
   disabled,
   onChange,
@@ -55,16 +60,37 @@ function Switch ({
 }
 
 Switch.propTypes = {
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper
+  */
   theme: shape({
     switch: string,
     checked: string,
     disabled: string,
   }),
+  /**
+   * Prop used to tell if the component is disabled or not.
+  */
   disabled: bool,
+  /** The callback called when the Switch receives a click.
+   * @param {boolean} checked - returns the inverse of the 'checked' prop.
+  */
   onChange: func.isRequired,
+  /**
+   * Prop used to tell if the component is checked or not.
+  */
   checked: bool,
+  /**
+   * Texts used to the I18n of the component.
+  */
   strings: shape({
+    /**
+     * Message shown when the component is active.
+    */
     on: string,
+    /**
+     * Message shown when the component is not active.
+    */
     off: string,
   }),
 }
