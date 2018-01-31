@@ -5,6 +5,10 @@ import ThemeConsumer from '../ThemeConsumer'
 
 const consumeTheme = ThemeConsumer('UITag')
 
+/**
+ * Visual non interactive items which represent an item
+ * in a gracefully way.
+ */
 const Tag = ({
   theme,
   children,
@@ -15,9 +19,18 @@ const Tag = ({
 )
 
 Tag.propTypes = {
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper
+   */
   theme: PropTypes.shape({
+    /**
+     * The main class used to stylize the element.
+     */
     tag: PropTypes.string,
   }),
+  /*
+   * The children is a string.
+   */
   children: PropTypes.string.isRequired,
 }
 
