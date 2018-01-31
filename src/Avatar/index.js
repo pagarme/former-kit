@@ -36,7 +36,14 @@ Avatar.propTypes = {
     avatar: PropTypes.string,
     placeholder: PropTypes.string,
   }),
+  /**
+   * Avatar width and height.
+   */
   size: PropTypes.number,
+  /**
+   * Path (url) to image used on Avatar, if no image is passed
+   * Avatar will use `icons.placeholder` instead.
+   */
   photo: PropTypes.string,
   icons: PropTypes.shape({
     placeholder: PropTypes.element,

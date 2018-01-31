@@ -18,9 +18,21 @@ const Arrow = ({ active, icons }) => {
 }
 
 Arrow.propTypes = {
+  /**
+   * Indicates which icon should be rendered.
+   */
   active: PropTypes.bool.isRequired,
+  /**
+   * The icon theme for this element.
+   */
   icons: PropTypes.shape({
+    /**
+     * The icon shown when the SidebarLink is collapsed.
+     */
     collapse: PropTypes.element,
+    /**
+     * The icon shown when the SidebarLink is expanded.
+     */
     expand: PropTypes.element,
   }),
 }
@@ -90,21 +102,68 @@ const hasNecessaryIcons = ({ icons, children }, propName) => {
 }
 
 SidebarLink.propTypes = {
+  /**
+   * The style classes for this element.
+   */
   theme: PropTypes.shape({
+    /**
+     * The main class used to style the component.
+     */
     link: PropTypes.string,
+    /**
+     * The class used to style the component if it's active.
+     */
     active: PropTypes.string,
-    text: PropTypes.string,
+    /**
+     * The class used to style the title.
+     */
     title: PropTypes.string,
+    /**
+     * The class used to style the subtitle.
+     */
     subtitle: PropTypes.string,
+    /**
+     * The class used to style the icon defined by the user.
+     */
     icon: PropTypes.string,
   }),
+  /**
+   * Indicates if the element is active or not.
+   */
   active: PropTypes.bool,
+  /**
+   * The children can contain any kind of component.
+   */
   children: PropTypes.node,
+  /**
+   * Indicates if the element is collapsed or not.
+   */
   collapsed: PropTypes.bool,
+  /**
+   * The icon defined by the user. It's shown with the title
+   * and is also shown alone when the sidebar is collapsed.
+   */
   icon: PropTypes.element,
+  /**
+   * The icon theme for this element.
+   * The icons 'collapse' and 'expand' are mandatory if
+   * the element has children.
+   * @prop {object} expand - icon which represents expand acion
+   * @prop {object} collapse - icon which represents collapse acion
+   */
   icons: hasNecessaryIcons,
+  /**
+   * The onClick callback. It receives 'events' as an argument.
+   * @param {object} event - the default event object.
+   */
   onClick: PropTypes.func,
+  /**
+   * The subtitle of the component.
+   */
   subtitle: PropTypes.string,
+  /**
+   * The title of the component.
+   */
   title: PropTypes.string.isRequired,
 }
 

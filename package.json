@@ -92,12 +92,15 @@
     "storybook": "start-storybook -p 6006",
     "percy": "build-storybook && percy-storybook --widths=1024,1920; true",
     "build-storybook": "build-storybook",
-    "publish-preview": "storybook-to-ghpages"
+    "publish-preview": "storybook-to-ghpages",
+    "styleguide": "styleguidist server --config=./config/styleguide.config.js",
+    "styleguide:build": "styleguidist build --config=./config/styleguide.config.js"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
     "babel-plugin-transform-es2015-modules-commonjs": "6.26.0",
     "enzyme-adapter-react-16": "^1.1.1",
-    "former-kit-skin-pagarme": "0.0.3"
+    "former-kit-skin-pagarme": "0.0.3",
+    "react-styleguidist": "^6.2.1"
   }
 }

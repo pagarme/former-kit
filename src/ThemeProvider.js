@@ -6,6 +6,9 @@ import {
   object,
 } from 'prop-types'
 
+/**
+ * Apply theme to UI
+ */
 export default class ThemeProvider extends React.Component {
   getChildContext () {
     const { theme } = this.props
@@ -44,9 +47,6 @@ export default class ThemeProvider extends React.Component {
  */
 
 ThemeProvider.childContextTypes = {
-  /**
-   * @type {Theme} -theme
-   */
   theme: shape({
     name: string,
     version: string,
@@ -56,9 +56,6 @@ ThemeProvider.childContextTypes = {
 }
 
 ThemeProvider.propTypes = {
-  /**
-   * @type {Theme} -theme
-   */
   theme: shape({
     name: string,
     version: string,
