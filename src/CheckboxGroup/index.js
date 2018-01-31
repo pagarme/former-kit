@@ -18,6 +18,14 @@ import Checkbox from '../Checkbox/form'
 
 const consumeTheme = ThemeConsumer('UICheckboxGroup')
 
+/**
+ * Group of checkbox components which can be used to
+ * control multiple selectable items.
+ * It needs a list of options with value and label, and allows
+ * the selection of the components using the options.
+ * When an option is checked/unchecked, it triggers a function which
+ * returns all checked options.
+ */
 class CheckboxGroup extends React.Component {
   constructor (props) {
     super(props)
@@ -111,23 +119,62 @@ class CheckboxGroup extends React.Component {
 }
 
 CheckboxGroup.propTypes = {
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper.
+   */
   theme: PropTypes.shape({
     checkboxGroup: PropTypes.string,
     secondaryText: PropTypes.string,
     error: PropTypes.string,
     success: PropTypes.string,
   }),
+  /**
+   * List of objects which will be the base for the checkbox components.
+   */
   options: PropTypes.arrayOf(PropTypes.shape({
+    /**
+     * Option value, which will be returned in the selected items list if
+     * the related checkbox is checked.
+     */
     value: PropTypes.string,
+    /**
+     * Option label shown next to the checkbox.
+     */
     label: PropTypes.string,
   })).isRequired,
+  /**
+   * Group name, used in the checkboxes like the native html checkbox name.
+   */
   name: PropTypes.string.isRequired,
+  /**
+   * Triggered when an option is checked or unchecked.
+   * @param {Array<string>} values
+   */
   onChange: PropTypes.func.isRequired,
+  /**
+   * List of checked options.
+   */
   values: PropTypes.arrayOf(PropTypes.string).isRequired,
+  /**
+   * Allows or not the interaction with the checkboxes.
+   */
   disabled: PropTypes.bool,
+  /**
+   * Error message which sets the error classes to the component.
+   */
   error: PropTypes.string,
+  /**
+   * Success message which sets the success classes to the component.
+   */
   success: PropTypes.string,
+  /**
+   * Custom css classes which can be added to the checkbox group.
+   */
   className: PropTypes.string,
+  /**
+   * The number of columns in which the list will be divided.
+   * The groups disposition is in columns.
+   */
   columns: PropTypes.number,
 }
 
