@@ -174,7 +174,7 @@ exports[`Storyshots Avatar All types 1`] = `
   <div
     className="avatar placeholder"
   >
-    <img />
+    <svg />
   </div>
   <img
     alt="Foto de perfil"
@@ -1617,7 +1617,7 @@ exports[`Storyshots Cards default theme 1`] = `
                 <span
                   className="arrow"
                 >
-                  <img />
+                  <svg />
                 </span>
               </span>
               <span
@@ -2751,7 +2751,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                   onMouseUp={[Function]}
                   type="button"
                 >
-                  <img />
+                  <svg />
                 </button>
                 <button
                   aria-label="Move forward to switch to the next month"
@@ -2760,7 +2760,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                   onMouseUp={[Function]}
                   type="button"
                 >
-                  <img />
+                  <svg />
                 </button>
               </div>
               <div
@@ -5703,7 +5703,7 @@ exports[`Storyshots Dropdown Default 1`] = `
         <span
           className="arrow"
         >
-          <img />
+          <svg />
         </span>
         
       </div>
@@ -5759,7 +5759,7 @@ exports[`Storyshots Dropdown Default 1`] = `
         <span
           className="arrow"
         >
-          <img />
+          <svg />
         </span>
         
       </div>
@@ -5815,7 +5815,7 @@ exports[`Storyshots Dropdown Default 1`] = `
         <span
           className="arrow"
         >
-          <img />
+          <svg />
         </span>
         
       </div>
@@ -5871,7 +5871,7 @@ exports[`Storyshots Dropdown Default 1`] = `
         <span
           className="arrow"
         >
-          <img />
+          <svg />
         </span>
         
       </div>
@@ -5942,7 +5942,7 @@ exports[`Storyshots Dropdown Form 1`] = `
         <span
           className="arrow"
         >
-          <img />
+          <svg />
         </span>
         
       </div>
@@ -6003,7 +6003,7 @@ exports[`Storyshots Dropdown Form 1`] = `
         <span
           className="arrow"
         >
-          <img />
+          <svg />
         </span>
         
       </div>
@@ -6064,7 +6064,7 @@ exports[`Storyshots Dropdown Form 1`] = `
         <span
           className="arrow"
         >
-          <img />
+          <svg />
         </span>
         
       </div>
@@ -6125,7 +6125,7 @@ exports[`Storyshots Dropdown Form 1`] = `
         <span
           className="arrow"
         >
-          <img />
+          <svg />
         </span>
         
       </div>
@@ -6186,7 +6186,7 @@ exports[`Storyshots Dropdown Form 1`] = `
         <span
           className="arrow"
         >
-          <img />
+          <svg />
         </span>
         <p
           className="secondaryText"
@@ -6251,7 +6251,7 @@ exports[`Storyshots Dropdown Form 1`] = `
         <span
           className="arrow"
         >
-          <img />
+          <svg />
         </span>
         <p
           className="secondaryText"
@@ -8184,12 +8184,12 @@ exports[`Storyshots Header defaultTheme 1`] = `
           <div
             className="avatar placeholder"
           >
-            <img />
+            <svg />
           </div>
           <span>
             Nome da Pessoa
           </span>
-          <img />
+          <svg />
         </button>
       </div>
     </header>
@@ -8212,7 +8212,7 @@ exports[`Storyshots Header defaultTheme 1`] = `
         className="backButton"
         onClick={[Function]}
       >
-        <img />
+        <svg />
       </button>
       <h1
         className="title"
@@ -8287,7 +8287,7 @@ exports[`Storyshots Header defaultTheme 1`] = `
           <span>
             Nome da Pessoa
           </span>
-          <img />
+          <svg />
         </button>
       </div>
     </header>
@@ -9187,7 +9187,7 @@ exports[`Storyshots Inputs Default 1`] = `
             className="displayPasswordIcon"
             onClick={[Function]}
           >
-            <img />
+            <svg />
           </button>
           <label
             className="contentPresent"
@@ -9231,7 +9231,7 @@ exports[`Storyshots Inputs Default 1`] = `
             className="displayPasswordIcon"
             onClick={[Function]}
           >
-            <img />
+            <svg />
           </button>
           <label
             className="contentPresent"
@@ -9275,7 +9275,7 @@ exports[`Storyshots Inputs Default 1`] = `
             className="displayPasswordIcon"
             onClick={[Function]}
           >
-            <img />
+            <svg />
           </button>
           <label
             className="contentPresent"
@@ -10187,7 +10187,7 @@ exports[`Storyshots Inputs Form 1`] = `
             className="displayPasswordIcon"
             onClick={[Function]}
           >
-            <img />
+            <svg />
           </button>
           <label
             className="contentPresent"
@@ -10231,7 +10231,7 @@ exports[`Storyshots Inputs Form 1`] = `
             className="displayPasswordIcon"
             onClick={[Function]}
           >
-            <img />
+            <svg />
           </button>
           <label
             className="contentPresent"
@@ -10275,7 +10275,7 @@ exports[`Storyshots Inputs Form 1`] = `
             className="displayPasswordIcon"
             onClick={[Function]}
           >
-            <img />
+            <svg />
           </button>
           <label
             className="contentPresent"
@@ -10759,7 +10759,7 @@ exports[`Storyshots Pagination defaultTheme 1`] = `
           disabled={true}
           onClick={[Function]}
         >
-          <img />
+          <svg />
         </button>
         <label
           className="label"
@@ -10803,7 +10803,7 @@ exports[`Storyshots Pagination defaultTheme 1`] = `
           disabled={true}
           onClick={[Function]}
         >
-          <img />
+          <svg />
         </button>
       </div>
       <p>
@@ -10837,7 +10837,7 @@ exports[`Storyshots Pagination defaultTheme 1`] = `
           disabled={true}
           onClick={[Function]}
         >
-          <img />
+          <svg />
         </button>
         <label
           className="label"
@@ -10881,7 +10881,7 @@ exports[`Storyshots Pagination defaultTheme 1`] = `
           disabled={false}
           onClick={[Function]}
         >
-          <img />
+          <svg />
         </button>
       </div>
       <p>
@@ -10915,7 +10915,7 @@ exports[`Storyshots Pagination defaultTheme 1`] = `
           disabled={false}
           onClick={[Function]}
         >
-          <img />
+          <svg />
         </button>
         <label
           className="label"
@@ -10959,7 +10959,7 @@ exports[`Storyshots Pagination defaultTheme 1`] = `
           disabled={false}
           onClick={[Function]}
         >
-          <img />
+          <svg />
         </button>
       </div>
       <p>
@@ -10993,7 +10993,7 @@ exports[`Storyshots Pagination defaultTheme 1`] = `
           disabled={false}
           onClick={[Function]}
         >
-          <img />
+          <svg />
         </button>
         <label
           className="label"
@@ -11037,7 +11037,7 @@ exports[`Storyshots Pagination defaultTheme 1`] = `
           disabled={true}
           onClick={[Function]}
         >
-          <img />
+          <svg />
         </button>
       </div>
       <p>
@@ -11071,7 +11071,7 @@ exports[`Storyshots Pagination defaultTheme 1`] = `
           disabled={true}
           onClick={[Function]}
         >
-          <img />
+          <svg />
         </button>
         <label
           className="label"
@@ -11115,7 +11115,7 @@ exports[`Storyshots Pagination defaultTheme 1`] = `
           disabled={false}
           onClick={[Function]}
         >
-          <img />
+          <svg />
         </button>
       </div>
       <p>
@@ -11149,7 +11149,7 @@ exports[`Storyshots Pagination defaultTheme 1`] = `
           disabled={true}
           onClick={[Function]}
         >
-          <img />
+          <svg />
         </button>
         <label
           className="label"
@@ -11193,7 +11193,7 @@ exports[`Storyshots Pagination defaultTheme 1`] = `
           disabled={true}
           onClick={[Function]}
         >
-          <img />
+          <svg />
         </button>
       </div>
       <p>
@@ -11230,7 +11230,7 @@ exports[`Storyshots Pagination defaultTheme 1`] = `
           disabled={true}
           onClick={[Function]}
         >
-          <img />
+          <svg />
         </button>
         <label
           className="label"
@@ -11274,7 +11274,7 @@ exports[`Storyshots Pagination defaultTheme 1`] = `
           disabled={false}
           onClick={[Function]}
         >
-          <img />
+          <svg />
         </button>
       </div>
       <p>
@@ -12248,7 +12248,7 @@ exports[`Storyshots Sidebar defaultTheme 1`] = `
             <span>
               mostrar saldo
             </span>
-            <img />
+            <svg />
           </div>
         </button>
       </li>
@@ -12819,7 +12819,7 @@ exports[`Storyshots Table Action column 1`] = `
                
             </span>
             <span>
-              <img />
+              <svg />
             </span>
           </div>
         </th>
@@ -12836,7 +12836,7 @@ exports[`Storyshots Table Action column 1`] = `
                
             </span>
             <span>
-              <img />
+              <svg />
             </span>
           </div>
         </th>
@@ -12853,7 +12853,7 @@ exports[`Storyshots Table Action column 1`] = `
                
             </span>
             <span>
-              <img />
+              <svg />
             </span>
           </div>
         </th>
@@ -12870,7 +12870,7 @@ exports[`Storyshots Table Action column 1`] = `
                
             </span>
             <span>
-              <img />
+              <svg />
             </span>
           </div>
         </th>
@@ -12887,7 +12887,7 @@ exports[`Storyshots Table Action column 1`] = `
                
             </span>
             <span>
-              <img />
+              <svg />
             </span>
           </div>
         </th>
@@ -12904,7 +12904,7 @@ exports[`Storyshots Table Action column 1`] = `
                
             </span>
             <span>
-              <img />
+              <svg />
             </span>
           </div>
         </th>
@@ -13260,7 +13260,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                
             </span>
             <span>
-              <img />
+              <svg />
             </span>
           </div>
         </th>
@@ -13277,7 +13277,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                
             </span>
             <span>
-              <img />
+              <svg />
             </span>
           </div>
         </th>
@@ -13294,7 +13294,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                
             </span>
             <span>
-              <img />
+              <svg />
             </span>
           </div>
         </th>
@@ -13311,7 +13311,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                
             </span>
             <span>
-              <img />
+              <svg />
             </span>
           </div>
         </th>
@@ -13328,7 +13328,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                
             </span>
             <span>
-              <img />
+              <svg />
             </span>
           </div>
         </th>
@@ -13345,7 +13345,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                
             </span>
             <span>
-              <img />
+              <svg />
             </span>
           </div>
         </th>
@@ -13362,7 +13362,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                
             </span>
             <span>
-              <img />
+              <svg />
             </span>
           </div>
         </th>
@@ -13469,7 +13469,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <img />
+            <svg />
           </button>
         </td>
       </tr>
@@ -13568,7 +13568,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <img />
+            <svg />
           </button>
         </td>
       </tr>
@@ -13667,7 +13667,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <img />
+            <svg />
           </button>
         </td>
       </tr>
@@ -13774,7 +13774,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <img />
+            <svg />
           </button>
         </td>
       </tr>
@@ -13823,7 +13823,7 @@ exports[`Storyshots Table Simple 1`] = `
                
             </span>
             <span>
-              <img />
+              <svg />
             </span>
           </div>
         </th>
@@ -13840,7 +13840,7 @@ exports[`Storyshots Table Simple 1`] = `
                
             </span>
             <span>
-              <img />
+              <svg />
             </span>
           </div>
         </th>
@@ -13857,7 +13857,7 @@ exports[`Storyshots Table Simple 1`] = `
                
             </span>
             <span>
-              <img />
+              <svg />
             </span>
           </div>
         </th>
@@ -13874,7 +13874,7 @@ exports[`Storyshots Table Simple 1`] = `
                
             </span>
             <span>
-              <img />
+              <svg />
             </span>
           </div>
         </th>
@@ -13891,7 +13891,7 @@ exports[`Storyshots Table Simple 1`] = `
                
             </span>
             <span>
-              <img />
+              <svg />
             </span>
           </div>
         </th>
@@ -13908,7 +13908,7 @@ exports[`Storyshots Table Simple 1`] = `
                
             </span>
             <span>
-              <img />
+              <svg />
             </span>
           </div>
         </th>
@@ -13925,7 +13925,7 @@ exports[`Storyshots Table Simple 1`] = `
                
             </span>
             <span>
-              <img />
+              <svg />
             </span>
           </div>
         </th>
@@ -14241,15 +14241,15 @@ exports[`Storyshots Typography Aplicações 1`] = `
     Parágrafo
   </h1>
   <p>
-    Curabitur at finibus neque. In efficitur sapien ut lectus suscipit consequat. Proin eget aliquam leo. 
+    Curabitur at finibus neque. In efficitur sapien ut lectus suscipit consequat. Proin eget aliquam leo.
     <a
-      href=""
+      href="http://www.lipsum.com"
     >
       Maecenas mattis
     </a>
-      quis nisi vel venenatis. Proin sit amet purus nec magna ornare iaculis. Curabitur at finibus neque. In efficitur sapien ut lectus suscipit consequat. Proin eget aliquam leo. Maecenas mattis quis nisi vel venenatis. Proin sit amet ec 
+      quis nisi vel venenatis. Proin sit amet purus nec magna ornare iaculis. Curabitur at finibus neque. In efficitur sapien ut lectus suscipit consequat. Proin eget aliquam leo. Maecenas mattis quis nisi vel venenatis. Proin sit amet ec
     <a
-      href=""
+      href="http://www.lipsum.com"
     >
       magna ornare
     </a>
