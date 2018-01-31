@@ -63,6 +63,9 @@ const getStrings = strings => ({
   ...strings,
 })
 
+/**
+ * This component is used for paginate a section, gallery, a table or any other element.
+ */
 class Pagination extends React.Component {
   constructor (props) {
     super(props)
@@ -340,6 +343,9 @@ class Pagination extends React.Component {
 }
 
 Pagination.propTypes = {
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper.
+   */
   theme: PropTypes.shape({
     currentPage: PropTypes.string,
     label: PropTypes.string,
@@ -352,15 +358,39 @@ Pagination.propTypes = {
     expander: PropTypes.string,
     separator: PropTypes.string,
   }),
+  /**
+   * The number of the current page.
+   */
   currentPage: PropTypes.number.isRequired,
+  /**
+   * The previous and next page icons.
+   */
   icons: PropTypes.shape({
+    /**
+     * The previous page icon.
+     */
     previous: PropTypes.element.isRequired,
+    /**
+     * The next page icon.
+     */
     next: PropTypes.element.isRequired,
   }),
+  /**
+   * It iss called when the current page changes.
+   */
   onPageChange: PropTypes.func.isRequired,
+  /**
+   * Strings for component i18n.
+   */
   strings: PropTypes.shape({
+    /**
+     * The 'of' between the current and the last page.
+     */
     of: PropTypes.string,
   }),
+  /**
+   * The total pages number.
+   */
   totalPages: PropTypes.number.isRequired,
 }
 
