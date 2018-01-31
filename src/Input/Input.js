@@ -16,6 +16,10 @@ const validateMultiline = (props, propName) => {
   }
 }
 
+/**
+ * Custom Input component, which is the native html 'input' on steroids.
+ * It also has an awesome skin and a multiline version.
+ */
 class Input extends React.PureComponent {
   constructor (props) {
     super(props)
@@ -186,6 +190,9 @@ class Input extends React.PureComponent {
 }
 
 Input.propTypes = {
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper.
+   */
   theme: PropTypes.shape({
     input: PropTypes.string,
     icon: PropTypes.string,
@@ -199,21 +206,61 @@ Input.propTypes = {
     expander: PropTypes.string,
     contentPresent: PropTypes.string,
   }),
+  /**
+   * Aditional css classes which can be applied to the input.
+   */
   className: PropTypes.string,
+  /**
+   * The prop that disables the component.
+   */
   disabled: PropTypes.bool,
+  /**
+   * Error message which indicates error and adds error classes.
+   */
   error: PropTypes.string,
+  /**
+   * Hint text which stays below the input.
+   */
   hint: PropTypes.string,
+  /**
+   * Custom icon which stays at the left side of the input.
+   */
   icon: PropTypes.element,
+  /**
+   * Input's label, used as placeholder until the input receives focus.
+   * When the input is focused, the label stays above the input.
+   */
   label: PropTypes.string,
+  /**
+   * Allow multiline texts if the component type is text.
+   */
   multiline: validateMultiline,
+  /**
+   * Input's name.
+   */
   name: PropTypes.string,
+  /**
+   * The onChange callback is triggered when the value of the input changes.
+   */
   onChange: PropTypes.func.isRequired,
+  /**
+   * Default icons, used to tell the user if the password is being shown or not.
+   */
   icons: PropTypes.shape({
     showPassword: PropTypes.element,
     hidePassword: PropTypes.element,
   }),
+  /**
+   * Input's placeholder.
+   */
   placeholder: PropTypes.string,
+  /**
+   * Success message which indicates success and adds success classes.
+   */
   success: PropTypes.string,
+  /**
+   * Input's type.
+   */
   type: PropTypes.oneOf([
     'text',
     'password',
@@ -221,8 +268,17 @@ Input.propTypes = {
     'email',
     'phone',
   ]),
+  /**
+   * Input's value.
+   */
   value: PropTypes.string.isRequired,
+  /**
+   * Triggered by the input's blur event.
+   */
   onBlur: PropTypes.func,
+  /**
+   * Triggered by the input's focus event.
+   */
   onFocus: PropTypes.func,
 }
 
