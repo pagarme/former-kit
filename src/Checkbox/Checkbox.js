@@ -7,7 +7,10 @@ import {
 } from 'prop-types'
 
 import classNames from 'classnames'
-
+/**
+ * Custom checkbox component, which works like the native html 'checkbox'
+ * element, but with an awesome skin.
+ */
 const Checkbox = ({
   disabled,
   error,
@@ -56,6 +59,9 @@ const Checkbox = ({
 }
 
 Checkbox.propTypes = {
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper.
+   */
   theme: shape({
     checkbox: string,
     check: string,
@@ -64,13 +70,37 @@ Checkbox.propTypes = {
     success: string,
     error: string,
   }),
+  /**
+   * Same as the native prop 'name' the checkbox has.
+   */
   name: string.isRequired,
+  /**
+   * Same as the native prop 'html' the checkbox has.
+   */
   value: string.isRequired,
+  /**
+   * Component text which will trigger events related to the checkbox input.
+   */
   label: string.isRequired,
+  /**
+   * Same as the native prop 'checked' the checkbox has.
+   */
   checked: bool.isRequired,
+  /**
+   * Triggers when the checkbox or label is clicked.
+   */
   onChange: func.isRequired,
+  /**
+   * Same as the native prop 'disabled' the checkbox has.
+   */
   disabled: bool,
+  /**
+   * Error message which sets error classes to the component.
+   */
   error: string,
+  /**
+   * Success message which sets success classes to the component.
+   */
   success: string,
 }
 
