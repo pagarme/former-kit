@@ -19,6 +19,16 @@ export default function ThemeConsumer (name) {
     }
 
     themed.contextTypes = {
+      /**
+       * It's provided by the theme provider and this wrapepr consume this
+       * passing the `theme` and `icons` objects as props to the child component.
+       * This wrapper is applyed to all components in this library using the
+       * consumeTheme function in the components.
+       *
+       * @type {Theme} theme
+       * @prop {Styles} styles
+       * @prop {Icons} icons
+       */
       theme: object,
     }
 

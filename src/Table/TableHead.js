@@ -5,6 +5,7 @@ import {
   element,
   func,
   number,
+  oneOf,
   oneOfType,
   shape,
   string,
@@ -129,6 +130,9 @@ class TableHead extends Component {
 }
 
 TableHead.propTypes = {
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper.
+   */
   theme: shape({
     tableHead: string,
     ascending: string,
@@ -136,6 +140,9 @@ TableHead.propTypes = {
     open: string,
     tableHeadItem: string,
   }),
+  /**
+   * Columns which will name the reader cells.
+   */
   columns: arrayOf(shape({
     title: string.isRequired,
     acessor: oneOfType([
@@ -144,17 +151,42 @@ TableHead.propTypes = {
     ]),
     renderer: func,
   })).isRequired,
+  /**
+   * Add expandable column in the header.
+   */
   expandable: bool,
+  /**
+   * Default icons which illustrate the order.
+   */
   icons: shape({
     ascending: element,
     descending: element,
     orderable: element,
   }),
+  /**
+   * It's called when a orderable column in the header is clicked.
+   * @param {int} index - order column index.
+   */
   onOrderChange: func,
+  /**
+   * It's called when the checkbox from the selectable column is checked.
+   */
   onSelect: func,
-  order: string,
+  /**
+   * Rows order sequence.
+   */
+  order: oneOf(['ascending', 'descending']),
+  /**
+   * Default order column index.
+   */
   orderColumn: number.isRequired,
+  /**
+   * Enables the selectable column.
+   */
   selectable: bool,
+  /**
+   * Selectable column checkbox state.
+   */
   selected: bool,
 }
 

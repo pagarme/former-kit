@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react'
 import {
   arrayOf,
   func,
+  oneOf,
   oneOfType,
   number,
   shape,
@@ -107,13 +108,23 @@ class TableExpandedRow extends PureComponent {
 }
 
 TableExpandedRow.propTypes = {
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper.
+   */
   theme: shape({
     tableRow: string,
     expandable: string,
     even: string,
     odd: string,
   }),
+  /**
+   * Aditional css classes which can be applyed to the expanded row.
+   */
   className: string,
+  /**
+   * Columns which will provide access to the data received.
+   * These columns are the columns which are not shown in the table.
+   */
   columns: arrayOf(shape({
     title: string.isRequired,
     acessor: oneOfType([
@@ -122,11 +133,28 @@ TableExpandedRow.propTypes = {
     ]),
     renderer: func,
   })).isRequired,
+  /**
+   * Set of data native of row data from the table.
+   */
   data: shape({}).isRequired,
+  /**
+   * Row index.
+   */
   index: number.isRequired,
+  /**
+   * Function triggered when the mouse enters in the component (hover in).
+   * @param {number} index
+   */
   onMouseEnter: func.isRequired,
+  /**
+   * Function triggered when the mouse leaves the component (hover out).
+   * @param {number} index
+   */
   onMouseLeave: func.isRequired,
-  parity: string,
+  /**
+   * Define the line color
+   */
+  parity: oneOf(['even', 'odd']),
 }
 
 TableExpandedRow.defaultProps = {

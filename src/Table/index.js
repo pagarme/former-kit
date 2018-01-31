@@ -113,6 +113,16 @@ const validateIconsShape = (props, propName) => {
   }
 }
 
+/**
+ * This component is designed to show tabular data with some customizations,
+ * allowing the user to sort, select and click rows, also show rows details
+ * with the expandable function.
+ * The columns must have a specific structure which allow the data read and
+ * cells output customization.
+ * The table is not responsible for the data received, all events trigged in
+ * this component are thrown to the father component to keep the table without
+ * business logic.
+ */
 class Table extends Component {
   constructor (props) {
     super(props)
@@ -310,32 +320,112 @@ class Table extends Component {
 }
 
 Table.propTypes = {
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper
+   */
   theme: shape({
+    /**
+     * Base table class
+     */
     table: string,
   }),
+  /**
+   * Additional css classes which can be applied to the table component.
+   */
   className: string,
+  /**
+   * A set of objects which represents the table columns and determine
+   * how the rows props will be accessed in the table construction functions.
+   */
   columns: arrayOf(shape({
+    /**
+     * It's the path for the cell value in the row object,
+     * it's required for orderable columns.
+     */
     acessor: oneOfType([
       string,
       arrayOf(string),
     ]),
+    /**
+     * Identify if it's an action column.
+     */
     isAction: bool,
+    /**
+     * Enable a column to be orderable.
+     */
     orderable: bool,
+    /**
+     * A custom function which will receive the row data object and should return
+     * a React element to be rendered in each cell bind to this column.
+     */
     renderer: func,
+    /**
+     * This title is used to identify the column in the header and to identify the
+     * column data in the expandable rows.
+     */
     title: string.isRequired,
   })).isRequired,
+  /**
+   * Enables the expandable column in the table which allow the user to see all of the remaining
+   * columns which exceed the table maxColumns prop.
+   */
   expandable: bool,
+  /**
+   * List of indexes of expanded rows in the table.
+   */
   expandedRows: arrayOf(number),
+  /**
+   * Default actions icons.
+   * @prop {object} expand - icon which represents expand acion in expandable button.
+   * @prop {object} collapse - icon which represents collapse acion in expandable button.
+   */
   icons: validateIconsShape,
+  /**
+   * Number of table columns, all the remaining columns will be droped in a expandable
+   * line if the expandable option is true.
+   */
   maxColumns: number,
+  /**
+   * I's called when a row is expanded using the expandable button
+   * @param {Array<number>} rows - all expanded rows indexes in the table.
+   */
   onExpandRow: func,
+  /**
+   * Is called when a orderable column in the header is clicked.
+   * @param {int} index - order column index.
+   * @param {string} order - rows order, can be `ascending` or `descending`.
+   */
   onOrderChange: func.isRequired,
+  /**
+   * It's called when a clickable row is clicked.
+   * @param {int} index - clicked row index.
+   */
   onRowClick: func,
+  /**
+   * It's called when a row is selected by the selectable column checkbox.
+   * @param {Array<number>} rows - all selected rows indexes.
+   */
   onSelectRow: func,
+  /**
+   * Default order column index.
+   */
   orderColumn: number,
+  /**
+   * Rows order sequence.
+   */
   orderSequence: oneOf(['ascending', 'descending']),
+  /**
+   * List of object which will feed the table with data.
+   */
   rows: arrayOf(shape({})).isRequired,
+  /**
+   * Enables the selectable column in the table, allowing the user to select one,
+   * many or all of the rows.
+   */
   selectable: bool,
+  /**
+   * List of selected rows indexes.
+   */
   selectedRows: arrayOf(number),
 }
 

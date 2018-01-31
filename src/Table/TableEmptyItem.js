@@ -14,9 +14,15 @@ const TableEmptyItem = ({ theme, className }) => (
 )
 
 TableEmptyItem.propTypes = {
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper.
+   */
   theme: shape({
     empty: string,
   }),
+  /**
+   * Aditional css classes which can be applied to the empty items.
+   */
   className: string,
 }
 

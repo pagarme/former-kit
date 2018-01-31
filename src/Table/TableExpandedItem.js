@@ -42,13 +42,25 @@ const TableExpandedItem = ({
 )
 
 TableExpandedItem.propTypes = {
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper.
+   */
   theme: shape({
     expandedItem: string,
     title: string,
     text: string,
   }),
+  /**
+   * Item title in the expanded row items list.
+   */
   title: string.isRequired,
+  /**
+   * Text text wich will be shown in the list if children isn't set.
+   */
   text: oneOfType([string, number]),
+  /**
+   * React element which will be shown under the item title in the list.
+   */
   children: oneOfType([arrayOf(node), node]),
 }
 
