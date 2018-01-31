@@ -1,3 +1,12 @@
+const path = require('path')
+const webpackConfig = require('./webpack.config.storybook')
+
+webpackConfig.module.rules.unshift({
+  test: /\.js$/,
+  exclude: /node_modules/,
+  loader: 'babel-loader',
+})
+
 module.exports = {
   components: '../src/**/*.js',
   ignore: [
@@ -6,22 +15,9 @@ module.exports = {
     '**/tests/*.js',
     '**/tests/**/*.js',
   ],
-  webpackConfig: {
-    module: {
-      rules: [
-        {
-          test: /\.js$/,
-          exclude: /node_modules/,
-          loader: 'babel-loader',
-        },
-        {
-          test: /\.css$/,
-          loader: 'css-loader',
-          options: {
-            module: true,
-          },
-        },
-      ],
-    },
+  webpackConfig,
+  styleguideComponents: {
+    Wrapper: path.join(__dirname, './styleguide.js'),
   },
+  skipComponentsWithoutExample: true,
 }
