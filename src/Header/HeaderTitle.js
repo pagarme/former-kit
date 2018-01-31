@@ -4,6 +4,9 @@ import ThemeConsumer from '../ThemeConsumer'
 
 const consumeTheme = ThemeConsumer('UIHeader')
 
+/*
+ * The title of the header. It is used inside the Header component.
+*/
 const HeaderTitle = ({
   children,
   theme,
@@ -12,9 +15,19 @@ const HeaderTitle = ({
 )
 
 HeaderTitle.propTypes = {
+  /**
+   * The style classes for this element.
+   */
   theme: PropTypes.shape({
+    /**
+     * The main class used to style the component.
+     */
     title: PropTypes.string,
   }),
+  /**
+   * The children can contain any kind of element.
+   * It will probably be a string.
+   */
   children: PropTypes.node.isRequired,
 }
 

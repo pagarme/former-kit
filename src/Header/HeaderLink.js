@@ -4,6 +4,10 @@ import ThemeConsumer from '../ThemeConsumer'
 
 const consumeTheme = ThemeConsumer('UIHeader')
 
+/*
+ * A link inside the Header. It is used inside
+ * the HeaderLinks component.
+*/
 const HeaderLink = ({
   theme,
   onClick,
@@ -20,11 +24,29 @@ const HeaderLink = ({
 )
 
 HeaderLink.propTypes = {
+  /**
+   * The style classes for this element.
+   */
   theme: PropTypes.shape({
+    /**
+     * The main class used to style the component.
+     */
     link: PropTypes.string,
   }),
+  /**
+   * The onClick callback that may be used to redirect the user
+   * to another page.
+   * @param {object} event - the default event object.
+   */
   onClick: PropTypes.func.isRequired,
+  /**
+   * The icon of the link. It is used if `children` is not defined.
+   */
   icon: PropTypes.element,
+  /**
+   * The children can contain any kind of element and is
+   * rendered if icon is not defined.
+   */
   children: PropTypes.node,
 }
 

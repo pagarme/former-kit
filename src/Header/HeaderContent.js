@@ -4,6 +4,7 @@ import ThemeConsumer from '../ThemeConsumer'
 
 const consumeTheme = ThemeConsumer('UIHeader')
 
+/* The content of the Header */
 const HeaderContent = ({
   children,
   theme,
@@ -14,9 +15,18 @@ const HeaderContent = ({
 )
 
 HeaderContent.propTypes = {
+  /**
+   * The style classes for this element.
+   */
   theme: PropTypes.shape({
+    /**
+     * The main class used to style the component.
+     */
     content: PropTypes.string,
   }),
+  /**
+   * The children can contain any kind of component.
+   */
   children: PropTypes.node.isRequired,
 }
 
