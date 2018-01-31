@@ -63,14 +63,42 @@ class SegmentedSwitch extends React.PureComponent {
 }
 
 SegmentedSwitch.propTypes = {
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper
+   */
   theme: shape({
+    /**
+     * The main class used to stylize the element.
+    */
     segmentedSwitch: string,
+    /**
+     * The class used to stylize an item.
+     */
     item: string,
+    /**
+     * The class used to stylize an item's label.
+    */
     label: string,
   }),
+  /**
+   * The list of items that will be rendered.
+  */
   items: arrayOf(string).isRequired,
+  /**
+   * The prop responsible for identifying the selected item.
+   * Its value is the value of one of the "items".
+  */
   selected: string.isRequired,
+  /**
+   * The callback called when an item receives a click.
+   * @param {string} item - the value of the item clicked
+   * @param {number} index - the index of the item click
+  */
   onChange: func.isRequired,
+  /**
+   * A name to identify the component and create unique ids for
+   * the items.
+  */
   name: string.isRequired,
 }
 
