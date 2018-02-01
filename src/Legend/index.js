@@ -21,6 +21,10 @@ const defineInitials = pipe(
   toUpper
 )
 
+/**
+ * Component that shows a small symbol with an abreviation and a tip
+ * about the content. Can be customized with a color and an acronym.
+ */
 const Legend = ({
   color,
   children,
@@ -55,16 +59,35 @@ const Legend = ({
 }
 
 Legend.propTypes = {
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper.
+   */
   theme: PropTypes.shape({
     acronym: PropTypes.string,
     outline: PropTypes.string,
     legend: PropTypes.string,
     text: PropTypes.string,
   }),
+  /**
+   * The color of the Legend.
+   */
   color: PropTypes.string.isRequired,
+  /**
+   * React element which will be shown if the label is not hidden.
+   */
   children: PropTypes.string.isRequired,
+  /**
+   * Keeps the background without color and adds the color received
+   * only in the borders.
+   */
   outline: PropTypes.bool,
+  /**
+   * Abreviation which will be shown inside the component.
+   */
   acronym: PropTypes.string,
+  /**
+   * Hides the received label and shows only the acronym.
+   */
   hideLabel: PropTypes.bool,
 }
 
