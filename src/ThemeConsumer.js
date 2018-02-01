@@ -1,6 +1,12 @@
 import React from 'react'
 import { object } from 'prop-types'
 
+/**
+ * THis component is a wrapper component wich read the data received from
+ * a ThemeProvier and pass this data to the wrapped component props.
+ * This wrapper is applied to all of components which apply the
+ * consumeTheme function.
+ */
 export default function ThemeConsumer (name) {
   return (Component) => {
     const themed = function Themed (props, context) {
@@ -22,12 +28,7 @@ export default function ThemeConsumer (name) {
       /**
        * It's provided by the theme provider and this wrapper consume this
        * passing the `theme` and `icons` objects as props to the child component.
-       * This wrapper is applied to all of components in this library using the
-       * consumeTheme function in the components.
-       *
-       * @type {Theme} theme
-       * @prop {Styles} styles
-       * @prop {Icons} icons
+       * @see [ThemeProvider](#themeprovider)
        */
       theme: object,
     }
