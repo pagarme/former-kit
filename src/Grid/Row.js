@@ -57,15 +57,15 @@ Row.propTypes = {
     stretch: string,
   }),
   /**
-   * Sets of columns which will be rendered inside the row.
+   * The columns which will be rendered inside the row.
    */
   children: node,
   /**
-   * Allows all columns to grow and to have the same width.
+   * Make columns grow horizontally.
    */
   flex: bool,
   /**
-   * Changes the row content to be flexible and grows based on the highest collumn.
+   * Make columns grow vertically based on taller column.
    */
   stretch: bool,
   /**

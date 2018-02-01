@@ -16,6 +16,10 @@ const classnames = ({ theme, className }) =>
     className
   )
 
+/**
+ * Grid structure with 4 break points and a variable number of columns.
+ * Useful for organizing content in a page.
+ */
 const Grid = ({ theme, children, className }) => (
   <div className={classnames({ theme, className })}>
     {children}
@@ -31,8 +35,17 @@ Grid.propTypes = {
 }
 
 Grid.defaultProps = {
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper.
+   */
   theme: {},
+  /**
+   * Sets of rows which will be rendered inside the grid.
+   */
   children: null,
+  /**
+   * Custom css class which will be applied to the grid.
+   */
   className: null,
 }
 
