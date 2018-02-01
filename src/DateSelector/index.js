@@ -36,6 +36,18 @@ const defaultStrings = {
   today: 'today',
 }
 
+/**
+ * A calendar like selector based on react-dates
+ * which allows the user to select one date
+ * or a period(two dates), has a preset list of options for the date
+ * selection.
+ * Allow the year and months navigation.
+ * The day/period selection, cancelation and confirmation fires a set
+ * of callbacks which must be given by the father component, the data
+ * received in the confirmation callback are the start and end dates,
+ * if only one date is selected it will be the start and the end.
+ * @see (ReactDates) [https://github.com/airbnb/react-dates]
+ */
 class DateSelector extends Component {
   constructor (props) {
     super(props)
@@ -280,6 +292,9 @@ class DateSelector extends Component {
 }
 
 DateSelector.propTypes = {
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper
+   */
   theme: shape({
     actions: string,
     selectedDays: string,
@@ -288,35 +303,123 @@ DateSelector.propTypes = {
     container: string,
     stage: string,
   }),
+  /**
+   * Trigged when the confirmarion button is clicked
+   * @param {object} dates
+   */
   onConfirm: func,
+  /**
+   * This functions is trigged when dates or presets are changed,
+   * but only after the state was changed, could trigger a state
+   * update via componentWillReceiveProps.
+   * It's function is used to send the selected dates to the father component.
+   * @param {object} dates
+   */
   onChange: func,
+  /**
+   * Trigger when the cancel button is clicked, stops the dates selection and
+   * fires the given callback without params,
+   * the calback should close the selector
+   */
   onCancel: func,
+  /**
+   *
+   */
   onFocusChange: func,
+  /**
+   * Selected dates
+   */
   dates: shape({
+    /**
+     * Start date based on moment.js
+     */
     start: oneOfType([momentObj, object]),
+    /**
+     * End date based on moment.js
+     */
     end: oneOfType([momentObj, object]),
   }).isRequired,
+  /**
+   * Date which will start with focus, can be start or end
+   * @see (DateRangePicker) [https://github.com/airbnb/react-dates#daterangepicker]
+   */
   focusedInput: string,
+  /**
+   * Props structure which is used to create the left side menu, this menu allows
+   * the user to select dates in preset dates, ranges, etc.
+   */
   presets: arrayOf(shape({
+    /**
+     * Preset identification
+     */
     key: string,
+    /**
+     * Item text which will be shown in the list
+     */
     title: string,
-    date: string,
+    /**
+     * Item evaluation function
+     */
+    date: func,
+    /**
+     * This items are used to create a sub-menu under the title of
+     * the current item
+     */
     items: arrayOf(shape({
+      /**
+       * Item text which will be shown in the list
+       */
       title: string,
+      /**
+       * Item evaluation function
+       */
       date: func,
     })),
   })),
+  /**
+   * Texts used in the component internationalization(i18n)
+   */
   strings: shape({
+    /**
+     * Cancel button text
+     */
     cancel: string,
+    /**
+     * Confirm button text
+     */
     confirmPeriod: string,
+    /**
+     * Custom presets subtitle
+     */
     custom: string,
+    /**
+     * Day label
+     */
     days: string,
+    /**
+     * Selected day label
+     */
     daySelected: string,
+    /**
+     * Selected days label
+     */
     daysSelected: string,
+    /**
+     * No selected day/period label
+     */
     noDayOrPeriodSelected: string,
+    /**
+     * Period label
+     */
     period: string,
+    /**
+     * Today label
+     */
     today: string,
   }),
+  /**
+   * Default icons used in the month navigation
+   */
   icons: shape({
     previousMonth: element,
     nextMonth: element,
