@@ -4,6 +4,9 @@ import ThemeConsumer from '../ThemeConsumer'
 
 const consumeTheme = ThemeConsumer('UIModal')
 
+/**
+ * Set of react elements which stay in the modal bottom.
+ */
 const ModalActions = ({ theme, children }) => (
   <div className={theme.actions}>
     {children}
@@ -11,9 +14,15 @@ const ModalActions = ({ theme, children }) => (
 )
 
 ModalActions.propTypes = {
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper.
+   */
   theme: PropTypes.shape({
     actions: PropTypes.string,
   }),
+  /**
+   * Set of react elements which will be rendered inside the component.
+   */
   children: PropTypes.node.isRequired,
 }
 
