@@ -26,6 +26,9 @@ const classnames = ({
     }
   )
 
+/**
+ * Row structure used in the Grid component.
+ */
 const Row = ({
   theme,
   children,
@@ -45,14 +48,29 @@ const Row = ({
 )
 
 Row.propTypes = {
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper.
+   */
   theme: shape({
     row: string,
     flex: string,
     stretch: string,
   }),
+  /**
+   * Sets of columns which will be rendered inside the row.
+   */
   children: node,
+  /**
+   * Allows all columns to grow and to have the same width.
+   */
   flex: bool,
+  /**
+   * Changes the row content to be flexible and grows based on the highest collumn.
+   */
   stretch: bool,
+  /**
+   * Custom css class which will be applied to the row.
+   */
   className: string,
 }
 

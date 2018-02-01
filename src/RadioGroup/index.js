@@ -7,7 +7,10 @@ import ThemeConsumer from '../ThemeConsumer'
 
 const consumeTheme = ThemeConsumer('UIRadioGroup')
 
-
+/**
+ * Group of radio buttons which allows the user to select only one option.
+ * Works like the native html 'radio' element grouped by name.
+ */
 class RadioGroup extends React.Component {
   constructor (props) {
     super(props)
@@ -75,6 +78,9 @@ class RadioGroup extends React.Component {
 }
 
 RadioGroup.propTypes = {
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper.
+   */
   theme: PropTypes.shape({
     disabled: PropTypes.string,
     error: PropTypes.string,
@@ -83,15 +89,39 @@ RadioGroup.propTypes = {
     secondaryText: PropTypes.string,
     label: PropTypes.string,
   }),
+  /**
+   * Set of items which will compose the options in the component.
+   * The name will be shown in the component and the value is passed as
+   * an argument in the callbacks.
+   */
   options: PropTypes.arrayOf(PropTypes.shape({
     name: PropTypes.string,
-    value: PropTypes.value,
+    value: PropTypes.string,
   })).isRequired,
+  /**
+   * Group name, used to group the input radios and to distinguish the group.
+   */
   name: PropTypes.string.isRequired,
+  /**
+   * Callback triggered when an option is selected.
+   * @param {string} value
+   */
   onChange: PropTypes.func.isRequired,
+  /**
+   * Selected value.
+   */
   value: PropTypes.string,
+  /**
+   * Disables/enables the component's functions.
+   */
   disabled: PropTypes.bool,
+  /**
+   * Error message which adds error styles. It stays below the component.
+   */
   error: PropTypes.string,
+  /**
+   * Success message which adds success styles. It stays below the component.
+   */
   success: PropTypes.string,
 }
 
