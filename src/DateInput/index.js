@@ -40,7 +40,14 @@ import {
 } from './classNames'
 
 const consumeTheme = ThemeConsumer('UIDateInput')
-
+/**
+ * Input component designed to receive one or two dates, can have a mask
+ * for the input and enables the date selection using a calendar like selector
+ * When dates are selected the first one is the period start and the second is
+ * the finish, the date selection callback allways will provide two dates, if
+ * the component is showing only one date the callback will receive the same date
+ * as start and end
+ */
 class DateInput extends React.Component {
   constructor (props) {
     super(props)
@@ -318,6 +325,9 @@ class DateInput extends React.Component {
 }
 
 DateInput.propTypes = {
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper
+   */
   theme: shape({
     active: string,
     dateInput: string,
@@ -330,17 +340,49 @@ DateInput.propTypes = {
     separator: string,
     start: string,
   }),
+  /**
+   * Enable/disable the component
+   */
   active: bool,
+  /**
+   * Default start and end dates
+   */
   dates: shape({
+    /**
+     * Start date based in moment.js
+     */
     start: instanceOf(moment),
+    /**
+     * End date based in moment.js
+     */
     end: instanceOf(moment),
   }),
+  /**
+   * Custom icon which will be shown in the component left side
+   */
   icon: element,
+  /**
+   * Limit dates for range selections
+   */
   limits: shape({
+    /**
+     * Biggest selectable date based in moment.js
+     */
     upper: instanceOf(moment),
+    /**
+     * Lowest selectable date based in moment.js
+     */
     lower: instanceOf(moment),
   }),
+  /**
+   * Triggers when a date is changed or selected
+   * @param {object} dates
+   */
   onChange: func.isRequired,
+  /**
+   * Date selector presets, used for dates ranges and selection options
+   * @see [DateSelector](#dateselector)
+   */
   presets: arrayOf(shape({
     key: string,
     title: string,
@@ -351,6 +393,10 @@ DateInput.propTypes = {
       key: string,
     })),
   })),
+  /**
+   * Default icons used in the date selector navigation
+   * @see [DateSelector](#dateselector)
+   */
   icons: shape({
     leftArrow: element,
     rightArrow: element,
