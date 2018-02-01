@@ -13,31 +13,24 @@ const consumeTheme = ThemeConsumer('UIAlert')
 
 /**
  * The Alert component is used to create alerts of all kinds, such as "errors", "warnings", etc.
-*/
-function Alert ({
+ */
+const Alert = ({
   children,
   icon,
   theme,
   type,
-}) {
-  const iconClassName = classNames(
-    theme.icon,
-    theme[type]
-  )
-
-  return (
-    <div className={theme.alert}>
-      {!isNil(icon) && (
-        <div className={iconClassName}>
-          {icon}
-        </div>
-      )}
-      <div className={theme.content}>
-        {children}
+}) => (
+  <div className={theme.alert}>
+    {!isNil(icon) && (
+      <div className={classNames(theme.icon, theme[type])}>
+        {icon}
       </div>
+    )}
+    <div className={theme.content}>
+      {children}
     </div>
-  )
-}
+  </div>
+)
 
 Alert.propTypes = {
   /**
