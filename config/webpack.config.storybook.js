@@ -116,7 +116,11 @@ module.exports = {
         ],
       },
       {
-        test: /\.(woff|woff2|eot|ttf|svg)$/,
+        test: /\.svg$/,
+        loader: require.resolve('svgr/webpack'),
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf)$/,
         loader: require.resolve('file-loader'),
         options: {
           name: 'static/media/[name].[hash:8].[ext]',

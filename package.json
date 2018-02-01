@@ -101,6 +101,7 @@
     "babel-plugin-transform-es2015-modules-commonjs": "6.26.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "former-kit-skin-pagarme": "0.0.3",
-    "react-styleguidist": "^6.2.1"
+    "react-styleguidist": "^6.2.1",
+    "svgr": "1.8.1"
   }
 }
