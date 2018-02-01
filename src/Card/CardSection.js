@@ -5,6 +5,10 @@ import ThemeConsumer from '../ThemeConsumer'
 
 const applyTheme = ThemeConsumer('UICard')
 
+/**
+ * Highlighted sections that are used inside cards
+ * and can hide and show their children.
+ */
 class CardSection extends Component {
   constructor (props) {
     super(props)
@@ -102,6 +106,9 @@ class CardSection extends Component {
 }
 
 CardSection.propTypes = {
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper.
+   */
   theme: PropTypes.shape({
     base: PropTypes.string,
     section: PropTypes.string,
@@ -113,15 +120,39 @@ CardSection.propTypes = {
     collapsed: PropTypes.string,
     arrow: PropTypes.string,
   }),
+  /**
+   * Default icons received by theme. These icons are used in the toggle function
+   * which hides or shows the 'children' elements.
+   */
   icons: PropTypes.shape({
     collapse: PropTypes.element,
     expand: PropTypes.element,
   }),
+  /**
+   * Title in the top of the section that appears when the content is not collapsed.
+   */
   title: PropTypes.string.isRequired,
+  /**
+   * Title in the top of the section that appears when the content is collapsed.
+   */
   collapsedTitle: PropTypes.string,
+  /**
+   * Collapses 'children' when the value is true and expands 'children'
+   * when the value is false.
+   */
   collapsed: PropTypes.bool,
+  /**
+   * Set of react elements which will be rendered inside the section.
+   */
   children: PropTypes.node.isRequired,
+  /**
+   * Callback triggered when the title in the section receives a click.
+   * @param {bool} collapsed
+   */
   onTitleClick: PropTypes.func,
+  /**
+   * Subtitle inside the section.
+   */
   subTitle: PropTypes.string,
 }
 

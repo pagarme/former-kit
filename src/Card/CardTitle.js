@@ -13,6 +13,9 @@ import ThemeConsumer from '../ThemeConsumer'
 
 const consumeTheme = ThemeConsumer('UICard')
 
+/**
+ * Title for cards. The component should be added inside a card.
+ */
 export const CardTitle = ({
   title,
   icon,
@@ -57,14 +60,33 @@ export const CardTitle = ({
 }
 
 CardTitle.propTypes = {
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper.
+   */
   theme: PropTypes.shape({
     title: PropTypes.string,
     icon: PropTypes.string,
   }),
+  /**
+   * Main text of the component.
+   */
   title: PropTypes.string.isRequired,
+  /**
+   * Custom icon shown at the left side of the title.
+   */
   icon: PropTypes.element,
+  /**
+   * Custom class added to the component.
+   */
   className: PropTypes.string,
+  /**
+   * Set of react elements which will be rendered inside the title.
+   */
   children: PropTypes.node,
+  /**
+   * Triggered when the title of the component is clicked.
+   * @param {object} event - default html click event
+   */
   onClick: PropTypes.func,
 }
 

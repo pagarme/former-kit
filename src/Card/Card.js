@@ -4,7 +4,10 @@ import classNames from 'classnames'
 import ThemeConsumer from '../ThemeConsumer'
 
 const consumeTheme = ThemeConsumer('UICard')
-
+/**
+ * This component is a block session that receives
+ * a soft highlight compared to the rest of the page.
+ */
 const Card = ({
   className,
   children,
@@ -22,11 +25,20 @@ const Card = ({
 }
 
 Card.propTypes = {
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper.
+   */
   theme: PropTypes.shape({
     base: PropTypes.string,
     card: PropTypes.string,
   }),
+  /**
+   * Set of react elements which will be rendered inside the card.
+   */
   children: PropTypes.node.isRequired,
+  /**
+   * Custom css class.
+   */
   className: PropTypes.string,
 }
 
