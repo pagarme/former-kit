@@ -45,7 +45,7 @@ HeaderLink.propTypes = {
   icon: PropTypes.element,
   /**
    * The children can contain any kind of element and is
-   * rendered if icon is not defined.
+   * rendered if the icon is not defined.
    */
   children: PropTypes.node,
 }

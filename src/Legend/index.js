@@ -22,7 +22,7 @@ const defineInitials = pipe(
 )
 
 /**
- * Component that shows a small symbol with an abreviation and a tip
+ * The component that shows a small symbol with an abbreviation and a tip
  * about the content. Can be customized with a color and an acronym.
  */
 const Legend = ({
@@ -82,7 +82,7 @@ Legend.propTypes = {
    */
   outline: PropTypes.bool,
   /**
-   * Abreviation which will be shown inside the component.
+   * Abbreviation which will be shown in the component.
    */
   acronym: PropTypes.string,
   /**

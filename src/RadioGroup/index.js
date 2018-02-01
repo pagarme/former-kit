@@ -9,7 +9,7 @@ const consumeTheme = ThemeConsumer('UIRadioGroup')
 
 /**
  * Group of radio buttons which allows the user to select only one option.
- * Works like the native html 'radio' element grouped by name.
+ * Works like the native HTML 'radio' element grouped by name.
  */
 class RadioGroup extends React.Component {
   constructor (props) {
@@ -99,7 +99,7 @@ RadioGroup.propTypes = {
     value: PropTypes.string,
   })).isRequired,
   /**
-   * Group name, used to group the input radios and to distinguish the group.
+   * Group name used to group the input radios and to distinguish the group.
    */
   name: PropTypes.string.isRequired,
   /**

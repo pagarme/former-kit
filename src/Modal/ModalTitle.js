@@ -27,7 +27,7 @@ ModalTitle.propTypes = {
    */
   title: PropTypes.string.isRequired,
   /**
-   * Custom icon which stays at the left side of the title.
+   * The custom icon which stays at the left side of the title.
    */
   icon: PropTypes.element,
 }

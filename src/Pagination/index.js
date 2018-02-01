@@ -64,7 +64,7 @@ const getStrings = strings => ({
 })
 
 /**
- * This component is used for paginate a section, gallery, a table or any other element.
+ * This component is used for paginating a section, gallery, a table or any other element.
  */
 class Pagination extends React.Component {
   constructor (props) {
@@ -376,7 +376,7 @@ Pagination.propTypes = {
     next: PropTypes.element.isRequired,
   }),
   /**
-   * It iss called when the current page changes.
+   * It is called when the current page changes.
    */
   onPageChange: PropTypes.func.isRequired,
   /**

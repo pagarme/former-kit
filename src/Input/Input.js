@@ -207,7 +207,7 @@ Input.propTypes = {
     contentPresent: PropTypes.string,
   }),
   /**
-   * Aditional css classes which can be applied to the input.
+   * Aditional CSS classes which can be applied to the input.
    */
   className: PropTypes.string,
   /**
@@ -215,7 +215,7 @@ Input.propTypes = {
    */
   disabled: PropTypes.bool,
   /**
-   * Error message which indicates error and adds error classes.
+   * Error message which indicates an error and adds error classes.
    */
   error: PropTypes.string,
   /**
@@ -223,11 +223,11 @@ Input.propTypes = {
    */
   hint: PropTypes.string,
   /**
-   * Custom icon which stays at the left side of the input.
+   * The custom icon which stays at the left side of the input.
    */
   icon: PropTypes.element,
   /**
-   * Input's label, used as placeholder until the input receives focus.
+   * Input's label, used as a placeholder until the input receives focus.
    * When the input is focused, the label stays above the input.
    */
   label: PropTypes.string,
@@ -244,7 +244,7 @@ Input.propTypes = {
    */
   onChange: PropTypes.func.isRequired,
   /**
-   * Default icons, used to tell the user if the password is being shown or not.
+   * Default icons used to tell the user if the password is being shown or not.
    */
   icons: PropTypes.shape({
     showPassword: PropTypes.element,

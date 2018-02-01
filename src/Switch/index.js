@@ -85,11 +85,11 @@ Switch.propTypes = {
   */
   strings: shape({
     /**
-     * Message shown when the component is active.
+     * The message that is shown when the component is active.
     */
     on: string,
     /**
-     * Message shown when the component is not active.
+     * The message that is shown when the component is not active.
     */
     off: string,
   }),

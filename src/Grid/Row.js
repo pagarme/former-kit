@@ -65,11 +65,11 @@ Row.propTypes = {
    */
   flex: bool,
   /**
-   * Make columns grow vertically based on taller column.
+   * Make columns grow vertically based on tallest column.
    */
   stretch: bool,
   /**
-   * Custom css class which will be applied to the row.
+   * Custom CSS class which will be applied to the row.
    */
   className: string,
 }

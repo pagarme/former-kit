@@ -46,7 +46,7 @@ Alert.propTypes = {
     success: string,
   }),
   /**
-   * The alert icon. It should contain a React element.
+   * The alert icon. It must contain a React element.
    */
   icon: element,
   /**

@@ -86,7 +86,7 @@ TabBar.propTypes = {
    */
   variant: oneOf(variantList),
   /**
-   * Set of react components which will be rendered inside the component
+   * Set of React components which will be rendered inside the component
    */
   children: arrayOf(TabItem).isRequired,
   /**

@@ -319,7 +319,7 @@ DateSelector.propTypes = {
   /**
    * Trigger when the cancel button is clicked, stops the dates selection and
    * fires the given callback without params,
-   * the calback should close the selector
+   * the callback should close the selector
    */
   onCancel: func,
   /**
@@ -340,7 +340,7 @@ DateSelector.propTypes = {
     end: oneOfType([momentObj, object]),
   }).isRequired,
   /**
-   * Date which will start with focus, can be start or end
+   * Date which will start with focus. It can be start or end.
    * @see (DateRangePicker) [https://github.com/airbnb/react-dates#daterangepicker]
    */
   focusedInput: string,

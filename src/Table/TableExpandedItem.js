@@ -55,7 +55,7 @@ TableExpandedItem.propTypes = {
    */
   title: string.isRequired,
   /**
-   * Text text wich will be shown in the list if children isn't set.
+   * Text that will be shown in the list if the 'children' prop isn't set.
    */
   text: oneOfType([string, number]),
   /**

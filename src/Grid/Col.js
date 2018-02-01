@@ -77,19 +77,19 @@ Col.propTypes = {
    */
   children: node,
   /**
-   * Defines the number of columns in each break point for a desk media (1366~1919).
+   * Defines the number of columns in each breakpoint for a desk media (1366~1919).
    */
   desk: number,
   /**
-   * Defines the number of columns in each break point for a tv media ( >= 1920).
+   * Defines the number of columns in each breakpoint for a tv media ( >= 1920).
    */
   tv: number,
   /**
-   * Defines the number of columns in each break point for a tablet media (641~1365).
+   * Defines the number of columns in each breakpoint for a tablet media (641~1365).
    */
   tablet: number,
   /**
-   * Defines the number of columns in each break point for a palm media (<=640).
+   * Defines the number of columns in each breakpoint for a palm media (<=640).
    */
   palm: number,
   /**
@@ -97,7 +97,7 @@ Col.propTypes = {
    */
   alignEnd: bool,
   /**
-   * Custom css class which will be applied to the column.
+   * Custom CSS class which will be applied to the column.
    */
   className: string,
 }

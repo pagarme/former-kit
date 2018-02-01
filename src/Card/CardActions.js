@@ -5,7 +5,7 @@ import ThemeConsumer from '../ThemeConsumer'
 
 const consumeTheme = ThemeConsumer('UICard')
 /**
- * Actions which will be used in the card.
+ * Actions which will be used on the card.
  */
 const CardActions = ({ className, children, theme }) => (
   <div className={classNames(className, theme.actions)}>
@@ -27,7 +27,7 @@ CardActions.propTypes = {
    */
   children: PropTypes.node.isRequired,
   /**
-   * Custom css class.
+   * Custom CSS class.
    */
   className: PropTypes.string,
 }

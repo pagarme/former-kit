@@ -44,7 +44,7 @@ Grid.defaultProps = {
    */
   children: null,
   /**
-   * Custom css class which will be applied to the grid.
+   * Custom CSS class which will be applied to the grid.
    */
   className: null,
 }

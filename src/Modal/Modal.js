@@ -7,7 +7,7 @@ const consumeTheme = ThemeConsumer('UIModal')
 
 /**
  * This component allows the user to create a content over
- * the page blocking all backgound content.
+ * the page blocking all background content.
  * It is very useful when the user attention must stay in a specific
  * part of the content.
  */
@@ -42,7 +42,7 @@ Modal.propTypes = {
     frame: PropTypes.string,
   }),
   /**
-   * Set of react elements which will be rendered inside the modal.
+   * Set of React elements which will be rendered inside the modal.
    */
   children: PropTypes.node.isRequired,
   /**

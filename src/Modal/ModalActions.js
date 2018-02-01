@@ -21,7 +21,7 @@ ModalActions.propTypes = {
     actions: PropTypes.string,
   }),
   /**
-   * Set of react elements which will be rendered inside the component.
+   * Set of React elements which will be rendered inside the component.
    */
   children: PropTypes.node.isRequired,
 }

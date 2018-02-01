@@ -117,10 +117,10 @@ const validateIconsShape = (props, propName) => {
  * This component is designed to show tabular data with some customizations,
  * allowing the user to sort, select and click rows, also show rows details
  * with the expandable function.
- * The columns must have a specific structure which allow the data read and
+ * The columns must have a specific structure which allows the data read and
  * cells output customization.
  * The table is not responsible for the data received, all events trigged in
- * this component are thrown to the father component to keep the table without
+ * this component is thrown to the father component to keep the table without
  * business logic.
  */
 class Table extends Component {
@@ -330,7 +330,7 @@ Table.propTypes = {
     table: string,
   }),
   /**
-   * Additional css classes which can be applied to the table component.
+   * Additional CSS classes which can be applied to the table component.
    */
   className: string,
   /**
@@ -366,7 +366,7 @@ Table.propTypes = {
     title: string.isRequired,
   })).isRequired,
   /**
-   * Enables the expandable column in the table which allow the user to see all of the remaining
+   * Enables the expandable column in the table which allows the user to see all of the remaining
    * columns which exceed the table maxColumns prop.
    */
   expandable: bool,
@@ -381,7 +381,7 @@ Table.propTypes = {
    */
   icons: validateIconsShape,
   /**
-   * Number of table columns, all the remaining columns will be droped in a expandable
+   * Number of table columns, all the remaining columns will be dropped in an expandable
    * line if the expandable option is true.
    */
   maxColumns: number,

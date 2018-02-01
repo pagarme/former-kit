@@ -21,7 +21,7 @@ TableEmptyItem.propTypes = {
     empty: string,
   }),
   /**
-   * Aditional css classes which can be applied to the empty items.
+   * Aditional CSS classes which can be applied to the empty items.
    */
   className: string,
 }

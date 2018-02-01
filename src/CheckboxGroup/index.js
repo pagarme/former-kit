@@ -168,7 +168,7 @@ CheckboxGroup.propTypes = {
    */
   success: PropTypes.string,
   /**
-   * Custom css classes which can be added to the checkbox group.
+   * Custom CSS classes which can be added to the checkbox group.
    */
   className: PropTypes.string,
   /**

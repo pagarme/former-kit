@@ -8,7 +8,7 @@ import {
 
 import classNames from 'classnames'
 /**
- * Custom checkbox component, which works like the native html 'checkbox'
+ * Custom checkbox component, which works like the native HTML 'checkbox'
  * element, but with an awesome skin.
  */
 const Checkbox = ({

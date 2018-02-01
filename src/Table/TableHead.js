@@ -152,7 +152,7 @@ TableHead.propTypes = {
     renderer: func,
   })).isRequired,
   /**
-   * Add expandable column in the header.
+   * Add an expandable column in the header.
    */
   expandable: bool,
   /**

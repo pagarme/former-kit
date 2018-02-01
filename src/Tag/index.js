@@ -6,7 +6,7 @@ import ThemeConsumer from '../ThemeConsumer'
 const consumeTheme = ThemeConsumer('UITag')
 
 /**
- * Visual non interactive items which represent an item
+ * Visual noninteractive items which represent an item
  * in a gracefully way.
  */
 const Tag = ({
@@ -29,7 +29,7 @@ Tag.propTypes = {
     tag: PropTypes.string,
   }),
   /*
-   * The children is a string.
+   * The 'children' prop is a string.
    */
   children: PropTypes.string.isRequired,
 }

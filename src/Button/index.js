@@ -89,7 +89,7 @@ Button.propTypes = {
     'flat', 'gradient', 'outline', 'clean',
   ]),
   /**
-   * Custom icon which stays at the left side of the input.
+   * Custom icon which stays on the left side of the input.
    */
   icon: PropTypes.element,
   /**

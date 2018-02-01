@@ -36,7 +36,7 @@ CardContent.propTypes = {
    */
   children: PropTypes.node.isRequired,
   /**
-   * Custom css class.
+   * Custom CSS class.
    */
   className: PropTypes.string,
 }

@@ -48,13 +48,13 @@ Avatar.propTypes = {
    */
   size: PropTypes.number,
   /**
-   * Path to image, if you don't use this props the component will use
+   * The path to an image. If this prop is not used, the component will use
    * `icons.placeholder` instead.
    */
   photo: PropTypes.string,
   icons: PropTypes.shape({
     /**
-     * Placeholder will used only if no photo has used.
+     * The placeholder will be used only if 'photo' is not defined.
      */
     placeholder: PropTypes.element,
   }),

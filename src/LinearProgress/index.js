@@ -11,7 +11,7 @@ import ThemeConsumer from '../ThemeConsumer'
 const consumeTheme = ThemeConsumer('UILinearProgress')
 
 /**
- * Progress bar, used to show some process progress.
+ * Progress bar used to show some process progress.
  * The component receives a value and shows it as a progress value.
  */
 const Linear = ({

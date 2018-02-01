@@ -27,11 +27,11 @@ Arrow.propTypes = {
    */
   icons: PropTypes.shape({
     /**
-     * The icon shown when the SidebarLink is collapsed.
+     * The icon that is shown when the SidebarLink is collapsed.
      */
     collapse: PropTypes.element,
     /**
-     * The icon shown when the SidebarLink is expanded.
+     * The icon that is shown when the SidebarLink is expanded.
      */
     expand: PropTypes.element,
   }),
@@ -148,8 +148,8 @@ SidebarLink.propTypes = {
    * The icon theme for this element.
    * The icons 'collapse' and 'expand' are mandatory if
    * the element has children.
-   * @prop {object} expand - icon which represents expand acion
-   * @prop {object} collapse - icon which represents collapse acion
+   * @prop {object} expand - icon which represents expand action
+   * @prop {object} collapse - icon which represents collapse action
    */
   icons: hasNecessaryIcons,
   /**

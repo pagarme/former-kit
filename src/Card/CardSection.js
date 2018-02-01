@@ -142,7 +142,7 @@ CardSection.propTypes = {
    */
   collapsed: PropTypes.bool,
   /**
-   * Set of react elements which will be rendered inside the section.
+   * Set of React elements which will be rendered inside the section.
    */
   children: PropTypes.node.isRequired,
   /**
