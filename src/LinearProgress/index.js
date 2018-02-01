@@ -10,6 +10,10 @@ import ThemeConsumer from '../ThemeConsumer'
 
 const consumeTheme = ThemeConsumer('UILinearProgress')
 
+/**
+ * Progress bar, used to show some process progress.
+ * The component receives a value and shows it as a progress value.
+ */
 const Linear = ({
   theme,
   percent,
@@ -70,6 +74,9 @@ const Linear = ({
 }
 
 Linear.propTypes = {
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper.
+   */
   theme: PropTypes.shape({
     linearProgress: PropTypes.string,
     fill: PropTypes.string,
@@ -79,8 +86,17 @@ Linear.propTypes = {
     dark: PropTypes.string,
     light: PropTypes.string,
   }),
+  /**
+   * Percentage value in the progress.
+   */
   percent: PropTypes.number.isRequired,
+  /**
+   * Disables/Enables the component's functionality.
+   */
   disabled: PropTypes.bool,
+  /**
+   * The contrast of the background where the component is applied.
+   */
   base: PropTypes.oneOf([
     'dark',
     'light',
