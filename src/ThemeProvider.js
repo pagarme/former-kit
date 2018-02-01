@@ -7,7 +7,7 @@ import {
 } from 'prop-types'
 
 /**
- * Apply theme to UI
+ * Apply the theme to UI.
  */
 export default class ThemeProvider extends React.Component {
   getChildContext () {
@@ -22,22 +22,22 @@ export default class ThemeProvider extends React.Component {
 
 /**
  * This object is a compiled of styles which came from the provided theme.
- * All theme props are strings which mirror the theme css classes.
- * In wrapped components props this object can be acceced by the `theme` prop.
+ * All of the theme props are strings which mirror the theme css classes.
+ * In wrapped components props, this object can be accessed by the `theme` prop.
  * @typedef {object} Styles
  */
 
 /**
  * This object is a set of icons provided in the theme object.
- * The icons are all react elements which have an icon inside,
- * In wrapped components props this object can be acceced by the `icons` prop.
+ * The icons are all react elements which have an icon inside.
+ * In wrapped components props, this object can be accessed by the `icons` prop.
  * @typedef {object} Icons
  */
 
 /**
- * A magical object received by the provider and passed to all children
- * it's responsible for all css and icons default customizations, uses
- * the react context api to propagate it own props to children.
+ * A magical object received by the provider and passed to all of its children.
+ * It's responsible for all css and icons default customizations, uses
+ * the react context API to propagate it own props to the children.
  *
  * @typedef {object} Theme
  * @prop {Style} styles
