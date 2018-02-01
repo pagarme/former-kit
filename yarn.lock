@@ -3808,6 +3808,10 @@ elliptic@^6.0.0:
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.0"
 
+emblematic-icons@0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/emblematic-icons/-/emblematic-icons-0.1.1.tgz#697010326b33da9e499286f570c7fabe2aa54fcb"
+
 "emoji-regex@>=6.0.0 <=6.1.1":
   version "6.1.1"
   resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-6.1.1.tgz#c6cd0ec1b0642e2a3c67a1137efc5e796da4f88e"
@@ -4647,9 +4651,11 @@ form-data@~2.3.1:
     combined-stream "^1.0.5"
     mime-types "^2.1.12"
 
-former-kit-skin-pagarme@0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/former-kit-skin-pagarme/-/former-kit-skin-pagarme-0.0.3.tgz#5b490c39a033df3f117b7318b49a83f2be183c7f"
+former-kit-skin-pagarme@0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/former-kit-skin-pagarme/-/former-kit-skin-pagarme-0.0.6.tgz#147f5bc2cfe98183f6ec28c8cebb44d8b44c5290"
+  dependencies:
+    emblematic-icons "0.1.1"
 
 forwarded@~0.1.2:
   version "0.1.2"
