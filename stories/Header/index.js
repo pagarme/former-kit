@@ -1,35 +1,13 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import IconAlert from 'react-icons/lib/md/add-alert'
-import MdMessage from 'react-icons/lib/md/message'
-import FaUser from 'react-icons/lib/fa/user-md'
-import IconArrowDown from 'react-icons/lib/md/arrow-downward'
+
+import HeaderContentExample from './HeaderContentExample'
 
 import {
   Header,
   HeaderBackButton,
-  HeaderContent,
-  HeaderLink,
   HeaderTitle,
-  HeaderMenu,
 } from '../../src/Header'
-import Avatar from '../../src/Avatar'
-
-const HeaderContentExample = ({ photo }) => (
-  <HeaderContent>
-    <HeaderLink onClick={() => null}>
-      <IconAlert size={24} />
-    </HeaderLink>
-    <HeaderLink
-      onClick={() => null}
-      icon={<MdMessage size={24} />}
-    />
-    <HeaderMenu onClick={() => null}>
-      <Avatar photo={photo} />
-      <span>Nome da Pessoa</span>
-    </HeaderMenu>
-  </HeaderContent>
-)
 
 storiesOf('Header', module)
   .add('defaultTheme', () => (
