@@ -10,7 +10,7 @@ const consumeTheme = ThemeConsumer('UIFooter')
 */
 const Footer = ({ theme, children, links }) => (
   <footer className={theme.footer}>
-    <nav>
+    <nav className={theme.links}>
       {links.map(link => (
         <button
           key={link.title}
@@ -23,7 +23,7 @@ const Footer = ({ theme, children, links }) => (
       ))}
     </nav>
 
-    <nav>
+    <nav className={theme.buttons}>
       {children}
     </nav>
   </footer>

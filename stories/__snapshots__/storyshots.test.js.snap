@@ -6272,7 +6272,9 @@ exports[`Storyshots Footer defaultTheme 1`] = `
 <footer
   className="footer"
 >
-  <nav>
+  <nav
+    className="links"
+  >
     <button
       onClick={[Function]}
       role="link"
@@ -6302,7 +6304,9 @@ exports[`Storyshots Footer defaultTheme 1`] = `
       Contato
     </button>
   </nav>
-  <nav>
+  <nav
+    className="buttons"
+  >
     <button
       onClick={[Function]}
     >
