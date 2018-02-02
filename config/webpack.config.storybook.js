@@ -118,6 +118,12 @@ module.exports = {
       {
         test: /\.svg$/,
         loader: require.resolve('svgr/webpack'),
+        options: {
+          replaceAttrValues: [
+            ['#000', 'currentColor'],
+            ['#000000;', 'currentColor'],
+          ]
+        }
       },
       {
         test: /\.(woff|woff2|eot|ttf)$/,
