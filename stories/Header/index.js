@@ -18,14 +18,14 @@ import Avatar from '../../src/Avatar'
 const HeaderContentExample = ({ photo }) => (
   <HeaderContent>
     <HeaderLink onClick={() => null}>
-      <IconAlert />
+      <IconAlert size={24} />
     </HeaderLink>
     <HeaderLink
       onClick={() => null}
-      icon={<MdMessage />}
+      icon={<MdMessage size={24} />}
     />
-    <HeaderMenu onClick={() => null} iconw={{ expand: <IconArrowDown /> }}>
-      <Avatar photo={photo} icon={<FaUser size={26} />} />
+    <HeaderMenu onClick={() => null}>
+      <Avatar photo={photo} />
       <span>Nome da Pessoa</span>
     </HeaderMenu>
   </HeaderContent>

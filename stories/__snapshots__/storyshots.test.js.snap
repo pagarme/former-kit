@@ -8137,7 +8137,7 @@ exports[`Storyshots Header defaultTheme 1`] = `
         >
           <svg
             fill="currentColor"
-            height="1em"
+            height={24}
             preserveAspectRatio="xMidYMid meet"
             style={
               Object {
@@ -8146,7 +8146,7 @@ exports[`Storyshots Header defaultTheme 1`] = `
               }
             }
             viewBox="0 0 40 40"
-            width="1em"
+            width={24}
           >
             <g>
               <path
@@ -8162,7 +8162,7 @@ exports[`Storyshots Header defaultTheme 1`] = `
         >
           <svg
             fill="currentColor"
-            height="1em"
+            height={24}
             preserveAspectRatio="xMidYMid meet"
             style={
               Object {
@@ -8171,7 +8171,7 @@ exports[`Storyshots Header defaultTheme 1`] = `
               }
             }
             viewBox="0 0 40 40"
-            width="1em"
+            width={24}
           >
             <g>
               <path
@@ -8233,7 +8233,7 @@ exports[`Storyshots Header defaultTheme 1`] = `
         >
           <svg
             fill="currentColor"
-            height="1em"
+            height={24}
             preserveAspectRatio="xMidYMid meet"
             style={
               Object {
@@ -8242,7 +8242,7 @@ exports[`Storyshots Header defaultTheme 1`] = `
               }
             }
             viewBox="0 0 40 40"
-            width="1em"
+            width={24}
           >
             <g>
               <path
@@ -8258,7 +8258,7 @@ exports[`Storyshots Header defaultTheme 1`] = `
         >
           <svg
             fill="currentColor"
-            height="1em"
+            height={24}
             preserveAspectRatio="xMidYMid meet"
             style={
               Object {
@@ -8267,7 +8267,7 @@ exports[`Storyshots Header defaultTheme 1`] = `
               }
             }
             viewBox="0 0 40 40"
-            width="1em"
+            width={24}
           >
             <g>
               <path
