@@ -33,6 +33,9 @@ module.exports = {
         '../src/Switch/index.js',
         '../src/Tag/index.js',
         '../src/Typeset/index.js',
+        '../src/Dropdown/Dropdown.js',
+        '../src/Checkbox/Checkbox.js',
+        '../src/Input/Input.js',
       ],
       sections: [
         {
@@ -135,6 +138,13 @@ module.exports = {
     const dirComponent = path.basename(path.dirname(componentPath))
     const componentFilePath = path.basename(componentPath, '.js')
     const componentName = componentFilePath === 'index' ? dirComponent : componentFilePath
+
+    const formFilePath = `${path.resolve(__dirname, '../src', dirComponent)}/form/index.js`
+
+    if (fs.existsSync(formFilePath)) {
+      return `import { ${componentName} } from 'former-kit'
+              or import { Form${componentName} } from 'former-kit'`
+    }
 
     return `import { ${componentName} } from 'former-kit'`
   },
