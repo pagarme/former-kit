@@ -92,6 +92,22 @@ module.exports = {
             '../src/Table/TableRow.js',
           ],
         },
+        {
+          name: 'Modal',
+          components: () => [
+            '../src/Modal/Modal.js',
+            '../src/Modal/ModalActions.js',
+            '../src/Modal/ModalContent.js',
+            '../src/Modal/ModalTitle.js',
+          ],
+        },
+        {
+          name: 'TabBar',
+          components: () => [
+            '../src/TabBar/TabBar.js',
+            '../src/TabBar/TabItem.js',
+          ],
+        },
       ],
     },
   ],
