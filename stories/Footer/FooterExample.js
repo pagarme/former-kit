@@ -1,8 +1,8 @@
 import React from 'react'
 import { action } from '@storybook/addon-actions'
-import GoRepoClone from 'react-icons/lib/go/repo-clone'
-import GoSquirrel from 'react-icons/lib/go/squirrel'
-import GoHubot from 'react-icons/lib/go/hubot'
+import IconLink from 'emblematic-icons/svg/Link20.svg'
+import IconGithub from 'emblematic-icons/svg/Github20.svg'
+import IconFacebook from 'emblematic-icons/svg/Facebook20.svg'
 
 import Footer from '../../src/Footer'
 
@@ -29,9 +29,9 @@ const FooterExample = () => (
   <Footer
     links={links}
   >
-    <button onClick={() => action('clicked')}><GoRepoClone /></button>
-    <button onClick={() => action('clicked')}><GoSquirrel /></button>
-    <button onClick={() => action('clicked')}><GoHubot /></button>
+    <button onClick={() => action('clicked')}><IconLink /></button>
+    <button onClick={() => action('clicked')}><IconGithub /></button>
+    <button onClick={() => action('clicked')}><IconFacebook /></button>
   </Footer>
 )
 

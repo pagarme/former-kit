@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
-import FaPlane from 'react-icons/lib/fa/plane'
+import IconMail from 'emblematic-icons/svg/Mail32.svg'
 
 import Input from '../../src/Input/form'
 import style from '../style.css'
@@ -120,7 +120,7 @@ storiesOf('Inputs', module)
           label="Digite seu nome"
           placeholder="eaee"
           disabled
-          icon={<FaPlane size={20} />}
+          icon={<IconMail width={16} height={16} />}
           onChange={action('text changed')}
           value=""
         />
@@ -128,17 +128,17 @@ storiesOf('Inputs', module)
 
       <section>
         <h3>Icon default</h3>
-        <InputState type="text" icon={<FaPlane size={20} />} />
+        <InputState type="text" icon={<IconMail width={16} height={16} />} />
       </section>
 
       <section>
         <h3>Icon error</h3>
-        <InputState type="text" error="Erro!" icon={<FaPlane size={20} />} />
+        <InputState type="text" error="Erro!" icon={<IconMail width={16} height={16} />} />
       </section>
 
       <section>
         <h3>Icon success</h3>
-        <InputState type="text" success="Sucesso!" icon={<FaPlane size={20} />} />
+        <InputState type="text" success="Sucesso!" icon={<IconMail width={16} height={16} />} />
       </section>
 
       <section>
@@ -149,7 +149,7 @@ storiesOf('Inputs', module)
           placeholder="eae"
           multiline
           disabled
-          icon={<FaPlane size={20} />}
+          icon={<IconMail width={16} height={16} />}
           onChange={action('text changed')}
           value=""
         />
@@ -157,17 +157,17 @@ storiesOf('Inputs', module)
 
       <section>
         <h3>Icon multiline default</h3>
-        <InputState multiline icon={<FaPlane size={20} />} />
+        <InputState multiline icon={<IconMail width={16} height={16} />} />
       </section>
 
       <section>
         <h3>Icon multiline error</h3>
-        <InputState multiline error="Erro!" icon={<FaPlane size={20} />} />
+        <InputState multiline error="Erro!" icon={<IconMail width={16} height={16} />} />
       </section>
 
       <section>
         <h3>Icon multiline success</h3>
-        <InputState multiline success="Sucesso!" icon={<FaPlane size={20} />} />
+        <InputState multiline success="Sucesso!" icon={<IconMail width={16} height={16} />} />
       </section>
 
       <section>

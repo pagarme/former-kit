@@ -1,8 +1,8 @@
 import React from 'react'
 
-import IconMyAccount from 'react-icons/lib/md/face'
-import IconDocs from 'react-icons/lib/md/import-contacts'
-import IconLetter from 'react-icons/lib/md/assignment'
+import IconMyAccount from 'emblematic-icons/svg/User32.svg'
+import IconDocs from 'emblematic-icons/svg/Folder32.svg'
+import IconLetter from 'emblematic-icons/svg/Report32.svg'
 
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
@@ -48,25 +48,25 @@ class Tab extends React.Component {
         onTabChange={this.changeTab}
       >
         <TabItem
-          icon={<IconMyAccount />}
+          icon={<IconMyAccount width={16} height={16} />}
           text={i18n.MyAccount}
           onClick={clicked}
         >
-          <h1>{i18n.ThisIs} {i18n.MyAccount} <IconMyAccount /></h1>
+          <h1>{i18n.ThisIs} {i18n.MyAccount} <IconMyAccount width={16} height={16} /></h1>
         </TabItem>
         <TabItem
-          icon={<IconDocs />}
+          icon={<IconDocs width={16} height={16} />}
           text={i18n.Docs}
           onClick={clicked}
         >
-          <h2>{i18n.ThisIs} {i18n.Docs} <IconDocs /></h2>
+          <h2>{i18n.ThisIs} {i18n.Docs} <IconDocs width={16} height={16} /></h2>
         </TabItem>
         <TabItem
-          icon={<IconLetter />}
+          icon={<IconLetter width={16} height={16} />}
           text={i18n.Letter}
           onClick={clicked}
         >
-          <h3>{i18n.ThisIs} {i18n.Letter} <IconLetter /></h3>
+          <h3>{i18n.ThisIs} {i18n.Letter} <IconLetter width={16} height={16} /></h3>
         </TabItem>
       </TabBar>
     )

@@ -1,7 +1,6 @@
 import React from 'react'
 
 import { mount } from 'enzyme'
-import Icon from 'react-icons/lib/md/add-a-photo'
 
 import {
   Modal,
@@ -17,7 +16,7 @@ describe('Modal', () => {
       <Modal
         isOpen
       >
-        <ModalTitle icon={<Icon />} title="Awesome Content" />
+        <ModalTitle icon={<svg />} title="Awesome Content" />
         <ModalContent>Modal Content</ModalContent>
         <ModalActions>
           <button>I dont Work</button>
@@ -32,7 +31,7 @@ describe('Modal', () => {
       <Modal
         isOpen={false}
       >
-        <ModalTitle icon={<Icon />} title="Awesome Content" />
+        <ModalTitle icon={<svg />} title="Awesome Content" />
         <ModalContent>Modal Content</ModalContent>
         <ModalActions>
           <button>I dont Work</button>

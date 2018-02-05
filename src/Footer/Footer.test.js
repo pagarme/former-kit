@@ -1,6 +1,5 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import MdAirplanemodeActive from 'react-icons/lib/md/airplanemode-active'
 
 import Footer from './index'
 
@@ -29,9 +28,9 @@ describe('Footer', () => {
       <Footer
         links={links}
       >
-        <button onClick={() => null}><MdAirplanemodeActive /></button>
-        <button onClick={() => null}><MdAirplanemodeActive /></button>
-        <button onClick={() => null}><MdAirplanemodeActive /></button>
+        <button onClick={() => null}><svg /></button>
+        <button onClick={() => null}><svg /></button>
+        <button onClick={() => null}><svg /></button>
       </Footer>
     )
   })
@@ -41,9 +40,9 @@ describe('Footer', () => {
       <Footer
         links={links}
       >
-        <button onClick={() => null}><MdAirplanemodeActive /></button>
-        <button onClick={() => null}><MdAirplanemodeActive /></button>
-        <button onClick={() => null}><MdAirplanemodeActive /></button>
+        <button onClick={() => null}><svg /></button>
+        <button onClick={() => null}><svg /></button>
+        <button onClick={() => null}><svg /></button>
       </Footer>
     )
 

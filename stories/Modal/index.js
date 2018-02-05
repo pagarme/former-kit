@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 import { storiesOf } from '@storybook/react'
 
-import IconAddPhoto from 'react-icons/lib/md/add-a-photo'
+import IconAddPhoto from 'emblematic-icons/svg/Camera32.svg'
 
 import style from './style.css'
 
@@ -43,7 +43,7 @@ class ModalWithState extends Component {
           fill="flat"
           relevance="low"
           onClick={this.handleToggleModal}
-          icon={<IconAddPhoto />}
+          icon={<IconAddPhoto width={16} height={16} />}
         >
           Add Photo
         </Button>
@@ -54,7 +54,7 @@ class ModalWithState extends Component {
           isOpen={this.state.isOpen}
           onRequestClose={this.handleToggleModal}
         >
-          <ModalTitle icon={<IconAddPhoto />} title="Add Photo" />
+          <ModalTitle icon={<IconAddPhoto width={16} height={16} />} title="Add Photo" />
 
           <ModalContent>
             <p>This is the modal Content with React Modal module</p>

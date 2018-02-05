@@ -1,7 +1,7 @@
 import React from 'react'
 import { action } from '@storybook/addon-actions'
 
-import Icon from 'react-icons/lib/md/insert-invitation'
+import Icon from 'emblematic-icons/svg/Calendar32.svg'
 
 import style from './style.css'
 
@@ -39,7 +39,7 @@ const TitleIcon = () => (
     <Card>
       <CardTitle
         title="Lorem ipsum dolor sit amet"
-        icon={<Icon />}
+        icon={<Icon width={16} height={16} />}
       />
       <CardContent>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris

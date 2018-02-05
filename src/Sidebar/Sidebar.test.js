@@ -1,6 +1,5 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import MdMenu from 'react-icons/lib/md/menu'
 
 import {
   Sidebar,
@@ -28,7 +27,7 @@ class SidebarComponent extends React.Component {
             <img src="https://assets.pagar.me/site/general/logo-light-3812e7ea6b596bdcc8c041f0edc4ff15.png" alt="Pagar.me" />
           }
           <button onClick={() => this.setState({ collapsed: !collapsed })}>
-            <MdMenu />
+            <svg />
           </button>
         </SidebarHeader>
       </Sidebar>

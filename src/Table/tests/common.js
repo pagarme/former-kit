@@ -1,12 +1,15 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import IconArrowDown from 'react-icons/lib/md/keyboard-arrow-down'
-import IconArrowUp from 'react-icons/lib/md/keyboard-arrow-up'
-import IconLongArrowDown from 'react-icons/lib/fa/long-arrow-down'
-import IconLongArrowUp from 'react-icons/lib/fa/long-arrow-up'
-import IconSort from 'react-icons/lib/fa/sort'
 import Button from '../../Button'
 import Table from '../index'
+
+const icons = {
+  ascending: <svg />,
+  descending: <svg />,
+  orderable: <svg />,
+  collapse: <svg />,
+  expand: <svg />,
+}
 
 const columnWithRenderer = {
   title: 'Status',
@@ -187,13 +190,7 @@ const createComponents = ({
       rows={rows}
       selectable={selectable}
       selectedRows={selectedRows}
-      icons={{
-        expand: <IconArrowDown />,
-        collapse: <IconArrowUp />,
-        descending: <IconLongArrowDown />,
-        ascending: <IconLongArrowUp />,
-        orderable: <IconSort />,
-      }}
+      icons={icons}
     />
   )
 

@@ -1,13 +1,10 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import MdMenu from 'react-icons/lib/md/menu'
-import IconArrowUp from 'react-icons/lib/md/keyboard-arrow-up'
-import IconArrowDown from 'react-icons/lib/md/keyboard-arrow-down'
 import SidebarLink from './SidebarLink'
 
 const arrowIcons = {
-  collapse: <IconArrowUp />,
-  expand: <IconArrowDown />,
+  collapse: <svg />,
+  expand: <svg />,
 }
 
 describe('SidebarLink', () => {
@@ -48,7 +45,7 @@ describe('SidebarLink', () => {
       <SidebarLink
         theme={{}}
         title="Hello"
-        icon={<MdMenu />}
+        icon={<svg />}
       />
     )
 
@@ -192,7 +189,7 @@ describe('SidebarLink', () => {
         .dive()
         .find('Arrow')
         .dive()
-        .find('MdKeyboardArrowUp')
+        .find('svg')
         .exists()
     ).toBeTruthy()
 
@@ -201,7 +198,7 @@ describe('SidebarLink', () => {
         .dive()
         .find('Arrow')
         .dive()
-        .find('MdKeyboardArrowDown')
+        .find('svg')
         .exists()
     ).toBeTruthy()
   })
@@ -211,7 +208,7 @@ describe('SidebarLink', () => {
       <SidebarLink
         theme={{}}
         title="Hello"
-        icon={<MdMenu />}
+        icon={<svg />}
         collapsed
       />
     )

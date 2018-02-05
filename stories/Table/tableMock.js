@@ -3,8 +3,8 @@ import {
   equals,
   ifElse,
 } from 'ramda'
-import IconVisa from 'react-icons/lib/fa/cc-visa'
-import IconMaster from 'react-icons/lib/fa/cc-mastercard'
+import IconVisa from 'emblematic-icons/svg/VisaCard16.svg'
+import IconMaster from 'emblematic-icons/svg/MasterCard16.svg'
 import Legend from '../../src/Legend'
 import Button from '../../src/Button'
 import style from './style.css'

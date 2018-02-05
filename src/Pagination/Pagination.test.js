@@ -1,12 +1,10 @@
 import React from 'react'
 import { mount, shallow } from 'enzyme'
-import ArrowLeft from 'react-icons/lib/md/keyboard-arrow-left'
-import ArrowRight from 'react-icons/lib/md/keyboard-arrow-right'
 import Pagination from './index'
 
 const icons = {
-  previous: <ArrowLeft size={13} viewBox="10 10 20 20" />,
-  next: <ArrowRight size={13} viewBox="10 10 20 20" />,
+  previous: <svg />,
+  next: <svg />,
 }
 
 describe('Pagination', () => {

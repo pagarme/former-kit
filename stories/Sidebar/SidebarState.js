@@ -1,8 +1,8 @@
 import React from 'react'
 
-import MdMenu from 'react-icons/lib/md/menu'
-import MdEventNote from 'react-icons/lib/md/event-note'
-import MdFreeBreakfast from 'react-icons/lib/md/free-breakfast'
+import IconMenu from 'emblematic-icons/svg/Menu32.svg'
+import IconHome from 'emblematic-icons/svg/Home32.svg'
+import IconTransaction from 'emblematic-icons/svg/Transaction32.svg'
 import shortid from 'shortid'
 
 import {
@@ -21,12 +21,12 @@ const items = [
   {
     value: 'minha-conta',
     title: 'Minha conta',
-    icon: <MdEventNote />,
+    icon: <IconHome width={16} height={16} />,
   },
   {
     value: 'transacoes',
     title: 'Transações',
-    icon: <MdFreeBreakfast />,
+    icon: <IconTransaction width={16} height={16} />,
   },
 ]
 
@@ -88,7 +88,7 @@ class SidebarState extends React.Component {
             <img src="https://assets.pagar.me/site/general/logo-light-3812e7ea6b596bdcc8c041f0edc4ff15.png" alt="Pagar.me" />
           }
           <button onClick={() => this.setState({ collapsed: !collapsed })}>
-            <MdMenu />
+            <IconMenu />
           </button>
         </SidebarHeader>
 
