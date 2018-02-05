@@ -83,7 +83,9 @@
     "whatwg-fetch": "2.0.3"
   },
   "scripts": {
-    "build": "env NODE_ENV=production babel src -d dist --ignore spec.js,test.js",
+    "build": "env NODE_ENV=production babel src $WATCH -d dist --ignore spec.js,test.js",
+    "start": "env WATCH=-w run-p lint:watch build",
+    "lint:watch": "chokidar './{src,stories}/**/*.{js,css}' -c 'run-s lint'",
     "lint": "eslint './{src,stories}/**/*.js' && stylelint './{src,stories}/**/*.css'",
     "test": "node scripts/test.js --env=jsdom",
     "test-coverage": "node scripts/test.js --env=jsdom --coverage",
@@ -98,8 +100,10 @@
   "devDependencies": {
     "babel-cli": "6.26.0",
     "babel-plugin-transform-es2015-modules-commonjs": "6.26.0",
+    "chokidar-cli": "1.2.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "former-kit-skin-pagarme": "0.0.7",
+    "npm-run-all": "4.1.2",
     "react-styleguidist": "^6.2.1",
     "svgr": "1.6.0"
   }
