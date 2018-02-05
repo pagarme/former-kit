@@ -8,7 +8,10 @@ webpackConfig.module.rules.unshift({
 })
 
 module.exports = {
-  components: '../src/**/*.js',
+  sections: [
+    { content: '../README.md' },
+    { components: '../src/**/*.js' },
+  ],
   ignore: [
     '*.test.js',
     '**/*.test.js',
