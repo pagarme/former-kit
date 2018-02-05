@@ -21,9 +21,9 @@ const Layout = ({
     <div className={theme.wrapper}>
       {header}
       <div className={theme.content}>
-        <div className={theme.children}>
+        <main role="main" className={theme.children}>
           {children}
-        </div>
+        </main>
         {footer}
       </div>
     </div>
