@@ -5,7 +5,6 @@ module.exports = {
     jest: true
   },
   rules: {
-    "react/jsx-filename-extension": [0],
     "import/no-extraneous-dependencies": ["warn", {
       devDependencies: true,
       peerDependencies: true,

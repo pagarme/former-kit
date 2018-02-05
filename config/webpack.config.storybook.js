@@ -1,3 +1,4 @@
+const path = require('path')
 const eslintFormatter = require('react-dev-utils/eslintFormatter')
 const stylelintFormatter = require('./stylelintFormatter')
 const postcssUrlRebase = require('./postcssUrlRebase')
@@ -23,6 +24,7 @@ module.exports = {
             options: {
               formatter: eslintFormatter,
               eslintPath: require.resolve('eslint'),
+              configFile: path.resolve(__dirname, '../stories/.eslintrc.js'),
             },
             loader: require.resolve('eslint-loader'),
           },
