@@ -13687,14 +13687,14 @@ exports[`Storyshots Legend defaultTheme 1`] = `
               "background": "#53be76",
             }
           }
-          title="Paga"
+          title="MacGuybird"
         >
-          P
+          M
         </abbr>
         <span
           className="text"
         >
-          Paga
+          MacGuybird
         </span>
       </div>
     </div>
@@ -13715,14 +13715,14 @@ exports[`Storyshots Legend defaultTheme 1`] = `
               "background": "#fcb20a",
             }
           }
-          title="Autorizada"
+          title="Mad Dog"
         >
-          A
+          MD
         </abbr>
         <span
           className="text"
         >
-          Autorizada
+          Mad Dog
         </span>
       </div>
     </div>
@@ -13743,14 +13743,14 @@ exports[`Storyshots Legend defaultTheme 1`] = `
               "background": "#5b2886",
             }
           }
-          title="Estornada"
+          title="Dabblit"
         >
-          E
+          D
         </abbr>
         <span
           className="text"
         >
-          Estornada
+          Dabblit
         </span>
       </div>
     </div>
@@ -13771,14 +13771,14 @@ exports[`Storyshots Legend defaultTheme 1`] = `
               "background": "#9d9fa0",
             }
           }
-          title="Aguardando registro"
+          title="Danger Mouse"
         >
-          AR
+          DM
         </abbr>
         <span
           className="text"
         >
-          Aguardando registro
+          Danger Mouse
         </span>
       </div>
     </div>
@@ -13799,14 +13799,14 @@ exports[`Storyshots Legend defaultTheme 1`] = `
               "background": "#e00403",
             }
           }
-          title="Recusada"
+          title="Dandelion"
         >
-          R
+          D
         </abbr>
         <span
           className="text"
         >
-          Recusada
+          Dandelion
         </span>
       </div>
     </div>
@@ -13827,14 +13827,14 @@ exports[`Storyshots Legend defaultTheme 1`] = `
               "background": "#8c68d4",
             }
           }
-          title="Estorno pendente"
+          title="Caboodles"
         >
-          EP
+          C
         </abbr>
         <span
           className="text"
         >
-          Estorno pendente
+          Caboodles
         </span>
       </div>
     </div>
@@ -13858,14 +13858,14 @@ exports[`Storyshots Legend defaultTheme 1`] = `
               "background": "#951d3c",
             }
           }
-          title="Processando"
+          title="Fa-neenee"
         >
-          PR
+          FN
         </abbr>
         <span
           className="text"
         >
-          Processando
+          Fa-neenee
         </span>
       </div>
     </div>
@@ -13886,14 +13886,14 @@ exports[`Storyshots Legend defaultTheme 1`] = `
               "background": "#244d85",
             }
           }
-          title="Boleto pago com valor inferior"
+          title="Fast Freddie"
         >
-          BPVI
+          FF
         </abbr>
         <span
           className="text"
         >
-          Boleto pago com valor inferior
+          Fast Freddie
         </span>
       </div>
     </div>
@@ -13914,14 +13914,14 @@ exports[`Storyshots Legend defaultTheme 1`] = `
               "background": "#bf5316",
             }
           }
-          title="Chargeback Reapresentado"
+          title="Tangsodo"
         >
-          CBR
+          TS
         </abbr>
         <span
           className="text"
         >
-          Chargeback Reapresentado
+          Tangsodo
         </span>
       </div>
     </div>
@@ -13945,9 +13945,9 @@ exports[`Storyshots Legend defaultTheme 1`] = `
               "background": "#4ca9d7",
             }
           }
-          title="Boleto pago com valor superior"
+          title="Zazu"
         >
-          BPVS
+          ZZ
         </abbr>
       </div>
     </div>
@@ -13968,9 +13968,9 @@ exports[`Storyshots Legend defaultTheme 1`] = `
               "background": "#f16518",
             }
           }
-          title="Chargeback"
+          title="Zeke"
         >
-          CB
+          ZK
         </abbr>
       </div>
     </div>
@@ -13991,9 +13991,9 @@ exports[`Storyshots Legend defaultTheme 1`] = `
               "background": "#41535b",
             }
           }
-          title="Aguardando pagamento"
+          title="Macaroni"
         >
-          AP
+          M
         </abbr>
       </div>
     </div>
