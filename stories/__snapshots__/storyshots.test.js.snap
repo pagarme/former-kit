@@ -5963,62 +5963,71 @@ exports[`Storyshots Dropdown Form 1`] = `
 </div>
 `;
 
-exports[`Storyshots Footer defaultTheme 1`] = `
-<footer
-  className="footer"
+exports[`Storyshots Footer Default 1`] = `
+<section
+  className={undefined}
 >
-  <nav
-    className="links"
-  >
-    <button
-      onClick={[Function]}
-      role="link"
-      title="Documentation"
+  <h2>
+    Only example
+  </h2>
+  <div>
+    <footer
+      className="footer"
     >
-      Documentation
-    </button>
-    <button
-      onClick={[Function]}
-      role="link"
-      title="Support"
-    >
-      Support
-    </button>
-    <button
-      onClick={[Function]}
-      role="link"
-      title="Privacy"
-    >
-      Privacy
-    </button>
-    <button
-      onClick={[Function]}
-      role="link"
-      title="Contact"
-    >
-      Contact
-    </button>
-  </nav>
-  <nav
-    className="buttons"
-  >
-    <button
-      onClick={[Function]}
-    >
-      <Link20.svg />
-    </button>
-    <button
-      onClick={[Function]}
-    >
-      <Github20.svg />
-    </button>
-    <button
-      onClick={[Function]}
-    >
-      <Facebook20.svg />
-    </button>
-  </nav>
-</footer>
+      <nav
+        className="links"
+      >
+        <button
+          onClick={[Function]}
+          role="link"
+          title="Documentation"
+        >
+          Documentation
+        </button>
+        <button
+          onClick={[Function]}
+          role="link"
+          title="Support"
+        >
+          Support
+        </button>
+        <button
+          onClick={[Function]}
+          role="link"
+          title="Privacy"
+        >
+          Privacy
+        </button>
+        <button
+          onClick={[Function]}
+          role="link"
+          title="Contact"
+        >
+          Contact
+        </button>
+      </nav>
+      <nav
+        className="buttons"
+      >
+        <button
+          onClick={[Function]}
+        >
+          <Link20.svg />
+        </button>
+        <button
+          onClick={[Function]}
+        >
+          <Github20.svg />
+        </button>
+        <button
+          onClick={[Function]}
+        >
+          <Facebook20.svg />
+        </button>
+      </nav>
+    </footer>
+  </div>
+</section>
 `;
 
 exports[`Storyshots Grid Column sizes 1`] = `
