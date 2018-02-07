@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react'
 import style from './style.css'
 
 storiesOf('Typography', module)
-  .add('Famílias de Fonte', () => (
+  .add('Font families', () => (
     <div className={style.fontBook}>
       <div>
         <span>Heading 1</span>
@@ -38,9 +38,9 @@ storiesOf('Typography', module)
       </div>
     </div>
   ))
-  .add('Aplicações', () => (
+  .add('Use cases', () => (
     <div>
-      <h1>Parágrafo</h1>
+      <h1>Paragraph</h1>
       <p>
         Curabitur at finibus neque. In efficitur sapien ut lectus suscipit
         consequat. Proin eget aliquam leo.
@@ -51,7 +51,7 @@ storiesOf('Typography', module)
         vel venenatis. Proin sit amet ec
         <a href="http://www.lipsum.com">magna ornare</a> iaculis.
       </p>
-      <h1>Listas</h1>
+      <h1>Lists</h1>
       <ul>
         <li>Lorem ipsum dolor sit amet</li>
         <ul>
@@ -62,7 +62,7 @@ storiesOf('Typography', module)
         </ul>
         <li>Lorem ipsum dolor sit amet</li>
       </ul>
-      <h1>Citação</h1>
+      <h1>Quotes</h1>
       <blockquote>
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry standard dummy text ever
