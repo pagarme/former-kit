@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import moment from 'moment'
-import IconCalendar from 'react-icons/lib/fa/calendar'
+import IconCalendar from 'emblematic-icons/svg/Calendar32.svg'
 import DateInput from '../../src/DateInput'
 import Button from '../../src/Button'
 
@@ -51,7 +51,7 @@ class DateInputState extends React.Component {
             lower: moment('01-01-2013', 'DD-MM-YYYY'),
             upper: moment('01-01-2025', 'DD-MM-YYYY'),
           }}
-          icon={<IconCalendar size={16} />}
+          icon={<IconCalendar width={16} height={16} />}
         />
         <Button onClick={this.handleReset}>Reset dates</Button>
       </div>

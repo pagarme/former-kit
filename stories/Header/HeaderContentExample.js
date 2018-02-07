@@ -1,7 +1,6 @@
 import React from 'react'
-import IconAlert from 'react-icons/lib/md/add-alert'
-import MdMessage from 'react-icons/lib/md/message'
-import FaUser from 'react-icons/lib/fa/user-md'
+import IconAlert from 'emblematic-icons/svg/Alert24.svg'
+import IconMessage from 'emblematic-icons/svg/Support24.svg'
 import Avatar from '../../src/Avatar'
 
 import {
@@ -13,14 +12,14 @@ import {
 const HeaderContentExample = ({ photo }) => (
   <HeaderContent>
     <HeaderLink onClick={() => null}>
-      <IconAlert size={24} />
+      <IconAlert />
     </HeaderLink>
     <HeaderLink
       onClick={() => null}
-      icon={<MdMessage size={24} />}
+      icon={<IconMessage />}
     />
     <HeaderMenu onClick={() => null}>
-      <Avatar photo={photo} icon={<FaUser size={24} />} />
+      <Avatar photo={photo} />
       <span>Nome da Pessoa</span>
     </HeaderMenu>
   </HeaderContent>

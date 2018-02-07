@@ -1,8 +1,5 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import MdKeyboardArrowLeft from 'react-icons/lib/md/keyboard-arrow-left'
-import IconAlert from 'react-icons/lib/md/add-alert'
-import IconArrowDown from 'react-icons/lib/md/arrow-downward'
 
 import {
   Header,
@@ -17,23 +14,22 @@ describe('Header', () => {
     mount(
       <Header>
         <HeaderBackButton
-          icons={{ back: <MdKeyboardArrowLeft /> }}
           onClick={() => {}}
         />
 
         <HeaderTitle>Transactions</HeaderTitle>
         <HeaderContent>
           <HeaderLink onClick={() => {}}>
-            <IconAlert />
+            <svg />
           </HeaderLink>
           <HeaderLink
             onClick={() => {}}
-            icon={<IconAlert />}
+            icon={<svg />}
           />
           <HeaderLink onClick={() => {}}>
             <div>
               <span>Nome da Pessoa</span>
-              <IconArrowDown />
+              <svg />
             </div>
           </HeaderLink>
         </HeaderContent>
