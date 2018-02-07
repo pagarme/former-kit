@@ -85,42 +85,42 @@ const LayoutExample = ({
 )
 
 storiesOf('Layout', module)
-  .add('defaultTheme with all props', () => (
+  .add('Default with all props', () => (
     <LayoutExample
       sidebar={<SidebarExample />}
       header={<HeaderExample />}
       footer={<FooterExample />}
     />
   ))
-  .add('defaultTheme without Sidebar', () => (
+  .add('Default without Sidebar', () => (
     <LayoutExample
       header={<HeaderExample />}
       footer={<FooterExample />}
     />
   ))
-  .add('defaultTheme without Header', () => (
+  .add('Default without Header', () => (
     <LayoutExample
       sidebar={<SidebarExample />}
       footer={<FooterExample />}
     />
   ))
-  .add('defaultTheme without Footer', () => (
+  .add('Default without Footer', () => (
     <LayoutExample
       sidebar={<SidebarExample />}
       header={<HeaderExample />}
     />
   ))
-  .add('defaultTheme only Sidebar', () => (
+  .add('Default only Sidebar', () => (
     <LayoutExample
       sidebar={<SidebarExample />}
     />
   ))
-  .add('defaultTheme only Header', () => (
+  .add('Default only Header', () => (
     <LayoutExample
       header={<HeaderExample />}
     />
   ))
-  .add('defaultTheme only Footer', () => (
+  .add('Default only Footer', () => (
     <LayoutExample
       footer={<FooterExample />}
     />

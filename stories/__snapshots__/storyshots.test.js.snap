@@ -10673,7 +10673,7 @@ exports[`Storyshots Landing Pagar.me two factor login 1`] = `
 </div>
 `;
 
-exports[`Storyshots Layout defaultTheme only Footer 1`] = `
+exports[`Storyshots Layout Default only Footer 1`] = `
 <div
   style={
     Object {
@@ -11021,7 +11021,7 @@ exports[`Storyshots Layout defaultTheme only Footer 1`] = `
 </div>
 `;
 
-exports[`Storyshots Layout defaultTheme only Header 1`] = `
+exports[`Storyshots Layout Default only Header 1`] = `
 <div
   style={
     Object {
@@ -11356,7 +11356,7 @@ exports[`Storyshots Layout defaultTheme only Header 1`] = `
 </div>
 `;
 
-exports[`Storyshots Layout defaultTheme only Sidebar 1`] = `
+exports[`Storyshots Layout Default only Sidebar 1`] = `
 <div
   style={
     Object {
@@ -11787,535 +11787,7 @@ exports[`Storyshots Layout defaultTheme only Sidebar 1`] = `
 </div>
 `;
 
-exports[`Storyshots Layout defaultTheme with all props 1`] = `
-<div
-  style={
-    Object {
-      "backgroundColor": "#f9f9f9",
-      "height": "calc(100vh - 16px)",
-    }
-  }
->
-  <div
-    className="layout"
-  >
-    <aside
-      className="sidebar"
-    >
-      <header
-        className="header"
-      >
-        <img
-          alt="Pagar.me"
-          src="https://assets.pagar.me/site/general/logo-light-3812e7ea6b596bdcc8c041f0edc4ff15.png"
-        />
-        <button
-          onClick={[Function]}
-        >
-          <Menu32.svg />
-        </button>
-      </header>
-      <div
-        className="content"
-      >
-        <div
-          className="segmentedSwitch"
-        >
-          <label
-            className="item"
-            htmlFor="segmented-switch-shortid-mock-shortid-mock-live-test-live"
-          >
-            <input
-              checked={true}
-              id="segmented-switch-shortid-mock-shortid-mock-live-test-live"
-              name="segmented-switch-shortid-mock-shortid-mock-live-test-live"
-              onChange={[Function]}
-              type="radio"
-              value="live"
-            />
-            <span
-              className="label"
-            >
-              live
-            </span>
-          </label>
-          <label
-            className="item"
-            htmlFor="segmented-switch-shortid-mock-shortid-mock-live-test-test"
-          >
-            <input
-              checked={false}
-              id="segmented-switch-shortid-mock-shortid-mock-live-test-test"
-              name="segmented-switch-shortid-mock-shortid-mock-live-test-test"
-              onChange={[Function]}
-              type="radio"
-              value="test"
-            />
-            <span
-              className="label"
-            >
-              test
-            </span>
-          </label>
-        </div>
-      </div>
-      <nav
-        className="items"
-      >
-        <ul>
-          <li
-            className="link"
-          >
-            <button
-              onClick={[Function]}
-              role="link"
-            >
-              <div
-                className="title"
-              >
-                <span
-                  className="icon"
-                />
-                Pagar.me
-              </div>
-              <div
-                className="subtitle"
-              >
-                <span>
-                  show balance
-                </span>
-                <svg />
-              </div>
-            </button>
-          </li>
-          <li
-            className="link"
-          >
-            <button
-              onClick={[Function]}
-              role="link"
-            >
-              <div
-                className="title"
-              >
-                <span
-                  className="icon"
-                >
-                  <Home32.svg
-                    height={16}
-                    width={16}
-                  />
-                </span>
-                My Account
-              </div>
-              
-            </button>
-          </li>
-          <li
-            className="link"
-          >
-            <button
-              onClick={[Function]}
-              role="link"
-            >
-              <div
-                className="title"
-              >
-                <span
-                  className="icon"
-                >
-                  <Transaction32.svg
-                    height={16}
-                    width={16}
-                  />
-                </span>
-                Transactions
-              </div>
-              
-            </button>
-          </li>
-        </ul>
-      </nav>
-    </aside>
-    <div
-      className="wrapper"
-    >
-      <header
-        className="header"
-      >
-        <h1
-          className="title"
-        >
-          Transactions
-        </h1>
-        <div
-          className="content"
-        >
-          <button
-            className="link"
-            onClick={[Function]}
-            role="link"
-          >
-            <Alert24.svg />
-          </button>
-          <button
-            className="link"
-            onClick={[Function]}
-            role="link"
-          >
-            <Support24.svg />
-          </button>
-          <button
-            className="menu"
-            onClick={[Function]}
-            role="link"
-          >
-            <div
-              className="avatar placeholder"
-            >
-              <svg />
-            </div>
-            <span>
-              Nome da Pessoa
-            </span>
-            <svg />
-          </button>
-        </div>
-      </header>
-      <div
-        className="content"
-      >
-        <main
-          className="children"
-          role="main"
-        >
-          <div
-            className="grid"
-          >
-            <div
-              className="row flex"
-            >
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h3>
-                      Lorem ipsum dolor sit amet
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h3>
-                      Lorem ipsum dolor sit amet
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="row"
-            >
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h3>
-                      Lorem ipsum dolor sit amet
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="row flex"
-            >
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h3>
-                      Lorem ipsum dolor sit amet
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h3>
-                      Lorem ipsum dolor sit amet
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h3>
-                      Lorem ipsum dolor sit amet
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="row flex"
-            >
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h3>
-                      Lorem ipsum dolor sit amet
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h3>
-                      Lorem ipsum dolor sit amet
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h3>
-                      Lorem ipsum dolor sit amet
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h3>
-                      Lorem ipsum dolor sit amet
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="row flex"
-            >
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h3>
-                      Lorem ipsum dolor sit amet
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h3>
-                      Lorem ipsum dolor sit amet
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </main>
-        <footer
-          className="footer"
-        >
-          <nav
-            className="links"
-          >
-            <button
-              onClick={[Function]}
-              role="link"
-              title="Documentação"
-            >
-              Documentação
-            </button>
-            <button
-              onClick={[Function]}
-              role="link"
-              title="Suporte"
-            >
-              Suporte
-            </button>
-            <button
-              onClick={[Function]}
-              role="link"
-              title="Política de Privacidade"
-            >
-              Política de Privacidade
-            </button>
-            <button
-              onClick={[Function]}
-              role="link"
-              title="Contato"
-            >
-              Contato
-            </button>
-          </nav>
-          <nav
-            className="buttons"
-          >
-            <button
-              onClick={[Function]}
-            >
-              <Link20.svg />
-            </button>
-            <button
-              onClick={[Function]}
-            >
-              <Github20.svg />
-            </button>
-            <button
-              onClick={[Function]}
-            >
-              <Facebook20.svg />
-            </button>
-          </nav>
-        </footer>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Layout defaultTheme without Footer 1`] = `
+exports[`Storyshots Layout Default with all props 1`] = `
 <div
   style={
     Object {
@@ -12782,13 +12254,541 @@ exports[`Storyshots Layout defaultTheme without Footer 1`] = `
             </div>
           </div>
         </main>
+        <footer
+          className="footer"
+        >
+          <nav
+            className="links"
+          >
+            <button
+              onClick={[Function]}
+              role="link"
+              title="Documentação"
+            >
+              Documentação
+            </button>
+            <button
+              onClick={[Function]}
+              role="link"
+              title="Suporte"
+            >
+              Suporte
+            </button>
+            <button
+              onClick={[Function]}
+              role="link"
+              title="Política de Privacidade"
+            >
+              Política de Privacidade
+            </button>
+            <button
+              onClick={[Function]}
+              role="link"
+              title="Contato"
+            >
+              Contato
+            </button>
+          </nav>
+          <nav
+            className="buttons"
+          >
+            <button
+              onClick={[Function]}
+            >
+              <Link20.svg />
+            </button>
+            <button
+              onClick={[Function]}
+            >
+              <Github20.svg />
+            </button>
+            <button
+              onClick={[Function]}
+            >
+              <Facebook20.svg />
+            </button>
+          </nav>
+        </footer>
       </div>
     </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots Layout defaultTheme without Header 1`] = `
+exports[`Storyshots Layout Default without Footer 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "#f9f9f9",
+      "height": "calc(100vh - 16px)",
+    }
+  }
+>
+  <div
+    className="layout"
+  >
+    <aside
+      className="sidebar"
+    >
+      <header
+        className="header"
+      >
+        <img
+          alt="Pagar.me"
+          src="https://assets.pagar.me/site/general/logo-light-3812e7ea6b596bdcc8c041f0edc4ff15.png"
+        />
+        <button
+          onClick={[Function]}
+        >
+          <Menu32.svg />
+        </button>
+      </header>
+      <div
+        className="content"
+      >
+        <div
+          className="segmentedSwitch"
+        >
+          <label
+            className="item"
+            htmlFor="segmented-switch-shortid-mock-shortid-mock-live-test-live"
+          >
+            <input
+              checked={true}
+              id="segmented-switch-shortid-mock-shortid-mock-live-test-live"
+              name="segmented-switch-shortid-mock-shortid-mock-live-test-live"
+              onChange={[Function]}
+              type="radio"
+              value="live"
+            />
+            <span
+              className="label"
+            >
+              live
+            </span>
+          </label>
+          <label
+            className="item"
+            htmlFor="segmented-switch-shortid-mock-shortid-mock-live-test-test"
+          >
+            <input
+              checked={false}
+              id="segmented-switch-shortid-mock-shortid-mock-live-test-test"
+              name="segmented-switch-shortid-mock-shortid-mock-live-test-test"
+              onChange={[Function]}
+              type="radio"
+              value="test"
+            />
+            <span
+              className="label"
+            >
+              test
+            </span>
+          </label>
+        </div>
+      </div>
+      <nav
+        className="items"
+      >
+        <ul>
+          <li
+            className="link"
+          >
+            <button
+              onClick={[Function]}
+              role="link"
+            >
+              <div
+                className="title"
+              >
+                <span
+                  className="icon"
+                />
+                Pagar.me
+              </div>
+              <div
+                className="subtitle"
+              >
+                <span>
+                  show balance
+                </span>
+                <svg />
+              </div>
+            </button>
+          </li>
+          <li
+            className="link"
+          >
+            <button
+              onClick={[Function]}
+              role="link"
+            >
+              <div
+                className="title"
+              >
+                <span
+                  className="icon"
+                >
+                  <Home32.svg
+                    height={16}
+                    width={16}
+                  />
+                </span>
+                My Account
+              </div>
+              
+            </button>
+          </li>
+          <li
+            className="link"
+          >
+            <button
+              onClick={[Function]}
+              role="link"
+            >
+              <div
+                className="title"
+              >
+                <span
+                  className="icon"
+                >
+                  <Transaction32.svg
+                    height={16}
+                    width={16}
+                  />
+                </span>
+                Transactions
+              </div>
+              
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <div
+      className="wrapper"
+    >
+      <header
+        className="header"
+      >
+        <h1
+          className="title"
+        >
+          Transactions
+        </h1>
+        <div
+          className="content"
+        >
+          <button
+            className="link"
+            onClick={[Function]}
+            role="link"
+          >
+            <Alert24.svg />
+          </button>
+          <button
+            className="link"
+            onClick={[Function]}
+            role="link"
+          >
+            <Support24.svg />
+          </button>
+          <button
+            className="menu"
+            onClick={[Function]}
+            role="link"
+          >
+            <div
+              className="avatar placeholder"
+            >
+              <svg />
+            </div>
+            <span>
+              Nome da Pessoa
+            </span>
+            <svg />
+          </button>
+        </div>
+      </header>
+      <div
+        className="content"
+      >
+        <main
+          className="children"
+          role="main"
+        >
+          <div
+            className="grid"
+          >
+            <div
+              className="row flex"
+            >
+              <div
+                className="col desknull tvnull tablet12 palm12"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h3>
+                      Lorem ipsum dolor sit amet
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h3>
+                      Lorem ipsum dolor sit amet
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="row"
+            >
+              <div
+                className="col desknull tvnull tablet12 palm12"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h3>
+                      Lorem ipsum dolor sit amet
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="row flex"
+            >
+              <div
+                className="col desknull tvnull tablet12 palm12"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h3>
+                      Lorem ipsum dolor sit amet
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h3>
+                      Lorem ipsum dolor sit amet
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h3>
+                      Lorem ipsum dolor sit amet
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="row flex"
+            >
+              <div
+                className="col desknull tvnull tablet12 palm12"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h3>
+                      Lorem ipsum dolor sit amet
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h3>
+                      Lorem ipsum dolor sit amet
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h3>
+                      Lorem ipsum dolor sit amet
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h3>
+                      Lorem ipsum dolor sit amet
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="row flex"
+            >
+              <div
+                className="col desknull tvnull tablet12 palm12"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h3>
+                      Lorem ipsum dolor sit amet
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h3>
+                      Lorem ipsum dolor sit amet
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layout Default without Header 1`] = `
 <div
   style={
     Object {
@@ -13274,7 +13274,7 @@ exports[`Storyshots Layout defaultTheme without Header 1`] = `
 </div>
 `;
 
-exports[`Storyshots Layout defaultTheme without Sidebar 1`] = `
+exports[`Storyshots Layout Default without Sidebar 1`] = `
 <div
   style={
     Object {
