@@ -11445,13 +11445,13 @@ exports[`Storyshots Layout defaultTheme only Sidebar 1`] = `
                 <span
                   className="icon"
                 />
-                Nome da empresa
+                Pagar.me
               </div>
               <div
                 className="subtitle"
               >
                 <span>
-                  mostrar saldo
+                  show balance
                 </span>
                 <svg />
               </div>
@@ -11475,7 +11475,7 @@ exports[`Storyshots Layout defaultTheme only Sidebar 1`] = `
                     width={16}
                   />
                 </span>
-                Minha conta
+                My Account
               </div>
               
             </button>
@@ -11498,7 +11498,7 @@ exports[`Storyshots Layout defaultTheme only Sidebar 1`] = `
                     width={16}
                   />
                 </span>
-                Transações
+                Transactions
               </div>
               
             </button>
@@ -11876,13 +11876,13 @@ exports[`Storyshots Layout defaultTheme with all props 1`] = `
                 <span
                   className="icon"
                 />
-                Nome da empresa
+                Pagar.me
               </div>
               <div
                 className="subtitle"
               >
                 <span>
-                  mostrar saldo
+                  show balance
                 </span>
                 <svg />
               </div>
@@ -11906,7 +11906,7 @@ exports[`Storyshots Layout defaultTheme with all props 1`] = `
                     width={16}
                   />
                 </span>
-                Minha conta
+                My Account
               </div>
               
             </button>
@@ -11929,7 +11929,7 @@ exports[`Storyshots Layout defaultTheme with all props 1`] = `
                     width={16}
                   />
                 </span>
-                Transações
+                Transactions
               </div>
               
             </button>
@@ -12404,13 +12404,13 @@ exports[`Storyshots Layout defaultTheme without Footer 1`] = `
                 <span
                   className="icon"
                 />
-                Nome da empresa
+                Pagar.me
               </div>
               <div
                 className="subtitle"
               >
                 <span>
-                  mostrar saldo
+                  show balance
                 </span>
                 <svg />
               </div>
@@ -12434,7 +12434,7 @@ exports[`Storyshots Layout defaultTheme without Footer 1`] = `
                     width={16}
                   />
                 </span>
-                Minha conta
+                My Account
               </div>
               
             </button>
@@ -12457,7 +12457,7 @@ exports[`Storyshots Layout defaultTheme without Footer 1`] = `
                     width={16}
                   />
                 </span>
-                Transações
+                Transactions
               </div>
               
             </button>
@@ -12877,13 +12877,13 @@ exports[`Storyshots Layout defaultTheme without Header 1`] = `
                 <span
                   className="icon"
                 />
-                Nome da empresa
+                Pagar.me
               </div>
               <div
                 className="subtitle"
               >
                 <span>
-                  mostrar saldo
+                  show balance
                 </span>
                 <svg />
               </div>
@@ -12907,7 +12907,7 @@ exports[`Storyshots Layout defaultTheme without Header 1`] = `
                     width={16}
                   />
                 </span>
-                Minha conta
+                My Account
               </div>
               
             </button>
@@ -12930,7 +12930,7 @@ exports[`Storyshots Layout defaultTheme without Header 1`] = `
                     width={16}
                   />
                 </span>
-                Transações
+                Transactions
               </div>
               
             </button>
@@ -15483,7 +15483,7 @@ exports[`Storyshots SegmentedSwitch All styles 1`] = `
 </div>
 `;
 
-exports[`Storyshots Sidebar defaultTheme 1`] = `
+exports[`Storyshots Sidebar Default 1`] = `
 <aside
   className="sidebar"
 >
@@ -15561,13 +15561,13 @@ exports[`Storyshots Sidebar defaultTheme 1`] = `
             <span
               className="icon"
             />
-            Nome da empresa
+            Pagar.me
           </div>
           <div
             className="subtitle"
           >
             <span>
-              mostrar saldo
+              show balance
             </span>
             <svg />
           </div>
@@ -15591,7 +15591,7 @@ exports[`Storyshots Sidebar defaultTheme 1`] = `
                 width={16}
               />
             </span>
-            Minha conta
+            My Account
           </div>
           
         </button>
@@ -15614,7 +15614,7 @@ exports[`Storyshots Sidebar defaultTheme 1`] = `
                 width={16}
               />
             </span>
-            Transações
+            Transactions
           </div>
           
         </button>

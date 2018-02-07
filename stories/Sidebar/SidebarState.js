@@ -19,33 +19,33 @@ import SegmentedSwitch from '../../src/SegmentedSwitch'
 
 const items = [
   {
-    value: 'minha-conta',
-    title: 'Minha conta',
+    value: 'my-account',
+    title: 'My Account',
     icon: <IconHome width={16} height={16} />,
   },
   {
-    value: 'transacoes',
-    title: 'Transações',
+    value: 'transactions',
+    title: 'Transactions',
     icon: <IconTransaction width={16} height={16} />,
   },
 ]
 
 const sections = {
-  title: 'Nome da empresa',
-  showMsg: 'Mostrar saldo',
-  hideMsg: 'Ocultar saldo',
+  title: 'Pagar.me',
+  showMsg: 'Show balance',
+  hideMsg: 'Hide balance',
   data: [
     {
-      title: 'Disponível',
+      title: 'Available',
       value: <p><small>R$</small> 150000</p>,
-      actionTitle: 'Sacar',
+      actionTitle: 'Withdraw',
       action: () => {
       },
     },
     {
-      title: 'A receber',
+      title: 'To receive',
       value: <p><small>R$</small> 70000</p>,
-      actionTitle: 'Antecipar',
+      actionTitle: 'Antecipate',
       action: () => {
       },
     },
@@ -85,7 +85,10 @@ class SidebarState extends React.Component {
       <Sidebar collapsed={collapsed}>
         <SidebarHeader>
           {!collapsed &&
-            <img src="https://assets.pagar.me/site/general/logo-light-3812e7ea6b596bdcc8c041f0edc4ff15.png" alt="Pagar.me" />
+            <img
+              src="https://assets.pagar.me/site/general/logo-light-3812e7ea6b596bdcc8c041f0edc4ff15.png"
+              alt="Pagar.me"
+            />
           }
           <button onClick={() => this.setState({ collapsed: !collapsed })}>
             <IconMenu />
@@ -107,8 +110,8 @@ class SidebarState extends React.Component {
         <SidebarLinks>
           {!collapsed &&
             <SidebarLink
-              title="Nome da empresa"
-              subtitle={showInfos ? 'ocultar saldo' : 'mostrar saldo'}
+              title={sections.title}
+              subtitle={showInfos ? 'hide balance' : 'show balance'}
               active={showInfos}
               onClick={() => this.setState({ showInfos: !showInfos })}
             >
