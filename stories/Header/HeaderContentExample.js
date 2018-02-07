@@ -20,7 +20,7 @@ const HeaderContentExample = ({ photo }) => (
     />
     <HeaderMenu onClick={() => null}>
       <Avatar photo={photo} />
-      <span>Nome da Pessoa</span>
+      <span>Current username</span>
     </HeaderMenu>
   </HeaderContent>
 )

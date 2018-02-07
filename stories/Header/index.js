@@ -1,6 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
+import Section from '../Section'
 import HeaderContentExample from './HeaderContentExample'
 
 import {
@@ -10,25 +11,22 @@ import {
 } from '../../src/Header'
 
 storiesOf('Header', module)
-  .add('defaultTheme', () => (
+  .add('Default', () => (
     <div style={{ background: '#e4e4e4', height: '100vh' }}>
-      <div>
-        <h3 style={{ margin: 0, padding: 15 }}>Apenas título</h3>
+      <Section title="With title">
         <Header>
           <HeaderTitle>Transactions</HeaderTitle>
         </Header>
-      </div>
+      </Section>
 
-      <div>
-        <h3 style={{ margin: 0, padding: 15 }}>Primeiro nível</h3>
+      <Section title="Primary nivel">
         <Header>
           <HeaderTitle>Transactions</HeaderTitle>
           <HeaderContentExample />
         </Header>
-      </div>
+      </Section>
 
-      <div>
-        <h3 style={{ margin: 0, padding: 15 }}>Segundo nível</h3>
+      <Section title="Secondary nivel">
         <Header>
           <HeaderBackButton
             onClick={() => null}
@@ -37,6 +35,6 @@ storiesOf('Header', module)
           <HeaderTitle>Transactions</HeaderTitle>
           <HeaderContentExample photo="https://i.imgur.com/2vp5kTT.jpg" />
         </Header>
-      </div>
+      </Section>
     </div>
   ))

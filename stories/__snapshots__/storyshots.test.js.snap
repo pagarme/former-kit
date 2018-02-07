@@ -7718,7 +7718,7 @@ exports[`Storyshots Grid Size combinations 1`] = `
 </div>
 `;
 
-exports[`Storyshots Header defaultTheme 1`] = `
+exports[`Storyshots Header Default 1`] = `
 <div
   className="typography"
   style={
@@ -7728,143 +7728,134 @@ exports[`Storyshots Header defaultTheme 1`] = `
     }
   }
 >
-  <div>
-    <h3
-      style={
-        Object {
-          "margin": 0,
-          "padding": 15,
-        }
-      }
-    >
-      Apenas título
-    </h3>
-    <header
-      className="header"
-    >
-      <h1
-        className="title"
+  <section
+    className={undefined}
+  >
+    <h2>
+      With title
+    </h2>
+    <div>
+      <header
+        className="header"
       >
-        Transactions
-      </h1>
-    </header>
-  </div>
-  <div>
-    <h3
-      style={
-        Object {
-          "margin": 0,
-          "padding": 15,
-        }
-      }
-    >
-      Primeiro nível
-    </h3>
-    <header
-      className="header"
-    >
-      <h1
-        className="title"
+        <h1
+          className="title"
+        >
+          Transactions
+        </h1>
+      </header>
+    </div>
+  </section>
+  <section
+    className={undefined}
+  >
+    <h2>
+      Primary nivel
+    </h2>
+    <div>
+      <header
+        className="header"
       >
-        Transactions
-      </h1>
-      <div
-        className="content"
-      >
-        <button
-          className="link"
-          onClick={[Function]}
-          role="link"
+        <h1
+          className="title"
         >
-          <Alert24.svg />
-        </button>
-        <button
-          className="link"
-          onClick={[Function]}
-          role="link"
+          Transactions
+        </h1>
+        <div
+          className="content"
         >
-          <Support24.svg />
-        </button>
-        <button
-          className="menu"
-          onClick={[Function]}
-          role="link"
-        >
-          <div
-            className="avatar placeholder"
+          <button
+            className="link"
+            onClick={[Function]}
+            role="link"
           >
+            <Alert24.svg />
+          </button>
+          <button
+            className="link"
+            onClick={[Function]}
+            role="link"
+          >
+            <Support24.svg />
+          </button>
+          <button
+            className="menu"
+            onClick={[Function]}
+            role="link"
+          >
+            <div
+              className="avatar placeholder"
+            >
+              <svg />
+            </div>
+            <span>
+              Current username
+            </span>
             <svg />
-          </div>
-          <span>
-            Nome da Pessoa
-          </span>
+          </button>
+        </div>
+      </header>
+    </div>
+  </section>
+  <section
+    className={undefined}
+  >
+    <h2>
+      Secondary nivel
+    </h2>
+    <div>
+      <header
+        className="header"
+      >
+        <button
+          className="backButton"
+          onClick={[Function]}
+        >
           <svg />
         </button>
-      </div>
-    </header>
-  </div>
-  <div>
-    <h3
-      style={
-        Object {
-          "margin": 0,
-          "padding": 15,
-        }
-      }
-    >
-      Segundo nível
-    </h3>
-    <header
-      className="header"
-    >
-      <button
-        className="backButton"
-        onClick={[Function]}
-      >
-        <svg />
-      </button>
-      <h1
-        className="title"
-      >
-        Transactions
-      </h1>
-      <div
-        className="content"
-      >
-        <button
-          className="link"
-          onClick={[Function]}
-          role="link"
+        <h1
+          className="title"
         >
-          <Alert24.svg />
-        </button>
-        <button
-          className="link"
-          onClick={[Function]}
-          role="link"
+          Transactions
+        </h1>
+        <div
+          className="content"
         >
-          <Support24.svg />
-        </button>
-        <button
-          className="menu"
-          onClick={[Function]}
-          role="link"
-        >
-          <img
-            alt="Foto de perfil"
-            className="avatar"
-            height={26}
-            src="https://i.imgur.com/2vp5kTT.jpg"
-            width={26}
-          />
-          <span>
-            Nome da Pessoa
-          </span>
-          <svg />
-        </button>
-      </div>
-    </header>
-  </div>
+          <button
+            className="link"
+            onClick={[Function]}
+            role="link"
+          >
+            <Alert24.svg />
+          </button>
+          <button
+            className="link"
+            onClick={[Function]}
+            role="link"
+          >
+            <Support24.svg />
+          </button>
+          <button
+            className="menu"
+            onClick={[Function]}
+            role="link"
+          >
+            <img
+              alt="Foto de perfil"
+              className="avatar"
+              height={26}
+              src="https://i.imgur.com/2vp5kTT.jpg"
+              width={26}
+            />
+            <span>
+              Current username
+            </span>
+            <svg />
+          </button>
+        </div>
+      </header>
+    </div>
+  </section>
 </div>
 `;
 
@@ -11166,7 +11157,7 @@ exports[`Storyshots Layout Default only Header 1`] = `
               <svg />
             </div>
             <span>
-              Nome da Pessoa
+              Current username
             </span>
             <svg />
           </button>
@@ -12070,7 +12061,7 @@ exports[`Storyshots Layout Default with all props 1`] = `
               <svg />
             </div>
             <span>
-              Nome da Pessoa
+              Current username
             </span>
             <svg />
           </button>
@@ -12598,7 +12589,7 @@ exports[`Storyshots Layout Default without Footer 1`] = `
               <svg />
             </div>
             <span>
-              Nome da Pessoa
+              Current username
             </span>
             <svg />
           </button>
@@ -13419,7 +13410,7 @@ exports[`Storyshots Layout Default without Sidebar 1`] = `
               <svg />
             </div>
             <span>
-              Nome da Pessoa
+              Current username
             </span>
             <svg />
           </button>
