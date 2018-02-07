@@ -14635,390 +14635,398 @@ exports[`Storyshots Progress Linear 1`] = `
 <div
   className="typography"
 >
-  <section>
+  <section
+    className={undefined}
+  >
     <h2>
       Normal state
     </h2>
     <div>
-      <div
-        className="linearProgress light"
-      >
-        <div>
-          <div
-            className="background"
-          >
+      <div>
+        <div
+          className="linearProgress light"
+        >
+          <div>
             <div
-              className="fill"
+              className="background"
+            >
+              <div
+                className="fill"
+                style={
+                  Object {
+                    "width": "0%",
+                  }
+                }
+              />
+            </div>
+            <div
+              className="number"
               style={
                 Object {
                   "width": "0%",
                 }
               }
-            />
-          </div>
-          <div
-            className="number"
-            style={
-              Object {
-                "width": "0%",
-              }
-            }
-          >
-            <div
-              style={
-                Object {
-                  "marginRight": "-1em",
-                }
-              }
             >
-              0%
+              <div
+                style={
+                  Object {
+                    "marginRight": "-1em",
+                  }
+                }
+              >
+                0%
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div>
-      <div
-        className="linearProgress light"
-      >
-        <div>
-          <div
-            className="background"
-          >
+      <div>
+        <div
+          className="linearProgress light"
+        >
+          <div>
             <div
-              className="fill"
+              className="background"
+            >
+              <div
+                className="fill"
+                style={
+                  Object {
+                    "width": "0%",
+                  }
+                }
+              />
+            </div>
+            <div
+              className="number"
               style={
                 Object {
                   "width": "0%",
                 }
               }
-            />
-          </div>
-          <div
-            className="number"
-            style={
-              Object {
-                "width": "0%",
-              }
-            }
-          >
-            <div
-              style={
-                Object {
-                  "marginRight": "-1em",
-                }
-              }
             >
-              0%
+              <div
+                style={
+                  Object {
+                    "marginRight": "-1em",
+                  }
+                }
+              >
+                0%
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div>
-      <div
-        className="linearProgress light"
-      >
-        <div>
-          <div
-            className="background"
-          >
+      <div>
+        <div
+          className="linearProgress light"
+        >
+          <div>
             <div
-              className="fill"
+              className="background"
+            >
+              <div
+                className="fill"
+                style={
+                  Object {
+                    "width": "0%",
+                  }
+                }
+              />
+            </div>
+            <div
+              className="number"
               style={
                 Object {
                   "width": "0%",
                 }
               }
-            />
-          </div>
-          <div
-            className="number"
-            style={
-              Object {
-                "width": "0%",
-              }
-            }
-          >
-            <div
-              style={
-                Object {
-                  "marginRight": "-1em",
-                }
-              }
             >
-              0%
+              <div
+                style={
+                  Object {
+                    "marginRight": "-1em",
+                  }
+                }
+              >
+                0%
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div>
-      <div
-        className="linearProgress light"
-      >
-        <div>
-          <div
-            className="background"
-          >
+      <div>
+        <div
+          className="linearProgress light"
+        >
+          <div>
             <div
-              className="fill"
+              className="background"
+            >
+              <div
+                className="fill"
+                style={
+                  Object {
+                    "width": "0%",
+                  }
+                }
+              />
+            </div>
+            <div
+              className="number"
               style={
                 Object {
                   "width": "0%",
                 }
               }
-            />
-          </div>
-          <div
-            className="number"
-            style={
-              Object {
-                "width": "0%",
-              }
-            }
-          >
-            <div
-              style={
-                Object {
-                  "marginRight": "-1em",
-                }
-              }
             >
-              0%
+              <div
+                style={
+                  Object {
+                    "marginRight": "-1em",
+                  }
+                }
+              >
+                0%
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div>
-      <div
-        className="linearProgress light"
-      >
-        <div>
-          <div
-            className="background"
-          >
+      <div>
+        <div
+          className="linearProgress light"
+        >
+          <div>
             <div
-              className="fill"
+              className="background"
+            >
+              <div
+                className="fill"
+                style={
+                  Object {
+                    "width": "0%",
+                  }
+                }
+              />
+            </div>
+            <div
+              className="number"
               style={
                 Object {
                   "width": "0%",
                 }
               }
-            />
-          </div>
-          <div
-            className="number"
-            style={
-              Object {
-                "width": "0%",
-              }
-            }
-          >
-            <div
-              style={
-                Object {
-                  "marginRight": "-1em",
-                }
-              }
             >
-              0%
+              <div
+                style={
+                  Object {
+                    "marginRight": "-1em",
+                  }
+                }
+              >
+                0%
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section>
+  <section
+    className={undefined}
+  >
     <h2>
       Disabled state
     </h2>
     <div>
-      <div
-        className="linearProgress light disabled"
-      >
-        <div>
-          <div
-            className="background"
-          >
+      <div>
+        <div
+          className="linearProgress light disabled"
+        >
+          <div>
             <div
-              className="fill"
+              className="background"
+            >
+              <div
+                className="fill"
+                style={
+                  Object {
+                    "width": "0%",
+                  }
+                }
+              />
+            </div>
+            <div
+              className="number"
               style={
                 Object {
                   "width": "0%",
                 }
               }
-            />
-          </div>
-          <div
-            className="number"
-            style={
-              Object {
-                "width": "0%",
-              }
-            }
-          >
-            <div
-              style={
-                Object {
-                  "marginRight": "-1em",
-                }
-              }
             >
-              0%
+              <div
+                style={
+                  Object {
+                    "marginRight": "-1em",
+                  }
+                }
+              >
+                0%
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div>
-      <div
-        className="linearProgress light disabled"
-      >
-        <div>
-          <div
-            className="background"
-          >
+      <div>
+        <div
+          className="linearProgress light disabled"
+        >
+          <div>
             <div
-              className="fill"
+              className="background"
+            >
+              <div
+                className="fill"
+                style={
+                  Object {
+                    "width": "0%",
+                  }
+                }
+              />
+            </div>
+            <div
+              className="number"
               style={
                 Object {
                   "width": "0%",
                 }
               }
-            />
-          </div>
-          <div
-            className="number"
-            style={
-              Object {
-                "width": "0%",
-              }
-            }
-          >
-            <div
-              style={
-                Object {
-                  "marginRight": "-1em",
-                }
-              }
             >
-              0%
+              <div
+                style={
+                  Object {
+                    "marginRight": "-1em",
+                  }
+                }
+              >
+                0%
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div>
-      <div
-        className="linearProgress light disabled"
-      >
-        <div>
-          <div
-            className="background"
-          >
+      <div>
+        <div
+          className="linearProgress light disabled"
+        >
+          <div>
             <div
-              className="fill"
+              className="background"
+            >
+              <div
+                className="fill"
+                style={
+                  Object {
+                    "width": "0%",
+                  }
+                }
+              />
+            </div>
+            <div
+              className="number"
               style={
                 Object {
                   "width": "0%",
                 }
               }
-            />
-          </div>
-          <div
-            className="number"
-            style={
-              Object {
-                "width": "0%",
-              }
-            }
-          >
-            <div
-              style={
-                Object {
-                  "marginRight": "-1em",
-                }
-              }
             >
-              0%
+              <div
+                style={
+                  Object {
+                    "marginRight": "-1em",
+                  }
+                }
+              >
+                0%
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div>
-      <div
-        className="linearProgress light disabled"
-      >
-        <div>
-          <div
-            className="background"
-          >
+      <div>
+        <div
+          className="linearProgress light disabled"
+        >
+          <div>
             <div
-              className="fill"
+              className="background"
+            >
+              <div
+                className="fill"
+                style={
+                  Object {
+                    "width": "0%",
+                  }
+                }
+              />
+            </div>
+            <div
+              className="number"
               style={
                 Object {
                   "width": "0%",
                 }
               }
-            />
-          </div>
-          <div
-            className="number"
-            style={
-              Object {
-                "width": "0%",
-              }
-            }
-          >
-            <div
-              style={
-                Object {
-                  "marginRight": "-1em",
-                }
-              }
             >
-              0%
+              <div
+                style={
+                  Object {
+                    "marginRight": "-1em",
+                  }
+                }
+              >
+                0%
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div>
-      <div
-        className="linearProgress light disabled"
-      >
-        <div>
-          <div
-            className="background"
-          >
+      <div>
+        <div
+          className="linearProgress light disabled"
+        >
+          <div>
             <div
-              className="fill"
+              className="background"
+            >
+              <div
+                className="fill"
+                style={
+                  Object {
+                    "width": "0%",
+                  }
+                }
+              />
+            </div>
+            <div
+              className="number"
               style={
                 Object {
                   "width": "0%",
                 }
               }
-            />
-          </div>
-          <div
-            className="number"
-            style={
-              Object {
-                "width": "0%",
-              }
-            }
-          >
-            <div
-              style={
-                Object {
-                  "marginRight": "-1em",
-                }
-              }
             >
-              0%
+              <div
+                style={
+                  Object {
+                    "marginRight": "-1em",
+                  }
+                }
+              >
+                0%
+              </div>
             </div>
           </div>
         </div>
