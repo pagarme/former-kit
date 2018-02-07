@@ -1109,6 +1109,346 @@ feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
 </div>
 `;
 
+exports[`Storyshots Checkbox Default 1`] = `
+<div
+  className="typography"
+>
+  <h2>
+    Form Inputs
+  </h2>
+  <section>
+    <h3>
+      Disabled
+    </h3>
+    <div
+      className="checkbox disabled"
+    >
+      <input
+        checked={false}
+        disabled={true}
+        id="disabled-"
+        name="disabled"
+        onChange={[Function]}
+        type="checkbox"
+        value=""
+      />
+      <label
+        htmlFor="disabled-"
+      >
+        <i
+          className="check"
+        />
+        Unchecked
+      </label>
+      
+    </div>
+    <div
+      className="checkbox disabled"
+    >
+      <input
+        checked={true}
+        disabled={true}
+        id="checkedDisabled-"
+        name="checkedDisabled"
+        onChange={[Function]}
+        type="checkbox"
+        value=""
+      />
+      <label
+        htmlFor="checkedDisabled-"
+      >
+        <i
+          className="check"
+        />
+        Checked
+      </label>
+      
+    </div>
+  </section>
+  <section>
+    <h3>
+      Default
+    </h3>
+    <div
+      className="checkbox"
+    >
+      <input
+        checked={false}
+        disabled={false}
+        id="default-"
+        name="default"
+        onChange={[Function]}
+        type="checkbox"
+        value=""
+      />
+      <label
+        htmlFor="default-"
+      >
+        <i
+          className="check"
+        />
+        Unchecked
+      </label>
+      
+    </div>
+    <div
+      className="checkbox"
+    >
+      <input
+        checked={true}
+        disabled={false}
+        id="checkedDefault-"
+        name="checkedDefault"
+        onChange={[Function]}
+        type="checkbox"
+        value=""
+      />
+      <label
+        htmlFor="checkedDefault-"
+      >
+        <i
+          className="check"
+        />
+        Checked
+      </label>
+      
+    </div>
+  </section>
+  <section>
+    <h3>
+      Error
+    </h3>
+    <div
+      className="checkbox error"
+    >
+      <input
+        checked={false}
+        disabled={false}
+        id="default-Error"
+        name="default"
+        onChange={[Function]}
+        type="checkbox"
+        value="Error"
+      />
+      <label
+        htmlFor="default-Error"
+      >
+        <i
+          className="check"
+        />
+        Error
+      </label>
+      <p
+        className="secondaryText"
+      >
+        Error
+      </p>
+    </div>
+  </section>
+  <section>
+    <h3>
+      Success
+    </h3>
+    <div
+      className="checkbox success"
+    >
+      <input
+        checked={false}
+        disabled={false}
+        id="default-Success"
+        name="default"
+        onChange={[Function]}
+        type="checkbox"
+        value="Success"
+      />
+      <label
+        htmlFor="default-Success"
+      >
+        <i
+          className="check"
+        />
+        Success
+      </label>
+      <p
+        className="secondaryText"
+      >
+        Success
+      </p>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`Storyshots Checkbox Form 1`] = `
+<div
+  className="typography"
+>
+  <h2>
+    Form Inputs
+  </h2>
+  <section>
+    <h3>
+      Disabled
+    </h3>
+    <div
+      className="checkbox disabled"
+    >
+      <input
+        checked={false}
+        disabled={true}
+        id="disabled-"
+        name="disabled"
+        onChange={[Function]}
+        type="checkbox"
+        value=""
+      />
+      <label
+        htmlFor="disabled-"
+      >
+        <i
+          className="check"
+        />
+        Unchecked
+      </label>
+      
+    </div>
+    <div
+      className="checkbox disabled"
+    >
+      <input
+        checked={true}
+        disabled={true}
+        id="checkedDisabled-"
+        name="checkedDisabled"
+        onChange={[Function]}
+        type="checkbox"
+        value=""
+      />
+      <label
+        htmlFor="checkedDisabled-"
+      >
+        <i
+          className="check"
+        />
+        Checked
+      </label>
+      
+    </div>
+  </section>
+  <section>
+    <h3>
+      Default
+    </h3>
+    <div
+      className="checkbox"
+    >
+      <input
+        checked={false}
+        disabled={false}
+        id="default-"
+        name="default"
+        onChange={[Function]}
+        type="checkbox"
+        value=""
+      />
+      <label
+        htmlFor="default-"
+      >
+        <i
+          className="check"
+        />
+        Unchecked
+      </label>
+      
+    </div>
+    <div
+      className="checkbox"
+    >
+      <input
+        checked={true}
+        disabled={false}
+        id="checkedDefault-"
+        name="checkedDefault"
+        onChange={[Function]}
+        type="checkbox"
+        value=""
+      />
+      <label
+        htmlFor="checkedDefault-"
+      >
+        <i
+          className="check"
+        />
+        Checked
+      </label>
+      
+    </div>
+  </section>
+  <section>
+    <h3>
+      Error
+    </h3>
+    <div
+      className="checkbox error"
+    >
+      <input
+        checked={false}
+        disabled={false}
+        id="default-Error"
+        name="default"
+        onChange={[Function]}
+        type="checkbox"
+        value="Error"
+      />
+      <label
+        htmlFor="default-Error"
+      >
+        <i
+          className="check"
+        />
+        Error
+      </label>
+      <p
+        className="secondaryText"
+      >
+        Error
+      </p>
+    </div>
+  </section>
+  <section>
+    <h3>
+      Success
+    </h3>
+    <div
+      className="checkbox success"
+    >
+      <input
+        checked={false}
+        disabled={false}
+        id="default-Success"
+        name="default"
+        onChange={[Function]}
+        type="checkbox"
+        value="Success"
+      />
+      <label
+        htmlFor="default-Success"
+      >
+        <i
+          className="check"
+        />
+        Success
+      </label>
+      <p
+        className="secondaryText"
+      >
+        Success
+      </p>
+    </div>
+  </section>
+</div>
+`;
+
 exports[`Storyshots Checkbox Group Default 1`] = `
 <div
   className="typography"
