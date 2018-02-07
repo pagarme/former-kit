@@ -2,7 +2,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 
 import Legend from '../../src/Legend'
-
+import Section from '../Section'
 
 const hidingLabel = [
   {
@@ -70,9 +70,7 @@ const manualAbbr = [
 ]
 
 const createLegends = (title, status) => (
-  <div>
-    {title}
-
+  <Section title={title}>
     {status.map(({
       color,
       text,
@@ -91,11 +89,11 @@ const createLegends = (title, status) => (
         </Legend>
       </div>
     ))}
-  </div>
+  </Section>
 )
 
 storiesOf('Legend', module)
-  .add('defaultTheme', () => (
+  .add('Default', () => (
     <div>
       {createLegends('Without acronym prop', automaticAbbr)}
       {createLegends('With acronym prop', manualAbbr)}

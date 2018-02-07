@@ -13664,340 +13664,358 @@ exports[`Storyshots Layout defaultTheme without Sidebar 1`] = `
 </div>
 `;
 
-exports[`Storyshots Legend defaultTheme 1`] = `
+exports[`Storyshots Legend Default 1`] = `
 <div
   className="typography"
 >
-  <div>
-    Without acronym prop
-    <div
-      style={
-        Object {
-          "margin": "10px",
-        }
-      }
-    >
+  <section
+    className={undefined}
+  >
+    <h2>
+      Without acronym prop
+    </h2>
+    <div>
       <div
-        className="legend"
-      >
-        <abbr
-          className="acronym"
-          style={
-            Object {
-              "background": "#53be76",
-            }
+        style={
+          Object {
+            "margin": "10px",
           }
-          title="MacGuybird"
+        }
+      >
+        <div
+          className="legend"
         >
-          M
-        </abbr>
-        <span
-          className="text"
+          <abbr
+            className="acronym"
+            style={
+              Object {
+                "background": "#53be76",
+              }
+            }
+            title="MacGuybird"
+          >
+            M
+          </abbr>
+          <span
+            className="text"
+          >
+            MacGuybird
+          </span>
+        </div>
+      </div>
+      <div
+        style={
+          Object {
+            "margin": "10px",
+          }
+        }
+      >
+        <div
+          className="legend"
         >
-          MacGuybird
-        </span>
+          <abbr
+            className="acronym"
+            style={
+              Object {
+                "background": "#fcb20a",
+              }
+            }
+            title="Mad Dog"
+          >
+            MD
+          </abbr>
+          <span
+            className="text"
+          >
+            Mad Dog
+          </span>
+        </div>
+      </div>
+      <div
+        style={
+          Object {
+            "margin": "10px",
+          }
+        }
+      >
+        <div
+          className="legend"
+        >
+          <abbr
+            className="acronym"
+            style={
+              Object {
+                "background": "#5b2886",
+              }
+            }
+            title="Dabblit"
+          >
+            D
+          </abbr>
+          <span
+            className="text"
+          >
+            Dabblit
+          </span>
+        </div>
+      </div>
+      <div
+        style={
+          Object {
+            "margin": "10px",
+          }
+        }
+      >
+        <div
+          className="legend"
+        >
+          <abbr
+            className="acronym"
+            style={
+              Object {
+                "background": "#9d9fa0",
+              }
+            }
+            title="Danger Mouse"
+          >
+            DM
+          </abbr>
+          <span
+            className="text"
+          >
+            Danger Mouse
+          </span>
+        </div>
+      </div>
+      <div
+        style={
+          Object {
+            "margin": "10px",
+          }
+        }
+      >
+        <div
+          className="legend"
+        >
+          <abbr
+            className="acronym"
+            style={
+              Object {
+                "background": "#e00403",
+              }
+            }
+            title="Dandelion"
+          >
+            D
+          </abbr>
+          <span
+            className="text"
+          >
+            Dandelion
+          </span>
+        </div>
+      </div>
+      <div
+        style={
+          Object {
+            "margin": "10px",
+          }
+        }
+      >
+        <div
+          className="legend"
+        >
+          <abbr
+            className="acronym"
+            style={
+              Object {
+                "background": "#8c68d4",
+              }
+            }
+            title="Caboodles"
+          >
+            C
+          </abbr>
+          <span
+            className="text"
+          >
+            Caboodles
+          </span>
+        </div>
       </div>
     </div>
-    <div
-      style={
-        Object {
-          "margin": "10px",
-        }
-      }
-    >
+  </section>
+  <section
+    className={undefined}
+  >
+    <h2>
+      With acronym prop
+    </h2>
+    <div>
       <div
-        className="legend"
-      >
-        <abbr
-          className="acronym"
-          style={
-            Object {
-              "background": "#fcb20a",
-            }
+        style={
+          Object {
+            "margin": "10px",
           }
-          title="Mad Dog"
+        }
+      >
+        <div
+          className="legend"
         >
-          MD
-        </abbr>
-        <span
-          className="text"
+          <abbr
+            className="acronym"
+            style={
+              Object {
+                "background": "#951d3c",
+              }
+            }
+            title="Fa-neenee"
+          >
+            FN
+          </abbr>
+          <span
+            className="text"
+          >
+            Fa-neenee
+          </span>
+        </div>
+      </div>
+      <div
+        style={
+          Object {
+            "margin": "10px",
+          }
+        }
+      >
+        <div
+          className="legend"
         >
-          Mad Dog
-        </span>
+          <abbr
+            className="acronym"
+            style={
+              Object {
+                "background": "#244d85",
+              }
+            }
+            title="Fast Freddie"
+          >
+            FF
+          </abbr>
+          <span
+            className="text"
+          >
+            Fast Freddie
+          </span>
+        </div>
+      </div>
+      <div
+        style={
+          Object {
+            "margin": "10px",
+          }
+        }
+      >
+        <div
+          className="legend"
+        >
+          <abbr
+            className="acronym"
+            style={
+              Object {
+                "background": "#bf5316",
+              }
+            }
+            title="Tangsodo"
+          >
+            TS
+          </abbr>
+          <span
+            className="text"
+          >
+            Tangsodo
+          </span>
+        </div>
       </div>
     </div>
-    <div
-      style={
-        Object {
-          "margin": "10px",
-        }
-      }
-    >
+  </section>
+  <section
+    className={undefined}
+  >
+    <h2>
+      With hideLabel prop
+    </h2>
+    <div>
       <div
-        className="legend"
-      >
-        <abbr
-          className="acronym"
-          style={
-            Object {
-              "background": "#5b2886",
-            }
+        style={
+          Object {
+            "margin": "10px",
           }
-          title="Dabblit"
+        }
+      >
+        <div
+          className="legend"
         >
-          D
-        </abbr>
-        <span
-          className="text"
+          <abbr
+            className="acronym"
+            style={
+              Object {
+                "background": "#4ca9d7",
+              }
+            }
+            title="Zazu"
+          >
+            ZZ
+          </abbr>
+        </div>
+      </div>
+      <div
+        style={
+          Object {
+            "margin": "10px",
+          }
+        }
+      >
+        <div
+          className="legend"
         >
-          Dabblit
-        </span>
+          <abbr
+            className="acronym"
+            style={
+              Object {
+                "background": "#f16518",
+              }
+            }
+            title="Zeke"
+          >
+            ZK
+          </abbr>
+        </div>
+      </div>
+      <div
+        style={
+          Object {
+            "margin": "10px",
+          }
+        }
+      >
+        <div
+          className="legend"
+        >
+          <abbr
+            className="acronym"
+            style={
+              Object {
+                "background": "#41535b",
+              }
+            }
+            title="Macaroni"
+          >
+            M
+          </abbr>
+        </div>
       </div>
     </div>
-    <div
-      style={
-        Object {
-          "margin": "10px",
-        }
-      }
-    >
-      <div
-        className="legend"
-      >
-        <abbr
-          className="acronym"
-          style={
-            Object {
-              "background": "#9d9fa0",
-            }
-          }
-          title="Danger Mouse"
-        >
-          DM
-        </abbr>
-        <span
-          className="text"
-        >
-          Danger Mouse
-        </span>
-      </div>
-    </div>
-    <div
-      style={
-        Object {
-          "margin": "10px",
-        }
-      }
-    >
-      <div
-        className="legend"
-      >
-        <abbr
-          className="acronym"
-          style={
-            Object {
-              "background": "#e00403",
-            }
-          }
-          title="Dandelion"
-        >
-          D
-        </abbr>
-        <span
-          className="text"
-        >
-          Dandelion
-        </span>
-      </div>
-    </div>
-    <div
-      style={
-        Object {
-          "margin": "10px",
-        }
-      }
-    >
-      <div
-        className="legend"
-      >
-        <abbr
-          className="acronym"
-          style={
-            Object {
-              "background": "#8c68d4",
-            }
-          }
-          title="Caboodles"
-        >
-          C
-        </abbr>
-        <span
-          className="text"
-        >
-          Caboodles
-        </span>
-      </div>
-    </div>
-  </div>
-  <div>
-    With acronym prop
-    <div
-      style={
-        Object {
-          "margin": "10px",
-        }
-      }
-    >
-      <div
-        className="legend"
-      >
-        <abbr
-          className="acronym"
-          style={
-            Object {
-              "background": "#951d3c",
-            }
-          }
-          title="Fa-neenee"
-        >
-          FN
-        </abbr>
-        <span
-          className="text"
-        >
-          Fa-neenee
-        </span>
-      </div>
-    </div>
-    <div
-      style={
-        Object {
-          "margin": "10px",
-        }
-      }
-    >
-      <div
-        className="legend"
-      >
-        <abbr
-          className="acronym"
-          style={
-            Object {
-              "background": "#244d85",
-            }
-          }
-          title="Fast Freddie"
-        >
-          FF
-        </abbr>
-        <span
-          className="text"
-        >
-          Fast Freddie
-        </span>
-      </div>
-    </div>
-    <div
-      style={
-        Object {
-          "margin": "10px",
-        }
-      }
-    >
-      <div
-        className="legend"
-      >
-        <abbr
-          className="acronym"
-          style={
-            Object {
-              "background": "#bf5316",
-            }
-          }
-          title="Tangsodo"
-        >
-          TS
-        </abbr>
-        <span
-          className="text"
-        >
-          Tangsodo
-        </span>
-      </div>
-    </div>
-  </div>
-  <div>
-    With hideLabel prop
-    <div
-      style={
-        Object {
-          "margin": "10px",
-        }
-      }
-    >
-      <div
-        className="legend"
-      >
-        <abbr
-          className="acronym"
-          style={
-            Object {
-              "background": "#4ca9d7",
-            }
-          }
-          title="Zazu"
-        >
-          ZZ
-        </abbr>
-      </div>
-    </div>
-    <div
-      style={
-        Object {
-          "margin": "10px",
-        }
-      }
-    >
-      <div
-        className="legend"
-      >
-        <abbr
-          className="acronym"
-          style={
-            Object {
-              "background": "#f16518",
-            }
-          }
-          title="Zeke"
-        >
-          ZK
-        </abbr>
-      </div>
-    </div>
-    <div
-      style={
-        Object {
-          "margin": "10px",
-        }
-      }
-    >
-      <div
-        className="legend"
-      >
-        <abbr
-          className="acronym"
-          style={
-            Object {
-              "background": "#41535b",
-            }
-          }
-          title="Macaroni"
-        >
-          M
-        </abbr>
-      </div>
-    </div>
-  </div>
+  </section>
 </div>
 `;
 
