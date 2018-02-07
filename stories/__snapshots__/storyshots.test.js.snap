@@ -5973,30 +5973,30 @@ exports[`Storyshots Footer defaultTheme 1`] = `
     <button
       onClick={[Function]}
       role="link"
-      title="Documentação"
+      title="Documentation"
     >
-      Documentação
+      Documentation
     </button>
     <button
       onClick={[Function]}
       role="link"
-      title="Suporte"
+      title="Support"
     >
-      Suporte
+      Support
     </button>
     <button
       onClick={[Function]}
       role="link"
-      title="Política de Privacidade"
+      title="Privacy"
     >
-      Política de Privacidade
+      Privacy
     </button>
     <button
       onClick={[Function]}
       role="link"
-      title="Contato"
+      title="Contact"
     >
-      Contato
+      Contact
     </button>
   </nav>
   <nav
@@ -11054,30 +11054,30 @@ exports[`Storyshots Layout Default only Footer 1`] = `
             <button
               onClick={[Function]}
               role="link"
-              title="Documentação"
+              title="Documentation"
             >
-              Documentação
+              Documentation
             </button>
             <button
               onClick={[Function]}
               role="link"
-              title="Suporte"
+              title="Support"
             >
-              Suporte
+              Support
             </button>
             <button
               onClick={[Function]}
               role="link"
-              title="Política de Privacidade"
+              title="Privacy"
             >
-              Política de Privacidade
+              Privacy
             </button>
             <button
               onClick={[Function]}
               role="link"
-              title="Contato"
+              title="Contact"
             >
-              Contato
+              Contact
             </button>
           </nav>
           <nav
@@ -12348,30 +12348,30 @@ exports[`Storyshots Layout Default with all props 1`] = `
             <button
               onClick={[Function]}
               role="link"
-              title="Documentação"
+              title="Documentation"
             >
-              Documentação
+              Documentation
             </button>
             <button
               onClick={[Function]}
               role="link"
-              title="Suporte"
+              title="Support"
             >
-              Suporte
+              Support
             </button>
             <button
               onClick={[Function]}
               role="link"
-              title="Política de Privacidade"
+              title="Privacy"
             >
-              Política de Privacidade
+              Privacy
             </button>
             <button
               onClick={[Function]}
               role="link"
-              title="Contato"
+              title="Contact"
             >
-              Contato
+              Contact
             </button>
           </nav>
           <nav
@@ -13307,30 +13307,30 @@ exports[`Storyshots Layout Default without Header 1`] = `
             <button
               onClick={[Function]}
               role="link"
-              title="Documentação"
+              title="Documentation"
             >
-              Documentação
+              Documentation
             </button>
             <button
               onClick={[Function]}
               role="link"
-              title="Suporte"
+              title="Support"
             >
-              Suporte
+              Support
             </button>
             <button
               onClick={[Function]}
               role="link"
-              title="Política de Privacidade"
+              title="Privacy"
             >
-              Política de Privacidade
+              Privacy
             </button>
             <button
               onClick={[Function]}
               role="link"
-              title="Contato"
+              title="Contact"
             >
-              Contato
+              Contact
             </button>
           </nav>
           <nav
@@ -13697,30 +13697,30 @@ exports[`Storyshots Layout Default without Sidebar 1`] = `
             <button
               onClick={[Function]}
               role="link"
-              title="Documentação"
+              title="Documentation"
             >
-              Documentação
+              Documentation
             </button>
             <button
               onClick={[Function]}
               role="link"
-              title="Suporte"
+              title="Support"
             >
-              Suporte
+              Support
             </button>
             <button
               onClick={[Function]}
               role="link"
-              title="Política de Privacidade"
+              title="Privacy"
             >
-              Política de Privacidade
+              Privacy
             </button>
             <button
               onClick={[Function]}
               role="link"
-              title="Contato"
+              title="Contact"
             >
-              Contato
+              Contact
             </button>
           </nav>
           <nav
