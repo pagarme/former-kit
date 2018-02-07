@@ -83,7 +83,7 @@ class ModalWithState extends Component {
 }
 
 storiesOf('Modal', module)
-  .add('default', () => (
+  .add('Default', () => (
     <div className={style.container}>
       <ModalWithState />
     </div>

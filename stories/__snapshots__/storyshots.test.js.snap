@@ -14001,7 +14001,7 @@ exports[`Storyshots Legend defaultTheme 1`] = `
 </div>
 `;
 
-exports[`Storyshots Modal default 1`] = `
+exports[`Storyshots Modal Default 1`] = `
 <div
   className="typography"
 >
