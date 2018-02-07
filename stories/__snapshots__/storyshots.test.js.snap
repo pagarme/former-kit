@@ -17390,40 +17390,42 @@ exports[`Storyshots Table Simple 1`] = `
 </div>
 `;
 
-exports[`Storyshots Tags defaultTheme 1`] = `
+exports[`Storyshots Tags Default 1`] = `
 <section
-  className="typography"
+  className={undefined}
 >
-  <p>
+  <h2>
     Only style
-  </p>
-  <div
-    className={undefined}
-  >
+  </h2>
+  <div>
     <div
-      className="tag"
+      className={undefined}
     >
-      lorem
-    </div>
-    <div
-      className="tag"
-    >
-      ipsum
-    </div>
-    <div
-      className="tag"
-    >
-      dolor
-    </div>
-    <div
-      className="tag"
-    >
-      amet
-    </div>
-    <div
-      className="tag"
-    >
-      consetetur
+      <div
+        className="tag"
+      >
+        lorem
+      </div>
+      <div
+        className="tag"
+      >
+        ipsum
+      </div>
+      <div
+        className="tag"
+      >
+        dolor
+      </div>
+      <div
+        className="tag"
+      >
+        amet
+      </div>
+      <div
+        className="tag"
+      >
+        consetetur
+      </div>
     </div>
   </div>
 </section>

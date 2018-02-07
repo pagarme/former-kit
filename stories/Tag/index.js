@@ -1,8 +1,8 @@
 import React from 'react'
-
 import { storiesOf } from '@storybook/react'
 
 import Tag from '../../src/Tag'
+import Section from '../Section'
 
 import style from './style.css'
 
@@ -15,9 +15,8 @@ const tags = [
 ]
 
 storiesOf('Tags', module)
-  .add('defaultTheme', () => (
-    <section>
-      <p>Only style</p>
+  .add('Default', () => (
+    <Section title="Only style">
       <div className={style.tags}>
         {
           tags.map(title => (
@@ -25,6 +24,6 @@ storiesOf('Tags', module)
           ))
         }
       </div>
-    </section>
+    </Section>
   ))
 
