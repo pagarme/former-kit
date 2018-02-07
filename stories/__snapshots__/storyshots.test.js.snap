@@ -15350,134 +15350,142 @@ exports[`Storyshots Radio Group Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots SegmentedSwitch All styles 1`] = `
+exports[`Storyshots SegmentedSwitch Default 1`] = `
 <div
   className="typography"
 >
-  <section>
+  <section
+    className={undefined}
+  >
     <h2>
       Two options
     </h2>
-    <div
-      className="segmentedSwitch"
-    >
-      <label
-        className="item"
-        htmlFor="segmented-switch-shortid-mock-live-test-test"
+    <div>
+      <div
+        className="segmentedSwitch"
       >
-        <input
-          checked={true}
-          id="segmented-switch-shortid-mock-live-test-test"
-          name="segmented-switch-shortid-mock-live-test-test"
-          onChange={[Function]}
-          type="radio"
-          value="test"
-        />
-        <span
-          className="label"
+        <label
+          className="item"
+          htmlFor="segmented-switch-shortid-mock-live-test-test"
         >
-          test
-        </span>
-      </label>
-      <label
-        className="item"
-        htmlFor="segmented-switch-shortid-mock-live-test-live"
-      >
-        <input
-          checked={false}
-          id="segmented-switch-shortid-mock-live-test-live"
-          name="segmented-switch-shortid-mock-live-test-live"
-          onChange={[Function]}
-          type="radio"
-          value="live"
-        />
-        <span
-          className="label"
+          <input
+            checked={true}
+            id="segmented-switch-shortid-mock-live-test-test"
+            name="segmented-switch-shortid-mock-live-test-test"
+            onChange={[Function]}
+            type="radio"
+            value="test"
+          />
+          <span
+            className="label"
+          >
+            test
+          </span>
+        </label>
+        <label
+          className="item"
+          htmlFor="segmented-switch-shortid-mock-live-test-live"
         >
-          live
-        </span>
-      </label>
+          <input
+            checked={false}
+            id="segmented-switch-shortid-mock-live-test-live"
+            name="segmented-switch-shortid-mock-live-test-live"
+            onChange={[Function]}
+            type="radio"
+            value="live"
+          />
+          <span
+            className="label"
+          >
+            live
+          </span>
+        </label>
+      </div>
     </div>
   </section>
-  <section>
+  <section
+    className={undefined}
+  >
     <h2>
       Four options
     </h2>
-    <div
-      className="segmentedSwitch"
-    >
-      <label
-        className="item"
-        htmlFor="segmented-switch-shortid-mock-super-extra-test"
+    <div>
+      <div
+        className="segmentedSwitch"
       >
-        <input
-          checked={false}
-          id="segmented-switch-shortid-mock-super-extra-test"
-          name="segmented-switch-shortid-mock-super-extra-test"
-          onChange={[Function]}
-          type="radio"
-          value="test"
-        />
-        <span
-          className="label"
+        <label
+          className="item"
+          htmlFor="segmented-switch-shortid-mock-super-extra-test"
         >
-          test
-        </span>
-      </label>
-      <label
-        className="item"
-        htmlFor="segmented-switch-shortid-mock-super-extra-live"
-      >
-        <input
-          checked={false}
-          id="segmented-switch-shortid-mock-super-extra-live"
-          name="segmented-switch-shortid-mock-super-extra-live"
-          onChange={[Function]}
-          type="radio"
-          value="live"
-        />
-        <span
-          className="label"
+          <input
+            checked={false}
+            id="segmented-switch-shortid-mock-super-extra-test"
+            name="segmented-switch-shortid-mock-super-extra-test"
+            onChange={[Function]}
+            type="radio"
+            value="test"
+          />
+          <span
+            className="label"
+          >
+            test
+          </span>
+        </label>
+        <label
+          className="item"
+          htmlFor="segmented-switch-shortid-mock-super-extra-live"
         >
-          live
-        </span>
-      </label>
-      <label
-        className="item"
-        htmlFor="segmented-switch-shortid-mock-super-extra-super-test"
-      >
-        <input
-          checked={true}
-          id="segmented-switch-shortid-mock-super-extra-super-test"
-          name="segmented-switch-shortid-mock-super-extra-super-test"
-          onChange={[Function]}
-          type="radio"
-          value="super-test"
-        />
-        <span
-          className="label"
+          <input
+            checked={false}
+            id="segmented-switch-shortid-mock-super-extra-live"
+            name="segmented-switch-shortid-mock-super-extra-live"
+            onChange={[Function]}
+            type="radio"
+            value="live"
+          />
+          <span
+            className="label"
+          >
+            live
+          </span>
+        </label>
+        <label
+          className="item"
+          htmlFor="segmented-switch-shortid-mock-super-extra-super-test"
         >
-          super-test
-        </span>
-      </label>
-      <label
-        className="item"
-        htmlFor="segmented-switch-shortid-mock-super-extra-extra-live"
-      >
-        <input
-          checked={false}
-          id="segmented-switch-shortid-mock-super-extra-extra-live"
-          name="segmented-switch-shortid-mock-super-extra-extra-live"
-          onChange={[Function]}
-          type="radio"
-          value="extra-live"
-        />
-        <span
-          className="label"
+          <input
+            checked={true}
+            id="segmented-switch-shortid-mock-super-extra-super-test"
+            name="segmented-switch-shortid-mock-super-extra-super-test"
+            onChange={[Function]}
+            type="radio"
+            value="super-test"
+          />
+          <span
+            className="label"
+          >
+            super-test
+          </span>
+        </label>
+        <label
+          className="item"
+          htmlFor="segmented-switch-shortid-mock-super-extra-extra-live"
         >
-          extra-live
-        </span>
-      </label>
+          <input
+            checked={false}
+            id="segmented-switch-shortid-mock-super-extra-extra-live"
+            name="segmented-switch-shortid-mock-super-extra-extra-live"
+            onChange={[Function]}
+            type="radio"
+            value="extra-live"
+          />
+          <span
+            className="label"
+          >
+            extra-live
+          </span>
+        </label>
+      </div>
     </div>
   </section>
 </div>

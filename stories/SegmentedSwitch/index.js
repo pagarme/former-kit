@@ -2,9 +2,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 
 import SegmentedSwitch from '../../src/SegmentedSwitch'
-
-import style from './style.css'
-
+import Section from '../Section'
 
 class SegmentedSwitchState extends React.Component {
   constructor (props) {
@@ -40,24 +38,22 @@ class SegmentedSwitchState extends React.Component {
 }
 
 storiesOf('SegmentedSwitch', module)
-  .add('All styles', () => (
-    <div className={style.container}>
-      <section>
-        <h2>Two options</h2>
+  .add('Default', () => (
+    <div>
+      <Section title="Two options">
         <SegmentedSwitchState
           items={['test', 'live']}
           selected="test"
           name="live-test"
         />
-      </section>
-      <section>
-        <h2>Four options</h2>
+      </Section>
+      <Section title="Four options">
         <SegmentedSwitchState
           items={['test', 'live', 'super-test', 'extra-live']}
           selected="super-test"
           name="super-extra"
         />
-      </section>
+      </Section>
     </div>
   ))
 
