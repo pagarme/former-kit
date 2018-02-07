@@ -69,3 +69,13 @@
 .emptyCell h3 {
   color: #aaaaaa;
 }
+
+.capitalize {
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+}
+
+.empty {
+  padding-bottom: 24px;
+}

@@ -10,7 +10,14 @@ import ThemeConsumer from '../ThemeConsumer'
 const consumeTheme = ThemeConsumer('UITable')
 
 const TableEmptyItem = ({ theme, className }) => (
-  <span className={classNames(theme.empty, className)} />
+  <span className={
+    classNames(
+      theme.empty,
+      theme.unselectable,
+      className
+    )
+  }
+  />
 )
 
 TableEmptyItem.propTypes = {

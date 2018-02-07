@@ -54,7 +54,7 @@ class TableExpandedRow extends PureComponent {
       <li key={`colum_${index}`}>
         <TableExpandedItem
           title={column.title}
-          text={path(column.acessor, data)}
+          text={path(column.accessor, data)}
         >
           {getRenderedItem(column.renderer, data)}
         </TableExpandedItem>
@@ -96,7 +96,13 @@ class TableExpandedRow extends PureComponent {
             </ul>
             {
               !isEmpty(actions) &&
-              <div className={theme.expandableActions}>
+              <div className={
+                  classNames(
+                    theme.expandableActions,
+                    theme.unselectable
+                  )
+                }
+              >
                 {actions}
               </div>
             }
@@ -127,7 +133,7 @@ TableExpandedRow.propTypes = {
    */
   columns: arrayOf(shape({
     title: string.isRequired,
-    acessor: oneOfType([
+    accessor: oneOfType([
       string,
       arrayOf(string),
     ]),

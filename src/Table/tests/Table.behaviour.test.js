@@ -68,8 +68,8 @@ describe('Table', () => {
           const surplusItems = expandedRow.find('li')
 
           surplusItems.forEach((item, index) => {
-            const { acessor, renderer } = surplusColumns[index]
-            it(`should ${acessor} child exists`, () =>
+            const { accessor, renderer } = surplusColumns[index]
+            it(`should ${accessor} child exists`, () =>
               expect(item.children().exists()).toBe(true)
             )
             if (renderer) {
@@ -78,20 +78,20 @@ describe('Table', () => {
                   node.type() === 'p' &&
                   node.find('span').exists()
                 ).first()
-              const text = path(acessor, rowData) || 'no data'
+              const text = path(accessor, rowData) || 'no data'
 
-              it(`should ${acessor} child  use renderer function`, () => {
+              it(`should ${accessor} child  use renderer function`, () => {
                 expect(nodeItem.exists()).toBe(true)
                 expect(nodeItem.find('span').text().trim()).toBe(text)
               })
-            } else if (path(acessor, rowData)) {
+            } else if (path(accessor, rowData)) {
               const contentSpan = item.find('span').last()
-              it(`should ${acessor} child use accessor prop`, () => {
+              it(`should ${accessor} child use accessor prop`, () => {
                 expect(contentSpan.exists()).toBe(true)
-                expect(contentSpan.text()).toBe(path(acessor, rowData).toString())
+                expect(contentSpan.text()).toBe(path(accessor, rowData).toString())
               })
             } else {
-              it(`should ${acessor} child be empty'`, () =>
+              it(`should ${accessor} child be empty'`, () =>
                 expect(item.find(TableEmptyItem).exists()).toBe(true)
               )
             }

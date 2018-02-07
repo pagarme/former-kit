@@ -339,10 +339,10 @@ Table.propTypes = {
    */
   columns: arrayOf(shape({
     /**
-     * It's the path for the cell value in the row object,
+     * The path for the cell value in the row object,
      * it's required for orderable columns.
      */
-    acessor: oneOfType([
+    accessor: oneOfType([
       string,
       arrayOf(string),
     ]),
@@ -356,7 +356,7 @@ Table.propTypes = {
     orderable: bool,
     /**
      * A custom function which will receive the row data object and should return
-     * a React element to be rendered in each cell bind to this column.
+     * a React element to be rendered in each cell bound to this column.
      */
     renderer: func,
     /**

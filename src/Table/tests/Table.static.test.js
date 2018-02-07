@@ -164,11 +164,11 @@ describe.only('Table', () => {
         columnsCases
       )
 
-      cases('should render column with correct acessor prop',
+      cases('should render column with correct accessor prop',
         ({ component, columns, rows }) => {
-          const column = columns.find(col => col.acessor && !col.renderer)
+          const column = columns.find(col => col.accessor && !col.renderer)
           const columnIndex = findIndex(equals(column))(columns)
-          const text = path(column.acessor, rows[0])
+          const text = path(column.accessor, rows[0])
           const line = component
             .find('tbody')
             .first()
@@ -218,9 +218,9 @@ describe.only('Table', () => {
             !node.find(Button).exists()
           )
         cells.forEach((cell, index) => {
-          const { acessor } = columns[index]
-          if (acessor) {
-            expect(cell.text()).toBe(path(acessor, firstRowData))
+          const { accessor } = columns[index]
+          if (accessor) {
+            expect(cell.text()).toBe(path(accessor, firstRowData))
           }
         })
       }, rowsCases)
@@ -324,8 +324,8 @@ describe.only('Table', () => {
           const row = rows[rowIndex]
           cells.forEach((cell, index) => {
             const column = columns[index]
-            const { acessor, renderer } = column
-            const isEmpty = !renderer && !path(acessor, row)
+            const { accessor, renderer } = column
+            const isEmpty = !renderer && !path(accessor, row)
             if (isEmpty) {
               expect(cell.find(TableEmptyItem).exists()).toBe(true)
             }

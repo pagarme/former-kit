@@ -29,13 +29,20 @@ const renderCell = (column, data, key, theme) => {
     return (
       <td
         key={key}
-        className={theme.tableBodyItem}
+        className={
+          classNames(
+            theme.tableBodyItem,
+            {
+              [theme.unselectable]: column.isAction,
+            }
+          )
+        }
       >
         {column.renderer(data)}
       </td>
     )
   }
-  const columnData = path(column.acessor, data)
+  const columnData = path(column.accessor, data)
   if (columnData) {
     return (
       <td
@@ -166,7 +173,13 @@ class TableRow extends Component {
         {renderCells(columns, data, lineIndex, theme)}
         {
           expandable &&
-          <td className={theme.open}>
+          <td className={
+              classNames(
+                theme.open,
+                theme.unselectable
+              )
+            }
+          >
             <Button
               type="button"
               fill="outline"
@@ -194,7 +207,7 @@ TableRow.propTypes = {
   clickable: bool,
   columns: arrayOf(shape({
     title: string.isRequired,
-    acessor: oneOfType([
+    accessor: oneOfType([
       string,
       arrayOf(string),
     ]),

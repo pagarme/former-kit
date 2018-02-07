@@ -18,20 +18,20 @@ import getMock from './tableMock'
 
 const isAscending = equals('ascending')
 
-const rowSort = acessor =>
-  sortBy(compose(toLower, defaultTo(''), path(acessor)))
+const rowSort = accessor =>
+  sortBy(compose(toLower, defaultTo(''), path(accessor)))
 
-const getSort = (acessor, order) => (
+const getSort = (accessor, order) => (
   isAscending(order) ?
-    rowSort(acessor) :
-    pipe(rowSort(acessor), reverse)
+    rowSort(accessor) :
+    pipe(rowSort(accessor), reverse)
 )
 
 const getRowsSort = (rows, columns) =>
   (orderColumn, order) => {
     const referenceColumn = columns[orderColumn]
-    const referenceAcessor = referenceColumn.acessor
-    const sort = getSort(referenceAcessor, order)
+    const referenceAccessor = referenceColumn.accessor
+    const sort = getSort(referenceAccessor, order)
     return sort(rows)
   }
 
