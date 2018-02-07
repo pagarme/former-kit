@@ -15624,78 +15624,86 @@ exports[`Storyshots Sidebar defaultTheme 1`] = `
 </aside>
 `;
 
-exports[`Storyshots Switch All styles 1`] = `
+exports[`Storyshots Switch Default 1`] = `
 <div
   className="typography"
 >
-  <section>
+  <section
+    className={undefined}
+  >
     <h2>
       Enabled
     </h2>
-    <p>
-      Checked
-    </p>
-    <div
-      className="switch checked"
-    >
-      <input
-        checked={true}
-        onChange={[Function]}
-        type="checkbox"
-      />
-      <span>
-        on
-      </span>
-    </div>
-    <p>
-      Unchecked
-    </p>
-    <div
-      className="switch"
-    >
-      <input
-        checked={false}
-        onChange={[Function]}
-        type="checkbox"
-      />
-      <span>
-        off
-      </span>
+    <div>
+      <p>
+        Checked
+      </p>
+      <div
+        className="switch checked"
+      >
+        <input
+          checked={true}
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <span>
+          on
+        </span>
+      </div>
+      <p>
+        Unchecked
+      </p>
+      <div
+        className="switch"
+      >
+        <input
+          checked={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <span>
+          off
+        </span>
+      </div>
     </div>
   </section>
-  <section>
+  <section
+    className={undefined}
+  >
     <h2>
       Disabled
     </h2>
-    <p>
-      Checked
-    </p>
-    <div
-      className="switch checked disabled"
-    >
-      <input
-        checked={true}
-        onChange={[Function]}
-        type="checkbox"
-      />
-      <span>
-        on
-      </span>
-    </div>
-    <p>
-      Unchecked
-    </p>
-    <div
-      className="switch disabled"
-    >
-      <input
-        checked={false}
-        onChange={[Function]}
-        type="checkbox"
-      />
-      <span>
-        off
-      </span>
+    <div>
+      <p>
+        Checked
+      </p>
+      <div
+        className="switch checked disabled"
+      >
+        <input
+          checked={true}
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <span>
+          on
+        </span>
+      </div>
+      <p>
+        Unchecked
+      </p>
+      <div
+        className="switch disabled"
+      >
+        <input
+          checked={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <span>
+          off
+        </span>
+      </div>
     </div>
   </section>
 </div>

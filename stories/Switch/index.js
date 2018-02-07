@@ -1,11 +1,8 @@
 import React, { Component } from 'react'
-
 import { storiesOf } from '@storybook/react'
 
 import Switch from '../../src/Switch'
-
-import style from './style.css'
-
+import Section from '../Section'
 
 class SwitchState extends Component {
   constructor (props) {
@@ -33,22 +30,20 @@ SwitchState.defaultProps = {
 }
 
 storiesOf('Switch', module)
-  .add('All styles', () => (
-    <div className={style.container}>
-      <section>
-        <h2>Enabled</h2>
+  .add('Default', () => (
+    <div>
+      <Section title="Enabled">
         <p>Checked</p>
         <SwitchState checked />
         <p>Unchecked</p>
         <SwitchState checked={false} />
-      </section>
-      <section>
-        <h2>Disabled</h2>
+      </Section>
+      <Section title="Disabled">
         <p>Checked</p>
         <SwitchState disabled checked />
         <p>Unchecked</p>
         <SwitchState disabled checked={false} />
-      </section>
+      </Section>
     </div>
   ))
 
