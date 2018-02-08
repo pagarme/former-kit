@@ -12,13 +12,13 @@ import { TabBar, TabItem } from '../../src/TabBar'
 
 const i18n = {
   TabBar: 'TabBar',
-  MyAccount: 'Minha Conta',
-  Docs: 'Documentação',
-  Letter: 'Carta',
-  JustText: 'Texto',
-  TextIcon: 'Texto e Ícone',
-  JustIcon: 'Ícone',
-  ThisIs: 'Você está em: ',
+  MyAccount: 'My account',
+  Docs: 'Docs',
+  Letter: 'Letter',
+  JustText: 'Text',
+  TextIcon: 'Text and Icon',
+  JustIcon: 'Icon',
+  ThisIs: 'This is: ',
 }
 
 const variantList = [

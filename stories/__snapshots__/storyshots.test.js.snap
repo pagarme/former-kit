@@ -15707,7 +15707,7 @@ exports[`Storyshots TabBar All styles 1`] = `
 >
   <section>
     <p>
-      Texto
+      Text
     </p>
     <div
       className="tabBar"
@@ -15726,7 +15726,7 @@ exports[`Storyshots TabBar All styles 1`] = `
             onChange={[Function]}
             type="radio"
           />
-          Minha Conta
+          My account
         </label>
         <label
           className="tab just-text selected"
@@ -15739,7 +15739,7 @@ exports[`Storyshots TabBar All styles 1`] = `
             onChange={[Function]}
             type="radio"
           />
-          Documentação
+          Docs
         </label>
         <label
           className="tab just-text"
@@ -15752,16 +15752,16 @@ exports[`Storyshots TabBar All styles 1`] = `
             onChange={[Function]}
             type="radio"
           />
-          Carta
+          Letter
         </label>
       </div>
       <div
         className="content"
       >
         <h2>
-          Você está em: 
+          This is: 
            
-          Documentação
+          Docs
            
           <Folder32.svg
             height={16}
@@ -15773,7 +15773,7 @@ exports[`Storyshots TabBar All styles 1`] = `
   </section>
   <section>
     <p>
-      Texto e Ícone
+      Text and Icon
     </p>
     <div
       className="tabBar"
@@ -15800,7 +15800,7 @@ exports[`Storyshots TabBar All styles 1`] = `
               width={16}
             />
           </div>
-          Minha Conta
+          My account
         </label>
         <label
           className="tab text-icon selected"
@@ -15821,7 +15821,7 @@ exports[`Storyshots TabBar All styles 1`] = `
               width={16}
             />
           </div>
-          Documentação
+          Docs
         </label>
         <label
           className="tab text-icon"
@@ -15842,16 +15842,16 @@ exports[`Storyshots TabBar All styles 1`] = `
               width={16}
             />
           </div>
-          Carta
+          Letter
         </label>
       </div>
       <div
         className="content"
       >
         <h2>
-          Você está em: 
+          This is: 
            
-          Documentação
+          Docs
            
           <Folder32.svg
             height={16}
@@ -15863,7 +15863,7 @@ exports[`Storyshots TabBar All styles 1`] = `
   </section>
   <section>
     <p>
-      Ícone
+      Icon
     </p>
     <div
       className="tabBar"
@@ -15936,9 +15936,9 @@ exports[`Storyshots TabBar All styles 1`] = `
         className="content"
       >
         <h2>
-          Você está em: 
+          This is: 
            
-          Documentação
+          Docs
            
           <Folder32.svg
             height={16}
