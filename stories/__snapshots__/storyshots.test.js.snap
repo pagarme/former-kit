@@ -14979,7 +14979,9 @@ exports[`Storyshots Table Action column 1`] = `
               Status
                
             </span>
-            <span>
+            <span
+              className="unselectable"
+            >
               <svg />
             </span>
           </div>
@@ -14996,7 +14998,9 @@ exports[`Storyshots Table Action column 1`] = `
               Id da transação
                
             </span>
-            <span>
+            <span
+              className="unselectable"
+            >
               <svg />
             </span>
           </div>
@@ -15013,7 +15017,9 @@ exports[`Storyshots Table Action column 1`] = `
               Data da transação
                
             </span>
-            <span>
+            <span
+              className="unselectable"
+            >
               <svg />
             </span>
           </div>
@@ -15030,7 +15036,9 @@ exports[`Storyshots Table Action column 1`] = `
               Cpf/Cnpj
                
             </span>
-            <span>
+            <span
+              className="unselectable"
+            >
               <svg />
             </span>
           </div>
@@ -15047,7 +15055,9 @@ exports[`Storyshots Table Action column 1`] = `
               Forma de pagamento
                
             </span>
-            <span>
+            <span
+              className="unselectable"
+            >
               <svg />
             </span>
           </div>
@@ -15064,13 +15074,15 @@ exports[`Storyshots Table Action column 1`] = `
               Valor capturado
                
             </span>
-            <span>
+            <span
+              className="unselectable"
+            >
               <svg />
             </span>
           </div>
         </th>
         <th
-          className=""
+          className="unselectable"
         >
           <div
             className="tableHeadItem"
@@ -15139,7 +15151,7 @@ exports[`Storyshots Table Action column 1`] = `
           R$ 999.999.999,00
         </td>
         <td
-          className="tableBodyItem"
+          className="tableBodyItem unselectable"
         >
           <button
             className="button outline light normalRelevance default"
@@ -15207,7 +15219,7 @@ exports[`Storyshots Table Action column 1`] = `
           R$ 100.000,00
         </td>
         <td
-          className="tableBodyItem"
+          className="tableBodyItem unselectable"
         >
           <button
             className="button outline light normalRelevance default"
@@ -15275,7 +15287,7 @@ exports[`Storyshots Table Action column 1`] = `
           R$ 100.000,00
         </td>
         <td
-          className="tableBodyItem"
+          className="tableBodyItem unselectable"
         >
           <button
             className="button outline light normalRelevance default"
@@ -15326,32 +15338,32 @@ exports[`Storyshots Table Action column 1`] = `
           className="tableBodyItem"
         >
           <span
-            className="empty"
+            className="empty unselectable"
           />
         </td>
         <td
           className="tableBodyItem"
         >
           <span
-            className="empty"
+            className="empty unselectable"
           />
         </td>
         <td
           className="tableBodyItem"
         >
           <span
-            className="empty"
+            className="empty unselectable"
           />
         </td>
         <td
           className="tableBodyItem"
         >
           <span
-            className="empty"
+            className="empty unselectable"
           />
         </td>
         <td
-          className="tableBodyItem"
+          className="tableBodyItem unselectable"
         >
           <button
             className="button outline light normalRelevance default"
@@ -15420,7 +15432,9 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
               Status
                
             </span>
-            <span>
+            <span
+              className="unselectable"
+            >
               <svg />
             </span>
           </div>
@@ -15437,7 +15451,9 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
               Id da transação
                
             </span>
-            <span>
+            <span
+              className="unselectable"
+            >
               <svg />
             </span>
           </div>
@@ -15454,7 +15470,9 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
               Data da transação
                
             </span>
-            <span>
+            <span
+              className="unselectable"
+            >
               <svg />
             </span>
           </div>
@@ -15471,7 +15489,9 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
               Cpf/Cnpj
                
             </span>
-            <span>
+            <span
+              className="unselectable"
+            >
               <svg />
             </span>
           </div>
@@ -15488,7 +15508,9 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
               Forma de pagamento
                
             </span>
-            <span>
+            <span
+              className="unselectable"
+            >
               <svg />
             </span>
           </div>
@@ -15505,7 +15527,9 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
               Valor capturado
                
             </span>
-            <span>
+            <span
+              className="unselectable"
+            >
               <svg />
             </span>
           </div>
@@ -15522,7 +15546,9 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
               Custo
                
             </span>
-            <span>
+            <span
+              className="unselectable"
+            >
               <svg />
             </span>
           </div>
@@ -15622,7 +15648,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
           R$ 100.000,00
         </td>
         <td
-          className="open"
+          className="open unselectable"
         >
           <button
             className="button outline light lowRelevance tiny iconButton"
@@ -15721,7 +15747,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
           R$ 12.000,00
         </td>
         <td
-          className="open"
+          className="open unselectable"
         >
           <button
             className="button outline light lowRelevance tiny iconButton"
@@ -15820,7 +15846,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
           R$ 13.000,00
         </td>
         <td
-          className="open"
+          className="open unselectable"
         >
           <button
             className="button outline light lowRelevance tiny iconButton"
@@ -15897,28 +15923,28 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
           className="tableBodyItem"
         >
           <span
-            className="empty"
+            className="empty unselectable"
           />
         </td>
         <td
           className="tableBodyItem"
         >
           <span
-            className="empty"
+            className="empty unselectable"
           />
         </td>
         <td
           className="tableBodyItem"
         >
           <span
-            className="empty"
+            className="empty unselectable"
           />
         </td>
         <td
           className="tableBodyItem"
         >
           <span
-            className="empty"
+            className="empty unselectable"
           />
         </td>
         <td
@@ -15927,7 +15953,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
           R$ 14.000,00
         </td>
         <td
-          className="open"
+          className="open unselectable"
         >
           <button
             className="button outline light lowRelevance tiny iconButton"
@@ -15983,7 +16009,9 @@ exports[`Storyshots Table Simple 1`] = `
               Status
                
             </span>
-            <span>
+            <span
+              className="unselectable"
+            >
               <svg />
             </span>
           </div>
@@ -16000,7 +16028,9 @@ exports[`Storyshots Table Simple 1`] = `
               Id da transação
                
             </span>
-            <span>
+            <span
+              className="unselectable"
+            >
               <svg />
             </span>
           </div>
@@ -16017,7 +16047,9 @@ exports[`Storyshots Table Simple 1`] = `
               Data da transação
                
             </span>
-            <span>
+            <span
+              className="unselectable"
+            >
               <svg />
             </span>
           </div>
@@ -16034,7 +16066,9 @@ exports[`Storyshots Table Simple 1`] = `
               Cpf/Cnpj
                
             </span>
-            <span>
+            <span
+              className="unselectable"
+            >
               <svg />
             </span>
           </div>
@@ -16051,7 +16085,9 @@ exports[`Storyshots Table Simple 1`] = `
               Forma de pagamento
                
             </span>
-            <span>
+            <span
+              className="unselectable"
+            >
               <svg />
             </span>
           </div>
@@ -16068,7 +16104,9 @@ exports[`Storyshots Table Simple 1`] = `
               Valor capturado
                
             </span>
-            <span>
+            <span
+              className="unselectable"
+            >
               <svg />
             </span>
           </div>
@@ -16085,7 +16123,9 @@ exports[`Storyshots Table Simple 1`] = `
               Custo
                
             </span>
-            <span>
+            <span
+              className="unselectable"
+            >
               <svg />
             </span>
           </div>
@@ -16317,28 +16357,28 @@ exports[`Storyshots Table Simple 1`] = `
           className="tableBodyItem"
         >
           <span
-            className="empty"
+            className="empty unselectable"
           />
         </td>
         <td
           className="tableBodyItem"
         >
           <span
-            className="empty"
+            className="empty unselectable"
           />
         </td>
         <td
           className="tableBodyItem"
         >
           <span
-            className="empty"
+            className="empty unselectable"
           />
         </td>
         <td
           className="tableBodyItem"
         >
           <span
-            className="empty"
+            className="empty unselectable"
           />
         </td>
         <td

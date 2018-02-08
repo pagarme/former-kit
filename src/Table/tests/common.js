@@ -18,7 +18,7 @@ const columnWithRenderer = {
       {item.status}
     </b>
   ),
-  acessor: ['status'],
+  accessor: ['status'],
   orderable: true,
 }
 
@@ -27,21 +27,21 @@ const onActionButtonClick = jest.fn()
 const mock = {
   columns: [
     columnWithRenderer,
-    { title: 'Id da transação', acessor: ['id'], orderable: true },
-    { title: 'Data da transação', acessor: ['date_created'], orderable: true },
-    { title: 'Cpf/Cnpj', acessor: ['document_number'], orderable: true },
-    { title: 'Forma de pagamento', acessor: ['payment_method'], orderable: true },
-    { title: 'Valor capturado', acessor: ['paid_amount'], orderable: true },
-    { title: 'Custo', acessor: ['cost'], orderable: true },
-    { title: 'Valor Líquido', acessor: ['amount'], orderable: true },
-    { title: 'E-mail', acessor: ['customer', 'email'], orderable: true },
-    { title: 'Razão da recusa', acessor: ['refuse_reason'], orderable: true },
-    { title: 'Antifraude', acessor: ['antifraud_score'], orderable: true },
-    { title: 'Parcelas', acessor: ['installments'], orderable: true },
-    { title: 'Nome', acessor: ['customer', 'name'], orderable: true },
+    { title: 'Id da transação', accessor: ['id'], orderable: true },
+    { title: 'Data da transação', accessor: ['date_created'], orderable: true },
+    { title: 'Cpf/Cnpj', accessor: ['document_number'], orderable: true },
+    { title: 'Forma de pagamento', accessor: ['payment_method'], orderable: true },
+    { title: 'Valor capturado', accessor: ['paid_amount'], orderable: true },
+    { title: 'Custo', accessor: ['cost'], orderable: true },
+    { title: 'Valor Líquido', accessor: ['amount'], orderable: true },
+    { title: 'E-mail', accessor: ['customer', 'email'], orderable: true },
+    { title: 'Razão da recusa', accessor: ['refuse_reason'], orderable: true },
+    { title: 'Antifraude', accessor: ['antifraud_score'], orderable: true },
+    { title: 'Parcelas', accessor: ['installments'], orderable: true },
+    { title: 'Nome', accessor: ['customer', 'name'], orderable: true },
     {
       title: 'Bandeira',
-      acessor: ['card_brand'],
+      accessor: ['card_brand'],
       orderable: true,
       renderer: item => (
         <p>
@@ -56,7 +56,7 @@ const mock = {
         </p>
       ),
     },
-    { title: 'Link do boleto', acessor: ['link'], orderable: true },
+    { title: 'Link do boleto', accessor: ['link'], orderable: true },
     {
       title: 'Mais detalhes',
       isAction: true,

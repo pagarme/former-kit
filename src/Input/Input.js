@@ -27,6 +27,7 @@ class Input extends React.PureComponent {
     this.instanceId = `${props.name}-${shortid.generate()}`
     this.handleBlur = this.handleBlur.bind(this)
     this.handleFocus = this.handleFocus.bind(this)
+    this.handlePasswordVisibilityChange = this.handlePasswordVisibilityChange.bind(this)
     this.state = {
       showPassword: false,
       isFocused: false,
@@ -51,6 +52,12 @@ class Input extends React.PureComponent {
     }
   }
 
+  handlePasswordVisibilityChange (event) {
+    event.preventDefault()
+    this.setState({
+      showPassword: !(this.state.showPassword),
+    })
+  }
   renderPasswordVisibilityIcon () {
     const {
       value,
@@ -67,7 +74,7 @@ class Input extends React.PureComponent {
       return (
         <button
           className={theme.displayPasswordIcon}
-          onClick={() => this.setState({ showPassword: false })}
+          onClick={this.handlePasswordVisibilityChange}
         >
           {icons.hidePassword}
         </button>
@@ -77,7 +84,7 @@ class Input extends React.PureComponent {
     return (
       <button
         className={theme.displayPasswordIcon}
-        onClick={() => this.setState({ showPassword: true })}
+        onClick={this.handlePasswordVisibilityChange}
       >
         {icons.showPassword}
       </button>

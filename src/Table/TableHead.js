@@ -56,6 +56,7 @@ class TableHead extends Component {
     const columnClasses = classNames({
       [theme.active]: selected,
       [theme.orderable]: orderable,
+      [theme.unselectable]: column.isAction,
     })
 
     if (!orderable) {
@@ -79,14 +80,16 @@ class TableHead extends Component {
       >
         <div className={theme.tableHeadItem}>
           <span> {column.title} </span>
-          {
-            selected &&
-            <span>{ this.getOrderIcon(order) }</span>
-          }
-          {
-            !selected &&
-            <span>{icons.orderable}</span>
-          }
+          <span className={theme.unselectable}>
+            {
+              selected &&
+              this.getOrderIcon(order)
+            }
+            {
+              !selected &&
+              icons.orderable
+            }
+          </span>
         </div>
       </th>
     )
@@ -139,17 +142,34 @@ TableHead.propTypes = {
     descending: string,
     open: string,
     tableHeadItem: string,
+    unselectable: string,
   }),
   /**
    * Columns which will name the reader cells.
    */
   columns: arrayOf(shape({
-    title: string.isRequired,
-    acessor: oneOfType([
+    /**
+     * It's the path for the cell value in the row object,
+     * it's required for orderable columns.
+     */
+    accessor: oneOfType([
       string,
       arrayOf(string),
     ]),
+    /**
+     * Identify if it's an action column.
+     */
+    isAction: bool,
+    /**
+     * A custom function which will receive the row data object and should return
+     * a React element to be rendered in each cell bind to this column.
+     */
     renderer: func,
+    /**
+     * This title is used to identify the column in the header and to identify the
+     * column data in the expandable rows.
+     */
+    title: string.isRequired,
   })).isRequired,
   /**
    * Add an expandable column in the header.
