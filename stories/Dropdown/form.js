@@ -1,7 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import Dropdown from '../../src/Dropdown/form'
-import style from '../style.css'
 
 const options = [
   {
@@ -54,7 +53,7 @@ DropdownState.defaultProps = {
 
 storiesOf('Dropdown', module)
   .add('Form', () => (
-    <div className={style.container}>
+    <div>
       <h2>Dropdown</h2>
 
       <section>

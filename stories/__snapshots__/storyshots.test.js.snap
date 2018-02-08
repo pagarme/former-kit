@@ -5352,228 +5352,244 @@ exports[`Storyshots Dropdown Default 1`] = `
   <h2>
     Dropdown
   </h2>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Default
-    </h3>
+    </h2>
     <div>
-      <div
-        className="dropdown"
-      >
-        
-        <select
-          className="select"
-          defaultValue="placeholder"
-          disabled={false}
-          id="things-shortid-mock"
-          onChange={[Function]}
+      <div>
+        <div
+          className="dropdown"
         >
-          <option
-            className="option placeholder"
-            disabled={true}
-            hidden={true}
-            value="placeholder"
+          
+          <select
+            className="select"
+            defaultValue="placeholder"
+            disabled={false}
+            id="things-shortid-mock"
+            onChange={[Function]}
           >
-            
-          </option>
-          <option
-            className="option"
-            value="github"
+            <option
+              className="option placeholder"
+              disabled={true}
+              hidden={true}
+              value="placeholder"
+            >
+              
+            </option>
+            <option
+              className="option"
+              value="github"
+            >
+              Github
+            </option>
+            <option
+              className="option"
+              value="open-source"
+            >
+              Open Source
+            </option>
+            <option
+              className="option"
+              value="pilot"
+            >
+              Pilot
+            </option>
+          </select>
+          <span
+            className="arrow"
           >
-            Github
-          </option>
-          <option
-            className="option"
-            value="open-source"
-          >
-            Open Source
-          </option>
-          <option
-            className="option"
-            value="pilot"
-          >
-            Pilot
-          </option>
-        </select>
-        <span
-          className="arrow"
-        >
-          <svg />
-        </span>
-        
+            <svg />
+          </span>
+          
+        </div>
+        <p>
+          Selected: 
+          
+        </p>
       </div>
-      <p>
-        Selected: 
-        
-      </p>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Disabled
-    </h3>
+    </h2>
     <div>
-      <div
-        className="dropdown disabled"
-      >
-        
-        <select
-          className="select"
-          defaultValue="placeholder"
-          disabled={true}
-          id="things-shortid-mock"
-          onChange={[Function]}
+      <div>
+        <div
+          className="dropdown disabled"
         >
-          <option
-            className="option placeholder"
+          
+          <select
+            className="select"
+            defaultValue="placeholder"
             disabled={true}
-            hidden={true}
-            value="placeholder"
+            id="things-shortid-mock"
+            onChange={[Function]}
           >
-            
-          </option>
-          <option
-            className="option"
-            value="github"
+            <option
+              className="option placeholder"
+              disabled={true}
+              hidden={true}
+              value="placeholder"
+            >
+              
+            </option>
+            <option
+              className="option"
+              value="github"
+            >
+              Github
+            </option>
+            <option
+              className="option"
+              value="open-source"
+            >
+              Open Source
+            </option>
+            <option
+              className="option"
+              value="pilot"
+            >
+              Pilot
+            </option>
+          </select>
+          <span
+            className="arrow"
           >
-            Github
-          </option>
-          <option
-            className="option"
-            value="open-source"
-          >
-            Open Source
-          </option>
-          <option
-            className="option"
-            value="pilot"
-          >
-            Pilot
-          </option>
-        </select>
-        <span
-          className="arrow"
-        >
-          <svg />
-        </span>
-        
+            <svg />
+          </span>
+          
+        </div>
+        <p>
+          Selected: 
+          
+        </p>
       </div>
-      <p>
-        Selected: 
-        
-      </p>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Default with placeholder
-    </h3>
+    </h2>
     <div>
-      <div
-        className="dropdown"
-      >
-        
-        <select
-          className="select"
-          defaultValue="placeholder"
-          disabled={false}
-          id="things-shortid-mock"
-          onChange={[Function]}
+      <div>
+        <div
+          className="dropdown"
         >
-          <option
-            className="option placeholder"
-            disabled={true}
-            hidden={true}
-            value="placeholder"
+          
+          <select
+            className="select"
+            defaultValue="placeholder"
+            disabled={false}
+            id="things-shortid-mock"
+            onChange={[Function]}
           >
-            Selecione
-          </option>
-          <option
-            className="option"
-            value="github"
+            <option
+              className="option placeholder"
+              disabled={true}
+              hidden={true}
+              value="placeholder"
+            >
+              Select
+            </option>
+            <option
+              className="option"
+              value="github"
+            >
+              Github
+            </option>
+            <option
+              className="option"
+              value="open-source"
+            >
+              Open Source
+            </option>
+            <option
+              className="option"
+              value="pilot"
+            >
+              Pilot
+            </option>
+          </select>
+          <span
+            className="arrow"
           >
-            Github
-          </option>
-          <option
-            className="option"
-            value="open-source"
-          >
-            Open Source
-          </option>
-          <option
-            className="option"
-            value="pilot"
-          >
-            Pilot
-          </option>
-        </select>
-        <span
-          className="arrow"
-        >
-          <svg />
-        </span>
-        
+            <svg />
+          </span>
+          
+        </div>
+        <p>
+          Selected: 
+          
+        </p>
       </div>
-      <p>
-        Selected: 
-        
-      </p>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Disabled with placeholder
-    </h3>
+    </h2>
     <div>
-      <div
-        className="dropdown disabled"
-      >
-        
-        <select
-          className="select"
-          defaultValue="placeholder"
-          disabled={true}
-          id="things-shortid-mock"
-          onChange={[Function]}
+      <div>
+        <div
+          className="dropdown disabled"
         >
-          <option
-            className="option placeholder"
+          
+          <select
+            className="select"
+            defaultValue="placeholder"
             disabled={true}
-            hidden={true}
-            value="placeholder"
+            id="things-shortid-mock"
+            onChange={[Function]}
           >
-            Selecione
-          </option>
-          <option
-            className="option"
-            value="github"
+            <option
+              className="option placeholder"
+              disabled={true}
+              hidden={true}
+              value="placeholder"
+            >
+              Select
+            </option>
+            <option
+              className="option"
+              value="github"
+            >
+              Github
+            </option>
+            <option
+              className="option"
+              value="open-source"
+            >
+              Open Source
+            </option>
+            <option
+              className="option"
+              value="pilot"
+            >
+              Pilot
+            </option>
+          </select>
+          <span
+            className="arrow"
           >
-            Github
-          </option>
-          <option
-            className="option"
-            value="open-source"
-          >
-            Open Source
-          </option>
-          <option
-            className="option"
-            value="pilot"
-          >
-            Pilot
-          </option>
-        </select>
-        <span
-          className="arrow"
-        >
-          <svg />
-        </span>
-        
+            <svg />
+          </span>
+          
+        </div>
+        <p>
+          Selected: 
+          
+        </p>
       </div>
-      <p>
-        Selected: 
-        
-      </p>
     </div>
   </section>
 </div>

@@ -1,8 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
+import Section from '../Section'
 import Dropdown from '../../src/Dropdown'
-
-import style from '../style.css'
 
 const options = [
   {
@@ -54,27 +53,23 @@ DropdownState.defaultProps = {
 
 storiesOf('Dropdown', module)
   .add('Default', () => (
-    <div className={style.container}>
+    <div>
       <h2>Dropdown</h2>
 
-      <section>
-        <h3>Default</h3>
+      <Section title="Default">
         <DropdownState />
-      </section>
+      </Section>
 
-      <section>
-        <h3>Disabled</h3>
+      <Section title="Disabled">
         <DropdownState disabled />
-      </section>
+      </Section>
 
-      <section>
-        <h3>Default with placeholder</h3>
-        <DropdownState placeholder="Selecione" />
-      </section>
+      <Section title="Default with placeholder">
+        <DropdownState placeholder="Select" />
+      </Section>
 
-      <section>
-        <h3>Disabled with placeholder</h3>
-        <DropdownState disabled placeholder="Selecione" />
-      </section>
+      <Section title="Disabled with placeholder">
+        <DropdownState disabled placeholder="Select" />
+      </Section>
     </div>
   ))
