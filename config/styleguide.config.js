@@ -106,6 +106,7 @@ module.exports = {
         },
         {
           name: 'TabBar',
+          content: '../src/TabBar/README.md',
           components: () => [
             '../src/TabBar/TabBar.js',
             '../src/TabBar/TabItem.js',
