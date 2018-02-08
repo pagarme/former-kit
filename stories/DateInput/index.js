@@ -2,12 +2,13 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import moment from 'moment'
 import IconCalendar from 'emblematic-icons/svg/Calendar32.svg'
+
+import Section from '../Section'
 import DateInput from '../../src/DateInput'
 import Button from '../../src/Button'
 
 import presets from './datePresets'
 import style from './style.css'
-
 
 class DateInputState extends React.Component {
   constructor (props) {
@@ -69,25 +70,21 @@ storiesOf('DateInput', module)
     <div className={style.main}>
       <h1>DateInput usage</h1>
 
-      <section>
-        <h2>Minimal setup</h2>
+      <Section title="Minimal setup">
         <DateInputState />
-      </section>
+      </Section>
 
-      <section>
-        <h2>Specifying single day as initial dates</h2>
+      <Section title="Specifying single day as initial dates">
         <DateInputState start={moment()} end={moment()} />
-      </section>
+      </Section>
 
-      <section>
-        <h2>Specifying date range as initial dates</h2>
+      <Section title="Specifying date range as initial dates">
         <DateInputState start={moment().add(-7, 'days')} end={moment()} />
-      </section>
+      </Section>
 
-      <section>
-        <h2>Specifying null end as initial dates</h2>
+      <Section title="Specifying null end as initial dates">
         <DateInputState start={moment().add(-7, 'days')} />
-      </section>
+      </Section>
     </div>
   ))
 
