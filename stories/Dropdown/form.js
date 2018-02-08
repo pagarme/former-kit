@@ -5,16 +5,16 @@ import style from '../style.css'
 
 const options = [
   {
-    name: 'Leonardo',
-    value: 'leonardo',
+    name: 'Github',
+    value: 'github',
   },
   {
-    name: 'Derek',
-    value: 'derek',
+    name: 'Open Source',
+    value: 'open-source',
   },
   {
-    name: 'Lucas',
-    value: 'lucas',
+    name: 'Pilot',
+    value: 'pilot',
   },
 ]
 
@@ -29,8 +29,8 @@ class DropdownState extends React.Component {
       <div>
         <Dropdown
           options={options}
-          name="pessoas"
-          label="Pessoas da Pagarme"
+          name="Things"
+          label="Things"
           onChange={value => this.setState({ selected: value })}
           value={this.state.selected}
           disabled={this.props.disabled}
@@ -39,7 +39,7 @@ class DropdownState extends React.Component {
           success={this.props.success}
         />
 
-        <p>Selecionado: {this.state.selected}</p>
+        <p>Selected: {this.state.selected}</p>
       </div>
     )
   }
@@ -64,12 +64,12 @@ storiesOf('Dropdown', module)
 
       <section>
         <h3>With placeholder</h3>
-        <DropdownState placeholder="Selecione alguem" />
+        <DropdownState placeholder="Select" />
       </section>
 
       <section>
         <h3>Disabled with placeholder</h3>
-        <DropdownState disabled placeholder="Selecione alguem" />
+        <DropdownState disabled placeholder="Select" />
       </section>
 
       <section>

@@ -5365,7 +5365,7 @@ exports[`Storyshots Dropdown Default 1`] = `
           className="select"
           defaultValue="placeholder"
           disabled={false}
-          id="pessoas-shortid-mock"
+          id="things-shortid-mock"
           onChange={[Function]}
         >
           <option
@@ -5378,21 +5378,21 @@ exports[`Storyshots Dropdown Default 1`] = `
           </option>
           <option
             className="option"
-            value="leonardo"
+            value="github"
           >
-            Leonardo
+            Github
           </option>
           <option
             className="option"
-            value="derek"
+            value="open-source"
           >
-            Derek
+            Open Source
           </option>
           <option
             className="option"
-            value="lucas"
+            value="pilot"
           >
-            Lucas
+            Pilot
           </option>
         </select>
         <span
@@ -5403,7 +5403,7 @@ exports[`Storyshots Dropdown Default 1`] = `
         
       </div>
       <p>
-        Selecionado: 
+        Selected: 
         
       </p>
     </div>
@@ -5421,7 +5421,7 @@ exports[`Storyshots Dropdown Default 1`] = `
           className="select"
           defaultValue="placeholder"
           disabled={true}
-          id="pessoas-shortid-mock"
+          id="things-shortid-mock"
           onChange={[Function]}
         >
           <option
@@ -5434,21 +5434,21 @@ exports[`Storyshots Dropdown Default 1`] = `
           </option>
           <option
             className="option"
-            value="leonardo"
+            value="github"
           >
-            Leonardo
+            Github
           </option>
           <option
             className="option"
-            value="derek"
+            value="open-source"
           >
-            Derek
+            Open Source
           </option>
           <option
             className="option"
-            value="lucas"
+            value="pilot"
           >
-            Lucas
+            Pilot
           </option>
         </select>
         <span
@@ -5459,7 +5459,7 @@ exports[`Storyshots Dropdown Default 1`] = `
         
       </div>
       <p>
-        Selecionado: 
+        Selected: 
         
       </p>
     </div>
@@ -5477,7 +5477,7 @@ exports[`Storyshots Dropdown Default 1`] = `
           className="select"
           defaultValue="placeholder"
           disabled={false}
-          id="pessoas-shortid-mock"
+          id="things-shortid-mock"
           onChange={[Function]}
         >
           <option
@@ -5490,21 +5490,21 @@ exports[`Storyshots Dropdown Default 1`] = `
           </option>
           <option
             className="option"
-            value="leonardo"
+            value="github"
           >
-            Leonardo
+            Github
           </option>
           <option
             className="option"
-            value="derek"
+            value="open-source"
           >
-            Derek
+            Open Source
           </option>
           <option
             className="option"
-            value="lucas"
+            value="pilot"
           >
-            Lucas
+            Pilot
           </option>
         </select>
         <span
@@ -5515,7 +5515,7 @@ exports[`Storyshots Dropdown Default 1`] = `
         
       </div>
       <p>
-        Selecionado: 
+        Selected: 
         
       </p>
     </div>
@@ -5533,7 +5533,7 @@ exports[`Storyshots Dropdown Default 1`] = `
           className="select"
           defaultValue="placeholder"
           disabled={true}
-          id="pessoas-shortid-mock"
+          id="things-shortid-mock"
           onChange={[Function]}
         >
           <option
@@ -5546,21 +5546,21 @@ exports[`Storyshots Dropdown Default 1`] = `
           </option>
           <option
             className="option"
-            value="leonardo"
+            value="github"
           >
-            Leonardo
+            Github
           </option>
           <option
             className="option"
-            value="derek"
+            value="open-source"
           >
-            Derek
+            Open Source
           </option>
           <option
             className="option"
-            value="lucas"
+            value="pilot"
           >
-            Lucas
+            Pilot
           </option>
         </select>
         <span
@@ -5571,7 +5571,7 @@ exports[`Storyshots Dropdown Default 1`] = `
         
       </div>
       <p>
-        Selecionado: 
+        Selected: 
         
       </p>
     </div>
@@ -5596,15 +5596,15 @@ exports[`Storyshots Dropdown Form 1`] = `
       >
         <label
           className="label"
-          htmlFor="pessoas-shortid-mock"
+          htmlFor="Things-shortid-mock"
         >
-          Pessoas da Pagarme
+          Things
         </label>
         <select
           className="select"
           defaultValue="placeholder"
           disabled={false}
-          id="pessoas-shortid-mock"
+          id="Things-shortid-mock"
           onChange={[Function]}
         >
           <option
@@ -5617,21 +5617,21 @@ exports[`Storyshots Dropdown Form 1`] = `
           </option>
           <option
             className="option"
-            value="leonardo"
+            value="github"
           >
-            Leonardo
+            Github
           </option>
           <option
             className="option"
-            value="derek"
+            value="open-source"
           >
-            Derek
+            Open Source
           </option>
           <option
             className="option"
-            value="lucas"
+            value="pilot"
           >
-            Lucas
+            Pilot
           </option>
         </select>
         <span
@@ -5642,7 +5642,7 @@ exports[`Storyshots Dropdown Form 1`] = `
         
       </div>
       <p>
-        Selecionado: 
+        Selected: 
         
       </p>
     </div>
@@ -5657,15 +5657,15 @@ exports[`Storyshots Dropdown Form 1`] = `
       >
         <label
           className="label"
-          htmlFor="pessoas-shortid-mock"
+          htmlFor="Things-shortid-mock"
         >
-          Pessoas da Pagarme
+          Things
         </label>
         <select
           className="select"
           defaultValue="placeholder"
           disabled={false}
-          id="pessoas-shortid-mock"
+          id="Things-shortid-mock"
           onChange={[Function]}
         >
           <option
@@ -5674,25 +5674,25 @@ exports[`Storyshots Dropdown Form 1`] = `
             hidden={true}
             value="placeholder"
           >
-            Selecione alguem
+            Select
           </option>
           <option
             className="option"
-            value="leonardo"
+            value="github"
           >
-            Leonardo
+            Github
           </option>
           <option
             className="option"
-            value="derek"
+            value="open-source"
           >
-            Derek
+            Open Source
           </option>
           <option
             className="option"
-            value="lucas"
+            value="pilot"
           >
-            Lucas
+            Pilot
           </option>
         </select>
         <span
@@ -5703,7 +5703,7 @@ exports[`Storyshots Dropdown Form 1`] = `
         
       </div>
       <p>
-        Selecionado: 
+        Selected: 
         
       </p>
     </div>
@@ -5718,15 +5718,15 @@ exports[`Storyshots Dropdown Form 1`] = `
       >
         <label
           className="label"
-          htmlFor="pessoas-shortid-mock"
+          htmlFor="Things-shortid-mock"
         >
-          Pessoas da Pagarme
+          Things
         </label>
         <select
           className="select"
           defaultValue="placeholder"
           disabled={true}
-          id="pessoas-shortid-mock"
+          id="Things-shortid-mock"
           onChange={[Function]}
         >
           <option
@@ -5735,25 +5735,25 @@ exports[`Storyshots Dropdown Form 1`] = `
             hidden={true}
             value="placeholder"
           >
-            Selecione alguem
+            Select
           </option>
           <option
             className="option"
-            value="leonardo"
+            value="github"
           >
-            Leonardo
+            Github
           </option>
           <option
             className="option"
-            value="derek"
+            value="open-source"
           >
-            Derek
+            Open Source
           </option>
           <option
             className="option"
-            value="lucas"
+            value="pilot"
           >
-            Lucas
+            Pilot
           </option>
         </select>
         <span
@@ -5764,7 +5764,7 @@ exports[`Storyshots Dropdown Form 1`] = `
         
       </div>
       <p>
-        Selecionado: 
+        Selected: 
         
       </p>
     </div>
@@ -5779,15 +5779,15 @@ exports[`Storyshots Dropdown Form 1`] = `
       >
         <label
           className="label"
-          htmlFor="pessoas-shortid-mock"
+          htmlFor="Things-shortid-mock"
         >
-          Pessoas da Pagarme
+          Things
         </label>
         <select
           className="select"
           defaultValue="placeholder"
           disabled={true}
-          id="pessoas-shortid-mock"
+          id="Things-shortid-mock"
           onChange={[Function]}
         >
           <option
@@ -5800,21 +5800,21 @@ exports[`Storyshots Dropdown Form 1`] = `
           </option>
           <option
             className="option"
-            value="leonardo"
+            value="github"
           >
-            Leonardo
+            Github
           </option>
           <option
             className="option"
-            value="derek"
+            value="open-source"
           >
-            Derek
+            Open Source
           </option>
           <option
             className="option"
-            value="lucas"
+            value="pilot"
           >
-            Lucas
+            Pilot
           </option>
         </select>
         <span
@@ -5825,7 +5825,7 @@ exports[`Storyshots Dropdown Form 1`] = `
         
       </div>
       <p>
-        Selecionado: 
+        Selected: 
         
       </p>
     </div>
@@ -5840,15 +5840,15 @@ exports[`Storyshots Dropdown Form 1`] = `
       >
         <label
           className="label"
-          htmlFor="pessoas-shortid-mock"
+          htmlFor="Things-shortid-mock"
         >
-          Pessoas da Pagarme
+          Things
         </label>
         <select
           className="select"
           defaultValue="placeholder"
           disabled={false}
-          id="pessoas-shortid-mock"
+          id="Things-shortid-mock"
           onChange={[Function]}
         >
           <option
@@ -5861,21 +5861,21 @@ exports[`Storyshots Dropdown Form 1`] = `
           </option>
           <option
             className="option"
-            value="leonardo"
+            value="github"
           >
-            Leonardo
+            Github
           </option>
           <option
             className="option"
-            value="derek"
+            value="open-source"
           >
-            Derek
+            Open Source
           </option>
           <option
             className="option"
-            value="lucas"
+            value="pilot"
           >
-            Lucas
+            Pilot
           </option>
         </select>
         <span
@@ -5890,7 +5890,7 @@ exports[`Storyshots Dropdown Form 1`] = `
         </p>
       </div>
       <p>
-        Selecionado: 
+        Selected: 
         
       </p>
     </div>
@@ -5905,15 +5905,15 @@ exports[`Storyshots Dropdown Form 1`] = `
       >
         <label
           className="label"
-          htmlFor="pessoas-shortid-mock"
+          htmlFor="Things-shortid-mock"
         >
-          Pessoas da Pagarme
+          Things
         </label>
         <select
           className="select"
           defaultValue="placeholder"
           disabled={false}
-          id="pessoas-shortid-mock"
+          id="Things-shortid-mock"
           onChange={[Function]}
         >
           <option
@@ -5926,21 +5926,21 @@ exports[`Storyshots Dropdown Form 1`] = `
           </option>
           <option
             className="option"
-            value="leonardo"
+            value="github"
           >
-            Leonardo
+            Github
           </option>
           <option
             className="option"
-            value="derek"
+            value="open-source"
           >
-            Derek
+            Open Source
           </option>
           <option
             className="option"
-            value="lucas"
+            value="pilot"
           >
-            Lucas
+            Pilot
           </option>
         </select>
         <span
@@ -5955,7 +5955,7 @@ exports[`Storyshots Dropdown Form 1`] = `
         </p>
       </div>
       <p>
-        Selecionado: 
+        Selected: 
         
       </p>
     </div>
