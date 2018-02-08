@@ -13,7 +13,7 @@ import {
   Row,
 } from '../Grid'
 
-const consumeTheme = ThemeConsumer('UILogin')
+const consumeTheme = ThemeConsumer('UILanding')
 
 /**
  * Provides an interface to create a simple layout,
@@ -23,7 +23,7 @@ const consumeTheme = ThemeConsumer('UILogin')
  * This component children must be a PrimarySection and a
  * SecondarySection components.
  */
-const Login = ({
+const Landing = ({
   children,
   theme,
   className,
@@ -37,7 +37,7 @@ const Login = ({
   </div>
 )
 
-Login.propTypes = {
+Landing.propTypes = {
   /**
    * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper.
    */
@@ -61,10 +61,10 @@ Login.propTypes = {
   className: string,
 }
 
-Login.defaultProps = {
+Landing.defaultProps = {
   children: null,
   theme: {},
   className: '',
 }
 
-export default consumeTheme(Login)
+export default consumeTheme(Landing)

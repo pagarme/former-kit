@@ -2,17 +2,9 @@
 # yarn lockfile v1
 
 
-"@babel/code-frame@7.0.0-beta.36":
+"@babel/code-frame@7.0.0-beta.36", "@babel/code-frame@^7.0.0-beta.35":
   version "7.0.0-beta.36"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.0.0-beta.36.tgz#2349d7ec04b3a06945ae173280ef8579b63728e4"
-  dependencies:
-    chalk "^2.0.0"
-    esutils "^2.0.2"
-    js-tokens "^3.0.0"
-
-"@babel/code-frame@^7.0.0-beta.35":
-  version "7.0.0-beta.39"
-  resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.0.0-beta.39.tgz#91c90bb65207fc5a55128cb54956ded39e850457"
   dependencies:
     chalk "^2.0.0"
     esutils "^2.0.2"
@@ -90,7 +82,7 @@
     percy-client "^2.3.0"
     slugify "^1.1.0"
 
-"@storybook/addon-actions@3.3.11":
+"@storybook/addon-actions@3.3.11", "@storybook/addon-actions@^3.3.11":
   version "3.3.11"
   resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-3.3.11.tgz#158a64f01c97fcf6922e7a370c6519d216544bcd"
   dependencies:
@@ -101,30 +93,11 @@
     react-inspector "^2.2.2"
     uuid "^3.1.0"
 
-"@storybook/addon-actions@^3.3.11":
-  version "3.3.12"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-3.3.12.tgz#1bd2668918a62f32c0907af14946cdd0c6be66f5"
-  dependencies:
-    deep-equal "^1.0.1"
-    global "^4.3.2"
-    make-error "^1.3.2"
-    prop-types "^15.6.0"
-    react-inspector "^2.2.2"
-    uuid "^3.1.0"
-
-"@storybook/addon-links@3.3.11":
+"@storybook/addon-links@3.3.11", "@storybook/addon-links@^3.3.11":
   version "3.3.11"
   resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-3.3.11.tgz#7bc57baddd1502153ee94cf11fcb88d49131b211"
   dependencies:
     "@storybook/components" "^3.3.11"
-    global "^4.3.2"
-    prop-types "^15.5.10"
-
-"@storybook/addon-links@^3.3.11":
-  version "3.3.12"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-3.3.12.tgz#e1bb6e207506a45bea9e5f64cd78c045327412b7"
-  dependencies:
-    "@storybook/components" "^3.3.12"
     global "^4.3.2"
     prop-types "^15.5.10"
 
@@ -140,13 +113,9 @@
     prop-types "^15.6.0"
     read-pkg-up "^3.0.0"
 
-"@storybook/addons@3.3.11":
+"@storybook/addons@3.3.11", "@storybook/addons@^3.3.11":
   version "3.3.11"
   resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-3.3.11.tgz#7f85136d6da785160658aee512fd3cac99780f42"
-
-"@storybook/addons@^3.3.11":
-  version "3.3.12"
-  resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-3.3.12.tgz#682927b5ac4baad796922eec505a7e956a3f79d9"
 
 "@storybook/channel-postmessage@^3.3.11":
   version "3.3.12"
@@ -156,11 +125,11 @@
     global "^4.3.2"
     json-stringify-safe "^5.0.1"
 
-"@storybook/channels@3.3.11":
+"@storybook/channels@3.3.11", "@storybook/channels@^3.3.11":
   version "3.3.11"
   resolved "https://registry.yarnpkg.com/@storybook/channels/-/channels-3.3.11.tgz#569f1c7c364aeb076df78eb829c58f9c9f0a3936"
 
-"@storybook/channels@^3.3.11", "@storybook/channels@^3.3.12":
+"@storybook/channels@^3.3.12":
   version "3.3.12"
   resolved "https://registry.yarnpkg.com/@storybook/channels/-/channels-3.3.12.tgz#aa4106888971f9e689511093b0e6f2b569973a09"
 
@@ -3283,16 +3252,9 @@ domutils@1.1:
   dependencies:
     domelementtype "1"
 
-domutils@1.5.1:
+domutils@1.5.1, domutils@^1.5.1:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/domutils/-/domutils-1.5.1.tgz#dcd8488a26f563d61079e48c9f7b7e32373682cf"
-  dependencies:
-    dom-serializer "0"
-    domelementtype "1"
-
-domutils@^1.5.1:
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/domutils/-/domutils-1.6.2.tgz#1958cc0b4c9426e9ed367fb1c8e854891b0fa3ff"
   dependencies:
     dom-serializer "0"
     domelementtype "1"
@@ -3987,13 +3949,9 @@ extract-text-webpack-plugin@3.0.2:
     schema-utils "^0.3.0"
     webpack-sources "^1.0.1"
 
-extsprintf@1.3.0:
+extsprintf@1.3.0, extsprintf@^1.2.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/extsprintf/-/extsprintf-1.3.0.tgz#96918440e3041a7a414f8c52e3c574eb3c3e1e05"
-
-extsprintf@^1.2.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/extsprintf/-/extsprintf-1.4.0.tgz#e2689f8f356fad62cca65a3a91c5df5f9551692f"
 
 fast-deep-equal@^1.0.0:
   version "1.0.0"
@@ -4219,9 +4177,9 @@ form-data@~2.3.1:
     combined-stream "^1.0.5"
     mime-types "^2.1.12"
 
-former-kit-skin-pagarme@0.0.8:
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/former-kit-skin-pagarme/-/former-kit-skin-pagarme-0.0.8.tgz#135748d53ede35eabca8367a2737aabde9f0caec"
+former-kit-skin-pagarme@0.0.10:
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/former-kit-skin-pagarme/-/former-kit-skin-pagarme-0.0.10.tgz#95cf95600110fd3d03cf59e1aab9e2987956962e"
   dependencies:
     emblematic-icons "0.1.1"
 
@@ -6615,11 +6573,7 @@ miller-rabin@^4.0.0:
     bn.js "^4.0.0"
     brorand "^1.0.1"
 
-"mime-db@>= 1.30.0 < 2":
-  version "1.32.0"
-  resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.32.0.tgz#485b3848b01a3cda5f968b4882c0771e58e09414"
-
-mime-db@~1.30.0:
+"mime-db@>= 1.30.0 < 2", mime-db@~1.30.0:
   version "1.30.0"
   resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.30.0.tgz#74c643da2dd9d6a45399963465b26d5ca7d71f01"
 
@@ -6674,7 +6628,7 @@ minimist-options@^3.0.1:
     arrify "^1.0.1"
     is-plain-obj "^1.1.0"
 
-minimist@0.0.8:
+minimist@0.0.8, minimist@~0.0.1:
   version "0.0.8"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-0.0.8.tgz#857fcabfc3397d2625b8228262e86aa7a011b05d"
 
@@ -6685,10 +6639,6 @@ minimist@1.1.x:
 minimist@^1.1.1, minimist@^1.1.3, minimist@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.0.tgz#a35008b20f41383eec1fb914f4cd5df79a264284"
-
-minimist@~0.0.1:
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/minimist/-/minimist-0.0.10.tgz#de3f98543dbf96082be48ad1a0c7cda836301dcf"
 
 mississippi@^1.3.0:
   version "1.3.1"
@@ -7845,7 +7795,7 @@ postcss-load-plugins@^2.3.0:
     cosmiconfig "^2.1.1"
     object-assign "^4.1.0"
 
-postcss-loader@2.0.10:
+postcss-loader@2.0.10, postcss-loader@^2.0.9:
   version "2.0.10"
   resolved "https://registry.yarnpkg.com/postcss-loader/-/postcss-loader-2.0.10.tgz#090db0540140bd56a7a7f717c41bc29aeef4c674"
   dependencies:
@@ -7853,15 +7803,6 @@ postcss-loader@2.0.10:
     postcss "^6.0.0"
     postcss-load-config "^1.2.0"
     schema-utils "^0.3.0"
-
-postcss-loader@^2.0.9:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/postcss-loader/-/postcss-loader-2.1.0.tgz#038c2d6d59753fef4667827fd3ae03f5dc5e6a7a"
-  dependencies:
-    loader-utils "^1.1.0"
-    postcss "^6.0.0"
-    postcss-load-config "^1.2.0"
-    schema-utils "^0.4.0"
 
 postcss-media-minmax@^3.0.0:
   version "3.0.0"
@@ -9356,7 +9297,7 @@ schema-utils@^0.3.0:
   dependencies:
     ajv "^5.0.0"
 
-schema-utils@^0.4.0, schema-utils@^0.4.2, schema-utils@^0.4.3:
+schema-utils@^0.4.2, schema-utils@^0.4.3:
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-0.4.3.tgz#e2a594d3395834d5e15da22b48be13517859458e"
   dependencies:
@@ -9790,11 +9731,7 @@ static-extend@^0.1.1:
     define-property "^0.2.5"
     object-copy "^0.1.0"
 
-"statuses@>= 1.3.1 < 2":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/statuses/-/statuses-1.4.0.tgz#bb73d446da2796106efcc1b601a253d6c46bd087"
-
-statuses@~1.3.1:
+"statuses@>= 1.3.1 < 2", statuses@~1.3.1:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/statuses/-/statuses-1.3.1.tgz#faf51b9eb74aaef3b3acf4ad5f61abf24cb7b93e"
 
