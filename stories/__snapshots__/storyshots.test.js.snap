@@ -15701,250 +15701,262 @@ exports[`Storyshots Switch All styles 1`] = `
 </div>
 `;
 
-exports[`Storyshots TabBar All styles 1`] = `
+exports[`Storyshots TabBar Default 1`] = `
 <div
   className="typography"
 >
-  <section>
-    <p>
+  <section
+    className={undefined}
+  >
+    <h2>
       Text
-    </p>
-    <div
-      className="tabBar"
-    >
+    </h2>
+    <div>
       <div
-        className="tabs"
+        className="tabBar"
       >
-        <label
-          className="tab just-text"
-          htmlFor="tabbar-shortid-mock-tab-0"
+        <div
+          className="tabs"
         >
-          <input
-            checked={false}
-            id="tabbar-shortid-mock-tab-0"
-            name="tabbar-shortid-mock-tab-0"
-            onChange={[Function]}
-            type="radio"
-          />
-          My account
-        </label>
-        <label
-          className="tab just-text selected"
-          htmlFor="tabbar-shortid-mock-tab-1"
+          <label
+            className="tab just-text"
+            htmlFor="tabbar-shortid-mock-tab-0"
+          >
+            <input
+              checked={false}
+              id="tabbar-shortid-mock-tab-0"
+              name="tabbar-shortid-mock-tab-0"
+              onChange={[Function]}
+              type="radio"
+            />
+            My account
+          </label>
+          <label
+            className="tab just-text selected"
+            htmlFor="tabbar-shortid-mock-tab-1"
+          >
+            <input
+              checked={true}
+              id="tabbar-shortid-mock-tab-1"
+              name="tabbar-shortid-mock-tab-1"
+              onChange={[Function]}
+              type="radio"
+            />
+            Docs
+          </label>
+          <label
+            className="tab just-text"
+            htmlFor="tabbar-shortid-mock-tab-2"
+          >
+            <input
+              checked={false}
+              id="tabbar-shortid-mock-tab-2"
+              name="tabbar-shortid-mock-tab-2"
+              onChange={[Function]}
+              type="radio"
+            />
+            Letter
+          </label>
+        </div>
+        <div
+          className="content"
         >
-          <input
-            checked={true}
-            id="tabbar-shortid-mock-tab-1"
-            name="tabbar-shortid-mock-tab-1"
-            onChange={[Function]}
-            type="radio"
-          />
-          Docs
-        </label>
-        <label
-          className="tab just-text"
-          htmlFor="tabbar-shortid-mock-tab-2"
-        >
-          <input
-            checked={false}
-            id="tabbar-shortid-mock-tab-2"
-            name="tabbar-shortid-mock-tab-2"
-            onChange={[Function]}
-            type="radio"
-          />
-          Letter
-        </label>
-      </div>
-      <div
-        className="content"
-      >
-        <h2>
-          This is: 
-           
-          Docs
-           
-          <Folder32.svg
-            height={16}
-            width={16}
-          />
-        </h2>
+          <h2>
+            This is: 
+             
+            Docs
+             
+            <Folder32.svg
+              height={16}
+              width={16}
+            />
+          </h2>
+        </div>
       </div>
     </div>
   </section>
-  <section>
-    <p>
+  <section
+    className={undefined}
+  >
+    <h2>
       Text and Icon
-    </p>
-    <div
-      className="tabBar"
-    >
+    </h2>
+    <div>
       <div
-        className="tabs"
+        className="tabBar"
       >
-        <label
-          className="tab text-icon"
-          htmlFor="tabbar-shortid-mock-tab-0"
+        <div
+          className="tabs"
         >
-          <input
-            checked={false}
-            id="tabbar-shortid-mock-tab-0"
-            name="tabbar-shortid-mock-tab-0"
-            onChange={[Function]}
-            type="radio"
-          />
-          <div
-            className="icon"
+          <label
+            className="tab text-icon"
+            htmlFor="tabbar-shortid-mock-tab-0"
           >
-            <User32.svg
-              height={16}
-              width={16}
+            <input
+              checked={false}
+              id="tabbar-shortid-mock-tab-0"
+              name="tabbar-shortid-mock-tab-0"
+              onChange={[Function]}
+              type="radio"
             />
-          </div>
-          My account
-        </label>
-        <label
-          className="tab text-icon selected"
-          htmlFor="tabbar-shortid-mock-tab-1"
-        >
-          <input
-            checked={true}
-            id="tabbar-shortid-mock-tab-1"
-            name="tabbar-shortid-mock-tab-1"
-            onChange={[Function]}
-            type="radio"
-          />
-          <div
-            className="icon"
+            <div
+              className="icon"
+            >
+              <User32.svg
+                height={16}
+                width={16}
+              />
+            </div>
+            My account
+          </label>
+          <label
+            className="tab text-icon selected"
+            htmlFor="tabbar-shortid-mock-tab-1"
           >
+            <input
+              checked={true}
+              id="tabbar-shortid-mock-tab-1"
+              name="tabbar-shortid-mock-tab-1"
+              onChange={[Function]}
+              type="radio"
+            />
+            <div
+              className="icon"
+            >
+              <Folder32.svg
+                height={16}
+                width={16}
+              />
+            </div>
+            Docs
+          </label>
+          <label
+            className="tab text-icon"
+            htmlFor="tabbar-shortid-mock-tab-2"
+          >
+            <input
+              checked={false}
+              id="tabbar-shortid-mock-tab-2"
+              name="tabbar-shortid-mock-tab-2"
+              onChange={[Function]}
+              type="radio"
+            />
+            <div
+              className="icon"
+            >
+              <Report32.svg
+                height={16}
+                width={16}
+              />
+            </div>
+            Letter
+          </label>
+        </div>
+        <div
+          className="content"
+        >
+          <h2>
+            This is: 
+             
+            Docs
+             
             <Folder32.svg
               height={16}
               width={16}
             />
-          </div>
-          Docs
-        </label>
-        <label
-          className="tab text-icon"
-          htmlFor="tabbar-shortid-mock-tab-2"
-        >
-          <input
-            checked={false}
-            id="tabbar-shortid-mock-tab-2"
-            name="tabbar-shortid-mock-tab-2"
-            onChange={[Function]}
-            type="radio"
-          />
-          <div
-            className="icon"
-          >
-            <Report32.svg
-              height={16}
-              width={16}
-            />
-          </div>
-          Letter
-        </label>
-      </div>
-      <div
-        className="content"
-      >
-        <h2>
-          This is: 
-           
-          Docs
-           
-          <Folder32.svg
-            height={16}
-            width={16}
-          />
-        </h2>
+          </h2>
+        </div>
       </div>
     </div>
   </section>
-  <section>
-    <p>
+  <section
+    className={undefined}
+  >
+    <h2>
       Icon
-    </p>
-    <div
-      className="tabBar"
-    >
+    </h2>
+    <div>
       <div
-        className="tabs"
+        className="tabBar"
       >
-        <label
-          className="tab just-icon"
-          htmlFor="tabbar-shortid-mock-tab-0"
+        <div
+          className="tabs"
         >
-          <input
-            checked={false}
-            id="tabbar-shortid-mock-tab-0"
-            name="tabbar-shortid-mock-tab-0"
-            onChange={[Function]}
-            type="radio"
-          />
-          <div
-            className="icon"
+          <label
+            className="tab just-icon"
+            htmlFor="tabbar-shortid-mock-tab-0"
           >
-            <User32.svg
-              height={16}
-              width={16}
+            <input
+              checked={false}
+              id="tabbar-shortid-mock-tab-0"
+              name="tabbar-shortid-mock-tab-0"
+              onChange={[Function]}
+              type="radio"
             />
-          </div>
-        </label>
-        <label
-          className="tab just-icon selected"
-          htmlFor="tabbar-shortid-mock-tab-1"
-        >
-          <input
-            checked={true}
-            id="tabbar-shortid-mock-tab-1"
-            name="tabbar-shortid-mock-tab-1"
-            onChange={[Function]}
-            type="radio"
-          />
-          <div
-            className="icon"
+            <div
+              className="icon"
+            >
+              <User32.svg
+                height={16}
+                width={16}
+              />
+            </div>
+          </label>
+          <label
+            className="tab just-icon selected"
+            htmlFor="tabbar-shortid-mock-tab-1"
           >
+            <input
+              checked={true}
+              id="tabbar-shortid-mock-tab-1"
+              name="tabbar-shortid-mock-tab-1"
+              onChange={[Function]}
+              type="radio"
+            />
+            <div
+              className="icon"
+            >
+              <Folder32.svg
+                height={16}
+                width={16}
+              />
+            </div>
+          </label>
+          <label
+            className="tab just-icon"
+            htmlFor="tabbar-shortid-mock-tab-2"
+          >
+            <input
+              checked={false}
+              id="tabbar-shortid-mock-tab-2"
+              name="tabbar-shortid-mock-tab-2"
+              onChange={[Function]}
+              type="radio"
+            />
+            <div
+              className="icon"
+            >
+              <Report32.svg
+                height={16}
+                width={16}
+              />
+            </div>
+          </label>
+        </div>
+        <div
+          className="content"
+        >
+          <h2>
+            This is: 
+             
+            Docs
+             
             <Folder32.svg
               height={16}
               width={16}
             />
-          </div>
-        </label>
-        <label
-          className="tab just-icon"
-          htmlFor="tabbar-shortid-mock-tab-2"
-        >
-          <input
-            checked={false}
-            id="tabbar-shortid-mock-tab-2"
-            name="tabbar-shortid-mock-tab-2"
-            onChange={[Function]}
-            type="radio"
-          />
-          <div
-            className="icon"
-          >
-            <Report32.svg
-              height={16}
-              width={16}
-            />
-          </div>
-        </label>
-      </div>
-      <div
-        className="content"
-      >
-        <h2>
-          This is: 
-           
-          Docs
-           
-          <Folder32.svg
-            height={16}
-            width={16}
-          />
-        </h2>
+          </h2>
+        </div>
       </div>
     </div>
   </section>

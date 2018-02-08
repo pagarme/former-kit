@@ -8,7 +8,7 @@ import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 
 import { TabBar, TabItem } from '../../src/TabBar'
-
+import Section from '../Section'
 
 const i18n = {
   TabBar: 'TabBar',
@@ -74,13 +74,12 @@ class Tab extends React.Component {
 }
 
 storiesOf(`${i18n.TabBar}`, module)
-  .add('All styles', () => (
+  .add('Default', () => (
     <div>
       {variantList.map(variant => (
-        <section key={variant.name}>
-          <p>{variant.name}</p>
+        <Section title={variant.name} key={variant.name}>
           <Tab variant={variant.code} />
-        </section>
+        </Section>
       ))}
     </div>
   ))
