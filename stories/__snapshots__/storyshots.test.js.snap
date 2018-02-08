@@ -741,310 +741,333 @@ exports[`Storyshots Buttons defaultTheme 1`] = `
 </div>
 `;
 
-exports[`Storyshots Cards default theme 1`] = `
+exports[`Storyshots Cards Default 1`] = `
 <div
   className="typography"
 >
-  <section>
+  <section
+    className={undefined}
+  >
     <h2>
       Title and content
     </h2>
-    <div
-      className={undefined}
-    >
+    <div>
       <div
-        className="card"
+        className={undefined}
       >
         <div
-          className="title"
+          className="card"
         >
-          <h3>
-            Lorem ipsum dolor sit amet
-          </h3>
-        </div>
-        <div
-          className="content"
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+          <div
+            className="title"
+          >
+            <h3>
+              Lorem ipsum dolor sit amet
+            </h3>
+          </div>
+          <div
+            className="content"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <section>
+  <section
+    className={undefined}
+  >
     <h2>
       Title, icon and content
     </h2>
-    <div
-      className={undefined}
-    >
+    <div>
       <div
-        className="card"
+        className={undefined}
       >
         <div
-          className="title"
+          className="card"
         >
-          <i
-            className="icon"
+          <div
+            className="title"
           >
-            <Calendar32.svg
-              height={16}
-              width={16}
-            />
-          </i>
-          <h3>
-            Lorem ipsum dolor sit amet
-          </h3>
-        </div>
-        <div
-          className="content"
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+            <i
+              className="icon"
+            >
+              <Calendar32.svg
+                height={16}
+                width={16}
+              />
+            </i>
+            <h3>
+              Lorem ipsum dolor sit amet
+            </h3>
+          </div>
+          <div
+            className="content"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <section>
+  <section
+    className={undefined}
+  >
     <h2>
       Title, content and actions
     </h2>
-    <div
-      className={undefined}
-    >
+    <div>
       <div
-        className="card"
+        className={undefined}
       >
         <div
-          className="title"
+          className="card"
         >
-          <h3>
-            Lorem ipsum dolor sit amet
-          </h3>
-        </div>
-        <div
-          className="content"
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-        </div>
-        <div
-          className="actions"
-        >
-          <button
-            className="button flat light normalRelevance default"
-            disabled={false}
-            onClick={null}
-            type="button"
+          <div
+            className="title"
           >
-            Action
-          </button>
-          <button
-            className="button flat light normalRelevance default"
-            disabled={false}
-            onClick={null}
-            type="button"
+            <h3>
+              Lorem ipsum dolor sit amet
+            </h3>
+          </div>
+          <div
+            className="content"
           >
-            Action
-          </button>
-          <button
-            className="button flat light normalRelevance default"
-            disabled={false}
-            onClick={null}
-            type="button"
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+          </div>
+          <div
+            className="actions"
           >
-            Action
-          </button>
-          <button
-            className="button flat light normalRelevance default"
-            disabled={false}
-            onClick={null}
-            type="button"
-          >
-            Action
-          </button>
+            <button
+              className="button flat light normalRelevance default"
+              disabled={false}
+              onClick={null}
+              type="button"
+            >
+              Action
+            </button>
+            <button
+              className="button flat light normalRelevance default"
+              disabled={false}
+              onClick={null}
+              type="button"
+            >
+              Action
+            </button>
+            <button
+              className="button flat light normalRelevance default"
+              disabled={false}
+              onClick={null}
+              type="button"
+            >
+              Action
+            </button>
+            <button
+              className="button flat light normalRelevance default"
+              disabled={false}
+              onClick={null}
+              type="button"
+            >
+              Action
+            </button>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <section>
+  <section
+    className={undefined}
+  >
     <h2>
       Graphic, title, content and actions
     </h2>
-    <div
-      className={undefined}
-    >
+    <div>
       <div
-        className="card"
+        className={undefined}
       >
         <div
-          className="graphic"
+          className="card"
         >
-          <img
-            alt="placeholder"
-            src="https://maxicharts.com/wp-content/uploads/2017/07/banner-1544x500.png"
-          />
-        </div>
-        <div
-          className="title"
-        >
-          <h3>
-            Lorem ipsum dolor sit amet
-          </h3>
-        </div>
-        <div
-          className="content"
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-        </div>
-        <div
-          className="actions"
-        >
-          <button
-            className="button flat light normalRelevance default"
-            disabled={false}
-            onClick={null}
-            type="button"
+          <div
+            className="graphic"
           >
-            Action
-          </button>
-          <button
-            className="button flat light normalRelevance default"
-            disabled={false}
-            onClick={null}
-            type="button"
+            <img
+              alt="placeholder"
+              src="https://maxicharts.com/wp-content/uploads/2017/07/banner-1544x500.png"
+            />
+          </div>
+          <div
+            className="title"
           >
-            Action
-          </button>
-          <button
-            className="button flat light normalRelevance default"
-            disabled={false}
-            onClick={null}
-            type="button"
+            <h3>
+              Lorem ipsum dolor sit amet
+            </h3>
+          </div>
+          <div
+            className="content"
           >
-            Action
-          </button>
-          <button
-            className="button flat light normalRelevance default"
-            disabled={false}
-            onClick={null}
-            type="button"
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+          </div>
+          <div
+            className="actions"
           >
-            Action
-          </button>
+            <button
+              className="button flat light normalRelevance default"
+              disabled={false}
+              onClick={null}
+              type="button"
+            >
+              Action
+            </button>
+            <button
+              className="button flat light normalRelevance default"
+              disabled={false}
+              onClick={null}
+              type="button"
+            >
+              Action
+            </button>
+            <button
+              className="button flat light normalRelevance default"
+              disabled={false}
+              onClick={null}
+              type="button"
+            >
+              Action
+            </button>
+            <button
+              className="button flat light normalRelevance default"
+              disabled={false}
+              onClick={null}
+              type="button"
+            >
+              Action
+            </button>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <section>
+  <section
+    className={undefined}
+  >
     <h2>
       Title on event handler
     </h2>
-    <div
-      className={undefined}
-    >
+    <div>
       <div
-        className="card"
+        className={undefined}
       >
         <div
-          className="title"
-          onClick={[Function]}
-          onKeyUp={[Function]}
-          role="button"
-          tabIndex="0"
+          className="card"
         >
-          <h3>
-            Click here and watch the action logger
-          </h3>
-        </div>
-        <div
-          className="content"
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-        </div>
-        <div
-          className="actions"
-        >
-          <button
-            className="button flat light normalRelevance default"
-            disabled={false}
-            onClick={null}
-            type="button"
+          <div
+            className="title"
+            onClick={[Function]}
+            onKeyUp={[Function]}
+            role="button"
+            tabIndex="0"
           >
-            Action
-          </button>
-          <button
-            className="button flat light normalRelevance default"
-            disabled={false}
-            onClick={null}
-            type="button"
+            <h3>
+              Click here and watch the action logger
+            </h3>
+          </div>
+          <div
+            className="content"
           >
-            Action
-          </button>
-          <button
-            className="button flat light normalRelevance default"
-            disabled={false}
-            onClick={null}
-            type="button"
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+          </div>
+          <div
+            className="actions"
           >
-            Action
-          </button>
-          <button
-            className="button flat light normalRelevance default"
-            disabled={false}
-            onClick={null}
-            type="button"
-          >
-            Action
-          </button>
+            <button
+              className="button flat light normalRelevance default"
+              disabled={false}
+              onClick={null}
+              type="button"
+            >
+              Action
+            </button>
+            <button
+              className="button flat light normalRelevance default"
+              disabled={false}
+              onClick={null}
+              type="button"
+            >
+              Action
+            </button>
+            <button
+              className="button flat light normalRelevance default"
+              disabled={false}
+              onClick={null}
+              type="button"
+            >
+              Action
+            </button>
+            <button
+              className="button flat light normalRelevance default"
+              disabled={false}
+              onClick={null}
+              type="button"
+            >
+              Action
+            </button>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <section>
+  <section
+    className={undefined}
+  >
     <h2>
       Card section with collapsible content
     </h2>
-    <div
-      className={undefined}
-    >
+    <div>
       <div
-        className="card"
+        className={undefined}
       >
         <div
-          className="title"
-        >
-          <h3>
-            Lorem title
-          </h3>
-        </div>
-        <div
-          className="content"
+          className="card"
         >
           <div
-            className="section expanded"
+            className="title"
+          >
+            <h3>
+              Lorem title
+            </h3>
+          </div>
+          <div
+            className="content"
           >
             <div
-              className="sectionTitle clickableTitle"
-              onClick={[Function]}
-              role="button"
-              tabIndex="0"
+              className="section expanded"
             >
-              <span>
-                Title opened
-                <span
-                  className="arrow"
-                >
-                  <svg />
-                </span>
-              </span>
-              <span
-                className="sectionSubtitle"
+              <div
+                className="sectionTitle clickableTitle"
+                onClick={[Function]}
+                role="button"
+                tabIndex="0"
               >
-                It's over 9000!
-              </span>
-            </div>
-            <div
-              className="sectionContent"
-            >
-              
+                <span>
+                  Title opened
+                  <span
+                    className="arrow"
+                  >
+                    <svg />
+                  </span>
+                </span>
+                <span
+                  className="sectionSubtitle"
+                >
+                  It's over 9000!
+                </span>
+              </div>
+              <div
+                className="sectionContent"
+              >
+                
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
 venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel
 blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan.
@@ -1052,47 +1075,51 @@ In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis
 sapien vel malesuada sodales. Curabitur hendrerit purus sed ex
 feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
 
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section>
+  <section
+    className={undefined}
+  >
     <h2>
       Simple card section
     </h2>
-    <div
-      className={undefined}
-    >
+    <div>
       <div
-        className="card"
+        className={undefined}
       >
         <div
-          className="title"
-        >
-          <h3>
-            Lorem title
-          </h3>
-        </div>
-        <div
-          className="content"
+          className="card"
         >
           <div
-            className="section expanded"
+            className="title"
+          >
+            <h3>
+              Lorem title
+            </h3>
+          </div>
+          <div
+            className="content"
           >
             <div
-              className="sectionTitle"
+              className="section expanded"
             >
-              <span>
-                Lorem ipsum dolor sit amet
-              </span>
-              
-            </div>
-            <div
-              className="sectionContent"
-            >
-              
+              <div
+                className="sectionTitle"
+              >
+                <span>
+                  Lorem ipsum dolor sit amet
+                </span>
+                
+              </div>
+              <div
+                className="sectionContent"
+              >
+                
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
 venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel
 blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan.
@@ -1100,6 +1127,7 @@ In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis
 sapien vel malesuada sodales. Curabitur hendrerit purus sed ex
 feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
 
+              </div>
             </div>
           </div>
         </div>
