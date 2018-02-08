@@ -128,7 +128,7 @@ class Input extends React.PureComponent {
     })
 
     const inputProps = pick(
-      ['disabled', 'placeholder', 'value'],
+      ['disabled', 'placeholder', 'value', 'name'],
       this.props
     )
 
