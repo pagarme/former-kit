@@ -133,611 +133,653 @@ exports[`Storyshots Avatar All types 1`] = `
 </div>
 `;
 
-exports[`Storyshots Buttons defaultTheme 1`] = `
+exports[`Storyshots Buttons Default 1`] = `
 <div
   className="typography"
 >
-  <h2>
-    Default Button
-  </h2>
-  <div
+  <section
     className={undefined}
   >
-    <button
-      className="button flat light normalRelevance default"
-      disabled={false}
-      onClick={null}
-      type="button"
-    >
-      Call to Action
-    </button>
-    <button
-      className="button flat light highRelevance default"
-      disabled={false}
-      onClick={null}
-      type="button"
-    >
-      Call to Action
-    </button>
-    <button
-      className="button flat light lowRelevance default"
-      disabled={false}
-      onClick={null}
-      type="button"
-    >
-      Call to Action
-    </button>
-  </div>
-  <h2>
-    Gradient
-  </h2>
-  <div
+    <h2>
+      Default Button
+    </h2>
+    <div>
+      <div
+        className={undefined}
+      >
+        <button
+          className="button flat light normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          Call to Action
+        </button>
+        <button
+          className="button flat light highRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          Call to Action
+        </button>
+        <button
+          className="button flat light lowRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          Call to Action
+        </button>
+      </div>
+    </div>
+  </section>
+  <section
     className={undefined}
   >
-    <button
-      className="button gradient light normalRelevance default"
-      disabled={false}
-      onClick={null}
-      type="button"
-    >
-      Call to Action
-    </button>
-    <button
-      className="button gradient light highRelevance default"
-      disabled={false}
-      onClick={null}
-      type="button"
-    >
-      Call to Action
-    </button>
-  </div>
-  <h2>
-    Outline Button
-  </h2>
-  <div
+    <h2>
+      Gradient
+    </h2>
+    <div>
+      <div
+        className={undefined}
+      >
+        <button
+          className="button gradient light normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          Call to Action
+        </button>
+        <button
+          className="button gradient light highRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          Call to Action
+        </button>
+      </div>
+    </div>
+  </section>
+  <section
     className={undefined}
   >
-    <button
-      className="button outline light normalRelevance default"
-      disabled={false}
-      onClick={null}
-      type="button"
-    >
-      Call to Action
-    </button>
-    <button
-      className="button outline light highRelevance default"
-      disabled={false}
-      onClick={null}
-      type="button"
-    >
-      Call to Action
-    </button>
-    <button
-      className="button outline light lowRelevance default"
-      disabled={false}
-      onClick={null}
-      type="button"
-    >
-      Call to Action
-    </button>
-  </div>
-  <h2>
-    Clean Button
-  </h2>
-  <div
+    <h2>
+      Outline Button
+    </h2>
+    <div>
+      <div
+        className={undefined}
+      >
+        <button
+          className="button outline light normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          Call to Action
+        </button>
+        <button
+          className="button outline light highRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          Call to Action
+        </button>
+        <button
+          className="button outline light lowRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          Call to Action
+        </button>
+      </div>
+    </div>
+  </section>
+  <section
     className={undefined}
   >
-    <button
-      className="button clean light normalRelevance default"
-      disabled={false}
-      onClick={null}
-      type="button"
-    >
-      Call to Action
-    </button>
-    <button
-      className="button clean light highRelevance default"
-      disabled={false}
-      onClick={null}
-      type="button"
-    >
-      Call to Action
-    </button>
-    <button
-      className="button clean light lowRelevance default"
-      disabled={false}
-      onClick={null}
-      type="button"
-    >
-      Call to Action
-    </button>
-  </div>
-  <h2>
-    All buttons with icons
-  </h2>
-  <div
+    <h2>
+      Clean Button
+    </h2>
+    <div>
+      <div
+        className={undefined}
+      >
+        <button
+          className="button clean light normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          Call to Action
+        </button>
+        <button
+          className="button clean light highRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          Call to Action
+        </button>
+        <button
+          className="button clean light lowRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          Call to Action
+        </button>
+      </div>
+    </div>
+  </section>
+  <section
     className={undefined}
   >
-    <button
-      className="button flat light normalRelevance default iconButton"
-      disabled={false}
-      onClick={null}
-      type="button"
-    >
-      <Add24.svg
-        height={12}
-        width={12}
-      />
-    </button>
-    <button
-      className="button flat light normalRelevance default"
-      disabled={false}
-      onClick={null}
-      type="button"
-    >
-      <Add24.svg
-        height={12}
-        width={12}
-      />
-      Call to Action
-    </button>
-    <button
-      className="button flat light highRelevance default"
-      disabled={false}
-      onClick={null}
-      type="button"
-    >
-      <Add24.svg
-        height={12}
-        width={12}
-      />
-      Call to Action
-    </button>
-    <button
-      className="button flat light lowRelevance default"
-      disabled={false}
-      onClick={null}
-      type="button"
-    >
-      <Add24.svg
-        height={12}
-        width={12}
-      />
-      Call to Action
-    </button>
-  </div>
-  <div
+    <h2>
+      All buttons with icons
+    </h2>
+    <div>
+      <div
+        className={undefined}
+      >
+        <button
+          className="button flat light normalRelevance default iconButton"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+        </button>
+        <button
+          className="button flat light normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+          Call to Action
+        </button>
+        <button
+          className="button flat light highRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+          Call to Action
+        </button>
+        <button
+          className="button flat light lowRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+          Call to Action
+        </button>
+      </div>
+      <div
+        className={undefined}
+      >
+        <button
+          className="button gradient light normalRelevance default iconButton"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+        </button>
+        <button
+          className="button gradient light normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+          Call to Action
+        </button>
+        <button
+          className="button gradient light highRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+          Call to Action
+        </button>
+      </div>
+      <div
+        className={undefined}
+      >
+        <button
+          className="button outline light normalRelevance default iconButton"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+        </button>
+        <button
+          className="button outline light normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+          Call to Action
+        </button>
+        <button
+          className="button outline light highRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+          Call to Action
+        </button>
+        <button
+          className="button outline light lowRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+          Call to Action
+        </button>
+      </div>
+      <div
+        className={undefined}
+      >
+        <button
+          className="button clean light normalRelevance default iconButton"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+        </button>
+        <button
+          className="button clean light normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+          Call to Action
+        </button>
+        <button
+          className="button clean light highRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+          Call to Action
+        </button>
+        <button
+          className="button clean light lowRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+          Call to Action
+        </button>
+      </div>
+    </div>
+  </section>
+  <section
     className={undefined}
   >
-    <button
-      className="button gradient light normalRelevance default iconButton"
-      disabled={false}
-      onClick={null}
-      type="button"
-    >
-      <Add24.svg
-        height={12}
-        width={12}
-      />
-    </button>
-    <button
-      className="button gradient light normalRelevance default"
-      disabled={false}
-      onClick={null}
-      type="button"
-    >
-      <Add24.svg
-        height={12}
-        width={12}
-      />
-      Call to Action
-    </button>
-    <button
-      className="button gradient light highRelevance default"
-      disabled={false}
-      onClick={null}
-      type="button"
-    >
-      <Add24.svg
-        height={12}
-        width={12}
-      />
-      Call to Action
-    </button>
-  </div>
-  <div
+    <h2>
+      Sizes
+    </h2>
+    <div>
+      <div
+        className={undefined}
+      >
+        <button
+          className="button flat light normalRelevance tiny"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          tiny
+        </button>
+        <button
+          className="button flat light normalRelevance tiny iconButton"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+        </button>
+      </div>
+      <div
+        className={undefined}
+      >
+        <button
+          className="button flat light normalRelevance small"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          small
+        </button>
+        <button
+          className="button flat light normalRelevance small iconButton"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+        </button>
+      </div>
+      <div
+        className={undefined}
+      >
+        <button
+          className="button flat light normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          default
+        </button>
+        <button
+          className="button flat light normalRelevance default iconButton"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+        </button>
+      </div>
+      <div
+        className={undefined}
+      >
+        <button
+          className="button flat light normalRelevance large"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          large
+        </button>
+        <button
+          className="button flat light normalRelevance large iconButton"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+        </button>
+      </div>
+    </div>
+  </section>
+  <section
     className={undefined}
   >
-    <button
-      className="button outline light normalRelevance default iconButton"
-      disabled={false}
-      onClick={null}
-      type="button"
-    >
-      <Add24.svg
-        height={12}
-        width={12}
-      />
-    </button>
-    <button
-      className="button outline light normalRelevance default"
-      disabled={false}
-      onClick={null}
-      type="button"
-    >
-      <Add24.svg
-        height={12}
-        width={12}
-      />
-      Call to Action
-    </button>
-    <button
-      className="button outline light highRelevance default"
-      disabled={false}
-      onClick={null}
-      type="button"
-    >
-      <Add24.svg
-        height={12}
-        width={12}
-      />
-      Call to Action
-    </button>
-    <button
-      className="button outline light lowRelevance default"
-      disabled={false}
-      onClick={null}
-      type="button"
-    >
-      <Add24.svg
-        height={12}
-        width={12}
-      />
-      Call to Action
-    </button>
-  </div>
-  <div
-    className={undefined}
-  >
-    <button
-      className="button clean light normalRelevance default iconButton"
-      disabled={false}
-      onClick={null}
-      type="button"
-    >
-      <Add24.svg
-        height={12}
-        width={12}
-      />
-    </button>
-    <button
-      className="button clean light normalRelevance default"
-      disabled={false}
-      onClick={null}
-      type="button"
-    >
-      <Add24.svg
-        height={12}
-        width={12}
-      />
-      Call to Action
-    </button>
-    <button
-      className="button clean light highRelevance default"
-      disabled={false}
-      onClick={null}
-      type="button"
-    >
-      <Add24.svg
-        height={12}
-        width={12}
-      />
-      Call to Action
-    </button>
-    <button
-      className="button clean light lowRelevance default"
-      disabled={false}
-      onClick={null}
-      type="button"
-    >
-      <Add24.svg
-        height={12}
-        width={12}
-      />
-      Call to Action
-    </button>
-  </div>
-  <h2>
-    Sizes
-  </h2>
-  <div
-    className={undefined}
-  >
-    <button
-      className="button flat light normalRelevance tiny"
-      disabled={false}
-      onClick={null}
-      type="button"
-    >
-      tiny
-    </button>
-    <button
-      className="button flat light normalRelevance tiny iconButton"
-      disabled={false}
-      onClick={null}
-      type="button"
-    >
-      <Add24.svg
-        height={12}
-        width={12}
-      />
-    </button>
-  </div>
-  <div
-    className={undefined}
-  >
-    <button
-      className="button flat light normalRelevance small"
-      disabled={false}
-      onClick={null}
-      type="button"
-    >
-      small
-    </button>
-    <button
-      className="button flat light normalRelevance small iconButton"
-      disabled={false}
-      onClick={null}
-      type="button"
-    >
-      <Add24.svg
-        height={12}
-        width={12}
-      />
-    </button>
-  </div>
-  <div
-    className={undefined}
-  >
-    <button
-      className="button flat light normalRelevance default"
-      disabled={false}
-      onClick={null}
-      type="button"
-    >
-      default
-    </button>
-    <button
-      className="button flat light normalRelevance default iconButton"
-      disabled={false}
-      onClick={null}
-      type="button"
-    >
-      <Add24.svg
-        height={12}
-        width={12}
-      />
-    </button>
-  </div>
-  <div
-    className={undefined}
-  >
-    <button
-      className="button flat light normalRelevance large"
-      disabled={false}
-      onClick={null}
-      type="button"
-    >
-      large
-    </button>
-    <button
-      className="button flat light normalRelevance large iconButton"
-      disabled={false}
-      onClick={null}
-      type="button"
-    >
-      <Add24.svg
-        height={12}
-        width={12}
-      />
-    </button>
-  </div>
-  <h2>
-    All disabled
-  </h2>
-  <div
-    className={undefined}
-  >
-    <button
-      className="button flat light normalRelevance default iconButton"
-      disabled={true}
-      onClick={null}
-      type="button"
-    >
-      <Add24.svg
-        height={12}
-        width={12}
-      />
-    </button>
-    <button
-      className="button flat light normalRelevance default"
-      disabled={true}
-      onClick={null}
-      type="button"
-    >
-      <Add24.svg
-        height={12}
-        width={12}
-      />
-      Call to Action
-    </button>
-    <button
-      className="button flat light highRelevance default"
-      disabled={true}
-      onClick={null}
-      type="button"
-    >
-      <Add24.svg
-        height={12}
-        width={12}
-      />
-      Call to Action
-    </button>
-    <button
-      className="button flat light lowRelevance default"
-      disabled={true}
-      onClick={null}
-      type="button"
-    >
-      <Add24.svg
-        height={12}
-        width={12}
-      />
-      Call to Action
-    </button>
-  </div>
-  <div
-    className={undefined}
-  >
-    <button
-      className="button gradient light normalRelevance default iconButton"
-      disabled={true}
-      onClick={null}
-      type="button"
-    >
-      <Add24.svg
-        height={12}
-        width={12}
-      />
-    </button>
-    <button
-      className="button gradient light normalRelevance default"
-      disabled={true}
-      onClick={null}
-      type="button"
-    >
-      <Add24.svg
-        height={12}
-        width={12}
-      />
-      Call to Action
-    </button>
-    <button
-      className="button gradient light highRelevance default"
-      disabled={true}
-      onClick={null}
-      type="button"
-    >
-      <Add24.svg
-        height={12}
-        width={12}
-      />
-      Call to Action
-    </button>
-  </div>
-  <div
-    className={undefined}
-  >
-    <button
-      className="button outline light normalRelevance default iconButton"
-      disabled={true}
-      onClick={null}
-      type="button"
-    >
-      <Add24.svg
-        height={12}
-        width={12}
-      />
-    </button>
-    <button
-      className="button outline light normalRelevance default"
-      disabled={true}
-      onClick={null}
-      type="button"
-    >
-      <Add24.svg
-        height={12}
-        width={12}
-      />
-      Call to Action
-    </button>
-    <button
-      className="button outline light highRelevance default"
-      disabled={true}
-      onClick={null}
-      type="button"
-    >
-      <Add24.svg
-        height={12}
-        width={12}
-      />
-      Call to Action
-    </button>
-    <button
-      className="button outline light lowRelevance default"
-      disabled={true}
-      onClick={null}
-      type="button"
-    >
-      <Add24.svg
-        height={12}
-        width={12}
-      />
-      Call to Action
-    </button>
-  </div>
-  <div
-    className={undefined}
-  >
-    <button
-      className="button clean light normalRelevance default iconButton"
-      disabled={true}
-      onClick={null}
-      type="button"
-    >
-      <Add24.svg
-        height={12}
-        width={12}
-      />
-    </button>
-    <button
-      className="button clean light normalRelevance default"
-      disabled={true}
-      onClick={null}
-      type="button"
-    >
-      <Add24.svg
-        height={12}
-        width={12}
-      />
-      Call to Action
-    </button>
-    <button
-      className="button clean light highRelevance default"
-      disabled={true}
-      onClick={null}
-      type="button"
-    >
-      <Add24.svg
-        height={12}
-        width={12}
-      />
-      Call to Action
-    </button>
-    <button
-      className="button clean light lowRelevance default"
-      disabled={true}
-      onClick={null}
-      type="button"
-    >
-      <Add24.svg
-        height={12}
-        width={12}
-      />
-      Call to Action
-    </button>
-  </div>
+    <h2>
+      All disabled
+    </h2>
+    <div>
+      <div
+        className={undefined}
+      >
+        <button
+          className="button flat light normalRelevance default iconButton"
+          disabled={true}
+          onClick={null}
+          type="button"
+        >
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+        </button>
+        <button
+          className="button flat light normalRelevance default"
+          disabled={true}
+          onClick={null}
+          type="button"
+        >
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+          Call to Action
+        </button>
+        <button
+          className="button flat light highRelevance default"
+          disabled={true}
+          onClick={null}
+          type="button"
+        >
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+          Call to Action
+        </button>
+        <button
+          className="button flat light lowRelevance default"
+          disabled={true}
+          onClick={null}
+          type="button"
+        >
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+          Call to Action
+        </button>
+      </div>
+      <div
+        className={undefined}
+      >
+        <button
+          className="button gradient light normalRelevance default iconButton"
+          disabled={true}
+          onClick={null}
+          type="button"
+        >
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+        </button>
+        <button
+          className="button gradient light normalRelevance default"
+          disabled={true}
+          onClick={null}
+          type="button"
+        >
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+          Call to Action
+        </button>
+        <button
+          className="button gradient light highRelevance default"
+          disabled={true}
+          onClick={null}
+          type="button"
+        >
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+          Call to Action
+        </button>
+      </div>
+      <div
+        className={undefined}
+      >
+        <button
+          className="button outline light normalRelevance default iconButton"
+          disabled={true}
+          onClick={null}
+          type="button"
+        >
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+        </button>
+        <button
+          className="button outline light normalRelevance default"
+          disabled={true}
+          onClick={null}
+          type="button"
+        >
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+          Call to Action
+        </button>
+        <button
+          className="button outline light highRelevance default"
+          disabled={true}
+          onClick={null}
+          type="button"
+        >
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+          Call to Action
+        </button>
+        <button
+          className="button outline light lowRelevance default"
+          disabled={true}
+          onClick={null}
+          type="button"
+        >
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+          Call to Action
+        </button>
+      </div>
+      <div
+        className={undefined}
+      >
+        <button
+          className="button clean light normalRelevance default iconButton"
+          disabled={true}
+          onClick={null}
+          type="button"
+        >
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+        </button>
+        <button
+          className="button clean light normalRelevance default"
+          disabled={true}
+          onClick={null}
+          type="button"
+        >
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+          Call to Action
+        </button>
+        <button
+          className="button clean light highRelevance default"
+          disabled={true}
+          onClick={null}
+          type="button"
+        >
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+          Call to Action
+        </button>
+        <button
+          className="button clean light lowRelevance default"
+          disabled={true}
+          onClick={null}
+          type="button"
+        >
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+          Call to Action
+        </button>
+      </div>
+    </div>
+  </section>
 </div>
 `;
 
