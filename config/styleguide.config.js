@@ -40,7 +40,7 @@ module.exports = {
       sections: [
         {
           name: 'Card',
-          content: './empty.md',
+          content: '../src/Card/README.md',
           components: () => [
             '../src/Card/Card.js',
             '../src/Card/CardActions.js',
