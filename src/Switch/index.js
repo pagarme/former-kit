@@ -28,13 +28,13 @@ const consumeTheme = ThemeConsumer('UISwitch')
  * Triggers a received onChange function when a value is
  * changed and returns a boolean value
  */
-function Switch ({
+const Switch = ({
   disabled,
   onChange,
   checked,
   strings,
   theme,
-}) {
+}) => {
   const className = classnames(
     theme.switch,
     {
