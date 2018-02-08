@@ -17,7 +17,7 @@ const links = [
   },
   {
     title: 'Privacy',
-    onClick: () => action('Privacity'),
+    onClick: () => action('Privacy'),
   },
   {
     title: 'Contact',
