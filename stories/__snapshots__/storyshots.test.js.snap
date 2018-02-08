@@ -15990,7 +15990,7 @@ exports[`Storyshots Table Action column 1`] = `
           >
             <span>
                
-              Id da transação
+              Transaction Id
                
             </span>
             <span
@@ -16009,7 +16009,7 @@ exports[`Storyshots Table Action column 1`] = `
           >
             <span>
                
-              Data da transação
+              Date created
                
             </span>
             <span
@@ -16047,7 +16047,7 @@ exports[`Storyshots Table Action column 1`] = `
           >
             <span>
                
-              Forma de pagamento
+              Payment method
                
             </span>
             <span
@@ -16066,7 +16066,7 @@ exports[`Storyshots Table Action column 1`] = `
           >
             <span>
                
-              Valor capturado
+              Paid amount
                
             </span>
             <span
@@ -16082,7 +16082,7 @@ exports[`Storyshots Table Action column 1`] = `
           <div
             className="tableHeadItem"
           >
-            Mais detalhes
+            Details
           </div>
         </th>
       </tr>
@@ -16113,9 +16113,9 @@ exports[`Storyshots Table Action column 1`] = `
                     "background": "#244d85",
                   }
                 }
-                title="Boleto pago com valor inferior"
+                title="Boleto paid with inferior value"
               >
-                BPVI
+                BPIV
               </abbr>
             </div>
           </div>
@@ -16154,7 +16154,7 @@ exports[`Storyshots Table Action column 1`] = `
             onClick={[Function]}
             type="button"
           >
-            Mostar Detalhes
+            Show details
           </button>
         </td>
       </tr>
@@ -16206,7 +16206,7 @@ exports[`Storyshots Table Action column 1`] = `
         <td
           className="tableBodyItem"
         >
-          Cartão de crédito
+          Credit card
         </td>
         <td
           className="tableBodyItem"
@@ -16222,7 +16222,7 @@ exports[`Storyshots Table Action column 1`] = `
             onClick={[Function]}
             type="button"
           >
-            Mostar Detalhes
+            Show details
           </button>
         </td>
       </tr>
@@ -16274,7 +16274,7 @@ exports[`Storyshots Table Action column 1`] = `
         <td
           className="tableBodyItem"
         >
-          Cartão de crédito estrangeiro
+          Credit card
         </td>
         <td
           className="tableBodyItem"
@@ -16290,7 +16290,7 @@ exports[`Storyshots Table Action column 1`] = `
             onClick={[Function]}
             type="button"
           >
-            Mostar Detalhes
+            Show details
           </button>
         </td>
       </tr>
@@ -16366,7 +16366,7 @@ exports[`Storyshots Table Action column 1`] = `
             onClick={[Function]}
             type="button"
           >
-            Mostar Detalhes
+            Show details
           </button>
         </td>
       </tr>
@@ -16443,7 +16443,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
           >
             <span>
                
-              Id da transação
+              Transaction Id
                
             </span>
             <span
@@ -16462,7 +16462,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
           >
             <span>
                
-              Data da transação
+              Date created
                
             </span>
             <span
@@ -16500,7 +16500,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
           >
             <span>
                
-              Forma de pagamento
+              Payment method
                
             </span>
             <span
@@ -16519,7 +16519,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
           >
             <span>
                
-              Valor capturado
+              Paid amount
                
             </span>
             <span
@@ -16538,7 +16538,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
           >
             <span>
                
-              Custo
+              Cost
                
             </span>
             <span
@@ -16605,9 +16605,9 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                     "background": "#244d85",
                   }
                 }
-                title="Boleto pago com valor inferior"
+                title="Boleto paid with inferior value"
               >
-                BPVI
+                BPIV
               </abbr>
             </div>
           </div>
@@ -16729,7 +16729,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
         <td
           className="tableBodyItem"
         >
-          Cartão de crédito
+          Credit card
         </td>
         <td
           className="tableBodyItem"
@@ -16828,7 +16828,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
         <td
           className="tableBodyItem"
         >
-          Cartão de crédito estrangeiro
+          Credit card
         </td>
         <td
           className="tableBodyItem"
@@ -17020,7 +17020,7 @@ exports[`Storyshots Table Simple 1`] = `
           >
             <span>
                
-              Id da transação
+              Transaction Id
                
             </span>
             <span
@@ -17039,7 +17039,7 @@ exports[`Storyshots Table Simple 1`] = `
           >
             <span>
                
-              Data da transação
+              Date created
                
             </span>
             <span
@@ -17077,7 +17077,7 @@ exports[`Storyshots Table Simple 1`] = `
           >
             <span>
                
-              Forma de pagamento
+              Payment method
                
             </span>
             <span
@@ -17096,7 +17096,7 @@ exports[`Storyshots Table Simple 1`] = `
           >
             <span>
                
-              Valor capturado
+              Paid amount
                
             </span>
             <span
@@ -17115,7 +17115,7 @@ exports[`Storyshots Table Simple 1`] = `
           >
             <span>
                
-              Custo
+              Cost
                
             </span>
             <span
@@ -17153,9 +17153,9 @@ exports[`Storyshots Table Simple 1`] = `
                     "background": "#244d85",
                   }
                 }
-                title="Boleto pago com valor inferior"
+                title="Boleto paid with inferior value"
               >
-                BPVI
+                BPIV
               </abbr>
             </div>
           </div>
@@ -17239,7 +17239,7 @@ exports[`Storyshots Table Simple 1`] = `
         <td
           className="tableBodyItem"
         >
-          Cartão de crédito
+          Credit card
         </td>
         <td
           className="tableBodyItem"
@@ -17300,7 +17300,7 @@ exports[`Storyshots Table Simple 1`] = `
         <td
           className="tableBodyItem"
         >
-          Cartão de crédito estrangeiro
+          Credit card
         </td>
         <td
           className="tableBodyItem"
