@@ -1,10 +1,8 @@
 import React from 'react'
-
 import { storiesOf } from '@storybook/react'
 
 import RadioGroup from '../../src/RadioGroup'
-import style from '../style.css'
-
+import Section from '../Section'
 
 const options = [
   {
@@ -71,27 +69,21 @@ RadioGroupState.defaultProps = {
 
 storiesOf('Radio Group', module)
   .add('Default', () => (
-    <div className={style.container}>
-      <h2>Radio Button Group</h2>
-
-      <section>
-        <h3>Disabled</h3>
+    <div>
+      <Section title="Disabled">
         <RadioGroupState name="disabled" disabled />
-      </section>
+      </Section>
 
-      <section>
-        <h3>Default</h3>
+      <Section title="Default">
         <RadioGroupState name="default" />
-      </section>
+      </Section>
 
-      <section>
-        <h3>Success</h3>
-        <RadioGroupState name="success" success="Sucesso!" />
-      </section>
+      <Section title="Success">
+        <RadioGroupState name="success" success="Success!" />
+      </Section>
 
-      <section>
-        <h3>Error</h3>
-        <RadioGroupState name="error" error="Erro!" />
-      </section>
+      <Section title="Error">
+        <RadioGroupState name="error" error="Error!" />
+      </Section>
     </div>
   ))
