@@ -1453,359 +1453,372 @@ exports[`Storyshots Checkbox Group Default 1`] = `
 <div
   className="typography"
 >
-  <h2>
-    CheckboxGroup
-  </h2>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Default
-    </h3>
+    </h2>
     <div>
-      <div
-        className="checkboxGroup"
-      >
-        
-        <div>
+      <div>
+        <div
+          className="checkboxGroup"
+        >
+          
           <div>
-            <div
-              className="checkbox"
-            >
-              <input
-                checked={true}
-                disabled={false}
-                id="default-github-github"
-                name="default-github"
-                onChange={[Function]}
-                type="checkbox"
-                value="github"
-              />
-              <label
-                htmlFor="default-github-github"
+            <div>
+              <div
+                className="checkbox"
               >
-                <i
-                  className="check"
+                <input
+                  checked={true}
+                  disabled={false}
+                  id="default-github-github"
+                  name="default-github"
+                  onChange={[Function]}
+                  type="checkbox"
+                  value="github"
                 />
-                Github
-              </label>
-              
-            </div>
-            <div
-              className="checkbox"
-            >
-              <input
-                checked={false}
-                disabled={false}
-                id="default-open-source-open-source"
-                name="default-open-source"
-                onChange={[Function]}
-                type="checkbox"
-                value="open-source"
-              />
-              <label
-                htmlFor="default-open-source-open-source"
+                <label
+                  htmlFor="default-github-github"
+                >
+                  <i
+                    className="check"
+                  />
+                  Github
+                </label>
+                
+              </div>
+              <div
+                className="checkbox"
               >
-                <i
-                  className="check"
+                <input
+                  checked={false}
+                  disabled={false}
+                  id="default-open-source-open-source"
+                  name="default-open-source"
+                  onChange={[Function]}
+                  type="checkbox"
+                  value="open-source"
                 />
-                Open Source
-              </label>
-              
-            </div>
-            <div
-              className="checkbox"
-            >
-              <input
-                checked={false}
-                disabled={false}
-                id="default-pilot-pilot"
-                name="default-pilot"
-                onChange={[Function]}
-                type="checkbox"
-                value="pilot"
-              />
-              <label
-                htmlFor="default-pilot-pilot"
+                <label
+                  htmlFor="default-open-source-open-source"
+                >
+                  <i
+                    className="check"
+                  />
+                  Open Source
+                </label>
+                
+              </div>
+              <div
+                className="checkbox"
               >
-                <i
-                  className="check"
+                <input
+                  checked={false}
+                  disabled={false}
+                  id="default-pilot-pilot"
+                  name="default-pilot"
+                  onChange={[Function]}
+                  type="checkbox"
+                  value="pilot"
                 />
-                Pilot
-              </label>
-              
+                <label
+                  htmlFor="default-pilot-pilot"
+                >
+                  <i
+                    className="check"
+                  />
+                  Pilot
+                </label>
+                
+              </div>
             </div>
           </div>
         </div>
+        <p>
+          Selected: 
+          github
+        </p>
       </div>
-      <p>
-        Selected: 
-        github
-      </p>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Disabled
-    </h3>
+    </h2>
     <div>
-      <div
-        className="checkboxGroup"
-      >
-        
-        <div>
+      <div>
+        <div
+          className="checkboxGroup"
+        >
+          
           <div>
-            <div
-              className="checkbox disabled"
-            >
-              <input
-                checked={true}
-                disabled={true}
-                id="disabled-github-github"
-                name="disabled-github"
-                onChange={[Function]}
-                type="checkbox"
-                value="github"
-              />
-              <label
-                htmlFor="disabled-github-github"
+            <div>
+              <div
+                className="checkbox disabled"
               >
-                <i
-                  className="check"
+                <input
+                  checked={true}
+                  disabled={true}
+                  id="disabled-github-github"
+                  name="disabled-github"
+                  onChange={[Function]}
+                  type="checkbox"
+                  value="github"
                 />
-                Github
-              </label>
-              
-            </div>
-            <div
-              className="checkbox disabled"
-            >
-              <input
-                checked={false}
-                disabled={true}
-                id="disabled-open-source-open-source"
-                name="disabled-open-source"
-                onChange={[Function]}
-                type="checkbox"
-                value="open-source"
-              />
-              <label
-                htmlFor="disabled-open-source-open-source"
+                <label
+                  htmlFor="disabled-github-github"
+                >
+                  <i
+                    className="check"
+                  />
+                  Github
+                </label>
+                
+              </div>
+              <div
+                className="checkbox disabled"
               >
-                <i
-                  className="check"
+                <input
+                  checked={false}
+                  disabled={true}
+                  id="disabled-open-source-open-source"
+                  name="disabled-open-source"
+                  onChange={[Function]}
+                  type="checkbox"
+                  value="open-source"
                 />
-                Open Source
-              </label>
-              
-            </div>
-            <div
-              className="checkbox disabled"
-            >
-              <input
-                checked={false}
-                disabled={true}
-                id="disabled-pilot-pilot"
-                name="disabled-pilot"
-                onChange={[Function]}
-                type="checkbox"
-                value="pilot"
-              />
-              <label
-                htmlFor="disabled-pilot-pilot"
+                <label
+                  htmlFor="disabled-open-source-open-source"
+                >
+                  <i
+                    className="check"
+                  />
+                  Open Source
+                </label>
+                
+              </div>
+              <div
+                className="checkbox disabled"
               >
-                <i
-                  className="check"
+                <input
+                  checked={false}
+                  disabled={true}
+                  id="disabled-pilot-pilot"
+                  name="disabled-pilot"
+                  onChange={[Function]}
+                  type="checkbox"
+                  value="pilot"
                 />
-                Pilot
-              </label>
-              
+                <label
+                  htmlFor="disabled-pilot-pilot"
+                >
+                  <i
+                    className="check"
+                  />
+                  Pilot
+                </label>
+                
+              </div>
             </div>
           </div>
         </div>
+        <p>
+          Selected: 
+          github
+        </p>
       </div>
-      <p>
-        Selected: 
-        github
-      </p>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Success
-    </h3>
+    </h2>
     <div>
-      <div
-        className="checkboxGroup"
-      >
-        <p
-          className="secondaryText success"
+      <div>
+        <div
+          className="checkboxGroup"
         >
-          Eae sucesso
-        </p>
-        <div>
+          <p
+            className="secondaryText success"
+          >
+            Success
+          </p>
           <div>
-            <div
-              className="checkbox"
-            >
-              <input
-                checked={true}
-                disabled={false}
-                id="success-github-github"
-                name="success-github"
-                onChange={[Function]}
-                type="checkbox"
-                value="github"
-              />
-              <label
-                htmlFor="success-github-github"
+            <div>
+              <div
+                className="checkbox"
               >
-                <i
-                  className="check"
+                <input
+                  checked={true}
+                  disabled={false}
+                  id="success-github-github"
+                  name="success-github"
+                  onChange={[Function]}
+                  type="checkbox"
+                  value="github"
                 />
-                Github
-              </label>
-              
-            </div>
-            <div
-              className="checkbox"
-            >
-              <input
-                checked={false}
-                disabled={false}
-                id="success-open-source-open-source"
-                name="success-open-source"
-                onChange={[Function]}
-                type="checkbox"
-                value="open-source"
-              />
-              <label
-                htmlFor="success-open-source-open-source"
+                <label
+                  htmlFor="success-github-github"
+                >
+                  <i
+                    className="check"
+                  />
+                  Github
+                </label>
+                
+              </div>
+              <div
+                className="checkbox"
               >
-                <i
-                  className="check"
+                <input
+                  checked={false}
+                  disabled={false}
+                  id="success-open-source-open-source"
+                  name="success-open-source"
+                  onChange={[Function]}
+                  type="checkbox"
+                  value="open-source"
                 />
-                Open Source
-              </label>
-              
-            </div>
-            <div
-              className="checkbox"
-            >
-              <input
-                checked={false}
-                disabled={false}
-                id="success-pilot-pilot"
-                name="success-pilot"
-                onChange={[Function]}
-                type="checkbox"
-                value="pilot"
-              />
-              <label
-                htmlFor="success-pilot-pilot"
+                <label
+                  htmlFor="success-open-source-open-source"
+                >
+                  <i
+                    className="check"
+                  />
+                  Open Source
+                </label>
+                
+              </div>
+              <div
+                className="checkbox"
               >
-                <i
-                  className="check"
+                <input
+                  checked={false}
+                  disabled={false}
+                  id="success-pilot-pilot"
+                  name="success-pilot"
+                  onChange={[Function]}
+                  type="checkbox"
+                  value="pilot"
                 />
-                Pilot
-              </label>
-              
+                <label
+                  htmlFor="success-pilot-pilot"
+                >
+                  <i
+                    className="check"
+                  />
+                  Pilot
+                </label>
+                
+              </div>
             </div>
           </div>
         </div>
+        <p>
+          Selected: 
+          github
+        </p>
       </div>
-      <p>
-        Selected: 
-        github
-      </p>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Error
-    </h3>
+    </h2>
     <div>
-      <div
-        className="checkboxGroup"
-      >
-        <p
-          className="secondaryText error"
+      <div>
+        <div
+          className="checkboxGroup"
         >
-          Errou!
-        </p>
-        <div>
+          <p
+            className="secondaryText error"
+          >
+            Error!
+          </p>
           <div>
-            <div
-              className="checkbox"
-            >
-              <input
-                checked={true}
-                disabled={false}
-                id="error-github-github"
-                name="error-github"
-                onChange={[Function]}
-                type="checkbox"
-                value="github"
-              />
-              <label
-                htmlFor="error-github-github"
+            <div>
+              <div
+                className="checkbox"
               >
-                <i
-                  className="check"
+                <input
+                  checked={true}
+                  disabled={false}
+                  id="error-github-github"
+                  name="error-github"
+                  onChange={[Function]}
+                  type="checkbox"
+                  value="github"
                 />
-                Github
-              </label>
-              
-            </div>
-            <div
-              className="checkbox"
-            >
-              <input
-                checked={false}
-                disabled={false}
-                id="error-open-source-open-source"
-                name="error-open-source"
-                onChange={[Function]}
-                type="checkbox"
-                value="open-source"
-              />
-              <label
-                htmlFor="error-open-source-open-source"
+                <label
+                  htmlFor="error-github-github"
+                >
+                  <i
+                    className="check"
+                  />
+                  Github
+                </label>
+                
+              </div>
+              <div
+                className="checkbox"
               >
-                <i
-                  className="check"
+                <input
+                  checked={false}
+                  disabled={false}
+                  id="error-open-source-open-source"
+                  name="error-open-source"
+                  onChange={[Function]}
+                  type="checkbox"
+                  value="open-source"
                 />
-                Open Source
-              </label>
-              
-            </div>
-            <div
-              className="checkbox"
-            >
-              <input
-                checked={false}
-                disabled={false}
-                id="error-pilot-pilot"
-                name="error-pilot"
-                onChange={[Function]}
-                type="checkbox"
-                value="pilot"
-              />
-              <label
-                htmlFor="error-pilot-pilot"
+                <label
+                  htmlFor="error-open-source-open-source"
+                >
+                  <i
+                    className="check"
+                  />
+                  Open Source
+                </label>
+                
+              </div>
+              <div
+                className="checkbox"
               >
-                <i
-                  className="check"
+                <input
+                  checked={false}
+                  disabled={false}
+                  id="error-pilot-pilot"
+                  name="error-pilot"
+                  onChange={[Function]}
+                  type="checkbox"
+                  value="pilot"
                 />
-                Pilot
-              </label>
-              
+                <label
+                  htmlFor="error-pilot-pilot"
+                >
+                  <i
+                    className="check"
+                  />
+                  Pilot
+                </label>
+                
+              </div>
             </div>
           </div>
         </div>
+        <p>
+          Selected: 
+          github
+        </p>
       </div>
-      <p>
-        Selected: 
-        github
-      </p>
     </div>
   </section>
 </div>

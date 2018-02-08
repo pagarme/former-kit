@@ -2,9 +2,8 @@ import React from 'react'
 
 import { storiesOf } from '@storybook/react'
 
+import Section from '../Section'
 import CheckboxGroup from '../../src/CheckboxGroup'
-import style from '../style.css'
-
 
 class CheckboxGroupState extends React.Component {
   constructor (props) {
@@ -62,26 +61,21 @@ CheckboxGroupState.defaultProps = {
 
 storiesOf('Checkbox Group', module)
   .add('Default', () => (
-    <div className={style.container}>
-      <h2>CheckboxGroup</h2>
-      <section>
-        <h3>Default</h3>
+    <div>
+      <Section title="Default">
         <CheckboxGroupState name="default" />
-      </section>
+      </Section>
 
-      <section>
-        <h3>Disabled</h3>
+      <Section title="Disabled">
         <CheckboxGroupState name="disabled" disabled />
-      </section>
+      </Section>
 
-      <section>
-        <h3>Success</h3>
-        <CheckboxGroupState name="success" success="Eae sucesso" />
-      </section>
+      <Section title="Success">
+        <CheckboxGroupState name="success" success="Success" />
+      </Section>
 
-      <section>
-        <h3>Error</h3>
-        <CheckboxGroupState name="error" error="Errou!" />
-      </section>
+      <Section title="Error">
+        <CheckboxGroupState name="error" error="Error!" />
+      </Section>
     </div>
   ))
