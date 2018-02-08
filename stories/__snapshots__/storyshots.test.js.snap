@@ -1,109 +1,133 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Alerts All types 1`] = `
+exports[`Storyshots Alerts Default 1`] = `
 <div
   className="typography"
 >
-  <p>
-    Warning
-  </p>
-  <div
-    className="alert"
+  <section
+    className={undefined}
   >
-    <div
-      className="icon warning"
-    >
-      <Warning32.svg
-        height={16}
-        width={16}
-      />
+    <h2>
+      Warning
+    </h2>
+    <div>
+      <div
+        className="alert"
+      >
+        <div
+          className="icon warning"
+        >
+          <Warning32.svg
+            height={16}
+            width={16}
+          />
+        </div>
+        <div
+          className="content"
+        >
+          <p>
+            <strong>
+              Warning
+            </strong>
+             something is going on!
+          </p>
+        </div>
+      </div>
     </div>
-    <div
-      className="content"
-    >
-      <p>
-        <strong>
-          Warning
-        </strong>
-         something is going on!
-      </p>
-    </div>
-  </div>
-  <p>
-    Info
-  </p>
-  <div
-    className="alert"
+  </section>
+  <section
+    className={undefined}
   >
-    <div
-      className="icon info"
-    >
-      <Info32.svg
-        height={16}
-        width={16}
-      />
+    <h2>
+      Info
+    </h2>
+    <div>
+      <div
+        className="alert"
+      >
+        <div
+          className="icon info"
+        >
+          <Info32.svg
+            height={16}
+            width={16}
+          />
+        </div>
+        <div
+          className="content"
+        >
+          <p>
+            <strong>
+              Info
+            </strong>
+             you can do it better!
+          </p>
+        </div>
+      </div>
     </div>
-    <div
-      className="content"
-    >
-      <p>
-        <strong>
-          Info
-        </strong>
-         you can do it better!
-      </p>
-    </div>
-  </div>
-  <p>
-    Error
-  </p>
-  <div
-    className="alert"
+  </section>
+  <section
+    className={undefined}
   >
-    <div
-      className="icon error"
-    >
-      <ClearClose32.svg
-        height={16}
-        width={16}
-      />
+    <h2>
+      Error
+    </h2>
+    <div>
+      <div
+        className="alert"
+      >
+        <div
+          className="icon error"
+        >
+          <ClearClose32.svg
+            height={16}
+            width={16}
+          />
+        </div>
+        <div
+          className="content"
+        >
+          <p>
+            <strong>
+              Error
+            </strong>
+             something went wrong!
+          </p>
+        </div>
+      </div>
     </div>
-    <div
-      className="content"
-    >
-      <p>
-        <strong>
-          Error
-        </strong>
-         something went wrong!
-      </p>
-    </div>
-  </div>
-  <p>
-    Success
-  </p>
-  <div
-    className="alert"
+  </section>
+  <section
+    className={undefined}
   >
-    <div
-      className="icon success"
-    >
-      <Check32.svg
-        height={16}
-        width={16}
-      />
+    <h2>
+      Section
+    </h2>
+    <div>
+      <div
+        className="alert"
+      >
+        <div
+          className="icon success"
+        >
+          <Check32.svg
+            height={16}
+            width={16}
+          />
+        </div>
+        <div
+          className="content"
+        >
+          <p>
+            <strong>
+              Success
+            </strong>
+             awesome, it worked!
+          </p>
+        </div>
+      </div>
     </div>
-    <div
-      className="content"
-    >
-      <p>
-        <strong>
-          Success
-        </strong>
-         awesome, it worked!
-      </p>
-    </div>
-  </div>
+  </section>
 </div>
 `;
 
