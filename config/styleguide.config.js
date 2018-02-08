@@ -73,7 +73,7 @@ module.exports = {
         },
         {
           name: 'Sidebar',
-          content: './empty.md',
+          content: '../src/Sidebar/README.md',
           components: () => [
             '../src/Sidebar/Sidebar.js',
             '../src/Sidebar/SidebarContent.js',
