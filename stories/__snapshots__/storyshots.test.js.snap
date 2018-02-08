@@ -15045,69 +15045,69 @@ exports[`Storyshots Radio Group Default 1`] = `
       >
         <label
           className="label"
-          htmlFor="radio-group-shortid-mock-predio-0"
+          htmlFor="radio-group-shortid-mock-github-0"
         >
           <input
             checked={true}
             className="input"
             disabled={true}
-            id="radio-group-shortid-mock-predio-0"
+            id="radio-group-shortid-mock-github-0"
             name="disabled"
             onChange={[Function]}
             type="radio"
-            value="predio"
+            value="github"
           />
           <span
             className="title"
           >
-            Prédio
+            Github
           </span>
         </label>
         <label
           className="label"
-          htmlFor="radio-group-shortid-mock-casa-1"
-        >
-          <input
-            checked={true}
-            className="input"
-            disabled={true}
-            id="radio-group-shortid-mock-casa-1"
-            name="disabled"
-            onChange={[Function]}
-            type="radio"
-            value="casa"
-          />
-          <span
-            className="title"
-          >
-            Casa
-          </span>
-        </label>
-        <label
-          className="label"
-          htmlFor="radio-group-shortid-mock-sofa-2"
+          htmlFor="radio-group-shortid-mock-open-source-1"
         >
           <input
             checked={false}
             className="input"
             disabled={true}
-            id="radio-group-shortid-mock-sofa-2"
+            id="radio-group-shortid-mock-open-source-1"
             name="disabled"
             onChange={[Function]}
             type="radio"
-            value="sofa"
+            value="open-source"
           />
           <span
             className="title"
           >
-            Sofá
+            Open Source
+          </span>
+        </label>
+        <label
+          className="label"
+          htmlFor="radio-group-shortid-mock-pilot-2"
+        >
+          <input
+            checked={false}
+            className="input"
+            disabled={true}
+            id="radio-group-shortid-mock-pilot-2"
+            name="disabled"
+            onChange={[Function]}
+            type="radio"
+            value="pilot"
+          />
+          <span
+            className="title"
+          >
+            Pilot
           </span>
         </label>
         
       </div>
       <pre>
-        Selecionado: 
-        casa
+        Selected: 
+        github
       </pre>
     </div>
   </section>
@@ -15121,69 +15121,69 @@ exports[`Storyshots Radio Group Default 1`] = `
       >
         <label
           className="label"
-          htmlFor="radio-group-shortid-mock-predio-0"
-        >
-          <input
-            checked={false}
-            className="input"
-            disabled={false}
-            id="radio-group-shortid-mock-predio-0"
-            name="default"
-            onChange={[Function]}
-            type="radio"
-            value="predio"
-          />
-          <span
-            className="title"
-          >
-            Prédio
-          </span>
-        </label>
-        <label
-          className="label"
-          htmlFor="radio-group-shortid-mock-casa-1"
+          htmlFor="radio-group-shortid-mock-github-0"
         >
           <input
             checked={true}
             className="input"
             disabled={false}
-            id="radio-group-shortid-mock-casa-1"
+            id="radio-group-shortid-mock-github-0"
             name="default"
             onChange={[Function]}
             type="radio"
-            value="casa"
+            value="github"
           />
           <span
             className="title"
           >
-            Casa
+            Github
           </span>
         </label>
         <label
           className="label"
-          htmlFor="radio-group-shortid-mock-sofa-2"
+          htmlFor="radio-group-shortid-mock-open-source-1"
         >
           <input
             checked={false}
             className="input"
             disabled={false}
-            id="radio-group-shortid-mock-sofa-2"
+            id="radio-group-shortid-mock-open-source-1"
             name="default"
             onChange={[Function]}
             type="radio"
-            value="sofa"
+            value="open-source"
           />
           <span
             className="title"
           >
-            Sofá
+            Open Source
+          </span>
+        </label>
+        <label
+          className="label"
+          htmlFor="radio-group-shortid-mock-pilot-2"
+        >
+          <input
+            checked={false}
+            className="input"
+            disabled={false}
+            id="radio-group-shortid-mock-pilot-2"
+            name="default"
+            onChange={[Function]}
+            type="radio"
+            value="pilot"
+          />
+          <span
+            className="title"
+          >
+            Pilot
           </span>
         </label>
         
       </div>
       <pre>
-        Selecionado: 
-        casa
+        Selected: 
+        github
       </pre>
     </div>
   </section>
@@ -15197,62 +15197,62 @@ exports[`Storyshots Radio Group Default 1`] = `
       >
         <label
           className="label"
-          htmlFor="radio-group-shortid-mock-predio-0"
+          htmlFor="radio-group-shortid-mock-github-0"
         >
           <input
             checked={false}
             className="input"
             disabled={false}
-            id="radio-group-shortid-mock-predio-0"
+            id="radio-group-shortid-mock-github-0"
             name="success"
             onChange={[Function]}
             type="radio"
-            value="predio"
+            value="github"
           />
           <span
             className="title"
           >
-            Prédio
+            Github
           </span>
         </label>
         <label
           className="label"
-          htmlFor="radio-group-shortid-mock-casa-1"
+          htmlFor="radio-group-shortid-mock-open-source-1"
         >
           <input
             checked={false}
             className="input"
             disabled={false}
-            id="radio-group-shortid-mock-casa-1"
+            id="radio-group-shortid-mock-open-source-1"
             name="success"
             onChange={[Function]}
             type="radio"
-            value="casa"
+            value="open-source"
           />
           <span
             className="title"
           >
-            Casa
+            Open Source
           </span>
         </label>
         <label
           className="label"
-          htmlFor="radio-group-shortid-mock-sofa-2"
+          htmlFor="radio-group-shortid-mock-pilot-2"
         >
           <input
-            checked={true}
+            checked={false}
             className="input"
             disabled={false}
-            id="radio-group-shortid-mock-sofa-2"
+            id="radio-group-shortid-mock-pilot-2"
             name="success"
             onChange={[Function]}
             type="radio"
-            value="sofa"
+            value="pilot"
           />
           <span
             className="title"
           >
-            Sofá
+            Pilot
           </span>
         </label>
         <p
@@ -15262,8 +15262,8 @@ exports[`Storyshots Radio Group Default 1`] = `
         </p>
       </div>
       <pre>
-        Selecionado: 
-        sofa
+        Selected: 
+        Pilot
       </pre>
     </div>
   </section>
@@ -15277,62 +15277,62 @@ exports[`Storyshots Radio Group Default 1`] = `
       >
         <label
           className="label"
-          htmlFor="radio-group-shortid-mock-predio-0"
-        >
-          <input
-            checked={false}
-            className="input"
-            disabled={false}
-            id="radio-group-shortid-mock-predio-0"
-            name="error"
-            onChange={[Function]}
-            type="radio"
-            value="predio"
-          />
-          <span
-            className="title"
-          >
-            Prédio
-          </span>
-        </label>
-        <label
-          className="label"
-          htmlFor="radio-group-shortid-mock-casa-1"
+          htmlFor="radio-group-shortid-mock-github-0"
         >
           <input
             checked={true}
             className="input"
             disabled={false}
-            id="radio-group-shortid-mock-casa-1"
+            id="radio-group-shortid-mock-github-0"
             name="error"
             onChange={[Function]}
             type="radio"
-            value="casa"
+            value="github"
           />
           <span
             className="title"
           >
-            Casa
+            Github
           </span>
         </label>
         <label
           className="label"
-          htmlFor="radio-group-shortid-mock-sofa-2"
+          htmlFor="radio-group-shortid-mock-open-source-1"
         >
           <input
             checked={false}
             className="input"
             disabled={false}
-            id="radio-group-shortid-mock-sofa-2"
+            id="radio-group-shortid-mock-open-source-1"
             name="error"
             onChange={[Function]}
             type="radio"
-            value="sofa"
+            value="open-source"
           />
           <span
             className="title"
           >
-            Sofá
+            Open Source
+          </span>
+        </label>
+        <label
+          className="label"
+          htmlFor="radio-group-shortid-mock-pilot-2"
+        >
+          <input
+            checked={false}
+            className="input"
+            disabled={false}
+            id="radio-group-shortid-mock-pilot-2"
+            name="error"
+            onChange={[Function]}
+            type="radio"
+            value="pilot"
+          />
+          <span
+            className="title"
+          >
+            Pilot
           </span>
         </label>
         <p
@@ -15342,8 +15342,8 @@ exports[`Storyshots Radio Group Default 1`] = `
         </p>
       </div>
       <pre>
-        Selecionado: 
-        casa
+        Selected: 
+        github
       </pre>
     </div>
   </section>

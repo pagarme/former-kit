@@ -8,28 +8,28 @@ import style from '../style.css'
 
 const options = [
   {
-    name: 'Prédio',
-    value: 'predio',
+    name: 'Github',
+    value: 'github',
   },
   {
-    name: 'Casa',
-    value: 'casa',
+    name: 'Open Source',
+    value: 'open-source',
   },
   {
-    name: 'Sofá',
-    value: 'sofa',
+    name: 'Pilot',
+    value: 'pilot',
   },
 ]
 
 class RadioGroupState extends React.Component {
   constructor (props) {
     super(props)
-    this.state = { value: 'casa' }
+    this.state = { value: 'github' }
   }
 
   componentWillMount () {
     if (this.props.success) {
-      this.setState({ value: 'sofa' })
+      this.setState({ value: 'Pilot' })
     }
   }
 
@@ -57,7 +57,7 @@ class RadioGroupState extends React.Component {
           success={success}
         />
 
-        <pre>Selecionado: {value}</pre>
+        <pre>Selected: {value}</pre>
       </div>
     )
   }
