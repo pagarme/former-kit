@@ -107,29 +107,56 @@ exports[`Storyshots Alerts All types 1`] = `
 </div>
 `;
 
-exports[`Storyshots Avatar All types 1`] = `
+exports[`Storyshots Avatar Default 1`] = `
 <div
   className="typography"
 >
-  <div
-    className="avatar placeholder"
+  <section
+    className={undefined}
   >
-    <svg />
-  </div>
-  <img
-    alt="Foto de perfil"
-    className="avatar"
-    height={26}
-    src="https://i.imgur.com/V9mgrCp.jpg"
-    width={26}
-  />
-  <img
-    alt="Foto de perfil"
-    className="avatar"
-    height={50}
-    src="https://i.imgur.com/V9mgrCp.jpg"
-    width={50}
-  />
+    <h2>
+      Default icon and size
+    </h2>
+    <div>
+      <div
+        className="avatar placeholder"
+      >
+        <svg />
+      </div>
+    </div>
+  </section>
+  <section
+    className={undefined}
+  >
+    <h2>
+      With custom image and default size
+    </h2>
+    <div>
+      <img
+        alt="Foto de perfil"
+        className="avatar"
+        height={26}
+        src="https://i.imgur.com/V9mgrCp.jpg"
+        width={26}
+      />
+    </div>
+  </section>
+  <section
+    className={undefined}
+  >
+    <h2>
+      With custom image and size
+    </h2>
+    <div>
+      <img
+        alt="Foto de perfil"
+        className="avatar"
+        height={50}
+        src="https://i.imgur.com/V9mgrCp.jpg"
+        width={50}
+      />
+    </div>
+  </section>
 </div>
 `;
 
