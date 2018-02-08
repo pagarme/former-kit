@@ -134,8 +134,7 @@ class TableState extends Component {
     const onRowClick = clickableRow ? this.handleRowClick : null
 
     return (
-      <div className={style.container}>
-
+      <div>
         <Table
           className={style.table}
           columns={columns}

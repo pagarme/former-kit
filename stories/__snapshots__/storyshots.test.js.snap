@@ -15952,1442 +15952,1463 @@ exports[`Storyshots TabBar All styles 1`] = `
 `;
 
 exports[`Storyshots Table Action column 1`] = `
-<div
+<section
   className={undefined}
 >
-  <table
-    className="table"
-  >
-    <thead
-      className="tableHead"
-    >
-      <tr>
-        <th
-          className="active orderable"
-          onClick={[Function]}
-        >
-          <div
-            className="tableHeadItem"
-          >
-            <span>
-               
-              Status
-               
-            </span>
-            <span
-              className="unselectable"
-            >
-              <svg />
-            </span>
-          </div>
-        </th>
-        <th
-          className="orderable"
-          onClick={[Function]}
-        >
-          <div
-            className="tableHeadItem"
-          >
-            <span>
-               
-              Transaction Id
-               
-            </span>
-            <span
-              className="unselectable"
-            >
-              <svg />
-            </span>
-          </div>
-        </th>
-        <th
-          className="orderable"
-          onClick={[Function]}
-        >
-          <div
-            className="tableHeadItem"
-          >
-            <span>
-               
-              Date created
-               
-            </span>
-            <span
-              className="unselectable"
-            >
-              <svg />
-            </span>
-          </div>
-        </th>
-        <th
-          className="orderable"
-          onClick={[Function]}
-        >
-          <div
-            className="tableHeadItem"
-          >
-            <span>
-               
-              Cpf/Cnpj
-               
-            </span>
-            <span
-              className="unselectable"
-            >
-              <svg />
-            </span>
-          </div>
-        </th>
-        <th
-          className="orderable"
-          onClick={[Function]}
-        >
-          <div
-            className="tableHeadItem"
-          >
-            <span>
-               
-              Payment method
-               
-            </span>
-            <span
-              className="unselectable"
-            >
-              <svg />
-            </span>
-          </div>
-        </th>
-        <th
-          className="orderable"
-          onClick={[Function]}
-        >
-          <div
-            className="tableHeadItem"
-          >
-            <span>
-               
-              Paid amount
-               
-            </span>
-            <span
-              className="unselectable"
-            >
-              <svg />
-            </span>
-          </div>
-        </th>
-        <th
-          className="unselectable"
-        >
-          <div
-            className="tableHeadItem"
-          >
-            Details
-          </div>
-        </th>
-      </tr>
-    </thead>
-    <tbody
-      className="tableBody"
-    >
-      <tr
-        className="even row"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        tabIndex="0"
+  <h2>
+    Action column
+  </h2>
+  <div>
+    <div>
+      <table
+        className="table"
       >
-        <td
-          className="tableBodyItem"
+        <thead
+          className="tableHead"
         >
-          <div
-            className={undefined}
-          >
-            <div
-              className="legend"
+          <tr>
+            <th
+              className="active orderable"
+              onClick={[Function]}
             >
-              <abbr
-                className="acronym"
-                style={
-                  Object {
-                    "background": "#244d85",
-                  }
-                }
-                title="Boleto paid with inferior value"
+              <div
+                className="tableHeadItem"
               >
-                BPIV
-              </abbr>
-            </div>
-          </div>
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          2229597000
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          23/09/2017 - 14:15h
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          67.484.928/0001-60
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          Boleto
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          R$ 999.999.999,00
-        </td>
-        <td
-          className="tableBodyItem unselectable"
-        >
-          <button
-            className="button outline light normalRelevance default"
-            disabled={false}
-            onClick={[Function]}
-            type="button"
-          >
-            Show details
-          </button>
-        </td>
-      </tr>
-      <tr
-        className="odd row"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        tabIndex="0"
-      >
-        <td
-          className="tableBodyItem"
-        >
-          <div
-            className={undefined}
-          >
-            <div
-              className="legend"
+                <span>
+                   
+                  Status
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+            <th
+              className="orderable"
+              onClick={[Function]}
             >
-              <abbr
-                className="acronym"
-                style={
-                  Object {
-                    "background": "#57be76",
-                  }
-                }
-                title="Pago"
+              <div
+                className="tableHeadItem"
               >
-                P
-              </abbr>
-            </div>
-          </div>
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          2229597001
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          23/09/2017 - 15:15h
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          67.484.928/0001-60
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          Credit card
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          R$ 100.000,00
-        </td>
-        <td
-          className="tableBodyItem unselectable"
-        >
-          <button
-            className="button outline light normalRelevance default"
-            disabled={false}
-            onClick={[Function]}
-            type="button"
-          >
-            Show details
-          </button>
-        </td>
-      </tr>
-      <tr
-        className="even row"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        tabIndex="0"
-      >
-        <td
-          className="tableBodyItem"
-        >
-          <div
-            className={undefined}
-          >
-            <div
-              className="legend"
+                <span>
+                   
+                  Transaction Id
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+            <th
+              className="orderable"
+              onClick={[Function]}
             >
-              <abbr
-                className="acronym"
-                style={
-                  Object {
-                    "background": "#e47735",
-                  }
-                }
-                title="Chargeback"
+              <div
+                className="tableHeadItem"
               >
-                CB
-              </abbr>
-            </div>
-          </div>
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          2229597003
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          23/09/2017 - 16:15h
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          67.484.928/0001-60
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          Credit card
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          R$ 100.000,00
-        </td>
-        <td
-          className="tableBodyItem unselectable"
-        >
-          <button
-            className="button outline light normalRelevance default"
-            disabled={false}
-            onClick={[Function]}
-            type="button"
-          >
-            Show details
-          </button>
-        </td>
-      </tr>
-      <tr
-        className="odd row"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        tabIndex="0"
-      >
-        <td
-          className="tableBodyItem"
-        >
-          <div
-            className={undefined}
-          >
-            <div
-              className="legend"
+                <span>
+                   
+                  Date created
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+            <th
+              className="orderable"
+              onClick={[Function]}
             >
-              <abbr
-                className="acronym"
-                style={
-                  Object {
-                    "background": "#951e3c",
-                  }
-                }
-                title="Processing"
+              <div
+                className="tableHeadItem"
               >
-                PR
-              </abbr>
-            </div>
-          </div>
-        </td>
-        <td
-          className="tableBodyItem"
+                <span>
+                   
+                  Cpf/Cnpj
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+            <th
+              className="orderable"
+              onClick={[Function]}
+            >
+              <div
+                className="tableHeadItem"
+              >
+                <span>
+                   
+                  Payment method
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+            <th
+              className="orderable"
+              onClick={[Function]}
+            >
+              <div
+                className="tableHeadItem"
+              >
+                <span>
+                   
+                  Paid amount
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+            <th
+              className="unselectable"
+            >
+              <div
+                className="tableHeadItem"
+              >
+                Details
+              </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          className="tableBody"
         >
-          2229597004
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          <span
-            className="empty unselectable"
-          />
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          <span
-            className="empty unselectable"
-          />
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          <span
-            className="empty unselectable"
-          />
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          <span
-            className="empty unselectable"
-          />
-        </td>
-        <td
-          className="tableBodyItem unselectable"
-        >
-          <button
-            className="button outline light normalRelevance default"
-            disabled={false}
+          <tr
+            className="even row"
             onClick={[Function]}
-            type="button"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            tabIndex="0"
           >
-            Show details
-          </button>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <div
-    className={undefined}
-  />
-</div>
+            <td
+              className="tableBodyItem"
+            >
+              <div
+                className={undefined}
+              >
+                <div
+                  className="legend"
+                >
+                  <abbr
+                    className="acronym"
+                    style={
+                      Object {
+                        "background": "#244d85",
+                      }
+                    }
+                    title="Boleto paid with inferior value"
+                  >
+                    BPIV
+                  </abbr>
+                </div>
+              </div>
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              2229597000
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              23/09/2017 - 14:15h
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              67.484.928/0001-60
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              Boleto
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              R$ 999.999.999,00
+            </td>
+            <td
+              className="tableBodyItem unselectable"
+            >
+              <button
+                className="button outline light normalRelevance default"
+                disabled={false}
+                onClick={[Function]}
+                type="button"
+              >
+                Show details
+              </button>
+            </td>
+          </tr>
+          <tr
+            className="odd row"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            tabIndex="0"
+          >
+            <td
+              className="tableBodyItem"
+            >
+              <div
+                className={undefined}
+              >
+                <div
+                  className="legend"
+                >
+                  <abbr
+                    className="acronym"
+                    style={
+                      Object {
+                        "background": "#57be76",
+                      }
+                    }
+                    title="Pago"
+                  >
+                    P
+                  </abbr>
+                </div>
+              </div>
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              2229597001
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              23/09/2017 - 15:15h
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              67.484.928/0001-60
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              Credit card
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              R$ 100.000,00
+            </td>
+            <td
+              className="tableBodyItem unselectable"
+            >
+              <button
+                className="button outline light normalRelevance default"
+                disabled={false}
+                onClick={[Function]}
+                type="button"
+              >
+                Show details
+              </button>
+            </td>
+          </tr>
+          <tr
+            className="even row"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            tabIndex="0"
+          >
+            <td
+              className="tableBodyItem"
+            >
+              <div
+                className={undefined}
+              >
+                <div
+                  className="legend"
+                >
+                  <abbr
+                    className="acronym"
+                    style={
+                      Object {
+                        "background": "#e47735",
+                      }
+                    }
+                    title="Chargeback"
+                  >
+                    CB
+                  </abbr>
+                </div>
+              </div>
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              2229597003
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              23/09/2017 - 16:15h
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              67.484.928/0001-60
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              Credit card
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              R$ 100.000,00
+            </td>
+            <td
+              className="tableBodyItem unselectable"
+            >
+              <button
+                className="button outline light normalRelevance default"
+                disabled={false}
+                onClick={[Function]}
+                type="button"
+              >
+                Show details
+              </button>
+            </td>
+          </tr>
+          <tr
+            className="odd row"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            tabIndex="0"
+          >
+            <td
+              className="tableBodyItem"
+            >
+              <div
+                className={undefined}
+              >
+                <div
+                  className="legend"
+                >
+                  <abbr
+                    className="acronym"
+                    style={
+                      Object {
+                        "background": "#951e3c",
+                      }
+                    }
+                    title="Processing"
+                  >
+                    PR
+                  </abbr>
+                </div>
+              </div>
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              2229597004
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              <span
+                className="empty unselectable"
+              />
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              <span
+                className="empty unselectable"
+              />
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              <span
+                className="empty unselectable"
+              />
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              <span
+                className="empty unselectable"
+              />
+            </td>
+            <td
+              className="tableBodyItem unselectable"
+            >
+              <button
+                className="button outline light normalRelevance default"
+                disabled={false}
+                onClick={[Function]}
+                type="button"
+              >
+                Show details
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div
+        className={undefined}
+      />
+    </div>
+  </div>
+</section>
 `;
 
 exports[`Storyshots Table Selectable and expandable 1`] = `
-<div
+<section
   className={undefined}
 >
-  <table
-    className="table"
-  >
-    <thead
-      className="tableHead"
-    >
-      <tr>
-        <th
-          className="check"
-        >
-          <div
-            className="checkbox"
-          >
-            <input
-              checked={false}
-              disabled={false}
-              id="all-all"
-              name="all"
-              onChange={[Function]}
-              type="checkbox"
-              value="all"
-            />
-            <label
-              htmlFor="all-all"
-            >
-              <i
-                className="check"
-              />
-              
-            </label>
-            
-          </div>
-        </th>
-        <th
-          className="active orderable"
-          onClick={[Function]}
-        >
-          <div
-            className="tableHeadItem"
-          >
-            <span>
-               
-              Status
-               
-            </span>
-            <span
-              className="unselectable"
-            >
-              <svg />
-            </span>
-          </div>
-        </th>
-        <th
-          className="orderable"
-          onClick={[Function]}
-        >
-          <div
-            className="tableHeadItem"
-          >
-            <span>
-               
-              Transaction Id
-               
-            </span>
-            <span
-              className="unselectable"
-            >
-              <svg />
-            </span>
-          </div>
-        </th>
-        <th
-          className="orderable"
-          onClick={[Function]}
-        >
-          <div
-            className="tableHeadItem"
-          >
-            <span>
-               
-              Date created
-               
-            </span>
-            <span
-              className="unselectable"
-            >
-              <svg />
-            </span>
-          </div>
-        </th>
-        <th
-          className="orderable"
-          onClick={[Function]}
-        >
-          <div
-            className="tableHeadItem"
-          >
-            <span>
-               
-              Cpf/Cnpj
-               
-            </span>
-            <span
-              className="unselectable"
-            >
-              <svg />
-            </span>
-          </div>
-        </th>
-        <th
-          className="orderable"
-          onClick={[Function]}
-        >
-          <div
-            className="tableHeadItem"
-          >
-            <span>
-               
-              Payment method
-               
-            </span>
-            <span
-              className="unselectable"
-            >
-              <svg />
-            </span>
-          </div>
-        </th>
-        <th
-          className="orderable"
-          onClick={[Function]}
-        >
-          <div
-            className="tableHeadItem"
-          >
-            <span>
-               
-              Paid amount
-               
-            </span>
-            <span
-              className="unselectable"
-            >
-              <svg />
-            </span>
-          </div>
-        </th>
-        <th
-          className="orderable"
-          onClick={[Function]}
-        >
-          <div
-            className="tableHeadItem"
-          >
-            <span>
-               
-              Cost
-               
-            </span>
-            <span
-              className="unselectable"
-            >
-              <svg />
-            </span>
-          </div>
-        </th>
-        <th
-          className="open"
-        />
-      </tr>
-    </thead>
-    <tbody
-      className="tableBody"
-    >
-      <tr
-        className="even row"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        tabIndex="0"
-      >
-        <td
-          className="check"
-        >
-          <div
-            className="checkbox"
-          >
-            <input
-              checked={false}
-              disabled={false}
-              id="line_0-0"
-              name="line_0"
-              onChange={[Function]}
-              type="checkbox"
-              value="0"
-            />
-            <label
-              htmlFor="line_0-0"
-            >
-              <i
-                className="check"
-              />
-              
-            </label>
-            
-          </div>
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          <div
-            className={undefined}
-          >
-            <div
-              className="legend"
-            >
-              <abbr
-                className="acronym"
-                style={
-                  Object {
-                    "background": "#244d85",
-                  }
-                }
-                title="Boleto paid with inferior value"
-              >
-                BPIV
-              </abbr>
-            </div>
-          </div>
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          2229597000
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          23/09/2017 - 14:15h
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          67.484.928/0001-60
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          Boleto
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          R$ 999.999.999,00
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          R$ 100.000,00
-        </td>
-        <td
-          className="open unselectable"
-        >
-          <button
-            className="button outline light lowRelevance tiny iconButton"
-            disabled={false}
-            onClick={[Function]}
-            type="button"
-          >
-            <svg />
-          </button>
-        </td>
-      </tr>
-      <tr
-        className="odd row"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        tabIndex="0"
-      >
-        <td
-          className="check"
-        >
-          <div
-            className="checkbox"
-          >
-            <input
-              checked={false}
-              disabled={false}
-              id="line_1-1"
-              name="line_1"
-              onChange={[Function]}
-              type="checkbox"
-              value="1"
-            />
-            <label
-              htmlFor="line_1-1"
-            >
-              <i
-                className="check"
-              />
-              
-            </label>
-            
-          </div>
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          <div
-            className={undefined}
-          >
-            <div
-              className="legend"
-            >
-              <abbr
-                className="acronym"
-                style={
-                  Object {
-                    "background": "#57be76",
-                  }
-                }
-                title="Pago"
-              >
-                P
-              </abbr>
-            </div>
-          </div>
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          2229597001
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          23/09/2017 - 15:15h
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          67.484.928/0001-60
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          Credit card
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          R$ 100.000,00
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          R$ 12.000,00
-        </td>
-        <td
-          className="open unselectable"
-        >
-          <button
-            className="button outline light lowRelevance tiny iconButton"
-            disabled={false}
-            onClick={[Function]}
-            type="button"
-          >
-            <svg />
-          </button>
-        </td>
-      </tr>
-      <tr
-        className="even row"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        tabIndex="0"
-      >
-        <td
-          className="check"
-        >
-          <div
-            className="checkbox"
-          >
-            <input
-              checked={false}
-              disabled={false}
-              id="line_2-2"
-              name="line_2"
-              onChange={[Function]}
-              type="checkbox"
-              value="2"
-            />
-            <label
-              htmlFor="line_2-2"
-            >
-              <i
-                className="check"
-              />
-              
-            </label>
-            
-          </div>
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          <div
-            className={undefined}
-          >
-            <div
-              className="legend"
-            >
-              <abbr
-                className="acronym"
-                style={
-                  Object {
-                    "background": "#e47735",
-                  }
-                }
-                title="Chargeback"
-              >
-                CB
-              </abbr>
-            </div>
-          </div>
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          2229597003
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          23/09/2017 - 16:15h
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          67.484.928/0001-60
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          Credit card
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          R$ 100.000,00
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          R$ 13.000,00
-        </td>
-        <td
-          className="open unselectable"
-        >
-          <button
-            className="button outline light lowRelevance tiny iconButton"
-            disabled={false}
-            onClick={[Function]}
-            type="button"
-          >
-            <svg />
-          </button>
-        </td>
-      </tr>
-      <tr
-        className="odd row"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        tabIndex="0"
-      >
-        <td
-          className="check"
-        >
-          <div
-            className="checkbox"
-          >
-            <input
-              checked={false}
-              disabled={false}
-              id="line_3-3"
-              name="line_3"
-              onChange={[Function]}
-              type="checkbox"
-              value="3"
-            />
-            <label
-              htmlFor="line_3-3"
-            >
-              <i
-                className="check"
-              />
-              
-            </label>
-            
-          </div>
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          <div
-            className={undefined}
-          >
-            <div
-              className="legend"
-            >
-              <abbr
-                className="acronym"
-                style={
-                  Object {
-                    "background": "#951e3c",
-                  }
-                }
-                title="Processing"
-              >
-                PR
-              </abbr>
-            </div>
-          </div>
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          2229597004
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          <span
-            className="empty unselectable"
-          />
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          <span
-            className="empty unselectable"
-          />
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          <span
-            className="empty unselectable"
-          />
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          <span
-            className="empty unselectable"
-          />
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          R$ 14.000,00
-        </td>
-        <td
-          className="open unselectable"
-        >
-          <button
-            className="button outline light lowRelevance tiny iconButton"
-            disabled={false}
-            onClick={[Function]}
-            type="button"
-          >
-            <svg />
-          </button>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <div
-    className={undefined}
-  >
+  <h2>
+    Selectable and expandable
+  </h2>
+  <div>
     <div>
-      <div>
-         Selected rows 
-        0
-         
-      </div>
-      <div>
-         Expanded rows 
-        0
-         
+      <table
+        className="table"
+      >
+        <thead
+          className="tableHead"
+        >
+          <tr>
+            <th
+              className="check"
+            >
+              <div
+                className="checkbox"
+              >
+                <input
+                  checked={false}
+                  disabled={false}
+                  id="all-all"
+                  name="all"
+                  onChange={[Function]}
+                  type="checkbox"
+                  value="all"
+                />
+                <label
+                  htmlFor="all-all"
+                >
+                  <i
+                    className="check"
+                  />
+                  
+                </label>
+                
+              </div>
+            </th>
+            <th
+              className="active orderable"
+              onClick={[Function]}
+            >
+              <div
+                className="tableHeadItem"
+              >
+                <span>
+                   
+                  Status
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+            <th
+              className="orderable"
+              onClick={[Function]}
+            >
+              <div
+                className="tableHeadItem"
+              >
+                <span>
+                   
+                  Transaction Id
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+            <th
+              className="orderable"
+              onClick={[Function]}
+            >
+              <div
+                className="tableHeadItem"
+              >
+                <span>
+                   
+                  Date created
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+            <th
+              className="orderable"
+              onClick={[Function]}
+            >
+              <div
+                className="tableHeadItem"
+              >
+                <span>
+                   
+                  Cpf/Cnpj
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+            <th
+              className="orderable"
+              onClick={[Function]}
+            >
+              <div
+                className="tableHeadItem"
+              >
+                <span>
+                   
+                  Payment method
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+            <th
+              className="orderable"
+              onClick={[Function]}
+            >
+              <div
+                className="tableHeadItem"
+              >
+                <span>
+                   
+                  Paid amount
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+            <th
+              className="orderable"
+              onClick={[Function]}
+            >
+              <div
+                className="tableHeadItem"
+              >
+                <span>
+                   
+                  Cost
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+            <th
+              className="open"
+            />
+          </tr>
+        </thead>
+        <tbody
+          className="tableBody"
+        >
+          <tr
+            className="even row"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            tabIndex="0"
+          >
+            <td
+              className="check"
+            >
+              <div
+                className="checkbox"
+              >
+                <input
+                  checked={false}
+                  disabled={false}
+                  id="line_0-0"
+                  name="line_0"
+                  onChange={[Function]}
+                  type="checkbox"
+                  value="0"
+                />
+                <label
+                  htmlFor="line_0-0"
+                >
+                  <i
+                    className="check"
+                  />
+                  
+                </label>
+                
+              </div>
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              <div
+                className={undefined}
+              >
+                <div
+                  className="legend"
+                >
+                  <abbr
+                    className="acronym"
+                    style={
+                      Object {
+                        "background": "#244d85",
+                      }
+                    }
+                    title="Boleto paid with inferior value"
+                  >
+                    BPIV
+                  </abbr>
+                </div>
+              </div>
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              2229597000
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              23/09/2017 - 14:15h
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              67.484.928/0001-60
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              Boleto
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              R$ 999.999.999,00
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              R$ 100.000,00
+            </td>
+            <td
+              className="open unselectable"
+            >
+              <button
+                className="button outline light lowRelevance tiny iconButton"
+                disabled={false}
+                onClick={[Function]}
+                type="button"
+              >
+                <svg />
+              </button>
+            </td>
+          </tr>
+          <tr
+            className="odd row"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            tabIndex="0"
+          >
+            <td
+              className="check"
+            >
+              <div
+                className="checkbox"
+              >
+                <input
+                  checked={false}
+                  disabled={false}
+                  id="line_1-1"
+                  name="line_1"
+                  onChange={[Function]}
+                  type="checkbox"
+                  value="1"
+                />
+                <label
+                  htmlFor="line_1-1"
+                >
+                  <i
+                    className="check"
+                  />
+                  
+                </label>
+                
+              </div>
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              <div
+                className={undefined}
+              >
+                <div
+                  className="legend"
+                >
+                  <abbr
+                    className="acronym"
+                    style={
+                      Object {
+                        "background": "#57be76",
+                      }
+                    }
+                    title="Pago"
+                  >
+                    P
+                  </abbr>
+                </div>
+              </div>
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              2229597001
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              23/09/2017 - 15:15h
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              67.484.928/0001-60
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              Credit card
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              R$ 100.000,00
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              R$ 12.000,00
+            </td>
+            <td
+              className="open unselectable"
+            >
+              <button
+                className="button outline light lowRelevance tiny iconButton"
+                disabled={false}
+                onClick={[Function]}
+                type="button"
+              >
+                <svg />
+              </button>
+            </td>
+          </tr>
+          <tr
+            className="even row"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            tabIndex="0"
+          >
+            <td
+              className="check"
+            >
+              <div
+                className="checkbox"
+              >
+                <input
+                  checked={false}
+                  disabled={false}
+                  id="line_2-2"
+                  name="line_2"
+                  onChange={[Function]}
+                  type="checkbox"
+                  value="2"
+                />
+                <label
+                  htmlFor="line_2-2"
+                >
+                  <i
+                    className="check"
+                  />
+                  
+                </label>
+                
+              </div>
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              <div
+                className={undefined}
+              >
+                <div
+                  className="legend"
+                >
+                  <abbr
+                    className="acronym"
+                    style={
+                      Object {
+                        "background": "#e47735",
+                      }
+                    }
+                    title="Chargeback"
+                  >
+                    CB
+                  </abbr>
+                </div>
+              </div>
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              2229597003
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              23/09/2017 - 16:15h
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              67.484.928/0001-60
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              Credit card
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              R$ 100.000,00
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              R$ 13.000,00
+            </td>
+            <td
+              className="open unselectable"
+            >
+              <button
+                className="button outline light lowRelevance tiny iconButton"
+                disabled={false}
+                onClick={[Function]}
+                type="button"
+              >
+                <svg />
+              </button>
+            </td>
+          </tr>
+          <tr
+            className="odd row"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            tabIndex="0"
+          >
+            <td
+              className="check"
+            >
+              <div
+                className="checkbox"
+              >
+                <input
+                  checked={false}
+                  disabled={false}
+                  id="line_3-3"
+                  name="line_3"
+                  onChange={[Function]}
+                  type="checkbox"
+                  value="3"
+                />
+                <label
+                  htmlFor="line_3-3"
+                >
+                  <i
+                    className="check"
+                  />
+                  
+                </label>
+                
+              </div>
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              <div
+                className={undefined}
+              >
+                <div
+                  className="legend"
+                >
+                  <abbr
+                    className="acronym"
+                    style={
+                      Object {
+                        "background": "#951e3c",
+                      }
+                    }
+                    title="Processing"
+                  >
+                    PR
+                  </abbr>
+                </div>
+              </div>
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              2229597004
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              <span
+                className="empty unselectable"
+              />
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              <span
+                className="empty unselectable"
+              />
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              <span
+                className="empty unselectable"
+              />
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              <span
+                className="empty unselectable"
+              />
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              R$ 14.000,00
+            </td>
+            <td
+              className="open unselectable"
+            >
+              <button
+                className="button outline light lowRelevance tiny iconButton"
+                disabled={false}
+                onClick={[Function]}
+                type="button"
+              >
+                <svg />
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div
+        className={undefined}
+      >
+        <div>
+          <div>
+             Selected rows 
+            0
+             
+          </div>
+          <div>
+             Expanded rows 
+            0
+             
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
+</section>
 `;
 
 exports[`Storyshots Table Simple 1`] = `
-<div
+<section
   className={undefined}
 >
-  <table
-    className="table"
-  >
-    <thead
-      className="tableHead"
-    >
-      <tr>
-        <th
-          className="active orderable"
-          onClick={[Function]}
-        >
-          <div
-            className="tableHeadItem"
-          >
-            <span>
-               
-              Status
-               
-            </span>
-            <span
-              className="unselectable"
-            >
-              <svg />
-            </span>
-          </div>
-        </th>
-        <th
-          className="orderable"
-          onClick={[Function]}
-        >
-          <div
-            className="tableHeadItem"
-          >
-            <span>
-               
-              Transaction Id
-               
-            </span>
-            <span
-              className="unselectable"
-            >
-              <svg />
-            </span>
-          </div>
-        </th>
-        <th
-          className="orderable"
-          onClick={[Function]}
-        >
-          <div
-            className="tableHeadItem"
-          >
-            <span>
-               
-              Date created
-               
-            </span>
-            <span
-              className="unselectable"
-            >
-              <svg />
-            </span>
-          </div>
-        </th>
-        <th
-          className="orderable"
-          onClick={[Function]}
-        >
-          <div
-            className="tableHeadItem"
-          >
-            <span>
-               
-              Cpf/Cnpj
-               
-            </span>
-            <span
-              className="unselectable"
-            >
-              <svg />
-            </span>
-          </div>
-        </th>
-        <th
-          className="orderable"
-          onClick={[Function]}
-        >
-          <div
-            className="tableHeadItem"
-          >
-            <span>
-               
-              Payment method
-               
-            </span>
-            <span
-              className="unselectable"
-            >
-              <svg />
-            </span>
-          </div>
-        </th>
-        <th
-          className="orderable"
-          onClick={[Function]}
-        >
-          <div
-            className="tableHeadItem"
-          >
-            <span>
-               
-              Paid amount
-               
-            </span>
-            <span
-              className="unselectable"
-            >
-              <svg />
-            </span>
-          </div>
-        </th>
-        <th
-          className="orderable"
-          onClick={[Function]}
-        >
-          <div
-            className="tableHeadItem"
-          >
-            <span>
-               
-              Cost
-               
-            </span>
-            <span
-              className="unselectable"
-            >
-              <svg />
-            </span>
-          </div>
-        </th>
-      </tr>
-    </thead>
-    <tbody
-      className="tableBody"
-    >
-      <tr
-        className="even row clickable"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        tabIndex="0"
+  <h2>
+    Simple
+  </h2>
+  <div>
+    <div>
+      <table
+        className="table"
       >
-        <td
-          className="tableBodyItem"
+        <thead
+          className="tableHead"
         >
-          <div
-            className={undefined}
-          >
-            <div
-              className="legend"
+          <tr>
+            <th
+              className="active orderable"
+              onClick={[Function]}
             >
-              <abbr
-                className="acronym"
-                style={
-                  Object {
-                    "background": "#244d85",
-                  }
-                }
-                title="Boleto paid with inferior value"
+              <div
+                className="tableHeadItem"
               >
-                BPIV
-              </abbr>
-            </div>
-          </div>
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          2229597000
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          23/09/2017 - 14:15h
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          67.484.928/0001-60
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          Boleto
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          R$ 999.999.999,00
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          R$ 100.000,00
-        </td>
-      </tr>
-      <tr
-        className="odd row clickable"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        tabIndex="0"
-      >
-        <td
-          className="tableBodyItem"
-        >
-          <div
-            className={undefined}
-          >
-            <div
-              className="legend"
+                <span>
+                   
+                  Status
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+            <th
+              className="orderable"
+              onClick={[Function]}
             >
-              <abbr
-                className="acronym"
-                style={
-                  Object {
-                    "background": "#57be76",
-                  }
-                }
-                title="Pago"
+              <div
+                className="tableHeadItem"
               >
-                P
-              </abbr>
-            </div>
-          </div>
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          2229597001
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          23/09/2017 - 15:15h
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          67.484.928/0001-60
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          Credit card
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          R$ 100.000,00
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          R$ 12.000,00
-        </td>
-      </tr>
-      <tr
-        className="even row clickable"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        tabIndex="0"
-      >
-        <td
-          className="tableBodyItem"
-        >
-          <div
-            className={undefined}
-          >
-            <div
-              className="legend"
+                <span>
+                   
+                  Transaction Id
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+            <th
+              className="orderable"
+              onClick={[Function]}
             >
-              <abbr
-                className="acronym"
-                style={
-                  Object {
-                    "background": "#e47735",
-                  }
-                }
-                title="Chargeback"
+              <div
+                className="tableHeadItem"
               >
-                CB
-              </abbr>
-            </div>
-          </div>
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          2229597003
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          23/09/2017 - 16:15h
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          67.484.928/0001-60
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          Credit card
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          R$ 100.000,00
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          R$ 13.000,00
-        </td>
-      </tr>
-      <tr
-        className="odd row clickable"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        tabIndex="0"
-      >
-        <td
-          className="tableBodyItem"
-        >
-          <div
-            className={undefined}
-          >
-            <div
-              className="legend"
+                <span>
+                   
+                  Date created
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+            <th
+              className="orderable"
+              onClick={[Function]}
             >
-              <abbr
-                className="acronym"
-                style={
-                  Object {
-                    "background": "#951e3c",
-                  }
-                }
-                title="Processing"
+              <div
+                className="tableHeadItem"
               >
-                PR
-              </abbr>
-            </div>
-          </div>
-        </td>
-        <td
-          className="tableBodyItem"
+                <span>
+                   
+                  Cpf/Cnpj
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+            <th
+              className="orderable"
+              onClick={[Function]}
+            >
+              <div
+                className="tableHeadItem"
+              >
+                <span>
+                   
+                  Payment method
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+            <th
+              className="orderable"
+              onClick={[Function]}
+            >
+              <div
+                className="tableHeadItem"
+              >
+                <span>
+                   
+                  Paid amount
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+            <th
+              className="orderable"
+              onClick={[Function]}
+            >
+              <div
+                className="tableHeadItem"
+              >
+                <span>
+                   
+                  Cost
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          className="tableBody"
         >
-          2229597004
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          <span
-            className="empty unselectable"
-          />
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          <span
-            className="empty unselectable"
-          />
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          <span
-            className="empty unselectable"
-          />
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          <span
-            className="empty unselectable"
-          />
-        </td>
-        <td
-          className="tableBodyItem"
-        >
-          R$ 14.000,00
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <div
-    className={undefined}
-  />
-</div>
+          <tr
+            className="even row clickable"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            tabIndex="0"
+          >
+            <td
+              className="tableBodyItem"
+            >
+              <div
+                className={undefined}
+              >
+                <div
+                  className="legend"
+                >
+                  <abbr
+                    className="acronym"
+                    style={
+                      Object {
+                        "background": "#244d85",
+                      }
+                    }
+                    title="Boleto paid with inferior value"
+                  >
+                    BPIV
+                  </abbr>
+                </div>
+              </div>
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              2229597000
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              23/09/2017 - 14:15h
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              67.484.928/0001-60
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              Boleto
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              R$ 999.999.999,00
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              R$ 100.000,00
+            </td>
+          </tr>
+          <tr
+            className="odd row clickable"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            tabIndex="0"
+          >
+            <td
+              className="tableBodyItem"
+            >
+              <div
+                className={undefined}
+              >
+                <div
+                  className="legend"
+                >
+                  <abbr
+                    className="acronym"
+                    style={
+                      Object {
+                        "background": "#57be76",
+                      }
+                    }
+                    title="Pago"
+                  >
+                    P
+                  </abbr>
+                </div>
+              </div>
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              2229597001
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              23/09/2017 - 15:15h
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              67.484.928/0001-60
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              Credit card
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              R$ 100.000,00
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              R$ 12.000,00
+            </td>
+          </tr>
+          <tr
+            className="even row clickable"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            tabIndex="0"
+          >
+            <td
+              className="tableBodyItem"
+            >
+              <div
+                className={undefined}
+              >
+                <div
+                  className="legend"
+                >
+                  <abbr
+                    className="acronym"
+                    style={
+                      Object {
+                        "background": "#e47735",
+                      }
+                    }
+                    title="Chargeback"
+                  >
+                    CB
+                  </abbr>
+                </div>
+              </div>
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              2229597003
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              23/09/2017 - 16:15h
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              67.484.928/0001-60
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              Credit card
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              R$ 100.000,00
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              R$ 13.000,00
+            </td>
+          </tr>
+          <tr
+            className="odd row clickable"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            tabIndex="0"
+          >
+            <td
+              className="tableBodyItem"
+            >
+              <div
+                className={undefined}
+              >
+                <div
+                  className="legend"
+                >
+                  <abbr
+                    className="acronym"
+                    style={
+                      Object {
+                        "background": "#951e3c",
+                      }
+                    }
+                    title="Processing"
+                  >
+                    PR
+                  </abbr>
+                </div>
+              </div>
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              2229597004
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              <span
+                className="empty unselectable"
+              />
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              <span
+                className="empty unselectable"
+              />
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              <span
+                className="empty unselectable"
+              />
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              <span
+                className="empty unselectable"
+              />
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              R$ 14.000,00
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div
+        className={undefined}
+      />
+    </div>
+  </div>
+</section>
 `;
 
 exports[`Storyshots Tags Default 1`] = `
