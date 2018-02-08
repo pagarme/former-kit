@@ -7872,896 +7872,973 @@ exports[`Storyshots Inputs Default 1`] = `
 <div
   className="typography"
 >
-  <h2>
-    Form Inputs
-  </h2>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Disabled
-    </h3>
-    <div
-      className="input disabled"
-    >
+    </h2>
+    <div>
       <div
-        className="boxContainer"
+        className="input disabled"
       >
         <div
-          className="container"
+          className="boxContainer"
         >
-          <input
-            disabled={true}
-            id="email-shortid-mock"
-            name="email"
-            onBlur={[Function]}
-            onChange={null}
-            onFocus={[Function]}
-            placeholder="eae"
-            type="text"
-            value=""
-          />
-          <label
-            className=""
-            htmlFor="email-shortid-mock"
+          <div
+            className="container"
           >
-            Digite seu email
-          </label>
+            <input
+              disabled={true}
+              id="email-shortid-mock"
+              name="email"
+              onBlur={[Function]}
+              onChange={null}
+              onFocus={[Function]}
+              placeholder="email@email.com"
+              type="text"
+              value=""
+            />
+            <label
+              className=""
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Secondary text
+          </p>
         </div>
-        <p
-          className="secondaryText"
-        >
-          Texto secundário
-        </p>
       </div>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Default
-    </h3>
-    <div
-      className="input active"
-    >
+    </h2>
+    <div>
       <div
-        className="boxContainer"
+        className="input active"
       >
         <div
-          className="container"
+          className="boxContainer"
         >
-          <input
-            disabled={false}
-            id="email-shortid-mock"
-            name="email"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="name@email.com"
-            type="text"
-            value="pagarme@pagar.me"
-          />
-          <label
-            className="contentPresent"
-            htmlFor="email-shortid-mock"
+          <div
+            className="container"
           >
-            Your email
-          </label>
+            <input
+              disabled={false}
+              id="email-shortid-mock"
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="name@email.com"
+              type="text"
+              value="pagarme@pagar.me"
+            />
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Secondary text
+          </p>
         </div>
-        <p
-          className="secondaryText"
-        >
-          Secondary text
-        </p>
       </div>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Error
-    </h3>
-    <div
-      className="input active error"
-    >
+    </h2>
+    <div>
       <div
-        className="boxContainer"
+        className="input active error"
       >
         <div
-          className="container"
+          className="boxContainer"
         >
-          <input
-            disabled={false}
-            id="email-shortid-mock"
-            name="email"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="name@email.com"
-            type="text"
-            value="pagarme@pagar.me"
-          />
-          <label
-            className="contentPresent"
-            htmlFor="email-shortid-mock"
+          <div
+            className="container"
           >
-            Your email
-          </label>
+            <input
+              disabled={false}
+              id="email-shortid-mock"
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="name@email.com"
+              type="text"
+              value="pagarme@pagar.me"
+            />
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Wrong email
+          </p>
         </div>
-        <p
-          className="secondaryText"
-        >
-          Email no formato errado
-        </p>
       </div>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Success
-    </h3>
-    <div
-      className="input active success"
-    >
+    </h2>
+    <div>
       <div
-        className="boxContainer"
+        className="input active success"
       >
         <div
-          className="container"
+          className="boxContainer"
         >
-          <input
-            disabled={false}
-            id="email-shortid-mock"
-            name="email"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="name@email.com"
-            type="text"
-            value="pagarme@pagar.me"
-          />
-          <label
-            className="contentPresent"
-            htmlFor="email-shortid-mock"
+          <div
+            className="container"
           >
-            Your email
-          </label>
+            <input
+              disabled={false}
+              id="email-shortid-mock"
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="name@email.com"
+              type="text"
+              value="pagarme@pagar.me"
+            />
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Success
+          </p>
         </div>
-        <p
-          className="secondaryText"
-        >
-          Good jobi lirou frendi
-        </p>
       </div>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Multiline disabled
-    </h3>
-    <div
-      className="input disabled"
-    >
+    </h2>
+    <div>
       <div
-        className="boxContainer"
+        className="input disabled"
       >
         <div
-          className="container multiline"
+          className="boxContainer"
         >
-          <textarea
-            disabled={true}
-            name="teste"
-            onBlur={[Function]}
-            onChange={null}
-            onFocus={[Function]}
-            placeholder="eae"
-            rows="1"
-            value=""
-          />
-          <label
-            className=""
-            htmlFor="teste-shortid-mock"
-          >
-            Fale tudo
-          </label>
           <div
-            className="expander"
+            className="container multiline"
           >
-            
-            <br />
+            <textarea
+              disabled={true}
+              name="multiline"
+              onBlur={[Function]}
+              onChange={null}
+              onFocus={[Function]}
+              placeholder="this is disabled"
+              rows="1"
+              value=""
+            />
+            <label
+              className=""
+              htmlFor="multiline-shortid-mock"
+            >
+              Disabled
+            </label>
+            <div
+              className="expander"
+            >
+              
+              <br />
+            </div>
           </div>
+          
         </div>
-        
       </div>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Multiline default
-    </h3>
-    <div
-      className="input active"
-    >
+    </h2>
+    <div>
       <div
-        className="boxContainer"
+        className="input active"
       >
         <div
-          className="container multiline"
+          className="boxContainer"
         >
-          <textarea
-            disabled={false}
-            name="email"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="name@email.com"
-            rows="1"
-            value="pagarme@pagar.me"
-          />
-          <label
-            className="contentPresent"
-            htmlFor="email-shortid-mock"
-          >
-            Your email
-          </label>
           <div
-            className="expander"
+            className="container multiline"
           >
-            pagarme@pagar.me
-            <br />
+            <textarea
+              disabled={false}
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="name@email.com"
+              rows="1"
+              value="pagarme@pagar.me"
+            />
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+            <div
+              className="expander"
+            >
+              pagarme@pagar.me
+              <br />
+            </div>
           </div>
+          <p
+            className="secondaryText"
+          >
+            Secondary text
+          </p>
         </div>
-        <p
-          className="secondaryText"
-        >
-          Secondary text
-        </p>
       </div>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Multiline error
-    </h3>
-    <div
-      className="input active error"
-    >
+    </h2>
+    <div>
       <div
-        className="boxContainer"
+        className="input active error"
       >
         <div
-          className="container multiline"
+          className="boxContainer"
         >
-          <textarea
-            disabled={false}
-            name="email"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="name@email.com"
-            rows="1"
-            value="pagarme@pagar.me"
-          />
-          <label
-            className="contentPresent"
-            htmlFor="email-shortid-mock"
-          >
-            Your email
-          </label>
           <div
-            className="expander"
+            className="container multiline"
           >
-            pagarme@pagar.me
-            <br />
+            <textarea
+              disabled={false}
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="name@email.com"
+              rows="1"
+              value="pagarme@pagar.me"
+            />
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+            <div
+              className="expander"
+            >
+              pagarme@pagar.me
+              <br />
+            </div>
           </div>
+          <p
+            className="secondaryText"
+          >
+            Error!
+          </p>
         </div>
-        <p
-          className="secondaryText"
-        >
-          Erro!
-        </p>
       </div>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Multiline success
-    </h3>
-    <div
-      className="input active success"
-    >
+    </h2>
+    <div>
       <div
-        className="boxContainer"
+        className="input active success"
       >
         <div
-          className="container multiline"
+          className="boxContainer"
         >
-          <textarea
-            disabled={false}
-            name="email"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="name@email.com"
-            rows="1"
-            value="pagarme@pagar.me"
-          />
-          <label
-            className="contentPresent"
-            htmlFor="email-shortid-mock"
-          >
-            Your email
-          </label>
           <div
-            className="expander"
+            className="container multiline"
           >
-            pagarme@pagar.me
-            <br />
+            <textarea
+              disabled={false}
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="name@email.com"
+              rows="1"
+              value="pagarme@pagar.me"
+            />
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+            <div
+              className="expander"
+            >
+              pagarme@pagar.me
+              <br />
+            </div>
           </div>
+          <p
+            className="secondaryText"
+          >
+            Success!
+          </p>
         </div>
-        <p
-          className="secondaryText"
-        >
-          Sucesso!
-        </p>
       </div>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Icon disabled
-    </h3>
-    <div
-      className="input disabled"
-    >
+    </h2>
+    <div>
       <div
-        className="icon"
-      >
-        <Mail32.svg
-          height={16}
-          width={16}
-        />
-      </div>
-      <div
-        className="boxContainer"
+        className="input disabled"
       >
         <div
-          className="container"
+          className="icon"
         >
-          <input
-            disabled={true}
-            id="name-shortid-mock"
-            name="name"
-            onBlur={[Function]}
-            onChange={null}
-            onFocus={[Function]}
-            placeholder="eaee"
-            type="text"
-            value=""
+          <Mail32.svg
+            height={16}
+            width={16}
           />
-          <label
-            className=""
-            htmlFor="name-shortid-mock"
-          >
-            Digite seu nome
-          </label>
         </div>
-        
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container"
+          >
+            <input
+              disabled={true}
+              id="name-shortid-mock"
+              name="name"
+              onBlur={[Function]}
+              onChange={null}
+              onFocus={[Function]}
+              placeholder="disabled"
+              type="text"
+              value=""
+            />
+            <label
+              className=""
+              htmlFor="name-shortid-mock"
+            >
+              Your name
+            </label>
+          </div>
+          
+        </div>
       </div>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Icon default
-    </h3>
-    <div
-      className="input active"
-    >
+    </h2>
+    <div>
       <div
-        className="icon"
-      >
-        <Mail32.svg
-          height={16}
-          width={16}
-        />
-      </div>
-      <div
-        className="boxContainer"
+        className="input active"
       >
         <div
-          className="container"
+          className="icon"
         >
-          <input
-            disabled={false}
-            id="email-shortid-mock"
-            name="email"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="name@email.com"
-            type="text"
-            value="pagarme@pagar.me"
+          <Mail32.svg
+            height={16}
+            width={16}
           />
-          <label
-            className="contentPresent"
-            htmlFor="email-shortid-mock"
-          >
-            Your email
-          </label>
         </div>
-        <p
-          className="secondaryText"
+        <div
+          className="boxContainer"
         >
-          Secondary text
-        </p>
+          <div
+            className="container"
+          >
+            <input
+              disabled={false}
+              id="email-shortid-mock"
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="name@email.com"
+              type="text"
+              value="pagarme@pagar.me"
+            />
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Secondary text
+          </p>
+        </div>
       </div>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Icon error
-    </h3>
-    <div
-      className="input active error"
-    >
+    </h2>
+    <div>
       <div
-        className="icon"
-      >
-        <Mail32.svg
-          height={16}
-          width={16}
-        />
-      </div>
-      <div
-        className="boxContainer"
+        className="input active error"
       >
         <div
-          className="container"
+          className="icon"
         >
-          <input
-            disabled={false}
-            id="email-shortid-mock"
-            name="email"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="name@email.com"
-            type="text"
-            value="pagarme@pagar.me"
+          <Mail32.svg
+            height={16}
+            width={16}
           />
-          <label
-            className="contentPresent"
-            htmlFor="email-shortid-mock"
-          >
-            Your email
-          </label>
         </div>
-        <p
-          className="secondaryText"
+        <div
+          className="boxContainer"
         >
-          Erro!
-        </p>
+          <div
+            className="container"
+          >
+            <input
+              disabled={false}
+              id="email-shortid-mock"
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="name@email.com"
+              type="text"
+              value="pagarme@pagar.me"
+            />
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Error!
+          </p>
+        </div>
       </div>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Icon success
-    </h3>
-    <div
-      className="input active success"
-    >
+    </h2>
+    <div>
       <div
-        className="icon"
-      >
-        <Mail32.svg
-          height={16}
-          width={16}
-        />
-      </div>
-      <div
-        className="boxContainer"
+        className="input active success"
       >
         <div
-          className="container"
+          className="icon"
         >
-          <input
-            disabled={false}
-            id="email-shortid-mock"
-            name="email"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="name@email.com"
-            type="text"
-            value="pagarme@pagar.me"
+          <Mail32.svg
+            height={16}
+            width={16}
           />
-          <label
-            className="contentPresent"
-            htmlFor="email-shortid-mock"
-          >
-            Your email
-          </label>
         </div>
-        <p
-          className="secondaryText"
+        <div
+          className="boxContainer"
         >
-          Sucesso!
-        </p>
+          <div
+            className="container"
+          >
+            <input
+              disabled={false}
+              id="email-shortid-mock"
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="name@email.com"
+              type="text"
+              value="pagarme@pagar.me"
+            />
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Success!
+          </p>
+        </div>
       </div>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Icon multiline disabled
-    </h3>
-    <div
-      className="input disabled"
-    >
+    </h2>
+    <div>
       <div
-        className="icon"
-      >
-        <Mail32.svg
-          height={16}
-          width={16}
-        />
-      </div>
-      <div
-        className="boxContainer"
+        className="input disabled"
       >
         <div
-          className="container multiline"
+          className="icon"
         >
-          <textarea
-            disabled={true}
-            name="teste"
-            onBlur={[Function]}
-            onChange={null}
-            onFocus={[Function]}
-            placeholder="eae"
-            rows="1"
-            value=""
+          <Mail32.svg
+            height={16}
+            width={16}
           />
-          <label
-            className=""
-            htmlFor="teste-shortid-mock"
-          >
-            Fale tudo
-          </label>
-          <div
-            className="expander"
-          >
-            
-            <br />
-          </div>
         </div>
-        
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container multiline"
+          >
+            <textarea
+              disabled={true}
+              name="multiline"
+              onBlur={[Function]}
+              onChange={null}
+              onFocus={[Function]}
+              placeholder="this is disabled"
+              rows="1"
+              value=""
+            />
+            <label
+              className=""
+              htmlFor="multiline-shortid-mock"
+            >
+              Disabled
+            </label>
+            <div
+              className="expander"
+            >
+              
+              <br />
+            </div>
+          </div>
+          
+        </div>
       </div>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Icon multiline default
-    </h3>
-    <div
-      className="input active"
-    >
+    </h2>
+    <div>
       <div
-        className="icon"
-      >
-        <Mail32.svg
-          height={16}
-          width={16}
-        />
-      </div>
-      <div
-        className="boxContainer"
+        className="input active"
       >
         <div
-          className="container multiline"
+          className="icon"
         >
-          <textarea
-            disabled={false}
-            name="email"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="name@email.com"
-            rows="1"
-            value="pagarme@pagar.me"
+          <Mail32.svg
+            height={16}
+            width={16}
           />
-          <label
-            className="contentPresent"
-            htmlFor="email-shortid-mock"
-          >
-            Your email
-          </label>
-          <div
-            className="expander"
-          >
-            pagarme@pagar.me
-            <br />
-          </div>
         </div>
-        <p
-          className="secondaryText"
+        <div
+          className="boxContainer"
         >
-          Secondary text
-        </p>
+          <div
+            className="container multiline"
+          >
+            <textarea
+              disabled={false}
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="name@email.com"
+              rows="1"
+              value="pagarme@pagar.me"
+            />
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+            <div
+              className="expander"
+            >
+              pagarme@pagar.me
+              <br />
+            </div>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Secondary text
+          </p>
+        </div>
       </div>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Icon multiline error
-    </h3>
-    <div
-      className="input active error"
-    >
+    </h2>
+    <div>
       <div
-        className="icon"
-      >
-        <Mail32.svg
-          height={16}
-          width={16}
-        />
-      </div>
-      <div
-        className="boxContainer"
+        className="input active error"
       >
         <div
-          className="container multiline"
+          className="icon"
         >
-          <textarea
-            disabled={false}
-            name="email"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="name@email.com"
-            rows="1"
-            value="pagarme@pagar.me"
+          <Mail32.svg
+            height={16}
+            width={16}
           />
-          <label
-            className="contentPresent"
-            htmlFor="email-shortid-mock"
-          >
-            Your email
-          </label>
-          <div
-            className="expander"
-          >
-            pagarme@pagar.me
-            <br />
-          </div>
         </div>
-        <p
-          className="secondaryText"
+        <div
+          className="boxContainer"
         >
-          Erro!
-        </p>
+          <div
+            className="container multiline"
+          >
+            <textarea
+              disabled={false}
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="name@email.com"
+              rows="1"
+              value="pagarme@pagar.me"
+            />
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+            <div
+              className="expander"
+            >
+              pagarme@pagar.me
+              <br />
+            </div>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Error!
+          </p>
+        </div>
       </div>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Icon multiline success
-    </h3>
-    <div
-      className="input active success"
-    >
+    </h2>
+    <div>
       <div
-        className="icon"
-      >
-        <Mail32.svg
-          height={16}
-          width={16}
-        />
-      </div>
-      <div
-        className="boxContainer"
+        className="input active success"
       >
         <div
-          className="container multiline"
+          className="icon"
         >
-          <textarea
-            disabled={false}
-            name="email"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="name@email.com"
-            rows="1"
-            value="pagarme@pagar.me"
+          <Mail32.svg
+            height={16}
+            width={16}
           />
-          <label
-            className="contentPresent"
-            htmlFor="email-shortid-mock"
-          >
-            Your email
-          </label>
+        </div>
+        <div
+          className="boxContainer"
+        >
           <div
-            className="expander"
+            className="container multiline"
           >
-            pagarme@pagar.me
-            <br />
+            <textarea
+              disabled={false}
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="name@email.com"
+              rows="1"
+              value="pagarme@pagar.me"
+            />
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+            <div
+              className="expander"
+            >
+              pagarme@pagar.me
+              <br />
+            </div>
           </div>
+          <p
+            className="secondaryText"
+          >
+            Success!
+          </p>
         </div>
-        <p
-          className="secondaryText"
-        >
-          Sucesso!
-        </p>
       </div>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Password disabled
-    </h3>
-    <div
-      className="input disabled"
-    >
+    </h2>
+    <div>
       <div
-        className="boxContainer"
+        className="input disabled"
       >
         <div
-          className="container"
+          className="boxContainer"
         >
-          <input
-            disabled={true}
-            id="pass-shortid-mock"
-            name="pass"
-            onBlur={[Function]}
-            onChange={null}
-            onFocus={[Function]}
-            placeholder="eae"
-            type="password"
-            value=""
-          />
-          <label
-            className=""
-            htmlFor="pass-shortid-mock"
+          <div
+            className="container"
           >
-            Digite sua senha
-          </label>
+            <input
+              disabled={true}
+              id="pass-shortid-mock"
+              name="pass"
+              onBlur={[Function]}
+              onChange={null}
+              onFocus={[Function]}
+              placeholder="disabled"
+              type="password"
+              value=""
+            />
+            <label
+              className=""
+              htmlFor="pass-shortid-mock"
+            >
+              Your password
+            </label>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            must have more than 12 characters
+          </p>
         </div>
-        <p
-          className="secondaryText"
-        >
-          Minimo de 12 pixels
-        </p>
       </div>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Password default
-    </h3>
-    <div
-      className="input active"
-    >
+    </h2>
+    <div>
       <div
-        className="boxContainer"
+        className="input active"
       >
         <div
-          className="container"
+          className="boxContainer"
         >
-          <input
-            disabled={false}
-            id="email-shortid-mock"
-            name="email"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="name@email.com"
-            type="password"
-            value="pagarme@pagar.me"
-          />
-          <button
-            className="displayPasswordIcon"
-            onClick={[Function]}
+          <div
+            className="container"
           >
-            <svg />
-          </button>
-          <label
-            className="contentPresent"
-            htmlFor="email-shortid-mock"
+            <input
+              disabled={false}
+              id="email-shortid-mock"
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="name@email.com"
+              type="password"
+              value="pagarme@pagar.me"
+            />
+            <button
+              className="displayPasswordIcon"
+              onClick={[Function]}
+            >
+              <svg />
+            </button>
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+          </div>
+          <p
+            className="secondaryText"
           >
-            Your email
-          </label>
+            Secondary text
+          </p>
         </div>
-        <p
-          className="secondaryText"
-        >
-          Secondary text
-        </p>
       </div>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Password error
-    </h3>
-    <div
-      className="input active error"
-    >
+    </h2>
+    <div>
       <div
-        className="boxContainer"
+        className="input active error"
       >
         <div
-          className="container"
+          className="boxContainer"
         >
-          <input
-            disabled={false}
-            id="email-shortid-mock"
-            name="email"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="name@email.com"
-            type="password"
-            value="pagarme@pagar.me"
-          />
-          <button
-            className="displayPasswordIcon"
-            onClick={[Function]}
+          <div
+            className="container"
           >
-            <svg />
-          </button>
-          <label
-            className="contentPresent"
-            htmlFor="email-shortid-mock"
+            <input
+              disabled={false}
+              id="email-shortid-mock"
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="name@email.com"
+              type="password"
+              value="pagarme@pagar.me"
+            />
+            <button
+              className="displayPasswordIcon"
+              onClick={[Function]}
+            >
+              <svg />
+            </button>
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+          </div>
+          <p
+            className="secondaryText"
           >
-            Your email
-          </label>
+            must have more than 12 characters
+          </p>
         </div>
-        <p
-          className="secondaryText"
-        >
-          Digite mais caracteres
-        </p>
       </div>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Password success
-    </h3>
-    <div
-      className="input active success"
-    >
+    </h2>
+    <div>
       <div
-        className="boxContainer"
+        className="input active success"
       >
         <div
-          className="container"
+          className="boxContainer"
         >
-          <input
-            disabled={false}
-            id="email-shortid-mock"
-            name="email"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="name@email.com"
-            type="password"
-            value="pagarme@pagar.me"
-          />
-          <button
-            className="displayPasswordIcon"
-            onClick={[Function]}
+          <div
+            className="container"
           >
-            <svg />
-          </button>
-          <label
-            className="contentPresent"
-            htmlFor="email-shortid-mock"
+            <input
+              disabled={false}
+              id="email-shortid-mock"
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="name@email.com"
+              type="password"
+              value="pagarme@pagar.me"
+            />
+            <button
+              className="displayPasswordIcon"
+              onClick={[Function]}
+            >
+              <svg />
+            </button>
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+          </div>
+          <p
+            className="secondaryText"
           >
-            Your email
-          </label>
+            Success
+          </p>
         </div>
-        <p
-          className="secondaryText"
-        >
-          Boa rapá
-        </p>
       </div>
     </div>
   </section>
@@ -8772,896 +8849,913 @@ exports[`Storyshots Inputs Form 1`] = `
 <div
   className="typography"
 >
-  <h2>
-    Form Inputs
-  </h2>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Disabled
-    </h3>
-    <div
-      className="input disabled"
-    >
+    </h2>
+    <div>
       <div
-        className="boxContainer"
+        className="input disabled"
       >
         <div
-          className="container"
+          className="boxContainer"
         >
-          <input
-            disabled={true}
-            id="email-shortid-mock"
-            name="email"
-            onBlur={[Function]}
-            onChange={null}
-            onFocus={[Function]}
-            placeholder="eae"
-            type="text"
-            value=""
-          />
-          <label
-            className=""
-            htmlFor="email-shortid-mock"
+          <div
+            className="container"
           >
-            Digite seu email
-          </label>
+            <input
+              disabled={true}
+              id="email-shortid-mock"
+              name="email"
+              onBlur={[Function]}
+              onChange={null}
+              onFocus={[Function]}
+              placeholder="disabled"
+              type="text"
+              value=""
+            />
+            <label
+              className=""
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Secondary Text
+          </p>
         </div>
-        <p
-          className="secondaryText"
-        >
-          Texto secundário
-        </p>
       </div>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Default
-    </h3>
-    <div
-      className="input active"
-    >
+    </h2>
+    <div>
       <div
-        className="boxContainer"
+        className="input active"
       >
         <div
-          className="container"
+          className="boxContainer"
         >
-          <input
-            disabled={false}
-            id="email-shortid-mock"
-            name="email"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="nome@email.com"
-            type="text"
-            value="Leo"
-          />
-          <label
-            className="contentPresent"
-            htmlFor="email-shortid-mock"
+          <div
+            className="container"
           >
-            Digite seu email
-          </label>
+            <input
+              disabled={false}
+              id="email-shortid-mock"
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="name@email.com"
+              type="text"
+              value="pagarme@pagar.me"
+            />
+            
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Secondary Text
+          </p>
         </div>
-        <p
-          className="secondaryText"
-        >
-          Texto secundario
-        </p>
       </div>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Error
-    </h3>
-    <div
-      className="input active error"
-    >
+    </h2>
+    <div>
       <div
-        className="boxContainer"
+        className="input active error"
       >
         <div
-          className="container"
+          className="boxContainer"
         >
-          <input
-            disabled={false}
-            id="email-shortid-mock"
-            name="email"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="nome@email.com"
-            type="text"
-            value="Leo"
-          />
-          <label
-            className="contentPresent"
-            htmlFor="email-shortid-mock"
+          <div
+            className="container"
           >
-            Digite seu email
-          </label>
+            <input
+              disabled={false}
+              id="email-shortid-mock"
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="name@email.com"
+              type="text"
+              value="pagarme@pagar.me"
+            />
+            
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Invalid email
+          </p>
         </div>
-        <p
-          className="secondaryText"
-        >
-          Email no formato errado
-        </p>
       </div>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Success
-    </h3>
-    <div
-      className="input active success"
-    >
+    </h2>
+    <div>
       <div
-        className="boxContainer"
+        className="input active success"
       >
         <div
-          className="container"
+          className="boxContainer"
         >
-          <input
-            disabled={false}
-            id="email-shortid-mock"
-            name="email"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="nome@email.com"
-            type="text"
-            value="Leo"
-          />
-          <label
-            className="contentPresent"
-            htmlFor="email-shortid-mock"
+          <div
+            className="container"
           >
-            Digite seu email
-          </label>
+            <input
+              disabled={false}
+              id="email-shortid-mock"
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="name@email.com"
+              type="text"
+              value="pagarme@pagar.me"
+            />
+            
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Success
+          </p>
         </div>
-        <p
-          className="secondaryText"
-        >
-          Good jobi lirou frendi
-        </p>
       </div>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Multiline disabled
-    </h3>
-    <div
-      className="input disabled"
-    >
+    </h2>
+    <div>
       <div
-        className="boxContainer"
+        className="input disabled"
       >
         <div
-          className="container multiline"
+          className="boxContainer"
         >
-          <textarea
-            disabled={true}
-            name="teste"
-            onBlur={[Function]}
-            onChange={null}
-            onFocus={[Function]}
-            placeholder="eae"
-            rows="1"
-            value=""
-          />
-          <label
-            className=""
-            htmlFor="teste-shortid-mock"
-          >
-            Fale tudo
-          </label>
           <div
-            className="expander"
+            className="container multiline"
           >
-            
-            <br />
+            <textarea
+              disabled={true}
+              name="multiline"
+              onBlur={[Function]}
+              onChange={null}
+              onFocus={[Function]}
+              placeholder="disabled"
+              rows="1"
+              value=""
+            />
+            <label
+              className=""
+              htmlFor="multiline-shortid-mock"
+            >
+              Disabled
+            </label>
+            <div
+              className="expander"
+            >
+              
+              <br />
+            </div>
           </div>
+          
         </div>
-        
       </div>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Multiline default
-    </h3>
-    <div
-      className="input active"
-    >
+    </h2>
+    <div>
       <div
-        className="boxContainer"
+        className="input active"
       >
         <div
-          className="container multiline"
+          className="boxContainer"
         >
-          <textarea
-            disabled={false}
-            name="email"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="nome@email.com"
-            rows="1"
-            value="Leo"
-          />
-          <label
-            className="contentPresent"
-            htmlFor="email-shortid-mock"
-          >
-            Digite seu email
-          </label>
           <div
-            className="expander"
+            className="container multiline"
           >
-            Leo
-            <br />
-          </div>
-        </div>
-        <p
-          className="secondaryText"
-        >
-          Texto secundario
-        </p>
-      </div>
-    </div>
-  </section>
-  <section>
-    <h3>
-      Multiline error
-    </h3>
-    <div
-      className="input active error"
-    >
-      <div
-        className="boxContainer"
-      >
-        <div
-          className="container multiline"
-        >
-          <textarea
-            disabled={false}
-            name="email"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="nome@email.com"
-            rows="1"
-            value="Leo"
-          />
-          <label
-            className="contentPresent"
-            htmlFor="email-shortid-mock"
-          >
-            Digite seu email
-          </label>
-          <div
-            className="expander"
-          >
-            Leo
-            <br />
-          </div>
-        </div>
-        <p
-          className="secondaryText"
-        >
-          Erro!
-        </p>
-      </div>
-    </div>
-  </section>
-  <section>
-    <h3>
-      Multiline success
-    </h3>
-    <div
-      className="input active success"
-    >
-      <div
-        className="boxContainer"
-      >
-        <div
-          className="container multiline"
-        >
-          <textarea
-            disabled={false}
-            name="email"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="nome@email.com"
-            rows="1"
-            value="Leo"
-          />
-          <label
-            className="contentPresent"
-            htmlFor="email-shortid-mock"
-          >
-            Digite seu email
-          </label>
-          <div
-            className="expander"
-          >
-            Leo
-            <br />
-          </div>
-        </div>
-        <p
-          className="secondaryText"
-        >
-          Sucesso!
-        </p>
-      </div>
-    </div>
-  </section>
-  <section>
-    <h3>
-      Icon disabled
-    </h3>
-    <div
-      className="input disabled"
-    >
-      <div
-        className="icon"
-      >
-        <Mail32.svg
-          height={16}
-          width={16}
-        />
-      </div>
-      <div
-        className="boxContainer"
-      >
-        <div
-          className="container"
-        >
-          <input
-            disabled={true}
-            id="name-shortid-mock"
-            name="name"
-            onBlur={[Function]}
-            onChange={null}
-            onFocus={[Function]}
-            placeholder="eaee"
-            type="text"
-            value=""
-          />
-          <label
-            className=""
-            htmlFor="name-shortid-mock"
-          >
-            Digite seu nome
-          </label>
-        </div>
-        
-      </div>
-    </div>
-  </section>
-  <section>
-    <h3>
-      Icon default
-    </h3>
-    <div
-      className="input active"
-    >
-      <div
-        className="icon"
-      >
-        <Mail32.svg
-          height={16}
-          width={16}
-        />
-      </div>
-      <div
-        className="boxContainer"
-      >
-        <div
-          className="container"
-        >
-          <input
-            disabled={false}
-            id="email-shortid-mock"
-            name="email"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="nome@email.com"
-            type="text"
-            value="Leo"
-          />
-          <label
-            className="contentPresent"
-            htmlFor="email-shortid-mock"
-          >
-            Digite seu email
-          </label>
-        </div>
-        <p
-          className="secondaryText"
-        >
-          Texto secundario
-        </p>
-      </div>
-    </div>
-  </section>
-  <section>
-    <h3>
-      Icon error
-    </h3>
-    <div
-      className="input active error"
-    >
-      <div
-        className="icon"
-      >
-        <Mail32.svg
-          height={16}
-          width={16}
-        />
-      </div>
-      <div
-        className="boxContainer"
-      >
-        <div
-          className="container"
-        >
-          <input
-            disabled={false}
-            id="email-shortid-mock"
-            name="email"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="nome@email.com"
-            type="text"
-            value="Leo"
-          />
-          <label
-            className="contentPresent"
-            htmlFor="email-shortid-mock"
-          >
-            Digite seu email
-          </label>
-        </div>
-        <p
-          className="secondaryText"
-        >
-          Erro!
-        </p>
-      </div>
-    </div>
-  </section>
-  <section>
-    <h3>
-      Icon success
-    </h3>
-    <div
-      className="input active success"
-    >
-      <div
-        className="icon"
-      >
-        <Mail32.svg
-          height={16}
-          width={16}
-        />
-      </div>
-      <div
-        className="boxContainer"
-      >
-        <div
-          className="container"
-        >
-          <input
-            disabled={false}
-            id="email-shortid-mock"
-            name="email"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="nome@email.com"
-            type="text"
-            value="Leo"
-          />
-          <label
-            className="contentPresent"
-            htmlFor="email-shortid-mock"
-          >
-            Digite seu email
-          </label>
-        </div>
-        <p
-          className="secondaryText"
-        >
-          Sucesso!
-        </p>
-      </div>
-    </div>
-  </section>
-  <section>
-    <h3>
-      Icon multiline disabled
-    </h3>
-    <div
-      className="input disabled"
-    >
-      <div
-        className="icon"
-      >
-        <Mail32.svg
-          height={16}
-          width={16}
-        />
-      </div>
-      <div
-        className="boxContainer"
-      >
-        <div
-          className="container multiline"
-        >
-          <textarea
-            disabled={true}
-            name="teste"
-            onBlur={[Function]}
-            onChange={null}
-            onFocus={[Function]}
-            placeholder="eae"
-            rows="1"
-            value=""
-          />
-          <label
-            className=""
-            htmlFor="teste-shortid-mock"
-          >
-            Fale tudo
-          </label>
-          <div
-            className="expander"
-          >
+            <textarea
+              disabled={false}
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="name@email.com"
+              rows="1"
+              value="pagarme@pagar.me"
+            />
             
-            <br />
+            <div
+              className="expander"
+            >
+              pagarme@pagar.me
+              <br />
+            </div>
           </div>
+          <p
+            className="secondaryText"
+          >
+            Secondary Text
+          </p>
         </div>
-        
       </div>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
+      Multiline error
+    </h2>
+    <div>
+      <div
+        className="input active error"
+      >
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container multiline"
+          >
+            <textarea
+              disabled={false}
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="name@email.com"
+              rows="1"
+              value="pagarme@pagar.me"
+            />
+            
+            <div
+              className="expander"
+            >
+              pagarme@pagar.me
+              <br />
+            </div>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Error!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className={undefined}
+  >
+    <h2>
+      Multiline success
+    </h2>
+    <div>
+      <div
+        className="input active success"
+      >
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container multiline"
+          >
+            <textarea
+              disabled={false}
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="name@email.com"
+              rows="1"
+              value="pagarme@pagar.me"
+            />
+            
+            <div
+              className="expander"
+            >
+              pagarme@pagar.me
+              <br />
+            </div>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Success!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className={undefined}
+  >
+    <h2>
+      Icon disabled
+    </h2>
+    <div>
+      <div
+        className="input disabled"
+      >
+        <div
+          className="icon"
+        >
+          <Mail32.svg
+            height={16}
+            width={16}
+          />
+        </div>
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container"
+          >
+            <input
+              disabled={true}
+              id="name-shortid-mock"
+              name="name"
+              onBlur={[Function]}
+              onChange={null}
+              onFocus={[Function]}
+              placeholder="disabled"
+              type="text"
+              value=""
+            />
+            <label
+              className=""
+              htmlFor="name-shortid-mock"
+            >
+              Your email
+            </label>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className={undefined}
+  >
+    <h2>
+      Icon default
+    </h2>
+    <div>
+      <div
+        className="input active"
+      >
+        <div
+          className="icon"
+        >
+          <Mail32.svg
+            height={16}
+            width={16}
+          />
+        </div>
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container"
+          >
+            <input
+              disabled={false}
+              id="email-shortid-mock"
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="name@email.com"
+              type="text"
+              value="pagarme@pagar.me"
+            />
+            
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Secondary Text
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className={undefined}
+  >
+    <h2>
+      Icon error
+    </h2>
+    <div>
+      <div
+        className="input active error"
+      >
+        <div
+          className="icon"
+        >
+          <Mail32.svg
+            height={16}
+            width={16}
+          />
+        </div>
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container"
+          >
+            <input
+              disabled={false}
+              id="email-shortid-mock"
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="name@email.com"
+              type="text"
+              value="pagarme@pagar.me"
+            />
+            
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Error!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className={undefined}
+  >
+    <h2>
+      Icon success
+    </h2>
+    <div>
+      <div
+        className="input active success"
+      >
+        <div
+          className="icon"
+        >
+          <Mail32.svg
+            height={16}
+            width={16}
+          />
+        </div>
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container"
+          >
+            <input
+              disabled={false}
+              id="email-shortid-mock"
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="name@email.com"
+              type="text"
+              value="pagarme@pagar.me"
+            />
+            
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Success!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className={undefined}
+  >
+    <h2>
+      Icon multiline disabled
+    </h2>
+    <div>
+      <div
+        className="input disabled"
+      >
+        <div
+          className="icon"
+        >
+          <Mail32.svg
+            height={16}
+            width={16}
+          />
+        </div>
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container multiline"
+          >
+            <textarea
+              disabled={true}
+              name="multiline"
+              onBlur={[Function]}
+              onChange={null}
+              onFocus={[Function]}
+              placeholder="disabled"
+              rows="1"
+              value=""
+            />
+            <label
+              className=""
+              htmlFor="multiline-shortid-mock"
+            >
+              Disabled
+            </label>
+            <div
+              className="expander"
+            >
+              
+              <br />
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className={undefined}
+  >
+    <h2>
       Icon multiline default
-    </h3>
-    <div
-      className="input active"
-    >
+    </h2>
+    <div>
       <div
-        className="icon"
-      >
-        <Mail32.svg
-          height={16}
-          width={16}
-        />
-      </div>
-      <div
-        className="boxContainer"
+        className="input active"
       >
         <div
-          className="container multiline"
+          className="icon"
         >
-          <textarea
-            disabled={false}
-            name="email"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="nome@email.com"
-            rows="1"
-            value="Leo"
+          <Mail32.svg
+            height={16}
+            width={16}
           />
-          <label
-            className="contentPresent"
-            htmlFor="email-shortid-mock"
-          >
-            Digite seu email
-          </label>
-          <div
-            className="expander"
-          >
-            Leo
-            <br />
-          </div>
         </div>
-        <p
-          className="secondaryText"
+        <div
+          className="boxContainer"
         >
-          Texto secundario
-        </p>
+          <div
+            className="container multiline"
+          >
+            <textarea
+              disabled={false}
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="name@email.com"
+              rows="1"
+              value="pagarme@pagar.me"
+            />
+            
+            <div
+              className="expander"
+            >
+              pagarme@pagar.me
+              <br />
+            </div>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Secondary Text
+          </p>
+        </div>
       </div>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Icon multiline error
-    </h3>
-    <div
-      className="input active error"
-    >
+    </h2>
+    <div>
       <div
-        className="icon"
-      >
-        <Mail32.svg
-          height={16}
-          width={16}
-        />
-      </div>
-      <div
-        className="boxContainer"
+        className="input active error"
       >
         <div
-          className="container multiline"
+          className="icon"
         >
-          <textarea
-            disabled={false}
-            name="email"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="nome@email.com"
-            rows="1"
-            value="Leo"
+          <Mail32.svg
+            height={16}
+            width={16}
           />
-          <label
-            className="contentPresent"
-            htmlFor="email-shortid-mock"
-          >
-            Digite seu email
-          </label>
-          <div
-            className="expander"
-          >
-            Leo
-            <br />
-          </div>
         </div>
-        <p
-          className="secondaryText"
+        <div
+          className="boxContainer"
         >
-          Erro!
-        </p>
+          <div
+            className="container multiline"
+          >
+            <textarea
+              disabled={false}
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="name@email.com"
+              rows="1"
+              value="pagarme@pagar.me"
+            />
+            
+            <div
+              className="expander"
+            >
+              pagarme@pagar.me
+              <br />
+            </div>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Error!
+          </p>
+        </div>
       </div>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Icon multiline success
-    </h3>
-    <div
-      className="input active success"
-    >
+    </h2>
+    <div>
       <div
-        className="icon"
-      >
-        <Mail32.svg
-          height={16}
-          width={16}
-        />
-      </div>
-      <div
-        className="boxContainer"
+        className="input active success"
       >
         <div
-          className="container multiline"
+          className="icon"
         >
-          <textarea
-            disabled={false}
-            name="email"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="nome@email.com"
-            rows="1"
-            value="Leo"
+          <Mail32.svg
+            height={16}
+            width={16}
           />
-          <label
-            className="contentPresent"
-            htmlFor="email-shortid-mock"
-          >
-            Digite seu email
-          </label>
+        </div>
+        <div
+          className="boxContainer"
+        >
           <div
-            className="expander"
+            className="container multiline"
           >
-            Leo
-            <br />
+            <textarea
+              disabled={false}
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="name@email.com"
+              rows="1"
+              value="pagarme@pagar.me"
+            />
+            
+            <div
+              className="expander"
+            >
+              pagarme@pagar.me
+              <br />
+            </div>
           </div>
+          <p
+            className="secondaryText"
+          >
+            Success!
+          </p>
         </div>
-        <p
-          className="secondaryText"
-        >
-          Sucesso!
-        </p>
       </div>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Password disabled
-    </h3>
-    <div
-      className="input disabled"
-    >
+    </h2>
+    <div>
       <div
-        className="boxContainer"
+        className="input disabled"
       >
         <div
-          className="container"
+          className="boxContainer"
         >
-          <input
-            disabled={true}
-            id="pass-shortid-mock"
-            name="pass"
-            onBlur={[Function]}
-            onChange={null}
-            onFocus={[Function]}
-            placeholder="eae"
-            type="password"
-            value=""
-          />
-          <label
-            className=""
-            htmlFor="pass-shortid-mock"
+          <div
+            className="container"
           >
-            Digite sua senha
-          </label>
+            <input
+              disabled={true}
+              id="pass-shortid-mock"
+              name="pass"
+              onBlur={[Function]}
+              onChange={null}
+              onFocus={[Function]}
+              placeholder="disabled"
+              type="password"
+              value=""
+            />
+            <label
+              className=""
+              htmlFor="pass-shortid-mock"
+            >
+              Your password
+            </label>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Must have more than 12 pixel
+          </p>
         </div>
-        <p
-          className="secondaryText"
-        >
-          Minimo de 12 pixels
-        </p>
       </div>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Password default
-    </h3>
-    <div
-      className="input active"
-    >
+    </h2>
+    <div>
       <div
-        className="boxContainer"
+        className="input active"
       >
         <div
-          className="container"
+          className="boxContainer"
         >
-          <input
-            disabled={false}
-            id="email-shortid-mock"
-            name="email"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="nome@email.com"
-            type="password"
-            value="Leo"
-          />
-          <button
-            className="displayPasswordIcon"
-            onClick={[Function]}
+          <div
+            className="container"
           >
-            <svg />
-          </button>
-          <label
-            className="contentPresent"
-            htmlFor="email-shortid-mock"
+            <input
+              disabled={false}
+              id="email-shortid-mock"
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="name@email.com"
+              type="password"
+              value="pagarme@pagar.me"
+            />
+            <button
+              className="displayPasswordIcon"
+              onClick={[Function]}
+            >
+              <svg />
+            </button>
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your password
+            </label>
+          </div>
+          <p
+            className="secondaryText"
           >
-            Digite seu email
-          </label>
+            Secondary Text
+          </p>
         </div>
-        <p
-          className="secondaryText"
-        >
-          Texto secundario
-        </p>
       </div>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Password error
-    </h3>
-    <div
-      className="input active error"
-    >
+    </h2>
+    <div>
       <div
-        className="boxContainer"
+        className="input active error"
       >
         <div
-          className="container"
+          className="boxContainer"
         >
-          <input
-            disabled={false}
-            id="email-shortid-mock"
-            name="email"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="nome@email.com"
-            type="password"
-            value="Leo"
-          />
-          <button
-            className="displayPasswordIcon"
-            onClick={[Function]}
+          <div
+            className="container"
           >
-            <svg />
-          </button>
-          <label
-            className="contentPresent"
-            htmlFor="email-shortid-mock"
+            <input
+              disabled={false}
+              id="email-shortid-mock"
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="name@email.com"
+              type="password"
+              value="pagarme@pagar.me"
+            />
+            <button
+              className="displayPasswordIcon"
+              onClick={[Function]}
+            >
+              <svg />
+            </button>
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your password
+            </label>
+          </div>
+          <p
+            className="secondaryText"
           >
-            Digite seu email
-          </label>
+            Error
+          </p>
         </div>
-        <p
-          className="secondaryText"
-        >
-          Digite mais caracteres
-        </p>
       </div>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Password success
-    </h3>
-    <div
-      className="input active success"
-    >
+    </h2>
+    <div>
       <div
-        className="boxContainer"
+        className="input active success"
       >
         <div
-          className="container"
+          className="boxContainer"
         >
-          <input
-            disabled={false}
-            id="email-shortid-mock"
-            name="email"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="nome@email.com"
-            type="password"
-            value="Leo"
-          />
-          <button
-            className="displayPasswordIcon"
-            onClick={[Function]}
+          <div
+            className="container"
           >
-            <svg />
-          </button>
-          <label
-            className="contentPresent"
-            htmlFor="email-shortid-mock"
+            <input
+              disabled={false}
+              id="email-shortid-mock"
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="name@email.com"
+              type="password"
+              value="pagarme@pagar.me"
+            />
+            <button
+              className="displayPasswordIcon"
+              onClick={[Function]}
+            >
+              <svg />
+            </button>
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your password
+            </label>
+          </div>
+          <p
+            className="secondaryText"
           >
-            Digite seu email
-          </label>
+            Success
+          </p>
         </div>
-        <p
-          className="secondaryText"
-        >
-          Boa rapá
-        </p>
       </div>
     </div>
   </section>

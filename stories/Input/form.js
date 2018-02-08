@@ -3,9 +3,8 @@ import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import IconMail from 'emblematic-icons/svg/Mail32.svg'
 
+import Section from '../Section'
 import Input from '../../src/Input/form'
-import style from '../style.css'
-
 
 class InputState extends React.Component {
   constructor (props) {
@@ -20,6 +19,7 @@ class InputState extends React.Component {
       multiline,
       success,
       type,
+      label,
     } = this.props
 
     const {
@@ -50,162 +50,144 @@ InputState.defaultProps = {
   multiline: false,
   success: '',
   type: null,
+  labe: 'Your email',
 }
 
 storiesOf('Inputs', module)
   .add('Form', () => (
-    <div className={style.container}>
-      <h2>Form Inputs</h2>
-
-      <section>
-        <h3>Disabled</h3>
+    <div>
+      <Section title="Disabled">
         <Input
           name="email"
-          label="Digite seu email"
+          label="Your email"
           disabled
-          hint="Texto secundário"
-          placeholder="eae"
+          hint="Secondary Text"
+          placeholder="disabled"
           onChange={action('text changed')}
           value=""
         />
-      </section>
+      </Section>
 
-      <section>
-        <h3>Default</h3>
+      <Section title="Default">
         <InputState type="text" />
-      </section>
+      </Section>
 
-      <section>
-        <h3>Error</h3>
-        <InputState type="text" error="Email no formato errado" />
-      </section>
+      <Section title="Error">
+        <InputState type="text" error="Invalid email" />
+      </Section>
 
-      <section>
-        <h3>Success</h3>
-        <InputState type="text" success="Good jobi lirou frendi" />
-      </section>
+      <Section title="Success">
+        <InputState type="text" success="Success" />
+      </Section>
 
-      <section>
-        <h3>Multiline disabled</h3>
+      <Section title="Multiline disabled">
         <Input
-          name="teste"
-          label="Fale tudo"
+          name="multiline"
+          label="Disabled"
           multiline
-          placeholder="eae"
+          placeholder="disabled"
           disabled
           onChange={action('text changed')}
           value=""
         />
-      </section>
+      </Section>
 
-      <section>
-        <h3>Multiline default</h3>
-        <InputState multiline placeholder="eae" />
-      </section>
+      <Section title="Multiline default">
+        <InputState multiline placeholder="default" />
+      </Section>
 
-      <section>
-        <h3>Multiline error</h3>
-        <InputState multiline error="Erro!" />
-      </section>
+      <Section title="Multiline error">
+        <InputState multiline error="Error!" />
+      </Section>
 
-      <section>
-        <h3>Multiline success</h3>
-        <InputState multiline success="Sucesso!" />
-      </section>
+      <Section title="Multiline success">
+        <InputState multiline success="Success!" />
+      </Section>
 
-      <section>
-        <h3>Icon disabled</h3>
+      <Section title="Icon disabled">
         <Input
           name="name"
-          label="Digite seu nome"
-          placeholder="eaee"
+          label="Your email"
+          placeholder="disabled"
           disabled
           icon={<IconMail width={16} height={16} />}
           onChange={action('text changed')}
           value=""
         />
-      </section>
+      </Section>
 
-      <section>
-        <h3>Icon default</h3>
+      <Section title="Icon default">
         <InputState type="text" icon={<IconMail width={16} height={16} />} />
-      </section>
+      </Section>
 
-      <section>
-        <h3>Icon error</h3>
-        <InputState type="text" error="Erro!" icon={<IconMail width={16} height={16} />} />
-      </section>
+      <Section title="Icon error">
+        <InputState type="text" error="Error!" icon={<IconMail width={16} height={16} />} />
+      </Section>
 
-      <section>
-        <h3>Icon success</h3>
-        <InputState type="text" success="Sucesso!" icon={<IconMail width={16} height={16} />} />
-      </section>
+      <Section title="Icon success">
+        <InputState type="text" success="Success!" icon={<IconMail width={16} height={16} />} />
+      </Section>
 
-      <section>
-        <h3>Icon multiline disabled</h3>
+      <Section title="Icon multiline disabled">
         <Input
-          name="teste"
-          label="Fale tudo"
-          placeholder="eae"
+          name="multiline"
+          label="Disabled"
+          placeholder="disabled"
           multiline
           disabled
           icon={<IconMail width={16} height={16} />}
           onChange={action('text changed')}
           value=""
         />
-      </section>
+      </Section>
 
-      <section>
-        <h3>Icon multiline default</h3>
+      <Section title="Icon multiline default">
         <InputState multiline icon={<IconMail width={16} height={16} />} />
-      </section>
+      </Section>
 
-      <section>
-        <h3>Icon multiline error</h3>
-        <InputState multiline error="Erro!" icon={<IconMail width={16} height={16} />} />
-      </section>
+      <Section title="Icon multiline error">
+        <InputState multiline error="Error!" icon={<IconMail width={16} height={16} />} />
+      </Section>
 
-      <section>
-        <h3>Icon multiline success</h3>
-        <InputState multiline success="Sucesso!" icon={<IconMail width={16} height={16} />} />
-      </section>
+      <Section title="Icon multiline success">
+        <InputState multiline success="Success!" icon={<IconMail width={16} height={16} />} />
+      </Section>
 
-      <section>
-        <h3>Password disabled</h3>
+      <Section title="Password disabled">
         <Input
           type="password"
           name="pass"
-          label="Digite sua senha"
+          label="Your password"
           disabled
-          placeholder="eae"
-          hint="Minimo de 12 pixels"
+          placeholder="disabled"
+          hint="Must have more than 12 pixel"
           onChange={action('text changed')}
           value=""
         />
-      </section>
+      </Section>
 
-      <section>
-        <h3>Password default</h3>
+      <Section title="Password default">
         <InputState
           type="password"
+          label="Your password"
         />
-      </section>
+      </Section>
 
-      <section>
-        <h3>Password error</h3>
+      <Section title="Password error">
         <InputState
           type="password"
-          error="Digite mais caracteres"
+          label="Your password"
+          error="Error"
         />
-      </section>
+      </Section>
 
-      <section>
-        <h3>Password success</h3>
+      <Section title="Password success">
         <InputState
           type="password"
-          success="Boa rapá"
+          label="Your password"
+          success="Success"
         />
-      </section>
+      </Section>
     </div>
   ))
 
