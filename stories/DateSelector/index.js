@@ -2,9 +2,8 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import moment from 'moment'
 
+import Section from '../Section'
 import DateSelector from '../../src/DateSelector'
-
-import style from './style.css'
 
 const presets = [
   {
@@ -83,7 +82,7 @@ class DateSelectorExample extends React.Component {
 
 storiesOf('DateSelector', module)
   .add('All types with defaultTheme', () => (
-    <div className={style.container}>
+    <Section title="Only example">
       <DateSelectorExample />
-    </div>
+    </Section>
   ))
