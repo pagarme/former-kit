@@ -10,7 +10,7 @@ import style from '../style.css'
 class InputState extends React.Component {
   constructor (props) {
     super(props)
-    this.state = { email: 'Leo' }
+    this.state = { email: 'pagarme@pagar.me' }
   }
 
   render () {
@@ -29,13 +29,13 @@ class InputState extends React.Component {
     return (
       <Input
         error={error}
-        hint="Texto secundario"
+        hint="Secondary text"
         icon={icon}
-        label="Digite seu email"
+        label="Your email"
         multiline={multiline}
         name="email"
         onChange={e => this.setState({ email: e.target.value })}
-        placeholder="nome@email.com"
+        placeholder="name@email.com"
         success={success}
         type={type}
         value={email}

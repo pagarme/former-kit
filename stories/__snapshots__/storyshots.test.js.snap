@@ -7934,21 +7934,21 @@ exports[`Storyshots Inputs Default 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            placeholder="nome@email.com"
+            placeholder="name@email.com"
             type="text"
-            value="Leo"
+            value="pagarme@pagar.me"
           />
           <label
             className="contentPresent"
             htmlFor="email-shortid-mock"
           >
-            Digite seu email
+            Your email
           </label>
         </div>
         <p
           className="secondaryText"
         >
-          Texto secundario
+          Secondary text
         </p>
       </div>
     </div>
@@ -7973,15 +7973,15 @@ exports[`Storyshots Inputs Default 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            placeholder="nome@email.com"
+            placeholder="name@email.com"
             type="text"
-            value="Leo"
+            value="pagarme@pagar.me"
           />
           <label
             className="contentPresent"
             htmlFor="email-shortid-mock"
           >
-            Digite seu email
+            Your email
           </label>
         </div>
         <p
@@ -8012,15 +8012,15 @@ exports[`Storyshots Inputs Default 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            placeholder="nome@email.com"
+            placeholder="name@email.com"
             type="text"
-            value="Leo"
+            value="pagarme@pagar.me"
           />
           <label
             className="contentPresent"
             htmlFor="email-shortid-mock"
           >
-            Digite seu email
+            Your email
           </label>
         </div>
         <p
@@ -8090,27 +8090,27 @@ exports[`Storyshots Inputs Default 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            placeholder="nome@email.com"
+            placeholder="name@email.com"
             rows="1"
-            value="Leo"
+            value="pagarme@pagar.me"
           />
           <label
             className="contentPresent"
             htmlFor="email-shortid-mock"
           >
-            Digite seu email
+            Your email
           </label>
           <div
             className="expander"
           >
-            Leo
+            pagarme@pagar.me
             <br />
           </div>
         </div>
         <p
           className="secondaryText"
         >
-          Texto secundario
+          Secondary text
         </p>
       </div>
     </div>
@@ -8134,20 +8134,20 @@ exports[`Storyshots Inputs Default 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            placeholder="nome@email.com"
+            placeholder="name@email.com"
             rows="1"
-            value="Leo"
+            value="pagarme@pagar.me"
           />
           <label
             className="contentPresent"
             htmlFor="email-shortid-mock"
           >
-            Digite seu email
+            Your email
           </label>
           <div
             className="expander"
           >
-            Leo
+            pagarme@pagar.me
             <br />
           </div>
         </div>
@@ -8178,20 +8178,20 @@ exports[`Storyshots Inputs Default 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            placeholder="nome@email.com"
+            placeholder="name@email.com"
             rows="1"
-            value="Leo"
+            value="pagarme@pagar.me"
           />
           <label
             className="contentPresent"
             htmlFor="email-shortid-mock"
           >
-            Digite seu email
+            Your email
           </label>
           <div
             className="expander"
           >
-            Leo
+            pagarme@pagar.me
             <br />
           </div>
         </div>
@@ -8274,21 +8274,21 @@ exports[`Storyshots Inputs Default 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            placeholder="nome@email.com"
+            placeholder="name@email.com"
             type="text"
-            value="Leo"
+            value="pagarme@pagar.me"
           />
           <label
             className="contentPresent"
             htmlFor="email-shortid-mock"
           >
-            Digite seu email
+            Your email
           </label>
         </div>
         <p
           className="secondaryText"
         >
-          Texto secundario
+          Secondary text
         </p>
       </div>
     </div>
@@ -8321,15 +8321,15 @@ exports[`Storyshots Inputs Default 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            placeholder="nome@email.com"
+            placeholder="name@email.com"
             type="text"
-            value="Leo"
+            value="pagarme@pagar.me"
           />
           <label
             className="contentPresent"
             htmlFor="email-shortid-mock"
           >
-            Digite seu email
+            Your email
           </label>
         </div>
         <p
@@ -8368,15 +8368,15 @@ exports[`Storyshots Inputs Default 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            placeholder="nome@email.com"
+            placeholder="name@email.com"
             type="text"
-            value="Leo"
+            value="pagarme@pagar.me"
           />
           <label
             className="contentPresent"
             htmlFor="email-shortid-mock"
           >
-            Digite seu email
+            Your email
           </label>
         </div>
         <p
@@ -8462,27 +8462,27 @@ exports[`Storyshots Inputs Default 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            placeholder="nome@email.com"
+            placeholder="name@email.com"
             rows="1"
-            value="Leo"
+            value="pagarme@pagar.me"
           />
           <label
             className="contentPresent"
             htmlFor="email-shortid-mock"
           >
-            Digite seu email
+            Your email
           </label>
           <div
             className="expander"
           >
-            Leo
+            pagarme@pagar.me
             <br />
           </div>
         </div>
         <p
           className="secondaryText"
         >
-          Texto secundario
+          Secondary text
         </p>
       </div>
     </div>
@@ -8514,20 +8514,20 @@ exports[`Storyshots Inputs Default 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            placeholder="nome@email.com"
+            placeholder="name@email.com"
             rows="1"
-            value="Leo"
+            value="pagarme@pagar.me"
           />
           <label
             className="contentPresent"
             htmlFor="email-shortid-mock"
           >
-            Digite seu email
+            Your email
           </label>
           <div
             className="expander"
           >
-            Leo
+            pagarme@pagar.me
             <br />
           </div>
         </div>
@@ -8566,20 +8566,20 @@ exports[`Storyshots Inputs Default 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            placeholder="nome@email.com"
+            placeholder="name@email.com"
             rows="1"
-            value="Leo"
+            value="pagarme@pagar.me"
           />
           <label
             className="contentPresent"
             htmlFor="email-shortid-mock"
           >
-            Digite seu email
+            Your email
           </label>
           <div
             className="expander"
           >
-            Leo
+            pagarme@pagar.me
             <br />
           </div>
         </div>
@@ -8650,9 +8650,9 @@ exports[`Storyshots Inputs Default 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            placeholder="nome@email.com"
+            placeholder="name@email.com"
             type="password"
-            value="Leo"
+            value="pagarme@pagar.me"
           />
           <button
             className="displayPasswordIcon"
@@ -8664,13 +8664,13 @@ exports[`Storyshots Inputs Default 1`] = `
             className="contentPresent"
             htmlFor="email-shortid-mock"
           >
-            Digite seu email
+            Your email
           </label>
         </div>
         <p
           className="secondaryText"
         >
-          Texto secundario
+          Secondary text
         </p>
       </div>
     </div>
@@ -8695,9 +8695,9 @@ exports[`Storyshots Inputs Default 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            placeholder="nome@email.com"
+            placeholder="name@email.com"
             type="password"
-            value="Leo"
+            value="pagarme@pagar.me"
           />
           <button
             className="displayPasswordIcon"
@@ -8709,7 +8709,7 @@ exports[`Storyshots Inputs Default 1`] = `
             className="contentPresent"
             htmlFor="email-shortid-mock"
           >
-            Digite seu email
+            Your email
           </label>
         </div>
         <p
@@ -8740,9 +8740,9 @@ exports[`Storyshots Inputs Default 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            placeholder="nome@email.com"
+            placeholder="name@email.com"
             type="password"
-            value="Leo"
+            value="pagarme@pagar.me"
           />
           <button
             className="displayPasswordIcon"
@@ -8754,7 +8754,7 @@ exports[`Storyshots Inputs Default 1`] = `
             className="contentPresent"
             htmlFor="email-shortid-mock"
           >
-            Digite seu email
+            Your email
           </label>
         </div>
         <p
