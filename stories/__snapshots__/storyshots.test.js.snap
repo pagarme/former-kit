@@ -1815,12 +1815,18 @@ exports[`Storyshots Colors all 1`] = `
 <div
   className="typography"
 >
-  <h1>
-    Light Theme
-  </h1>
-  <div
+  <section
     className={undefined}
-  />
+  >
+    <h2>
+      Light Theme
+    </h2>
+    <div>
+      <div
+        className={undefined}
+      />
+    </div>
+  </section>
 </div>
 `;
 
