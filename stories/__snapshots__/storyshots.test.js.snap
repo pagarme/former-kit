@@ -1471,43 +1471,21 @@ exports[`Storyshots Checkbox Group Default 1`] = `
               className="checkbox"
             >
               <input
-                checked={false}
-                disabled={false}
-                id="default-leo-leo"
-                name="default-leo"
-                onChange={[Function]}
-                type="checkbox"
-                value="leo"
-              />
-              <label
-                htmlFor="default-leo-leo"
-              >
-                <i
-                  className="check"
-                />
-                Leo
-              </label>
-              
-            </div>
-            <div
-              className="checkbox"
-            >
-              <input
                 checked={true}
                 disabled={false}
-                id="default-nerone-nerone"
-                name="default-nerone"
+                id="default-github-github"
+                name="default-github"
                 onChange={[Function]}
                 type="checkbox"
-                value="nerone"
+                value="github"
               />
               <label
-                htmlFor="default-nerone-nerone"
+                htmlFor="default-github-github"
               >
                 <i
                   className="check"
                 />
-                Nerone
+                Github
               </label>
               
             </div>
@@ -1517,19 +1495,41 @@ exports[`Storyshots Checkbox Group Default 1`] = `
               <input
                 checked={false}
                 disabled={false}
-                id="default-hi-hi"
-                name="default-hi"
+                id="default-open-source-open-source"
+                name="default-open-source"
                 onChange={[Function]}
                 type="checkbox"
-                value="hi"
+                value="open-source"
               />
               <label
-                htmlFor="default-hi-hi"
+                htmlFor="default-open-source-open-source"
               >
                 <i
                   className="check"
                 />
-                hi
+                Open Source
+              </label>
+              
+            </div>
+            <div
+              className="checkbox"
+            >
+              <input
+                checked={false}
+                disabled={false}
+                id="default-pilot-pilot"
+                name="default-pilot"
+                onChange={[Function]}
+                type="checkbox"
+                value="pilot"
+              />
+              <label
+                htmlFor="default-pilot-pilot"
+              >
+                <i
+                  className="check"
+                />
+                Pilot
               </label>
               
             </div>
@@ -1537,8 +1537,8 @@ exports[`Storyshots Checkbox Group Default 1`] = `
         </div>
       </div>
       <p>
-        Selecionado: 
-        nerone
+        Selected: 
+        github
       </p>
     </div>
   </section>
@@ -1557,43 +1557,21 @@ exports[`Storyshots Checkbox Group Default 1`] = `
               className="checkbox disabled"
             >
               <input
-                checked={false}
-                disabled={true}
-                id="disabled-leo-leo"
-                name="disabled-leo"
-                onChange={[Function]}
-                type="checkbox"
-                value="leo"
-              />
-              <label
-                htmlFor="disabled-leo-leo"
-              >
-                <i
-                  className="check"
-                />
-                Leo
-              </label>
-              
-            </div>
-            <div
-              className="checkbox disabled"
-            >
-              <input
                 checked={true}
                 disabled={true}
-                id="disabled-nerone-nerone"
-                name="disabled-nerone"
+                id="disabled-github-github"
+                name="disabled-github"
                 onChange={[Function]}
                 type="checkbox"
-                value="nerone"
+                value="github"
               />
               <label
-                htmlFor="disabled-nerone-nerone"
+                htmlFor="disabled-github-github"
               >
                 <i
                   className="check"
                 />
-                Nerone
+                Github
               </label>
               
             </div>
@@ -1603,19 +1581,41 @@ exports[`Storyshots Checkbox Group Default 1`] = `
               <input
                 checked={false}
                 disabled={true}
-                id="disabled-hi-hi"
-                name="disabled-hi"
+                id="disabled-open-source-open-source"
+                name="disabled-open-source"
                 onChange={[Function]}
                 type="checkbox"
-                value="hi"
+                value="open-source"
               />
               <label
-                htmlFor="disabled-hi-hi"
+                htmlFor="disabled-open-source-open-source"
               >
                 <i
                   className="check"
                 />
-                hi
+                Open Source
+              </label>
+              
+            </div>
+            <div
+              className="checkbox disabled"
+            >
+              <input
+                checked={false}
+                disabled={true}
+                id="disabled-pilot-pilot"
+                name="disabled-pilot"
+                onChange={[Function]}
+                type="checkbox"
+                value="pilot"
+              />
+              <label
+                htmlFor="disabled-pilot-pilot"
+              >
+                <i
+                  className="check"
+                />
+                Pilot
               </label>
               
             </div>
@@ -1623,8 +1623,8 @@ exports[`Storyshots Checkbox Group Default 1`] = `
         </div>
       </div>
       <p>
-        Selecionado: 
-        nerone
+        Selected: 
+        github
       </p>
     </div>
   </section>
@@ -1647,43 +1647,21 @@ exports[`Storyshots Checkbox Group Default 1`] = `
               className="checkbox"
             >
               <input
-                checked={false}
-                disabled={false}
-                id="success-leo-leo"
-                name="success-leo"
-                onChange={[Function]}
-                type="checkbox"
-                value="leo"
-              />
-              <label
-                htmlFor="success-leo-leo"
-              >
-                <i
-                  className="check"
-                />
-                Leo
-              </label>
-              
-            </div>
-            <div
-              className="checkbox"
-            >
-              <input
                 checked={true}
                 disabled={false}
-                id="success-nerone-nerone"
-                name="success-nerone"
+                id="success-github-github"
+                name="success-github"
                 onChange={[Function]}
                 type="checkbox"
-                value="nerone"
+                value="github"
               />
               <label
-                htmlFor="success-nerone-nerone"
+                htmlFor="success-github-github"
               >
                 <i
                   className="check"
                 />
-                Nerone
+                Github
               </label>
               
             </div>
@@ -1693,19 +1671,41 @@ exports[`Storyshots Checkbox Group Default 1`] = `
               <input
                 checked={false}
                 disabled={false}
-                id="success-hi-hi"
-                name="success-hi"
+                id="success-open-source-open-source"
+                name="success-open-source"
                 onChange={[Function]}
                 type="checkbox"
-                value="hi"
+                value="open-source"
               />
               <label
-                htmlFor="success-hi-hi"
+                htmlFor="success-open-source-open-source"
               >
                 <i
                   className="check"
                 />
-                hi
+                Open Source
+              </label>
+              
+            </div>
+            <div
+              className="checkbox"
+            >
+              <input
+                checked={false}
+                disabled={false}
+                id="success-pilot-pilot"
+                name="success-pilot"
+                onChange={[Function]}
+                type="checkbox"
+                value="pilot"
+              />
+              <label
+                htmlFor="success-pilot-pilot"
+              >
+                <i
+                  className="check"
+                />
+                Pilot
               </label>
               
             </div>
@@ -1713,8 +1713,8 @@ exports[`Storyshots Checkbox Group Default 1`] = `
         </div>
       </div>
       <p>
-        Selecionado: 
-        nerone
+        Selected: 
+        github
       </p>
     </div>
   </section>
@@ -1737,43 +1737,21 @@ exports[`Storyshots Checkbox Group Default 1`] = `
               className="checkbox"
             >
               <input
-                checked={false}
-                disabled={false}
-                id="error-leo-leo"
-                name="error-leo"
-                onChange={[Function]}
-                type="checkbox"
-                value="leo"
-              />
-              <label
-                htmlFor="error-leo-leo"
-              >
-                <i
-                  className="check"
-                />
-                Leo
-              </label>
-              
-            </div>
-            <div
-              className="checkbox"
-            >
-              <input
                 checked={true}
                 disabled={false}
-                id="error-nerone-nerone"
-                name="error-nerone"
+                id="error-github-github"
+                name="error-github"
                 onChange={[Function]}
                 type="checkbox"
-                value="nerone"
+                value="github"
               />
               <label
-                htmlFor="error-nerone-nerone"
+                htmlFor="error-github-github"
               >
                 <i
                   className="check"
                 />
-                Nerone
+                Github
               </label>
               
             </div>
@@ -1783,19 +1761,41 @@ exports[`Storyshots Checkbox Group Default 1`] = `
               <input
                 checked={false}
                 disabled={false}
-                id="error-hi-hi"
-                name="error-hi"
+                id="error-open-source-open-source"
+                name="error-open-source"
                 onChange={[Function]}
                 type="checkbox"
-                value="hi"
+                value="open-source"
               />
               <label
-                htmlFor="error-hi-hi"
+                htmlFor="error-open-source-open-source"
               >
                 <i
                   className="check"
                 />
-                hi
+                Open Source
+              </label>
+              
+            </div>
+            <div
+              className="checkbox"
+            >
+              <input
+                checked={false}
+                disabled={false}
+                id="error-pilot-pilot"
+                name="error-pilot"
+                onChange={[Function]}
+                type="checkbox"
+                value="pilot"
+              />
+              <label
+                htmlFor="error-pilot-pilot"
+              >
+                <i
+                  className="check"
+                />
+                Pilot
               </label>
               
             </div>
@@ -1803,8 +1803,8 @@ exports[`Storyshots Checkbox Group Default 1`] = `
         </div>
       </div>
       <p>
-        Selecionado: 
-        nerone
+        Selected: 
+        github
       </p>
     </div>
   </section>

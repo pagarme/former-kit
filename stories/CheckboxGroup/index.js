@@ -10,22 +10,22 @@ class CheckboxGroupState extends React.Component {
   constructor (props) {
     super(props)
 
-    this.state = { values: ['nerone'] }
+    this.state = { values: ['github'] }
   }
 
   render () {
     const options = [
       {
-        label: 'Leo',
-        value: 'leo',
+        label: 'Github',
+        value: 'github',
       },
       {
-        label: 'Nerone',
-        value: 'nerone',
+        label: 'Open Source',
+        value: 'open-source',
       },
       {
-        label: 'hi',
-        value: 'hi',
+        label: 'Pilot',
+        value: 'pilot',
       },
     ]
 
@@ -48,7 +48,7 @@ class CheckboxGroupState extends React.Component {
           values={this.state.values}
         />
 
-        <p>Selecionado: {this.state.values.join(', ')}</p>
+        <p>Selected: {this.state.values.join(', ')}</p>
       </div>
     )
   }
