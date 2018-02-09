@@ -61,7 +61,7 @@ module.exports = {
         },
         {
           name: 'Header',
-          content: './empty.md',
+          content: '../src/Header/README.md',
           components: () => [
             '../src/Header/Header.js',
             '../src/Header/HeaderBackButton.js',
