@@ -97,6 +97,7 @@ module.exports = {
         },
         {
           name: 'Modal',
+          content: '../src/Modal/README.md',
           components: () => [
             '../src/Modal/Modal.js',
             '../src/Modal/ModalActions.js',
