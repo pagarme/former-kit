@@ -85,7 +85,7 @@ module.exports = {
         },
         {
           name: 'Table',
-          content: './empty.md',
+          content: '../src/Table/README.md',
           components: () => [
             '../src/Table/index.js',
             '../src/Table/TableEmptyItem.js',
