@@ -13,20 +13,20 @@ import {
 storiesOf('Header', module)
   .add('Default', () => (
     <div style={{ background: '#e4e4e4', height: '100vh' }}>
-      <Section title="With title">
+      <Section title="Only title">
         <Header>
           <HeaderTitle>Transactions</HeaderTitle>
         </Header>
       </Section>
 
-      <Section title="Primary nivel">
+      <Section title="First level">
         <Header>
           <HeaderTitle>Transactions</HeaderTitle>
           <HeaderContentExample />
         </Header>
       </Section>
 
-      <Section title="Secondary nivel">
+      <Section title="Second level">
         <Header>
           <HeaderBackButton
             onClick={() => null}

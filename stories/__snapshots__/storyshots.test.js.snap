@@ -7931,7 +7931,7 @@ exports[`Storyshots Header Default 1`] = `
     className={undefined}
   >
     <h2>
-      With title
+      Only title
     </h2>
     <div>
       <header
@@ -7949,7 +7949,7 @@ exports[`Storyshots Header Default 1`] = `
     className={undefined}
   >
     <h2>
-      Primary nivel
+      First level
     </h2>
     <div>
       <header
@@ -8000,7 +8000,7 @@ exports[`Storyshots Header Default 1`] = `
     className={undefined}
   >
     <h2>
-      Secondary nivel
+      Second level
     </h2>
     <div>
       <header
