@@ -52,7 +52,7 @@ module.exports = {
         },
         {
           name: 'Grid',
-          content: './empty.md',
+          content: '../src/Grid/README.md',
           components: () => [
             '../src/Grid/Grid.js',
             '../src/Grid/Row.js',
