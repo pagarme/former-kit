@@ -14,7 +14,7 @@ const consumeTheme = ThemeConsumer('UILinearProgress')
  * Progress bar used to show some process progress.
  * The component receives a value and shows it as a progress value.
  */
-const Linear = ({
+const LinearProgress = ({
   theme,
   percent,
   disabled,
@@ -73,7 +73,7 @@ const Linear = ({
   )
 }
 
-Linear.propTypes = {
+LinearProgress.propTypes = {
   /**
    * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper.
    */
@@ -103,10 +103,10 @@ Linear.propTypes = {
   ]),
 }
 
-Linear.defaultProps = {
+LinearProgress.defaultProps = {
   theme: {},
   disabled: false,
   base: 'light',
 }
 
-export default consumeTheme(Linear)
+export default consumeTheme(LinearProgress)
