@@ -20,6 +20,7 @@ jobs:
           yarn lint
           yarn build
           yarn test
+          yarn percy; true
 
       - save_cache:
           paths:
