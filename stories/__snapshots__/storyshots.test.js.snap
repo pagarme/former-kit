@@ -1971,16 +1971,14 @@ exports[`Storyshots Checkbox Group Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Colors all 1`] = `
+exports[`Storyshots Colors Light theme 1`] = `
 <div
   className="typography"
 >
   <section
     className={undefined}
   >
-    <h2>
-      Light Theme
-    </h2>
+    
     <div>
       <div
         className={undefined}

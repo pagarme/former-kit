@@ -86,9 +86,9 @@ class Colors extends React.Component {
 }
 
 storiesOf('Colors', module)
-  .add('all', () => (
+  .add('Light theme', () => (
     <div className={style.root}>
-      <Section title="Light Theme">
+      <Section>
         <Colors theme="--color-light" />
       </Section>
     </div>
