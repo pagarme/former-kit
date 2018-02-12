@@ -1417,167 +1417,180 @@ exports[`Storyshots Checkbox Form 1`] = `
 <div
   className="typography"
 >
-  <h2>
-    Form Inputs
-  </h2>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Disabled
-    </h3>
-    <div
-      className="checkbox disabled"
-    >
-      <input
-        checked={false}
-        disabled={true}
-        id="disabled-"
-        name="disabled"
-        onChange={[Function]}
-        type="checkbox"
-        value=""
-      />
-      <label
-        htmlFor="disabled-"
+    </h2>
+    <div>
+      <div
+        className="checkbox disabled"
       >
-        <i
-          className="check"
+        <input
+          checked={false}
+          disabled={true}
+          id="disabled-"
+          name="disabled"
+          onChange={[Function]}
+          type="checkbox"
+          value=""
         />
-        Unchecked
-      </label>
-      
-    </div>
-    <div
-      className="checkbox disabled"
-    >
-      <input
-        checked={true}
-        disabled={true}
-        id="checkedDisabled-"
-        name="checkedDisabled"
-        onChange={[Function]}
-        type="checkbox"
-        value=""
-      />
-      <label
-        htmlFor="checkedDisabled-"
+        <label
+          htmlFor="disabled-"
+        >
+          <i
+            className="check"
+          />
+          Unchecked
+        </label>
+        
+      </div>
+      <div
+        className="checkbox disabled"
       >
-        <i
-          className="check"
+        <input
+          checked={true}
+          disabled={true}
+          id="checkedDisabled-"
+          name="checkedDisabled"
+          onChange={[Function]}
+          type="checkbox"
+          value=""
         />
-        Checked
-      </label>
-      
+        <label
+          htmlFor="checkedDisabled-"
+        >
+          <i
+            className="check"
+          />
+          Checked
+        </label>
+        
+      </div>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Default
-    </h3>
-    <div
-      className="checkbox"
-    >
-      <input
-        checked={false}
-        disabled={false}
-        id="default-"
-        name="default"
-        onChange={[Function]}
-        type="checkbox"
-        value=""
-      />
-      <label
-        htmlFor="default-"
+    </h2>
+    <div>
+      <div
+        className="checkbox"
       >
-        <i
-          className="check"
+        <input
+          checked={false}
+          disabled={false}
+          id="default-"
+          name="default"
+          onChange={[Function]}
+          type="checkbox"
+          value=""
         />
-        Unchecked
-      </label>
-      
-    </div>
-    <div
-      className="checkbox"
-    >
-      <input
-        checked={true}
-        disabled={false}
-        id="checkedDefault-"
-        name="checkedDefault"
-        onChange={[Function]}
-        type="checkbox"
-        value=""
-      />
-      <label
-        htmlFor="checkedDefault-"
+        <label
+          htmlFor="default-"
+        >
+          <i
+            className="check"
+          />
+          Unchecked
+        </label>
+        
+      </div>
+      <div
+        className="checkbox"
       >
-        <i
-          className="check"
+        <input
+          checked={true}
+          disabled={false}
+          id="checkedDefault-"
+          name="checkedDefault"
+          onChange={[Function]}
+          type="checkbox"
+          value=""
         />
-        Checked
-      </label>
-      
-    </div>
-  </section>
-  <section>
-    <h3>
-      Error
-    </h3>
-    <div
-      className="checkbox error"
-    >
-      <input
-        checked={false}
-        disabled={false}
-        id="default-Error"
-        name="default"
-        onChange={[Function]}
-        type="checkbox"
-        value="Error"
-      />
-      <label
-        htmlFor="default-Error"
-      >
-        <i
-          className="check"
-        />
-        Error
-      </label>
-      <p
-        className="secondaryText"
-      >
-        Error
-      </p>
+        <label
+          htmlFor="checkedDefault-"
+        >
+          <i
+            className="check"
+          />
+          Checked
+        </label>
+        
+      </div>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
+      Erro
+    </h2>
+    <div>
+      <div
+        className="checkbox error"
+      >
+        <input
+          checked={false}
+          disabled={false}
+          id="default-Error"
+          name="default"
+          onChange={[Function]}
+          type="checkbox"
+          value="Error"
+        />
+        <label
+          htmlFor="default-Error"
+        >
+          <i
+            className="check"
+          />
+          Error
+        </label>
+        <p
+          className="secondaryText"
+        >
+          Error
+        </p>
+      </div>
+    </div>
+  </section>
+  <section
+    className={undefined}
+  >
+    <h2>
       Success
-    </h3>
-    <div
-      className="checkbox success"
-    >
-      <input
-        checked={false}
-        disabled={false}
-        id="default-Success"
-        name="default"
-        onChange={[Function]}
-        type="checkbox"
-        value="Success"
-      />
-      <label
-        htmlFor="default-Success"
+    </h2>
+    <div>
+      <div
+        className="checkbox success"
       >
-        <i
-          className="check"
+        <input
+          checked={false}
+          disabled={false}
+          id="default-Success"
+          name="default"
+          onChange={[Function]}
+          type="checkbox"
+          value="Success"
         />
-        Success
-      </label>
-      <p
-        className="secondaryText"
-      >
-        Success
-      </p>
+        <label
+          htmlFor="default-Success"
+        >
+          <i
+            className="check"
+          />
+          Success
+        </label>
+        <p
+          className="secondaryText"
+        >
+          Success
+        </p>
+      </div>
     </div>
   </section>
 </div>
