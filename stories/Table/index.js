@@ -6,12 +6,12 @@ import Section from '../Section'
 
 storiesOf('Table', module)
   .add('Simple', () => (
-    <Section title="Simple">
+    <Section>
       <TableState clickableRow />
     </Section>
   ))
   .add('Selectable and expandable', () => (
-    <Section title="Selectable and expandable">
+    <Section>
       <TableState
         selectable
         expandable
@@ -19,7 +19,7 @@ storiesOf('Table', module)
     </Section>
   ))
   .add('Action column', () => (
-    <Section title="Action column">
+    <Section>
       <TableState primaryAction />
     </Section>
   ))

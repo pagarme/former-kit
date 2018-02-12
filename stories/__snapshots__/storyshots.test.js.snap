@@ -16329,9 +16329,7 @@ exports[`Storyshots Table Action column 1`] = `
 <section
   className={undefined}
 >
-  <h2>
-    Action column
-  </h2>
+  
   <div>
     <div>
       <table
@@ -16763,9 +16761,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
 <section
   className={undefined}
 >
-  <h2>
-    Selectable and expandable
-  </h2>
+  
   <div>
     <div>
       <table
@@ -17373,9 +17369,7 @@ exports[`Storyshots Table Simple 1`] = `
 <section
   className={undefined}
 >
-  <h2>
-    Simple
-  </h2>
+  
   <div>
     <div>
       <table
