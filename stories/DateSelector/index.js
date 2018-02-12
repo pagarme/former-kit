@@ -47,8 +47,8 @@ class DateSelectorExample extends React.Component {
 
     this.state = {
       dates: {
-        start: moment(),
-        end: moment(),
+        start: moment().subtract(5, 'days'),
+        end: moment().subtract(2, 'days'),
       },
       focusedInput: 'startDate',
     }
