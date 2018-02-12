@@ -11,8 +11,8 @@ import styles from './style.css'
 
 storiesOf('Buttons', module)
   .add('Default', () => (
-    <div className={styles.container}>
-      <Section title="Default Button">
+    <div>
+      <Section title="Default">
         <div className={styles.spacingAround}>
           <Button>Call to Action</Button>
           <Button relevance="high">Call to Action</Button>
@@ -27,7 +27,7 @@ storiesOf('Buttons', module)
         </div>
       </Section>
 
-      <Section title="Outline Button">
+      <Section title="Outline">
         <div className={styles.spacingAround}>
           <Button fill="outline">Call to Action</Button>
           <Button relevance="high" fill="outline">Call to Action</Button>
@@ -35,7 +35,7 @@ storiesOf('Buttons', module)
         </div>
       </Section>
 
-      <Section title="Clean Button">
+      <Section title="Clean">
         <div className={styles.spacingAround}>
           <Button fill="clean">Call to Action</Button>
           <Button relevance="high" fill="clean">Call to Action</Button>
@@ -43,7 +43,7 @@ storiesOf('Buttons', module)
         </div>
       </Section>
 
-      <Section title="All buttons with icons">
+      <Section title="With icons">
         <div className={styles.spacingAround}>
           <Button icon={<IconAdd width={12} height={12} />} />
           <Button icon={<IconAdd width={12} height={12} />} >Call to Action</Button>
@@ -158,7 +158,7 @@ storiesOf('Buttons', module)
         </div>
       </Section>
 
-      <Section title="All disabled">
+      <Section title="Disabled">
         <div className={styles.spacingAround}>
           <Button icon={<IconAdd width={12} height={12} />} disabled />
           <Button icon={<IconAdd width={12} height={12} />} disabled>Call to Action</Button>

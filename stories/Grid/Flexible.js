@@ -4,6 +4,7 @@ import { storiesOf } from '@storybook/react'
 
 import { Grid, Row, Col } from '../../src/Grid'
 import CardSample from './CardSample'
+import Section from '../Section'
 
 import style from './style.css'
 
@@ -17,7 +18,7 @@ const reallyLongString = [
 
 storiesOf('Grid', module)
   .add('Flexible', () => (
-    <div className={style.background}>
+    <Section className={style.background}>
       <Grid>
         <Row flex>
           <Col tv={6} desk={8} tablet={10} palm={12}>
@@ -56,5 +57,5 @@ storiesOf('Grid', module)
           </Col>
         </Row>
       </Grid>
-    </div>
+    </Section>
   ))

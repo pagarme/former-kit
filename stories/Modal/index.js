@@ -1,10 +1,8 @@
 import React, { Component } from 'react'
-
 import { storiesOf } from '@storybook/react'
 
 import IconAddPhoto from 'emblematic-icons/svg/Camera32.svg'
-
-import style from './style.css'
+import Section from '../Section'
 
 import {
   Modal,
@@ -84,7 +82,7 @@ class ModalWithState extends Component {
 
 storiesOf('Modal', module)
   .add('Default', () => (
-    <div className={style.container}>
+    <Section>
       <ModalWithState />
-    </div>
+    </Section>
   ))

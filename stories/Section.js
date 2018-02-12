@@ -1,12 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import classnames from 'classnames'
+
 import styles from './style.css'
 
 const Section = ({
   title,
   children,
+  className,
 }) => (
-  <section className={styles.section}>
+  <section className={classnames(styles.section, className)}>
     {title &&
       <h2>{title}</h2>
     }

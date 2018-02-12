@@ -5,7 +5,7 @@ exports[`Storyshots Alerts Default 1`] = `
   className="typography"
 >
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Warning
@@ -36,7 +36,7 @@ exports[`Storyshots Alerts Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Info
@@ -67,7 +67,7 @@ exports[`Storyshots Alerts Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Error
@@ -98,7 +98,7 @@ exports[`Storyshots Alerts Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Section
@@ -136,7 +136,7 @@ exports[`Storyshots Avatar Default 1`] = `
   className="typography"
 >
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Default icon and size
@@ -150,7 +150,7 @@ exports[`Storyshots Avatar Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       With custom image and default size
@@ -166,7 +166,7 @@ exports[`Storyshots Avatar Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       With custom image and size
@@ -189,10 +189,10 @@ exports[`Storyshots Buttons Default 1`] = `
   className="typography"
 >
   <section
-    className={undefined}
+    className=""
   >
     <h2>
-      Default Button
+      Default
     </h2>
     <div>
       <div
@@ -226,7 +226,7 @@ exports[`Storyshots Buttons Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Gradient
@@ -255,10 +255,10 @@ exports[`Storyshots Buttons Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
-      Outline Button
+      Outline
     </h2>
     <div>
       <div
@@ -292,10 +292,10 @@ exports[`Storyshots Buttons Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
-      Clean Button
+      Clean
     </h2>
     <div>
       <div
@@ -329,10 +329,10 @@ exports[`Storyshots Buttons Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
-      All buttons with icons
+      With icons
     </h2>
     <div>
       <div
@@ -530,7 +530,7 @@ exports[`Storyshots Buttons Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Sizes
@@ -631,10 +631,10 @@ exports[`Storyshots Buttons Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
-      All disabled
+      Disabled
     </h2>
     <div>
       <div
@@ -839,7 +839,7 @@ exports[`Storyshots Cards Default 1`] = `
   className="typography"
 >
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Title and content
@@ -868,7 +868,7 @@ exports[`Storyshots Cards Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Title, icon and content
@@ -905,7 +905,7 @@ exports[`Storyshots Cards Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Title, content and actions
@@ -970,7 +970,7 @@ exports[`Storyshots Cards Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Graphic, title, content and actions
@@ -1043,7 +1043,7 @@ exports[`Storyshots Cards Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Title on event handler
@@ -1112,7 +1112,7 @@ exports[`Storyshots Cards Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Card section with collapsible content
@@ -1176,7 +1176,7 @@ feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Simple card section
@@ -1235,7 +1235,7 @@ exports[`Storyshots Checkbox Default 1`] = `
   className="typography"
 >
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Disabled
@@ -1288,7 +1288,7 @@ exports[`Storyshots Checkbox Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Default
@@ -1341,7 +1341,7 @@ exports[`Storyshots Checkbox Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Error
@@ -1376,7 +1376,7 @@ exports[`Storyshots Checkbox Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Success
@@ -1418,7 +1418,7 @@ exports[`Storyshots Checkbox Form 1`] = `
   className="typography"
 >
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Disabled
@@ -1471,7 +1471,7 @@ exports[`Storyshots Checkbox Form 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Default
@@ -1524,7 +1524,7 @@ exports[`Storyshots Checkbox Form 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Erro
@@ -1559,7 +1559,7 @@ exports[`Storyshots Checkbox Form 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Success
@@ -1601,7 +1601,7 @@ exports[`Storyshots Checkbox Group Default 1`] = `
   className="typography"
 >
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Default
@@ -1691,7 +1691,7 @@ exports[`Storyshots Checkbox Group Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Disabled
@@ -1781,7 +1781,7 @@ exports[`Storyshots Checkbox Group Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Success
@@ -1875,7 +1875,7 @@ exports[`Storyshots Checkbox Group Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Error
@@ -1975,16 +1975,9 @@ exports[`Storyshots Colors Light theme 1`] = `
 <div
   className="typography"
 >
-  <section
+  <div
     className={undefined}
-  >
-    
-    <div>
-      <div
-        className={undefined}
-      />
-    </div>
-  </section>
+  />
 </div>
 `;
 
@@ -1993,7 +1986,7 @@ exports[`Storyshots DateInput All styles 1`] = `
   className="typography"
 >
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Minimal setup
@@ -2051,7 +2044,7 @@ exports[`Storyshots DateInput All styles 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Specifying single day as initial dates
@@ -2109,7 +2102,7 @@ exports[`Storyshots DateInput All styles 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Specifying date range as initial dates
@@ -2194,7 +2187,7 @@ exports[`Storyshots DateInput All styles 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Specifying null end as initial dates
@@ -2283,7 +2276,7 @@ exports[`Storyshots DateInput All styles 1`] = `
 
 exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
 <section
-  className={undefined}
+  className="typography"
 >
   
   <div>
@@ -5530,7 +5523,7 @@ exports[`Storyshots Dropdown Default 1`] = `
   className="typography"
 >
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Default
@@ -5590,7 +5583,7 @@ exports[`Storyshots Dropdown Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Disabled
@@ -5650,7 +5643,7 @@ exports[`Storyshots Dropdown Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Default with placeholder
@@ -5710,7 +5703,7 @@ exports[`Storyshots Dropdown Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Disabled with placeholder
@@ -5777,7 +5770,7 @@ exports[`Storyshots Dropdown Form 1`] = `
   className="typography"
 >
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Default
@@ -5842,7 +5835,7 @@ exports[`Storyshots Dropdown Form 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       With placeholder
@@ -5907,7 +5900,7 @@ exports[`Storyshots Dropdown Form 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Disabled with placeholder
@@ -5972,7 +5965,7 @@ exports[`Storyshots Dropdown Form 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Disabled
@@ -6037,7 +6030,7 @@ exports[`Storyshots Dropdown Form 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Error
@@ -6106,7 +6099,7 @@ exports[`Storyshots Dropdown Form 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Success
@@ -6179,7 +6172,7 @@ exports[`Storyshots Dropdown Form 1`] = `
 
 exports[`Storyshots Footer Default 1`] = `
 <section
-  className={undefined}
+  className="typography"
 >
   
   <div>
@@ -6243,1393 +6236,1405 @@ exports[`Storyshots Footer Default 1`] = `
 `;
 
 exports[`Storyshots Grid Column sizes 1`] = `
-<div
+<section
   className="typography"
 >
-  <div
-    className="grid"
-  >
+  
+  <div>
     <div
-      className="row"
+      className="grid"
     >
       <div
-        className="col desk1 tv1 tablet1 palm1"
+        className="row"
       >
         <div
-          className="card"
+          className="col desk1 tv1 tablet1 palm1"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              1 column
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                1 column
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div
-      className="row"
-    >
       <div
-        className="col desk2 tv2 tablet2 palm2"
+        className="row"
       >
         <div
-          className="card"
+          className="col desk2 tv2 tablet2 palm2"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              2 columns
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                2 columns
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div
-      className="row"
-    >
       <div
-        className="col desk3 tv3 tablet3 palm3"
+        className="row"
       >
         <div
-          className="card"
+          className="col desk3 tv3 tablet3 palm3"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              3 columns
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                3 columns
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div
-      className="row"
-    >
       <div
-        className="col desk4 tv4 tablet4 palm4"
+        className="row"
       >
         <div
-          className="card"
+          className="col desk4 tv4 tablet4 palm4"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              4 columns
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                4 columns
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div
-      className="row"
-    >
       <div
-        className="col desk5 tv5 tablet5 palm5"
+        className="row"
       >
         <div
-          className="card"
+          className="col desk5 tv5 tablet5 palm5"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              5 columns
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                5 columns
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div
-      className="row"
-    >
       <div
-        className="col desk6 tv6 tablet6 palm6"
+        className="row"
       >
         <div
-          className="card"
+          className="col desk6 tv6 tablet6 palm6"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              6 columns
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                6 columns
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div
-      className="row"
-    >
       <div
-        className="col desk7 tv7 tablet7 palm7"
+        className="row"
       >
         <div
-          className="card"
+          className="col desk7 tv7 tablet7 palm7"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              7 columns
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                7 columns
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div
-      className="row"
-    >
       <div
-        className="col desk8 tv8 tablet8 palm8"
+        className="row"
       >
         <div
-          className="card"
+          className="col desk8 tv8 tablet8 palm8"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              8 columns
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                8 columns
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div
-      className="row"
-    >
       <div
-        className="col desk9 tv9 tablet9 palm9"
+        className="row"
       >
         <div
-          className="card"
+          className="col desk9 tv9 tablet9 palm9"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              9 columns
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                9 columns
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div
-      className="row"
-    >
       <div
-        className="col desk10 tv10 tablet10 palm10"
+        className="row"
       >
         <div
-          className="card"
+          className="col desk10 tv10 tablet10 palm10"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              10 columns
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                10 columns
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div
-      className="row"
-    >
       <div
-        className="col desk11 tv11 tablet11 palm11"
+        className="row"
       >
         <div
-          className="card"
+          className="col desk11 tv11 tablet11 palm11"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              11 columns
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                11 columns
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div
-      className="row"
-    >
       <div
-        className="col desk12 tv12 tablet12 palm12"
+        className="row"
       >
         <div
-          className="card"
+          className="col desk12 tv12 tablet12 palm12"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              12 columns
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                12 columns
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</section>
 `;
 
 exports[`Storyshots Grid Flexible 1`] = `
-<div
+<section
   className="typography"
 >
-  <div
-    className="grid"
-  >
+  
+  <div>
     <div
-      className="row flex"
+      className="grid"
     >
       <div
-        className="col desk8 tv6 tablet10 palm12"
+        className="row flex"
       >
         <div
-          className="card"
+          className="col desk8 tv6 tablet10 palm12"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col desknull tvnull tabletnull palmnull"
+        >
+          <div
+            className="card"
+          >
+            <div
+              className="graphic"
+            >
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              />
             </div>
           </div>
         </div>
       </div>
       <div
-        className="col desknull tvnull tabletnull palmnull"
+        className="row flex"
       >
         <div
-          className="card"
+          className="col desknull tvnull tabletnull palmnull"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
+              className="graphic"
+            >
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
                 }
-              }
-            />
+              >
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div
-      className="row flex"
-    >
-      <div
-        className="col desknull tvnull tabletnull palmnull"
-      >
         <div
-          className="card"
+          className="col desknull tvnull tabletnull palmnull"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              />
             </div>
           </div>
         </div>
       </div>
       <div
-        className="col desknull tvnull tabletnull palmnull"
+        className="row flex"
       >
         <div
-          className="card"
+          className="col desknull tvnull tabletnull palmnull"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      className="row flex"
-    >
-      <div
-        className="col desknull tvnull tabletnull palmnull"
-      >
-        <div
-          className="card"
-        >
-          <div
-            className="graphic"
-          >
-            <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              Loremipsumdolorsitamet,consetetursadipscingelitr,seddiamnonumyeirmodtemporinviduntutlaboreetdolorem,seddiamvoluptua.Atveroeosetaccusametjustoduodoloresetearebum.
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                Loremipsumdolorsitamet,consetetursadipscingelitr,seddiamnonumyeirmodtemporinviduntutlaboreetdolorem,seddiamvoluptua.Atveroeosetaccusametjustoduodoloresetearebum.
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div
-        className="col desknull tvnull tabletnull palmnull"
-      >
         <div
-          className="card"
+          className="col desknull tvnull tabletnull palmnull"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
+              className="graphic"
+            >
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
                 }
-              }
-            />
+              />
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</section>
 `;
 
 exports[`Storyshots Grid Proportional sizes 1`] = `
-<div
+<section
   className="typography"
 >
-  <div
-    className="grid"
-  >
+  
+  <div>
     <div
-      className="row"
+      className="grid"
     >
       <div
-        className="col desk12 tv12 tablet12 palm12"
+        className="row"
       >
         <div
-          className="card"
+          className="col desk12 tv12 tablet12 palm12"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              12 columns
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      className="row"
-    >
-      <div
-        className="col desk6 tv6 tablet6 palm6"
-      >
-        <div
-          className="card"
-        >
-          <div
-            className="graphic"
-          >
-            <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
                 }
-              }
-            >
-              6 columns
+              >
+                12 columns
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div
-        className="col desk6 tv6 tablet6 palm6"
+        className="row"
       >
         <div
-          className="card"
+          className="col desk6 tv6 tablet6 palm6"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              6 columns
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                6 columns
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div
-      className="row"
-    >
-      <div
-        className="col desk4 tv4 tablet4 palm4"
-      >
         <div
-          className="card"
+          className="col desk6 tv6 tablet6 palm6"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              4 columns
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        className="col desk4 tv4 tablet4 palm4"
-      >
-        <div
-          className="card"
-        >
-          <div
-            className="graphic"
-          >
-            <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
                 }
-              }
-            >
-              4 columns
+              >
+                6 columns
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div
-        className="col desk4 tv4 tablet4 palm4"
+        className="row"
       >
         <div
-          className="card"
+          className="col desk4 tv4 tablet4 palm4"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              4 columns
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                4 columns
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div
-      className="row"
-    >
-      <div
-        className="col desk3 tv3 tablet3 palm3"
-      >
         <div
-          className="card"
+          className="col desk4 tv4 tablet4 palm4"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              3 columns
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                4 columns
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div
-        className="col desk3 tv3 tablet3 palm3"
-      >
         <div
-          className="card"
+          className="col desk4 tv4 tablet4 palm4"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              3 columns
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        className="col desk3 tv3 tablet3 palm3"
-      >
-        <div
-          className="card"
-        >
-          <div
-            className="graphic"
-          >
-            <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
                 }
-              }
-            >
-              3 columns
+              >
+                4 columns
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div
-        className="col desk3 tv3 tablet3 palm3"
+        className="row"
       >
         <div
-          className="card"
+          className="col desk3 tv3 tablet3 palm3"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              3 columns
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                3 columns
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div
-      className="row"
-    >
-      <div
-        className="col desk2 tv2 tablet2 palm2"
-      >
         <div
-          className="card"
+          className="col desk3 tv3 tablet3 palm3"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              2 columns
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                3 columns
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div
-        className="col desk2 tv2 tablet2 palm2"
-      >
         <div
-          className="card"
+          className="col desk3 tv3 tablet3 palm3"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              2 columns
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                3 columns
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div
-        className="col desk2 tv2 tablet2 palm2"
-      >
         <div
-          className="card"
+          className="col desk3 tv3 tablet3 palm3"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              2 columns
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        className="col desk2 tv2 tablet2 palm2"
-      >
-        <div
-          className="card"
-        >
-          <div
-            className="graphic"
-          >
-            <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
                 }
-              }
-            >
-              2 columns
+              >
+                3 columns
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div
-        className="col desk2 tv2 tablet2 palm2"
+        className="row"
       >
         <div
-          className="card"
+          className="col desk2 tv2 tablet2 palm2"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              2 columns
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                2 columns
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col desk2 tv2 tablet2 palm2"
+        >
+          <div
+            className="card"
+          >
+            <div
+              className="graphic"
+            >
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                2 columns
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col desk2 tv2 tablet2 palm2"
+        >
+          <div
+            className="card"
+          >
+            <div
+              className="graphic"
+            >
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                2 columns
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col desk2 tv2 tablet2 palm2"
+        >
+          <div
+            className="card"
+          >
+            <div
+              className="graphic"
+            >
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                2 columns
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col desk2 tv2 tablet2 palm2"
+        >
+          <div
+            className="card"
+          >
+            <div
+              className="graphic"
+            >
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                2 columns
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col desk2 tv2 tablet2 palm2"
+        >
+          <div
+            className="card"
+          >
+            <div
+              className="graphic"
+            >
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                2 columns
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div
-        className="col desk2 tv2 tablet2 palm2"
+        className="row"
       >
         <div
-          className="card"
+          className="col desk1 tv1 tablet1 palm1"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              2 columns
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                1 column
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div
-      className="row"
-    >
-      <div
-        className="col desk1 tv1 tablet1 palm1"
-      >
         <div
-          className="card"
+          className="col desk1 tv1 tablet1 palm1"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              1 column
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                1 column
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div
-        className="col desk1 tv1 tablet1 palm1"
-      >
         <div
-          className="card"
+          className="col desk1 tv1 tablet1 palm1"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              1 column
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                1 column
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div
-        className="col desk1 tv1 tablet1 palm1"
-      >
         <div
-          className="card"
+          className="col desk1 tv1 tablet1 palm1"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              1 column
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                1 column
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div
-        className="col desk1 tv1 tablet1 palm1"
-      >
         <div
-          className="card"
+          className="col desk1 tv1 tablet1 palm1"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              1 column
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                1 column
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div
-        className="col desk1 tv1 tablet1 palm1"
-      >
         <div
-          className="card"
+          className="col desk1 tv1 tablet1 palm1"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              1 column
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                1 column
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div
-        className="col desk1 tv1 tablet1 palm1"
-      >
         <div
-          className="card"
+          className="col desk1 tv1 tablet1 palm1"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              1 column
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                1 column
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div
-        className="col desk1 tv1 tablet1 palm1"
-      >
         <div
-          className="card"
+          className="col desk1 tv1 tablet1 palm1"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              1 column
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                1 column
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div
-        className="col desk1 tv1 tablet1 palm1"
-      >
         <div
-          className="card"
+          className="col desk1 tv1 tablet1 palm1"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              1 column
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                1 column
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div
-        className="col desk1 tv1 tablet1 palm1"
-      >
         <div
-          className="card"
+          className="col desk1 tv1 tablet1 palm1"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              1 column
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                1 column
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div
-        className="col desk1 tv1 tablet1 palm1"
-      >
         <div
-          className="card"
+          className="col desk1 tv1 tablet1 palm1"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              1 column
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                1 column
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div
-        className="col desk1 tv1 tablet1 palm1"
-      >
         <div
-          className="card"
+          className="col desk1 tv1 tablet1 palm1"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              1 column
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        className="col desk1 tv1 tablet1 palm1"
-      >
-        <div
-          className="card"
-        >
-          <div
-            className="graphic"
-          >
-            <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
                 }
-              }
-            >
-              1 column
+              >
+                1 column
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</section>
 `;
 
 exports[`Storyshots Grid Responsive 1`] = `
-<div
+<section
   className="typography"
 >
-  <div
-    className="grid"
-  >
+  
+  <div>
     <div
-      className="row stretch"
+      className="grid"
     >
       <div
-        className="col desk3 tv3 tablet6 palm12"
+        className="row stretch"
       >
         <div
-          className="card"
+          className="col desk3 tv3 tablet6 palm12"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#cc0000",
-                }
-              }
-            />
-          </div>
-        </div>
-      </div>
-      <div
-        className="col desk3 tv3 tablet6 palm12"
-      >
-        <div
-          className="card"
-        >
-          <div
-            className="graphic"
-          >
-            <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#cc0000",
-                }
-              }
-            />
-          </div>
-        </div>
-      </div>
-      <div
-        className="col desk3 tv3 tablet6 palm12"
-      >
-        <div
-          className="card"
-        >
-          <div
-            className="graphic"
-          >
-            <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#cc0000",
-                }
-              }
-            />
-          </div>
-        </div>
-      </div>
-      <div
-        className="col desk3 tv3 tablet6 palm12"
-      >
-        <div
-          className="card"
-        >
-          <div
-            className="graphic"
-          >
-            <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#cc0000",
-                }
-              }
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      className="row stretch"
-    >
-      <div
-        className="col desk12 tv12 tablet12 palm12"
-      >
-        <div
-          className="card"
-        >
-          <div
-            className="graphic"
-          >
-            <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#00cc00",
-                }
-              }
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      className="row stretch"
-    >
-      <div
-        className="col desk6 tv6 tablet6 palm12"
-      >
-        <div
-          className="card"
-        >
-          <div
-            className="graphic"
-          >
-            <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#0000cc",
-                }
-              }
-            />
-          </div>
-        </div>
-      </div>
-      <div
-        className="col desk6 tv6 tablet6 palm12"
-      >
-        <div
-          className="card"
-        >
-          <div
-            className="graphic"
-          >
-            <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#0000cc",
-                }
-              }
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      className="row stretch"
-    >
-      <div
-        className="col desk6 tv6 tablet6 palm12"
-      >
-        <div
-          className="card"
-        >
-          <div
-            className="graphic"
-          >
-            <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#cccc00",
-                }
-              }
-            />
-          </div>
-        </div>
-      </div>
-      <div
-        className="col desk6 tv6 tablet6 palm12"
-      >
-        <div
-          className="row stretch"
-        >
-          <div
-            className="col desk6 tv6 tablet12 palm12"
-          >
-            <div
-              className="card"
+              className="graphic"
             >
               <div
-                className="graphic"
-              >
-                <div
-                  className={undefined}
-                  style={
-                    Object {
-                      "backgroundColor": "#cc00cc",
-                    }
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#cc0000",
                   }
-                />
-              </div>
+                }
+              />
             </div>
           </div>
+        </div>
+        <div
+          className="col desk3 tv3 tablet6 palm12"
+        >
           <div
-            className="col desk6 tv6 tablet12 palm12"
+            className="card"
           >
             <div
-              className="card"
+              className="graphic"
             >
               <div
-                className="graphic"
-              >
-                <div
-                  className={undefined}
-                  style={
-                    Object {
-                      "backgroundColor": "#cc00cc",
-                    }
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#cc0000",
                   }
-                />
-              </div>
+                }
+              />
             </div>
           </div>
+        </div>
+        <div
+          className="col desk3 tv3 tablet6 palm12"
+        >
           <div
-            className="col desk6 tv6 tablet12 palm12"
+            className="card"
           >
             <div
-              className="card"
+              className="graphic"
             >
               <div
-                className="graphic"
-              >
-                <div
-                  className={undefined}
-                  style={
-                    Object {
-                      "backgroundColor": "#cc00cc",
-                    }
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#cc0000",
                   }
-                />
-              </div>
+                }
+              />
             </div>
           </div>
+        </div>
+        <div
+          className="col desk3 tv3 tablet6 palm12"
+        >
           <div
-            className="col desk6 tv6 tablet12 palm12"
+            className="card"
           >
             <div
-              className="card"
+              className="graphic"
             >
               <div
-                className="graphic"
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#cc0000",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="row stretch"
+      >
+        <div
+          className="col desk12 tv12 tablet12 palm12"
+        >
+          <div
+            className="card"
+          >
+            <div
+              className="graphic"
+            >
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#00cc00",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="row stretch"
+      >
+        <div
+          className="col desk6 tv6 tablet6 palm12"
+        >
+          <div
+            className="card"
+          >
+            <div
+              className="graphic"
+            >
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#0000cc",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="col desk6 tv6 tablet6 palm12"
+        >
+          <div
+            className="card"
+          >
+            <div
+              className="graphic"
+            >
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#0000cc",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="row stretch"
+      >
+        <div
+          className="col desk6 tv6 tablet6 palm12"
+        >
+          <div
+            className="card"
+          >
+            <div
+              className="graphic"
+            >
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#cccc00",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="col desk6 tv6 tablet6 palm12"
+        >
+          <div
+            className="row stretch"
+          >
+            <div
+              className="col desk6 tv6 tablet12 palm12"
+            >
+              <div
+                className="card"
               >
                 <div
-                  className={undefined}
-                  style={
-                    Object {
-                      "backgroundColor": "#cc00cc",
+                  className="graphic"
+                >
+                  <div
+                    className={undefined}
+                    style={
+                      Object {
+                        "backgroundColor": "#cc00cc",
+                      }
                     }
-                  }
-                />
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              className="col desk6 tv6 tablet12 palm12"
+            >
+              <div
+                className="card"
+              >
+                <div
+                  className="graphic"
+                >
+                  <div
+                    className={undefined}
+                    style={
+                      Object {
+                        "backgroundColor": "#cc00cc",
+                      }
+                    }
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              className="col desk6 tv6 tablet12 palm12"
+            >
+              <div
+                className="card"
+              >
+                <div
+                  className="graphic"
+                >
+                  <div
+                    className={undefined}
+                    style={
+                      Object {
+                        "backgroundColor": "#cc00cc",
+                      }
+                    }
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              className="col desk6 tv6 tablet12 palm12"
+            >
+              <div
+                className="card"
+              >
+                <div
+                  className="graphic"
+                >
+                  <div
+                    className={undefined}
+                    style={
+                      Object {
+                        "backgroundColor": "#cc00cc",
+                      }
+                    }
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -7637,306 +7642,309 @@ exports[`Storyshots Grid Responsive 1`] = `
       </div>
     </div>
   </div>
-</div>
+</section>
 `;
 
 exports[`Storyshots Grid Size combinations 1`] = `
-<div
+<section
   className="typography"
 >
-  <div
-    className="grid"
-  >
+  
+  <div>
     <div
-      className="row"
+      className="grid"
     >
       <div
-        className="col desk3 tv3 tablet3 palm3"
+        className="row"
       >
         <div
-          className="card"
+          className="col desk3 tv3 tablet3 palm3"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              3 columns
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                3 columns
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col desk9 tv9 tablet9 palm9"
+        >
+          <div
+            className="card"
+          >
+            <div
+              className="graphic"
+            >
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                9 columns
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div
-        className="col desk9 tv9 tablet9 palm9"
+        className="row"
       >
         <div
-          className="card"
+          className="col desk4 tv4 tablet4 palm4"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              9 columns
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                4 columns
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div
-      className="row"
-    >
-      <div
-        className="col desk4 tv4 tablet4 palm4"
-      >
         <div
-          className="card"
+          className="col desk8 tv8 tablet8 palm8"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              4 columns
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        className="col desk8 tv8 tablet8 palm8"
-      >
-        <div
-          className="card"
-        >
-          <div
-            className="graphic"
-          >
-            <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
                 }
-              }
-            >
-              8 columns
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      className="row"
-    >
-      <div
-        className="col desk5 tv5 tablet5 palm5"
-      >
-        <div
-          className="card"
-        >
-          <div
-            className="graphic"
-          >
-            <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
-            >
-              5 columns
+              >
+                8 columns
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div
-        className="col desk7 tv7 tablet7 palm7"
+        className="row"
       >
         <div
-          className="card"
+          className="col desk5 tv5 tablet5 palm5"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              7 columns
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                5 columns
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div
-      className="row"
-    >
-      <div
-        className="col desk6 tv6 tablet6 palm6"
-      >
         <div
-          className="card"
+          className="col desk7 tv7 tablet7 palm7"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              6 columns
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        className="col desk6 tv6 tablet6 palm6"
-      >
-        <div
-          className="card"
-        >
-          <div
-            className="graphic"
-          >
-            <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
                 }
-              }
-            >
-              6 columns
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      className="row"
-    >
-      <div
-        className="col desk7 tv7 tablet7 palm7"
-      >
-        <div
-          className="card"
-        >
-          <div
-            className="graphic"
-          >
-            <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
-            >
-              7 columns
+              >
+                7 columns
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div
-        className="col desk5 tv5 tablet5 palm5"
+        className="row"
       >
         <div
-          className="card"
+          className="col desk6 tv6 tablet6 palm6"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              5 columns
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                6 columns
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col desk6 tv6 tablet6 palm6"
+        >
+          <div
+            className="card"
+          >
+            <div
+              className="graphic"
+            >
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                6 columns
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div
-      className="row"
-    >
       <div
-        className="col desk8 tv8 tablet8 palm8"
+        className="row"
       >
         <div
-          className="card"
+          className="col desk7 tv7 tablet7 palm7"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              8 columns
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                7 columns
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col desk5 tv5 tablet5 palm5"
+        >
+          <div
+            className="card"
+          >
+            <div
+              className="graphic"
+            >
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                5 columns
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div
-        className="col desk4 tv4 tablet4 palm4"
+        className="row"
       >
         <div
-          className="card"
+          className="col desk8 tv8 tablet8 palm8"
         >
           <div
-            className="graphic"
+            className="card"
           >
             <div
-              className={undefined}
-              style={
-                Object {
-                  "backgroundColor": "#ffffff",
-                }
-              }
+              className="graphic"
             >
-              4 columns
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                8 columns
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col desk4 tv4 tablet4 palm4"
+        >
+          <div
+            className="card"
+          >
+            <div
+              className="graphic"
+            >
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#ffffff",
+                  }
+                }
+              >
+                4 columns
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</section>
 `;
 
 exports[`Storyshots Header Default 1`] = `
@@ -7944,13 +7952,13 @@ exports[`Storyshots Header Default 1`] = `
   className="typography"
   style={
     Object {
-      "background": "#e4e4e4",
+      "background": "#eee",
       "height": "100vh",
     }
   }
 >
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Only title
@@ -7968,7 +7976,7 @@ exports[`Storyshots Header Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       First level
@@ -8019,7 +8027,7 @@ exports[`Storyshots Header Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Second level
@@ -8085,7 +8093,7 @@ exports[`Storyshots Inputs Default 1`] = `
   className="typography"
 >
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Disabled
@@ -8128,7 +8136,7 @@ exports[`Storyshots Inputs Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Default
@@ -8171,7 +8179,7 @@ exports[`Storyshots Inputs Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Error
@@ -8214,7 +8222,7 @@ exports[`Storyshots Inputs Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Success
@@ -8257,7 +8265,7 @@ exports[`Storyshots Inputs Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Multiline disabled
@@ -8301,7 +8309,7 @@ exports[`Storyshots Inputs Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Multiline default
@@ -8349,7 +8357,7 @@ exports[`Storyshots Inputs Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Multiline error
@@ -8397,7 +8405,7 @@ exports[`Storyshots Inputs Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Multiline success
@@ -8445,7 +8453,7 @@ exports[`Storyshots Inputs Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Icon disabled
@@ -8492,7 +8500,7 @@ exports[`Storyshots Inputs Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Icon default
@@ -8543,7 +8551,7 @@ exports[`Storyshots Inputs Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Icon error
@@ -8594,7 +8602,7 @@ exports[`Storyshots Inputs Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Icon success
@@ -8645,7 +8653,7 @@ exports[`Storyshots Inputs Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Icon multiline disabled
@@ -8697,7 +8705,7 @@ exports[`Storyshots Inputs Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Icon multiline default
@@ -8753,7 +8761,7 @@ exports[`Storyshots Inputs Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Icon multiline error
@@ -8809,7 +8817,7 @@ exports[`Storyshots Inputs Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Icon multiline success
@@ -8865,7 +8873,7 @@ exports[`Storyshots Inputs Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Password disabled
@@ -8908,7 +8916,7 @@ exports[`Storyshots Inputs Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Password default
@@ -8957,7 +8965,7 @@ exports[`Storyshots Inputs Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Password error
@@ -9006,7 +9014,7 @@ exports[`Storyshots Inputs Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Password success
@@ -9062,7 +9070,7 @@ exports[`Storyshots Inputs Form 1`] = `
   className="typography"
 >
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Disabled
@@ -9105,7 +9113,7 @@ exports[`Storyshots Inputs Form 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Default
@@ -9143,7 +9151,7 @@ exports[`Storyshots Inputs Form 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Error
@@ -9181,7 +9189,7 @@ exports[`Storyshots Inputs Form 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Success
@@ -9219,7 +9227,7 @@ exports[`Storyshots Inputs Form 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Multiline disabled
@@ -9263,7 +9271,7 @@ exports[`Storyshots Inputs Form 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Multiline default
@@ -9306,7 +9314,7 @@ exports[`Storyshots Inputs Form 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Multiline error
@@ -9349,7 +9357,7 @@ exports[`Storyshots Inputs Form 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Multiline success
@@ -9392,7 +9400,7 @@ exports[`Storyshots Inputs Form 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Icon disabled
@@ -9439,7 +9447,7 @@ exports[`Storyshots Inputs Form 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Icon default
@@ -9485,7 +9493,7 @@ exports[`Storyshots Inputs Form 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Icon error
@@ -9531,7 +9539,7 @@ exports[`Storyshots Inputs Form 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Icon success
@@ -9577,7 +9585,7 @@ exports[`Storyshots Inputs Form 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Icon multiline disabled
@@ -9629,7 +9637,7 @@ exports[`Storyshots Inputs Form 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Icon multiline default
@@ -9680,7 +9688,7 @@ exports[`Storyshots Inputs Form 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Icon multiline error
@@ -9731,7 +9739,7 @@ exports[`Storyshots Inputs Form 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Icon multiline success
@@ -9782,7 +9790,7 @@ exports[`Storyshots Inputs Form 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Password disabled
@@ -9825,7 +9833,7 @@ exports[`Storyshots Inputs Form 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Password default
@@ -9874,7 +9882,7 @@ exports[`Storyshots Inputs Form 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Password error
@@ -9923,7 +9931,7 @@ exports[`Storyshots Inputs Form 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Password success
@@ -13975,7 +13983,7 @@ exports[`Storyshots Legend Default 1`] = `
   className="typography"
 >
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Without acronym prop
@@ -13984,7 +13992,7 @@ exports[`Storyshots Legend Default 1`] = `
       <div
         style={
           Object {
-            "margin": "10px",
+            "marginBottom": "10px",
           }
         }
       >
@@ -14012,7 +14020,7 @@ exports[`Storyshots Legend Default 1`] = `
       <div
         style={
           Object {
-            "margin": "10px",
+            "marginBottom": "10px",
           }
         }
       >
@@ -14040,7 +14048,7 @@ exports[`Storyshots Legend Default 1`] = `
       <div
         style={
           Object {
-            "margin": "10px",
+            "marginBottom": "10px",
           }
         }
       >
@@ -14068,7 +14076,7 @@ exports[`Storyshots Legend Default 1`] = `
       <div
         style={
           Object {
-            "margin": "10px",
+            "marginBottom": "10px",
           }
         }
       >
@@ -14096,7 +14104,7 @@ exports[`Storyshots Legend Default 1`] = `
       <div
         style={
           Object {
-            "margin": "10px",
+            "marginBottom": "10px",
           }
         }
       >
@@ -14124,7 +14132,7 @@ exports[`Storyshots Legend Default 1`] = `
       <div
         style={
           Object {
-            "margin": "10px",
+            "marginBottom": "10px",
           }
         }
       >
@@ -14152,7 +14160,7 @@ exports[`Storyshots Legend Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       With acronym prop
@@ -14161,7 +14169,7 @@ exports[`Storyshots Legend Default 1`] = `
       <div
         style={
           Object {
-            "margin": "10px",
+            "marginBottom": "10px",
           }
         }
       >
@@ -14189,7 +14197,7 @@ exports[`Storyshots Legend Default 1`] = `
       <div
         style={
           Object {
-            "margin": "10px",
+            "marginBottom": "10px",
           }
         }
       >
@@ -14217,7 +14225,7 @@ exports[`Storyshots Legend Default 1`] = `
       <div
         style={
           Object {
-            "margin": "10px",
+            "marginBottom": "10px",
           }
         }
       >
@@ -14245,7 +14253,7 @@ exports[`Storyshots Legend Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       With hideLabel prop
@@ -14254,7 +14262,7 @@ exports[`Storyshots Legend Default 1`] = `
       <div
         style={
           Object {
-            "margin": "10px",
+            "marginBottom": "10px",
           }
         }
       >
@@ -14277,7 +14285,7 @@ exports[`Storyshots Legend Default 1`] = `
       <div
         style={
           Object {
-            "margin": "10px",
+            "marginBottom": "10px",
           }
         }
       >
@@ -14300,7 +14308,7 @@ exports[`Storyshots Legend Default 1`] = `
       <div
         style={
           Object {
-            "margin": "10px",
+            "marginBottom": "10px",
           }
         }
       >
@@ -14326,74 +14334,77 @@ exports[`Storyshots Legend Default 1`] = `
 `;
 
 exports[`Storyshots Modal Default 1`] = `
-<div
+<section
   className="typography"
 >
+  
   <div>
-    <button
-      className="button flat light lowRelevance default"
-      disabled={false}
-      onClick={[Function]}
-      type="button"
-    >
-      <Camera32.svg
-        height={16}
-        width={16}
-      />
-      Add Photo
-    </button>
-    <div
-      className="modal"
-    >
+    <div>
+      <button
+        className="button flat light lowRelevance default"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <Camera32.svg
+          height={16}
+          width={16}
+        />
+        Add Photo
+      </button>
       <div
-        className="frame"
+        className="modal"
       >
         <div
-          className="title"
+          className="frame"
         >
           <div
-            className="icon"
+            className="title"
           >
-            <Camera32.svg
-              height={16}
-              width={16}
-            />
+            <div
+              className="icon"
+            >
+              <Camera32.svg
+                height={16}
+                width={16}
+              />
+            </div>
+            <h2>
+              Add Photo
+            </h2>
           </div>
-          <h2>
-            Add Photo
-          </h2>
-        </div>
-        <div
-          className="content"
-        >
-          <p>
-            This is the modal Content with React Modal module
-          </p>
-        </div>
-        <div
-          className="actions"
-        >
-          <button
-            className="button outline light normalRelevance small"
-            disabled={false}
-            onClick={[Function]}
-            type="button"
+          <div
+            className="content"
           >
-            Cancel
-          </button>
-          <button
-            className="button flat light normalRelevance small"
-            disabled={false}
-            onClick={[Function]}
-            type="button"
+            <p>
+              This is the modal Content with React Modal module
+            </p>
+          </div>
+          <div
+            className="actions"
           >
-            Confirm
-          </button>
+            <button
+              className="button outline light normalRelevance small"
+              disabled={false}
+              onClick={[Function]}
+              type="button"
+            >
+              Cancel
+            </button>
+            <button
+              className="button flat light normalRelevance small"
+              disabled={false}
+              onClick={[Function]}
+              type="button"
+            >
+              Confirm
+            </button>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</section>
 `;
 
 exports[`Storyshots Pagination Default 1`] = `
@@ -14401,19 +14412,13 @@ exports[`Storyshots Pagination Default 1`] = `
   className="typography"
 >
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Single page
     </h2>
     <div>
-      <div
-        style={
-          Object {
-            "padding": "10px",
-          }
-        }
-      >
+      <div>
         <div
           className="pagination"
         >
@@ -14483,19 +14488,13 @@ exports[`Storyshots Pagination Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       First page
     </h2>
     <div>
-      <div
-        style={
-          Object {
-            "padding": "10px",
-          }
-        }
-      >
+      <div>
         <div
           className="pagination"
         >
@@ -14565,19 +14564,13 @@ exports[`Storyshots Pagination Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Intermediate page
     </h2>
     <div>
-      <div
-        style={
-          Object {
-            "padding": "10px",
-          }
-        }
-      >
+      <div>
         <div
           className="pagination"
         >
@@ -14647,19 +14640,13 @@ exports[`Storyshots Pagination Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Last page
     </h2>
     <div>
-      <div
-        style={
-          Object {
-            "padding": "10px",
-          }
-        }
-      >
+      <div>
         <div
           className="pagination"
         >
@@ -14729,19 +14716,13 @@ exports[`Storyshots Pagination Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       So many pages
     </h2>
     <div>
-      <div
-        style={
-          Object {
-            "padding": "10px",
-          }
-        }
-      >
+      <div>
         <div
           className="pagination"
         >
@@ -14811,19 +14792,13 @@ exports[`Storyshots Pagination Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Wrong page
     </h2>
     <div>
-      <div
-        style={
-          Object {
-            "padding": "10px",
-          }
-        }
-      >
+      <div>
         <div
           className="pagination error"
         >
@@ -14896,19 +14871,13 @@ exports[`Storyshots Pagination Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Translated to portuguese
     </h2>
     <div>
-      <div
-        style={
-          Object {
-            "padding": "10px",
-          }
-        }
-      >
+      <div>
         <div
           className="pagination"
         >
@@ -14985,7 +14954,7 @@ exports[`Storyshots Progress Linear 1`] = `
   className="typography"
 >
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Normal state
@@ -15184,7 +15153,7 @@ exports[`Storyshots Progress Linear 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Disabled state
@@ -15390,7 +15359,7 @@ exports[`Storyshots Radio Group Default 1`] = `
   className="typography"
 >
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Disabled
@@ -15470,7 +15439,7 @@ exports[`Storyshots Radio Group Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Default
@@ -15550,7 +15519,7 @@ exports[`Storyshots Radio Group Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Success
@@ -15634,7 +15603,7 @@ exports[`Storyshots Radio Group Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Error
@@ -15725,7 +15694,7 @@ exports[`Storyshots SegmentedSwitch Default 1`] = `
   className="typography"
 >
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Two options
@@ -15774,7 +15743,7 @@ exports[`Storyshots SegmentedSwitch Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Four options
@@ -16007,7 +15976,7 @@ exports[`Storyshots Switch Default 1`] = `
   className="typography"
 >
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Enabled
@@ -16046,7 +16015,7 @@ exports[`Storyshots Switch Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Disabled
@@ -16092,7 +16061,7 @@ exports[`Storyshots TabBar Default 1`] = `
   className="typography"
 >
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Text
@@ -16162,7 +16131,7 @@ exports[`Storyshots TabBar Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Text and Icon
@@ -16256,7 +16225,7 @@ exports[`Storyshots TabBar Default 1`] = `
     </div>
   </section>
   <section
-    className={undefined}
+    className=""
   >
     <h2>
       Icon
@@ -16351,7 +16320,7 @@ exports[`Storyshots TabBar Default 1`] = `
 
 exports[`Storyshots Table Action column 1`] = `
 <section
-  className={undefined}
+  className="typography"
 >
   
   <div>
@@ -16783,7 +16752,7 @@ exports[`Storyshots Table Action column 1`] = `
 
 exports[`Storyshots Table Selectable and expandable 1`] = `
 <section
-  className={undefined}
+  className="typography"
 >
   
   <div>
@@ -18032,7 +18001,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
 
 exports[`Storyshots Table Simple 1`] = `
 <section
-  className={undefined}
+  className="typography"
 >
   
   <div>
@@ -18446,7 +18415,7 @@ exports[`Storyshots Table Simple 1`] = `
 
 exports[`Storyshots Tags Default 1`] = `
 <section
-  className={undefined}
+  className="typography"
 >
   
   <div>
@@ -18484,85 +18453,90 @@ exports[`Storyshots Tags Default 1`] = `
 `;
 
 exports[`Storyshots Typography Font families 1`] = `
-<div
+<section
   className="typography"
 >
+  
   <div>
-    <span>
-      Heading 1
-    </span>
-    <h1>
-      Assistant 24
-    </h1>
-  </div>
-  <div>
-    <span>
-      Heading 2
-    </span>
-    <h2>
-      Assistant 20
-    </h2>
-  </div>
-  <div>
-    <span>
-      Heading 3
-    </span>
-    <h3>
-      Assistant 18
-    </h3>
-  </div>
-  <div>
-    <span>
-      Body
-    </span>
-    <div>
-      <p>
-        Assistant Regular 14
-      </p>
-      <p>
-        <i>
-          Assistant Italic 14
-        </i>
-      </p>
-      <p>
-        <b>
-          Assistant Bold 14
-        </b>
-      </p>
+    <div
+      className={undefined}
+    >
+      <div>
+        <span>
+          Heading 1
+        </span>
+        <h1>
+          Assistant 24
+        </h1>
+      </div>
+      <div>
+        <span>
+          Heading 2
+        </span>
+        <h2>
+          Assistant 20
+        </h2>
+      </div>
+      <div>
+        <span>
+          Heading 3
+        </span>
+        <h3>
+          Assistant 18
+        </h3>
+      </div>
+      <div>
+        <span>
+          Body
+        </span>
+        <div>
+          <p>
+            Assistant Regular 14
+          </p>
+          <p>
+            <i>
+              Assistant Italic 14
+            </i>
+          </p>
+          <p>
+            <b>
+              Assistant Bold 14
+            </b>
+          </p>
+        </div>
+      </div>
     </div>
   </div>
-</div>
+</section>
 `;
 
 exports[`Storyshots Typography Use cases 1`] = `
-<div
+<section
   className="typography"
 >
-  <h1>
-    Paragraph
-  </h1>
-  <p>
-    Curabitur at finibus neque. In efficitur sapien ut lectus suscipit consequat. Proin eget aliquam leo.
-    <a
-      href="http://www.lipsum.com"
-    >
-      Maecenas mattis
-    </a>
-      quis nisi vel venenatis. Proin sit amet purus nec magna ornare iaculis. Curabitur at finibus neque. In efficitur sapien ut lectus suscipit consequat. Proin eget aliquam leo. Maecenas mattis quis nisi vel venenatis. Proin sit amet ec
-    <a
-      href="http://www.lipsum.com"
-    >
-      magna ornare
-    </a>
-     iaculis.
-  </p>
-  <h1>
-    Lists
-  </h1>
-  <ul>
-    <li>
-      Lorem ipsum dolor sit amet
-    </li>
+  
+  <div>
+    <h1>
+      Paragraph
+    </h1>
+    <p>
+      Curabitur at finibus neque. In efficitur sapien ut lectus suscipit consequat. Proin eget aliquam leo.
+      <a
+        href="http://www.lipsum.com"
+      >
+        Maecenas mattis
+      </a>
+        quis nisi vel venenatis. Proin sit amet purus nec magna ornare iaculis. Curabitur at finibus neque. In efficitur sapien ut lectus suscipit consequat. Proin eget aliquam leo. Maecenas mattis quis nisi vel venenatis. Proin sit amet ec
+      <a
+        href="http://www.lipsum.com"
+      >
+        magna ornare
+      </a>
+       iaculis.
+    </p>
+    <h1>
+      Lists
+    </h1>
     <ul>
       <li>
         Lorem ipsum dolor sit amet
@@ -18571,17 +18545,22 @@ exports[`Storyshots Typography Use cases 1`] = `
         <li>
           Lorem ipsum dolor sit amet
         </li>
+        <ul>
+          <li>
+            Lorem ipsum dolor sit amet
+          </li>
+        </ul>
       </ul>
+      <li>
+        Lorem ipsum dolor sit amet
+      </li>
     </ul>
-    <li>
-      Lorem ipsum dolor sit amet
-    </li>
-  </ul>
-  <h1>
-    Quotes
-  </h1>
-  <blockquote>
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-  </blockquote>
-</div>
+    <h1>
+      Quotes
+    </h1>
+    <blockquote>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </blockquote>
+  </div>
+</section>
 `;

@@ -61,9 +61,7 @@ class Colors extends React.Component {
     return (
       <div className={style.container}>
         {this.state.colorNames.map(name => (
-          <div key={name}>
-            <h2>{name}</h2>
-
+          <Section key={name} title={name}>
             <div>
               {this.state.colors[name].map(customProp => (
                 <div key={customProp}>
@@ -78,7 +76,7 @@ class Colors extends React.Component {
                 </div>
               ))}
             </div>
-          </div>
+          </Section>
         ))}
       </div>
     )
@@ -87,9 +85,7 @@ class Colors extends React.Component {
 
 storiesOf('Colors', module)
   .add('Light theme', () => (
-    <div className={style.root}>
-      <Section>
-        <Colors theme="--color-light" />
-      </Section>
+    <div>
+      <Colors theme="--color-light" />
     </div>
   ))

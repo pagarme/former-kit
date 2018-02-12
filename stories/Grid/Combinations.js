@@ -1,20 +1,19 @@
 import React from 'react'
-
 import { storiesOf } from '@storybook/react'
 import { range } from 'ramda'
 
 import { Grid, Row, Col } from '../../src/Grid'
 import CardSample from './CardSample'
+import Section from '../Section'
 
 import style from './style.css'
 
 const maxColumns = 12
 const combinationExamples = range(3, 9)
 
-
 storiesOf('Grid', module)
   .add('Size combinations', () => (
-    <div className={style.background}>
+    <Section className={style.background}>
       <Grid>
         {combinationExamples.map(size => (
           <Row key={size}>
@@ -37,6 +36,6 @@ storiesOf('Grid', module)
           </Row>
         ))}
       </Grid>
-    </div>
+    </Section>
   ))
 

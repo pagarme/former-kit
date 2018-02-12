@@ -12,7 +12,7 @@ import {
 
 storiesOf('Header', module)
   .add('Default', () => (
-    <div style={{ background: '#e4e4e4', height: '100vh' }}>
+    <div style={{ background: '#eee', height: '100vh' }}>
       <Section title="Only title">
         <Header>
           <HeaderTitle>Transactions</HeaderTitle>

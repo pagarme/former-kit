@@ -34,7 +34,7 @@ class PaginationState extends React.Component {
     const error = totalPages < currentPage || currentPage === 0
 
     return (
-      <div style={{ padding: '10px' }}>
+      <div>
         <Pagination
           currentPage={currentPage}
           totalPages={totalPages}

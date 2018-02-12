@@ -1,7 +1,3 @@
-.tags > * {
+.tags > :not(:first-child) {
   margin-left: 10px;
-}
-
-.tags > span:first-child {
-  margin-left: 0;
 }

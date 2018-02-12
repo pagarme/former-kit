@@ -1,45 +1,49 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
+import Section from '../Section'
+
 import style from './style.css'
 
 storiesOf('Typography', module)
   .add('Font families', () => (
-    <div className={style.fontBook}>
-      <div>
-        <span>Heading 1</span>
-        <h1>Assistant 24</h1>
-      </div>
-      <div>
-        <span>Heading 2</span>
-        <h2>Assistant 20</h2>
-      </div>
-      <div>
-        <span>Heading 3</span>
-        <h3>Assistant 18</h3>
-      </div>
-      <div>
-        <span>Body</span>
+    <Section>
+      <div className={style.fontBook}>
         <div>
-          <p>
-            Assistant Regular 14
-          </p>
-          <p>
-            <i>
-              Assistant Italic 14
-            </i>
-          </p>
-          <p>
-            <b>
-              Assistant Bold 14
-            </b>
-          </p>
+          <span>Heading 1</span>
+          <h1>Assistant 24</h1>
+        </div>
+        <div>
+          <span>Heading 2</span>
+          <h2>Assistant 20</h2>
+        </div>
+        <div>
+          <span>Heading 3</span>
+          <h3>Assistant 18</h3>
+        </div>
+        <div>
+          <span>Body</span>
+          <div>
+            <p>
+              Assistant Regular 14
+            </p>
+            <p>
+              <i>
+                Assistant Italic 14
+              </i>
+            </p>
+            <p>
+              <b>
+                Assistant Bold 14
+              </b>
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+    </Section>
   ))
   .add('Use cases', () => (
-    <div>
+    <Section>
       <h1>Paragraph</h1>
       <p>
         Curabitur at finibus neque. In efficitur sapien ut lectus suscipit
@@ -74,6 +78,6 @@ storiesOf('Typography', module)
         desktop publishing software like Aldus PageMaker including versions of
         Lorem Ipsum.
       </blockquote>
-    </div>
+    </Section>
   ))
 

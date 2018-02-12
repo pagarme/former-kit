@@ -5,13 +5,13 @@ import { range } from 'ramda'
 
 import { Grid, Row, Col } from '../../src/Grid'
 import CardSample from './CardSample'
+import Section from '../Section'
 
 import style from './style.css'
 
-
 storiesOf('Grid', module)
   .add('Responsive', () => (
-    <div className={style.background}>
+    <Section className={style.background}>
       <Grid>
         <Row stretch>
           {range(0, 4).map(i => (
@@ -50,5 +50,5 @@ storiesOf('Grid', module)
           </Col>
         </Row>
       </Grid>
-    </div>
+    </Section>
   ))
