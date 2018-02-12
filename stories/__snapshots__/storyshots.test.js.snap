@@ -17783,9 +17783,7 @@ exports[`Storyshots Tags Default 1`] = `
 <section
   className={undefined}
 >
-  <h2>
-    Only style
-  </h2>
+  
   <div>
     <div
       className={undefined}

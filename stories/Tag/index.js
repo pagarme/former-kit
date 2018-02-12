@@ -16,7 +16,7 @@ const tags = [
 
 storiesOf('Tags', module)
   .add('Default', () => (
-    <Section title="Only style">
+    <Section>
       <div className={style.tags}>
         {
           tags.map(title => (
