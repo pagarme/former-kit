@@ -82,7 +82,7 @@ class DateSelectorExample extends React.Component {
 
 storiesOf('DateSelector', module)
   .add('All types with defaultTheme', () => (
-    <Section title="Only example">
+    <Section>
       <DateSelectorExample />
     </Section>
   ))

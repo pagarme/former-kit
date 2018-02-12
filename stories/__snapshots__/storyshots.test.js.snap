@@ -2285,9 +2285,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
 <section
   className={undefined}
 >
-  <h2>
-    Only example
-  </h2>
+  
   <div>
     <div
       className="container"
