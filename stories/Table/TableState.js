@@ -39,6 +39,8 @@ class TableState extends Component {
   constructor (props) {
     super(props)
 
+    const { selectable } = props
+
     this.handleDetailsClick = this.handleDetailsClick.bind(this)
     this.handleExpandRow = this.handleExpandRow.bind(this)
     this.handleOrderChange = this.handleOrderChange.bind(this)
@@ -52,8 +54,8 @@ class TableState extends Component {
       order: 'ascending',
       rows: this.mock.rows,
       columns: this.getColumns(props.primaryAction),
-      selectedRows: [],
-      expandedRows: [],
+      selectedRows: selectable ? [2] : [],
+      expandedRows: selectable ? [0, 1, 2, 3] : [],
       detailsClicks: 0,
     }
   }
@@ -120,6 +122,7 @@ class TableState extends Component {
       selectable,
       expandable,
     } = this.props
+
     const {
       clickedRowIndex,
       columns,

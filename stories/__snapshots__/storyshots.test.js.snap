@@ -16963,7 +16963,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
           className="tableBody"
         >
           <tr
-            className="even row"
+            className="even"
             onClick={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
@@ -17062,7 +17062,161 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
             </td>
           </tr>
           <tr
-            className="odd row"
+            className="even expandedRow"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            tabIndex="0"
+          >
+            <td
+              colSpan="9"
+            >
+              <div
+                className="expandable"
+              >
+                <ul>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Amount
+                      </span>
+                      <span
+                        className="text"
+                      >
+                        R$ 999.999.999,00
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        E-mail
+                      </span>
+                      <span
+                        className="empty unselectable text"
+                      />
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Refuse reason
+                      </span>
+                      <span
+                        className="empty unselectable text"
+                      />
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Antifraud score
+                      </span>
+                      <span
+                        className="empty unselectable text"
+                      />
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Installments
+                      </span>
+                      <span
+                        className="text"
+                      >
+                        1
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Name
+                      </span>
+                      <span
+                        className="empty unselectable text"
+                      />
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Card brand
+                      </span>
+                      <div
+                        className={undefined}
+                        title={null}
+                      >
+                        <span
+                          className="empty unselectable"
+                        />
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Boleto link
+                      </span>
+                      <span
+                        className="text"
+                      >
+                        boleto link
+                      </span>
+                    </div>
+                  </li>
+                </ul>
+                <div
+                  className="expandableActions unselectable"
+                >
+                  <div>
+                    <button
+                      className="button outline light normalRelevance default"
+                      disabled={false}
+                      onClick={[Function]}
+                      type="button"
+                    >
+                      Show details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr
+            className="odd"
             onClick={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
@@ -17161,7 +17315,170 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
             </td>
           </tr>
           <tr
-            className="even row"
+            className="odd expandedRow"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            tabIndex="0"
+          >
+            <td
+              colSpan="9"
+            >
+              <div
+                className="expandable"
+              >
+                <ul>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Amount
+                      </span>
+                      <span
+                        className="text"
+                      >
+                        R$ 400.000,00
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        E-mail
+                      </span>
+                      <span
+                        className="text"
+                      >
+                        null@undefined.com
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Refuse reason
+                      </span>
+                      <span
+                        className="empty unselectable text"
+                      />
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Antifraud score
+                      </span>
+                      <span
+                        className="text"
+                      >
+                        Approved
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Installments
+                      </span>
+                      <span
+                        className="text"
+                      >
+                        4X
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Name
+                      </span>
+                      <span
+                        className="text"
+                      >
+                        null of undefined of NaN
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Card brand
+                      </span>
+                      <div
+                        className={undefined}
+                        title="mastercard"
+                      >
+                        <span
+                          className={undefined}
+                        >
+                          <MasterCard16.svg
+                            className={undefined}
+                          />
+                          mastercard
+                        </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Boleto link
+                      </span>
+                      <span
+                        className="empty unselectable text"
+                      />
+                    </div>
+                  </li>
+                </ul>
+                <div
+                  className="expandableActions unselectable"
+                >
+                  <div>
+                    <button
+                      className="button outline light normalRelevance default"
+                      disabled={false}
+                      onClick={[Function]}
+                      type="button"
+                    >
+                      Show details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr
+            className="even"
             onClick={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
@@ -17174,7 +17491,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                 className="checkbox"
               >
                 <input
-                  checked={false}
+                  checked={true}
                   disabled={false}
                   id="line_2-2"
                   name="line_2"
@@ -17260,7 +17577,170 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
             </td>
           </tr>
           <tr
-            className="odd row"
+            className="even expandedRow"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            tabIndex="0"
+          >
+            <td
+              colSpan="9"
+            >
+              <div
+                className="expandable"
+              >
+                <ul>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Amount
+                      </span>
+                      <span
+                        className="text"
+                      >
+                        R$ 500.000,00
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        E-mail
+                      </span>
+                      <span
+                        className="text"
+                      >
+                        null@undefined.com
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Refuse reason
+                      </span>
+                      <span
+                        className="empty unselectable text"
+                      />
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Antifraud score
+                      </span>
+                      <span
+                        className="text"
+                      >
+                        Approved
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Installments
+                      </span>
+                      <span
+                        className="text"
+                      >
+                        5X
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Name
+                      </span>
+                      <span
+                        className="text"
+                      >
+                        null of undefined of NaN
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Card brand
+                      </span>
+                      <div
+                        className={undefined}
+                        title="visa"
+                      >
+                        <span
+                          className={undefined}
+                        >
+                          <VisaCard16.svg
+                            className={undefined}
+                          />
+                          visa
+                        </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Boleto link
+                      </span>
+                      <span
+                        className="empty unselectable text"
+                      />
+                    </div>
+                  </li>
+                </ul>
+                <div
+                  className="expandableActions unselectable"
+                >
+                  <div>
+                    <button
+                      className="button outline light normalRelevance default"
+                      disabled={false}
+                      onClick={[Function]}
+                      type="button"
+                    >
+                      Show details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr
+            className="odd"
             onClick={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
@@ -17366,6 +17846,167 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
               </button>
             </td>
           </tr>
+          <tr
+            className="odd expandedRow"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            tabIndex="0"
+          >
+            <td
+              colSpan="9"
+            >
+              <div
+                className="expandable"
+              >
+                <ul>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Amount
+                      </span>
+                      <span
+                        className="text"
+                      >
+                        R$ 600.000,00
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        E-mail
+                      </span>
+                      <span
+                        className="text"
+                      >
+                        null@undefined.com
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Refuse reason
+                      </span>
+                      <span
+                        className="empty unselectable text"
+                      />
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Antifraud score
+                      </span>
+                      <span
+                        className="empty unselectable text"
+                      />
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Installments
+                      </span>
+                      <span
+                        className="text"
+                      >
+                        6X
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Name
+                      </span>
+                      <span
+                        className="text"
+                      >
+                        null of undefined of NaN
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Card brand
+                      </span>
+                      <div
+                        className={undefined}
+                        title="visa"
+                      >
+                        <span
+                          className={undefined}
+                        >
+                          <VisaCard16.svg
+                            className={undefined}
+                          />
+                          visa
+                        </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Boleto link
+                      </span>
+                      <span
+                        className="empty unselectable text"
+                      />
+                    </div>
+                  </li>
+                </ul>
+                <div
+                  className="expandableActions unselectable"
+                >
+                  <div>
+                    <button
+                      className="button outline light normalRelevance default"
+                      disabled={false}
+                      onClick={[Function]}
+                      type="button"
+                    >
+                      Show details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
         </tbody>
       </table>
       <div
@@ -17374,12 +18015,12 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
         <div>
           <div>
              Selected rows 
-            0
+            1
              
           </div>
           <div>
              Expanded rows 
-            0
+            4
              
           </div>
         </div>
