@@ -7,14 +7,20 @@ const Section = ({
   children,
 }) => (
   <section className={styles.section}>
-    <h2>{title}</h2>
+    {title &&
+      <h2>{title}</h2>
+    }
     <div>{children}</div>
   </section>
 )
 
 Section.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   children: PropTypes.node.isRequired,
+}
+
+Section.defaultProps = {
+  title: '',
 }
 
 export default Section
