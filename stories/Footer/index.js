@@ -6,7 +6,7 @@ import FooterExample from './FooterExample'
 
 storiesOf('Footer', module)
   .add('Default', () => (
-    <Section title="Only example">
+    <Section>
       <FooterExample />
     </Section>
   ))

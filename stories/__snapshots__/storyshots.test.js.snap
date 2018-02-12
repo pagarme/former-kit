@@ -6157,9 +6157,7 @@ exports[`Storyshots Footer Default 1`] = `
 <section
   className={undefined}
 >
-  <h2>
-    Only example
-  </h2>
+  
   <div>
     <footer
       className="footer"
