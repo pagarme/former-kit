@@ -13,47 +13,49 @@ import {
   Col,
 } from '../Grid'
 
-const consumeTheme = ThemeConsumer('UILogin')
+const consumeTheme = ThemeConsumer('UILanding')
 
 /**
- * Layout secondary section, this component do not receive
- * a base prop and will be positioning its
- * content in the layout's right side when the screen with
+ * Layout main section, this component will apply the base
+ * prop style to it children and will be positioning its
+ * content in the layout's left side when the screen with
  * is bigger than 1024px otherwise it will be positioned
- * under the primary section.
+ * over the secondary section.
  */
-const LoginSecondarySection = ({
+const LandingPrimarySection = ({
   theme,
   children,
   base,
 }) => (
   <Col
-    tv={5}
-    desk={5}
-    tablet={12}
-    palm={12}
     className={
       classNames(
         theme[base],
-        theme.secondary,
+        theme.primary,
         theme.column
       )
     }
+    tv={7}
+    desk={7}
+    tablet={12}
+    palm={12}
   >
     {children}
   </Col>
 )
 
-LoginSecondarySection.propTypes = {
+LandingPrimarySection.propTypes = {
   /**
    * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper.
    */
   theme: shape({
-    secondary: string,
+    primary: string,
     column: string,
+    dark: string,
+    light: string,
   }),
   /**
-   * React elements which will stay in the secondary column.
+   * React elements which will stay in the main column.
    */
   children: oneOfType([element, arrayOf(element)]),
   /**
@@ -62,10 +64,10 @@ LoginSecondarySection.propTypes = {
   base: oneOf(['dark', 'light']),
 }
 
-LoginSecondarySection.defaultProps = {
+LandingPrimarySection.defaultProps = {
   theme: {},
   children: null,
-  base: 'light',
+  base: 'dark',
 }
 
-export default consumeTheme(LoginSecondarySection)
+export default consumeTheme(LandingPrimarySection)
