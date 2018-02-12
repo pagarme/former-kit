@@ -5529,9 +5529,6 @@ exports[`Storyshots Dropdown Default 1`] = `
 <div
   className="typography"
 >
-  <h2>
-    Dropdown
-  </h2>
   <section
     className={undefined}
   >
@@ -5779,9 +5776,6 @@ exports[`Storyshots Dropdown Form 1`] = `
 <div
   className="typography"
 >
-  <h2>
-    Dropdown
-  </h2>
   <section>
     <h3>
       Default

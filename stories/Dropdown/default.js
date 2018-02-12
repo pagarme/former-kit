@@ -54,8 +54,6 @@ DropdownState.defaultProps = {
 storiesOf('Dropdown', module)
   .add('Default', () => (
     <div>
-      <h2>Dropdown</h2>
-
       <Section title="Default">
         <DropdownState />
       </Section>
