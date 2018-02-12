@@ -68,8 +68,6 @@ DateInputState.defaultProps = {
 storiesOf('DateInput', module)
   .add('All styles', () => (
     <div className={style.main}>
-      <h1>DateInput usage</h1>
-
       <Section title="Minimal setup">
         <DateInputState />
       </Section>

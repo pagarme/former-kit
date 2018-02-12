@@ -1994,9 +1994,6 @@ exports[`Storyshots DateInput All styles 1`] = `
 <div
   className="typography"
 >
-  <h1>
-    DateInput usage
-  </h1>
   <section
     className={undefined}
   >
