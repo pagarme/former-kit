@@ -5776,378 +5776,402 @@ exports[`Storyshots Dropdown Form 1`] = `
 <div
   className="typography"
 >
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Default
-    </h3>
+    </h2>
     <div>
-      <div
-        className="dropdown"
-      >
-        <label
-          className="label"
-          htmlFor="Things-shortid-mock"
+      <div>
+        <div
+          className="dropdown"
         >
-          Things
-        </label>
-        <select
-          className="select"
-          defaultValue="placeholder"
-          disabled={false}
-          id="Things-shortid-mock"
-          onChange={[Function]}
-        >
-          <option
-            className="option placeholder"
-            disabled={true}
-            hidden={true}
-            value="placeholder"
+          <label
+            className="label"
+            htmlFor="Things-shortid-mock"
           >
-            
-          </option>
-          <option
-            className="option"
-            value="github"
+            Things
+          </label>
+          <select
+            className="select"
+            defaultValue="placeholder"
+            disabled={false}
+            id="Things-shortid-mock"
+            onChange={[Function]}
           >
-            Github
-          </option>
-          <option
-            className="option"
-            value="open-source"
+            <option
+              className="option placeholder"
+              disabled={true}
+              hidden={true}
+              value="placeholder"
+            >
+              
+            </option>
+            <option
+              className="option"
+              value="github"
+            >
+              Github
+            </option>
+            <option
+              className="option"
+              value="open-source"
+            >
+              Open Source
+            </option>
+            <option
+              className="option"
+              value="pilot"
+            >
+              Pilot
+            </option>
+          </select>
+          <span
+            className="arrow"
           >
-            Open Source
-          </option>
-          <option
-            className="option"
-            value="pilot"
-          >
-            Pilot
-          </option>
-        </select>
-        <span
-          className="arrow"
-        >
-          <svg />
-        </span>
-        
+            <svg />
+          </span>
+          
+        </div>
+        <p>
+          Selected: 
+          
+        </p>
       </div>
-      <p>
-        Selected: 
-        
-      </p>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       With placeholder
-    </h3>
+    </h2>
     <div>
-      <div
-        className="dropdown"
-      >
-        <label
-          className="label"
-          htmlFor="Things-shortid-mock"
+      <div>
+        <div
+          className="dropdown"
         >
-          Things
-        </label>
-        <select
-          className="select"
-          defaultValue="placeholder"
-          disabled={false}
-          id="Things-shortid-mock"
-          onChange={[Function]}
-        >
-          <option
-            className="option placeholder"
-            disabled={true}
-            hidden={true}
-            value="placeholder"
+          <label
+            className="label"
+            htmlFor="Things-shortid-mock"
           >
-            Select
-          </option>
-          <option
-            className="option"
-            value="github"
+            Things
+          </label>
+          <select
+            className="select"
+            defaultValue="placeholder"
+            disabled={false}
+            id="Things-shortid-mock"
+            onChange={[Function]}
           >
-            Github
-          </option>
-          <option
-            className="option"
-            value="open-source"
+            <option
+              className="option placeholder"
+              disabled={true}
+              hidden={true}
+              value="placeholder"
+            >
+              Select
+            </option>
+            <option
+              className="option"
+              value="github"
+            >
+              Github
+            </option>
+            <option
+              className="option"
+              value="open-source"
+            >
+              Open Source
+            </option>
+            <option
+              className="option"
+              value="pilot"
+            >
+              Pilot
+            </option>
+          </select>
+          <span
+            className="arrow"
           >
-            Open Source
-          </option>
-          <option
-            className="option"
-            value="pilot"
-          >
-            Pilot
-          </option>
-        </select>
-        <span
-          className="arrow"
-        >
-          <svg />
-        </span>
-        
+            <svg />
+          </span>
+          
+        </div>
+        <p>
+          Selected: 
+          
+        </p>
       </div>
-      <p>
-        Selected: 
-        
-      </p>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Disabled with placeholder
-    </h3>
+    </h2>
     <div>
-      <div
-        className="dropdown disabled"
-      >
-        <label
-          className="label"
-          htmlFor="Things-shortid-mock"
+      <div>
+        <div
+          className="dropdown disabled"
         >
-          Things
-        </label>
-        <select
-          className="select"
-          defaultValue="placeholder"
-          disabled={true}
-          id="Things-shortid-mock"
-          onChange={[Function]}
-        >
-          <option
-            className="option placeholder"
+          <label
+            className="label"
+            htmlFor="Things-shortid-mock"
+          >
+            Things
+          </label>
+          <select
+            className="select"
+            defaultValue="placeholder"
             disabled={true}
-            hidden={true}
-            value="placeholder"
+            id="Things-shortid-mock"
+            onChange={[Function]}
           >
-            Select
-          </option>
-          <option
-            className="option"
-            value="github"
+            <option
+              className="option placeholder"
+              disabled={true}
+              hidden={true}
+              value="placeholder"
+            >
+              Select
+            </option>
+            <option
+              className="option"
+              value="github"
+            >
+              Github
+            </option>
+            <option
+              className="option"
+              value="open-source"
+            >
+              Open Source
+            </option>
+            <option
+              className="option"
+              value="pilot"
+            >
+              Pilot
+            </option>
+          </select>
+          <span
+            className="arrow"
           >
-            Github
-          </option>
-          <option
-            className="option"
-            value="open-source"
-          >
-            Open Source
-          </option>
-          <option
-            className="option"
-            value="pilot"
-          >
-            Pilot
-          </option>
-        </select>
-        <span
-          className="arrow"
-        >
-          <svg />
-        </span>
-        
+            <svg />
+          </span>
+          
+        </div>
+        <p>
+          Selected: 
+          
+        </p>
       </div>
-      <p>
-        Selected: 
-        
-      </p>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Disabled
-    </h3>
+    </h2>
     <div>
-      <div
-        className="dropdown disabled"
-      >
-        <label
-          className="label"
-          htmlFor="Things-shortid-mock"
+      <div>
+        <div
+          className="dropdown disabled"
         >
-          Things
-        </label>
-        <select
-          className="select"
-          defaultValue="placeholder"
-          disabled={true}
-          id="Things-shortid-mock"
-          onChange={[Function]}
-        >
-          <option
-            className="option placeholder"
+          <label
+            className="label"
+            htmlFor="Things-shortid-mock"
+          >
+            Things
+          </label>
+          <select
+            className="select"
+            defaultValue="placeholder"
             disabled={true}
-            hidden={true}
-            value="placeholder"
+            id="Things-shortid-mock"
+            onChange={[Function]}
           >
-            
-          </option>
-          <option
-            className="option"
-            value="github"
+            <option
+              className="option placeholder"
+              disabled={true}
+              hidden={true}
+              value="placeholder"
+            >
+              
+            </option>
+            <option
+              className="option"
+              value="github"
+            >
+              Github
+            </option>
+            <option
+              className="option"
+              value="open-source"
+            >
+              Open Source
+            </option>
+            <option
+              className="option"
+              value="pilot"
+            >
+              Pilot
+            </option>
+          </select>
+          <span
+            className="arrow"
           >
-            Github
-          </option>
-          <option
-            className="option"
-            value="open-source"
-          >
-            Open Source
-          </option>
-          <option
-            className="option"
-            value="pilot"
-          >
-            Pilot
-          </option>
-        </select>
-        <span
-          className="arrow"
-        >
-          <svg />
-        </span>
-        
+            <svg />
+          </span>
+          
+        </div>
+        <p>
+          Selected: 
+          
+        </p>
       </div>
-      <p>
-        Selected: 
-        
-      </p>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Error
-    </h3>
+    </h2>
     <div>
-      <div
-        className="dropdown error"
-      >
-        <label
-          className="label"
-          htmlFor="Things-shortid-mock"
+      <div>
+        <div
+          className="dropdown error"
         >
-          Things
-        </label>
-        <select
-          className="select"
-          defaultValue="placeholder"
-          disabled={false}
-          id="Things-shortid-mock"
-          onChange={[Function]}
-        >
-          <option
-            className="option placeholder"
-            disabled={true}
-            hidden={true}
-            value="placeholder"
+          <label
+            className="label"
+            htmlFor="Things-shortid-mock"
           >
-            
-          </option>
-          <option
-            className="option"
-            value="github"
+            Things
+          </label>
+          <select
+            className="select"
+            defaultValue="placeholder"
+            disabled={false}
+            id="Things-shortid-mock"
+            onChange={[Function]}
           >
-            Github
-          </option>
-          <option
-            className="option"
-            value="open-source"
+            <option
+              className="option placeholder"
+              disabled={true}
+              hidden={true}
+              value="placeholder"
+            >
+              
+            </option>
+            <option
+              className="option"
+              value="github"
+            >
+              Github
+            </option>
+            <option
+              className="option"
+              value="open-source"
+            >
+              Open Source
+            </option>
+            <option
+              className="option"
+              value="pilot"
+            >
+              Pilot
+            </option>
+          </select>
+          <span
+            className="arrow"
           >
-            Open Source
-          </option>
-          <option
-            className="option"
-            value="pilot"
+            <svg />
+          </span>
+          <p
+            className="secondaryText"
           >
-            Pilot
-          </option>
-        </select>
-        <span
-          className="arrow"
-        >
-          <svg />
-        </span>
-        <p
-          className="secondaryText"
-        >
-          Something went wrong
+            Something went wrong
+          </p>
+        </div>
+        <p>
+          Selected: 
+          
         </p>
       </div>
-      <p>
-        Selected: 
-        
-      </p>
     </div>
   </section>
-  <section>
-    <h3>
+  <section
+    className={undefined}
+  >
+    <h2>
       Success
-    </h3>
+    </h2>
     <div>
-      <div
-        className="dropdown success"
-      >
-        <label
-          className="label"
-          htmlFor="Things-shortid-mock"
+      <div>
+        <div
+          className="dropdown success"
         >
-          Things
-        </label>
-        <select
-          className="select"
-          defaultValue="placeholder"
-          disabled={false}
-          id="Things-shortid-mock"
-          onChange={[Function]}
-        >
-          <option
-            className="option placeholder"
-            disabled={true}
-            hidden={true}
-            value="placeholder"
+          <label
+            className="label"
+            htmlFor="Things-shortid-mock"
           >
-            
-          </option>
-          <option
-            className="option"
-            value="github"
+            Things
+          </label>
+          <select
+            className="select"
+            defaultValue="placeholder"
+            disabled={false}
+            id="Things-shortid-mock"
+            onChange={[Function]}
           >
-            Github
-          </option>
-          <option
-            className="option"
-            value="open-source"
+            <option
+              className="option placeholder"
+              disabled={true}
+              hidden={true}
+              value="placeholder"
+            >
+              
+            </option>
+            <option
+              className="option"
+              value="github"
+            >
+              Github
+            </option>
+            <option
+              className="option"
+              value="open-source"
+            >
+              Open Source
+            </option>
+            <option
+              className="option"
+              value="pilot"
+            >
+              Pilot
+            </option>
+          </select>
+          <span
+            className="arrow"
           >
-            Open Source
-          </option>
-          <option
-            className="option"
-            value="pilot"
+            <svg />
+          </span>
+          <p
+            className="secondaryText"
           >
-            Pilot
-          </option>
-        </select>
-        <span
-          className="arrow"
-        >
-          <svg />
-        </span>
-        <p
-          className="secondaryText"
-        >
-          Something went well
+            Something went well
+          </p>
+        </div>
+        <p>
+          Selected: 
+          
         </p>
       </div>
-      <p>
-        Selected: 
-        
-      </p>
     </div>
   </section>
 </div>
