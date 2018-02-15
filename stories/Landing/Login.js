@@ -22,69 +22,65 @@ const Login = ({
 }) => (
   <Landing className={styles.container}>
     <LandingPrimarySection>
-      <div className={styles.columnContainer}>
-        <form
-          onSubmit={handleLogIn}
-          className={styles.contentRight}
-        >
-          <div className={styles.logo}>
-            <img
-              src=""
-              alt="Pagar.me"
-            />
-          </div>
-          <div className={styles.login}>
+      <form
+        onSubmit={handleLogIn}
+        className={styles.contentRight}
+      >
+        <div className={styles.logo}>
+          <img
+            src=""
+            alt="Pagar.me"
+          />
+        </div>
+        <div className={styles.login}>
+          <Input
+            error={emailError}
+            label="Email"
+            name="email"
+            onChange={handleTextChange}
+            placeholder="emaillegal@pagar.me"
+            type="text"
+            value={email}
+          />
+          <Input
+            error={passwordError}
+            label="Senha"
+            name="password"
+            onChange={handleTextChange}
+            placeholder=""
+            type="password"
+            value={password}
+          />
+          { hasToken &&
             <Input
-              error={emailError}
-              label="Email"
-              name="email"
+              error={tokenError}
+              label="Token"
+              name="token"
               onChange={handleTextChange}
-              placeholder="emaillegal@pagar.me"
+              placeholder="ABC123"
               type="text"
-              value={email}
+              value={token}
             />
-            <Input
-              error={passwordError}
-              label="Senha"
-              name="password"
-              onChange={handleTextChange}
-              placeholder=""
-              type="password"
-              value={password}
-            />
-            { hasToken &&
-              <Input
-                error={tokenError}
-                label="Token"
-                name="token"
-                onChange={handleTextChange}
-                placeholder="ABC123"
-                type="text"
-                value={token}
-              />
-            }
+          }
+        </div>
+        <div className={styles.actions}>
+          <div className={styles.hugeButton} >
+            <Button
+              type="submit"
+              size="large"
+              fill="gradient"
+            >
+              Login
+            </Button>
           </div>
-          <div className={styles.actions}>
-            <div className={styles.hugeButton} >
-              <Button
-                type="submit"
-                size="large"
-                fill="gradient"
-              >
-                Login
-              </Button>
-            </div>
-            <a href="https://dashboard.pagar.me/#/forgot_password" >
-              Redefinir senha
-            </a>
-          </div>
-        </form>
-      </div>
+          <a href="https://dashboard.pagar.me/#/forgot_password" >
+            Redefinir senha
+          </a>
+        </div>
+      </form>
     </LandingPrimarySection>
     <LandingSecondarySection>
-      <div className={styles.columnContainer}>
-        <WelcomeContent />
-      </div>
+      <WelcomeContent />
     </LandingSecondarySection>
   </Landing>
 )
