@@ -1,7 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { storiesOf } from '@storybook/react'
+
 import Pagination from '../../src/Pagination'
+import Section from '../Section'
 
 class PaginationState extends React.Component {
   constructor (props) {
@@ -32,7 +34,7 @@ class PaginationState extends React.Component {
     const error = totalPages < currentPage || currentPage === 0
 
     return (
-      <div style={{ padding: '10px' }}>
+      <div>
         <Pagination
           currentPage={currentPage}
           totalPages={totalPages}
@@ -56,60 +58,51 @@ PaginationState.propTypes = {
 
 
 storiesOf('Pagination', module)
-  .add('defaultTheme', () => (
+  .add('Default', () => (
     <div>
-      <h1>Pagination usage</h1>
-
-      <section>
-        <h2>Single page</h2>
+      <Section title="Single page">
         <PaginationState
           currentPage={1}
           totalPages={1}
         />
-      </section>
+      </Section>
 
-      <section>
-        <h2>First page</h2>
+      <Section title="First page">
         <PaginationState
           currentPage={1}
           totalPages={10}
         />
-      </section>
+      </Section>
 
-      <section>
-        <h2>Intermediate page</h2>
+      <Section title="Intermediate page">
         <PaginationState
           currentPage={5}
           totalPages={10}
         />
-      </section>
+      </Section>
 
-      <section>
-        <h2>Last page</h2>
+      <Section title="Last page">
         <PaginationState
           currentPage={10}
           totalPages={10}
         />
-      </section>
+      </Section>
 
-      <section>
-        <h2>A biiiiig number of pages</h2>
+      <Section title="So many pages">
         <PaginationState
           currentPage={1}
           totalPages={10000}
         />
-      </section>
+      </Section>
 
-      <section>
-        <h2>Wrong page</h2>
+      <Section title="Wrong page">
         <PaginationState
           currentPage={2}
           totalPages={1}
         />
-      </section>
+      </Section>
 
-      <section>
-        <h2>Translated to portuguese</h2>
+      <Section title="Translated to portuguese">
         <PaginationState
           currentPage={1}
           totalPages={10}
@@ -117,7 +110,7 @@ storiesOf('Pagination', module)
             of: 'de',
           }}
         />
-      </section>
+      </Section>
 
     </div>
   ))

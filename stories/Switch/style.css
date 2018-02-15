@@ -1,8 +1,0 @@
-.container {
-  display: flex;
-}
-
-.container > * {
-  margin-left: 20px;
-}
-

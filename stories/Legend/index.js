@@ -2,24 +2,24 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 
 import Legend from '../../src/Legend'
-
+import Section from '../Section'
 
 const hidingLabel = [
   {
     color: '#4ca9d7',
-    text: 'Boleto pago com valor superior',
-    acronym: 'BPVS',
+    text: 'Zazu',
+    acronym: 'ZZ',
     hideLabel: true,
   },
   {
     color: '#f16518',
-    text: 'Chargeback',
-    acronym: 'CB',
+    text: 'Zeke',
+    acronym: 'ZK',
     hideLabel: true,
   },
   {
     color: '#41535b',
-    text: 'Aguardando pagamento',
+    text: 'Macaroni',
     hideLabel: true,
   },
 ]
@@ -27,52 +27,50 @@ const hidingLabel = [
 const automaticAbbr = [
   {
     color: '#53be76',
-    text: 'Paga',
+    text: 'MacGuybird',
   },
   {
     color: '#fcb20a',
-    text: 'Autorizada',
+    text: 'Mad Dog',
   },
   {
     color: '#5b2886',
-    text: 'Estornada',
+    text: 'Dabblit',
   },
   {
     color: '#9d9fa0',
-    text: 'Aguardando registro',
+    text: 'Danger Mouse',
   },
   {
     color: '#e00403',
-    text: 'Recusada',
+    text: 'Dandelion',
   },
   {
     color: '#8c68d4',
-    text: 'Estorno pendente',
+    text: 'Caboodles',
   },
 ]
 
 const manualAbbr = [
   {
     color: '#951d3c',
-    text: 'Processando',
-    acronym: 'PR',
+    text: 'Fa-neenee',
+    acronym: 'FN',
   },
   {
     color: '#244d85',
-    text: 'Boleto pago com valor inferior',
-    acronym: 'BPVI',
+    text: 'Fast Freddie',
+    acronym: 'FF',
   },
   {
     color: '#bf5316',
-    text: 'Chargeback Reapresentado',
-    acronym: 'CBR',
+    text: 'Tangsodo',
+    acronym: 'TS',
   },
 ]
 
 const createLegends = (title, status) => (
-  <div>
-    {title}
-
+  <Section title={title}>
     {status.map(({
       color,
       text,
@@ -80,7 +78,7 @@ const createLegends = (title, status) => (
       acronym,
       hideLabel,
     }) => (
-      <div key={text} style={{ margin: '10px' }}>
+      <div key={text} style={{ marginBottom: '10px' }}>
         <Legend
           color={color}
           outline={outline}
@@ -91,11 +89,11 @@ const createLegends = (title, status) => (
         </Legend>
       </div>
     ))}
-  </div>
+  </Section>
 )
 
 storiesOf('Legend', module)
-  .add('defaultTheme', () => (
+  .add('Default', () => (
     <div>
       {createLegends('Without acronym prop', automaticAbbr)}
       {createLegends('With acronym prop', manualAbbr)}

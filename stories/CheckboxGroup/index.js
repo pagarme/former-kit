@@ -2,30 +2,29 @@ import React from 'react'
 
 import { storiesOf } from '@storybook/react'
 
+import Section from '../Section'
 import CheckboxGroup from '../../src/CheckboxGroup'
-import style from '../style.css'
-
 
 class CheckboxGroupState extends React.Component {
   constructor (props) {
     super(props)
 
-    this.state = { values: ['nerone'] }
+    this.state = { values: ['github'] }
   }
 
   render () {
     const options = [
       {
-        label: 'Leo',
-        value: 'leo',
+        label: 'Github',
+        value: 'github',
       },
       {
-        label: 'Nerone',
-        value: 'nerone',
+        label: 'Open Source',
+        value: 'open-source',
       },
       {
-        label: 'hi',
-        value: 'hi',
+        label: 'Pilot',
+        value: 'pilot',
       },
     ]
 
@@ -48,7 +47,7 @@ class CheckboxGroupState extends React.Component {
           values={this.state.values}
         />
 
-        <p>Selecionado: {this.state.values.join(', ')}</p>
+        <p>Selected: {this.state.values.join(', ')}</p>
       </div>
     )
   }
@@ -62,26 +61,21 @@ CheckboxGroupState.defaultProps = {
 
 storiesOf('Checkbox Group', module)
   .add('Default', () => (
-    <div className={style.container}>
-      <h2>CheckboxGroup</h2>
-      <section>
-        <h3>Default</h3>
+    <div>
+      <Section title="Default">
         <CheckboxGroupState name="default" />
-      </section>
+      </Section>
 
-      <section>
-        <h3>Disabled</h3>
+      <Section title="Disabled">
         <CheckboxGroupState name="disabled" disabled />
-      </section>
+      </Section>
 
-      <section>
-        <h3>Success</h3>
-        <CheckboxGroupState name="success" success="Eae sucesso" />
-      </section>
+      <Section title="Success">
+        <CheckboxGroupState name="success" success="Success" />
+      </Section>
 
-      <section>
-        <h3>Error</h3>
-        <CheckboxGroupState name="error" error="Errou!" />
-      </section>
+      <Section title="Error">
+        <CheckboxGroupState name="error" error="Error!" />
+      </Section>
     </div>
   ))

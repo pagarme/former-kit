@@ -8,20 +8,20 @@ import Footer from '../../src/Footer'
 
 const links = [
   {
-    title: 'Documentação',
-    onClick: () => action('Documentação'),
+    title: 'Documentation',
+    onClick: () => action('Documentation'),
   },
   {
-    title: 'Suporte',
-    onClick: () => action('Suporte'),
+    title: 'Support',
+    onClick: () => action('Support'),
   },
   {
-    title: 'Política de Privacidade',
-    onClick: () => action('Política de privacidade'),
+    title: 'Privacy',
+    onClick: () => action('Privacy'),
   },
   {
-    title: 'Contato',
-    onClick: () => action('Contato'),
+    title: 'Contact',
+    onClick: () => action('Contact'),
   },
 ]
 

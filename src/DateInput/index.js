@@ -40,6 +40,18 @@ import {
 } from './classNames'
 
 const consumeTheme = ThemeConsumer('UIDateInput')
+
+const defaultStrings = {
+  start: 'Start',
+  end: 'End',
+  select: 'Select a date or period',
+}
+
+const getStrings = strings => ({
+  ...defaultStrings,
+  ...strings,
+})
+
 /**
  * Input component designed to receive one or two dates, can have a mask
  * for the input and enables the date selection using a calendar like selector
@@ -217,7 +229,10 @@ class DateInput extends React.Component {
       limits,
       icons,
       theme,
+      strings,
     } = this.props
+
+    const translatedStrings = getStrings(strings)
 
     const { isValidStart, isValidEnd } = validateRange(limits, dates)
     const isValidDates = isValidStart && isValidEnd
@@ -225,8 +240,8 @@ class DateInput extends React.Component {
 
     const initialPlaceholder = dates.start || (
       showDateSelector
-        ? 'Inicio'
-        : 'Selecione uma data ou periodo'
+        ? translatedStrings.start
+        : translatedStrings.select
     )
 
     return (
@@ -292,7 +307,7 @@ class DateInput extends React.Component {
                 placeholderChar=" "
                 name="endDate"
                 onChange={value => this.handleInputChange('end', value)}
-                placeholder="Fim"
+                placeholder={translatedStrings.end}
                 value={dates.end}
               />
               <span className={theme.expander}>
@@ -401,6 +416,14 @@ DateInput.propTypes = {
     leftArrow: element,
     rightArrow: element,
   }),
+  /**
+   * Strings for component i18n.
+   */
+  strings: shape({
+    start: string,
+    end: string,
+    select: string,
+  }),
 }
 
 DateInput.defaultProps = {
@@ -417,6 +440,7 @@ DateInput.defaultProps = {
     lower: moment('1900-01-01', 'YYYY-MM-DD'),
   },
   presets: [],
+  strings: defaultStrings,
 }
 
 export default consumeTheme(clickOutside(DateInput))

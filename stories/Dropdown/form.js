@@ -1,20 +1,20 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
+import Section from '../Section'
 import Dropdown from '../../src/Dropdown/form'
-import style from '../style.css'
 
 const options = [
   {
-    name: 'Leonardo',
-    value: 'leonardo',
+    name: 'Github',
+    value: 'github',
   },
   {
-    name: 'Derek',
-    value: 'derek',
+    name: 'Open Source',
+    value: 'open-source',
   },
   {
-    name: 'Lucas',
-    value: 'lucas',
+    name: 'Pilot',
+    value: 'pilot',
   },
 ]
 
@@ -29,8 +29,8 @@ class DropdownState extends React.Component {
       <div>
         <Dropdown
           options={options}
-          name="pessoas"
-          label="Pessoas da Pagarme"
+          name="Things"
+          label="Things"
           onChange={value => this.setState({ selected: value })}
           value={this.state.selected}
           disabled={this.props.disabled}
@@ -39,7 +39,7 @@ class DropdownState extends React.Component {
           success={this.props.success}
         />
 
-        <p>Selecionado: {this.state.selected}</p>
+        <p>Selected: {this.state.selected}</p>
       </div>
     )
   }
@@ -54,38 +54,30 @@ DropdownState.defaultProps = {
 
 storiesOf('Dropdown', module)
   .add('Form', () => (
-    <div className={style.container}>
-      <h2>Dropdown</h2>
-
-      <section>
-        <h3>Default</h3>
+    <div>
+      <Section title="Default">
         <DropdownState />
-      </section>
+      </Section>
 
-      <section>
-        <h3>With placeholder</h3>
-        <DropdownState placeholder="Selecione alguem" />
-      </section>
+      <Section title="With placeholder">
+        <DropdownState placeholder="Select" />
+      </Section>
 
-      <section>
-        <h3>Disabled with placeholder</h3>
-        <DropdownState disabled placeholder="Selecione alguem" />
-      </section>
+      <Section title="Disabled with placeholder">
+        <DropdownState disabled placeholder="Select" />
+      </Section>
 
-      <section>
-        <h3>Disabled</h3>
+      <Section title="Disabled">
         <DropdownState disabled />
-      </section>
+      </Section>
 
-      <section>
-        <h3>Error</h3>
+      <Section title="Error">
         <DropdownState error="Something went wrong" />
-      </section>
+      </Section>
 
-      <section>
-        <h3>Success</h3>
+      <Section title="Success">
         <DropdownState success="Something went well" />
-      </section>
+      </Section>
     </div>
   ))
 

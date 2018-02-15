@@ -10,7 +10,7 @@ const consumeTheme = ThemeConsumer('UIButton')
 /**
  * Simple html button in a beautifull skin.
  */
-function Button ({
+const Button = ({
   base,
   children,
   disabled,
@@ -21,7 +21,7 @@ function Button ({
   size,
   theme,
   type,
-}) {
+}) => {
   const buttonClasses = classNames(
     theme.button,
     theme[fill],

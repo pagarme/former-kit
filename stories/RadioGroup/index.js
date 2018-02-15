@@ -1,35 +1,33 @@
 import React from 'react'
-
 import { storiesOf } from '@storybook/react'
 
 import RadioGroup from '../../src/RadioGroup'
-import style from '../style.css'
-
+import Section from '../Section'
 
 const options = [
   {
-    name: 'Prédio',
-    value: 'predio',
+    name: 'Github',
+    value: 'github',
   },
   {
-    name: 'Casa',
-    value: 'casa',
+    name: 'Open Source',
+    value: 'open-source',
   },
   {
-    name: 'Sofá',
-    value: 'sofa',
+    name: 'Pilot',
+    value: 'pilot',
   },
 ]
 
 class RadioGroupState extends React.Component {
   constructor (props) {
     super(props)
-    this.state = { value: 'casa' }
+    this.state = { value: 'github' }
   }
 
   componentWillMount () {
     if (this.props.success) {
-      this.setState({ value: 'sofa' })
+      this.setState({ value: 'Pilot' })
     }
   }
 
@@ -57,7 +55,7 @@ class RadioGroupState extends React.Component {
           success={success}
         />
 
-        <pre>Selecionado: {value}</pre>
+        <pre>Selected: {value}</pre>
       </div>
     )
   }
@@ -71,27 +69,21 @@ RadioGroupState.defaultProps = {
 
 storiesOf('Radio Group', module)
   .add('Default', () => (
-    <div className={style.container}>
-      <h2>Radio Button Group</h2>
-
-      <section>
-        <h3>Disabled</h3>
+    <div>
+      <Section title="Disabled">
         <RadioGroupState name="disabled" disabled />
-      </section>
+      </Section>
 
-      <section>
-        <h3>Default</h3>
+      <Section title="Default">
         <RadioGroupState name="default" />
-      </section>
+      </Section>
 
-      <section>
-        <h3>Success</h3>
-        <RadioGroupState name="success" success="Sucesso!" />
-      </section>
+      <Section title="Success">
+        <RadioGroupState name="success" success="Success!" />
+      </Section>
 
-      <section>
-        <h3>Error</h3>
-        <RadioGroupState name="error" error="Erro!" />
-      </section>
+      <Section title="Error">
+        <RadioGroupState name="error" error="Error!" />
+      </Section>
     </div>
   ))

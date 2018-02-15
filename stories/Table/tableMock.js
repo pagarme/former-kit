@@ -36,20 +36,20 @@ const getMock = detailsClick => ({
       accessor: ['status'],
       orderable: true,
     },
-    { title: 'Id da transação', accessor: ['id'], orderable: true },
-    { title: 'Data da transação', accessor: ['date_created'], orderable: true },
+    { title: 'Transaction Id', accessor: ['id'], orderable: true },
+    { title: 'Date created', accessor: ['date_created'], orderable: true },
     { title: 'Cpf/Cnpj', accessor: ['document_number'], orderable: true },
-    { title: 'Forma de pagamento', accessor: ['payment_method'], orderable: true },
-    { title: 'Valor capturado', accessor: ['paid_amount'], orderable: true },
-    { title: 'Custo', accessor: ['cost'], orderable: true },
-    { title: 'Valor Líquido', accessor: ['amount'], orderable: true },
+    { title: 'Payment method', accessor: ['payment_method'], orderable: true },
+    { title: 'Paid amount', accessor: ['paid_amount'], orderable: true },
+    { title: 'Cost', accessor: ['cost'], orderable: true },
+    { title: 'Amount', accessor: ['amount'], orderable: true },
     { title: 'E-mail', accessor: ['customer', 'email'], orderable: true },
-    { title: 'Razão da recusa', accessor: ['refuse_reason'], orderable: true },
-    { title: 'Antifraude', accessor: ['antifraud_score'], orderable: true },
-    { title: 'Parcelas', accessor: ['installments'], orderable: true },
-    { title: 'Nome', accessor: ['customer', 'name'], orderable: true },
+    { title: 'Refuse reason', accessor: ['refuse_reason'], orderable: true },
+    { title: 'Antifraud score', accessor: ['antifraud_score'], orderable: true },
+    { title: 'Installments', accessor: ['installments'], orderable: true },
+    { title: 'Name', accessor: ['customer', 'name'], orderable: true },
     {
-      title: 'Bandeira',
+      title: 'Card brand',
       accessor: ['card_brand'],
       orderable: true,
       renderer: item => (
@@ -71,9 +71,9 @@ const getMock = detailsClick => ({
         </div>
       ),
     },
-    { title: 'Link do boleto', accessor: ['link'], orderable: true },
+    { title: 'Boleto link', accessor: ['link'], orderable: true },
     {
-      title: 'Mais detalhes',
+      title: 'Details',
       isAction: true,
       orderable: false,
       renderer: index => (
@@ -81,7 +81,7 @@ const getMock = detailsClick => ({
           fill="outline"
           onClick={() => detailsClick(index)}
         >
-          Mostar Detalhes
+          Show details
         </Button>
       ),
     },
@@ -99,13 +99,13 @@ const getMock = detailsClick => ({
       document_number: '67.484.928/0001-60',
       id: '2229597000',
       installments: 1,
-      link: 'link maroto do boleto',
+      link: 'boleto link',
       paid_amount: 'R$ 999.999.999,00',
       amount: 'R$ 999.999.999,00',
       payment_method: 'Boleto',
       refuse_reason: null,
-      status: 'Boleto pago com valor inferior',
-      status_acronym: 'BPVI',
+      status: 'Boleto paid with inferior value',
+      status_acronym: 'BPIV',
       status_color: '#244d85',
     },
     {
@@ -115,7 +115,7 @@ const getMock = detailsClick => ({
       paid_amount: 'R$ 100.000,00',
       customer: {
         email: 'null@undefined.com',
-        name: 'null da undefined de NaN',
+        name: 'null of undefined of NaN',
       },
       date_created: '23/09/2017 - 15:15h',
       document_number: '67.484.928/0001-60',
@@ -123,7 +123,7 @@ const getMock = detailsClick => ({
       installments: '4X',
       link: null,
       amount: 'R$ 400.000,00',
-      payment_method: 'Cartão de crédito',
+      payment_method: 'Credit card',
       refuse_reason: null,
       status: 'Pago',
       status_acronym: 'P',
@@ -136,7 +136,7 @@ const getMock = detailsClick => ({
       paid_amount: 'R$ 100.000,00',
       customer: {
         email: 'null@undefined.com',
-        name: 'null da undefined de NaN',
+        name: 'null of undefined of NaN',
       },
       date_created: '23/09/2017 - 16:15h',
       document_number: '67.484.928/0001-60',
@@ -144,7 +144,7 @@ const getMock = detailsClick => ({
       installments: '5X',
       link: null,
       amount: 'R$ 500.000,00',
-      payment_method: 'Cartão de crédito estrangeiro',
+      payment_method: 'Credit card',
       refuse_reason: null,
       status: 'Chargeback',
       status_acronym: 'CB',
@@ -157,7 +157,7 @@ const getMock = detailsClick => ({
       cost: 'R$ 14.000,00',
       customer: {
         email: 'null@undefined.com',
-        name: 'null da undefined de NaN',
+        name: 'null of undefined of NaN',
       },
       date_created: null,
       document_number: null,

@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
+import Section from '../Section'
 import Checkbox from '../../src/Checkbox/form'
-import style from '../style.css'
 
 class CheckboxState extends React.Component {
   constructor (props) {
@@ -50,28 +50,22 @@ CheckboxState.defaultProps = {
 
 storiesOf('Checkbox', module)
   .add('Form', () => (
-    <div className={style.container}>
-      <h2>Form Inputs</h2>
-
-      <section>
-        <h3>Disabled</h3>
-
+    <div>
+      <Section title="Disabled">
         <CheckboxState
           name="disabled"
           label="Unchecked"
           disabled
         />
-
         <CheckboxState
           name="checkedDisabled"
           label="Checked"
           disabled
           checked
         />
-      </section>
+      </Section>
 
-      <section>
-        <h3>Default</h3>
+      <Section title="Default">
         <CheckboxState
           name="default"
           label="Unchecked"
@@ -82,26 +76,24 @@ storiesOf('Checkbox', module)
           label="Checked"
           checked
         />
-      </section>
+      </Section>
 
-      <section>
-        <h3>Error</h3>
+      <Section title="Erro">
         <CheckboxState
           name="default"
           label="Error"
           value="Error"
           error="Error"
         />
-      </section>
+      </Section>
 
-      <section>
-        <h3>Success</h3>
+      <Section title="Success">
         <CheckboxState
           name="default"
           label="Success"
           value="Success"
           success="Success"
         />
-      </section>
+      </Section>
     </div>
   ))

@@ -7,6 +7,7 @@ import {
   pipe,
 } from 'ramda'
 
+import Section from '../Section'
 import style from './style.css'
 
 const groupByColorName = groupBy(prop => prop.split('-')[4])
@@ -60,9 +61,7 @@ class Colors extends React.Component {
     return (
       <div className={style.container}>
         {this.state.colorNames.map(name => (
-          <div key={name}>
-            <h2>{name}</h2>
-
+          <Section key={name} title={name}>
             <div>
               {this.state.colors[name].map(customProp => (
                 <div key={customProp}>
@@ -77,7 +76,7 @@ class Colors extends React.Component {
                 </div>
               ))}
             </div>
-          </div>
+          </Section>
         ))}
       </div>
     )
@@ -85,9 +84,8 @@ class Colors extends React.Component {
 }
 
 storiesOf('Colors', module)
-  .add('all', () => (
-    <div className={style.root}>
-      <h1>Light Theme</h1>
+  .add('Light theme', () => (
+    <div>
       <Colors theme="--color-light" />
     </div>
   ))

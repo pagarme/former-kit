@@ -2,16 +2,14 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 
 import LinearProgress from '../../src/LinearProgress'
-
-import style from './style.css'
+import Section from '../Section'
 
 const percentages = [0, 25, 50, 75, 100]
 
 storiesOf('Progress', module)
   .add('Linear', () => (
-    <div className={style.container}>
-      <section>
-        <h2>Normal state</h2>
+    <div>
+      <Section title="Normal state">
         {percentages.map(percent => (
           <div key={`mock${percent}`}>
             <LinearProgress
@@ -20,9 +18,8 @@ storiesOf('Progress', module)
             />
           </div>
         ))}
-      </section>
-      <section>
-        <h2>Disabled state</h2>
+      </Section>
+      <Section title="Disabled state">
         {percentages.map(percent => (
           <div key={`mock${percent}`}>
             <LinearProgress
@@ -32,7 +29,7 @@ storiesOf('Progress', module)
             />
           </div>
         ))}
-      </section>
+      </Section>
     </div>
   ))
 

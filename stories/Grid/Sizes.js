@@ -5,6 +5,7 @@ import { range } from 'ramda'
 
 import { Grid, Row, Col } from '../../src/Grid'
 import CardSample from './CardSample'
+import Section from '../Section'
 
 import style from './style.css'
 
@@ -12,7 +13,7 @@ const maxColumns = 12
 
 storiesOf('Grid', module)
   .add('Column sizes', () => (
-    <div className={style.background}>
+    <Section className={style.background}>
       <Grid>
         {range(0, maxColumns).reverse().map(size => (
           <Row key={size}>
@@ -27,5 +28,5 @@ storiesOf('Grid', module)
           </Row>
         ))}
       </Grid>
-    </div>
+    </Section>
   ))

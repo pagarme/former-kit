@@ -1,38 +1,32 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
+import Section from '../Section'
 import CardExamples from './CardExamples'
 
 storiesOf('Cards', module)
-  .add('default theme', () => (
+  .add('Default', () => (
     <div>
-      <section>
-        <h2>Title and content</h2>
+      <Section title="Title and content">
         <CardExamples.TitleText />
-      </section>
-      <section>
-        <h2>Title, icon and content</h2>
+      </Section>
+      <Section title="Title, icon and content">
         <CardExamples.TitleIcon />
-      </section>
-      <section>
-        <h2>Title, content and actions</h2>
+      </Section>
+      <Section title="Title, content and actions">
         <CardExamples.TitleTextActions />
-      </section>
-      <section>
-        <h2>Graphic, title, content and actions</h2>
+      </Section>
+      <Section title="Graphic, title, content and actions">
         <CardExamples.GraphicTitleTextActions />
-      </section>
-      <section>
-        <h2>Title on event handler</h2>
+      </Section>
+      <Section title="Title on event handler">
         <CardExamples.TitleTextAdvanced />
-      </section>
-      <section>
-        <h2>Card section with collapsible content</h2>
+      </Section>
+      <Section title="Card section with collapsible content">
         <CardExamples.CollapsableSection />
-      </section>
-      <section>
-        <h2>Simple card section</h2>
+      </Section>
+      <Section title="Simple card section">
         <CardExamples.SimpleSection />
-      </section>
+      </Section>
     </div>
   ))
