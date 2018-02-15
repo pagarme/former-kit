@@ -40,7 +40,7 @@ module.exports = {
       sections: [
         {
           name: 'Card',
-          content: './empty.md',
+          content: '../src/Card/README.md',
           components: () => [
             '../src/Card/Card.js',
             '../src/Card/CardActions.js',
@@ -52,7 +52,7 @@ module.exports = {
         },
         {
           name: 'Grid',
-          content: './empty.md',
+          content: '../src/Grid/README.md',
           components: () => [
             '../src/Grid/Grid.js',
             '../src/Grid/Row.js',
@@ -61,7 +61,7 @@ module.exports = {
         },
         {
           name: 'Header',
-          content: './empty.md',
+          content: '../src/Header/README.md',
           components: () => [
             '../src/Header/Header.js',
             '../src/Header/HeaderBackButton.js',
@@ -73,7 +73,7 @@ module.exports = {
         },
         {
           name: 'Sidebar',
-          content: './empty.md',
+          content: '../src/Sidebar/README.md',
           components: () => [
             '../src/Sidebar/Sidebar.js',
             '../src/Sidebar/SidebarContent.js',
@@ -85,7 +85,7 @@ module.exports = {
         },
         {
           name: 'Table',
-          content: './empty.md',
+          content: '../src/Table/README.md',
           components: () => [
             '../src/Table/index.js',
             '../src/Table/TableEmptyItem.js',
@@ -97,6 +97,7 @@ module.exports = {
         },
         {
           name: 'Modal',
+          content: '../src/Modal/README.md',
           components: () => [
             '../src/Modal/Modal.js',
             '../src/Modal/ModalActions.js',
@@ -106,6 +107,7 @@ module.exports = {
         },
         {
           name: 'TabBar',
+          content: '../src/TabBar/README.md',
           components: () => [
             '../src/TabBar/TabBar.js',
             '../src/TabBar/TabItem.js',
