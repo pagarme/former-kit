@@ -28,7 +28,7 @@ class Dropdown extends React.Component {
     const { disabled, onChange } = this.props
 
     if (!disabled) {
-      onChange(event.target.value)
+      onChange(event)
     }
   }
 
