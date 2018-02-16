@@ -8139,6 +8139,49 @@ exports[`Storyshots Inputs Default 1`] = `
     className=""
   >
     <h2>
+      Disabled with text
+    </h2>
+    <div>
+      <div
+        className="input disabled"
+      >
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container"
+          >
+            <input
+              disabled={true}
+              id="email-shortid-mock"
+              name="email"
+              onBlur={[Function]}
+              onChange={null}
+              onFocus={[Function]}
+              placeholder="email@email.com"
+              type="text"
+              value="Disabled!"
+            />
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Secondary text
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
       Default
     </h2>
     <div>
@@ -9116,6 +9159,49 @@ exports[`Storyshots Inputs Form 1`] = `
     className=""
   >
     <h2>
+      Disabled with text
+    </h2>
+    <div>
+      <div
+        className="input disabled"
+      >
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container"
+          >
+            <input
+              disabled={true}
+              id="email-shortid-mock"
+              name="email"
+              onBlur={[Function]}
+              onChange={null}
+              onFocus={[Function]}
+              placeholder="disabled"
+              type="text"
+              value="Disabled!"
+            />
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Secondary Text
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
       Default
     </h2>
     <div>
@@ -9818,6 +9904,49 @@ exports[`Storyshots Inputs Form 1`] = `
             />
             <label
               className=""
+              htmlFor="pass-shortid-mock"
+            >
+              Your password
+            </label>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Must have more than 12 pixel
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Password disabled with text
+    </h2>
+    <div>
+      <div
+        className="input disabled"
+      >
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container"
+          >
+            <input
+              disabled={true}
+              id="pass-shortid-mock"
+              name="pass"
+              onBlur={[Function]}
+              onChange={null}
+              onFocus={[Function]}
+              placeholder="disabled"
+              type="password"
+              value="secret_pass"
+            />
+            <label
+              className="contentPresent"
               htmlFor="pass-shortid-mock"
             >
               Your password
