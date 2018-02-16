@@ -51,7 +51,7 @@ class RadioGroup extends React.Component {
             (disabled && index === 0) ||
               (value === option.value)
           }
-          onChange={e => !disabled && onChange(e.target.value)}
+          onChange={event => !disabled && onChange(event)}
           className={theme.input}
           disabled={disabled}
         />

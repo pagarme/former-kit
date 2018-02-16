@@ -48,7 +48,7 @@ class RadioGroupState extends React.Component {
         <RadioGroup
           options={options}
           name={name}
-          onChange={v => this.setState({ value: v })}
+          onChange={event => this.setState({ value: event.target.value })}
           value={value}
           disabled={disabled}
           error={error}

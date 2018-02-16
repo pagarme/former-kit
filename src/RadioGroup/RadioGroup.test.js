@@ -1,5 +1,5 @@
 import React from 'react'
-import { shallow, mount } from 'enzyme'
+import { shallow } from 'enzyme'
 
 import RadioGroup from './index'
 
@@ -24,7 +24,7 @@ describe('RadioGroup', () => {
   it('should trigger onChange', () => {
     const onChange = jest.fn()
 
-    const component = mount(
+    const component = shallow(
       <RadioGroup
         options={options}
         name="artefatos"
@@ -32,24 +32,34 @@ describe('RadioGroup', () => {
       />
     )
 
+    const changeEvent = {
+      target: {
+        value,
+      },
+    }
+
     component
+      .dive()
       .find('input[type="radio"]')
       .first()
-      .simulate('change', {
-        target: { value },
-      })
+      .simulate('change', changeEvent)
 
     expect(onChange).toHaveBeenCalled()
-    expect(onChange).toHaveBeenLastCalledWith(value)
+    expect(onChange).toHaveBeenLastCalledWith(changeEvent)
+
+    const otherEvent = {
+      target: {
+        value: options[1],
+      },
+    }
 
     component
+      .dive()
       .find('input[type="radio"]')
       .last()
-      .simulate('change', {
-        target: { value: 'sofa' },
-      })
+      .simulate('change', otherEvent)
 
-    expect(onChange).toHaveBeenLastCalledWith('sofa')
+    expect(onChange).toHaveBeenLastCalledWith(otherEvent)
   })
 
   it('should mount with all props', () => {
