@@ -227,7 +227,6 @@ class DateInput extends React.Component {
       active,
       icon,
       limits,
-      icons,
       theme,
       strings,
     } = this.props
@@ -329,7 +328,6 @@ class DateInput extends React.Component {
               onFocusChange={this.handleSelectorFocus}
               focusedInput={this.state.focusedInput}
               presets={this.props.presets}
-              icons={icons}
             />
           </div>
           : null
@@ -409,14 +407,6 @@ DateInput.propTypes = {
     })),
   })),
   /**
-   * Default icons used in the date selector navigation
-   * @see [DateSelector](#dateselector)
-   */
-  icons: shape({
-    leftArrow: element,
-    rightArrow: element,
-  }),
-  /**
    * Strings for component i18n.
    */
   strings: shape({
@@ -434,7 +424,6 @@ DateInput.defaultProps = {
     end: null,
   },
   icon: null,
-  icons: {},
   limits: {
     upper: moment('2100-01-01', 'YYYY-MM-DD'),
     lower: moment('1900-01-01', 'YYYY-MM-DD'),
