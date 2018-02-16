@@ -117,7 +117,7 @@ class Input extends React.PureComponent {
       className,
       theme.input,
       {
-        [theme.active]: !disabled && value !== '',
+        [theme.active]: !disabled && !isNil(value) && value !== '',
         [theme.focused]: this.state.isFocused,
         [theme.disabled]: disabled,
         [theme.error]: error,
@@ -126,7 +126,7 @@ class Input extends React.PureComponent {
     )
 
     const contentPresent = classnames({
-      [theme.contentPresent]: value !== '',
+      [theme.contentPresent]: !isNil(value) && value !== '',
     })
 
     const inputProps = pick(
