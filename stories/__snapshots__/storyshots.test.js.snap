@@ -10182,108 +10182,104 @@ exports[`Storyshots Landing Pagar.me login 1`] = `
       <div
         className="dark primary column col desk7 tv7 tablet12 palm12"
       >
-        <div
+        <form
           className={undefined}
+          onSubmit={[Function]}
         >
-          <form
+          <div
             className={undefined}
-            onSubmit={[Function]}
+          >
+            <img
+              alt="Pagar.me"
+              src=""
+            />
+          </div>
+          <div
+            className={undefined}
+          >
+            <div
+              className="input"
+            >
+              <div
+                className="boxContainer"
+              >
+                <div
+                  className="container"
+                >
+                  <input
+                    disabled={false}
+                    id="email-shortid-mock"
+                    name="email"
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    placeholder="emaillegal@pagar.me"
+                    type="text"
+                    value=""
+                  />
+                  <label
+                    className=""
+                    htmlFor="email-shortid-mock"
+                  >
+                    Email
+                  </label>
+                </div>
+                
+              </div>
+            </div>
+            <div
+              className="input"
+            >
+              <div
+                className="boxContainer"
+              >
+                <div
+                  className="container"
+                >
+                  <input
+                    disabled={false}
+                    id="password-shortid-mock"
+                    name="password"
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    placeholder=""
+                    type="password"
+                    value=""
+                  />
+                  <label
+                    className=""
+                    htmlFor="password-shortid-mock"
+                  >
+                    Senha
+                  </label>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div
+            className={undefined}
           >
             <div
               className={undefined}
             >
-              <img
-                alt="Pagar.me"
-                src=""
-              />
+              <button
+                className="button gradient light normalRelevance large"
+                disabled={false}
+                onClick={null}
+                type="submit"
+              >
+                Login
+              </button>
             </div>
-            <div
-              className={undefined}
+            <a
+              href="https://dashboard.pagar.me/#/forgot_password"
             >
-              <div
-                className="input"
-              >
-                <div
-                  className="boxContainer"
-                >
-                  <div
-                    className="container"
-                  >
-                    <input
-                      disabled={false}
-                      id="email-shortid-mock"
-                      name="email"
-                      onBlur={[Function]}
-                      onChange={[Function]}
-                      onFocus={[Function]}
-                      placeholder="emaillegal@pagar.me"
-                      type="text"
-                      value=""
-                    />
-                    <label
-                      className=""
-                      htmlFor="email-shortid-mock"
-                    >
-                      Email
-                    </label>
-                  </div>
-                  
-                </div>
-              </div>
-              <div
-                className="input"
-              >
-                <div
-                  className="boxContainer"
-                >
-                  <div
-                    className="container"
-                  >
-                    <input
-                      disabled={false}
-                      id="password-shortid-mock"
-                      name="password"
-                      onBlur={[Function]}
-                      onChange={[Function]}
-                      onFocus={[Function]}
-                      placeholder=""
-                      type="password"
-                      value=""
-                    />
-                    <label
-                      className=""
-                      htmlFor="password-shortid-mock"
-                    >
-                      Senha
-                    </label>
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
-            <div
-              className={undefined}
-            >
-              <div
-                className={undefined}
-              >
-                <button
-                  className="button gradient light normalRelevance large"
-                  disabled={false}
-                  onClick={null}
-                  type="submit"
-                >
-                  Login
-                </button>
-              </div>
-              <a
-                href="https://dashboard.pagar.me/#/forgot_password"
-              >
-                Redefinir senha
-              </a>
-            </div>
-          </form>
-        </div>
+              Redefinir senha
+            </a>
+          </div>
+        </form>
       </div>
       <div
         className="light secondary column col desk5 tv5 tablet12 palm12"
@@ -10291,44 +10287,40 @@ exports[`Storyshots Landing Pagar.me login 1`] = `
         <div
           className={undefined}
         >
-          <div
-            className={undefined}
-          >
-            <div>
-              <h1
-                className={undefined}
-              >
-                Seja bem-vindo
-              </h1>
-              <span
-                className={undefined}
-              >
-                à dashboard Pagar.me
-              </span>
-            </div>
-            <p
+          <div>
+            <h1
               className={undefined}
             >
-              A Dashboard Pagar.me é o painel de controle da sua operação. Através dela você tem acesso a diversos dados relevantes para seu dia a dia de trabalho, e também pode realizar diferentes ações cotidianas com facilidade, como estornos, consulta de saldo e mais.
-            </p>
-            <div
-              className=""
+              Seja bem-vindo
+            </h1>
+            <span
+              className={undefined}
             >
-              <p>
-                <span>
-                  Faça login ao lado para acessar sua conta
-                </span>
-                <span>
-                  Ainda não tem uma conta?
-                  <a
-                    className={undefined}
-                    href="https://dashboard.pagar.me/#/signup"
-                  >
-                    Cadastre-se
-                  </a>
-                </span>
-              </p>
-            </div>
+              à dashboard Pagar.me
+            </span>
+          </div>
+          <p
+            className={undefined}
+          >
+            A Dashboard Pagar.me é o painel de controle da sua operação. Através dela você tem acesso a diversos dados relevantes para seu dia a dia de trabalho, e também pode realizar diferentes ações cotidianas com facilidade, como estornos, consulta de saldo e mais.
+          </p>
+          <div
+            className=""
+          >
+            <p>
+              <span>
+                Faça login ao lado para acessar sua conta
+              </span>
+              <span>
+                Ainda não tem uma conta?
+                <a
+                  className={undefined}
+                  href="https://dashboard.pagar.me/#/signup"
+                >
+                  Cadastre-se
+                </a>
+              </span>
+            </p>
           </div>
         </div>
       </div>
@@ -10604,163 +10596,159 @@ exports[`Storyshots Landing Pagar.me sign in 1`] = `
       <div
         className="light primary column col desk7 tv7 tablet12 palm12"
       >
-        <div
+        <form
           className={undefined}
+          onSubmit={[Function]}
         >
-          <form
+          <div
             className={undefined}
-            onSubmit={[Function]}
+          >
+            <img
+              alt="Pagar.me"
+              src=""
+            />
+          </div>
+          <div
+            className={undefined}
+          >
+            <div
+              className="input"
+            >
+              <div
+                className="boxContainer"
+              >
+                <div
+                  className="container"
+                >
+                  <input
+                    disabled={false}
+                    id="name-shortid-mock"
+                    name="name"
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    placeholder="Nome completo"
+                    type="text"
+                    value=""
+                  />
+                  <label
+                    className=""
+                    htmlFor="name-shortid-mock"
+                  >
+                    Nome completo
+                  </label>
+                </div>
+                
+              </div>
+            </div>
+            <div
+              className="input"
+            >
+              <div
+                className="boxContainer"
+              >
+                <div
+                  className="container"
+                >
+                  <input
+                    disabled={false}
+                    id="company-shortid-mock"
+                    name="company"
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    placeholder="Empresa"
+                    type="text"
+                    value=""
+                  />
+                  <label
+                    className=""
+                    htmlFor="company-shortid-mock"
+                  >
+                    Empresa
+                  </label>
+                </div>
+                
+              </div>
+            </div>
+            <div
+              className="input"
+            >
+              <div
+                className="boxContainer"
+              >
+                <div
+                  className="container"
+                >
+                  <input
+                    disabled={false}
+                    id="email-shortid-mock"
+                    name="email"
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    placeholder="emaillegal@pagar.me"
+                    type="text"
+                    value=""
+                  />
+                  <label
+                    className=""
+                    htmlFor="email-shortid-mock"
+                  >
+                    Email
+                  </label>
+                </div>
+                
+              </div>
+            </div>
+            <div
+              className="input"
+            >
+              <div
+                className="boxContainer"
+              >
+                <div
+                  className="container"
+                >
+                  <input
+                    disabled={false}
+                    id="password-shortid-mock"
+                    name="password"
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    placeholder=""
+                    type="password"
+                    value=""
+                  />
+                  <label
+                    className=""
+                    htmlFor="password-shortid-mock"
+                  >
+                    Senha
+                  </label>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div
+            className={undefined}
           >
             <div
               className={undefined}
             >
-              <img
-                alt="Pagar.me"
-                src=""
-              />
+              <button
+                className="button gradient light normalRelevance large"
+                disabled={false}
+                onClick={null}
+                type="submit"
+              >
+                CADASTRAR
+              </button>
             </div>
-            <div
-              className={undefined}
-            >
-              <div
-                className="input"
-              >
-                <div
-                  className="boxContainer"
-                >
-                  <div
-                    className="container"
-                  >
-                    <input
-                      disabled={false}
-                      id="name-shortid-mock"
-                      name="name"
-                      onBlur={[Function]}
-                      onChange={[Function]}
-                      onFocus={[Function]}
-                      placeholder="Nome completo"
-                      type="text"
-                      value=""
-                    />
-                    <label
-                      className=""
-                      htmlFor="name-shortid-mock"
-                    >
-                      Nome completo
-                    </label>
-                  </div>
-                  
-                </div>
-              </div>
-              <div
-                className="input"
-              >
-                <div
-                  className="boxContainer"
-                >
-                  <div
-                    className="container"
-                  >
-                    <input
-                      disabled={false}
-                      id="company-shortid-mock"
-                      name="company"
-                      onBlur={[Function]}
-                      onChange={[Function]}
-                      onFocus={[Function]}
-                      placeholder="Empresa"
-                      type="text"
-                      value=""
-                    />
-                    <label
-                      className=""
-                      htmlFor="company-shortid-mock"
-                    >
-                      Empresa
-                    </label>
-                  </div>
-                  
-                </div>
-              </div>
-              <div
-                className="input"
-              >
-                <div
-                  className="boxContainer"
-                >
-                  <div
-                    className="container"
-                  >
-                    <input
-                      disabled={false}
-                      id="email-shortid-mock"
-                      name="email"
-                      onBlur={[Function]}
-                      onChange={[Function]}
-                      onFocus={[Function]}
-                      placeholder="emaillegal@pagar.me"
-                      type="text"
-                      value=""
-                    />
-                    <label
-                      className=""
-                      htmlFor="email-shortid-mock"
-                    >
-                      Email
-                    </label>
-                  </div>
-                  
-                </div>
-              </div>
-              <div
-                className="input"
-              >
-                <div
-                  className="boxContainer"
-                >
-                  <div
-                    className="container"
-                  >
-                    <input
-                      disabled={false}
-                      id="password-shortid-mock"
-                      name="password"
-                      onBlur={[Function]}
-                      onChange={[Function]}
-                      onFocus={[Function]}
-                      placeholder=""
-                      type="password"
-                      value=""
-                    />
-                    <label
-                      className=""
-                      htmlFor="password-shortid-mock"
-                    >
-                      Senha
-                    </label>
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
-            <div
-              className={undefined}
-            >
-              <div
-                className={undefined}
-              >
-                <button
-                  className="button gradient light normalRelevance large"
-                  disabled={false}
-                  onClick={null}
-                  type="submit"
-                >
-                  CADASTRAR
-                </button>
-              </div>
-            </div>
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
       <div
         className="light secondary column col desk5 tv5 tablet12 palm12"
@@ -10768,41 +10756,37 @@ exports[`Storyshots Landing Pagar.me sign in 1`] = `
         <div
           className={undefined}
         >
-          <div
-            className={undefined}
-          >
-            <div>
-              <h1
-                className={undefined}
-              >
-                Crie sua conta
-              </h1>
-              <span
-                className={undefined}
-              >
-                na dashboard Pagar.me
-              </span>
-            </div>
-            <p
+          <div>
+            <h1
               className={undefined}
             >
-              A Dashboard Pagar.me é um painel de controle de operações. Através dela você pode ter acesso a diversos dados relevantes para seu dia a dia de trabalho, e também pode realizar diferentes ações cotidianas com facilidade, como estornos, consulta de saldo e mais.
-            </p>
-            <div
-              className=""
+              Crie sua conta
+            </h1>
+            <span
+              className={undefined}
             >
-              <p>
-                <span>
-                  Já possui cadastro?
-                  <a
-                    className={undefined}
-                    href="https://dashboard.pagar.me/#/login"
-                  >
-                    Faça o login
-                  </a>
-                </span>
-              </p>
-            </div>
+              na dashboard Pagar.me
+            </span>
+          </div>
+          <p
+            className={undefined}
+          >
+            A Dashboard Pagar.me é um painel de controle de operações. Através dela você pode ter acesso a diversos dados relevantes para seu dia a dia de trabalho, e também pode realizar diferentes ações cotidianas com facilidade, como estornos, consulta de saldo e mais.
+          </p>
+          <div
+            className=""
+          >
+            <p>
+              <span>
+                Já possui cadastro?
+                <a
+                  className={undefined}
+                  href="https://dashboard.pagar.me/#/login"
+                >
+                  Faça o login
+                </a>
+              </span>
+            </p>
           </div>
         </div>
       </div>
@@ -10931,138 +10915,134 @@ exports[`Storyshots Landing Pagar.me two factor login 1`] = `
       <div
         className="dark primary column col desk7 tv7 tablet12 palm12"
       >
-        <div
+        <form
           className={undefined}
+          onSubmit={[Function]}
         >
-          <form
+          <div
             className={undefined}
-            onSubmit={[Function]}
+          >
+            <img
+              alt="Pagar.me"
+              src=""
+            />
+          </div>
+          <div
+            className={undefined}
+          >
+            <div
+              className="input"
+            >
+              <div
+                className="boxContainer"
+              >
+                <div
+                  className="container"
+                >
+                  <input
+                    disabled={false}
+                    id="email-shortid-mock"
+                    name="email"
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    placeholder="emaillegal@pagar.me"
+                    type="text"
+                    value=""
+                  />
+                  <label
+                    className=""
+                    htmlFor="email-shortid-mock"
+                  >
+                    Email
+                  </label>
+                </div>
+                
+              </div>
+            </div>
+            <div
+              className="input"
+            >
+              <div
+                className="boxContainer"
+              >
+                <div
+                  className="container"
+                >
+                  <input
+                    disabled={false}
+                    id="password-shortid-mock"
+                    name="password"
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    placeholder=""
+                    type="password"
+                    value=""
+                  />
+                  <label
+                    className=""
+                    htmlFor="password-shortid-mock"
+                  >
+                    Senha
+                  </label>
+                </div>
+                
+              </div>
+            </div>
+            <div
+              className="input"
+            >
+              <div
+                className="boxContainer"
+              >
+                <div
+                  className="container"
+                >
+                  <input
+                    disabled={false}
+                    id="token-shortid-mock"
+                    name="token"
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    placeholder="ABC123"
+                    type="text"
+                    value=""
+                  />
+                  <label
+                    className=""
+                    htmlFor="token-shortid-mock"
+                  >
+                    Token
+                  </label>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div
+            className={undefined}
           >
             <div
               className={undefined}
             >
-              <img
-                alt="Pagar.me"
-                src=""
-              />
+              <button
+                className="button gradient light normalRelevance large"
+                disabled={false}
+                onClick={null}
+                type="submit"
+              >
+                Login
+              </button>
             </div>
-            <div
-              className={undefined}
+            <a
+              href="https://dashboard.pagar.me/#/forgot_password"
             >
-              <div
-                className="input"
-              >
-                <div
-                  className="boxContainer"
-                >
-                  <div
-                    className="container"
-                  >
-                    <input
-                      disabled={false}
-                      id="email-shortid-mock"
-                      name="email"
-                      onBlur={[Function]}
-                      onChange={[Function]}
-                      onFocus={[Function]}
-                      placeholder="emaillegal@pagar.me"
-                      type="text"
-                      value=""
-                    />
-                    <label
-                      className=""
-                      htmlFor="email-shortid-mock"
-                    >
-                      Email
-                    </label>
-                  </div>
-                  
-                </div>
-              </div>
-              <div
-                className="input"
-              >
-                <div
-                  className="boxContainer"
-                >
-                  <div
-                    className="container"
-                  >
-                    <input
-                      disabled={false}
-                      id="password-shortid-mock"
-                      name="password"
-                      onBlur={[Function]}
-                      onChange={[Function]}
-                      onFocus={[Function]}
-                      placeholder=""
-                      type="password"
-                      value=""
-                    />
-                    <label
-                      className=""
-                      htmlFor="password-shortid-mock"
-                    >
-                      Senha
-                    </label>
-                  </div>
-                  
-                </div>
-              </div>
-              <div
-                className="input"
-              >
-                <div
-                  className="boxContainer"
-                >
-                  <div
-                    className="container"
-                  >
-                    <input
-                      disabled={false}
-                      id="token-shortid-mock"
-                      name="token"
-                      onBlur={[Function]}
-                      onChange={[Function]}
-                      onFocus={[Function]}
-                      placeholder="ABC123"
-                      type="text"
-                      value=""
-                    />
-                    <label
-                      className=""
-                      htmlFor="token-shortid-mock"
-                    >
-                      Token
-                    </label>
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
-            <div
-              className={undefined}
-            >
-              <div
-                className={undefined}
-              >
-                <button
-                  className="button gradient light normalRelevance large"
-                  disabled={false}
-                  onClick={null}
-                  type="submit"
-                >
-                  Login
-                </button>
-              </div>
-              <a
-                href="https://dashboard.pagar.me/#/forgot_password"
-              >
-                Redefinir senha
-              </a>
-            </div>
-          </form>
-        </div>
+              Redefinir senha
+            </a>
+          </div>
+        </form>
       </div>
       <div
         className="light secondary column col desk5 tv5 tablet12 palm12"
@@ -11070,44 +11050,40 @@ exports[`Storyshots Landing Pagar.me two factor login 1`] = `
         <div
           className={undefined}
         >
-          <div
-            className={undefined}
-          >
-            <div>
-              <h1
-                className={undefined}
-              >
-                Seja bem-vindo
-              </h1>
-              <span
-                className={undefined}
-              >
-                à dashboard Pagar.me
-              </span>
-            </div>
-            <p
+          <div>
+            <h1
               className={undefined}
             >
-              A Dashboard Pagar.me é o painel de controle da sua operação. Através dela você tem acesso a diversos dados relevantes para seu dia a dia de trabalho, e também pode realizar diferentes ações cotidianas com facilidade, como estornos, consulta de saldo e mais.
-            </p>
-            <div
-              className=""
+              Seja bem-vindo
+            </h1>
+            <span
+              className={undefined}
             >
-              <p>
-                <span>
-                  Faça login ao lado para acessar sua conta
-                </span>
-                <span>
-                  Ainda não tem uma conta?
-                  <a
-                    className={undefined}
-                    href="https://dashboard.pagar.me/#/signup"
-                  >
-                    Cadastre-se
-                  </a>
-                </span>
-              </p>
-            </div>
+              à dashboard Pagar.me
+            </span>
+          </div>
+          <p
+            className={undefined}
+          >
+            A Dashboard Pagar.me é o painel de controle da sua operação. Através dela você tem acesso a diversos dados relevantes para seu dia a dia de trabalho, e também pode realizar diferentes ações cotidianas com facilidade, como estornos, consulta de saldo e mais.
+          </p>
+          <div
+            className=""
+          >
+            <p>
+              <span>
+                Faça login ao lado para acessar sua conta
+              </span>
+              <span>
+                Ainda não tem uma conta?
+                <a
+                  className={undefined}
+                  href="https://dashboard.pagar.me/#/signup"
+                >
+                  Cadastre-se
+                </a>
+              </span>
+            </p>
           </div>
         </div>
       </div>
