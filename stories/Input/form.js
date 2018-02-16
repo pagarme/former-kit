@@ -68,6 +68,18 @@ storiesOf('Inputs', module)
         />
       </Section>
 
+      <Section title="Disabled with text">
+        <Input
+          name="email"
+          label="Your email"
+          disabled
+          hint="Secondary Text"
+          placeholder="disabled"
+          onChange={action('text changed')}
+          value="Disabled!"
+        />
+      </Section>
+
       <Section title="Default">
         <InputState type="text" />
       </Section>
@@ -163,6 +175,19 @@ storiesOf('Inputs', module)
           hint="Must have more than 12 pixel"
           onChange={action('text changed')}
           value=""
+        />
+      </Section>
+
+      <Section title="Password disabled with text">
+        <Input
+          type="password"
+          name="pass"
+          label="Your password"
+          disabled
+          placeholder="disabled"
+          hint="Must have more than 12 pixel"
+          onChange={action('text changed')}
+          value="secret_pass"
         />
       </Section>
 

@@ -58,6 +58,7 @@ class Input extends React.PureComponent {
       showPassword: !(this.state.showPassword),
     })
   }
+
   renderPasswordVisibilityIcon () {
     const {
       value,

@@ -66,6 +66,18 @@ storiesOf('Inputs', module)
         />
       </Section>
 
+      <Section title="Disabled with text">
+        <Input
+          name="email"
+          label="Your email"
+          disabled
+          hint="Secondary text"
+          placeholder="email@email.com"
+          onChange={action('text changed')}
+          value="Disabled!"
+        />
+      </Section>
+
       <Section title="Default">
         <InputState type="text" />
       </Section>
