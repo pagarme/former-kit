@@ -39,7 +39,7 @@ class TableState extends Component {
   constructor (props) {
     super(props)
 
-    const { selectable } = props
+    const { selectable, expandable } = props
 
     this.handleDetailsClick = this.handleDetailsClick.bind(this)
     this.handleExpandRow = this.handleExpandRow.bind(this)
@@ -55,7 +55,7 @@ class TableState extends Component {
       rows: this.mock.rows,
       columns: this.getColumns(props.primaryAction),
       selectedRows: selectable ? [2] : [],
-      expandedRows: selectable ? [0, 1, 2, 3] : [],
+      expandedRows: expandable ? [0, 1, 2, 3] : [],
       detailsClicks: 0,
     }
   }
@@ -122,7 +122,6 @@ class TableState extends Component {
       selectable,
       expandable,
     } = this.props
-
     const {
       clickedRowIndex,
       columns,
@@ -133,8 +132,8 @@ class TableState extends Component {
       rows,
       selectedRows,
     } = this.state
-
     const onRowClick = clickableRow ? this.handleRowClick : null
+    const maxColumns = expandable ? 6 : 7
 
     return (
       <div>
@@ -152,6 +151,7 @@ class TableState extends Component {
           orderColumn={orderColumn}
           onExpandRow={this.handleExpandRow}
           onRowClick={onRowClick}
+          maxColumns={maxColumns}
         />
 
         <div className={style.texts}>

@@ -17034,25 +17034,6 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
               </div>
             </th>
             <th
-              className="orderable"
-              onClick={[Function]}
-            >
-              <div
-                className="tableHeadItem"
-              >
-                <span>
-                   
-                  Cost
-                   
-                </span>
-                <span
-                  className="unselectable"
-                >
-                  <svg />
-                </span>
-              </div>
-            </th>
-            <th
               className="open"
             />
           </tr>
@@ -17142,11 +17123,6 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
               R$ 999.999.999,00
             </td>
             <td
-              className="tableBodyItem"
-            >
-              R$ 100.000,00
-            </td>
-            <td
               className="open unselectable"
             >
               <button
@@ -17166,12 +17142,28 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
             tabIndex="0"
           >
             <td
-              colSpan="9"
+              colSpan={8}
             >
               <div
                 className="expandable"
               >
                 <ul>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Cost
+                      </span>
+                      <span
+                        className="text"
+                      >
+                        R$ 100.000,00
+                      </span>
+                    </div>
+                  </li>
                   <li>
                     <div
                       className="expandedItem"
@@ -17395,11 +17387,6 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
               R$ 100.000,00
             </td>
             <td
-              className="tableBodyItem"
-            >
-              R$ 12.000,00
-            </td>
-            <td
               className="open unselectable"
             >
               <button
@@ -17419,12 +17406,28 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
             tabIndex="0"
           >
             <td
-              colSpan="9"
+              colSpan={8}
             >
               <div
                 className="expandable"
               >
                 <ul>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Cost
+                      </span>
+                      <span
+                        className="text"
+                      >
+                        R$ 12.000,00
+                      </span>
+                    </div>
+                  </li>
                   <li>
                     <div
                       className="expandedItem"
@@ -17657,11 +17660,6 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
               R$ 100.000,00
             </td>
             <td
-              className="tableBodyItem"
-            >
-              R$ 13.000,00
-            </td>
-            <td
               className="open unselectable"
             >
               <button
@@ -17681,12 +17679,28 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
             tabIndex="0"
           >
             <td
-              colSpan="9"
+              colSpan={8}
             >
               <div
                 className="expandable"
               >
                 <ul>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Cost
+                      </span>
+                      <span
+                        className="text"
+                      >
+                        R$ 13.000,00
+                      </span>
+                    </div>
+                  </li>
                   <li>
                     <div
                       className="expandedItem"
@@ -17927,11 +17941,6 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
               />
             </td>
             <td
-              className="tableBodyItem"
-            >
-              R$ 14.000,00
-            </td>
-            <td
               className="open unselectable"
             >
               <button
@@ -17951,12 +17960,28 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
             tabIndex="0"
           >
             <td
-              colSpan="9"
+              colSpan={8}
             >
               <div
                 className="expandable"
               >
                 <ul>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Cost
+                      </span>
+                      <span
+                        className="text"
+                      >
+                        R$ 14.000,00
+                      </span>
+                    </div>
+                  </li>
                   <li>
                     <div
                       className="expandedItem"

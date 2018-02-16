@@ -260,8 +260,10 @@ class Table extends Component {
             index={index}
             key={expandedKey}
             parity={parityClass}
+            maxColumns={maxColumns}
             onMouseEnter={this.handleRowMouseEnter}
             onMouseLeave={this.handleRowMouseLeave}
+            selectable={selectable}
           />
         ),
       ]
