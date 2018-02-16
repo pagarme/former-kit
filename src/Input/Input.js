@@ -64,9 +64,10 @@ class Input extends React.PureComponent {
       type,
       theme,
       icons,
+      disabled,
     } = this.props
 
-    if (value === '' || type !== 'password') {
+    if (disabled || value === '' || type !== 'password') {
       return null
     }
 
