@@ -16,7 +16,7 @@ class DropdownState extends React.Component {
         <DropdownDefault
           options={options}
           name="things"
-          onChange={value => this.setState({ selected: value })}
+          onChange={event => this.setState({ selected: event.target.value })}
           value={this.state.selected}
           disabled={this.props.disabled}
           placeholder={this.props.placeholder}
@@ -26,7 +26,7 @@ class DropdownState extends React.Component {
         <DropdownForm
           options={options}
           name="things"
-          onChange={value => this.setState({ selected: value })}
+          onChange={event => this.setState({ selected: event.target.value })}
           value={this.state.selected}
           disabled={this.props.disabled}
           placeholder={this.props.placeholder}

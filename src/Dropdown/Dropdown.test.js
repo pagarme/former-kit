@@ -32,15 +32,19 @@ describe('Dropdown', () => {
       />
     ).dive()
 
+    const changeEvent = {
+      target: {
+        value,
+      },
+    }
+
     component
       .find('select')
       .first()
-      .simulate('change', {
-        target: { value },
-      })
+      .simulate('change', changeEvent)
 
     expect(onChange).toHaveBeenCalled()
-    expect(onChange).toHaveBeenLastCalledWith(value)
+    expect(onChange).toHaveBeenLastCalledWith(changeEvent)
   })
 
   it('should mount with disabled', () => {
@@ -56,16 +60,20 @@ describe('Dropdown', () => {
       />
     )
 
+    const changeEvent = {
+      target: {
+        value,
+      },
+    }
+
     component
       .dive()
       .find('select')
       .first()
-      .simulate('change', {
-        target: { value },
-      })
+      .simulate('change', changeEvent)
 
     expect(onChange).not.toHaveBeenCalled()
-    expect(onChange).not.toHaveBeenLastCalledWith(value)
+    expect(onChange).not.toHaveBeenLastCalledWith(changeEvent)
   })
 
   it('should mount with success', () => {
@@ -82,16 +90,20 @@ describe('Dropdown', () => {
       />
     )
 
+    const changeEvent = {
+      target: {
+        value,
+      },
+    }
+
     component
       .dive()
       .find('select')
       .first()
-      .simulate('change', {
-        target: { value },
-      })
+      .simulate('change', changeEvent)
 
     expect(onChange).not.toHaveBeenCalled()
-    expect(onChange).not.toHaveBeenLastCalledWith(value)
+    expect(onChange).not.toHaveBeenLastCalledWith(changeEvent)
   })
 
   it('should mount with error', () => {
@@ -107,15 +119,19 @@ describe('Dropdown', () => {
       />
     ).dive()
 
+    const changeEvent = {
+      target: {
+        value,
+      },
+    }
+
     component
       .find('select')
       .first()
-      .simulate('change', {
-        target: { value },
-      })
+      .simulate('change', changeEvent)
 
     expect(onChange).toHaveBeenCalled()
-    expect(onChange).toHaveBeenLastCalledWith(value)
+    expect(onChange).toHaveBeenLastCalledWith(changeEvent)
   })
 
   it('should mount with all props', () => {
@@ -133,15 +149,19 @@ describe('Dropdown', () => {
       />
     ).dive()
 
+    const changeEvent = {
+      target: {
+        value,
+      },
+    }
+
     component
       .find('select')
       .first()
-      .simulate('change', {
-        target: { value },
-      })
+      .simulate('change', changeEvent)
 
     expect(onChange).toHaveBeenCalled()
-    expect(onChange).toHaveBeenLastCalledWith(value)
+    expect(onChange).toHaveBeenLastCalledWith(changeEvent)
   })
 
   it('should mount with all props', () => {
@@ -160,16 +180,20 @@ describe('Dropdown', () => {
       />
     )
 
+    const changeEvent = {
+      target: {
+        value,
+      },
+    }
+
     component
       .dive()
       .find('select')
       .first()
-      .simulate('change', {
-        target: { value },
-      })
+      .simulate('change', changeEvent)
 
     expect(onChange).not.toHaveBeenCalled()
-    expect(onChange).not.toHaveBeenLastCalledWith(value)
+    expect(onChange).not.toHaveBeenLastCalledWith(changeEvent)
   })
 })
 
