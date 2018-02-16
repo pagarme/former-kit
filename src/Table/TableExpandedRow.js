@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react'
 import {
   arrayOf,
+  bool,
   func,
   oneOf,
   oneOfType,
@@ -17,7 +18,6 @@ import {
   path,
 } from 'ramda'
 import classNames from 'classnames'
-
 import ThemeConsumer from '../ThemeConsumer'
 import TableExpandedItem from './TableExpandedItem'
 
@@ -36,6 +36,17 @@ class TableExpandedRow extends PureComponent {
     this.handleMouseLeave = this.handleMouseLeave.bind(this)
     this.renderAction = this.renderAction.bind(this)
     this.renderColumn = this.renderColumn.bind(this)
+    this.getColspan = this.getColspan.bind(this)
+  }
+
+  getColspan () {
+    const { selectable, maxColumns } = this.props
+
+    if (selectable) {
+      return maxColumns + 2
+    }
+
+    return maxColumns + 1
   }
 
   handleMouseEnter () {
@@ -89,7 +100,7 @@ class TableExpandedRow extends PureComponent {
         onMouseLeave={this.handleMouseLeave}
         tabIndex="0"
       >
-        <td colSpan="9">
+        <td colSpan={this.getColspan()}>
           <div className={theme.expandable}>
             <ul>
               {cols}
@@ -148,6 +159,11 @@ TableExpandedRow.propTypes = {
    */
   index: number.isRequired,
   /**
+   * Number of table columns, all the remaining columns will be dropped in an expandable
+   * line if the expandable option is true.
+   */
+  maxColumns: number,
+  /**
    * Function triggered when the mouse enters in the component (hover in).
    * @param {number} index
    */
@@ -161,12 +177,19 @@ TableExpandedRow.propTypes = {
    * Define the line color
    */
   parity: oneOf(['even', 'odd']),
+  /**
+   * Enables the selectable column in the table, allowing the user to select one,
+   * many or all of the rows.
+   */
+  selectable: bool,
 }
 
 TableExpandedRow.defaultProps = {
   className: '',
   parity: '',
   theme: {},
+  maxColumns: 7,
+  selectable: false,
 }
 
 export default consumeTheme(TableExpandedRow)
