@@ -33,18 +33,9 @@ export default function normalizeDates (dates) {
   }
 
   if (moment.isMoment(dates)) {
-    let endOf = dates.clone().endOf('day')
-
-    const startOfDayAfter =
-      dates.clone().add(1, 'days').startOf('day')
-
-    if (startOfDayAfter.isBefore(endOf)) {
-      endOf = startOfDayAfter.add(-1, 'milliseconds')
-    }
-
     return {
       start: dates.startOf('day'),
-      end: endOf,
+      end: dates.endOf('day'),
     }
   }
 
