@@ -59,7 +59,7 @@ class SidebarState extends React.Component {
     this.id = shortid.generate()
 
     this.state = {
-      collapsed: false,
+      collapsed: props.collapsed || false,
       selectedEnvironment: 'live',
       active: '',
       showInfos: false,

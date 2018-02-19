@@ -15947,6 +15947,84 @@ exports[`Storyshots SegmentedSwitch Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Sidebar Collapsed 1`] = `
+<aside
+  className="sidebar collapsed"
+>
+  <header
+    className="header"
+  >
+    <button
+      onClick={[Function]}
+    >
+      <Menu32.svg
+        height="16"
+        width="16"
+      />
+    </button>
+  </header>
+  <div
+    className="content"
+  >
+    <div
+      className="tag"
+    >
+      live
+    </div>
+  </div>
+  <nav
+    className="items"
+  >
+    <ul>
+      <li
+        className="link"
+      >
+        <button
+          onClick={[Function]}
+          role="link"
+        >
+          <div
+            className="title"
+          >
+            <span
+              className="icon"
+            >
+              <Home32.svg
+                height={16}
+                width={16}
+              />
+            </span>
+          </div>
+          
+        </button>
+      </li>
+      <li
+        className="link"
+      >
+        <button
+          onClick={[Function]}
+          role="link"
+        >
+          <div
+            className="title"
+          >
+            <span
+              className="icon"
+            >
+              <Transaction32.svg
+                height={16}
+                width={16}
+              />
+            </span>
+          </div>
+          
+        </button>
+      </li>
+    </ul>
+  </nav>
+</aside>
+`;
+
 exports[`Storyshots Sidebar Default 1`] = `
 <aside
   className="sidebar"
