@@ -91,7 +91,7 @@ class SidebarState extends React.Component {
             />
           }
           <button onClick={() => this.setState({ collapsed: !collapsed })}>
-            <IconMenu />
+            <IconMenu width="16" height="16" />
           </button>
         </SidebarHeader>
 
