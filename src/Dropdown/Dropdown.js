@@ -198,7 +198,7 @@ Dropdown.propTypes = {
   })).isRequired,
   /**
    * Triggered when an option is selected.
-   * @param {string} value
+   * @param {object} event
    */
   onChange: PropTypes.func.isRequired,
   /**
