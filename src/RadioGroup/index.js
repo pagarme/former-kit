@@ -104,7 +104,7 @@ RadioGroup.propTypes = {
   name: PropTypes.string.isRequired,
   /**
    * Callback triggered when an option is selected.
-   * @param {string} value
+   * @param {object} event
    */
   onChange: PropTypes.func.isRequired,
   /**
