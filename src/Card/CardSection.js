@@ -68,9 +68,9 @@ class CardSection extends Component {
           {this.cardTitle()}
           {this.arrowUpDown()}
         </span>
-        {this.props.subTitle &&
+        {this.props.subtitle &&
           <span className={theme.sectionSubtitle}>
-            {this.props.subTitle}
+            {this.props.subtitle}
           </span>
         }
       </div>
@@ -153,7 +153,7 @@ CardSection.propTypes = {
   /**
    * Subtitle inside the section.
    */
-  subTitle: PropTypes.string,
+  subtitle: PropTypes.string,
 }
 
 CardSection.defaultProps = {
@@ -161,7 +161,7 @@ CardSection.defaultProps = {
   collapsedTitle: '',
   collapsed: false,
   onTitleClick: null,
-  subTitle: '',
+  subtitle: '',
   icons: {},
 }
 
