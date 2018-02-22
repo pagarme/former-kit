@@ -7,11 +7,14 @@ import CardExamples from './CardExamples'
 storiesOf('Cards', module)
   .add('Default', () => (
     <div>
-      <Section title="Title and content">
+      <Section title="Title, subtitle and content">
         <CardExamples.TitleText />
       </Section>
-      <Section title="Title, icon and content">
+      <Section title="Title, subtitle, icon and content">
         <CardExamples.TitleIcon />
+      </Section>
+      <Section title="Title, custom subtitle, icon and content">
+        <CardExamples.TitleCustomSubtitle />
       </Section>
       <Section title="Title, content and actions">
         <CardExamples.TitleTextActions />

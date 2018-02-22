@@ -842,7 +842,7 @@ exports[`Storyshots Cards Default 1`] = `
     className=""
   >
     <h2>
-      Title and content
+      Title, subtitle and content
     </h2>
     <div>
       <div
@@ -854,8 +854,11 @@ exports[`Storyshots Cards Default 1`] = `
           <div
             className="title"
           >
-            <h3>
+            <h2>
               Lorem ipsum dolor sit amet
+            </h2>
+            <h3>
+              Lorem ipsum
             </h3>
           </div>
           <div
@@ -871,7 +874,7 @@ exports[`Storyshots Cards Default 1`] = `
     className=""
   >
     <h2>
-      Title, icon and content
+      Title, subtitle, icon and content
     </h2>
     <div>
       <div
@@ -883,16 +886,57 @@ exports[`Storyshots Cards Default 1`] = `
           <div
             className="title"
           >
-            <i
-              className="icon"
-            >
+            <h2>
               <Calendar32.svg
                 height={16}
                 width={16}
               />
-            </i>
-            <h3>
               Lorem ipsum dolor sit amet
+            </h2>
+            <h3>
+              Lorem ipsum
+            </h3>
+          </div>
+          <div
+            className="content"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Title, custom subtitle, icon and content
+    </h2>
+    <div>
+      <div
+        className={undefined}
+      >
+        <div
+          className="card"
+        >
+          <div
+            className="title"
+          >
+            <h2>
+              <Calendar32.svg
+                height={16}
+                width={16}
+              />
+              Lorem ipsum dolor sit amet
+            </h2>
+            <h3>
+              <ChartBars32.svg
+                height={16}
+                width={16}
+              />
+              <span>
+                Lorem ipsum
+              </span>
             </h3>
           </div>
           <div
@@ -920,8 +964,11 @@ exports[`Storyshots Cards Default 1`] = `
           <div
             className="title"
           >
-            <h3>
+            <h2>
               Lorem ipsum dolor sit amet
+            </h2>
+            <h3>
+              
             </h3>
           </div>
           <div
@@ -993,8 +1040,11 @@ exports[`Storyshots Cards Default 1`] = `
           <div
             className="title"
           >
-            <h3>
+            <h2>
               Lorem ipsum dolor sit amet
+            </h2>
+            <h3>
+              
             </h3>
           </div>
           <div
@@ -1062,8 +1112,11 @@ exports[`Storyshots Cards Default 1`] = `
             role="button"
             tabIndex="0"
           >
-            <h3>
+            <h2>
               Click here and watch the action logger
+            </h2>
+            <h3>
+              
             </h3>
           </div>
           <div
@@ -1127,8 +1180,11 @@ exports[`Storyshots Cards Default 1`] = `
           <div
             className="title"
           >
-            <h3>
+            <h2>
               Lorem title
+            </h2>
+            <h3>
+              
             </h3>
           </div>
           <div
@@ -1191,8 +1247,11 @@ feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
           <div
             className="title"
           >
-            <h3>
+            <h2>
               Lorem title
+            </h2>
+            <h3>
+              
             </h3>
           </div>
           <div
@@ -11129,8 +11188,11 @@ exports[`Storyshots Layout Default only Footer 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -11149,8 +11211,11 @@ exports[`Storyshots Layout Default only Footer 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -11173,8 +11238,11 @@ exports[`Storyshots Layout Default only Footer 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -11197,8 +11265,11 @@ exports[`Storyshots Layout Default only Footer 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -11217,8 +11288,11 @@ exports[`Storyshots Layout Default only Footer 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -11237,92 +11311,11 @@ exports[`Storyshots Layout Default only Footer 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="row flex"
-            >
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
+                    </h2>
                     <h3>
-                      Lorem ipsum dolor sit amet
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h3>
-                      Lorem ipsum dolor sit amet
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h3>
-                      Lorem ipsum dolor sit amet
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h3>
-                      Lorem ipsum dolor sit amet
+                      
                     </h3>
                   </div>
                   <div
@@ -11345,8 +11338,11 @@ exports[`Storyshots Layout Default only Footer 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -11365,8 +11361,107 @@ exports[`Storyshots Layout Default only Footer 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="row flex"
+            >
+              <div
+                className="col desknull tvnull tablet12 palm12"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -11519,8 +11614,11 @@ exports[`Storyshots Layout Default only Header 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -11539,8 +11637,11 @@ exports[`Storyshots Layout Default only Header 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -11563,8 +11664,11 @@ exports[`Storyshots Layout Default only Header 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -11587,8 +11691,11 @@ exports[`Storyshots Layout Default only Header 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -11607,8 +11714,11 @@ exports[`Storyshots Layout Default only Header 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -11627,92 +11737,11 @@ exports[`Storyshots Layout Default only Header 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="row flex"
-            >
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
+                    </h2>
                     <h3>
-                      Lorem ipsum dolor sit amet
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h3>
-                      Lorem ipsum dolor sit amet
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h3>
-                      Lorem ipsum dolor sit amet
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h3>
-                      Lorem ipsum dolor sit amet
+                      
                     </h3>
                   </div>
                   <div
@@ -11735,8 +11764,11 @@ exports[`Storyshots Layout Default only Header 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -11755,8 +11787,107 @@ exports[`Storyshots Layout Default only Header 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="row flex"
+            >
+              <div
+                className="col desknull tvnull tablet12 palm12"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -11953,8 +12084,11 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -11973,8 +12107,11 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -11997,8 +12134,11 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -12021,8 +12161,11 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -12041,8 +12184,11 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -12061,92 +12207,11 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="row flex"
-            >
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
+                    </h2>
                     <h3>
-                      Lorem ipsum dolor sit amet
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h3>
-                      Lorem ipsum dolor sit amet
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h3>
-                      Lorem ipsum dolor sit amet
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h3>
-                      Lorem ipsum dolor sit amet
+                      
                     </h3>
                   </div>
                   <div
@@ -12169,8 +12234,11 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -12189,8 +12257,107 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="row flex"
+            >
+              <div
+                className="col desknull tvnull tablet12 palm12"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -12429,8 +12596,11 @@ exports[`Storyshots Layout Default with all props 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -12449,8 +12619,11 @@ exports[`Storyshots Layout Default with all props 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -12473,8 +12646,11 @@ exports[`Storyshots Layout Default with all props 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -12497,8 +12673,11 @@ exports[`Storyshots Layout Default with all props 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -12517,8 +12696,11 @@ exports[`Storyshots Layout Default with all props 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -12537,92 +12719,11 @@ exports[`Storyshots Layout Default with all props 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="row flex"
-            >
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
+                    </h2>
                     <h3>
-                      Lorem ipsum dolor sit amet
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h3>
-                      Lorem ipsum dolor sit amet
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h3>
-                      Lorem ipsum dolor sit amet
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h3>
-                      Lorem ipsum dolor sit amet
+                      
                     </h3>
                   </div>
                   <div
@@ -12645,8 +12746,11 @@ exports[`Storyshots Layout Default with all props 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -12665,8 +12769,107 @@ exports[`Storyshots Layout Default with all props 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="row flex"
+            >
+              <div
+                className="col desknull tvnull tablet12 palm12"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -12960,8 +13163,11 @@ exports[`Storyshots Layout Default without Footer 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -12980,8 +13186,11 @@ exports[`Storyshots Layout Default without Footer 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -13004,8 +13213,11 @@ exports[`Storyshots Layout Default without Footer 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -13028,8 +13240,11 @@ exports[`Storyshots Layout Default without Footer 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -13048,8 +13263,11 @@ exports[`Storyshots Layout Default without Footer 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -13068,92 +13286,11 @@ exports[`Storyshots Layout Default without Footer 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="row flex"
-            >
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
+                    </h2>
                     <h3>
-                      Lorem ipsum dolor sit amet
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h3>
-                      Lorem ipsum dolor sit amet
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h3>
-                      Lorem ipsum dolor sit amet
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h3>
-                      Lorem ipsum dolor sit amet
+                      
                     </h3>
                   </div>
                   <div
@@ -13176,8 +13313,11 @@ exports[`Storyshots Layout Default without Footer 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -13196,8 +13336,107 @@ exports[`Storyshots Layout Default without Footer 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="row flex"
+            >
+              <div
+                className="col desknull tvnull tablet12 palm12"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -13394,8 +13633,11 @@ exports[`Storyshots Layout Default without Header 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -13414,8 +13656,11 @@ exports[`Storyshots Layout Default without Header 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -13438,8 +13683,11 @@ exports[`Storyshots Layout Default without Header 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -13462,8 +13710,11 @@ exports[`Storyshots Layout Default without Header 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -13482,8 +13733,11 @@ exports[`Storyshots Layout Default without Header 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -13502,92 +13756,11 @@ exports[`Storyshots Layout Default without Header 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="row flex"
-            >
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
+                    </h2>
                     <h3>
-                      Lorem ipsum dolor sit amet
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h3>
-                      Lorem ipsum dolor sit amet
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h3>
-                      Lorem ipsum dolor sit amet
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h3>
-                      Lorem ipsum dolor sit amet
+                      
                     </h3>
                   </div>
                   <div
@@ -13610,8 +13783,11 @@ exports[`Storyshots Layout Default without Header 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -13630,8 +13806,107 @@ exports[`Storyshots Layout Default without Header 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="row flex"
+            >
+              <div
+                className="col desknull tvnull tablet12 palm12"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -13784,8 +14059,11 @@ exports[`Storyshots Layout Default without Sidebar 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -13804,8 +14082,11 @@ exports[`Storyshots Layout Default without Sidebar 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -13828,8 +14109,11 @@ exports[`Storyshots Layout Default without Sidebar 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -13852,8 +14136,11 @@ exports[`Storyshots Layout Default without Sidebar 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -13872,8 +14159,11 @@ exports[`Storyshots Layout Default without Sidebar 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -13892,92 +14182,11 @@ exports[`Storyshots Layout Default without Sidebar 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="row flex"
-            >
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
+                    </h2>
                     <h3>
-                      Lorem ipsum dolor sit amet
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h3>
-                      Lorem ipsum dolor sit amet
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h3>
-                      Lorem ipsum dolor sit amet
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h3>
-                      Lorem ipsum dolor sit amet
+                      
                     </h3>
                   </div>
                   <div
@@ -14000,8 +14209,11 @@ exports[`Storyshots Layout Default without Sidebar 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
@@ -14020,8 +14232,107 @@ exports[`Storyshots Layout Default without Sidebar 1`] = `
                   <div
                     className="title"
                   >
-                    <h3>
+                    <h2>
                       Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="row flex"
+            >
+              <div
+                className="col desknull tvnull tablet12 palm12"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
                     </h3>
                   </div>
                   <div
