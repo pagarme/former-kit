@@ -18,9 +18,9 @@ const consumeTheme = ThemeConsumer('UICard')
  */
 export const CardTitle = ({
   title,
+  subtitle,
   icon,
   className,
-  children,
   onClick,
   theme,
 }) => {
@@ -48,13 +48,25 @@ export const CardTitle = ({
 
   return (
     <div {...getProps(onClick)}>
-      {icon &&
-        <i className={theme.icon}>
-          {icon}
-        </i>
+      {
+        (typeof title === 'string') &&
+          <h2>
+            {icon}
+            {title}
+          </h2>
       }
-      <h3>{title}</h3>
-      {children}
+      {
+        (typeof title !== 'string') &&
+          title
+      }
+      {
+        (typeof subtitle === 'string') &&
+          <h3>{subtitle}</h3>
+      }
+      {
+        (typeof subtitle !== 'string') &&
+          subtitle
+      }
     </div>
   )
 }
@@ -70,7 +82,11 @@ CardTitle.propTypes = {
   /**
    * The main text of the component.
    */
-  title: PropTypes.string.isRequired,
+  title: PropTypes.node.isRequired,
+  /**
+   * The secondary text of the component.
+   */
+  subtitle: PropTypes.node,
   /**
    * The custom icon that is shown at the left side of the title.
    */
@@ -79,10 +95,6 @@ CardTitle.propTypes = {
    * Custom class added to the component.
    */
   className: PropTypes.string,
-  /**
-   * Set of React elements which will be rendered inside the title.
-   */
-  children: PropTypes.node,
   /**
    * Triggered when the title of the component is clicked.
    * @param {object} event - default HTML click event
@@ -94,8 +106,8 @@ CardTitle.defaultProps = {
   theme: {},
   icon: null,
   className: null,
-  children: null,
   onClick: null,
+  subtitle: '',
 }
 
 export default consumeTheme(CardTitle)

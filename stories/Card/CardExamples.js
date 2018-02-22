@@ -1,7 +1,8 @@
 import React from 'react'
 import { action } from '@storybook/addon-actions'
 
-import Icon from 'emblematic-icons/svg/Calendar32.svg'
+import IconCalendar from 'emblematic-icons/svg/Calendar32.svg'
+import IconChart from 'emblematic-icons/svg/ChartBars32.svg'
 
 import style from './style.css'
 
@@ -21,6 +22,7 @@ const TitleText = () => (
     <Card>
       <CardTitle
         title="Lorem ipsum dolor sit amet"
+        subtitle="Lorem ipsum"
       />
       <CardContent>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
@@ -39,7 +41,33 @@ const TitleIcon = () => (
     <Card>
       <CardTitle
         title="Lorem ipsum dolor sit amet"
-        icon={<Icon width={16} height={16} />}
+        icon={<IconCalendar width={16} height={16} />}
+        subtitle="Lorem ipsum"
+      />
+      <CardContent>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+        venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel
+        blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan.
+        In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis
+        sapien vel malesuada sodales. Curabitur hendrerit purus sed ex
+        feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+      </CardContent>
+    </Card>
+  </div>
+)
+
+const TitleCustomSubtitle = () => (
+  <div className={style.showcase}>
+    <Card>
+      <CardTitle
+        title="Lorem ipsum dolor sit amet"
+        icon={<IconCalendar width={16} height={16} />}
+        subtitle={(
+          <h3>
+            <IconChart width={16} height={16} />
+            <span>Lorem ipsum</span>
+          </h3>
+        )}
       />
       <CardContent>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
@@ -177,7 +205,7 @@ class CollapsableSection extends React.Component {
               onTitleClick={
                 collapsed => this.setState({ collapsed: !collapsed })
               }
-              subTitle="It's over 9000!"
+              subtitle="It's over 9000!"
             >
               {loremIpsum}
             </CardSection>
@@ -191,6 +219,7 @@ class CollapsableSection extends React.Component {
 export default {
   TitleText,
   TitleIcon,
+  TitleCustomSubtitle,
   TitleTextActions,
   GraphicTitleTextActions,
   TitleTextAdvanced,
