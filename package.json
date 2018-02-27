@@ -1,7 +1,7 @@
 {
   "name": "former-kit",
   "version": "0.1.0",
-  "license": "(CC-BY-4.0 OR Apache-2.0)",
+  "license": "Apache-2.0",
   "main": "dist/index.js",
   "repository": {
     "type": "git",
