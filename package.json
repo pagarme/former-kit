@@ -72,7 +72,7 @@
     "eslint-plugin-react": "7.6.1",
     "extract-text-webpack-plugin": "3.0.2",
     "file-loader": "1.1.6",
-    "former-kit-skin-pagarme": "0.0.14",
+    "former-kit-skin-pagarme": "0.1.0",
     "fs-extra": "5.0.0",
     "html-webpack-plugin": "2.30.1",
     "jest": "22.1.4",
