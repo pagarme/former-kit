@@ -1,5 +1,8 @@
 # storybook builds
-./storybook-static/
+./storybook-static
+
+# documentation
+./docs
 
 # dependencies
 /node_modules
