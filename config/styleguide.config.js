@@ -122,6 +122,7 @@ module.exports = {
     '**/tests/*.js',
     '**/tests/**/*.js',
   ],
+  styleguideDir: path.resolve(__dirname, '../docs'),
   webpackConfig,
   styleguideComponents: {
     Wrapper: path.join(__dirname, './styleguide.js'),
