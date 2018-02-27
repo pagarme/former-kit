@@ -19,7 +19,9 @@ const Icon = require('emblematic-icons/svg/Calendar32.svg').default;
     <CardSection
       title="Lorem ipsum dolor sit amet"
     >
-      loremIpsum
+      <CardContent>
+        loremIpsum
+      </CardContent>
     </CardSection>
   </CardContent>
   <CardActions>
