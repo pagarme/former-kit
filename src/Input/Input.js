@@ -72,23 +72,17 @@ class Input extends React.PureComponent {
       return null
     }
 
-    if (this.state.showPassword) {
-      return (
-        <button
-          className={theme.displayPasswordIcon}
-          onClick={this.handlePasswordVisibilityChange}
-        >
-          {icons.hidePassword}
-        </button>
-      )
-    }
-
     return (
       <button
+        type="button"
+        tabIndex="-1"
         className={theme.displayPasswordIcon}
         onClick={this.handlePasswordVisibilityChange}
       >
-        {icons.showPassword}
+        {this.state.showPassword
+          ? icons.hidePassword
+          : icons.showPassword
+        }
       </button>
     )
   }
