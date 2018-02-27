@@ -43,7 +43,12 @@ class CardSection extends Component {
   }
 
   renderHeader () {
-    const { theme, onTitleClick, collapsed } = this.props
+    const {
+      theme,
+      onTitleClick,
+      collapsed,
+      subtitle,
+    } = this.props
 
     const headerClassNames = classNames(
       theme.sectionTitle,
@@ -68,10 +73,15 @@ class CardSection extends Component {
           {this.cardTitle()}
           {this.arrowUpDown()}
         </span>
-        {this.props.subtitle &&
+        {
+          (typeof subtitle === 'string') &&
           <span className={theme.sectionSubtitle}>
-            {this.props.subtitle}
+            {subtitle}
           </span>
+        }
+        {
+          (typeof subtitle !== 'string') &&
+            subtitle
         }
       </div>
     )
@@ -153,7 +163,7 @@ CardSection.propTypes = {
   /**
    * Subtitle inside the section.
    */
-  subtitle: PropTypes.string,
+  subtitle: PropTypes.node,
 }
 
 CardSection.defaultProps = {
@@ -161,7 +171,7 @@ CardSection.defaultProps = {
   collapsedTitle: '',
   collapsed: false,
   onTitleClick: null,
-  subtitle: '',
+  subtitle: null,
   icons: {},
 }
 
