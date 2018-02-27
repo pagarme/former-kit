@@ -9047,6 +9047,8 @@ exports[`Storyshots Inputs Default 1`] = `
             <button
               className="displayPasswordIcon"
               onClick={[Function]}
+              tabIndex="-1"
+              type="button"
             >
               <svg />
             </button>
@@ -9096,6 +9098,8 @@ exports[`Storyshots Inputs Default 1`] = `
             <button
               className="displayPasswordIcon"
               onClick={[Function]}
+              tabIndex="-1"
+              type="button"
             >
               <svg />
             </button>
@@ -9145,6 +9149,8 @@ exports[`Storyshots Inputs Default 1`] = `
             <button
               className="displayPasswordIcon"
               onClick={[Function]}
+              tabIndex="-1"
+              type="button"
             >
               <svg />
             </button>
@@ -10050,6 +10056,8 @@ exports[`Storyshots Inputs Form 1`] = `
             <button
               className="displayPasswordIcon"
               onClick={[Function]}
+              tabIndex="-1"
+              type="button"
             >
               <svg />
             </button>
@@ -10099,6 +10107,8 @@ exports[`Storyshots Inputs Form 1`] = `
             <button
               className="displayPasswordIcon"
               onClick={[Function]}
+              tabIndex="-1"
+              type="button"
             >
               <svg />
             </button>
@@ -10148,6 +10158,8 @@ exports[`Storyshots Inputs Form 1`] = `
             <button
               className="displayPasswordIcon"
               onClick={[Function]}
+              tabIndex="-1"
+              type="button"
             >
               <svg />
             </button>
