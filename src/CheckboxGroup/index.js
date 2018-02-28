@@ -120,7 +120,7 @@ class CheckboxGroup extends React.Component {
 
 CheckboxGroup.propTypes = {
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper.
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: PropTypes.shape({
     checkboxGroup: PropTypes.string,
@@ -143,7 +143,7 @@ CheckboxGroup.propTypes = {
     label: PropTypes.string,
   })).isRequired,
   /**
-   * Group name, used in the checkboxes like the native html checkbox name.
+   * Group name, used in the checkboxes like the native HTML checkbox name.
    */
   name: PropTypes.string.isRequired,
   /**

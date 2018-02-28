@@ -7,7 +7,7 @@ import ThemeConsumer from '../ThemeConsumer'
 const consumeTheme = ThemeConsumer('UIAvatar')
 
 /**
- * Avatar is used to render a profile pictur. It includes a fallback
+ * Avatar is used to render a profile picture. It includes a fallback
  * to a custom placeholder.
  */
 const Avatar = ({
@@ -37,7 +37,7 @@ const Avatar = ({
 
 Avatar.propTypes = {
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper.
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: PropTypes.shape({
     avatar: PropTypes.string,
@@ -54,7 +54,7 @@ Avatar.propTypes = {
   photo: PropTypes.string,
   icons: PropTypes.shape({
     /**
-     * The placeholder will be used only if 'photo' is not defined.
+     * The placeholder will be used only if `photo` is not defined.
      */
     placeholder: PropTypes.element,
   }),

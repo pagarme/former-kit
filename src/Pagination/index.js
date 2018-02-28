@@ -344,7 +344,7 @@ class Pagination extends React.Component {
 
 Pagination.propTypes = {
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper.
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: PropTypes.shape({
     currentPage: PropTypes.string,
@@ -376,7 +376,7 @@ Pagination.propTypes = {
     next: PropTypes.element.isRequired,
   }),
   /**
-   * It is called when the current page changes.
+   * It's called when the current page changes.
    */
   onPageChange: PropTypes.func.isRequired,
   /**

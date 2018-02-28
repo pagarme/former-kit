@@ -64,7 +64,7 @@ class SegmentedSwitch extends React.PureComponent {
 
 SegmentedSwitch.propTypes = {
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: shape({
     /**
@@ -86,7 +86,7 @@ SegmentedSwitch.propTypes = {
   items: arrayOf(string).isRequired,
   /**
    * The prop responsible for identifying the selected item.
-   * Its value is the value of one of the "items".
+   * Its value is the value of one of the `items`.
   */
   selected: string.isRequired,
   /**

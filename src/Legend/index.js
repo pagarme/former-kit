@@ -23,7 +23,7 @@ const defineInitials = pipe(
 
 /**
  * The component that shows a small symbol with an abbreviation and a tip
- * about the content. Can be customized with a color and an acronym.
+ * about the content. It can be customized with a color and an acronym.
  */
 const Legend = ({
   color,
@@ -60,7 +60,7 @@ const Legend = ({
 
 Legend.propTypes = {
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper.
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: PropTypes.shape({
     acronym: PropTypes.string,

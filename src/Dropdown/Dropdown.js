@@ -143,7 +143,7 @@ class Dropdown extends React.Component {
 
 Dropdown.propTypes = {
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper.
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: PropTypes.shape({
     arrow: PropTypes.string,
@@ -203,7 +203,7 @@ Dropdown.propTypes = {
   onChange: PropTypes.func.isRequired,
   /**
    * Text which will be shown when none option is selected
-   * (in the form variant the label may replace the placeholder)
+   * (in the form variant the label may replace the placeholder).
    */
   placeholder: PropTypes.string,
   /**
@@ -212,7 +212,7 @@ Dropdown.propTypes = {
    */
   success: PropTypes.string,
   /**
-   * Selected value. If it is not set, the placeholder will be shown.
+   * Selected value. If it's not set, the placeholder will be shown.
    */
   value: PropTypes.string,
 }

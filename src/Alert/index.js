@@ -12,7 +12,7 @@ import ThemeConsumer from '../ThemeConsumer'
 const consumeTheme = ThemeConsumer('UIAlert')
 
 /**
- * The Alert component is used to create alerts of all kinds, such as "errors", "warnings", etc.
+ * The Alert component is used to create alerts of all kinds, such as `errors`, `warnings`, etc.
  */
 const Alert = ({
   children,
@@ -34,7 +34,7 @@ const Alert = ({
 
 Alert.propTypes = {
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper.
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: shape({
     alert: string,

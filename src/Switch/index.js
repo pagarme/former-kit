@@ -61,7 +61,7 @@ const Switch = ({
 
 Switch.propTypes = {
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
   */
   theme: shape({
     switch: string,
@@ -81,7 +81,7 @@ Switch.propTypes = {
   */
   checked: bool,
   /**
-   * Texts used to the I18n of the component.
+   * Texts used to the i18n of the component.
   */
   strings: shape({
     /**

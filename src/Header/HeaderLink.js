@@ -5,8 +5,8 @@ import ThemeConsumer from '../ThemeConsumer'
 const consumeTheme = ThemeConsumer('UIHeader')
 
 /*
- * A link inside the Header. It is used inside
- * the HeaderLinks component.
+ * A link inside the Header. It's used inside
+ * the `HeaderLinks` component.
 */
 const HeaderLink = ({
   theme,
@@ -40,7 +40,7 @@ HeaderLink.propTypes = {
    */
   onClick: PropTypes.func.isRequired,
   /**
-   * The icon of the link. It is used if `children` is not defined.
+   * The icon of the link. It's used if `children` is not defined.
    */
   icon: PropTypes.element,
   /**

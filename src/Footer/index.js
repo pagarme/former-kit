@@ -31,7 +31,7 @@ const Footer = ({ theme, children, links }) => (
 
 Footer.propTypes = {
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper.
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: PropTypes.shape({
     footer: PropTypes.string,

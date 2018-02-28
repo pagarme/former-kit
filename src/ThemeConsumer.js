@@ -2,10 +2,10 @@ import React from 'react'
 import { object } from 'prop-types'
 
 /**
- * THis component is a wrapper component wich read the data received from
- * a ThemeProvier and pass this data to the wrapped component props.
+ * This component is a wrapper component wich read the data received from
+ * a `ThemeProvider` and pass this data to the wrapped component props.
  * This wrapper is applied to all of components which apply the
- * consumeTheme function.
+ * `consumeTheme` function.
  */
 export default function ThemeConsumer (name) {
   return (Component) => {

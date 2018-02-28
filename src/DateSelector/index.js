@@ -38,11 +38,11 @@ const defaultStrings = {
 /**
  * A calendar like selector based on react-dates
  * which allows the user to select one date
- * or a period(two dates), has a preset list of options for the date
+ * or a period (two dates), has a preset list of options for the date
  * selection.
  * Allow the year and months navigation.
  * The day/period selection, cancelation and confirmation fires a set
- * of callbacks which must be given by the father component, the data
+ * of callbacks which must be given by the parent component, the data
  * received in the confirmation callback are the start and end dates,
  * if only one date is selected it will be the start and the end.
  * @see (ReactDates) [https://github.com/airbnb/react-dates]
@@ -292,7 +292,7 @@ class DateSelector extends Component {
 
 DateSelector.propTypes = {
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: shape({
     actions: string,
@@ -303,22 +303,22 @@ DateSelector.propTypes = {
     stage: string,
   }),
   /**
-   * Trigged when the confirmarion button is clicked
+   * Trigged when the confirmarion button is clicked.
    * @param {object} dates
    */
   onConfirm: func,
   /**
-   * This functions is trigged when dates or presets are changed,
+   * This function is trigged when dates or presets are changed,
    * but only after the state was changed, could trigger a state
-   * update via componentWillReceiveProps.
-   * It's function is used to send the selected dates to the father component.
+   * update via `componentWillReceiveProps`.
+   * Its function is used to send the selected dates to the parent component.
    * @param {object} dates
    */
   onChange: func,
   /**
    * Trigger when the cancel button is clicked, stops the dates selection and
    * fires the given callback without params,
-   * the callback should close the selector
+   * the callback should close the selector.
    */
   onCancel: func,
   /**
@@ -326,15 +326,15 @@ DateSelector.propTypes = {
    */
   onFocusChange: func,
   /**
-   * Selected dates
+   * Selected dates.
    */
   dates: shape({
     /**
-     * Start date based on moment.js
+     * Start date based on `moment.js`.
      */
     start: oneOfType([momentObj, object]),
     /**
-     * End date based on moment.js
+     * End date based on `moment.js`.
      */
     end: oneOfType([momentObj, object]),
   }).isRequired,
@@ -349,75 +349,75 @@ DateSelector.propTypes = {
    */
   presets: arrayOf(shape({
     /**
-     * Preset identification
+     * Preset identification.
      */
     key: string,
     /**
-     * Item text which will be shown in the list
+     * Item text which will be shown in the list.
      */
     title: string,
     /**
-     * Item evaluation function
+     * Item evaluation function.
      */
     date: func,
     /**
      * This items are used to create a sub-menu under the title of
-     * the current item
+     * the current item.
      */
     items: arrayOf(shape({
       /**
-       * Item text which will be shown in the list
+       * Item text which will be shown in the list.
        */
       title: string,
       /**
-       * Item evaluation function
+       * Item evaluation function.
        */
       date: func,
     })),
   })),
   /**
-   * Texts used in the component internationalization(i18n)
+   * Texts used in the component internationalization (i18n).
    */
   strings: shape({
     /**
-     * Cancel button text
+     * Cancel button text.
      */
     cancel: string,
     /**
-     * Confirm button text
+     * Confirm button text.
      */
     confirmPeriod: string,
     /**
-     * Custom presets subtitle
+     * Custom presets subtitle.
      */
     custom: string,
     /**
-     * Day label
+     * Day label.
      */
     days: string,
     /**
-     * Selected day label
+     * Selected day label.
      */
     daySelected: string,
     /**
-     * Selected days label
+     * Selected days label.
      */
     daysSelected: string,
     /**
-     * No selected day/period label
+     * No selected day/period label.
      */
     noDayOrPeriodSelected: string,
     /**
-     * Period label
+     * Period label.
      */
     period: string,
     /**
-     * Today label
+     * Today label.
      */
     today: string,
   }),
   /**
-   * Default icons used in the month navigation
+   * Default icons used in the month navigation.
    */
   icons: shape({
     previousMonth: element,

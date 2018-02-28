@@ -22,7 +22,7 @@ const Sidebar = ({
 
 Sidebar.propTypes = {
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper.
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: PropTypes.shape({
     /**
@@ -40,8 +40,8 @@ Sidebar.propTypes = {
   collapsed: PropTypes.bool,
   /**
    * The children can be any kind of component. However,
-   * it's recommended to use SidebarHeader, SidebarContent or
-   * SidebarLinks as direct children.
+   * it's recommended to use `SidebarHeader`, `SidebarContent` or
+   * `SidebarLinks` as direct children.
    */
   children: PropTypes.node.isRequired,
 }

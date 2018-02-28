@@ -8,7 +8,7 @@ const consumeTheme = ThemeConsumer('UIModal')
 /**
  * This component allows the user to create a content over
  * the page blocking all background content.
- * It is very useful when the user attention must stay in a specific
+ * It's very useful when the user attention must stay in a specific
  * part of the content.
  */
 const Modal = ({
@@ -34,7 +34,7 @@ const Modal = ({
 
 Modal.propTypes = {
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper.
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: PropTypes.shape({
     overlay: PropTypes.string,

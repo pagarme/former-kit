@@ -126,7 +126,7 @@ class TableExpandedRow extends PureComponent {
 
 TableExpandedRow.propTypes = {
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper.
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: shape({
     tableRow: string,
@@ -135,7 +135,7 @@ TableExpandedRow.propTypes = {
     odd: string,
   }),
   /**
-   * Aditional css classes which can be applyed to the expanded row.
+   * Aditional CSS classes which can be applyed to the expanded row.
    */
   className: string,
   /**
@@ -174,7 +174,7 @@ TableExpandedRow.propTypes = {
    */
   onMouseLeave: func.isRequired,
   /**
-   * Define the line color
+   * Define the line color.
    */
   parity: oneOf(['even', 'odd']),
   /**
