@@ -8,7 +8,7 @@ import ThemeConsumer from '../ThemeConsumer'
 const consumeTheme = ThemeConsumer('UIButton')
 
 /**
- * Simple html button in a beautifull skin.
+ * Simple HTML button in a beautiful skin.
  */
 const Button = ({
   base,
@@ -48,7 +48,7 @@ const Button = ({
 
 Button.propTypes = {
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: PropTypes.shape({
     button: PropTypes.string,
@@ -79,11 +79,11 @@ Button.propTypes = {
    */
   children: PropTypes.string,
   /**
-   * The prop that indicates if the Button is disabled or not.
+   * The prop that indicates if the button is disabled or not.
    */
   disabled: PropTypes.bool,
   /**
-   * The styles of color the Button can have.
+   * The styles of color the button can have.
    */
   fill: PropTypes.oneOf([
     'flat', 'gradient', 'outline', 'clean',
@@ -93,7 +93,7 @@ Button.propTypes = {
    */
   icon: PropTypes.element,
   /**
-   * The onClick prop is triggered when the button is clicked.
+   * The `onClick` prop is triggered when the button is clicked.
    */
   onClick: PropTypes.func,
   /**
@@ -103,13 +103,13 @@ Button.propTypes = {
     'high', 'normal', 'low',
   ]),
   /**
-   * Component's size
+   * Component's size.
    */
   size: PropTypes.oneOf([
     'tiny', 'small', 'default', 'large',
   ]),
   /**
-   * Button's type
+   * Button's type.
    */
   type: PropTypes.oneOf(['button', 'submit', 'reset']),
 }

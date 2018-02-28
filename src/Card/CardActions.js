@@ -15,14 +15,14 @@ const CardActions = ({ className, children, theme }) => (
 
 CardActions.propTypes = {
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper.
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: PropTypes.shape({
     base: PropTypes.string,
     actions: PropTypes.string,
   }),
   /**
-   * Set of react elements which will be rendered inside the card actions.
+   * Set of React elements which will be rendered inside the card actions.
    * These elements should contain actions.
    */
   children: PropTypes.node.isRequired,

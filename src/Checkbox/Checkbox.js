@@ -60,7 +60,7 @@ const Checkbox = ({
 
 Checkbox.propTypes = {
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper.
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: shape({
     checkbox: string,
@@ -71,11 +71,11 @@ Checkbox.propTypes = {
     error: string,
   }),
   /**
-   * Same as the native prop 'name' the checkbox has.
+   * Same as the native `name` prop from the HTML checkbox.
    */
   name: string.isRequired,
   /**
-   * Same as the native prop 'html' the checkbox has.
+   * Same as the native `value` prop from the HTML checkbox.
    */
   value: string.isRequired,
   /**
@@ -83,7 +83,7 @@ Checkbox.propTypes = {
    */
   label: string.isRequired,
   /**
-   * Same as the native prop 'checked' the checkbox has.
+   * Same as the `checked` value prop from the HTML checkbox.
    */
   checked: bool.isRequired,
   /**
@@ -91,7 +91,7 @@ Checkbox.propTypes = {
    */
   onChange: func.isRequired,
   /**
-   * Same as the native prop 'disabled' the checkbox has.
+   * Same as the `disabled` value prop from the HTML checkbox.
    */
   disabled: bool,
   /**

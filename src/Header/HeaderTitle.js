@@ -5,7 +5,7 @@ import ThemeConsumer from '../ThemeConsumer'
 const consumeTheme = ThemeConsumer('UIHeader')
 
 /*
- * The title of the header. It is used inside the Header component.
+ * The title of the header. It's used inside the `Header` component.
 */
 const HeaderTitle = ({
   children,

@@ -120,7 +120,7 @@ const validateIconsShape = (props, propName) => {
  * The columns must have a specific structure which allows the data read and
  * cells output customization.
  * The table is not responsible for the data received, all events trigged in
- * this component is thrown to the father component to keep the table without
+ * this component is thrown to the parent component to keep the table without
  * business logic.
  */
 class Table extends Component {
@@ -323,7 +323,7 @@ class Table extends Component {
 
 Table.propTypes = {
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: shape({
     /**
@@ -388,12 +388,12 @@ Table.propTypes = {
    */
   maxColumns: number,
   /**
-   * I's called when a row is expanded using the expandable button
+   * It's called when a row is expanded using the expandable button
    * @param {Array<number>} rows - all expanded rows indexes in the table.
    */
   onExpandRow: func,
   /**
-   * Is called when a orderable column in the header is clicked.
+   * It's called when a orderable column in the header is clicked.
    * @param {int} index - order column index.
    * @param {string} order - rows order, can be `ascending` or `descending`.
    */

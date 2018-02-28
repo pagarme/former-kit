@@ -54,11 +54,11 @@ const getStrings = strings => ({
 
 /**
  * Input component designed to receive one or two dates, can have a mask
- * for the input and enables the date selection using a calendar like selector
- * When dates are selected the first one is the period start and the second is
- * the finish, the date selection callback allways will provide two dates, if
- * the component is showing only one date the callback will receive the same date
- * as start and end
+ * for the input and enables the date selection using a calendar like selector.
+ * When dates are selected, the first one is the start period and the second is
+ * the end one. The date selection callback will always provide two dates, if
+ * the component is showing only one date, the callback will receive the same date
+ * as start and end.
  */
 class DateInput extends React.Component {
   constructor (props) {
@@ -339,7 +339,7 @@ class DateInput extends React.Component {
 
 DateInput.propTypes = {
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: shape({
     active: string,
@@ -354,46 +354,46 @@ DateInput.propTypes = {
     start: string,
   }),
   /**
-   * Enable/disable the component
+   * Enable/disable the component.
    */
   active: bool,
   /**
-   * Default start and end dates
+   * Default start and end dates.
    */
   dates: shape({
     /**
-     * Start date based in moment.js
+     * Start date based in `moment.js`.
      */
     start: instanceOf(moment),
     /**
-     * End date based in moment.js
+     * End date based in `moment.js`.
      */
     end: instanceOf(moment),
   }),
   /**
-   * Custom icon which will be shown in the component left side
+   * Custom icon which will be shown in the component left side.
    */
   icon: element,
   /**
-   * Limit dates for range selections
+   * Limit dates for range selections.
    */
   limits: shape({
     /**
-     * Biggest selectable date based in moment.js
+     * Biggest selectable date based in `moment.js`.
      */
     upper: instanceOf(moment),
     /**
-     * Lowest selectable date based in moment.js
+     * Lowest selectable date based in `moment.js`.
      */
     lower: instanceOf(moment),
   }),
   /**
-   * Triggers when a date is changed or selected
+   * Triggers when a date is changed or selected.
    * @param {object} dates
    */
   onChange: func.isRequired,
   /**
-   * Date selector presets, used for dates ranges and selection options
+   * Date selector presets, used for dates ranges and selection options.
    * @see [DateSelector](#dateselector)
    */
   presets: arrayOf(shape({

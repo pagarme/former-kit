@@ -23,27 +23,27 @@ export default class ThemeProvider extends React.Component {
 ThemeProvider.childContextTypes = {
   /**
    * A magical object received by the provider and passed to all of its children.
-   * It's responsible for all css and icons default customizations, uses
-   * the react context API to propagate it own props to the children.
+   * It's responsible for all CSS and icons default customizations, uses
+   * the React context API to propagate it own props to the children.
    */
   theme: shape({
     /**
-     * Theme name/description
+     * Theme name/description.
      */
     name: string,
     /**
-     * Theme version
+     * Theme version.
      */
     version: string,
     /**
      * This object is a compiled of styles which came from the provided theme.
-     * All of the theme props are strings which mirror the theme css classes.
+     * All of the theme props are strings which mirror the theme CSS classes.
      * In wrapped components props, this object can be accessed by the `theme` prop.
      */
     styles: object, // eslint-disable-line
     /**
      * This object is a set of icons provided in the theme object.
-     * The icons are all react elements which have an icon inside.
+     * The icons are all React elements which have an icon inside.
      * In wrapped components props, this object can be accessed by the `icons` prop.
      */
     icons: object, // eslint-disable-line

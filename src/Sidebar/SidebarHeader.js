@@ -22,7 +22,7 @@ SidebarHeader.propTypes = {
   }),
   /**
    * The children can contain any kind of component.
-   * It is recommended to have a logo and
+   * It's recommended to have a logo and
    * a button to collapse or expand the Sidebar.
    */
   children: PropTypes.node.isRequired,

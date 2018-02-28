@@ -39,7 +39,7 @@ const Landing = ({
 
 Landing.propTypes = {
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper.
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: shape({
     column: string,
@@ -56,7 +56,7 @@ Landing.propTypes = {
     arrayOf(element),
   ]),
   /**
-   * Custom css classes.
+   * Custom CSS classes.
    */
   className: string,
 }

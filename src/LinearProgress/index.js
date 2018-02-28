@@ -75,7 +75,7 @@ const LinearProgress = ({
 
 LinearProgress.propTypes = {
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper.
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: PropTypes.shape({
     linearProgress: PropTypes.string,

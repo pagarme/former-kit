@@ -17,7 +17,7 @@ const Header = ({ theme, children }) => (
 
 Header.propTypes = {
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: PropTypes.shape({
     /**
@@ -27,8 +27,8 @@ Header.propTypes = {
   }),
   /**
    * The children can contain any kind of element.
-   * However, it is recommended to have HeaderTitle and
-   * HeaderContent as direct children.
+   * However, it's recommended to have `HeaderTitle` and
+   * `HeaderContent` as direct children.
    */
   children: PropTypes.node.isRequired,
 }

@@ -20,7 +20,7 @@ import TabItem from './TabItem'
 const consumeTheme = ThemeConsumer('UITabBar')
 /**
  * A horizontal select which shows all options side by side,
- * only one option is selected at time, this one is highlighted
+ * only one option is selected at time, this one is highlighted.
  */
 class TabBar extends React.Component {
   constructor (props) {
@@ -73,7 +73,7 @@ class TabBar extends React.Component {
 
 TabBar.propTypes = {
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: shape({
     tabBar: string,
@@ -82,19 +82,19 @@ TabBar.propTypes = {
   }),
   /**
    * Component structure variant which can be: just-text, text-icon, just-icon.
-   * This changes the way which every item will be rendered in the component
+   * This changes the way which every item will be rendered in the component.
    */
   variant: oneOf(variantList),
   /**
-   * Set of React components which will be rendered inside the component
+   * Set of React components which will be rendered inside the component.
    */
   children: arrayOf(TabItem).isRequired,
   /**
-   * Selected item index
+   * Selected item index.
    */
   selected: number,
   /**
-   * Triggers when a component
+   * Triggers when a component.
    */
   onTabChange: func,
 }

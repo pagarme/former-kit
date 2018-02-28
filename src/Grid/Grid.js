@@ -36,7 +36,7 @@ Grid.propTypes = {
 
 Grid.defaultProps = {
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper.
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: {},
   /**

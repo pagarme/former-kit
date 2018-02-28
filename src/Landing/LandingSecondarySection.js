@@ -46,7 +46,7 @@ const LandingSecondarySection = ({
 
 LandingSecondarySection.propTypes = {
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper.
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: shape({
     secondary: string,

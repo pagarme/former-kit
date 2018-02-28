@@ -17,7 +17,7 @@ const validateMultiline = (props, propName) => {
 }
 
 /**
- * Custom Input component, which is the native html 'input' on steroids.
+ * Custom Input component, which is the native HTML input on steroids.
  * It also has an awesome skin and a multiline version.
  */
 class Input extends React.PureComponent {
@@ -194,7 +194,7 @@ class Input extends React.PureComponent {
 
 Input.propTypes = {
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper.
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: PropTypes.shape({
     input: PropTypes.string,

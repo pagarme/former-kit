@@ -25,14 +25,14 @@ const CardContent = ({
 
 CardContent.propTypes = {
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from consumeTheme wrapper.
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: PropTypes.shape({
     base: PropTypes.string,
     content: PropTypes.string,
   }),
   /**
-   * Set of react elements which will be rendered inside the card.
+   * Set of React elements which will be rendered inside the card.
    */
   children: PropTypes.node.isRequired,
   /**
