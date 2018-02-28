@@ -25,7 +25,7 @@ class InputState extends React.Component {
       email,
     } = this.state
 
-    return inputStyle === 'default'
+    return inputStyle !== 'form'
       ? (
         <DefaultInput
           error={error}
@@ -62,338 +62,368 @@ class InputState extends React.Component {
 }
 ```
 
-The default Input looks like this:
+### __Default input__ ###
+#### **States** ####
+
+Default
 ```jsx
-const InputState = require('./example/InputState').default;
-const IconMail = require('emblematic-icons/svg/Mail32.svg').default;
+  const InputState = require('./example/InputState').default;
+  const IconMail = require('emblematic-icons/svg/Mail32.svg').default;
 
-<div>
-  <InputState
-    inputStyle="default"
-    type="text"
-    label="Email!"
-  />
-
-  <br />
-
-  <InputState
-    inputStyle="default"
-    type="text"
-    label="Email!"
-    hint="Hint!"
-  />
-
-  <br />
-
-  <InputState
-    inputStyle="default"
-    type="text"
-    label="Email!"
-    hint="Hint!"
-    icon={<IconMail width={16} height={16} />}
-  />
-</div>
+  <div>
+    <InputState
+      type="text"
+      label="Email!"
+    />
+    <br />
+    <InputState
+      inputStyle="default"
+      type="text"
+      label="Email!"
+      hint="Hint!"
+    />
+    <br />
+    <InputState
+      inputStyle="default"
+      type="text"
+      label="Email!"
+      hint="Hint!"
+      icon={<IconMail width={16} height={16} />}
+    />
+    <br />
+    <InputState
+      inputStyle="default"
+      type="password"
+      label="Password"
+      hint="Hint!"
+    />
+    <br />
+    <InputState
+      inputStyle="default"
+      type="text"
+      label="Email!"
+      hint="Hint!"
+      multiline
+    />
+  </div>
 ```
 
-The form Input looks like this:
+Disabled
 ```jsx
-const InputState = require('./example/InputState').default;
-const IconMail = require('emblematic-icons/svg/Mail32.svg').default;
-
-<div>
-  <InputState
-    inputStyle="form"
-    type="text"
-    label="Email!"
-  />
-
-  <br />
-
-  <InputState
-    inputStyle="form"
-    type="text"
-    label="Email!"
-    hint="Hint!"
-  />
-
-  <br />
-
-  <InputState
-    inputStyle="form"
-    type="text"
-    label="Email!"
-    hint="Hint!"
-    icon={<IconMail width={16} height={16} />}
-  />
-</div>
+  const InputState = require('./example/InputState').default;
+  const IconMail = require('emblematic-icons/svg/Mail32.svg').default;
+  <div>
+    <InputState
+      disabled
+      type="text"
+      label="Email!"
+    />
+    <br />
+    <InputState
+      type="text"
+      label="Email!"
+      hint="Hint!"
+      disabled
+    />
+    <br />
+    <InputState
+      disabled
+      type="text"
+      label="Email!"
+      hint="Hint!"
+      icon={<IconMail width={16} height={16} />}
+    />
+    <br />
+    <InputState
+      disabled
+      type="password"
+      label="Password"
+      hint="Hint!"
+    />
+    <br />
+    <InputState
+      disabled
+      type="text"
+      label="Email!"
+      hint="Hint!"
+      multiline
+    />
+  </div>
 ```
 
-Both inputs can show success and error messages:
+Error
 ```jsx
-const InputState = require('./example/InputState').default;
-const IconMail = require('emblematic-icons/svg/Mail32.svg').default;
-
-<div>
-  <InputState
-    inputStyle="default"
-    type="text"
-    label="Email!"
-    hint="Hint!"
-    success="Success!"
-  />
-
-  <br />
-
-  <InputState
-    inputStyle="form"
-    type="text"
-    label="Email!"
-    hint="Hint!"
-    success="Success!"
-  />
-
-  <br />
-
-  <InputState
-    inputStyle="default"
-    type="text"
-    label="Email!"
-    hint="Hint!"
-    error="Error!"
-  />
-
-  <br />
-
-  <InputState
-    inputStyle="form"
-    type="text"
-    label="Email!"
-    hint="Hint!"
-    error="Error!"
-  />
-</div>
+  const InputState = require('./example/InputState').default;
+  const IconMail = require('emblematic-icons/svg/Mail32.svg').default;
+  <div>
+    <InputState
+      type="text"
+      label="Email!"
+      error="Error!"
+    />
+    <br />
+    <InputState
+      type="text"
+      label="Email!"
+      hint="Hint!"
+      error="Error!"
+    />
+    <br />
+    <InputState
+      type="text"
+      label="Email!"
+      hint="Hint!"
+      error="Error!"
+      icon={<IconMail width={16} height={16} />}
+    />
+    <br />
+    <InputState
+      type="password"
+      label="Password"
+      hint="Hint!"
+      error="Error!"
+    />
+    <br />
+    <InputState
+      type="text"
+      label="Email!"
+      hint="Hint!"
+      error="Error!"
+      multiline
+    />
+  </div>
 ```
 
-Also, both inputs can be multiline:
+Success
 ```jsx
-const InputState = require('./example/InputState').default;
-const IconMail = require('emblematic-icons/svg/Mail32.svg').default;
-
-<div>
-  <InputState
-    inputStyle="default"
-    type="text"
-    label="Email!"
-    hint="Hint!"
-    multiline
-  />
-
-  <br />
-
-  <InputState
-    inputStyle="form"
-    type="text"
-    label="Email!"
-    hint="Hint!"
-    multiline
-  />
-
-  <br />
-
-  <InputState
-    inputStyle="default"
-    type="text"
-    label="Email!"
-    hint="Hint!"
-    multiline
-    icon={<IconMail width={16} height={16} />}
-  />
-
-  <br />
-
-  <InputState
-    inputStyle="form"
-    type="text"
-    label="Email!"
-    hint="Hint!"
-    multiline
-    icon={<IconMail width={16} height={16} />}
-  />
-
-  <br />
-
-  <InputState
-    inputStyle="default"
-    type="text"
-    label="Email!"
-    hint="Hint!"
-    multiline
-    success="Success!"
-  />
-
-  <br />
-
-  <InputState
-    inputStyle="form"
-    type="text"
-    label="Email!"
-    hint="Hint!"
-    multiline
-    success="Success!"
-  />
-
-  <br />
-
-  <InputState
-    inputStyle="default"
-    type="text"
-    label="Email!"
-    hint="Hint!"
-    multiline
-    error="Error!"
-  />
-
-  <br />
-
-  <InputState
-    inputStyle="form"
-    type="text"
-    label="Email!"
-    hint="Hint!"
-    multiline
-    error="Error!"
-  />
-</div>
+  const InputState = require('./example/InputState').default;
+  const IconMail = require('emblematic-icons/svg/Mail32.svg').default;
+  <div>
+    <InputState
+      type="text"
+      label="Email!"
+      success="Success!"
+    />
+    <br />
+    <InputState
+      type="text"
+      label="Email!"
+      hint="Hint!"
+      success="Success!"
+    />
+    <br />
+    <InputState
+      type="text"
+      label="Email!"
+      hint="Hint!"
+      success="Success!"
+      icon={<IconMail width={16} height={16} />}
+    />
+    <br />
+    <InputState
+      type="password"
+      label="Password"
+      hint="Hint!"
+      success="Success!"
+    />
+    <br />
+    <InputState
+      type="text"
+      label="Email!"
+      hint="Hint!"
+      success="Success!"
+      multiline
+    />
+  </div>
 ```
 
-and have a disabled state:
+### __Form input__ ###
+#### **States** ####
+
+Default
 ```jsx
-const InputState = require('./example/InputState').default;
-const IconMail = require('emblematic-icons/svg/Mail32.svg').default;
-
-<div>
-  <InputState
-    inputStyle="default"
-    type="text"
-    label="Email!"
-    hint="Hint!"
-    disabled
-  />
-
-  <br />
-
-  <InputState
-    inputStyle="form"
-    type="text"
-    label="Email!"
-    hint="Hint!"
-    disabled
-  />
-
-  <br />
-
-  <InputState
-    inputStyle="default"
-    type="text"
-    label="Email!"
-    hint="Hint!"
-    disabled
-    icon={<IconMail width={16} height={16} />}
-  />
-
-  <br />
-
-  <InputState
-    inputStyle="form"
-    type="text"
-    label="Email!"
-    hint="Hint!"
-    disabled
-    icon={<IconMail width={16} height={16} />}
-  />
-</div>
+  const InputState = require('./example/InputState').default;
+  const IconMail = require('emblematic-icons/svg/Mail32.svg').default;
+  <div>
+    <InputState
+      inputStyle="form"
+      type="text"
+      label="Email!"
+    />
+    <br />
+    <InputState
+      inputStyle="form"
+      type="text"
+      label="Email!"
+      hint="Hint!"
+    />
+    <br />
+    <InputState
+      inputStyle="form"
+      type="text"
+      label="Email!"
+      hint="Hint!"
+      icon={<IconMail width={16} height={16} />}
+    />
+    <br />
+    <InputState
+      inputStyle="form"
+      type="password"
+      label="Password"
+      hint="Hint!"
+    />
+    <br />
+    <InputState
+      inputStyle="form"
+      type="text"
+      label="Email!"
+      hint="Hint!"
+      multiline
+    />
+  </div>
 ```
 
-Both inputs can also have a password type:
+Disabled
 ```jsx
-const InputState = require('./example/InputState').default;
-const IconMail = require('emblematic-icons/svg/Mail32.svg').default;
+  const InputState = require('./example/InputState').default;
+  const IconMail = require('emblematic-icons/svg/Mail32.svg').default;
+  <div>
+    <InputState
+      disabled
+      inputStyle="form"
+      type="text"
+      label="Email!"
+    />
+    <br />
+    <InputState
+      inputStyle="form"
+      type="text"
+      label="Email!"
+      hint="Hint!"
+      disabled
+    />
+    <br />
+    <InputState
+      inputStyle="form"
+      disabled
+      type="text"
+      label="Email!"
+      hint="Hint!"
+      icon={<IconMail width={16} height={16} />}
+    />
+    <br />
+    <InputState
+      inputStyle="form"
+      disabled
+      type="password"
+      label="Password"
+      hint="Hint!"
+    />
+    <br />
+    <InputState
+      inputStyle="form"
+      disabled
+      type="text"
+      label="Email!"
+      hint="Hint!"
+      multiline
+    />
+  </div>
+```
 
-<div>
-  <InputState
-    inputStyle="default"
-    type="password"
-    label="Password!"
-    hint="Hint!"
-  />
+Error
+```jsx
+  const InputState = require('./example/InputState').default;
+  const IconMail = require('emblematic-icons/svg/Mail32.svg').default;
+  <div>
+    <InputState
+      inputStyle="form"
+      type="text"
+      label="Email!"
+      error="Error!"
+    />
+    <br />
+    <InputState
+      inputStyle="form"
+      type="text"
+      label="Email!"
+      hint="Hint!"
+      error="Error!"
+    />
+    <br />
+    <InputState
+      inputStyle="form"
+      type="text"
+      label="Email!"
+      hint="Hint!"
+      error="Error!"
+      icon={<IconMail width={16} height={16} />}
+    />
+    <br />
+    <InputState
+      inputStyle="form"
+      type="password"
+      label="Password"
+      hint="Hint!"
+      error="Error!"
+    />
+    <br />
+    <InputState
+      inputStyle="form"
+      type="text"
+      label="Email!"
+      hint="Hint!"
+      error="Error!"
+      multiline
+    />
+  </div>
+```
 
-  <br />
-
-  <InputState
-    inputStyle="form"
-    type="password"
-    label="Password!"
-    hint="Hint!"
-  />
-
-  <br />
-
-  <InputState
-    inputStyle="default"
-    type="password"
-    label="Password!"
-    hint="Hint!"
-    disabled
-  />
-
-  <br />
-
-  <InputState
-    inputStyle="form"
-    type="password"
-    label="Password!"
-    hint="Hint!"
-    disabled
-  />
-
-  <br />
-
-  <InputState
-    inputStyle="default"
-    type="password"
-    label="Password!"
-    hint="Hint!"
-    success="Success!"
-  />
-
-  <br />
-
-  <InputState
-    inputStyle="form"
-    type="password"
-    label="Password!"
-    hint="Hint!"
-    success="Success!"
-  />
-
-  <br />
-
-  <InputState
-    inputStyle="default"
-    type="password"
-    label="Password!"
-    hint="Hint!"
-    error="Error!"
-  />
-
-  <br />
-
-  <InputState
-    inputStyle="form"
-    type="password"
-    label="Password!"
-    hint="Hint!"
-    error="Error!"
-  />
-</div>
+Success
+```jsx
+  const InputState = require('./example/InputState').default;
+  const IconMail = require('emblematic-icons/svg/Mail32.svg').default;
+  <div>
+    <InputState
+      inputStyle="form"
+      type="text"
+      label="Email!"
+      success="Success!"
+    />
+    <br />
+    <InputState
+      inputStyle="form"
+      type="text"
+      label="Email!"
+      hint="Hint!"
+      success="Success!"
+    />
+    <br />
+    <InputState
+      inputStyle="form"
+      type="text"
+      label="Email!"
+      hint="Hint!"
+      success="Success!"
+      icon={<IconMail width={16} height={16} />}
+    />
+    <br />
+    <InputState
+      inputStyle="form"
+      type="password"
+      label="Password"
+      hint="Hint!"
+      success="Success!"
+      icon={<IconMail width={16} height={16} />}
+    />
+    <br />
+    <InputState
+      inputStyle="form"
+      type="text"
+      label="Email!"
+      hint="Hint!"
+      success="Success!"
+      multiline
+    />
+  </div>
 ```

@@ -223,6 +223,9 @@ class TableRow extends Component {
 }
 
 TableRow.propTypes = {
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
+   */
   theme: shape({
     even: string,
     odd: string,
@@ -230,8 +233,19 @@ TableRow.propTypes = {
     status: string,
     open: string,
   }),
+  /**
+   * Aditional CSS classes which can be applyed to the expanded row.
+   */
   className: string,
+  /**
+   * Allow the clickable feature which will trigger the onClick
+   * function when the line or it children is clicked
+   */
   clickable: bool,
+  /**
+   * Columns which will provide access to the data received.
+   * These columns are the columns which are not shown in the table.
+   */
   columns: arrayOf(shape({
     title: string.isRequired,
     accessor: oneOfType([
@@ -240,21 +254,69 @@ TableRow.propTypes = {
     ]),
     renderer: func,
   })).isRequired,
+  /**
+   * Set of data native of row data from the table.
+   */
   data: shape({}).isRequired,
+  /**
+   * indicates that the line is showing details
+   */
   expanded: bool,
+  /**
+   * Allow the expandable feature wich provides a
+   * detail line under the expanded line
+   */
   expandable: bool,
+  /**
+   * Default icons used in to indicate if the line is expanded or collapsed
+   * @prop {object} expand - icon which represents expand acion in expandable button.
+   * @prop {object} collapse - icon which represents collapse acion in expandable button.
+   */
   icons: shape({
     collapse: element,
     expand: element,
   }),
+  /**
+   * Function trigged when the line or its children
+   * are clicked, only works if the line is enabled
+   */
   onClick: func,
+  /**
+   * Function trigged when expandable button is clicked
+   * passing the row data to the callback
+   * @param {Array<number>} rows - all expanded rows indexes in the table.
+   */
   onExpand: func,
+  /**
+   * Function trigged on the line hover
+   */
   onMouseEnter: func,
+  /**
+   * Function trigged on the line blur
+   */
   onMouseLeave: func,
+  /**
+   * Function trigged when the line is selected
+   * using the select checkbox created when the
+   * prop selectable is received
+   */
   onSelect: func,
+  /**
+   * Indicates the row selection
+   * @param {number} row - selected row index.
+   */
   selected: bool,
+  /**
+   * Indicates that the line can be selected
+   */
   selectable: bool,
+  /**
+   * Define the line color.
+   */
   parity: oneOf(['even', 'odd']),
+  /**
+   * Indicates the row position in the table
+   */
   index: number.isRequired,
 }
 

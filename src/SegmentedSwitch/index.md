@@ -1,4 +1,4 @@
-SegmentedSwitch example
+#### **Example** ####
 
 ``` jsx
 class SegmentedSwitchState extends React.Component {

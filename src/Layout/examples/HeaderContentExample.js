@@ -36,7 +36,11 @@ const HeaderExample = () => (
 )
 
 HeaderContentExample.propTypes = {
-  photo: PropTypes.string.isRequired,
+  photo: PropTypes.string,
+}
+
+HeaderContentExample.defaultProps = {
+  photo: '',
 }
 
 export default HeaderExample

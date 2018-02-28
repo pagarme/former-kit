@@ -1,4 +1,4 @@
-Modal examples
+#### **Example** ####
 
 ``` jsx
 class ModalWithState extends React.Component {

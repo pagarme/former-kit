@@ -1,6 +1,9 @@
-Checkbox group example
+First, let's create an wrapper component to handle
+with state of the checkbox group.
+``` jsx static
+import React from 'react'
+import CheckboxGroup from './'
 
-```jsx
 class CheckboxGroupState extends React.Component {
   constructor (props) {
     super(props)
@@ -44,11 +47,30 @@ class CheckboxGroupState extends React.Component {
     )
   }
 }
+```
 
-<div>
-  <p><CheckboxGroupState name="default" /></p>
-  <p><CheckboxGroupState name="disabled" disabled /></p>
-  <p><CheckboxGroupState name="success" success="Success!" /></p>
-  <p><CheckboxGroupState name="error" error="Error!" /></p>
-</div>
+#### **States** ####
+
+Default
+```jsx
+  const CheckboxGroupState = require('./examples/CheckboxGroupState').default;
+  <div><CheckboxGroupState name="default" /></div>
+```
+
+Disabled
+```jsx
+  const CheckboxGroupState = require('./examples/CheckboxGroupState').default;
+  <div><CheckboxGroupState name="disabled" disabled /></div>
+```
+
+Success
+```jsx
+  const CheckboxGroupState = require('./examples/CheckboxGroupState').default;
+  <div><CheckboxGroupState name="success" success="Success!" /></div>
+```
+
+Error
+```jsx
+  const CheckboxGroupState = require('./examples/CheckboxGroupState').default;
+  <div><CheckboxGroupState name="error" error="Error!" /></div>
 ```

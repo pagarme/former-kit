@@ -86,7 +86,9 @@ const LayoutExample = ({
 export default LayoutExample
 ```
 
-Layout example with Sidebar, Header and Footer
+#### **Examples** ####
+
+With Sidebar, Header and Footer
 ``` jsx
 const LayoutExample = require('./examples/Layout').default;
 const SidebarExample = require('./examples/SidebarState').default;
@@ -100,7 +102,7 @@ const FooterExample = require('./examples/FooterExample').default;
 />
 ```
 
-Layout without Sidebar
+Without Sidebar
 ``` jsx
 const LayoutExample = require('./examples/Layout').default;
 const HeaderExample = require('./examples/HeaderContentExample').default;
@@ -112,7 +114,7 @@ const FooterExample = require('./examples/FooterExample').default;
 />
 ```
 
-Layout without Header
+Without Header
 ``` jsx
 const LayoutExample = require('./examples/Layout').default;
 const SidebarExample = require('./examples/SidebarState').default;
@@ -124,7 +126,7 @@ const FooterExample = require('./examples/FooterExample').default;
 />
 ```
 
-Layout without Footer
+Without Footer
 ``` jsx
 const LayoutExample = require('./examples/Layout').default;
 const SidebarExample = require('./examples/SidebarState').default;
@@ -136,7 +138,7 @@ const HeaderExample = require('./examples/HeaderContentExample').default;
 />
 ```
 
-Layout with only Sidebar
+With only Sidebar
 ``` jsx
 const LayoutExample = require('./examples/Layout').default;
 const SidebarExample = require('./examples/SidebarState').default;
@@ -146,7 +148,7 @@ const SidebarExample = require('./examples/SidebarState').default;
 />
 ```
 
-Layout with only Header
+With only Header
 ``` jsx
 const LayoutExample = require('./examples/Layout').default;
 const HeaderExample = require('./examples/HeaderContentExample').default;
@@ -156,7 +158,7 @@ const HeaderExample = require('./examples/HeaderContentExample').default;
 />
 ```
 
-Layout with only Footer
+With only Footer
 ``` jsx
 const LayoutExample = require('./examples/Layout').default;
 const FooterExample = require('./examples/FooterExample').default;

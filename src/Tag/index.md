@@ -1,4 +1,4 @@
-Tag examples
+#### **Example** ####
 
 ```jsx
 <Tag>Live</Tag>

@@ -1,3 +1,5 @@
+#### **Examples** ####
+
 Default
 ```jsx
 <Avatar />

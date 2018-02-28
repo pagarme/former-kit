@@ -1,4 +1,4 @@
-LinearProgress example
+#### **Examples** ####
 
 ``` jsx
 <div>

@@ -1,4 +1,4 @@
-Pagination example
+#### **Example** ####
 
 ``` jsx
 class PaginationState extends React.Component {

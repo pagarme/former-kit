@@ -1,4 +1,4 @@
-Typeset example
+#### **Examples** ####
 
 ``` jsx
 <Typeset>

@@ -1,9 +1,8 @@
-First, let's create an wrapper component to handle
-with state of the date input.
-``` jsx static
 import React from 'react'
+import PropTypes from 'prop-types'
 import moment from 'moment'
 import IconCalendar from 'emblematic-icons/svg/Calendar32.svg'
+
 import Button from '../../Button'
 import DateInput from '../'
 
@@ -84,26 +83,15 @@ class DateInputState extends React.Component {
     )
   }
 }
-```
 
-#### **Examples** ####
+DateInputState.propTypes = {
+  start: PropTypes.instanceOf(moment),
+  end: PropTypes.instanceOf(moment),
+}
 
-Minimal setup
-```jsx
-  const DateInputState = require('./examples/DateInputState').default;
-  <DateInputState />
-```
+DateInputState.defaultProps = {
+  start: null,
+  end: null,
+}
 
-Specifying single day as initial dates
-```jsx
-  const moment = require('moment');
-  const DateInputState = require('./examples/DateInputState').default;
-  <DateInputState start={moment()} end={moment()} />
-```
-
-Specifying date range as initial dates
-```jsx
-  const moment = require('moment');
-  const DateInputState = require('./examples/DateInputState').default;
-  <DateInputState start={moment().add(-7, 'days')} end={moment()} />
-```
+export default DateInputState

@@ -19,7 +19,6 @@ const CardSample = ({ size, color, children }) => (
 ```
 
 A basic example looks like this:
-(colocar Sizes example)
 ```jsx
 const CardSample = require('./example/CardSample').default;
 const { range } = require('ramda');
