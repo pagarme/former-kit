@@ -178,7 +178,9 @@ const SimpleSection = () => (
         <CardSection
           title="Lorem ipsum dolor sit amet"
         >
-          {loremIpsum}
+          <CardContent>
+            {loremIpsum}
+          </CardContent>
         </CardSection>
       </CardContent>
     </Card>
@@ -207,7 +209,9 @@ class CollapsableSection extends React.Component {
               }
               subtitle="It's over 9000!"
             >
-              {loremIpsum}
+              <CardContent>
+                {loremIpsum}
+              </CardContent>
             </CardSection>
           </CardContent>
         </Card>
