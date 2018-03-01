@@ -54,7 +54,7 @@ const getStrings = strings => ({
 
 /**
  * Input component designed to receive one or two dates, can have a mask
- * for the input and enables the date selection using a calendar like selector.
+ * for the input and enables the date selection using a calendarlike selector.
  * When dates are selected, the first one is the start period and the second is
  * the end one. The date selection callback will always provide two dates, if
  * the component is showing only one date, the callback will receive the same date
