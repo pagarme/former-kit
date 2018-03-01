@@ -39,7 +39,7 @@ And the button can be disabled:
 </div>
 ```
 
-Finally, the button can an icon!
+Finally, the button can be an icon!
 ```jsx
 const IconAdd = require('emblematic-icons/svg/Add24.svg').default;
 
