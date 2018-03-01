@@ -36,7 +36,7 @@ const defaultStrings = {
 }
 
 /**
- * A calendar like selector based on react-dates
+ * A calendarlike selector based on react-dates
  * which allows the user to select one date
  * or a period (two dates), has a preset list of options for the date
  * selection.
