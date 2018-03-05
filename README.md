@@ -13,7 +13,7 @@
 FormerKit can be mostly compared to other UI libraries out there, but not
 exactly. The philosophy behind FormerKit is to build a white-label React
 component library by decoupling styles from component's HTML structure,
-allowing higly customizable user interfaces without the hurdle to build
+allowing highly customizable user interfaces without the hurdle to build
 everytime the same HTML structure and React component interface
 abstractions.
 
