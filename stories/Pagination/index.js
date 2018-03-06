@@ -30,6 +30,7 @@ class PaginationState extends React.Component {
 
   render () {
     const { currentPage, totalPages } = this.state
+    const { disabled } = this.props
 
     const error = totalPages < currentPage || currentPage === 0
 
@@ -40,6 +41,7 @@ class PaginationState extends React.Component {
           totalPages={totalPages}
           onPageChange={this.pageChanged}
           strings={this.props.strings}
+          disabled={disabled}
         />
         {error &&
           <p>Epic fail!</p>
@@ -112,5 +114,12 @@ storiesOf('Pagination', module)
         />
       </Section>
 
+      <Section title="With disabled prop">
+        <PaginationState
+          currentPage={1}
+          totalPages={10}
+          disabled
+        />
+      </Section>
     </div>
   ))

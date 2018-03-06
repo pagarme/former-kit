@@ -14885,6 +14885,7 @@ exports[`Storyshots Pagination Default 1`] = `
             >
               <input
                 className="input"
+                disabled={false}
                 id="shortid-mock-input"
                 max={1}
                 maxLength={2}
@@ -14961,6 +14962,7 @@ exports[`Storyshots Pagination Default 1`] = `
             >
               <input
                 className="input"
+                disabled={false}
                 id="shortid-mock-input"
                 max={10}
                 maxLength={2}
@@ -15037,6 +15039,7 @@ exports[`Storyshots Pagination Default 1`] = `
             >
               <input
                 className="input"
+                disabled={false}
                 id="shortid-mock-input"
                 max={10}
                 maxLength={2}
@@ -15113,6 +15116,7 @@ exports[`Storyshots Pagination Default 1`] = `
             >
               <input
                 className="input"
+                disabled={false}
                 id="shortid-mock-input"
                 max={10}
                 maxLength={2}
@@ -15189,6 +15193,7 @@ exports[`Storyshots Pagination Default 1`] = `
             >
               <input
                 className="input"
+                disabled={false}
                 id="shortid-mock-input"
                 max={10000}
                 maxLength={2}
@@ -15265,6 +15270,7 @@ exports[`Storyshots Pagination Default 1`] = `
             >
               <input
                 className="input"
+                disabled={false}
                 id="shortid-mock-input"
                 max={1}
                 maxLength={2}
@@ -15344,6 +15350,7 @@ exports[`Storyshots Pagination Default 1`] = `
             >
               <input
                 className="input"
+                disabled={false}
                 id="shortid-mock-input"
                 max={10}
                 maxLength={2}
@@ -15375,6 +15382,83 @@ exports[`Storyshots Pagination Default 1`] = `
           <button
             className="next"
             disabled={false}
+            onClick={[Function]}
+          >
+            <svg />
+          </button>
+        </div>
+        <p>
+          Current page: 
+          1
+        </p>
+        <label
+          htmlFor="totalPages"
+        >
+           Total pages: 
+          10
+        </label>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      With disabled prop
+    </h2>
+    <div>
+      <div>
+        <div
+          className="pagination"
+        >
+          <button
+            className="prev"
+            disabled={true}
+            onClick={[Function]}
+          >
+            <svg />
+          </button>
+          <label
+            className="label"
+            htmlFor="shortid-mock-input"
+          >
+            <span
+              className="currentPage"
+            >
+              <input
+                className="input"
+                disabled={true}
+                id="shortid-mock-input"
+                max={10}
+                maxLength={2}
+                min={1}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onKeyDown={[Function]}
+                onKeyPress={[Function]}
+                type="number"
+                value="1"
+              />
+              <span
+                className="expander"
+              >
+                10
+              </span>
+            </span>
+            <span
+              className="separator"
+            >
+              of
+            </span>
+            <span
+              className="totalPages"
+            >
+              10
+            </span>
+          </label>
+          <button
+            className="next"
+            disabled={true}
             onClick={[Function]}
           >
             <svg />
