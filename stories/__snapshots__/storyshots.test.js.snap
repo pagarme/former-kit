@@ -6328,7 +6328,7 @@ exports[`Storyshots Grid Column sizes 1`] = `
         className="row"
       >
         <div
-          className="col desk1 tv1 tablet1 palm1"
+          className="col desk1 tv1 tablet1 palm1 startAlign"
         >
           <div
             className="card"
@@ -6354,7 +6354,7 @@ exports[`Storyshots Grid Column sizes 1`] = `
         className="row"
       >
         <div
-          className="col desk2 tv2 tablet2 palm2"
+          className="col desk2 tv2 tablet2 palm2 startAlign"
         >
           <div
             className="card"
@@ -6380,7 +6380,7 @@ exports[`Storyshots Grid Column sizes 1`] = `
         className="row"
       >
         <div
-          className="col desk3 tv3 tablet3 palm3"
+          className="col desk3 tv3 tablet3 palm3 startAlign"
         >
           <div
             className="card"
@@ -6406,7 +6406,7 @@ exports[`Storyshots Grid Column sizes 1`] = `
         className="row"
       >
         <div
-          className="col desk4 tv4 tablet4 palm4"
+          className="col desk4 tv4 tablet4 palm4 startAlign"
         >
           <div
             className="card"
@@ -6432,7 +6432,7 @@ exports[`Storyshots Grid Column sizes 1`] = `
         className="row"
       >
         <div
-          className="col desk5 tv5 tablet5 palm5"
+          className="col desk5 tv5 tablet5 palm5 startAlign"
         >
           <div
             className="card"
@@ -6458,7 +6458,7 @@ exports[`Storyshots Grid Column sizes 1`] = `
         className="row"
       >
         <div
-          className="col desk6 tv6 tablet6 palm6"
+          className="col desk6 tv6 tablet6 palm6 startAlign"
         >
           <div
             className="card"
@@ -6484,7 +6484,7 @@ exports[`Storyshots Grid Column sizes 1`] = `
         className="row"
       >
         <div
-          className="col desk7 tv7 tablet7 palm7"
+          className="col desk7 tv7 tablet7 palm7 startAlign"
         >
           <div
             className="card"
@@ -6510,7 +6510,7 @@ exports[`Storyshots Grid Column sizes 1`] = `
         className="row"
       >
         <div
-          className="col desk8 tv8 tablet8 palm8"
+          className="col desk8 tv8 tablet8 palm8 startAlign"
         >
           <div
             className="card"
@@ -6536,7 +6536,7 @@ exports[`Storyshots Grid Column sizes 1`] = `
         className="row"
       >
         <div
-          className="col desk9 tv9 tablet9 palm9"
+          className="col desk9 tv9 tablet9 palm9 startAlign"
         >
           <div
             className="card"
@@ -6562,7 +6562,7 @@ exports[`Storyshots Grid Column sizes 1`] = `
         className="row"
       >
         <div
-          className="col desk10 tv10 tablet10 palm10"
+          className="col desk10 tv10 tablet10 palm10 startAlign"
         >
           <div
             className="card"
@@ -6588,7 +6588,7 @@ exports[`Storyshots Grid Column sizes 1`] = `
         className="row"
       >
         <div
-          className="col desk11 tv11 tablet11 palm11"
+          className="col desk11 tv11 tablet11 palm11 startAlign"
         >
           <div
             className="card"
@@ -6614,7 +6614,7 @@ exports[`Storyshots Grid Column sizes 1`] = `
         className="row"
       >
         <div
-          className="col desk12 tv12 tablet12 palm12"
+          className="col desk12 tv12 tablet12 palm12 startAlign"
         >
           <div
             className="card"
@@ -6654,7 +6654,7 @@ exports[`Storyshots Grid Flexible 1`] = `
         className="row flex"
       >
         <div
-          className="col desk8 tv6 tablet10 palm12"
+          className="col desk8 tv6 tablet10 palm12 startAlign"
         >
           <div
             className="card"
@@ -6676,7 +6676,7 @@ exports[`Storyshots Grid Flexible 1`] = `
           </div>
         </div>
         <div
-          className="col desknull tvnull tabletnull palmnull"
+          className="col desknull tvnull tabletnull palmnull startAlign"
         >
           <div
             className="card"
@@ -6700,7 +6700,7 @@ exports[`Storyshots Grid Flexible 1`] = `
         className="row flex"
       >
         <div
-          className="col desknull tvnull tabletnull palmnull"
+          className="col desknull tvnull tabletnull palmnull startAlign"
         >
           <div
             className="card"
@@ -6722,7 +6722,7 @@ exports[`Storyshots Grid Flexible 1`] = `
           </div>
         </div>
         <div
-          className="col desknull tvnull tabletnull palmnull"
+          className="col desknull tvnull tabletnull palmnull startAlign"
         >
           <div
             className="card"
@@ -6746,7 +6746,7 @@ exports[`Storyshots Grid Flexible 1`] = `
         className="row flex"
       >
         <div
-          className="col desknull tvnull tabletnull palmnull"
+          className="col desknull tvnull tabletnull palmnull startAlign"
         >
           <div
             className="card"
@@ -6768,7 +6768,7 @@ exports[`Storyshots Grid Flexible 1`] = `
           </div>
         </div>
         <div
-          className="col desknull tvnull tabletnull palmnull"
+          className="col desknull tvnull tabletnull palmnull startAlign"
         >
           <div
             className="card"
@@ -6806,7 +6806,7 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
         className="row"
       >
         <div
-          className="col desk12 tv12 tablet12 palm12"
+          className="col desk12 tv12 tablet12 palm12 startAlign"
         >
           <div
             className="card"
@@ -6832,7 +6832,7 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
         className="row"
       >
         <div
-          className="col desk6 tv6 tablet6 palm6"
+          className="col desk6 tv6 tablet6 palm6 startAlign"
         >
           <div
             className="card"
@@ -6854,7 +6854,7 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
           </div>
         </div>
         <div
-          className="col desk6 tv6 tablet6 palm6"
+          className="col desk6 tv6 tablet6 palm6 startAlign"
         >
           <div
             className="card"
@@ -6880,7 +6880,7 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
         className="row"
       >
         <div
-          className="col desk4 tv4 tablet4 palm4"
+          className="col desk4 tv4 tablet4 palm4 startAlign"
         >
           <div
             className="card"
@@ -6902,7 +6902,7 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
           </div>
         </div>
         <div
-          className="col desk4 tv4 tablet4 palm4"
+          className="col desk4 tv4 tablet4 palm4 startAlign"
         >
           <div
             className="card"
@@ -6924,7 +6924,7 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
           </div>
         </div>
         <div
-          className="col desk4 tv4 tablet4 palm4"
+          className="col desk4 tv4 tablet4 palm4 startAlign"
         >
           <div
             className="card"
@@ -6950,7 +6950,7 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
         className="row"
       >
         <div
-          className="col desk3 tv3 tablet3 palm3"
+          className="col desk3 tv3 tablet3 palm3 startAlign"
         >
           <div
             className="card"
@@ -6972,7 +6972,7 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
           </div>
         </div>
         <div
-          className="col desk3 tv3 tablet3 palm3"
+          className="col desk3 tv3 tablet3 palm3 startAlign"
         >
           <div
             className="card"
@@ -6994,7 +6994,7 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
           </div>
         </div>
         <div
-          className="col desk3 tv3 tablet3 palm3"
+          className="col desk3 tv3 tablet3 palm3 startAlign"
         >
           <div
             className="card"
@@ -7016,7 +7016,7 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
           </div>
         </div>
         <div
-          className="col desk3 tv3 tablet3 palm3"
+          className="col desk3 tv3 tablet3 palm3 startAlign"
         >
           <div
             className="card"
@@ -7042,7 +7042,7 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
         className="row"
       >
         <div
-          className="col desk2 tv2 tablet2 palm2"
+          className="col desk2 tv2 tablet2 palm2 startAlign"
         >
           <div
             className="card"
@@ -7064,7 +7064,7 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
           </div>
         </div>
         <div
-          className="col desk2 tv2 tablet2 palm2"
+          className="col desk2 tv2 tablet2 palm2 startAlign"
         >
           <div
             className="card"
@@ -7086,7 +7086,7 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
           </div>
         </div>
         <div
-          className="col desk2 tv2 tablet2 palm2"
+          className="col desk2 tv2 tablet2 palm2 startAlign"
         >
           <div
             className="card"
@@ -7108,7 +7108,7 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
           </div>
         </div>
         <div
-          className="col desk2 tv2 tablet2 palm2"
+          className="col desk2 tv2 tablet2 palm2 startAlign"
         >
           <div
             className="card"
@@ -7130,7 +7130,7 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
           </div>
         </div>
         <div
-          className="col desk2 tv2 tablet2 palm2"
+          className="col desk2 tv2 tablet2 palm2 startAlign"
         >
           <div
             className="card"
@@ -7152,7 +7152,7 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
           </div>
         </div>
         <div
-          className="col desk2 tv2 tablet2 palm2"
+          className="col desk2 tv2 tablet2 palm2 startAlign"
         >
           <div
             className="card"
@@ -7178,7 +7178,7 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
         className="row"
       >
         <div
-          className="col desk1 tv1 tablet1 palm1"
+          className="col desk1 tv1 tablet1 palm1 startAlign"
         >
           <div
             className="card"
@@ -7200,7 +7200,7 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
           </div>
         </div>
         <div
-          className="col desk1 tv1 tablet1 palm1"
+          className="col desk1 tv1 tablet1 palm1 startAlign"
         >
           <div
             className="card"
@@ -7222,7 +7222,7 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
           </div>
         </div>
         <div
-          className="col desk1 tv1 tablet1 palm1"
+          className="col desk1 tv1 tablet1 palm1 startAlign"
         >
           <div
             className="card"
@@ -7244,7 +7244,7 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
           </div>
         </div>
         <div
-          className="col desk1 tv1 tablet1 palm1"
+          className="col desk1 tv1 tablet1 palm1 startAlign"
         >
           <div
             className="card"
@@ -7266,7 +7266,7 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
           </div>
         </div>
         <div
-          className="col desk1 tv1 tablet1 palm1"
+          className="col desk1 tv1 tablet1 palm1 startAlign"
         >
           <div
             className="card"
@@ -7288,7 +7288,7 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
           </div>
         </div>
         <div
-          className="col desk1 tv1 tablet1 palm1"
+          className="col desk1 tv1 tablet1 palm1 startAlign"
         >
           <div
             className="card"
@@ -7310,7 +7310,7 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
           </div>
         </div>
         <div
-          className="col desk1 tv1 tablet1 palm1"
+          className="col desk1 tv1 tablet1 palm1 startAlign"
         >
           <div
             className="card"
@@ -7332,7 +7332,7 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
           </div>
         </div>
         <div
-          className="col desk1 tv1 tablet1 palm1"
+          className="col desk1 tv1 tablet1 palm1 startAlign"
         >
           <div
             className="card"
@@ -7354,7 +7354,7 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
           </div>
         </div>
         <div
-          className="col desk1 tv1 tablet1 palm1"
+          className="col desk1 tv1 tablet1 palm1 startAlign"
         >
           <div
             className="card"
@@ -7376,7 +7376,7 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
           </div>
         </div>
         <div
-          className="col desk1 tv1 tablet1 palm1"
+          className="col desk1 tv1 tablet1 palm1 startAlign"
         >
           <div
             className="card"
@@ -7398,7 +7398,7 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
           </div>
         </div>
         <div
-          className="col desk1 tv1 tablet1 palm1"
+          className="col desk1 tv1 tablet1 palm1 startAlign"
         >
           <div
             className="card"
@@ -7420,7 +7420,7 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
           </div>
         </div>
         <div
-          className="col desk1 tv1 tablet1 palm1"
+          className="col desk1 tv1 tablet1 palm1 startAlign"
         >
           <div
             className="card"
@@ -7460,7 +7460,7 @@ exports[`Storyshots Grid Responsive 1`] = `
         className="row stretch"
       >
         <div
-          className="col desk3 tv3 tablet6 palm12"
+          className="col desk3 tv3 tablet6 palm12 startAlign"
         >
           <div
             className="card"
@@ -7480,7 +7480,7 @@ exports[`Storyshots Grid Responsive 1`] = `
           </div>
         </div>
         <div
-          className="col desk3 tv3 tablet6 palm12"
+          className="col desk3 tv3 tablet6 palm12 startAlign"
         >
           <div
             className="card"
@@ -7500,7 +7500,7 @@ exports[`Storyshots Grid Responsive 1`] = `
           </div>
         </div>
         <div
-          className="col desk3 tv3 tablet6 palm12"
+          className="col desk3 tv3 tablet6 palm12 startAlign"
         >
           <div
             className="card"
@@ -7520,7 +7520,7 @@ exports[`Storyshots Grid Responsive 1`] = `
           </div>
         </div>
         <div
-          className="col desk3 tv3 tablet6 palm12"
+          className="col desk3 tv3 tablet6 palm12 startAlign"
         >
           <div
             className="card"
@@ -7544,7 +7544,7 @@ exports[`Storyshots Grid Responsive 1`] = `
         className="row stretch"
       >
         <div
-          className="col desk12 tv12 tablet12 palm12"
+          className="col desk12 tv12 tablet12 palm12 startAlign"
         >
           <div
             className="card"
@@ -7568,7 +7568,7 @@ exports[`Storyshots Grid Responsive 1`] = `
         className="row stretch"
       >
         <div
-          className="col desk6 tv6 tablet6 palm12"
+          className="col desk6 tv6 tablet6 palm12 startAlign"
         >
           <div
             className="card"
@@ -7588,7 +7588,7 @@ exports[`Storyshots Grid Responsive 1`] = `
           </div>
         </div>
         <div
-          className="col desk6 tv6 tablet6 palm12"
+          className="col desk6 tv6 tablet6 palm12 startAlign"
         >
           <div
             className="card"
@@ -7612,7 +7612,7 @@ exports[`Storyshots Grid Responsive 1`] = `
         className="row stretch"
       >
         <div
-          className="col desk6 tv6 tablet6 palm12"
+          className="col desk6 tv6 tablet6 palm12 startAlign"
         >
           <div
             className="card"
@@ -7632,13 +7632,13 @@ exports[`Storyshots Grid Responsive 1`] = `
           </div>
         </div>
         <div
-          className="col desk6 tv6 tablet6 palm12"
+          className="col desk6 tv6 tablet6 palm12 startAlign"
         >
           <div
             className="row stretch"
           >
             <div
-              className="col desk6 tv6 tablet12 palm12"
+              className="col desk6 tv6 tablet12 palm12 startAlign"
             >
               <div
                 className="card"
@@ -7658,7 +7658,7 @@ exports[`Storyshots Grid Responsive 1`] = `
               </div>
             </div>
             <div
-              className="col desk6 tv6 tablet12 palm12"
+              className="col desk6 tv6 tablet12 palm12 startAlign"
             >
               <div
                 className="card"
@@ -7678,7 +7678,7 @@ exports[`Storyshots Grid Responsive 1`] = `
               </div>
             </div>
             <div
-              className="col desk6 tv6 tablet12 palm12"
+              className="col desk6 tv6 tablet12 palm12 startAlign"
             >
               <div
                 className="card"
@@ -7698,7 +7698,7 @@ exports[`Storyshots Grid Responsive 1`] = `
               </div>
             </div>
             <div
-              className="col desk6 tv6 tablet12 palm12"
+              className="col desk6 tv6 tablet12 palm12 startAlign"
             >
               <div
                 className="card"
@@ -7738,7 +7738,7 @@ exports[`Storyshots Grid Size combinations 1`] = `
         className="row"
       >
         <div
-          className="col desk3 tv3 tablet3 palm3"
+          className="col desk3 tv3 tablet3 palm3 startAlign"
         >
           <div
             className="card"
@@ -7760,7 +7760,7 @@ exports[`Storyshots Grid Size combinations 1`] = `
           </div>
         </div>
         <div
-          className="col desk9 tv9 tablet9 palm9"
+          className="col desk9 tv9 tablet9 palm9 startAlign"
         >
           <div
             className="card"
@@ -7786,7 +7786,7 @@ exports[`Storyshots Grid Size combinations 1`] = `
         className="row"
       >
         <div
-          className="col desk4 tv4 tablet4 palm4"
+          className="col desk4 tv4 tablet4 palm4 startAlign"
         >
           <div
             className="card"
@@ -7808,7 +7808,7 @@ exports[`Storyshots Grid Size combinations 1`] = `
           </div>
         </div>
         <div
-          className="col desk8 tv8 tablet8 palm8"
+          className="col desk8 tv8 tablet8 palm8 startAlign"
         >
           <div
             className="card"
@@ -7834,7 +7834,7 @@ exports[`Storyshots Grid Size combinations 1`] = `
         className="row"
       >
         <div
-          className="col desk5 tv5 tablet5 palm5"
+          className="col desk5 tv5 tablet5 palm5 startAlign"
         >
           <div
             className="card"
@@ -7856,7 +7856,7 @@ exports[`Storyshots Grid Size combinations 1`] = `
           </div>
         </div>
         <div
-          className="col desk7 tv7 tablet7 palm7"
+          className="col desk7 tv7 tablet7 palm7 startAlign"
         >
           <div
             className="card"
@@ -7882,7 +7882,7 @@ exports[`Storyshots Grid Size combinations 1`] = `
         className="row"
       >
         <div
-          className="col desk6 tv6 tablet6 palm6"
+          className="col desk6 tv6 tablet6 palm6 startAlign"
         >
           <div
             className="card"
@@ -7904,7 +7904,7 @@ exports[`Storyshots Grid Size combinations 1`] = `
           </div>
         </div>
         <div
-          className="col desk6 tv6 tablet6 palm6"
+          className="col desk6 tv6 tablet6 palm6 startAlign"
         >
           <div
             className="card"
@@ -7930,7 +7930,7 @@ exports[`Storyshots Grid Size combinations 1`] = `
         className="row"
       >
         <div
-          className="col desk7 tv7 tablet7 palm7"
+          className="col desk7 tv7 tablet7 palm7 startAlign"
         >
           <div
             className="card"
@@ -7952,7 +7952,7 @@ exports[`Storyshots Grid Size combinations 1`] = `
           </div>
         </div>
         <div
-          className="col desk5 tv5 tablet5 palm5"
+          className="col desk5 tv5 tablet5 palm5 startAlign"
         >
           <div
             className="card"
@@ -7978,7 +7978,7 @@ exports[`Storyshots Grid Size combinations 1`] = `
         className="row"
       >
         <div
-          className="col desk8 tv8 tablet8 palm8"
+          className="col desk8 tv8 tablet8 palm8 startAlign"
         >
           <div
             className="card"
@@ -8000,7 +8000,7 @@ exports[`Storyshots Grid Size combinations 1`] = `
           </div>
         </div>
         <div
-          className="col desk4 tv4 tablet4 palm4"
+          className="col desk4 tv4 tablet4 palm4 startAlign"
         >
           <div
             className="card"
@@ -10214,14 +10214,14 @@ exports[`Storyshots Landing Empty dark landing 1`] = `
       className="row stretch"
     >
       <div
-        className="dark primary column col desk7 tv7 tablet12 palm12"
+        className="dark primary column col desk7 tv7 tablet12 palm12 startAlign"
       >
         <span>
           Empty
         </span>
       </div>
       <div
-        className="light secondary column col desk5 tv5 tablet12 palm12"
+        className="light secondary column col desk5 tv5 tablet12 palm12 startAlign"
       >
         <span>
           Landing
@@ -10243,14 +10243,14 @@ exports[`Storyshots Landing Empty light landing 1`] = `
       className="row stretch"
     >
       <div
-        className="light primary column col desk7 tv7 tablet12 palm12"
+        className="light primary column col desk7 tv7 tablet12 palm12 startAlign"
       >
         <span>
           Empty
         </span>
       </div>
       <div
-        className="light secondary column col desk5 tv5 tablet12 palm12"
+        className="light secondary column col desk5 tv5 tablet12 palm12 startAlign"
       >
         <span>
           Landing
@@ -10272,7 +10272,7 @@ exports[`Storyshots Landing Pagar.me login 1`] = `
       className="row stretch"
     >
       <div
-        className="dark primary column col desk7 tv7 tablet12 palm12"
+        className="dark primary column col desk7 tv7 tablet12 palm12 startAlign"
       >
         <form
           className={undefined}
@@ -10374,7 +10374,7 @@ exports[`Storyshots Landing Pagar.me login 1`] = `
         </form>
       </div>
       <div
-        className="light secondary column col desk5 tv5 tablet12 palm12"
+        className="light secondary column col desk5 tv5 tablet12 palm12 startAlign"
       >
         <div
           className={undefined}
@@ -10432,7 +10432,7 @@ exports[`Storyshots Landing Pagar.me password recovery 1`] = `
       className="row stretch"
     >
       <div
-        className="dark primary column col desk7 tv7 tablet12 palm12"
+        className="dark primary column col desk7 tv7 tablet12 palm12 startAlign"
       >
         <div
           className={undefined}
@@ -10513,7 +10513,7 @@ exports[`Storyshots Landing Pagar.me password recovery 1`] = `
         </div>
       </div>
       <div
-        className="light secondary column col desk5 tv5 tablet12 palm12"
+        className="light secondary column col desk5 tv5 tablet12 palm12 startAlign"
       >
         <div
           className={undefined}
@@ -10575,7 +10575,7 @@ exports[`Storyshots Landing Pagar.me password recovery confirmation 1`] = `
       className="row stretch"
     >
       <div
-        className="dark primary column col desk7 tv7 tablet12 palm12"
+        className="dark primary column col desk7 tv7 tablet12 palm12 startAlign"
       >
         <div
           className={undefined}
@@ -10624,7 +10624,7 @@ exports[`Storyshots Landing Pagar.me password recovery confirmation 1`] = `
         </div>
       </div>
       <div
-        className="light secondary column col desk5 tv5 tablet12 palm12"
+        className="light secondary column col desk5 tv5 tablet12 palm12 startAlign"
       >
         <div
           className={undefined}
@@ -10686,7 +10686,7 @@ exports[`Storyshots Landing Pagar.me sign in 1`] = `
       className="row stretch"
     >
       <div
-        className="light primary column col desk7 tv7 tablet12 palm12"
+        className="light primary column col desk7 tv7 tablet12 palm12 startAlign"
       >
         <form
           className={undefined}
@@ -10843,7 +10843,7 @@ exports[`Storyshots Landing Pagar.me sign in 1`] = `
         </form>
       </div>
       <div
-        className="light secondary column col desk5 tv5 tablet12 palm12"
+        className="light secondary column col desk5 tv5 tablet12 palm12 startAlign"
       >
         <div
           className={undefined}
@@ -10898,7 +10898,7 @@ exports[`Storyshots Landing Pagar.me sign in confirmation 1`] = `
       className="row stretch"
     >
       <div
-        className="light primary column col desk7 tv7 tablet12 palm12"
+        className="light primary column col desk7 tv7 tablet12 palm12 startAlign"
       >
         <div
           className={undefined}
@@ -10946,7 +10946,7 @@ exports[`Storyshots Landing Pagar.me sign in confirmation 1`] = `
         </div>
       </div>
       <div
-        className="light secondary column col desk5 tv5 tablet12 palm12"
+        className="light secondary column col desk5 tv5 tablet12 palm12 startAlign"
       >
         <div
           className={undefined}
@@ -11005,7 +11005,7 @@ exports[`Storyshots Landing Pagar.me two factor login 1`] = `
       className="row stretch"
     >
       <div
-        className="dark primary column col desk7 tv7 tablet12 palm12"
+        className="dark primary column col desk7 tv7 tablet12 palm12 startAlign"
       >
         <form
           className={undefined}
@@ -11137,7 +11137,7 @@ exports[`Storyshots Landing Pagar.me two factor login 1`] = `
         </form>
       </div>
       <div
-        className="light secondary column col desk5 tv5 tablet12 palm12"
+        className="light secondary column col desk5 tv5 tablet12 palm12 startAlign"
       >
         <div
           className={undefined}
@@ -11213,7 +11213,7 @@ exports[`Storyshots Layout Default only Footer 1`] = `
               className="row flex"
             >
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -11236,7 +11236,7 @@ exports[`Storyshots Layout Default only Footer 1`] = `
                 </div>
               </div>
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -11263,7 +11263,7 @@ exports[`Storyshots Layout Default only Footer 1`] = `
               className="row"
             >
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -11290,7 +11290,7 @@ exports[`Storyshots Layout Default only Footer 1`] = `
               className="row flex"
             >
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -11313,7 +11313,7 @@ exports[`Storyshots Layout Default only Footer 1`] = `
                 </div>
               </div>
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -11336,103 +11336,7 @@ exports[`Storyshots Layout Default only Footer 1`] = `
                 </div>
               </div>
               <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h2>
-                      Lorem ipsum dolor sit amet
-                    </h2>
-                    <h3>
-                      
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="row flex"
-            >
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h2>
-                      Lorem ipsum dolor sit amet
-                    </h2>
-                    <h3>
-                      
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h2>
-                      Lorem ipsum dolor sit amet
-                    </h2>
-                    <h3>
-                      
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h2>
-                      Lorem ipsum dolor sit amet
-                    </h2>
-                    <h3>
-                      
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -11459,7 +11363,7 @@ exports[`Storyshots Layout Default only Footer 1`] = `
               className="row flex"
             >
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -11482,7 +11386,103 @@ exports[`Storyshots Layout Default only Footer 1`] = `
                 </div>
               </div>
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12 startAlign"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12 startAlign"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="row flex"
+            >
+              <div
+                className="col desknull tvnull tablet12 palm12 startAlign"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -11639,7 +11639,7 @@ exports[`Storyshots Layout Default only Header 1`] = `
               className="row flex"
             >
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -11662,7 +11662,7 @@ exports[`Storyshots Layout Default only Header 1`] = `
                 </div>
               </div>
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -11689,7 +11689,7 @@ exports[`Storyshots Layout Default only Header 1`] = `
               className="row"
             >
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -11716,7 +11716,7 @@ exports[`Storyshots Layout Default only Header 1`] = `
               className="row flex"
             >
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -11739,7 +11739,7 @@ exports[`Storyshots Layout Default only Header 1`] = `
                 </div>
               </div>
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -11762,103 +11762,7 @@ exports[`Storyshots Layout Default only Header 1`] = `
                 </div>
               </div>
               <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h2>
-                      Lorem ipsum dolor sit amet
-                    </h2>
-                    <h3>
-                      
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="row flex"
-            >
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h2>
-                      Lorem ipsum dolor sit amet
-                    </h2>
-                    <h3>
-                      
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h2>
-                      Lorem ipsum dolor sit amet
-                    </h2>
-                    <h3>
-                      
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h2>
-                      Lorem ipsum dolor sit amet
-                    </h2>
-                    <h3>
-                      
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -11885,7 +11789,7 @@ exports[`Storyshots Layout Default only Header 1`] = `
               className="row flex"
             >
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -11908,7 +11812,103 @@ exports[`Storyshots Layout Default only Header 1`] = `
                 </div>
               </div>
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12 startAlign"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12 startAlign"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="row flex"
+            >
+              <div
+                className="col desknull tvnull tablet12 palm12 startAlign"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -12109,7 +12109,7 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
               className="row flex"
             >
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -12132,7 +12132,7 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
                 </div>
               </div>
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -12159,7 +12159,7 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
               className="row"
             >
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -12186,7 +12186,7 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
               className="row flex"
             >
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -12209,7 +12209,7 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
                 </div>
               </div>
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -12232,103 +12232,7 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
                 </div>
               </div>
               <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h2>
-                      Lorem ipsum dolor sit amet
-                    </h2>
-                    <h3>
-                      
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="row flex"
-            >
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h2>
-                      Lorem ipsum dolor sit amet
-                    </h2>
-                    <h3>
-                      
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h2>
-                      Lorem ipsum dolor sit amet
-                    </h2>
-                    <h3>
-                      
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h2>
-                      Lorem ipsum dolor sit amet
-                    </h2>
-                    <h3>
-                      
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -12355,7 +12259,7 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
               className="row flex"
             >
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -12378,7 +12282,103 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
                 </div>
               </div>
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12 startAlign"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12 startAlign"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="row flex"
+            >
+              <div
+                className="col desknull tvnull tablet12 palm12 startAlign"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -12621,7 +12621,7 @@ exports[`Storyshots Layout Default with all props 1`] = `
               className="row flex"
             >
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -12644,7 +12644,7 @@ exports[`Storyshots Layout Default with all props 1`] = `
                 </div>
               </div>
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -12671,7 +12671,7 @@ exports[`Storyshots Layout Default with all props 1`] = `
               className="row"
             >
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -12698,7 +12698,7 @@ exports[`Storyshots Layout Default with all props 1`] = `
               className="row flex"
             >
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -12721,7 +12721,7 @@ exports[`Storyshots Layout Default with all props 1`] = `
                 </div>
               </div>
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -12744,103 +12744,7 @@ exports[`Storyshots Layout Default with all props 1`] = `
                 </div>
               </div>
               <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h2>
-                      Lorem ipsum dolor sit amet
-                    </h2>
-                    <h3>
-                      
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="row flex"
-            >
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h2>
-                      Lorem ipsum dolor sit amet
-                    </h2>
-                    <h3>
-                      
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h2>
-                      Lorem ipsum dolor sit amet
-                    </h2>
-                    <h3>
-                      
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h2>
-                      Lorem ipsum dolor sit amet
-                    </h2>
-                    <h3>
-                      
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -12867,7 +12771,7 @@ exports[`Storyshots Layout Default with all props 1`] = `
               className="row flex"
             >
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -12890,7 +12794,103 @@ exports[`Storyshots Layout Default with all props 1`] = `
                 </div>
               </div>
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12 startAlign"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12 startAlign"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="row flex"
+            >
+              <div
+                className="col desknull tvnull tablet12 palm12 startAlign"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -13188,7 +13188,7 @@ exports[`Storyshots Layout Default without Footer 1`] = `
               className="row flex"
             >
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -13211,7 +13211,7 @@ exports[`Storyshots Layout Default without Footer 1`] = `
                 </div>
               </div>
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -13238,7 +13238,7 @@ exports[`Storyshots Layout Default without Footer 1`] = `
               className="row"
             >
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -13265,7 +13265,7 @@ exports[`Storyshots Layout Default without Footer 1`] = `
               className="row flex"
             >
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -13288,7 +13288,7 @@ exports[`Storyshots Layout Default without Footer 1`] = `
                 </div>
               </div>
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -13311,103 +13311,7 @@ exports[`Storyshots Layout Default without Footer 1`] = `
                 </div>
               </div>
               <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h2>
-                      Lorem ipsum dolor sit amet
-                    </h2>
-                    <h3>
-                      
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="row flex"
-            >
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h2>
-                      Lorem ipsum dolor sit amet
-                    </h2>
-                    <h3>
-                      
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h2>
-                      Lorem ipsum dolor sit amet
-                    </h2>
-                    <h3>
-                      
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h2>
-                      Lorem ipsum dolor sit amet
-                    </h2>
-                    <h3>
-                      
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -13434,7 +13338,7 @@ exports[`Storyshots Layout Default without Footer 1`] = `
               className="row flex"
             >
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -13457,7 +13361,103 @@ exports[`Storyshots Layout Default without Footer 1`] = `
                 </div>
               </div>
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12 startAlign"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12 startAlign"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="row flex"
+            >
+              <div
+                className="col desknull tvnull tablet12 palm12 startAlign"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -13658,7 +13658,7 @@ exports[`Storyshots Layout Default without Header 1`] = `
               className="row flex"
             >
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -13681,7 +13681,7 @@ exports[`Storyshots Layout Default without Header 1`] = `
                 </div>
               </div>
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -13708,7 +13708,7 @@ exports[`Storyshots Layout Default without Header 1`] = `
               className="row"
             >
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -13735,7 +13735,7 @@ exports[`Storyshots Layout Default without Header 1`] = `
               className="row flex"
             >
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -13758,7 +13758,7 @@ exports[`Storyshots Layout Default without Header 1`] = `
                 </div>
               </div>
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -13781,103 +13781,7 @@ exports[`Storyshots Layout Default without Header 1`] = `
                 </div>
               </div>
               <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h2>
-                      Lorem ipsum dolor sit amet
-                    </h2>
-                    <h3>
-                      
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="row flex"
-            >
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h2>
-                      Lorem ipsum dolor sit amet
-                    </h2>
-                    <h3>
-                      
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h2>
-                      Lorem ipsum dolor sit amet
-                    </h2>
-                    <h3>
-                      
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h2>
-                      Lorem ipsum dolor sit amet
-                    </h2>
-                    <h3>
-                      
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -13904,7 +13808,7 @@ exports[`Storyshots Layout Default without Header 1`] = `
               className="row flex"
             >
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -13927,7 +13831,103 @@ exports[`Storyshots Layout Default without Header 1`] = `
                 </div>
               </div>
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12 startAlign"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12 startAlign"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="row flex"
+            >
+              <div
+                className="col desknull tvnull tablet12 palm12 startAlign"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -14084,7 +14084,7 @@ exports[`Storyshots Layout Default without Sidebar 1`] = `
               className="row flex"
             >
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -14107,7 +14107,7 @@ exports[`Storyshots Layout Default without Sidebar 1`] = `
                 </div>
               </div>
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -14134,7 +14134,7 @@ exports[`Storyshots Layout Default without Sidebar 1`] = `
               className="row"
             >
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -14161,7 +14161,7 @@ exports[`Storyshots Layout Default without Sidebar 1`] = `
               className="row flex"
             >
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -14184,7 +14184,7 @@ exports[`Storyshots Layout Default without Sidebar 1`] = `
                 </div>
               </div>
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -14207,103 +14207,7 @@ exports[`Storyshots Layout Default without Sidebar 1`] = `
                 </div>
               </div>
               <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h2>
-                      Lorem ipsum dolor sit amet
-                    </h2>
-                    <h3>
-                      
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="row flex"
-            >
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h2>
-                      Lorem ipsum dolor sit amet
-                    </h2>
-                    <h3>
-                      
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h2>
-                      Lorem ipsum dolor sit amet
-                    </h2>
-                    <h3>
-                      
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
-              >
-                <div
-                  className="card"
-                >
-                  <div
-                    className="title"
-                  >
-                    <h2>
-                      Lorem ipsum dolor sit amet
-                    </h2>
-                    <h3>
-                      
-                    </h3>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -14330,7 +14234,7 @@ exports[`Storyshots Layout Default without Sidebar 1`] = `
               className="row flex"
             >
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
@@ -14353,7 +14257,103 @@ exports[`Storyshots Layout Default without Sidebar 1`] = `
                 </div>
               </div>
               <div
-                className="col desknull tvnull tablet12 palm12"
+                className="col desknull tvnull tablet12 palm12 startAlign"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12 startAlign"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12 startAlign"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="row flex"
+            >
+              <div
+                className="col desknull tvnull tablet12 palm12 startAlign"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="title"
+                  >
+                    <h2>
+                      Lorem ipsum dolor sit amet
+                    </h2>
+                    <h3>
+                      
+                    </h3>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col desknull tvnull tablet12 palm12 startAlign"
               >
                 <div
                   className="card"
