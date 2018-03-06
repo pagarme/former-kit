@@ -293,6 +293,7 @@ class Pagination extends React.Component {
 
     const paginationClasses = classNames(theme.pagination, {
       [theme.error]: error,
+      [theme.disabled]: disabled,
     })
 
     return (

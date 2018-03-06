@@ -15409,7 +15409,7 @@ exports[`Storyshots Pagination Default 1`] = `
     <div>
       <div>
         <div
-          className="pagination"
+          className="pagination disabled"
         >
           <button
             className="prev"
