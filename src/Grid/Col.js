@@ -5,7 +5,7 @@ import {
   string,
   node,
   number,
-  bool,
+  oneOf,
 } from 'prop-types'
 
 import ThemeConsumer from '../ThemeConsumer'
@@ -22,7 +22,7 @@ const classnames = ({
   tv,
   tablet,
   palm,
-  alignEnd,
+  align,
 }) =>
   classNames(
     className,
@@ -31,9 +31,7 @@ const classnames = ({
     theme[`tv${tv}`],
     theme[`tablet${tablet}`],
     theme[`palm${palm}`],
-    {
-      [theme.alignEnd]: alignEnd,
-    }
+    theme[`${align}Align`]
   )
 
 const Col = ({
@@ -43,7 +41,7 @@ const Col = ({
   tv,
   tablet,
   palm,
-  alignEnd,
+  align,
   className,
 }) => (
   <div className={classnames({
@@ -52,7 +50,7 @@ const Col = ({
     tv,
     tablet,
     palm,
-    alignEnd,
+    align,
     className,
   })}
   >
@@ -70,7 +68,7 @@ Col.propTypes = {
     tv: string,
     tablet: string,
     palm: string,
-    alignEnd: string,
+    align: string,
   }),
   /**
    * Sets of columns which will be rendered inside the row.
@@ -93,9 +91,9 @@ Col.propTypes = {
    */
   palm: number,
   /**
-   * Text alignment.
+   * Text alignment. Can be either start, center or end
    */
-  alignEnd: bool,
+  align: oneOf(['start', 'center', 'end']),
   /**
    * Custom CSS class which will be applied to the column.
    */
@@ -109,7 +107,7 @@ Col.defaultProps = {
   tv: null,
   tablet: null,
   palm: null,
-  alignEnd: false,
+  align: 'start',
   className: null,
 }
 
