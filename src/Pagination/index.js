@@ -216,7 +216,11 @@ class Pagination extends React.Component {
   }
 
   disableButton (path) {
-    const { currentPage, totalPages } = this.props
+    const {
+      currentPage,
+      totalPages,
+      disabled,
+    } = this.props
     const { inputPage } = this.state
 
     const isDisabled = anyPass([
@@ -230,7 +234,7 @@ class Pagination extends React.Component {
       lt(totalPages),
     ])
 
-    if (isDisabled(currentPage) || isInvalidInput(inputPage)) {
+    if (isDisabled(currentPage) || isInvalidInput(inputPage) || disabled) {
       return true
     }
 
@@ -278,6 +282,7 @@ class Pagination extends React.Component {
       strings,
       theme,
       totalPages,
+      disabled,
     } = this.props
 
     const translatedStrings = getStrings(strings)
@@ -317,6 +322,7 @@ class Pagination extends React.Component {
               onKeyPress={preventInvalidKeys}
               className={theme.input}
               maxLength={2}
+              disabled={disabled}
             />
             <span className={theme.expander}>
               {totalPages}
@@ -359,6 +365,10 @@ Pagination.propTypes = {
     separator: PropTypes.string,
   }),
   /**
+   * Disable pagination changes.
+   */
+  disabled: PropTypes.bool,
+  /**
    * The number of the current page.
    */
   currentPage: PropTypes.number.isRequired,
@@ -398,6 +408,7 @@ Pagination.defaultProps = {
   theme: {},
   icons: {},
   strings: defaultStrings,
+  disabled: false,
 }
 
 export default consumeTheme(Pagination)

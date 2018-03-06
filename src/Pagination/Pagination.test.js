@@ -370,4 +370,24 @@ describe('Pagination', () => {
     expect(onChange).not.toHaveBeenCalled()
     expect(component.state().inputPage).toBe(2)
   })
+
+  it('should disable both buttons if props disabled is true', () => {
+    const onChange = jest.fn()
+
+    const component = shallow(
+      <Pagination
+        currentPage={1}
+        totalPages={10}
+        onPageChange={onChange}
+        icons={icons}
+        disabled
+      />
+    ).dive()
+
+    component.simulate('click')
+    expect(onChange).not.toHaveBeenCalled()
+    expect(component.find('input').prop('disabled')).toBe(true)
+    expect(component.find('button').first().prop('disabled')).toBe(true)
+    expect(component.find('button').at(1).prop('disabled')).toBe(true)
+  })
 })
