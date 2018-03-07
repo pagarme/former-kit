@@ -38,7 +38,18 @@ const getMock = detailsClick => ({
     },
     { title: 'Transaction Id', accessor: ['id'], orderable: true },
     { title: 'Date created', accessor: ['date_created'], orderable: true },
-    { title: 'Cpf/Cnpj', accessor: ['document_number'], orderable: true },
+    {
+      title: 'Cpf/Cnpj',
+      accessor: ['document_number'],
+      orderable: true,
+      renderer: (data) => {
+        if (!data) {
+          return false
+        }
+
+        return data.document_number
+      }
+    },
     { title: 'Payment method', accessor: ['payment_method'], orderable: true },
     { title: 'Paid amount', accessor: ['paid_amount'], orderable: true },
     { title: 'Cost', accessor: ['cost'], orderable: true },
@@ -118,7 +129,7 @@ const getMock = detailsClick => ({
         name: 'null of undefined of NaN',
       },
       date_created: '23/09/2017 - 15:15h',
-      document_number: '67.484.928/0001-60',
+      document_number: '',
       id: '2229597001',
       installments: '4X',
       link: null,

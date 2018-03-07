@@ -10,7 +10,13 @@ import {
   shape,
   string,
 } from 'prop-types'
-import { has, path } from 'ramda'
+import {
+  has,
+  path,
+  anyPass,
+  isEmpty,
+  isNil,
+} from 'ramda'
 import classNames from 'classnames'
 import shortid from 'shortid'
 
@@ -19,13 +25,29 @@ import Checkbox from '../Checkbox'
 import ThemeConsumer from '../ThemeConsumer'
 import TableEmptyItem from './TableEmptyItem'
 
+const isNilOrEmpty = anyPass([isEmpty, isNil])
 
 const consumeTheme = ThemeConsumer('UITable')
 
 const hasRenderer = has('renderer')
 
 const renderCell = (column, data, key, theme) => {
+  const emptyCell = (
+    <td
+      key={key}
+      className={theme.tableBodyItem}
+    >
+      <TableEmptyItem />
+    </td>
+  )
+
   if (hasRenderer(column)) {
+    const rendererData = column.renderer(data)
+
+    if (isNilOrEmpty(rendererData)) {
+      return emptyCell
+    }
+
     return (
       <td
         key={key}
@@ -38,10 +60,11 @@ const renderCell = (column, data, key, theme) => {
           )
         }
       >
-        {column.renderer(data)}
+        {rendererData}
       </td>
     )
   }
+
   const columnData = path(column.accessor, data)
   if (columnData) {
     return (
@@ -53,14 +76,8 @@ const renderCell = (column, data, key, theme) => {
       </td>
     )
   }
-  return (
-    <td
-      key={key}
-      className={theme.tableBodyItem}
-    >
-      <TableEmptyItem />
-    </td>
-  )
+
+  return emptyCell
 }
 
 const renderCells = (columns, data, lineIndex, theme) =>
