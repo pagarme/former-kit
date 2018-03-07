@@ -43,7 +43,7 @@ describe('DateSelector', () => {
       />
     )
 
-    expect(component.find('ol li input').length).toBe(4)
+    expect(component.find('ol li input').length).toBe(5)
   })
 
   it('should render buttons in default translation', () => {
@@ -131,7 +131,7 @@ describe('DateSelector', () => {
 
     component
       .find('li')
-      .at(1)
+      .at(2)
       .find('input')
       .simulate('change')
 
@@ -156,7 +156,7 @@ describe('DateSelector', () => {
 
     component
       .find('li')
-      .at(1)
+      .at(2)
       .find('input')
       .simulate('change')
 
@@ -245,7 +245,7 @@ describe('DateSelector', () => {
 
     component
       .find('li')
-      .at(1)
+      .at(2)
       .find('input')
       .simulate('change')
 
@@ -267,7 +267,7 @@ describe('DateSelector', () => {
       />
     )
 
-    expect(component.find('input').at(2).props().checked).toBeTruthy()
+    expect(component.find('input').at(3).props().checked).toBeTruthy()
   })
 
   it('should render TODAY preset when start and end are today', () => {
@@ -295,7 +295,7 @@ describe('DateSelector', () => {
       />
     )
 
-    expect(component.find('input').at(3).props().checked).toBeTruthy()
+    expect(component.find('input').at(4).props().checked).toBeTruthy()
   })
 
   it('should render RANGE preset with only start date when end is null', () => {
@@ -309,6 +309,23 @@ describe('DateSelector', () => {
       />
     )
 
-    expect(component.find('input').at(3).props().checked).toBeTruthy()
+    expect(component.find('input').at(4).props().checked).toBeTruthy()
+  })
+
+  it('should dates change to null when anyDate preset is selected', () => {
+    const onChange = jest.fn()
+    const dates = { start: moment(), end: moment() }
+
+    const component = mount(
+      <DateSelector
+        presets={presets}
+        dates={dates}
+        focusedInput="startDate"
+        onChange={onChange}
+      />
+    )
+
+    component.find('input').at(1).simulate('change')
+    expect(onChange).toHaveBeenCalledWith({ start: null, end: null })
   })
 })
