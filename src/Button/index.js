@@ -77,7 +77,10 @@ Button.propTypes = {
   /**
    * The children element.
    */
-  children: PropTypes.string,
+  children: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.arrayOf(PropTypes.string),
+  ]),
   /**
    * The prop that indicates if the button is disabled or not.
    */
