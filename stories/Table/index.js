@@ -23,3 +23,8 @@ storiesOf('Table', module)
       <TableState primaryAction />
     </Section>
   ))
+  .add('Empty renderer column', () => (
+    <Section>
+      <TableState hasEmptyRenderer />
+    </Section>
+  ))
