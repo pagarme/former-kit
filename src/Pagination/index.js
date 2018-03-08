@@ -355,6 +355,7 @@ Pagination.propTypes = {
    */
   theme: PropTypes.shape({
     currentPage: PropTypes.string,
+    disabled: PropTypes.string,
     label: PropTypes.string,
     error: PropTypes.string,
     input: PropTypes.string,
