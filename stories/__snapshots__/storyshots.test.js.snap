@@ -10208,10 +10208,10 @@ exports[`Storyshots Landing Empty dark landing 1`] = `
   className="container"
 >
   <div
-    className="grid grid"
+    className="grid fullHeight"
   >
     <div
-      className="row row stretch"
+      className="row stretch"
     >
       <div
         className="dark primary column col desk7 tv7 tablet12 palm12"
@@ -10237,10 +10237,10 @@ exports[`Storyshots Landing Empty light landing 1`] = `
   className="container"
 >
   <div
-    className="grid grid"
+    className="grid fullHeight"
   >
     <div
-      className="row row stretch"
+      className="row stretch"
     >
       <div
         className="light primary column col desk7 tv7 tablet12 palm12"
@@ -10266,10 +10266,10 @@ exports[`Storyshots Landing Pagar.me login 1`] = `
   className="container"
 >
   <div
-    className="grid grid"
+    className="grid fullHeight"
   >
     <div
-      className="row row stretch"
+      className="row stretch"
     >
       <div
         className="dark primary column col desk7 tv7 tablet12 palm12"
@@ -10426,10 +10426,10 @@ exports[`Storyshots Landing Pagar.me password recovery 1`] = `
   className="container"
 >
   <div
-    className="grid grid"
+    className="grid fullHeight"
   >
     <div
-      className="row row stretch"
+      className="row stretch"
     >
       <div
         className="dark primary column col desk7 tv7 tablet12 palm12"
@@ -10569,10 +10569,10 @@ exports[`Storyshots Landing Pagar.me password recovery confirmation 1`] = `
   className="container"
 >
   <div
-    className="grid grid"
+    className="grid fullHeight"
   >
     <div
-      className="row row stretch"
+      className="row stretch"
     >
       <div
         className="dark primary column col desk7 tv7 tablet12 palm12"
@@ -10680,10 +10680,10 @@ exports[`Storyshots Landing Pagar.me sign in 1`] = `
   className="container"
 >
   <div
-    className="grid grid"
+    className="grid fullHeight"
   >
     <div
-      className="row row stretch"
+      className="row stretch"
     >
       <div
         className="light primary column col desk7 tv7 tablet12 palm12"
@@ -10892,10 +10892,10 @@ exports[`Storyshots Landing Pagar.me sign in confirmation 1`] = `
   className="container"
 >
   <div
-    className="grid grid"
+    className="grid fullHeight"
   >
     <div
-      className="row row stretch"
+      className="row stretch"
     >
       <div
         className="light primary column col desk7 tv7 tablet12 palm12"
@@ -10999,10 +10999,10 @@ exports[`Storyshots Landing Pagar.me two factor login 1`] = `
   className="container"
 >
   <div
-    className="grid grid"
+    className="grid fullHeight"
   >
     <div
-      className="row row stretch"
+      className="row stretch"
     >
       <div
         className="dark primary column col desk7 tv7 tablet12 palm12"

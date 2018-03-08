@@ -29,8 +29,8 @@ const Landing = ({
   className,
 }) => (
   <div className={classNames(theme.container, className)}>
-    <Grid className={theme.grid}>
-      <Row stretch className={theme.row}>
+    <Grid fullHeight>
+      <Row stretch>
         {children}
       </Row>
     </Grid>
