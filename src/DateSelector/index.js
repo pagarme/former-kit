@@ -33,6 +33,7 @@ const defaultStrings = {
   noDayOrPeriodSelected: 'No day or period selected',
   period: 'period',
   today: 'today',
+  anyDate: 'Any Date',
 }
 
 /**
@@ -86,6 +87,7 @@ class DateSelector extends Component {
 
   handlePresetChange (dates, key) {
     const normalizedDates = normalizeDates(dates, key)
+
     const state = {
       preset: key,
       dates: normalizedDates,
@@ -242,6 +244,7 @@ class DateSelector extends Component {
       day,
       period,
       today,
+      anyDate,
     } = this.getStrings()
 
     const { theme } = this.props
@@ -254,6 +257,13 @@ class DateSelector extends Component {
             title: today,
             date: () => 0,
           })}
+
+          {this.renderPreset({
+            key: 'any-date',
+            title: anyDate,
+            date: () => null,
+          })}
+
           {this.renderPresets(this.props.presets)}
           <li>
             <h2>{`${custom}:`}</h2>

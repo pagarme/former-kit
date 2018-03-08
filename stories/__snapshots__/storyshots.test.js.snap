@@ -2367,6 +2367,20 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
               today
             </label>
           </li>
+          <li>
+            <input
+              checked={false}
+              id="dateselector-shortid-mock-preset-any-date"
+              name="dateselector-shortid-mock-presets"
+              onChange={[Function]}
+              type="radio"
+            />
+            <label
+              htmlFor="dateselector-shortid-mock-preset-any-date"
+            >
+              Any Date
+            </label>
+          </li>
           <ol>
             <h2>
               Last:
