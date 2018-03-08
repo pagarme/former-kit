@@ -40,7 +40,11 @@ class TableState extends Component {
   constructor (props) {
     super(props)
 
-    const { selectable, expandable } = props
+    const {
+      selectable,
+      disabled,
+      expandable,
+    } = props
 
     this.handleDetailsClick = this.handleDetailsClick.bind(this)
     this.handleExpandRow = this.handleExpandRow.bind(this)
@@ -49,7 +53,7 @@ class TableState extends Component {
     this.handleSelectRow = this.handleSelectRow.bind(this)
     this.getColumns = this.getColumns.bind(this)
     this.getColumnsWithPrimaryAction = this.getColumnsWithPrimaryAction.bind(this)
-    this.mock = getMock(this.handleDetailsClick)
+    this.mock = getMock(this.handleDetailsClick, disabled)
     this.state = {
       orderColumn: 0,
       order: 'ascending',
@@ -120,9 +124,10 @@ class TableState extends Component {
   render () {
     const {
       clickableRow,
-      selectable,
+      disabled,
       expandable,
       hasEmptyRenderer,
+      selectable,
     } = this.props
     const {
       clickedRowIndex,
@@ -163,6 +168,7 @@ class TableState extends Component {
           onExpandRow={this.handleExpandRow}
           onRowClick={onRowClick}
           maxColumns={maxColumns}
+          disabled={disabled}
         />
 
         <div className={style.texts}>
@@ -191,18 +197,20 @@ class TableState extends Component {
 
 TableState.propTypes = {
   clickableRow: bool,
-  selectable: bool,
+  disabled: bool,
   expandable: bool,
-  primaryAction: bool,
   hasEmptyRenderer: bool,
+  primaryAction: bool,
+  selectable: bool,
 }
 
 TableState.defaultProps = {
   clickableRow: false,
-  selectable: false,
+  disabled: false,
   expandable: false,
-  primaryAction: false,
   hasEmptyRenderer: false,
+  primaryAction: false,
+  selectable: false,
 }
 
 export default TableState

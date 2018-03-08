@@ -157,6 +157,7 @@ class TableRow extends Component {
       clickable,
       columns,
       data,
+      disabled,
       expanded,
       expandable,
       index,
@@ -171,29 +172,35 @@ class TableRow extends Component {
       className,
       {
         [theme.clickable]: clickable,
+        [theme.disabled]: disabled,
       }
     )
 
     const lineIndex = `line_${index}`
 
+    const trProps = disabled ? {} : {
+      onClick: this.handleClick,
+      onMouseEnter: this.handleMouseEnter,
+      onMouseLeave: this.handleMouseLeave,
+    }
+
     return (
       <tr
         className={tableRow}
-        onClick={this.handleClick}
         tabIndex="0"
-        onMouseEnter={this.handleMouseEnter}
-        onMouseLeave={this.handleMouseLeave}
+        {...trProps}
       >
         {
           selectable &&
           <td className={theme.check}>
             <Checkbox
-              name={lineIndex}
-              id={this.checkboxId}
-              value={`${index}`}
-              label=""
-              onChange={this.handleSelect}
               checked={selected}
+              disabled={disabled}
+              id={this.checkboxId}
+              label=""
+              name={lineIndex}
+              onChange={this.handleSelect}
+              value={`${index}`}
             />
           </td>
         }
@@ -208,12 +215,13 @@ class TableRow extends Component {
             }
           >
             <Button
-              type="button"
+              disabled={disabled}
               fill="outline"
-              size="tiny"
-              relevance="low"
-              onClick={this.handleExpand}
               icon={this.getArrowIcon(expanded)}
+              onClick={this.handleExpand}
+              relevance="low"
+              size="tiny"
+              type="button"
             />
           </td>
         }
@@ -227,6 +235,7 @@ TableRow.propTypes = {
    * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: shape({
+    disabled: string,
     even: string,
     odd: string,
     check: string,
@@ -259,7 +268,11 @@ TableRow.propTypes = {
    */
   data: shape({}).isRequired,
   /**
-   * indicates that the line is showing details
+   * Indicates that the line is not interactive
+   */
+  disabled: bool,
+  /**
+   * Indicates that the line is showing details
    */
   expanded: bool,
   /**
@@ -323,6 +336,7 @@ TableRow.propTypes = {
 TableRow.defaultProps = {
   className: '',
   clickable: false,
+  disabled: false,
   expandable: false,
   expanded: false,
   icons: {},

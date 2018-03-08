@@ -18,7 +18,7 @@ const getBrandIcon = ifElse(
   () => <IconMaster className={style.cardBrand} />
 )
 
-const getMock = detailsClick => ({
+const getMock = (detailsClick, disabled) => ({
   columns: [
     {
       title: 'Status',
@@ -80,6 +80,7 @@ const getMock = detailsClick => ({
         <Button
           fill="outline"
           onClick={() => detailsClick(index)}
+          disabled={disabled}
         >
           Show details
         </Button>

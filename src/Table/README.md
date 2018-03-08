@@ -285,10 +285,12 @@ const TableState = require('./examples/TableState').default;
 />
 ```
 
+Table selectable
+
 ``` jsx
 const TableState = require('./examples/TableState').default;
 
 <TableState
-  primaryAction
+  selectable
 />
 ```

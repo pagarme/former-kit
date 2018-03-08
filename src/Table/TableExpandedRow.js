@@ -104,18 +104,31 @@ class TableExpandedRow extends PureComponent {
     const {
       className,
       columns,
+      disabled,
       parity,
       theme,
     } = this.props
-
     const cols = columns.filter(col => !col.isAction).map(this.renderColumn)
     const actions = columns.filter(col => col.isAction).map(this.renderAction)
+    const rowClasses = classNames(
+      className,
+      theme[parity],
+      theme.expandedRow,
+      {
+        [theme.disabled]: disabled,
+      }
+    )
+    const trProps = disabled ? {} :
+      {
+        onMouseEnter: this.handleMouseEnter,
+        onMouseLeave: this.handleMouseLeave,
+      }
+
     return (
       <tr
-        className={classNames(className, theme[parity], theme.expandedRow)}
-        onMouseEnter={this.handleMouseEnter}
-        onMouseLeave={this.handleMouseLeave}
+        className={rowClasses}
         tabIndex="0"
+        {...trProps}
       >
         <td colSpan={this.getColspan()}>
           <div className={theme.expandable}>
@@ -146,10 +159,11 @@ TableExpandedRow.propTypes = {
    * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: shape({
-    tableRow: string,
-    expandable: string,
+    disabled: string,
     even: string,
+    expandable: string,
     odd: string,
+    tableRow: string,
   }),
   /**
    * Aditional CSS classes which can be applyed to the expanded row.
@@ -171,6 +185,10 @@ TableExpandedRow.propTypes = {
    * Set of data native of row data from the table.
    */
   data: shape({}).isRequired,
+  /**
+   * Set of data native of row data from the table.
+   */
+  disabled: bool,
   /**
    * Row index.
    */
@@ -203,6 +221,7 @@ TableExpandedRow.propTypes = {
 
 TableExpandedRow.defaultProps = {
   className: '',
+  disabled: false,
   parity: '',
   theme: {},
   maxColumns: 7,
