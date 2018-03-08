@@ -20,10 +20,13 @@ module.exports = {
         '../src/Alert/index.js',
         '../src/Avatar/index.js',
         '../src/Button/index.js',
+        '../src/Checkbox/Checkbox.js',
         '../src/CheckboxGroup/index.js',
         '../src/DateInput/index.js',
         '../src/DateSelector/index.js',
+        '../src/Dropdown/Dropdown.js',
         '../src/Footer/index.js',
+        '../src/Input/Input.js',
         '../src/Layout/index.js',
         '../src/Legend/index.js',
         '../src/LinearProgress/index.js',
@@ -33,9 +36,6 @@ module.exports = {
         '../src/Switch/index.js',
         '../src/Tag/index.js',
         '../src/Typeset/index.js',
-        '../src/Dropdown/Dropdown.js',
-        '../src/Checkbox/Checkbox.js',
-        '../src/Input/Input.js',
       ],
       sections: [
         {
@@ -88,11 +88,6 @@ module.exports = {
           content: '../src/Table/README.md',
           components: () => [
             '../src/Table/index.js',
-            '../src/Table/TableEmptyItem.js',
-            '../src/Table/TableExpandedItem.js',
-            '../src/Table/TableExpandedRow.js',
-            '../src/Table/TableHead.js',
-            '../src/Table/TableRow.js',
           ],
         },
         {

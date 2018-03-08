@@ -1,4 +1,7 @@
-Warning example
+
+#### **Examples** ####
+
+Warning
 ```jsx
 const IconWarning = require('emblematic-icons/svg/Warning32.svg').default;
 
@@ -10,7 +13,7 @@ const IconWarning = require('emblematic-icons/svg/Warning32.svg').default;
 </Alert>
 ```
 
-Info example
+Info
 ```jsx
 const IconInfo = require('emblematic-icons/svg/Info32.svg').default;
 
@@ -22,7 +25,7 @@ const IconInfo = require('emblematic-icons/svg/Info32.svg').default;
 </Alert>
 ```
 
-Error example
+Error
 ```jsx
 const IconClear = require('emblematic-icons/svg/ClearClose32.svg').default;
 
@@ -34,7 +37,7 @@ const IconClear = require('emblematic-icons/svg/ClearClose32.svg').default;
 </Alert>
 ```
 
-Success example
+Success
 ```jsx
 const IconCheck = require('emblematic-icons/svg/Check32.svg').default;
 

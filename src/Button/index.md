@@ -1,3 +1,5 @@
+#### **Examples** ####
+
 The default button looks like this:
 ```jsx
 <Button>Call to action</Button>
@@ -39,7 +41,7 @@ And the button can be disabled:
 </div>
 ```
 
-Finally, the button can be an icon!
+Finally, the button can have an icon!
 ```jsx
 const IconAdd = require('emblematic-icons/svg/Add24.svg').default;
 

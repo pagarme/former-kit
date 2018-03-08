@@ -1,4 +1,4 @@
-TabBar example
+#### __Example__ ####
 
 ``` jsx
 class Tab extends React.Component {

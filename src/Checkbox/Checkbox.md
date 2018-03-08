@@ -1,6 +1,8 @@
-Default checkbox
-```jsx
-const Checkbox = require('./index').default;
+First, let's create an wrapper component to handle
+with state of the checkbox.
+``` jsx static
+import React from 'react'
+import Checkbox from './'
 
 class CheckState extends React.Component {
   constructor (props) {
@@ -15,6 +17,7 @@ class CheckState extends React.Component {
       success,
       error,
       disabled,
+      value,
     } = this.props
 
     const { checked } = this.state
@@ -28,43 +31,62 @@ class CheckState extends React.Component {
         success={success}
         checked={checked}
         onChange={() => this.setState({ checked: !checked })}
+        value={value}
       />
     )
   }
 }
+```
 
-<div>
+### __Default checkbox__ ###
+#### **States** ####
+
+Default
+```jsx
+  const CheckState = require('./examples/CheckboxState').default;
   <CheckState
     label="Example 1"
     name="example1"
   />
+```
 
+Disabled
+```jsx
+  const CheckState = require('./examples/CheckboxState').default;
   <CheckState
     label="Example 2"
     name="example2"
     disabled
   />
+```
 
+Error
+```jsx
+  const CheckState = require('./examples/CheckboxState').default;
   <CheckState
     label="Example 4"
     name="example4"
-    error="Erro!"
+    error="Error!"
   />
+```
 
-
+Success
+```jsx
+  const CheckState = require('./examples/CheckboxState').default;
   <CheckState
     label="Example 5"
     name="example5"
     success="Success!"
   />
-</div>
 ```
 
-Form checkbox
-```jsx
-const CheckboxForm = require('./form').default;
+Now, let's create an wrapper component to handle
+with state of the checkbox form.
+``` jsx static
+import React from 'react'
+import CheckboxForm from './form'
 
-class CheckState extends React.Component {
+class CheckboxFormState extends React.Component {
   constructor (props) {
     super(props)
     this.state = { checked: false }
@@ -77,6 +99,7 @@ class CheckState extends React.Component {
       success,
       error,
       disabled,
+      value,
     } = this.props
 
     const { checked } = this.state
@@ -90,33 +113,51 @@ class CheckState extends React.Component {
         success={success}
         checked={checked}
         onChange={() => this.setState({ checked: !checked })}
+        value={value}
       />
     )
   }
 }
 
-<div>
-  <CheckboxForm
+```
+### __Form checkbox__ ###
+#### **States** ####
+
+Default
+```jsx
+const CheckboxFormState = require('./examples/CheckboxForm').default;
+  <CheckboxFormState
     label="Example 11"
     name="example11"
   />
+```
 
-  <CheckboxForm
+Disabled
+```jsx
+const CheckboxFormState = require('./examples/CheckboxForm').default;
+  <CheckboxFormState
     label="Example 12"
     name="example12"
     disabled
   />
+```
 
-  <CheckboxForm
+Error
+```jsx
+const CheckboxFormState = require('./examples/CheckboxForm').default;
+  <CheckboxFormState
     label="Example 13"
     name="example13"
     error="Error!"
   />
+```
 
-  <CheckboxForm
+Success
+```jsx
+const CheckboxFormState = require('./examples/CheckboxForm').default;
+  <CheckboxFormState
     label="Example 14"
     name="example14"
     success="Success!"
   />
-</div>
 ```

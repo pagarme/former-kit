@@ -1,4 +1,4 @@
-Sidebar example
+#### **Example** ####
 
 ``` jsx
 const IconMenu = require('emblematic-icons/svg/Menu32.svg').default;

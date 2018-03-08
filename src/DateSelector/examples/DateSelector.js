@@ -1,10 +1,7 @@
-First, let's create an wrapper component to handle
-with state of the date selector.
-``` jsx static
 import React from 'react'
 import moment from 'moment'
 
-import DateSelector from './'
+import DateSelector from '../'
 
 const presets = [
   {
@@ -106,12 +103,5 @@ class DateSelectorExample extends React.Component {
     )
   }
 }
-```
 
-#### **Examples** ####
-
-```jsx
-const DateSelectorExample = require('./examples/DateSelector').default;
-
-<DateSelectorExample />
-```
+export default DateSelectorExample

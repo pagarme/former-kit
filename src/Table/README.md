@@ -1,5 +1,3 @@
-Simple Table examples
-
 First, let's create an wrapper component to handle
 with state of the Table.
 ``` jsx static
@@ -265,6 +263,7 @@ class TableState extends React.Component {
   }
 }
 ```
+#### **Examples** ####
 
 Simple Table
 ``` jsx

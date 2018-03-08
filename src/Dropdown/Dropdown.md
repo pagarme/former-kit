@@ -39,81 +39,124 @@ class DropdownState extends React.Component {
 
 ```
 
-The default Dropdown looks like this:
+### __Default dropdown__ ###
+#### **States** ####
+
+Default
 ```jsx
-const DropdownState = require('./example/DropdownState').default;
-<DropdownState type="default" />
+  const
+  DropdownState = require('./example/DropdownState').default;
+  <div>
+    <DropdownState />
+    <br />
+    <DropdownState placeholder="Placeholder" />
+  </div>
 ```
 
-The form Dropdown looks like this:
+Disabled
 ```jsx
-const DropdownState = require('./example/DropdownState').default;
-<DropdownState type="form" />
+  const DropdownState = require('./example/DropdownState').default;
+  <div>
+    <DropdownState disabled />
+    <br />
+    <DropdownState
+      disabled
+      placeholder="Placeholder"
+    />
+  </div>
 ```
 
-The form Dropdown can show error and success messages:
+Error
 ```jsx
-const DropdownState = require('./example/DropdownState').default;
-
-<div>
-  <DropdownState
-    type="form"
-    error="Error!"
-  />
-
-  <br />
-
-  <DropdownState
-    type="form"
-    success="Success!"
-  />
-</div>
+  const DropdownState = require('./example/DropdownState').default;
+  <div>
+    <DropdownState error="Error!" />
+    <br />
+    <DropdownState
+      error="Error!"
+      placeholder="Placeholder"
+    />
+  </div>
 ```
 
-Both styles can have a placeholder:
+Success
 ```jsx
-const DropdownState = require('./example/DropdownState').default;
-
-<div>
-  <DropdownState type="default" placeholder="Placeholder" />
-  <br />
-  <DropdownState type="form" placeholder="Placeholder" />
-</div>
+  const DropdownState = require('./example/DropdownState').default;
+  <div>
+    <DropdownState success="Success!" />
+    <br />
+    <DropdownState
+      success="Success!"
+      placeholder="Placeholder"
+    />
+  </div>
 ```
 
-And both can have a disabled state:
+### __Form dropdown__ ###
+#### **States** ####
+
+Default
 ```jsx
-const DropdownState = require('./example/DropdownState').default;
+  const DropdownState = require('./example/DropdownState').default;
+  <div>
+    <DropdownState type="form" />
+    <br />
+    <DropdownState
+      type="form"
+      placeholder="Placeholder"
+    />
+  </div>
+```
 
-<div>
-  <DropdownState
-    disabled
-    type="default"
-    placeholder="Placeholder"
-  />
+Disabled
+```jsx
+  const DropdownState = require('./example/DropdownState').default;
+  <div>
+    <DropdownState
+      disabled
+      type="form"
+    />
+    <br />
+    <DropdownState
+      disabled
+      type="form"
+      placeholder="Placeholder"
+    />
+  </div>
+```
 
-  <br />
+Error
+```jsx
+  const DropdownState = require('./example/DropdownState').default;
+  <div>
+    <DropdownState
+      type="form"
+      error="Error!"
+    />
+    <br />
+    <DropdownState
+      error="Error!"
+      type="form"
+      placeholder="Placeholder"
+    />
+  </div>
+```
 
-  <DropdownState
-    disabled
-    type="default"
-  />
-
-  <br />
-
-  <DropdownState
-    disabled
-    type="form"
-    placeholder="Placeholder"
-  />
-
-  <br />
-
-  <DropdownState
-    disabled
-    type="form"
-  />
-</div>
+Success
+```jsx
+  const DropdownState = require('./example/DropdownState').default;
+  <div>
+    <DropdownState
+      type="form"
+      success="Success!"
+    />
+    <br />
+    <DropdownState
+      success="Success!"
+      type="form"
+      placeholder="Placeholder"
+    />
+  </div>
 ```
 
 

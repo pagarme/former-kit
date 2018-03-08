@@ -1,4 +1,4 @@
-Switch examples
+#### **Example** ####
 
 ``` jsx
 class SwitchState extends React.Component {

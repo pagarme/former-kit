@@ -1,10 +1,7 @@
-First, let's create an wrapper component to handle
-with state of the radio group.
-``` jsx static
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import RadioGroup from './'
+import RadioGroup from '../'
 
 const options = [
   {
@@ -74,38 +71,19 @@ class RadioGroupState extends React.Component {
     )
   }
 }
-```
-#### **States** ####
 
-Default
-```jsx
-  const RadioGroupState = require('./examples/RadioGroupState').default;
-  <RadioGroupState name="optionsDefault" />
-```
+RadioGroupState.propTypes = {
+  disabled: PropTypes.bool,
+  error: PropTypes.string,
+  name: PropTypes.string,
+  success: PropTypes.string,
+}
 
-Disabled
-```jsx
-  const RadioGroupState = require('./examples/RadioGroupState').default;
-  <RadioGroupState
-    disabled
-    name="optionsDisabled"
-  />
-```
+RadioGroupState.defaultProps = {
+  disabled: false,
+  error: '',
+  name: '',
+  success: '',
+}
 
-Error
-```jsx
-  const RadioGroupState = require('./examples/RadioGroupState').default;
-  <RadioGroupState
-    name="optionsError"
-    error="Error!"
-  />
-```
-
-Success
-```jsx
-  const RadioGroupState = require('./examples/RadioGroupState').default;
-  <RadioGroupState
-    name="optionsSuccess"
-    success="Success!"
-  />
-```
+export default RadioGroupState

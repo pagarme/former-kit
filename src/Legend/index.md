@@ -1,4 +1,4 @@
-Legend example
+#### **Examples** ####
 
 Simple legend
 ``` jsx
