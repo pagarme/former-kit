@@ -11,23 +11,37 @@ import {
 } from 'prop-types'
 import {
   always,
+  anyPass,
   call,
+  identity,
   ifElse,
   isEmpty,
   isNil,
   path,
+  pipe,
 } from 'ramda'
 import classNames from 'classnames'
 import ThemeConsumer from '../ThemeConsumer'
 import TableExpandedItem from './TableExpandedItem'
+import TableEmptyItem from './TableEmptyItem'
 
 const consumeTheme = ThemeConsumer('UITable')
 
-const getRenderedItem = ifElse(
+const renderItem = ifElse(
   isNil,
   always(null),
   call
 )
+
+const normalizeRendererResult = pipe(
+  renderItem,
+  ifElse(
+    anyPass([isNil, isEmpty]),
+    always(<TableEmptyItem />),
+    identity
+  )
+)
+
 
 class TableExpandedRow extends PureComponent {
   constructor (props) {
@@ -67,7 +81,10 @@ class TableExpandedRow extends PureComponent {
           title={column.title}
           text={path(column.accessor, data)}
         >
-          {getRenderedItem(column.renderer, data)}
+          {
+            column.renderer &&
+            normalizeRendererResult(column.renderer, data)
+          }
         </TableExpandedItem>
 
       </li>
@@ -78,7 +95,7 @@ class TableExpandedRow extends PureComponent {
     const { index } = this.props
     return (
       <div key={`action_${index}_${idx}`}>
-        {column.renderer(index)}
+        { normalizeRendererResult(column.renderer, index) }
       </div>
     )
   }

@@ -10,7 +10,18 @@ import {
   shape,
   string,
 } from 'prop-types'
-import { has, path } from 'ramda'
+import {
+  always,
+  anyPass,
+  call,
+  has,
+  identity,
+  ifElse,
+  isEmpty,
+  isNil,
+  path,
+  pipe,
+} from 'ramda'
 import classNames from 'classnames'
 import shortid from 'shortid'
 
@@ -23,6 +34,21 @@ import TableEmptyItem from './TableEmptyItem'
 const consumeTheme = ThemeConsumer('UITable')
 
 const hasRenderer = has('renderer')
+
+const renderItem = ifElse(
+  isNil,
+  always(null),
+  call
+)
+
+const normalizeRendererResult = pipe(
+  renderItem,
+  ifElse(
+    anyPass([isNil, isEmpty]),
+    always(<TableEmptyItem />),
+    identity
+  )
+)
 
 const renderCell = (column, data, key, theme) => {
   if (hasRenderer(column)) {
@@ -38,10 +64,11 @@ const renderCell = (column, data, key, theme) => {
           )
         }
       >
-        {column.renderer(data)}
+        { normalizeRendererResult(column.renderer, data) }
       </td>
     )
   }
+
   const columnData = path(column.accessor, data)
   if (columnData) {
     return (

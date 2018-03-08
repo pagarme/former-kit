@@ -20,7 +20,7 @@ import {
 
 const isOdd = modulo(__, 2)
 
-describe.only('Table', () => {
+describe('Table', () => {
   describe('Static cases', () => {
     describe('Columns', () => {
       cases('should render columns', ({ component, columns }) => {
@@ -332,6 +332,21 @@ describe.only('Table', () => {
           })
         })
       }, rowsCases)
+      describe('should render a empty table item correctly for all rows', () => {
+        it('when a renderer returns null', () => {
+          const { component } = createComponents({
+            expandable: true,
+          })
+          const rows = component.find(TableRow)
+          rows.forEach((row) => {
+            const emptyItem = row
+              .find('td')
+              .find(TableEmptyItem)
+
+            expect(emptyItem.exists()).toBe(true)
+          })
+        })
+      })
     })
   })
 })

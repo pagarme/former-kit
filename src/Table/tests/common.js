@@ -22,11 +22,19 @@ const columnWithRenderer = {
   orderable: true,
 }
 
+const columnWithEmptyRenderer = {
+  title: 'empty',
+  renderer: () => null,
+  accessor: ['empty'],
+  orderable: true,
+}
+
 const onActionButtonClick = jest.fn()
 
 const mock = {
   columns: [
     columnWithRenderer,
+    columnWithEmptyRenderer,
     { title: 'Id da transação', accessor: ['id'], orderable: true },
     { title: 'Data da transação', accessor: ['date_created'], orderable: true },
     { title: 'Cpf/Cnpj', accessor: ['document_number'], orderable: true },
@@ -93,6 +101,7 @@ const mock = {
       status: 'Boleto pago com valor inferior',
       status_acronym: 'BPVI',
       status_color: '#244d85',
+      empty: '',
     },
     {
       antifraud_score: 'Approved',
@@ -114,6 +123,7 @@ const mock = {
       status: 'Pago',
       status_acronym: 'P',
       status_color: '#57be76',
+      empty: '',
     },
     {
       antifraud_score: 'Approved',
@@ -135,6 +145,7 @@ const mock = {
       status: 'Chargeback',
       status_acronym: 'CB',
       status_color: '#e47735',
+      empty: '',
     },
     {
       amount: 'R$ 600.000,00',
@@ -156,6 +167,7 @@ const mock = {
       status: 'Processing',
       status_acronym: 'PR',
       status_color: '#951e3c',
+      empty: '',
     },
   ],
 }

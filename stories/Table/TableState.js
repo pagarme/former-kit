@@ -7,6 +7,7 @@ import {
   findIndex,
   path,
   pipe,
+  prepend,
   reverse,
   sortBy,
   toLower,
@@ -121,6 +122,7 @@ class TableState extends Component {
       clickableRow,
       selectable,
       expandable,
+      hasEmptyRenderer,
     } = this.props
     const {
       clickedRowIndex,
@@ -134,12 +136,21 @@ class TableState extends Component {
     } = this.state
     const onRowClick = clickableRow ? this.handleRowClick : null
     const maxColumns = expandable ? 6 : 7
+    const columnWithEmptyRenderer = {
+      title: 'empty',
+      renderer: () => null,
+      accessor: ['empty'],
+    }
 
     return (
       <div>
         <Table
           className={style.table}
-          columns={columns}
+          columns={
+            hasEmptyRenderer
+            ? prepend(columnWithEmptyRenderer, columns)
+            : columns
+          }
           rows={rows}
           selectable={selectable}
           expandable={expandable}
@@ -183,6 +194,7 @@ TableState.propTypes = {
   selectable: bool,
   expandable: bool,
   primaryAction: bool,
+  hasEmptyRenderer: bool,
 }
 
 TableState.defaultProps = {
@@ -190,6 +202,7 @@ TableState.defaultProps = {
   selectable: false,
   expandable: false,
   primaryAction: false,
+  hasEmptyRenderer: false,
 }
 
 export default TableState
