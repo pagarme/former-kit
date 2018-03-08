@@ -50,6 +50,7 @@ class TableHead extends Component {
       orderColumn,
       order,
       icons,
+      disabled,
     } = this.props
     const selected = orderColumn === index
     const { orderable } = column
@@ -57,6 +58,7 @@ class TableHead extends Component {
       [theme.active]: selected,
       [theme.orderable]: orderable,
       [theme.unselectable]: column.isAction,
+      [theme.disabled]: disabled && orderable,
     })
 
     if (!orderable) {
@@ -72,11 +74,16 @@ class TableHead extends Component {
       )
     }
 
+    const trProps = disabled ? {} :
+      {
+        onClick: () => this.handleOrderChange(index),
+      }
+
     return (
       <th
         key={`column_${index + 1}`}
         className={columnClasses}
-        onClick={() => this.handleOrderChange(index)}
+        {...trProps}
       >
         <div className={theme.tableHeadItem}>
           <span> {column.title} </span>
@@ -97,11 +104,12 @@ class TableHead extends Component {
 
   render () {
     const {
-      selected,
       columns,
+      disabled,
       expandable,
       onSelect,
       selectable,
+      selected,
       theme,
     } = this.props
 
@@ -112,12 +120,13 @@ class TableHead extends Component {
             selectable &&
             <th className={theme.check}>
               <Checkbox
-                name="all"
-                id={this.checkboxId}
-                value="all"
-                label=""
-                onChange={onSelect}
                 checked={selected}
+                disabled={disabled}
+                id={this.checkboxId}
+                label=""
+                name="all"
+                onChange={onSelect}
+                value="all"
               />
             </th>
           }
@@ -143,6 +152,7 @@ TableHead.propTypes = {
     open: string,
     tableHeadItem: string,
     unselectable: string,
+    disabled: string,
   }),
   /**
    * Columns which will name the reader cells.
@@ -208,6 +218,10 @@ TableHead.propTypes = {
    * Selectable column checkbox state.
    */
   selected: bool,
+  /**
+   * Disablez the click on orderable columns
+   */
+  disabled: bool,
 }
 
 TableHead.defaultProps = {
@@ -219,6 +233,7 @@ TableHead.defaultProps = {
   selectable: false,
   selected: false,
   theme: {},
+  disabled: false,
 }
 
 export default consumeTheme(TableHead)

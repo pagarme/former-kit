@@ -200,6 +200,7 @@ class Table extends Component {
   renderRow (row, index) {
     const {
       columns,
+      disabled,
       expandable,
       expandedRows,
       icons,
@@ -214,20 +215,21 @@ class Table extends Component {
     const parityClass = getParityClass(index)
     const key = `row_${index}`
     const rowProps = {
-      columns: columns.slice(0, maxColumns),
       clickable: !!onRowClick,
-      maxColumns,
+      columns: columns.slice(0, maxColumns),
       data: row,
-      expanded: isExpanded,
+      disabled,
       expandable,
+      expanded: isExpanded,
       index,
       key,
+      maxColumns,
       onClick: this.handleRowClick,
       onExpand: this.handleRowExpand,
       onSelect: this.handleRowSelect,
+      parity: parityClass,
       selectable,
       selected: isSelected,
-      parity: parityClass,
     }
 
     if (expandable) {
@@ -264,6 +266,7 @@ class Table extends Component {
             onMouseEnter={this.handleRowMouseEnter}
             onMouseLeave={this.handleRowMouseLeave}
             selectable={selectable}
+            disabled={disabled}
           />
         ),
       ]
@@ -290,6 +293,7 @@ class Table extends Component {
       selectable,
       selectedRows,
       theme,
+      disabled,
     } = this.props
     const { ascending, descending, orderable } = icons
     const allSelected = selectedRows.length === rows.length
@@ -310,6 +314,7 @@ class Table extends Component {
             descending,
             orderable,
           }}
+          disabled={disabled}
         />
         <tbody className={theme.tableBody}>
           {
@@ -429,6 +434,10 @@ Table.propTypes = {
    * List of selected rows indexes.
    */
   selectedRows: arrayOf(number),
+  /**
+   * Disable all table functions
+   */
+  disabled: bool,
 }
 
 Table.defaultProps = {
@@ -445,6 +454,7 @@ Table.defaultProps = {
   selectable: false,
   selectedRows: [],
   theme: {},
+  disabled: false,
 }
 
 export default consumeTheme(Table)

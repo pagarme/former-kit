@@ -23,6 +23,15 @@ storiesOf('Table', module)
       <TableState primaryAction />
     </Section>
   ))
+  .add('Disabled orderable', () => (
+    <Section>
+      <TableState
+        selectable
+        expandable
+        disabled
+      />
+    </Section>
+  ))
   .add('Empty renderer column', () => (
     <Section>
       <TableState hasEmptyRenderer />

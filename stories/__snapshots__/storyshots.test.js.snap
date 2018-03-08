@@ -17376,6 +17376,1254 @@ exports[`Storyshots Table Action column 1`] = `
 </section>
 `;
 
+exports[`Storyshots Table Disabled orderable 1`] = `
+<section
+  className="typography"
+>
+  
+  <div>
+    <div>
+      <table
+        className="table"
+      >
+        <thead
+          className="tableHead"
+        >
+          <tr>
+            <th
+              className="check"
+            >
+              <div
+                className="checkbox disabled"
+              >
+                <input
+                  checked={false}
+                  disabled={true}
+                  id="all-all"
+                  name="all"
+                  onChange={[Function]}
+                  type="checkbox"
+                  value="all"
+                />
+                <label
+                  htmlFor="all-all"
+                >
+                  <i
+                    className="check"
+                  />
+                  
+                </label>
+                
+              </div>
+            </th>
+            <th
+              className="active orderable disabled"
+            >
+              <div
+                className="tableHeadItem"
+              >
+                <span>
+                   
+                  Status
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+            <th
+              className="orderable disabled"
+            >
+              <div
+                className="tableHeadItem"
+              >
+                <span>
+                   
+                  Transaction Id
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+            <th
+              className="orderable disabled"
+            >
+              <div
+                className="tableHeadItem"
+              >
+                <span>
+                   
+                  Date created
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+            <th
+              className="orderable disabled"
+            >
+              <div
+                className="tableHeadItem"
+              >
+                <span>
+                   
+                  Cpf/Cnpj
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+            <th
+              className="orderable disabled"
+            >
+              <div
+                className="tableHeadItem"
+              >
+                <span>
+                   
+                  Payment method
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+            <th
+              className="orderable disabled"
+            >
+              <div
+                className="tableHeadItem"
+              >
+                <span>
+                   
+                  Paid amount
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+            <th
+              className="open"
+            />
+          </tr>
+        </thead>
+        <tbody
+          className="tableBody"
+        >
+          <tr
+            className="even disabled"
+            tabIndex="0"
+          >
+            <td
+              className="check"
+            >
+              <div
+                className="checkbox disabled"
+              >
+                <input
+                  checked={false}
+                  disabled={true}
+                  id="line_0-0"
+                  name="line_0"
+                  onChange={[Function]}
+                  type="checkbox"
+                  value="0"
+                />
+                <label
+                  htmlFor="line_0-0"
+                >
+                  <i
+                    className="check"
+                  />
+                  
+                </label>
+                
+              </div>
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              <div
+                className={undefined}
+              >
+                <div
+                  className="legend"
+                >
+                  <abbr
+                    className="acronym"
+                    style={
+                      Object {
+                        "background": "#244d85",
+                      }
+                    }
+                    title="Boleto paid with inferior value"
+                  >
+                    BPIV
+                  </abbr>
+                </div>
+              </div>
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              2229597000
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              23/09/2017 - 14:15h
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              67.484.928/0001-60
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              Boleto
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              R$ 999.999.999,00
+            </td>
+            <td
+              className="open unselectable"
+            >
+              <button
+                className="button outline light lowRelevance tiny iconButton"
+                disabled={true}
+                onClick={[Function]}
+                type="button"
+              >
+                <svg />
+              </button>
+            </td>
+          </tr>
+          <tr
+            className="even expandedRow disabled"
+            tabIndex="0"
+          >
+            <td
+              colSpan={8}
+            >
+              <div
+                className="expandable"
+              >
+                <ul>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Cost
+                      </span>
+                      <span
+                        className="text"
+                      >
+                        R$ 100.000,00
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Amount
+                      </span>
+                      <span
+                        className="text"
+                      >
+                        R$ 999.999.999,00
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        E-mail
+                      </span>
+                      <span
+                        className="empty unselectable text"
+                      />
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Refuse reason
+                      </span>
+                      <span
+                        className="empty unselectable text"
+                      />
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Antifraud score
+                      </span>
+                      <span
+                        className="empty unselectable text"
+                      />
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Installments
+                      </span>
+                      <span
+                        className="text"
+                      >
+                        1
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Name
+                      </span>
+                      <span
+                        className="empty unselectable text"
+                      />
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Card brand
+                      </span>
+                      <div
+                        className={undefined}
+                        title={null}
+                      >
+                        <span
+                          className="empty unselectable"
+                        />
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Boleto link
+                      </span>
+                      <span
+                        className="text"
+                      >
+                        boleto link
+                      </span>
+                    </div>
+                  </li>
+                </ul>
+                <div
+                  className="expandableActions unselectable"
+                >
+                  <div>
+                    <button
+                      className="button outline light normalRelevance default"
+                      disabled={true}
+                      onClick={[Function]}
+                      type="button"
+                    >
+                      Show details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr
+            className="odd disabled"
+            tabIndex="0"
+          >
+            <td
+              className="check"
+            >
+              <div
+                className="checkbox disabled"
+              >
+                <input
+                  checked={false}
+                  disabled={true}
+                  id="line_1-1"
+                  name="line_1"
+                  onChange={[Function]}
+                  type="checkbox"
+                  value="1"
+                />
+                <label
+                  htmlFor="line_1-1"
+                >
+                  <i
+                    className="check"
+                  />
+                  
+                </label>
+                
+              </div>
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              <div
+                className={undefined}
+              >
+                <div
+                  className="legend"
+                >
+                  <abbr
+                    className="acronym"
+                    style={
+                      Object {
+                        "background": "#57be76",
+                      }
+                    }
+                    title="Pago"
+                  >
+                    P
+                  </abbr>
+                </div>
+              </div>
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              2229597001
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              23/09/2017 - 15:15h
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              67.484.928/0001-60
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              Credit card
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              R$ 100.000,00
+            </td>
+            <td
+              className="open unselectable"
+            >
+              <button
+                className="button outline light lowRelevance tiny iconButton"
+                disabled={true}
+                onClick={[Function]}
+                type="button"
+              >
+                <svg />
+              </button>
+            </td>
+          </tr>
+          <tr
+            className="odd expandedRow disabled"
+            tabIndex="0"
+          >
+            <td
+              colSpan={8}
+            >
+              <div
+                className="expandable"
+              >
+                <ul>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Cost
+                      </span>
+                      <span
+                        className="text"
+                      >
+                        R$ 12.000,00
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Amount
+                      </span>
+                      <span
+                        className="text"
+                      >
+                        R$ 400.000,00
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        E-mail
+                      </span>
+                      <span
+                        className="text"
+                      >
+                        null@undefined.com
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Refuse reason
+                      </span>
+                      <span
+                        className="empty unselectable text"
+                      />
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Antifraud score
+                      </span>
+                      <span
+                        className="text"
+                      >
+                        Approved
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Installments
+                      </span>
+                      <span
+                        className="text"
+                      >
+                        4X
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Name
+                      </span>
+                      <span
+                        className="text"
+                      >
+                        null of undefined of NaN
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Card brand
+                      </span>
+                      <div
+                        className={undefined}
+                        title="mastercard"
+                      >
+                        <span
+                          className={undefined}
+                        >
+                          <MasterCard16.svg
+                            className={undefined}
+                          />
+                          mastercard
+                        </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Boleto link
+                      </span>
+                      <span
+                        className="empty unselectable text"
+                      />
+                    </div>
+                  </li>
+                </ul>
+                <div
+                  className="expandableActions unselectable"
+                >
+                  <div>
+                    <button
+                      className="button outline light normalRelevance default"
+                      disabled={true}
+                      onClick={[Function]}
+                      type="button"
+                    >
+                      Show details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr
+            className="even disabled"
+            tabIndex="0"
+          >
+            <td
+              className="check"
+            >
+              <div
+                className="checkbox disabled"
+              >
+                <input
+                  checked={true}
+                  disabled={true}
+                  id="line_2-2"
+                  name="line_2"
+                  onChange={[Function]}
+                  type="checkbox"
+                  value="2"
+                />
+                <label
+                  htmlFor="line_2-2"
+                >
+                  <i
+                    className="check"
+                  />
+                  
+                </label>
+                
+              </div>
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              <div
+                className={undefined}
+              >
+                <div
+                  className="legend"
+                >
+                  <abbr
+                    className="acronym"
+                    style={
+                      Object {
+                        "background": "#e47735",
+                      }
+                    }
+                    title="Chargeback"
+                  >
+                    CB
+                  </abbr>
+                </div>
+              </div>
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              2229597003
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              23/09/2017 - 16:15h
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              67.484.928/0001-60
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              Credit card
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              R$ 100.000,00
+            </td>
+            <td
+              className="open unselectable"
+            >
+              <button
+                className="button outline light lowRelevance tiny iconButton"
+                disabled={true}
+                onClick={[Function]}
+                type="button"
+              >
+                <svg />
+              </button>
+            </td>
+          </tr>
+          <tr
+            className="even expandedRow disabled"
+            tabIndex="0"
+          >
+            <td
+              colSpan={8}
+            >
+              <div
+                className="expandable"
+              >
+                <ul>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Cost
+                      </span>
+                      <span
+                        className="text"
+                      >
+                        R$ 13.000,00
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Amount
+                      </span>
+                      <span
+                        className="text"
+                      >
+                        R$ 500.000,00
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        E-mail
+                      </span>
+                      <span
+                        className="text"
+                      >
+                        null@undefined.com
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Refuse reason
+                      </span>
+                      <span
+                        className="empty unselectable text"
+                      />
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Antifraud score
+                      </span>
+                      <span
+                        className="text"
+                      >
+                        Approved
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Installments
+                      </span>
+                      <span
+                        className="text"
+                      >
+                        5X
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Name
+                      </span>
+                      <span
+                        className="text"
+                      >
+                        null of undefined of NaN
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Card brand
+                      </span>
+                      <div
+                        className={undefined}
+                        title="visa"
+                      >
+                        <span
+                          className={undefined}
+                        >
+                          <VisaCard16.svg
+                            className={undefined}
+                          />
+                          visa
+                        </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Boleto link
+                      </span>
+                      <span
+                        className="empty unselectable text"
+                      />
+                    </div>
+                  </li>
+                </ul>
+                <div
+                  className="expandableActions unselectable"
+                >
+                  <div>
+                    <button
+                      className="button outline light normalRelevance default"
+                      disabled={true}
+                      onClick={[Function]}
+                      type="button"
+                    >
+                      Show details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr
+            className="odd disabled"
+            tabIndex="0"
+          >
+            <td
+              className="check"
+            >
+              <div
+                className="checkbox disabled"
+              >
+                <input
+                  checked={false}
+                  disabled={true}
+                  id="line_3-3"
+                  name="line_3"
+                  onChange={[Function]}
+                  type="checkbox"
+                  value="3"
+                />
+                <label
+                  htmlFor="line_3-3"
+                >
+                  <i
+                    className="check"
+                  />
+                  
+                </label>
+                
+              </div>
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              <div
+                className={undefined}
+              >
+                <div
+                  className="legend"
+                >
+                  <abbr
+                    className="acronym"
+                    style={
+                      Object {
+                        "background": "#951e3c",
+                      }
+                    }
+                    title="Processing"
+                  >
+                    PR
+                  </abbr>
+                </div>
+              </div>
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              2229597004
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              <span
+                className="empty unselectable"
+              />
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              <span
+                className="empty unselectable"
+              />
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              <span
+                className="empty unselectable"
+              />
+            </td>
+            <td
+              className="tableBodyItem"
+            >
+              <span
+                className="empty unselectable"
+              />
+            </td>
+            <td
+              className="open unselectable"
+            >
+              <button
+                className="button outline light lowRelevance tiny iconButton"
+                disabled={true}
+                onClick={[Function]}
+                type="button"
+              >
+                <svg />
+              </button>
+            </td>
+          </tr>
+          <tr
+            className="odd expandedRow disabled"
+            tabIndex="0"
+          >
+            <td
+              colSpan={8}
+            >
+              <div
+                className="expandable"
+              >
+                <ul>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Cost
+                      </span>
+                      <span
+                        className="text"
+                      >
+                        R$ 14.000,00
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Amount
+                      </span>
+                      <span
+                        className="text"
+                      >
+                        R$ 600.000,00
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        E-mail
+                      </span>
+                      <span
+                        className="text"
+                      >
+                        null@undefined.com
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Refuse reason
+                      </span>
+                      <span
+                        className="empty unselectable text"
+                      />
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Antifraud score
+                      </span>
+                      <span
+                        className="empty unselectable text"
+                      />
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Installments
+                      </span>
+                      <span
+                        className="text"
+                      >
+                        6X
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Name
+                      </span>
+                      <span
+                        className="text"
+                      >
+                        null of undefined of NaN
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Card brand
+                      </span>
+                      <div
+                        className={undefined}
+                        title="visa"
+                      >
+                        <span
+                          className={undefined}
+                        >
+                          <VisaCard16.svg
+                            className={undefined}
+                          />
+                          visa
+                        </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="expandedItem"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Boleto link
+                      </span>
+                      <span
+                        className="empty unselectable text"
+                      />
+                    </div>
+                  </li>
+                </ul>
+                <div
+                  className="expandableActions unselectable"
+                >
+                  <div>
+                    <button
+                      className="button outline light normalRelevance default"
+                      disabled={true}
+                      onClick={[Function]}
+                      type="button"
+                    >
+                      Show details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div
+        className={undefined}
+      >
+        <div>
+          <div>
+             Selected rows 
+            1
+             
+          </div>
+          <div>
+             Expanded rows 
+            4
+             
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
 exports[`Storyshots Table Empty renderer column 1`] = `
 <section
   className="typography"

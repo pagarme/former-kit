@@ -1,9 +1,10 @@
 import React from 'react'
 import classNames from 'classnames'
 import {
+  bool,
+  node,
   shape,
   string,
-  node,
 } from 'prop-types'
 
 import ThemeConsumer from '../ThemeConsumer'
@@ -61,7 +62,7 @@ Grid.propTypes = {
   /**
    * The grid and their children will have the total height of its parent.
    */
-  fullHeight: string,
+  fullHeight: bool,
 }
 
 Grid.defaultProps = {
