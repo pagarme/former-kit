@@ -27,9 +27,9 @@ exports[`Storyshots Alerts Default 1`] = `
         >
           <p>
             <strong>
-              Warning
+              Warning.
             </strong>
-             something is going on!
+             Something is going on!
           </p>
         </div>
       </div>
@@ -58,9 +58,9 @@ exports[`Storyshots Alerts Default 1`] = `
         >
           <p>
             <strong>
-              Info
+              Info.
             </strong>
-             you can do it better!
+             You can do it better!
           </p>
         </div>
       </div>
@@ -89,9 +89,9 @@ exports[`Storyshots Alerts Default 1`] = `
         >
           <p>
             <strong>
-              Error
+              Error.
             </strong>
-             something went wrong!
+             Something went wrong!
           </p>
         </div>
       </div>
@@ -101,7 +101,7 @@ exports[`Storyshots Alerts Default 1`] = `
     className=""
   >
     <h2>
-      Section
+      Success
     </h2>
     <div>
       <div
@@ -120,10 +120,49 @@ exports[`Storyshots Alerts Default 1`] = `
         >
           <p>
             <strong>
-              Success
+              Success.
             </strong>
-             awesome, it worked!
+             Awesome, it worked!
           </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Event
+    </h2>
+    <div>
+      <div
+        className="alert"
+      >
+        <div
+          className="icon warning"
+        >
+          <Warning32.svg
+            height={16}
+            width={16}
+          />
+        </div>
+        <div
+          className="content"
+        >
+          <p>
+            <strong>
+              Warning.
+            </strong>
+             Something is going on!
+          </p>
+          <button
+            className="button clean light normalRelevance default"
+            disabled={false}
+            onClick={[Function]}
+            type="button"
+          >
+            dismiss
+          </button>
         </div>
       </div>
     </div>

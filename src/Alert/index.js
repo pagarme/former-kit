@@ -6,8 +6,10 @@ import {
   element,
   shape,
   string,
+  func,
 } from 'prop-types'
 import ThemeConsumer from '../ThemeConsumer'
+import Button from '../Button'
 
 const consumeTheme = ThemeConsumer('UIAlert')
 
@@ -19,6 +21,8 @@ const Alert = ({
   icon,
   theme,
   type,
+  action,
+  onDismiss,
 }) => (
   <div className={theme.alert}>
     {!isNil(icon) && (
@@ -28,6 +32,14 @@ const Alert = ({
     )}
     <div className={theme.content}>
       {children}
+      {(!isNil(action) && !isNil(onDismiss)) && (
+        <Button
+          fill="clean"
+          onClick={onDismiss}
+        >
+          {action}
+        </Button>
+      )}
     </div>
   </div>
 )
@@ -63,9 +75,19 @@ Alert.propTypes = {
    * The children element. It should contain a React element.
    */
   children: element.isRequired,
+  /**
+   * The action text.
+   */
+  action: string,
+  /**
+   * The action callback.
+   */
+  onDismiss: func,
 }
 
 Alert.defaultProps = {
+  action: null,
+  onDismiss: null,
   icon: null,
   theme: {},
 }

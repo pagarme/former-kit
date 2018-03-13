@@ -9,7 +9,7 @@ const IconWarning = require('emblematic-icons/svg/Warning32.svg').default;
   type="warning"
   icon={<IconWarning height={16} width={16} />}
 >
-  <p><strong>Warning</strong> something is going on!</p>
+  <p><strong>Warning.</strong> Something is going on!</p>
 </Alert>
 ```
 
@@ -21,7 +21,7 @@ const IconInfo = require('emblematic-icons/svg/Info32.svg').default;
   type="info"
   icon={<IconInfo height={16} width={16} />}
 >
-  <p><strong>Info</strong> you can do it better!</p>
+  <p><strong>Info.</strong> You can do it better!</p>
 </Alert>
 ```
 
@@ -33,7 +33,7 @@ const IconClear = require('emblematic-icons/svg/ClearClose32.svg').default;
   type="error"
   icon={<IconClear height={16} width={16} />}
 >
-  <p><strong>Error</strong> something went wrong!</p>
+  <p><strong>Error.</strong> Something went wrong!</p>
 </Alert>
 ```
 
@@ -45,6 +45,6 @@ const IconCheck = require('emblematic-icons/svg/Check32.svg').default;
   type="success"
   icon={<IconCheck height={16} width={16} />}
 >
-  <p><strong>Success</strong> awesome, it worked!</p>
+  <p><strong>Success.</strong> Awesome, it worked!</p>
 </Alert>
 ```
