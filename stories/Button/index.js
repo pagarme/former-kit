@@ -139,22 +139,17 @@ storiesOf('Buttons', module)
       <Section title="Sizes">
         <div className={styles.spacingAround}>
           <Button size="tiny">tiny</Button>
-          <Button icon={<IconAdd width={12} height={12} />} size="tiny" />
-        </div>
-
-        <div className={styles.spacingAround}>
-          <Button size="small">small</Button>
-          <Button icon={<IconAdd width={12} height={12} />} size="small" />
+          <Button icon={<IconAdd width={12} height={12} />} size="tiny">tiny</Button>
         </div>
 
         <div className={styles.spacingAround}>
           <Button>default</Button>
-          <Button icon={<IconAdd width={12} height={12} />} size="default" />
+          <Button icon={<IconAdd width={12} height={12} />} size="default">default</Button>
         </div>
 
         <div className={styles.spacingAround}>
-          <Button size="large">large</Button>
-          <Button icon={<IconAdd width={12} height={12} />} size="large" />
+          <Button size="huge">huge</Button>
+          <Button icon={<IconAdd width={12} height={12} />} size="huge">huge</Button>
         </div>
       </Section>
 

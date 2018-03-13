@@ -109,7 +109,7 @@ Button.propTypes = {
    * Component's size.
    */
   size: PropTypes.oneOf([
-    'tiny', 'small', 'default', 'large',
+    'tiny', 'default', 'huge',
   ]),
   /**
    * Button's type.
