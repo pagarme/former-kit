@@ -3,6 +3,7 @@ import { storiesOf } from '@storybook/react'
 
 import Section from '../Section'
 import CardExamples from './CardExamples'
+import CardSectionWithIcon from './CardSectionWithIcon'
 
 storiesOf('Cards', module)
   .add('Default', () => (
@@ -30,6 +31,9 @@ storiesOf('Cards', module)
       </Section>
       <Section title="Simple card section">
         <CardExamples.SimpleSection />
+      </Section>
+      <Section title="Card section with icon on the left">
+        <CardSectionWithIcon />
       </Section>
     </div>
   ))

@@ -1293,6 +1293,97 @@ feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
       </div>
     </div>
   </section>
+  <section
+    className=""
+  >
+    <h2>
+      Card section with icon on the left
+    </h2>
+    <div>
+      <div
+        className={undefined}
+      >
+        <div
+          className="card"
+        >
+          <div
+            className="title"
+          >
+            <h2>
+              Lorem title
+            </h2>
+            <h3>
+              
+            </h3>
+          </div>
+          <div
+            className="content"
+          >
+            <div
+              className="section expanded"
+            >
+              <div
+                className="sectionTitle clickableTitle"
+                onClick={[Function]}
+                role="button"
+                tabIndex="0"
+              >
+                <div
+                  className="sectionTwoLineTitle"
+                >
+                  <span
+                    className="sectionIconBox"
+                  >
+                    <Calendar32.svg
+                      height={16}
+                      width={16}
+                    />
+                  </span>
+                  <span
+                    className="sectionTitles"
+                  >
+                    Informações da empresa
+                    <span
+                      className="sectionSubtitle"
+                    >
+                      Verifique ou edite as informações da sua empresa
+                    </span>
+                  </span>
+                </div>
+                <button
+                  className="button outline light lowRelevance default iconButton"
+                  disabled={false}
+                  onClick={null}
+                  type="button"
+                >
+                  <svg />
+                </button>
+              </div>
+              <div
+                className="sectionContent"
+              >
+                <hr
+                  className="divider"
+                />
+                <div
+                  className="content"
+                >
+                  
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel
+blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan.
+In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis
+sapien vel malesuada sodales. Curabitur hendrerit purus sed ex
+feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
 `;
 
