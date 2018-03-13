@@ -16,7 +16,7 @@ storiesOf('Alerts', module)
           type="warning"
           icon={<IconWarning height={16} width={16} />}
         >
-          <p><strong>Warning</strong> something is going on!</p>
+          <p><strong>Warning.</strong> Something is going on!</p>
         </Alert>
       </Section>
 
@@ -25,7 +25,7 @@ storiesOf('Alerts', module)
           type="info"
           icon={<IconInfo height={16} width={16} />}
         >
-          <p><strong>Info</strong> you can do it better!</p>
+          <p><strong>Info.</strong> You can do it better!</p>
         </Alert>
       </Section>
 
@@ -34,7 +34,7 @@ storiesOf('Alerts', module)
           type="error"
           icon={<IconClear height={16} width={16} />}
         >
-          <p><strong>Error</strong> something went wrong!</p>
+          <p><strong>Error.</strong> Something went wrong!</p>
         </Alert>
       </Section>
 
@@ -43,7 +43,7 @@ storiesOf('Alerts', module)
           type="success"
           icon={<IconCheck height={16} width={16} />}
         >
-          <p><strong>Success</strong> awesome, it worked!</p>
+          <p><strong>Success.</strong> Awesome, it worked!</p>
         </Alert>
       </Section>
     </div>
