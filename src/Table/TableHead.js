@@ -10,7 +10,11 @@ import {
   shape,
   string,
 } from 'prop-types'
-import { equals } from 'ramda'
+import {
+  equals,
+  isNil,
+  not,
+} from 'ramda'
 import classNames from 'classnames'
 import shortid from 'shortid'
 import Checkbox from '../Checkbox'
@@ -28,6 +32,7 @@ class TableHead extends Component {
     this.getOrderIcon = this.getOrderIcon.bind(this)
     this.handleOrderChange = this.handleOrderChange.bind(this)
     this.renderColumn = this.renderColumn.bind(this)
+    this.validateSelectedColumn = this.validateSelectedColumn.bind(this)
   }
 
   getOrderIcon (order) {
@@ -44,37 +49,51 @@ class TableHead extends Component {
     this.props.onOrderChange(index)
   }
 
-  renderColumn (column, index) {
+  validateSelectedColumn (columnIndex) {
+    const {
+      onOrderChange,
+      orderColumn,
+    } = this.props
+
+    return (orderColumn === columnIndex) && not(isNil(onOrderChange))
+  }
+
+  renderColumn ({
+    orderable,
+    isAction,
+    title,
+  },
+  index
+  ) {
     const {
       theme,
-      orderColumn,
       order,
       icons,
       disabled,
+      onOrderChange,
     } = this.props
-    const selected = orderColumn === index
-    const { orderable } = column
+    const selected = this.validateSelectedColumn(index)
     const columnClasses = classNames({
       [theme.active]: selected,
       [theme.orderable]: orderable,
-      [theme.unselectable]: column.isAction,
+      [theme.unselectable]: isAction,
       [theme.disabled]: disabled && orderable,
     })
 
-    if (!orderable) {
+    if (!orderable || not(onOrderChange)) {
       return (
         <th
           key={`header_column_${index + 1}`}
           className={columnClasses}
         >
           <div className={theme.tableHeadItem}>
-            {column.title}
+            {title}
           </div>
         </th>
       )
     }
 
-    const trProps = disabled ? {} :
+    const thProps = disabled || not(onOrderChange) ? {} :
       {
         onClick: () => this.handleOrderChange(index),
       }
@@ -83,10 +102,10 @@ class TableHead extends Component {
       <th
         key={`column_${index + 1}`}
         className={columnClasses}
-        {...trProps}
+        {...thProps}
       >
         <div className={theme.tableHeadItem}>
-          <span> {column.title} </span>
+          <span> {title} </span>
           <span className={theme.unselectable}>
             {
               selected &&

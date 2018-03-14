@@ -21,6 +21,7 @@ import {
   isNil,
   mapObjIndexed,
   modulo,
+  not,
   pipe,
   prop,
   take,
@@ -110,6 +111,15 @@ const validateIconsShape = (props, propName) => {
     }
 
     mapObjIndexed(validateElement, icons)
+  }
+}
+
+const validateOrderableFunction = (props, propName) => {
+  if (propName === 'onOrderChange') {
+    const { onOrderChange, columns } = props
+    if (hasOrderableColumn(columns) && isNil(onOrderChange)) {
+      throw new Error('The prop onOrderChange must be a function when some column is orderable')
+    }
   }
 }
 
@@ -287,6 +297,7 @@ class Table extends Component {
       expandable,
       icons,
       maxColumns,
+      onOrderChange,
       orderColumn,
       orderSequence,
       rows,
@@ -298,12 +309,13 @@ class Table extends Component {
     const { ascending, descending, orderable } = icons
     const allSelected = selectedRows.length === rows.length
     const tableClasses = classNames(className, theme.table)
+    const hasOrderChange = not(isNil(onOrderChange))
     return (
       <table className={tableClasses}>
         <TableHead
           columns={take(maxColumns, columns)}
           orderColumn={orderColumn}
-          onOrderChange={this.handleColumnOrder}
+          onOrderChange={hasOrderChange ? this.handleColumnOrder : null}
           onSelect={this.handleSelect}
           selectable={selectable}
           expandable={expandable}
@@ -402,7 +414,7 @@ Table.propTypes = {
    * @param {int} index - order column index.
    * @param {string} order - rows order, can be `ascending` or `descending`.
    */
-  onOrderChange: func.isRequired,
+  onOrderChange: validateOrderableFunction,
   /**
    * It's called when a clickable row is clicked.
    * @param {int} index - clicked row index.
@@ -442,11 +454,13 @@ Table.propTypes = {
 
 Table.defaultProps = {
   className: '',
+  disabled: false,
   expandable: false,
   expandedRows: [],
   icons: {},
   maxColumns: 7,
   onExpandRow: null,
+  onOrderChange: null,
   onRowClick: null,
   onSelectRow: null,
   orderColumn: 0,
@@ -454,7 +468,6 @@ Table.defaultProps = {
   selectable: false,
   selectedRows: [],
   theme: {},
-  disabled: false,
 }
 
 export default consumeTheme(Table)

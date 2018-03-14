@@ -20416,136 +20416,66 @@ exports[`Storyshots Table Simple 1`] = `
         >
           <tr>
             <th
-              className="active orderable"
-              onClick={[Function]}
+              className=""
             >
               <div
                 className="tableHeadItem"
               >
-                <span>
-                   
-                  Status
-                   
-                </span>
-                <span
-                  className="unselectable"
-                >
-                  <svg />
-                </span>
+                Status
               </div>
             </th>
             <th
-              className="orderable"
-              onClick={[Function]}
+              className=""
             >
               <div
                 className="tableHeadItem"
               >
-                <span>
-                   
-                  Transaction Id
-                   
-                </span>
-                <span
-                  className="unselectable"
-                >
-                  <svg />
-                </span>
+                Transaction Id
               </div>
             </th>
             <th
-              className="orderable"
-              onClick={[Function]}
+              className=""
             >
               <div
                 className="tableHeadItem"
               >
-                <span>
-                   
-                  Date created
-                   
-                </span>
-                <span
-                  className="unselectable"
-                >
-                  <svg />
-                </span>
+                Date created
               </div>
             </th>
             <th
-              className="orderable"
-              onClick={[Function]}
+              className=""
             >
               <div
                 className="tableHeadItem"
               >
-                <span>
-                   
-                  Cpf/Cnpj
-                   
-                </span>
-                <span
-                  className="unselectable"
-                >
-                  <svg />
-                </span>
+                Cpf/Cnpj
               </div>
             </th>
             <th
-              className="orderable"
-              onClick={[Function]}
+              className=""
             >
               <div
                 className="tableHeadItem"
               >
-                <span>
-                   
-                  Payment method
-                   
-                </span>
-                <span
-                  className="unselectable"
-                >
-                  <svg />
-                </span>
+                Payment method
               </div>
             </th>
             <th
-              className="orderable"
-              onClick={[Function]}
+              className=""
             >
               <div
                 className="tableHeadItem"
               >
-                <span>
-                   
-                  Paid amount
-                   
-                </span>
-                <span
-                  className="unselectable"
-                >
-                  <svg />
-                </span>
+                Paid amount
               </div>
             </th>
             <th
-              className="orderable"
-              onClick={[Function]}
+              className=""
             >
               <div
                 className="tableHeadItem"
               >
-                <span>
-                   
-                  Cost
-                   
-                </span>
-                <span
-                  className="unselectable"
-                >
-                  <svg />
-                </span>
+                Cost
               </div>
             </th>
           </tr>
