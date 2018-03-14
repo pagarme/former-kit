@@ -40,8 +40,10 @@ There are some details to pay attention when contributing a new component. Here'
 
 - [ ] Write tests and reach a coverage of at least 80% (`yarn test --coverage`)
 - [ ] Write a story for the component in Storybook (`yarn storybook`)
-- [ ] Add props documentation and examples in Styleguidist (`yarn styleguide`)
-- [ ] Update component stories snapshots (`yarn test --updateSnapshot`)
+- [ ] Add props documentation and examples on Styleguidist (`yarn styleguide`)
+- [ ] Check carefully for [Storyshots](https://github.com/storybooks/storybook/tree/master/addons/storyshots) to see the impact of your changes (checked on `yarn test`).
+- [ ] When confident, update the snapshots (`yarn test --updateSnapshot`)
+- [ ] Add [storyshots snapshot file](https://github.com/pagarme/former-kit/tree/master/stories/__snapshots__) to the same commit the changes were made.
 - [ ] Be sure `yarn.lock` is up to date (`yarn`)
 
 ### Contribution guidelines
