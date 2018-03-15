@@ -294,7 +294,9 @@ class Table extends Component {
     const {
       className,
       columns,
+      disabled,
       expandable,
+      headerAlign,
       icons,
       maxColumns,
       onOrderChange,
@@ -304,7 +306,6 @@ class Table extends Component {
       selectable,
       selectedRows,
       theme,
-      disabled,
     } = this.props
     const { ascending, descending, orderable } = icons
     const allSelected = selectedRows.length === rows.length
@@ -314,19 +315,20 @@ class Table extends Component {
       <table className={tableClasses}>
         <TableHead
           columns={take(maxColumns, columns)}
-          orderColumn={orderColumn}
-          onOrderChange={hasOrderChange ? this.handleColumnOrder : null}
-          onSelect={this.handleSelect}
-          selectable={selectable}
+          disabled={disabled}
           expandable={expandable}
-          selected={allSelected}
-          order={orderSequence}
+          align={headerAlign}
           icons={{
             ascending,
             descending,
             orderable,
           }}
-          disabled={disabled}
+          onOrderChange={hasOrderChange ? this.handleColumnOrder : null}
+          onSelect={this.handleSelect}
+          order={orderSequence}
+          orderColumn={orderColumn}
+          selectable={selectable}
+          selected={allSelected}
         />
         <tbody className={theme.tableBody}>
           {
@@ -366,6 +368,10 @@ Table.propTypes = {
       arrayOf(string),
     ]),
     /**
+     * Defines the cell content alignment
+     */
+    align: oneOf(['center', 'start', 'end']),
+    /**
      * Identify if it's an action column.
      */
     isAction: bool,
@@ -393,6 +399,11 @@ Table.propTypes = {
    * List of indexes of expanded rows in the table.
    */
   expandedRows: arrayOf(number),
+  /**
+   * Defines the header cell's content alignment when
+   * the columns aren't orderable
+   */
+  headerAlign: oneOf(['center', 'start', 'end']),
   /**
    * Default actions icons.
    * @prop {object} expand - icon which represents expand acion in expandable button.
@@ -457,6 +468,7 @@ Table.defaultProps = {
   disabled: false,
   expandable: false,
   expandedRows: [],
+  headerAlign: 'left',
   icons: {},
   maxColumns: 7,
   onExpandRow: null,

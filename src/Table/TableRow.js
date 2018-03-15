@@ -58,6 +58,7 @@ const renderCell = (column, data, key, theme) => {
         className={
           classNames(
             theme.tableBodyItem,
+            theme[`${column.align}Align`],
             {
               [theme.unselectable]: column.isAction,
             }
@@ -74,7 +75,12 @@ const renderCell = (column, data, key, theme) => {
     return (
       <td
         key={key}
-        className={theme.tableBodyItem}
+        className={
+          classNames(
+            theme.tableBodyItem,
+            theme[`${column.align}Align`]
+          )
+        }
       >
         {columnData}
       </td>
@@ -243,7 +249,7 @@ TableRow.propTypes = {
     open: string,
   }),
   /**
-   * Aditional CSS classes which can be applyed to the expanded row.
+   * Additional CSS classes which can be applyed to the expanded row.
    */
   className: string,
   /**
@@ -256,12 +262,36 @@ TableRow.propTypes = {
    * These columns are the columns which are not shown in the table.
    */
   columns: arrayOf(shape({
-    title: string.isRequired,
+    /**
+     * The path for the cell value in the row object,
+     * it's required for orderable columns.
+     */
     accessor: oneOfType([
       string,
       arrayOf(string),
     ]),
+    /**
+     * Defines the cell content alignment
+     */
+    align: oneOf(['center', 'start', 'end']),
+    /**
+     * Identify if it's an action column.
+     */
+    isAction: bool,
+    /**
+     * Enable a column to be orderable.
+     */
+    orderable: bool,
+    /**
+     * A custom function which will receive the row data object and should return
+     * a React element to be rendered in each cell bound to this column.
+     */
     renderer: func,
+    /**
+     * This title is used to identify the column in the header and to identify the
+     * column data in the expandable rows.
+     */
+    title: string.isRequired,
   })).isRequired,
   /**
    * Set of data native of row data from the table.

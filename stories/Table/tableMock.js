@@ -21,7 +21,9 @@ const getBrandIcon = ifElse(
 const getMock = (detailsClick, disabled) => ({
   columns: [
     {
-      title: 'Status',
+      accessor: ['status'],
+      align: 'center',
+      orderable: true,
       renderer: item => (
         <div className={style.centralizedItem}>
           <Legend
@@ -33,24 +35,71 @@ const getMock = (detailsClick, disabled) => ({
           </Legend>
         </div>
       ),
-      accessor: ['status'],
-      orderable: true,
+      title: 'Status',
     },
-    { title: 'Transaction Id', accessor: ['id'], orderable: true },
-    { title: 'Date created', accessor: ['date_created'], orderable: true },
-    { title: 'Cpf/Cnpj', accessor: ['document_number'], orderable: true },
-    { title: 'Payment method', accessor: ['payment_method'], orderable: true },
-    { title: 'Paid amount', accessor: ['paid_amount'], orderable: true },
-    { title: 'Cost', accessor: ['cost'], orderable: true },
-    { title: 'Amount', accessor: ['amount'], orderable: true },
-    { title: 'E-mail', accessor: ['customer', 'email'], orderable: true },
-    { title: 'Refuse reason', accessor: ['refuse_reason'], orderable: true },
-    { title: 'Antifraud score', accessor: ['antifraud_score'], orderable: true },
-    { title: 'Installments', accessor: ['installments'], orderable: true },
-    { title: 'Name', accessor: ['customer', 'name'], orderable: true },
     {
-      title: 'Card brand',
+      accessor: ['id'],
+      align: 'start',
+      orderable: true,
+      title: 'Transaction ID',
+    },
+    {
+      accessor: ['date_created'],
+      align: 'center',
+      orderable: true,
+      title: 'Date',
+    },
+    {
+      accessor: ['payment_method'],
+      align: 'center',
+      orderable: true,
+      title: 'Payment Method',
+    },
+    {
+      accessor: ['paid_amount'],
+      align: 'end',
+      orderable: true,
+      title: 'Paid Amount',
+    },
+    {
+      accessor: ['cost'],
+      align: 'end',
+      orderable: true,
+      title: 'Cost',
+    },
+    {
+      accessor: ['amount'],
+      align: 'end',
+      orderable: true,
+      title: 'Amount',
+    },
+    {
+      accessor: ['customer', 'email'],
+      align: 'center',
+      orderable: true,
+      title: 'E-mail',
+    },
+    {
+      accessor: ['antifraud_score'],
+      align: 'center',
+      orderable: true,
+      title: 'Antifraud Score',
+    },
+    {
+      accessor: ['installments'],
+      align: 'center',
+      orderable: true,
+      title: 'Installments',
+    },
+    {
+      accessor: ['customer', 'name'],
+      align: 'start',
+      orderable: true,
+      title: 'Name',
+    },
+    {
       accessor: ['card_brand'],
+      align: 'center',
       orderable: true,
       renderer: item => (
         <div
@@ -70,10 +119,16 @@ const getMock = (detailsClick, disabled) => ({
           }
         </div>
       ),
+      title: 'Card brand',
     },
-    { title: 'Boleto link', accessor: ['link'], orderable: true },
     {
-      title: 'Details',
+      accessor: ['link'],
+      align: 'start',
+      orderable: true,
+      title: 'Boleto link',
+    },
+    {
+      align: 'center',
       isAction: true,
       orderable: false,
       renderer: index => (
@@ -85,6 +140,7 @@ const getMock = (detailsClick, disabled) => ({
           Show details
         </Button>
       ),
+      title: 'Details',
     },
   ],
   rows: [

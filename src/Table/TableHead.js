@@ -66,19 +66,23 @@ class TableHead extends Component {
   index
   ) {
     const {
-      theme,
-      order,
-      icons,
+      align,
       disabled,
+      icons,
       onOrderChange,
+      order,
+      theme,
     } = this.props
     const selected = this.validateSelectedColumn(index)
-    const columnClasses = classNames({
-      [theme.active]: selected,
-      [theme.orderable]: orderable,
-      [theme.unselectable]: isAction,
-      [theme.disabled]: disabled && orderable,
-    })
+    const columnClasses = classNames(
+      {
+        [theme[`${align}Align`]]: !orderable,
+        [theme.active]: selected,
+        [theme.orderable]: orderable,
+        [theme.unselectable]: isAction,
+        [theme.disabled]: disabled && orderable,
+      }
+    )
 
     if (!orderable || not(onOrderChange)) {
       return (
@@ -86,7 +90,13 @@ class TableHead extends Component {
           key={`header_column_${index + 1}`}
           className={columnClasses}
         >
-          <div className={theme.tableHeadItem}>
+          <div className={classNames(
+              {
+                [theme[`${align}Align`]]: !orderable,
+              },
+              theme.tableHeadItem
+            )}
+          >
             {title}
           </div>
         </th>
@@ -174,6 +184,10 @@ TableHead.propTypes = {
     disabled: string,
   }),
   /**
+   * Defines the cell's content alignment
+  */
+  align: oneOf(['center', 'start', 'end']),
+  /**
    * Columns which will name the reader cells.
    */
   columns: arrayOf(shape({
@@ -244,6 +258,8 @@ TableHead.propTypes = {
 }
 
 TableHead.defaultProps = {
+  align: 'start',
+  disabled: false,
   expandable: false,
   icons: {},
   onOrderChange: null,
@@ -252,7 +268,6 @@ TableHead.defaultProps = {
   selectable: false,
   selected: false,
   theme: {},
-  disabled: false,
 }
 
 export default consumeTheme(TableHead)

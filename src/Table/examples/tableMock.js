@@ -5,7 +5,9 @@ import Button from '../../Button'
 const getMock = detailsClick => ({
   columns: [
     {
-      title: 'Status',
+      accessor: ['status'],
+      align: 'center',
+      orderable: true,
       renderer: item => (
         <div>
           <Legend
@@ -17,20 +19,70 @@ const getMock = detailsClick => ({
           </Legend>
         </div>
       ),
-      accessor: ['status'],
-      orderable: true,
+      title: 'Status',
     },
-    { title: 'Transaction ID', accessor: ['id'], orderable: true },
-    { title: 'Date', accessor: ['date_created'], orderable: true },
-    { title: 'Payment Method', accessor: ['payment_method'], orderable: true },
-    { title: 'Paid Amount', accessor: ['paid_amount'], orderable: true },
-    { title: 'Cost', accessor: ['cost'], orderable: true },
-    { title: 'Amount', accessor: ['amount'], orderable: true },
-    { title: 'E-mail', accessor: ['customer', 'email'], orderable: true },
-    { title: 'Antifraud Score', accessor: ['antifraud_score'], orderable: true },
-    { title: 'Installments', accessor: ['installments'], orderable: true },
-    { title: 'Name', accessor: ['customer', 'name'], orderable: true },
     {
+      accessor: ['id'],
+      align: 'start',
+      orderable: true,
+      title: 'Transaction ID',
+    },
+    {
+      accessor: ['date_created'],
+      align: 'center',
+      orderable: true,
+      title: 'Date',
+    },
+    {
+      accessor: ['payment_method'],
+      align: 'center',
+      orderable: true,
+      title: 'Payment Method',
+    },
+    {
+      accessor: ['paid_amount'],
+      align: 'end',
+      orderable: true,
+      title: 'Paid Amount',
+    },
+    {
+      accessor: ['cost'],
+      align: 'end',
+      orderable: true,
+      title: 'Cost',
+    },
+    {
+      accessor: ['amount'],
+      align: 'end',
+      orderable: true,
+      title: 'Amount',
+    },
+    {
+      accessor: ['customer', 'email'],
+      align: 'center',
+      orderable: true,
+      title: 'E-mail',
+    },
+    {
+      accessor: ['antifraud_score'],
+      align: 'center',
+      orderable: true,
+      title: 'Antifraud Score',
+    },
+    {
+      accessor: ['installments'],
+      align: 'center',
+      orderable: true,
+      title: 'Installments',
+    },
+    {
+      accessor: ['customer', 'name'],
+      align: 'start',
+      orderable: true,
+      title: 'Name',
+    },
+    {
+      align: 'center',
       title: 'Details',
       isAction: true,
       orderable: false,

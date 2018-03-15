@@ -150,7 +150,7 @@ class TableState extends Component {
       rows,
       selectedRows,
     } = this.state
-    const onRowClick = clickableRow ? this.handleRowClick : null
+    const onRowClick = clickableRow && !simple ? this.handleRowClick : null
     const maxColumns = expandable ? 6 : 7
     const columnWithEmptyRenderer = {
       title: 'empty',
