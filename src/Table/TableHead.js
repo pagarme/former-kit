@@ -90,12 +90,13 @@ class TableHead extends Component {
           key={`header_column_${index + 1}`}
           className={columnClasses}
         >
-          <div className={classNames(
-              {
-                [theme[`${align}Align`]]: !orderable,
-              },
-              theme.tableHeadItem
-            )}
+          <div
+            className={classNames(
+                {
+                  [theme[`${align}Align`]]: !orderable,
+                },
+                theme.tableHeadItem
+              )}
           >
             {title}
           </div>
@@ -184,7 +185,7 @@ TableHead.propTypes = {
     disabled: string,
   }),
   /**
-   * Defines the cell's content alignment
+   * Defines the cell's content alignment.
   */
   align: oneOf(['center', 'start', 'end']),
   /**
@@ -192,20 +193,37 @@ TableHead.propTypes = {
    */
   columns: arrayOf(shape({
     /**
-     * It's the path for the cell value in the row object,
-     * it's required for orderable columns.
+     * The path for the cell value in the row object,
+     * required for orderable columns.
      */
     accessor: oneOfType([
       string,
       arrayOf(string),
     ]),
     /**
+     * Pure function which will receive the total accumulated and the current cell value.
+     * Its return will be rendered in the total row in the footer or it will
+     * be sent to the total renderer.
+     * @param {number} total - accumulated value for this column.
+     * @param {number} value - current cell value.
+     */
+    aggregator: func,
+    /**
+     * Defines the cell content alignment.
+     */
+    align: oneOf(['center', 'start', 'end']),
+    /**
      * Identify if it's an action column.
      */
     isAction: bool,
     /**
+     * Enables a column to be orderable.
+     */
+    orderable: bool,
+    /**
      * A custom function which will receive the row data object and should return
-     * a React element to be rendered in each cell bind to this column.
+     * a React element to be rendered in each cell bound to this column.
+     * @param {object} row - all row data.
      */
     renderer: func,
     /**
@@ -213,6 +231,17 @@ TableHead.propTypes = {
      * column data in the expandable rows.
      */
     title: string.isRequired,
+    /**
+     * Function responsible for creating a cell component to be added to the total
+     * row in the footer, works like the renderer prop.
+     * @param {object} row - all row data.
+     */
+    aggregationRenderer: func,
+    /**
+     * Text which will be used as title in the footer total row, when this prop is received
+     * the aggregator and aggregationRenderer props are ignored.
+     */
+    aggregationTitle: string,
   })).isRequired,
   /**
    * Add an expandable column in the header.
@@ -252,7 +281,7 @@ TableHead.propTypes = {
    */
   selected: bool,
   /**
-   * Disablez the click on orderable columns
+   * Disablez the click on orderable columns.
    */
   disabled: bool,
 }

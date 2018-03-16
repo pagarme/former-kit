@@ -10,6 +10,7 @@ storiesOf('Table', module)
       <TableState
         clickableRow
         simple
+        showAggregationRow
       />
     </Section>
   ))

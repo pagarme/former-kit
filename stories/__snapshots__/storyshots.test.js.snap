@@ -17164,10 +17164,10 @@ exports[`Storyshots Table Action column 1`] = `
               </div>
             </th>
             <th
-              className="leftAlign unselectable"
+              className="startAlign unselectable"
             >
               <div
-                className="leftAlign tableHeadItem"
+                className="startAlign tableHeadItem"
               >
                 Details
               </div>
@@ -17185,7 +17185,7 @@ exports[`Storyshots Table Action column 1`] = `
             tabIndex="0"
           >
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               <div
                 className={undefined}
@@ -17208,32 +17208,32 @@ exports[`Storyshots Table Action column 1`] = `
               </div>
             </td>
             <td
-              className="tableBodyItem startAlign"
+              className="tableItem startAlign"
             >
               2229597000
             </td>
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               23/09/2017 - 14:15h
             </td>
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               Boleto
             </td>
             <td
-              className="tableBodyItem endAlign"
+              className="tableItem endAlign"
             >
-              R$ 999.999.999,00
+              R$999.999.999,00
             </td>
             <td
-              className="tableBodyItem endAlign"
+              className="tableItem endAlign"
             >
-              R$ 100.000,00
+              R$100.000,00
             </td>
             <td
-              className="tableBodyItem centerAlign unselectable"
+              className="tableItem centerAlign unselectable"
             >
               <button
                 className="button outline light normalRelevance default"
@@ -17253,7 +17253,7 @@ exports[`Storyshots Table Action column 1`] = `
             tabIndex="0"
           >
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               <div
                 className={undefined}
@@ -17276,32 +17276,32 @@ exports[`Storyshots Table Action column 1`] = `
               </div>
             </td>
             <td
-              className="tableBodyItem startAlign"
+              className="tableItem startAlign"
             >
               2229597001
             </td>
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               23/09/2017 - 15:15h
             </td>
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               Credit card
             </td>
             <td
-              className="tableBodyItem endAlign"
+              className="tableItem endAlign"
             >
-              R$ 100.000,00
+              R$100.000,00
             </td>
             <td
-              className="tableBodyItem endAlign"
+              className="tableItem endAlign"
             >
-              R$ 12.000,00
+              R$12.000,00
             </td>
             <td
-              className="tableBodyItem centerAlign unselectable"
+              className="tableItem centerAlign unselectable"
             >
               <button
                 className="button outline light normalRelevance default"
@@ -17321,7 +17321,7 @@ exports[`Storyshots Table Action column 1`] = `
             tabIndex="0"
           >
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               <div
                 className={undefined}
@@ -17344,32 +17344,32 @@ exports[`Storyshots Table Action column 1`] = `
               </div>
             </td>
             <td
-              className="tableBodyItem startAlign"
+              className="tableItem startAlign"
             >
               2229597003
             </td>
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               23/09/2017 - 16:15h
             </td>
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               Credit card
             </td>
             <td
-              className="tableBodyItem endAlign"
+              className="tableItem endAlign"
             >
-              R$ 100.000,00
+              R$100.000,00
             </td>
             <td
-              className="tableBodyItem endAlign"
+              className="tableItem endAlign"
             >
-              R$ 13.000,00
+              R$13.000,00
             </td>
             <td
-              className="tableBodyItem centerAlign unselectable"
+              className="tableItem centerAlign unselectable"
             >
               <button
                 className="button outline light normalRelevance default"
@@ -17389,7 +17389,7 @@ exports[`Storyshots Table Action column 1`] = `
             tabIndex="0"
           >
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               <div
                 className={undefined}
@@ -17412,38 +17412,38 @@ exports[`Storyshots Table Action column 1`] = `
               </div>
             </td>
             <td
-              className="tableBodyItem startAlign"
+              className="tableItem startAlign"
             >
               2229597004
             </td>
             <td
-              className="tableBodyItem"
+              className="tableItem"
             >
               <span
                 className="empty unselectable"
               />
             </td>
             <td
-              className="tableBodyItem"
+              className="tableItem"
             >
               <span
                 className="empty unselectable"
               />
             </td>
             <td
-              className="tableBodyItem"
+              className="tableItem endAlign"
             >
               <span
                 className="empty unselectable"
               />
             </td>
             <td
-              className="tableBodyItem endAlign"
+              className="tableItem endAlign"
             >
-              R$ 14.000,00
+              R$14.000,00
             </td>
             <td
-              className="tableBodyItem centerAlign unselectable"
+              className="tableItem centerAlign unselectable"
             >
               <button
                 className="button outline light normalRelevance default"
@@ -17652,7 +17652,7 @@ exports[`Storyshots Table Disabled orderable 1`] = `
               </div>
             </td>
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               <div
                 className={undefined}
@@ -17675,29 +17675,29 @@ exports[`Storyshots Table Disabled orderable 1`] = `
               </div>
             </td>
             <td
-              className="tableBodyItem startAlign"
+              className="tableItem startAlign"
             >
               2229597000
             </td>
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               23/09/2017 - 14:15h
             </td>
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               Boleto
             </td>
             <td
-              className="tableBodyItem endAlign"
+              className="tableItem endAlign"
             >
-              R$ 999.999.999,00
+              R$999.999.999,00
             </td>
             <td
-              className="tableBodyItem endAlign"
+              className="tableItem endAlign"
             >
-              R$ 100.000,00
+              R$100.000,00
             </td>
             <td
               className="open unselectable"
@@ -17732,11 +17732,7 @@ exports[`Storyshots Table Disabled orderable 1`] = `
                       >
                         Amount
                       </span>
-                      <span
-                        className="text"
-                      >
-                        R$ 999.999.999,00
-                      </span>
+                      R$999.999.999,00
                     </div>
                   </li>
                   <li>
@@ -17881,7 +17877,7 @@ exports[`Storyshots Table Disabled orderable 1`] = `
               </div>
             </td>
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               <div
                 className={undefined}
@@ -17904,29 +17900,29 @@ exports[`Storyshots Table Disabled orderable 1`] = `
               </div>
             </td>
             <td
-              className="tableBodyItem startAlign"
+              className="tableItem startAlign"
             >
               2229597001
             </td>
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               23/09/2017 - 15:15h
             </td>
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               Credit card
             </td>
             <td
-              className="tableBodyItem endAlign"
+              className="tableItem endAlign"
             >
-              R$ 100.000,00
+              R$100.000,00
             </td>
             <td
-              className="tableBodyItem endAlign"
+              className="tableItem endAlign"
             >
-              R$ 12.000,00
+              R$12.000,00
             </td>
             <td
               className="open unselectable"
@@ -17961,11 +17957,7 @@ exports[`Storyshots Table Disabled orderable 1`] = `
                       >
                         Amount
                       </span>
-                      <span
-                        className="text"
-                      >
-                        R$ 400.000,00
-                      </span>
+                      R$400.000,00
                     </div>
                   </li>
                   <li>
@@ -18028,7 +18020,7 @@ exports[`Storyshots Table Disabled orderable 1`] = `
                       <span
                         className="text"
                       >
-                        null of undefined of NaN
+                        undefined is not a function
                       </span>
                     </div>
                   </li>
@@ -18119,7 +18111,7 @@ exports[`Storyshots Table Disabled orderable 1`] = `
               </div>
             </td>
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               <div
                 className={undefined}
@@ -18142,29 +18134,29 @@ exports[`Storyshots Table Disabled orderable 1`] = `
               </div>
             </td>
             <td
-              className="tableBodyItem startAlign"
+              className="tableItem startAlign"
             >
               2229597003
             </td>
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               23/09/2017 - 16:15h
             </td>
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               Credit card
             </td>
             <td
-              className="tableBodyItem endAlign"
+              className="tableItem endAlign"
             >
-              R$ 100.000,00
+              R$100.000,00
             </td>
             <td
-              className="tableBodyItem endAlign"
+              className="tableItem endAlign"
             >
-              R$ 13.000,00
+              R$13.000,00
             </td>
             <td
               className="open unselectable"
@@ -18199,11 +18191,7 @@ exports[`Storyshots Table Disabled orderable 1`] = `
                       >
                         Amount
                       </span>
-                      <span
-                        className="text"
-                      >
-                        R$ 500.000,00
-                      </span>
+                      R$500.000,00
                     </div>
                   </li>
                   <li>
@@ -18357,7 +18345,7 @@ exports[`Storyshots Table Disabled orderable 1`] = `
               </div>
             </td>
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               <div
                 className={undefined}
@@ -18380,35 +18368,35 @@ exports[`Storyshots Table Disabled orderable 1`] = `
               </div>
             </td>
             <td
-              className="tableBodyItem startAlign"
+              className="tableItem startAlign"
             >
               2229597004
             </td>
             <td
-              className="tableBodyItem"
+              className="tableItem"
             >
               <span
                 className="empty unselectable"
               />
             </td>
             <td
-              className="tableBodyItem"
+              className="tableItem"
             >
               <span
                 className="empty unselectable"
               />
             </td>
             <td
-              className="tableBodyItem"
+              className="tableItem endAlign"
             >
               <span
                 className="empty unselectable"
               />
             </td>
             <td
-              className="tableBodyItem endAlign"
+              className="tableItem endAlign"
             >
-              R$ 14.000,00
+              R$14.000,00
             </td>
             <td
               className="open unselectable"
@@ -18443,11 +18431,7 @@ exports[`Storyshots Table Disabled orderable 1`] = `
                       >
                         Amount
                       </span>
-                      <span
-                        className="text"
-                      >
-                        R$ 600.000,00
-                      </span>
+                      R$600.000,00
                     </div>
                   </li>
                   <li>
@@ -18508,7 +18492,7 @@ exports[`Storyshots Table Disabled orderable 1`] = `
                       <span
                         className="text"
                       >
-                        null of undefined of NaN
+                        Cannot read property "name" of undefined
                       </span>
                     </div>
                   </li>
@@ -18606,10 +18590,10 @@ exports[`Storyshots Table Empty renderer column 1`] = `
         >
           <tr>
             <th
-              className="leftAlign active"
+              className="startAlign active"
             >
               <div
-                className="leftAlign tableHeadItem"
+                className="startAlign tableHeadItem"
               >
                 empty
               </div>
@@ -18741,14 +18725,14 @@ exports[`Storyshots Table Empty renderer column 1`] = `
             tabIndex="0"
           >
             <td
-              className="tableBodyItem undefinedAlign"
+              className="tableItem undefinedAlign"
             >
               <span
                 className="empty unselectable"
               />
             </td>
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               <div
                 className={undefined}
@@ -18771,29 +18755,29 @@ exports[`Storyshots Table Empty renderer column 1`] = `
               </div>
             </td>
             <td
-              className="tableBodyItem startAlign"
+              className="tableItem startAlign"
             >
               2229597000
             </td>
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               23/09/2017 - 14:15h
             </td>
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               Boleto
             </td>
             <td
-              className="tableBodyItem endAlign"
+              className="tableItem endAlign"
             >
-              R$ 999.999.999,00
+              R$999.999.999,00
             </td>
             <td
-              className="tableBodyItem endAlign"
+              className="tableItem endAlign"
             >
-              R$ 100.000,00
+              R$100.000,00
             </td>
           </tr>
           <tr
@@ -18804,14 +18788,14 @@ exports[`Storyshots Table Empty renderer column 1`] = `
             tabIndex="0"
           >
             <td
-              className="tableBodyItem undefinedAlign"
+              className="tableItem undefinedAlign"
             >
               <span
                 className="empty unselectable"
               />
             </td>
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               <div
                 className={undefined}
@@ -18834,29 +18818,29 @@ exports[`Storyshots Table Empty renderer column 1`] = `
               </div>
             </td>
             <td
-              className="tableBodyItem startAlign"
+              className="tableItem startAlign"
             >
               2229597001
             </td>
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               23/09/2017 - 15:15h
             </td>
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               Credit card
             </td>
             <td
-              className="tableBodyItem endAlign"
+              className="tableItem endAlign"
             >
-              R$ 100.000,00
+              R$100.000,00
             </td>
             <td
-              className="tableBodyItem endAlign"
+              className="tableItem endAlign"
             >
-              R$ 12.000,00
+              R$12.000,00
             </td>
           </tr>
           <tr
@@ -18867,14 +18851,14 @@ exports[`Storyshots Table Empty renderer column 1`] = `
             tabIndex="0"
           >
             <td
-              className="tableBodyItem undefinedAlign"
+              className="tableItem undefinedAlign"
             >
               <span
                 className="empty unselectable"
               />
             </td>
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               <div
                 className={undefined}
@@ -18897,29 +18881,29 @@ exports[`Storyshots Table Empty renderer column 1`] = `
               </div>
             </td>
             <td
-              className="tableBodyItem startAlign"
+              className="tableItem startAlign"
             >
               2229597003
             </td>
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               23/09/2017 - 16:15h
             </td>
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               Credit card
             </td>
             <td
-              className="tableBodyItem endAlign"
+              className="tableItem endAlign"
             >
-              R$ 100.000,00
+              R$100.000,00
             </td>
             <td
-              className="tableBodyItem endAlign"
+              className="tableItem endAlign"
             >
-              R$ 13.000,00
+              R$13.000,00
             </td>
           </tr>
           <tr
@@ -18930,14 +18914,14 @@ exports[`Storyshots Table Empty renderer column 1`] = `
             tabIndex="0"
           >
             <td
-              className="tableBodyItem undefinedAlign"
+              className="tableItem undefinedAlign"
             >
               <span
                 className="empty unselectable"
               />
             </td>
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               <div
                 className={undefined}
@@ -18960,35 +18944,35 @@ exports[`Storyshots Table Empty renderer column 1`] = `
               </div>
             </td>
             <td
-              className="tableBodyItem startAlign"
+              className="tableItem startAlign"
             >
               2229597004
             </td>
             <td
-              className="tableBodyItem"
+              className="tableItem"
             >
               <span
                 className="empty unselectable"
               />
             </td>
             <td
-              className="tableBodyItem"
+              className="tableItem"
             >
               <span
                 className="empty unselectable"
               />
             </td>
             <td
-              className="tableBodyItem"
+              className="tableItem endAlign"
             >
               <span
                 className="empty unselectable"
               />
             </td>
             <td
-              className="tableBodyItem endAlign"
+              className="tableItem endAlign"
             >
-              R$ 14.000,00
+              R$14.000,00
             </td>
           </tr>
         </tbody>
@@ -19197,7 +19181,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
               </div>
             </td>
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               <div
                 className={undefined}
@@ -19220,29 +19204,29 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
               </div>
             </td>
             <td
-              className="tableBodyItem startAlign"
+              className="tableItem startAlign"
             >
               2229597000
             </td>
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               23/09/2017 - 14:15h
             </td>
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               Boleto
             </td>
             <td
-              className="tableBodyItem endAlign"
+              className="tableItem endAlign"
             >
-              R$ 999.999.999,00
+              R$999.999.999,00
             </td>
             <td
-              className="tableBodyItem endAlign"
+              className="tableItem endAlign"
             >
-              R$ 100.000,00
+              R$100.000,00
             </td>
             <td
               className="open unselectable"
@@ -19279,11 +19263,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                       >
                         Amount
                       </span>
-                      <span
-                        className="text"
-                      >
-                        R$ 999.999.999,00
-                      </span>
+                      R$999.999.999,00
                     </div>
                   </li>
                   <li>
@@ -19431,7 +19411,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
               </div>
             </td>
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               <div
                 className={undefined}
@@ -19454,29 +19434,29 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
               </div>
             </td>
             <td
-              className="tableBodyItem startAlign"
+              className="tableItem startAlign"
             >
               2229597001
             </td>
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               23/09/2017 - 15:15h
             </td>
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               Credit card
             </td>
             <td
-              className="tableBodyItem endAlign"
+              className="tableItem endAlign"
             >
-              R$ 100.000,00
+              R$100.000,00
             </td>
             <td
-              className="tableBodyItem endAlign"
+              className="tableItem endAlign"
             >
-              R$ 12.000,00
+              R$12.000,00
             </td>
             <td
               className="open unselectable"
@@ -19513,11 +19493,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                       >
                         Amount
                       </span>
-                      <span
-                        className="text"
-                      >
-                        R$ 400.000,00
-                      </span>
+                      R$400.000,00
                     </div>
                   </li>
                   <li>
@@ -19580,7 +19556,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                       <span
                         className="text"
                       >
-                        null of undefined of NaN
+                        undefined is not a function
                       </span>
                     </div>
                   </li>
@@ -19674,7 +19650,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
               </div>
             </td>
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               <div
                 className={undefined}
@@ -19697,29 +19673,29 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
               </div>
             </td>
             <td
-              className="tableBodyItem startAlign"
+              className="tableItem startAlign"
             >
               2229597003
             </td>
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               23/09/2017 - 16:15h
             </td>
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               Credit card
             </td>
             <td
-              className="tableBodyItem endAlign"
+              className="tableItem endAlign"
             >
-              R$ 100.000,00
+              R$100.000,00
             </td>
             <td
-              className="tableBodyItem endAlign"
+              className="tableItem endAlign"
             >
-              R$ 13.000,00
+              R$13.000,00
             </td>
             <td
               className="open unselectable"
@@ -19756,11 +19732,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                       >
                         Amount
                       </span>
-                      <span
-                        className="text"
-                      >
-                        R$ 500.000,00
-                      </span>
+                      R$500.000,00
                     </div>
                   </li>
                   <li>
@@ -19917,7 +19889,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
               </div>
             </td>
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               <div
                 className={undefined}
@@ -19940,35 +19912,35 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
               </div>
             </td>
             <td
-              className="tableBodyItem startAlign"
+              className="tableItem startAlign"
             >
               2229597004
             </td>
             <td
-              className="tableBodyItem"
+              className="tableItem"
             >
               <span
                 className="empty unselectable"
               />
             </td>
             <td
-              className="tableBodyItem"
+              className="tableItem"
             >
               <span
                 className="empty unselectable"
               />
             </td>
             <td
-              className="tableBodyItem"
+              className="tableItem endAlign"
             >
               <span
                 className="empty unselectable"
               />
             </td>
             <td
-              className="tableBodyItem endAlign"
+              className="tableItem endAlign"
             >
-              R$ 14.000,00
+              R$14.000,00
             </td>
             <td
               className="open unselectable"
@@ -20005,11 +19977,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                       >
                         Amount
                       </span>
-                      <span
-                        className="text"
-                      >
-                        R$ 600.000,00
-                      </span>
+                      R$600.000,00
                     </div>
                   </li>
                   <li>
@@ -20070,7 +20038,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                       <span
                         className="text"
                       >
-                        null of undefined of NaN
+                        Cannot read property "name" of undefined
                       </span>
                     </div>
                   </li>
@@ -20168,64 +20136,64 @@ exports[`Storyshots Table Simple 1`] = `
         >
           <tr>
             <th
-              className="leftAlign"
+              className="startAlign"
             >
               <div
-                className="leftAlign tableHeadItem"
+                className="startAlign tableHeadItem"
               >
                 Status
               </div>
             </th>
             <th
-              className="leftAlign"
+              className="startAlign"
             >
               <div
-                className="leftAlign tableHeadItem"
+                className="startAlign tableHeadItem"
               >
                 Transaction ID
               </div>
             </th>
             <th
-              className="leftAlign"
+              className="startAlign"
             >
               <div
-                className="leftAlign tableHeadItem"
+                className="startAlign tableHeadItem"
               >
                 Date
               </div>
             </th>
             <th
-              className="leftAlign"
+              className="startAlign"
             >
               <div
-                className="leftAlign tableHeadItem"
+                className="startAlign tableHeadItem"
               >
                 Payment Method
               </div>
             </th>
             <th
-              className="leftAlign"
+              className="startAlign"
             >
               <div
-                className="leftAlign tableHeadItem"
+                className="startAlign tableHeadItem"
               >
                 Paid Amount
               </div>
             </th>
             <th
-              className="leftAlign"
+              className="startAlign"
             >
               <div
-                className="leftAlign tableHeadItem"
+                className="startAlign tableHeadItem"
               >
                 Cost
               </div>
             </th>
             <th
-              className="leftAlign"
+              className="startAlign"
             >
               <div
-                className="leftAlign tableHeadItem"
+                className="startAlign tableHeadItem"
               >
                 Amount
               </div>
@@ -20243,7 +20211,7 @@ exports[`Storyshots Table Simple 1`] = `
             tabIndex="0"
           >
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               <div
                 className={undefined}
@@ -20266,34 +20234,34 @@ exports[`Storyshots Table Simple 1`] = `
               </div>
             </td>
             <td
-              className="tableBodyItem startAlign"
+              className="tableItem startAlign"
             >
               2229597000
             </td>
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               23/09/2017 - 14:15h
             </td>
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               Boleto
             </td>
             <td
-              className="tableBodyItem endAlign"
+              className="tableItem endAlign"
             >
-              R$ 999.999.999,00
+              R$999.999.999,00
             </td>
             <td
-              className="tableBodyItem endAlign"
+              className="tableItem endAlign"
             >
-              R$ 100.000,00
+              R$100.000,00
             </td>
             <td
-              className="tableBodyItem endAlign"
+              className="tableItem endAlign"
             >
-              R$ 999.999.999,00
+              R$999.999.999,00
             </td>
           </tr>
           <tr
@@ -20304,7 +20272,7 @@ exports[`Storyshots Table Simple 1`] = `
             tabIndex="0"
           >
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               <div
                 className={undefined}
@@ -20327,34 +20295,34 @@ exports[`Storyshots Table Simple 1`] = `
               </div>
             </td>
             <td
-              className="tableBodyItem startAlign"
+              className="tableItem startAlign"
             >
               2229597001
             </td>
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               23/09/2017 - 15:15h
             </td>
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               Credit card
             </td>
             <td
-              className="tableBodyItem endAlign"
+              className="tableItem endAlign"
             >
-              R$ 100.000,00
+              R$100.000,00
             </td>
             <td
-              className="tableBodyItem endAlign"
+              className="tableItem endAlign"
             >
-              R$ 12.000,00
+              R$12.000,00
             </td>
             <td
-              className="tableBodyItem endAlign"
+              className="tableItem endAlign"
             >
-              R$ 400.000,00
+              R$400.000,00
             </td>
           </tr>
           <tr
@@ -20365,7 +20333,7 @@ exports[`Storyshots Table Simple 1`] = `
             tabIndex="0"
           >
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               <div
                 className={undefined}
@@ -20388,34 +20356,34 @@ exports[`Storyshots Table Simple 1`] = `
               </div>
             </td>
             <td
-              className="tableBodyItem startAlign"
+              className="tableItem startAlign"
             >
               2229597003
             </td>
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               23/09/2017 - 16:15h
             </td>
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               Credit card
             </td>
             <td
-              className="tableBodyItem endAlign"
+              className="tableItem endAlign"
             >
-              R$ 100.000,00
+              R$100.000,00
             </td>
             <td
-              className="tableBodyItem endAlign"
+              className="tableItem endAlign"
             >
-              R$ 13.000,00
+              R$13.000,00
             </td>
             <td
-              className="tableBodyItem endAlign"
+              className="tableItem endAlign"
             >
-              R$ 500.000,00
+              R$500.000,00
             </td>
           </tr>
           <tr
@@ -20426,7 +20394,7 @@ exports[`Storyshots Table Simple 1`] = `
             tabIndex="0"
           >
             <td
-              className="tableBodyItem centerAlign"
+              className="tableItem centerAlign"
             >
               <div
                 className={undefined}
@@ -20449,43 +20417,80 @@ exports[`Storyshots Table Simple 1`] = `
               </div>
             </td>
             <td
-              className="tableBodyItem startAlign"
+              className="tableItem startAlign"
             >
               2229597004
             </td>
             <td
-              className="tableBodyItem"
+              className="tableItem"
             >
               <span
                 className="empty unselectable"
               />
             </td>
             <td
-              className="tableBodyItem"
+              className="tableItem"
             >
               <span
                 className="empty unselectable"
               />
             </td>
             <td
-              className="tableBodyItem"
+              className="tableItem endAlign"
             >
               <span
                 className="empty unselectable"
               />
             </td>
             <td
-              className="tableBodyItem endAlign"
+              className="tableItem endAlign"
             >
-              R$ 14.000,00
+              R$14.000,00
             </td>
             <td
-              className="tableBodyItem endAlign"
+              className="tableItem endAlign"
             >
-              R$ 600.000,00
+              R$600.000,00
             </td>
           </tr>
         </tbody>
+        <tfoot
+          className="tableFooter"
+        >
+          <tr
+            className="even"
+          >
+            <td
+              className="centerAlign tableItem footerCell titleFooterCell"
+            >
+              Total
+            </td>
+            <td
+              className="tableItem"
+            />
+            <td
+              className="tableItem"
+            />
+            <td
+              className="tableItem"
+            />
+            <td
+              className="endAlign footerCell tableItem"
+            >
+              R$1.000.199.999,00
+            </td>
+            <td
+              className="endAlign footerCell tableItem"
+            >
+              R$139.000,00
+            </td>
+            <td
+              className="endAlign footerCell tableItem"
+            >
+              R$1.001.499.999,00
+            </td>
+          </tr>
+        </tfoot>
       </table>
       <div
         className={undefined}

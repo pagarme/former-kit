@@ -17,11 +17,14 @@ import {
   contains,
   drop,
   equals,
+  has,
   ifElse,
+  isEmpty,
   isNil,
   mapObjIndexed,
   modulo,
   not,
+  path,
   pipe,
   prop,
   take,
@@ -33,6 +36,7 @@ import ThemeConsumer from '../ThemeConsumer'
 import TableHead from './TableHead'
 import TableRow from './TableRow'
 import TableExpandedRow from './TableExpandedRow'
+import TableAggregationRow from './TableAggregationRow'
 
 const consumeTheme = ThemeConsumer('UITable')
 
@@ -123,6 +127,38 @@ const validateOrderableFunction = (props, propName) => {
   }
 }
 
+const hasTotals = pipe(isEmpty, not)
+
+const renderTotals = (totals, columns) => {
+  if (hasTotals(totals)) {
+    return (
+      <TableAggregationRow
+        columns={columns}
+        totals={totals}
+      />
+    )
+  }
+
+  return null
+}
+
+const hasAggregator = has('aggregator')
+
+const getColumnAccumulator = ifElse(
+  hasAggregator,
+  prop('aggregator'),
+  always(null)
+)
+
+const getRowTotal = (row, column, total) => {
+  const acc = getColumnAccumulator(column)
+  if (acc) {
+    const columnData = path(column.accessor, row)
+    return acc(total, columnData)
+  }
+  return null
+}
+
 /**
  * This component is designed to show tabular data with some customizations,
  * allowing the user to sort, select and click rows, also show rows details
@@ -204,6 +240,48 @@ class Table extends Component {
     const { onRowClick } = this.props
     if (onRowClick) {
       onRowClick(rowIndex)
+    }
+  }
+
+  accumulateRowTotals (row, totals) {
+    const { columns } = this.props
+
+    return totals.map((total, index) => (
+      getRowTotal(row, columns[index], total)
+    ))
+  }
+
+  buildContent () {
+    const {
+      columns,
+      maxColumns,
+      rows,
+      showAggregationRow,
+    } = this.props
+
+    if (not(showAggregationRow)) {
+      return {
+        contentRows: rows.map(this.renderRow),
+      }
+    }
+
+    const accumulate = (previous = {}, row, index) => {
+      const {
+        totals = Array.from({ length: maxColumns }),
+        contentRows = [],
+      } = previous
+
+      return {
+        totals: this.accumulateRowTotals(row, totals),
+        contentRows: append(this.renderRow(row, index), contentRows),
+      }
+    }
+
+    const { totals, contentRows } = rows.reduce(accumulate, {})
+
+    return {
+      aggregationRow: renderTotals(totals, columns),
+      contentRows,
     }
   }
 
@@ -307,10 +385,19 @@ class Table extends Component {
       selectedRows,
       theme,
     } = this.props
-    const { ascending, descending, orderable } = icons
+    const {
+      ascending,
+      descending,
+      orderable,
+    } = icons
+    const {
+      aggregationRow,
+      contentRows,
+    } = this.buildContent()
     const allSelected = selectedRows.length === rows.length
     const tableClasses = classNames(className, theme.table)
     const hasOrderChange = not(isNil(onOrderChange))
+
     return (
       <table className={tableClasses}>
         <TableHead
@@ -331,10 +418,14 @@ class Table extends Component {
           selected={allSelected}
         />
         <tbody className={theme.tableBody}>
-          {
-            rows.map(this.renderRow)
-          }
+          { contentRows }
         </tbody>
+        {
+          aggregationRow &&
+          <tfoot className={theme.tableFooter}>
+            { aggregationRow }
+          </tfoot>
+        }
       </table>
     )
   }
@@ -368,7 +459,15 @@ Table.propTypes = {
       arrayOf(string),
     ]),
     /**
-     * Defines the cell content alignment
+     * Pure function which will receive the total accumulated and the current cell value.
+     * Its return will be rendered in the total row in the footer or it will
+     * be sent to the total renderer.
+     * @param {number} total - accumulated value for this column
+     * @param {number} value - current cell value
+     */
+    aggregator: func,
+    /**
+     * Defines the cell content alignment.
      */
     align: oneOf(['center', 'start', 'end']),
     /**
@@ -382,6 +481,7 @@ Table.propTypes = {
     /**
      * A custom function which will receive the row data object and should return
      * a React element to be rendered in each cell bound to this column.
+     * @param {object} row - all row data
      */
     renderer: func,
     /**
@@ -389,6 +489,17 @@ Table.propTypes = {
      * column data in the expandable rows.
      */
     title: string.isRequired,
+    /**
+     * Function responsible for creating a cell component to be added to the total
+     * row in the footer, works like the renderer prop.
+     * @param {object} row - all row data
+     */
+    aggregationRenderer: func,
+    /**
+     * Text which will be used as title in the footer total row, when this prop is received
+     * the aggregator and aggregationRenderer props are ignored.
+     */
+    aggregationTitle: string,
   })).isRequired,
   /**
    * Enables the expandable column in the table which allows the user to see all of the remaining
@@ -401,7 +512,7 @@ Table.propTypes = {
   expandedRows: arrayOf(number),
   /**
    * Defines the header cell's content alignment when
-   * the columns aren't orderable
+   * the columns aren't orderable.
    */
   headerAlign: oneOf(['center', 'start', 'end']),
   /**
@@ -458,9 +569,14 @@ Table.propTypes = {
    */
   selectedRows: arrayOf(number),
   /**
-   * Disable all table functions
+   * Disable all table functions.
    */
   disabled: bool,
+  /**
+   * Enables the aggregation row, this attribute is bound to the columns data that must
+   * have the properties aggregationRenderer and aggregator or aggregationTitle
+   */
+  showAggregationRow: bool,
 }
 
 Table.defaultProps = {
@@ -468,7 +584,7 @@ Table.defaultProps = {
   disabled: false,
   expandable: false,
   expandedRows: [],
-  headerAlign: 'left',
+  headerAlign: 'start',
   icons: {},
   maxColumns: 7,
   onExpandRow: null,
@@ -479,6 +595,7 @@ Table.defaultProps = {
   orderSequence: 'ascending',
   selectable: false,
   selectedRows: [],
+  showAggregationRow: false,
   theme: {},
 }
 

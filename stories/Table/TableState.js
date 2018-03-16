@@ -138,6 +138,7 @@ class TableState extends Component {
       expandable,
       hasEmptyRenderer,
       selectable,
+      showAggregationRow,
       simple,
     } = this.props
     const {
@@ -167,19 +168,20 @@ class TableState extends Component {
             ? prepend(columnWithEmptyRenderer, columns)
             : columns
           }
+          disabled={disabled}
+          expandable={expandable}
+          expandedRows={expandedRows}
+          maxColumns={maxColumns}
+          onExpandRow={this.handleExpandRow}
+          onOrderChange={onOrderChange}
+          onRowClick={onRowClick}
+          onSelectRow={this.handleSelectRow}
+          orderColumn={orderColumn}
+          orderSequence={order}
           rows={rows}
           selectable={selectable}
-          expandable={expandable}
           selectedRows={selectedRows}
-          expandedRows={expandedRows}
-          onOrderChange={onOrderChange}
-          onSelectRow={this.handleSelectRow}
-          orderSequence={order}
-          orderColumn={orderColumn}
-          onExpandRow={this.handleExpandRow}
-          onRowClick={onRowClick}
-          maxColumns={maxColumns}
-          disabled={disabled}
+          showAggregationRow={showAggregationRow}
         />
 
         <div className={style.texts}>

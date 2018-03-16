@@ -174,7 +174,6 @@ const mock = {
 
 const createComponents = ({
   columns = mock.columns,
-  visibleColumnsCount = 7,
   expandable = true,
   expandedRows = [],
   orderColumn = 0,
@@ -182,6 +181,8 @@ const createComponents = ({
   rows = mock.rows,
   selectable = true,
   selectedRows = [],
+  showAggregationRow = false,
+  visibleColumnsCount = 7,
 } = mock) => {
   const onExpandRow = jest.fn()
   const onOrderChange = jest.fn()
@@ -203,6 +204,7 @@ const createComponents = ({
       selectable={selectable}
       selectedRows={selectedRows}
       icons={icons}
+      showAggregationRow={showAggregationRow}
     />
   )
 
