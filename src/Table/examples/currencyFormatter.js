@@ -1,18 +1,24 @@
-import { isNil } from 'ramda'
+import {
+  __,
+  always,
+  divide,
+  ifElse,
+  isNil,
+  pipe,
+} from 'ramda'
 import Intl from 'intl'
 import 'intl/locale-data/jsonp/pt'
 
-const currency = (value) => {
-  if (isNil(value)) {
-    return null
-  }
 
-  const formatter = new Intl.NumberFormat('pt-BR', {
-    style: 'currency',
-    currency: 'BRL',
-  })
+const formatter = new Intl.NumberFormat('pt-BR', {
+  style: 'currency',
+  currency: 'BRL',
+})
 
-  return formatter.format(Number(value) / 100)
-}
+const currency = ifElse(
+  isNil,
+  always(null),
+  pipe(Number, divide(__, 100), formatter.format)
+)
 
 export default currency
