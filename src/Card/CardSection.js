@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import ThemeConsumer from '../ThemeConsumer'
+import Button from '../Button'
 
 const applyTheme = ThemeConsumer('UICard')
 
@@ -16,18 +17,31 @@ class CardSection extends Component {
     this.cardTitle = this.cardTitle.bind(this)
     this.arrowUpDown = this.arrowUpDown.bind(this)
     this.renderHeader = this.renderHeader.bind(this)
+    this.getArrowIcon = this.getArrowIcon.bind(this)
+  }
+
+  getArrowIcon () {
+    const {
+      collapsed,
+      icons: { expand, collapse },
+    } = this.props
+
+    if (collapsed) {
+      return expand
+    }
+
+    return collapse
   }
 
   cardTitle () {
     const { collapsedTitle, title, collapsed } = this.props
-    return collapsed ? collapsedTitle : title
+    return collapsed && collapsedTitle.length > 0 ? collapsedTitle : title
   }
 
   arrowUpDown () {
     const {
       onTitleClick,
       icons,
-      collapsed,
       theme,
     } = this.props
 
@@ -37,7 +51,7 @@ class CardSection extends Component {
 
     return (
       <span className={theme.arrow}>
-        {collapsed ? icons.expand : icons.collapse}
+        {this.getArrowIcon()}
       </span>
     )
   }
@@ -48,14 +62,8 @@ class CardSection extends Component {
       onTitleClick,
       collapsed,
       subtitle,
+      icon,
     } = this.props
-
-    const headerClassNames = classNames(
-      theme.sectionTitle,
-      {
-        [theme.clickableTitle]: onTitleClick,
-      }
-    )
 
     let headerProps = {}
 
@@ -67,9 +75,46 @@ class CardSection extends Component {
       }
     }
 
-    return (
+    const headerClassNames = classNames(
+      theme.sectionTitle,
+      {
+        [theme.clickableTitle]: onTitleClick,
+      }
+    )
+
+    const renderSectionWithIcon = () => (
+      <div className={headerClassNames} {...headerProps}>
+        <div className={theme.sectionTwoLineTitle}>
+          <span className={theme.sectionIconBox}>
+            {icon}
+          </span>
+          <span className={theme.sectionTitles}>
+            {this.cardTitle()}
+            {
+              (typeof subtitle === 'string') &&
+              <span className={theme.sectionSubtitle}>
+                {subtitle}
+              </span>
+            }
+          </span>
+        </div>
+        {
+          <Button
+            type="button"
+            fill="outline"
+            size="default"
+            relevance="low"
+            onClick={this.handleExpand}
+            icon={this.getArrowIcon()}
+          />
+        }
+      </div>
+    )
+
+    const renderSectionWithoutIcon = () => (
       <div className={headerClassNames} {...headerProps}>
         <span>
+          {icon}
           {this.cardTitle()}
           {this.arrowUpDown()}
         </span>
@@ -85,6 +130,13 @@ class CardSection extends Component {
         }
       </div>
     )
+
+    return icon ? renderSectionWithIcon() : renderSectionWithoutIcon()
+  }
+
+  renderDivider () {
+    const { theme, icon } = this.props
+    return icon ? (<hr className={theme.divider} />) : null
   }
 
   render () {
@@ -102,11 +154,13 @@ class CardSection extends Component {
       }
     )
 
+
     return (
       <div className={sectionClassNames}>
         {this.renderHeader()}
         {!collapsed &&
           <div className={theme.sectionContent}>
+            {this.renderDivider()}
             {children}
           </div>
         }
@@ -129,6 +183,10 @@ CardSection.propTypes = {
     expanded: PropTypes.string,
     collapsed: PropTypes.string,
     arrow: PropTypes.string,
+    sectionTwoLineTitle: PropTypes.string,
+    divider: PropTypes.string,
+    sectionIconBox: PropTypes.string,
+    sectionTitles: PropTypes.string,
   }),
   /**
    * Default icons received by theme. These icons are used in the toggle function
@@ -138,6 +196,10 @@ CardSection.propTypes = {
     collapse: PropTypes.element,
     expand: PropTypes.element,
   }),
+  /**
+   * Section Icon that appears in the top left hand corner of the section tittle
+   */
+  icon: PropTypes.element,
   /**
    * Title in the top of the section that appears when the content is not collapsed.
    */
@@ -173,6 +235,7 @@ CardSection.defaultProps = {
   onTitleClick: null,
   subtitle: null,
   icons: {},
+  icon: null,
 }
 
 export default applyTheme(CardSection)
