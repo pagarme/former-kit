@@ -32,6 +32,7 @@ const Legend = ({
   acronym,
   hideLabel,
   theme,
+  className,
 }) => {
   const labelClasses = cx(
     theme.acronym,
@@ -41,7 +42,7 @@ const Legend = ({
   )
 
   return (
-    <div className={theme.legend}>
+    <div className={cx(theme.legend, className)}>
       <abbr
         title={children}
         className={labelClasses}
@@ -68,6 +69,10 @@ Legend.propTypes = {
     legend: PropTypes.string,
     text: PropTypes.string,
   }),
+  /**
+   * Additional class.
+   */
+  className: PropTypes.string,
   /**
    * The color of the Legend.
    */
@@ -96,6 +101,7 @@ Legend.defaultProps = {
   outline: false,
   acronym: '',
   hideLabel: false,
+  className: '',
 }
 
 export default consumeTheme(Legend)
