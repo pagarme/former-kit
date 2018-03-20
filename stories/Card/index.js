@@ -1,9 +1,11 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import Section from '../Section'
 import CardExamples from './CardExamples'
-import CardSectionWithIcon from './CardSectionWithIcon'
+import CardSectionDoubleLineTitle from './CardSectionDoubleLineTitle'
+import CardSectionTitle from './CardSectionTitle'
+import CardSectionTitleBottom from './CardSectionTitleBottom'
+import Section from '../Section'
 
 storiesOf('Cards', module)
   .add('Default', () => (
@@ -26,14 +28,17 @@ storiesOf('Cards', module)
       <Section title="Title on event handler">
         <CardExamples.TitleTextAdvanced />
       </Section>
-      <Section title="Card section with collapsible content">
-        <CardExamples.CollapsableSection />
-      </Section>
       <Section title="Simple card section">
         <CardExamples.SimpleSection />
       </Section>
+      <Section title="Card section with collapsible content">
+        <CardSectionTitle />
+      </Section>
+      <Section title="Card section with collapsible content and expanded title at bottom">
+        <CardSectionTitleBottom />
+      </Section>
       <Section title="Card section with icon on the left">
-        <CardSectionWithIcon />
+        <CardSectionDoubleLineTitle />
       </Section>
     </div>
   ))

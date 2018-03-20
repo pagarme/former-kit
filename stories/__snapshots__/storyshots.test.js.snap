@@ -1168,77 +1168,6 @@ exports[`Storyshots Cards Default 1`] = `
     className=""
   >
     <h2>
-      Card section with collapsible content
-    </h2>
-    <div>
-      <div
-        className={undefined}
-      >
-        <div
-          className="card"
-        >
-          <div
-            className="title"
-          >
-            <h2>
-              Lorem title
-            </h2>
-            <h3>
-              
-            </h3>
-          </div>
-          <div
-            className="content"
-          >
-            <div
-              className="section expanded"
-            >
-              <div
-                className="sectionTitle clickableTitle"
-                onClick={[Function]}
-                role="button"
-                tabIndex="0"
-              >
-                <span>
-                  Title opened
-                  <span
-                    className="arrow"
-                  >
-                    <svg />
-                  </span>
-                </span>
-                <span
-                  className="sectionSubtitle"
-                >
-                  It's over 9000!
-                </span>
-              </div>
-              <div
-                className="sectionContent"
-              >
-                <div
-                  className="content"
-                >
-                  
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel
-blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan.
-In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis
-sapien vel malesuada sodales. Curabitur hendrerit purus sed ex
-feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section
-    className=""
-  >
-    <h2>
       Simple card section
     </h2>
     <div>
@@ -1262,7 +1191,7 @@ feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
             className="content"
           >
             <div
-              className="section expanded"
+              className="section"
             >
               <div
                 className="sectionTitle"
@@ -1272,12 +1201,9 @@ feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
                 </span>
               </div>
               <div
-                className="sectionContent"
+                className="content"
               >
-                <div
-                  className="content"
-                >
-                  
+                
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
 venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel
 blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan.
@@ -1285,7 +1211,140 @@ In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis
 sapien vel malesuada sodales. Curabitur hendrerit purus sed ex
 feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
 
-                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Card section with collapsible content
+    </h2>
+    <div>
+      <div
+        className={undefined}
+      >
+        <div
+          className="card"
+        >
+          <div
+            className="title"
+          >
+            <h2>
+              Lorem title
+            </h2>
+            <h3>
+              
+            </h3>
+          </div>
+          <div
+            className="content"
+          >
+            <div
+              className="section"
+            >
+              <div
+                className="sectionTitle clickableTitle"
+                onClick={[Function]}
+                role="button"
+                tabIndex="0"
+              >
+                <span>
+                  Title opened
+                  <span
+                    className="arrow"
+                  >
+                    <svg />
+                  </span>
+                </span>
+                <span
+                  className="sectionSubtitle"
+                >
+                  It's over 9000!
+                </span>
+              </div>
+              <div
+                className="content"
+              >
+                
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel
+blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan.
+In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis
+sapien vel malesuada sodales. Curabitur hendrerit purus sed ex
+feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Card section with collapsible content and expanded title at bottom
+    </h2>
+    <div>
+      <div
+        className={undefined}
+      >
+        <div
+          className="card"
+        >
+          <div
+            className="title"
+          >
+            <h2>
+              Lorem title
+            </h2>
+            <h3>
+              
+            </h3>
+          </div>
+          <div
+            className="content"
+          >
+            <div
+              className="section"
+            >
+              <div
+                className="content"
+              >
+                
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel
+blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan.
+In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis
+sapien vel malesuada sodales. Curabitur hendrerit purus sed ex
+feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+
+              </div>
+              <div
+                className="sectionTitle clickableTitle"
+                onClick={[Function]}
+                role="button"
+                tabIndex="0"
+              >
+                <span>
+                  Title opened
+                  <span
+                    className="arrow"
+                  >
+                    <svg />
+                  </span>
+                </span>
+                <span
+                  className="sectionSubtitle"
+                >
+                  It's over 9000!
+                </span>
               </div>
             </div>
           </div>
@@ -1320,55 +1379,54 @@ feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
             className="content"
           >
             <div
-              className="section expanded"
+              className="section"
             >
               <div
-                className="sectionTitle clickableTitle"
+                className="sectionTitles clickableTitle"
                 onClick={[Function]}
                 role="button"
                 tabIndex="0"
               >
                 <div
-                  className="sectionTwoLineTitle"
+                  className="doubleLineTitle"
                 >
-                  <span
-                    className="sectionIconBox"
-                  >
-                    <Calendar32.svg
-                      height={16}
-                      width={16}
-                    />
-                  </span>
-                  <span
-                    className="sectionTitles"
-                  >
-                    Informações da empresa
+                  <div>
                     <span
-                      className="sectionSubtitle"
+                      className="sectionIconBox"
                     >
-                      Verifique ou edite as informações da sua empresa
+                      <Calendar32.svg
+                        height={16}
+                        width={16}
+                      />
                     </span>
-                  </span>
+                    <span
+                      className="sectionTitles"
+                    >
+                      Title opened
+                      <span
+                        className="sectionSubtitle"
+                      >
+                        Verifique ou edite as informações da sua empresa
+                      </span>
+                    </span>
+                  </div>
+                  <button
+                    className="button outline light lowRelevance default iconButton"
+                    disabled={false}
+                    onClick={null}
+                    type="button"
+                  >
+                    <svg />
+                  </button>
                 </div>
-                <button
-                  className="button outline light lowRelevance default iconButton"
-                  disabled={false}
-                  onClick={null}
-                  type="button"
-                >
-                  <svg />
-                </button>
-              </div>
-              <div
-                className="sectionContent"
-              >
                 <hr
                   className="divider"
                 />
-                <div
-                  className="content"
-                >
-                  
+              </div>
+              <div
+                className="content"
+              >
+                
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
 venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel
 blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan.
@@ -1376,7 +1434,6 @@ In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis
 sapien vel malesuada sodales. Curabitur hendrerit purus sed ex
 feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
 
-                </div>
               </div>
             </div>
           </div>

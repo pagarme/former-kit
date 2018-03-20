@@ -13,6 +13,7 @@ import {
   CardGraphic,
   CardActions,
   CardSection,
+  CardSectionTitle,
 } from '../../src/Card'
 
 import Button from '../../src/Button'
@@ -175,9 +176,8 @@ const SimpleSection = () => (
       <CardTitle title="Lorem title" />
 
       <CardContent>
-        <CardSection
-          title="Lorem ipsum dolor sit amet"
-        >
+        <CardSection >
+          <CardSectionTitle title="Lorem ipsum dolor sit amet" />
           <CardContent>
             {loremIpsum}
           </CardContent>
@@ -187,39 +187,6 @@ const SimpleSection = () => (
   </div>
 )
 
-class CollapsableSection extends React.Component {
-  constructor (props) {
-    super(props)
-    this.state = { collapsed: false }
-  }
-
-  render () {
-    return (
-      <div className={style.showcase}>
-        <Card>
-          <CardTitle title="Lorem title" />
-
-          <CardContent>
-            <CardSection
-              title="Title opened"
-              collapsedTitle="Title collapsed"
-              collapsed={this.state.collapsed}
-              onTitleClick={
-                collapsed => this.setState({ collapsed: !collapsed })
-              }
-              subtitle="It's over 9000!"
-            >
-              <CardContent>
-                {loremIpsum}
-              </CardContent>
-            </CardSection>
-          </CardContent>
-        </Card>
-      </div>
-    )
-  }
-}
-
 export default {
   TitleText,
   TitleIcon,
@@ -227,6 +194,5 @@ export default {
   TitleTextActions,
   GraphicTitleTextActions,
   TitleTextAdvanced,
-  CollapsableSection,
   SimpleSection,
 }

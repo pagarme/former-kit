@@ -1,14 +1,13 @@
 import React from 'react'
-
-import IconCalendar from 'emblematic-icons/svg/Calendar32.svg'
+import style from './style.css'
 
 import {
   Card,
   CardTitle,
   CardContent,
   CardSection,
+  CardSectionTitle,
 } from '../../src/Card'
-import style from './style.css'
 
 const loremIpsum = `
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
@@ -19,32 +18,47 @@ sapien vel malesuada sodales. Curabitur hendrerit purus sed ex
 feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
 `
 
-export default class CardSectionWithIcon extends React.Component {
+class CardSectionTitleState extends React.Component {
   constructor (props) {
     super(props)
     this.state = { collapsed: false }
+
+    this.handleClick = this.handleClick.bind(this)
+  }
+
+  handleClick () {
+    this.setState({
+      collapsed: !this.state.collapsed,
+    })
+  }
+
+  renderTitle () {
+    const { collapsed } = this.state
+    const title = collapsed ? 'Title collapsed' : 'Title opened'
+    return (
+      <CardSectionTitle
+        title={title}
+        collapsed={collapsed}
+        onClick={this.handleClick}
+        subtitle="It's over 9000!"
+      />
+    )
   }
 
   render () {
+    const { collapsed } = this.state
     return (
       <div className={style.showcase}>
         <Card>
           <CardTitle title="Lorem title" />
-
           <CardContent>
-            <CardSection
-              title="Informações da empresa"
-              collapsedTitle="Title collapsed"
-              subtitle="Verifique ou edite as informações da sua empresa"
-              icon={<IconCalendar width={16} height={16} />}
-              collapsed={this.state.collapsed}
-              onTitleClick={
-                collapsed => this.setState({ collapsed: !collapsed })
-              }
-            >
-              <CardContent>
-                {loremIpsum}
-              </CardContent>
+            <CardSection >
+              {!collapsed && (
+                <CardContent>
+                  {loremIpsum}
+                </CardContent>
+              )}
+              {this.renderTitle()}
             </CardSection>
           </CardContent>
         </Card>
@@ -52,3 +66,5 @@ export default class CardSectionWithIcon extends React.Component {
     )
   }
 }
+
+export default CardSectionTitleState
