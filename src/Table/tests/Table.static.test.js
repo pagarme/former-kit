@@ -7,6 +7,7 @@ import {
   path,
 } from 'ramda'
 
+import TableAggregationRow from '../TableAggregationRow'
 import Button from '../../Button'
 import Checkbox from '../../Checkbox'
 import TableEmptyItem from '../TableEmptyItem'
@@ -332,6 +333,14 @@ describe('Table', () => {
           })
         })
       }, rowsCases)
+
+      cases('should render correctly a footer row according with the prop showAggregation', ({ component }) => {
+        const aggregationRow = component.find(TableAggregationRow)
+        const { showAggregationRow } = component.props()
+
+        expect(aggregationRow.exists()).toBe(showAggregationRow)
+      }, rowsCases)
+
       describe('should render a empty table item correctly for all rows', () => {
         it('when a renderer returns null', () => {
           const { component } = createComponents({

@@ -7,7 +7,11 @@ import Section from '../Section'
 storiesOf('Table', module)
   .add('Simple', () => (
     <Section>
-      <TableState clickableRow />
+      <TableState
+        clickableRow
+        simple
+        showAggregationRow
+      />
     </Section>
   ))
   .add('Selectable and expandable', () => (

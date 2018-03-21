@@ -57,7 +57,8 @@ const renderCell = (column, data, key, theme) => {
         key={key}
         className={
           classNames(
-            theme.tableBodyItem,
+            theme.tableItem,
+            theme[`${column.align}Align`],
             {
               [theme.unselectable]: column.isAction,
             }
@@ -74,7 +75,12 @@ const renderCell = (column, data, key, theme) => {
     return (
       <td
         key={key}
-        className={theme.tableBodyItem}
+        className={
+          classNames(
+            theme.tableItem,
+            theme[`${column.align}Align`]
+          )
+        }
       >
         {columnData}
       </td>
@@ -83,7 +89,7 @@ const renderCell = (column, data, key, theme) => {
   return (
     <td
       key={key}
-      className={theme.tableBodyItem}
+      className={theme.tableItem}
     >
       <TableEmptyItem />
     </td>
@@ -243,7 +249,7 @@ TableRow.propTypes = {
     open: string,
   }),
   /**
-   * Aditional CSS classes which can be applyed to the expanded row.
+   * Additional CSS classes which can be applyed to the expanded row.
    */
   className: string,
   /**
@@ -256,19 +262,63 @@ TableRow.propTypes = {
    * These columns are the columns which are not shown in the table.
    */
   columns: arrayOf(shape({
-    title: string.isRequired,
+    /**
+     * The path for the cell value in the row object,
+     * it's required for orderable columns.
+     */
     accessor: oneOfType([
       string,
       arrayOf(string),
     ]),
+    /**
+     * Pure function which will receive the total accumulated and the current cell value.
+     * Its return will be rendered in the total row in the footer or it will
+     * be sent to the total renderer.
+     * @param {number} total - accumulated value for this column
+     * @param {number} value - current cell value
+     */
+    aggregator: func,
+    /**
+     * Defines the cell content alignment.
+     */
+    align: oneOf(['center', 'start', 'end']),
+    /**
+     * Identifies if it's an action column.
+     */
+    isAction: bool,
+    /**
+     * Enables a column to be orderable.
+     */
+    orderable: bool,
+    /**
+     * A custom function which will receive the row data object and should return
+     * a React element to be rendered in each cell bound to this column.
+     * @param {object} row - all row data.
+     */
     renderer: func,
+    /**
+     * This title is used to identify the column in the header and to identify the
+     * column data in the expandable rows.
+     */
+    title: string.isRequired,
+    /**
+     * Function responsible for creating a cell component to be added to the total
+     * row in the footer, works like the renderer prop.
+     * @param {object} row - all row data.
+     */
+    aggregationRenderer: func,
+    /**
+     * Text which will be used as title in the footer total row, when this prop is received
+     * the aggregator and aggregationRenderer props are ignored.
+     */
+    aggregationTitle: string,
   })).isRequired,
   /**
    * Set of data native of row data from the table.
    */
   data: shape({}).isRequired,
   /**
-   * Indicates that the line is not interactive
+   * Indicates that the line is not interactive.
    */
   disabled: bool,
   /**
@@ -277,11 +327,11 @@ TableRow.propTypes = {
   expanded: bool,
   /**
    * Allow the expandable feature wich provides a
-   * detail line under the expanded line
+   * detail line under the expanded line.
    */
   expandable: bool,
   /**
-   * Default icons used in to indicate if the line is expanded or collapsed
+   * Default icons used in to indicate if the line is expanded or collapsed.
    * @prop {object} expand - icon which represents expand acion in expandable button.
    * @prop {object} collapse - icon which represents collapse acion in expandable button.
    */
@@ -291,36 +341,36 @@ TableRow.propTypes = {
   }),
   /**
    * Function trigged when the line or its children
-   * are clicked, only works if the line is enabled
+   * are clicked, only works if the line is enabled.
    */
   onClick: func,
   /**
    * Function trigged when expandable button is clicked
-   * passing the row data to the callback
+   * passing the row data to the callback.
    * @param {Array<number>} rows - all expanded rows indexes in the table.
    */
   onExpand: func,
   /**
-   * Function trigged on the line hover
+   * Function trigged on the line hover.
    */
   onMouseEnter: func,
   /**
-   * Function trigged on the line blur
+   * Function trigged on the line blur.
    */
   onMouseLeave: func,
   /**
    * Function trigged when the line is selected
    * using the select checkbox created when the
-   * prop selectable is received
+   * prop selectable is received.
    */
   onSelect: func,
   /**
-   * Indicates the row selection
+   * Indicates the row selection.
    * @param {number} row - selected row index.
    */
   selected: bool,
   /**
-   * Indicates that the line can be selected
+   * Indicates that the line can be selected.
    */
   selectable: bool,
   /**
@@ -328,7 +378,7 @@ TableRow.propTypes = {
    */
   parity: oneOf(['even', 'odd']),
   /**
-   * Indicates the row position in the table
+   * Indicates the row position in the table.
    */
   index: number.isRequired,
 }

@@ -16,6 +16,10 @@ const columnLimit = createComponents({
   columnsNumber: 8,
 })
 
+const aggregationRow = createComponents({
+  showAggregationRow: true,
+})
+
 const columnsCases = [
   {
     name: 'with all props',
@@ -51,6 +55,10 @@ const rowsCases = [
   {
     name: 'with a column limit',
     ...columnLimit,
+  },
+  {
+    name: 'with a aggregation row',
+    ...aggregationRow,
   },
 ]
 

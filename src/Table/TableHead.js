@@ -10,7 +10,11 @@ import {
   shape,
   string,
 } from 'prop-types'
-import { equals } from 'ramda'
+import {
+  equals,
+  isNil,
+  not,
+} from 'ramda'
 import classNames from 'classnames'
 import shortid from 'shortid'
 import Checkbox from '../Checkbox'
@@ -28,6 +32,7 @@ class TableHead extends Component {
     this.getOrderIcon = this.getOrderIcon.bind(this)
     this.handleOrderChange = this.handleOrderChange.bind(this)
     this.renderColumn = this.renderColumn.bind(this)
+    this.validateSelectedColumn = this.validateSelectedColumn.bind(this)
   }
 
   getOrderIcon (order) {
@@ -44,37 +49,62 @@ class TableHead extends Component {
     this.props.onOrderChange(index)
   }
 
-  renderColumn (column, index) {
+  validateSelectedColumn (columnIndex) {
     const {
-      theme,
+      onOrderChange,
       orderColumn,
-      order,
-      icons,
-      disabled,
     } = this.props
-    const selected = orderColumn === index
-    const { orderable } = column
-    const columnClasses = classNames({
-      [theme.active]: selected,
-      [theme.orderable]: orderable,
-      [theme.unselectable]: column.isAction,
-      [theme.disabled]: disabled && orderable,
-    })
 
-    if (!orderable) {
+    return (orderColumn === columnIndex) && not(isNil(onOrderChange))
+  }
+
+  renderColumn ({
+    orderable,
+    isAction,
+    title,
+  },
+  index
+  ) {
+    const {
+      align,
+      disabled,
+      icons,
+      onOrderChange,
+      order,
+      theme,
+    } = this.props
+    const selected = this.validateSelectedColumn(index)
+    const columnClasses = classNames(
+      {
+        [theme[`${align}Align`]]: !orderable,
+        [theme.active]: selected,
+        [theme.orderable]: orderable,
+        [theme.unselectable]: isAction,
+        [theme.disabled]: disabled && orderable,
+      }
+    )
+
+    if (!orderable || not(onOrderChange)) {
       return (
         <th
           key={`header_column_${index + 1}`}
           className={columnClasses}
         >
-          <div className={theme.tableHeadItem}>
-            {column.title}
+          <div
+            className={classNames(
+                {
+                  [theme[`${align}Align`]]: !orderable,
+                },
+                theme.tableHeadItem
+              )}
+          >
+            {title}
           </div>
         </th>
       )
     }
 
-    const trProps = disabled ? {} :
+    const thProps = disabled || not(onOrderChange) ? {} :
       {
         onClick: () => this.handleOrderChange(index),
       }
@@ -83,10 +113,10 @@ class TableHead extends Component {
       <th
         key={`column_${index + 1}`}
         className={columnClasses}
-        {...trProps}
+        {...thProps}
       >
         <div className={theme.tableHeadItem}>
-          <span> {column.title} </span>
+          <span> {title} </span>
           <span className={theme.unselectable}>
             {
               selected &&
@@ -155,24 +185,45 @@ TableHead.propTypes = {
     disabled: string,
   }),
   /**
+   * Defines the cell's content alignment.
+  */
+  align: oneOf(['center', 'start', 'end']),
+  /**
    * Columns which will name the reader cells.
    */
   columns: arrayOf(shape({
     /**
-     * It's the path for the cell value in the row object,
-     * it's required for orderable columns.
+     * The path for the cell value in the row object,
+     * required for orderable columns.
      */
     accessor: oneOfType([
       string,
       arrayOf(string),
     ]),
     /**
+     * Pure function which will receive the total accumulated and the current cell value.
+     * Its return will be rendered in the total row in the footer or it will
+     * be sent to the total renderer.
+     * @param {number} total - accumulated value for this column.
+     * @param {number} value - current cell value.
+     */
+    aggregator: func,
+    /**
+     * Defines the cell content alignment.
+     */
+    align: oneOf(['center', 'start', 'end']),
+    /**
      * Identify if it's an action column.
      */
     isAction: bool,
     /**
+     * Enables a column to be orderable.
+     */
+    orderable: bool,
+    /**
      * A custom function which will receive the row data object and should return
-     * a React element to be rendered in each cell bind to this column.
+     * a React element to be rendered in each cell bound to this column.
+     * @param {object} row - all row data.
      */
     renderer: func,
     /**
@@ -180,6 +231,17 @@ TableHead.propTypes = {
      * column data in the expandable rows.
      */
     title: string.isRequired,
+    /**
+     * Function responsible for creating a cell component to be added to the total
+     * row in the footer, works like the renderer prop.
+     * @param {object} row - all row data.
+     */
+    aggregationRenderer: func,
+    /**
+     * Text which will be used as title in the footer total row, when this prop is received
+     * the aggregator and aggregationRenderer props are ignored.
+     */
+    aggregationTitle: string,
   })).isRequired,
   /**
    * Add an expandable column in the header.
@@ -219,12 +281,14 @@ TableHead.propTypes = {
    */
   selected: bool,
   /**
-   * Disablez the click on orderable columns
+   * Disablez the click on orderable columns.
    */
   disabled: bool,
 }
 
 TableHead.defaultProps = {
+  align: 'start',
+  disabled: false,
   expandable: false,
   icons: {},
   onOrderChange: null,
@@ -233,7 +297,6 @@ TableHead.defaultProps = {
   selectable: false,
   selected: false,
   theme: {},
-  disabled: false,
 }
 
 export default consumeTheme(TableHead)

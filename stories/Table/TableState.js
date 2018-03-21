@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 import { bool } from 'prop-types'
 import {
+  assoc,
   compose,
   defaultTo,
   equals,
   findIndex,
+  map,
   path,
   pipe,
   prepend,
@@ -36,14 +38,20 @@ const getRowsSort = (rows, columns) =>
     return sort(rows)
   }
 
+const formatSimpleTableColumns = map(
+  assoc('orderable', false)
+)
+
 class TableState extends Component {
   constructor (props) {
     super(props)
 
     const {
-      selectable,
       disabled,
       expandable,
+      primaryAction,
+      selectable,
+      simple,
     } = props
 
     this.handleDetailsClick = this.handleDetailsClick.bind(this)
@@ -58,14 +66,17 @@ class TableState extends Component {
       orderColumn: 0,
       order: 'ascending',
       rows: this.mock.rows,
-      columns: this.getColumns(props.primaryAction),
+      columns: this.getColumns(primaryAction, simple),
       selectedRows: selectable ? [2] : [],
       expandedRows: expandable ? [0, 1, 2, 3] : [],
       detailsClicks: 0,
     }
   }
 
-  getColumns (primaryActions) {
+  getColumns (primaryActions, simple) {
+    if (simple) {
+      return formatSimpleTableColumns(this.mock.columns)
+    }
     return (
       primaryActions ?
         this.getColumnsWithPrimaryAction() :
@@ -120,7 +131,6 @@ class TableState extends Component {
     })
   }
 
-
   render () {
     const {
       clickableRow,
@@ -128,6 +138,8 @@ class TableState extends Component {
       expandable,
       hasEmptyRenderer,
       selectable,
+      showAggregationRow,
+      simple,
     } = this.props
     const {
       clickedRowIndex,
@@ -139,14 +151,14 @@ class TableState extends Component {
       rows,
       selectedRows,
     } = this.state
-    const onRowClick = clickableRow ? this.handleRowClick : null
+    const onRowClick = clickableRow && !simple ? this.handleRowClick : null
     const maxColumns = expandable ? 6 : 7
     const columnWithEmptyRenderer = {
       title: 'empty',
       renderer: () => null,
       accessor: ['empty'],
     }
-
+    const onOrderChange = !simple ? this.handleOrderChange : null
     return (
       <div>
         <Table
@@ -156,19 +168,20 @@ class TableState extends Component {
             ? prepend(columnWithEmptyRenderer, columns)
             : columns
           }
+          disabled={disabled}
+          expandable={expandable}
+          expandedRows={expandedRows}
+          maxColumns={maxColumns}
+          onExpandRow={this.handleExpandRow}
+          onOrderChange={onOrderChange}
+          onRowClick={onRowClick}
+          onSelectRow={this.handleSelectRow}
+          orderColumn={orderColumn}
+          orderSequence={order}
           rows={rows}
           selectable={selectable}
-          expandable={expandable}
           selectedRows={selectedRows}
-          expandedRows={expandedRows}
-          onOrderChange={this.handleOrderChange}
-          onSelectRow={this.handleSelectRow}
-          orderSequence={order}
-          orderColumn={orderColumn}
-          onExpandRow={this.handleExpandRow}
-          onRowClick={onRowClick}
-          maxColumns={maxColumns}
-          disabled={disabled}
+          showAggregationRow={showAggregationRow}
         />
 
         <div className={style.texts}>
@@ -202,6 +215,7 @@ TableState.propTypes = {
   hasEmptyRenderer: bool,
   primaryAction: bool,
   selectable: bool,
+  simple: bool,
 }
 
 TableState.defaultProps = {
@@ -211,6 +225,7 @@ TableState.defaultProps = {
   hasEmptyRenderer: false,
   primaryAction: false,
   selectable: false,
+  simple: false,
 }
 
 export default TableState
