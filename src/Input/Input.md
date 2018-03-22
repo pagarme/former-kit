@@ -13,7 +13,6 @@ class InputState extends React.Component {
       error,
       icon,
       multiline,
-      success,
       type,
       inputStyle,
       label,
@@ -36,7 +35,6 @@ class InputState extends React.Component {
           name="email"
           onChange={e => this.setState({ email: e.target.value })}
           placeholder="name@email.com"
-          success={success}
           type={type}
           value={email}
           disabled={disabled}
@@ -52,7 +50,6 @@ class InputState extends React.Component {
           name="email"
           onChange={e => this.setState({ email: e.target.value })}
           placeholder="nome@email.com"
-          success={success}
           type={type}
           value={email}
           disabled={disabled}
@@ -189,49 +186,6 @@ Error
       label="Email!"
       hint="Hint!"
       error="Error!"
-      multiline
-    />
-  </div>
-```
-
-Success
-```jsx
-  const InputState = require('./example/InputState').default;
-  const IconMail = require('emblematic-icons/svg/Mail32.svg').default;
-  <div>
-    <InputState
-      type="text"
-      label="Email!"
-      success="Success!"
-    />
-    <br />
-    <InputState
-      type="text"
-      label="Email!"
-      hint="Hint!"
-      success="Success!"
-    />
-    <br />
-    <InputState
-      type="text"
-      label="Email!"
-      hint="Hint!"
-      success="Success!"
-      icon={<IconMail width={16} height={16} />}
-    />
-    <br />
-    <InputState
-      type="password"
-      label="Password"
-      hint="Hint!"
-      success="Success!"
-    />
-    <br />
-    <InputState
-      type="text"
-      label="Email!"
-      hint="Hint!"
-      success="Success!"
       multiline
     />
   </div>
@@ -374,55 +328,6 @@ Error
       label="Email!"
       hint="Hint!"
       error="Error!"
-      multiline
-    />
-  </div>
-```
-
-Success
-```jsx
-  const InputState = require('./example/InputState').default;
-  const IconMail = require('emblematic-icons/svg/Mail32.svg').default;
-  <div>
-    <InputState
-      inputStyle="form"
-      type="text"
-      label="Email!"
-      success="Success!"
-    />
-    <br />
-    <InputState
-      inputStyle="form"
-      type="text"
-      label="Email!"
-      hint="Hint!"
-      success="Success!"
-    />
-    <br />
-    <InputState
-      inputStyle="form"
-      type="text"
-      label="Email!"
-      hint="Hint!"
-      success="Success!"
-      icon={<IconMail width={16} height={16} />}
-    />
-    <br />
-    <InputState
-      inputStyle="form"
-      type="password"
-      label="Password"
-      hint="Hint!"
-      success="Success!"
-      icon={<IconMail width={16} height={16} />}
-    />
-    <br />
-    <InputState
-      inputStyle="form"
-      type="text"
-      label="Email!"
-      hint="Hint!"
-      success="Success!"
       multiline
     />
   </div>

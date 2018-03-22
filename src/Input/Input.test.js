@@ -56,31 +56,6 @@ describe('Input', () => {
       expect(onChange).not.toHaveBeenLastCalledWith(value)
     })
 
-    it('should mount with success', () => {
-      const onChange = jest.fn()
-
-      const component = shallow(
-        <Input
-          name="name"
-          label="Name"
-          onChange={onChange}
-          success="Success"
-          theme={theme}
-          value=""
-        />
-      )
-
-      component
-        .dive()
-        .find('input')
-        .first()
-        .simulate('change', value)
-
-      expect(onChange).toHaveBeenCalled()
-      expect(onChange).toHaveBeenLastCalledWith(value)
-      expect(component.dive().find('p').first().text()).toBe('Success')
-    })
-
     it('should mount with error', () => {
       const onChange = jest.fn()
 
@@ -182,31 +157,6 @@ describe('Input', () => {
       expect(onChange).not.toHaveBeenLastCalledWith(value)
     })
 
-    it('should mount with success', () => {
-      const onChange = jest.fn()
-
-      const component = shallow(
-        <Input
-          name="name"
-          label="Name"
-          onChange={onChange}
-          multiline
-          success="Success"
-          theme={theme}
-          value=""
-        />
-      )
-
-      component
-        .dive()
-        .find('textarea')
-        .first()
-        .simulate('change', value)
-
-      expect(onChange).toHaveBeenCalled()
-      expect(onChange).toHaveBeenLastCalledWith(value)
-      expect(component.dive().find('p').first().text()).toBe('Success')
-    })
 
     it('should mount with error', () => {
       const onChange = jest.fn()

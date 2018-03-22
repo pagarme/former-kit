@@ -95,7 +95,6 @@ class Input extends React.PureComponent {
       icon,
       label,
       multiline,
-      success,
       type,
       value,
       className,
@@ -115,7 +114,6 @@ class Input extends React.PureComponent {
         [theme.focused]: this.state.isFocused,
         [theme.disabled]: disabled,
         [theme.error]: error,
-        [theme.success]: success,
       }
     )
 
@@ -133,7 +131,7 @@ class Input extends React.PureComponent {
       ? 'text'
       : type
 
-    const hasSecondaryText = theme.secondaryText && (hint || error || success)
+    const hasSecondaryText = theme.secondaryText && (hint || error)
 
     const hasLabel = theme.contentPresent && label
 
@@ -183,7 +181,7 @@ class Input extends React.PureComponent {
           </div>
           {hasSecondaryText &&
             <p className={theme.secondaryText}>
-              {success || error || hint}
+              {error || hint}
             </p>
           }
         </div>
@@ -197,17 +195,17 @@ Input.propTypes = {
    * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: PropTypes.shape({
-    input: PropTypes.string,
-    icon: PropTypes.string,
+    active: PropTypes.string,
     boxContainer: PropTypes.string,
     container: PropTypes.string,
-    secondaryText: PropTypes.string,
-    active: PropTypes.string,
-    focused: PropTypes.string,
-    error: PropTypes.string,
-    multiline: PropTypes.string,
-    expander: PropTypes.string,
     contentPresent: PropTypes.string,
+    error: PropTypes.string,
+    expander: PropTypes.string,
+    focused: PropTypes.string,
+    icon: PropTypes.string,
+    input: PropTypes.string,
+    multiline: PropTypes.string,
+    secondaryText: PropTypes.string,
   }),
   /**
    * Aditional CSS classes which can be applied to the input.
@@ -230,6 +228,13 @@ Input.propTypes = {
    */
   icon: PropTypes.element,
   /**
+   * Default icons used to tell the user if the password is being shown or not.
+   */
+  icons: PropTypes.shape({
+    showPassword: PropTypes.element,
+    hidePassword: PropTypes.element,
+  }),
+  /**
    * Input's label, used as a placeholder until the input receives focus.
    * When the input is focused, the label stays above the input.
    */
@@ -243,24 +248,21 @@ Input.propTypes = {
    */
   name: PropTypes.string,
   /**
+   * Triggered by the input's blur event.
+   */
+  onBlur: PropTypes.func,
+  /**
    * The onChange callback is triggered when the value of the input changes.
    */
   onChange: PropTypes.func.isRequired,
   /**
-   * Default icons used to tell the user if the password is being shown or not.
+   * Triggered by the input's focus event.
    */
-  icons: PropTypes.shape({
-    showPassword: PropTypes.element,
-    hidePassword: PropTypes.element,
-  }),
+  onFocus: PropTypes.func,
   /**
    * Input's placeholder.
    */
   placeholder: PropTypes.string,
-  /**
-   * Success message which indicates success and adds success classes.
-   */
-  success: PropTypes.string,
   /**
    * Input's type.
    */
@@ -275,14 +277,6 @@ Input.propTypes = {
    * Input's value.
    */
   value: PropTypes.string.isRequired,
-  /**
-   * Triggered by the input's blur event.
-   */
-  onBlur: PropTypes.func,
-  /**
-   * Triggered by the input's focus event.
-   */
-  onFocus: PropTypes.func,
 }
 
 Input.defaultProps = {
@@ -291,16 +285,15 @@ Input.defaultProps = {
   error: '',
   hint: '',
   icon: null,
+  icons: {},
   label: '',
   multiline: false,
   name: '',
-  icons: {},
-  placeholder: '',
-  success: '',
-  theme: {},
-  type: 'text',
   onBlur: null,
   onFocus: null,
+  placeholder: '',
+  theme: {},
+  type: 'text',
 }
 
 export default Input

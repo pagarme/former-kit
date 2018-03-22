@@ -54,6 +54,14 @@ InputState.defaultProps = {
 storiesOf('Inputs', module)
   .add('Default', () => (
     <div>
+      <Section title="Default">
+        <InputState type="text" />
+      </Section>
+
+      <Section title="Error">
+        <InputState type="text" error="Wrong email" />
+      </Section>
+
       <Section title="Disabled">
         <Input
           name="email"
@@ -78,16 +86,12 @@ storiesOf('Inputs', module)
         />
       </Section>
 
-      <Section title="Default">
-        <InputState type="text" />
+      <Section title="Multiline default">
+        <InputState multiline placeholder="default" />
       </Section>
 
-      <Section title="Error">
-        <InputState type="text" error="Wrong email" />
-      </Section>
-
-      <Section title="Success">
-        <InputState type="text" success="Success" />
+      <Section title="Multiline error">
+        <InputState multiline error="Error!" />
       </Section>
 
       <Section title="Multiline disabled">
@@ -102,30 +106,6 @@ storiesOf('Inputs', module)
         />
       </Section>
 
-      <Section title="Multiline default">
-        <InputState multiline placeholder="default" />
-      </Section>
-
-      <Section title="Multiline error">
-        <InputState multiline error="Error!" />
-      </Section>
-
-      <Section title="Multiline success">
-        <InputState multiline success="Success!" />
-      </Section>
-
-      <Section title="Icon disabled">
-        <Input
-          name="name"
-          label="Your name"
-          placeholder="disabled"
-          disabled
-          icon={<IconMail width={16} height={16} />}
-          onChange={action('text changed')}
-          value=""
-        />
-      </Section>
-
       <Section title="Icon default">
         <InputState type="text" icon={<IconMail width={16} height={16} />} />
       </Section>
@@ -134,16 +114,11 @@ storiesOf('Inputs', module)
         <InputState type="text" error="Error!" icon={<IconMail width={16} height={16} />} />
       </Section>
 
-      <Section title="Icon success">
-        <InputState type="text" success="Success!" icon={<IconMail width={16} height={16} />} />
-      </Section>
-
-      <Section title="Icon multiline disabled">
+      <Section title="Icon disabled">
         <Input
-          name="multiline"
-          label="Disabled"
-          placeholder="this is disabled"
-          multiline
+          name="name"
+          label="Your name"
+          placeholder="disabled"
           disabled
           icon={<IconMail width={16} height={16} />}
           onChange={action('text changed')}
@@ -159,18 +134,14 @@ storiesOf('Inputs', module)
         <InputState multiline error="Error!" icon={<IconMail width={16} height={16} />} />
       </Section>
 
-      <Section title="Icon multiline success">
-        <InputState multiline success="Success!" icon={<IconMail width={16} height={16} />} />
-      </Section>
-
-      <Section title="Password disabled">
+      <Section title="Icon multiline disabled">
         <Input
-          type="password"
-          name="pass"
-          label="Your password"
+          name="multiline"
+          label="Disabled"
+          placeholder="this is disabled"
+          multiline
           disabled
-          placeholder="disabled"
-          hint="must have more than 12 characters"
+          icon={<IconMail width={16} height={16} />}
           onChange={action('text changed')}
           value=""
         />
@@ -184,8 +155,17 @@ storiesOf('Inputs', module)
         <InputState type="password" error="must have more than 12 characters" />
       </Section>
 
-      <Section title="Password success">
-        <InputState type="password" success="Success" />
+      <Section title="Password disabled">
+        <Input
+          type="password"
+          name="pass"
+          label="Your password"
+          disabled
+          placeholder="disabled"
+          hint="must have more than 12 characters"
+          onChange={action('text changed')}
+          value=""
+        />
       </Section>
     </div>
   ))

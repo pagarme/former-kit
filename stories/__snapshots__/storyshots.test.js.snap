@@ -8363,92 +8363,6 @@ exports[`Storyshots Inputs Default 1`] = `
     className=""
   >
     <h2>
-      Disabled
-    </h2>
-    <div>
-      <div
-        className="input disabled"
-      >
-        <div
-          className="boxContainer"
-        >
-          <div
-            className="container"
-          >
-            <input
-              disabled={true}
-              id="email-shortid-mock"
-              name="email"
-              onBlur={[Function]}
-              onChange={null}
-              onFocus={[Function]}
-              placeholder="email@email.com"
-              type="text"
-              value=""
-            />
-            <label
-              className=""
-              htmlFor="email-shortid-mock"
-            >
-              Your email
-            </label>
-          </div>
-          <p
-            className="secondaryText"
-          >
-            Secondary text
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section
-    className=""
-  >
-    <h2>
-      Disabled with text
-    </h2>
-    <div>
-      <div
-        className="input disabled"
-      >
-        <div
-          className="boxContainer"
-        >
-          <div
-            className="container"
-          >
-            <input
-              disabled={true}
-              id="email-shortid-mock"
-              name="email"
-              onBlur={[Function]}
-              onChange={null}
-              onFocus={[Function]}
-              placeholder="email@email.com"
-              type="text"
-              value="Disabled!"
-            />
-            <label
-              className="contentPresent"
-              htmlFor="email-shortid-mock"
-            >
-              Your email
-            </label>
-          </div>
-          <p
-            className="secondaryText"
-          >
-            Secondary text
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section
-    className=""
-  >
-    <h2>
       Default
     </h2>
     <div>
@@ -8535,11 +8449,11 @@ exports[`Storyshots Inputs Default 1`] = `
     className=""
   >
     <h2>
-      Success
+      Disabled
     </h2>
     <div>
       <div
-        className="input active success"
+        className="input disabled"
       >
         <div
           className="boxContainer"
@@ -8548,15 +8462,58 @@ exports[`Storyshots Inputs Default 1`] = `
             className="container"
           >
             <input
-              disabled={false}
+              disabled={true}
               id="email-shortid-mock"
               name="email"
               onBlur={[Function]}
-              onChange={[Function]}
+              onChange={null}
               onFocus={[Function]}
-              placeholder="name@email.com"
+              placeholder="email@email.com"
               type="text"
-              value="pagarme@pagar.me"
+              value=""
+            />
+            <label
+              className=""
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Secondary text
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Disabled with text
+    </h2>
+    <div>
+      <div
+        className="input disabled"
+      >
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container"
+          >
+            <input
+              disabled={true}
+              id="email-shortid-mock"
+              name="email"
+              onBlur={[Function]}
+              onChange={null}
+              onFocus={[Function]}
+              placeholder="email@email.com"
+              type="text"
+              value="Disabled!"
             />
             <label
               className="contentPresent"
@@ -8568,52 +8525,8 @@ exports[`Storyshots Inputs Default 1`] = `
           <p
             className="secondaryText"
           >
-            Success
+            Secondary text
           </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section
-    className=""
-  >
-    <h2>
-      Multiline disabled
-    </h2>
-    <div>
-      <div
-        className="input disabled"
-      >
-        <div
-          className="boxContainer"
-        >
-          <div
-            className="container multiline"
-          >
-            <textarea
-              disabled={true}
-              name="multiline"
-              onBlur={[Function]}
-              onChange={null}
-              onFocus={[Function]}
-              placeholder="this is disabled"
-              rows="1"
-              value=""
-            />
-            <label
-              className=""
-              htmlFor="multiline-shortid-mock"
-            >
-              Disabled
-            </label>
-            <div
-              className="expander"
-            >
-              
-              <br />
-            </div>
-          </div>
-          
         </div>
       </div>
     </div>
@@ -8718,11 +8631,11 @@ exports[`Storyshots Inputs Default 1`] = `
     className=""
   >
     <h2>
-      Multiline success
+      Multiline disabled
     </h2>
     <div>
       <div
-        className="input active success"
+        className="input disabled"
       >
         <div
           className="boxContainer"
@@ -8731,78 +8644,27 @@ exports[`Storyshots Inputs Default 1`] = `
             className="container multiline"
           >
             <textarea
-              disabled={false}
-              name="email"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder="name@email.com"
-              rows="1"
-              value="pagarme@pagar.me"
-            />
-            <label
-              className="contentPresent"
-              htmlFor="email-shortid-mock"
-            >
-              Your email
-            </label>
-            <div
-              className="expander"
-            >
-              pagarme@pagar.me
-              <br />
-            </div>
-          </div>
-          <p
-            className="secondaryText"
-          >
-            Success!
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section
-    className=""
-  >
-    <h2>
-      Icon disabled
-    </h2>
-    <div>
-      <div
-        className="input disabled"
-      >
-        <div
-          className="icon"
-        >
-          <Mail32.svg
-            height={16}
-            width={16}
-          />
-        </div>
-        <div
-          className="boxContainer"
-        >
-          <div
-            className="container"
-          >
-            <input
               disabled={true}
-              id="name-shortid-mock"
-              name="name"
+              name="multiline"
               onBlur={[Function]}
               onChange={null}
               onFocus={[Function]}
-              placeholder="disabled"
-              type="text"
+              placeholder="this is disabled"
+              rows="1"
               value=""
             />
             <label
               className=""
-              htmlFor="name-shortid-mock"
+              htmlFor="multiline-shortid-mock"
             >
-              Your name
+              Disabled
             </label>
+            <div
+              className="expander"
+            >
+              
+              <br />
+            </div>
           </div>
           
         </div>
@@ -8915,58 +8777,7 @@ exports[`Storyshots Inputs Default 1`] = `
     className=""
   >
     <h2>
-      Icon success
-    </h2>
-    <div>
-      <div
-        className="input active success"
-      >
-        <div
-          className="icon"
-        >
-          <Mail32.svg
-            height={16}
-            width={16}
-          />
-        </div>
-        <div
-          className="boxContainer"
-        >
-          <div
-            className="container"
-          >
-            <input
-              disabled={false}
-              id="email-shortid-mock"
-              name="email"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder="name@email.com"
-              type="text"
-              value="pagarme@pagar.me"
-            />
-            <label
-              className="contentPresent"
-              htmlFor="email-shortid-mock"
-            >
-              Your email
-            </label>
-          </div>
-          <p
-            className="secondaryText"
-          >
-            Success!
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section
-    className=""
-  >
-    <h2>
-      Icon multiline disabled
+      Icon disabled
     </h2>
     <div>
       <div
@@ -8984,30 +8795,25 @@ exports[`Storyshots Inputs Default 1`] = `
           className="boxContainer"
         >
           <div
-            className="container multiline"
+            className="container"
           >
-            <textarea
+            <input
               disabled={true}
-              name="multiline"
+              id="name-shortid-mock"
+              name="name"
               onBlur={[Function]}
               onChange={null}
               onFocus={[Function]}
-              placeholder="this is disabled"
-              rows="1"
+              placeholder="disabled"
+              type="text"
               value=""
             />
             <label
               className=""
-              htmlFor="multiline-shortid-mock"
+              htmlFor="name-shortid-mock"
             >
-              Disabled
+              Your name
             </label>
-            <div
-              className="expander"
-            >
-              
-              <br />
-            </div>
           </div>
           
         </div>
@@ -9130,11 +8936,11 @@ exports[`Storyshots Inputs Default 1`] = `
     className=""
   >
     <h2>
-      Icon multiline success
+      Icon multiline disabled
     </h2>
     <div>
       <div
-        className="input active success"
+        className="input disabled"
       >
         <div
           className="icon"
@@ -9151,76 +8957,29 @@ exports[`Storyshots Inputs Default 1`] = `
             className="container multiline"
           >
             <textarea
-              disabled={false}
-              name="email"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder="name@email.com"
-              rows="1"
-              value="pagarme@pagar.me"
-            />
-            <label
-              className="contentPresent"
-              htmlFor="email-shortid-mock"
-            >
-              Your email
-            </label>
-            <div
-              className="expander"
-            >
-              pagarme@pagar.me
-              <br />
-            </div>
-          </div>
-          <p
-            className="secondaryText"
-          >
-            Success!
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section
-    className=""
-  >
-    <h2>
-      Password disabled
-    </h2>
-    <div>
-      <div
-        className="input disabled"
-      >
-        <div
-          className="boxContainer"
-        >
-          <div
-            className="container"
-          >
-            <input
               disabled={true}
-              id="pass-shortid-mock"
-              name="pass"
+              name="multiline"
               onBlur={[Function]}
               onChange={null}
               onFocus={[Function]}
-              placeholder="disabled"
-              type="password"
+              placeholder="this is disabled"
+              rows="1"
               value=""
             />
             <label
               className=""
-              htmlFor="pass-shortid-mock"
+              htmlFor="multiline-shortid-mock"
             >
-              Your password
+              Disabled
             </label>
+            <div
+              className="expander"
+            >
+              
+              <br />
+            </div>
           </div>
-          <p
-            className="secondaryText"
-          >
-            must have more than 12 characters
-          </p>
+          
         </div>
       </div>
     </div>
@@ -9331,11 +9090,61 @@ exports[`Storyshots Inputs Default 1`] = `
     className=""
   >
     <h2>
-      Password success
+      Password disabled
     </h2>
     <div>
       <div
-        className="input active success"
+        className="input disabled"
+      >
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container"
+          >
+            <input
+              disabled={true}
+              id="pass-shortid-mock"
+              name="pass"
+              onBlur={[Function]}
+              onChange={null}
+              onFocus={[Function]}
+              placeholder="disabled"
+              type="password"
+              value=""
+            />
+            <label
+              className=""
+              htmlFor="pass-shortid-mock"
+            >
+              Your password
+            </label>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            must have more than 12 characters
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`Storyshots Inputs Form 1`] = `
+<div
+  className="typography"
+>
+  <section
+    className=""
+  >
+    <h2>
+      Default
+    </h2>
+    <div>
+      <div
+        className="input active"
       >
         <div
           className="boxContainer"
@@ -9351,40 +9160,58 @@ exports[`Storyshots Inputs Default 1`] = `
               onChange={[Function]}
               onFocus={[Function]}
               placeholder="name@email.com"
-              type="password"
+              type="text"
               value="pagarme@pagar.me"
             />
-            <button
-              className="displayPasswordIcon"
-              onClick={[Function]}
-              tabIndex="-1"
-              type="button"
-            >
-              <svg />
-            </button>
-            <label
-              className="contentPresent"
-              htmlFor="email-shortid-mock"
-            >
-              Your email
-            </label>
+            
           </div>
           <p
             className="secondaryText"
           >
-            Success
+            Secondary Text
           </p>
         </div>
       </div>
     </div>
   </section>
-</div>
-`;
-
-exports[`Storyshots Inputs Form 1`] = `
-<div
-  className="typography"
->
+  <section
+    className=""
+  >
+    <h2>
+      Error
+    </h2>
+    <div>
+      <div
+        className="input active error"
+      >
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container"
+          >
+            <input
+              disabled={false}
+              id="email-shortid-mock"
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="name@email.com"
+              type="text"
+              value="pagarme@pagar.me"
+            />
+            
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Invalid email
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
   <section
     className=""
   >
@@ -9467,164 +9294,6 @@ exports[`Storyshots Inputs Form 1`] = `
           >
             Secondary Text
           </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section
-    className=""
-  >
-    <h2>
-      Default
-    </h2>
-    <div>
-      <div
-        className="input active"
-      >
-        <div
-          className="boxContainer"
-        >
-          <div
-            className="container"
-          >
-            <input
-              disabled={false}
-              id="email-shortid-mock"
-              name="email"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder="name@email.com"
-              type="text"
-              value="pagarme@pagar.me"
-            />
-            
-          </div>
-          <p
-            className="secondaryText"
-          >
-            Secondary Text
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section
-    className=""
-  >
-    <h2>
-      Error
-    </h2>
-    <div>
-      <div
-        className="input active error"
-      >
-        <div
-          className="boxContainer"
-        >
-          <div
-            className="container"
-          >
-            <input
-              disabled={false}
-              id="email-shortid-mock"
-              name="email"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder="name@email.com"
-              type="text"
-              value="pagarme@pagar.me"
-            />
-            
-          </div>
-          <p
-            className="secondaryText"
-          >
-            Invalid email
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section
-    className=""
-  >
-    <h2>
-      Success
-    </h2>
-    <div>
-      <div
-        className="input active success"
-      >
-        <div
-          className="boxContainer"
-        >
-          <div
-            className="container"
-          >
-            <input
-              disabled={false}
-              id="email-shortid-mock"
-              name="email"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder="name@email.com"
-              type="text"
-              value="pagarme@pagar.me"
-            />
-            
-          </div>
-          <p
-            className="secondaryText"
-          >
-            Success
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section
-    className=""
-  >
-    <h2>
-      Multiline disabled
-    </h2>
-    <div>
-      <div
-        className="input disabled"
-      >
-        <div
-          className="boxContainer"
-        >
-          <div
-            className="container multiline"
-          >
-            <textarea
-              disabled={true}
-              name="multiline"
-              onBlur={[Function]}
-              onChange={null}
-              onFocus={[Function]}
-              placeholder="disabled"
-              rows="1"
-              value=""
-            />
-            <label
-              className=""
-              htmlFor="multiline-shortid-mock"
-            >
-              Disabled
-            </label>
-            <div
-              className="expander"
-            >
-              
-              <br />
-            </div>
-          </div>
-          
         </div>
       </div>
     </div>
@@ -9719,11 +9388,11 @@ exports[`Storyshots Inputs Form 1`] = `
     className=""
   >
     <h2>
-      Multiline success
+      Multiline disabled
     </h2>
     <div>
       <div
-        className="input active success"
+        className="input disabled"
       >
         <div
           className="boxContainer"
@@ -9732,73 +9401,27 @@ exports[`Storyshots Inputs Form 1`] = `
             className="container multiline"
           >
             <textarea
-              disabled={false}
-              name="email"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder="name@email.com"
-              rows="1"
-              value="pagarme@pagar.me"
-            />
-            
-            <div
-              className="expander"
-            >
-              pagarme@pagar.me
-              <br />
-            </div>
-          </div>
-          <p
-            className="secondaryText"
-          >
-            Success!
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section
-    className=""
-  >
-    <h2>
-      Icon disabled
-    </h2>
-    <div>
-      <div
-        className="input disabled"
-      >
-        <div
-          className="icon"
-        >
-          <Mail32.svg
-            height={16}
-            width={16}
-          />
-        </div>
-        <div
-          className="boxContainer"
-        >
-          <div
-            className="container"
-          >
-            <input
               disabled={true}
-              id="name-shortid-mock"
-              name="name"
+              name="multiline"
               onBlur={[Function]}
               onChange={null}
               onFocus={[Function]}
               placeholder="disabled"
-              type="text"
+              rows="1"
               value=""
             />
             <label
               className=""
-              htmlFor="name-shortid-mock"
+              htmlFor="multiline-shortid-mock"
             >
-              Your email
+              Disabled
             </label>
+            <div
+              className="expander"
+            >
+              
+              <br />
+            </div>
           </div>
           
         </div>
@@ -9901,53 +9524,7 @@ exports[`Storyshots Inputs Form 1`] = `
     className=""
   >
     <h2>
-      Icon success
-    </h2>
-    <div>
-      <div
-        className="input active success"
-      >
-        <div
-          className="icon"
-        >
-          <Mail32.svg
-            height={16}
-            width={16}
-          />
-        </div>
-        <div
-          className="boxContainer"
-        >
-          <div
-            className="container"
-          >
-            <input
-              disabled={false}
-              id="email-shortid-mock"
-              name="email"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder="name@email.com"
-              type="text"
-              value="pagarme@pagar.me"
-            />
-            
-          </div>
-          <p
-            className="secondaryText"
-          >
-            Success!
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section
-    className=""
-  >
-    <h2>
-      Icon multiline disabled
+      Icon disabled
     </h2>
     <div>
       <div
@@ -9965,30 +9542,25 @@ exports[`Storyshots Inputs Form 1`] = `
           className="boxContainer"
         >
           <div
-            className="container multiline"
+            className="container"
           >
-            <textarea
+            <input
               disabled={true}
-              name="multiline"
+              id="name-shortid-mock"
+              name="name"
               onBlur={[Function]}
               onChange={null}
               onFocus={[Function]}
               placeholder="disabled"
-              rows="1"
+              type="text"
               value=""
             />
             <label
               className=""
-              htmlFor="multiline-shortid-mock"
+              htmlFor="name-shortid-mock"
             >
-              Disabled
+              Your email
             </label>
-            <div
-              className="expander"
-            >
-              
-              <br />
-            </div>
           </div>
           
         </div>
@@ -10101,11 +9673,11 @@ exports[`Storyshots Inputs Form 1`] = `
     className=""
   >
     <h2>
-      Icon multiline success
+      Icon multiline disabled
     </h2>
     <div>
       <div
-        className="input active success"
+        className="input disabled"
       >
         <div
           className="icon"
@@ -10122,114 +9694,29 @@ exports[`Storyshots Inputs Form 1`] = `
             className="container multiline"
           >
             <textarea
-              disabled={false}
-              name="email"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder="name@email.com"
-              rows="1"
-              value="pagarme@pagar.me"
-            />
-            
-            <div
-              className="expander"
-            >
-              pagarme@pagar.me
-              <br />
-            </div>
-          </div>
-          <p
-            className="secondaryText"
-          >
-            Success!
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section
-    className=""
-  >
-    <h2>
-      Password disabled
-    </h2>
-    <div>
-      <div
-        className="input disabled"
-      >
-        <div
-          className="boxContainer"
-        >
-          <div
-            className="container"
-          >
-            <input
               disabled={true}
-              id="pass-shortid-mock"
-              name="pass"
+              name="multiline"
               onBlur={[Function]}
               onChange={null}
               onFocus={[Function]}
               placeholder="disabled"
-              type="password"
+              rows="1"
               value=""
             />
             <label
               className=""
-              htmlFor="pass-shortid-mock"
+              htmlFor="multiline-shortid-mock"
             >
-              Your password
+              Disabled
             </label>
-          </div>
-          <p
-            className="secondaryText"
-          >
-            Must have more than 12 pixel
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section
-    className=""
-  >
-    <h2>
-      Password disabled with text
-    </h2>
-    <div>
-      <div
-        className="input disabled"
-      >
-        <div
-          className="boxContainer"
-        >
-          <div
-            className="container"
-          >
-            <input
-              disabled={true}
-              id="pass-shortid-mock"
-              name="pass"
-              onBlur={[Function]}
-              onChange={null}
-              onFocus={[Function]}
-              placeholder="disabled"
-              type="password"
-              value="secret_pass"
-            />
-            <label
-              className="contentPresent"
-              htmlFor="pass-shortid-mock"
+            <div
+              className="expander"
             >
-              Your password
-            </label>
+              
+              <br />
+            </div>
           </div>
-          <p
-            className="secondaryText"
-          >
-            Must have more than 12 pixel
-          </p>
+          
         </div>
       </div>
     </div>
@@ -10340,11 +9827,11 @@ exports[`Storyshots Inputs Form 1`] = `
     className=""
   >
     <h2>
-      Password success
+      Password disabled
     </h2>
     <div>
       <div
-        className="input active success"
+        className="input disabled"
       >
         <div
           className="boxContainer"
@@ -10353,27 +9840,19 @@ exports[`Storyshots Inputs Form 1`] = `
             className="container"
           >
             <input
-              disabled={false}
-              id="email-shortid-mock"
-              name="email"
+              disabled={true}
+              id="pass-shortid-mock"
+              name="pass"
               onBlur={[Function]}
-              onChange={[Function]}
+              onChange={null}
               onFocus={[Function]}
-              placeholder="name@email.com"
+              placeholder="disabled"
               type="password"
-              value="pagarme@pagar.me"
+              value=""
             />
-            <button
-              className="displayPasswordIcon"
-              onClick={[Function]}
-              tabIndex="-1"
-              type="button"
-            >
-              <svg />
-            </button>
             <label
-              className="contentPresent"
-              htmlFor="email-shortid-mock"
+              className=""
+              htmlFor="pass-shortid-mock"
             >
               Your password
             </label>
@@ -10381,7 +9860,50 @@ exports[`Storyshots Inputs Form 1`] = `
           <p
             className="secondaryText"
           >
-            Success
+            Must have more than 12 pixel
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Password disabled with text
+    </h2>
+    <div>
+      <div
+        className="input disabled"
+      >
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container"
+          >
+            <input
+              disabled={true}
+              id="pass-shortid-mock"
+              name="pass"
+              onBlur={[Function]}
+              onChange={null}
+              onFocus={[Function]}
+              placeholder="disabled"
+              type="password"
+              value="secret_pass"
+            />
+            <label
+              className="contentPresent"
+              htmlFor="pass-shortid-mock"
+            >
+              Your password
+            </label>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Must have more than 12 pixel
           </p>
         </div>
       </div>
@@ -10503,7 +10025,6 @@ exports[`Storyshots Landing Pagar.me login 1`] = `
                     Email
                   </label>
                 </div>
-                
               </div>
             </div>
             <div
@@ -10533,7 +10054,6 @@ exports[`Storyshots Landing Pagar.me login 1`] = `
                     Senha
                   </label>
                 </div>
-                
               </div>
             </div>
           </div>
@@ -10671,7 +10191,6 @@ exports[`Storyshots Landing Pagar.me password recovery 1`] = `
                       Email
                     </label>
                   </div>
-                  
                 </div>
               </div>
             </div>
@@ -10917,7 +10436,6 @@ exports[`Storyshots Landing Pagar.me sign in 1`] = `
                     Nome completo
                   </label>
                 </div>
-                
               </div>
             </div>
             <div
@@ -10947,7 +10465,6 @@ exports[`Storyshots Landing Pagar.me sign in 1`] = `
                     Empresa
                   </label>
                 </div>
-                
               </div>
             </div>
             <div
@@ -10977,7 +10494,6 @@ exports[`Storyshots Landing Pagar.me sign in 1`] = `
                     Email
                   </label>
                 </div>
-                
               </div>
             </div>
             <div
@@ -11007,7 +10523,6 @@ exports[`Storyshots Landing Pagar.me sign in 1`] = `
                     Senha
                   </label>
                 </div>
-                
               </div>
             </div>
           </div>
@@ -11236,7 +10751,6 @@ exports[`Storyshots Landing Pagar.me two factor login 1`] = `
                     Email
                   </label>
                 </div>
-                
               </div>
             </div>
             <div
@@ -11266,7 +10780,6 @@ exports[`Storyshots Landing Pagar.me two factor login 1`] = `
                     Senha
                   </label>
                 </div>
-                
               </div>
             </div>
             <div
@@ -11296,7 +10809,6 @@ exports[`Storyshots Landing Pagar.me two factor login 1`] = `
                     Token
                   </label>
                 </div>
-                
               </div>
             </div>
           </div>
