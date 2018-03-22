@@ -11,8 +11,8 @@ const consumeTheme = ThemeConsumer('UIButton')
  * Simple HTML button in a beautiful skin.
  */
 const Button = ({
-  base,
   children,
+  circle,
   disabled,
   fill,
   icon,
@@ -25,11 +25,11 @@ const Button = ({
   const buttonClasses = classNames(
     theme.button,
     theme[fill],
-    theme[base],
     theme[`${relevance}Relevance`],
     theme[size],
     {
       [theme.iconButton]: !isNil(icon) && isNil(children),
+      [theme.circle]: !isNil(icon) && isNil(children) && circle,
     }
   )
 
@@ -61,19 +61,11 @@ Button.propTypes = {
     highRelevance: PropTypes.string,
     normalRelevance: PropTypes.string,
     lowRelevance: PropTypes.string,
-    light: PropTypes.string,
-    dark: PropTypes.string,
     tiny: PropTypes.string,
-    small: PropTypes.string,
     default: PropTypes.string,
-    large: PropTypes.string,
+    huge: PropTypes.string,
+    circle: PropTypes.string,
   }),
-  /**
-   * The contrast of the background where this component is applied.
-   */
-  base: PropTypes.oneOf([
-    'dark', 'light',
-  ]),
   /**
    * The children element.
    */
@@ -96,6 +88,10 @@ Button.propTypes = {
    */
   icon: PropTypes.element,
   /**
+   * It changes the border-radius of the icon Button.
+   */
+  circle: PropTypes.bool,
+  /**
    * The `onClick` prop is triggered when the button is clicked.
    */
   onClick: PropTypes.func,
@@ -109,7 +105,7 @@ Button.propTypes = {
    * Component's size.
    */
   size: PropTypes.oneOf([
-    'tiny', 'small', 'default', 'large',
+    'tiny', 'default', 'huge',
   ]),
   /**
    * Button's type.
@@ -118,8 +114,8 @@ Button.propTypes = {
 }
 
 Button.defaultProps = {
-  base: 'light',
   children: null,
+  circle: false,
   disabled: false,
   fill: 'flat',
   icon: null,
