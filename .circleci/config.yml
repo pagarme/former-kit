@@ -15,12 +15,28 @@ jobs:
           - dependencies-{{ checksum "package.json" }}
           - dependencies-
 
-      - run: |
-          yarn
-          yarn lint
-          yarn build
-          yarn test
-          yarn percy; true
+      - run:
+          name: Installing dependencies
+          command: yarn
+
+      - run:
+          name: Linting source files
+          command: yarn lint
+
+      - run:
+          name: Building production bundle
+          command: yarn build
+
+      - run:
+          name: Running tests
+          command: yarn test
+
+      - run:
+          name: Building and uploading storybook for visual diff
+          working_directory: ~/repo
+          command: |
+            scripts/fetch-skin.sh
+            yarn percy; true
 
       - save_cache:
           paths:
