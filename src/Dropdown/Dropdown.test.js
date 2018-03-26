@@ -76,36 +76,6 @@ describe('Dropdown', () => {
     expect(onChange).not.toHaveBeenLastCalledWith(changeEvent)
   })
 
-  it('should mount with success', () => {
-    const onChange = jest.fn()
-
-    const component = shallow(
-      <Dropdown
-        options={options}
-        name="artefatos"
-        disabled
-        success="mock text"
-        label="Selecione um"
-        onChange={onChange}
-      />
-    )
-
-    const changeEvent = {
-      target: {
-        value,
-      },
-    }
-
-    component
-      .dive()
-      .find('select')
-      .first()
-      .simulate('change', changeEvent)
-
-    expect(onChange).not.toHaveBeenCalled()
-    expect(onChange).not.toHaveBeenLastCalledWith(changeEvent)
-  })
-
   it('should mount with error', () => {
     const onChange = jest.fn()
 

@@ -31,7 +31,6 @@ class DropdownState extends React.Component {
           disabled={this.props.disabled}
           placeholder={this.props.placeholder}
           error={this.props.error}
-          success={this.props.success}
         />
       )
       : (
@@ -43,7 +42,6 @@ class DropdownState extends React.Component {
           disabled={this.props.disabled}
           placeholder={this.props.placeholder}
           error={this.props.error}
-          success={this.props.success}
         />
       )
   }
@@ -53,7 +51,6 @@ DropdownState.propTypes = {
   type: PropTypes.oneOf(['default', 'form']),
   disabled: PropTypes.bool,
   error: PropTypes.string,
-  success: PropTypes.string,
   placeholder: PropTypes.string,
 }
 
@@ -61,7 +58,6 @@ DropdownState.defaultProps = {
   type: 'default',
   disabled: false,
   error: '',
-  success: '',
   placeholder: '',
 }
 
