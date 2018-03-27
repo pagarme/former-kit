@@ -17,7 +17,6 @@ class InputState extends React.Component {
       error,
       icon,
       multiline,
-      success,
       type,
       label,
     } = this.props
@@ -36,7 +35,6 @@ class InputState extends React.Component {
         name="email"
         onChange={e => this.setState({ email: e.target.value })}
         placeholder="name@email.com"
-        success={success}
         type={type}
         value={email}
       />
@@ -48,7 +46,6 @@ InputState.defaultProps = {
   error: '',
   icon: null,
   multiline: false,
-  success: '',
   type: null,
   labe: 'Your email',
 }
@@ -56,6 +53,14 @@ InputState.defaultProps = {
 storiesOf('Inputs', module)
   .add('Form', () => (
     <div>
+      <Section title="Default">
+        <InputState type="text" />
+      </Section>
+
+      <Section title="Error">
+        <InputState type="text" error="Invalid email" />
+      </Section>
+
       <Section title="Disabled">
         <Input
           name="email"
@@ -80,16 +85,12 @@ storiesOf('Inputs', module)
         />
       </Section>
 
-      <Section title="Default">
-        <InputState type="text" />
+      <Section title="Multiline default">
+        <InputState multiline placeholder="default" />
       </Section>
 
-      <Section title="Error">
-        <InputState type="text" error="Invalid email" />
-      </Section>
-
-      <Section title="Success">
-        <InputState type="text" success="Success" />
+      <Section title="Multiline error">
+        <InputState multiline error="Error!" />
       </Section>
 
       <Section title="Multiline disabled">
@@ -104,30 +105,6 @@ storiesOf('Inputs', module)
         />
       </Section>
 
-      <Section title="Multiline default">
-        <InputState multiline placeholder="default" />
-      </Section>
-
-      <Section title="Multiline error">
-        <InputState multiline error="Error!" />
-      </Section>
-
-      <Section title="Multiline success">
-        <InputState multiline success="Success!" />
-      </Section>
-
-      <Section title="Icon disabled">
-        <Input
-          name="name"
-          label="Your email"
-          placeholder="disabled"
-          disabled
-          icon={<IconMail width={16} height={16} />}
-          onChange={action('text changed')}
-          value=""
-        />
-      </Section>
-
       <Section title="Icon default">
         <InputState type="text" icon={<IconMail width={16} height={16} />} />
       </Section>
@@ -136,16 +113,11 @@ storiesOf('Inputs', module)
         <InputState type="text" error="Error!" icon={<IconMail width={16} height={16} />} />
       </Section>
 
-      <Section title="Icon success">
-        <InputState type="text" success="Success!" icon={<IconMail width={16} height={16} />} />
-      </Section>
-
-      <Section title="Icon multiline disabled">
+      <Section title="Icon disabled">
         <Input
-          name="multiline"
-          label="Disabled"
+          name="name"
+          label="Your email"
           placeholder="disabled"
-          multiline
           disabled
           icon={<IconMail width={16} height={16} />}
           onChange={action('text changed')}
@@ -161,8 +133,32 @@ storiesOf('Inputs', module)
         <InputState multiline error="Error!" icon={<IconMail width={16} height={16} />} />
       </Section>
 
-      <Section title="Icon multiline success">
-        <InputState multiline success="Success!" icon={<IconMail width={16} height={16} />} />
+      <Section title="Icon multiline disabled">
+        <Input
+          name="multiline"
+          label="Disabled"
+          placeholder="disabled"
+          multiline
+          disabled
+          icon={<IconMail width={16} height={16} />}
+          onChange={action('text changed')}
+          value=""
+        />
+      </Section>
+
+      <Section title="Password default">
+        <InputState
+          type="password"
+          label="Your password"
+        />
+      </Section>
+
+      <Section title="Password error">
+        <InputState
+          type="password"
+          label="Your password"
+          error="Error"
+        />
       </Section>
 
       <Section title="Password disabled">
@@ -188,29 +184,6 @@ storiesOf('Inputs', module)
           hint="Must have more than 12 pixel"
           onChange={action('text changed')}
           value="secret_pass"
-        />
-      </Section>
-
-      <Section title="Password default">
-        <InputState
-          type="password"
-          label="Your password"
-        />
-      </Section>
-
-      <Section title="Password error">
-        <InputState
-          type="password"
-          label="Your password"
-          error="Error"
-        />
-      </Section>
-
-      <Section title="Password success">
-        <InputState
-          type="password"
-          label="Your password"
-          success="Success"
         />
       </Section>
     </div>
