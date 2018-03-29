@@ -11682,7 +11682,7 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
             <input
               checked={true}
               id="segmented-switch-shortid-mock-shortid-mock-live-test-live"
-              name="segmented-switch-shortid-mock-shortid-mock-live-test-live"
+              name="segmented-switch-shortid-mock"
               onChange={[Function]}
               type="radio"
               value="live"
@@ -11700,7 +11700,7 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
             <input
               checked={false}
               id="segmented-switch-shortid-mock-shortid-mock-live-test-test"
-              name="segmented-switch-shortid-mock-shortid-mock-live-test-test"
+              name="segmented-switch-shortid-mock"
               onChange={[Function]}
               type="radio"
               value="test"
@@ -12152,7 +12152,7 @@ exports[`Storyshots Layout Default with all props 1`] = `
             <input
               checked={true}
               id="segmented-switch-shortid-mock-shortid-mock-live-test-live"
-              name="segmented-switch-shortid-mock-shortid-mock-live-test-live"
+              name="segmented-switch-shortid-mock"
               onChange={[Function]}
               type="radio"
               value="live"
@@ -12170,7 +12170,7 @@ exports[`Storyshots Layout Default with all props 1`] = `
             <input
               checked={false}
               id="segmented-switch-shortid-mock-shortid-mock-live-test-test"
-              name="segmented-switch-shortid-mock-shortid-mock-live-test-test"
+              name="segmented-switch-shortid-mock"
               onChange={[Function]}
               type="radio"
               value="test"
@@ -12719,7 +12719,7 @@ exports[`Storyshots Layout Default without Footer 1`] = `
             <input
               checked={true}
               id="segmented-switch-shortid-mock-shortid-mock-live-test-live"
-              name="segmented-switch-shortid-mock-shortid-mock-live-test-live"
+              name="segmented-switch-shortid-mock"
               onChange={[Function]}
               type="radio"
               value="live"
@@ -12737,7 +12737,7 @@ exports[`Storyshots Layout Default without Footer 1`] = `
             <input
               checked={false}
               id="segmented-switch-shortid-mock-shortid-mock-live-test-test"
-              name="segmented-switch-shortid-mock-shortid-mock-live-test-test"
+              name="segmented-switch-shortid-mock"
               onChange={[Function]}
               type="radio"
               value="test"
@@ -13231,7 +13231,7 @@ exports[`Storyshots Layout Default without Header 1`] = `
             <input
               checked={true}
               id="segmented-switch-shortid-mock-shortid-mock-live-test-live"
-              name="segmented-switch-shortid-mock-shortid-mock-live-test-live"
+              name="segmented-switch-shortid-mock"
               onChange={[Function]}
               type="radio"
               value="live"
@@ -13249,7 +13249,7 @@ exports[`Storyshots Layout Default without Header 1`] = `
             <input
               checked={false}
               id="segmented-switch-shortid-mock-shortid-mock-live-test-test"
-              name="segmented-switch-shortid-mock-shortid-mock-live-test-test"
+              name="segmented-switch-shortid-mock"
               onChange={[Function]}
               type="radio"
               value="test"
@@ -15954,7 +15954,7 @@ exports[`Storyshots SegmentedSwitch Default 1`] = `
           <input
             checked={true}
             id="segmented-switch-shortid-mock-live-test-test"
-            name="segmented-switch-shortid-mock-live-test-test"
+            name="segmented-switch-shortid-mock"
             onChange={[Function]}
             type="radio"
             value="test"
@@ -15972,7 +15972,7 @@ exports[`Storyshots SegmentedSwitch Default 1`] = `
           <input
             checked={false}
             id="segmented-switch-shortid-mock-live-test-live"
-            name="segmented-switch-shortid-mock-live-test-live"
+            name="segmented-switch-shortid-mock"
             onChange={[Function]}
             type="radio"
             value="live"
@@ -16003,7 +16003,7 @@ exports[`Storyshots SegmentedSwitch Default 1`] = `
           <input
             checked={false}
             id="segmented-switch-shortid-mock-super-extra-test"
-            name="segmented-switch-shortid-mock-super-extra-test"
+            name="segmented-switch-shortid-mock"
             onChange={[Function]}
             type="radio"
             value="test"
@@ -16021,7 +16021,7 @@ exports[`Storyshots SegmentedSwitch Default 1`] = `
           <input
             checked={false}
             id="segmented-switch-shortid-mock-super-extra-live"
-            name="segmented-switch-shortid-mock-super-extra-live"
+            name="segmented-switch-shortid-mock"
             onChange={[Function]}
             type="radio"
             value="live"
@@ -16039,7 +16039,7 @@ exports[`Storyshots SegmentedSwitch Default 1`] = `
           <input
             checked={true}
             id="segmented-switch-shortid-mock-super-extra-super-test"
-            name="segmented-switch-shortid-mock-super-extra-super-test"
+            name="segmented-switch-shortid-mock"
             onChange={[Function]}
             type="radio"
             value="super-test"
@@ -16057,7 +16057,7 @@ exports[`Storyshots SegmentedSwitch Default 1`] = `
           <input
             checked={false}
             id="segmented-switch-shortid-mock-super-extra-extra-live"
-            name="segmented-switch-shortid-mock-super-extra-extra-live"
+            name="segmented-switch-shortid-mock"
             onChange={[Function]}
             type="radio"
             value="extra-live"
@@ -16185,7 +16185,7 @@ exports[`Storyshots Sidebar Default 1`] = `
         <input
           checked={true}
           id="segmented-switch-shortid-mock-shortid-mock-live-test-live"
-          name="segmented-switch-shortid-mock-shortid-mock-live-test-live"
+          name="segmented-switch-shortid-mock"
           onChange={[Function]}
           type="radio"
           value="live"
@@ -16203,7 +16203,7 @@ exports[`Storyshots Sidebar Default 1`] = `
         <input
           checked={false}
           id="segmented-switch-shortid-mock-shortid-mock-live-test-test"
-          name="segmented-switch-shortid-mock-shortid-mock-live-test-test"
+          name="segmented-switch-shortid-mock"
           onChange={[Function]}
           type="radio"
           value="test"
