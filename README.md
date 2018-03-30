@@ -21,7 +21,10 @@ abstractions.
 
 Install `former-kit`. If you want to see the full power of FormerKit, you
 will also need a skin. We have developed a skin based on our styleguide,
-it's available in package `former-kit-skin-pagarme`.
+it's available in package 
+[npm former-kit-skin-pagarme](https://www.npmjs.com/package/former-kit-skin-pagarme)
+or in the github repository
+[former-kit-skin-pagarme](https://github.com/pagarme/former-kit-skin-pagarme)
 
 ```sh
 yarn add former-kit former-kit-skin-pagarme
