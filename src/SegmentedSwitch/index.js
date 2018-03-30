@@ -36,7 +36,7 @@ class SegmentedSwitch extends React.PureComponent {
       >
         <input
           id={id}
-          name={id}
+          name={this.instanceId}
           value={item}
           type="radio"
           checked={selected === item}
@@ -85,21 +85,21 @@ SegmentedSwitch.propTypes = {
   */
   items: arrayOf(string).isRequired,
   /**
-   * The prop responsible for identifying the selected item.
-   * Its value is the value of one of the `items`.
-  */
-  selected: string.isRequired,
+   * A name to identify the component and create unique ids for
+   * the items.
+   */
+  name: string.isRequired,
   /**
    * The callback called when an item receives a click.
    * @param {string} item - the value of the item clicked
    * @param {number} index - the index of the item click
-  */
+   */
   onChange: func.isRequired,
   /**
-   * A name to identify the component and create unique ids for
-   * the items.
+   * The prop responsible for identifying the selected item.
+   * Its value is the value of one of the `items`.
   */
-  name: string.isRequired,
+  selected: string.isRequired,
 }
 
 SegmentedSwitch.defaultProps = {
