@@ -21,7 +21,12 @@ class Dropdown extends React.Component {
 
     this.instanceId = `${props.name}-${shortid.generate()}`
     this.handleChange = this.handleChange.bind(this)
+    this.handleBlur = this.handleBlur.bind(this)
+    this.handleFocus = this.handleFocus.bind(this)
     this.selectedName = this.selectedName.bind(this)
+    this.state = {
+      isFocused: false,
+    }
   }
 
   handleChange (event) {
@@ -29,6 +34,24 @@ class Dropdown extends React.Component {
 
     if (!disabled) {
       onChange(event)
+    }
+  }
+
+  handleBlur () {
+    this.setState({
+      isFocused: false,
+    })
+    if (this.props.onBlur) {
+      this.props.onBlur()
+    }
+  }
+
+  handleFocus () {
+    this.setState({
+      isFocused: true,
+    })
+    if (this.props.onFocus) {
+      this.props.onFocus()
     }
   }
 
@@ -82,20 +105,19 @@ class Dropdown extends React.Component {
       icons,
       label,
       placeholder,
-      success,
       theme,
     } = this.props
 
     const rootClasses = classNames(
       theme.dropdown,
       {
+        [theme.focused]: this.state.isFocused,
         [theme.disabled]: disabled,
         [theme.error]: error,
-        [theme.success]: success,
       }
     )
 
-    const hasSecondaryText = theme.secondaryText && (success || error)
+    const hasSecondaryText = theme.secondaryText && (error)
     const hasLabel = theme.label && label
 
     return (
@@ -113,6 +135,8 @@ class Dropdown extends React.Component {
           id={this.instanceId}
           className={theme.select}
           onChange={this.handleChange}
+          onBlur={this.handleBlur}
+          onFocus={this.handleFocus}
           disabled={disabled}
           defaultValue="placeholder"
         >
@@ -133,7 +157,7 @@ class Dropdown extends React.Component {
 
         {hasSecondaryText &&
           <p className={theme.secondaryText}>
-            {success || error}
+            {error}
           </p>
         }
       </div>
@@ -150,10 +174,10 @@ Dropdown.propTypes = {
     disabled: PropTypes.string,
     dropdown: PropTypes.string,
     error: PropTypes.string,
-    select: PropTypes.string,
+    focused: PropTypes.string,
     placeholder: PropTypes.string,
     secondaryText: PropTypes.string,
-    success: PropTypes.string,
+    select: PropTypes.string,
   }),
   /**
    * Disables the component.
@@ -184,6 +208,19 @@ Dropdown.propTypes = {
    */
   name: PropTypes.string.isRequired,
   /**
+   * Triggered by the dropdown's blur event.
+   */
+  onBlur: PropTypes.func,
+  /**
+   * Triggered when an option is selected.
+   * @param {object} event
+   */
+  onChange: PropTypes.func.isRequired,
+  /**
+   * Triggered by the dropdown's focus event.
+   */
+  onFocus: PropTypes.func,
+  /**
    * List of objects which will be the base for the component options.
    */
   options: PropTypes.arrayOf(PropTypes.shape({
@@ -197,20 +234,10 @@ Dropdown.propTypes = {
     name: PropTypes.string,
   })).isRequired,
   /**
-   * Triggered when an option is selected.
-   * @param {object} event
-   */
-  onChange: PropTypes.func.isRequired,
-  /**
    * Text which will be shown when none option is selected
    * (in the form variant the label may replace the placeholder).
    */
   placeholder: PropTypes.string,
-  /**
-   * Success message which adds success classes to the component.
-   * The message stays under the value selector.
-   */
-  success: PropTypes.string,
   /**
    * Selected value. If it's not set, the placeholder will be shown.
    */
@@ -218,14 +245,15 @@ Dropdown.propTypes = {
 }
 
 Dropdown.defaultProps = {
+  disabled: false,
+  error: '',
+  icons: {},
+  label: '',
+  onBlur: null,
+  onFocus: null,
+  placeholder: '',
   theme: {},
   value: '',
-  disabled: false,
-  placeholder: '',
-  error: '',
-  success: '',
-  label: '',
-  icons: {},
 }
 
 export default Dropdown

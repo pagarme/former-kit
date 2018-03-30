@@ -5806,67 +5806,9 @@ exports[`Storyshots Dropdown Default 1`] = `
             defaultValue="placeholder"
             disabled={false}
             id="things-shortid-mock"
+            onBlur={[Function]}
             onChange={[Function]}
-          >
-            <option
-              className="option placeholder"
-              disabled={true}
-              hidden={true}
-              value="placeholder"
-            >
-              
-            </option>
-            <option
-              className="option"
-              value="github"
-            >
-              Github
-            </option>
-            <option
-              className="option"
-              value="open-source"
-            >
-              Open Source
-            </option>
-            <option
-              className="option"
-              value="pilot"
-            >
-              Pilot
-            </option>
-          </select>
-          <span
-            className="arrow"
-          >
-            <svg />
-          </span>
-          
-        </div>
-        <p>
-          Selected: 
-          
-        </p>
-      </div>
-    </div>
-  </section>
-  <section
-    className=""
-  >
-    <h2>
-      Disabled
-    </h2>
-    <div>
-      <div>
-        <div
-          className="dropdown disabled"
-        >
-          
-          <select
-            className="select"
-            defaultValue="placeholder"
-            disabled={true}
-            id="things-shortid-mock"
-            onChange={[Function]}
+            onFocus={[Function]}
           >
             <option
               className="option placeholder"
@@ -5926,7 +5868,9 @@ exports[`Storyshots Dropdown Default 1`] = `
             defaultValue="placeholder"
             disabled={false}
             id="things-shortid-mock"
+            onBlur={[Function]}
             onChange={[Function]}
+            onFocus={[Function]}
           >
             <option
               className="option placeholder"
@@ -5935,6 +5879,134 @@ exports[`Storyshots Dropdown Default 1`] = `
               value="placeholder"
             >
               Select
+            </option>
+            <option
+              className="option"
+              value="github"
+            >
+              Github
+            </option>
+            <option
+              className="option"
+              value="open-source"
+            >
+              Open Source
+            </option>
+            <option
+              className="option"
+              value="pilot"
+            >
+              Pilot
+            </option>
+          </select>
+          <span
+            className="arrow"
+          >
+            <svg />
+          </span>
+          
+        </div>
+        <p>
+          Selected: 
+          
+        </p>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Error
+    </h2>
+    <div>
+      <div>
+        <div
+          className="dropdown error"
+        >
+          
+          <select
+            className="select"
+            defaultValue="placeholder"
+            disabled={false}
+            id="things-shortid-mock"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+          >
+            <option
+              className="option placeholder"
+              disabled={true}
+              hidden={true}
+              value="placeholder"
+            >
+              
+            </option>
+            <option
+              className="option"
+              value="github"
+            >
+              Github
+            </option>
+            <option
+              className="option"
+              value="open-source"
+            >
+              Open Source
+            </option>
+            <option
+              className="option"
+              value="pilot"
+            >
+              Pilot
+            </option>
+          </select>
+          <span
+            className="arrow"
+          >
+            <svg />
+          </span>
+          <p
+            className="secondaryText"
+          >
+            Something went wrong
+          </p>
+        </div>
+        <p>
+          Selected: 
+          
+        </p>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Disabled
+    </h2>
+    <div>
+      <div>
+        <div
+          className="dropdown disabled"
+        >
+          
+          <select
+            className="select"
+            defaultValue="placeholder"
+            disabled={true}
+            id="things-shortid-mock"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+          >
+            <option
+              className="option placeholder"
+              disabled={true}
+              hidden={true}
+              value="placeholder"
+            >
+              
             </option>
             <option
               className="option"
@@ -5986,7 +6058,9 @@ exports[`Storyshots Dropdown Default 1`] = `
             defaultValue="placeholder"
             disabled={true}
             id="things-shortid-mock"
+            onBlur={[Function]}
             onChange={[Function]}
+            onFocus={[Function]}
           >
             <option
               className="option placeholder"
@@ -6058,7 +6132,9 @@ exports[`Storyshots Dropdown Form 1`] = `
             defaultValue="placeholder"
             disabled={false}
             id="Things-shortid-mock"
+            onBlur={[Function]}
             onChange={[Function]}
+            onFocus={[Function]}
           >
             <option
               className="option placeholder"
@@ -6123,7 +6199,9 @@ exports[`Storyshots Dropdown Form 1`] = `
             defaultValue="placeholder"
             disabled={false}
             id="Things-shortid-mock"
+            onBlur={[Function]}
             onChange={[Function]}
+            onFocus={[Function]}
           >
             <option
               className="option placeholder"
@@ -6132,136 +6210,6 @@ exports[`Storyshots Dropdown Form 1`] = `
               value="placeholder"
             >
               Select
-            </option>
-            <option
-              className="option"
-              value="github"
-            >
-              Github
-            </option>
-            <option
-              className="option"
-              value="open-source"
-            >
-              Open Source
-            </option>
-            <option
-              className="option"
-              value="pilot"
-            >
-              Pilot
-            </option>
-          </select>
-          <span
-            className="arrow"
-          >
-            <svg />
-          </span>
-          
-        </div>
-        <p>
-          Selected: 
-          
-        </p>
-      </div>
-    </div>
-  </section>
-  <section
-    className=""
-  >
-    <h2>
-      Disabled with placeholder
-    </h2>
-    <div>
-      <div>
-        <div
-          className="dropdown disabled"
-        >
-          <label
-            className="label"
-            htmlFor="Things-shortid-mock"
-          >
-            Things
-          </label>
-          <select
-            className="select"
-            defaultValue="placeholder"
-            disabled={true}
-            id="Things-shortid-mock"
-            onChange={[Function]}
-          >
-            <option
-              className="option placeholder"
-              disabled={true}
-              hidden={true}
-              value="placeholder"
-            >
-              Select
-            </option>
-            <option
-              className="option"
-              value="github"
-            >
-              Github
-            </option>
-            <option
-              className="option"
-              value="open-source"
-            >
-              Open Source
-            </option>
-            <option
-              className="option"
-              value="pilot"
-            >
-              Pilot
-            </option>
-          </select>
-          <span
-            className="arrow"
-          >
-            <svg />
-          </span>
-          
-        </div>
-        <p>
-          Selected: 
-          
-        </p>
-      </div>
-    </div>
-  </section>
-  <section
-    className=""
-  >
-    <h2>
-      Disabled
-    </h2>
-    <div>
-      <div>
-        <div
-          className="dropdown disabled"
-        >
-          <label
-            className="label"
-            htmlFor="Things-shortid-mock"
-          >
-            Things
-          </label>
-          <select
-            className="select"
-            defaultValue="placeholder"
-            disabled={true}
-            id="Things-shortid-mock"
-            onChange={[Function]}
-          >
-            <option
-              className="option placeholder"
-              disabled={true}
-              hidden={true}
-              value="placeholder"
-            >
-              
             </option>
             <option
               className="option"
@@ -6318,7 +6266,9 @@ exports[`Storyshots Dropdown Form 1`] = `
             defaultValue="placeholder"
             disabled={false}
             id="Things-shortid-mock"
+            onBlur={[Function]}
             onChange={[Function]}
+            onFocus={[Function]}
           >
             <option
               className="option placeholder"
@@ -6369,12 +6319,12 @@ exports[`Storyshots Dropdown Form 1`] = `
     className=""
   >
     <h2>
-      Success
+      Disabled
     </h2>
     <div>
       <div>
         <div
-          className="dropdown success"
+          className="dropdown disabled"
         >
           <label
             className="label"
@@ -6385,9 +6335,11 @@ exports[`Storyshots Dropdown Form 1`] = `
           <select
             className="select"
             defaultValue="placeholder"
-            disabled={false}
+            disabled={true}
             id="Things-shortid-mock"
+            onBlur={[Function]}
             onChange={[Function]}
+            onFocus={[Function]}
           >
             <option
               className="option placeholder"
@@ -6421,11 +6373,74 @@ exports[`Storyshots Dropdown Form 1`] = `
           >
             <svg />
           </span>
-          <p
-            className="secondaryText"
+          
+        </div>
+        <p>
+          Selected: 
+          
+        </p>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Disabled with placeholder
+    </h2>
+    <div>
+      <div>
+        <div
+          className="dropdown disabled"
+        >
+          <label
+            className="label"
+            htmlFor="Things-shortid-mock"
           >
-            Something went well
-          </p>
+            Things
+          </label>
+          <select
+            className="select"
+            defaultValue="placeholder"
+            disabled={true}
+            id="Things-shortid-mock"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+          >
+            <option
+              className="option placeholder"
+              disabled={true}
+              hidden={true}
+              value="placeholder"
+            >
+              Select
+            </option>
+            <option
+              className="option"
+              value="github"
+            >
+              Github
+            </option>
+            <option
+              className="option"
+              value="open-source"
+            >
+              Open Source
+            </option>
+            <option
+              className="option"
+              value="pilot"
+            >
+              Pilot
+            </option>
+          </select>
+          <span
+            className="arrow"
+          >
+            <svg />
+          </span>
+          
         </div>
         <p>
           Selected: 

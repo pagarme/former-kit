@@ -18,7 +18,6 @@ const options = [
   },
 ]
 
-
 class DropdownState extends React.Component {
   constructor (props) {
     super(props)
@@ -36,7 +35,6 @@ class DropdownState extends React.Component {
           disabled={this.props.disabled}
           placeholder={this.props.placeholder}
           error={this.props.error}
-          success={this.props.success}
         />
         <p>Selected: {this.state.selected}</p>
       </div>
@@ -47,7 +45,6 @@ class DropdownState extends React.Component {
 DropdownState.defaultProps = {
   disabled: false,
   error: '',
-  success: '',
   placeholder: '',
 }
 
@@ -58,12 +55,16 @@ storiesOf('Dropdown', module)
         <DropdownState />
       </Section>
 
-      <Section title="Disabled">
-        <DropdownState disabled />
-      </Section>
-
       <Section title="Default with placeholder">
         <DropdownState placeholder="Select" />
+      </Section>
+
+      <Section title="Error">
+        <DropdownState error="Something went wrong" />
+      </Section>
+
+      <Section title="Disabled">
+        <DropdownState disabled />
       </Section>
 
       <Section title="Disabled with placeholder">

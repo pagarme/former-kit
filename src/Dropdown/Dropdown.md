@@ -31,7 +31,6 @@ class DropdownState extends React.Component {
           disabled={this.props.disabled}
           placeholder={this.props.placeholder}
           error={this.props.error}
-          success={this.props.success}
         />
       )
   }
@@ -74,19 +73,6 @@ Error
     <br />
     <DropdownState
       error="Error!"
-      placeholder="Placeholder"
-    />
-  </div>
-```
-
-Success
-```jsx
-  const DropdownState = require('./example/DropdownState').default;
-  <div>
-    <DropdownState success="Success!" />
-    <br />
-    <DropdownState
-      success="Success!"
       placeholder="Placeholder"
     />
   </div>
@@ -141,22 +127,3 @@ Error
     />
   </div>
 ```
-
-Success
-```jsx
-  const DropdownState = require('./example/DropdownState').default;
-  <div>
-    <DropdownState
-      type="form"
-      success="Success!"
-    />
-    <br />
-    <DropdownState
-      success="Success!"
-      type="form"
-      placeholder="Placeholder"
-    />
-  </div>
-```
-
-

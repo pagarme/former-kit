@@ -36,9 +36,7 @@ class DropdownState extends React.Component {
           disabled={this.props.disabled}
           placeholder={this.props.placeholder}
           error={this.props.error}
-          success={this.props.success}
         />
-
         <p>Selected: {this.state.selected}</p>
       </div>
     )
@@ -48,7 +46,6 @@ class DropdownState extends React.Component {
 DropdownState.defaultProps = {
   disabled: false,
   error: '',
-  success: '',
   placeholder: '',
 }
 
@@ -63,21 +60,16 @@ storiesOf('Dropdown', module)
         <DropdownState placeholder="Select" />
       </Section>
 
-      <Section title="Disabled with placeholder">
-        <DropdownState disabled placeholder="Select" />
+      <Section title="Error">
+        <DropdownState error="Something went wrong" />
       </Section>
 
       <Section title="Disabled">
         <DropdownState disabled />
       </Section>
 
-      <Section title="Error">
-        <DropdownState error="Something went wrong" />
-      </Section>
-
-      <Section title="Success">
-        <DropdownState success="Something went well" />
+      <Section title="Disabled with placeholder">
+        <DropdownState disabled placeholder="Select" />
       </Section>
     </div>
   ))
-
