@@ -12,256 +12,176 @@ import styles from './style.css'
 storiesOf('Buttons', module)
   .add('Default', () => (
     <div>
-      <Section title="Default">
-        <div className={styles.spacingAround}>
-          <Button>Call to Action</Button>
-          <Button relevance="high">Call to Action</Button>
-          <Button relevance="low">Call to Action</Button>
-        </div>
-      </Section>
-
-      <Section title="Gradient">
-        <div className={styles.spacingAround}>
-          <Button fill="gradient">Call to Action</Button>
-          <Button relevance="high" fill="gradient">Call to Action</Button>
-        </div>
-      </Section>
-
-      <Section title="Outline">
-        <div className={styles.spacingAround}>
-          <Button fill="outline">Call to Action</Button>
-          <Button relevance="high" fill="outline">Call to Action</Button>
-          <Button relevance="low" fill="outline">Call to Action</Button>
-        </div>
-      </Section>
-
-      <Section title="Clean">
-        <div className={styles.spacingAround}>
-          <Button fill="clean">Call to Action</Button>
-          <Button relevance="high" fill="clean">Call to Action</Button>
-          <Button relevance="low" fill="clean">Call to Action</Button>
-        </div>
-      </Section>
-
-      <Section title="With icons">
-        <div className={styles.spacingAround}>
-          <Button icon={<IconAdd width={12} height={12} />} />
-          <Button icon={<IconAdd width={12} height={12} />} >Call to Action</Button>
-          <Button
-            icon={<IconAdd width={12} height={12} />}
-            relevance="high"
-          >
-            Call to Action
-          </Button>
-          <Button
-            icon={<IconAdd width={12} height={12} />}
-            relevance="low"
-          >
-            Call to Action
-          </Button>
-        </div>
-
-        <div className={styles.spacingAround}>
-          <Button
-            icon={<IconAdd width={12} height={12} />}
-            fill="gradient"
-          />
-          <Button
-            icon={<IconAdd width={12} height={12} />}
-            fill="gradient"
-          >
-            Call to Action
-          </Button>
-          <Button
-            icon={<IconAdd width={12} height={12} />}
-            relevance="high"
-            fill="gradient"
-          >
-            Call to Action
-          </Button>
-        </div>
-
-        <div className={styles.spacingAround}>
-          <Button
-            icon={<IconAdd width={12} height={12} />}
-            fill="outline"
-          />
-          <Button
-            icon={<IconAdd width={12} height={12} />}
-            fill="outline"
-          >
-            Call to Action
-          </Button>
-          <Button
-            icon={<IconAdd width={12} height={12} />}
-            relevance="high"
-            fill="outline"
-          >
-            Call to Action
-          </Button>
-          <Button
-            icon={<IconAdd width={12} height={12} />}
-            relevance="low"
-            fill="outline"
-          >
-            Call to Action
-          </Button>
-        </div>
-
-        <div className={styles.spacingAround}>
-          <Button
-            icon={<IconAdd width={12} height={12} />}
-            fill="clean"
-          />
-          <Button
-            icon={<IconAdd width={12} height={12} />}
-            fill="clean"
-          >
-            Call to Action
-          </Button>
-          <Button
-            icon={<IconAdd width={12} height={12} />}
-            relevance="high"
-            fill="clean"
-          >
-            Call to Action
-          </Button>
-          <Button
-            icon={<IconAdd width={12} height={12} />}
-            relevance="low"
-            fill="clean"
-          >
-            Call to Action
-          </Button>
-        </div>
-      </Section>
-
       <Section title="Sizes">
         <div className={styles.spacingAround}>
-          <Button size="tiny">tiny</Button>
-          <Button icon={<IconAdd width={12} height={12} />} size="tiny" />
+          <Button size="tiny">Tiny</Button>
+          <Button icon={<IconAdd width={12} height={12} />} size="tiny">Tiny</Button>
         </div>
 
         <div className={styles.spacingAround}>
-          <Button size="small">small</Button>
-          <Button icon={<IconAdd width={12} height={12} />} size="small" />
+          <Button>Default</Button>
+          <Button icon={<IconAdd width={12} height={12} />} >Default</Button>
         </div>
 
         <div className={styles.spacingAround}>
-          <Button>default</Button>
-          <Button icon={<IconAdd width={12} height={12} />} size="default" />
+          <Button size="huge">Huge</Button>
+          <Button size="huge" icon={<IconAdd width={12} height={12} />}>Huge</Button>
+        </div>
+      </Section>
+
+      <Section title="Normal Relevance">
+        <div className={styles.spacingAround}>
+          <Button>Flat</Button>
+          <Button icon={<IconAdd width={12} height={12} />}>Flat</Button>
         </div>
 
         <div className={styles.spacingAround}>
-          <Button size="large">large</Button>
-          <Button icon={<IconAdd width={12} height={12} />} size="large" />
+          <Button fill="gradient">Gradient</Button>
+          <Button fill="gradient" icon={<IconAdd width={12} height={12} />}>Gradient</Button>
+        </div>
+
+        <div className={styles.spacingAround}>
+          <Button fill="outline">Outline</Button>
+          <Button fill="outline" icon={<IconAdd width={12} height={12} />}>Outline</Button>
+        </div>
+
+        <div className={styles.spacingAround}>
+          <Button fill="clean">Clean</Button>
+          <Button fill="clean" icon={<IconAdd width={12} height={12} />}>Clean</Button>
+        </div>
+
+      </Section>
+
+      <Section title="High Relevance">
+        <div className={styles.spacingAround}>
+          <Button relevance="high">Flat</Button>
+          <Button relevance="high" icon={<IconAdd width={12} height={12} />}>Flat</Button>
+        </div>
+
+        <div className={styles.spacingAround}>
+          <Button relevance="high" fill="gradient">Gradient</Button>
+          <Button
+            relevance="high"
+            fill="gradient"
+            icon={<IconAdd width={12} height={12} />}
+          >
+            Gradient
+          </Button>
+        </div>
+
+        <div className={styles.spacingAround}>
+          <Button relevance="high" fill="outline">Outline</Button>
+          <Button
+            relevance="high"
+            fill="outline"
+            icon={<IconAdd width={12} height={12} />}
+          >
+            Outline
+          </Button>
+        </div>
+
+        <div className={styles.spacingAround}>
+          <Button relevance="high" fill="clean">Clean</Button>
+          <Button
+            relevance="high"
+            fill="clean"
+            icon={<IconAdd width={12} height={12} />}
+          >
+            Clean
+          </Button>
+        </div>
+      </Section>
+
+      <Section title="Low Relevance">
+        <div className={styles.spacingAround}>
+          <Button relevance="low">Flat</Button>
+          <Button relevance="low" icon={<IconAdd width={12} height={12} />}>Flat</Button>
+        </div>
+
+        <div className={styles.spacingAround}>
+          <Button relevance="low" fill="gradient">Gradient</Button>
+          <Button
+            relevance="low"
+            fill="gradient"
+            icon={<IconAdd width={12} height={12} />}
+          >
+            Gradient
+          </Button>
+        </div>
+
+        <div className={styles.spacingAround}>
+          <Button relevance="low" fill="outline">Outline</Button>
+          <Button
+            relevance="low"
+            fill="outline"
+            icon={<IconAdd width={12} height={12} />}
+          >
+            Outline
+          </Button>
+        </div>
+
+        <div className={styles.spacingAround}>
+          <Button relevance="low" fill="clean">Clean</Button>
+          <Button
+            relevance="low"
+            fill="clean"
+            icon={<IconAdd width={12} height={12} />}
+          >
+            Clean
+          </Button>
+        </div>
+      </Section>
+
+      <Section title="Icon only">
+        <div className={styles.spacingAround}>
+          <Button icon={<IconAdd width={12} height={12} />} />
+          <Button circle icon={<IconAdd width={12} height={12} />} />
+        </div>
+
+        <div className={styles.spacingAround}>
+          <Button fill="outline" icon={<IconAdd width={12} height={12} />} />
+          <Button circle fill="outline" icon={<IconAdd width={12} height={12} />} />
         </div>
       </Section>
 
       <Section title="Disabled">
         <div className={styles.spacingAround}>
-          <Button icon={<IconAdd width={12} height={12} />} disabled />
-          <Button icon={<IconAdd width={12} height={12} />} disabled>Call to Action</Button>
+          <Button disabled>Flat</Button>
+          <Button disabled icon={<IconAdd width={12} height={12} />}>Flat</Button>
+        </div>
+
+        <div className={styles.spacingAround}>
+          <Button disabled fill="gradient">Gradient</Button>
           <Button
-            icon={<IconAdd width={12} height={12} />}
-            relevance="high"
             disabled
-          >
-            Call to Action
-          </Button>
-          <Button
+            fill="gradient"
             icon={<IconAdd width={12} height={12} />}
-            relevance="low"
-            disabled
           >
-            Call to Action
+            Gradient
           </Button>
         </div>
 
         <div className={styles.spacingAround}>
-          <Button
-            icon={<IconAdd width={12} height={12} />}
-            fill="gradient"
-            disabled
-          />
-          <Button
-            icon={<IconAdd width={12} height={12} />}
-            fill="gradient"
-            disabled
-          >
-            Call to Action
-          </Button>
-          <Button
-            icon={<IconAdd width={12} height={12} />}
-            relevance="high"
-            fill="gradient"
-            disabled
-          >
-            Call to Action
-          </Button>
+          <Button disabled fill="outline">Outline</Button>
+          <Button disabled fill="outline" icon={<IconAdd width={12} height={12} />}>Outline</Button>
         </div>
 
         <div className={styles.spacingAround}>
-          <Button
-            icon={<IconAdd width={12} height={12} />}
-            fill="outline"
-            disabled
-          />
-          <Button
-            icon={<IconAdd width={12} height={12} />}
-            fill="outline"
-            disabled
-          >
-            Call to Action
-          </Button>
-          <Button
-            icon={<IconAdd width={12} height={12} />}
-            relevance="high"
-            fill="outline"
-            disabled
-          >
-            Call to Action
-          </Button>
-          <Button
-            icon={<IconAdd width={12} height={12} />}
-            relevance="low"
-            fill="outline"
-            disabled
-          >
-            Call to Action
-          </Button>
+          <Button disabled fill="clean">Clean</Button>
+          <Button disabled fill="clean" icon={<IconAdd width={12} height={12} />}>Clean</Button>
         </div>
 
         <div className={styles.spacingAround}>
-          <Button
-            icon={<IconAdd width={12} height={12} />}
-            fill="clean"
-            disabled
-          />
-          <Button
-            icon={<IconAdd width={12} height={12} />}
-            fill="clean"
-            disabled
-          >
-            Call to Action
-          </Button>
-          <Button
-            icon={<IconAdd width={12} height={12} />}
-            relevance="high"
-            fill="clean"
-            disabled
-          >
-            Call to Action
-          </Button>
-          <Button
-            icon={<IconAdd width={12} height={12} />}
-            relevance="low"
-            fill="clean"
-            disabled
-          >
-            Call to Action
-          </Button>
+          <Button disabled icon={<IconAdd width={12} height={12} />} />
+          <Button disabled circle icon={<IconAdd width={12} height={12} />} />
+        </div>
+
+        <div className={styles.spacingAround}>
+          <Button disabled fill="outline" icon={<IconAdd width={12} height={12} />} />
+          <Button disabled circle fill="outline" icon={<IconAdd width={12} height={12} />} />
         </div>
       </Section>
+
+
     </div>
   ))

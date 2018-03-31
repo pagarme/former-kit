@@ -26,11 +26,10 @@ You can also "fill" the buttons in different ways:
 
 The button can have different sizes, too:
 ```jsx
-<div style={{ display: 'flex', justifyContent: 'space-around' }}>
+<div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-around' }}>
   <Button size="tiny">Call to action</Button>
-  <Button size="small">Call to action</Button>
   <Button size="default">Call to action</Button>
-  <Button size="large">Call to action</Button>
+  <Button size="huge">Call to action</Button>
 </div>
 ```
 
