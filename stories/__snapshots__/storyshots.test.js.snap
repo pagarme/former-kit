@@ -156,7 +156,7 @@ exports[`Storyshots Alerts Default 1`] = `
              Something is going on!
           </p>
           <button
-            className="button clean light normalRelevance default"
+            className="button clean normalRelevance default"
             disabled={false}
             onClick={[Function]}
             type="button"
@@ -1421,7 +1421,7 @@ feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
                     </span>
                   </div>
                   <button
-                    className="button outline light lowRelevance default iconButton"
+                    className="button outline lowRelevance default iconButton"
                     disabled={false}
                     onClick={null}
                     type="button"
@@ -1429,21 +1429,6 @@ feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
                     <svg />
                   </button>
                 </div>
-<<<<<<< HEAD
-=======
-                <button
-                  className="button outline lowRelevance default iconButton"
-                  disabled={false}
-                  onClick={null}
-                  type="button"
-                >
-                  <svg />
-                </button>
-              </div>
-              <div
-                className="sectionContent"
-              >
->>>>>>> button: refactor style
                 <hr
                   className="divider"
                 />
