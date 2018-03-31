@@ -35,11 +35,11 @@ const SignIn = ({
             <div className={styles.hugeButton} >
               <Button
                 type="button"
-                size="large"
+                size="huge"
                 fill="gradient"
                 onClick={bakToLogin}
               >
-                VOLTAR PARA O CADASTRO
+                Voltar para o cadastro
               </Button>
             </div>
           </div>

@@ -5746,7 +5746,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
             3 days selected
           </div>
           <button
-            className="button clean lowRelevance small"
+            className="button clean lowRelevance default"
             disabled={false}
             onClick={[Function]}
             type="reset"
@@ -5757,7 +5757,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
             className="separator"
           />
           <button
-            className="button clean normalRelevance small"
+            className="button clean normalRelevance default"
             disabled={false}
             onClick={[Function]}
             type="button"
@@ -10065,7 +10065,7 @@ exports[`Storyshots Landing Pagar.me login 1`] = `
               className={undefined}
             >
               <button
-                className="button gradient normalRelevance large"
+                className="button gradient normalRelevance huge"
                 disabled={false}
                 onClick={null}
                 type="submit"
@@ -10202,7 +10202,7 @@ exports[`Storyshots Landing Pagar.me password recovery 1`] = `
                 className={undefined}
               >
                 <button
-                  className="button gradient normalRelevance large"
+                  className="button gradient normalRelevance huge"
                   disabled={false}
                   onClick={null}
                   type="submit"
@@ -10318,7 +10318,7 @@ exports[`Storyshots Landing Pagar.me password recovery confirmation 1`] = `
                 className={undefined}
               >
                 <button
-                  className="button gradient normalRelevance large"
+                  className="button gradient normalRelevance huge"
                   disabled={false}
                   onClick={[Function]}
                   type="button"
@@ -10534,12 +10534,12 @@ exports[`Storyshots Landing Pagar.me sign in 1`] = `
               className={undefined}
             >
               <button
-                className="button gradient normalRelevance large"
+                className="button gradient normalRelevance huge"
                 disabled={false}
                 onClick={null}
                 type="submit"
               >
-                CADASTRAR
+                Cadastrar
               </button>
             </div>
           </div>
@@ -10636,12 +10636,12 @@ exports[`Storyshots Landing Pagar.me sign in confirmation 1`] = `
                 className={undefined}
               >
                 <button
-                  className="button gradient normalRelevance large"
+                  className="button gradient normalRelevance huge"
                   disabled={false}
                   onClick={[Function]}
                   type="button"
                 >
-                  VOLTAR PARA O CADASTRO
+                  Voltar para o cadastro
                 </button>
               </div>
             </div>
@@ -10820,7 +10820,7 @@ exports[`Storyshots Landing Pagar.me two factor login 1`] = `
               className={undefined}
             >
               <button
-                className="button gradient normalRelevance large"
+                className="button gradient normalRelevance huge"
                 disabled={false}
                 onClick={null}
                 type="submit"
@@ -14545,7 +14545,7 @@ exports[`Storyshots Modal Default 1`] = `
             className="actions"
           >
             <button
-              className="button outline normalRelevance small"
+              className="button outline normalRelevance default"
               disabled={false}
               onClick={[Function]}
               type="button"
@@ -14553,7 +14553,7 @@ exports[`Storyshots Modal Default 1`] = `
               Cancel
             </button>
             <button
-              className="button flat normalRelevance small"
+              className="button flat normalRelevance default"
               disabled={false}
               onClick={[Function]}
               type="button"

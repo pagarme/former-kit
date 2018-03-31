@@ -92,9 +92,6 @@
 .hugeButton button {
   flex: 1;
   width: 100%;
-  font-size: 16px;
-  height: 44px;
-  color: #ffffff;
 }
 
 .actions {

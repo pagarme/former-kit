@@ -61,14 +61,14 @@ class ModalWithState extends Component {
           <ModalActions>
             <Button
               fill="outline"
-              size="small"
+              size="default"
               onClick={this.handleToggleModal}
             >
               Cancel
             </Button>
 
             <Button
-              size="small"
+              size="default"
               onClick={this.handleToggleModal}
             >
               Confirm

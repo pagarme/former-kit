@@ -218,7 +218,7 @@ class DateSelector extends Component {
           {daysCount > 1 ? `${daysCount} ${daysSelected}` : null}
         </div>
         <Button
-          size="small"
+          size="default"
           onClick={this.handleCancel}
           fill="clean"
           type="reset"
@@ -228,7 +228,7 @@ class DateSelector extends Component {
         </Button>
         <span className={theme.separator} />
         <Button
-          size="small"
+          size="default"
           onClick={this.handleConfirm}
           fill="clean"
         >

@@ -76,10 +76,10 @@ const SignIn = ({
           <div className={styles.hugeButton} >
             <Button
               type="submit"
-              size="large"
+              size="huge"
               fill="gradient"
             >
-              CADASTRAR
+              Cadastrar
             </Button>
           </div>
         </div>
