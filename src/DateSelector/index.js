@@ -306,17 +306,18 @@ DateSelector.propTypes = {
    */
   theme: shape({
     actions: string,
+    container: string,
     selectedDays: string,
     separator: string,
     sidebar: string,
-    container: string,
     stage: string,
   }),
   /**
-   * Trigged when the confirmarion button is clicked.
-   * @param {object} dates
+   * Trigger when the cancel button is clicked, stops the dates selection and
+   * fires the given callback without params,
+   * the callback should close the selector.
    */
-  onConfirm: func,
+  onCancel: func,
   /**
    * This function is trigged when dates or presets are changed,
    * but only after the state was changed, could trigger a state
@@ -326,11 +327,10 @@ DateSelector.propTypes = {
    */
   onChange: func,
   /**
-   * Trigger when the cancel button is clicked, stops the dates selection and
-   * fires the given callback without params,
-   * the callback should close the selector.
+   * Trigged when the confirmarion button is clicked.
+   * @param {object} dates
    */
-  onCancel: func,
+  onConfirm: func,
   /**
    *
    */
@@ -353,6 +353,13 @@ DateSelector.propTypes = {
    * @see (DateRangePicker) [https://github.com/airbnb/react-dates#daterangepicker]
    */
   focusedInput: string,
+  /**
+   * Default icons used in the month navigation.
+   */
+  icons: shape({
+    previousMonth: element,
+    nextMonth: element,
+  }),
   /**
    * Props structure which is used to create the left side menu, this menu allows
    * the user to select dates in preset dates, ranges, etc.
@@ -426,17 +433,9 @@ DateSelector.propTypes = {
      */
     today: string,
   }),
-  /**
-   * Default icons used in the month navigation.
-   */
-  icons: shape({
-    previousMonth: element,
-    nextMonth: element,
-  }),
 }
 
 DateSelector.defaultProps = {
-  theme: {},
   focusedInput: START_DATE,
   icons: {},
   onCancel: () => undefined,
@@ -445,6 +444,7 @@ DateSelector.defaultProps = {
   onFocusChange: () => undefined,
   presets: [],
   strings: defaultStrings,
+  theme: {},
 }
 
 export default consumeTheme(DateSelector)
