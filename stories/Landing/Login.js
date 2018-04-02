@@ -67,7 +67,7 @@ const Login = ({
           <div className={styles.hugeButton} >
             <Button
               type="submit"
-              size="large"
+              size="huge"
               fill="gradient"
             >
               Login

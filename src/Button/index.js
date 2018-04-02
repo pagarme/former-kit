@@ -11,8 +11,8 @@ const consumeTheme = ThemeConsumer('UIButton')
  * Simple HTML button in a beautiful skin.
  */
 const Button = ({
-  base,
   children,
+  circle,
   disabled,
   fill,
   icon,
@@ -25,11 +25,11 @@ const Button = ({
   const buttonClasses = classNames(
     theme.button,
     theme[fill],
-    theme[base],
     theme[`${relevance}Relevance`],
     theme[size],
     {
       [theme.iconButton]: !isNil(icon) && isNil(children),
+      [theme.circle]: !isNil(icon) && isNil(children) && circle,
     }
   )
 
@@ -52,35 +52,31 @@ Button.propTypes = {
    */
   theme: PropTypes.shape({
     button: PropTypes.string,
+    circle: PropTypes.string,
+    clean: PropTypes.string,
+    default: PropTypes.string,
     disabled: PropTypes.string,
-    size: PropTypes.string,
     flat: PropTypes.string,
     gradient: PropTypes.string,
-    outline: PropTypes.string,
-    clean: PropTypes.string,
     highRelevance: PropTypes.string,
-    normalRelevance: PropTypes.string,
+    huge: PropTypes.string,
     lowRelevance: PropTypes.string,
-    light: PropTypes.string,
-    dark: PropTypes.string,
+    normalRelevance: PropTypes.string,
+    outline: PropTypes.string,
+    size: PropTypes.string,
     tiny: PropTypes.string,
-    small: PropTypes.string,
-    default: PropTypes.string,
-    large: PropTypes.string,
   }),
-  /**
-   * The contrast of the background where this component is applied.
-   */
-  base: PropTypes.oneOf([
-    'dark', 'light',
-  ]),
   /**
    * The children element.
    */
   children: PropTypes.oneOfType([
-    PropTypes.string,
     PropTypes.arrayOf(PropTypes.string),
+    PropTypes.string,
   ]),
+  /**
+   * It changes the border-radius of the icon Button.
+   */
+  circle: PropTypes.bool,
   /**
    * The prop that indicates if the button is disabled or not.
    */
@@ -109,7 +105,7 @@ Button.propTypes = {
    * Component's size.
    */
   size: PropTypes.oneOf([
-    'tiny', 'small', 'default', 'large',
+    'tiny', 'default', 'huge',
   ]),
   /**
    * Button's type.
@@ -118,8 +114,8 @@ Button.propTypes = {
 }
 
 Button.defaultProps = {
-  base: 'light',
   children: null,
+  circle: false,
   disabled: false,
   fill: 'flat',
   icon: null,
