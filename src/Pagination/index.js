@@ -356,36 +356,36 @@ Pagination.propTypes = {
   theme: PropTypes.shape({
     currentPage: PropTypes.string,
     disabled: PropTypes.string,
-    label: PropTypes.string,
     error: PropTypes.string,
-    input: PropTypes.string,
-    next: PropTypes.string,
-    totalPages: PropTypes.string,
-    prev: PropTypes.string,
-    pagination: PropTypes.string,
     expander: PropTypes.string,
+    input: PropTypes.string,
+    label: PropTypes.string,
+    next: PropTypes.string,
+    pagination: PropTypes.string,
+    prev: PropTypes.string,
     separator: PropTypes.string,
+    totalPages: PropTypes.string,
   }),
-  /**
-   * Disable pagination changes.
-   */
-  disabled: PropTypes.bool,
   /**
    * The number of the current page.
    */
   currentPage: PropTypes.number.isRequired,
   /**
+   * Disable pagination changes.
+   */
+  disabled: PropTypes.bool,
+  /**
    * The previous and next page icons.
    */
   icons: PropTypes.shape({
     /**
-     * The previous page icon.
-     */
-    previous: PropTypes.element.isRequired,
-    /**
      * The next page icon.
      */
     next: PropTypes.element.isRequired,
+    /**
+     * The previous page icon.
+     */
+    previous: PropTypes.element.isRequired,
   }),
   /**
    * It's called when the current page changes.
@@ -407,10 +407,10 @@ Pagination.propTypes = {
 }
 
 Pagination.defaultProps = {
-  theme: {},
+  disabled: false,
   icons: {},
   strings: defaultStrings,
-  disabled: false,
+  theme: {},
 }
 
 export default consumeTheme(Pagination)
