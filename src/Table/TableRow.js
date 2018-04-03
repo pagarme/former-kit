@@ -241,12 +241,12 @@ TableRow.propTypes = {
    * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: shape({
+    check: string,
     disabled: string,
     even: string,
     odd: string,
-    check: string,
-    status: string,
     open: string,
+    status: string,
   }),
   /**
    * Additional CSS classes which can be applyed to the expanded row.
@@ -279,15 +279,15 @@ TableRow.propTypes = {
      */
     aggregator: func,
     /**
-     * Defines the cell content alignment.
+     * It defines the cell content alignment.
      */
     align: oneOf(['center', 'start', 'end']),
     /**
-     * Identifies if it's an action column.
+     * It identifies if it's an action column.
      */
     isAction: bool,
     /**
-     * Enables a column to be orderable.
+     * It enables a column to be orderable.
      */
     orderable: bool,
     /**
@@ -318,18 +318,18 @@ TableRow.propTypes = {
    */
   data: shape({}).isRequired,
   /**
-   * Indicates that the line is not interactive.
+   * It indicates that the line is not interactive.
    */
   disabled: bool,
   /**
-   * Indicates that the line is showing details
-   */
-  expanded: bool,
-  /**
-   * Allow the expandable feature wich provides a
+   * It allows the expandable feature wich provides a
    * detail line under the expanded line.
    */
   expandable: bool,
+  /**
+   * It indicates that the line is showing details
+   */
+  expanded: bool,
   /**
    * Default icons used in to indicate if the line is expanded or collapsed.
    * @prop {object} expand - icon which represents expand acion in expandable button.
@@ -339,6 +339,10 @@ TableRow.propTypes = {
     collapse: element,
     expand: element,
   }),
+  /**
+   * It indicates the row position in the table.
+   */
+  index: number.isRequired,
   /**
    * Function trigged when the line or its children
    * are clicked, only works if the line is enabled.
@@ -365,22 +369,18 @@ TableRow.propTypes = {
    */
   onSelect: func,
   /**
-   * Indicates the row selection.
+   * It indicates that the line can be selected.
+   */
+  selectable: bool,
+  /**
+   * It indicates the row selection.
    * @param {number} row - selected row index.
    */
   selected: bool,
   /**
-   * Indicates that the line can be selected.
-   */
-  selectable: bool,
-  /**
-   * Define the line color.
+   * It defines the line color.
    */
   parity: oneOf(['even', 'odd']),
-  /**
-   * Indicates the row position in the table.
-   */
-  index: number.isRequired,
 }
 
 TableRow.defaultProps = {

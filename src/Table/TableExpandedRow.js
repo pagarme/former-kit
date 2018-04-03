@@ -213,7 +213,7 @@ TableExpandedRow.propTypes = {
    */
   parity: oneOf(['even', 'odd']),
   /**
-   * Enables the selectable column in the table, allowing the user to select one,
+   * It enables the selectable column in the table, allowing the user to select one,
    * many or all of the rows.
    */
   selectable: bool,
@@ -223,9 +223,9 @@ TableExpandedRow.defaultProps = {
   className: '',
   disabled: false,
   parity: '',
-  theme: {},
   maxColumns: 7,
   selectable: false,
+  theme: {},
 }
 
 export default consumeTheme(TableExpandedRow)
