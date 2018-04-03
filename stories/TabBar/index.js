@@ -52,14 +52,14 @@ class Tab extends React.Component {
           text={i18n.MyAccount}
           onClick={clicked}
         >
-          <h1>{i18n.ThisIs} {i18n.MyAccount} <IconMyAccount width={16} height={16} /></h1>
+          <h3>{i18n.ThisIs} {i18n.MyAccount} <IconMyAccount width={16} height={16} /></h3>
         </TabItem>
         <TabItem
           icon={<IconDocs width={16} height={16} />}
           text={i18n.Docs}
           onClick={clicked}
         >
-          <h2>{i18n.ThisIs} {i18n.Docs} <IconDocs width={16} height={16} /></h2>
+          <h3>{i18n.ThisIs} {i18n.Docs} <IconDocs width={16} height={16} /></h3>
         </TabItem>
         <TabItem
           icon={<IconLetter width={16} height={16} />}

@@ -1,9 +1,9 @@
 import React from 'react'
 import {
-  number,
-  func,
-  oneOf,
   arrayOf,
+  func,
+  number,
+  oneOf,
   shape,
   string,
 } from 'prop-types'
@@ -44,6 +44,7 @@ class TabBar extends React.Component {
         onTabChange: this.props.onTabChange,
         selected: this.props.selected === index,
         key: index,
+        instanceId: this.instanceId,
       }
     )
   }
@@ -76,34 +77,34 @@ TabBar.propTypes = {
    * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: shape({
+    content: string,
     tabBar: string,
     tabs: string,
-    content: string,
   }),
-  /**
-   * Component structure variant which can be: just-text, text-icon, just-icon.
-   * This changes the way which every item will be rendered in the component.
-   */
-  variant: oneOf(variantList),
   /**
    * Set of React components which will be rendered inside the component.
    */
   children: arrayOf(TabItem).isRequired,
   /**
+   * Triggers when a component.
+   */
+  onTabChange: func,
+  /**
    * Selected item index.
    */
   selected: number,
   /**
-   * Triggers when a component.
+   * Component structure variant which can be: just-text, text-icon, just-icon.
+   * This changes the way which every item will be rendered in the component.
    */
-  onTabChange: func,
+  variant: oneOf(variantList),
 }
 
 TabBar.defaultProps = {
-  theme: {},
-  variant: variantDefault,
-  selected: 0,
   onTabChange: null,
+  selected: 0,
+  variant: variantDefault,
+  theme: {},
 }
 
 export default consumeTheme(TabBar)
