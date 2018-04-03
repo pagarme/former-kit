@@ -2245,14 +2245,14 @@ exports[`Storyshots DateInput All styles 1`] = `
               onKeyDown={[Function]}
               onKeyPress={[Function]}
               onPaste={[Function]}
-              placeholder="Select a date or period"
+              placeholder="Select a period or date"
               size="8"
               value=""
             />
             <span
               className="expander"
             >
-              Select a date or period
+              Select a period or date
             </span>
           </div>
         </div>
@@ -2388,7 +2388,7 @@ exports[`Storyshots DateInput All styles 1`] = `
               onKeyDown={[Function]}
               onKeyPress={[Function]}
               onPaste={[Function]}
-              placeholder="End"
+              placeholder="Final"
               size="8"
               value="09/30/2017"
             />
@@ -2473,7 +2473,7 @@ exports[`Storyshots DateInput All styles 1`] = `
               onKeyDown={[Function]}
               onKeyPress={[Function]}
               onPaste={[Function]}
-              placeholder="End"
+              placeholder="Final"
               size="8"
               value=""
             />

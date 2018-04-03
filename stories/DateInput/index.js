@@ -10,6 +10,22 @@ import Button from '../../src/Button'
 import presets from './datePresets'
 import style from './style.css'
 
+const strings = {
+  start: 'Initial',
+  end: 'Final',
+  select: 'Select a period or date',
+  cancel: 'cancel',
+  confirmPeriod: 'confirm selection',
+  custom: 'customizable',
+  day: 'one day',
+  daySelected: 'selected day',
+  daysSelected: 'selected days',
+  noDayOrPeriodSelected: 'Nothing selected',
+  period: 'period',
+  today: 'today',
+  anyDate: 'Any Date',
+}
+
 class DateInputState extends React.Component {
   constructor (props) {
     super(props)
@@ -53,6 +69,7 @@ class DateInputState extends React.Component {
             upper: moment('01-01-2025', 'DD-MM-YYYY'),
           }}
           icon={<IconCalendar width={16} height={16} />}
+          strings={strings}
         />
         <Button onClick={this.handleReset}>Reset dates</Button>
       </div>
