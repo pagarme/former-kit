@@ -502,7 +502,11 @@ Table.propTypes = {
     aggregationTitle: string,
   })).isRequired,
   /**
-   * Enables the expandable column in the table which allows the user to see all of the remaining
+   * It disables all table functions.
+   */
+  disabled: bool,
+  /**
+   * It enables the expandable column in the table which allows the user to see all of the remaining
    * columns which exceed the table maxColumns prop.
    */
   expandable: bool,
@@ -511,7 +515,7 @@ Table.propTypes = {
    */
   expandedRows: arrayOf(number),
   /**
-   * Defines the header cell's content alignment when
+   * It defines the header cell's content alignment when
    * the columns aren't orderable.
    */
   headerAlign: oneOf(['center', 'start', 'end']),
@@ -560,7 +564,7 @@ Table.propTypes = {
    */
   rows: arrayOf(shape({})).isRequired,
   /**
-   * Enables the selectable column in the table, allowing the user to select one,
+   * It enables the selectable column in the table, allowing the user to select one,
    * many or all of the rows.
    */
   selectable: bool,
@@ -569,11 +573,7 @@ Table.propTypes = {
    */
   selectedRows: arrayOf(number),
   /**
-   * Disable all table functions.
-   */
-  disabled: bool,
-  /**
-   * Enables the aggregation row, this attribute is bound to the columns data that must
+   * It enables the aggregation row, this attribute is bound to the columns data that must
    * have the properties aggregationRenderer and aggregator or aggregationTitle
    */
   showAggregationRow: bool,

@@ -47,27 +47,27 @@ TableExpandedItem.propTypes = {
    */
   theme: shape({
     expandedItem: string,
-    title: string,
     text: string,
+    title: string,
   }),
   /**
-   * Item title in the expanded row items list.
+   * React element which will be shown under the item title in the list.
    */
-  title: string.isRequired,
+  children: oneOfType([arrayOf(node), node]),
   /**
    * Text that will be shown in the list if the 'children' prop isn't set.
    */
   text: oneOfType([string, number]),
   /**
-   * React element which will be shown under the item title in the list.
+   * Item title in the expanded row items list.
    */
-  children: oneOfType([arrayOf(node), node]),
+  title: string.isRequired,
 }
 
 TableExpandedItem.defaultProps = {
-  theme: {},
-  text: '',
   children: null,
+  text: '',
+  theme: {},
 }
 
 export default consumeTheme(TableExpandedItem)

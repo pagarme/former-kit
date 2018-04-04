@@ -176,16 +176,16 @@ TableHead.propTypes = {
    * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: shape({
-    tableHead: string,
     ascending: string,
     descending: string,
+    disabled: string,
     open: string,
     tableHeadItem: string,
     unselectable: string,
-    disabled: string,
+    tableHead: string,
   }),
   /**
-   * Defines the cell's content alignment.
+   * It defines the cell's content alignment.
   */
   align: oneOf(['center', 'start', 'end']),
   /**
@@ -213,11 +213,11 @@ TableHead.propTypes = {
      */
     align: oneOf(['center', 'start', 'end']),
     /**
-     * Identify if it's an action column.
+     * It identifies if it's an action column.
      */
     isAction: bool,
     /**
-     * Enables a column to be orderable.
+     * It enables a column to be orderable.
      */
     orderable: bool,
     /**
@@ -243,6 +243,10 @@ TableHead.propTypes = {
      */
     aggregationTitle: string,
   })).isRequired,
+  /**
+   * It disables the click on orderable columns.
+   */
+  disabled: bool,
   /**
    * Add an expandable column in the header.
    */
@@ -273,17 +277,13 @@ TableHead.propTypes = {
    */
   orderColumn: number.isRequired,
   /**
-   * Enables the selectable column.
+   * It enables the selectable column.
    */
   selectable: bool,
   /**
    * Selectable column checkbox state.
    */
   selected: bool,
-  /**
-   * Disablez the click on orderable columns.
-   */
-  disabled: bool,
 }
 
 TableHead.defaultProps = {

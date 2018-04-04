@@ -34,8 +34,8 @@ TableEmptyItem.propTypes = {
 }
 
 TableEmptyItem.defaultProps = {
-  theme: {},
   className: '',
+  theme: {},
 }
 
 export default consumeTheme(TableEmptyItem)

@@ -147,11 +147,11 @@ TableAggregationRow.propTypes = {
      */
     aggregator: func,
     /**
-     * Defines the cell content alignment.
+     * It defines the cell content alignment.
      */
     align: oneOf(['center', 'start', 'end']),
     /**
-     * Identifies if it's an action column.
+     * It identifies if it's an action column.
      */
     isAction: bool,
     /**
@@ -178,7 +178,7 @@ TableAggregationRow.propTypes = {
     aggregationTitle: string,
   })).isRequired,
   /**
-   * Define the line color.
+   * It defines the line color.
    */
   parity: oneOf(['even', 'odd']),
   /**
