@@ -45,6 +45,16 @@ const defaultStrings = {
   start: 'Start',
   end: 'End',
   select: 'Select a date or period',
+  cancel: 'cancel',
+  confirmPeriod: 'confirm period',
+  custom: 'custom',
+  day: 'day',
+  daySelected: 'day selected',
+  daysSelected: 'days selected',
+  noDayOrPeriodSelected: 'No day or period selected',
+  period: 'period',
+  today: 'today',
+  anyDate: 'Any Date',
 }
 
 const getStrings = strings => ({
@@ -328,6 +338,7 @@ class DateInput extends React.Component {
               onFocusChange={this.handleSelectorFocus}
               focusedInput={this.state.focusedInput}
               presets={this.props.presets}
+              strings={strings}
             />
           </div>
           : null
@@ -413,6 +424,16 @@ DateInput.propTypes = {
     start: string,
     end: string,
     select: string,
+    cancel: string,
+    confirmPeriod: string,
+    custom: string,
+    day: string,
+    daySelected: string,
+    daysSelected: string,
+    noDayOrPeriodSelected: string,
+    period: string,
+    today: string,
+    anyDate: string,
   }),
 }
 
