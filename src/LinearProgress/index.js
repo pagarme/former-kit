@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 import {
   Motion,
   spring,
 } from 'react-motion'
-import classnames from 'classnames'
+import classNames from 'classnames'
 
 import ThemeConsumer from '../ThemeConsumer'
 
@@ -15,14 +15,15 @@ const consumeTheme = ThemeConsumer('UILinearProgress')
  * The component receives a value and shows it as a progress value.
  */
 const LinearProgress = ({
-  theme,
-  percent,
   disabled,
-  base,
+  label,
+  max,
+  percent,
+  theme,
+  value,
 }) => {
-  const linearProgressClasses = classnames(
+  const linearProgressClasses = classNames(
     theme.linearProgress,
-    theme[base],
     {
       [theme.disabled]: disabled,
     }
@@ -35,37 +36,55 @@ const LinearProgress = ({
           x: 0,
         }}
         style={{
-          x: spring(percent),
+          x: spring(value),
         }}
       >
         {({ x }) => {
-          const percentage = `${Math.round(x)}%`
+          const valueNumber = Math.round(x)
+
+          const percentageNumber = Math.round((100 * valueNumber) / max)
+
+          const percentage = `${percentageNumber}%`
 
           return (
-            <div>
+            <Fragment>
               <div className={theme.background}>
                 <div
                   className={theme.fill}
                   style={{
                     width: percentage,
                   }}
+                  role="progressbar"
+                  aria-valuenow={percentageNumber}
+                  aria-valuemin="0"
+                  aria-valuemax="100"
                 />
               </div>
-              <div
-                className={theme.number}
-                style={{
-                  width: (x > 94) ? '100%' : `${x}%`,
-                }}
-              >
+              {label &&
                 <div
+                  className={classNames(
+                    theme.number,
+                    (percentageNumber >= 1) &&
+                      theme.filledLabel
+                    )
+                  }
                   style={{
-                    marginRight: (x > 94) ? '0' : '-1em',
+                    width: (percentageNumber > 94) ? '100%' : percentage,
                   }}
                 >
-                  {percentage}
+                  <div
+                    style={{
+                      marginRight: (percentageNumber > 94) ? '0' : '-0.5em',
+                    }}
+                  >
+                    {percent
+                      ? percentage
+                      : valueNumber
+                    }
+                  </div>
                 </div>
-              </div>
-            </div>
+              }
+            </Fragment>
           )
         }}
       </Motion>
@@ -78,35 +97,40 @@ LinearProgress.propTypes = {
    * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: PropTypes.shape({
-    linearProgress: PropTypes.string,
-    fill: PropTypes.string,
     background: PropTypes.string,
     disabled: PropTypes.string,
+    fill: PropTypes.string,
+    filledLabel: PropTypes.string,
+    linearProgress: PropTypes.string,
     number: PropTypes.string,
-    dark: PropTypes.string,
-    light: PropTypes.string,
   }),
   /**
-   * Percentage value in the progress.
-   */
-  percent: PropTypes.number.isRequired,
-  /**
-   * Disables/Enables the component's functionality.
+   * It disables/enables the component's functionality.
    */
   disabled: PropTypes.bool,
   /**
-   * The contrast of the background where the component is applied.
+   * It shows/hides the component's label.
    */
-  base: PropTypes.oneOf([
-    'dark',
-    'light',
-  ]),
+  label: PropTypes.bool,
+  /**
+   * The progress max value.
+   */
+  max: PropTypes.number.isRequired,
+  /**
+   * It changes the component's label to a percentage number.
+   */
+  percent: PropTypes.bool,
+  /**
+   * Value in the progress label.
+   */
+  value: PropTypes.number.isRequired,
 }
 
 LinearProgress.defaultProps = {
-  theme: {},
   disabled: false,
-  base: 'light',
+  label: true,
+  percent: true,
+  theme: {},
 }
 
 export default consumeTheme(LinearProgress)
