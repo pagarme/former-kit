@@ -28,14 +28,6 @@ class RadioGroupState extends React.Component {
     this.handleChange = this.handleChange.bind(this)
   }
 
-  componentWillMount () {
-    if (this.props.success) {
-      this.setState({
-        value: 'passenger',
-      })
-    }
-  }
-
   handleChange (event) {
     this.setState({
       value: event.target.value,
@@ -47,7 +39,6 @@ class RadioGroupState extends React.Component {
       disabled,
       error,
       name,
-      success,
     } = this.props
 
     const {
@@ -63,10 +54,9 @@ class RadioGroupState extends React.Component {
           value={value}
           disabled={disabled}
           error={error}
-          success={success}
         />
 
-        <pre>Selected: {value}</pre>
+        <p>Selected: {value}</p>
       </div>
     )
   }
@@ -76,14 +66,12 @@ RadioGroupState.propTypes = {
   disabled: PropTypes.bool,
   error: PropTypes.string,
   name: PropTypes.string,
-  success: PropTypes.string,
 }
 
 RadioGroupState.defaultProps = {
   disabled: false,
   error: '',
   name: '',
-  success: '',
 }
 
 export default RadioGroupState
