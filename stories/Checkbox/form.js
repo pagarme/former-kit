@@ -15,7 +15,6 @@ class CheckboxState extends React.Component {
       error,
       label,
       name,
-      success,
       value,
     } = this.props
 
@@ -30,7 +29,6 @@ class CheckboxState extends React.Component {
         label={label}
         name={name}
         onChange={() => { this.setState({ checked: !checked }) }}
-        success={success}
         value={value}
         disabled={disabled}
       />
@@ -45,26 +43,11 @@ CheckboxState.defaultProps = {
   checked: false,
   disabled: false,
   error: '',
-  success: '',
 }
 
 storiesOf('Checkbox', module)
   .add('Form', () => (
     <div>
-      <Section title="Disabled">
-        <CheckboxState
-          name="disabled"
-          label="Unchecked"
-          disabled
-        />
-        <CheckboxState
-          name="checkedDisabled"
-          label="Checked"
-          disabled
-          checked
-        />
-      </Section>
-
       <Section title="Default">
         <CheckboxState
           name="default"
@@ -78,21 +61,27 @@ storiesOf('Checkbox', module)
         />
       </Section>
 
-      <Section title="Erro">
+      <Section title="Error">
         <CheckboxState
           name="default"
           label="Error"
           value="Error"
           error="Error"
+          checked
         />
       </Section>
 
-      <Section title="Success">
+      <Section title="Disabled">
         <CheckboxState
-          name="default"
-          label="Success"
-          value="Success"
-          success="Success"
+          name="disabled"
+          label="Unchecked"
+          disabled
+        />
+        <CheckboxState
+          name="checkedDisabled"
+          label="Checked"
+          disabled
+          checked
         />
       </Section>
     </div>

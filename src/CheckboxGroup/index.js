@@ -53,27 +53,23 @@ class CheckboxGroup extends React.Component {
   render () {
     const {
       disabled,
-      name,
-      values,
-      error,
-      success,
-      options,
-      className,
       columns,
+      error,
+      name,
+      options,
       theme,
+      values,
     } = this.props
 
     const secondaryTextClass = classnames(
       theme.secondaryText,
       {
         [theme.error]: error,
-        [theme.success]: success,
       }
     )
 
     const rootClassName = classnames(
-      theme.checkboxGroup,
-      className
+      theme.checkboxGroup
     )
 
     const elementsByColumn = Math.ceil(options.length / columns)
@@ -105,14 +101,14 @@ class CheckboxGroup extends React.Component {
 
     return (
       <div className={rootClassName}>
-        {(success || error) &&
-          <p className={secondaryTextClass}>
-            {success || error}
-          </p>
-        }
         <div>
           {checkboxes}
         </div>
+        {error &&
+          <p className={secondaryTextClass}>
+            {error}
+          </p>
+        }
       </div>
     )
   }
@@ -124,24 +120,22 @@ CheckboxGroup.propTypes = {
    */
   theme: PropTypes.shape({
     checkboxGroup: PropTypes.string,
-    secondaryText: PropTypes.string,
     error: PropTypes.string,
-    success: PropTypes.string,
+    secondaryText: PropTypes.string,
   }),
   /**
-   * List of objects which will be the base for the checkbox components.
+   * The number of columns in which the list will be divided.
+   * The groups disposition is in columns.
    */
-  options: PropTypes.arrayOf(PropTypes.shape({
-    /**
-     * Option value, which will be returned in the selected items list if
-     * the related checkbox is checked.
-     */
-    value: PropTypes.string,
-    /**
-     * Option label shown next to the checkbox.
-     */
-    label: PropTypes.string,
-  })).isRequired,
+  columns: PropTypes.number,
+  /**
+   * Allows or not the interaction with the checkboxes.
+   */
+  disabled: PropTypes.bool,
+  /**
+   * Error message which sets the error classes to the component.
+   */
+  error: PropTypes.string,
   /**
    * Group name, used in the checkboxes like the native HTML checkbox name.
    */
@@ -152,39 +146,30 @@ CheckboxGroup.propTypes = {
    */
   onChange: PropTypes.func.isRequired,
   /**
+   * List of objects which will be the base for the checkbox components.
+   */
+  options: PropTypes.arrayOf(PropTypes.shape({
+    /**
+     * Option label shown next to the checkbox.
+     */
+    label: PropTypes.string,
+    /**
+     * Option value, which will be returned in the selected items list if
+     * the related checkbox is checked.
+     */
+    value: PropTypes.string,
+  })).isRequired,
+  /**
    * List of checked options.
    */
   values: PropTypes.arrayOf(PropTypes.string).isRequired,
-  /**
-   * Allows or not the interaction with the checkboxes.
-   */
-  disabled: PropTypes.bool,
-  /**
-   * Error message which sets the error classes to the component.
-   */
-  error: PropTypes.string,
-  /**
-   * Success message which sets the success classes to the component.
-   */
-  success: PropTypes.string,
-  /**
-   * Custom CSS classes which can be added to the checkbox group.
-   */
-  className: PropTypes.string,
-  /**
-   * The number of columns in which the list will be divided.
-   * The groups disposition is in columns.
-   */
-  columns: PropTypes.number,
 }
 
 CheckboxGroup.defaultProps = {
   theme: {},
+  columns: 1,
   disabled: false,
   error: '',
-  success: '',
-  className: null,
-  columns: 1,
 }
 
 export default consumeTheme(CheckboxGroup)

@@ -13,15 +13,23 @@ class CheckboxGroupState extends React.Component {
     const options = [
       {
         label: 'Github',
-        value: 'Github',
+        value: 'github',
       },
       {
-        label: 'Pagar.me',
-        value: 'pagarme',
-      },
-      {
-        label: 'Open source',
+        label: 'Open Source',
         value: 'open-source',
+      },
+      {
+        label: 'Pilot',
+        value: 'pilot',
+      },
+      {
+        label: 'React',
+        value: 'react',
+      },
+      {
+        label: 'Storybook',
+        value: 'Storybook',
       },
     ]
 
@@ -29,17 +37,16 @@ class CheckboxGroupState extends React.Component {
       disabled,
       error,
       name,
-      success,
     } = this.props
 
     return (
       <CheckboxGroup
+        columns={2}
         disabled={disabled}
         error={error}
         name={name}
         onChange={values => this.setState({ values })}
         options={options}
-        success={success}
         values={this.state.values}
       />
     )
@@ -50,13 +57,11 @@ CheckboxGroupState.propTypes = {
   disabled: PropTypes.bool,
   error: PropTypes.string,
   name: PropTypes.string.isRequired,
-  success: PropTypes.string,
 }
 
 CheckboxGroupState.defaultProps = {
   disabled: false,
   error: null,
-  success: null,
 }
 
 export default CheckboxGroupState

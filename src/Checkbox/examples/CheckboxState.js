@@ -12,7 +12,6 @@ class CheckState extends React.Component {
     const {
       label,
       name,
-      success,
       error,
       disabled,
       value,
@@ -26,7 +25,6 @@ class CheckState extends React.Component {
         name={name}
         error={error}
         disabled={disabled}
-        success={success}
         checked={checked}
         onChange={() => this.setState({ checked: !checked })}
         value={value}
@@ -40,14 +38,12 @@ CheckState.propTypes = {
   error: PropTypes.string,
   label: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  success: PropTypes.string,
   value: PropTypes.string,
 }
 
 CheckState.defaultProps = {
   disabled: false,
   error: null,
-  success: null,
   value: '',
 }
 

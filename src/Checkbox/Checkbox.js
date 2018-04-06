@@ -14,7 +14,6 @@ import classNames from 'classnames'
 const Checkbox = ({
   disabled,
   error,
-  success,
   checked,
   name,
   theme,
@@ -27,31 +26,35 @@ const Checkbox = ({
     {
       [theme.disabled]: disabled,
       [theme.error]: error,
-      [theme.success]: success,
     }
   )
 
   return (
     <div className={containerClass}>
-      <input
-        type="checkbox"
-        name={name}
-        value={value}
-        id={`${name}-${value}`}
-        checked={checked}
-        disabled={disabled}
-        onChange={e => !disabled && onChange(e.target.value)}
-      />
       <label
         htmlFor={`${name}-${value}`}
+        className={theme.label}
       >
-        <i className={theme.check} />
-        {label}
+        <input
+          type="checkbox"
+          name={name}
+          value={value}
+          id={`${name}-${value}`}
+          checked={checked}
+          disabled={disabled}
+          onChange={e => !disabled && onChange(e.target.value)}
+        />
+
+        <span className={theme.input} />
+
+        <span className={theme.title}>
+          {label}
+        </span>
       </label>
 
-      {(success || error) &&
+      {error &&
         <p className={theme.secondaryText}>
-          {success || error}
+          {error}
         </p>
       }
     </div>
@@ -66,30 +69,14 @@ Checkbox.propTypes = {
     checkbox: string,
     check: string,
     disabled: string,
-    secondaryText: string,
-    success: string,
     error: string,
+    label: string,
+    secondaryText: string,
   }),
-  /**
-   * Same as the native `name` prop from the HTML checkbox.
-   */
-  name: string.isRequired,
-  /**
-   * Same as the native `value` prop from the HTML checkbox.
-   */
-  value: string.isRequired,
-  /**
-   * Component text which will trigger events related to the checkbox input.
-   */
-  label: string.isRequired,
   /**
    * Same as the `checked` value prop from the HTML checkbox.
    */
   checked: bool.isRequired,
-  /**
-   * Triggers when the checkbox or label is clicked.
-   */
-  onChange: func.isRequired,
   /**
    * Same as the `disabled` value prop from the HTML checkbox.
    */
@@ -99,16 +86,27 @@ Checkbox.propTypes = {
    */
   error: string,
   /**
-   * Success message which sets success classes to the component.
+   * Component text which will trigger events related to the checkbox input.
    */
-  success: string,
+  label: string.isRequired,
+  /**
+   * Same as the native `name` prop from the HTML checkbox.
+   */
+  name: string.isRequired,
+  /**
+   * Triggers when the checkbox or label is clicked.
+   */
+  onChange: func.isRequired,
+  /**
+   * Same as the native `value` prop from the HTML checkbox.
+   */
+  value: string.isRequired,
 }
 
 Checkbox.defaultProps = {
   theme: {},
   disabled: false,
   error: '',
-  success: '',
 }
 
 export default Checkbox
