@@ -16391,8 +16391,10 @@ exports[`Storyshots TabBar Default 1`] = `
             <input
               checked={false}
               id="tabbar-shortid-mock-tab-0"
-              name="tabbar-shortid-mock-tab-0"
+              name="tabbar-shortid-mock"
+              onBlur={[Function]}
               onChange={[Function]}
+              onFocus={[Function]}
               type="radio"
             />
             My account
@@ -16404,8 +16406,10 @@ exports[`Storyshots TabBar Default 1`] = `
             <input
               checked={true}
               id="tabbar-shortid-mock-tab-1"
-              name="tabbar-shortid-mock-tab-1"
+              name="tabbar-shortid-mock"
+              onBlur={[Function]}
               onChange={[Function]}
+              onFocus={[Function]}
               type="radio"
             />
             Docs
@@ -16417,8 +16421,10 @@ exports[`Storyshots TabBar Default 1`] = `
             <input
               checked={false}
               id="tabbar-shortid-mock-tab-2"
-              name="tabbar-shortid-mock-tab-2"
+              name="tabbar-shortid-mock"
+              onBlur={[Function]}
               onChange={[Function]}
+              onFocus={[Function]}
               type="radio"
             />
             Letter
@@ -16427,7 +16433,7 @@ exports[`Storyshots TabBar Default 1`] = `
         <div
           className="content"
         >
-          <h2>
+          <h3>
             This is: 
              
             Docs
@@ -16436,7 +16442,7 @@ exports[`Storyshots TabBar Default 1`] = `
               height={16}
               width={16}
             />
-          </h2>
+          </h3>
         </div>
       </div>
     </div>
@@ -16461,8 +16467,10 @@ exports[`Storyshots TabBar Default 1`] = `
             <input
               checked={false}
               id="tabbar-shortid-mock-tab-0"
-              name="tabbar-shortid-mock-tab-0"
+              name="tabbar-shortid-mock"
+              onBlur={[Function]}
               onChange={[Function]}
+              onFocus={[Function]}
               type="radio"
             />
             <div
@@ -16482,8 +16490,10 @@ exports[`Storyshots TabBar Default 1`] = `
             <input
               checked={true}
               id="tabbar-shortid-mock-tab-1"
-              name="tabbar-shortid-mock-tab-1"
+              name="tabbar-shortid-mock"
+              onBlur={[Function]}
               onChange={[Function]}
+              onFocus={[Function]}
               type="radio"
             />
             <div
@@ -16503,8 +16513,10 @@ exports[`Storyshots TabBar Default 1`] = `
             <input
               checked={false}
               id="tabbar-shortid-mock-tab-2"
-              name="tabbar-shortid-mock-tab-2"
+              name="tabbar-shortid-mock"
+              onBlur={[Function]}
               onChange={[Function]}
+              onFocus={[Function]}
               type="radio"
             />
             <div
@@ -16521,7 +16533,7 @@ exports[`Storyshots TabBar Default 1`] = `
         <div
           className="content"
         >
-          <h2>
+          <h3>
             This is: 
              
             Docs
@@ -16530,7 +16542,7 @@ exports[`Storyshots TabBar Default 1`] = `
               height={16}
               width={16}
             />
-          </h2>
+          </h3>
         </div>
       </div>
     </div>
@@ -16555,8 +16567,10 @@ exports[`Storyshots TabBar Default 1`] = `
             <input
               checked={false}
               id="tabbar-shortid-mock-tab-0"
-              name="tabbar-shortid-mock-tab-0"
+              name="tabbar-shortid-mock"
+              onBlur={[Function]}
               onChange={[Function]}
+              onFocus={[Function]}
               type="radio"
             />
             <div
@@ -16575,8 +16589,10 @@ exports[`Storyshots TabBar Default 1`] = `
             <input
               checked={true}
               id="tabbar-shortid-mock-tab-1"
-              name="tabbar-shortid-mock-tab-1"
+              name="tabbar-shortid-mock"
+              onBlur={[Function]}
               onChange={[Function]}
+              onFocus={[Function]}
               type="radio"
             />
             <div
@@ -16595,8 +16611,10 @@ exports[`Storyshots TabBar Default 1`] = `
             <input
               checked={false}
               id="tabbar-shortid-mock-tab-2"
-              name="tabbar-shortid-mock-tab-2"
+              name="tabbar-shortid-mock"
+              onBlur={[Function]}
               onChange={[Function]}
+              onFocus={[Function]}
               type="radio"
             />
             <div
@@ -16612,7 +16630,7 @@ exports[`Storyshots TabBar Default 1`] = `
         <div
           className="content"
         >
-          <h2>
+          <h3>
             This is: 
              
             Docs
@@ -16621,7 +16639,7 @@ exports[`Storyshots TabBar Default 1`] = `
               height={16}
               width={16}
             />
-          </h2>
+          </h3>
         </div>
       </div>
     </div>
