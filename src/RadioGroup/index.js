@@ -20,20 +20,18 @@ class RadioGroup extends React.Component {
 
   render () {
     const {
-      name,
       disabled,
       error,
-      success,
-      options,
-      value,
-      theme,
+      name,
       onChange,
+      options,
+      theme,
+      value,
     } = this.props
 
     const containerClass = classnames(theme.container, {
       [theme.disabled]: disabled,
       [theme.error]: error,
-      [theme.success]: success,
     })
 
     const radioButtons = options.map((option, index) => (
@@ -65,11 +63,11 @@ class RadioGroup extends React.Component {
     return (
       <div className={containerClass}>
         {radioButtons}
-        {(success || error) &&
+        {error &&
           <p
             className={theme.secondaryText}
           >
-            {success || error}
+            {error}
           </p>
         }
       </div>
@@ -84,20 +82,17 @@ RadioGroup.propTypes = {
   theme: PropTypes.shape({
     disabled: PropTypes.string,
     error: PropTypes.string,
-    radio: PropTypes.string,
-    radioGroup: PropTypes.string,
-    secondaryText: PropTypes.string,
     label: PropTypes.string,
+    secondaryText: PropTypes.string,
   }),
   /**
-   * Set of items which will compose the options in the component.
-   * The name will be shown in the component and the value is passed as
-   * an argument in the callbacks.
+   * Disables/enables the component's functions.
    */
-  options: PropTypes.arrayOf(PropTypes.shape({
-    name: PropTypes.string,
-    value: PropTypes.string,
-  })).isRequired,
+  disabled: PropTypes.bool,
+  /**
+   * Error message which adds error styles. It stays below the component.
+   */
+  error: PropTypes.string,
   /**
    * Group name used to group the input radios and to distinguish the group.
    */
@@ -108,29 +103,25 @@ RadioGroup.propTypes = {
    */
   onChange: PropTypes.func.isRequired,
   /**
+   * Set of items which will compose the options in the component.
+   * The name will be shown in the component and the value is passed as
+   * an argument in the callbacks.
+   */
+  options: PropTypes.arrayOf(PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    value: PropTypes.string.isRequired,
+  })).isRequired,
+  /**
    * Selected value.
    */
   value: PropTypes.string,
-  /**
-   * Disables/enables the component's functions.
-   */
-  disabled: PropTypes.bool,
-  /**
-   * Error message which adds error styles. It stays below the component.
-   */
-  error: PropTypes.string,
-  /**
-   * Success message which adds success styles. It stays below the component.
-   */
-  success: PropTypes.string,
 }
 
 RadioGroup.defaultProps = {
-  theme: {},
-  value: '',
   disabled: false,
   error: '',
-  success: '',
+  theme: {},
+  value: '',
 }
 
 export default consumeTheme(RadioGroup)
