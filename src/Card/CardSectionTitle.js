@@ -1,12 +1,11 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
-import ThemeConsumer from '../../ThemeConsumer'
-import Button from '../../Button'
+import ThemeConsumer from '../ThemeConsumer'
 
 const consumeTheme = ThemeConsumer('UICard')
 
-class CardSectionTwoLinesTitle extends Component {
+class CardSectionTitle extends Component {
   constructor (props) {
     super(props)
     this.state = {
@@ -59,7 +58,6 @@ class CardSectionTwoLinesTitle extends Component {
   render () {
     const {
       collapsed,
-      icon,
       onClick,
       subtitle,
       theme,
@@ -77,7 +75,7 @@ class CardSectionTwoLinesTitle extends Component {
     }
 
     const headerClassNames = classNames(
-      theme.sectionTitles,
+      theme.sectionTitle,
       {
         [theme.clickableTitle]: onClick,
       }
@@ -85,39 +83,47 @@ class CardSectionTwoLinesTitle extends Component {
 
     return (
       <div className={headerClassNames} {...headerProps}>
-        <div className={theme.doubleLineTitle}>
-          <div >
-            <span className={theme.sectionIconBox}>
-              {icon}
-            </span>
-            <span className={theme.sectionTitles}>
-              {title}
-              {
-                (typeof subtitle === 'string') &&
-                <span className={theme.sectionSubtitle}>
-                  {subtitle}
-                </span>
-              }
-            </span>
-          </div>
-          {
-            <Button
-              type="button"
-              fill="outline"
-              size="default"
-              relevance="low"
-              onClick={this.handleExpand}
-              icon={this.getArrowIcon()}
-            />
-          }
-        </div>
-        { !collapsed && <hr className={theme.divider} /> }
+        <span>
+          {title}
+          {this.arrowUpDown()}
+        </span>
+        {
+          (typeof subtitle === 'string') &&
+          <span className={theme.sectionSubtitle}>
+            {subtitle}
+          </span>
+        }
+        {
+          (typeof subtitle !== 'string') &&
+            subtitle
+        }
       </div>
     )
   }
 }
 
-CardSectionTwoLinesTitle.propTypes = {
+CardSectionTitle.propTypes = {
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
+   */
+  theme: PropTypes.shape({
+    /**
+     * The expand/collapse arrow icon class
+     */
+    arrow: PropTypes.string,
+    /**
+     * The class applied when the title is clickable (onClick is set)
+     */
+    clickableTitle: PropTypes.string,
+    /**
+     * The section subtitle class
+     */
+    sectionSubtitle: PropTypes.string,
+    /**
+     * The section title class
+     */
+    sectionTitle: PropTypes.string,
+  }),
   /**
    * Changes the component style
    */
@@ -140,55 +146,22 @@ CardSectionTwoLinesTitle.propTypes = {
    */
   onClick: PropTypes.func,
   /**
-   * Main component text
-   */
-  title: PropTypes.string.isRequired,
-  /**
    * Subtitle inside the section.
    */
   subtitle: PropTypes.node,
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
+   * Main component text
    */
-  theme: PropTypes.shape({
-    /**
-     * The expand/collapse arrow icon class
-     */
-    arrow: PropTypes.string,
-    /**
-     * The class applied when the title is clickable (onClick is set)
-     */
-    clickableTitle: PropTypes.string,
-    /**
-     * The divider (hr element) class name
-     */
-    divider: PropTypes.string,
-    /**
-     * The icon outer box class
-     */
-    sectionIconBox: PropTypes.string,
-    /**
-     * The section subtitle class
-     */
-    sectionSubtitle: PropTypes.string,
-    /**
-     * The section title class
-     */
-    sectionTitle: PropTypes.string,
-    /**
-     * The vertical aligned titles class name
-     */
-    sectionTitles: PropTypes.string,
-  }),
+  title: PropTypes.string.isRequired,
 }
 
-CardSectionTwoLinesTitle.defaultProps = {
+CardSectionTitle.defaultProps = {
+  theme: {},
   collapsed: false,
   icon: null,
   icons: {},
   onClick: null,
   subtitle: null,
-  theme: {},
 }
 
-export default consumeTheme(CardSectionTwoLinesTitle)
+export default consumeTheme(CardSectionTitle)

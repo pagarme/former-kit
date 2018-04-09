@@ -76,30 +76,30 @@ CardTitle.propTypes = {
    * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: PropTypes.shape({
-    title: PropTypes.string,
     icon: PropTypes.string,
+    title: PropTypes.string,
   }),
-  /**
-   * The main text of the component.
-   */
-  title: PropTypes.node.isRequired,
-  /**
-   * The secondary text of the component.
-   */
-  subtitle: PropTypes.node,
-  /**
-   * The custom icon that is shown at the left side of the title.
-   */
-  icon: PropTypes.element,
   /**
    * Custom class added to the component.
    */
   className: PropTypes.string,
   /**
+   * The custom icon that is shown at the left side of the title.
+   */
+  icon: PropTypes.element,
+  /**
    * Triggered when the title of the component is clicked.
    * @param {object} event - default HTML click event
    */
   onClick: PropTypes.func,
+  /**
+   * The secondary text of the component.
+   */
+  subtitle: PropTypes.node,
+  /**
+   * The main text of the component.
+   */
+  title: PropTypes.node.isRequired,
 }
 
 CardTitle.defaultProps = {
