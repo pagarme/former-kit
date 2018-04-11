@@ -1,0 +1,11 @@
+.col {
+  display: unset;
+
+  & > div {
+    display: table;
+  }
+
+  & > div:not(:last-of-type) {
+    margin-bottom: 24px;
+  }
+}
