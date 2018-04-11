@@ -35,6 +35,7 @@ module.exports = {
         '../src/SegmentedSwitch/index.js',
         '../src/Switch/index.js',
         '../src/Tag/index.js',
+        '../src/Tooltip/index.js',
         '../src/Typeset/index.js',
       ],
       sections: [

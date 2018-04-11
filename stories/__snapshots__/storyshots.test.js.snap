@@ -20240,6 +20240,574 @@ exports[`Storyshots Tags Default 1`] = `
 </section>
 `;
 
+exports[`Storyshots Tooltip Default 1`] = `
+<section
+  className="typography"
+>
+  
+  <div>
+    <div
+      className="grid"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col desk4 tv4 tablet4 palm12 startAlign"
+        >
+          <h3>
+            Right start
+          </h3>
+          <div
+            className="target"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            <button
+              className="button flat normalRelevance default"
+              disabled={false}
+              onClick={null}
+              type="button"
+            >
+              Hover me
+            </button>
+          </div>
+          <h3>
+            Right middle
+          </h3>
+          <div
+            className="target"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            <button
+              className="button flat normalRelevance default"
+              disabled={false}
+              onClick={null}
+              type="button"
+            >
+              Hover me
+            </button>
+          </div>
+          <h3>
+            Right end
+          </h3>
+          <div
+            className="target"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            <button
+              className="button flat normalRelevance default"
+              disabled={false}
+              onClick={null}
+              type="button"
+            >
+              Hover me
+            </button>
+          </div>
+          <h3>
+            Top start
+          </h3>
+          <div
+            className="target"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            <button
+              className="button flat normalRelevance default"
+              disabled={false}
+              onClick={null}
+              type="button"
+            >
+              Hover me
+            </button>
+          </div>
+        </div>
+        <div
+          className="col desk4 tv4 tablet4 palm12 startAlign"
+        >
+          <h3>
+            Bottom start
+          </h3>
+          <div
+            className="target"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            <button
+              className="button flat normalRelevance default"
+              disabled={false}
+              onClick={null}
+              type="button"
+            >
+              Hover me
+            </button>
+          </div>
+          <h3>
+            Bottom center
+          </h3>
+          <div
+            className="target"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            <button
+              className="button flat normalRelevance default"
+              disabled={false}
+              onClick={null}
+              type="button"
+            >
+              Hover me
+            </button>
+          </div>
+          <h3>
+            Bottom end
+          </h3>
+          <div
+            className="target"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            <button
+              className="button flat normalRelevance default"
+              disabled={false}
+              onClick={null}
+              type="button"
+            >
+              Hover me
+            </button>
+          </div>
+          <h3>
+            Top center
+          </h3>
+          <div
+            className="target"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            <button
+              className="button flat normalRelevance default"
+              disabled={false}
+              onClick={null}
+              type="button"
+            >
+              Hover me
+            </button>
+          </div>
+        </div>
+        <div
+          className="col desk4 tv4 tablet4 palm12 startAlign"
+        >
+          <h3>
+            Left start
+          </h3>
+          <div
+            className="target"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            <button
+              className="button flat normalRelevance default"
+              disabled={false}
+              onClick={null}
+              type="button"
+            >
+              Hover me
+            </button>
+          </div>
+          <h3>
+            Left middle
+          </h3>
+          <div
+            className="target"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            <button
+              className="button flat normalRelevance default"
+              disabled={false}
+              onClick={null}
+              type="button"
+            >
+              Hover me
+            </button>
+          </div>
+          <h3>
+            Left end
+          </h3>
+          <div
+            className="target"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            <button
+              className="button flat normalRelevance default"
+              disabled={false}
+              onClick={null}
+              type="button"
+            >
+              Hover me
+            </button>
+          </div>
+          <h3>
+            Top end
+          </h3>
+          <div
+            className="target"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            <button
+              className="button flat normalRelevance default"
+              disabled={false}
+              onClick={null}
+              type="button"
+            >
+              Hover me
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`Storyshots Tooltip Visible 1`] = `
+<section
+  className="typography"
+>
+  
+  <div>
+    <div
+      className={undefined}
+    >
+      <h3>
+        Right start
+      </h3>
+      <div
+        className="target"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+      >
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          Hover me
+        </button>
+        <div
+          className="tooltip rightStart"
+          role="tooltip"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
+      </div>
+    </div>
+    <div
+      className={undefined}
+    >
+      <h3>
+        Right middle
+      </h3>
+      <div
+        className="target"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+      >
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          Hover me
+        </button>
+        <div
+          className="tooltip rightMiddle"
+          role="tooltip"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
+      </div>
+    </div>
+    <div
+      className={undefined}
+    >
+      <h3>
+        Right end
+      </h3>
+      <div
+        className="target"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+      >
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          Hover me
+        </button>
+        <div
+          className="tooltip rightEnd"
+          role="tooltip"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
+      </div>
+    </div>
+    <div
+      className=""
+    >
+      <h3>
+        Left start
+      </h3>
+      <div
+        className="target"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+      >
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          Hover me
+        </button>
+        <div
+          className="tooltip leftStart"
+          role="tooltip"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
+      </div>
+    </div>
+    <div
+      className=""
+    >
+      <h3>
+        Left middle
+      </h3>
+      <div
+        className="target"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+      >
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          Hover me
+        </button>
+        <div
+          className="tooltip leftMiddle"
+          role="tooltip"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
+      </div>
+    </div>
+    <div
+      className=""
+    >
+      <h3>
+        Lef end
+      </h3>
+      <div
+        className="target"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+      >
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          Hover me
+        </button>
+        <div
+          className="tooltip leftEnd"
+          role="tooltip"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
+      </div>
+    </div>
+    <div
+      className=""
+    >
+      <h3>
+        Top start
+      </h3>
+      <div
+        className="target"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+      >
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          Hover me
+        </button>
+        <div
+          className="tooltip topStart"
+          role="tooltip"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
+      </div>
+    </div>
+    <div
+      className=""
+    >
+      <h3>
+        Top center
+      </h3>
+      <div
+        className="target"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+      >
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          Hover me
+        </button>
+        <div
+          className="tooltip topCenter"
+          role="tooltip"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
+      </div>
+    </div>
+    <div
+      className=""
+    >
+      <h3>
+        Top end
+      </h3>
+      <div
+        className="target"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+      >
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          Hover me
+        </button>
+        <div
+          className="tooltip topEnd"
+          role="tooltip"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
+      </div>
+    </div>
+    <div
+      className=""
+    >
+      <h3>
+        Bottom start
+      </h3>
+      <div
+        className="target"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+      >
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          Hover me
+        </button>
+        <div
+          className="tooltip bottomStart"
+          role="tooltip"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
+      </div>
+    </div>
+    <div
+      className=""
+    >
+      <h3>
+        Bottom center
+      </h3>
+      <div
+        className="target"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+      >
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          Hover me
+        </button>
+        <div
+          className="tooltip bottomCenter"
+          role="tooltip"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
+      </div>
+    </div>
+    <div
+      className=""
+    >
+      <h3>
+        Bottom end
+      </h3>
+      <div
+        className="target"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+      >
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          Hover me
+        </button>
+        <div
+          className="tooltip bottomEnd"
+          role="tooltip"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
 exports[`Storyshots Typography Font families 1`] = `
 <section
   className="typography"

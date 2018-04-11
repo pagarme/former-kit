@@ -1,0 +1,44 @@
+.col {
+  display: unset;
+}
+
+.items {
+  display: block;
+  min-height: 115px;
+
+  & > div {
+    margin-top: 10px;
+  }
+}
+
+.itemsLeft > div {
+  margin-left: 245px;
+}
+
+.leftMiddle > div {
+  margin-top: 25px;
+}
+
+.leftBottom > div {
+  margin-top: 30px;
+}
+
+.itemsVertical {
+  min-height: 160px;
+
+  & > div {
+    margin-left: 15px;
+  }
+}
+
+.itemsTop > div {
+  margin-top: 80px;
+}
+
+.topCenter > div {
+  margin-left: 60px;
+}
+
+.topEnd > div {
+  margin-left: 105px;
+}
