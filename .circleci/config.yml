@@ -10,11 +10,6 @@ jobs:
     steps:
       - checkout
 
-      - restore_cache:
-          keys:
-          - dependencies-{{ checksum "package.json" }}
-          - dependencies-
-
       - run:
           name: Installing dependencies
           command: yarn
@@ -37,9 +32,4 @@ jobs:
           command: |
             scripts/fetch-skin.sh
             yarn percy; true
-
-      - save_cache:
-          paths:
-            - node_modules
-          key: dependencies-{{ checksum "package.json" }}
 
