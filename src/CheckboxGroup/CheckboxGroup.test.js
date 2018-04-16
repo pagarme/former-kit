@@ -32,7 +32,6 @@ describe('CheckboxGroup', () => {
         onChange={onChange}
         values={values}
         error="error"
-        success="success"
       />
     )
 
@@ -57,7 +56,6 @@ describe('CheckboxGroup', () => {
         onChange={onChange}
         values={values}
         error="error"
-        success="success"
       />
     )
 
@@ -82,7 +80,6 @@ describe('CheckboxGroup', () => {
         values={values}
         disabled
         error="error"
-        success="success"
       />
     )
 

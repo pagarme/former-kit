@@ -15,15 +15,23 @@ class CheckboxGroupState extends React.Component {
     const options = [
       {
         label: 'Github',
-        value: 'Github',
+        value: 'github',
       },
       {
-        label: 'Pagar.me',
-        value: 'pagarme',
-      },
-      {
-        label: 'Open source',
+        label: 'Open Source',
         value: 'open-source',
+      },
+      {
+        label: 'Pilot',
+        value: 'pilot',
+      },
+      {
+        label: 'React',
+        value: 'react',
+      },
+      {
+        label: 'Storybook',
+        value: 'Storybook',
       },
     ]
 
@@ -31,17 +39,16 @@ class CheckboxGroupState extends React.Component {
       disabled,
       error,
       name,
-      success,
     } = this.props
 
     return (
       <CheckboxGroup
+        columns={2]}
         disabled={disabled}
         error={error}
         name={name}
         onChange={values => this.setState({ values })}
         options={options}
-        success={success}
         values={this.state.values}
       />
     )
@@ -57,20 +64,14 @@ Default
   <div><CheckboxGroupState name="default" /></div>
 ```
 
-Disabled
-```jsx
-  const CheckboxGroupState = require('./examples/CheckboxGroupState').default;
-  <div><CheckboxGroupState name="disabled" disabled /></div>
-```
-
-Success
-```jsx
-  const CheckboxGroupState = require('./examples/CheckboxGroupState').default;
-  <div><CheckboxGroupState name="success" success="Success!" /></div>
-```
-
 Error
 ```jsx
   const CheckboxGroupState = require('./examples/CheckboxGroupState').default;
   <div><CheckboxGroupState name="error" error="Error!" /></div>
+```
+
+Disabled
+```jsx
+  const CheckboxGroupState = require('./examples/CheckboxGroupState').default;
+  <div><CheckboxGroupState name="disabled" disabled /></div>
 ```

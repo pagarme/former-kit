@@ -26,24 +26,31 @@ class CheckboxGroupState extends React.Component {
         label: 'Pilot',
         value: 'pilot',
       },
+      {
+        label: 'React',
+        value: 'react',
+      },
+      {
+        label: 'Storybook',
+        value: 'Storybook',
+      },
     ]
 
     const {
       disabled,
       error,
       name,
-      success,
     } = this.props
 
     return (
       <div>
         <CheckboxGroup
+          columns={2}
           disabled={disabled}
           error={error}
           name={name}
           onChange={values => this.setState({ values })}
           options={options}
-          success={success}
           values={this.state.values}
         />
 
@@ -56,7 +63,6 @@ class CheckboxGroupState extends React.Component {
 CheckboxGroupState.defaultProps = {
   disabled: false,
   error: '',
-  success: '',
 }
 
 storiesOf('Checkbox Group', module)
@@ -66,16 +72,12 @@ storiesOf('Checkbox Group', module)
         <CheckboxGroupState name="default" />
       </Section>
 
-      <Section title="Disabled">
-        <CheckboxGroupState name="disabled" disabled />
-      </Section>
-
-      <Section title="Success">
-        <CheckboxGroupState name="success" success="Success" />
-      </Section>
-
       <Section title="Error">
         <CheckboxGroupState name="error" error="Error!" />
+      </Section>
+
+      <Section title="Disabled">
+        <CheckboxGroupState name="disabled" disabled />
       </Section>
     </div>
   ))

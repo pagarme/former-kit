@@ -25,18 +25,11 @@ class RadioGroupState extends React.Component {
     this.state = { value: 'github' }
   }
 
-  componentWillMount () {
-    if (this.props.success) {
-      this.setState({ value: 'Pilot' })
-    }
-  }
-
   render () {
     const {
       disabled,
       error,
       name,
-      success,
     } = this.props
 
     const {
@@ -52,10 +45,9 @@ class RadioGroupState extends React.Component {
           value={value}
           disabled={disabled}
           error={error}
-          success={success}
         />
 
-        <pre>Selected: {value}</pre>
+        <p>Selected: {value}</p>
       </div>
     )
   }
@@ -64,26 +56,21 @@ class RadioGroupState extends React.Component {
 RadioGroupState.defaultProps = {
   disabled: false,
   error: '',
-  success: '',
 }
 
 storiesOf('Radio Group', module)
   .add('Default', () => (
     <div>
-      <Section title="Disabled">
-        <RadioGroupState name="disabled" disabled />
-      </Section>
-
       <Section title="Default">
         <RadioGroupState name="default" />
       </Section>
 
-      <Section title="Success">
-        <RadioGroupState name="success" success="Success!" />
-      </Section>
-
       <Section title="Error">
         <RadioGroupState name="error" error="Error!" />
+      </Section>
+
+      <Section title="Disabled">
+        <RadioGroupState name="disabled" disabled />
       </Section>
     </div>
   ))

@@ -141,7 +141,9 @@ describe('Table', () => {
             .find('th')
             .findWhere(node =>
               node.length > 0 && node.type() === 'div' &&
-              node.find('span').length > 0)
+              node.find('span').length > 0 &&
+              node.find('input').lenght <= 0
+            )
 
           headerColumns.forEach((colElement, index) => {
             const sp = colElement.find('span').first()
