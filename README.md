@@ -17,11 +17,13 @@ allowing highly customizable user interfaces without the hurdle to build
 everytime the same HTML structure and React component interface
 abstractions.
 
+**The fastest way to get started with former kit is using our [Starter Dashboard](https://github.com/pagarme/react-scripts-former-kit-dashboard).**
+
 ## Using
 
 Install `former-kit`. If you want to see the full power of FormerKit, you
 will also need a skin. We have developed a skin based on our styleguide,
-it's available in package 
+it's available in package
 [npm former-kit-skin-pagarme](https://www.npmjs.com/package/former-kit-skin-pagarme)
 or in the github repository
 [former-kit-skin-pagarme](https://github.com/pagarme/former-kit-skin-pagarme)
