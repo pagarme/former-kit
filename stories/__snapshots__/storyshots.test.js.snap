@@ -257,6 +257,18 @@ exports[`Storyshots Buttons Default 1`] = `
           />
           Tiny
         </button>
+        <button
+          className="button flat normalRelevance tiny"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          Tiny
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+        </button>
       </div>
       <div
         className={undefined}
@@ -281,6 +293,18 @@ exports[`Storyshots Buttons Default 1`] = `
           />
           Default
         </button>
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          Default
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+        </button>
       </div>
       <div
         className={undefined}
@@ -304,6 +328,18 @@ exports[`Storyshots Buttons Default 1`] = `
             width={12}
           />
           Huge
+        </button>
+        <button
+          className="button flat normalRelevance huge"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          Huge
+          <Add24.svg
+            height={12}
+            width={12}
+          />
         </button>
       </div>
     </div>
@@ -338,6 +374,18 @@ exports[`Storyshots Buttons Default 1`] = `
           />
           Flat
         </button>
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          Flat
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+        </button>
       </div>
       <div
         className={undefined}
@@ -361,6 +409,18 @@ exports[`Storyshots Buttons Default 1`] = `
             width={12}
           />
           Gradient
+        </button>
+        <button
+          className="button gradient normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          Gradient
+          <Add24.svg
+            height={12}
+            width={12}
+          />
         </button>
       </div>
       <div
@@ -386,6 +446,18 @@ exports[`Storyshots Buttons Default 1`] = `
           />
           Outline
         </button>
+        <button
+          className="button outline normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          Outline
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+        </button>
       </div>
       <div
         className={undefined}
@@ -409,6 +481,18 @@ exports[`Storyshots Buttons Default 1`] = `
             width={12}
           />
           Clean
+        </button>
+        <button
+          className="button clean normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          Clean
+          <Add24.svg
+            height={12}
+            width={12}
+          />
         </button>
       </div>
     </div>
@@ -443,6 +527,18 @@ exports[`Storyshots Buttons Default 1`] = `
           />
           Flat
         </button>
+        <button
+          className="button flat highRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          Flat
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+        </button>
       </div>
       <div
         className={undefined}
@@ -466,6 +562,18 @@ exports[`Storyshots Buttons Default 1`] = `
             width={12}
           />
           Gradient
+        </button>
+        <button
+          className="button gradient highRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          Gradient
+          <Add24.svg
+            height={12}
+            width={12}
+          />
         </button>
       </div>
       <div
@@ -491,6 +599,18 @@ exports[`Storyshots Buttons Default 1`] = `
           />
           Outline
         </button>
+        <button
+          className="button outline highRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          Outline
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+        </button>
       </div>
       <div
         className={undefined}
@@ -514,6 +634,18 @@ exports[`Storyshots Buttons Default 1`] = `
             width={12}
           />
           Clean
+        </button>
+        <button
+          className="button clean highRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          Clean
+          <Add24.svg
+            height={12}
+            width={12}
+          />
         </button>
       </div>
     </div>
@@ -548,6 +680,18 @@ exports[`Storyshots Buttons Default 1`] = `
           />
           Flat
         </button>
+        <button
+          className="button flat lowRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          Flat
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+        </button>
       </div>
       <div
         className={undefined}
@@ -571,6 +715,18 @@ exports[`Storyshots Buttons Default 1`] = `
             width={12}
           />
           Gradient
+        </button>
+        <button
+          className="button gradient lowRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          Gradient
+          <Add24.svg
+            height={12}
+            width={12}
+          />
         </button>
       </div>
       <div
@@ -596,6 +752,18 @@ exports[`Storyshots Buttons Default 1`] = `
           />
           Outline
         </button>
+        <button
+          className="button outline lowRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          Outline
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+        </button>
       </div>
       <div
         className={undefined}
@@ -619,6 +787,18 @@ exports[`Storyshots Buttons Default 1`] = `
             width={12}
           />
           Clean
+        </button>
+        <button
+          className="button clean lowRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          Clean
+          <Add24.svg
+            height={12}
+            width={12}
+          />
         </button>
       </div>
     </div>
@@ -708,11 +888,11 @@ exports[`Storyshots Buttons Default 1`] = `
           onClick={null}
           type="button"
         >
-          <Add24.svg
-            height={12}
-            width={12}
-          />
           Flat
+          <Add24.svg
+            height={12}
+            width={12}
+          />
         </button>
       </div>
       <div
@@ -738,6 +918,18 @@ exports[`Storyshots Buttons Default 1`] = `
           />
           Gradient
         </button>
+        <button
+          className="button gradient normalRelevance default"
+          disabled={true}
+          onClick={null}
+          type="button"
+        >
+          Gradient
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+        </button>
       </div>
       <div
         className={undefined}
@@ -762,6 +954,18 @@ exports[`Storyshots Buttons Default 1`] = `
           />
           Outline
         </button>
+        <button
+          className="button outline normalRelevance default"
+          disabled={true}
+          onClick={null}
+          type="button"
+        >
+          Outline
+          <Add24.svg
+            height={12}
+            width={12}
+          />
+        </button>
       </div>
       <div
         className={undefined}
@@ -785,6 +989,18 @@ exports[`Storyshots Buttons Default 1`] = `
             width={12}
           />
           Clean
+        </button>
+        <button
+          className="button clean normalRelevance default"
+          disabled={true}
+          onClick={null}
+          type="button"
+        >
+          Clean
+          <Add24.svg
+            height={12}
+            width={12}
+          />
         </button>
       </div>
       <div

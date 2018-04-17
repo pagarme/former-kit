@@ -16,6 +16,7 @@ const Button = ({
   disabled,
   fill,
   icon,
+  iconAlignment,
   onClick,
   relevance,
   size,
@@ -40,8 +41,9 @@ const Button = ({
       onClick={onClick}
       type={type}
     >
-      {!isNil(icon) && icon}
+      {(!isNil(icon) && iconAlignment === 'start') && icon}
       {!isNil(children) && children}
+      {(!isNil(icon) && iconAlignment === 'end') && icon}
     </button>
   )
 }
@@ -88,9 +90,15 @@ Button.propTypes = {
     'flat', 'gradient', 'outline', 'clean',
   ]),
   /**
-   * Custom icon which stays on the left side of the input.
+   * Custom icon which stays on the left or right side of the input.
    */
   icon: PropTypes.element,
+  /**
+   * The prop that indicates the icon alignment.
+   */
+  iconAlignment: PropTypes.oneOf([
+    'start', 'end',
+  ]),
   /**
    * The `onClick` prop is triggered when the button is clicked.
    */
@@ -119,6 +127,7 @@ Button.defaultProps = {
   disabled: false,
   fill: 'flat',
   icon: null,
+  iconAlignment: 'start',
   onClick: null,
   relevance: 'normal',
   size: 'default',
