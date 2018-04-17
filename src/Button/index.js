@@ -16,6 +16,7 @@ const Button = ({
   disabled,
   fill,
   icon,
+  isRound,
   onClick,
   relevance,
   size,
@@ -29,6 +30,7 @@ const Button = ({
     theme[size],
     {
       [theme.iconButton]: !isNil(icon) && isNil(children),
+      [theme.isRound]: !isNil(isRound),
       [theme.circle]: !isNil(icon) && isNil(children) && circle,
     }
   )
@@ -60,6 +62,7 @@ Button.propTypes = {
     gradient: PropTypes.string,
     highRelevance: PropTypes.string,
     huge: PropTypes.string,
+    isRound: PropTypes.string,
     lowRelevance: PropTypes.string,
     normalRelevance: PropTypes.string,
     outline: PropTypes.string,
@@ -92,6 +95,10 @@ Button.propTypes = {
    */
   icon: PropTypes.element,
   /**
+   * The prop that indicates if button has rounded border
+   */
+  isRound: PropTypes.bool,
+  /**
    * The `onClick` prop is triggered when the button is clicked.
    */
   onClick: PropTypes.func,
@@ -119,6 +126,7 @@ Button.defaultProps = {
   disabled: false,
   fill: 'flat',
   icon: null,
+  isRound: false,
   onClick: null,
   relevance: 'normal',
   size: 'default',
