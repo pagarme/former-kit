@@ -237,6 +237,26 @@ Default
   </div>
 ```
 
+With masks applied
+```jsx
+  const InputState = require('./example/InputState').default;
+  <div>
+    <InputState
+      inputStyle="form"
+      type="text"
+      mask="111.111.111-11"
+      label="CPF"
+    />
+    <br />
+    <InputState
+      inputStyle="form"
+      type="text"
+      label="Card number"
+      mask="1111 1111 1111 1111"
+    />
+  </div>
+```
+
 Disabled
 ```jsx
   const InputState = require('./example/InputState').default;

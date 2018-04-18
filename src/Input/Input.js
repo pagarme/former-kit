@@ -2,10 +2,20 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
 import shortid from 'shortid'
-import { isNil, pick, assoc } from 'ramda'
+import MaskedInput from 'react-maskedinput'
+import {
+  assoc,
+  isEmpty,
+  isNil,
+  pick,
+} from 'ramda'
 
-const validateMultiline = (props, propName) => {
-  const { multiline, type } = props
+
+const validateMultiline = ({
+  mask,
+  multiline,
+  type,
+}, propName) => {
   if (
     propName === 'multiline' &&
     multiline &&
@@ -13,6 +23,14 @@ const validateMultiline = (props, propName) => {
     !isNil(type)
   ) {
     throw new Error('Multiline inputs must have the type "text"')
+  }
+
+  if (
+    propName === 'multiline' &&
+    multiline &&
+    !isEmpty(mask)
+  ) {
+    throw new Error('Adding a mask to a multiline component is not possible, it was rendered without the mask.')
   }
 }
 
@@ -95,6 +113,7 @@ class Input extends React.PureComponent {
       icon,
       inputRef,
       label,
+      mask,
       multiline,
       type,
       value,
@@ -147,10 +166,20 @@ class Input extends React.PureComponent {
         }
         <div className={theme.boxContainer}>
           <div className={container}>
-            {multiline
-              ? (
-                <textarea
-                  rows="1"
+            {multiline && (
+              <textarea
+                rows="1"
+                onChange={disabled ? null : onChange}
+                onBlur={this.handleBlur}
+                onFocus={this.handleFocus}
+                {...inputProps}
+              />
+            )}
+
+            {!multiline && (mask ?
+              (
+                <MaskedInput
+                  mask={mask}
                   onChange={disabled ? null : onChange}
                   onBlur={this.handleBlur}
                   onFocus={this.handleFocus}
@@ -166,7 +195,7 @@ class Input extends React.PureComponent {
                   {...inputProps}
                 />
               )
-            }
+            )}
 
             {this.renderPasswordVisibilityIcon()}
             {hasLabel &&
@@ -250,6 +279,11 @@ Input.propTypes = {
    */
   label: PropTypes.string,
   /**
+   * Apply a mask to the input.
+   * Go to https://github.com/insin/inputmask-core#pattern to check formatting styles
+   */
+  mask: PropTypes.string,
+  /**
    * Allow multiline texts if the component type is text.
    */
   multiline: validateMultiline,
@@ -302,6 +336,7 @@ Input.defaultProps = {
   icons: {},
   inputRef: null,
   label: '',
+  mask: '',
   multiline: false,
   name: '',
   onBlur: null,
