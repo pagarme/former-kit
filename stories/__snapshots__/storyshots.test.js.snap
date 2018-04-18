@@ -2618,14 +2618,14 @@ exports[`Storyshots DateInput All styles 1`] = `
               onKeyDown={[Function]}
               onKeyPress={[Function]}
               onPaste={[Function]}
-              placeholder="09/30/2017"
+              placeholder="10/01/2017"
               size="8"
-              value="09/30/2017"
+              value="10/01/2017"
             />
             <span
               className="expander"
             >
-              09/30/2017
+              10/01/2017
             </span>
           </div>
         </div>
@@ -2676,14 +2676,14 @@ exports[`Storyshots DateInput All styles 1`] = `
               onKeyDown={[Function]}
               onKeyPress={[Function]}
               onPaste={[Function]}
-              placeholder="09/23/2017"
+              placeholder="09/24/2017"
               size="8"
-              value="09/23/2017"
+              value="09/24/2017"
             />
             <span
               className="expander"
             >
-              09/23/2017
+              09/24/2017
             </span>
           </div>
           <div
@@ -2705,12 +2705,12 @@ exports[`Storyshots DateInput All styles 1`] = `
               onPaste={[Function]}
               placeholder="Final"
               size="8"
-              value="09/30/2017"
+              value="10/01/2017"
             />
             <span
               className="expander"
             >
-              09/30/2017
+              10/01/2017
             </span>
           </div>
         </div>
@@ -2761,14 +2761,14 @@ exports[`Storyshots DateInput All styles 1`] = `
               onKeyDown={[Function]}
               onKeyPress={[Function]}
               onPaste={[Function]}
-              placeholder="09/23/2017"
+              placeholder="09/24/2017"
               size="8"
-              value="09/23/2017"
+              value="09/24/2017"
             />
             <span
               className="expander"
             >
-              09/23/2017
+              09/24/2017
             </span>
           </div>
           <div
@@ -4483,7 +4483,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                               </button>
                             </td>
                             <td
-                              className="CalendarDay CalendarDay--valid CalendarDay--selected-start CalendarDay--selected-span"
+                              className="CalendarDay CalendarDay--valid"
                               style={
                                 Object {
                                   "height": 39,
@@ -4498,14 +4498,14 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                                 onMouseEnter={[Function]}
                                 onMouseLeave={[Function]}
                                 onMouseUp={[Function]}
-                                tabIndex={0}
+                                tabIndex={-1}
                                 type="button"
                               >
                                 25
                               </button>
                             </td>
                             <td
-                              className="CalendarDay CalendarDay--valid CalendarDay--selected-span"
+                              className="CalendarDay CalendarDay--valid CalendarDay--selected-start CalendarDay--selected-span"
                               style={
                                 Object {
                                   "height": 39,
@@ -4520,14 +4520,14 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                                 onMouseEnter={[Function]}
                                 onMouseLeave={[Function]}
                                 onMouseUp={[Function]}
-                                tabIndex={-1}
+                                tabIndex={0}
                                 type="button"
                               >
                                 26
                               </button>
                             </td>
                             <td
-                              className="CalendarDay CalendarDay--valid CalendarDay--selected-span CalendarDay--last-in-range"
+                              className="CalendarDay CalendarDay--valid CalendarDay--selected-span"
                               style={
                                 Object {
                                   "height": 39,
@@ -4549,7 +4549,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                               </button>
                             </td>
                             <td
-                              className="CalendarDay CalendarDay--valid CalendarDay--selected-end CalendarDay--selected-span"
+                              className="CalendarDay CalendarDay--valid CalendarDay--selected-span CalendarDay--last-in-range"
                               style={
                                 Object {
                                   "height": 39,
@@ -4571,7 +4571,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                               </button>
                             </td>
                             <td
-                              className="CalendarDay CalendarDay--valid"
+                              className="CalendarDay CalendarDay--valid CalendarDay--selected-end CalendarDay--selected-span"
                               style={
                                 Object {
                                   "height": 39,
@@ -4593,7 +4593,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                               </button>
                             </td>
                             <td
-                              className="CalendarDay CalendarDay--today CalendarDay--valid"
+                              className="CalendarDay CalendarDay--valid"
                               style={
                                 Object {
                                   "height": 39,
@@ -4638,7 +4638,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                         >
                           <tr>
                             <td
-                              className="CalendarDay CalendarDay--valid"
+                              className="CalendarDay CalendarDay--today CalendarDay--valid"
                               style={
                                 Object {
                                   "height": 39,
