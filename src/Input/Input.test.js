@@ -1,5 +1,5 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { shallow, mount } from 'enzyme'
 
 import Input from './form'
 
@@ -107,6 +107,28 @@ describe('Input', () => {
       expect(onChange).toHaveBeenCalled()
       expect(onChange).toHaveBeenLastCalledWith(value)
     })
+
+    it('should mount with a mask', () => {
+      const onChange = jest.fn()
+
+      const component = mount(
+        <Input
+          name="name"
+          label="Name"
+          onChange={onChange}
+          value="4151 1124"
+          type="password"
+          placeholder="Your name"
+          mask="1111 1111 1111 1111"
+          hint="Hi"
+          error="Error"
+        />
+      )
+
+      expect(component.props().mask).not.toBeUndefined()
+      expect(component.props().mask).toEqual('1111 1111 1111 1111')
+      expect(component.html()).toContain('4151 1124 ____ ____')
+    })
   })
 
   describe('multiline', () => {
@@ -210,6 +232,28 @@ describe('Input', () => {
 
       expect(onChange).toHaveBeenCalled()
       expect(onChange).toHaveBeenLastCalledWith(value)
+    })
+
+    it('should not mount textarea with mask passed', () => {
+      const onChange = jest.fn()
+      // disables next line so when the assertion throws an error it doesn't log to the console
+      console.error = jest.fn() // eslint-disable-line
+
+      expect(shallow(
+        <Input
+          name="name"
+          label="Name"
+          onChange={onChange}
+          value="hihihi"
+          type="text"
+          placeholder="Your name"
+          boxed
+          hint="Hi"
+          error="Error"
+          mask="11/11/1111"
+          multiline
+        />
+      ).dive).toThrow()
     })
   })
 })

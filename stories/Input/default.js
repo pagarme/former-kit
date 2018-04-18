@@ -9,20 +9,23 @@ import Input from '../../src/Input'
 class InputState extends React.Component {
   constructor (props) {
     super(props)
-    this.state = { email: 'pagarme@pagar.me' }
+    this.state = { value: props.value }
   }
 
   render () {
     const {
       error,
       icon,
+      label,
+      mask,
       multiline,
+      placeholder,
       success,
       type,
     } = this.props
 
     const {
-      email,
+      value,
     } = this.state
 
     return (
@@ -30,14 +33,15 @@ class InputState extends React.Component {
         error={error}
         hint="Secondary text"
         icon={icon}
-        label="Your email"
+        label={label}
+        mask={mask}
         multiline={multiline}
         name="email"
-        onChange={e => this.setState({ email: e.target.value })}
-        placeholder="name@email.com"
+        onChange={e => this.setState({ value: e.target.value })}
+        placeholder={placeholder}
         success={success}
         type={type}
-        value={email}
+        value={value}
       />
     )
   }
@@ -46,9 +50,13 @@ class InputState extends React.Component {
 InputState.defaultProps = {
   error: '',
   icon: null,
+  label: 'Your email',
+  mask: '',
   multiline: false,
+  placeholder: 'name@email.com',
   success: '',
   type: null,
+  value: 'pagarme@pagar.me',
 }
 
 storiesOf('Inputs', module)
@@ -83,6 +91,15 @@ storiesOf('Inputs', module)
           placeholder="email@email.com"
           onChange={action('text changed')}
           value="Disabled!"
+        />
+      </Section>
+
+      <Section title="Masked input">
+        <InputState
+          mask="111-111-111"
+          placeholder="Type your phone number"
+          type="text"
+          value=""
         />
       </Section>
 

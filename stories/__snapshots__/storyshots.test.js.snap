@@ -8969,6 +8969,53 @@ exports[`Storyshots Inputs Default 1`] = `
     className=""
   >
     <h2>
+      Masked input
+    </h2>
+    <div>
+      <div
+        className="input"
+      >
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container"
+          >
+            <input
+              disabled={false}
+              mask="111-111-111"
+              maxLength={11}
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyPress={[Function]}
+              onPaste={[Function]}
+              placeholder="Type your phone number"
+              size={11}
+              value=""
+            />
+            <label
+              className=""
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Secondary text
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
       Multiline default
     </h2>
     <div>
@@ -8988,7 +9035,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onChange={[Function]}
               onFocus={[Function]}
               onKeyPress={null}
-              placeholder="name@email.com"
+              placeholder="default"
               rows="1"
               value="pagarme@pagar.me"
             />
@@ -9610,7 +9657,12 @@ exports[`Storyshots Inputs Form 1`] = `
               type="text"
               value="pagarme@pagar.me"
             />
-            
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
           </div>
           <p
             className="secondaryText"
@@ -9649,7 +9701,12 @@ exports[`Storyshots Inputs Form 1`] = `
               type="text"
               value="pagarme@pagar.me"
             />
-            
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
           </div>
           <p
             className="secondaryText"
@@ -9752,6 +9809,53 @@ exports[`Storyshots Inputs Form 1`] = `
     className=""
   >
     <h2>
+      Masked input
+    </h2>
+    <div>
+      <div
+        className="input active"
+      >
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container"
+          >
+            <input
+              disabled={false}
+              mask="111-111-111"
+              maxLength={11}
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyPress={[Function]}
+              onPaste={[Function]}
+              placeholder="Type your phone number"
+              size={11}
+              value="431-051-080"
+            />
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Phone number
+            </label>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Secondary Text
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
       Multiline default
     </h2>
     <div>
@@ -9771,11 +9875,16 @@ exports[`Storyshots Inputs Form 1`] = `
               onChange={[Function]}
               onFocus={[Function]}
               onKeyPress={null}
-              placeholder="name@email.com"
+              placeholder="default"
               rows="1"
               value="pagarme@pagar.me"
             />
-            
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
             <div
               className="expander"
             >
@@ -9819,7 +9928,12 @@ exports[`Storyshots Inputs Form 1`] = `
               rows="1"
               value="pagarme@pagar.me"
             />
-            
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
             <div
               className="expander"
             >
@@ -9917,7 +10031,12 @@ exports[`Storyshots Inputs Form 1`] = `
               type="text"
               value="pagarme@pagar.me"
             />
-            
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
           </div>
           <p
             className="secondaryText"
@@ -9964,7 +10083,12 @@ exports[`Storyshots Inputs Form 1`] = `
               type="text"
               value="pagarme@pagar.me"
             />
-            
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
           </div>
           <p
             className="secondaryText"
@@ -10058,7 +10182,12 @@ exports[`Storyshots Inputs Form 1`] = `
               rows="1"
               value="pagarme@pagar.me"
             />
-            
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
             <div
               className="expander"
             >
@@ -10110,7 +10239,12 @@ exports[`Storyshots Inputs Form 1`] = `
               rows="1"
               value="pagarme@pagar.me"
             />
-            
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
             <div
               className="expander"
             >
