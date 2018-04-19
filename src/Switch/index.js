@@ -29,9 +29,10 @@ const consumeTheme = ThemeConsumer('UISwitch')
  * changed and returns a boolean value
  */
 const Switch = ({
-  disabled,
-  onChange,
   checked,
+  disabled,
+  name,
+  onChange,
   strings,
   theme,
 }) => {
@@ -49,8 +50,9 @@ const Switch = ({
     <div className={className}>
       <input
         checked={checked}
-        type="checkbox"
+        name={name}
         onChange={() => !disabled && onChange(!checked)}
+        type="checkbox"
       />
       <span>
         {checked ? on : off }
@@ -69,17 +71,21 @@ Switch.propTypes = {
     disabled: string,
   }),
   /**
+   * Prop used to tell if the component is checked or not.
+  */
+  checked: bool,
+  /**
    * Prop used to tell if the component is disabled or not.
   */
   disabled: bool,
+  /**
+   * Name to give to the input
+  */
+  name: string,
   /** The callback called when the Switch receives a click.
    * @param {boolean} checked - returns the inverse of the 'checked' prop.
   */
   onChange: func.isRequired,
-  /**
-   * Prop used to tell if the component is checked or not.
-  */
-  checked: bool,
   /**
    * Texts used to the i18n of the component.
   */
@@ -97,8 +103,9 @@ Switch.propTypes = {
 
 Switch.defaultProps = {
   theme: {},
-  disabled: false,
   checked: false,
+  disabled: false,
+  name: '',
   strings: defaultStrings,
 }
 
