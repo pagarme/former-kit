@@ -3,13 +3,6 @@ import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import shortid from 'shortid'
 
-import {
-  propEq,
-  pipe,
-  find,
-  prop,
-  defaultTo,
-} from 'ramda'
 /**
  * Single value selector which shows a list of selectable options.
  * A callback (received in props) is fired when an option is selected. The callback receives
@@ -23,7 +16,6 @@ class Dropdown extends React.Component {
     this.handleChange = this.handleChange.bind(this)
     this.handleBlur = this.handleBlur.bind(this)
     this.handleFocus = this.handleFocus.bind(this)
-    this.selectedName = this.selectedName.bind(this)
     this.state = {
       isFocused: false,
     }
@@ -53,22 +45,6 @@ class Dropdown extends React.Component {
     if (this.props.onFocus) {
       this.props.onFocus()
     }
-  }
-
-  selectedName () {
-    const {
-      options,
-      value,
-    } = this.props
-
-    const selected = pipe(
-      find(propEq('value', value)),
-      defaultTo({}),
-      prop('name'),
-      defaultTo(this.props.placeholder || 'Selecione')
-    )
-
-    return selected(options)
   }
 
   renderOptions () {
@@ -106,6 +82,7 @@ class Dropdown extends React.Component {
       label,
       placeholder,
       theme,
+      value,
     } = this.props
 
     const rootClasses = classNames(
@@ -138,7 +115,7 @@ class Dropdown extends React.Component {
           onBlur={this.handleBlur}
           onFocus={this.handleFocus}
           disabled={disabled}
-          defaultValue="placeholder"
+          defaultValue={value || 'placeholder'}
         >
           <option
             disabled

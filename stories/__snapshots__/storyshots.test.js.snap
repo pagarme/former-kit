@@ -6389,6 +6389,68 @@ exports[`Storyshots Dropdown Default 1`] = `
       </div>
     </div>
   </section>
+  <section
+    className=""
+  >
+    <h2>
+      dropdown with value
+    </h2>
+    <div>
+      <div>
+        <div
+          className="dropdown"
+        >
+          
+          <select
+            className="select"
+            defaultValue="open-source"
+            disabled={false}
+            id="things-shortid-mock"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+          >
+            <option
+              className="option placeholder"
+              disabled={true}
+              hidden={true}
+              value="placeholder"
+            >
+              
+            </option>
+            <option
+              className="option"
+              value="github"
+            >
+              Github
+            </option>
+            <option
+              className="option active"
+              value="open-source"
+            >
+              Open Source
+            </option>
+            <option
+              className="option"
+              value="pilot"
+            >
+              Pilot
+            </option>
+          </select>
+          <span
+            className="arrow"
+          >
+            <svg />
+          </span>
+          
+        </div>
+        <p>
+          Selected: 
+          open-source
+        </p>
+      </div>
+    </div>
+  </section>
 </div>
 `;
 
@@ -6731,6 +6793,73 @@ exports[`Storyshots Dropdown Form 1`] = `
         <p>
           Selected: 
           
+        </p>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      dropdown with value
+    </h2>
+    <div>
+      <div>
+        <div
+          className="dropdown"
+        >
+          <label
+            className="label"
+            htmlFor="Things-shortid-mock"
+          >
+            Things
+          </label>
+          <select
+            className="select"
+            defaultValue="open-source"
+            disabled={false}
+            id="Things-shortid-mock"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+          >
+            <option
+              className="option placeholder"
+              disabled={true}
+              hidden={true}
+              value="placeholder"
+            >
+              
+            </option>
+            <option
+              className="option"
+              value="github"
+            >
+              Github
+            </option>
+            <option
+              className="option active"
+              value="open-source"
+            >
+              Open Source
+            </option>
+            <option
+              className="option"
+              value="pilot"
+            >
+              Pilot
+            </option>
+          </select>
+          <span
+            className="arrow"
+          >
+            <svg />
+          </span>
+          
+        </div>
+        <p>
+          Selected: 
+          open-source
         </p>
       </div>
     </div>
