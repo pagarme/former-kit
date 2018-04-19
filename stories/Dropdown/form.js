@@ -21,7 +21,8 @@ const options = [
 class DropdownState extends React.Component {
   constructor (props) {
     super(props)
-    this.state = { selected: '' }
+    const { value } = this.props
+    this.state = { selected: value }
   }
 
   render () {
@@ -47,6 +48,7 @@ DropdownState.defaultProps = {
   disabled: false,
   error: '',
   placeholder: '',
+  value: '',
 }
 
 storiesOf('Dropdown', module)
@@ -70,6 +72,11 @@ storiesOf('Dropdown', module)
 
       <Section title="Disabled with placeholder">
         <DropdownState disabled placeholder="Select" />
+      </Section>
+      <Section title="dropdown with value">
+        <DropdownState
+          value="open-source"
+        />
       </Section>
     </div>
   ))
