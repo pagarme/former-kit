@@ -73,6 +73,14 @@ module.exports = {
           ],
         },
         {
+          name: 'Popover',
+          content: '../src/Popover/README.md',
+          components: () => [
+            '../src/Popover/Popover.js',
+            '../src/Popover/PopoverMenu.js',
+          ],
+        },
+        {
           name: 'Sidebar',
           content: '../src/Sidebar/README.md',
           components: () => [
