@@ -105,6 +105,7 @@ class Dropdown extends React.Component {
       icons,
       label,
       placeholder,
+      value,
       theme,
     } = this.props
 
@@ -139,6 +140,7 @@ class Dropdown extends React.Component {
           onFocus={this.handleFocus}
           disabled={disabled}
           defaultValue="placeholder"
+          value={value}
         >
           <option
             disabled
