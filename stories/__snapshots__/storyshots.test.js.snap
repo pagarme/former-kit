@@ -5879,6 +5879,7 @@ exports[`Storyshots Dropdown Default 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
+            value=""
           >
             <option
               className="option placeholder"
@@ -5941,6 +5942,7 @@ exports[`Storyshots Dropdown Default 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
+            value=""
           >
             <option
               className="option placeholder"
@@ -6003,6 +6005,7 @@ exports[`Storyshots Dropdown Default 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
+            value=""
           >
             <option
               className="option placeholder"
@@ -6069,6 +6072,7 @@ exports[`Storyshots Dropdown Default 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
+            value=""
           >
             <option
               className="option placeholder"
@@ -6131,6 +6135,7 @@ exports[`Storyshots Dropdown Default 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
+            value=""
           >
             <option
               className="option placeholder"
@@ -6205,6 +6210,7 @@ exports[`Storyshots Dropdown Form 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
+            value=""
           >
             <option
               className="option placeholder"
@@ -6272,6 +6278,7 @@ exports[`Storyshots Dropdown Form 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
+            value=""
           >
             <option
               className="option placeholder"
@@ -6339,6 +6346,7 @@ exports[`Storyshots Dropdown Form 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
+            value=""
           >
             <option
               className="option placeholder"
@@ -6410,6 +6418,7 @@ exports[`Storyshots Dropdown Form 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
+            value=""
           >
             <option
               className="option placeholder"
@@ -6477,6 +6486,7 @@ exports[`Storyshots Dropdown Form 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
+            value=""
           >
             <option
               className="option placeholder"
