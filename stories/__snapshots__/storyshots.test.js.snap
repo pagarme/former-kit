@@ -16556,6 +16556,7 @@ exports[`Storyshots Switch Default 1`] = `
       >
         <input
           checked={true}
+          name=""
           onChange={[Function]}
           type="checkbox"
         />
@@ -16571,6 +16572,7 @@ exports[`Storyshots Switch Default 1`] = `
       >
         <input
           checked={false}
+          name=""
           onChange={[Function]}
           type="checkbox"
         />
@@ -16595,6 +16597,7 @@ exports[`Storyshots Switch Default 1`] = `
       >
         <input
           checked={true}
+          name=""
           onChange={[Function]}
           type="checkbox"
         />
@@ -16610,6 +16613,7 @@ exports[`Storyshots Switch Default 1`] = `
       >
         <input
           checked={false}
+          name=""
           onChange={[Function]}
           type="checkbox"
         />

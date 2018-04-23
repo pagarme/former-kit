@@ -13,8 +13,9 @@ class SwitchState extends React.Component {
   render () {
     return (
       <Switch
-        disabled={this.props.disabled}
         checked={this.state.value}
+        disabled={this.props.disabled}
+        name={'switch'}
         onChange={value => this.setState({ value })}
       />
     )

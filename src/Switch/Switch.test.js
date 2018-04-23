@@ -1,5 +1,5 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { shallow, mount } from 'enzyme'
 
 import Switch from './index'
 
@@ -27,6 +27,21 @@ describe('Switch', () => {
     ).dive()
 
     expect(component.find('span').text()).toBe('on')
+  })
+
+  it('Should have a name prop', () => {
+    const onChange = jest.fn()
+
+    const component = mount(
+      <Switch
+        checked
+        name="awesome-name"
+        onChange={onChange}
+      />
+    )
+
+    expect(component.props().name).not.toBeUndefined()
+    expect(component.props().name).toEqual('awesome-name')
   })
 
   it('Should render on label in portuguese', () => {
