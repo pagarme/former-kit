@@ -17515,6 +17515,136 @@ exports[`Storyshots Sidebar Default 1`] = `
 </aside>
 `;
 
+exports[`Storyshots Steps Default 1`] = `
+<section
+  className="typography"
+>
+  
+  <div>
+    <h2>
+      First step
+    </h2>
+    <div
+      className="steps"
+    >
+      <div
+        className="step current"
+      >
+        <span
+          className="indicator"
+        >
+          1
+        </span>
+        Success
+      </div>
+      <div
+        className="step null"
+      >
+        <span
+          className="indicator"
+        >
+          2
+        </span>
+        Current
+      </div>
+      <div
+        className="step null"
+      >
+        <span
+          className="indicator"
+        >
+          3
+        </span>
+        Pending
+      </div>
+    </div>
+    <h2>
+      Second step
+    </h2>
+    <div
+      className="steps"
+    >
+      <div
+        className="step success"
+      >
+        <span
+          className="indicator"
+        >
+          <Check24.svg
+            height={12}
+            width={12}
+          />
+        </span>
+        Success
+      </div>
+      <div
+        className="step current"
+      >
+        <span
+          className="indicator"
+        >
+          2
+        </span>
+        Current
+      </div>
+      <div
+        className="step null"
+      >
+        <span
+          className="indicator"
+        >
+          3
+        </span>
+        Pending
+      </div>
+    </div>
+    <h2>
+      Last step
+    </h2>
+    <div
+      className="steps"
+    >
+      <div
+        className="step success"
+      >
+        <span
+          className="indicator"
+        >
+          <Check24.svg
+            height={12}
+            width={12}
+          />
+        </span>
+        Success
+      </div>
+      <div
+        className="step success"
+      >
+        <span
+          className="indicator"
+        >
+          <Check24.svg
+            height={12}
+            width={12}
+          />
+        </span>
+        Current
+      </div>
+      <div
+        className="step current"
+      >
+        <span
+          className="indicator"
+        >
+          3
+        </span>
+        Pending
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
 exports[`Storyshots Switch Default 1`] = `
 <div
   className="typography"
