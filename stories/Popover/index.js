@@ -9,13 +9,6 @@ import {
 } from '../../src/Popover'
 
 import {
-  Header,
-  HeaderContent,
-  HeaderMenu,
-  HeaderTitle,
-} from '../../src/Header'
-
-import {
   Grid,
   Row,
   Col,
@@ -74,32 +67,6 @@ storiesOf('Popover', module)
     <Section>
       <PopoverExample />
     </Section>
-  ))
-  .add('With header', () => (
-    <Header>
-      <HeaderTitle>
-        Popover
-      </HeaderTitle>
-
-      <HeaderContent>
-        <Popover
-          content={
-            <Fragment>
-              <div>
-                <strong>teste@email.com</strong>
-                <small>Administrador</small>
-              </div>
-              <PopoverMenu items={items} />
-            </Fragment>
-          }
-          placement="bottomEnd"
-        >
-          <HeaderMenu onClick={() => null}>
-            <span>click me</span>
-          </HeaderMenu>
-        </Popover>
-      </HeaderContent>
-    </Header>
   ))
   .add('With base dark', () => (
     <Section>

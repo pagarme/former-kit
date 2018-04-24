@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import ThemeConsumer from '../ThemeConsumer'
+import { Popover } from '../Popover'
 
 const consumeTheme = ThemeConsumer('UIHeader')
 
@@ -9,18 +10,19 @@ const consumeTheme = ThemeConsumer('UIHeader')
  */
 const HeaderMenu = ({
   children,
-  theme,
-  onClick,
   icons,
+  theme,
+  title,
 }) => (
-  <button
-    className={theme.menu}
-    onClick={onClick}
-    role="link"
+  <Popover
+    content={children}
+    placement="bottomEnd"
   >
-    {children}
-    {icons.expand}
-  </button>
+    <button className={theme.menu}>
+      {title}
+      {icons.expand}
+    </button>
+  </Popover>
 )
 
 HeaderMenu.propTypes = {
@@ -34,12 +36,6 @@ HeaderMenu.propTypes = {
     menu: PropTypes.string,
   }),
   /**
-   * The onClick callback.
-   * It can be used to open the menu, for example.
-   * @param {object} event - the default event object.
-   */
-  onClick: PropTypes.func.isRequired,
-  /**
    * The children can be any kind of element.
    */
   children: PropTypes.node.isRequired,
@@ -52,11 +48,15 @@ HeaderMenu.propTypes = {
      */
     expand: PropTypes.element,
   }),
+  /**
+   * The prop used to receive popover target.
+   */
+  title: PropTypes.node.isRequired,
 }
 
 HeaderMenu.defaultProps = {
-  theme: {},
   icons: {},
+  theme: {},
 }
 
 export default consumeTheme(HeaderMenu)
