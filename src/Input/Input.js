@@ -126,7 +126,7 @@ class Input extends React.PureComponent {
       'ref',
       inputRef,
       pick(
-        ['disabled', 'placeholder', 'value', 'name'],
+        ['disabled', 'placeholder', 'value', 'name', 'onKeyPress'],
         this.props
       )
     )
@@ -270,6 +270,10 @@ Input.propTypes = {
    */
   onFocus: PropTypes.func,
   /**
+   * Use onKeyPress to handle key events on the input, such as _Enter_ pressed.
+   */
+  onKeyPress: PropTypes.func,
+  /**
    * Input's placeholder.
    */
   placeholder: PropTypes.string,
@@ -302,6 +306,7 @@ Input.defaultProps = {
   name: '',
   onBlur: null,
   onFocus: null,
+  onKeyPress: null,
   placeholder: '',
   theme: {},
   type: 'text',

@@ -2618,14 +2618,14 @@ exports[`Storyshots DateInput All styles 1`] = `
               onKeyDown={[Function]}
               onKeyPress={[Function]}
               onPaste={[Function]}
-              placeholder="10/01/2017"
+              placeholder="09/30/2017"
               size="8"
-              value="10/01/2017"
+              value="09/30/2017"
             />
             <span
               className="expander"
             >
-              10/01/2017
+              09/30/2017
             </span>
           </div>
         </div>
@@ -2676,14 +2676,14 @@ exports[`Storyshots DateInput All styles 1`] = `
               onKeyDown={[Function]}
               onKeyPress={[Function]}
               onPaste={[Function]}
-              placeholder="09/24/2017"
+              placeholder="09/23/2017"
               size="8"
-              value="09/24/2017"
+              value="09/23/2017"
             />
             <span
               className="expander"
             >
-              09/24/2017
+              09/23/2017
             </span>
           </div>
           <div
@@ -2705,12 +2705,12 @@ exports[`Storyshots DateInput All styles 1`] = `
               onPaste={[Function]}
               placeholder="Final"
               size="8"
-              value="10/01/2017"
+              value="09/30/2017"
             />
             <span
               className="expander"
             >
-              10/01/2017
+              09/30/2017
             </span>
           </div>
         </div>
@@ -2761,14 +2761,14 @@ exports[`Storyshots DateInput All styles 1`] = `
               onKeyDown={[Function]}
               onKeyPress={[Function]}
               onPaste={[Function]}
-              placeholder="09/24/2017"
+              placeholder="09/23/2017"
               size="8"
-              value="09/24/2017"
+              value="09/23/2017"
             />
             <span
               className="expander"
             >
-              09/24/2017
+              09/23/2017
             </span>
           </div>
           <div
@@ -4483,7 +4483,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                               </button>
                             </td>
                             <td
-                              className="CalendarDay CalendarDay--valid"
+                              className="CalendarDay CalendarDay--valid CalendarDay--selected-start CalendarDay--selected-span"
                               style={
                                 Object {
                                   "height": 39,
@@ -4498,14 +4498,14 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                                 onMouseEnter={[Function]}
                                 onMouseLeave={[Function]}
                                 onMouseUp={[Function]}
-                                tabIndex={-1}
+                                tabIndex={0}
                                 type="button"
                               >
                                 25
                               </button>
                             </td>
                             <td
-                              className="CalendarDay CalendarDay--valid CalendarDay--selected-start CalendarDay--selected-span"
+                              className="CalendarDay CalendarDay--valid CalendarDay--selected-span"
                               style={
                                 Object {
                                   "height": 39,
@@ -4520,14 +4520,14 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                                 onMouseEnter={[Function]}
                                 onMouseLeave={[Function]}
                                 onMouseUp={[Function]}
-                                tabIndex={0}
+                                tabIndex={-1}
                                 type="button"
                               >
                                 26
                               </button>
                             </td>
                             <td
-                              className="CalendarDay CalendarDay--valid CalendarDay--selected-span"
+                              className="CalendarDay CalendarDay--valid CalendarDay--selected-span CalendarDay--last-in-range"
                               style={
                                 Object {
                                   "height": 39,
@@ -4549,7 +4549,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                               </button>
                             </td>
                             <td
-                              className="CalendarDay CalendarDay--valid CalendarDay--selected-span CalendarDay--last-in-range"
+                              className="CalendarDay CalendarDay--valid CalendarDay--selected-end CalendarDay--selected-span"
                               style={
                                 Object {
                                   "height": 39,
@@ -4571,7 +4571,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                               </button>
                             </td>
                             <td
-                              className="CalendarDay CalendarDay--valid CalendarDay--selected-end CalendarDay--selected-span"
+                              className="CalendarDay CalendarDay--valid"
                               style={
                                 Object {
                                   "height": 39,
@@ -4593,7 +4593,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                               </button>
                             </td>
                             <td
-                              className="CalendarDay CalendarDay--valid"
+                              className="CalendarDay CalendarDay--today CalendarDay--valid"
                               style={
                                 Object {
                                   "height": 39,
@@ -4638,7 +4638,7 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
                         >
                           <tr>
                             <td
-                              className="CalendarDay CalendarDay--today CalendarDay--valid"
+                              className="CalendarDay CalendarDay--valid"
                               style={
                                 Object {
                                   "height": 39,
@@ -8812,6 +8812,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
+              onKeyPress={null}
               placeholder="name@email.com"
               type="text"
               value="pagarme@pagar.me"
@@ -8855,6 +8856,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
+              onKeyPress={null}
               placeholder="name@email.com"
               type="text"
               value="pagarme@pagar.me"
@@ -8898,6 +8900,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onBlur={[Function]}
               onChange={null}
               onFocus={[Function]}
+              onKeyPress={null}
               placeholder="email@email.com"
               type="text"
               value=""
@@ -8941,6 +8944,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onBlur={[Function]}
               onChange={null}
               onFocus={[Function]}
+              onKeyPress={null}
               placeholder="email@email.com"
               type="text"
               value="Disabled!"
@@ -8983,6 +8987,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
+              onKeyPress={null}
               placeholder="name@email.com"
               rows="1"
               value="pagarme@pagar.me"
@@ -9031,6 +9036,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
+              onKeyPress={null}
               placeholder="name@email.com"
               rows="1"
               value="pagarme@pagar.me"
@@ -9079,6 +9085,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onBlur={[Function]}
               onChange={null}
               onFocus={[Function]}
+              onKeyPress={null}
               placeholder="this is disabled"
               rows="1"
               value=""
@@ -9132,6 +9139,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
+              onKeyPress={null}
               placeholder="name@email.com"
               type="text"
               value="pagarme@pagar.me"
@@ -9183,6 +9191,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
+              onKeyPress={null}
               placeholder="name@email.com"
               type="text"
               value="pagarme@pagar.me"
@@ -9234,6 +9243,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onBlur={[Function]}
               onChange={null}
               onFocus={[Function]}
+              onKeyPress={null}
               placeholder="disabled"
               type="text"
               value=""
@@ -9280,6 +9290,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
+              onKeyPress={null}
               placeholder="name@email.com"
               rows="1"
               value="pagarme@pagar.me"
@@ -9336,6 +9347,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
+              onKeyPress={null}
               placeholder="name@email.com"
               rows="1"
               value="pagarme@pagar.me"
@@ -9392,6 +9404,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onBlur={[Function]}
               onChange={null}
               onFocus={[Function]}
+              onKeyPress={null}
               placeholder="this is disabled"
               rows="1"
               value=""
@@ -9437,6 +9450,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
+              onKeyPress={null}
               placeholder="name@email.com"
               type="password"
               value="pagarme@pagar.me"
@@ -9488,6 +9502,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
+              onKeyPress={null}
               placeholder="name@email.com"
               type="password"
               value="pagarme@pagar.me"
@@ -9539,6 +9554,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onBlur={[Function]}
               onChange={null}
               onFocus={[Function]}
+              onKeyPress={null}
               placeholder="disabled"
               type="password"
               value=""
@@ -9589,6 +9605,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
+              onKeyPress={null}
               placeholder="name@email.com"
               type="text"
               value="pagarme@pagar.me"
@@ -9627,6 +9644,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
+              onKeyPress={null}
               placeholder="name@email.com"
               type="text"
               value="pagarme@pagar.me"
@@ -9665,6 +9683,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onBlur={[Function]}
               onChange={null}
               onFocus={[Function]}
+              onKeyPress={null}
               placeholder="disabled"
               type="text"
               value=""
@@ -9708,6 +9727,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onBlur={[Function]}
               onChange={null}
               onFocus={[Function]}
+              onKeyPress={null}
               placeholder="disabled"
               type="text"
               value="Disabled!"
@@ -9750,6 +9770,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
+              onKeyPress={null}
               placeholder="name@email.com"
               rows="1"
               value="pagarme@pagar.me"
@@ -9793,6 +9814,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
+              onKeyPress={null}
               placeholder="name@email.com"
               rows="1"
               value="pagarme@pagar.me"
@@ -9836,12 +9858,13 @@ exports[`Storyshots Inputs Form 1`] = `
               onBlur={[Function]}
               onChange={null}
               onFocus={[Function]}
+              onKeyPress={null}
               placeholder="disabled"
               rows="1"
-              value=""
+              value="Multiline disabled!"
             />
             <label
-              className=""
+              className="contentPresent"
               htmlFor="multiline-shortid-mock"
             >
               Disabled
@@ -9849,7 +9872,7 @@ exports[`Storyshots Inputs Form 1`] = `
             <div
               className="expander"
             >
-              
+              Multiline disabled!
               <br />
             </div>
           </div>
@@ -9889,6 +9912,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
+              onKeyPress={null}
               placeholder="name@email.com"
               type="text"
               value="pagarme@pagar.me"
@@ -9935,6 +9959,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
+              onKeyPress={null}
               placeholder="name@email.com"
               type="text"
               value="pagarme@pagar.me"
@@ -9981,6 +10006,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onBlur={[Function]}
               onChange={null}
               onFocus={[Function]}
+              onKeyPress={null}
               placeholder="disabled"
               type="text"
               value=""
@@ -10027,6 +10053,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
+              onKeyPress={null}
               placeholder="name@email.com"
               rows="1"
               value="pagarme@pagar.me"
@@ -10078,6 +10105,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
+              onKeyPress={null}
               placeholder="name@email.com"
               rows="1"
               value="pagarme@pagar.me"
@@ -10129,6 +10157,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onBlur={[Function]}
               onChange={null}
               onFocus={[Function]}
+              onKeyPress={null}
               placeholder="disabled"
               rows="1"
               value=""
@@ -10174,6 +10203,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
+              onKeyPress={null}
               placeholder="name@email.com"
               type="password"
               value="pagarme@pagar.me"
@@ -10225,6 +10255,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
+              onKeyPress={null}
               placeholder="name@email.com"
               type="password"
               value="pagarme@pagar.me"
@@ -10276,6 +10307,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onBlur={[Function]}
               onChange={null}
               onFocus={[Function]}
+              onKeyPress={null}
               placeholder="disabled"
               type="password"
               value=""
@@ -10319,6 +10351,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onBlur={[Function]}
               onChange={null}
               onFocus={[Function]}
+              onKeyPress={null}
               placeholder="disabled"
               type="password"
               value="secret_pass"
@@ -10444,6 +10477,7 @@ exports[`Storyshots Landing Pagar.me login 1`] = `
                     onBlur={[Function]}
                     onChange={[Function]}
                     onFocus={[Function]}
+                    onKeyPress={null}
                     placeholder="emaillegal@pagar.me"
                     type="text"
                     value=""
@@ -10473,6 +10507,7 @@ exports[`Storyshots Landing Pagar.me login 1`] = `
                     onBlur={[Function]}
                     onChange={[Function]}
                     onFocus={[Function]}
+                    onKeyPress={null}
                     placeholder=""
                     type="password"
                     value=""
@@ -10610,6 +10645,7 @@ exports[`Storyshots Landing Pagar.me password recovery 1`] = `
                       onBlur={[Function]}
                       onChange={[Function]}
                       onFocus={[Function]}
+                      onKeyPress={null}
                       placeholder="emaillegal@pagar.me"
                       type="text"
                       value=""
@@ -10855,6 +10891,7 @@ exports[`Storyshots Landing Pagar.me sign in 1`] = `
                     onBlur={[Function]}
                     onChange={[Function]}
                     onFocus={[Function]}
+                    onKeyPress={null}
                     placeholder="Nome completo"
                     type="text"
                     value=""
@@ -10884,6 +10921,7 @@ exports[`Storyshots Landing Pagar.me sign in 1`] = `
                     onBlur={[Function]}
                     onChange={[Function]}
                     onFocus={[Function]}
+                    onKeyPress={null}
                     placeholder="Empresa"
                     type="text"
                     value=""
@@ -10913,6 +10951,7 @@ exports[`Storyshots Landing Pagar.me sign in 1`] = `
                     onBlur={[Function]}
                     onChange={[Function]}
                     onFocus={[Function]}
+                    onKeyPress={null}
                     placeholder="emaillegal@pagar.me"
                     type="text"
                     value=""
@@ -10942,6 +10981,7 @@ exports[`Storyshots Landing Pagar.me sign in 1`] = `
                     onBlur={[Function]}
                     onChange={[Function]}
                     onFocus={[Function]}
+                    onKeyPress={null}
                     placeholder=""
                     type="password"
                     value=""
@@ -11170,6 +11210,7 @@ exports[`Storyshots Landing Pagar.me two factor login 1`] = `
                     onBlur={[Function]}
                     onChange={[Function]}
                     onFocus={[Function]}
+                    onKeyPress={null}
                     placeholder="emaillegal@pagar.me"
                     type="text"
                     value=""
@@ -11199,6 +11240,7 @@ exports[`Storyshots Landing Pagar.me two factor login 1`] = `
                     onBlur={[Function]}
                     onChange={[Function]}
                     onFocus={[Function]}
+                    onKeyPress={null}
                     placeholder=""
                     type="password"
                     value=""
@@ -11228,6 +11270,7 @@ exports[`Storyshots Landing Pagar.me two factor login 1`] = `
                     onBlur={[Function]}
                     onChange={[Function]}
                     onFocus={[Function]}
+                    onKeyPress={null}
                     placeholder="ABC123"
                     type="text"
                     value=""

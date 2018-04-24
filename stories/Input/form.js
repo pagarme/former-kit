@@ -101,7 +101,7 @@ storiesOf('Inputs', module)
           placeholder="disabled"
           disabled
           onChange={action('text changed')}
-          value=""
+          value="Multiline disabled!"
         />
       </Section>
 
