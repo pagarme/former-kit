@@ -41,3 +41,11 @@ storiesOf('Table', module)
       <TableState hasEmptyRenderer />
     </Section>
   ))
+  .add('Empty table', () => (
+    <Section>
+      <TableState
+        empty
+        disabled
+      />
+    </Section>
+  ))

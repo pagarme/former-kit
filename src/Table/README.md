@@ -294,3 +294,13 @@ const TableState = require('./examples/TableState').default;
   selectable
 />
 ```
+
+Empty Table
+
+``` jsx
+const TableState = require('./examples/TableState').default;
+
+<TableState
+  empty
+/>
+```

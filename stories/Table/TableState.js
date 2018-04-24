@@ -135,6 +135,7 @@ class TableState extends Component {
     const {
       clickableRow,
       disabled,
+      empty,
       expandable,
       hasEmptyRenderer,
       selectable,
@@ -151,24 +152,26 @@ class TableState extends Component {
       rows,
       selectedRows,
     } = this.state
-    const onRowClick = clickableRow && !simple ? this.handleRowClick : null
-    const maxColumns = expandable ? 6 : 7
     const columnWithEmptyRenderer = {
       title: 'empty',
       renderer: () => null,
       accessor: ['empty'],
     }
+    const emptyMessage = empty ? 'No items found' : null
+    const maxColumns = expandable ? 6 : 7
     const onOrderChange = !simple ? this.handleOrderChange : null
+    const onRowClick = clickableRow && !simple ? this.handleRowClick : null
+    const tableColumns = hasEmptyRenderer
+      ? prepend(columnWithEmptyRenderer, columns)
+      : columns
+    const tableRows = empty ? [] : rows
     return (
       <div>
         <Table
           className={style.table}
-          columns={
-            hasEmptyRenderer
-            ? prepend(columnWithEmptyRenderer, columns)
-            : columns
-          }
+          columns={tableColumns}
           disabled={disabled}
+          emptyMessage={emptyMessage}
           expandable={expandable}
           expandedRows={expandedRows}
           maxColumns={maxColumns}
@@ -178,7 +181,7 @@ class TableState extends Component {
           onSelectRow={this.handleSelectRow}
           orderColumn={orderColumn}
           orderSequence={order}
-          rows={rows}
+          rows={tableRows}
           selectable={selectable}
           selectedRows={selectedRows}
           showAggregationRow={showAggregationRow}
@@ -211,6 +214,7 @@ class TableState extends Component {
 TableState.propTypes = {
   clickableRow: bool,
   disabled: bool,
+  empty: bool,
   expandable: bool,
   hasEmptyRenderer: bool,
   primaryAction: bool,
@@ -221,6 +225,7 @@ TableState.propTypes = {
 TableState.defaultProps = {
   clickableRow: false,
   disabled: false,
+  empty: false,
   expandable: false,
   hasEmptyRenderer: false,
   primaryAction: false,

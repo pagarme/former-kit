@@ -19989,6 +19989,174 @@ exports[`Storyshots Table Empty renderer column 1`] = `
 </section>
 `;
 
+exports[`Storyshots Table Empty table 1`] = `
+<section
+  className="typography"
+>
+  
+  <div>
+    <div>
+      <table
+        className="table"
+      >
+        <thead
+          className="tableHead"
+        >
+          <tr>
+            <th
+              className="active orderable disabled"
+            >
+              <div
+                className="tableHeadItem"
+              >
+                <span>
+                   
+                  Status
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+            <th
+              className="orderable disabled"
+            >
+              <div
+                className="tableHeadItem"
+              >
+                <span>
+                   
+                  Transaction ID
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+            <th
+              className="orderable disabled"
+            >
+              <div
+                className="tableHeadItem"
+              >
+                <span>
+                   
+                  Date
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+            <th
+              className="orderable disabled"
+            >
+              <div
+                className="tableHeadItem"
+              >
+                <span>
+                   
+                  Payment Method
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+            <th
+              className="orderable disabled"
+            >
+              <div
+                className="tableHeadItem"
+              >
+                <span>
+                   
+                  Paid Amount
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+            <th
+              className="orderable disabled"
+            >
+              <div
+                className="tableHeadItem"
+              >
+                <span>
+                   
+                  Cost
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+            <th
+              className="orderable disabled"
+            >
+              <div
+                className="tableHeadItem"
+              >
+                <span>
+                   
+                  Amount
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          className="tableBody"
+        >
+          <tr
+            className="tableRow"
+            tabIndex="0"
+          >
+            <td
+              className="tableItem startAlign"
+              colSpan={7}
+            >
+              <span>
+                No items found
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div
+        className={undefined}
+      />
+    </div>
+  </div>
+</section>
+`;
+
 exports[`Storyshots Table Selectable and expandable 1`] = `
 <section
   className="typography"
