@@ -8704,21 +8704,24 @@ exports[`Storyshots Header Default 1`] = `
           >
             <Support24.svg />
           </button>
-          <button
-            className="menu"
+          <div
+            className="target"
             onClick={[Function]}
-            role="link"
           >
-            <div
-              className="avatar placeholder"
+            <button
+              className="menu"
             >
+              <div
+                className="avatar placeholder"
+              >
+                <svg />
+              </div>
+              <span>
+                Current username
+              </span>
               <svg />
-            </div>
-            <span>
-              Current username
-            </span>
-            <svg />
-          </button>
+            </button>
+          </div>
         </div>
       </header>
     </div>
@@ -8761,23 +8764,26 @@ exports[`Storyshots Header Default 1`] = `
           >
             <Support24.svg />
           </button>
-          <button
-            className="menu"
+          <div
+            className="target"
             onClick={[Function]}
-            role="link"
           >
-            <img
-              alt="Foto de perfil"
-              className="avatar"
-              height={26}
-              src="https://i.imgur.com/2vp5kTT.jpg"
-              width={26}
-            />
-            <span>
-              Current username
-            </span>
-            <svg />
-          </button>
+            <button
+              className="menu"
+            >
+              <img
+                alt="Foto de perfil"
+                className="avatar"
+                height={26}
+                src="https://i.imgur.com/2vp5kTT.jpg"
+                width={26}
+              />
+              <span>
+                Current username
+              </span>
+              <svg />
+            </button>
+          </div>
         </div>
       </header>
     </div>
@@ -11914,21 +11920,24 @@ exports[`Storyshots Layout Default only Header 1`] = `
           >
             <Support24.svg />
           </button>
-          <button
-            className="menu"
+          <div
+            className="target"
             onClick={[Function]}
-            role="link"
           >
-            <div
-              className="avatar placeholder"
+            <button
+              className="menu"
             >
+              <div
+                className="avatar placeholder"
+              >
+                <svg />
+              </div>
+              <span>
+                Current username
+              </span>
               <svg />
-            </div>
-            <span>
-              Current username
-            </span>
-            <svg />
-          </button>
+            </button>
+          </div>
         </div>
       </header>
       <div
@@ -12896,21 +12905,24 @@ exports[`Storyshots Layout Default with all props 1`] = `
           >
             <Support24.svg />
           </button>
-          <button
-            className="menu"
+          <div
+            className="target"
             onClick={[Function]}
-            role="link"
           >
-            <div
-              className="avatar placeholder"
+            <button
+              className="menu"
             >
+              <div
+                className="avatar placeholder"
+              >
+                <svg />
+              </div>
+              <span>
+                Current username
+              </span>
               <svg />
-            </div>
-            <span>
-              Current username
-            </span>
-            <svg />
-          </button>
+            </button>
+          </div>
         </div>
       </header>
       <div
@@ -13463,21 +13475,24 @@ exports[`Storyshots Layout Default without Footer 1`] = `
           >
             <Support24.svg />
           </button>
-          <button
-            className="menu"
+          <div
+            className="target"
             onClick={[Function]}
-            role="link"
           >
-            <div
-              className="avatar placeholder"
+            <button
+              className="menu"
             >
+              <div
+                className="avatar placeholder"
+              >
+                <svg />
+              </div>
+              <span>
+                Current username
+              </span>
               <svg />
-            </div>
-            <span>
-              Current username
-            </span>
-            <svg />
-          </button>
+            </button>
+          </div>
         </div>
       </header>
       <div
@@ -14359,21 +14374,24 @@ exports[`Storyshots Layout Default without Sidebar 1`] = `
           >
             <Support24.svg />
           </button>
-          <button
-            className="menu"
+          <div
+            className="target"
             onClick={[Function]}
-            role="link"
           >
-            <div
-              className="avatar placeholder"
+            <button
+              className="menu"
             >
+              <div
+                className="avatar placeholder"
+              >
+                <svg />
+              </div>
+              <span>
+                Current username
+              </span>
               <svg />
-            </div>
-            <span>
-              Current username
-            </span>
-            <svg />
-          </button>
+            </button>
+          </div>
         </div>
       </header>
       <div
@@ -16616,37 +16634,6 @@ exports[`Storyshots Popover With base dark 1`] = `
     </div>
   </div>
 </section>
-`;
-
-exports[`Storyshots Popover With header 1`] = `
-<header
-  className="header"
->
-  <h1
-    className="title"
-  >
-    Popover
-  </h1>
-  <div
-    className="content"
-  >
-    <div
-      className="target"
-      onClick={[Function]}
-    >
-      <button
-        className="menu"
-        onClick={[Function]}
-        role="link"
-      >
-        <span>
-          click me
-        </span>
-        <svg />
-      </button>
-    </div>
-  </div>
-</header>
 `;
 
 exports[`Storyshots Progress Linear 1`] = `
