@@ -31,12 +31,12 @@ import {
   without,
 } from 'ramda'
 import classNames from 'classnames'
-import ThemeConsumer from '../ThemeConsumer'
-
+import TableAggregationRow from './TableAggregationRow'
+import TableEmptyRow from './TableEmptyRow'
+import TableExpandedRow from './TableExpandedRow'
 import TableHead from './TableHead'
 import TableRow from './TableRow'
-import TableExpandedRow from './TableExpandedRow'
-import TableAggregationRow from './TableAggregationRow'
+import ThemeConsumer from '../ThemeConsumer'
 
 const consumeTheme = ThemeConsumer('UITable')
 
@@ -126,6 +126,13 @@ const validateOrderableFunction = (props, propName) => {
     }
   }
 }
+
+const renderEmptyRow = (message, colSpan) => (
+  <TableEmptyRow
+    colSpan={colSpan}
+    message={message}
+  />
+)
 
 const hasTotals = pipe(isEmpty, not)
 
@@ -254,10 +261,17 @@ class Table extends Component {
   buildContent () {
     const {
       columns,
+      emptyMessage,
       maxColumns,
       rows,
       showAggregationRow,
     } = this.props
+
+    if (isEmpty(rows) && emptyMessage) {
+      return {
+        contentRows: renderEmptyRow(emptyMessage, maxColumns),
+      }
+    }
 
     if (not(showAggregationRow)) {
       return {
@@ -506,6 +520,10 @@ Table.propTypes = {
    */
   disabled: bool,
   /**
+   * Message which shown when the table row array is empty
+   */
+  emptyMessage: string,
+  /**
    * It enables the expandable column in the table which allows the user to see all of the remaining
    * columns which exceed the table maxColumns prop.
    */
@@ -582,6 +600,7 @@ Table.propTypes = {
 Table.defaultProps = {
   className: '',
   disabled: false,
+  emptyMessage: null,
   expandable: false,
   expandedRows: [],
   headerAlign: 'start',

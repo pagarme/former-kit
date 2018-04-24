@@ -38,19 +38,19 @@ class TableState extends Component {
   constructor (props) {
     super(props)
 
+    this.getColumns = this.getColumns.bind(this)
+    this.getColumnsWithPrimaryAction = this.getColumnsWithPrimaryAction.bind(this)
     this.handleExpandRow = this.handleExpandRow.bind(this)
     this.handleOrderChange = this.handleOrderChange.bind(this)
     this.handleSelectRow = this.handleSelectRow.bind(this)
-    this.getColumns = this.getColumns.bind(this)
-    this.getColumnsWithPrimaryAction = this.getColumnsWithPrimaryAction.bind(this)
     this.mock = getMock(this.handleDetailsClick)
     this.state = {
-      orderColumn: 0,
-      order: 'ascending',
-      rows: this.mock.rows,
       columns: this.getColumns(props.primaryAction),
-      selectedRows: [],
       expandedRows: [],
+      order: 'ascending',
+      orderColumn: 0,
+      rows: this.mock.rows,
+      selectedRows: [],
     }
   }
 
@@ -76,11 +76,11 @@ class TableState extends Component {
     const sortedRows = sortByOrderColumn(index, order)
 
     this.setState({
-      orderColumn: index,
+      expandedRows: [],
       order,
+      orderColumn: index,
       rows: sortedRows,
       selectedRows: [],
-      expandedRows: [],
     })
   }
 
@@ -99,8 +99,9 @@ class TableState extends Component {
   render () {
     const {
       clickableRow,
-      selectable,
+      empty,
       expandable,
+      selectable,
     } = this.props
     const {
       columns,
@@ -110,25 +111,27 @@ class TableState extends Component {
       rows,
       selectedRows,
     } = this.state
-
+    const emptyMessage = empty ? 'No items found' : null
     const onRowClick = clickableRow ? this.handleRowClick : null
-
+    const tableRows = empty ? [] : rows
     return (
       <div>
         <Table
           columns={columns}
-          rows={rows}
-          selectable={selectable}
+          disabled={empty}
+          emptyMessage={emptyMessage}
           expandable={expandable}
-          selectedRows={selectedRows}
           expandedRows={expandedRows}
-          onOrderChange={this.handleOrderChange}
-          onSelectRow={this.handleSelectRow}
-          orderSequence={order}
-          orderColumn={orderColumn}
-          onExpandRow={this.handleExpandRow}
-          onRowClick={onRowClick}
           maxColumns={4}
+          onExpandRow={this.handleExpandRow}
+          onOrderChange={this.handleOrderChange}
+          onRowClick={onRowClick}
+          onSelectRow={this.handleSelectRow}
+          orderColumn={orderColumn}
+          orderSequence={order}
+          rows={tableRows}
+          selectable={selectable}
+          selectedRows={selectedRows}
         />
 
         <div>
@@ -147,16 +150,18 @@ class TableState extends Component {
 
 TableState.propTypes = {
   clickableRow: bool,
-  selectable: bool,
+  empty: bool,
   expandable: bool,
   primaryAction: bool,
+  selectable: bool,
 }
 
 TableState.defaultProps = {
   clickableRow: false,
-  selectable: false,
+  empty: false,
   expandable: false,
   primaryAction: false,
+  selectable: false,
 }
 
 export default TableState

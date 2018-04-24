@@ -174,6 +174,7 @@ const mock = {
 
 const createComponents = ({
   columns = mock.columns,
+  emptyMessage = null,
   expandable = true,
   expandedRows = [],
   orderColumn = 0,
@@ -191,6 +192,7 @@ const createComponents = ({
   const stateComponent = mount(
     <Table
       columns={columns}
+      emptyMessage={emptyMessage}
       expandable={expandable}
       expandedRows={expandedRows}
       maxColumns={visibleColumnsCount}

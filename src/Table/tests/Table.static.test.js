@@ -7,10 +7,11 @@ import {
   path,
 } from 'ramda'
 
-import TableAggregationRow from '../TableAggregationRow'
 import Button from '../../Button'
 import Checkbox from '../../Checkbox'
+import TableAggregationRow from '../TableAggregationRow'
 import TableEmptyItem from '../TableEmptyItem'
+import TableEmptyRow from '../TableEmptyRow'
 import TableHead from '../TableHead'
 import TableRow from '../TableRow'
 import { createComponents } from './common'
@@ -356,6 +357,20 @@ describe('Table', () => {
 
             expect(emptyItem.exists()).toBe(true)
           })
+        })
+      })
+
+      describe('should render a empty row', () => {
+        it('when rows are empty and an empty message is received', () => {
+          const message = 'No items found'
+          const { component } = createComponents({
+            emptyMessage: message,
+            rows: [],
+          })
+
+          const emptyRow = component.find(TableEmptyRow)
+
+          expect(emptyRow.exists()).toBe(true)
         })
       })
     })
