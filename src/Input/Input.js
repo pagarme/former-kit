@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
 import shortid from 'shortid'
-import { isNil, pick } from 'ramda'
+import { isNil, pick, assoc } from 'ramda'
 
 const validateMultiline = (props, propName) => {
   const { multiline, type } = props
@@ -93,6 +93,7 @@ class Input extends React.PureComponent {
       error,
       hint,
       icon,
+      inputRef,
       label,
       multiline,
       type,
@@ -121,9 +122,13 @@ class Input extends React.PureComponent {
       [theme.contentPresent]: !isNil(value) && value !== '',
     })
 
-    const inputProps = pick(
-      ['disabled', 'placeholder', 'value', 'name'],
-      this.props
+    const inputProps = assoc(
+      'ref',
+      inputRef,
+      pick(
+        ['disabled', 'placeholder', 'value', 'name', 'onKeyPress'],
+        this.props
+      )
     )
 
     const inputType = (type === 'password' && this.state.showPassword)
@@ -235,6 +240,11 @@ Input.propTypes = {
     hidePassword: PropTypes.element,
   }),
   /**
+   * Associated with `ref` prop from React.
+   * See https://reactjs.org/docs/refs-and-the-dom.html for more info on usage.
+   */
+  inputRef: PropTypes.func,
+  /**
    * Input's label, used as a placeholder until the input receives focus.
    * When the input is focused, the label stays above the input.
    */
@@ -259,6 +269,10 @@ Input.propTypes = {
    * Triggered by the input's focus event.
    */
   onFocus: PropTypes.func,
+  /**
+   * Use onKeyPress to handle key events on the input, such as _Enter_ pressed.
+   */
+  onKeyPress: PropTypes.func,
   /**
    * Input's placeholder.
    */
@@ -286,11 +300,13 @@ Input.defaultProps = {
   hint: '',
   icon: null,
   icons: {},
+  inputRef: null,
   label: '',
   multiline: false,
   name: '',
   onBlur: null,
   onFocus: null,
+  onKeyPress: null,
   placeholder: '',
   theme: {},
   type: 'text',
