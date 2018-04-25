@@ -26,7 +26,7 @@ CardSection.propTypes = {
   /**
    * Set of React elements which will be rendered inside the section.
    */
-  children: PropTypes.arrayOf(PropTypes.element).isRequired,
+  children: PropTypes.node.isRequired,
 }
 
 CardSection.defaultProps = {
