@@ -1,14 +1,22 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { isNil } from 'ramda'
+import {
+  either,
+  equals,
+  isNil,
+} from 'ramda'
 import Button from '../Button'
 import ThemeConsumer from '../ThemeConsumer'
 
 const consumeTheme = ThemeConsumer('UIModal')
 
+const isCloseProp = either(
+  equals('closeIcon'),
+  equals('onClose')
+)
+
 const validateCloseProp = (closeIcon, onClose, propName) => {
-  const isCloseProp = propName === 'onClose' || propName === 'closeIcon'
-  if (isCloseProp
+  if (isCloseProp(propName)
     && !isNil(closeIcon)
     && isNil(onClose)
   ) {
@@ -29,11 +37,11 @@ const validateCloseIcon = ({ closeIcon, onClose }, propName) =>
  * Modal component title. It renders its children at the top of the Modal.
  */
 const ModalTitle = ({
+  closeIcon,
+  icon,
+  onClose,
   theme,
   title,
-  icon,
-  closeIcon,
-  onClose,
   titleAlign,
 }) => (
   <div className={theme.title}>

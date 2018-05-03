@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { storiesOf } from '@storybook/react'
 
 import IconAddPhoto from 'emblematic-icons/svg/Camera32.svg'
+import IconClose from 'emblematic-icons/svg/ClearClose32.svg'
 import Section from '../Section'
 
 import {
@@ -52,10 +53,15 @@ class ModalWithState extends Component {
           isOpen={this.state.isOpen}
           onRequestClose={this.handleToggleModal}
         >
-          <ModalTitle icon={<IconAddPhoto width={16} height={16} />} title="Add Photo" />
+          <ModalTitle
+            closeIcon={<IconClose width={16} height={16} />}
+            icon={<IconAddPhoto width={16} height={16} />}
+            onClose={this.handleCloseModal}
+            title="Add Photo"
+          />
 
           <ModalContent>
-            <p>This is the modal Content with React Modal module</p>
+            This is the modal Content with React Modal module
           </ModalContent>
 
           <ModalActions>
