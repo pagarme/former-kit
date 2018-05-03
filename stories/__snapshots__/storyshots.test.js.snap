@@ -15154,7 +15154,9 @@ exports[`Storyshots Modal Default 1`] = `
                 width={16}
               />
             </div>
-            <h2>
+            <h2
+              className="centerAlign"
+            >
               Add Photo
             </h2>
           </div>
