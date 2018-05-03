@@ -13,6 +13,7 @@ const consumeTheme = ThemeConsumer('UIButton')
 const Button = ({
   children,
   circle,
+  className,
   disabled,
   fill,
   icon,
@@ -24,6 +25,7 @@ const Button = ({
   type,
 }) => {
   const buttonClasses = classNames(
+    className,
     theme.button,
     theme[fill],
     theme[`${relevance}Relevance`],
@@ -80,6 +82,10 @@ Button.propTypes = {
    */
   circle: PropTypes.bool,
   /**
+   * Aditional CSS classes which can be applied to the button.
+   */
+  className: PropTypes.string,
+  /**
    * The prop that indicates if the button is disabled or not.
    */
   disabled: PropTypes.bool,
@@ -124,6 +130,7 @@ Button.propTypes = {
 Button.defaultProps = {
   children: null,
   circle: false,
+  className: '',
   disabled: false,
   fill: 'flat',
   icon: null,
