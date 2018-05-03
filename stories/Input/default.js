@@ -20,7 +20,6 @@ class InputState extends React.Component {
       mask,
       multiline,
       placeholder,
-      success,
       type,
     } = this.props
 
@@ -39,7 +38,6 @@ class InputState extends React.Component {
         name="email"
         onChange={e => this.setState({ value: e.target.value })}
         placeholder={placeholder}
-        success={success}
         type={type}
         value={value}
       />

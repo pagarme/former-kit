@@ -4,12 +4,29 @@ import classnames from 'classnames'
 import shortid from 'shortid'
 import MaskedInput from 'react-maskedinput'
 import {
-  assoc,
   isEmpty,
   isNil,
-  pick,
+  merge,
+  omit,
+  prop,
 } from 'ramda'
 
+const omitOwnProps = omit([
+  'className',
+  'error',
+  'hint',
+  'icon',
+  'icons',
+  'inputRef',
+  'label',
+  'mask',
+  'multiline',
+  'onBlur',
+  'onChange',
+  'onFocus',
+  'theme',
+  'type',
+])
 
 const validateMultiline = ({
   mask,
@@ -111,7 +128,6 @@ class Input extends React.PureComponent {
       error,
       hint,
       icon,
-      inputRef,
       label,
       mask,
       multiline,
@@ -141,13 +157,11 @@ class Input extends React.PureComponent {
       [theme.contentPresent]: !isNil(value) && value !== '',
     })
 
-    const inputProps = assoc(
-      'ref',
-      inputRef,
-      pick(
-        ['disabled', 'placeholder', 'value', 'name', 'onKeyPress'],
-        this.props
-      )
+    const inputProps = merge(
+      omitOwnProps(this.props),
+      {
+        ref: prop('inputRef', this.props),
+      }
     )
 
     const inputType = (type === 'password' && this.state.showPassword)
