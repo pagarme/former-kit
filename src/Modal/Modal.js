@@ -12,23 +12,21 @@ const consumeTheme = ThemeConsumer('UIModal')
  * part of the content.
  */
 const Modal = ({
-  theme,
   children,
   isOpen,
   onRequestClose,
+  theme,
 }) => (
   <ReactModal
     appElement={document.body}
-    isOpen={isOpen}
-    role="dialog"
-    parentSelector={() => document.body}
-    overlayClassName={theme.overlay}
     className={theme.modal}
+    isOpen={isOpen}
     onRequestClose={onRequestClose}
+    overlayClassName={theme.overlay}
+    parentSelector={() => document.body}
+    role="dialog"
   >
-    <div className={theme.frame}>
-      {children}
-    </div>
+    {children}
   </ReactModal>
 )
 
@@ -37,9 +35,9 @@ Modal.propTypes = {
    * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: PropTypes.shape({
-    overlay: PropTypes.string,
-    modal: PropTypes.string,
     frame: PropTypes.string,
+    modal: PropTypes.string,
+    overlay: PropTypes.string,
   }),
   /**
    * Set of React elements which will be rendered inside the modal.
@@ -57,8 +55,8 @@ Modal.propTypes = {
 }
 
 Modal.defaultProps = {
-  theme: {},
   onRequestClose: null,
+  theme: {},
 }
 
 export default consumeTheme(Modal)
