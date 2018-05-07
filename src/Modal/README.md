@@ -1,71 +1,36 @@
 #### **Example** ####
-
+Simple Modal
 ``` jsx
-class ModalWithState extends React.Component {
-  constructor () {
-    super()
+const ModalWithState = require('./examples/ModalWithState').default;
+<ModalWithState title="Simple modal title" />
+```
 
-    this.state = {
-      isOpen: false,
-    }
+Modal with complete title
+``` jsx
+const ModalWithState = require('./examples/ModalWithState').default;
+<ModalWithState 
+  completeTitle
+  message="Modal with complete title"
+/>
+```
 
-    this.handleToggleModal = this.handleToggleModal.bind(this)
-    this.handleCloseModal = this.handleCloseModal.bind(this)
-  }
+Modal with actions
+``` jsx
+const ModalWithState = require('./examples/ModalWithState').default;
+<ModalWithState 
+  message="Modal with actions"
+  title="Action modal tilte"
+  withActions
+/>
+```
 
-  handleToggleModal () {
-    this.setState({ isOpen: !this.state.isOpen })
-  }
-
-  handleCloseModal () {
-    this.setState({ isOpen: false })
-  }
-
-  render () {
-    return (
-      <div>
-        {/* call to action to open the modal */}
-        <Button
-          fill="flat"
-          relevance="low"
-          onClick={this.handleToggleModal}
-        >
-          Open Modal
-        </Button>
-
-        {/* modal content definition */}
-        <Modal
-          label="Create a Transaction"
-          isOpen={this.state.isOpen}
-          onRequestClose={this.handleToggleModal}
-        >
-          <ModalTitle title="Modal" />
-
-          <ModalContent>
-            <p>This is the modal Content with React Modal module</p>
-          </ModalContent>
-
-          <ModalActions>
-            <Button
-              fill="outline"
-              size="default"
-              onClick={this.handleToggleModal}
-            >
-              Cancel
-            </Button>
-
-            <Button
-              size="default"
-              onClick={this.handleToggleModal}
-            >
-              Confirm
-            </Button>
-          </ModalActions>
-        </Modal>
-      </div>
-    )
-  }
-}
-
-<ModalWithState />
+Full features modal
+``` jsx
+const ModalWithState = require('./examples/ModalWithState').default;
+<ModalWithState
+  completeTitle
+  message="Modal with all features"
+  title="Full features modal"
+  withActions
+/>
 ```
