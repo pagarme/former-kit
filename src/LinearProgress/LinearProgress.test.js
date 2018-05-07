@@ -7,7 +7,8 @@ describe('LinearProgress', () => {
   it('should mount basic component', () => {
     shallow(
       <LinearProgress
-        percent={25}
+        max={100}
+        value={25}
       />
     )
   })
@@ -16,7 +17,8 @@ describe('LinearProgress', () => {
     shallow(
       <LinearProgress
         disabled
-        percent={75}
+        max={100}
+        value={75}
       />
     )
   })

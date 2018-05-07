@@ -8,3 +8,7 @@
 .container > * {
   margin-left: 25px;
 }
+
+.progressBars section > div > div {
+  margin-bottom: 16px;
+}
