@@ -1645,9 +1645,7 @@ feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
                     <svg />
                   </button>
                 </div>
-                <hr
-                  className="divider"
-                />
+                <hr />
               </div>
               <div
                 className="content"

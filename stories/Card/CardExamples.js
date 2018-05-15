@@ -181,6 +181,10 @@ const SimpleSection = () => (
           <CardContent>
             {loremIpsum}
           </CardContent>
+          <hr />
+          <CardContent>
+            {loremIpsum}
+          </CardContent>
         </CardSection>
       </CardContent>
     </Card>
