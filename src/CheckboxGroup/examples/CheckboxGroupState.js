@@ -6,7 +6,7 @@ class CheckboxGroupState extends React.Component {
   constructor (props) {
     super(props)
 
-    this.state = { values: ['pagarme'] }
+    this.state = { value: ['pagarme'] }
   }
 
   render () {
@@ -45,9 +45,9 @@ class CheckboxGroupState extends React.Component {
         disabled={disabled}
         error={error}
         name={name}
-        onChange={values => this.setState({ values })}
+        onChange={value => this.setState({ value })}
         options={options}
-        values={this.state.values}
+        value={this.state.value}
       />
     )
   }

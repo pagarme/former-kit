@@ -30,7 +30,7 @@ describe('CheckboxGroup', () => {
         options={options}
         name="pessoas"
         onChange={onChange}
-        values={values}
+        value={values}
         error="error"
       />
     )
@@ -54,7 +54,7 @@ describe('CheckboxGroup', () => {
         options={options}
         name="pessoas"
         onChange={onChange}
-        values={values}
+        value={values}
         error="error"
       />
     )
@@ -77,7 +77,7 @@ describe('CheckboxGroup', () => {
         options={options}
         name="pessoas"
         onChange={onChange}
-        values={values}
+        value={values}
         disabled
         error="error"
       />

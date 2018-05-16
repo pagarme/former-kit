@@ -51,7 +51,7 @@ class CheckboxGroupState extends React.Component {
           name={name}
           onChange={values => this.setState({ values })}
           options={options}
-          values={this.state.values}
+          value={this.state.values}
         />
 
         <p>Selected: {this.state.values.join(', ')}</p>
