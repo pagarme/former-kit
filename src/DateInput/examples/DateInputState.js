@@ -71,7 +71,7 @@ class DateInputState extends React.Component {
       <div className={style.dateInput}>
         <DateInput
           presets={this.datePresets}
-          dates={dates}
+          value={dates}
           onChange={this.handleDatesChange}
           active={dates.start && dates.end && true}
           limits={{

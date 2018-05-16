@@ -75,11 +75,11 @@ class DateInput extends React.Component {
     super(props)
 
     const {
-      dates,
+      value,
     } = props
 
     this.state = {
-      dates: {
+      value: {
         start: null,
         end: null,
       },
@@ -87,14 +87,14 @@ class DateInput extends React.Component {
       showDateSelector: false,
     }
 
-    const { start, end } = momentToText(dates)
+    const { start, end } = momentToText(value)
 
-    if (dates.start) {
-      this.state.dates.start = start
+    if (value.start) {
+      this.state.value.start = start
     }
 
-    if (dates.end) {
-      this.state.dates.end = end
+    if (value.end) {
+      this.state.value.end = end
     }
 
     this.name = shortid.generate()
@@ -114,11 +114,11 @@ class DateInput extends React.Component {
   }
 
   componentWillReceiveProps (props) {
-    if (props && props.dates) {
-      const { dates } = props
+    if (props && props.value) {
+      const { value } = props
 
       this.setState({
-        dates: momentToText(dates),
+        value: momentToText(value),
       })
     }
   }
@@ -136,7 +136,7 @@ class DateInput extends React.Component {
   handleKeyDown (event) {
     if (event.key === 'Enter') {
       event.preventDefault()
-      this.handleConfirm(this.state.dates)
+      this.handleConfirm(this.state.value)
       return
     }
 
@@ -153,37 +153,37 @@ class DateInput extends React.Component {
   }
 
   handleInputChange (input, event) {
-    const { value } = event.target
-    const { start, end } = this.state.dates
+    const { value: evtValue } = event.target
+    const { start, end } = this.state.value
 
     if (start === end) {
-      const dates = {
-        start: value,
-        end: value,
+      const value = {
+        start: evtValue,
+        end: evtValue,
       }
 
-      this.setState({ dates })
+      this.setState({ value })
       return
     }
 
-    const inputLens = lensPath(['dates', input])
-    const state = set(inputLens, value, this.state)
+    const inputLens = lensPath(['value', input])
+    const state = set(inputLens, evtValue, this.state)
 
     this.setState(state)
   }
 
-  handleDatesChange (dates) {
+  handleDatesChange (value) {
     const { limits } = this.props
-    const clampedDates = map(clampRange(limits), dates)
+    const clampedDates = map(clampRange(limits), value)
 
     this.setState({
-      dates: clampedDates,
+      value: clampedDates,
     })
   }
 
-  handleConfirm (dates) {
+  handleConfirm (value) {
     const { limits } = this.props
-    const momentDates = textToMoment(dates)
+    const momentDates = textToMoment(value)
 
     const {
       isValidStart,
@@ -199,15 +199,15 @@ class DateInput extends React.Component {
   }
 
   handleCancel () {
-    const { dates } = this.props
-    const textDates = momentToText(dates)
+    const { value } = this.props
+    const textDates = momentToText(value)
 
     this.setState({
-      dates: textDates,
+      value: textDates,
     }, () => {
       // called in the callback as it will setState again
       this.changeSelectorDisplay(false)
-      this.props.onChange(dates)
+      this.props.onChange(value)
     })
   }
 
@@ -228,7 +228,7 @@ class DateInput extends React.Component {
 
   render () {
     const {
-      dates,
+      value,
       focusedInput,
       showDateSelector,
     } = this.state
@@ -243,11 +243,11 @@ class DateInput extends React.Component {
 
     const translatedStrings = getStrings(strings)
 
-    const { isValidStart, isValidEnd } = validateRange(limits, dates)
+    const { isValidStart, isValidEnd } = validateRange(limits, value)
     const isValidDates = isValidStart && isValidEnd
-    const momentDates = textToMoment(dates)
+    const momentDates = textToMoment(value)
 
-    const initialPlaceholder = dates.start || (
+    const initialPlaceholder = value.start || (
       showDateSelector
         ? translatedStrings.start
         : translatedStrings.select
@@ -283,9 +283,9 @@ class DateInput extends React.Component {
             className={theme.input}
             placeholderChar=" "
             name="startDate"
-            onChange={value => this.handleInputChange('start', value)}
+            onChange={val => this.handleInputChange('start', val)}
             placeholder={initialPlaceholder}
-            value={dates.start}
+            value={value.start}
             id={`${this.name}-startDate`}
           />
           <span className={theme.expander}>
@@ -293,11 +293,11 @@ class DateInput extends React.Component {
           </span>
         </div>
 
-        {hasDifferentEnd(dates) &&
+        {hasDifferentEnd(value) &&
           <div className={theme.separator} />
         }
 
-        {hasDifferentEnd(dates)
+        {hasDifferentEnd(value)
           ? (
             <div
               className={endClasses({
@@ -315,12 +315,12 @@ class DateInput extends React.Component {
                 className={theme.input}
                 placeholderChar=" "
                 name="endDate"
-                onChange={value => this.handleInputChange('end', value)}
+                onChange={val => this.handleInputChange('end', val)}
                 placeholder={translatedStrings.end}
-                value={dates.end}
+                value={value.end}
               />
               <span className={theme.expander}>
-                {dates.end || translatedStrings.end}
+                {value.end || translatedStrings.end}
               </span>
             </div>
           ) : (
@@ -371,7 +371,7 @@ DateInput.propTypes = {
   /**
    * Default start and end dates.
    */
-  dates: shape({
+  value: shape({
     /**
      * Start date based in `moment.js`.
      */
@@ -400,7 +400,7 @@ DateInput.propTypes = {
   }),
   /**
    * Triggers when a date is changed or selected.
-   * @param {object} dates
+   * @param {object} value
    */
   onChange: func.isRequired,
   /**
@@ -440,7 +440,7 @@ DateInput.propTypes = {
 DateInput.defaultProps = {
   theme: {},
   active: false,
-  dates: {
+  value: {
     start: null,
     end: null,
   },
