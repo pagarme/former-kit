@@ -111,7 +111,7 @@ class CardSectionTwoLinesTitle extends Component {
             />
           }
         </div>
-        { !collapsed && <hr className={theme.divider} /> }
+        { !collapsed && <hr /> }
       </div>
     )
   }

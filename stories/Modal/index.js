@@ -60,6 +60,8 @@ class ModalWithState extends Component {
             title="Add Photo"
           />
 
+          <hr />
+
           <ModalContent>
             This is the modal Content with React Modal module
           </ModalContent>
