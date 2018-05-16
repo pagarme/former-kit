@@ -127,10 +127,19 @@ class SidebarState extends React.Component {
           {collapsed
             ? <Tag key={selectedEnvironment}>{selectedEnvironment}</Tag>
             : <SegmentedSwitch
-              items={['live', 'test']}
-              selected={this.state.selectedEnvironment}
               name={`${this.id}-live-test`}
               onChange={this.handleEnvironment}
+              options={[
+                {
+                  title: 'Live',
+                  value: 'live',
+                },
+                {
+                  title: 'Test',
+                  value: 'test',
+                },
+              ]}
+              value={this.state.selectedEnvironment}
             />
           }
         </SidebarContent>

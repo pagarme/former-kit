@@ -9,7 +9,7 @@ class SegmentedSwitchState extends React.Component {
     super(props)
 
     this.state = {
-      selected: '',
+      value: '',
     }
 
     this.handleChange = this.handleChange.bind(this)
@@ -17,21 +17,21 @@ class SegmentedSwitchState extends React.Component {
 
   componentWillMount () {
     this.setState({
-      selected: this.props.selected,
+      value: this.props.value,
     })
   }
 
   handleChange (value) {
-    this.setState({ selected: value })
+    this.setState({ value })
   }
 
   render () {
     return (
       <SegmentedSwitch
-        items={this.props.items}
+        options={this.props.options}
         onChange={this.handleChange}
         name={this.props.name}
-        selected={this.state.selected}
+        value={this.state.value}
       />
     )
   }
@@ -42,16 +42,42 @@ storiesOf('SegmentedSwitch', module)
     <div>
       <Section title="Two options">
         <SegmentedSwitchState
-          items={['test', 'live']}
-          selected="test"
           name="live-test"
+          options={[
+            {
+              title: 'Test',
+              value: 'test',
+            },
+            {
+              title: 'Live',
+              value: 'live',
+            },
+          ]}
+          value="test"
         />
       </Section>
       <Section title="Four options">
         <SegmentedSwitchState
-          items={['test', 'live', 'super-test', 'extra-live']}
-          selected="super-test"
-          name="super-extra"
+          name="super-extra-options"
+          options={[
+            {
+              title: 'Test',
+              value: 'test',
+            },
+            {
+              title: 'Live',
+              value: 'live',
+            },
+            {
+              title: 'Super Test',
+              value: 'super-test',
+            },
+            {
+              title: 'Extra Live',
+              value: 'extra-live',
+            },
+          ]}
+          value="super-test"
         />
       </Section>
     </div>
