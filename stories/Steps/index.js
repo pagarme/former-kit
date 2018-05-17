@@ -11,6 +11,8 @@ storiesOf('Steps', module)
       <Steps
         status={[
           { id: 'success', status: 'current' },
+          { id: 'current', status: 'pending' },
+          { id: 'pending', status: 'pending' },
         ]}
         steps={[
           { id: 'success', title: 'Success' },
@@ -24,6 +26,7 @@ storiesOf('Steps', module)
         status={[
           { id: 'success', status: 'success' },
           { id: 'current', status: 'current' },
+          { id: 'pending', status: 'pending' },
         ]}
         steps={[
           { id: 'success', title: 'Success' },
@@ -43,6 +46,20 @@ storiesOf('Steps', module)
           { id: 'success', title: 'Success' },
           { id: 'current', title: 'Current' },
           { id: 'pending', title: 'Pending' },
+        ]}
+      />
+
+      <h2>Error</h2>
+      <Steps
+        status={[
+          { id: 'success', status: 'success' },
+          { id: 'current', status: 'success' },
+          { id: 'error', status: 'error' },
+        ]}
+        steps={[
+          { id: 'success', title: 'Success' },
+          { id: 'current', title: 'Current' },
+          { id: 'error', title: 'Error' },
         ]}
       />
     </Section>

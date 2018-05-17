@@ -50,6 +50,8 @@ Steps.propTypes = {
      */
     status: PropTypes.oneOf([
       'current',
+      'error',
+      'pending',
       'success',
     ]),
   })).isRequired,
