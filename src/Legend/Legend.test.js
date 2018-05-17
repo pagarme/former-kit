@@ -12,12 +12,11 @@ describe('Legend', () => {
     )
   })
 
-  it('should mount with manual abbreviations and outline', () => {
+  it('should mount with manual abbreviation', () => {
     shallow(
       <Legend
         color="green-100"
         acronym="PG"
-        outline
       >
         Pagas
       </Legend>
