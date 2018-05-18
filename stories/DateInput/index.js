@@ -12,7 +12,7 @@ import style from './style.css'
 
 const strings = {
   start: 'Initial',
-  end: 'Final',
+  end: 'End',
   select: 'Select a period or date',
   cancel: 'cancel',
   confirmPeriod: 'confirm selection',

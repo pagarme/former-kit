@@ -6,6 +6,8 @@ import IconCalendar from 'emblematic-icons/svg/Calendar32.svg'
 import Button from '../../Button'
 import DateInput from '../'
 
+import style from './style.css'
+
 class DateInputState extends React.Component {
   constructor (props) {
     super(props)
@@ -66,7 +68,7 @@ class DateInputState extends React.Component {
     const { dates } = this.state
 
     return (
-      <div>
+      <div className={style.dateInput}>
         <DateInput
           presets={this.datePresets}
           dates={dates}

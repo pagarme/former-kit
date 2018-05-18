@@ -2714,7 +2714,7 @@ exports[`Storyshots DateInput All styles 1`] = `
               onKeyDown={[Function]}
               onKeyPress={[Function]}
               onPaste={[Function]}
-              placeholder="Final"
+              placeholder="End"
               size="8"
               value="09/30/2017"
             />
@@ -2799,14 +2799,14 @@ exports[`Storyshots DateInput All styles 1`] = `
               onKeyDown={[Function]}
               onKeyPress={[Function]}
               onPaste={[Function]}
-              placeholder="Final"
+              placeholder="End"
               size="8"
               value=""
             />
             <span
               className="expander"
             >
-              Fim
+              End
             </span>
           </div>
         </div>
