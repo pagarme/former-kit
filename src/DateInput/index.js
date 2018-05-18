@@ -320,7 +320,7 @@ class DateInput extends React.Component {
                 value={dates.end}
               />
               <span className={theme.expander}>
-                {dates.end || 'Fim'}
+                {dates.end || translatedStrings.end}
               </span>
             </div>
           ) : (
