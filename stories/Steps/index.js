@@ -1,6 +1,10 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
+import {
+  Card,
+  CardSection,
+} from '../../src/Card'
 import Steps from '../../src/Steps'
 import Section from '../Section'
 
@@ -62,5 +66,37 @@ storiesOf('Steps', module)
           { id: 'error', title: 'Error' },
         ]}
       />
+
+      <h2>Inside a card</h2>
+      <Card>
+        <Steps
+          status={[
+            { id: 'success', status: 'success' },
+            { id: 'current', status: 'success' },
+            { id: 'error', status: 'error' },
+          ]}
+          steps={[
+            { id: 'success', title: 'Success' },
+            { id: 'current', title: 'Current' },
+            { id: 'error', title: 'Error' },
+          ]}
+        />
+      </Card>
+
+      <h2>Inside a card section</h2>
+      <CardSection>
+        <Steps
+          status={[
+            { id: 'success', status: 'success' },
+            { id: 'current', status: 'success' },
+            { id: 'error', status: 'error' },
+          ]}
+          steps={[
+            { id: 'success', title: 'Success' },
+            { id: 'current', title: 'Current' },
+            { id: 'error', title: 'Error' },
+          ]}
+        />
+      </CardSection>
     </Section>
   ))
