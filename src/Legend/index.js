@@ -28,16 +28,12 @@ const defineInitials = pipe(
 const Legend = ({
   color,
   children,
-  outline,
   acronym,
   hideLabel,
   theme,
 }) => {
   const labelClasses = cx(
-    theme.acronym,
-    {
-      [theme.outline]: outline,
-    }
+    theme.acronym
   )
 
   return (
@@ -60,42 +56,35 @@ const Legend = ({
 
 Legend.propTypes = {
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
+   * Abbreviation which will be shown in the component.
    */
-  theme: PropTypes.shape({
-    acronym: PropTypes.string,
-    outline: PropTypes.string,
-    legend: PropTypes.string,
-    text: PropTypes.string,
-  }),
-  /**
-   * The color of the Legend.
-   */
-  color: PropTypes.string.isRequired,
+  acronym: PropTypes.string,
   /**
    * React element which will be shown if the label is not hidden.
    */
   children: PropTypes.string.isRequired,
   /**
-   * Keeps the background without color and adds the color received
-   * only in the borders.
+   * The color of the Legend.
    */
-  outline: PropTypes.bool,
-  /**
-   * Abbreviation which will be shown in the component.
-   */
-  acronym: PropTypes.string,
+  color: PropTypes.string.isRequired,
   /**
    * Hides the received label and shows only the acronym.
    */
   hideLabel: PropTypes.bool,
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
+   */
+  theme: PropTypes.shape({
+    acronym: PropTypes.string,
+    legend: PropTypes.string,
+    text: PropTypes.string,
+  }),
 }
 
 Legend.defaultProps = {
-  theme: {},
-  outline: false,
   acronym: '',
   hideLabel: false,
+  theme: {},
 }
 
 export default consumeTheme(Legend)
