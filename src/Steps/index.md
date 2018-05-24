@@ -3,13 +3,14 @@
 ``` jsx
 <Steps
   status={[
-    { id: 'success', status: 'success' },
-    { id: 'current', status: 'current' },
+    { id: 'id1', status: 'success' },
+    { id: 'id2', status: 'current' },
+    { id: 'id3', status: 'pending' },
   ]}
   steps={[
-    { id: 'success', title: 'Success' },
-    { id: 'current', title: 'Current' },
-    { id: 'pending', title: 'Pending' },
+    { id: 'id1', title: 'Step 1' },
+    { id: 'id2', title: 'Step 2' },
+    { id: 'id3', title: 'Step 3' },
   ]}
 />
 ```

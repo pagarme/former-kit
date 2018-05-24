@@ -14,56 +14,56 @@ storiesOf('Steps', module)
       <h2>First step</h2>
       <Steps
         status={[
-          { id: 'success', status: 'current' },
-          { id: 'current', status: 'pending' },
-          { id: 'pending', status: 'pending' },
+          { id: 'id1', status: 'current' },
+          { id: 'id2', status: 'pending' },
+          { id: 'id3', status: 'pending' },
         ]}
         steps={[
-          { id: 'success', title: 'Success' },
-          { id: 'current', title: 'Current' },
-          { id: 'pending', title: 'Pending' },
+          { id: 'id1', title: 'Step 1' },
+          { id: 'id2', title: 'Step 2' },
+          { id: 'id3', title: 'Step 3' },
         ]}
       />
 
       <h2>Second step</h2>
       <Steps
         status={[
-          { id: 'success', status: 'success' },
-          { id: 'current', status: 'current' },
-          { id: 'pending', status: 'pending' },
+          { id: 'id1', status: 'success' },
+          { id: 'id2', status: 'current' },
+          { id: 'id3', status: 'pending' },
         ]}
         steps={[
-          { id: 'success', title: 'Success' },
-          { id: 'current', title: 'Current' },
-          { id: 'pending', title: 'Pending' },
+          { id: 'id1', title: 'Step 1' },
+          { id: 'id2', title: 'Step 2' },
+          { id: 'id3', title: 'Step 3' },
         ]}
       />
 
       <h2>Last step</h2>
       <Steps
         status={[
-          { id: 'success', status: 'success' },
-          { id: 'current', status: 'success' },
-          { id: 'pending', status: 'current' },
+          { id: 'id1', status: 'success' },
+          { id: 'id2', status: 'success' },
+          { id: 'id3', status: 'current' },
         ]}
         steps={[
-          { id: 'success', title: 'Success' },
-          { id: 'current', title: 'Current' },
-          { id: 'pending', title: 'Pending' },
+          { id: 'id1', title: 'Step 1' },
+          { id: 'id2', title: 'Step 2' },
+          { id: 'id3', title: 'Step 3' },
         ]}
       />
 
       <h2>Error</h2>
       <Steps
         status={[
-          { id: 'success', status: 'success' },
-          { id: 'current', status: 'success' },
-          { id: 'error', status: 'error' },
+          { id: 'id1', status: 'success' },
+          { id: 'id2', status: 'success' },
+          { id: 'id3', status: 'error' },
         ]}
         steps={[
-          { id: 'success', title: 'Success' },
-          { id: 'current', title: 'Current' },
-          { id: 'error', title: 'Error' },
+          { id: 'id1', title: 'Step 1' },
+          { id: 'id2', title: 'Step 2' },
+          { id: 'id3', title: 'Step 3' },
         ]}
       />
 
@@ -71,14 +71,14 @@ storiesOf('Steps', module)
       <Card>
         <Steps
           status={[
-            { id: 'success', status: 'success' },
-            { id: 'current', status: 'success' },
-            { id: 'error', status: 'error' },
+            { id: 'id1', status: 'success' },
+            { id: 'id2', status: 'success' },
+            { id: 'id3', status: 'error' },
           ]}
           steps={[
-            { id: 'success', title: 'Success' },
-            { id: 'current', title: 'Current' },
-            { id: 'error', title: 'Error' },
+            { id: 'id1', title: 'Step 1' },
+            { id: 'id2', title: 'Step 2' },
+            { id: 'id3', title: 'Step 3' },
           ]}
         />
       </Card>
@@ -87,14 +87,14 @@ storiesOf('Steps', module)
       <CardSection>
         <Steps
           status={[
-            { id: 'success', status: 'success' },
-            { id: 'current', status: 'success' },
-            { id: 'error', status: 'error' },
+            { id: 'id1', status: 'success' },
+            { id: 'id2', status: 'success' },
+            { id: 'id3', status: 'error' },
           ]}
           steps={[
-            { id: 'success', title: 'Success' },
-            { id: 'current', title: 'Current' },
-            { id: 'error', title: 'Error' },
+            { id: 'id1', title: 'Step 1' },
+            { id: 'id2', title: 'Step 2' },
+            { id: 'id3', title: 'Step 3' },
           ]}
         />
       </CardSection>
