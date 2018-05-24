@@ -15168,7 +15168,7 @@ exports[`Storyshots Modal Default 1`] = `
             Add Photo
           </h2>
           <button
-            className="button clean lowRelevance default iconButton"
+            className="button clean lowRelevance tiny iconButton"
             disabled={false}
             onClick={[Function]}
             type="button"

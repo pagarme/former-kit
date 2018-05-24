@@ -21,7 +21,7 @@ const validateCloseProp = (closeIcon, onClose, propName) => {
     && isNil(onClose)
   ) {
     throw new Error(
-      `The prop onClose must be a function 
+      `The prop onClose must be a function
         when the closeIcon prop is received`
     )
   }
@@ -53,6 +53,7 @@ const ModalTitle = ({
         icon={closeIcon}
         onClick={onClose}
         relevance="low"
+        size="tiny"
       />
     }
   </div>
