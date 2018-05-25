@@ -8,18 +8,6 @@ import ThemeConsumer from '../ThemeConsumer'
 
 const ConsumeTheme = ThemeConsumer('UISteps')
 
-const renderIcon = (status, number) => {
-  if (status === 'success') {
-    return <IconChecked width={12} height={12} />
-  }
-
-  if (status === 'error') {
-    return <IconClose width={12} height={12} />
-  }
-
-  return number
-}
-
 const Step = ({
   number,
   status,
@@ -30,9 +18,16 @@ const Step = ({
     className={classNames(theme.step, theme[status])}
   >
     <span className={theme.indicator}>
-      {renderIcon(status, number)}
+      {status === 'success' &&
+        <IconChecked width={12} height={12} />
+      }
+      {status === 'error' &&
+        <IconClose width={12} height={12} />
+      }
+      {!(['error', 'success'].includes(status)) &&
+        <span className={theme.number}>{number}</span>
+      }
     </span>
-
     {title}
   </div>
 )
@@ -40,6 +35,7 @@ const Step = ({
 Step.propTypes = {
   theme: PropTypes.shape({
     indicator: PropTypes.string,
+    number: PropTypes.string,
     step: PropTypes.string,
   }),
   number: PropTypes.number.isRequired,

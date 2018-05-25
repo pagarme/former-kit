@@ -18574,7 +18574,11 @@ exports[`Storyshots Steps Default 1`] = `
         <span
           className="indicator"
         >
-          1
+          <span
+            className="number"
+          >
+            1
+          </span>
         </span>
         Step 1
       </div>
@@ -18584,7 +18588,11 @@ exports[`Storyshots Steps Default 1`] = `
         <span
           className="indicator"
         >
-          2
+          <span
+            className="number"
+          >
+            2
+          </span>
         </span>
         Step 2
       </div>
@@ -18594,7 +18602,11 @@ exports[`Storyshots Steps Default 1`] = `
         <span
           className="indicator"
         >
-          3
+          <span
+            className="number"
+          >
+            3
+          </span>
         </span>
         Step 3
       </div>
@@ -18624,7 +18636,11 @@ exports[`Storyshots Steps Default 1`] = `
         <span
           className="indicator"
         >
-          2
+          <span
+            className="number"
+          >
+            2
+          </span>
         </span>
         Step 2
       </div>
@@ -18634,7 +18650,11 @@ exports[`Storyshots Steps Default 1`] = `
         <span
           className="indicator"
         >
-          3
+          <span
+            className="number"
+          >
+            3
+          </span>
         </span>
         Step 3
       </div>
@@ -18677,7 +18697,11 @@ exports[`Storyshots Steps Default 1`] = `
         <span
           className="indicator"
         >
-          3
+          <span
+            className="number"
+          >
+            3
+          </span>
         </span>
         Step 3
       </div>
