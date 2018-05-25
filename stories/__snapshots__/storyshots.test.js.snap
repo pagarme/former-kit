@@ -12283,9 +12283,8 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
       <header
         className="header"
       >
-        <img
-          alt="Pagar.me"
-          src="https://assets.pagar.me/site/general/logo-light-3812e7ea6b596bdcc8c041f0edc4ff15.png"
+        <logo.svg
+          width="140"
         />
         <button
           onClick={[Function]}
@@ -12296,6 +12295,89 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
           />
         </button>
       </header>
+      <nav>
+        <ul
+          className="menu"
+        >
+          <li
+            className="link"
+          >
+            <button
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              role="link"
+            >
+              <div
+                className="title"
+              >
+                <span
+                  className="icon"
+                >
+                  <Home32.svg
+                    height={16}
+                    width={16}
+                  />
+                </span>
+                home
+              </div>
+            </button>
+          </li>
+          <li
+            className="link"
+          >
+            <button
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              role="link"
+            >
+              <div
+                className="title"
+              >
+                <span
+                  className="icon"
+                >
+                  <Transaction32.svg
+                    height={16}
+                    width={16}
+                  />
+                </span>
+                Transactions
+              </div>
+            </button>
+          </li>
+          <li
+            className="link"
+          >
+            <button
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              role="link"
+            >
+              <div
+                className="title"
+              >
+                <span
+                  className="icon"
+                >
+                  <Configuration32.svg
+                    height={16}
+                    width={16}
+                  />
+                </span>
+                My Account
+                <span
+                  className="arrow"
+                >
+                  <svg />
+                </span>
+              </div>
+            </button>
+          </li>
+        </ul>
+      </nav>
       <div
         className="content"
       >
@@ -12340,83 +12422,6 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
           </label>
         </div>
       </div>
-      <nav
-        className="items"
-      >
-        <ul>
-          <li
-            className="link"
-          >
-            <button
-              onClick={[Function]}
-              role="link"
-            >
-              <div
-                className="title"
-              >
-                <span
-                  className="icon"
-                />
-                Pagar.me
-              </div>
-              <div
-                className="subtitle"
-              >
-                <span>
-                  show balance
-                </span>
-                <svg />
-              </div>
-            </button>
-          </li>
-          <li
-            className="link"
-          >
-            <button
-              onClick={[Function]}
-              role="link"
-            >
-              <div
-                className="title"
-              >
-                <span
-                  className="icon"
-                >
-                  <Home32.svg
-                    height={16}
-                    width={16}
-                  />
-                </span>
-                My Account
-              </div>
-              
-            </button>
-          </li>
-          <li
-            className="link"
-          >
-            <button
-              onClick={[Function]}
-              role="link"
-            >
-              <div
-                className="title"
-              >
-                <span
-                  className="icon"
-                >
-                  <Transaction32.svg
-                    height={16}
-                    width={16}
-                  />
-                </span>
-                Transactions
-              </div>
-              
-            </button>
-          </li>
-        </ul>
-      </nav>
     </aside>
     <div
       className="wrapper"
@@ -12753,9 +12758,8 @@ exports[`Storyshots Layout Default with all props 1`] = `
       <header
         className="header"
       >
-        <img
-          alt="Pagar.me"
-          src="https://assets.pagar.me/site/general/logo-light-3812e7ea6b596bdcc8c041f0edc4ff15.png"
+        <logo.svg
+          width="140"
         />
         <button
           onClick={[Function]}
@@ -12766,6 +12770,89 @@ exports[`Storyshots Layout Default with all props 1`] = `
           />
         </button>
       </header>
+      <nav>
+        <ul
+          className="menu"
+        >
+          <li
+            className="link"
+          >
+            <button
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              role="link"
+            >
+              <div
+                className="title"
+              >
+                <span
+                  className="icon"
+                >
+                  <Home32.svg
+                    height={16}
+                    width={16}
+                  />
+                </span>
+                home
+              </div>
+            </button>
+          </li>
+          <li
+            className="link"
+          >
+            <button
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              role="link"
+            >
+              <div
+                className="title"
+              >
+                <span
+                  className="icon"
+                >
+                  <Transaction32.svg
+                    height={16}
+                    width={16}
+                  />
+                </span>
+                Transactions
+              </div>
+            </button>
+          </li>
+          <li
+            className="link"
+          >
+            <button
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              role="link"
+            >
+              <div
+                className="title"
+              >
+                <span
+                  className="icon"
+                >
+                  <Configuration32.svg
+                    height={16}
+                    width={16}
+                  />
+                </span>
+                My Account
+                <span
+                  className="arrow"
+                >
+                  <svg />
+                </span>
+              </div>
+            </button>
+          </li>
+        </ul>
+      </nav>
       <div
         className="content"
       >
@@ -12810,83 +12897,6 @@ exports[`Storyshots Layout Default with all props 1`] = `
           </label>
         </div>
       </div>
-      <nav
-        className="items"
-      >
-        <ul>
-          <li
-            className="link"
-          >
-            <button
-              onClick={[Function]}
-              role="link"
-            >
-              <div
-                className="title"
-              >
-                <span
-                  className="icon"
-                />
-                Pagar.me
-              </div>
-              <div
-                className="subtitle"
-              >
-                <span>
-                  show balance
-                </span>
-                <svg />
-              </div>
-            </button>
-          </li>
-          <li
-            className="link"
-          >
-            <button
-              onClick={[Function]}
-              role="link"
-            >
-              <div
-                className="title"
-              >
-                <span
-                  className="icon"
-                >
-                  <Home32.svg
-                    height={16}
-                    width={16}
-                  />
-                </span>
-                My Account
-              </div>
-              
-            </button>
-          </li>
-          <li
-            className="link"
-          >
-            <button
-              onClick={[Function]}
-              role="link"
-            >
-              <div
-                className="title"
-              >
-                <span
-                  className="icon"
-                >
-                  <Transaction32.svg
-                    height={16}
-                    width={16}
-                  />
-                </span>
-                Transactions
-              </div>
-              
-            </button>
-          </li>
-        </ul>
-      </nav>
     </aside>
     <div
       className="wrapper"
@@ -13323,9 +13333,8 @@ exports[`Storyshots Layout Default without Footer 1`] = `
       <header
         className="header"
       >
-        <img
-          alt="Pagar.me"
-          src="https://assets.pagar.me/site/general/logo-light-3812e7ea6b596bdcc8c041f0edc4ff15.png"
+        <logo.svg
+          width="140"
         />
         <button
           onClick={[Function]}
@@ -13336,6 +13345,89 @@ exports[`Storyshots Layout Default without Footer 1`] = `
           />
         </button>
       </header>
+      <nav>
+        <ul
+          className="menu"
+        >
+          <li
+            className="link"
+          >
+            <button
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              role="link"
+            >
+              <div
+                className="title"
+              >
+                <span
+                  className="icon"
+                >
+                  <Home32.svg
+                    height={16}
+                    width={16}
+                  />
+                </span>
+                home
+              </div>
+            </button>
+          </li>
+          <li
+            className="link"
+          >
+            <button
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              role="link"
+            >
+              <div
+                className="title"
+              >
+                <span
+                  className="icon"
+                >
+                  <Transaction32.svg
+                    height={16}
+                    width={16}
+                  />
+                </span>
+                Transactions
+              </div>
+            </button>
+          </li>
+          <li
+            className="link"
+          >
+            <button
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              role="link"
+            >
+              <div
+                className="title"
+              >
+                <span
+                  className="icon"
+                >
+                  <Configuration32.svg
+                    height={16}
+                    width={16}
+                  />
+                </span>
+                My Account
+                <span
+                  className="arrow"
+                >
+                  <svg />
+                </span>
+              </div>
+            </button>
+          </li>
+        </ul>
+      </nav>
       <div
         className="content"
       >
@@ -13380,83 +13472,6 @@ exports[`Storyshots Layout Default without Footer 1`] = `
           </label>
         </div>
       </div>
-      <nav
-        className="items"
-      >
-        <ul>
-          <li
-            className="link"
-          >
-            <button
-              onClick={[Function]}
-              role="link"
-            >
-              <div
-                className="title"
-              >
-                <span
-                  className="icon"
-                />
-                Pagar.me
-              </div>
-              <div
-                className="subtitle"
-              >
-                <span>
-                  show balance
-                </span>
-                <svg />
-              </div>
-            </button>
-          </li>
-          <li
-            className="link"
-          >
-            <button
-              onClick={[Function]}
-              role="link"
-            >
-              <div
-                className="title"
-              >
-                <span
-                  className="icon"
-                >
-                  <Home32.svg
-                    height={16}
-                    width={16}
-                  />
-                </span>
-                My Account
-              </div>
-              
-            </button>
-          </li>
-          <li
-            className="link"
-          >
-            <button
-              onClick={[Function]}
-              role="link"
-            >
-              <div
-                className="title"
-              >
-                <span
-                  className="icon"
-                >
-                  <Transaction32.svg
-                    height={16}
-                    width={16}
-                  />
-                </span>
-                Transactions
-              </div>
-              
-            </button>
-          </li>
-        </ul>
-      </nav>
     </aside>
     <div
       className="wrapper"
@@ -13838,9 +13853,8 @@ exports[`Storyshots Layout Default without Header 1`] = `
       <header
         className="header"
       >
-        <img
-          alt="Pagar.me"
-          src="https://assets.pagar.me/site/general/logo-light-3812e7ea6b596bdcc8c041f0edc4ff15.png"
+        <logo.svg
+          width="140"
         />
         <button
           onClick={[Function]}
@@ -13851,6 +13865,89 @@ exports[`Storyshots Layout Default without Header 1`] = `
           />
         </button>
       </header>
+      <nav>
+        <ul
+          className="menu"
+        >
+          <li
+            className="link"
+          >
+            <button
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              role="link"
+            >
+              <div
+                className="title"
+              >
+                <span
+                  className="icon"
+                >
+                  <Home32.svg
+                    height={16}
+                    width={16}
+                  />
+                </span>
+                home
+              </div>
+            </button>
+          </li>
+          <li
+            className="link"
+          >
+            <button
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              role="link"
+            >
+              <div
+                className="title"
+              >
+                <span
+                  className="icon"
+                >
+                  <Transaction32.svg
+                    height={16}
+                    width={16}
+                  />
+                </span>
+                Transactions
+              </div>
+            </button>
+          </li>
+          <li
+            className="link"
+          >
+            <button
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              role="link"
+            >
+              <div
+                className="title"
+              >
+                <span
+                  className="icon"
+                >
+                  <Configuration32.svg
+                    height={16}
+                    width={16}
+                  />
+                </span>
+                My Account
+                <span
+                  className="arrow"
+                >
+                  <svg />
+                </span>
+              </div>
+            </button>
+          </li>
+        </ul>
+      </nav>
       <div
         className="content"
       >
@@ -13895,83 +13992,6 @@ exports[`Storyshots Layout Default without Header 1`] = `
           </label>
         </div>
       </div>
-      <nav
-        className="items"
-      >
-        <ul>
-          <li
-            className="link"
-          >
-            <button
-              onClick={[Function]}
-              role="link"
-            >
-              <div
-                className="title"
-              >
-                <span
-                  className="icon"
-                />
-                Pagar.me
-              </div>
-              <div
-                className="subtitle"
-              >
-                <span>
-                  show balance
-                </span>
-                <svg />
-              </div>
-            </button>
-          </li>
-          <li
-            className="link"
-          >
-            <button
-              onClick={[Function]}
-              role="link"
-            >
-              <div
-                className="title"
-              >
-                <span
-                  className="icon"
-                >
-                  <Home32.svg
-                    height={16}
-                    width={16}
-                  />
-                </span>
-                My Account
-              </div>
-              
-            </button>
-          </li>
-          <li
-            className="link"
-          >
-            <button
-              onClick={[Function]}
-              role="link"
-            >
-              <div
-                className="title"
-              >
-                <span
-                  className="icon"
-                >
-                  <Transaction32.svg
-                    height={16}
-                    width={16}
-                  />
-                </span>
-                Transactions
-              </div>
-              
-            </button>
-          </li>
-        </ul>
-      </nav>
     </aside>
     <div
       className="wrapper"
@@ -18300,24 +18320,17 @@ exports[`Storyshots Sidebar Collapsed 1`] = `
       />
     </button>
   </header>
-  <div
-    className="content"
-  >
-    <div
-      className="tag"
+  <nav>
+    <ul
+      className="menu"
     >
-      live
-    </div>
-  </div>
-  <nav
-    className="items"
-  >
-    <ul>
       <li
         className="link"
       >
         <button
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           role="link"
         >
           <div
@@ -18332,14 +18345,15 @@ exports[`Storyshots Sidebar Collapsed 1`] = `
               />
             </span>
           </div>
-          
         </button>
       </li>
       <li
         className="link"
       >
         <button
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           role="link"
         >
           <div
@@ -18354,11 +18368,42 @@ exports[`Storyshots Sidebar Collapsed 1`] = `
               />
             </span>
           </div>
-          
+        </button>
+      </li>
+      <li
+        className="link"
+      >
+        <button
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          role="link"
+        >
+          <div
+            className="title"
+          >
+            <span
+              className="icon"
+            >
+              <Configuration32.svg
+                height={16}
+                width={16}
+              />
+            </span>
+          </div>
         </button>
       </li>
     </ul>
   </nav>
+  <div
+    className="content"
+  >
+    <div
+      className="tag"
+    >
+      live
+    </div>
+  </div>
 </aside>
 `;
 
@@ -18369,9 +18414,8 @@ exports[`Storyshots Sidebar Default 1`] = `
   <header
     className="header"
   >
-    <img
-      alt="Pagar.me"
-      src="https://assets.pagar.me/site/general/logo-light-3812e7ea6b596bdcc8c041f0edc4ff15.png"
+    <logo.svg
+      width="140"
     />
     <button
       onClick={[Function]}
@@ -18382,6 +18426,89 @@ exports[`Storyshots Sidebar Default 1`] = `
       />
     </button>
   </header>
+  <nav>
+    <ul
+      className="menu"
+    >
+      <li
+        className="link"
+      >
+        <button
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          role="link"
+        >
+          <div
+            className="title"
+          >
+            <span
+              className="icon"
+            >
+              <Home32.svg
+                height={16}
+                width={16}
+              />
+            </span>
+            home
+          </div>
+        </button>
+      </li>
+      <li
+        className="link"
+      >
+        <button
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          role="link"
+        >
+          <div
+            className="title"
+          >
+            <span
+              className="icon"
+            >
+              <Transaction32.svg
+                height={16}
+                width={16}
+              />
+            </span>
+            Transactions
+          </div>
+        </button>
+      </li>
+      <li
+        className="link"
+      >
+        <button
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          role="link"
+        >
+          <div
+            className="title"
+          >
+            <span
+              className="icon"
+            >
+              <Configuration32.svg
+                height={16}
+                width={16}
+              />
+            </span>
+            My Account
+            <span
+              className="arrow"
+            >
+              <svg />
+            </span>
+          </div>
+        </button>
+      </li>
+    </ul>
+  </nav>
   <div
     className="content"
   >
@@ -18426,83 +18553,6 @@ exports[`Storyshots Sidebar Default 1`] = `
       </label>
     </div>
   </div>
-  <nav
-    className="items"
-  >
-    <ul>
-      <li
-        className="link"
-      >
-        <button
-          onClick={[Function]}
-          role="link"
-        >
-          <div
-            className="title"
-          >
-            <span
-              className="icon"
-            />
-            Pagar.me
-          </div>
-          <div
-            className="subtitle"
-          >
-            <span>
-              show balance
-            </span>
-            <svg />
-          </div>
-        </button>
-      </li>
-      <li
-        className="link"
-      >
-        <button
-          onClick={[Function]}
-          role="link"
-        >
-          <div
-            className="title"
-          >
-            <span
-              className="icon"
-            >
-              <Home32.svg
-                height={16}
-                width={16}
-              />
-            </span>
-            My Account
-          </div>
-          
-        </button>
-      </li>
-      <li
-        className="link"
-      >
-        <button
-          onClick={[Function]}
-          role="link"
-        >
-          <div
-            className="title"
-          >
-            <span
-              className="icon"
-            >
-              <Transaction32.svg
-                height={16}
-                width={16}
-              />
-            </span>
-            Transactions
-          </div>
-          
-        </button>
-      </li>
-    </ul>
-  </nav>
 </aside>
 `;
 
