@@ -6,8 +6,8 @@ import ThemeConsumer from '../ThemeConsumer'
 const consumeTheme = ThemeConsumer('UISidebar')
 
 const SidebarLinks = ({ theme, children }) => (
-  <nav className={theme.items}>
-    <ul>
+  <nav>
+    <ul className={theme.menu}>
       {children}
     </ul>
   </nav>
@@ -21,7 +21,7 @@ SidebarLinks.propTypes = {
     /**
      * The main class used to stylize the component.
      */
-    items: PropTypes.string,
+    menu: PropTypes.string,
   }),
   /**
    * The children can contain any kind of component.

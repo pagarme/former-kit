@@ -2,53 +2,62 @@
 
 ``` jsx
 const IconMenu = require('emblematic-icons/svg/Menu32.svg').default;
+const IconConfig = require('emblematic-icons/svg/Configuration32.svg').default;
+const IconHome = require('emblematic-icons/svg/Home32.svg').default;
+const IconTransaction = require('emblematic-icons/svg/Transaction32.svg').default;
+
+const shortid = require('shortid');
+const { contains } = require('ramda');
+
 const Tag = require('../../src/Tag').default;
 const SegmentedSwitch = require('../../src/SegmentedSwitch').default;
 
 const items = [
   {
-    value: 'minha-conta',
-    title: 'Minha conta',
+    value: 'home',
+    title: 'home',
+    path: ['home'],
+    icon: <IconHome width={16} height={16} />,
   },
   {
-    value: 'transacoes',
-    title: 'Transações',
+    value: 'transactions',
+    title: 'Transactions',
+    path: ['transactions'],
+    icon: <IconTransaction width={16} height={16} />,
   },
-];
-
-const sections = {
-  title: 'Nome da empresa',
-  showMsg: 'Mostrar saldo',
-  hideMsg: 'Ocultar saldo',
-  data: [
-    {
-      title: 'Disponível',
-      value: <p><small>R$</small> 150000</p>,
-      actionTitle: 'Sacar',
-      action: () => {
+  {
+    value: 'account',
+    title: 'My Account',
+    icon: <IconConfig width={16} height={16} />,
+    path: ['account'],
+    sublinks: [
+      {
+        value: 'general',
+        title: 'General',
+        path: ['account', 'general'],
       },
-    },
-    {
-      title: 'A receber',
-      value: <p><small>R$</small> 70000</p>,
-      actionTitle: 'Antecipar',
-      action: () => {
+      {
+        value: 'user',
+        title: 'User',
+        path: ['account', 'user'],
       },
-    },
-  ],
-};
+    ],
+  },
+]
 
 class SidebarState extends React.Component {
   constructor (props) {
     super(props)
 
+    this.id = shortid.generate()
+
     this.state = {
-      collapsed: false,
+      collapsed: props.collapsed || false,
       selectedEnvironment: 'live',
-      active: '',
-      showInfos: false,
+      active: [],
     }
 
+    this.handleClick = this.handleClick.bind(this)
     this.handleEnvironment = this.handleEnvironment.bind(this)
   }
 
@@ -58,23 +67,57 @@ class SidebarState extends React.Component {
     })
   }
 
+  handleClick (link) {
+    this.setState({
+      active: link.path,
+    })
+  }
+
   render () {
     const {
       collapsed,
       selectedEnvironment,
-      showInfos,
     } = this.state
 
     return (
       <Sidebar collapsed={collapsed}>
         <SidebarHeader>
           {!collapsed &&
-            <img src="https://assets.pagar.me/site/general/logo-light-3812e7ea6b596bdcc8c041f0edc4ff15.png" alt="Pagar.me" />
+            <img
+              src="https://pagar.me/wp-content/uploads/2018/04/logo_pagarme.svg"
+              width={120}
+              alt="sidebar logo"
+            />
           }
           <button onClick={() => this.setState({ collapsed: !collapsed })}>
-            <IconMenu />
+            <IconMenu width="16" height="16" />
           </button>
         </SidebarHeader>
+
+        <SidebarLinks>
+          {items.map(item => (
+            <SidebarLink
+              key={item.value}
+              title={item.title}
+              active={contains(item.value, this.state.active)}
+              onClick={() => this.handleClick(item)}
+              icon={item.icon}
+              collapsed={collapsed}
+            >
+              {item.sublinks &&
+                item.sublinks.map(sublink => (
+                  <SidebarLink
+                    active={contains(sublink.value, this.state.active)}
+                    key={sublink.value}
+                    onClick={() => this.handleClick(sublink)}
+                    title={sublink.title}
+                    value={sublink.value}
+                  />
+                ))
+              }
+            </SidebarLink>
+          ))}
+        </SidebarLinks>
 
         <SidebarContent>
           {collapsed
@@ -87,30 +130,6 @@ class SidebarState extends React.Component {
             />
           }
         </SidebarContent>
-
-        <SidebarLinks>
-          {!collapsed &&
-            <SidebarLink
-              title="Nome da empresa"
-              subtitle={showInfos ? 'ocultar saldo' : 'mostrar saldo'}
-              active={showInfos}
-              onClick={() => this.setState({ showInfos: !showInfos })}
-            >
-              <SidebarSections sections={sections.data} />
-            </SidebarLink>
-          }
-
-          {items.map(item => (
-            <SidebarLink
-              key={item.value}
-              title={item.title}
-              active={item.value === this.state.active}
-              onClick={() => this.setState({ active: item.value })}
-              icon={item.icon}
-              collapsed={collapsed}
-            />
-          ))}
-        </SidebarLinks>
       </Sidebar>
     )
   }

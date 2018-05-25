@@ -11,7 +11,6 @@ describe('SidebarLink', () => {
   it('should mount with basic props', () => {
     shallow(
       <SidebarLink
-        theme={{}}
         title="Hello"
       />
     )
@@ -20,7 +19,6 @@ describe('SidebarLink', () => {
   it('should display title', () => {
     const component = shallow(
       <SidebarLink
-        theme={{}}
         title="Hello"
       />
     )
@@ -28,22 +26,9 @@ describe('SidebarLink', () => {
     expect(component.dive().find('div').first().text()).toBe('Hello')
   })
 
-  it('should display subtitle', () => {
-    const component = shallow(
-      <SidebarLink
-        theme={{}}
-        title="Hello"
-        subtitle="Hi"
-      />
-    )
-
-    expect(component.dive().find('div').at(1).text()).toBe('Hi')
-  })
-
   it('should display icon', () => {
     const component = shallow(
       <SidebarLink
-        theme={{}}
         title="Hello"
         icon={<svg />}
       />
@@ -52,10 +37,36 @@ describe('SidebarLink', () => {
     expect(component.dive().find('svg').first().exists()).toBeTruthy()
   })
 
-  it('should hide children when active with title', () => {
+  it('should render without display children', () => {
     const component = shallow(
       <SidebarLink
-        theme={{}}
+        title="Hello"
+        icons={arrowIcons}
+      >
+        <SidebarLink title="General" />
+        <SidebarLink title="Logout" />
+      </SidebarLink>
+    )
+
+    expect(component.dive().children()).toHaveLength(1)
+  })
+
+  it('should render submenu', () => {
+    const component = shallow(
+      <SidebarLink
+        title="Account"
+        icons={arrowIcons}
+      >
+        <SidebarLink title="General" />
+      </SidebarLink>
+    )
+
+    expect(component.children()).toHaveLength(1)
+  })
+
+  it('should hide children when submenu is collapsed', () => {
+    const component = shallow(
+      <SidebarLink
         title="Hello"
         icons={arrowIcons}
         active={false}
@@ -67,59 +78,26 @@ describe('SidebarLink', () => {
     expect(component.dive().children()).toHaveLength(1)
   })
 
-  it('should hide children when active with subtitle', () => {
-    const component = shallow(
-      <SidebarLink
-        theme={{}}
-        title="Hello"
-        subtitle="Kaka"
-        icons={arrowIcons}
-        active={false}
-      >
-        <p>Hi</p>
-      </SidebarLink>
-    )
-
-    expect(component.dive().children()).toHaveLength(1)
-  })
-
-  it('should display children when active with title', () => {
-    const component = shallow(
-      <SidebarLink
-        theme={{}}
-        title="Hello"
-        icons={arrowIcons}
-        active
-      >
-        <p>Hi</p>
-      </SidebarLink>
-    )
-
-    expect(component.dive().children()).toHaveLength(2)
-  })
-
-  it('should display children when active with subtitle', () => {
-    const component = shallow(
-      <SidebarLink
-        theme={{}}
-        title="Hello"
-        subtitle="Kaka"
-        icons={arrowIcons}
-        active
-      >
-        <p>Hi</p>
-      </SidebarLink>
-    )
-
-    expect(component.dive().children()).toHaveLength(2)
-  })
-
-  it('should call onClick', () => {
+  it('shoul call onClick', () => {
     const onClick = jest.fn()
 
     const component = shallow(
       <SidebarLink
-        theme={{}}
+        title="Hello"
+        icons={arrowIcons}
+        onClick={onClick}
+      />
+    )
+
+    component.dive().find('button').simulate('click')
+    expect(onClick).toHaveBeenCalled()
+  })
+
+  it('should dont call onClick when has children', () => {
+    const onClick = jest.fn()
+
+    const component = shallow(
+      <SidebarLink
         title="Hello"
         icons={arrowIcons}
         onClick={onClick}
@@ -129,13 +107,12 @@ describe('SidebarLink', () => {
     )
 
     component.dive().find('button').simulate('click')
-    expect(onClick).toHaveBeenCalled()
+    expect(onClick).not.toHaveBeenCalled()
   })
 
   it('should render arrows when it has children and title', () => {
     const component = shallow(
       <SidebarLink
-        theme={{}}
         title="Hello"
         icons={arrowIcons}
       >
@@ -149,7 +126,6 @@ describe('SidebarLink', () => {
   it('should render arrows when it has children and subtitle', () => {
     const component = shallow(
       <SidebarLink
-        theme={{}}
         title="Hello"
         subtitle="Hihi"
         icons={arrowIcons}
@@ -164,7 +140,6 @@ describe('SidebarLink', () => {
   it('should change arrows when item is active', () => {
     const componentActive = shallow(
       <SidebarLink
-        theme={{}}
         title="Hello"
         active
         icons={arrowIcons}
@@ -175,7 +150,6 @@ describe('SidebarLink', () => {
 
     const componentNotActive = shallow(
       <SidebarLink
-        theme={{}}
         title="Hello"
         active={false}
         icons={arrowIcons}
@@ -206,7 +180,6 @@ describe('SidebarLink', () => {
   it('should display only icons when sidebar is collapsed', () => {
     const component = shallow(
       <SidebarLink
-        theme={{}}
         title="Hello"
         icon={<svg />}
         collapsed

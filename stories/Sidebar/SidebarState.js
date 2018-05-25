@@ -1,9 +1,11 @@
 import React from 'react'
 
-import IconMenu from 'emblematic-icons/svg/Menu32.svg'
+import IconConfig from 'emblematic-icons/svg/Configuration32.svg'
 import IconHome from 'emblematic-icons/svg/Home32.svg'
+import IconMenu from 'emblematic-icons/svg/Menu32.svg'
 import IconTransaction from 'emblematic-icons/svg/Transaction32.svg'
 import shortid from 'shortid'
+import { contains } from 'ramda'
 
 import {
   Sidebar,
@@ -11,46 +13,45 @@ import {
   SidebarContent,
   SidebarLinks,
   SidebarLink,
-  SidebarSections,
 } from '../../src/Sidebar'
 
 import Tag from '../../src/Tag'
 import SegmentedSwitch from '../../src/SegmentedSwitch'
 
+import Logo from './logo.svg'
+
 const items = [
   {
-    value: 'my-account',
-    title: 'My Account',
+    value: 'home',
+    title: 'home',
+    path: ['home'],
     icon: <IconHome width={16} height={16} />,
   },
   {
     value: 'transactions',
     title: 'Transactions',
+    path: ['transactions'],
     icon: <IconTransaction width={16} height={16} />,
   },
+  {
+    value: 'account',
+    title: 'My Account',
+    icon: <IconConfig width={16} height={16} />,
+    path: ['account'],
+    sublinks: [
+      {
+        value: 'general',
+        title: 'General',
+        path: ['account', 'general'],
+      },
+      {
+        value: 'user',
+        title: 'User',
+        path: ['account', 'user'],
+      },
+    ],
+  },
 ]
-
-const sections = {
-  title: 'Pagar.me',
-  showMsg: 'Show balance',
-  hideMsg: 'Hide balance',
-  data: [
-    {
-      title: 'Available',
-      value: <p><small>R$</small> 150000</p>,
-      actionTitle: 'Withdraw',
-      action: () => {
-      },
-    },
-    {
-      title: 'To receive',
-      value: <p><small>R$</small> 70000</p>,
-      actionTitle: 'Antecipate',
-      action: () => {
-      },
-    },
-  ],
-}
 
 class SidebarState extends React.Component {
   constructor (props) {
@@ -61,10 +62,10 @@ class SidebarState extends React.Component {
     this.state = {
       collapsed: props.collapsed || false,
       selectedEnvironment: 'live',
-      active: '',
-      showInfos: false,
+      active: [],
     }
 
+    this.handleClick = this.handleClick.bind(this)
     this.handleEnvironment = this.handleEnvironment.bind(this)
   }
 
@@ -74,26 +75,53 @@ class SidebarState extends React.Component {
     })
   }
 
+  handleClick (link) {
+    this.setState({
+      active: link.path,
+    })
+  }
+
   render () {
     const {
       collapsed,
       selectedEnvironment,
-      showInfos,
     } = this.state
 
     return (
       <Sidebar collapsed={collapsed}>
         <SidebarHeader>
           {!collapsed &&
-            <img
-              src="https://assets.pagar.me/site/general/logo-light-3812e7ea6b596bdcc8c041f0edc4ff15.png"
-              alt="Pagar.me"
-            />
+            <Logo width="140" />
           }
           <button onClick={() => this.setState({ collapsed: !collapsed })}>
             <IconMenu width="16" height="16" />
           </button>
         </SidebarHeader>
+
+        <SidebarLinks>
+          {items.map(item => (
+            <SidebarLink
+              key={item.value}
+              title={item.title}
+              active={contains(item.value, this.state.active)}
+              onClick={() => this.handleClick(item)}
+              icon={item.icon}
+              collapsed={collapsed}
+            >
+              {item.sublinks &&
+                item.sublinks.map(sublink => (
+                  <SidebarLink
+                    active={contains(sublink.value, this.state.active)}
+                    key={sublink.value}
+                    onClick={() => this.handleClick(sublink)}
+                    title={sublink.title}
+                    value={sublink.value}
+                  />
+                ))
+              }
+            </SidebarLink>
+          ))}
+        </SidebarLinks>
 
         <SidebarContent>
           {collapsed
@@ -106,30 +134,6 @@ class SidebarState extends React.Component {
             />
           }
         </SidebarContent>
-
-        <SidebarLinks>
-          {!collapsed &&
-            <SidebarLink
-              title={sections.title}
-              subtitle={showInfos ? 'hide balance' : 'show balance'}
-              active={showInfos}
-              onClick={() => this.setState({ showInfos: !showInfos })}
-            >
-              <SidebarSections sections={sections.data} />
-            </SidebarLink>
-          }
-
-          {items.map(item => (
-            <SidebarLink
-              key={item.value}
-              title={item.title}
-              active={item.value === this.state.active}
-              onClick={() => this.setState({ active: item.value })}
-              icon={item.icon}
-              collapsed={collapsed}
-            />
-          ))}
-        </SidebarLinks>
       </Sidebar>
     )
   }

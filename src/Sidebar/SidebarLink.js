@@ -13,77 +13,107 @@ const consumeTheme = ThemeConsumer('UISidebar')
 
 const Arrow = ({ active, icons }) => {
   const { collapse = null, expand = null } = icons
-
   return active ? collapse : expand
 }
 
-Arrow.propTypes = {
-  /**
-   * Indicates which icon should be rendered.
-   */
-  active: PropTypes.bool.isRequired,
-  /**
-   * The icon theme for this element.
-   */
-  icons: PropTypes.shape({
-    /**
-     * The icon that is shown when the SidebarLink is collapsed.
-     */
-    collapse: PropTypes.element,
-    /**
-     * The icon that is shown when the SidebarLink is expanded.
-     */
-    expand: PropTypes.element,
-  }),
-}
+class SidebarLink extends React.Component {
+  constructor () {
+    super()
 
-Arrow.defaultProps = {
-  icons: {},
-}
+    this.state = {
+      collapsed: true,
+      focused: false,
+    }
 
-const SidebarLink = ({
-  theme,
-  title,
-  subtitle,
-  children,
-  onClick,
-  active,
-  collapsed,
-  icon,
-  icons,
-}) => (
-  <li
-    className={classNames(theme.link, {
-      [theme.active]: active,
-    })}
-  >
-    <button
-      onClick={onClick}
-      role="link"
-    >
-      <div className={theme.title}>
-        <span className={theme.icon}>{icon}</span>
-        {!collapsed && title}
+    this.handleBlur = this.handleBlur.bind(this)
+    this.handleClick = this.handleClick.bind(this)
+    this.handleFocus = this.handleFocus.bind(this)
+  }
 
-        {(!collapsed && !subtitle && children) &&
-          <Arrow
-            active={active}
-            icons={icons}
-          />
+  handleClick () {
+    const { children, onClick } = this.props
+
+    if (children) {
+      this.setState({
+        collapsed: !this.state.collapsed,
+      })
+    }
+
+    if (!children) {
+      onClick()
+    }
+  }
+
+  handleBlur () {
+    this.setState({
+      focused: false,
+    }, () => (
+      this.props.onBlur && this.props.onBlur()
+    ))
+  }
+
+  handleFocus () {
+    this.setState({
+      focused: true,
+    }, () => (
+      this.props.onFocus && this.props.onFocus()
+    ))
+  }
+
+  render () {
+    const {
+      active,
+      children,
+      collapsed,
+      icon,
+      icons,
+      theme,
+      title,
+    } = this.props
+
+    const renderSubmenu = !this.state.collapsed && !collapsed && children
+
+    return (
+      <li
+        className={classNames(
+          theme.link,
+          {
+            [theme.active]: active,
+            [theme.focused]: this.state.focused,
+            [theme.open]: renderSubmenu,
+          }
+        )}
+      >
+        <button
+          onBlur={this.handleBlur}
+          onClick={this.handleClick}
+          onFocus={this.handleFocus}
+          role="link"
+        >
+          <div className={theme.title}>
+            <span className={theme.icon}>{icon}</span>
+            {!collapsed && title}
+
+            {(!collapsed && children) &&
+              <span className={theme.arrow}>
+                <Arrow
+                  active={!this.state.collapsed}
+                  icons={icons}
+                />
+              </span>
+            }
+          </div>
+        </button>
+
+        {renderSubmenu &&
+          <ul className={theme.submenu}>
+            {children}
+          </ul>
         }
-      </div>
-
-      {subtitle &&
-        <div className={theme.subtitle}>
-          <span>{subtitle}</span>
-          {children && <Arrow active={active} icons={icons} />}
-        </div>
-      }
-    </button>
-
-    {active && children}
-  </li>
-)
+      </li>
+    )
+  }
+}
 
 const hasNoArrows = anyPass([
   propSatisfies(isNil, 'collapse'),
@@ -107,25 +137,29 @@ SidebarLink.propTypes = {
    */
   theme: PropTypes.shape({
     /**
-     * The main class used to style the component.
-     */
-    link: PropTypes.string,
-    /**
      * The class used to style the component if it's active.
      */
     active: PropTypes.string,
     /**
-     * The class used to style the title.
+     * The class used to style the arrow component.
      */
-    title: PropTypes.string,
+    arrow: PropTypes.string,
     /**
-     * The class used to style the subtitle.
+     * The class used to style when links is focused.
      */
-    subtitle: PropTypes.string,
+    focused: PropTypes.string,
     /**
      * The class used to style the icon defined by the user.
      */
     icon: PropTypes.string,
+    /**
+     * The main class used to style the component.
+     */
+    link: PropTypes.string,
+    /**
+     * The class used to style the title.
+     */
+    title: PropTypes.string,
   }),
   /**
    * Indicates if the element is active or not.
@@ -153,14 +187,18 @@ SidebarLink.propTypes = {
    */
   icons: hasNecessaryIcons,
   /**
+   * Triggered by the link's blur event.
+   */
+  onBlur: PropTypes.func,
+  /**
    * The onClick callback. It receives 'events' as an argument.
    * @param {object} event - the default event object.
    */
   onClick: PropTypes.func,
   /**
-   * The subtitle of the component.
+   * Triggered by the link's focus event.
    */
-  subtitle: PropTypes.string,
+  onFocus: PropTypes.func,
   /**
    * The title of the component.
    */
@@ -174,8 +212,9 @@ SidebarLink.defaultProps = {
   collapsed: false,
   icon: null,
   icons: {},
+  onBlur: null,
   onClick: null,
-  subtitle: '',
+  onFocus: null,
 }
 
 export default consumeTheme(SidebarLink)

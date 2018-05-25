@@ -85,10 +85,14 @@ class SidebarState extends React.Component {
       <Sidebar collapsed={collapsed}>
         <SidebarHeader>
           {!collapsed &&
-            <img src="https://assets.pagar.me/site/general/logo-light-3812e7ea6b596bdcc8c041f0edc4ff15.png" alt="Pagar.me" />
+            <img
+              src="https://pagar.me/wp-content/uploads/2018/04/logo_pagarme.svg"
+              width={120}
+              alt="sidebar logo"
+            />
           }
           <button onClick={() => this.setState({ collapsed: !collapsed })}>
-            <IconMenu />
+            <IconMenu width="16" height="16" />
           </button>
         </SidebarHeader>
 

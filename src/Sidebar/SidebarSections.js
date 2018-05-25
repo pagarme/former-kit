@@ -30,7 +30,7 @@ class SidebarSections extends React.PureComponent {
               {section.actionTitle &&
                 <Button
                   onClick={section.action}
-                  fill="outline"
+                  size="tiny"
                 >
                   {section.actionTitle}
                 </Button>}
@@ -57,14 +57,6 @@ SidebarSections.propTypes = {
    */
   sections: PropTypes.arrayOf(PropTypes.shape({
     /**
-     * The title of the section.
-     */
-    title: PropTypes.string,
-    /**
-     * The value of the section.
-     */
-    value: PropTypes.element,
-    /**
      * The function that will be called when the section receives
      * a click. It receives the 'event' object as an argument.
      * @param {object} event - the default event object.
@@ -74,6 +66,14 @@ SidebarSections.propTypes = {
      * The title that describes the action.
      */
     actionTitle: PropTypes.string,
+    /**
+     * The title of the section.
+     */
+    title: PropTypes.string,
+    /**
+     * The value of the section.
+     */
+    value: PropTypes.element,
   })).isRequired,
 }
 
