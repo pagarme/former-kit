@@ -10,7 +10,7 @@ import Section from '../Section'
 storiesOf('Cards', module)
   .add('Default', () => (
     <div>
-      <Section title="Title, subtitle and content">
+      <Section title="Custom title, subtitle and content">
         <CardExamples.TitleText />
       </Section>
       <Section title="Title, subtitle, icon and content">

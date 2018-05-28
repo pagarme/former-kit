@@ -1078,7 +1078,7 @@ exports[`Storyshots Cards Default 1`] = `
     className=""
   >
     <h2>
-      Title, subtitle and content
+      Custom title, subtitle and content
     </h2>
     <div>
       <div
@@ -1091,7 +1091,10 @@ exports[`Storyshots Cards Default 1`] = `
             className="title"
           >
             <h2>
-              Lorem ipsum dolor sit amet
+              Lorem ipsum 
+              <small>
+                dolor sit amet
+              </small>
             </h2>
             <h3>
               Lorem ipsum
@@ -1171,7 +1174,10 @@ exports[`Storyshots Cards Default 1`] = `
                 width={16}
               />
               <span>
-                Lorem ipsum
+                <strong>
+                  Lorem ipsum
+                </strong>
+                 dolor sit amet
               </span>
             </h3>
           </div>

@@ -22,7 +22,11 @@ const TitleText = () => (
   <div className={style.showcase}>
     <Card>
       <CardTitle
-        title="Lorem ipsum dolor sit amet"
+        title={
+          <h2>
+            Lorem ipsum <small>dolor sit amet</small>
+          </h2>
+        }
         subtitle="Lorem ipsum"
       />
       <CardContent>
@@ -66,7 +70,7 @@ const TitleCustomSubtitle = () => (
         subtitle={(
           <h3>
             <IconChart width={16} height={16} />
-            <span>Lorem ipsum</span>
+            <span><strong>Lorem ipsum</strong> dolor sit amet</span>
           </h3>
         )}
       />
