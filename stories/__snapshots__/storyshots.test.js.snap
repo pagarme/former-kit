@@ -18574,29 +18574,41 @@ exports[`Storyshots Steps Default 1`] = `
         <span
           className="indicator"
         >
-          1
+          <span
+            className="number"
+          >
+            1
+          </span>
         </span>
-        Success
+        Step 1
       </div>
       <div
-        className="step null"
+        className="step pending"
       >
         <span
           className="indicator"
         >
-          2
+          <span
+            className="number"
+          >
+            2
+          </span>
         </span>
-        Current
+        Step 2
       </div>
       <div
-        className="step null"
+        className="step pending"
       >
         <span
           className="indicator"
         >
-          3
+          <span
+            className="number"
+          >
+            3
+          </span>
         </span>
-        Pending
+        Step 3
       </div>
     </div>
     <h2>
@@ -18616,7 +18628,7 @@ exports[`Storyshots Steps Default 1`] = `
             width={12}
           />
         </span>
-        Success
+        Step 1
       </div>
       <div
         className="step current"
@@ -18624,19 +18636,27 @@ exports[`Storyshots Steps Default 1`] = `
         <span
           className="indicator"
         >
-          2
+          <span
+            className="number"
+          >
+            2
+          </span>
         </span>
-        Current
+        Step 2
       </div>
       <div
-        className="step null"
+        className="step pending"
       >
         <span
           className="indicator"
         >
-          3
+          <span
+            className="number"
+          >
+            3
+          </span>
         </span>
-        Pending
+        Step 3
       </div>
     </div>
     <h2>
@@ -18656,7 +18676,7 @@ exports[`Storyshots Steps Default 1`] = `
             width={12}
           />
         </span>
-        Success
+        Step 1
       </div>
       <div
         className="step success"
@@ -18669,7 +18689,7 @@ exports[`Storyshots Steps Default 1`] = `
             width={12}
           />
         </span>
-        Current
+        Step 2
       </div>
       <div
         className="step current"
@@ -18677,9 +18697,159 @@ exports[`Storyshots Steps Default 1`] = `
         <span
           className="indicator"
         >
-          3
+          <span
+            className="number"
+          >
+            3
+          </span>
         </span>
-        Pending
+        Step 3
+      </div>
+    </div>
+    <h2>
+      Error
+    </h2>
+    <div
+      className="steps"
+    >
+      <div
+        className="step success"
+      >
+        <span
+          className="indicator"
+        >
+          <Check24.svg
+            height={12}
+            width={12}
+          />
+        </span>
+        Step 1
+      </div>
+      <div
+        className="step success"
+      >
+        <span
+          className="indicator"
+        >
+          <Check24.svg
+            height={12}
+            width={12}
+          />
+        </span>
+        Step 2
+      </div>
+      <div
+        className="step error"
+      >
+        <span
+          className="indicator"
+        >
+          <ClearClose24.svg
+            height={12}
+            width={12}
+          />
+        </span>
+        Step 3
+      </div>
+    </div>
+    <h2>
+      Inside a card
+    </h2>
+    <div
+      className="card"
+    >
+      <div
+        className="steps"
+      >
+        <div
+          className="step success"
+        >
+          <span
+            className="indicator"
+          >
+            <Check24.svg
+              height={12}
+              width={12}
+            />
+          </span>
+          Step 1
+        </div>
+        <div
+          className="step success"
+        >
+          <span
+            className="indicator"
+          >
+            <Check24.svg
+              height={12}
+              width={12}
+            />
+          </span>
+          Step 2
+        </div>
+        <div
+          className="step error"
+        >
+          <span
+            className="indicator"
+          >
+            <ClearClose24.svg
+              height={12}
+              width={12}
+            />
+          </span>
+          Step 3
+        </div>
+      </div>
+    </div>
+    <h2>
+      Inside a card section
+    </h2>
+    <div
+      className="section"
+    >
+      <div
+        className="steps"
+      >
+        <div
+          className="step success"
+        >
+          <span
+            className="indicator"
+          >
+            <Check24.svg
+              height={12}
+              width={12}
+            />
+          </span>
+          Step 1
+        </div>
+        <div
+          className="step success"
+        >
+          <span
+            className="indicator"
+          >
+            <Check24.svg
+              height={12}
+              width={12}
+            />
+          </span>
+          Step 2
+        </div>
+        <div
+          className="step error"
+        >
+          <span
+            className="indicator"
+          >
+            <ClearClose24.svg
+              height={12}
+              width={12}
+            />
+          </span>
+          Step 3
+        </div>
       </div>
     </div>
   </div>
