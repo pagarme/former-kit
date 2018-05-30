@@ -23,7 +23,9 @@ exports[`Storyshots Alerts Default 1`] = `
           />
         </div>
         <div
+          aria-live="polite"
           className="content"
+          role="status"
         >
           <p>
             <strong>
@@ -54,7 +56,9 @@ exports[`Storyshots Alerts Default 1`] = `
           />
         </div>
         <div
+          aria-live="polite"
           className="content"
+          role="status"
         >
           <p>
             <strong>
@@ -85,7 +89,9 @@ exports[`Storyshots Alerts Default 1`] = `
           />
         </div>
         <div
+          aria-live="polite"
           className="content"
+          role="status"
         >
           <p>
             <strong>
@@ -116,7 +122,9 @@ exports[`Storyshots Alerts Default 1`] = `
           />
         </div>
         <div
+          aria-live="polite"
           className="content"
+          role="status"
         >
           <p>
             <strong>
@@ -147,7 +155,9 @@ exports[`Storyshots Alerts Default 1`] = `
           />
         </div>
         <div
+          aria-live="polite"
           className="content"
+          role="status"
         >
           <p>
             <strong>

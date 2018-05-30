@@ -17,12 +17,12 @@ const consumeTheme = ThemeConsumer('UIAlert')
  * The Alert component is used to create alerts of all kinds, such as `errors`, `warnings`, etc.
  */
 const Alert = ({
+  action,
   children,
   icon,
+  onDismiss,
   theme,
   type,
-  action,
-  onDismiss,
 }) => (
   <div className={theme.alert}>
     {!isNil(icon) && (
@@ -30,7 +30,11 @@ const Alert = ({
         {icon}
       </div>
     )}
-    <div className={theme.content}>
+    <div
+      aria-live="polite"
+      className={theme.content}
+      role="status"
+    >
       {children}
       {(!isNil(action) && !isNil(onDismiss)) && (
         <Button
@@ -46,6 +50,22 @@ const Alert = ({
 
 Alert.propTypes = {
   /**
+   * The action text.
+   */
+  action: string,
+  /**
+   * The children element. It should contain a React element.
+   */
+  children: element.isRequired,
+  /**
+   * The alert icon. It must contain a React element.
+   */
+  icon: element,
+  /**
+   * The action callback.
+   */
+  onDismiss: func,
+  /**
    * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: shape({
@@ -58,37 +78,21 @@ Alert.propTypes = {
     success: string,
   }),
   /**
-   * The alert icon. It must contain a React element.
-   */
-  icon: element,
-  /**
    * The types the alert can have. The background color
    * of the icon box changes based on the class related to the defined type.
    */
   type: oneOf([
-    'warning',
-    'info',
     'error',
+    'info',
     'success',
+    'warning',
   ]).isRequired,
-  /**
-   * The children element. It should contain a React element.
-   */
-  children: element.isRequired,
-  /**
-   * The action text.
-   */
-  action: string,
-  /**
-   * The action callback.
-   */
-  onDismiss: func,
 }
 
 Alert.defaultProps = {
   action: null,
-  onDismiss: null,
   icon: null,
+  onDismiss: null,
   theme: {},
 }
 
