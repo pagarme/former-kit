@@ -18619,6 +18619,61 @@ exports[`Storyshots SegmentedSwitch Default 1`] = `
       </div>
     </div>
   </section>
+  <section
+    className=""
+  >
+    <h2>
+      With icons
+    </h2>
+    <div>
+      <div
+        className="segmentedSwitch"
+      >
+        <label
+          className="item"
+          htmlFor="segmented-switch-shortid-mock-table-chart-table"
+        >
+          <input
+            checked={true}
+            id="segmented-switch-shortid-mock-table-chart-table"
+            name="segmented-switch-shortid-mock"
+            onChange={[Function]}
+            type="radio"
+            value="table"
+          />
+          <span
+            className="label"
+          >
+            <Menu32.svg
+              height={16}
+              width={16}
+            />
+          </span>
+        </label>
+        <label
+          className="item"
+          htmlFor="segmented-switch-shortid-mock-table-chart-chart"
+        >
+          <input
+            checked={false}
+            id="segmented-switch-shortid-mock-table-chart-chart"
+            name="segmented-switch-shortid-mock"
+            onChange={[Function]}
+            type="radio"
+            value="chart"
+          />
+          <span
+            className="label"
+          >
+            <TrendingUp32.svg
+              height={16}
+              width={16}
+            />
+          </span>
+        </label>
+      </div>
+    </div>
+  </section>
 </div>
 `;
 

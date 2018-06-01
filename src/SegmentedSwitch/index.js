@@ -1,9 +1,10 @@
 import React from 'react'
 import {
   arrayOf,
-  string,
   func,
+  node,
   shape,
+  string,
 } from 'prop-types'
 import shortid from 'shortid'
 
@@ -77,7 +78,7 @@ SegmentedSwitch.propTypes = {
    * The list of options that will be rendered.
    */
   options: arrayOf(shape({
-    title: string,
+    title: node,
     value: string,
   })).isRequired,
   /**

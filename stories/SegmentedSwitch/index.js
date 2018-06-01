@@ -1,6 +1,9 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
+import IconTable from 'emblematic-icons/svg/Menu32.svg'
+import IconChart from 'emblematic-icons/svg/TrendingUp32.svg'
+
 import SegmentedSwitch from '../../src/SegmentedSwitch'
 import Section from '../Section'
 
@@ -78,6 +81,22 @@ storiesOf('SegmentedSwitch', module)
             },
           ]}
           value="super-test"
+        />
+      </Section>
+      <Section title="With icons">
+        <SegmentedSwitchState
+          name="table-chart"
+          options={[
+            {
+              title: <IconTable width={16} height={16} />,
+              value: 'table',
+            },
+            {
+              title: <IconChart width={16} height={16} />,
+              value: 'chart',
+            },
+          ]}
+          value="table"
         />
       </Section>
     </div>
