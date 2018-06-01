@@ -26,6 +26,7 @@ module.exports = {
         '../src/DateSelector/index.js',
         '../src/Dropdown/Dropdown.js',
         '../src/Footer/index.js',
+        '../src/Image/index.js',
         '../src/Input/Input.js',
         '../src/Layout/index.js',
         '../src/Legend/index.js',

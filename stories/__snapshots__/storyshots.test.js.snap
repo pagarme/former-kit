@@ -8968,6 +8968,54 @@ exports[`Storyshots Header Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Image default 1`] = `
+Array [
+  <section
+    className=""
+  >
+    <h2>
+      With valid source
+    </h2>
+    <div>
+      <img
+        alt="Pagar.me"
+        onError={[Function]}
+        src="https://pagar.me/wp-content/uploads/2018/04/logo_pagarme.svg"
+        width={200}
+      />
+    </div>
+  </section>,
+  <section
+    className=""
+  >
+    <h2>
+      With invalid source
+    </h2>
+    <div>
+      <img
+        alt="Pagar.me"
+        onError={[Function]}
+        src="aaa"
+      />
+    </div>
+  </section>,
+  <section
+    className=""
+  >
+    <h2>
+      With invalid source and element fallback
+    </h2>
+    <div>
+      <img
+        alt="Pagar.me"
+        onError={[Function]}
+        src="aaa"
+      />
+    </div>
+  </section>,
+]
+`;
+
 exports[`Storyshots Inputs Default 1`] = `
 <div
   className="typography"
