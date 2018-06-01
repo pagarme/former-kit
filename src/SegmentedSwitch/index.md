@@ -21,8 +21,8 @@ class SegmentedSwitchState extends React.Component {
     })
   }
 
-  handleChange (value) {
-    this.setState({ selected: value })
+  handleChange (selected) {
+    this.setState({ selected })
   }
 
   render () {
