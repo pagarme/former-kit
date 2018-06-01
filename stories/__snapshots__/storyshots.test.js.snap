@@ -171,7 +171,9 @@ exports[`Storyshots Alerts Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            dismiss
+            <span>
+              dismiss
+            </span>
           </button>
         </div>
       </div>
@@ -253,7 +255,9 @@ exports[`Storyshots Buttons Default 1`] = `
           onClick={null}
           type="button"
         >
-          Tiny
+          <span>
+            Tiny
+          </span>
         </button>
         <button
           className="button flat normalRelevance tiny"
@@ -265,7 +269,9 @@ exports[`Storyshots Buttons Default 1`] = `
             height={12}
             width={12}
           />
-          Tiny
+          <span>
+            Tiny
+          </span>
         </button>
         <button
           className="button flat normalRelevance tiny"
@@ -273,7 +279,9 @@ exports[`Storyshots Buttons Default 1`] = `
           onClick={null}
           type="button"
         >
-          Tiny
+          <span>
+            Tiny
+          </span>
           <Add24.svg
             height={12}
             width={12}
@@ -289,7 +297,9 @@ exports[`Storyshots Buttons Default 1`] = `
           onClick={null}
           type="button"
         >
-          Default
+          <span>
+            Default
+          </span>
         </button>
         <button
           className="button flat normalRelevance default"
@@ -301,7 +311,9 @@ exports[`Storyshots Buttons Default 1`] = `
             height={12}
             width={12}
           />
-          Default
+          <span>
+            Default
+          </span>
         </button>
         <button
           className="button flat normalRelevance default"
@@ -309,7 +321,9 @@ exports[`Storyshots Buttons Default 1`] = `
           onClick={null}
           type="button"
         >
-          Default
+          <span>
+            Default
+          </span>
           <Add24.svg
             height={12}
             width={12}
@@ -325,7 +339,9 @@ exports[`Storyshots Buttons Default 1`] = `
           onClick={null}
           type="button"
         >
-          Huge
+          <span>
+            Huge
+          </span>
         </button>
         <button
           className="button flat normalRelevance huge"
@@ -337,7 +353,9 @@ exports[`Storyshots Buttons Default 1`] = `
             height={12}
             width={12}
           />
-          Huge
+          <span>
+            Huge
+          </span>
         </button>
         <button
           className="button flat normalRelevance huge"
@@ -345,7 +363,9 @@ exports[`Storyshots Buttons Default 1`] = `
           onClick={null}
           type="button"
         >
-          Huge
+          <span>
+            Huge
+          </span>
           <Add24.svg
             height={12}
             width={12}
@@ -370,7 +390,9 @@ exports[`Storyshots Buttons Default 1`] = `
           onClick={null}
           type="button"
         >
-          Flat
+          <span>
+            Flat
+          </span>
         </button>
         <button
           className="button flat normalRelevance default"
@@ -382,7 +404,9 @@ exports[`Storyshots Buttons Default 1`] = `
             height={12}
             width={12}
           />
-          Flat
+          <span>
+            Flat
+          </span>
         </button>
         <button
           className="button flat normalRelevance default"
@@ -390,7 +414,9 @@ exports[`Storyshots Buttons Default 1`] = `
           onClick={null}
           type="button"
         >
-          Flat
+          <span>
+            Flat
+          </span>
           <Add24.svg
             height={12}
             width={12}
@@ -406,7 +432,9 @@ exports[`Storyshots Buttons Default 1`] = `
           onClick={null}
           type="button"
         >
-          Gradient
+          <span>
+            Gradient
+          </span>
         </button>
         <button
           className="button gradient normalRelevance default"
@@ -418,7 +446,9 @@ exports[`Storyshots Buttons Default 1`] = `
             height={12}
             width={12}
           />
-          Gradient
+          <span>
+            Gradient
+          </span>
         </button>
         <button
           className="button gradient normalRelevance default"
@@ -426,7 +456,9 @@ exports[`Storyshots Buttons Default 1`] = `
           onClick={null}
           type="button"
         >
-          Gradient
+          <span>
+            Gradient
+          </span>
           <Add24.svg
             height={12}
             width={12}
@@ -442,7 +474,9 @@ exports[`Storyshots Buttons Default 1`] = `
           onClick={null}
           type="button"
         >
-          Outline
+          <span>
+            Outline
+          </span>
         </button>
         <button
           className="button outline normalRelevance default"
@@ -454,7 +488,9 @@ exports[`Storyshots Buttons Default 1`] = `
             height={12}
             width={12}
           />
-          Outline
+          <span>
+            Outline
+          </span>
         </button>
         <button
           className="button outline normalRelevance default"
@@ -462,7 +498,9 @@ exports[`Storyshots Buttons Default 1`] = `
           onClick={null}
           type="button"
         >
-          Outline
+          <span>
+            Outline
+          </span>
           <Add24.svg
             height={12}
             width={12}
@@ -478,7 +516,9 @@ exports[`Storyshots Buttons Default 1`] = `
           onClick={null}
           type="button"
         >
-          Clean
+          <span>
+            Clean
+          </span>
         </button>
         <button
           className="button clean normalRelevance default"
@@ -490,7 +530,9 @@ exports[`Storyshots Buttons Default 1`] = `
             height={12}
             width={12}
           />
-          Clean
+          <span>
+            Clean
+          </span>
         </button>
         <button
           className="button clean normalRelevance default"
@@ -498,7 +540,9 @@ exports[`Storyshots Buttons Default 1`] = `
           onClick={null}
           type="button"
         >
-          Clean
+          <span>
+            Clean
+          </span>
           <Add24.svg
             height={12}
             width={12}
@@ -523,7 +567,9 @@ exports[`Storyshots Buttons Default 1`] = `
           onClick={null}
           type="button"
         >
-          Flat
+          <span>
+            Flat
+          </span>
         </button>
         <button
           className="button flat highRelevance default"
@@ -535,7 +581,9 @@ exports[`Storyshots Buttons Default 1`] = `
             height={12}
             width={12}
           />
-          Flat
+          <span>
+            Flat
+          </span>
         </button>
         <button
           className="button flat highRelevance default"
@@ -543,7 +591,9 @@ exports[`Storyshots Buttons Default 1`] = `
           onClick={null}
           type="button"
         >
-          Flat
+          <span>
+            Flat
+          </span>
           <Add24.svg
             height={12}
             width={12}
@@ -559,7 +609,9 @@ exports[`Storyshots Buttons Default 1`] = `
           onClick={null}
           type="button"
         >
-          Gradient
+          <span>
+            Gradient
+          </span>
         </button>
         <button
           className="button gradient highRelevance default"
@@ -571,7 +623,9 @@ exports[`Storyshots Buttons Default 1`] = `
             height={12}
             width={12}
           />
-          Gradient
+          <span>
+            Gradient
+          </span>
         </button>
         <button
           className="button gradient highRelevance default"
@@ -579,7 +633,9 @@ exports[`Storyshots Buttons Default 1`] = `
           onClick={null}
           type="button"
         >
-          Gradient
+          <span>
+            Gradient
+          </span>
           <Add24.svg
             height={12}
             width={12}
@@ -595,7 +651,9 @@ exports[`Storyshots Buttons Default 1`] = `
           onClick={null}
           type="button"
         >
-          Outline
+          <span>
+            Outline
+          </span>
         </button>
         <button
           className="button outline highRelevance default"
@@ -607,7 +665,9 @@ exports[`Storyshots Buttons Default 1`] = `
             height={12}
             width={12}
           />
-          Outline
+          <span>
+            Outline
+          </span>
         </button>
         <button
           className="button outline highRelevance default"
@@ -615,7 +675,9 @@ exports[`Storyshots Buttons Default 1`] = `
           onClick={null}
           type="button"
         >
-          Outline
+          <span>
+            Outline
+          </span>
           <Add24.svg
             height={12}
             width={12}
@@ -631,7 +693,9 @@ exports[`Storyshots Buttons Default 1`] = `
           onClick={null}
           type="button"
         >
-          Clean
+          <span>
+            Clean
+          </span>
         </button>
         <button
           className="button clean highRelevance default"
@@ -643,7 +707,9 @@ exports[`Storyshots Buttons Default 1`] = `
             height={12}
             width={12}
           />
-          Clean
+          <span>
+            Clean
+          </span>
         </button>
         <button
           className="button clean highRelevance default"
@@ -651,7 +717,9 @@ exports[`Storyshots Buttons Default 1`] = `
           onClick={null}
           type="button"
         >
-          Clean
+          <span>
+            Clean
+          </span>
           <Add24.svg
             height={12}
             width={12}
@@ -676,7 +744,9 @@ exports[`Storyshots Buttons Default 1`] = `
           onClick={null}
           type="button"
         >
-          Flat
+          <span>
+            Flat
+          </span>
         </button>
         <button
           className="button flat lowRelevance default"
@@ -688,7 +758,9 @@ exports[`Storyshots Buttons Default 1`] = `
             height={12}
             width={12}
           />
-          Flat
+          <span>
+            Flat
+          </span>
         </button>
         <button
           className="button flat lowRelevance default"
@@ -696,7 +768,9 @@ exports[`Storyshots Buttons Default 1`] = `
           onClick={null}
           type="button"
         >
-          Flat
+          <span>
+            Flat
+          </span>
           <Add24.svg
             height={12}
             width={12}
@@ -712,7 +786,9 @@ exports[`Storyshots Buttons Default 1`] = `
           onClick={null}
           type="button"
         >
-          Gradient
+          <span>
+            Gradient
+          </span>
         </button>
         <button
           className="button gradient lowRelevance default"
@@ -724,7 +800,9 @@ exports[`Storyshots Buttons Default 1`] = `
             height={12}
             width={12}
           />
-          Gradient
+          <span>
+            Gradient
+          </span>
         </button>
         <button
           className="button gradient lowRelevance default"
@@ -732,7 +810,9 @@ exports[`Storyshots Buttons Default 1`] = `
           onClick={null}
           type="button"
         >
-          Gradient
+          <span>
+            Gradient
+          </span>
           <Add24.svg
             height={12}
             width={12}
@@ -748,7 +828,9 @@ exports[`Storyshots Buttons Default 1`] = `
           onClick={null}
           type="button"
         >
-          Outline
+          <span>
+            Outline
+          </span>
         </button>
         <button
           className="button outline lowRelevance default"
@@ -760,7 +842,9 @@ exports[`Storyshots Buttons Default 1`] = `
             height={12}
             width={12}
           />
-          Outline
+          <span>
+            Outline
+          </span>
         </button>
         <button
           className="button outline lowRelevance default"
@@ -768,7 +852,9 @@ exports[`Storyshots Buttons Default 1`] = `
           onClick={null}
           type="button"
         >
-          Outline
+          <span>
+            Outline
+          </span>
           <Add24.svg
             height={12}
             width={12}
@@ -784,7 +870,9 @@ exports[`Storyshots Buttons Default 1`] = `
           onClick={null}
           type="button"
         >
-          Clean
+          <span>
+            Clean
+          </span>
         </button>
         <button
           className="button clean lowRelevance default"
@@ -796,7 +884,9 @@ exports[`Storyshots Buttons Default 1`] = `
             height={12}
             width={12}
           />
-          Clean
+          <span>
+            Clean
+          </span>
         </button>
         <button
           className="button clean lowRelevance default"
@@ -804,7 +894,9 @@ exports[`Storyshots Buttons Default 1`] = `
           onClick={null}
           type="button"
         >
-          Clean
+          <span>
+            Clean
+          </span>
           <Add24.svg
             height={12}
             width={12}
@@ -890,7 +982,9 @@ exports[`Storyshots Buttons Default 1`] = `
           onClick={null}
           type="button"
         >
-          Flat
+          <span>
+            Flat
+          </span>
         </button>
         <button
           className="button flat normalRelevance default"
@@ -898,7 +992,9 @@ exports[`Storyshots Buttons Default 1`] = `
           onClick={null}
           type="button"
         >
-          Flat
+          <span>
+            Flat
+          </span>
           <Add24.svg
             height={12}
             width={12}
@@ -914,7 +1010,9 @@ exports[`Storyshots Buttons Default 1`] = `
           onClick={null}
           type="button"
         >
-          Gradient
+          <span>
+            Gradient
+          </span>
         </button>
         <button
           className="button gradient normalRelevance default"
@@ -926,7 +1024,9 @@ exports[`Storyshots Buttons Default 1`] = `
             height={12}
             width={12}
           />
-          Gradient
+          <span>
+            Gradient
+          </span>
         </button>
         <button
           className="button gradient normalRelevance default"
@@ -934,7 +1034,9 @@ exports[`Storyshots Buttons Default 1`] = `
           onClick={null}
           type="button"
         >
-          Gradient
+          <span>
+            Gradient
+          </span>
           <Add24.svg
             height={12}
             width={12}
@@ -950,7 +1052,9 @@ exports[`Storyshots Buttons Default 1`] = `
           onClick={null}
           type="button"
         >
-          Outline
+          <span>
+            Outline
+          </span>
         </button>
         <button
           className="button outline normalRelevance default"
@@ -962,7 +1066,9 @@ exports[`Storyshots Buttons Default 1`] = `
             height={12}
             width={12}
           />
-          Outline
+          <span>
+            Outline
+          </span>
         </button>
         <button
           className="button outline normalRelevance default"
@@ -970,7 +1076,9 @@ exports[`Storyshots Buttons Default 1`] = `
           onClick={null}
           type="button"
         >
-          Outline
+          <span>
+            Outline
+          </span>
           <Add24.svg
             height={12}
             width={12}
@@ -986,7 +1094,9 @@ exports[`Storyshots Buttons Default 1`] = `
           onClick={null}
           type="button"
         >
-          Clean
+          <span>
+            Clean
+          </span>
         </button>
         <button
           className="button clean normalRelevance default"
@@ -998,7 +1108,9 @@ exports[`Storyshots Buttons Default 1`] = `
             height={12}
             width={12}
           />
-          Clean
+          <span>
+            Clean
+          </span>
         </button>
         <button
           className="button clean normalRelevance default"
@@ -1006,7 +1118,9 @@ exports[`Storyshots Buttons Default 1`] = `
           onClick={null}
           type="button"
         >
-          Clean
+          <span>
+            Clean
+          </span>
           <Add24.svg
             height={12}
             width={12}
@@ -1227,7 +1341,9 @@ exports[`Storyshots Cards Default 1`] = `
               onClick={null}
               type="button"
             >
-              Action
+              <span>
+                Action
+              </span>
             </button>
             <button
               className="button flat normalRelevance default"
@@ -1235,7 +1351,9 @@ exports[`Storyshots Cards Default 1`] = `
               onClick={null}
               type="button"
             >
-              Action
+              <span>
+                Action
+              </span>
             </button>
             <button
               className="button flat normalRelevance default"
@@ -1243,7 +1361,9 @@ exports[`Storyshots Cards Default 1`] = `
               onClick={null}
               type="button"
             >
-              Action
+              <span>
+                Action
+              </span>
             </button>
             <button
               className="button flat normalRelevance default"
@@ -1251,7 +1371,9 @@ exports[`Storyshots Cards Default 1`] = `
               onClick={null}
               type="button"
             >
-              Action
+              <span>
+                Action
+              </span>
             </button>
           </div>
         </div>
@@ -1303,7 +1425,9 @@ exports[`Storyshots Cards Default 1`] = `
               onClick={null}
               type="button"
             >
-              Action
+              <span>
+                Action
+              </span>
             </button>
             <button
               className="button flat normalRelevance default"
@@ -1311,7 +1435,9 @@ exports[`Storyshots Cards Default 1`] = `
               onClick={null}
               type="button"
             >
-              Action
+              <span>
+                Action
+              </span>
             </button>
             <button
               className="button flat normalRelevance default"
@@ -1319,7 +1445,9 @@ exports[`Storyshots Cards Default 1`] = `
               onClick={null}
               type="button"
             >
-              Action
+              <span>
+                Action
+              </span>
             </button>
             <button
               className="button flat normalRelevance default"
@@ -1327,7 +1455,9 @@ exports[`Storyshots Cards Default 1`] = `
               onClick={null}
               type="button"
             >
-              Action
+              <span>
+                Action
+              </span>
             </button>
           </div>
         </div>
@@ -1375,7 +1505,9 @@ exports[`Storyshots Cards Default 1`] = `
               onClick={null}
               type="button"
             >
-              Action
+              <span>
+                Action
+              </span>
             </button>
             <button
               className="button flat normalRelevance default"
@@ -1383,7 +1515,9 @@ exports[`Storyshots Cards Default 1`] = `
               onClick={null}
               type="button"
             >
-              Action
+              <span>
+                Action
+              </span>
             </button>
             <button
               className="button flat normalRelevance default"
@@ -1391,7 +1525,9 @@ exports[`Storyshots Cards Default 1`] = `
               onClick={null}
               type="button"
             >
-              Action
+              <span>
+                Action
+              </span>
             </button>
             <button
               className="button flat normalRelevance default"
@@ -1399,7 +1535,9 @@ exports[`Storyshots Cards Default 1`] = `
               onClick={null}
               type="button"
             >
-              Action
+              <span>
+                Action
+              </span>
             </button>
           </div>
         </div>
@@ -2604,7 +2742,9 @@ exports[`Storyshots DateInput All styles 1`] = `
           onClick={[Function]}
           type="button"
         >
-          Reset dates
+          <span>
+            Reset dates
+          </span>
         </button>
       </div>
     </div>
@@ -2662,7 +2802,9 @@ exports[`Storyshots DateInput All styles 1`] = `
           onClick={[Function]}
           type="button"
         >
-          Reset dates
+          <span>
+            Reset dates
+          </span>
         </button>
       </div>
     </div>
@@ -2747,7 +2889,9 @@ exports[`Storyshots DateInput All styles 1`] = `
           onClick={[Function]}
           type="button"
         >
-          Reset dates
+          <span>
+            Reset dates
+          </span>
         </button>
       </div>
     </div>
@@ -2832,7 +2976,9 @@ exports[`Storyshots DateInput All styles 1`] = `
           onClick={[Function]}
           type="button"
         >
-          Reset dates
+          <span>
+            Reset dates
+          </span>
         </button>
       </div>
     </div>
@@ -6078,7 +6224,9 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
             onClick={[Function]}
             type="reset"
           >
-            cancel
+            <span>
+              cancel
+            </span>
           </button>
           <span
             className="separator"
@@ -6089,7 +6237,9 @@ exports[`Storyshots DateSelector All types with defaultTheme 1`] = `
             onClick={[Function]}
             type="button"
           >
-            confirm period
+            <span>
+              confirm period
+            </span>
           </button>
         </div>
       </div>
@@ -10701,7 +10851,9 @@ exports[`Storyshots Landing Pagar.me login 1`] = `
                 onClick={null}
                 type="submit"
               >
-                Login
+                <span>
+                  Login
+                </span>
               </button>
             </div>
             <a
@@ -10839,7 +10991,9 @@ exports[`Storyshots Landing Pagar.me password recovery 1`] = `
                   onClick={null}
                   type="submit"
                 >
-                  Enviar
+                  <span>
+                    Enviar
+                  </span>
                 </button>
               </div>
               <a
@@ -10955,7 +11109,9 @@ exports[`Storyshots Landing Pagar.me password recovery confirmation 1`] = `
                   onClick={[Function]}
                   type="button"
                 >
-                  Voltar para o login
+                  <span>
+                    Voltar para o login
+                  </span>
                 </button>
               </div>
             </div>
@@ -11175,7 +11331,9 @@ exports[`Storyshots Landing Pagar.me sign in 1`] = `
                 onClick={null}
                 type="submit"
               >
-                Cadastrar
+                <span>
+                  Cadastrar
+                </span>
               </button>
             </div>
           </div>
@@ -11277,7 +11435,9 @@ exports[`Storyshots Landing Pagar.me sign in confirmation 1`] = `
                   onClick={[Function]}
                   type="button"
                 >
-                  Voltar para o cadastro
+                  <span>
+                    Voltar para o cadastro
+                  </span>
                 </button>
               </div>
             </div>
@@ -11464,7 +11624,9 @@ exports[`Storyshots Landing Pagar.me two factor login 1`] = `
                 onClick={null}
                 type="submit"
               >
-                Login
+                <span>
+                  Login
+                </span>
               </button>
             </div>
             <a
@@ -15182,7 +15344,9 @@ exports[`Storyshots Modal Default 1`] = `
           height={16}
           width={16}
         />
-        Add Photo
+        <span>
+          Add Photo
+        </span>
       </button>
       <div
         className="modal"
@@ -15230,7 +15394,9 @@ exports[`Storyshots Modal Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            Cancel
+            <span>
+              Cancel
+            </span>
           </button>
           <button
             className="button flat normalRelevance default"
@@ -15238,7 +15404,9 @@ exports[`Storyshots Modal Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            Confirm
+            <span>
+              Confirm
+            </span>
           </button>
         </div>
       </div>
@@ -15889,7 +16057,9 @@ exports[`Storyshots Popover Default 1`] = `
         onClick={null}
         type="button"
       >
-        click me
+        <span>
+          click me
+        </span>
       </button>
     </div>
   </div>
@@ -15924,7 +16094,9 @@ exports[`Storyshots Popover Positions 1`] = `
               onClick={null}
               type="button"
             >
-              click me
+              <span>
+                click me
+              </span>
             </button>
           </div>
           <h3>
@@ -15940,7 +16112,9 @@ exports[`Storyshots Popover Positions 1`] = `
               onClick={null}
               type="button"
             >
-              click me
+              <span>
+                click me
+              </span>
             </button>
           </div>
           <h3>
@@ -15956,7 +16130,9 @@ exports[`Storyshots Popover Positions 1`] = `
               onClick={null}
               type="button"
             >
-              click me
+              <span>
+                click me
+              </span>
             </button>
           </div>
           <h3>
@@ -15972,7 +16148,9 @@ exports[`Storyshots Popover Positions 1`] = `
               onClick={null}
               type="button"
             >
-              click me
+              <span>
+                click me
+              </span>
             </button>
           </div>
         </div>
@@ -15992,7 +16170,9 @@ exports[`Storyshots Popover Positions 1`] = `
               onClick={null}
               type="button"
             >
-              click me
+              <span>
+                click me
+              </span>
             </button>
           </div>
           <h3>
@@ -16008,7 +16188,9 @@ exports[`Storyshots Popover Positions 1`] = `
               onClick={null}
               type="button"
             >
-              click me
+              <span>
+                click me
+              </span>
             </button>
           </div>
           <h3>
@@ -16024,7 +16206,9 @@ exports[`Storyshots Popover Positions 1`] = `
               onClick={null}
               type="button"
             >
-              click me
+              <span>
+                click me
+              </span>
             </button>
           </div>
           <h3>
@@ -16040,7 +16224,9 @@ exports[`Storyshots Popover Positions 1`] = `
               onClick={null}
               type="button"
             >
-              click me
+              <span>
+                click me
+              </span>
             </button>
           </div>
         </div>
@@ -16060,7 +16246,9 @@ exports[`Storyshots Popover Positions 1`] = `
               onClick={null}
               type="button"
             >
-              click me
+              <span>
+                click me
+              </span>
             </button>
           </div>
           <h3>
@@ -16076,7 +16264,9 @@ exports[`Storyshots Popover Positions 1`] = `
               onClick={null}
               type="button"
             >
-              click me
+              <span>
+                click me
+              </span>
             </button>
           </div>
           <h3>
@@ -16092,7 +16282,9 @@ exports[`Storyshots Popover Positions 1`] = `
               onClick={null}
               type="button"
             >
-              click me
+              <span>
+                click me
+              </span>
             </button>
           </div>
           <h3>
@@ -16108,7 +16300,9 @@ exports[`Storyshots Popover Positions 1`] = `
               onClick={null}
               type="button"
             >
-              click me
+              <span>
+                click me
+              </span>
             </button>
           </div>
         </div>
@@ -16137,7 +16331,9 @@ exports[`Storyshots Popover Visible 1`] = `
           onClick={null}
           type="button"
         >
-          Right start
+          <span>
+            Right start
+          </span>
         </button>
         <div
           className="popover null rightStart"
@@ -16182,7 +16378,9 @@ exports[`Storyshots Popover Visible 1`] = `
           onClick={null}
           type="button"
         >
-          Right middle
+          <span>
+            Right middle
+          </span>
         </button>
         <div
           className="popover null rightMiddle"
@@ -16227,7 +16425,9 @@ exports[`Storyshots Popover Visible 1`] = `
           onClick={null}
           type="button"
         >
-          Right end
+          <span>
+            Right end
+          </span>
         </button>
         <div
           className="popover null rightEnd"
@@ -16272,7 +16472,9 @@ exports[`Storyshots Popover Visible 1`] = `
           onClick={null}
           type="button"
         >
-          Left start
+          <span>
+            Left start
+          </span>
         </button>
         <div
           className="popover null leftStart"
@@ -16317,7 +16519,9 @@ exports[`Storyshots Popover Visible 1`] = `
           onClick={null}
           type="button"
         >
-          Left middle
+          <span>
+            Left middle
+          </span>
         </button>
         <div
           className="popover null leftMiddle"
@@ -16362,7 +16566,9 @@ exports[`Storyshots Popover Visible 1`] = `
           onClick={null}
           type="button"
         >
-          Left end
+          <span>
+            Left end
+          </span>
         </button>
         <div
           className="popover null leftEnd"
@@ -16407,7 +16613,9 @@ exports[`Storyshots Popover Visible 1`] = `
           onClick={null}
           type="button"
         >
-          Top start
+          <span>
+            Top start
+          </span>
         </button>
         <div
           className="popover null topStart"
@@ -16452,7 +16660,9 @@ exports[`Storyshots Popover Visible 1`] = `
           onClick={null}
           type="button"
         >
-          Top center
+          <span>
+            Top center
+          </span>
         </button>
         <div
           className="popover null topCenter"
@@ -16497,7 +16707,9 @@ exports[`Storyshots Popover Visible 1`] = `
           onClick={null}
           type="button"
         >
-          Top end
+          <span>
+            Top end
+          </span>
         </button>
         <div
           className="popover null topEnd"
@@ -16542,7 +16754,9 @@ exports[`Storyshots Popover Visible 1`] = `
           onClick={null}
           type="button"
         >
-          Bottom start
+          <span>
+            Bottom start
+          </span>
         </button>
         <div
           className="popover null bottomStart"
@@ -16587,7 +16801,9 @@ exports[`Storyshots Popover Visible 1`] = `
           onClick={null}
           type="button"
         >
-          Bottom center
+          <span>
+            Bottom center
+          </span>
         </button>
         <div
           className="popover null bottomCenter"
@@ -16632,7 +16848,9 @@ exports[`Storyshots Popover Visible 1`] = `
           onClick={null}
           type="button"
         >
-          Bottom end
+          <span>
+            Bottom end
+          </span>
         </button>
         <div
           className="popover null bottomEnd"
@@ -16684,7 +16902,9 @@ exports[`Storyshots Popover With base dark 1`] = `
         onClick={null}
         type="button"
       >
-        click me
+        <span>
+          click me
+        </span>
       </button>
     </div>
   </div>
@@ -19447,7 +19667,9 @@ exports[`Storyshots Table Action column 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                Show details
+                <span>
+                  Show details
+                </span>
               </button>
             </td>
           </tr>
@@ -19515,7 +19737,9 @@ exports[`Storyshots Table Action column 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                Show details
+                <span>
+                  Show details
+                </span>
               </button>
             </td>
           </tr>
@@ -19583,7 +19807,9 @@ exports[`Storyshots Table Action column 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                Show details
+                <span>
+                  Show details
+                </span>
               </button>
             </td>
           </tr>
@@ -19657,7 +19883,9 @@ exports[`Storyshots Table Action column 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                Show details
+                <span>
+                  Show details
+                </span>
               </button>
             </td>
           </tr>
@@ -20055,7 +20283,9 @@ exports[`Storyshots Table Disabled orderable 1`] = `
                       onClick={[Function]}
                       type="button"
                     >
-                      Show details
+                      <span>
+                        Show details
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -20294,7 +20524,9 @@ exports[`Storyshots Table Disabled orderable 1`] = `
                       onClick={[Function]}
                       type="button"
                     >
-                      Show details
+                      <span>
+                        Show details
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -20533,7 +20765,9 @@ exports[`Storyshots Table Disabled orderable 1`] = `
                       onClick={[Function]}
                       type="button"
                     >
-                      Show details
+                      <span>
+                        Show details
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -20776,7 +21010,9 @@ exports[`Storyshots Table Disabled orderable 1`] = `
                       onClick={[Function]}
                       type="button"
                     >
-                      Show details
+                      <span>
+                        Show details
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -21779,7 +22015,9 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                       onClick={[Function]}
                       type="button"
                     >
-                      Show details
+                      <span>
+                        Show details
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -22023,7 +22261,9 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                       onClick={[Function]}
                       type="button"
                     >
-                      Show details
+                      <span>
+                        Show details
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -22267,7 +22507,9 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                       onClick={[Function]}
                       type="button"
                     >
-                      Show details
+                      <span>
+                        Show details
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -22515,7 +22757,9 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                       onClick={[Function]}
                       type="button"
                     >
-                      Show details
+                      <span>
+                        Show details
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -22992,7 +23236,9 @@ exports[`Storyshots Tooltip Default 1`] = `
               onClick={null}
               type="button"
             >
-              Hover me
+              <span>
+                Hover me
+              </span>
             </button>
           </div>
           <h3>
@@ -23009,7 +23255,9 @@ exports[`Storyshots Tooltip Default 1`] = `
               onClick={null}
               type="button"
             >
-              Hover me
+              <span>
+                Hover me
+              </span>
             </button>
           </div>
           <h3>
@@ -23026,7 +23274,9 @@ exports[`Storyshots Tooltip Default 1`] = `
               onClick={null}
               type="button"
             >
-              Hover me
+              <span>
+                Hover me
+              </span>
             </button>
           </div>
           <h3>
@@ -23043,7 +23293,9 @@ exports[`Storyshots Tooltip Default 1`] = `
               onClick={null}
               type="button"
             >
-              Hover me
+              <span>
+                Hover me
+              </span>
             </button>
           </div>
         </div>
@@ -23064,7 +23316,9 @@ exports[`Storyshots Tooltip Default 1`] = `
               onClick={null}
               type="button"
             >
-              Hover me
+              <span>
+                Hover me
+              </span>
             </button>
           </div>
           <h3>
@@ -23081,7 +23335,9 @@ exports[`Storyshots Tooltip Default 1`] = `
               onClick={null}
               type="button"
             >
-              Hover me
+              <span>
+                Hover me
+              </span>
             </button>
           </div>
           <h3>
@@ -23098,7 +23354,9 @@ exports[`Storyshots Tooltip Default 1`] = `
               onClick={null}
               type="button"
             >
-              Hover me
+              <span>
+                Hover me
+              </span>
             </button>
           </div>
           <h3>
@@ -23115,7 +23373,9 @@ exports[`Storyshots Tooltip Default 1`] = `
               onClick={null}
               type="button"
             >
-              Hover me
+              <span>
+                Hover me
+              </span>
             </button>
           </div>
         </div>
@@ -23136,7 +23396,9 @@ exports[`Storyshots Tooltip Default 1`] = `
               onClick={null}
               type="button"
             >
-              Hover me
+              <span>
+                Hover me
+              </span>
             </button>
           </div>
           <h3>
@@ -23153,7 +23415,9 @@ exports[`Storyshots Tooltip Default 1`] = `
               onClick={null}
               type="button"
             >
-              Hover me
+              <span>
+                Hover me
+              </span>
             </button>
           </div>
           <h3>
@@ -23170,7 +23434,9 @@ exports[`Storyshots Tooltip Default 1`] = `
               onClick={null}
               type="button"
             >
-              Hover me
+              <span>
+                Hover me
+              </span>
             </button>
           </div>
           <h3>
@@ -23187,7 +23453,9 @@ exports[`Storyshots Tooltip Default 1`] = `
               onClick={null}
               type="button"
             >
-              Hover me
+              <span>
+                Hover me
+              </span>
             </button>
           </div>
         </div>
@@ -23220,7 +23488,9 @@ exports[`Storyshots Tooltip Visible 1`] = `
           onClick={null}
           type="button"
         >
-          Hover me
+          <span>
+            Hover me
+          </span>
         </button>
         <div
           className="tooltip rightStart"
@@ -23247,7 +23517,9 @@ exports[`Storyshots Tooltip Visible 1`] = `
           onClick={null}
           type="button"
         >
-          Hover me
+          <span>
+            Hover me
+          </span>
         </button>
         <div
           className="tooltip rightMiddle"
@@ -23274,7 +23546,9 @@ exports[`Storyshots Tooltip Visible 1`] = `
           onClick={null}
           type="button"
         >
-          Hover me
+          <span>
+            Hover me
+          </span>
         </button>
         <div
           className="tooltip rightEnd"
@@ -23301,7 +23575,9 @@ exports[`Storyshots Tooltip Visible 1`] = `
           onClick={null}
           type="button"
         >
-          Hover me
+          <span>
+            Hover me
+          </span>
         </button>
         <div
           className="tooltip leftStart"
@@ -23328,7 +23604,9 @@ exports[`Storyshots Tooltip Visible 1`] = `
           onClick={null}
           type="button"
         >
-          Hover me
+          <span>
+            Hover me
+          </span>
         </button>
         <div
           className="tooltip leftMiddle"
@@ -23355,7 +23633,9 @@ exports[`Storyshots Tooltip Visible 1`] = `
           onClick={null}
           type="button"
         >
-          Hover me
+          <span>
+            Hover me
+          </span>
         </button>
         <div
           className="tooltip leftEnd"
@@ -23382,7 +23662,9 @@ exports[`Storyshots Tooltip Visible 1`] = `
           onClick={null}
           type="button"
         >
-          Hover me
+          <span>
+            Hover me
+          </span>
         </button>
         <div
           className="tooltip topStart"
@@ -23409,7 +23691,9 @@ exports[`Storyshots Tooltip Visible 1`] = `
           onClick={null}
           type="button"
         >
-          Hover me
+          <span>
+            Hover me
+          </span>
         </button>
         <div
           className="tooltip topCenter"
@@ -23436,7 +23720,9 @@ exports[`Storyshots Tooltip Visible 1`] = `
           onClick={null}
           type="button"
         >
-          Hover me
+          <span>
+            Hover me
+          </span>
         </button>
         <div
           className="tooltip topEnd"
@@ -23463,7 +23749,9 @@ exports[`Storyshots Tooltip Visible 1`] = `
           onClick={null}
           type="button"
         >
-          Hover me
+          <span>
+            Hover me
+          </span>
         </button>
         <div
           className="tooltip bottomStart"
@@ -23490,7 +23778,9 @@ exports[`Storyshots Tooltip Visible 1`] = `
           onClick={null}
           type="button"
         >
-          Hover me
+          <span>
+            Hover me
+          </span>
         </button>
         <div
           className="tooltip bottomCenter"
@@ -23517,7 +23807,9 @@ exports[`Storyshots Tooltip Visible 1`] = `
           onClick={null}
           type="button"
         >
-          Hover me
+          <span>
+            Hover me
+          </span>
         </button>
         <div
           className="tooltip bottomEnd"
