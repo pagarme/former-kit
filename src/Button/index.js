@@ -42,32 +42,13 @@ const Button = ({
       type={type}
     >
       {(!isNil(icon) && iconAlignment === 'start') && icon}
-      {!isNil(children) && children}
+      {!isNil(children) && <span>{children}</span>}
       {(!isNil(icon) && iconAlignment === 'end') && icon}
     </button>
   )
 }
 
 Button.propTypes = {
-  /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
-   */
-  theme: PropTypes.shape({
-    button: PropTypes.string,
-    circle: PropTypes.string,
-    clean: PropTypes.string,
-    default: PropTypes.string,
-    disabled: PropTypes.string,
-    flat: PropTypes.string,
-    gradient: PropTypes.string,
-    highRelevance: PropTypes.string,
-    huge: PropTypes.string,
-    lowRelevance: PropTypes.string,
-    normalRelevance: PropTypes.string,
-    outline: PropTypes.string,
-    size: PropTypes.string,
-    tiny: PropTypes.string,
-  }),
   /**
    * The children element.
    */
@@ -115,6 +96,25 @@ Button.propTypes = {
   size: PropTypes.oneOf([
     'tiny', 'default', 'huge',
   ]),
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
+   */
+  theme: PropTypes.shape({
+    button: PropTypes.string,
+    circle: PropTypes.string,
+    clean: PropTypes.string,
+    default: PropTypes.string,
+    disabled: PropTypes.string,
+    flat: PropTypes.string,
+    gradient: PropTypes.string,
+    highRelevance: PropTypes.string,
+    huge: PropTypes.string,
+    lowRelevance: PropTypes.string,
+    normalRelevance: PropTypes.string,
+    outline: PropTypes.string,
+    size: PropTypes.string,
+    tiny: PropTypes.string,
+  }),
   /**
    * Button's type.
    */
