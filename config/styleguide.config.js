@@ -90,7 +90,6 @@ module.exports = {
             '../src/Sidebar/SidebarHeader.js',
             '../src/Sidebar/SidebarLink.js',
             '../src/Sidebar/SidebarLinks.js',
-            '../src/Sidebar/SidebarSections.js',
           ],
         },
         {
