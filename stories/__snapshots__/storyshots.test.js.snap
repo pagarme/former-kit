@@ -193,11 +193,14 @@ exports[`Storyshots Avatar Default 1`] = `
       Default icon and size
     </h2>
     <div>
-      <div
-        className="avatar placeholder"
-      >
-        <svg />
-      </div>
+      <img
+        alt="icon only"
+        className="avatar"
+        height={26}
+        onError={[Function]}
+        src=""
+        width={26}
+      />
     </div>
   </section>
   <section
@@ -208,9 +211,10 @@ exports[`Storyshots Avatar Default 1`] = `
     </h2>
     <div>
       <img
-        alt="Foto de perfil"
+        alt="N.Cage"
         className="avatar"
         height={26}
+        onError={[Function]}
         src="https://i.imgur.com/V9mgrCp.jpg"
         width={26}
       />
@@ -224,9 +228,10 @@ exports[`Storyshots Avatar Default 1`] = `
     </h2>
     <div>
       <img
-        alt="Foto de perfil"
+        alt="N.Cage"
         className="avatar"
         height={50}
+        onError={[Function]}
         src="https://i.imgur.com/V9mgrCp.jpg"
         width={50}
       />
@@ -8888,11 +8893,14 @@ exports[`Storyshots Header Default 1`] = `
             <button
               className="menu"
             >
-              <div
-                className="avatar placeholder"
-              >
-                <svg />
-              </div>
+              <img
+                alt="alt text"
+                className="avatar"
+                height={26}
+                onError={[Function]}
+                src=""
+                width={26}
+              />
               <span>
                 Current username
               </span>
@@ -8949,9 +8957,10 @@ exports[`Storyshots Header Default 1`] = `
               className="menu"
             >
               <img
-                alt="Foto de perfil"
+                alt="alt text"
                 className="avatar"
                 height={26}
+                onError={[Function]}
                 src="https://i.imgur.com/2vp5kTT.jpg"
                 width={26}
               />
@@ -12164,11 +12173,14 @@ exports[`Storyshots Layout Default only Header 1`] = `
             <button
               className="menu"
             >
-              <div
-                className="avatar placeholder"
-              >
-                <svg />
-              </div>
+              <img
+                alt="alt text"
+                className="avatar"
+                height={26}
+                onError={[Function]}
+                src=""
+                width={26}
+              />
               <span>
                 Current username
               </span>
@@ -13159,11 +13171,14 @@ exports[`Storyshots Layout Default with all props 1`] = `
             <button
               className="menu"
             >
-              <div
-                className="avatar placeholder"
-              >
-                <svg />
-              </div>
+              <img
+                alt="alt text"
+                className="avatar"
+                height={26}
+                onError={[Function]}
+                src=""
+                width={26}
+              />
               <span>
                 Current username
               </span>
@@ -13734,11 +13749,14 @@ exports[`Storyshots Layout Default without Footer 1`] = `
             <button
               className="menu"
             >
-              <div
-                className="avatar placeholder"
-              >
-                <svg />
-              </div>
+              <img
+                alt="alt text"
+                className="avatar"
+                height={26}
+                onError={[Function]}
+                src=""
+                width={26}
+              />
               <span>
                 Current username
               </span>
@@ -14638,11 +14656,14 @@ exports[`Storyshots Layout Default without Sidebar 1`] = `
             <button
               className="menu"
             >
-              <div
-                className="avatar placeholder"
-              >
-                <svg />
-              </div>
+              <img
+                alt="alt text"
+                className="avatar"
+                height={26}
+                onError={[Function]}
+                src=""
+                width={26}
+              />
               <span>
                 Current username
               </span>

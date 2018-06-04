@@ -23,7 +23,7 @@ const HeaderContentExample = ({ photo }) => (
     <HeaderMenu
       title={
         <Fragment>
-          <Avatar photo={photo} />
+          <Avatar alt="alt text" photo={photo} />
           <span>Current username</span>
         </Fragment>
       }
