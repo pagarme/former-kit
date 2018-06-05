@@ -36,7 +36,9 @@ class InputState extends React.Component {
         mask={mask}
         multiline={multiline}
         name="email"
+        onBlur={action('blur')}
         onChange={e => this.setState({ value: e.target.value })}
+        onFocus={action('focus')}
         placeholder={placeholder}
         type={type}
         value={value}
