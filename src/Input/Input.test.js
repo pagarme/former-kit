@@ -129,6 +129,50 @@ describe('Input', () => {
       expect(component.props().mask).toEqual('1111 1111 1111 1111')
       expect(component.html()).toContain('4151 1124 ____ ____')
     })
+    it('should trigger onFocus', () => {
+      const onChange = jest.fn()
+      const onFocus = jest.fn()
+
+      const component = shallow(
+        <Input
+          name="name"
+          label="Name"
+          onChange={onChange}
+          onFocus={onFocus}
+          value=""
+        />
+      )
+
+      component
+        .dive()
+        .find('input')
+        .first()
+        .simulate('focus')
+
+      expect(onFocus).toHaveBeenCalled()
+    })
+    it('should trigger onBlur', () => {
+      const onChange = jest.fn()
+      const onBlur = jest.fn()
+
+      const component = shallow(
+        <Input
+          name="name"
+          label="Name"
+          onChange={onChange}
+          onBlur={onBlur}
+          value=""
+        />
+      )
+
+      component
+        .dive()
+        .find('input')
+        .first()
+        .simulate('blur')
+
+      expect(onBlur).toHaveBeenCalled()
+    })
   })
 
   describe('multiline', () => {

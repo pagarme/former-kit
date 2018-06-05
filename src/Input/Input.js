@@ -69,21 +69,21 @@ class Input extends React.PureComponent {
     }
   }
 
-  handleBlur () {
+  handleBlur (event) {
     this.setState({
       isFocused: false,
     })
     if (this.props.onBlur) {
-      this.props.onBlur()
+      this.props.onBlur(event)
     }
   }
 
-  handleFocus () {
+  handleFocus (event) {
     this.setState({
       isFocused: true,
     })
     if (this.props.onFocus) {
-      this.props.onFocus()
+      this.props.onFocus(event)
     }
   }
 
