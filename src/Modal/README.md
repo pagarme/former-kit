@@ -8,7 +8,7 @@ const ModalWithState = require('./examples/ModalWithState').default;
 Modal with complete title
 ``` jsx
 const ModalWithState = require('./examples/ModalWithState').default;
-<ModalWithState 
+<ModalWithState
   completeTitle
   message="Modal with complete title"
 />
@@ -17,7 +17,7 @@ const ModalWithState = require('./examples/ModalWithState').default;
 Modal with actions
 ``` jsx
 const ModalWithState = require('./examples/ModalWithState').default;
-<ModalWithState 
+<ModalWithState
   message="Modal with actions"
   title="Action modal tilte"
   withActions
@@ -32,5 +32,6 @@ const ModalWithState = require('./examples/ModalWithState').default;
   message="Modal with all features"
   title="Full features modal"
   withActions
+  withSection
 />
 ```

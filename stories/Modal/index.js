@@ -7,9 +7,10 @@ import Section from '../Section'
 
 import {
   Modal,
-  ModalTitle,
-  ModalContent,
   ModalActions,
+  ModalContent,
+  ModalSection,
+  ModalTitle,
 } from '../../src/Modal'
 
 import Button from '../../src/Button'
@@ -64,6 +65,14 @@ class ModalWithState extends Component {
 
           <ModalContent>
             This is the modal Content with React Modal module
+          </ModalContent>
+
+          <ModalContent>
+            <ModalSection>
+              <ModalContent>
+                This is the modal Section
+              </ModalContent>
+            </ModalSection>
           </ModalContent>
 
           <ModalActions>
