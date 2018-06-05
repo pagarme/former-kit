@@ -7,6 +7,7 @@ import {
   Modal,
   ModalActions,
   ModalContent,
+  ModalSection,
   ModalTitle,
 } from '../index'
 
@@ -36,6 +37,7 @@ class ModalWithState extends Component {
       message,
       title,
       withActions,
+      withSection,
     } = this.props
     return (
       <div>
@@ -66,9 +68,22 @@ class ModalWithState extends Component {
               <ModalTitle title={title} />
           }
 
+          <hr />
+
           <ModalContent>
-            <p>{message}</p>
+            {message}
           </ModalContent>
+
+          {withSection &&
+            <ModalContent>
+              <ModalSection>
+                <ModalContent>
+                  This is the modal Section
+                </ModalContent>
+              </ModalSection>
+            </ModalContent>
+          }
+
           {withActions &&
             <ModalActions>
               <Button
@@ -98,6 +113,7 @@ ModalWithState.propTypes = {
   message: PropTypes.string,
   title: PropTypes.string,
   withActions: PropTypes.bool,
+  withSection: PropTypes.bool,
 }
 
 ModalWithState.defaultProps = {
@@ -105,6 +121,7 @@ ModalWithState.defaultProps = {
   message: 'This is the modal Content with React Modal module',
   title: 'Add photo',
   withActions: false,
+  withSection: false,
 }
 
 export default ModalWithState

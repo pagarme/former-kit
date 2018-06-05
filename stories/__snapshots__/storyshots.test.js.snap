@@ -15386,6 +15386,19 @@ exports[`Storyshots Modal Default 1`] = `
           This is the modal Content with React Modal module
         </div>
         <div
+          className="content"
+        >
+          <div
+            className="section"
+          >
+            <div
+              className="content"
+            >
+              This is the modal Section
+            </div>
+          </div>
+        </div>
+        <div
           className="actions"
         >
           <button
