@@ -4,6 +4,7 @@ import classnames from 'classnames'
 import shortid from 'shortid'
 import MaskedInput from 'react-maskedinput'
 import {
+  dissoc,
   isEmpty,
   isNil,
   merge,
@@ -24,6 +25,7 @@ const omitOwnProps = omit([
   'onBlur',
   'onChange',
   'onFocus',
+  'renderer',
   'theme',
   'type',
 ])
@@ -31,6 +33,7 @@ const omitOwnProps = omit([
 const validateMultiline = ({
   mask,
   multiline,
+  renderer,
   type,
 }, propName) => {
   if (
@@ -48,6 +51,14 @@ const validateMultiline = ({
     !isEmpty(mask)
   ) {
     throw new Error('Adding a mask to a multiline component is not possible, it was rendered without the mask.')
+  }
+
+  if (
+    propName === 'multiline' &&
+    multiline &&
+    !isNil(renderer)
+  ) {
+    throw new Error('Adding renderer to a multiline component is not possible, it was rendered as a multiline input.')
   }
 }
 
@@ -94,6 +105,49 @@ class Input extends React.PureComponent {
     })
   }
 
+  renderInput (inputProps) {
+    const {
+      disabled,
+      mask,
+      multiline,
+      onChange,
+      renderer,
+      type,
+    } = this.props
+
+    const inputType = (type === 'password' && this.state.showPassword)
+      || multiline
+      ? 'text'
+      : type
+
+    if (!isNil(renderer)) {
+      return renderer(dissoc('renderer', this.props))
+    }
+
+    if (mask) {
+      return (
+        <MaskedInput
+          mask={mask}
+          onChange={disabled ? null : onChange}
+          onBlur={this.handleBlur}
+          onFocus={this.handleFocus}
+          {...inputProps}
+        />
+      )
+    }
+
+    return (
+      <input
+        id={this.instanceId}
+        type={inputType}
+        onChange={disabled ? null : onChange}
+        onBlur={this.handleBlur}
+        onFocus={this.handleFocus}
+        {...inputProps}
+      />
+    )
+  }
+
   renderPasswordVisibilityIcon () {
     const {
       value,
@@ -124,18 +178,16 @@ class Input extends React.PureComponent {
 
   render () {
     const {
+      className,
       disabled,
       error,
       hint,
       icon,
       label,
-      mask,
       multiline,
-      type,
-      value,
-      className,
       onChange,
       theme,
+      value,
     } = this.props
 
     const container = classnames(theme.container, {
@@ -164,11 +216,6 @@ class Input extends React.PureComponent {
       }
     )
 
-    const inputType = (type === 'password' && this.state.showPassword)
-      || multiline
-      ? 'text'
-      : type
-
     const hasSecondaryText = theme.secondaryText && (hint || error)
 
     const hasLabel = theme.contentPresent && label
@@ -189,28 +236,7 @@ class Input extends React.PureComponent {
                 {...inputProps}
               />
             )}
-
-            {!multiline && (mask ?
-              (
-                <MaskedInput
-                  mask={mask}
-                  onChange={disabled ? null : onChange}
-                  onBlur={this.handleBlur}
-                  onFocus={this.handleFocus}
-                  {...inputProps}
-                />
-              ) : (
-                <input
-                  id={this.instanceId}
-                  type={inputType}
-                  onChange={disabled ? null : onChange}
-                  onBlur={this.handleBlur}
-                  onFocus={this.handleFocus}
-                  {...inputProps}
-                />
-              )
-            )}
-
+            {!multiline && this.renderInput(inputProps)}
             {this.renderPasswordVisibilityIcon()}
             {hasLabel &&
               <label
@@ -299,6 +325,7 @@ Input.propTypes = {
   mask: PropTypes.string,
   /**
    * Allow multiline texts if the component type is text.
+   * This prop is prioritized over the render options mask and renderer
    */
   multiline: validateMultiline,
   /**
@@ -325,6 +352,11 @@ Input.propTypes = {
    * Input's placeholder.
    */
   placeholder: PropTypes.string,
+  /**
+   * Render function which will receive this component props and must return a
+   * input to be used inside this component
+   */
+  renderer: PropTypes.func,
   /**
    * Input's type.
    */
@@ -357,6 +389,7 @@ Input.defaultProps = {
   onFocus: null,
   onKeyPress: null,
   placeholder: '',
+  renderer: null,
   theme: {},
   type: 'text',
 }

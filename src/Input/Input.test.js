@@ -299,5 +299,39 @@ describe('Input', () => {
         />
       ).dive).toThrow()
     })
+
+    it('should mount a custom input using renderer', () => {
+      const onChange = jest.fn()
+
+      const expectedInputId = 'rendererInput'
+
+      const renderer = props => (
+        <input
+          id={expectedInputId}
+          {...props}
+        />
+      )
+
+      const component = mount(
+        <Input
+          boxed
+          error="Error"
+          hint="Hi"
+          label="Name"
+          name="name"
+          onChange={onChange}
+          placeholder="Your name"
+          renderer={renderer}
+          type="text"
+          value="hihihi"
+        />
+      )
+
+      const input = component
+        .find('input')
+        .first()
+
+      expect(input.props().id).toBe(expectedInputId)
+    })
   })
 })
