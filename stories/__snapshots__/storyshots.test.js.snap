@@ -251,9 +251,7 @@ exports[`Storyshots Buttons Default 1`] = `
       Sizes
     </h2>
     <div>
-      <div
-        className={undefined}
-      >
+      <div>
         <button
           className="button flat normalRelevance tiny"
           disabled={false}
@@ -293,9 +291,7 @@ exports[`Storyshots Buttons Default 1`] = `
           />
         </button>
       </div>
-      <div
-        className={undefined}
-      >
+      <div>
         <button
           className="button flat normalRelevance default"
           disabled={false}
@@ -335,9 +331,7 @@ exports[`Storyshots Buttons Default 1`] = `
           />
         </button>
       </div>
-      <div
-        className={undefined}
-      >
+      <div>
         <button
           className="button flat normalRelevance huge"
           disabled={false}
@@ -386,9 +380,7 @@ exports[`Storyshots Buttons Default 1`] = `
       Normal Relevance
     </h2>
     <div>
-      <div
-        className={undefined}
-      >
+      <div>
         <button
           className="button flat normalRelevance default"
           disabled={false}
@@ -428,9 +420,7 @@ exports[`Storyshots Buttons Default 1`] = `
           />
         </button>
       </div>
-      <div
-        className={undefined}
-      >
+      <div>
         <button
           className="button gradient normalRelevance default"
           disabled={false}
@@ -470,9 +460,7 @@ exports[`Storyshots Buttons Default 1`] = `
           />
         </button>
       </div>
-      <div
-        className={undefined}
-      >
+      <div>
         <button
           className="button outline normalRelevance default"
           disabled={false}
@@ -512,9 +500,7 @@ exports[`Storyshots Buttons Default 1`] = `
           />
         </button>
       </div>
-      <div
-        className={undefined}
-      >
+      <div>
         <button
           className="button clean normalRelevance default"
           disabled={false}
@@ -563,9 +549,7 @@ exports[`Storyshots Buttons Default 1`] = `
       High Relevance
     </h2>
     <div>
-      <div
-        className={undefined}
-      >
+      <div>
         <button
           className="button flat highRelevance default"
           disabled={false}
@@ -605,9 +589,7 @@ exports[`Storyshots Buttons Default 1`] = `
           />
         </button>
       </div>
-      <div
-        className={undefined}
-      >
+      <div>
         <button
           className="button gradient highRelevance default"
           disabled={false}
@@ -647,9 +629,7 @@ exports[`Storyshots Buttons Default 1`] = `
           />
         </button>
       </div>
-      <div
-        className={undefined}
-      >
+      <div>
         <button
           className="button outline highRelevance default"
           disabled={false}
@@ -689,9 +669,7 @@ exports[`Storyshots Buttons Default 1`] = `
           />
         </button>
       </div>
-      <div
-        className={undefined}
-      >
+      <div>
         <button
           className="button clean highRelevance default"
           disabled={false}
@@ -740,9 +718,7 @@ exports[`Storyshots Buttons Default 1`] = `
       Low Relevance
     </h2>
     <div>
-      <div
-        className={undefined}
-      >
+      <div>
         <button
           className="button flat lowRelevance default"
           disabled={false}
@@ -782,9 +758,7 @@ exports[`Storyshots Buttons Default 1`] = `
           />
         </button>
       </div>
-      <div
-        className={undefined}
-      >
+      <div>
         <button
           className="button gradient lowRelevance default"
           disabled={false}
@@ -824,9 +798,7 @@ exports[`Storyshots Buttons Default 1`] = `
           />
         </button>
       </div>
-      <div
-        className={undefined}
-      >
+      <div>
         <button
           className="button outline lowRelevance default"
           disabled={false}
@@ -866,9 +838,7 @@ exports[`Storyshots Buttons Default 1`] = `
           />
         </button>
       </div>
-      <div
-        className={undefined}
-      >
+      <div>
         <button
           className="button clean lowRelevance default"
           disabled={false}
@@ -917,9 +887,7 @@ exports[`Storyshots Buttons Default 1`] = `
       Icon only
     </h2>
     <div>
-      <div
-        className={undefined}
-      >
+      <div>
         <button
           className="button flat normalRelevance default iconButton"
           disabled={false}
@@ -943,9 +911,7 @@ exports[`Storyshots Buttons Default 1`] = `
           />
         </button>
       </div>
-      <div
-        className={undefined}
-      >
+      <div>
         <button
           className="button outline normalRelevance default iconButton"
           disabled={false}
@@ -978,9 +944,7 @@ exports[`Storyshots Buttons Default 1`] = `
       Disabled
     </h2>
     <div>
-      <div
-        className={undefined}
-      >
+      <div>
         <button
           className="button flat normalRelevance default"
           disabled={true}
@@ -1006,9 +970,7 @@ exports[`Storyshots Buttons Default 1`] = `
           />
         </button>
       </div>
-      <div
-        className={undefined}
-      >
+      <div>
         <button
           className="button gradient normalRelevance default"
           disabled={true}
@@ -1048,9 +1010,7 @@ exports[`Storyshots Buttons Default 1`] = `
           />
         </button>
       </div>
-      <div
-        className={undefined}
-      >
+      <div>
         <button
           className="button outline normalRelevance default"
           disabled={true}
@@ -1090,9 +1050,7 @@ exports[`Storyshots Buttons Default 1`] = `
           />
         </button>
       </div>
-      <div
-        className={undefined}
-      >
+      <div>
         <button
           className="button clean normalRelevance default"
           disabled={true}
@@ -1132,9 +1090,7 @@ exports[`Storyshots Buttons Default 1`] = `
           />
         </button>
       </div>
-      <div
-        className={undefined}
-      >
+      <div>
         <button
           className="button flat normalRelevance default iconButton"
           disabled={true}
@@ -1158,9 +1114,7 @@ exports[`Storyshots Buttons Default 1`] = `
           />
         </button>
       </div>
-      <div
-        className={undefined}
-      >
+      <div>
         <button
           className="button outline normalRelevance default iconButton"
           disabled={true}
@@ -1200,9 +1154,7 @@ exports[`Storyshots Cards Default 1`] = `
       Custom title, subtitle and content
     </h2>
     <div>
-      <div
-        className={undefined}
-      >
+      <div>
         <div
           className="card"
         >
@@ -1235,9 +1187,7 @@ exports[`Storyshots Cards Default 1`] = `
       Title, subtitle, icon and content
     </h2>
     <div>
-      <div
-        className={undefined}
-      >
+      <div>
         <div
           className="card"
         >
@@ -1271,9 +1221,7 @@ exports[`Storyshots Cards Default 1`] = `
       Title, custom subtitle, icon and content
     </h2>
     <div>
-      <div
-        className={undefined}
-      >
+      <div>
         <div
           className="card"
         >
@@ -1316,9 +1264,7 @@ exports[`Storyshots Cards Default 1`] = `
       Title, content and actions
     </h2>
     <div>
-      <div
-        className={undefined}
-      >
+      <div>
         <div
           className="card"
         >
@@ -1392,9 +1338,7 @@ exports[`Storyshots Cards Default 1`] = `
       Graphic, title, content and actions
     </h2>
     <div>
-      <div
-        className={undefined}
-      >
+      <div>
         <div
           className="card"
         >
@@ -1476,9 +1420,7 @@ exports[`Storyshots Cards Default 1`] = `
       Title on event handler
     </h2>
     <div>
-      <div
-        className={undefined}
-      >
+      <div>
         <div
           className="card"
         >
@@ -1556,9 +1498,7 @@ exports[`Storyshots Cards Default 1`] = `
       Simple card section
     </h2>
     <div>
-      <div
-        className={undefined}
-      >
+      <div>
         <div
           className="card"
         >
@@ -1623,9 +1563,7 @@ feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
       Card section with collapsible content
     </h2>
     <div>
-      <div
-        className={undefined}
-      >
+      <div>
         <div
           className="card"
         >
@@ -1690,9 +1628,7 @@ feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
       Card section with collapsible content and expanded title at bottom
     </h2>
     <div>
-      <div
-        className={undefined}
-      >
+      <div>
         <div
           className="card"
         >
@@ -1757,9 +1693,7 @@ feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
       Card section with icon on the left
     </h2>
     <div>
-      <div
-        className={undefined}
-      >
+      <div>
         <div
           className="card"
         >
@@ -2684,9 +2618,7 @@ exports[`Storyshots Colors Light theme 1`] = `
 <div
   className="typography"
 >
-  <div
-    className={undefined}
-  />
+  <div />
 </div>
 `;
 
@@ -2701,9 +2633,7 @@ exports[`Storyshots DateInput All styles 1`] = `
       Minimal setup
     </h2>
     <div>
-      <div
-        className={undefined}
-      >
+      <div>
         <div
           className="dateInput"
         >
@@ -2761,9 +2691,7 @@ exports[`Storyshots DateInput All styles 1`] = `
       Specifying single day as initial dates
     </h2>
     <div>
-      <div
-        className={undefined}
-      >
+      <div>
         <div
           className="dateInput active"
         >
@@ -2821,9 +2749,7 @@ exports[`Storyshots DateInput All styles 1`] = `
       Specifying date range as initial dates
     </h2>
     <div>
-      <div
-        className={undefined}
-      >
+      <div>
         <div
           className="dateInput active"
         >
@@ -2908,9 +2834,7 @@ exports[`Storyshots DateInput All styles 1`] = `
       Specifying null end as initial dates
     </h2>
     <div>
-      <div
-        className={undefined}
-      >
+      <div>
         <div
           className="dateInput"
         >
@@ -7136,7 +7060,6 @@ exports[`Storyshots Grid Column sizes 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -7162,7 +7085,6 @@ exports[`Storyshots Grid Column sizes 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -7188,7 +7110,6 @@ exports[`Storyshots Grid Column sizes 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -7214,7 +7135,6 @@ exports[`Storyshots Grid Column sizes 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -7240,7 +7160,6 @@ exports[`Storyshots Grid Column sizes 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -7266,7 +7185,6 @@ exports[`Storyshots Grid Column sizes 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -7292,7 +7210,6 @@ exports[`Storyshots Grid Column sizes 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -7318,7 +7235,6 @@ exports[`Storyshots Grid Column sizes 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -7344,7 +7260,6 @@ exports[`Storyshots Grid Column sizes 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -7370,7 +7285,6 @@ exports[`Storyshots Grid Column sizes 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -7396,7 +7310,6 @@ exports[`Storyshots Grid Column sizes 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -7422,7 +7335,6 @@ exports[`Storyshots Grid Column sizes 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -7462,7 +7374,6 @@ exports[`Storyshots Grid Flexible 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -7484,7 +7395,6 @@ exports[`Storyshots Grid Flexible 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -7508,7 +7418,6 @@ exports[`Storyshots Grid Flexible 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -7530,7 +7439,6 @@ exports[`Storyshots Grid Flexible 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -7554,7 +7462,6 @@ exports[`Storyshots Grid Flexible 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -7576,7 +7483,6 @@ exports[`Storyshots Grid Flexible 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -7614,7 +7520,6 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -7640,7 +7545,6 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -7662,7 +7566,6 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -7688,7 +7591,6 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -7710,7 +7612,6 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -7732,7 +7633,6 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -7758,7 +7658,6 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -7780,7 +7679,6 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -7802,7 +7700,6 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -7824,7 +7721,6 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -7850,7 +7746,6 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -7872,7 +7767,6 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -7894,7 +7788,6 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -7916,7 +7809,6 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -7938,7 +7830,6 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -7960,7 +7851,6 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -7986,7 +7876,6 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -8008,7 +7897,6 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -8030,7 +7918,6 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -8052,7 +7939,6 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -8074,7 +7960,6 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -8096,7 +7981,6 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -8118,7 +8002,6 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -8140,7 +8023,6 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -8162,7 +8044,6 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -8184,7 +8065,6 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -8206,7 +8086,6 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -8228,7 +8107,6 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -8268,7 +8146,6 @@ exports[`Storyshots Grid Responsive 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#cc0000",
@@ -8288,7 +8165,6 @@ exports[`Storyshots Grid Responsive 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#cc0000",
@@ -8308,7 +8184,6 @@ exports[`Storyshots Grid Responsive 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#cc0000",
@@ -8328,7 +8203,6 @@ exports[`Storyshots Grid Responsive 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#cc0000",
@@ -8352,7 +8226,6 @@ exports[`Storyshots Grid Responsive 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#00cc00",
@@ -8376,7 +8249,6 @@ exports[`Storyshots Grid Responsive 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#0000cc",
@@ -8396,7 +8268,6 @@ exports[`Storyshots Grid Responsive 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#0000cc",
@@ -8420,7 +8291,6 @@ exports[`Storyshots Grid Responsive 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#cccc00",
@@ -8446,7 +8316,6 @@ exports[`Storyshots Grid Responsive 1`] = `
                   className="graphic"
                 >
                   <div
-                    className={undefined}
                     style={
                       Object {
                         "backgroundColor": "#cc00cc",
@@ -8466,7 +8335,6 @@ exports[`Storyshots Grid Responsive 1`] = `
                   className="graphic"
                 >
                   <div
-                    className={undefined}
                     style={
                       Object {
                         "backgroundColor": "#cc00cc",
@@ -8486,7 +8354,6 @@ exports[`Storyshots Grid Responsive 1`] = `
                   className="graphic"
                 >
                   <div
-                    className={undefined}
                     style={
                       Object {
                         "backgroundColor": "#cc00cc",
@@ -8506,7 +8373,6 @@ exports[`Storyshots Grid Responsive 1`] = `
                   className="graphic"
                 >
                   <div
-                    className={undefined}
                     style={
                       Object {
                         "backgroundColor": "#cc00cc",
@@ -8546,7 +8412,6 @@ exports[`Storyshots Grid Size combinations 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -8568,7 +8433,6 @@ exports[`Storyshots Grid Size combinations 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -8594,7 +8458,6 @@ exports[`Storyshots Grid Size combinations 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -8616,7 +8479,6 @@ exports[`Storyshots Grid Size combinations 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -8642,7 +8504,6 @@ exports[`Storyshots Grid Size combinations 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -8664,7 +8525,6 @@ exports[`Storyshots Grid Size combinations 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -8690,7 +8550,6 @@ exports[`Storyshots Grid Size combinations 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -8712,7 +8571,6 @@ exports[`Storyshots Grid Size combinations 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -8738,7 +8596,6 @@ exports[`Storyshots Grid Size combinations 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -8760,7 +8617,6 @@ exports[`Storyshots Grid Size combinations 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -8786,7 +8642,6 @@ exports[`Storyshots Grid Size combinations 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -8808,7 +8663,6 @@ exports[`Storyshots Grid Size combinations 1`] = `
               className="graphic"
             >
               <div
-                className={undefined}
                 style={
                   Object {
                     "backgroundColor": "#ffffff",
@@ -10821,20 +10675,15 @@ exports[`Storyshots Landing Pagar.me login 1`] = `
         className="dark primary column col desk7 tv7 tablet12 palm12 startAlign"
       >
         <form
-          className={undefined}
           onSubmit={[Function]}
         >
-          <div
-            className={undefined}
-          >
+          <div>
             <img
               alt="Pagar.me"
               src=""
             />
           </div>
-          <div
-            className={undefined}
-          >
+          <div>
             <div
               className="input"
             >
@@ -10896,12 +10745,8 @@ exports[`Storyshots Landing Pagar.me login 1`] = `
               </div>
             </div>
           </div>
-          <div
-            className={undefined}
-          >
-            <div
-              className={undefined}
-            >
+          <div>
+            <div>
               <button
                 className="button gradient normalRelevance huge"
                 disabled={false}
@@ -10924,24 +10769,16 @@ exports[`Storyshots Landing Pagar.me login 1`] = `
       <div
         className="light secondary column col desk5 tv5 tablet12 palm12 startAlign"
       >
-        <div
-          className={undefined}
-        >
+        <div>
           <div>
-            <h1
-              className={undefined}
-            >
+            <h1>
               Seja bem-vindo
             </h1>
-            <span
-              className={undefined}
-            >
+            <span>
               à dashboard Pagar.me
             </span>
           </div>
-          <p
-            className={undefined}
-          >
+          <p>
             A Dashboard Pagar.me é o painel de controle da sua operação. Através dela você tem acesso a diversos dados relevantes para seu dia a dia de trabalho, e também pode realizar diferentes ações cotidianas com facilidade, como estornos, consulta de saldo e mais.
           </p>
           <div
@@ -10954,7 +10791,6 @@ exports[`Storyshots Landing Pagar.me login 1`] = `
               <span>
                 Ainda não tem uma conta?
                 <a
-                  className={undefined}
                   href="https://dashboard.pagar.me/#/signup"
                 >
                   Cadastre-se
@@ -10982,27 +10818,16 @@ exports[`Storyshots Landing Pagar.me password recovery 1`] = `
       <div
         className="dark primary column col desk7 tv7 tablet12 palm12 startAlign"
       >
-        <div
-          className={undefined}
-        >
-          <form
-            className={undefined}
-            onSubmit={undefined}
-          >
-            <div
-              className={undefined}
-            >
+        <div>
+          <form>
+            <div>
               <img
                 alt="Pagar.me"
                 src=""
               />
             </div>
-            <div
-              className={undefined}
-            >
-              <p
-                className={undefined}
-              >
+            <div>
+              <p>
                 Digite o e-mail cadastrado para recuperar sua senha
               </p>
               <div
@@ -11036,12 +10861,8 @@ exports[`Storyshots Landing Pagar.me password recovery 1`] = `
                 </div>
               </div>
             </div>
-            <div
-              className={undefined}
-            >
-              <div
-                className={undefined}
-              >
+            <div>
+              <div>
                 <button
                   className="button gradient normalRelevance huge"
                   disabled={false}
@@ -11065,27 +10886,17 @@ exports[`Storyshots Landing Pagar.me password recovery 1`] = `
       <div
         className="light secondary column col desk5 tv5 tablet12 palm12 startAlign"
       >
-        <div
-          className={undefined}
-        >
-          <div
-            className={undefined}
-          >
+        <div>
+          <div>
             <div>
-              <h1
-                className={undefined}
-              >
+              <h1>
                 Seja bem-vindo
               </h1>
-              <span
-                className={undefined}
-              >
+              <span>
                 à dashboard Pagar.me
               </span>
             </div>
-            <p
-              className={undefined}
-            >
+            <p>
               A Dashboard Pagar.me é o painel de controle da sua operação. Através dela você tem acesso a diversos dados relevantes para seu dia a dia de trabalho, e também pode realizar diferentes ações cotidianas com facilidade, como estornos, consulta de saldo e mais.
             </p>
             <div
@@ -11098,7 +10909,6 @@ exports[`Storyshots Landing Pagar.me password recovery 1`] = `
                 <span>
                   Ainda não tem uma conta?
                   <a
-                    className={undefined}
                     href="https://dashboard.pagar.me/#/signup"
                   >
                     Cadastre-se
@@ -11127,39 +10937,24 @@ exports[`Storyshots Landing Pagar.me password recovery confirmation 1`] = `
       <div
         className="dark primary column col desk7 tv7 tablet12 palm12 startAlign"
       >
-        <div
-          className={undefined}
-        >
-          <form
-            className={undefined}
-            onSubmit={undefined}
-          >
-            <div
-              className={undefined}
-            >
+        <div>
+          <form>
+            <div>
               <img
                 alt="Pagar.me"
                 src=""
               />
             </div>
-            <div
-              className={undefined}
-            >
-              <p
-                className={undefined}
-              >
+            <div>
+              <p>
                 <b>
                   pronto!
                 </b>
                  em instantes você receberá um e-mail com as instruções para a redefinição de sua senha
               </p>
             </div>
-            <div
-              className={undefined}
-            >
-              <div
-                className={undefined}
-              >
+            <div>
+              <div>
                 <button
                   className="button gradient normalRelevance huge"
                   disabled={false}
@@ -11178,27 +10973,17 @@ exports[`Storyshots Landing Pagar.me password recovery confirmation 1`] = `
       <div
         className="light secondary column col desk5 tv5 tablet12 palm12 startAlign"
       >
-        <div
-          className={undefined}
-        >
-          <div
-            className={undefined}
-          >
+        <div>
+          <div>
             <div>
-              <h1
-                className={undefined}
-              >
+              <h1>
                 Seja bem-vindo
               </h1>
-              <span
-                className={undefined}
-              >
+              <span>
                 à dashboard Pagar.me
               </span>
             </div>
-            <p
-              className={undefined}
-            >
+            <p>
               A Dashboard Pagar.me é o painel de controle da sua operação. Através dela você tem acesso a diversos dados relevantes para seu dia a dia de trabalho, e também pode realizar diferentes ações cotidianas com facilidade, como estornos, consulta de saldo e mais.
             </p>
             <div
@@ -11211,7 +10996,6 @@ exports[`Storyshots Landing Pagar.me password recovery confirmation 1`] = `
                 <span>
                   Ainda não tem uma conta?
                   <a
-                    className={undefined}
                     href="https://dashboard.pagar.me/#/signup"
                   >
                     Cadastre-se
@@ -11241,20 +11025,15 @@ exports[`Storyshots Landing Pagar.me sign in 1`] = `
         className="light primary column col desk7 tv7 tablet12 palm12 startAlign"
       >
         <form
-          className={undefined}
           onSubmit={[Function]}
         >
-          <div
-            className={undefined}
-          >
+          <div>
             <img
               alt="Pagar.me"
               src=""
             />
           </div>
-          <div
-            className={undefined}
-          >
+          <div>
             <div
               className="input"
             >
@@ -11376,12 +11155,8 @@ exports[`Storyshots Landing Pagar.me sign in 1`] = `
               </div>
             </div>
           </div>
-          <div
-            className={undefined}
-          >
-            <div
-              className={undefined}
-            >
+          <div>
+            <div>
               <button
                 className="button gradient normalRelevance huge"
                 disabled={false}
@@ -11399,24 +11174,16 @@ exports[`Storyshots Landing Pagar.me sign in 1`] = `
       <div
         className="light secondary column col desk5 tv5 tablet12 palm12 startAlign"
       >
-        <div
-          className={undefined}
-        >
+        <div>
           <div>
-            <h1
-              className={undefined}
-            >
+            <h1>
               Crie sua conta
             </h1>
-            <span
-              className={undefined}
-            >
+            <span>
               na dashboard Pagar.me
             </span>
           </div>
-          <p
-            className={undefined}
-          >
+          <p>
             A Dashboard Pagar.me é um painel de controle de operações. Através dela você pode ter acesso a diversos dados relevantes para seu dia a dia de trabalho, e também pode realizar diferentes ações cotidianas com facilidade, como estornos, consulta de saldo e mais.
           </p>
           <div
@@ -11426,7 +11193,6 @@ exports[`Storyshots Landing Pagar.me sign in 1`] = `
               <span>
                 Já possui cadastro?
                 <a
-                  className={undefined}
                   href="https://dashboard.pagar.me/#/login"
                 >
                   Faça o login
@@ -11454,38 +11220,24 @@ exports[`Storyshots Landing Pagar.me sign in confirmation 1`] = `
       <div
         className="light primary column col desk7 tv7 tablet12 palm12 startAlign"
       >
-        <div
-          className={undefined}
-        >
-          <div
-            className={undefined}
-          >
-            <div
-              className={undefined}
-            >
+        <div>
+          <div>
+            <div>
               <img
                 alt="Pagar.me"
                 src=""
               />
             </div>
-            <div
-              className={undefined}
-            >
-              <p
-                className={undefined}
-              >
+            <div>
+              <p>
                 <b>
                   pronto!
                 </b>
                  você receberá um e-mail com as Instruções para a ativação de sua conta
               </p>
             </div>
-            <div
-              className={undefined}
-            >
-              <div
-                className={undefined}
-              >
+            <div>
+              <div>
                 <button
                   className="button gradient normalRelevance huge"
                   disabled={false}
@@ -11504,27 +11256,17 @@ exports[`Storyshots Landing Pagar.me sign in confirmation 1`] = `
       <div
         className="light secondary column col desk5 tv5 tablet12 palm12 startAlign"
       >
-        <div
-          className={undefined}
-        >
-          <div
-            className={undefined}
-          >
+        <div>
+          <div>
             <div>
-              <h1
-                className={undefined}
-              >
+              <h1>
                 Crie sua conta
               </h1>
-              <span
-                className={undefined}
-              >
+              <span>
                 na dashboard Pagar.me
               </span>
             </div>
-            <p
-              className={undefined}
-            >
+            <p>
               A Dashboard Pagar.me é um painel de controle de operações. Através dela você pode ter acesso a diversos dados relevantes para seu dia a dia de trabalho, e também pode realizar diferentes ações cotidianas com facilidade, como estornos, consulta de saldo e mais.
             </p>
             <div
@@ -11534,7 +11276,6 @@ exports[`Storyshots Landing Pagar.me sign in confirmation 1`] = `
                 <span>
                   Já possui cadastro?
                   <a
-                    className={undefined}
                     href="https://dashboard.pagar.me/#/login"
                   >
                     Faça o login
@@ -11564,20 +11305,15 @@ exports[`Storyshots Landing Pagar.me two factor login 1`] = `
         className="dark primary column col desk7 tv7 tablet12 palm12 startAlign"
       >
         <form
-          className={undefined}
           onSubmit={[Function]}
         >
-          <div
-            className={undefined}
-          >
+          <div>
             <img
               alt="Pagar.me"
               src=""
             />
           </div>
-          <div
-            className={undefined}
-          >
+          <div>
             <div
               className="input"
             >
@@ -11669,12 +11405,8 @@ exports[`Storyshots Landing Pagar.me two factor login 1`] = `
               </div>
             </div>
           </div>
-          <div
-            className={undefined}
-          >
-            <div
-              className={undefined}
-            >
+          <div>
+            <div>
               <button
                 className="button gradient normalRelevance huge"
                 disabled={false}
@@ -11697,24 +11429,16 @@ exports[`Storyshots Landing Pagar.me two factor login 1`] = `
       <div
         className="light secondary column col desk5 tv5 tablet12 palm12 startAlign"
       >
-        <div
-          className={undefined}
-        >
+        <div>
           <div>
-            <h1
-              className={undefined}
-            >
+            <h1>
               Seja bem-vindo
             </h1>
-            <span
-              className={undefined}
-            >
+            <span>
               à dashboard Pagar.me
             </span>
           </div>
-          <p
-            className={undefined}
-          >
+          <p>
             A Dashboard Pagar.me é o painel de controle da sua operação. Através dela você tem acesso a diversos dados relevantes para seu dia a dia de trabalho, e também pode realizar diferentes ações cotidianas com facilidade, como estornos, consulta de saldo e mais.
           </p>
           <div
@@ -11727,7 +11451,6 @@ exports[`Storyshots Landing Pagar.me two factor login 1`] = `
               <span>
                 Ainda não tem uma conta?
                 <a
-                  className={undefined}
                   href="https://dashboard.pagar.me/#/signup"
                 >
                   Cadastre-se
@@ -16400,9 +16123,7 @@ exports[`Storyshots Popover Visible 1`] = `
 >
   
   <div>
-    <div
-      className={undefined}
-    >
+    <div>
       <div
         className="target"
         onClick={[Function]}
@@ -16447,9 +16168,7 @@ exports[`Storyshots Popover Visible 1`] = `
         </div>
       </div>
     </div>
-    <div
-      className={undefined}
-    >
+    <div>
       <div
         className="target"
         onClick={[Function]}
@@ -19695,9 +19414,7 @@ exports[`Storyshots Table Action column 1`] = `
             <td
               className="tableItem centerAlign"
             >
-              <div
-                className={undefined}
-              >
+              <div>
                 <div
                   className="legend"
                 >
@@ -19765,9 +19482,7 @@ exports[`Storyshots Table Action column 1`] = `
             <td
               className="tableItem centerAlign"
             >
-              <div
-                className={undefined}
-              >
+              <div>
                 <div
                   className="legend"
                 >
@@ -19835,9 +19550,7 @@ exports[`Storyshots Table Action column 1`] = `
             <td
               className="tableItem centerAlign"
             >
-              <div
-                className={undefined}
-              >
+              <div>
                 <div
                   className="legend"
                 >
@@ -19905,9 +19618,7 @@ exports[`Storyshots Table Action column 1`] = `
             <td
               className="tableItem centerAlign"
             >
-              <div
-                className={undefined}
-              >
+              <div>
                 <div
                   className="legend"
                 >
@@ -19973,9 +19684,7 @@ exports[`Storyshots Table Action column 1`] = `
           </tr>
         </tbody>
       </table>
-      <div
-        className={undefined}
-      />
+      <div />
     </div>
   </div>
 </section>
@@ -20180,9 +19889,7 @@ exports[`Storyshots Table Disabled orderable 1`] = `
             <td
               className="tableItem centerAlign"
             >
-              <div
-                className={undefined}
-              >
+              <div>
                 <div
                   className="legend"
                 >
@@ -20329,7 +20036,6 @@ exports[`Storyshots Table Disabled orderable 1`] = `
                         Card brand
                       </span>
                       <div
-                        className={undefined}
                         title={null}
                       >
                         <span
@@ -20412,9 +20118,7 @@ exports[`Storyshots Table Disabled orderable 1`] = `
             <td
               className="tableItem centerAlign"
             >
-              <div
-                className={undefined}
-              >
+              <div>
                 <div
                   className="legend"
                 >
@@ -20567,15 +20271,10 @@ exports[`Storyshots Table Disabled orderable 1`] = `
                         Card brand
                       </span>
                       <div
-                        className={undefined}
                         title="mastercard"
                       >
-                        <span
-                          className={undefined}
-                        >
-                          <MasterCard16.svg
-                            className={undefined}
-                          />
+                        <span>
+                          <MasterCard16.svg />
                           mastercard
                         </span>
                       </div>
@@ -20653,9 +20352,7 @@ exports[`Storyshots Table Disabled orderable 1`] = `
             <td
               className="tableItem centerAlign"
             >
-              <div
-                className={undefined}
-              >
+              <div>
                 <div
                   className="legend"
                 >
@@ -20808,15 +20505,10 @@ exports[`Storyshots Table Disabled orderable 1`] = `
                         Card brand
                       </span>
                       <div
-                        className={undefined}
                         title="visa"
                       >
-                        <span
-                          className={undefined}
-                        >
-                          <VisaCard16.svg
-                            className={undefined}
-                          />
+                        <span>
+                          <VisaCard16.svg />
                           visa
                         </span>
                       </div>
@@ -20894,9 +20586,7 @@ exports[`Storyshots Table Disabled orderable 1`] = `
             <td
               className="tableItem centerAlign"
             >
-              <div
-                className={undefined}
-              >
+              <div>
                 <div
                   className="legend"
                 >
@@ -21053,15 +20743,10 @@ exports[`Storyshots Table Disabled orderable 1`] = `
                         Card brand
                       </span>
                       <div
-                        className={undefined}
                         title="visa"
                       >
-                        <span
-                          className={undefined}
-                        >
-                          <VisaCard16.svg
-                            className={undefined}
-                          />
+                        <span>
+                          <VisaCard16.svg />
                           visa
                         </span>
                       </div>
@@ -21103,9 +20788,7 @@ exports[`Storyshots Table Disabled orderable 1`] = `
           </tr>
         </tbody>
       </table>
-      <div
-        className={undefined}
-      >
+      <div>
         <div>
           <div>
              Selected rows 
@@ -21283,9 +20966,7 @@ exports[`Storyshots Table Empty renderer column 1`] = `
             <td
               className="tableItem centerAlign"
             >
-              <div
-                className={undefined}
-              >
+              <div>
                 <div
                   className="legend"
                 >
@@ -21346,9 +21027,7 @@ exports[`Storyshots Table Empty renderer column 1`] = `
             <td
               className="tableItem centerAlign"
             >
-              <div
-                className={undefined}
-              >
+              <div>
                 <div
                   className="legend"
                 >
@@ -21409,9 +21088,7 @@ exports[`Storyshots Table Empty renderer column 1`] = `
             <td
               className="tableItem centerAlign"
             >
-              <div
-                className={undefined}
-              >
+              <div>
                 <div
                   className="legend"
                 >
@@ -21472,9 +21149,7 @@ exports[`Storyshots Table Empty renderer column 1`] = `
             <td
               className="tableItem centerAlign"
             >
-              <div
-                className={undefined}
-              >
+              <div>
                 <div
                   className="legend"
                 >
@@ -21526,9 +21201,7 @@ exports[`Storyshots Table Empty renderer column 1`] = `
           </tr>
         </tbody>
       </table>
-      <div
-        className={undefined}
-      />
+      <div />
     </div>
   </div>
 </section>
@@ -21694,9 +21367,7 @@ exports[`Storyshots Table Empty table 1`] = `
           </tr>
         </tbody>
       </table>
-      <div
-        className={undefined}
-      />
+      <div />
     </div>
   </div>
 </section>
@@ -21910,9 +21581,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
             <td
               className="tableItem centerAlign"
             >
-              <div
-                className={undefined}
-              >
+              <div>
                 <div
                   className="legend"
                 >
@@ -22061,7 +21730,6 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                         Card brand
                       </span>
                       <div
-                        className={undefined}
                         title={null}
                       >
                         <span
@@ -22147,9 +21815,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
             <td
               className="tableItem centerAlign"
             >
-              <div
-                className={undefined}
-              >
+              <div>
                 <div
                   className="legend"
                 >
@@ -22304,15 +21970,10 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                         Card brand
                       </span>
                       <div
-                        className={undefined}
                         title="mastercard"
                       >
-                        <span
-                          className={undefined}
-                        >
-                          <MasterCard16.svg
-                            className={undefined}
-                          />
+                        <span>
+                          <MasterCard16.svg />
                           mastercard
                         </span>
                       </div>
@@ -22393,9 +22054,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
             <td
               className="tableItem centerAlign"
             >
-              <div
-                className={undefined}
-              >
+              <div>
                 <div
                   className="legend"
                 >
@@ -22550,15 +22209,10 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                         Card brand
                       </span>
                       <div
-                        className={undefined}
                         title="visa"
                       >
-                        <span
-                          className={undefined}
-                        >
-                          <VisaCard16.svg
-                            className={undefined}
-                          />
+                        <span>
+                          <VisaCard16.svg />
                           visa
                         </span>
                       </div>
@@ -22639,9 +22293,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
             <td
               className="tableItem centerAlign"
             >
-              <div
-                className={undefined}
-              >
+              <div>
                 <div
                   className="legend"
                 >
@@ -22800,15 +22452,10 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                         Card brand
                       </span>
                       <div
-                        className={undefined}
                         title="visa"
                       >
-                        <span
-                          className={undefined}
-                        >
-                          <VisaCard16.svg
-                            className={undefined}
-                          />
+                        <span>
+                          <VisaCard16.svg />
                           visa
                         </span>
                       </div>
@@ -22850,9 +22497,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
           </tr>
         </tbody>
       </table>
-      <div
-        className={undefined}
-      >
+      <div>
         <div>
           <div>
              Selected rows 
@@ -22963,9 +22608,7 @@ exports[`Storyshots Table Simple 1`] = `
             <td
               className="tableItem centerAlign"
             >
-              <div
-                className={undefined}
-              >
+              <div>
                 <div
                   className="legend"
                 >
@@ -23024,9 +22667,7 @@ exports[`Storyshots Table Simple 1`] = `
             <td
               className="tableItem centerAlign"
             >
-              <div
-                className={undefined}
-              >
+              <div>
                 <div
                   className="legend"
                 >
@@ -23085,9 +22726,7 @@ exports[`Storyshots Table Simple 1`] = `
             <td
               className="tableItem centerAlign"
             >
-              <div
-                className={undefined}
-              >
+              <div>
                 <div
                   className="legend"
                 >
@@ -23146,9 +22785,7 @@ exports[`Storyshots Table Simple 1`] = `
             <td
               className="tableItem centerAlign"
             >
-              <div
-                className={undefined}
-              >
+              <div>
                 <div
                   className="legend"
                 >
@@ -23242,9 +22879,7 @@ exports[`Storyshots Table Simple 1`] = `
           </tr>
         </tfoot>
       </table>
-      <div
-        className={undefined}
-      />
+      <div />
     </div>
   </div>
 </section>
@@ -23256,9 +22891,7 @@ exports[`Storyshots Tags Default 1`] = `
 >
   
   <div>
-    <div
-      className={undefined}
-    >
+    <div>
       <div
         className="tag"
       >
@@ -23553,9 +23186,7 @@ exports[`Storyshots Tooltip Visible 1`] = `
 >
   
   <div>
-    <div
-      className={undefined}
-    >
+    <div>
       <h3>
         Right start
       </h3>
@@ -23582,9 +23213,7 @@ exports[`Storyshots Tooltip Visible 1`] = `
         </div>
       </div>
     </div>
-    <div
-      className={undefined}
-    >
+    <div>
       <h3>
         Right middle
       </h3>
@@ -23611,9 +23240,7 @@ exports[`Storyshots Tooltip Visible 1`] = `
         </div>
       </div>
     </div>
-    <div
-      className={undefined}
-    >
+    <div>
       <h3>
         Right end
       </h3>
@@ -23911,9 +23538,7 @@ exports[`Storyshots Typography Font families 1`] = `
 >
   
   <div>
-    <div
-      className={undefined}
-    >
+    <div>
       <div>
         <span>
           Heading 1

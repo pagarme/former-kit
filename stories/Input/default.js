@@ -20,6 +20,7 @@ class InputState extends React.Component {
       mask,
       multiline,
       placeholder,
+      renderer,
       type,
     } = this.props
 
@@ -40,6 +41,7 @@ class InputState extends React.Component {
         onChange={e => this.setState({ value: e.target.value })}
         onFocus={action('focus')}
         placeholder={placeholder}
+        renderer={renderer}
         type={type}
         value={value}
       />
@@ -182,6 +184,15 @@ storiesOf('Inputs', module)
           hint="must have more than 12 characters"
           onChange={action('text changed')}
           value=""
+        />
+      </Section>
+      <Section title="Using renderer">
+        <InputState
+          renderer={props => (
+            <input
+              {...props}
+            />
+          )}
         />
       </Section>
     </div>

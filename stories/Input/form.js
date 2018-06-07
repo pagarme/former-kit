@@ -16,11 +16,12 @@ class InputState extends React.Component {
     const {
       error,
       icon,
+      label,
       mask,
       multiline,
       placeholder,
+      renderer,
       type,
-      label,
     } = this.props
 
     const {
@@ -40,6 +41,7 @@ class InputState extends React.Component {
         onChange={e => this.setState({ value: e.target.value })}
         onFocus={action('focus')}
         placeholder={placeholder}
+        renderer={renderer}
         type={type}
         value={value}
       />
@@ -202,6 +204,15 @@ storiesOf('Inputs', module)
           hint="Must have more than 12 pixel"
           onChange={action('text changed')}
           value="secret_pass"
+        />
+      </Section>
+      <Section title="Using renderer">
+        <InputState
+          renderer={props => (
+            <input
+              {...props}
+            />
+          )}
         />
       </Section>
     </div>
