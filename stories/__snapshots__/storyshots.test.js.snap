@@ -6323,6 +6323,68 @@ exports[`Storyshots Dropdown Default 1`] = `
     className=""
   >
     <h2>
+      Tiny size
+    </h2>
+    <div>
+      <div>
+        <div
+          className="dropdown tiny"
+        >
+          
+          <select
+            className="select"
+            defaultValue="placeholder"
+            disabled={false}
+            id="things-shortid-mock"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+          >
+            <option
+              className="option placeholder"
+              disabled={true}
+              hidden={true}
+              value="placeholder"
+            >
+              
+            </option>
+            <option
+              className="option"
+              value="github"
+            >
+              Github
+            </option>
+            <option
+              className="option"
+              value="open-source"
+            >
+              Open Source
+            </option>
+            <option
+              className="option"
+              value="pilot"
+            >
+              Pilot
+            </option>
+          </select>
+          <span
+            className="arrow"
+          >
+            <svg />
+          </span>
+          
+        </div>
+        <p>
+          Selected: 
+          
+        </p>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
       Default with placeholder
     </h2>
     <div>
@@ -6575,7 +6637,7 @@ exports[`Storyshots Dropdown Default 1`] = `
     className=""
   >
     <h2>
-      dropdown with value
+      Dropdown with value
     </h2>
     <div>
       <div>

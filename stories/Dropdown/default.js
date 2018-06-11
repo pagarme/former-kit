@@ -36,6 +36,7 @@ class DropdownState extends React.Component {
           disabled={this.props.disabled}
           placeholder={this.props.placeholder}
           error={this.props.error}
+          size={this.props.size}
         />
         <p>Selected: {this.state.selected}</p>
       </div>
@@ -57,6 +58,10 @@ storiesOf('Dropdown', module)
         <DropdownState />
       </Section>
 
+      <Section title="Tiny size">
+        <DropdownState size="tiny" />
+      </Section>
+
       <Section title="Default with placeholder">
         <DropdownState placeholder="Select" />
       </Section>
@@ -72,10 +77,9 @@ storiesOf('Dropdown', module)
       <Section title="Disabled with placeholder">
         <DropdownState disabled placeholder="Select" />
       </Section>
-      <Section title="dropdown with value">
-        <DropdownState
-          value="open-source"
-        />
+
+      <Section title="Dropdown with value">
+        <DropdownState value="open-source" />
       </Section>
     </div>
   ))

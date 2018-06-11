@@ -46,6 +46,8 @@ Default
   const
   DropdownState = require('./example/DropdownState').default;
   <div>
+    <DropdownState size="tiny" />
+    <br />
     <DropdownState />
     <br />
     <DropdownState placeholder="Placeholder" />
@@ -56,6 +58,8 @@ Disabled
 ```jsx
   const DropdownState = require('./example/DropdownState').default;
   <div>
+    <DropdownState size="tiny" disabled />
+    <br />
     <DropdownState disabled />
     <br />
     <DropdownState
@@ -69,6 +73,8 @@ Error
 ```jsx
   const DropdownState = require('./example/DropdownState').default;
   <div>
+    <DropdownState size="tiny" error="Error!" />
+    <br />
     <DropdownState error="Error!" />
     <br />
     <DropdownState
