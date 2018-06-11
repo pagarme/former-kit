@@ -38,10 +38,11 @@ class PaginationState extends React.Component {
       <div>
         <Pagination
           currentPage={currentPage}
-          totalPages={totalPages}
-          onPageChange={this.pageChanged}
-          strings={this.props.strings}
           disabled={disabled}
+          onPageChange={this.pageChanged}
+          size={this.props.size}
+          strings={this.props.strings}
+          totalPages={totalPages}
         />
         {error &&
           <p>Epic fail!</p>
@@ -62,6 +63,21 @@ PaginationState.propTypes = {
 storiesOf('Pagination', module)
   .add('Default', () => (
     <div>
+      <Section title="Default">
+        <PaginationState
+          currentPage={2}
+          totalPages={8}
+        />
+      </Section>
+
+      <Section title="Tiny size">
+        <PaginationState
+          currentPage={2}
+          size="tiny"
+          totalPages={8}
+        />
+      </Section>
+
       <Section title="Single page">
         <PaginationState
           currentPage={1}
