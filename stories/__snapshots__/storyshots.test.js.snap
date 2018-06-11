@@ -12637,7 +12637,7 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
             <span
               className="label"
             >
-              live
+              Live
             </span>
           </label>
           <label
@@ -12655,7 +12655,7 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
             <span
               className="label"
             >
-              test
+              Test
             </span>
           </label>
         </div>
@@ -13112,7 +13112,7 @@ exports[`Storyshots Layout Default with all props 1`] = `
             <span
               className="label"
             >
-              live
+              Live
             </span>
           </label>
           <label
@@ -13130,7 +13130,7 @@ exports[`Storyshots Layout Default with all props 1`] = `
             <span
               className="label"
             >
-              test
+              Test
             </span>
           </label>
         </div>
@@ -13690,7 +13690,7 @@ exports[`Storyshots Layout Default without Footer 1`] = `
             <span
               className="label"
             >
-              live
+              Live
             </span>
           </label>
           <label
@@ -13708,7 +13708,7 @@ exports[`Storyshots Layout Default without Footer 1`] = `
             <span
               className="label"
             >
-              test
+              Test
             </span>
           </label>
         </div>
@@ -14213,7 +14213,7 @@ exports[`Storyshots Layout Default without Header 1`] = `
             <span
               className="label"
             >
-              live
+              Live
             </span>
           </label>
           <label
@@ -14231,7 +14231,7 @@ exports[`Storyshots Layout Default without Header 1`] = `
             <span
               className="label"
             >
-              test
+              Test
             </span>
           </label>
         </div>
@@ -18510,7 +18510,7 @@ exports[`Storyshots SegmentedSwitch Default 1`] = `
           <span
             className="label"
           >
-            test
+            Test
           </span>
         </label>
         <label
@@ -18528,7 +18528,7 @@ exports[`Storyshots SegmentedSwitch Default 1`] = `
           <span
             className="label"
           >
-            live
+            Live
           </span>
         </label>
       </div>
@@ -18546,11 +18546,11 @@ exports[`Storyshots SegmentedSwitch Default 1`] = `
       >
         <label
           className="item"
-          htmlFor="segmented-switch-shortid-mock-super-extra-test"
+          htmlFor="segmented-switch-shortid-mock-super-extra-options-test"
         >
           <input
             checked={false}
-            id="segmented-switch-shortid-mock-super-extra-test"
+            id="segmented-switch-shortid-mock-super-extra-options-test"
             name="segmented-switch-shortid-mock"
             onChange={[Function]}
             type="radio"
@@ -18559,16 +18559,16 @@ exports[`Storyshots SegmentedSwitch Default 1`] = `
           <span
             className="label"
           >
-            test
+            Test
           </span>
         </label>
         <label
           className="item"
-          htmlFor="segmented-switch-shortid-mock-super-extra-live"
+          htmlFor="segmented-switch-shortid-mock-super-extra-options-live"
         >
           <input
             checked={false}
-            id="segmented-switch-shortid-mock-super-extra-live"
+            id="segmented-switch-shortid-mock-super-extra-options-live"
             name="segmented-switch-shortid-mock"
             onChange={[Function]}
             type="radio"
@@ -18577,16 +18577,16 @@ exports[`Storyshots SegmentedSwitch Default 1`] = `
           <span
             className="label"
           >
-            live
+            Live
           </span>
         </label>
         <label
           className="item"
-          htmlFor="segmented-switch-shortid-mock-super-extra-super-test"
+          htmlFor="segmented-switch-shortid-mock-super-extra-options-super-test"
         >
           <input
             checked={true}
-            id="segmented-switch-shortid-mock-super-extra-super-test"
+            id="segmented-switch-shortid-mock-super-extra-options-super-test"
             name="segmented-switch-shortid-mock"
             onChange={[Function]}
             type="radio"
@@ -18595,16 +18595,16 @@ exports[`Storyshots SegmentedSwitch Default 1`] = `
           <span
             className="label"
           >
-            super-test
+            Super Test
           </span>
         </label>
         <label
           className="item"
-          htmlFor="segmented-switch-shortid-mock-super-extra-extra-live"
+          htmlFor="segmented-switch-shortid-mock-super-extra-options-extra-live"
         >
           <input
             checked={false}
-            id="segmented-switch-shortid-mock-super-extra-extra-live"
+            id="segmented-switch-shortid-mock-super-extra-options-extra-live"
             name="segmented-switch-shortid-mock"
             onChange={[Function]}
             type="radio"
@@ -18613,7 +18613,62 @@ exports[`Storyshots SegmentedSwitch Default 1`] = `
           <span
             className="label"
           >
-            extra-live
+            Extra Live
+          </span>
+        </label>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      With icons
+    </h2>
+    <div>
+      <div
+        className="segmentedSwitch"
+      >
+        <label
+          className="item"
+          htmlFor="segmented-switch-shortid-mock-table-chart-table"
+        >
+          <input
+            checked={true}
+            id="segmented-switch-shortid-mock-table-chart-table"
+            name="segmented-switch-shortid-mock"
+            onChange={[Function]}
+            type="radio"
+            value="table"
+          />
+          <span
+            className="label"
+          >
+            <Menu32.svg
+              height={16}
+              width={16}
+            />
+          </span>
+        </label>
+        <label
+          className="item"
+          htmlFor="segmented-switch-shortid-mock-table-chart-chart"
+        >
+          <input
+            checked={false}
+            id="segmented-switch-shortid-mock-table-chart-chart"
+            name="segmented-switch-shortid-mock"
+            onChange={[Function]}
+            type="radio"
+            value="chart"
+          />
+          <span
+            className="label"
+          >
+            <TrendingUp32.svg
+              height={16}
+              width={16}
+            />
           </span>
         </label>
       </div>
@@ -18848,7 +18903,7 @@ exports[`Storyshots Sidebar Default 1`] = `
         <span
           className="label"
         >
-          live
+          Live
         </span>
       </label>
       <label
@@ -18866,7 +18921,7 @@ exports[`Storyshots Sidebar Default 1`] = `
         <span
           className="label"
         >
-          test
+          Test
         </span>
       </label>
     </div>

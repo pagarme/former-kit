@@ -1,9 +1,10 @@
 import React from 'react'
 import {
   arrayOf,
-  string,
   func,
+  node,
   shape,
+  string,
 } from 'prop-types'
 import shortid from 'shortid'
 
@@ -15,18 +16,18 @@ class SegmentedSwitch extends React.PureComponent {
   constructor (props) {
     super(props)
     this.instanceId = `segmented-switch-${shortid.generate()}`
-    this.renderItem = this.renderItem.bind(this)
+    this.renderOption = this.renderOption.bind(this)
   }
 
-  renderItem (item, index) {
+  renderOption (option, index) {
     const {
-      selected,
-      onChange,
       name,
+      onChange,
       theme,
+      value,
     } = this.props
 
-    const id = `${this.instanceId}-${name}-${item}`
+    const id = `${this.instanceId}-${name}-${option.value}`
 
     return (
       <label
@@ -35,34 +36,51 @@ class SegmentedSwitch extends React.PureComponent {
         htmlFor={id}
       >
         <input
+          checked={value === option.value}
           id={id}
           name={this.instanceId}
-          value={item}
+          onChange={() => onChange(option.value, index)}
           type="radio"
-          checked={selected === item}
-          onChange={() => onChange(item, index)}
+          value={option.value}
         />
 
-        <span className={theme.label}>{item}</span>
+        <span className={theme.label}>{option.title}</span>
       </label>
     )
   }
 
   render () {
     const {
+      options,
       theme,
-      items,
     } = this.props
 
     return (
       <div className={theme.segmentedSwitch}>
-        {items.map(this.renderItem)}
+        {options.map(this.renderOption)}
       </div>
     )
   }
 }
 
 SegmentedSwitch.propTypes = {
+  /**
+   * A name to identify the component in a form.
+   */
+  name: string.isRequired,
+  /**
+   * The callback called when an option receives a click.
+   * @param {string} value - the value of the selected option
+   * @param {number} index - the index of the selected option
+   */
+  onChange: func.isRequired,
+  /**
+   * The list of options that will be rendered.
+   */
+  options: arrayOf(shape({
+    title: node,
+    value: string,
+  })).isRequired,
   /**
    * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
@@ -72,34 +90,18 @@ SegmentedSwitch.propTypes = {
     */
     segmentedSwitch: string,
     /**
-     * The class used to stylize an item.
+     * The class used to stylize an option.
      */
     item: string,
     /**
-     * The class used to stylize an item's label.
+     * The class used to stylize an option's label.
     */
     label: string,
   }),
   /**
-   * The list of items that will be rendered.
+   * The prop responsible for identifying the selected option value.
   */
-  items: arrayOf(string).isRequired,
-  /**
-   * A name to identify the component and create unique ids for
-   * the items.
-   */
-  name: string.isRequired,
-  /**
-   * The callback called when an item receives a click.
-   * @param {string} item - the value of the item clicked
-   * @param {number} index - the index of the item click
-   */
-  onChange: func.isRequired,
-  /**
-   * The prop responsible for identifying the selected item.
-   * Its value is the value of one of the `items`.
-  */
-  selected: string.isRequired,
+  value: string.isRequired,
 }
 
 SegmentedSwitch.defaultProps = {

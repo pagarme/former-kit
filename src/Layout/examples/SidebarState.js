@@ -11,7 +11,6 @@ import {
   SidebarContent,
   SidebarLinks,
   SidebarLink,
-  SidebarSections,
 } from '../../Sidebar'
 
 import Tag from '../../Tag'
@@ -30,28 +29,6 @@ const items = [
   },
 ]
 
-const sections = {
-  title: 'Pagar.me',
-  showMsg: 'Show balance',
-  hideMsg: 'Hide balance',
-  data: [
-    {
-      title: 'Available',
-      value: <p><small>R$</small> 150000</p>,
-      actionTitle: 'Withdraw',
-      action: () => {
-      },
-    },
-    {
-      title: 'To receive',
-      value: <p><small>R$</small> 70000</p>,
-      actionTitle: 'Antecipate',
-      action: () => {
-      },
-    },
-  ],
-}
-
 class SidebarState extends React.Component {
   constructor (props) {
     super(props)
@@ -62,7 +39,6 @@ class SidebarState extends React.Component {
       collapsed: false,
       selectedEnvironment: 'live',
       active: '',
-      showInfos: false,
     }
 
     this.handleEnvironment = this.handleEnvironment.bind(this)
@@ -78,7 +54,6 @@ class SidebarState extends React.Component {
     const {
       collapsed,
       selectedEnvironment,
-      showInfos,
     } = this.state
 
     return (
@@ -100,8 +75,17 @@ class SidebarState extends React.Component {
           {collapsed
             ? <Tag key={selectedEnvironment}>{selectedEnvironment}</Tag>
             : <SegmentedSwitch
-              items={['live', 'test']}
-              selected={this.state.selectedEnvironment}
+              options={[
+                {
+                  title: 'Test',
+                  value: 'test',
+                },
+                {
+                  title: 'Live',
+                  value: 'live',
+                },
+              ]}
+              value={this.state.selectedEnvironment}
               name={`${this.id}-live-test`}
               onChange={this.handleEnvironment}
             />
@@ -109,17 +93,6 @@ class SidebarState extends React.Component {
         </SidebarContent>
 
         <SidebarLinks>
-          {!collapsed &&
-            <SidebarLink
-              title={sections.title}
-              subtitle={showInfos ? 'hide balance' : 'show balance'}
-              active={showInfos}
-              onClick={() => this.setState({ showInfos: !showInfos })}
-            >
-              <SidebarSections sections={sections.data} />
-            </SidebarLink>
-          }
-
           {items.map(item => (
             <SidebarLink
               key={item.value}
