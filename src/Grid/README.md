@@ -119,7 +119,6 @@ const { range } = require('ramda');
 const reallyLongString = [
   'Loremipsumdolorsitamet,',
   'consetetursadipscingelitr,',
-  'seddiamnonumyeirmodtemporinviduntutlaboreetdolorem,',
   'seddiamvoluptua.',
   'Atveroeosetaccusametjustoduodoloresetearebum.',
 ].join('');
