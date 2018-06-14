@@ -81,6 +81,7 @@ class Dropdown extends React.Component {
       icons,
       label,
       placeholder,
+      size,
       theme,
       value,
     } = this.props
@@ -88,9 +89,10 @@ class Dropdown extends React.Component {
     const rootClasses = classNames(
       theme.dropdown,
       {
-        [theme.focused]: this.state.isFocused,
         [theme.disabled]: disabled,
         [theme.error]: error,
+        [theme.focused]: this.state.isFocused,
+        [theme[size]]: size,
       }
     )
 
@@ -144,19 +146,6 @@ class Dropdown extends React.Component {
 
 Dropdown.propTypes = {
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
-   */
-  theme: PropTypes.shape({
-    arrow: PropTypes.string,
-    disabled: PropTypes.string,
-    dropdown: PropTypes.string,
-    error: PropTypes.string,
-    focused: PropTypes.string,
-    placeholder: PropTypes.string,
-    secondaryText: PropTypes.string,
-    select: PropTypes.string,
-  }),
-  /**
    * Disables the component.
    */
   disabled: PropTypes.bool,
@@ -202,19 +191,39 @@ Dropdown.propTypes = {
    */
   options: PropTypes.arrayOf(PropTypes.shape({
     /**
-     * Option value, which will be returned in the select function.
-     */
-    value: PropTypes.string,
-    /**
      * Option name shown in the options list.
      */
     name: PropTypes.string,
+    /**
+     * Option value, which will be returned in the select function.
+     */
+    value: PropTypes.string,
   })).isRequired,
   /**
    * Text which will be shown when none option is selected
    * (in the form variant the label may replace the placeholder).
    */
   placeholder: PropTypes.string,
+  /**
+   * Component's size.
+   */
+  size: PropTypes.oneOf([
+    'tiny',
+  ]),
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
+   */
+  theme: PropTypes.shape({
+    arrow: PropTypes.string,
+    disabled: PropTypes.string,
+    dropdown: PropTypes.string,
+    error: PropTypes.string,
+    focused: PropTypes.string,
+    placeholder: PropTypes.string,
+    secondaryText: PropTypes.string,
+    select: PropTypes.string,
+    tiny: PropTypes.string,
+  }),
   /**
    * Selected value. If it's not set, the placeholder will be shown.
    */
@@ -229,6 +238,7 @@ Dropdown.defaultProps = {
   onBlur: null,
   onFocus: null,
   placeholder: '',
+  size: null,
   theme: {},
   value: '',
 }

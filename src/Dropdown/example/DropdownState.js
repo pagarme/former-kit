@@ -31,6 +31,7 @@ class DropdownState extends React.Component {
           disabled={this.props.disabled}
           placeholder={this.props.placeholder}
           error={this.props.error}
+          size={this.props.size}
         />
       )
       : (
@@ -48,17 +49,19 @@ class DropdownState extends React.Component {
 }
 
 DropdownState.propTypes = {
-  type: PropTypes.oneOf(['default', 'form']),
   disabled: PropTypes.bool,
   error: PropTypes.string,
   placeholder: PropTypes.string,
+  size: PropTypes.oneOf(['tiny']),
+  type: PropTypes.oneOf(['default', 'form']),
 }
 
 DropdownState.defaultProps = {
-  type: 'default',
   disabled: false,
   error: '',
   placeholder: '',
+  size: null,
+  type: 'default',
 }
 
 export default DropdownState
