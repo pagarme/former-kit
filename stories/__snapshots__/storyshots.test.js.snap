@@ -19145,6 +19145,193 @@ exports[`Storyshots Sidebar Default 1`] = `
 </aside>
 `;
 
+exports[`Storyshots Spacing Default 1`] = `
+<div
+  className="typography"
+>
+  <section
+    className=""
+  >
+    <h2>
+      Flex
+    </h2>
+    <div>
+      <div
+        className={undefined}
+      >
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            Button
+          </span>
+        </button>
+        <div
+          className="flex"
+        />
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            Button
+          </span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Tiny
+    </h2>
+    <div>
+      <div
+        className={undefined}
+      >
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            Button
+          </span>
+        </button>
+        <div
+          className="tiny"
+        />
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            Button
+          </span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Small
+    </h2>
+    <div>
+      <div
+        className={undefined}
+      >
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            Button
+          </span>
+        </button>
+        <div
+          className="small"
+        />
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            Button
+          </span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Medium
+    </h2>
+    <div>
+      <div
+        className={undefined}
+      >
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            Button
+          </span>
+        </button>
+        <div
+          className="medium"
+        />
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            Button
+          </span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Large
+    </h2>
+    <div>
+      <div
+        className={undefined}
+      >
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            Button
+          </span>
+        </button>
+        <div
+          className="large"
+        />
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            Button
+          </span>
+        </button>
+      </div>
+    </div>
+  </section>
+</div>
+`;
+
 exports[`Storyshots Steps Default 1`] = `
 <section
   className="typography"

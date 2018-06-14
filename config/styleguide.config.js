@@ -34,6 +34,7 @@ module.exports = {
         '../src/Pagination/index.js',
         '../src/RadioGroup/index.js',
         '../src/SegmentedSwitch/index.js',
+        '../src/Spacing/index.js',
         '../src/Steps/index.js',
         '../src/Switch/index.js',
         '../src/Tag/index.js',
