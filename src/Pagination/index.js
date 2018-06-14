@@ -278,11 +278,12 @@ class Pagination extends React.Component {
 
   render () {
     const {
+      disabled,
       icons,
+      size,
       strings,
       theme,
       totalPages,
-      disabled,
     } = this.props
 
     const translatedStrings = getStrings(strings)
@@ -294,6 +295,7 @@ class Pagination extends React.Component {
     const paginationClasses = classNames(theme.pagination, {
       [theme.error]: error,
       [theme.disabled]: disabled,
+      [theme[size]]: size,
     })
 
     return (
@@ -351,22 +353,6 @@ class Pagination extends React.Component {
 
 Pagination.propTypes = {
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
-   */
-  theme: PropTypes.shape({
-    currentPage: PropTypes.string,
-    disabled: PropTypes.string,
-    error: PropTypes.string,
-    expander: PropTypes.string,
-    input: PropTypes.string,
-    label: PropTypes.string,
-    next: PropTypes.string,
-    pagination: PropTypes.string,
-    prev: PropTypes.string,
-    separator: PropTypes.string,
-    totalPages: PropTypes.string,
-  }),
-  /**
    * The number of the current page.
    */
   currentPage: PropTypes.number.isRequired,
@@ -392,6 +378,12 @@ Pagination.propTypes = {
    */
   onPageChange: PropTypes.func.isRequired,
   /**
+   * Component's size.
+   */
+  size: PropTypes.oneOf([
+    'tiny',
+  ]),
+  /**
    * Strings for component i18n.
    */
   strings: PropTypes.shape({
@@ -399,6 +391,23 @@ Pagination.propTypes = {
      * The 'of' between the current and the last page.
      */
     of: PropTypes.string,
+  }),
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
+   */
+  theme: PropTypes.shape({
+    currentPage: PropTypes.string,
+    disabled: PropTypes.string,
+    error: PropTypes.string,
+    expander: PropTypes.string,
+    input: PropTypes.string,
+    label: PropTypes.string,
+    next: PropTypes.string,
+    pagination: PropTypes.string,
+    prev: PropTypes.string,
+    separator: PropTypes.string,
+    tiny: PropTypes.string,
+    totalPages: PropTypes.string,
   }),
   /**
    * The total pages number.
@@ -409,6 +418,7 @@ Pagination.propTypes = {
 Pagination.defaultProps = {
   disabled: false,
   icons: {},
+  size: null,
   strings: defaultStrings,
   theme: {},
 }
