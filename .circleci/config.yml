@@ -27,6 +27,10 @@ jobs:
           command: yarn test
 
       - run:
+          name: Building styleguidist
+          command: yarn styleguide:build
+
+      - run:
           name: Building and uploading storybook for visual diff
           working_directory: ~/repo
           command: |
