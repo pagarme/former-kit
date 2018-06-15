@@ -51,7 +51,7 @@ module.exports = {
             '../src/Card/CardContent.js',
             '../src/Card/CardGraphic.js',
             '../src/Card/CardSection.js',
-            '../src/Card/CardSectionDoubleLineTitle.js'
+            '../src/Card/CardSectionDoubleLineTitle.js',
             '../src/Card/CardTitle.js',
           ],
         },
