@@ -4,6 +4,7 @@ import {
   shape,
   string,
 } from 'prop-types'
+import classNames from 'classnames'
 
 import ThemeConsumer from '../ThemeConsumer'
 
@@ -16,7 +17,10 @@ const Spacing = ({
   size,
   theme,
 }) => (
-  <div className={theme[size]} />
+  <div className={classNames(theme.spacing, {
+      [theme[size]]: size,
+    })}
+  />
 )
 
 Spacing.propTypes = {
