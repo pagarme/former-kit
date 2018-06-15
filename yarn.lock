@@ -4185,9 +4185,9 @@ form-data@~2.3.1:
     combined-stream "^1.0.5"
     mime-types "^2.1.12"
 
-former-kit-skin-pagarme@0.5.2:
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/former-kit-skin-pagarme/-/former-kit-skin-pagarme-0.5.2.tgz#9918b8984c6ec6169e450a16df754a05e441ff98"
+former-kit-skin-pagarme@0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/former-kit-skin-pagarme/-/former-kit-skin-pagarme-0.6.0.tgz#95a560380c3e7a951ac695620144b23c44734e05"
   dependencies:
     emblematic-icons "0.1.1"
     react-dates "12.7.1"
