@@ -107,7 +107,7 @@ describe('DateInput', () => {
       <DateInput
         onChange={onChange}
         presets={presets}
-        dates={{ start: null, end: null }}
+        value={{ start: null, end: null }}
       />
     )
 
@@ -125,7 +125,7 @@ describe('DateInput', () => {
       <DateInput
         onChange={onChange}
         presets={presets}
-        dates={{ start: null, end: null }}
+        value={{ start: null, end: null }}
       />
     )
 
@@ -150,7 +150,7 @@ describe('DateInput', () => {
   it('should show only one input when start and end are defined and equal', () => {
     const component = mount(
       <DateInput
-        dates={{ start: moment(), end: moment() }}
+        value={{ start: moment(), end: moment() }}
         onChange={() => {}}
       />
     )
@@ -165,7 +165,7 @@ describe('DateInput', () => {
     const component = mount(
       <DateInput
         onChange={onChange}
-        dates={{ start: null, end: null }}
+        value={{ start: null, end: null }}
       />
     )
 
@@ -176,7 +176,7 @@ describe('DateInput', () => {
   it('should show two inputs when start and end are different', () => {
     const component = mount(
       <DateInput
-        dates={{ start: moment(), end: moment().add(10, 'days') }}
+        value={{ start: moment(), end: moment().add(10, 'days') }}
         onChange={() => {}}
       />
     )
@@ -188,7 +188,7 @@ describe('DateInput', () => {
   it('should show two inputs when start is defined and end is null', () => {
     const component = mount(
       <DateInput
-        dates={{ start: moment(), end: null }}
+        value={{ start: moment(), end: null }}
         onChange={() => {}}
       />
     )
@@ -205,7 +205,7 @@ describe('DateInput', () => {
         <DateInput
           onChange={onChange}
           presets={presets}
-          dates={initialDates}
+          value={initialDates}
         />
       )
 
@@ -265,7 +265,7 @@ describe('DateInput', () => {
         <DateInput
           onChange={onChange}
           presets={presets}
-          dates={dates}
+          value={dates}
         />
       )
 
@@ -290,7 +290,7 @@ describe('DateInput', () => {
         <DateInput
           onChange={onChange}
           presets={presets}
-          dates={dates}
+          value={dates}
         />
       )
 
@@ -313,7 +313,7 @@ describe('DateInput', () => {
         <DateInput
           onChange={onChange}
           presets={presets}
-          dates={initialDates}
+          value={initialDates}
           limits={limits}
         />
       )
@@ -337,7 +337,7 @@ describe('DateInput', () => {
         <DateInput
           onChange={onChange}
           presets={presets}
-          dates={initialDates}
+          value={initialDates}
           limits={limits}
         />
       )
@@ -367,7 +367,7 @@ describe('DateInput', () => {
         <DateInput
           onChange={onChange}
           presets={presets}
-          dates={dates}
+          value={dates}
           limits={limits}
         />
       )
@@ -391,7 +391,7 @@ describe('DateInput', () => {
         <DateInput
           onChange={onChange}
           presets={presets}
-          dates={initialDates}
+          value={initialDates}
           limits={limits}
         />
       )
@@ -416,7 +416,7 @@ describe('DateInput', () => {
         <DateInput
           onChange={onChange}
           presets={presets}
-          dates={initialDates}
+          value={initialDates}
           limits={limits}
         />
       )

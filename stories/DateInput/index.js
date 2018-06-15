@@ -31,7 +31,7 @@ class DateInputState extends React.Component {
     super(props)
 
     this.state = {
-      dates: {
+      value: {
         start: props.start,
         end: props.end,
       },
@@ -42,28 +42,28 @@ class DateInputState extends React.Component {
   }
 
   componentWillReceiveProps ({ start, end }) {
-    this.setState({ dates: { start, end } })
+    this.setState({ value: { start, end } })
   }
 
   handleReset () {
     const { start, end } = this.props
-    this.setState({ dates: { start, end } })
+    this.setState({ value: { start, end } })
   }
 
-  handleDatesChange (dates) {
-    this.setState({ dates })
+  handleDatesChange (value) {
+    this.setState({ value })
   }
 
   render () {
-    const { dates } = this.state
+    const { value } = this.state
 
     return (
       <div className={style.container}>
         <DateInput
           presets={presets}
-          dates={dates}
+          value={value}
           onChange={this.handleDatesChange}
-          active={dates.start && dates.end && true}
+          active={value.start && value.end && true}
           limits={{
             lower: moment('01-01-2013', 'DD-MM-YYYY'),
             upper: moment('01-01-2025', 'DD-MM-YYYY'),

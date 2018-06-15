@@ -36,16 +36,16 @@ class CheckboxGroup extends React.Component {
     return !equals(this.props, nextProps)
   }
 
-  handleChange (value) {
-    const { disabled, values, onChange } = this.props
+  handleChange (toggled) {
+    const { disabled, value, onChange } = this.props
 
     if (disabled) return
 
-    const valueIndex = values.indexOf(value)
+    const valueIndex = value.indexOf(toggled)
 
     const nextValues = valueIndex >= 0
-      ? filter(pipe(equals(value), not), values)
-      : append(value, values)
+      ? filter(pipe(equals(toggled), not), value)
+      : append(toggled, value)
 
     onChange(nextValues)
   }
@@ -58,7 +58,7 @@ class CheckboxGroup extends React.Component {
       name,
       options,
       theme,
-      values,
+      value,
     } = this.props
 
     const secondaryTextClass = classnames(
@@ -77,21 +77,21 @@ class CheckboxGroup extends React.Component {
     const optionsSplitted =
       splitEvery(elementsByColumn, options)
 
-    const hashList = list => list.map(({ value }) => `${value}`).join('')
+    const hashList = list => list.map(({ value: val }) => `${val}`).join('')
 
     const checkboxes =
       optionsSplitted.map(list => (
         <div key={hashList(list)}>
           {
-            list.map(({ value, label }) => (
+            list.map(({ value: checkboxValue, label }) => (
               <Checkbox
-                key={`${name}-${value}`}
-                name={`${name}-${value}`}
-                id={`${name}-${value}`}
-                value={value}
+                key={`${name}-${checkboxValue}`}
+                name={`${name}-${checkboxValue}`}
+                id={`${name}-${checkboxValue}`}
+                value={checkboxValue}
                 label={label}
-                checked={contains(value, values)}
-                onChange={partial(this.handleChange, [value])}
+                checked={contains(checkboxValue, value)}
+                onChange={partial(this.handleChange, [checkboxValue])}
                 disabled={disabled}
               />
             ))
@@ -142,7 +142,7 @@ CheckboxGroup.propTypes = {
   name: PropTypes.string.isRequired,
   /**
    * Triggered when an option is checked or unchecked.
-   * @param {Array<string>} values
+   * @param {Array<string>} value
    */
   onChange: PropTypes.func.isRequired,
   /**
@@ -162,7 +162,7 @@ CheckboxGroup.propTypes = {
   /**
    * List of checked options.
    */
-  values: PropTypes.arrayOf(PropTypes.string).isRequired,
+  value: PropTypes.arrayOf(PropTypes.string),
 }
 
 CheckboxGroup.defaultProps = {
@@ -170,6 +170,7 @@ CheckboxGroup.defaultProps = {
   columns: 1,
   disabled: false,
   error: '',
+  value: [],
 }
 
 export default consumeTheme(CheckboxGroup)
