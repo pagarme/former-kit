@@ -19199,7 +19199,7 @@ exports[`Storyshots Spacing Default 1`] = `
           </span>
         </button>
         <div
-          className="flex"
+          className="spacing flex"
         />
         <button
           className="button flat normalRelevance default"
@@ -19235,7 +19235,7 @@ exports[`Storyshots Spacing Default 1`] = `
           </span>
         </button>
         <div
-          className="tiny"
+          className="spacing tiny"
         />
         <button
           className="button flat normalRelevance default"
@@ -19271,7 +19271,7 @@ exports[`Storyshots Spacing Default 1`] = `
           </span>
         </button>
         <div
-          className="small"
+          className="spacing small"
         />
         <button
           className="button flat normalRelevance default"
@@ -19307,7 +19307,7 @@ exports[`Storyshots Spacing Default 1`] = `
           </span>
         </button>
         <div
-          className="medium"
+          className="spacing medium"
         />
         <button
           className="button flat normalRelevance default"
@@ -19343,7 +19343,7 @@ exports[`Storyshots Spacing Default 1`] = `
           </span>
         </button>
         <div
-          className="large"
+          className="spacing large"
         />
         <button
           className="button flat normalRelevance default"
