@@ -28,6 +28,7 @@ module.exports = {
         '../src/DateInput/index.js',
         '../src/DateSelector/index.js',
         '../src/Dropdown/Dropdown.js',
+        '../src/Flexbox/index.js',
         '../src/Footer/index.js',
         '../src/Image/index.js',
         '../src/Input/Input.js',
