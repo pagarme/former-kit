@@ -5,13 +5,13 @@ const { equals } = require('ramda')
 
 const isAscending = equals('ascending')
 
-const rowSort = acessor =>
-  sortBy(compose(toLower, defaultTo(''), path(acessor)))
+const rowSort = accessor =>
+  sortBy(compose(toLower, defaultTo(''), path(accessor)))
 
-const getSort = (acessor, order) => (
+const getSort = (accessor, order) => (
   isAscending(order) ?
-    rowSort(acessor) :
-    pipe(rowSort(acessor), reverse)
+    rowSort(accessor) :
+    pipe(rowSort(accessor), reverse)
 )
 
 const getMock = detailsClick => ({
@@ -29,11 +29,11 @@ const getMock = detailsClick => ({
           </Legend>
         </div>
       ),
-      acessor: ['status'],
+      accessor: ['status'],
       orderable: true,
     },
-    { title: 'Transation ID', acessor: ['id'], orderable: true },
-    { title: 'Date', acessor: ['date_created'], orderable: true },
+    { title: 'Transation ID', accessor: ['id'], orderable: true },
+    { title: 'Date', accessor: ['date_created'], orderable: true },
     {
       title: 'Details',
       isAction: true,
@@ -139,8 +139,8 @@ const getMock = detailsClick => ({
 const getRowsSort = (rows, columns) =>
   (orderColumn, order) => {
     const referenceColumn = columns[orderColumn]
-    const referenceAcessor = referenceColumn.acessor
-    const sort = getSort(referenceAcessor, order)
+    const referenceAccessor = referenceColumn.accessor
+    const sort = getSort(referenceAccessor, order)
     return sort(rows)
   }
 
