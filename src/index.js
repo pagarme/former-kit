@@ -1,6 +1,7 @@
 export { default as Alert } from './Alert'
 export { default as Avatar } from './Avatar'
 export { default as Button } from './Button'
+export { default as Calendar } from './Calendar'
 export { default as Checkbox } from './Checkbox'
 export { default as CheckboxGroup } from './CheckboxGroup'
 export { default as DateInput } from './DateInput'

@@ -1,6 +1,7 @@
 import './Alert'
 import './Avatar'
 import './Button'
+import './Calendar'
 import './Card'
 import './Checkbox'
 import './CheckboxGroup'
