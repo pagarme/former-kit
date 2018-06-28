@@ -10477,6 +10477,7 @@ exports[`Storyshots DateInput All styles 1`] = `
             className="start"
           >
             <input
+              autoComplete="off"
               className="input"
               id="shortid-mock-startDate"
               mask="11/11/1111"
@@ -10537,6 +10538,7 @@ exports[`Storyshots DateInput All styles 1`] = `
             className="start"
           >
             <input
+              autoComplete="off"
               className="input"
               id="shortid-mock-startDate"
               mask="11/11/1111"
@@ -10597,6 +10599,7 @@ exports[`Storyshots DateInput All styles 1`] = `
             className="start"
           >
             <input
+              autoComplete="off"
               className="input"
               id="shortid-mock-startDate"
               mask="11/11/1111"
@@ -10625,6 +10628,7 @@ exports[`Storyshots DateInput All styles 1`] = `
             className="end"
           >
             <input
+              autoComplete="off"
               className="input"
               mask="11/11/1111"
               maxLength={10}
@@ -10684,6 +10688,7 @@ exports[`Storyshots DateInput All styles 1`] = `
             className="start"
           >
             <input
+              autoComplete="off"
               className="input"
               id="shortid-mock-startDate"
               mask="11/11/1111"
@@ -10712,6 +10717,7 @@ exports[`Storyshots DateInput All styles 1`] = `
             className="end"
           >
             <input
+              autoComplete="off"
               className="input"
               mask="11/11/1111"
               maxLength={10}
