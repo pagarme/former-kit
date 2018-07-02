@@ -23,7 +23,7 @@ import Logo from './logo.svg'
 const items = [
   {
     value: 'home',
-    title: 'home',
+    title: 'Home',
     path: ['home'],
     icon: <IconHome width={16} height={16} />,
   },
