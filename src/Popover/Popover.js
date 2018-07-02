@@ -19,6 +19,12 @@ class Popover extends Component {
     this.handleOnClick = this.handleOnClick.bind(this)
   }
 
+  componentWillReceiveProps ({ visible }) {
+    this.setState({
+      visible,
+    })
+  }
+
   handleOnClick () {
     this.setState({
       visible: !this.state.visible,
@@ -32,7 +38,6 @@ class Popover extends Component {
       content,
       placement,
       theme,
-      visible: visibleProp,
     } = this.props
 
     const { visible } = this.state
@@ -44,7 +49,7 @@ class Popover extends Component {
       >
         {children}
 
-        {(visible || visibleProp) &&
+        {(visible) &&
           <div className={classNames(theme.popover, theme[base], theme[placement])}>
             {content}
           </div>

@@ -1,11 +1,9 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import classNames from 'classnames'
 import { storiesOf } from '@storybook/react'
-import { action } from '@storybook/addon-actions'
 
 import {
   Popover,
-  PopoverMenu,
 } from '../../src/Popover'
 
 import {
@@ -17,28 +15,10 @@ import {
 import Button from '../../src/Button'
 import Section from '../Section'
 
+import Menu from './Menu'
+import PopoverControl from './PopoverControl'
+
 import style from './style.css'
-
-const items = [
-  {
-    title: 'Minha Conta',
-    action: () => action('account'),
-  },
-  {
-    title: 'Logout',
-    action: () => action('logout'),
-  },
-]
-
-const Menu = () => (
-  <Fragment>
-    <div>
-      <strong>test@email.com</strong>
-      <small>Admin</small>
-    </div>
-    <PopoverMenu items={items} />
-  </Fragment>
-)
 
 const PopoverExample = ({ placement, base }) => (
   <Popover
@@ -213,5 +193,10 @@ storiesOf('Popover', module)
       >
         <PopoverVisible placement="bottomEnd" text="Bottom end" />
       </div>
+    </Section>
+  ))
+  .add('Handle close popover', () => (
+    <Section>
+      <PopoverControl />
     </Section>
   ))
