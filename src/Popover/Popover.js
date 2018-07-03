@@ -26,9 +26,17 @@ class Popover extends Component {
   }
 
   handleOnClick () {
-    this.setState({
-      visible: !this.state.visible,
-    })
+    const { onClick } = this.props
+
+    if (!onClick) {
+      this.setState({
+        visible: !this.state.visible,
+      })
+    }
+
+    if (onClick) {
+      onClick()
+    }
   }
 
   render () {
@@ -81,6 +89,10 @@ Popover.propTypes = {
    */
   content: PropTypes.node.isRequired,
   /**
+   * on click function.
+   */
+  onClick: PropTypes.func,
+  /**
    * The popover position when it's visible
    */
   placement: PropTypes.string,
@@ -92,6 +104,7 @@ Popover.propTypes = {
 
 Popover.defaultProps = {
   base: null,
+  onClick: null,
   placement: 'bottomStart',
   theme: {},
   visible: false,

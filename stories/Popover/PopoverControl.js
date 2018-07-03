@@ -22,6 +22,7 @@ class PopoverControl extends Component {
           content={<Menu />}
           placement="bottomStart"
           visible={this.state.visible}
+          onClick={() => this.setState({ visible: true })}
         >
           <Button>
             Open popover
