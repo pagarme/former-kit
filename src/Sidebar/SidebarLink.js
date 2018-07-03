@@ -62,13 +62,46 @@ class SidebarLink extends React.Component {
     ))
   }
 
+  renderButton () {
+    const {
+      children,
+      collapsed,
+      icon,
+      icons,
+      theme,
+      title,
+    } = this.props
+
+    return (
+      <button
+        onBlur={this.handleBlur}
+        onClick={this.handleClick}
+        onFocus={this.handleFocus}
+        role="link"
+      >
+        <div className={theme.title}>
+          <span className={theme.icon}>{icon}</span>
+          {!collapsed && title}
+
+
+          {(!collapsed && children) &&
+            <span className={theme.arrow}>
+              <Arrow
+                active={!this.state.collapsed}
+                icons={icons}
+              />
+            </span>
+          }
+        </div>
+      </button>
+    )
+  }
+
   render () {
     const {
       active,
       children,
       collapsed,
-      icon,
-      icons,
       theme,
       title,
     } = this.props
@@ -86,32 +119,17 @@ class SidebarLink extends React.Component {
           }
         )}
       >
-        <Tooltip
-          content={title}
-          placement="rightMiddle"
-        >
-          <button
-            onBlur={this.handleBlur}
-            onClick={this.handleClick}
-            onFocus={this.handleFocus}
-            role="link"
-          >
-            <div className={theme.title}>
-              <span className={theme.icon}>{icon}</span>
-              {!collapsed && title}
-
-
-              {(!collapsed && children) &&
-                <span className={theme.arrow}>
-                  <Arrow
-                    active={!this.state.collapsed}
-                    icons={icons}
-                  />
-                </span>
-              }
-            </div>
-          </button>
-        </Tooltip>
+        {collapsed
+          ? (
+            <Tooltip
+              content={title}
+              placement="rightMiddle"
+            >
+              {this.renderButton()}
+            </Tooltip>
+          )
+          : this.renderButton()
+        }
 
         {renderSubmenu &&
           <ul className={theme.submenu}>

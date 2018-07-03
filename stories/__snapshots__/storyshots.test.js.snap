@@ -20633,11 +20633,14 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
           width="140"
         />
         <button
+          className="button clean lowRelevance default iconButton"
+          disabled={false}
           onClick={[Function]}
+          type="button"
         >
           <Menu32.svg
-            height="16"
-            width="16"
+            height={16}
+            width={16}
           />
         </button>
       </header>
@@ -20648,97 +20651,79 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
           <li
             className="link"
           >
-            <div
-              className="target"
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
+            <button
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              role="link"
             >
-              <button
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                role="link"
+              <div
+                className="title"
               >
-                <div
-                  className="title"
+                <span
+                  className="icon"
                 >
-                  <span
-                    className="icon"
-                  >
-                    <Home32.svg
-                      height={16}
-                      width={16}
-                    />
-                  </span>
-                  Home
-                </div>
-              </button>
-            </div>
+                  <Home32.svg
+                    height={16}
+                    width={16}
+                  />
+                </span>
+                Home
+              </div>
+            </button>
           </li>
           <li
             className="link"
           >
-            <div
-              className="target"
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
+            <button
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              role="link"
             >
-              <button
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                role="link"
+              <div
+                className="title"
               >
-                <div
-                  className="title"
+                <span
+                  className="icon"
                 >
-                  <span
-                    className="icon"
-                  >
-                    <Transaction32.svg
-                      height={16}
-                      width={16}
-                    />
-                  </span>
-                  Transactions
-                </div>
-              </button>
-            </div>
+                  <Transaction32.svg
+                    height={16}
+                    width={16}
+                  />
+                </span>
+                Transactions
+              </div>
+            </button>
           </li>
           <li
             className="link"
           >
-            <div
-              className="target"
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
+            <button
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              role="link"
             >
-              <button
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                role="link"
+              <div
+                className="title"
               >
-                <div
-                  className="title"
+                <span
+                  className="icon"
                 >
-                  <span
-                    className="icon"
-                  >
-                    <Configuration32.svg
-                      height={16}
-                      width={16}
-                    />
-                  </span>
-                  My Account
-                  <span
-                    className="arrow"
-                  >
-                    <svg />
-                  </span>
-                </div>
-              </button>
-            </div>
+                  <Configuration32.svg
+                    height={16}
+                    width={16}
+                  />
+                </span>
+                My Account
+                <span
+                  className="arrow"
+                >
+                  <svg />
+                </span>
+              </div>
+            </button>
           </li>
         </ul>
       </nav>
@@ -21126,11 +21111,14 @@ exports[`Storyshots Layout Default with all props 1`] = `
           width="140"
         />
         <button
+          className="button clean lowRelevance default iconButton"
+          disabled={false}
           onClick={[Function]}
+          type="button"
         >
           <Menu32.svg
-            height="16"
-            width="16"
+            height={16}
+            width={16}
           />
         </button>
       </header>
@@ -21141,97 +21129,79 @@ exports[`Storyshots Layout Default with all props 1`] = `
           <li
             className="link"
           >
-            <div
-              className="target"
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
+            <button
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              role="link"
             >
-              <button
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                role="link"
+              <div
+                className="title"
               >
-                <div
-                  className="title"
+                <span
+                  className="icon"
                 >
-                  <span
-                    className="icon"
-                  >
-                    <Home32.svg
-                      height={16}
-                      width={16}
-                    />
-                  </span>
-                  Home
-                </div>
-              </button>
-            </div>
+                  <Home32.svg
+                    height={16}
+                    width={16}
+                  />
+                </span>
+                Home
+              </div>
+            </button>
           </li>
           <li
             className="link"
           >
-            <div
-              className="target"
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
+            <button
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              role="link"
             >
-              <button
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                role="link"
+              <div
+                className="title"
               >
-                <div
-                  className="title"
+                <span
+                  className="icon"
                 >
-                  <span
-                    className="icon"
-                  >
-                    <Transaction32.svg
-                      height={16}
-                      width={16}
-                    />
-                  </span>
-                  Transactions
-                </div>
-              </button>
-            </div>
+                  <Transaction32.svg
+                    height={16}
+                    width={16}
+                  />
+                </span>
+                Transactions
+              </div>
+            </button>
           </li>
           <li
             className="link"
           >
-            <div
-              className="target"
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
+            <button
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              role="link"
             >
-              <button
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                role="link"
+              <div
+                className="title"
               >
-                <div
-                  className="title"
+                <span
+                  className="icon"
                 >
-                  <span
-                    className="icon"
-                  >
-                    <Configuration32.svg
-                      height={16}
-                      width={16}
-                    />
-                  </span>
-                  My Account
-                  <span
-                    className="arrow"
-                  >
-                    <svg />
-                  </span>
-                </div>
-              </button>
-            </div>
+                  <Configuration32.svg
+                    height={16}
+                    width={16}
+                  />
+                </span>
+                My Account
+                <span
+                  className="arrow"
+                >
+                  <svg />
+                </span>
+              </div>
+            </button>
           </li>
         </ul>
       </nav>
@@ -21722,11 +21692,14 @@ exports[`Storyshots Layout Default without Footer 1`] = `
           width="140"
         />
         <button
+          className="button clean lowRelevance default iconButton"
+          disabled={false}
           onClick={[Function]}
+          type="button"
         >
           <Menu32.svg
-            height="16"
-            width="16"
+            height={16}
+            width={16}
           />
         </button>
       </header>
@@ -21737,97 +21710,79 @@ exports[`Storyshots Layout Default without Footer 1`] = `
           <li
             className="link"
           >
-            <div
-              className="target"
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
+            <button
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              role="link"
             >
-              <button
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                role="link"
+              <div
+                className="title"
               >
-                <div
-                  className="title"
+                <span
+                  className="icon"
                 >
-                  <span
-                    className="icon"
-                  >
-                    <Home32.svg
-                      height={16}
-                      width={16}
-                    />
-                  </span>
-                  Home
-                </div>
-              </button>
-            </div>
+                  <Home32.svg
+                    height={16}
+                    width={16}
+                  />
+                </span>
+                Home
+              </div>
+            </button>
           </li>
           <li
             className="link"
           >
-            <div
-              className="target"
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
+            <button
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              role="link"
             >
-              <button
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                role="link"
+              <div
+                className="title"
               >
-                <div
-                  className="title"
+                <span
+                  className="icon"
                 >
-                  <span
-                    className="icon"
-                  >
-                    <Transaction32.svg
-                      height={16}
-                      width={16}
-                    />
-                  </span>
-                  Transactions
-                </div>
-              </button>
-            </div>
+                  <Transaction32.svg
+                    height={16}
+                    width={16}
+                  />
+                </span>
+                Transactions
+              </div>
+            </button>
           </li>
           <li
             className="link"
           >
-            <div
-              className="target"
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
+            <button
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              role="link"
             >
-              <button
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                role="link"
+              <div
+                className="title"
               >
-                <div
-                  className="title"
+                <span
+                  className="icon"
                 >
-                  <span
-                    className="icon"
-                  >
-                    <Configuration32.svg
-                      height={16}
-                      width={16}
-                    />
-                  </span>
-                  My Account
-                  <span
-                    className="arrow"
-                  >
-                    <svg />
-                  </span>
-                </div>
-              </button>
-            </div>
+                  <Configuration32.svg
+                    height={16}
+                    width={16}
+                  />
+                </span>
+                My Account
+                <span
+                  className="arrow"
+                >
+                  <svg />
+                </span>
+              </div>
+            </button>
           </li>
         </ul>
       </nav>
@@ -22263,11 +22218,14 @@ exports[`Storyshots Layout Default without Header 1`] = `
           width="140"
         />
         <button
+          className="button clean lowRelevance default iconButton"
+          disabled={false}
           onClick={[Function]}
+          type="button"
         >
           <Menu32.svg
-            height="16"
-            width="16"
+            height={16}
+            width={16}
           />
         </button>
       </header>
@@ -22278,97 +22236,79 @@ exports[`Storyshots Layout Default without Header 1`] = `
           <li
             className="link"
           >
-            <div
-              className="target"
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
+            <button
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              role="link"
             >
-              <button
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                role="link"
+              <div
+                className="title"
               >
-                <div
-                  className="title"
+                <span
+                  className="icon"
                 >
-                  <span
-                    className="icon"
-                  >
-                    <Home32.svg
-                      height={16}
-                      width={16}
-                    />
-                  </span>
-                  Home
-                </div>
-              </button>
-            </div>
+                  <Home32.svg
+                    height={16}
+                    width={16}
+                  />
+                </span>
+                Home
+              </div>
+            </button>
           </li>
           <li
             className="link"
           >
-            <div
-              className="target"
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
+            <button
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              role="link"
             >
-              <button
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                role="link"
+              <div
+                className="title"
               >
-                <div
-                  className="title"
+                <span
+                  className="icon"
                 >
-                  <span
-                    className="icon"
-                  >
-                    <Transaction32.svg
-                      height={16}
-                      width={16}
-                    />
-                  </span>
-                  Transactions
-                </div>
-              </button>
-            </div>
+                  <Transaction32.svg
+                    height={16}
+                    width={16}
+                  />
+                </span>
+                Transactions
+              </div>
+            </button>
           </li>
           <li
             className="link"
           >
-            <div
-              className="target"
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
+            <button
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              role="link"
             >
-              <button
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                role="link"
+              <div
+                className="title"
               >
-                <div
-                  className="title"
+                <span
+                  className="icon"
                 >
-                  <span
-                    className="icon"
-                  >
-                    <Configuration32.svg
-                      height={16}
-                      width={16}
-                    />
-                  </span>
-                  My Account
-                  <span
-                    className="arrow"
-                  >
-                    <svg />
-                  </span>
-                </div>
-              </button>
-            </div>
+                  <Configuration32.svg
+                    height={16}
+                    width={16}
+                  />
+                </span>
+                My Account
+                <span
+                  className="arrow"
+                >
+                  <svg />
+                </span>
+              </div>
+            </button>
           </li>
         </ul>
       </nav>
@@ -27115,11 +27055,14 @@ exports[`Storyshots Sidebar Collapsed 1`] = `
     className="header"
   >
     <button
+      className="button clean lowRelevance default iconButton"
+      disabled={false}
       onClick={[Function]}
+      type="button"
     >
       <Menu32.svg
-        height="16"
-        width="16"
+        height={16}
+        width={16}
       />
     </button>
   </header>
@@ -27239,11 +27182,14 @@ exports[`Storyshots Sidebar Default 1`] = `
       width="140"
     />
     <button
+      className="button clean lowRelevance default iconButton"
+      disabled={false}
       onClick={[Function]}
+      type="button"
     >
       <Menu32.svg
-        height="16"
-        width="16"
+        height={16}
+        width={16}
       />
     </button>
   </header>
@@ -27254,97 +27200,79 @@ exports[`Storyshots Sidebar Default 1`] = `
       <li
         className="link"
       >
-        <div
-          className="target"
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
+        <button
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          role="link"
         >
-          <button
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            role="link"
+          <div
+            className="title"
           >
-            <div
-              className="title"
+            <span
+              className="icon"
             >
-              <span
-                className="icon"
-              >
-                <Home32.svg
-                  height={16}
-                  width={16}
-                />
-              </span>
-              Home
-            </div>
-          </button>
-        </div>
+              <Home32.svg
+                height={16}
+                width={16}
+              />
+            </span>
+            Home
+          </div>
+        </button>
       </li>
       <li
         className="link"
       >
-        <div
-          className="target"
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
+        <button
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          role="link"
         >
-          <button
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            role="link"
+          <div
+            className="title"
           >
-            <div
-              className="title"
+            <span
+              className="icon"
             >
-              <span
-                className="icon"
-              >
-                <Transaction32.svg
-                  height={16}
-                  width={16}
-                />
-              </span>
-              Transactions
-            </div>
-          </button>
-        </div>
+              <Transaction32.svg
+                height={16}
+                width={16}
+              />
+            </span>
+            Transactions
+          </div>
+        </button>
       </li>
       <li
         className="link"
       >
-        <div
-          className="target"
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
+        <button
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          role="link"
         >
-          <button
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            role="link"
+          <div
+            className="title"
           >
-            <div
-              className="title"
+            <span
+              className="icon"
             >
-              <span
-                className="icon"
-              >
-                <Configuration32.svg
-                  height={16}
-                  width={16}
-                />
-              </span>
-              My Account
-              <span
-                className="arrow"
-              >
-                <svg />
-              </span>
-            </div>
-          </button>
-        </div>
+              <Configuration32.svg
+                height={16}
+                width={16}
+              />
+            </span>
+            My Account
+            <span
+              className="arrow"
+            >
+              <svg />
+            </span>
+          </div>
+        </button>
       </li>
     </ul>
   </nav>

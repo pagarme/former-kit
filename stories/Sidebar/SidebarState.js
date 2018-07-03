@@ -15,6 +15,7 @@ import {
   SidebarLink,
 } from '../../src/Sidebar'
 
+import Button from '../../src/Button'
 import Tag from '../../src/Tag'
 import SegmentedSwitch from '../../src/SegmentedSwitch'
 
@@ -93,9 +94,13 @@ class SidebarState extends React.Component {
           {!collapsed &&
             <Logo width="140" />
           }
-          <button onClick={() => this.setState({ collapsed: !collapsed })}>
-            <IconMenu width="16" height="16" />
-          </button>
+
+          <Button
+            onClick={() => this.setState({ collapsed: !collapsed })}
+            icon={<IconMenu width={16} height={16} />}
+            fill="clean"
+            relevance="low"
+          />
         </SidebarHeader>
 
         <SidebarLinks>

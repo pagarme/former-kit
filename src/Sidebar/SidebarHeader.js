@@ -12,6 +12,12 @@ const SidebarHeader = ({ theme, children }) => (
 
 SidebarHeader.propTypes = {
   /**
+   * The children can contain any kind of component.
+   * It's recommended to have a logo and
+   * a button to collapse or expand the Sidebar.
+   */
+  children: PropTypes.node.isRequired,
+  /**
    * The style classes for this element.
    */
   theme: PropTypes.shape({
@@ -20,12 +26,6 @@ SidebarHeader.propTypes = {
      */
     header: PropTypes.string,
   }),
-  /**
-   * The children can contain any kind of component.
-   * It's recommended to have a logo and
-   * a button to collapse or expand the Sidebar.
-   */
-  children: PropTypes.node.isRequired,
 }
 
 SidebarHeader.defaultProps = {
