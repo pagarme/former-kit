@@ -19,10 +19,10 @@ const items = [
   <Popover
     content={
       <Fragment>
-        <div>
+        <PopoverContent>
           <strong>teste@email.com</strong>
           <small>Administrador</small>
-        </div>
+        </PopoverContent>
         <PopoverMenu items={items} />
       </Fragment>
     }
@@ -33,10 +33,10 @@ const items = [
   <Popover
     content={
       <Fragment>
-        <div>
+        <PopoverContent>
           <strong>teste@email.com</strong>
           <small>Administrador</small>
-        </div>
+        </PopoverContent>
         <PopoverMenu items={items} />
       </Fragment>
     }

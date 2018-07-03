@@ -24128,6 +24128,78 @@ exports[`Storyshots Popover Default 1`] = `
 </section>
 `;
 
+exports[`Storyshots Popover Handle close popover 1`] = `
+<section
+  className="typography"
+>
+  
+  <div>
+    <div
+      className={undefined}
+    >
+      <div
+        className="target"
+        onClick={[Function]}
+      >
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            Open popover
+          </span>
+        </button>
+        <div
+          className="popover null bottomStart"
+        >
+          <div
+            className="content"
+          >
+            <strong>
+              test@email.com
+            </strong>
+            <small>
+              Admin
+            </small>
+          </div>
+          <div
+            className="menu"
+          >
+            <button
+              className="link"
+              onClick={[Function]}
+            >
+              Minha Conta
+            </button>
+            <button
+              className="link"
+              onClick={[Function]}
+            >
+              Logout
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        className="spacing flex"
+      />
+      <button
+        className="button flat normalRelevance default"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span>
+          Close popover
+        </span>
+      </button>
+    </div>
+  </div>
+</section>
+`;
+
 exports[`Storyshots Popover Positions 1`] = `
 <section
   className="typography"
@@ -24400,7 +24472,9 @@ exports[`Storyshots Popover Visible 1`] = `
         <div
           className="popover null rightStart"
         >
-          <div>
+          <div
+            className="content"
+          >
             <strong>
               test@email.com
             </strong>
@@ -24447,7 +24521,9 @@ exports[`Storyshots Popover Visible 1`] = `
         <div
           className="popover null rightMiddle"
         >
-          <div>
+          <div
+            className="content"
+          >
             <strong>
               test@email.com
             </strong>
@@ -24494,7 +24570,9 @@ exports[`Storyshots Popover Visible 1`] = `
         <div
           className="popover null rightEnd"
         >
-          <div>
+          <div
+            className="content"
+          >
             <strong>
               test@email.com
             </strong>
@@ -24541,7 +24619,9 @@ exports[`Storyshots Popover Visible 1`] = `
         <div
           className="popover null leftStart"
         >
-          <div>
+          <div
+            className="content"
+          >
             <strong>
               test@email.com
             </strong>
@@ -24588,7 +24668,9 @@ exports[`Storyshots Popover Visible 1`] = `
         <div
           className="popover null leftMiddle"
         >
-          <div>
+          <div
+            className="content"
+          >
             <strong>
               test@email.com
             </strong>
@@ -24635,7 +24717,9 @@ exports[`Storyshots Popover Visible 1`] = `
         <div
           className="popover null leftEnd"
         >
-          <div>
+          <div
+            className="content"
+          >
             <strong>
               test@email.com
             </strong>
@@ -24682,7 +24766,9 @@ exports[`Storyshots Popover Visible 1`] = `
         <div
           className="popover null topStart"
         >
-          <div>
+          <div
+            className="content"
+          >
             <strong>
               test@email.com
             </strong>
@@ -24729,7 +24815,9 @@ exports[`Storyshots Popover Visible 1`] = `
         <div
           className="popover null topCenter"
         >
-          <div>
+          <div
+            className="content"
+          >
             <strong>
               test@email.com
             </strong>
@@ -24776,7 +24864,9 @@ exports[`Storyshots Popover Visible 1`] = `
         <div
           className="popover null topEnd"
         >
-          <div>
+          <div
+            className="content"
+          >
             <strong>
               test@email.com
             </strong>
@@ -24823,7 +24913,9 @@ exports[`Storyshots Popover Visible 1`] = `
         <div
           className="popover null bottomStart"
         >
-          <div>
+          <div
+            className="content"
+          >
             <strong>
               test@email.com
             </strong>
@@ -24870,7 +24962,9 @@ exports[`Storyshots Popover Visible 1`] = `
         <div
           className="popover null bottomCenter"
         >
-          <div>
+          <div
+            className="content"
+          >
             <strong>
               test@email.com
             </strong>
@@ -24917,7 +25011,9 @@ exports[`Storyshots Popover Visible 1`] = `
         <div
           className="popover null bottomEnd"
         >
-          <div>
+          <div
+            className="content"
+          >
             <strong>
               test@email.com
             </strong>

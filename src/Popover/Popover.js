@@ -19,10 +19,24 @@ class Popover extends Component {
     this.handleOnClick = this.handleOnClick.bind(this)
   }
 
-  handleOnClick () {
+  componentWillReceiveProps ({ visible }) {
     this.setState({
-      visible: !this.state.visible,
+      visible,
     })
+  }
+
+  handleOnClick () {
+    const { onClick } = this.props
+
+    if (!onClick) {
+      this.setState({
+        visible: !this.state.visible,
+      })
+    }
+
+    if (onClick) {
+      onClick()
+    }
   }
 
   render () {
@@ -32,7 +46,6 @@ class Popover extends Component {
       content,
       placement,
       theme,
-      visible: visibleProp,
     } = this.props
 
     const { visible } = this.state
@@ -44,7 +57,7 @@ class Popover extends Component {
       >
         {children}
 
-        {(visible || visibleProp) &&
+        {(visible) &&
           <div className={classNames(theme.popover, theme[base], theme[placement])}>
             {content}
           </div>
@@ -56,8 +69,8 @@ class Popover extends Component {
 
 Popover.propTypes = {
   /**
- * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
- */
+    * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
+    */
   theme: PropTypes.shape({
     base: PropTypes.string,
     popover: PropTypes.string,
@@ -76,6 +89,10 @@ Popover.propTypes = {
    */
   content: PropTypes.node.isRequired,
   /**
+   * on click function.
+   */
+  onClick: PropTypes.func,
+  /**
    * The popover position when it's visible
    */
   placement: PropTypes.string,
@@ -87,6 +104,7 @@ Popover.propTypes = {
 
 Popover.defaultProps = {
   base: null,
+  onClick: null,
   placement: 'bottomStart',
   theme: {},
   visible: false,
