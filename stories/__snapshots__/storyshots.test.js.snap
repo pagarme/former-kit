@@ -24155,11 +24155,7 @@ exports[`Storyshots Popover Handle close popover 1`] = `
           className="popover null bottomStart"
         >
           <div
-            style={
-              Object {
-                "padding": 16,
-              }
-            }
+            className="content"
           >
             <strong>
               test@email.com
@@ -24477,11 +24473,7 @@ exports[`Storyshots Popover Visible 1`] = `
           className="popover null rightStart"
         >
           <div
-            style={
-              Object {
-                "padding": 16,
-              }
-            }
+            className="content"
           >
             <strong>
               test@email.com
@@ -24530,11 +24522,7 @@ exports[`Storyshots Popover Visible 1`] = `
           className="popover null rightMiddle"
         >
           <div
-            style={
-              Object {
-                "padding": 16,
-              }
-            }
+            className="content"
           >
             <strong>
               test@email.com
@@ -24583,11 +24571,7 @@ exports[`Storyshots Popover Visible 1`] = `
           className="popover null rightEnd"
         >
           <div
-            style={
-              Object {
-                "padding": 16,
-              }
-            }
+            className="content"
           >
             <strong>
               test@email.com
@@ -24636,11 +24620,7 @@ exports[`Storyshots Popover Visible 1`] = `
           className="popover null leftStart"
         >
           <div
-            style={
-              Object {
-                "padding": 16,
-              }
-            }
+            className="content"
           >
             <strong>
               test@email.com
@@ -24689,11 +24669,7 @@ exports[`Storyshots Popover Visible 1`] = `
           className="popover null leftMiddle"
         >
           <div
-            style={
-              Object {
-                "padding": 16,
-              }
-            }
+            className="content"
           >
             <strong>
               test@email.com
@@ -24742,11 +24718,7 @@ exports[`Storyshots Popover Visible 1`] = `
           className="popover null leftEnd"
         >
           <div
-            style={
-              Object {
-                "padding": 16,
-              }
-            }
+            className="content"
           >
             <strong>
               test@email.com
@@ -24795,11 +24767,7 @@ exports[`Storyshots Popover Visible 1`] = `
           className="popover null topStart"
         >
           <div
-            style={
-              Object {
-                "padding": 16,
-              }
-            }
+            className="content"
           >
             <strong>
               test@email.com
@@ -24848,11 +24816,7 @@ exports[`Storyshots Popover Visible 1`] = `
           className="popover null topCenter"
         >
           <div
-            style={
-              Object {
-                "padding": 16,
-              }
-            }
+            className="content"
           >
             <strong>
               test@email.com
@@ -24901,11 +24865,7 @@ exports[`Storyshots Popover Visible 1`] = `
           className="popover null topEnd"
         >
           <div
-            style={
-              Object {
-                "padding": 16,
-              }
-            }
+            className="content"
           >
             <strong>
               test@email.com
@@ -24954,11 +24914,7 @@ exports[`Storyshots Popover Visible 1`] = `
           className="popover null bottomStart"
         >
           <div
-            style={
-              Object {
-                "padding": 16,
-              }
-            }
+            className="content"
           >
             <strong>
               test@email.com
@@ -25007,11 +24963,7 @@ exports[`Storyshots Popover Visible 1`] = `
           className="popover null bottomCenter"
         >
           <div
-            style={
-              Object {
-                "padding": 16,
-              }
-            }
+            className="content"
           >
             <strong>
               test@email.com
@@ -25060,11 +25012,7 @@ exports[`Storyshots Popover Visible 1`] = `
           className="popover null bottomEnd"
         >
           <div
-            style={
-              Object {
-                "padding": 16,
-              }
-            }
+            className="content"
           >
             <strong>
               test@email.com

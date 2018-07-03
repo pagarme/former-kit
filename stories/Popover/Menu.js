@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import { action } from '@storybook/addon-actions'
-import { PopoverMenu } from '../../src/Popover'
+import { PopoverMenu, PopoverContent } from '../../src/Popover'
 
 const items = [
   {
@@ -15,10 +15,10 @@ const items = [
 
 const Menu = () => (
   <Fragment>
-    <div style={{ padding: 16 }}>
+    <PopoverContent>
       <strong>test@email.com</strong>
       <small>Admin</small>
-    </div>
+    </PopoverContent>
     <PopoverMenu items={items} />
   </Fragment>
 )
