@@ -1366,7 +1366,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                     id="CalendarMonth__caption"
                   >
                     <strong>
-                      August 2017
+                      May 2018
                     </strong>
                   </div>
                   <table
@@ -1379,7 +1379,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                         <td />
                         <td />
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -1388,7 +1388,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Tuesday, August 1, 2017"
+                            aria-label="Tuesday, May 1, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -1401,7 +1401,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -1410,7 +1410,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Wednesday, August 2, 2017"
+                            aria-label="Wednesday, May 2, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -1423,7 +1423,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -1432,7 +1432,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Thursday, August 3, 2017"
+                            aria-label="Thursday, May 3, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -1445,7 +1445,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -1454,7 +1454,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Friday, August 4, 2017"
+                            aria-label="Friday, May 4, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -1467,7 +1467,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--blocked CalendarDay--blocked-calendar"
                           style={
                             Object {
                               "height": 39,
@@ -1476,7 +1476,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Saturday, August 5, 2017"
+                            aria-label="Saturday, May 5, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -1491,7 +1491,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                       </tr>
                       <tr>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--blocked CalendarDay--blocked-calendar"
                           style={
                             Object {
                               "height": 39,
@@ -1500,7 +1500,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Sunday, August 6, 2017"
+                            aria-label="Sunday, May 6, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -1513,7 +1513,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -1522,7 +1522,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Monday, August 7, 2017"
+                            aria-label="Monday, May 7, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -1535,7 +1535,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -1544,7 +1544,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Tuesday, August 8, 2017"
+                            aria-label="Tuesday, May 8, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -1557,7 +1557,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -1566,7 +1566,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Wednesday, August 9, 2017"
+                            aria-label="Wednesday, May 9, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -1579,7 +1579,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -1588,7 +1588,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Thursday, August 10, 2017"
+                            aria-label="Thursday, May 10, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -1601,7 +1601,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -1610,7 +1610,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Friday, August 11, 2017"
+                            aria-label="Friday, May 11, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -1623,7 +1623,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--blocked CalendarDay--blocked-calendar"
                           style={
                             Object {
                               "height": 39,
@@ -1632,7 +1632,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Saturday, August 12, 2017"
+                            aria-label="Saturday, May 12, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -1647,7 +1647,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                       </tr>
                       <tr>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--blocked CalendarDay--blocked-calendar"
                           style={
                             Object {
                               "height": 39,
@@ -1656,7 +1656,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Sunday, August 13, 2017"
+                            aria-label="Sunday, May 13, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -1669,7 +1669,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -1678,7 +1678,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Monday, August 14, 2017"
+                            aria-label="Monday, May 14, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -1691,7 +1691,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -1700,7 +1700,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Tuesday, August 15, 2017"
+                            aria-label="Tuesday, May 15, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -1713,7 +1713,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -1722,7 +1722,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Wednesday, August 16, 2017"
+                            aria-label="Wednesday, May 16, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -1735,7 +1735,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -1744,7 +1744,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Thursday, August 17, 2017"
+                            aria-label="Thursday, May 17, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -1757,7 +1757,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -1766,7 +1766,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Friday, August 18, 2017"
+                            aria-label="Friday, May 18, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -1779,7 +1779,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--blocked CalendarDay--blocked-calendar"
                           style={
                             Object {
                               "height": 39,
@@ -1788,7 +1788,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Saturday, August 19, 2017"
+                            aria-label="Saturday, May 19, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -1803,7 +1803,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                       </tr>
                       <tr>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--blocked CalendarDay--blocked-calendar"
                           style={
                             Object {
                               "height": 39,
@@ -1812,7 +1812,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Sunday, August 20, 2017"
+                            aria-label="Sunday, May 20, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -1825,7 +1825,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -1834,7 +1834,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Monday, August 21, 2017"
+                            aria-label="Monday, May 21, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -1847,7 +1847,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -1856,7 +1856,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Tuesday, August 22, 2017"
+                            aria-label="Tuesday, May 22, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -1869,7 +1869,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -1878,7 +1878,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Wednesday, August 23, 2017"
+                            aria-label="Wednesday, May 23, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -1891,7 +1891,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -1900,7 +1900,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Thursday, August 24, 2017"
+                            aria-label="Thursday, May 24, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -1913,7 +1913,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -1922,7 +1922,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Friday, August 25, 2017"
+                            aria-label="Friday, May 25, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -1935,7 +1935,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--blocked CalendarDay--blocked-calendar"
                           style={
                             Object {
                               "height": 39,
@@ -1944,7 +1944,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Saturday, August 26, 2017"
+                            aria-label="Saturday, May 26, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -1959,7 +1959,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                       </tr>
                       <tr>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--blocked CalendarDay--blocked-calendar"
                           style={
                             Object {
                               "height": 39,
@@ -1968,7 +1968,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Sunday, August 27, 2017"
+                            aria-label="Sunday, May 27, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -1981,7 +1981,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -1990,7 +1990,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Monday, August 28, 2017"
+                            aria-label="Monday, May 28, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -2003,7 +2003,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -2012,7 +2012,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Tuesday, August 29, 2017"
+                            aria-label="Tuesday, May 29, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -2025,7 +2025,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -2034,7 +2034,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Wednesday, August 30, 2017"
+                            aria-label="Wednesday, May 30, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -2047,7 +2047,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -2056,7 +2056,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Thursday, August 31, 2017"
+                            aria-label="Thursday, May 31, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -2083,7 +2083,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                     id="CalendarMonth__caption"
                   >
                     <strong>
-                      September 2017
+                      June 2018
                     </strong>
                   </div>
                   <table
@@ -2099,7 +2099,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                         <td />
                         <td />
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -2108,7 +2108,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Friday, September 1, 2017"
+                            aria-label="Friday, June 1, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -2121,7 +2121,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--blocked CalendarDay--blocked-calendar"
                           style={
                             Object {
                               "height": 39,
@@ -2130,7 +2130,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Saturday, September 2, 2017"
+                            aria-label="Saturday, June 2, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -2145,7 +2145,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                       </tr>
                       <tr>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--blocked CalendarDay--blocked-calendar"
                           style={
                             Object {
                               "height": 39,
@@ -2154,7 +2154,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Sunday, September 3, 2017"
+                            aria-label="Sunday, June 3, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -2167,7 +2167,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -2176,7 +2176,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Monday, September 4, 2017"
+                            aria-label="Monday, June 4, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -2189,7 +2189,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -2198,7 +2198,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Tuesday, September 5, 2017"
+                            aria-label="Tuesday, June 5, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -2211,7 +2211,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -2220,7 +2220,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Wednesday, September 6, 2017"
+                            aria-label="Wednesday, June 6, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -2233,7 +2233,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -2242,7 +2242,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Thursday, September 7, 2017"
+                            aria-label="Thursday, June 7, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -2255,7 +2255,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -2264,7 +2264,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Friday, September 8, 2017"
+                            aria-label="Friday, June 8, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -2277,7 +2277,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--blocked CalendarDay--blocked-calendar"
                           style={
                             Object {
                               "height": 39,
@@ -2286,7 +2286,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Saturday, September 9, 2017"
+                            aria-label="Saturday, June 9, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -2301,7 +2301,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                       </tr>
                       <tr>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--blocked CalendarDay--blocked-calendar"
                           style={
                             Object {
                               "height": 39,
@@ -2310,7 +2310,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Sunday, September 10, 2017"
+                            aria-label="Sunday, June 10, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -2323,7 +2323,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -2332,7 +2332,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Monday, September 11, 2017"
+                            aria-label="Monday, June 11, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -2345,7 +2345,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -2354,7 +2354,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Tuesday, September 12, 2017"
+                            aria-label="Tuesday, June 12, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -2367,7 +2367,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -2376,7 +2376,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Wednesday, September 13, 2017"
+                            aria-label="Wednesday, June 13, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -2389,7 +2389,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -2398,7 +2398,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Thursday, September 14, 2017"
+                            aria-label="Thursday, June 14, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -2411,7 +2411,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -2420,7 +2420,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Friday, September 15, 2017"
+                            aria-label="Friday, June 15, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -2433,7 +2433,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--blocked CalendarDay--blocked-calendar"
                           style={
                             Object {
                               "height": 39,
@@ -2442,7 +2442,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Saturday, September 16, 2017"
+                            aria-label="Saturday, June 16, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -2457,7 +2457,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                       </tr>
                       <tr>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--blocked CalendarDay--blocked-calendar"
                           style={
                             Object {
                               "height": 39,
@@ -2466,7 +2466,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Sunday, September 17, 2017"
+                            aria-label="Sunday, June 17, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -2479,7 +2479,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -2488,7 +2488,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Monday, September 18, 2017"
+                            aria-label="Monday, June 18, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -2501,7 +2501,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -2510,7 +2510,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Tuesday, September 19, 2017"
+                            aria-label="Tuesday, June 19, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -2523,7 +2523,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -2532,7 +2532,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Wednesday, September 20, 2017"
+                            aria-label="Wednesday, June 20, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -2545,7 +2545,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -2554,7 +2554,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Thursday, September 21, 2017"
+                            aria-label="Thursday, June 21, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -2567,7 +2567,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid CalendarDay--selected"
                           style={
                             Object {
                               "height": 39,
@@ -2576,20 +2576,20 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Friday, September 22, 2017"
+                            aria-label="Friday, June 22, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
                             onMouseLeave={[Function]}
                             onMouseUp={[Function]}
-                            tabIndex={-1}
+                            tabIndex={0}
                             type="button"
                           >
                             22
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--blocked CalendarDay--blocked-calendar"
                           style={
                             Object {
                               "height": 39,
@@ -2598,7 +2598,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Saturday, September 23, 2017"
+                            aria-label="Saturday, June 23, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -2613,7 +2613,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                       </tr>
                       <tr>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--blocked CalendarDay--blocked-calendar"
                           style={
                             Object {
                               "height": 39,
@@ -2622,7 +2622,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Sunday, September 24, 2017"
+                            aria-label="Sunday, June 24, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -2635,7 +2635,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -2644,7 +2644,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Monday, September 25, 2017"
+                            aria-label="Monday, June 25, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -2657,7 +2657,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -2666,7 +2666,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Tuesday, September 26, 2017"
+                            aria-label="Tuesday, June 26, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -2679,7 +2679,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -2688,7 +2688,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Wednesday, September 27, 2017"
+                            aria-label="Wednesday, June 27, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -2701,7 +2701,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -2710,7 +2710,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Thursday, September 28, 2017"
+                            aria-label="Thursday, June 28, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -2723,7 +2723,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -2732,7 +2732,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Friday, September 29, 2017"
+                            aria-label="Friday, June 29, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -2745,7 +2745,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--blocked CalendarDay--blocked-calendar"
                           style={
                             Object {
                               "height": 39,
@@ -2754,7 +2754,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Saturday, September 30, 2017"
+                            aria-label="Saturday, June 30, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -2779,7 +2779,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                     id="CalendarMonth__caption"
                   >
                     <strong>
-                      October 2017
+                      July 2018
                     </strong>
                   </div>
                   <table
@@ -2790,7 +2790,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                     >
                       <tr>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--blocked CalendarDay--blocked-calendar"
                           style={
                             Object {
                               "height": 39,
@@ -2799,7 +2799,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Sunday, October 1, 2017"
+                            aria-label="Sunday, July 1, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -2812,7 +2812,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -2821,7 +2821,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Monday, October 2, 2017"
+                            aria-label="Monday, July 2, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -2834,7 +2834,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -2843,7 +2843,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Tuesday, October 3, 2017"
+                            aria-label="Tuesday, July 3, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -2856,7 +2856,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -2865,7 +2865,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Wednesday, October 4, 2017"
+                            aria-label="Wednesday, July 4, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -2878,7 +2878,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -2887,7 +2887,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Thursday, October 5, 2017"
+                            aria-label="Thursday, July 5, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -2900,7 +2900,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -2909,7 +2909,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Friday, October 6, 2017"
+                            aria-label="Friday, July 6, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -2922,7 +2922,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--blocked CalendarDay--blocked-calendar"
                           style={
                             Object {
                               "height": 39,
@@ -2931,7 +2931,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Saturday, October 7, 2017"
+                            aria-label="Saturday, July 7, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -2946,7 +2946,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                       </tr>
                       <tr>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--blocked CalendarDay--blocked-calendar"
                           style={
                             Object {
                               "height": 39,
@@ -2955,7 +2955,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Sunday, October 8, 2017"
+                            aria-label="Sunday, July 8, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -2968,7 +2968,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -2977,7 +2977,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Monday, October 9, 2017"
+                            aria-label="Monday, July 9, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -2990,7 +2990,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -2999,7 +2999,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Tuesday, October 10, 2017"
+                            aria-label="Tuesday, July 10, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -3012,7 +3012,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -3021,7 +3021,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Wednesday, October 11, 2017"
+                            aria-label="Wednesday, July 11, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -3034,7 +3034,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -3043,7 +3043,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Thursday, October 12, 2017"
+                            aria-label="Thursday, July 12, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -3056,7 +3056,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -3065,7 +3065,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Friday, October 13, 2017"
+                            aria-label="Friday, July 13, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -3078,7 +3078,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--blocked CalendarDay--blocked-calendar"
                           style={
                             Object {
                               "height": 39,
@@ -3087,7 +3087,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Saturday, October 14, 2017"
+                            aria-label="Saturday, July 14, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -3102,7 +3102,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                       </tr>
                       <tr>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--blocked CalendarDay--blocked-calendar"
                           style={
                             Object {
                               "height": 39,
@@ -3111,7 +3111,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Sunday, October 15, 2017"
+                            aria-label="Sunday, July 15, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -3124,7 +3124,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -3133,7 +3133,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Monday, October 16, 2017"
+                            aria-label="Monday, July 16, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -3146,7 +3146,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -3155,7 +3155,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Tuesday, October 17, 2017"
+                            aria-label="Tuesday, July 17, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -3168,7 +3168,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -3177,7 +3177,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Wednesday, October 18, 2017"
+                            aria-label="Wednesday, July 18, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -3190,7 +3190,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -3199,7 +3199,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Thursday, October 19, 2017"
+                            aria-label="Thursday, July 19, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -3212,7 +3212,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -3221,7 +3221,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Friday, October 20, 2017"
+                            aria-label="Friday, July 20, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -3234,7 +3234,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--blocked CalendarDay--blocked-calendar"
                           style={
                             Object {
                               "height": 39,
@@ -3243,7 +3243,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Saturday, October 21, 2017"
+                            aria-label="Saturday, July 21, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -3258,7 +3258,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                       </tr>
                       <tr>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--blocked CalendarDay--blocked-calendar"
                           style={
                             Object {
                               "height": 39,
@@ -3267,7 +3267,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Sunday, October 22, 2017"
+                            aria-label="Sunday, July 22, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -3280,7 +3280,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -3289,7 +3289,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Monday, October 23, 2017"
+                            aria-label="Monday, July 23, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -3302,7 +3302,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -3311,7 +3311,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Tuesday, October 24, 2017"
+                            aria-label="Tuesday, July 24, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -3324,7 +3324,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -3333,7 +3333,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Wednesday, October 25, 2017"
+                            aria-label="Wednesday, July 25, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -3346,7 +3346,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -3355,7 +3355,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Thursday, October 26, 2017"
+                            aria-label="Thursday, July 26, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -3368,7 +3368,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -3377,7 +3377,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Friday, October 27, 2017"
+                            aria-label="Friday, July 27, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -3390,7 +3390,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--blocked CalendarDay--blocked-calendar"
                           style={
                             Object {
                               "height": 39,
@@ -3399,7 +3399,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Saturday, October 28, 2017"
+                            aria-label="Saturday, July 28, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -3414,7 +3414,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                       </tr>
                       <tr>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--blocked CalendarDay--blocked-calendar"
                           style={
                             Object {
                               "height": 39,
@@ -3423,7 +3423,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Sunday, October 29, 2017"
+                            aria-label="Sunday, July 29, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -3436,7 +3436,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -3445,7 +3445,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Monday, October 30, 2017"
+                            aria-label="Monday, July 30, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -3458,7 +3458,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -3467,7 +3467,7 @@ exports[`Storyshots Calendar Calendar with disabled dates 1`] = `
                           }
                         >
                           <button
-                            aria-label="Tuesday, October 31, 2017"
+                            aria-label="Tuesday, July 31, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -6787,7 +6787,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                     id="CalendarMonth__caption"
                   >
                     <strong>
-                      August 2017
+                      May 2018
                     </strong>
                   </div>
                   <table
@@ -6800,7 +6800,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                         <td />
                         <td />
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -6809,7 +6809,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Tuesday, August 1, 2017"
+                            aria-label="Tuesday, May 1, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -6822,7 +6822,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -6831,7 +6831,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Wednesday, August 2, 2017"
+                            aria-label="Wednesday, May 2, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -6844,7 +6844,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -6853,7 +6853,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Thursday, August 3, 2017"
+                            aria-label="Thursday, May 3, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -6866,7 +6866,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -6875,7 +6875,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Friday, August 4, 2017"
+                            aria-label="Friday, May 4, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -6888,7 +6888,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -6897,7 +6897,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Saturday, August 5, 2017"
+                            aria-label="Saturday, May 5, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -6912,7 +6912,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                       </tr>
                       <tr>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -6921,7 +6921,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Sunday, August 6, 2017"
+                            aria-label="Sunday, May 6, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -6934,7 +6934,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -6943,7 +6943,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Monday, August 7, 2017"
+                            aria-label="Monday, May 7, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -6956,7 +6956,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -6965,7 +6965,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Tuesday, August 8, 2017"
+                            aria-label="Tuesday, May 8, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -6978,7 +6978,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -6987,7 +6987,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Wednesday, August 9, 2017"
+                            aria-label="Wednesday, May 9, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7000,7 +7000,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -7009,7 +7009,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Thursday, August 10, 2017"
+                            aria-label="Thursday, May 10, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7022,7 +7022,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -7031,7 +7031,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Friday, August 11, 2017"
+                            aria-label="Friday, May 11, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7044,7 +7044,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -7053,7 +7053,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Saturday, August 12, 2017"
+                            aria-label="Saturday, May 12, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7068,7 +7068,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                       </tr>
                       <tr>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -7077,7 +7077,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Sunday, August 13, 2017"
+                            aria-label="Sunday, May 13, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7090,7 +7090,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -7099,7 +7099,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Monday, August 14, 2017"
+                            aria-label="Monday, May 14, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7112,7 +7112,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -7121,7 +7121,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Tuesday, August 15, 2017"
+                            aria-label="Tuesday, May 15, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7134,7 +7134,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -7143,7 +7143,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Wednesday, August 16, 2017"
+                            aria-label="Wednesday, May 16, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7156,7 +7156,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -7165,7 +7165,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Thursday, August 17, 2017"
+                            aria-label="Thursday, May 17, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7178,7 +7178,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -7187,7 +7187,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Friday, August 18, 2017"
+                            aria-label="Friday, May 18, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7200,7 +7200,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -7209,7 +7209,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Saturday, August 19, 2017"
+                            aria-label="Saturday, May 19, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7224,7 +7224,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                       </tr>
                       <tr>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -7233,7 +7233,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Sunday, August 20, 2017"
+                            aria-label="Sunday, May 20, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7246,7 +7246,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -7255,7 +7255,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Monday, August 21, 2017"
+                            aria-label="Monday, May 21, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7268,7 +7268,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -7277,7 +7277,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Tuesday, August 22, 2017"
+                            aria-label="Tuesday, May 22, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7290,7 +7290,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -7299,7 +7299,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Wednesday, August 23, 2017"
+                            aria-label="Wednesday, May 23, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7312,7 +7312,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -7321,7 +7321,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Thursday, August 24, 2017"
+                            aria-label="Thursday, May 24, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7334,7 +7334,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -7343,7 +7343,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Friday, August 25, 2017"
+                            aria-label="Friday, May 25, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7356,7 +7356,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -7365,7 +7365,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Saturday, August 26, 2017"
+                            aria-label="Saturday, May 26, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7380,7 +7380,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                       </tr>
                       <tr>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -7389,7 +7389,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Sunday, August 27, 2017"
+                            aria-label="Sunday, May 27, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7402,7 +7402,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -7411,7 +7411,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Monday, August 28, 2017"
+                            aria-label="Monday, May 28, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7424,7 +7424,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -7433,7 +7433,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Tuesday, August 29, 2017"
+                            aria-label="Tuesday, May 29, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7446,7 +7446,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -7455,7 +7455,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Wednesday, August 30, 2017"
+                            aria-label="Wednesday, May 30, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7468,7 +7468,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -7477,7 +7477,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Thursday, August 31, 2017"
+                            aria-label="Thursday, May 31, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7504,7 +7504,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                     id="CalendarMonth__caption"
                   >
                     <strong>
-                      September 2017
+                      June 2018
                     </strong>
                   </div>
                   <table
@@ -7520,7 +7520,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                         <td />
                         <td />
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -7529,7 +7529,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Friday, September 1, 2017"
+                            aria-label="Friday, June 1, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7542,7 +7542,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -7551,7 +7551,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Saturday, September 2, 2017"
+                            aria-label="Saturday, June 2, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7566,7 +7566,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                       </tr>
                       <tr>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -7575,7 +7575,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Sunday, September 3, 2017"
+                            aria-label="Sunday, June 3, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7588,7 +7588,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -7597,7 +7597,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Monday, September 4, 2017"
+                            aria-label="Monday, June 4, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7610,7 +7610,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -7619,7 +7619,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Tuesday, September 5, 2017"
+                            aria-label="Tuesday, June 5, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7632,7 +7632,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -7641,7 +7641,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Wednesday, September 6, 2017"
+                            aria-label="Wednesday, June 6, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7654,7 +7654,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -7663,7 +7663,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Thursday, September 7, 2017"
+                            aria-label="Thursday, June 7, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7676,7 +7676,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -7685,7 +7685,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Friday, September 8, 2017"
+                            aria-label="Friday, June 8, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7698,7 +7698,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -7707,7 +7707,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Saturday, September 9, 2017"
+                            aria-label="Saturday, June 9, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7722,7 +7722,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                       </tr>
                       <tr>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -7731,7 +7731,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Sunday, September 10, 2017"
+                            aria-label="Sunday, June 10, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7744,7 +7744,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -7753,7 +7753,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Monday, September 11, 2017"
+                            aria-label="Monday, June 11, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7766,7 +7766,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -7775,7 +7775,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Tuesday, September 12, 2017"
+                            aria-label="Tuesday, June 12, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7788,7 +7788,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -7797,7 +7797,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Wednesday, September 13, 2017"
+                            aria-label="Wednesday, June 13, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7810,7 +7810,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -7819,7 +7819,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Thursday, September 14, 2017"
+                            aria-label="Thursday, June 14, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7832,7 +7832,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -7841,7 +7841,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Friday, September 15, 2017"
+                            aria-label="Friday, June 15, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7854,7 +7854,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -7863,7 +7863,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Saturday, September 16, 2017"
+                            aria-label="Saturday, June 16, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7878,7 +7878,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                       </tr>
                       <tr>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -7887,7 +7887,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Sunday, September 17, 2017"
+                            aria-label="Sunday, June 17, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7900,7 +7900,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -7909,7 +7909,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Monday, September 18, 2017"
+                            aria-label="Monday, June 18, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7922,7 +7922,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -7931,7 +7931,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Tuesday, September 19, 2017"
+                            aria-label="Tuesday, June 19, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7944,7 +7944,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -7953,7 +7953,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Wednesday, September 20, 2017"
+                            aria-label="Wednesday, June 20, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7966,7 +7966,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -7975,7 +7975,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Thursday, September 21, 2017"
+                            aria-label="Thursday, June 21, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -7988,7 +7988,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid CalendarDay--selected"
                           style={
                             Object {
                               "height": 39,
@@ -7997,20 +7997,20 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Friday, September 22, 2017"
+                            aria-label="Friday, June 22, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
                             onMouseLeave={[Function]}
                             onMouseUp={[Function]}
-                            tabIndex={-1}
+                            tabIndex={0}
                             type="button"
                           >
                             22
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -8019,7 +8019,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Saturday, September 23, 2017"
+                            aria-label="Saturday, June 23, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -8034,7 +8034,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                       </tr>
                       <tr>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -8043,7 +8043,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Sunday, September 24, 2017"
+                            aria-label="Sunday, June 24, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -8056,7 +8056,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -8065,7 +8065,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Monday, September 25, 2017"
+                            aria-label="Monday, June 25, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -8078,7 +8078,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -8087,7 +8087,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Tuesday, September 26, 2017"
+                            aria-label="Tuesday, June 26, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -8100,7 +8100,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -8109,7 +8109,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Wednesday, September 27, 2017"
+                            aria-label="Wednesday, June 27, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -8122,7 +8122,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -8131,7 +8131,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Thursday, September 28, 2017"
+                            aria-label="Thursday, June 28, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -8144,7 +8144,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -8153,7 +8153,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Friday, September 29, 2017"
+                            aria-label="Friday, June 29, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -8166,7 +8166,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -8175,7 +8175,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Saturday, September 30, 2017"
+                            aria-label="Saturday, June 30, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -8200,7 +8200,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                     id="CalendarMonth__caption"
                   >
                     <strong>
-                      October 2017
+                      July 2018
                     </strong>
                   </div>
                   <table
@@ -8211,7 +8211,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                     >
                       <tr>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -8220,7 +8220,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Sunday, October 1, 2017"
+                            aria-label="Sunday, July 1, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -8233,7 +8233,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -8242,7 +8242,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Monday, October 2, 2017"
+                            aria-label="Monday, July 2, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -8255,7 +8255,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -8264,7 +8264,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Tuesday, October 3, 2017"
+                            aria-label="Tuesday, July 3, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -8277,7 +8277,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -8286,7 +8286,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Wednesday, October 4, 2017"
+                            aria-label="Wednesday, July 4, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -8299,7 +8299,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -8308,7 +8308,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Thursday, October 5, 2017"
+                            aria-label="Thursday, July 5, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -8321,7 +8321,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -8330,7 +8330,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Friday, October 6, 2017"
+                            aria-label="Friday, July 6, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -8343,7 +8343,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -8352,7 +8352,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Saturday, October 7, 2017"
+                            aria-label="Saturday, July 7, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -8367,7 +8367,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                       </tr>
                       <tr>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -8376,7 +8376,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Sunday, October 8, 2017"
+                            aria-label="Sunday, July 8, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -8389,7 +8389,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -8398,7 +8398,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Monday, October 9, 2017"
+                            aria-label="Monday, July 9, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -8411,7 +8411,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -8420,7 +8420,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Tuesday, October 10, 2017"
+                            aria-label="Tuesday, July 10, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -8433,7 +8433,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -8442,7 +8442,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Wednesday, October 11, 2017"
+                            aria-label="Wednesday, July 11, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -8455,7 +8455,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -8464,7 +8464,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Thursday, October 12, 2017"
+                            aria-label="Thursday, July 12, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -8477,7 +8477,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -8486,7 +8486,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Friday, October 13, 2017"
+                            aria-label="Friday, July 13, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -8499,7 +8499,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -8508,7 +8508,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Saturday, October 14, 2017"
+                            aria-label="Saturday, July 14, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -8523,7 +8523,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                       </tr>
                       <tr>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -8532,7 +8532,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Sunday, October 15, 2017"
+                            aria-label="Sunday, July 15, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -8545,7 +8545,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -8554,7 +8554,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Monday, October 16, 2017"
+                            aria-label="Monday, July 16, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -8567,7 +8567,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -8576,7 +8576,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Tuesday, October 17, 2017"
+                            aria-label="Tuesday, July 17, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -8589,7 +8589,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -8598,7 +8598,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Wednesday, October 18, 2017"
+                            aria-label="Wednesday, July 18, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -8611,7 +8611,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -8620,7 +8620,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Thursday, October 19, 2017"
+                            aria-label="Thursday, July 19, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -8633,7 +8633,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -8642,7 +8642,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Friday, October 20, 2017"
+                            aria-label="Friday, July 20, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -8655,7 +8655,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -8664,7 +8664,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Saturday, October 21, 2017"
+                            aria-label="Saturday, July 21, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -8679,7 +8679,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                       </tr>
                       <tr>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -8688,7 +8688,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Sunday, October 22, 2017"
+                            aria-label="Sunday, July 22, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -8701,7 +8701,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -8710,7 +8710,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Monday, October 23, 2017"
+                            aria-label="Monday, July 23, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -8723,7 +8723,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -8732,7 +8732,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Tuesday, October 24, 2017"
+                            aria-label="Tuesday, July 24, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -8745,7 +8745,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -8754,7 +8754,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Wednesday, October 25, 2017"
+                            aria-label="Wednesday, July 25, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -8767,7 +8767,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -8776,7 +8776,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Thursday, October 26, 2017"
+                            aria-label="Thursday, July 26, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -8789,7 +8789,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -8798,7 +8798,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Friday, October 27, 2017"
+                            aria-label="Friday, July 27, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -8811,7 +8811,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -8820,7 +8820,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Saturday, October 28, 2017"
+                            aria-label="Saturday, July 28, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -8835,7 +8835,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                       </tr>
                       <tr>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -8844,7 +8844,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Sunday, October 29, 2017"
+                            aria-label="Sunday, July 29, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -8857,7 +8857,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -8866,7 +8866,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Monday, October 30, 2017"
+                            aria-label="Monday, July 30, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
@@ -8879,7 +8879,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           </button>
                         </td>
                         <td
-                          className="CalendarDay "
+                          className="CalendarDay CalendarDay--valid"
                           style={
                             Object {
                               "height": 39,
@@ -8888,7 +8888,7 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
                           }
                         >
                           <button
-                            aria-label="Tuesday, October 31, 2017"
+                            aria-label="Tuesday, July 31, 2018"
                             className="CalendarDay__button"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
