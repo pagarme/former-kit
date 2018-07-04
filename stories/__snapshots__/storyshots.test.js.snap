@@ -8918,6 +8918,288 @@ exports[`Storyshots Calendar Single date and one month 1`] = `
 </section>
 `;
 
+exports[`Storyshots CalendarInput CalendarInput with period selection 1`] = `
+<div
+  className="typography"
+>
+  <section
+    className=""
+  >
+    <h2>
+      Default state
+    </h2>
+    <div>
+      <div
+        className="target"
+        onClick={[Function]}
+      >
+        <div
+          className="dateInput"
+        >
+          <div
+            className="icon"
+          >
+            <Calendar32.svg
+              height={16}
+              width={16}
+            />
+          </div>
+          <div
+            className="start"
+          >
+            <input
+              autoComplete="off"
+              className="input"
+              disabled={false}
+              id="shortid-mock-startDate"
+              mask="11/11/1111"
+              maxLength={10}
+              name="startDate"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyPress={[Function]}
+              onPaste={[Function]}
+              placeholder="07/05/2018"
+              size="8"
+              value="07/05/2018"
+            />
+            <span
+              className="expander"
+            >
+              07/05/2018
+            </span>
+          </div>
+          <div
+            className="separator"
+          />
+          <div
+            className="end"
+          >
+            <input
+              autoComplete="off"
+              className="input"
+              mask="11/11/1111"
+              maxLength={10}
+              name="endDate"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyPress={[Function]}
+              onPaste={[Function]}
+              placeholder="End"
+              size="8"
+              value="07/06/2018"
+            />
+            <span
+              className="expander"
+            >
+              07/06/2018
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Error state
+    </h2>
+    <div>
+      <div
+        className="target"
+        onClick={[Function]}
+      >
+        <div
+          className="dateInput error"
+        >
+          <div
+            className="icon"
+          >
+            <Calendar32.svg
+              height={16}
+              width={16}
+            />
+          </div>
+          <div
+            className="start error"
+          >
+            <input
+              autoComplete="off"
+              className="input"
+              disabled={false}
+              id="shortid-mock-startDate"
+              mask="11/11/1111"
+              maxLength={10}
+              name="startDate"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyPress={[Function]}
+              onPaste={[Function]}
+              placeholder="07/07/2018"
+              size="8"
+              value="07/07/2018"
+            />
+            <span
+              className="expander"
+            >
+              07/07/2018
+            </span>
+          </div>
+          <div
+            className="separator"
+          />
+          <div
+            className="end error"
+          >
+            <input
+              autoComplete="off"
+              className="input"
+              mask="11/11/1111"
+              maxLength={10}
+              name="endDate"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyPress={[Function]}
+              onPaste={[Function]}
+              placeholder="End"
+              size="8"
+              value="07/08/2018"
+            />
+            <span
+              className="expander"
+            >
+              07/08/2018
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`Storyshots CalendarInput Default CalendarInput 1`] = `
+<div
+  className="typography"
+>
+  <section
+    className=""
+  >
+    <h2>
+      Default state
+    </h2>
+    <div>
+      <div
+        className="target"
+        onClick={[Function]}
+      >
+        <div
+          className="dateInput"
+        >
+          <div
+            className="icon"
+          >
+            <Calendar32.svg
+              height={16}
+              width={16}
+            />
+          </div>
+          <div
+            className="start"
+          >
+            <input
+              autoComplete="off"
+              className="input"
+              disabled={false}
+              id="shortid-mock-startDate"
+              mask="11/11/1111"
+              maxLength={10}
+              name="startDate"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyPress={[Function]}
+              onPaste={[Function]}
+              placeholder="Select a date"
+              size="8"
+              value=""
+            />
+            <span
+              className="expander"
+            >
+              Select a date
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Error state
+    </h2>
+    <div>
+      <div
+        className="target"
+        onClick={[Function]}
+      >
+        <div
+          className="dateInput error"
+        >
+          <div
+            className="icon"
+          >
+            <Calendar32.svg
+              height={16}
+              width={16}
+            />
+          </div>
+          <div
+            className="start error"
+          >
+            <input
+              autoComplete="off"
+              className="input"
+              disabled={false}
+              id="shortid-mock-startDate"
+              mask="11/11/1111"
+              maxLength={10}
+              name="startDate"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyPress={[Function]}
+              onPaste={[Function]}
+              placeholder="07/07/2018"
+              size="8"
+              value="07/07/2018"
+            />
+            <span
+              className="expander"
+            >
+              07/07/2018
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;
+
 exports[`Storyshots Cards Default 1`] = `
 <div
   className="typography"
