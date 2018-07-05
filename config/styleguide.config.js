@@ -21,6 +21,7 @@ module.exports = {
         '../src/Avatar/index.js',
         '../src/Button/index.js',
         '../src/Calendar/index.js',
+        '../src/CalendarInput/index.js',
         '../src/Checkbox/Checkbox.js',
         '../src/CheckboxGroup/index.js',
         '../src/DateInput/index.js',

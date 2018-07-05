@@ -89,6 +89,17 @@ export const validateRange = (limits, dates) => {
 
   return { isValidStart, isValidEnd }
 }
+// eslint-disable-next-line
+export const validateDate = ({ upper, lower }) => (date) => {
+  const isValidDate = date === null || (date && date.isValid())
+  if (upper && lower && date) {
+    return isValidDate
+      && (!lower || !date.isBefore(lower))
+      && (!upper || !date.isAfter(upper))
+  }
+
+  return isValidDate
+}
 
 export const inputDateMask = moment()
   .format(DATE_MASK).replace(/\d/g, '1')
