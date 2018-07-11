@@ -5,30 +5,33 @@ import shortid from 'shortid'
 import {
   always,
   complement,
+  equals,
   isNil,
   lensPath,
   set,
 } from 'ramda'
 import MaskedInput from 'react-maskedinput'
 import clickOutside from 'react-click-outside'
-
 import {
   inputDateMask,
+  isValidMoment,
   momentToText,
   textToMoment,
-
 } from '../DateInput/dateHelpers'
 import {
   endClasses,
   inputClasses,
   startClasses,
 } from '../DateInput/classNames'
-
 import ThemeConsumer from '../ThemeConsumer'
 import { Popover } from '../Popover'
 import Calendar from '../Calendar'
 
 const consumeTheme = ThemeConsumer('UIDateInput')
+const PERIOD_SELECTION = 'period'
+const SINGLE_SELECTION = 'single'
+
+const isPeriodSelection = equals(PERIOD_SELECTION)
 
 /**
  * This component is a simplified version of the date selector only with the basic
@@ -44,11 +47,11 @@ class CalendarInput extends Component {
   constructor (props) {
     super(props)
     const { start, end } = props.value
-    const isVaidStart = (!start && props.dateSelection !== 'period')
-    || (start && start.isValid())
+    const isVaidStart = (!start && !isPeriodSelection(props.dateSelection))
+    || isValidMoment(start)
 
     const validStart = isVaidStart ? start : moment()
-    const swapDates = end && end.isValid() && end.isBefore(validStart)
+    const swapDates = isValidMoment(end) && end.isBefore(validStart)
 
     this.state = {
       value: momentToText({
@@ -96,8 +99,8 @@ class CalendarInput extends Component {
     const { end, start } = textToMoment(value)
 
     return {
-      end: end && end.isValid() ? end : null,
-      start: start && start.isValid() ? start : null,
+      end: isValidMoment(end) ? end : null,
+      start: isValidMoment(start) ? start : null,
     }
   }
 
@@ -110,10 +113,10 @@ class CalendarInput extends Component {
     } = this.state
 
     if (!start || start === 'invalid date') {
-      if (dateSelection !== 'period') {
-        return strings.select
+      if (isPeriodSelection(dateSelection)) {
+        return strings.start
       }
-      return strings.start
+      return strings.select
     }
 
     return start
@@ -126,29 +129,51 @@ class CalendarInput extends Component {
   handleConfirm (value) {
     const dates = value || this.state.value
     const { start, end } = textToMoment(dates)
+    const { dateSelection, onChange } = this.props
+    const validEnd = !end || isValidMoment(end)
+    const emptyDates = (!start && !end)
+      || (!start && !isPeriodSelection(dateSelection))
 
-    if (start.isValid() && (!end || end.isValid())) {
+    if (emptyDates) {
+      return onChange({
+        end: null,
+        start: null,
+      })
+    }
+    if (start.isValid() && validEnd) {
       if (end && start.isAfter(end)) {
-        this.props.onChange({
+        return onChange({
           end: start,
           start: end,
         })
-      } else {
-        this.props.onChange({
-          end,
-          start,
-        })
       }
+      return onChange({
+        end,
+        start,
+      })
     }
+
+    return null
   }
 
   handleDatesChange ({ start, end }) {
     const isValid = this.isValidDate(start) && this.isValidDate(end)
+    const {
+      closeOnSelect,
+      dateSelection,
+      onChange,
+    } = this.props
+    const showDateSelector = !(
+      !isPeriodSelection(dateSelection)
+      && closeOnSelect
+      && this.state.showDateSelector
+    )
     if (isValid) {
       this.setState({
         value: momentToText({ start, end }),
+        showDateSelector,
       })
-      this.props.onChange({ start, end })
+      onChange({ start, end })
       this.handleInputBlur()
     }
   }
@@ -235,7 +260,7 @@ class CalendarInput extends Component {
   isValidPeriod ({ end, start }) {
     const { dateSelection } = this.props
     if (
-      dateSelection !== 'period'
+      !isPeriodSelection(dateSelection)
       || (start && !start.isSameOrAfter(end, 'day'))
     ) {
       return true
@@ -325,7 +350,7 @@ class CalendarInput extends Component {
               {startPlaceHolder}
             </span>
           </div>
-          {dateSelection === 'period' &&
+          {isPeriodSelection(dateSelection) &&
             <Fragment>
               <div className={theme.separator} />
               <div
@@ -363,9 +388,15 @@ class CalendarInput extends Component {
 
 CalendarInput.propTypes = {
   /**
+   * This functions allows the component to close automatically the calendar
+   * when a date is selected, this option only works if the 'dateSelection' prop
+   * is 'single'.
+   */
+  closeOnSelect: PropTypes.bool,
+  /**
    * This option allows the user to select one date or one priod in the calendar.
    */
-  dateSelection: PropTypes.oneOf(['single', 'period']),
+  dateSelection: PropTypes.oneOf([SINGLE_SELECTION, PERIOD_SELECTION]),
   /**
    * Enable/disable the component.
    */
@@ -426,7 +457,8 @@ CalendarInput.propTypes = {
 }
 
 CalendarInput.defaultProps = {
-  dateSelection: 'single',
+  closeOnSelect: true,
+  dateSelection: SINGLE_SELECTION,
   disabled: false,
   icon: null,
   isValidDay: null,

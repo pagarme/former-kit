@@ -9,14 +9,16 @@ import {
   add,
   complement,
   contains,
-  isNil,
   omit,
   times,
 } from 'ramda'
 import shortid from 'shortid'
 import normalizeDates from './normalizeDates'
 import ThemeConsumer from '../ThemeConsumer'
-import { validateDate } from '../DateInput/dateHelpers'
+import {
+  isValidMoment,
+  validateDate,
+} from '../DateInput/dateHelpers'
 
 const consumeTheme = ThemeConsumer('UICalendar')
 
@@ -44,16 +46,16 @@ const getExtraProps = omit([
 ])
 
 const START_DATE = 'startDate'
-const isVisibleDate = (months, newDates) => {
+const isVisibleDate = (months, newDates, year) => {
   const { start, end } = newDates
   let isVisibleStart = false
   let isVisibleEnd = false
 
-  if (!isNil(start) && start.isValid()) {
+  if (isValidMoment(start) && start.year() === year) {
     isVisibleStart = contains(start.month(), months)
   }
 
-  if (!isNil(end) && end.isValid()) {
+  if (isValidMoment(end) && end.year() === year) {
     isVisibleEnd = contains(end.month(), months)
   }
 
@@ -75,6 +77,17 @@ const isOutsideRange = limits => complement(validateDate(limits))
 
 const validateVisibleMonths = (currentMonth, months) => times(add(currentMonth), months)
 
+const getDatesYear = ({ end, start }) => {
+  if (isValidMoment(start)) {
+    return start.year()
+  }
+
+  if (isValidMoment(end)) {
+    return end.year()
+  }
+
+  return moment().year()
+}
 /**
  * Custom calendar based on `react-dates` from airbnb with a simple interface.
  * This component have some special props and the surplus props are passed down to
@@ -96,7 +109,9 @@ class Calendar extends Component {
 
   componentWillReceiveProps ({ dates, focusedInput }) {
     if (this.state.visibleMonths) {
-      const visibleDates = isVisibleDate(this.state.visibleMonths, dates)
+      const year = getDatesYear(this.props.dates)
+      const visibleDates = isVisibleDate(this.state.visibleMonths, dates, year)
+
       if (needCalendarUpdate(focusedInput, visibleDates)) {
         this.setState({
           inputKey: shortid.generate(),
