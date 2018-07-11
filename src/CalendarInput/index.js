@@ -14,9 +14,9 @@ import clickOutside from 'react-click-outside'
 
 import {
   inputDateMask,
+  isValidMoment,
   momentToText,
   textToMoment,
-
 } from '../DateInput/dateHelpers'
 import {
   endClasses,
@@ -45,10 +45,10 @@ class CalendarInput extends Component {
     super(props)
     const { start, end } = props.value
     const isVaidStart = (!start && props.dateSelection !== 'period')
-    || (start && start.isValid())
+    || isValidMoment(start)
 
     const validStart = isVaidStart ? start : moment()
-    const swapDates = end && end.isValid() && end.isBefore(validStart)
+    const swapDates = isValidMoment(end) && end.isBefore(validStart)
 
     this.state = {
       value: momentToText({
@@ -96,8 +96,8 @@ class CalendarInput extends Component {
     const { end, start } = textToMoment(value)
 
     return {
-      end: end && end.isValid() ? end : null,
-      start: start && start.isValid() ? start : null,
+      end: isValidMoment(end) ? end : null,
+      start: isValidMoment(start) ? start : null,
     }
   }
 
@@ -126,20 +126,31 @@ class CalendarInput extends Component {
   handleConfirm (value) {
     const dates = value || this.state.value
     const { start, end } = textToMoment(dates)
+    const { dateSelection, onChange } = this.props
+    const validEnd = !end || isValidMoment(end)
+    const emptyDates = (!start && !end)
+      || (!start && !isPeriodSelection(dateSelection))
 
-    if (start.isValid() && (!end || end.isValid())) {
+    if (emptyDates) {
+      return onChange({
+        end: null,
+        start: null,
+      })
+    }
+    if (start.isValid() && validEnd) {
       if (end && start.isAfter(end)) {
-        this.props.onChange({
+        return onChange({
           end: start,
           start: end,
         })
-      } else {
-        this.props.onChange({
-          end,
-          start,
-        })
       }
+      return onChange({
+        end,
+        start,
+      })
     }
+
+    return null
   }
 
   handleDatesChange ({ start, end }) {
