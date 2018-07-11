@@ -101,5 +101,8 @@ export const validateDate = ({ upper, lower }) => (date) => {
   return isValidDate
 }
 
+export const isValidMoment = date =>
+  date && date.isValid()
+
 export const inputDateMask = moment()
   .format(DATE_MASK).replace(/\d/g, '1')
