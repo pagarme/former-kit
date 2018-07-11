@@ -9,6 +9,8 @@ import {
 
 import ThemeConsumer from '../ThemeConsumer'
 
+import Tooltip from '../Tooltip'
+
 const consumeTheme = ThemeConsumer('UISidebar')
 
 const Arrow = ({ active, icons }) => {
@@ -60,13 +62,46 @@ class SidebarLink extends React.Component {
     ))
   }
 
+  renderButton () {
+    const {
+      children,
+      collapsed,
+      icon,
+      icons,
+      theme,
+      title,
+    } = this.props
+
+    return (
+      <button
+        onBlur={this.handleBlur}
+        onClick={this.handleClick}
+        onFocus={this.handleFocus}
+        role="link"
+      >
+        <div className={theme.title}>
+          <span className={theme.icon}>{icon}</span>
+          {!collapsed && title}
+
+
+          {(!collapsed && children) &&
+            <span className={theme.arrow}>
+              <Arrow
+                active={!this.state.collapsed}
+                icons={icons}
+              />
+            </span>
+          }
+        </div>
+      </button>
+    )
+  }
+
   render () {
     const {
       active,
       children,
       collapsed,
-      icon,
-      icons,
       theme,
       title,
     } = this.props
@@ -84,26 +119,17 @@ class SidebarLink extends React.Component {
           }
         )}
       >
-        <button
-          onBlur={this.handleBlur}
-          onClick={this.handleClick}
-          onFocus={this.handleFocus}
-          role="link"
-        >
-          <div className={theme.title}>
-            <span className={theme.icon}>{icon}</span>
-            {!collapsed && title}
-
-            {(!collapsed && children) &&
-              <span className={theme.arrow}>
-                <Arrow
-                  active={!this.state.collapsed}
-                  icons={icons}
-                />
-              </span>
-            }
-          </div>
-        </button>
+        {collapsed
+          ? (
+            <Tooltip
+              content={title}
+              placement="rightMiddle"
+            >
+              {this.renderButton()}
+            </Tooltip>
+          )
+          : this.renderButton()
+        }
 
         {renderSubmenu &&
           <ul className={theme.submenu}>
@@ -132,35 +158,6 @@ const hasNecessaryIcons = ({ icons, children }, propName) => {
 }
 
 SidebarLink.propTypes = {
-  /**
-   * The style classes for this element.
-   */
-  theme: PropTypes.shape({
-    /**
-     * The class used to style the component if it's active.
-     */
-    active: PropTypes.string,
-    /**
-     * The class used to style the arrow component.
-     */
-    arrow: PropTypes.string,
-    /**
-     * The class used to style when links is focused.
-     */
-    focused: PropTypes.string,
-    /**
-     * The class used to style the icon defined by the user.
-     */
-    icon: PropTypes.string,
-    /**
-     * The main class used to style the component.
-     */
-    link: PropTypes.string,
-    /**
-     * The class used to style the title.
-     */
-    title: PropTypes.string,
-  }),
   /**
    * Indicates if the element is active or not.
    */
@@ -203,10 +200,38 @@ SidebarLink.propTypes = {
    * The title of the component.
    */
   title: PropTypes.string.isRequired,
+  /**
+   * The style classes for this element.
+   */
+  theme: PropTypes.shape({
+    /**
+     * The class used to style the component if it's active.
+     */
+    active: PropTypes.string,
+    /**
+     * The class used to style the arrow component.
+     */
+    arrow: PropTypes.string,
+    /**
+     * The class used to style when links is focused.
+     */
+    focused: PropTypes.string,
+    /**
+     * The class used to style the icon defined by the user.
+     */
+    icon: PropTypes.string,
+    /**
+     * The main class used to style the component.
+     */
+    link: PropTypes.string,
+    /**
+     * The class used to style the title.
+     */
+    title: PropTypes.string,
+  }),
 }
 
 SidebarLink.defaultProps = {
-  theme: {},
   active: false,
   children: null,
   collapsed: false,
@@ -215,6 +240,7 @@ SidebarLink.defaultProps = {
   onBlur: null,
   onClick: null,
   onFocus: null,
+  theme: {},
 }
 
 export default consumeTheme(SidebarLink)

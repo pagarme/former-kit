@@ -20633,11 +20633,14 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
           width="140"
         />
         <button
+          className="button clean lowRelevance default iconButton"
+          disabled={false}
           onClick={[Function]}
+          type="button"
         >
           <Menu32.svg
-            height="16"
-            width="16"
+            height={16}
+            width={16}
           />
         </button>
       </header>
@@ -20665,7 +20668,7 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
                     width={16}
                   />
                 </span>
-                home
+                Home
               </div>
             </button>
           </li>
@@ -21108,11 +21111,14 @@ exports[`Storyshots Layout Default with all props 1`] = `
           width="140"
         />
         <button
+          className="button clean lowRelevance default iconButton"
+          disabled={false}
           onClick={[Function]}
+          type="button"
         >
           <Menu32.svg
-            height="16"
-            width="16"
+            height={16}
+            width={16}
           />
         </button>
       </header>
@@ -21140,7 +21146,7 @@ exports[`Storyshots Layout Default with all props 1`] = `
                     width={16}
                   />
                 </span>
-                home
+                Home
               </div>
             </button>
           </li>
@@ -21686,11 +21692,14 @@ exports[`Storyshots Layout Default without Footer 1`] = `
           width="140"
         />
         <button
+          className="button clean lowRelevance default iconButton"
+          disabled={false}
           onClick={[Function]}
+          type="button"
         >
           <Menu32.svg
-            height="16"
-            width="16"
+            height={16}
+            width={16}
           />
         </button>
       </header>
@@ -21718,7 +21727,7 @@ exports[`Storyshots Layout Default without Footer 1`] = `
                     width={16}
                   />
                 </span>
-                home
+                Home
               </div>
             </button>
           </li>
@@ -22209,11 +22218,14 @@ exports[`Storyshots Layout Default without Header 1`] = `
           width="140"
         />
         <button
+          className="button clean lowRelevance default iconButton"
+          disabled={false}
           onClick={[Function]}
+          type="button"
         >
           <Menu32.svg
-            height="16"
-            width="16"
+            height={16}
+            width={16}
           />
         </button>
       </header>
@@ -22241,7 +22253,7 @@ exports[`Storyshots Layout Default without Header 1`] = `
                     width={16}
                   />
                 </span>
-                home
+                Home
               </div>
             </button>
           </li>
@@ -27043,11 +27055,14 @@ exports[`Storyshots Sidebar Collapsed 1`] = `
     className="header"
   >
     <button
+      className="button clean lowRelevance default iconButton"
+      disabled={false}
       onClick={[Function]}
+      type="button"
     >
       <Menu32.svg
-        height="16"
-        width="16"
+        height={16}
+        width={16}
       />
     </button>
   </header>
@@ -27058,71 +27073,89 @@ exports[`Storyshots Sidebar Collapsed 1`] = `
       <li
         className="link"
       >
-        <button
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          role="link"
+        <div
+          className="target"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
         >
-          <div
-            className="title"
+          <button
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            role="link"
           >
-            <span
-              className="icon"
+            <div
+              className="title"
             >
-              <Home32.svg
-                height={16}
-                width={16}
-              />
-            </span>
-          </div>
-        </button>
+              <span
+                className="icon"
+              >
+                <Home32.svg
+                  height={16}
+                  width={16}
+                />
+              </span>
+            </div>
+          </button>
+        </div>
       </li>
       <li
         className="link"
       >
-        <button
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          role="link"
+        <div
+          className="target"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
         >
-          <div
-            className="title"
+          <button
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            role="link"
           >
-            <span
-              className="icon"
+            <div
+              className="title"
             >
-              <Transaction32.svg
-                height={16}
-                width={16}
-              />
-            </span>
-          </div>
-        </button>
+              <span
+                className="icon"
+              >
+                <Transaction32.svg
+                  height={16}
+                  width={16}
+                />
+              </span>
+            </div>
+          </button>
+        </div>
       </li>
       <li
         className="link"
       >
-        <button
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          role="link"
+        <div
+          className="target"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
         >
-          <div
-            className="title"
+          <button
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            role="link"
           >
-            <span
-              className="icon"
+            <div
+              className="title"
             >
-              <Configuration32.svg
-                height={16}
-                width={16}
-              />
-            </span>
-          </div>
-        </button>
+              <span
+                className="icon"
+              >
+                <Configuration32.svg
+                  height={16}
+                  width={16}
+                />
+              </span>
+            </div>
+          </button>
+        </div>
       </li>
     </ul>
   </nav>
@@ -27149,11 +27182,14 @@ exports[`Storyshots Sidebar Default 1`] = `
       width="140"
     />
     <button
+      className="button clean lowRelevance default iconButton"
+      disabled={false}
       onClick={[Function]}
+      type="button"
     >
       <Menu32.svg
-        height="16"
-        width="16"
+        height={16}
+        width={16}
       />
     </button>
   </header>
@@ -27181,7 +27217,7 @@ exports[`Storyshots Sidebar Default 1`] = `
                 width={16}
               />
             </span>
-            home
+            Home
           </div>
         </button>
       </li>
