@@ -20739,6 +20739,7 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
           >
             <input
               checked={true}
+              disabled={false}
               id="segmented-switch-shortid-mock-shortid-mock-live-test-live"
               name="segmented-switch-shortid-mock"
               onChange={[Function]}
@@ -20757,6 +20758,7 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
           >
             <input
               checked={false}
+              disabled={false}
               id="segmented-switch-shortid-mock-shortid-mock-live-test-test"
               name="segmented-switch-shortid-mock"
               onChange={[Function]}
@@ -21217,6 +21219,7 @@ exports[`Storyshots Layout Default with all props 1`] = `
           >
             <input
               checked={true}
+              disabled={false}
               id="segmented-switch-shortid-mock-shortid-mock-live-test-live"
               name="segmented-switch-shortid-mock"
               onChange={[Function]}
@@ -21235,6 +21238,7 @@ exports[`Storyshots Layout Default with all props 1`] = `
           >
             <input
               checked={false}
+              disabled={false}
               id="segmented-switch-shortid-mock-shortid-mock-live-test-test"
               name="segmented-switch-shortid-mock"
               onChange={[Function]}
@@ -21798,6 +21802,7 @@ exports[`Storyshots Layout Default without Footer 1`] = `
           >
             <input
               checked={true}
+              disabled={false}
               id="segmented-switch-shortid-mock-shortid-mock-live-test-live"
               name="segmented-switch-shortid-mock"
               onChange={[Function]}
@@ -21816,6 +21821,7 @@ exports[`Storyshots Layout Default without Footer 1`] = `
           >
             <input
               checked={false}
+              disabled={false}
               id="segmented-switch-shortid-mock-shortid-mock-live-test-test"
               name="segmented-switch-shortid-mock"
               onChange={[Function]}
@@ -22324,6 +22330,7 @@ exports[`Storyshots Layout Default without Header 1`] = `
           >
             <input
               checked={true}
+              disabled={false}
               id="segmented-switch-shortid-mock-shortid-mock-live-test-live"
               name="segmented-switch-shortid-mock"
               onChange={[Function]}
@@ -22342,6 +22349,7 @@ exports[`Storyshots Layout Default without Header 1`] = `
           >
             <input
               checked={false}
+              disabled={false}
               id="segmented-switch-shortid-mock-shortid-mock-live-test-test"
               name="segmented-switch-shortid-mock"
               onChange={[Function]}
@@ -26871,6 +26879,7 @@ exports[`Storyshots SegmentedSwitch Default 1`] = `
         >
           <input
             checked={true}
+            disabled={false}
             id="segmented-switch-shortid-mock-live-test-test"
             name="segmented-switch-shortid-mock"
             onChange={[Function]}
@@ -26889,6 +26898,7 @@ exports[`Storyshots SegmentedSwitch Default 1`] = `
         >
           <input
             checked={false}
+            disabled={false}
             id="segmented-switch-shortid-mock-live-test-live"
             name="segmented-switch-shortid-mock"
             onChange={[Function]}
@@ -26920,6 +26930,7 @@ exports[`Storyshots SegmentedSwitch Default 1`] = `
         >
           <input
             checked={false}
+            disabled={false}
             id="segmented-switch-shortid-mock-super-extra-options-test"
             name="segmented-switch-shortid-mock"
             onChange={[Function]}
@@ -26938,6 +26949,7 @@ exports[`Storyshots SegmentedSwitch Default 1`] = `
         >
           <input
             checked={false}
+            disabled={false}
             id="segmented-switch-shortid-mock-super-extra-options-live"
             name="segmented-switch-shortid-mock"
             onChange={[Function]}
@@ -26956,6 +26968,7 @@ exports[`Storyshots SegmentedSwitch Default 1`] = `
         >
           <input
             checked={true}
+            disabled={false}
             id="segmented-switch-shortid-mock-super-extra-options-super-test"
             name="segmented-switch-shortid-mock"
             onChange={[Function]}
@@ -26974,6 +26987,7 @@ exports[`Storyshots SegmentedSwitch Default 1`] = `
         >
           <input
             checked={false}
+            disabled={false}
             id="segmented-switch-shortid-mock-super-extra-options-extra-live"
             name="segmented-switch-shortid-mock"
             onChange={[Function]}
@@ -27005,6 +27019,7 @@ exports[`Storyshots SegmentedSwitch Default 1`] = `
         >
           <input
             checked={true}
+            disabled={false}
             id="segmented-switch-shortid-mock-table-chart-table"
             name="segmented-switch-shortid-mock"
             onChange={[Function]}
@@ -27026,7 +27041,65 @@ exports[`Storyshots SegmentedSwitch Default 1`] = `
         >
           <input
             checked={false}
+            disabled={false}
             id="segmented-switch-shortid-mock-table-chart-chart"
+            name="segmented-switch-shortid-mock"
+            onChange={[Function]}
+            type="radio"
+            value="chart"
+          />
+          <span
+            className="label"
+          >
+            <TrendingUp32.svg
+              height={16}
+              width={16}
+            />
+          </span>
+        </label>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Disabled
+    </h2>
+    <div>
+      <div
+        className="segmentedSwitch disabled"
+      >
+        <label
+          className="item"
+          htmlFor="segmented-switch-shortid-mock-disabled-table"
+        >
+          <input
+            checked={true}
+            disabled={true}
+            id="segmented-switch-shortid-mock-disabled-table"
+            name="segmented-switch-shortid-mock"
+            onChange={[Function]}
+            type="radio"
+            value="table"
+          />
+          <span
+            className="label"
+          >
+            <Menu32.svg
+              height={16}
+              width={16}
+            />
+          </span>
+        </label>
+        <label
+          className="item"
+          htmlFor="segmented-switch-shortid-mock-disabled-chart"
+        >
+          <input
+            checked={false}
+            disabled={true}
+            id="segmented-switch-shortid-mock-disabled-chart"
             name="segmented-switch-shortid-mock"
             onChange={[Function]}
             type="radio"
@@ -27288,6 +27361,7 @@ exports[`Storyshots Sidebar Default 1`] = `
       >
         <input
           checked={true}
+          disabled={false}
           id="segmented-switch-shortid-mock-shortid-mock-live-test-live"
           name="segmented-switch-shortid-mock"
           onChange={[Function]}
@@ -27306,6 +27380,7 @@ exports[`Storyshots Sidebar Default 1`] = `
       >
         <input
           checked={false}
+          disabled={false}
           id="segmented-switch-shortid-mock-shortid-mock-live-test-test"
           name="segmented-switch-shortid-mock"
           onChange={[Function]}
