@@ -29,9 +29,14 @@ class SegmentedSwitchState extends React.Component {
   }
 
   render () {
+    const {
+      disabled,
+      options,
+    } = this.props
     return (
       <SegmentedSwitch
-        options={this.props.options}
+        disabled={disabled}
+        options={options}
         onChange={this.handleChange}
         name={this.props.name}
         value={this.state.value}
@@ -86,6 +91,23 @@ storiesOf('SegmentedSwitch', module)
       <Section title="With icons">
         <SegmentedSwitchState
           name="table-chart"
+          options={[
+            {
+              title: <IconTable width={16} height={16} />,
+              value: 'table',
+            },
+            {
+              title: <IconChart width={16} height={16} />,
+              value: 'chart',
+            },
+          ]}
+          value="table"
+        />
+      </Section>
+      <Section title="Disabled">
+        <SegmentedSwitchState
+          disabled
+          name="disabled"
           options={[
             {
               title: <IconTable width={16} height={16} />,

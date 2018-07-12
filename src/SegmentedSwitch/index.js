@@ -1,11 +1,13 @@
 import React from 'react'
 import {
   arrayOf,
+  bool,
   func,
   node,
   shape,
   string,
 } from 'prop-types'
+import classnames from 'classnames'
 import shortid from 'shortid'
 
 import ThemeConsumer from '../ThemeConsumer'
@@ -21,6 +23,7 @@ class SegmentedSwitch extends React.PureComponent {
 
   renderOption (option, index) {
     const {
+      disabled,
       name,
       onChange,
       theme,
@@ -37,6 +40,7 @@ class SegmentedSwitch extends React.PureComponent {
       >
         <input
           checked={value === option.value}
+          disabled={disabled}
           id={id}
           name={this.instanceId}
           onChange={() => onChange(option.value, index)}
@@ -51,12 +55,17 @@ class SegmentedSwitch extends React.PureComponent {
 
   render () {
     const {
+      disabled,
       options,
       theme,
     } = this.props
 
+    const containerClass = classnames(theme.segmentedSwitch, {
+      [theme.disabled]: disabled,
+    })
+
     return (
-      <div className={theme.segmentedSwitch}>
+      <div className={containerClass}>
         {options.map(this.renderOption)}
       </div>
     )
@@ -64,6 +73,10 @@ class SegmentedSwitch extends React.PureComponent {
 }
 
 SegmentedSwitch.propTypes = {
+  /**
+   * Disables/enables the component's functions.
+   */
+  disabled: bool,
   /**
    * A name to identify the component in a form.
    */
@@ -105,6 +118,7 @@ SegmentedSwitch.propTypes = {
 }
 
 SegmentedSwitch.defaultProps = {
+  disabled: false,
   theme: {},
 }
 
