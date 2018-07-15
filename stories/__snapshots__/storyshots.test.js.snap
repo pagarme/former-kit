@@ -32654,6 +32654,51 @@ exports[`Storyshots Tooltip Visible 1`] = `
 </section>
 `;
 
+exports[`Storyshots Tooltip control visibility 1`] = `
+<section
+  className="typography"
+>
+  <h2>
+    Control visibility
+  </h2>
+  <div>
+    <div
+      className={undefined}
+    >
+      <div
+        className="target"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+      >
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            Hover me
+          </span>
+        </button>
+      </div>
+      <div
+        className="spacing flex"
+      />
+      <button
+        className="button flat normalRelevance default"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span>
+          show tooltip
+        </span>
+      </button>
+    </div>
+  </div>
+</section>
+`;
+
 exports[`Storyshots Typography Font families 1`] = `
 <section
   className="typography"
