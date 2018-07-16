@@ -8932,6 +8932,7 @@ exports[`Storyshots CalendarInput CalendarInput with period selection 1`] = `
       <div
         className="target"
         onClick={[Function]}
+        role="presentation"
       >
         <div
           className="dateInput"
@@ -9013,6 +9014,7 @@ exports[`Storyshots CalendarInput CalendarInput with period selection 1`] = `
       <div
         className="target"
         onClick={[Function]}
+        role="presentation"
       >
         <div
           className="dateInput error"
@@ -9101,6 +9103,7 @@ exports[`Storyshots CalendarInput Default CalendarInput 1`] = `
       <div
         className="target"
         onClick={[Function]}
+        role="presentation"
       >
         <div
           className="dateInput"
@@ -9154,6 +9157,7 @@ exports[`Storyshots CalendarInput Default CalendarInput 1`] = `
       <div
         className="target"
         onClick={[Function]}
+        role="presentation"
       >
         <div
           className="dateInput error"
@@ -9835,6 +9839,7 @@ feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
                     <div
                       className="target"
                       onClick={[Function]}
+                      role="presentation"
                     >
                       <button
                         className="button outline normalRelevance default"
@@ -16997,6 +17002,7 @@ exports[`Storyshots Header Default 1`] = `
           <div
             className="target"
             onClick={[Function]}
+            role="presentation"
           >
             <button
               className="menu"
@@ -17060,6 +17066,7 @@ exports[`Storyshots Header Default 1`] = `
           <div
             className="target"
             onClick={[Function]}
+            role="presentation"
           >
             <button
               className="menu"
@@ -20277,6 +20284,7 @@ exports[`Storyshots Layout Default only Header 1`] = `
           <div
             className="target"
             onClick={[Function]}
+            role="presentation"
           >
             <button
               className="menu"
@@ -21285,6 +21293,7 @@ exports[`Storyshots Layout Default with all props 1`] = `
           <div
             className="target"
             onClick={[Function]}
+            role="presentation"
           >
             <button
               className="menu"
@@ -21868,6 +21877,7 @@ exports[`Storyshots Layout Default without Footer 1`] = `
           <div
             className="target"
             onClick={[Function]}
+            role="presentation"
           >
             <button
               className="menu"
@@ -22780,6 +22790,7 @@ exports[`Storyshots Layout Default without Sidebar 1`] = `
           <div
             className="target"
             onClick={[Function]}
+            role="presentation"
           >
             <button
               className="menu"
@@ -24414,6 +24425,7 @@ exports[`Storyshots Popover Default 1`] = `
     <div
       className="target"
       onClick={[Function]}
+      role="presentation"
     >
       <button
         className="button flat normalRelevance default"
@@ -24442,6 +24454,7 @@ exports[`Storyshots Popover Handle close popover 1`] = `
       <div
         className="target"
         onClick={[Function]}
+        role="presentation"
       >
         <button
           className="button flat normalRelevance default"
@@ -24523,6 +24536,7 @@ exports[`Storyshots Popover Positions 1`] = `
           <div
             className="target"
             onClick={[Function]}
+            role="presentation"
           >
             <button
               className="button flat normalRelevance default"
@@ -24541,6 +24555,7 @@ exports[`Storyshots Popover Positions 1`] = `
           <div
             className="target"
             onClick={[Function]}
+            role="presentation"
           >
             <button
               className="button flat normalRelevance default"
@@ -24559,6 +24574,7 @@ exports[`Storyshots Popover Positions 1`] = `
           <div
             className="target"
             onClick={[Function]}
+            role="presentation"
           >
             <button
               className="button flat normalRelevance default"
@@ -24577,6 +24593,7 @@ exports[`Storyshots Popover Positions 1`] = `
           <div
             className="target"
             onClick={[Function]}
+            role="presentation"
           >
             <button
               className="button flat normalRelevance default"
@@ -24599,6 +24616,7 @@ exports[`Storyshots Popover Positions 1`] = `
           <div
             className="target"
             onClick={[Function]}
+            role="presentation"
           >
             <button
               className="button flat normalRelevance default"
@@ -24617,6 +24635,7 @@ exports[`Storyshots Popover Positions 1`] = `
           <div
             className="target"
             onClick={[Function]}
+            role="presentation"
           >
             <button
               className="button flat normalRelevance default"
@@ -24635,6 +24654,7 @@ exports[`Storyshots Popover Positions 1`] = `
           <div
             className="target"
             onClick={[Function]}
+            role="presentation"
           >
             <button
               className="button flat normalRelevance default"
@@ -24653,6 +24673,7 @@ exports[`Storyshots Popover Positions 1`] = `
           <div
             className="target"
             onClick={[Function]}
+            role="presentation"
           >
             <button
               className="button flat normalRelevance default"
@@ -24675,6 +24696,7 @@ exports[`Storyshots Popover Positions 1`] = `
           <div
             className="target"
             onClick={[Function]}
+            role="presentation"
           >
             <button
               className="button flat normalRelevance default"
@@ -24693,6 +24715,7 @@ exports[`Storyshots Popover Positions 1`] = `
           <div
             className="target"
             onClick={[Function]}
+            role="presentation"
           >
             <button
               className="button flat normalRelevance default"
@@ -24711,6 +24734,7 @@ exports[`Storyshots Popover Positions 1`] = `
           <div
             className="target"
             onClick={[Function]}
+            role="presentation"
           >
             <button
               className="button flat normalRelevance default"
@@ -24729,6 +24753,7 @@ exports[`Storyshots Popover Positions 1`] = `
           <div
             className="target"
             onClick={[Function]}
+            role="presentation"
           >
             <button
               className="button flat normalRelevance default"
@@ -24760,6 +24785,7 @@ exports[`Storyshots Popover Visible 1`] = `
       <div
         className="target"
         onClick={[Function]}
+        role="presentation"
       >
         <button
           className="button flat normalRelevance default"
@@ -24809,6 +24835,7 @@ exports[`Storyshots Popover Visible 1`] = `
       <div
         className="target"
         onClick={[Function]}
+        role="presentation"
       >
         <button
           className="button flat normalRelevance default"
@@ -24858,6 +24885,7 @@ exports[`Storyshots Popover Visible 1`] = `
       <div
         className="target"
         onClick={[Function]}
+        role="presentation"
       >
         <button
           className="button flat normalRelevance default"
@@ -24907,6 +24935,7 @@ exports[`Storyshots Popover Visible 1`] = `
       <div
         className="target"
         onClick={[Function]}
+        role="presentation"
       >
         <button
           className="button flat normalRelevance default"
@@ -24956,6 +24985,7 @@ exports[`Storyshots Popover Visible 1`] = `
       <div
         className="target"
         onClick={[Function]}
+        role="presentation"
       >
         <button
           className="button flat normalRelevance default"
@@ -25005,6 +25035,7 @@ exports[`Storyshots Popover Visible 1`] = `
       <div
         className="target"
         onClick={[Function]}
+        role="presentation"
       >
         <button
           className="button flat normalRelevance default"
@@ -25054,6 +25085,7 @@ exports[`Storyshots Popover Visible 1`] = `
       <div
         className="target"
         onClick={[Function]}
+        role="presentation"
       >
         <button
           className="button flat normalRelevance default"
@@ -25103,6 +25135,7 @@ exports[`Storyshots Popover Visible 1`] = `
       <div
         className="target"
         onClick={[Function]}
+        role="presentation"
       >
         <button
           className="button flat normalRelevance default"
@@ -25152,6 +25185,7 @@ exports[`Storyshots Popover Visible 1`] = `
       <div
         className="target"
         onClick={[Function]}
+        role="presentation"
       >
         <button
           className="button flat normalRelevance default"
@@ -25201,6 +25235,7 @@ exports[`Storyshots Popover Visible 1`] = `
       <div
         className="target"
         onClick={[Function]}
+        role="presentation"
       >
         <button
           className="button flat normalRelevance default"
@@ -25250,6 +25285,7 @@ exports[`Storyshots Popover Visible 1`] = `
       <div
         className="target"
         onClick={[Function]}
+        role="presentation"
       >
         <button
           className="button flat normalRelevance default"
@@ -25299,6 +25335,7 @@ exports[`Storyshots Popover Visible 1`] = `
       <div
         className="target"
         onClick={[Function]}
+        role="presentation"
       >
         <button
           className="button flat normalRelevance default"
@@ -25355,6 +25392,7 @@ exports[`Storyshots Popover With base dark 1`] = `
     <div
       className="target"
       onClick={[Function]}
+      role="presentation"
     >
       <button
         className="button flat normalRelevance default"

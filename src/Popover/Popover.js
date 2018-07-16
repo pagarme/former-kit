@@ -1,8 +1,7 @@
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable jsx-a11y/no-static-element-interactions */
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
+import ClickOutside from 'react-click-outside'
 
 import ThemeConsumer from '../ThemeConsumer'
 
@@ -17,11 +16,18 @@ class Popover extends Component {
     }
 
     this.handleOnClick = this.handleOnClick.bind(this)
+    this.handleClickOutside = this.handleClickOutside.bind(this)
   }
 
   componentWillReceiveProps ({ visible }) {
     this.setState({
       visible,
+    })
+  }
+
+  handleClickOutside () {
+    this.setState({
+      visible: false,
     })
   }
 
@@ -54,6 +60,7 @@ class Popover extends Component {
       <div
         className={theme.target}
         onClick={this.handleOnClick}
+        role="presentation"
       >
         {children}
 
@@ -110,4 +117,4 @@ Popover.defaultProps = {
   visible: false,
 }
 
-export default ConsumeTheme(Popover)
+export default ConsumeTheme(ClickOutside(Popover))
