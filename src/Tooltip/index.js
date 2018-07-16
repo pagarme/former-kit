@@ -5,43 +5,42 @@ import ThemeConsumer from '../ThemeConsumer'
 
 const ConsumeTheme = ThemeConsumer('UITooltip')
 
-const contentClassNames = (theme, placement) => classNames(theme.tooltip, {
-  [theme.bottomCenter]: placement === 'bottomCenter',
-  [theme.bottomEnd]: placement === 'bottomEnd',
-  [theme.bottomStart]: placement === 'bottomStart',
-  [theme.leftEnd]: placement === 'leftEnd',
-  [theme.leftMiddle]: placement === 'leftMiddle',
-  [theme.leftStart]: placement === 'leftStart',
-  [theme.rightEnd]: placement === 'rightEnd',
-  [theme.rightMiddle]: placement === 'rightMiddle',
-  [theme.rightStart]: placement === 'rightStart',
-  [theme.topCenter]: placement === 'topCenter',
-  [theme.topEnd]: placement === 'topEnd',
-  [theme.topStart]: placement === 'topStart',
-})
-
 class Tooltip extends Component {
   constructor (props) {
     super(props)
 
     this.state = {
-      visible: false,
+      visible: props.visible,
     }
 
     this.handleMouseEnter = this.handleMouseEnter.bind(this)
     this.handleMouseLeave = this.handleMouseLeave.bind(this)
   }
 
-  handleMouseEnter () {
+  componentWillReceiveProps ({ visible }) {
     this.setState({
-      visible: true,
+      visible,
     })
   }
 
+  handleMouseEnter () {
+    if (!this.props.onMouseEnter) {
+      this.setState({
+        visible: true,
+      })
+    }
+
+    this.props.onMouseEnter()
+  }
+
   handleMouseLeave () {
-    this.setState({
-      visible: false,
-    })
+    if (!this.props.onMouseLeave) {
+      this.setState({
+        visible: false,
+      })
+    }
+
+    this.props.onMouseLeave()
   }
 
   render () {
@@ -50,10 +49,9 @@ class Tooltip extends Component {
       content,
       placement,
       theme,
-      visible: visibleProp,
     } = this.props
 
-    const { visible: visibleState } = this.state
+    const { visible } = this.state
 
     return (
       <div
@@ -62,9 +60,10 @@ class Tooltip extends Component {
         onMouseLeave={this.handleMouseLeave}
       >
         { children }
-        {(visibleState || visibleProp) &&
+
+        {visible &&
           <div
-            className={contentClassNames(theme, placement)}
+            className={classNames(theme.tooltip, theme[placement])}
             role="tooltip"
           >
             {content}
@@ -76,6 +75,26 @@ class Tooltip extends Component {
 }
 
 Tooltip.propTypes = {
+  /**
+   * The children can be any kind of component.
+   */
+  children: PropTypes.node.isRequired,
+  /**
+   * The content is used to tooltip and can be any kind of component.
+   */
+  content: PropTypes.node.isRequired,
+  /**
+   * onMouseEnter callback.
+   */
+  onMouseEnter: PropTypes.func,
+  /**
+   * onMouseLeave callback.
+   */
+  onMouseLeave: PropTypes.func,
+  /**
+   * The position you want to render the tooltip when it's visible.
+   */
+  placement: PropTypes.string,
   /**
    * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
@@ -96,24 +115,14 @@ Tooltip.propTypes = {
     topStart: PropTypes.string,
   }),
   /**
-   * The children can be any kind of component.
-   */
-  children: PropTypes.node.isRequired,
-  /**
-   * The content is used to tooltip and can be any kind of component.
-   */
-  content: PropTypes.node.isRequired,
-  /**
-   * The position you want to render the tooltip when it's visible.
-   */
-  placement: PropTypes.string,
-  /**
    * This props mean the tooltip is visible.
    */
   visible: PropTypes.bool,
 }
 
 Tooltip.defaultProps = {
+  onMouseEnter: null,
+  onMouseLeave: null,
   placement: 'leftMiddle',
   theme: {},
   visible: false,

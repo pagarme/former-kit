@@ -1,3 +1,7 @@
+.flex {
+  display: flex;
+}
+
 .col {
   display: unset;
 }

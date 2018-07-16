@@ -3,6 +3,7 @@ import classNames from 'classnames'
 import { storiesOf } from '@storybook/react'
 
 import Tooltip from '../../src/Tooltip'
+import Spacing from '../../src/Spacing'
 import Section from '../Section'
 
 import {
@@ -16,10 +17,10 @@ import Button from '../../src/Button'
 import style from './style.css'
 
 const lipsum = `
-Lorem ipsum dolor sit amet consectetur adipisicing elit.
-Deleniti officia ipsam consectetur laudantium eius asperiores ut
-maiores corporis, consequuntur natus quae tempora voluptate dolorum
-voluptatibus placeat itaque alias, nam culpa.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+  Deleniti officia ipsam consectetur laudantium eius asperiores ut
+  maiores corporis, consequuntur natus quae tempora voluptate dolorum
+  voluptatibus placeat itaque alias, nam culpa.
 `
 
 const TooltipText = ({ placement, visible }) => (
@@ -31,6 +32,39 @@ const TooltipText = ({ placement, visible }) => (
     <Button>Hover me</Button>
   </Tooltip>
 )
+
+class TooltipState extends React.Component {
+  constructor () {
+    super()
+
+    this.state = {
+      visible: false,
+    }
+  }
+
+  render () {
+    return (
+      <div className={style.flex}>
+        <Tooltip
+          content="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+          onMouseEnter={() => this.setState({ visible: true })}
+          placement="rightMiddle"
+          visible={this.state.visible}
+        >
+          <Button>Hover me</Button>
+        </Tooltip>
+
+        <Spacing />
+
+        <Button
+          onClick={() => this.setState({ visible: true })}
+        >
+          show tooltip
+        </Button>
+      </div>
+    )
+  }
+}
 
 const TooltipVisible = ({ placement }) => (
   <Tooltip
@@ -207,5 +241,10 @@ storiesOf('Tooltip', module)
         <h3>Bottom end</h3>
         <TooltipVisible placement="bottomEnd" />
       </div>
+    </Section>
+  ))
+  .add('control visibility', () => (
+    <Section title="Control visibility">
+      <TooltipState />
     </Section>
   ))
