@@ -1,4 +1,5 @@
-import React, { Fragment } from 'react'
+import React, { Component, Fragment } from 'react'
+import PropTypes from 'prop-types'
 import { action } from '@storybook/addon-actions'
 
 import IconCalendar from 'emblematic-icons/svg/Calendar32.svg'
@@ -73,9 +74,9 @@ const renderActions = () => (
 )
 
 
-export default class CardSectionDoubleLineTitleState extends React.Component {
-  constructor (props) {
-    super(props)
+class CardSectionDoubleLineTitleState extends Component {
+  constructor () {
+    super()
     this.state = { collapsed: false }
   }
 
@@ -94,7 +95,7 @@ export default class CardSectionDoubleLineTitleState extends React.Component {
                 onClick={
                   () => this.setState({ collapsed: !this.state.collapsed })
                 }
-                subtitle="Verifique ou edite as informações da sua empresa"
+                subtitle={this.props.subtitle}
                 title={this.state.collapsed ? 'Title collapsed' : 'Title opened'}
               />
               {!this.state.collapsed &&
@@ -109,3 +110,13 @@ export default class CardSectionDoubleLineTitleState extends React.Component {
     )
   }
 }
+
+CardSectionDoubleLineTitleState.propTypes = {
+  subtitle: PropTypes.node,
+}
+
+CardSectionDoubleLineTitleState.defaultProps = {
+  subtitle: null,
+}
+
+export default CardSectionDoubleLineTitleState

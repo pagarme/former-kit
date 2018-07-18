@@ -45,12 +45,9 @@ const CardSectionDoubleLineTitle = ({
           </span>
           <span className={theme.sectionTitles}>
             {title}
-            {
-              (typeof subtitle === 'string') &&
-              <span className={theme.sectionSubtitle}>
-                {subtitle}
-              </span>
-            }
+            <span className={theme.sectionSubtitle}>
+              {subtitle}
+            </span>
           </span>
         </div>
         <div className={theme.actionDoubleLine}>
