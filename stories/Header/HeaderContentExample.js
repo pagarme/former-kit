@@ -3,7 +3,10 @@ import { action } from '@storybook/addon-actions'
 import IconAlert from 'emblematic-icons/svg/Alert24.svg'
 import IconMessage from 'emblematic-icons/svg/Support24.svg'
 import Avatar from '../../src/Avatar'
-import { PopoverMenu } from '../../src/Popover'
+import {
+  PopoverContent,
+  PopoverMenu,
+} from '../../src/Popover'
 
 import {
   HeaderContent,
@@ -29,10 +32,10 @@ const HeaderContentExample = ({ photo }) => (
       }
       onClick={() => null}
     >
-      <div>
+      <PopoverContent>
         <strong>e.mail@pagar.me</strong>
-        <small>admin</small>
-      </div>
+        <small>Admin</small>
+      </PopoverContent>
       <PopoverMenu
         items={[
           { title: 'Account', action: action('account') },
