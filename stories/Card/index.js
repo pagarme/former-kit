@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { storiesOf } from '@storybook/react'
 
 import CardExamples from './CardExamples'
@@ -38,7 +38,19 @@ storiesOf('Cards', module)
         <CardSectionTitleBottom />
       </Section>
       <Section title="Card section with icon on the left">
-        <CardSectionDoubleLineTitle />
+        <CardSectionDoubleLineTitle
+          subtitle="Verifique ou edite as informações da sua empresa"
+        />
+      </Section>
+      <Section title="Card section with node subtitle">
+        <CardSectionDoubleLineTitle
+          subtitle={
+            <Fragment>
+              <span>Bem vindo</span>
+              <strong> usuário</strong>
+            </Fragment>
+          }
+        />
       </Section>
     </div>
   ))

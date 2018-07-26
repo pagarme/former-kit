@@ -9882,6 +9882,128 @@ feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
       </div>
     </div>
   </section>
+  <section
+    className=""
+  >
+    <h2>
+      Card section with node subtitle
+    </h2>
+    <div>
+      <div
+        className={undefined}
+      >
+        <div
+          className="card"
+        >
+          <div
+            className="title"
+          >
+            <h2>
+              Lorem title
+            </h2>
+            <h3>
+              
+            </h3>
+          </div>
+          <div
+            className="content"
+          >
+            <div
+              className="section"
+            >
+              <div
+                className="sectionDoubleLineTitle clickableTitle"
+              >
+                <div
+                  className="doubleLineHead"
+                >
+                  <div
+                    className="doubleLineTitle"
+                  >
+                    <span
+                      className="sectionIconBox"
+                    >
+                      <Calendar32.svg
+                        height={16}
+                        width={16}
+                      />
+                    </span>
+                    <span
+                      className="sectionTitles"
+                    >
+                      Title opened
+                      <span
+                        className="sectionSubtitle"
+                      >
+                        <span>
+                          Bem vindo
+                        </span>
+                        <strong>
+                           usuário
+                        </strong>
+                      </span>
+                    </span>
+                  </div>
+                  <div
+                    className="actionDoubleLine"
+                  >
+                    <button
+                      className="button outline normalRelevance default iconButton"
+                      disabled={false}
+                      onClick={[Function]}
+                      type="button"
+                    >
+                      <Calendar32.svg
+                        height={16}
+                        width={16}
+                      />
+                    </button>
+                    <div
+                      className="target"
+                      onClick={[Function]}
+                      role="presentation"
+                    >
+                      <button
+                        className="button outline normalRelevance default"
+                        disabled={false}
+                        onClick={[Function]}
+                        type="button"
+                      >
+                        <span>
+                          Actions
+                        </span>
+                      </button>
+                    </div>
+                    <button
+                      className="button outline lowRelevance default iconButton"
+                      disabled={false}
+                      onClick={[Function]}
+                      type="button"
+                    >
+                      <svg />
+                    </button>
+                  </div>
+                </div>
+                <hr />
+              </div>
+              <div
+                className="content"
+              >
+                
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel
+blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan.
+In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis
+sapien vel malesuada sodales. Curabitur hendrerit purus sed ex
+feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
 `;
 
