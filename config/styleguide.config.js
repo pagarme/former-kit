@@ -83,6 +83,7 @@ module.exports = {
           content: '../src/Popover/README.md',
           components: () => [
             '../src/Popover/Popover.js',
+            '../src/Popover/PopoverContent.js',
             '../src/Popover/PopoverMenu.js',
           ],
         },
