@@ -10,6 +10,7 @@ const consumeTheme = ThemeConsumer('UIHeader')
  */
 const HeaderMenu = ({
   children,
+  expand,
   icons,
   theme,
   title,
@@ -20,12 +21,26 @@ const HeaderMenu = ({
   >
     <button className={theme.menu}>
       {title}
-      {icons.expand}
+      {expand && icons.expand}
     </button>
   </Popover>
 )
 
 HeaderMenu.propTypes = {
+  /**
+   * The children can be any kind of element.
+   */
+  children: PropTypes.node.isRequired,
+  /**
+   * The icon theme for this element.
+   */
+  expand: PropTypes.bool,
+  icons: PropTypes.shape({
+    /**
+     * The icon that will be rendered to expand the options.
+     */
+    expand: PropTypes.element,
+  }),
   /**
    * The style classes for this element.
    */
@@ -36,25 +51,13 @@ HeaderMenu.propTypes = {
     menu: PropTypes.string,
   }),
   /**
-   * The children can be any kind of element.
-   */
-  children: PropTypes.node.isRequired,
-  /**
-   * The icon theme for this element.
-   */
-  icons: PropTypes.shape({
-    /**
-     * The icon that will be rendered to expand the options.
-     */
-    expand: PropTypes.element,
-  }),
-  /**
    * The prop used to receive popover target.
    */
   title: PropTypes.node.isRequired,
 }
 
 HeaderMenu.defaultProps = {
+  expand: true,
   icons: {},
   theme: {},
 }

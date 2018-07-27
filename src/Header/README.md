@@ -4,6 +4,8 @@ const { Fragment } = require('react');
 const IconMessage = require('emblematic-icons/svg/Support24.svg').default;
 const IconAlert = require('emblematic-icons/svg/Alert24.svg').default;
 
+const PopoverContent = require('../Popover/PopoverContent.js').default;
+
 <div style={{ backgroundColor: '#808080', padding: '20px' }}>
   <Header>
     <HeaderBackButton
@@ -28,8 +30,10 @@ const IconAlert = require('emblematic-icons/svg/Alert24.svg').default;
           </Fragment>
         }
       >
-        <Avatar photo="https://i.imgur.com/2vp5kTT.jpg" />
-        <span>Nome da Pessoa</span>
+        <PopoverContent>
+          <strong>email@pagar.me</strong>
+          <span>Admin</span>
+        </PopoverContent>
       </HeaderMenu>
     </HeaderContent>
   </Header>
