@@ -24,23 +24,31 @@ class Tooltip extends Component {
   }
 
   handleMouseEnter () {
-    if (!this.props.onMouseEnter) {
+    const { onMouseEnter } = this.props
+
+    if (!onMouseEnter) {
       this.setState({
         visible: true,
       })
     }
 
-    this.props.onMouseEnter()
+    if (onMouseEnter) {
+      onMouseEnter()
+    }
   }
 
   handleMouseLeave () {
-    if (!this.props.onMouseLeave) {
+    const { onMouseLeave } = this.props
+
+    if (!onMouseLeave) {
       this.setState({
         visible: false,
       })
     }
 
-    this.props.onMouseLeave()
+    if (onMouseLeave) {
+      onMouseLeave()
+    }
   }
 
   render () {
