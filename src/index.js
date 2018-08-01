@@ -29,6 +29,7 @@ export { default as ThemeConsumer } from './ThemeConsumer'
 export { default as ThemeProvider } from './ThemeProvider'
 export { default as Tooltip } from './Tooltip'
 export { default as Typeset } from './Typeset'
+export { default as UploadImage } from './UploadImage'
 
 export * from './Card'
 export * from './Grid'

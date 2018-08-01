@@ -365,6 +365,7 @@ Input.propTypes = {
     'password',
     'number',
     'email',
+    'file',
     'phone',
   ]),
   /**
