@@ -46,11 +46,12 @@ const normalizeRendererResult = pipe(
 class TableExpandedRow extends PureComponent {
   constructor (props) {
     super(props)
+    this.getColspan = this.getColspan.bind(this)
     this.handleMouseEnter = this.handleMouseEnter.bind(this)
     this.handleMouseLeave = this.handleMouseLeave.bind(this)
     this.renderAction = this.renderAction.bind(this)
     this.renderColumn = this.renderColumn.bind(this)
-    this.getColspan = this.getColspan.bind(this)
+    this.renderContent = this.renderContent.bind(this)
   }
 
   getColspan () {
@@ -100,16 +101,45 @@ class TableExpandedRow extends PureComponent {
     )
   }
 
+  renderContent () {
+    const { columns, theme } = this.props
+    const cols = columns.filter(col => !col.isAction).map(this.renderColumn)
+    const actions = columns.filter(col => col.isAction).map(this.renderAction)
+
+    return (
+      <td colSpan={this.getColspan()}>
+        <div className={theme.expandable}>
+          <ul>
+            {cols}
+          </ul>
+          {
+            !isEmpty(actions) &&
+            <div className={
+                classNames(
+                  theme.expandableActions,
+                  theme.unselectable
+                )
+              }
+            >
+              {actions}
+            </div>
+          }
+        </div>
+      </td>
+    )
+  }
+
   render () {
     const {
       className,
-      columns,
+      data,
       disabled,
+      index,
       parity,
+      renderer,
       theme,
     } = this.props
-    const cols = columns.filter(col => !col.isAction).map(this.renderColumn)
-    const actions = columns.filter(col => col.isAction).map(this.renderAction)
+
     const rowClasses = classNames(
       className,
       theme[parity],
@@ -130,25 +160,8 @@ class TableExpandedRow extends PureComponent {
         tabIndex="0"
         {...trProps}
       >
-        <td colSpan={this.getColspan()}>
-          <div className={theme.expandable}>
-            <ul>
-              {cols}
-            </ul>
-            {
-              !isEmpty(actions) &&
-              <div className={
-                  classNames(
-                    theme.expandableActions,
-                    theme.unselectable
-                  )
-                }
-              >
-                {actions}
-              </div>
-            }
-          </div>
-        </td>
+        {renderer && renderer(data, index, disabled)}
+        {!renderer && this.renderContent()}
       </tr>
     )
   }
@@ -213,6 +226,15 @@ TableExpandedRow.propTypes = {
    */
   parity: oneOf(['even', 'odd']),
   /**
+   * A custom function which will receive the row data object and the row index.
+   * This function should return a list of TD(<td />) elements
+   * to be rendered inside the table row(<tr />).
+   * @param {object} row - all row data
+   * @param {number} rowIndex - row index in the table
+   * @param {bool} disabled - row state
+   */
+  renderer: func,
+  /**
    * It enables the selectable column in the table, allowing the user to select one,
    * many or all of the rows.
    */
@@ -224,6 +246,7 @@ TableExpandedRow.defaultProps = {
   disabled: false,
   parity: '',
   maxColumns: 7,
+  renderer: null,
   selectable: false,
   theme: {},
 }

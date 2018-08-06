@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import {
   arrayOf,
   bool,
@@ -110,6 +110,7 @@ class TableRow extends Component {
     this.handleMouseEnter = this.handleMouseEnter.bind(this)
     this.handleMouseLeave = this.handleMouseLeave.bind(this)
     this.handleSelect = this.handleSelect.bind(this)
+    this.renderContent = this.renderContent.bind(this)
   }
 
   getArrowIcon (expanded) {
@@ -157,10 +158,8 @@ class TableRow extends Component {
     }
   }
 
-  render () {
+  renderContent () {
     const {
-      className,
-      clickable,
       columns,
       data,
       disabled,
@@ -169,33 +168,13 @@ class TableRow extends Component {
       index,
       selectable,
       selected,
-      parity,
       theme,
     } = this.props
 
-    const tableRow = classNames(
-      theme[parity],
-      className,
-      {
-        [theme.clickable]: clickable,
-        [theme.disabled]: disabled,
-      }
-    )
-
     const lineIndex = `line_${index}`
 
-    const trProps = disabled ? {} : {
-      onClick: this.handleClick,
-      onMouseEnter: this.handleMouseEnter,
-      onMouseLeave: this.handleMouseLeave,
-    }
-
     return (
-      <tr
-        className={tableRow}
-        tabIndex="0"
-        {...trProps}
-      >
+      <Fragment>
         {
           selectable &&
           <td className={theme.check}>
@@ -231,6 +210,45 @@ class TableRow extends Component {
             />
           </td>
         }
+      </Fragment>
+    )
+  }
+
+  render () {
+    const {
+      className,
+      clickable,
+      data,
+      disabled,
+      index,
+      parity,
+      renderer,
+      theme,
+    } = this.props
+
+    const tableRow = classNames(
+      theme[parity],
+      className,
+      {
+        [theme.clickable]: clickable,
+        [theme.disabled]: disabled,
+      }
+    )
+
+    const trProps = disabled ? {} : {
+      onClick: this.handleClick,
+      onMouseEnter: this.handleMouseEnter,
+      onMouseLeave: this.handleMouseLeave,
+    }
+
+    return (
+      <tr
+        className={tableRow}
+        tabIndex="0"
+        {...trProps}
+      >
+        {renderer && renderer(data, index, disabled)}
+        {!renderer && this.renderContent()}
       </tr>
     )
   }
@@ -369,6 +387,15 @@ TableRow.propTypes = {
    */
   onSelect: func,
   /**
+   * A custom function which will receive the row data object and the row index.
+   * This function should return a list of TD(<td />) elements
+   * to be rendered inside the table row(<tr />).
+   * @param {object} row - all row data
+   * @param {number} rowIndex - row index in the table
+   * @param {bool} disabled - row state
+   */
+  renderer: func,
+  /**
    * It indicates that the line can be selected.
    */
   selectable: bool,
@@ -396,6 +423,7 @@ TableRow.defaultProps = {
   onMouseLeave: null,
   onSelect: null,
   parity: 'even',
+  renderer: null,
   selectable: false,
   selected: false,
   theme: {},

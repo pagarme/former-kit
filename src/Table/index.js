@@ -304,14 +304,17 @@ class Table extends Component {
       columns,
       disabled,
       expandable,
+      expandedRowRenderer,
       expandedRows,
       icons,
       maxColumns,
       onRowClick,
+      rowRenderer,
       selectable,
       selectedRows,
       theme,
     } = this.props
+
     const isExpanded = contains(index, expandedRows)
     const isSelected = contains(index, selectedRows)
     const parityClass = getParityClass(index)
@@ -330,6 +333,7 @@ class Table extends Component {
       onExpand: this.handleRowExpand,
       onSelect: this.handleRowSelect,
       parity: parityClass,
+      renderer: rowRenderer,
       selectable,
       selected: isSelected,
     }
@@ -361,14 +365,15 @@ class Table extends Component {
             className={hoverClass}
             columns={drop(maxColumns, columns)}
             data={row}
+            disabled={disabled}
             index={index}
             key={expandedKey}
-            parity={parityClass}
             maxColumns={maxColumns}
             onMouseEnter={this.handleRowMouseEnter}
             onMouseLeave={this.handleRowMouseLeave}
+            parity={parityClass}
+            renderer={expandedRowRenderer}
             selectable={selectable}
-            disabled={disabled}
           />
         ),
       ]
@@ -529,6 +534,12 @@ Table.propTypes = {
    */
   expandable: bool,
   /**
+   * A custom function which will receive the row data object and should return
+   * a list of TD(<td />) elements to be rendered inside the table row(<tr />).
+   * @param {object} row - all row data
+   */
+  expandedRowRenderer: func,
+  /**
    * List of indexes of expanded rows in the table.
    */
   expandedRows: arrayOf(number),
@@ -582,6 +593,12 @@ Table.propTypes = {
    */
   rows: arrayOf(shape({})).isRequired,
   /**
+   * A custom function which will receive the row data object and should return
+   * a list of TD(<td />) elements to be rendered inside the table row(<tr />).
+   * @param {object} row - all row data
+   */
+  rowRenderer: func,
+  /**
    * It enables the selectable column in the table, allowing the user to select one,
    * many or all of the rows.
    */
@@ -603,6 +620,7 @@ Table.defaultProps = {
   emptyMessage: null,
   expandable: false,
   expandedRows: [],
+  expandedRowRenderer: null,
   headerAlign: 'start',
   icons: {},
   maxColumns: 7,
@@ -612,6 +630,7 @@ Table.defaultProps = {
   onSelectRow: null,
   orderColumn: 0,
   orderSequence: 'ascending',
+  rowRenderer: null,
   selectable: false,
   selectedRows: [],
   showAggregationRow: false,
