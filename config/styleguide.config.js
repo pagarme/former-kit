@@ -36,7 +36,7 @@ module.exports = {
         '../src/LinearProgress/index.js',
         '../src/Pagination/index.js',
         '../src/RadioGroup/index.js',
-        '../src/SegmentedSwitch/index.js',
+        '../src/SegmentedSwitch/SegmentedSwitch.js',
         '../src/Spacing/index.js',
         '../src/Steps/index.js',
         '../src/Switch/index.js',
