@@ -30573,6 +30573,752 @@ exports[`Storyshots Table Empty table 1`] = `
 </section>
 `;
 
+exports[`Storyshots Table Expanded row renderer 1`] = `
+<section
+  className="typography"
+>
+  
+  <div>
+    <div>
+      <table
+        className="table"
+      >
+        <thead
+          className="tableHead"
+        >
+          <tr>
+            <th
+              className="active orderable"
+              onClick={[Function]}
+            >
+              <div
+                className="tableHeadItem"
+              >
+                <span>
+                   
+                  Status
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+            <th
+              className="orderable"
+              onClick={[Function]}
+            >
+              <div
+                className="tableHeadItem"
+              >
+                <span>
+                   
+                  Transaction ID
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+            <th
+              className="orderable"
+              onClick={[Function]}
+            >
+              <div
+                className="tableHeadItem"
+              >
+                <span>
+                   
+                  Date
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+            <th
+              className="orderable"
+              onClick={[Function]}
+            >
+              <div
+                className="tableHeadItem"
+              >
+                <span>
+                   
+                  Payment Method
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+            <th
+              className="orderable"
+              onClick={[Function]}
+            >
+              <div
+                className="tableHeadItem"
+              >
+                <span>
+                   
+                  Paid Amount
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+            <th
+              className="orderable"
+              onClick={[Function]}
+            >
+              <div
+                className="tableHeadItem"
+              >
+                <span>
+                   
+                  Cost
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+            <th
+              className="open"
+            />
+          </tr>
+        </thead>
+        <tbody
+          className="tableBody"
+        >
+          <tr
+            className="even"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            tabIndex="0"
+          >
+            <td
+              className="tableItem centerAlign"
+            >
+              <div
+                className={undefined}
+              >
+                <div
+                  className="legend"
+                >
+                  <abbr
+                    className="acronym"
+                    style={
+                      Object {
+                        "background": "#244d85",
+                      }
+                    }
+                    title="Boleto paid with inferior value"
+                  >
+                    BPIV
+                  </abbr>
+                </div>
+              </div>
+            </td>
+            <td
+              className="tableItem startAlign"
+            >
+              2229597000
+            </td>
+            <td
+              className="tableItem centerAlign"
+            >
+              23/09/2017 - 14:15h
+            </td>
+            <td
+              className="tableItem centerAlign"
+            >
+              Boleto
+            </td>
+            <td
+              className="tableItem endAlign"
+            >
+              R$999.999.999,00
+            </td>
+            <td
+              className="tableItem endAlign"
+            >
+              R$100.000,00
+            </td>
+            <td
+              className="open unselectable"
+            >
+              <button
+                className="button outline lowRelevance tiny iconButton"
+                disabled={false}
+                onClick={[Function]}
+                type="button"
+              >
+                <svg />
+              </button>
+            </td>
+          </tr>
+          <tr
+            className="even expandedRow"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            tabIndex="0"
+          >
+            <td
+              colSpan="7"
+            >
+              <p>
+                Expanded row using renderer
+              </p>
+              <p>
+                Column index 0
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="odd"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            tabIndex="0"
+          >
+            <td
+              className="tableItem centerAlign"
+            >
+              <div
+                className={undefined}
+              >
+                <div
+                  className="legend"
+                >
+                  <abbr
+                    className="acronym"
+                    style={
+                      Object {
+                        "background": "#57be76",
+                      }
+                    }
+                    title="Pago"
+                  >
+                    P
+                  </abbr>
+                </div>
+              </div>
+            </td>
+            <td
+              className="tableItem startAlign"
+            >
+              2229597001
+            </td>
+            <td
+              className="tableItem centerAlign"
+            >
+              23/09/2017 - 15:15h
+            </td>
+            <td
+              className="tableItem centerAlign"
+            >
+              Credit card
+            </td>
+            <td
+              className="tableItem endAlign"
+            >
+              R$100.000,00
+            </td>
+            <td
+              className="tableItem endAlign"
+            >
+              R$12.000,00
+            </td>
+            <td
+              className="open unselectable"
+            >
+              <button
+                className="button outline lowRelevance tiny iconButton"
+                disabled={false}
+                onClick={[Function]}
+                type="button"
+              >
+                <svg />
+              </button>
+            </td>
+          </tr>
+          <tr
+            className="odd expandedRow"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            tabIndex="0"
+          >
+            <td
+              colSpan="7"
+            >
+              <p>
+                Expanded row using renderer
+              </p>
+              <p>
+                Column index 1
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="even"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            tabIndex="0"
+          >
+            <td
+              className="tableItem centerAlign"
+            >
+              <div
+                className={undefined}
+              >
+                <div
+                  className="legend"
+                >
+                  <abbr
+                    className="acronym"
+                    style={
+                      Object {
+                        "background": "#e47735",
+                      }
+                    }
+                    title="Chargeback"
+                  >
+                    CB
+                  </abbr>
+                </div>
+              </div>
+            </td>
+            <td
+              className="tableItem startAlign"
+            >
+              2229597003
+            </td>
+            <td
+              className="tableItem centerAlign"
+            >
+              23/09/2017 - 16:15h
+            </td>
+            <td
+              className="tableItem centerAlign"
+            >
+              Credit card
+            </td>
+            <td
+              className="tableItem endAlign"
+            >
+              R$100.000,00
+            </td>
+            <td
+              className="tableItem endAlign"
+            >
+              R$13.000,00
+            </td>
+            <td
+              className="open unselectable"
+            >
+              <button
+                className="button outline lowRelevance tiny iconButton"
+                disabled={false}
+                onClick={[Function]}
+                type="button"
+              >
+                <svg />
+              </button>
+            </td>
+          </tr>
+          <tr
+            className="even expandedRow"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            tabIndex="0"
+          >
+            <td
+              colSpan="7"
+            >
+              <p>
+                Expanded row using renderer
+              </p>
+              <p>
+                Column index 2
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="odd"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            tabIndex="0"
+          >
+            <td
+              className="tableItem centerAlign"
+            >
+              <div
+                className={undefined}
+              >
+                <div
+                  className="legend"
+                >
+                  <abbr
+                    className="acronym"
+                    style={
+                      Object {
+                        "background": "#951e3c",
+                      }
+                    }
+                    title="Processing"
+                  >
+                    PR
+                  </abbr>
+                </div>
+              </div>
+            </td>
+            <td
+              className="tableItem startAlign"
+            >
+              2229597004
+            </td>
+            <td
+              className="tableItem"
+            >
+              <span
+                className="empty unselectable"
+              />
+            </td>
+            <td
+              className="tableItem"
+            >
+              <span
+                className="empty unselectable"
+              />
+            </td>
+            <td
+              className="tableItem endAlign"
+            >
+              <span
+                className="empty unselectable"
+              />
+            </td>
+            <td
+              className="tableItem endAlign"
+            >
+              R$14.000,00
+            </td>
+            <td
+              className="open unselectable"
+            >
+              <button
+                className="button outline lowRelevance tiny iconButton"
+                disabled={false}
+                onClick={[Function]}
+                type="button"
+              >
+                <svg />
+              </button>
+            </td>
+          </tr>
+          <tr
+            className="odd expandedRow"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            tabIndex="0"
+          >
+            <td
+              colSpan="7"
+            >
+              <p>
+                Expanded row using renderer
+              </p>
+              <p>
+                Column index 3
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div
+        className={undefined}
+      />
+    </div>
+  </div>
+</section>
+`;
+
+exports[`Storyshots Table Renderer row 1`] = `
+<section
+  className="typography"
+>
+  
+  <div>
+    <div>
+      <table
+        className="table"
+      >
+        <thead
+          className="tableHead"
+        >
+          <tr>
+            <th
+              className="active orderable"
+              onClick={[Function]}
+            >
+              <div
+                className="tableHeadItem"
+              >
+                <span>
+                   
+                  Status
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+            <th
+              className="orderable"
+              onClick={[Function]}
+            >
+              <div
+                className="tableHeadItem"
+              >
+                <span>
+                   
+                  Transaction ID
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+            <th
+              className="orderable"
+              onClick={[Function]}
+            >
+              <div
+                className="tableHeadItem"
+              >
+                <span>
+                   
+                  Date
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+            <th
+              className="orderable"
+              onClick={[Function]}
+            >
+              <div
+                className="tableHeadItem"
+              >
+                <span>
+                   
+                  Payment Method
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+            <th
+              className="orderable"
+              onClick={[Function]}
+            >
+              <div
+                className="tableHeadItem"
+              >
+                <span>
+                   
+                  Paid Amount
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+            <th
+              className="orderable"
+              onClick={[Function]}
+            >
+              <div
+                className="tableHeadItem"
+              >
+                <span>
+                   
+                  Cost
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+            <th
+              className="orderable"
+              onClick={[Function]}
+            >
+              <div
+                className="tableHeadItem"
+              >
+                <span>
+                   
+                  Amount
+                   
+                </span>
+                <span
+                  className="unselectable"
+                >
+                  <svg />
+                </span>
+              </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          className="tableBody"
+        >
+          <tr
+            className="even row"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            tabIndex="0"
+          >
+            <td
+              colSpan="3"
+            >
+               Row renderer ignores the columns number 
+            </td>
+            <td
+              colSpan="2"
+            >
+              2229597000
+            </td>
+            <td
+              colSpan="2"
+            >
+              0
+            </td>
+          </tr>
+          <tr
+            className="odd row"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            tabIndex="0"
+          >
+            <td
+              colSpan="3"
+            >
+               Row renderer ignores the columns number 
+            </td>
+            <td
+              colSpan="2"
+            >
+              2229597001
+            </td>
+            <td
+              colSpan="2"
+            >
+              1
+            </td>
+          </tr>
+          <tr
+            className="even row"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            tabIndex="0"
+          >
+            <td
+              colSpan="3"
+            >
+               Row renderer ignores the columns number 
+            </td>
+            <td
+              colSpan="2"
+            >
+              2229597003
+            </td>
+            <td
+              colSpan="2"
+            >
+              2
+            </td>
+          </tr>
+          <tr
+            className="odd row"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            tabIndex="0"
+          >
+            <td
+              colSpan="3"
+            >
+               Row renderer ignores the columns number 
+            </td>
+            <td
+              colSpan="2"
+            >
+              2229597004
+            </td>
+            <td
+              colSpan="2"
+            >
+              3
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div
+        className={undefined}
+      />
+    </div>
+  </div>
+</section>
+`;
+
 exports[`Storyshots Table Selectable and expandable 1`] = `
 <section
   className="typography"

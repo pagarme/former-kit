@@ -176,9 +176,11 @@ const createComponents = ({
   columns = mock.columns,
   emptyMessage = null,
   expandable = true,
+  expandedRowRenderer,
   expandedRows = [],
   orderColumn = 0,
   orderSequence = 'ascending',
+  rowRenderer,
   rows = mock.rows,
   selectable = true,
   selectedRows = [],
@@ -194,7 +196,9 @@ const createComponents = ({
       columns={columns}
       emptyMessage={emptyMessage}
       expandable={expandable}
+      expandedRowRenderer={expandedRowRenderer}
       expandedRows={expandedRows}
+      icons={icons}
       maxColumns={visibleColumnsCount}
       onExpandRow={onExpandRow}
       onOrderChange={onOrderChange}
@@ -202,10 +206,10 @@ const createComponents = ({
       onSelectRow={onSelectRow}
       orderColumn={orderColumn}
       orderSequence={orderSequence}
+      rowRenderer={rowRenderer}
       rows={rows}
       selectable={selectable}
       selectedRows={selectedRows}
-      icons={icons}
       showAggregationRow={showAggregationRow}
     />
   )

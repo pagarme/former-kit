@@ -49,3 +49,16 @@ storiesOf('Table', module)
       />
     </Section>
   ))
+  .add('Expanded row renderer', () => (
+    <Section>
+      <TableState
+        expandable
+        hasExpandedRowRenderer
+      />
+    </Section>
+  ))
+  .add('Renderer row', () => (
+    <Section>
+      <TableState hasRowRenderer />
+    </Section>
+  ))

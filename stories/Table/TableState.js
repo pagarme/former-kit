@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import { bool } from 'prop-types'
 import {
   assoc,
@@ -40,6 +40,21 @@ const getRowsSort = (rows, columns) =>
 
 const formatSimpleTableColumns = map(
   assoc('orderable', false)
+)
+
+const expandedRowRenderer = (data, index) => (
+  <td colSpan="7">
+    <p>Expanded row using renderer</p>
+    <p>{`Column index ${index}`}</p>
+  </td>
+)
+
+const rowRenderer = (data, index) => (
+  <Fragment>
+    <td colSpan="3"> Row renderer ignores the columns number </td>
+    <td colSpan="2">{data.id}</td>
+    <td colSpan="2">{index}</td>
+  </Fragment>
 )
 
 class TableState extends Component {
@@ -138,6 +153,8 @@ class TableState extends Component {
       empty,
       expandable,
       hasEmptyRenderer,
+      hasExpandedRowRenderer,
+      hasRowRenderer,
       selectable,
       showAggregationRow,
       simple,
@@ -173,6 +190,11 @@ class TableState extends Component {
           disabled={disabled}
           emptyMessage={emptyMessage}
           expandable={expandable}
+          expandedRowRenderer={
+            hasExpandedRowRenderer
+            ? expandedRowRenderer
+            : null
+          }
           expandedRows={expandedRows}
           maxColumns={maxColumns}
           onExpandRow={this.handleExpandRow}
@@ -181,6 +203,7 @@ class TableState extends Component {
           onSelectRow={this.handleSelectRow}
           orderColumn={orderColumn}
           orderSequence={order}
+          rowRenderer={hasRowRenderer ? rowRenderer : null}
           rows={tableRows}
           selectable={selectable}
           selectedRows={selectedRows}
@@ -217,6 +240,8 @@ TableState.propTypes = {
   empty: bool,
   expandable: bool,
   hasEmptyRenderer: bool,
+  hasExpandedRowRenderer: bool,
+  hasRowRenderer: bool,
   primaryAction: bool,
   selectable: bool,
   simple: bool,
@@ -228,6 +253,8 @@ TableState.defaultProps = {
   empty: false,
   expandable: false,
   hasEmptyRenderer: false,
+  hasExpandedRowRenderer: false,
+  hasRowRenderer: false,
   primaryAction: false,
   selectable: false,
   simple: false,

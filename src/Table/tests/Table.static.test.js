@@ -373,6 +373,17 @@ describe('Table', () => {
           expect(emptyRow.exists()).toBe(true)
         })
       })
+
+      describe('should render a rows using renderer function', () => {
+        it('when rowRenderer is received', () => {
+          const renderer = jest.fn()
+          const { rows } = createComponents({
+            rowRenderer: renderer,
+          })
+
+          expect(renderer).toHaveBeenCalledTimes(rows.length)
+        })
+      })
     })
   })
 })
