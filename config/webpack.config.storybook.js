@@ -122,12 +122,18 @@ module.exports = {
             loader: require.resolve('babel-loader'),
           },
           {
-            loader: require.resolve('svgr/webpack'),
+            loader: require.resolve('@svgr/webpack'),
             options: {
-              replaceAttrValues: [
-                ['#000', 'currentColor'],
-                ['#000000;', 'currentColor'],
-              ],
+              replaceAttrValues: {
+                '#000': 'currentColor',
+                '#000000;': 'currentColor',
+              },
+              svgoConfig: {
+                plugins: {
+                  removeViewBox: false,
+                },
+              },
+              titleProp: true,
             },
           },
         ],
