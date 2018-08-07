@@ -240,6 +240,64 @@ exports[`Storyshots Avatar Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots BulletSteps Default 1`] = `
+<section
+  className="typography"
+>
+  
+  <div>
+    <h2>
+      First step
+    </h2>
+    <div
+      className="steps"
+    >
+      <span
+        className="step current"
+      />
+      <span
+        className="step next"
+      />
+      <span
+        className="step next"
+      />
+    </div>
+    <h2>
+      Second step
+    </h2>
+    <div
+      className="steps"
+    >
+      <span
+        className="step previous"
+      />
+      <span
+        className="step current"
+      />
+      <span
+        className="step next"
+      />
+    </div>
+    <h2>
+      Last step
+    </h2>
+    <div
+      className="steps"
+    >
+      <span
+        className="step previous"
+      />
+      <span
+        className="step previous"
+      />
+      <span
+        className="step current"
+      />
+    </div>
+  </div>
+</section>
+`;
+
 exports[`Storyshots Buttons Default 1`] = `
 <div
   className="typography"

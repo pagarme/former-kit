@@ -1,5 +1,6 @@
 export { default as Alert } from './Alert'
 export { default as Avatar } from './Avatar'
+export { default as BulletSteps } from './BulletSteps'
 export { default as Button } from './Button'
 export { default as Calendar } from './Calendar'
 export { default as CalendarInput } from './CalendarInput'

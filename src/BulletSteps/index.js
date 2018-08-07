@@ -2,24 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { prop, propEq } from 'ramda'
 
+import BulletStep from './BulletStep'
 import ThemeConsumer from '../ThemeConsumer'
-import Step from './Step'
 
-const ConsumeTheme = ThemeConsumer('UISteps')
+const ConsumeTheme = ThemeConsumer('UIBulletSteps')
 
 const getStatusStep = (status, id) => status.find(propEq('id', id))
 
 // eslint-disable-next-line react/prop-types
-const getLayoutStep = status => ({ id, title }, index) => (
-  <Step
+const getLayoutStep = status => ({ id }) => (
+  <BulletStep
     key={id}
-    number={index + 1}
     status={prop('status', getStatusStep(status, id))}
-    title={title}
   />
 )
 
-const Steps = ({
+/**
+ * The BulletSteps component is used to mark the progress in the stream of steps.
+ */
+const BulletSteps = ({
   status,
   steps,
   theme,
@@ -29,15 +30,7 @@ const Steps = ({
   </div>
 )
 
-Steps.propTypes = {
-  /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
-   */
-  theme: PropTypes.shape({
-    indicator: PropTypes.string,
-    step: PropTypes.string,
-    steps: PropTypes.string,
-  }),
+BulletSteps.propTypes = {
   /**
    * Status of each step.
    */
@@ -50,10 +43,9 @@ Steps.propTypes = {
      * Status for the step.
      */
     status: PropTypes.oneOf([
+      'previous',
       'current',
-      'error',
-      'pending',
-      'success',
+      'next',
     ]),
   })).isRequired,
   /**
@@ -64,15 +56,19 @@ Steps.propTypes = {
      * The ID of step.
      */
     id: PropTypes.string,
-    /**
-     * The title of step.
-     */
-    title: PropTypes.string,
   })).isRequired,
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
+   */
+  theme: PropTypes.shape({
+    indicator: PropTypes.string,
+    step: PropTypes.string,
+    steps: PropTypes.string,
+  }),
 }
 
-Steps.defaultProps = {
+BulletSteps.defaultProps = {
   theme: {},
 }
 
-export default ConsumeTheme(Steps)
+export default ConsumeTheme(BulletSteps)
