@@ -62,7 +62,7 @@
     "chokidar-cli": "1.2.0",
     "css-loader": "0.28.9",
     "dotenv": "4.0.0",
-    "emblematic-icons": "0.2.0",
+    "emblematic-icons": "0.5.1",
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.1",
     "eslint": "4.16.0",
