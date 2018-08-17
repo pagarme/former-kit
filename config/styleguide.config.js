@@ -19,6 +19,7 @@ module.exports = {
       components: () => [
         '../src/Alert/index.js',
         '../src/Avatar/index.js',
+        '../src/BulletSteps/index.js',
         '../src/Button/index.js',
         '../src/Calendar/index.js',
         '../src/CalendarInput/index.js',

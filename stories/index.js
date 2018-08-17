@@ -1,5 +1,6 @@
 import './Alert'
 import './Avatar'
+import './BulletSteps'
 import './Button'
 import './Calendar'
 import './CalendarInput'
