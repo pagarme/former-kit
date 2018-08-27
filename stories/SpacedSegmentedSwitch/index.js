@@ -1,15 +1,16 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import IconTable from 'emblematic-icons/svg/Menu32.svg'
 import IconChart from 'emblematic-icons/svg/TrendingUp32.svg'
+import IconLock from 'emblematic-icons/svg/Lock32.svg'
+import IconTable from 'emblematic-icons/svg/Menu32.svg'
 
-import SegmentedSwitch from '../../src/SegmentedSwitch'
 import Section from '../Section'
+import SpacedSegmentedSwitch from '../../src/SegmentedSwitch/Spaced'
 
-class SegmentedSwitchState extends React.Component {
-  constructor (props) {
-    super(props)
+class SpacedSegmentedSwitchState extends React.Component {
+  constructor () {
+    super()
 
     this.state = {
       value: '',
@@ -35,62 +36,46 @@ class SegmentedSwitchState extends React.Component {
     } = this.props
 
     return (
-      <SegmentedSwitch
+      <SpacedSegmentedSwitch
         disabled={disabled}
-        options={options}
-        onChange={this.handleChange}
         name={this.props.name}
+        onChange={this.handleChange}
+        options={options}
         value={this.state.value}
       />
     )
   }
 }
 
-storiesOf('SegmentedSwitch', module)
+storiesOf('SpacedSegmentedSwitch', module)
   .add('Default', () => (
     <div>
-      <Section title="Two options">
-        <SegmentedSwitchState
-          name="live-test"
-          options={[
-            {
-              title: 'Test',
-              value: 'test',
-            },
-            {
-              title: 'Live',
-              value: 'live',
-            },
-          ]}
-          value="test"
-        />
-      </Section>
       <Section title="Four options">
-        <SegmentedSwitchState
-          name="super-extra-options"
+        <SpacedSegmentedSwitchState
+          name="money-test"
           options={[
             {
-              title: 'Test',
-              value: 'test',
+              title: 'From $0 to $25',
+              value: 'from0to25',
             },
             {
-              title: 'Live',
-              value: 'live',
+              title: 'From $25 to $50',
+              value: 'from25to100',
             },
             {
-              title: 'Super Test',
-              value: 'super-test',
+              title: 'From $50 to $100',
+              value: 'from50to100',
             },
             {
-              title: 'Extra Live',
-              value: 'extra-live',
+              title: 'More than R$100',
+              value: 'moreThan100',
             },
           ]}
-          value="super-test"
+          value="from25to100"
         />
       </Section>
       <Section title="With icons">
-        <SegmentedSwitchState
+        <SpacedSegmentedSwitchState
           name="table-chart"
           options={[
             {
@@ -101,12 +86,16 @@ storiesOf('SegmentedSwitch', module)
               title: <IconChart width={16} height={16} />,
               value: 'chart',
             },
+            {
+              title: <IconLock width={16} height={16} />,
+              value: 'lock',
+            },
           ]}
           value="table"
         />
       </Section>
       <Section title="Disabled">
-        <SegmentedSwitchState
+        <SpacedSegmentedSwitchState
           disabled
           name="disabled"
           options={[
@@ -117,6 +106,10 @@ storiesOf('SegmentedSwitch', module)
             {
               title: <IconChart width={16} height={16} />,
               value: 'chart',
+            },
+            {
+              title: <IconLock width={16} height={16} />,
+              value: 'lock',
             },
           ]}
           value="table"
