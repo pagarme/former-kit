@@ -370,7 +370,7 @@ Input.propTypes = {
   /**
    * Input's value.
    */
-  value: PropTypes.string.isRequired,
+  value: PropTypes.string,
 }
 
 Input.defaultProps = {
@@ -392,6 +392,7 @@ Input.defaultProps = {
   renderer: null,
   theme: {},
   type: 'text',
+  value: '',
 }
 
 export default Input
