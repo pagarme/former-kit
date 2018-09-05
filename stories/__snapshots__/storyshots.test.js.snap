@@ -12,7 +12,7 @@ exports[`Storyshots Alerts Default 1`] = `
     </h2>
     <div>
       <div
-        className="alert"
+        className="alert light"
       >
         <div
           className="icon warning"
@@ -45,7 +45,7 @@ exports[`Storyshots Alerts Default 1`] = `
     </h2>
     <div>
       <div
-        className="alert"
+        className="alert light"
       >
         <div
           className="icon info"
@@ -78,7 +78,7 @@ exports[`Storyshots Alerts Default 1`] = `
     </h2>
     <div>
       <div
-        className="alert"
+        className="alert light"
       >
         <div
           className="icon error"
@@ -111,7 +111,7 @@ exports[`Storyshots Alerts Default 1`] = `
     </h2>
     <div>
       <div
-        className="alert"
+        className="alert light"
       >
         <div
           className="icon success"
@@ -144,7 +144,182 @@ exports[`Storyshots Alerts Default 1`] = `
     </h2>
     <div>
       <div
-        className="alert"
+        className="alert light"
+      >
+        <div
+          className="icon warning"
+        >
+          <Warning32.svg
+            height={16}
+            width={16}
+          />
+        </div>
+        <div
+          aria-live="polite"
+          className="content"
+          role="status"
+        >
+          <p>
+            <strong>
+              Warning.
+            </strong>
+             Something is going on!
+          </p>
+          <button
+            className="button clean normalRelevance default"
+            disabled={false}
+            onClick={[Function]}
+            type="button"
+          >
+            <span>
+              dismiss
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Warning
+    </h2>
+    <div>
+      <div
+        className="alert dark"
+      >
+        <div
+          className="icon warning"
+        >
+          <Warning32.svg
+            height={16}
+            width={16}
+          />
+        </div>
+        <div
+          aria-live="polite"
+          className="content"
+          role="status"
+        >
+          <p>
+            <strong>
+              Warning.
+            </strong>
+             Something is going on!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Info
+    </h2>
+    <div>
+      <div
+        className="alert dark"
+      >
+        <div
+          className="icon info"
+        >
+          <Info32.svg
+            height={16}
+            width={16}
+          />
+        </div>
+        <div
+          aria-live="polite"
+          className="content"
+          role="status"
+        >
+          <p>
+            <strong>
+              Info.
+            </strong>
+             You can do it better!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Error
+    </h2>
+    <div>
+      <div
+        className="alert dark"
+      >
+        <div
+          className="icon error"
+        >
+          <ClearClose32.svg
+            height={16}
+            width={16}
+          />
+        </div>
+        <div
+          aria-live="polite"
+          className="content"
+          role="status"
+        >
+          <p>
+            <strong>
+              Error.
+            </strong>
+             Something went wrong!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Success
+    </h2>
+    <div>
+      <div
+        className="alert dark"
+      >
+        <div
+          className="icon success"
+        >
+          <Check32.svg
+            height={16}
+            width={16}
+          />
+        </div>
+        <div
+          aria-live="polite"
+          className="content"
+          role="status"
+        >
+          <p>
+            <strong>
+              Success.
+            </strong>
+             Awesome, it worked!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Event
+    </h2>
+    <div>
+      <div
+        className="alert dark"
       >
         <div
           className="icon warning"
