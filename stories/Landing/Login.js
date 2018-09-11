@@ -9,7 +9,16 @@ import {
 } from '../../src/Landing'
 import WelcomeContent from './WelcomeContent'
 
+import Logo from './logo.svg'
+
+const getSecondaryBase = base => (
+  base === 'light'
+    ? 'dark'
+    : 'light'
+)
+
 const Login = ({
+  base,
   email,
   emailError,
   handleLogIn,
@@ -21,16 +30,13 @@ const Login = ({
   tokenError,
 }) => (
   <Landing className={styles.container}>
-    <LandingPrimarySection>
+    <LandingPrimarySection base={base}>
       <form
         onSubmit={handleLogIn}
         className={styles.contentRight}
       >
         <div className={styles.logo}>
-          <img
-            src=""
-            alt="Pagar.me"
-          />
+          <Logo />
         </div>
         <div className={styles.login}>
           <Input
@@ -70,7 +76,7 @@ const Login = ({
               size="huge"
               fill="gradient"
             >
-              Login
+              Entrar
             </Button>
           </div>
           <a href="https://dashboard.pagar.me/#/forgot_password" >
@@ -79,7 +85,7 @@ const Login = ({
         </div>
       </form>
     </LandingPrimarySection>
-    <LandingSecondarySection>
+    <LandingSecondarySection base={getSecondaryBase(base)}>
       <WelcomeContent />
     </LandingSecondarySection>
   </Landing>

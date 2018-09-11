@@ -72,6 +72,11 @@ storiesOf('Landing', module)
       <Login />
     </LandingState>
   ))
+  .add('Pagar.me login light', () => (
+    <LandingState>
+      <Login base="light" />
+    </LandingState>
+  ))
   .add('Pagar.me two factor login', () => (
     <LandingState>
       <Login hasToken />
@@ -89,21 +94,16 @@ storiesOf('Landing', module)
   ))
   .add('Pagar.me sign in', () => (
     <LandingState>
-      <SignIn base="light" />
+      <SignIn />
     </LandingState>
   ))
   .add('Pagar.me sign in confirmation', () => (
     <LandingState>
-      <SignInConfirmation base="light" />
+      <SignInConfirmation />
     </LandingState>
   ))
   .add('Empty dark landing', () => (
     <LandingState>
       <EmptyLanding />
-    </LandingState>
-  ))
-  .add('Empty light landing', () => (
-    <LandingState>
-      <EmptyLanding base="light" />
     </LandingState>
   ))

@@ -19230,43 +19230,14 @@ exports[`Storyshots Landing Empty dark landing 1`] = `
       className="row stretch"
     >
       <div
-        className="dark primary column col desk7 tv7 tablet12 palm12 startAlign"
+        className="dark primary column col desk7 tv7 tablet7 palm12 startAlign"
       >
         <span>
           Empty
         </span>
       </div>
       <div
-        className="light secondary column col desk5 tv5 tablet12 palm12 startAlign"
-      >
-        <span>
-          Landing
-        </span>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Landing Empty light landing 1`] = `
-<div
-  className="container"
->
-  <div
-    className="grid fullHeight"
-  >
-    <div
-      className="row stretch"
-    >
-      <div
-        className="light primary column col desk7 tv7 tablet12 palm12 startAlign"
-      >
-        <span>
-          Empty
-        </span>
-      </div>
-      <div
-        className="light secondary column col desk5 tv5 tablet12 palm12 startAlign"
+        className="light secondary column col desk5 tv5 tablet5 palm12 startAlign"
       >
         <span>
           Landing
@@ -19288,7 +19259,7 @@ exports[`Storyshots Landing Pagar.me login 1`] = `
       className="row stretch"
     >
       <div
-        className="dark primary column col desk7 tv7 tablet12 palm12 startAlign"
+        className="dark primary column col desk7 tv7 tablet7 palm12 startAlign"
       >
         <form
           className={undefined}
@@ -19297,10 +19268,7 @@ exports[`Storyshots Landing Pagar.me login 1`] = `
           <div
             className={undefined}
           >
-            <img
-              alt="Pagar.me"
-              src=""
-            />
+            <logo.svg />
           </div>
           <div
             className={undefined}
@@ -19379,7 +19347,7 @@ exports[`Storyshots Landing Pagar.me login 1`] = `
                 type="submit"
               >
                 <span>
-                  Login
+                  Entrar
                 </span>
               </button>
             </div>
@@ -19392,7 +19360,166 @@ exports[`Storyshots Landing Pagar.me login 1`] = `
         </form>
       </div>
       <div
-        className="light secondary column col desk5 tv5 tablet12 palm12 startAlign"
+        className="light secondary column col desk5 tv5 tablet5 palm12 startAlign"
+      >
+        <div
+          className={undefined}
+        >
+          <div>
+            <h1
+              className={undefined}
+            >
+              Seja bem-vindo
+            </h1>
+            <span
+              className={undefined}
+            >
+              à dashboard Pagar.me
+            </span>
+          </div>
+          <p
+            className={undefined}
+          >
+            A Dashboard Pagar.me é o painel de controle da sua operação. Através dela você tem acesso a diversos dados relevantes para seu dia a dia de trabalho, e também pode realizar diferentes ações cotidianas com facilidade, como estornos, consulta de saldo e mais.
+          </p>
+          <div
+            className=""
+          >
+            <p>
+              <span>
+                Faça login ao lado para acessar sua conta
+              </span>
+              <span>
+                Ainda não tem uma conta?
+                <a
+                  className={undefined}
+                  href="https://dashboard.pagar.me/#/signup"
+                >
+                  Cadastre-se
+                </a>
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Landing Pagar.me login light 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="grid fullHeight"
+  >
+    <div
+      className="row stretch"
+    >
+      <div
+        className="light primary column col desk7 tv7 tablet7 palm12 startAlign"
+      >
+        <form
+          className={undefined}
+          onSubmit={[Function]}
+        >
+          <div
+            className={undefined}
+          >
+            <logo.svg />
+          </div>
+          <div
+            className={undefined}
+          >
+            <div
+              className="input"
+            >
+              <div
+                className="boxContainer"
+              >
+                <div
+                  className="container"
+                >
+                  <input
+                    disabled={false}
+                    id="email-shortid-mock"
+                    name="email"
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    onKeyPress={null}
+                    placeholder="emaillegal@pagar.me"
+                    type="text"
+                    value=""
+                  />
+                  <label
+                    className=""
+                    htmlFor="email-shortid-mock"
+                  >
+                    Email
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div
+              className="input"
+            >
+              <div
+                className="boxContainer"
+              >
+                <div
+                  className="container"
+                >
+                  <input
+                    disabled={false}
+                    id="password-shortid-mock"
+                    name="password"
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    onKeyPress={null}
+                    placeholder=""
+                    type="password"
+                    value=""
+                  />
+                  <label
+                    className=""
+                    htmlFor="password-shortid-mock"
+                  >
+                    Senha
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className={undefined}
+          >
+            <div
+              className={undefined}
+            >
+              <button
+                className="button gradient normalRelevance huge"
+                disabled={false}
+                onClick={null}
+                type="submit"
+              >
+                <span>
+                  Entrar
+                </span>
+              </button>
+            </div>
+            <a
+              href="https://dashboard.pagar.me/#/forgot_password"
+            >
+              Redefinir senha
+            </a>
+          </div>
+        </form>
+      </div>
+      <div
+        className="dark secondary column col desk5 tv5 tablet5 palm12 startAlign"
       >
         <div
           className={undefined}
@@ -19450,7 +19577,7 @@ exports[`Storyshots Landing Pagar.me password recovery 1`] = `
       className="row stretch"
     >
       <div
-        className="dark primary column col desk7 tv7 tablet12 palm12 startAlign"
+        className="dark primary column col desk7 tv7 tablet7 palm12 startAlign"
       >
         <div
           className={undefined}
@@ -19462,10 +19589,7 @@ exports[`Storyshots Landing Pagar.me password recovery 1`] = `
             <div
               className={undefined}
             >
-              <img
-                alt="Pagar.me"
-                src=""
-              />
+              <logo.svg />
             </div>
             <div
               className={undefined}
@@ -19533,7 +19657,7 @@ exports[`Storyshots Landing Pagar.me password recovery 1`] = `
         </div>
       </div>
       <div
-        className="light secondary column col desk5 tv5 tablet12 palm12 startAlign"
+        className="light secondary column col desk5 tv5 tablet5 palm12 startAlign"
       >
         <div
           className={undefined}
@@ -19595,7 +19719,7 @@ exports[`Storyshots Landing Pagar.me password recovery confirmation 1`] = `
       className="row stretch"
     >
       <div
-        className="dark primary column col desk7 tv7 tablet12 palm12 startAlign"
+        className="dark primary column col desk7 tv7 tablet7 palm12 startAlign"
       >
         <div
           className={undefined}
@@ -19607,10 +19731,7 @@ exports[`Storyshots Landing Pagar.me password recovery confirmation 1`] = `
             <div
               className={undefined}
             >
-              <img
-                alt="Pagar.me"
-                src=""
-              />
+              <logo.svg />
             </div>
             <div
               className={undefined}
@@ -19619,7 +19740,7 @@ exports[`Storyshots Landing Pagar.me password recovery confirmation 1`] = `
                 className={undefined}
               >
                 <b>
-                  pronto!
+                  Pronto!
                 </b>
                  em instantes você receberá um e-mail com as instruções para a redefinição de sua senha
               </p>
@@ -19646,7 +19767,7 @@ exports[`Storyshots Landing Pagar.me password recovery confirmation 1`] = `
         </div>
       </div>
       <div
-        className="light secondary column col desk5 tv5 tablet12 palm12 startAlign"
+        className="light secondary column col desk5 tv5 tablet5 palm12 startAlign"
       >
         <div
           className={undefined}
@@ -19708,7 +19829,7 @@ exports[`Storyshots Landing Pagar.me sign in 1`] = `
       className="row stretch"
     >
       <div
-        className="light primary column col desk7 tv7 tablet12 palm12 startAlign"
+        className="dark primary column col desk7 tv7 tablet7 palm12 startAlign"
       >
         <form
           className={undefined}
@@ -19717,10 +19838,7 @@ exports[`Storyshots Landing Pagar.me sign in 1`] = `
           <div
             className={undefined}
           >
-            <img
-              alt="Pagar.me"
-              src=""
-            />
+            <logo.svg />
           </div>
           <div
             className={undefined}
@@ -19867,7 +19985,7 @@ exports[`Storyshots Landing Pagar.me sign in 1`] = `
         </form>
       </div>
       <div
-        className="light secondary column col desk5 tv5 tablet12 palm12 startAlign"
+        className="light secondary column col desk5 tv5 tablet5 palm12 startAlign"
       >
         <div
           className={undefined}
@@ -19922,7 +20040,7 @@ exports[`Storyshots Landing Pagar.me sign in confirmation 1`] = `
       className="row stretch"
     >
       <div
-        className="light primary column col desk7 tv7 tablet12 palm12 startAlign"
+        className="dark primary column col desk7 tv7 tablet7 palm12 startAlign"
       >
         <div
           className={undefined}
@@ -19933,10 +20051,7 @@ exports[`Storyshots Landing Pagar.me sign in confirmation 1`] = `
             <div
               className={undefined}
             >
-              <img
-                alt="Pagar.me"
-                src=""
-              />
+              <logo.svg />
             </div>
             <div
               className={undefined}
@@ -19945,7 +20060,7 @@ exports[`Storyshots Landing Pagar.me sign in confirmation 1`] = `
                 className={undefined}
               >
                 <b>
-                  pronto!
+                  Pronto!
                 </b>
                  você receberá um e-mail com as Instruções para a ativação de sua conta
               </p>
@@ -19972,7 +20087,7 @@ exports[`Storyshots Landing Pagar.me sign in confirmation 1`] = `
         </div>
       </div>
       <div
-        className="light secondary column col desk5 tv5 tablet12 palm12 startAlign"
+        className="light secondary column col desk5 tv5 tablet5 palm12 startAlign"
       >
         <div
           className={undefined}
@@ -20031,7 +20146,7 @@ exports[`Storyshots Landing Pagar.me two factor login 1`] = `
       className="row stretch"
     >
       <div
-        className="dark primary column col desk7 tv7 tablet12 palm12 startAlign"
+        className="dark primary column col desk7 tv7 tablet7 palm12 startAlign"
       >
         <form
           className={undefined}
@@ -20040,10 +20155,7 @@ exports[`Storyshots Landing Pagar.me two factor login 1`] = `
           <div
             className={undefined}
           >
-            <img
-              alt="Pagar.me"
-              src=""
-            />
+            <logo.svg />
           </div>
           <div
             className={undefined}
@@ -20152,7 +20264,7 @@ exports[`Storyshots Landing Pagar.me two factor login 1`] = `
                 type="submit"
               >
                 <span>
-                  Login
+                  Entrar
                 </span>
               </button>
             </div>
@@ -20165,7 +20277,7 @@ exports[`Storyshots Landing Pagar.me two factor login 1`] = `
         </form>
       </div>
       <div
-        className="light secondary column col desk5 tv5 tablet12 palm12 startAlign"
+        className="light secondary column col desk5 tv5 tablet5 palm12 startAlign"
       >
         <div
           className={undefined}

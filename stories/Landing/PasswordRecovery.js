@@ -9,6 +9,8 @@ import {
 } from '../../src/Landing'
 import WelcomeContent from './WelcomeContent'
 
+import Logo from './logo.svg'
+
 const PasswordRecovery = ({
   email,
   emailError,
@@ -23,10 +25,7 @@ const PasswordRecovery = ({
           className={styles.contentRight}
         >
           <div className={styles.logo}>
-            <img
-              src=""
-              alt="Pagar.me"
-            />
+            <Logo />
           </div>
           <div className={styles.login}>
             <p className={styles.paragraph}>

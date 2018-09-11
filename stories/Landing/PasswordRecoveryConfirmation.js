@@ -9,6 +9,8 @@ import {
 } from '../../src/Landing'
 import WelcomeContent from './WelcomeContent'
 
+import Logo from './logo.svg'
+
 const backToLogin = () => {
   window.location.href = 'https://dashboard.pagar.me/#/login'
 }
@@ -24,14 +26,11 @@ const PasswordRecovery = ({
           className={styles.contentRight}
         >
           <div className={styles.logo}>
-            <img
-              src=""
-              alt="Pagar.me"
-            />
+            <Logo />
           </div>
           <div className={styles.login}>
             <p className={styles.paragraph}>
-              <b>pronto!</b> em instantes você receberá um
+              <b>Pronto!</b> em instantes você receberá um
               e-mail com as instruções para a redefinição
               de sua senha
             </p>

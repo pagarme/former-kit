@@ -10,57 +10,47 @@
   }
 }
 
-.contentLeft {
-  color: #a0a0a0;
-}
-
-.contentRight {
-  color: #ffffff;
-}
-
 .contentLeft,
 .contentRight {
-  box-sizing: border-box;
-  width: 375px;
-  max-width: 100%;
   align-items: baseline;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding-bottom: 48px;
-  padding-top: 48px;
   font-size: 14px;
   height: 80%;
+  justify-content: space-between;
+  max-width: 100%;
   min-height: 550px;
+  padding-bottom: 48px;
+  padding-top: 48px;
+  width: 375px;
 }
 
 @media screen and (max-width: 768px) {
 
   .contentLeft,
   .contentRight {
-    width: 100%;
-    max-width: 375px;
     height: 100%;
+    max-width: 375px;
     min-height: auto;
     padding-left: 48px;
     padding-right: 48px;
+    width: 100%;
   }
 }
 
 .title {
-  padding: 0;
   font-size: 36px;
   font-weight: normal;
-  color: #454545;
-  margin: 0 0 13px;
-  width: 100%;
   line-height: 1;
+  margin: 0 0 13px;
+  padding: 0;
   text-transform: uppercase;
+  width: 100%;
 }
 
 .uppercase {
   text-transform: uppercase;
-  color: #757575;
 }
 
 .uppercase > p > span {
@@ -72,7 +62,8 @@
   line-height: 1.7;
 }
 
-.login .paragraph {
+.login .paragraph,
+.signIn .paragraph {
   text-transform: uppercase;
 }
 
@@ -82,10 +73,10 @@
 
 .login,
 .signIn {
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 100%;
 }
 
 .hugeButton,
@@ -95,22 +86,22 @@
 }
 
 .actions {
+  align-content: center;
+  align-items: flex-end;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  align-items: flex-end;
-  align-content: center;
   justify-content: space-around;
   padding-top: 45px;
+  width: 100%;
 }
 
 .contentRight .actions {
 
   & > a {
-    padding: 10px 0;
-    text-transform: uppercase;
     color: #757575;
     font-size: 12px;
+    padding: 10px 0;
+    text-transform: uppercase;
   }
 
   & > a:hover,
@@ -127,22 +118,6 @@
   }
 }
 
-.contentRight .login {
-
-  & input:focus ~ label,
-  & input:hover,
-  & input:focus,
-  & input {
-    border-color: #ffffff;
-    color: #ffffff;
-    caret-color: #ffffff;
-  }
-
-  & input ~ button {
-    color: #ffffff;
-  }
-}
-
 .signInBlock {
   padding-bottom: 16px;
 
@@ -152,9 +127,9 @@
 }
 
 .signInLink {
-  text-transform: uppercase;
   color: #73dbb8;
   margin-left: 0.5em;
+  text-transform: uppercase;
 
   &:hover,
   &:focus,
