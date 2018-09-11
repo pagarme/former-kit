@@ -17507,7 +17507,7 @@ exports[`Storyshots Inputs Default 1`] = `
     </h2>
     <div>
       <div
-        className="input active"
+        className="input light active"
       >
         <div
           className="boxContainer"
@@ -17551,7 +17551,7 @@ exports[`Storyshots Inputs Default 1`] = `
     </h2>
     <div>
       <div
-        className="input active error"
+        className="input light active error"
       >
         <div
           className="boxContainer"
@@ -17595,7 +17595,7 @@ exports[`Storyshots Inputs Default 1`] = `
     </h2>
     <div>
       <div
-        className="input disabled"
+        className="input light disabled"
       >
         <div
           className="boxContainer"
@@ -17639,7 +17639,7 @@ exports[`Storyshots Inputs Default 1`] = `
     </h2>
     <div>
       <div
-        className="input disabled"
+        className="input light disabled"
       >
         <div
           className="boxContainer"
@@ -17683,7 +17683,7 @@ exports[`Storyshots Inputs Default 1`] = `
     </h2>
     <div>
       <div
-        className="input"
+        className="input light"
       >
         <div
           className="boxContainer"
@@ -17730,7 +17730,7 @@ exports[`Storyshots Inputs Default 1`] = `
     </h2>
     <div>
       <div
-        className="input active"
+        className="input light active"
       >
         <div
           className="boxContainer"
@@ -17779,7 +17779,7 @@ exports[`Storyshots Inputs Default 1`] = `
     </h2>
     <div>
       <div
-        className="input active error"
+        className="input light active error"
       >
         <div
           className="boxContainer"
@@ -17828,7 +17828,7 @@ exports[`Storyshots Inputs Default 1`] = `
     </h2>
     <div>
       <div
-        className="input disabled"
+        className="input light disabled"
       >
         <div
           className="boxContainer"
@@ -17873,7 +17873,7 @@ exports[`Storyshots Inputs Default 1`] = `
     </h2>
     <div>
       <div
-        className="input active"
+        className="input light active"
       >
         <div
           className="icon"
@@ -17925,7 +17925,7 @@ exports[`Storyshots Inputs Default 1`] = `
     </h2>
     <div>
       <div
-        className="input active error"
+        className="input light active error"
       >
         <div
           className="icon"
@@ -17977,7 +17977,7 @@ exports[`Storyshots Inputs Default 1`] = `
     </h2>
     <div>
       <div
-        className="input disabled"
+        className="input light disabled"
       >
         <div
           className="icon"
@@ -18025,7 +18025,7 @@ exports[`Storyshots Inputs Default 1`] = `
     </h2>
     <div>
       <div
-        className="input active"
+        className="input light active"
       >
         <div
           className="icon"
@@ -18082,7 +18082,7 @@ exports[`Storyshots Inputs Default 1`] = `
     </h2>
     <div>
       <div
-        className="input active error"
+        className="input light active error"
       >
         <div
           className="icon"
@@ -18139,7 +18139,7 @@ exports[`Storyshots Inputs Default 1`] = `
     </h2>
     <div>
       <div
-        className="input disabled"
+        className="input light disabled"
       >
         <div
           className="icon"
@@ -18192,7 +18192,7 @@ exports[`Storyshots Inputs Default 1`] = `
     </h2>
     <div>
       <div
-        className="input active"
+        className="input light active"
       >
         <div
           className="boxContainer"
@@ -18244,7 +18244,7 @@ exports[`Storyshots Inputs Default 1`] = `
     </h2>
     <div>
       <div
-        className="input active error"
+        className="input light active error"
       >
         <div
           className="boxContainer"
@@ -18296,7 +18296,7 @@ exports[`Storyshots Inputs Default 1`] = `
     </h2>
     <div>
       <div
-        className="input disabled"
+        className="input light disabled"
       >
         <div
           className="boxContainer"
@@ -18347,7 +18347,7 @@ exports[`Storyshots Inputs Form 1`] = `
     </h2>
     <div>
       <div
-        className="input active"
+        className="input light active"
       >
         <div
           className="boxContainer"
@@ -18391,7 +18391,7 @@ exports[`Storyshots Inputs Form 1`] = `
     </h2>
     <div>
       <div
-        className="input active error"
+        className="input light active error"
       >
         <div
           className="boxContainer"
@@ -18435,7 +18435,7 @@ exports[`Storyshots Inputs Form 1`] = `
     </h2>
     <div>
       <div
-        className="input disabled"
+        className="input light disabled"
       >
         <div
           className="boxContainer"
@@ -18479,7 +18479,7 @@ exports[`Storyshots Inputs Form 1`] = `
     </h2>
     <div>
       <div
-        className="input disabled"
+        className="input light disabled"
       >
         <div
           className="boxContainer"
@@ -18523,7 +18523,7 @@ exports[`Storyshots Inputs Form 1`] = `
     </h2>
     <div>
       <div
-        className="input active"
+        className="input light active"
       >
         <div
           className="boxContainer"
@@ -18570,7 +18570,7 @@ exports[`Storyshots Inputs Form 1`] = `
     </h2>
     <div>
       <div
-        className="input active"
+        className="input light active"
       >
         <div
           className="boxContainer"
@@ -18619,7 +18619,7 @@ exports[`Storyshots Inputs Form 1`] = `
     </h2>
     <div>
       <div
-        className="input active error"
+        className="input light active error"
       >
         <div
           className="boxContainer"
@@ -18668,7 +18668,7 @@ exports[`Storyshots Inputs Form 1`] = `
     </h2>
     <div>
       <div
-        className="input disabled"
+        className="input light disabled"
       >
         <div
           className="boxContainer"
@@ -18713,7 +18713,7 @@ exports[`Storyshots Inputs Form 1`] = `
     </h2>
     <div>
       <div
-        className="input active"
+        className="input light active"
       >
         <div
           className="icon"
@@ -18765,7 +18765,7 @@ exports[`Storyshots Inputs Form 1`] = `
     </h2>
     <div>
       <div
-        className="input active error"
+        className="input light active error"
       >
         <div
           className="icon"
@@ -18817,7 +18817,7 @@ exports[`Storyshots Inputs Form 1`] = `
     </h2>
     <div>
       <div
-        className="input disabled"
+        className="input light disabled"
       >
         <div
           className="icon"
@@ -18865,7 +18865,7 @@ exports[`Storyshots Inputs Form 1`] = `
     </h2>
     <div>
       <div
-        className="input active"
+        className="input light active"
       >
         <div
           className="icon"
@@ -18922,7 +18922,7 @@ exports[`Storyshots Inputs Form 1`] = `
     </h2>
     <div>
       <div
-        className="input active error"
+        className="input light active error"
       >
         <div
           className="icon"
@@ -18979,7 +18979,7 @@ exports[`Storyshots Inputs Form 1`] = `
     </h2>
     <div>
       <div
-        className="input disabled"
+        className="input light disabled"
       >
         <div
           className="icon"
@@ -19032,7 +19032,7 @@ exports[`Storyshots Inputs Form 1`] = `
     </h2>
     <div>
       <div
-        className="input active"
+        className="input light active"
       >
         <div
           className="boxContainer"
@@ -19084,7 +19084,7 @@ exports[`Storyshots Inputs Form 1`] = `
     </h2>
     <div>
       <div
-        className="input active error"
+        className="input light active error"
       >
         <div
           className="boxContainer"
@@ -19136,7 +19136,7 @@ exports[`Storyshots Inputs Form 1`] = `
     </h2>
     <div>
       <div
-        className="input disabled"
+        className="input light disabled"
       >
         <div
           className="boxContainer"
@@ -19180,7 +19180,884 @@ exports[`Storyshots Inputs Form 1`] = `
     </h2>
     <div>
       <div
-        className="input disabled"
+        className="input light disabled"
+      >
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container"
+          >
+            <input
+              disabled={true}
+              id="pass-shortid-mock"
+              name="pass"
+              onBlur={[Function]}
+              onChange={null}
+              onFocus={[Function]}
+              onKeyPress={null}
+              placeholder="disabled"
+              type="password"
+              value="secret_pass"
+            />
+            <label
+              className="contentPresent"
+              htmlFor="pass-shortid-mock"
+            >
+              Your password
+            </label>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Must have more than 12 pixel
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Base Dark
+    </h2>
+    <div>
+      <div
+        className="input dark active"
+      >
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container"
+          >
+            <input
+              disabled={false}
+              id="email-shortid-mock"
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyPress={null}
+              placeholder="name@email.com"
+              type="text"
+              value="pagarme@pagar.me"
+            />
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Secondary Text
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Error
+    </h2>
+    <div>
+      <div
+        className="input dark active error"
+      >
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container"
+          >
+            <input
+              disabled={false}
+              id="email-shortid-mock"
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyPress={null}
+              placeholder="name@email.com"
+              type="text"
+              value="pagarme@pagar.me"
+            />
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Invalid email
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Disabled
+    </h2>
+    <div>
+      <div
+        className="input dark disabled"
+      >
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container"
+          >
+            <input
+              disabled={true}
+              id="email-shortid-mock"
+              name="email"
+              onBlur={[Function]}
+              onChange={null}
+              onFocus={[Function]}
+              onKeyPress={null}
+              placeholder="disabled"
+              type="text"
+              value=""
+            />
+            <label
+              className=""
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Secondary Text
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Disabled with text
+    </h2>
+    <div>
+      <div
+        className="input dark disabled"
+      >
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container"
+          >
+            <input
+              disabled={true}
+              id="email-shortid-mock"
+              name="email"
+              onBlur={[Function]}
+              onChange={null}
+              onFocus={[Function]}
+              onKeyPress={null}
+              placeholder="disabled"
+              type="text"
+              value="Disabled!"
+            />
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Secondary Text
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Masked input
+    </h2>
+    <div>
+      <div
+        className="input dark active"
+      >
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container"
+          >
+            <input
+              disabled={false}
+              mask="111-111-111"
+              maxLength={11}
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyPress={[Function]}
+              onPaste={[Function]}
+              placeholder="Type your phone number"
+              size={11}
+              value="431-051-080"
+            />
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Phone number
+            </label>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Secondary Text
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Multiline default
+    </h2>
+    <div>
+      <div
+        className="input dark active"
+      >
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container multiline"
+          >
+            <textarea
+              disabled={false}
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyPress={null}
+              placeholder="default"
+              rows="1"
+              value="pagarme@pagar.me"
+            />
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+            <div
+              className="expander"
+            >
+              pagarme@pagar.me
+              <br />
+            </div>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Secondary Text
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Multiline error
+    </h2>
+    <div>
+      <div
+        className="input dark active error"
+      >
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container multiline"
+          >
+            <textarea
+              disabled={false}
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyPress={null}
+              placeholder="name@email.com"
+              rows="1"
+              value="pagarme@pagar.me"
+            />
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+            <div
+              className="expander"
+            >
+              pagarme@pagar.me
+              <br />
+            </div>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Error!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Multiline disabled
+    </h2>
+    <div>
+      <div
+        className="input dark disabled"
+      >
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container multiline"
+          >
+            <textarea
+              disabled={true}
+              name="multiline"
+              onBlur={[Function]}
+              onChange={null}
+              onFocus={[Function]}
+              onKeyPress={null}
+              placeholder="disabled"
+              rows="1"
+              value="Multiline disabled!"
+            />
+            <label
+              className="contentPresent"
+              htmlFor="multiline-shortid-mock"
+            >
+              Disabled
+            </label>
+            <div
+              className="expander"
+            >
+              Multiline disabled!
+              <br />
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Icon default
+    </h2>
+    <div>
+      <div
+        className="input dark active"
+      >
+        <div
+          className="icon"
+        >
+          <Mail32.svg
+            height={16}
+            width={16}
+          />
+        </div>
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container"
+          >
+            <input
+              disabled={false}
+              id="email-shortid-mock"
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyPress={null}
+              placeholder="name@email.com"
+              type="text"
+              value="pagarme@pagar.me"
+            />
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Secondary Text
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Icon error
+    </h2>
+    <div>
+      <div
+        className="input dark active error"
+      >
+        <div
+          className="icon"
+        >
+          <Mail32.svg
+            height={16}
+            width={16}
+          />
+        </div>
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container"
+          >
+            <input
+              disabled={false}
+              id="email-shortid-mock"
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyPress={null}
+              placeholder="name@email.com"
+              type="text"
+              value="pagarme@pagar.me"
+            />
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Error!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Icon disabled
+    </h2>
+    <div>
+      <div
+        className="input dark disabled"
+      >
+        <div
+          className="icon"
+        >
+          <Mail32.svg
+            height={16}
+            width={16}
+          />
+        </div>
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container"
+          >
+            <input
+              disabled={true}
+              id="name-shortid-mock"
+              name="name"
+              onBlur={[Function]}
+              onChange={null}
+              onFocus={[Function]}
+              onKeyPress={null}
+              placeholder="disabled"
+              type="text"
+              value=""
+            />
+            <label
+              className=""
+              htmlFor="name-shortid-mock"
+            >
+              Your email
+            </label>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Icon multiline default
+    </h2>
+    <div>
+      <div
+        className="input dark active"
+      >
+        <div
+          className="icon"
+        >
+          <Mail32.svg
+            height={16}
+            width={16}
+          />
+        </div>
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container multiline"
+          >
+            <textarea
+              disabled={false}
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyPress={null}
+              placeholder="name@email.com"
+              rows="1"
+              value="pagarme@pagar.me"
+            />
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+            <div
+              className="expander"
+            >
+              pagarme@pagar.me
+              <br />
+            </div>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Secondary Text
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Icon multiline error
+    </h2>
+    <div>
+      <div
+        className="input dark active error"
+      >
+        <div
+          className="icon"
+        >
+          <Mail32.svg
+            height={16}
+            width={16}
+          />
+        </div>
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container multiline"
+          >
+            <textarea
+              disabled={false}
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyPress={null}
+              placeholder="name@email.com"
+              rows="1"
+              value="pagarme@pagar.me"
+            />
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+            <div
+              className="expander"
+            >
+              pagarme@pagar.me
+              <br />
+            </div>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Error!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Icon multiline disabled
+    </h2>
+    <div>
+      <div
+        className="input dark disabled"
+      >
+        <div
+          className="icon"
+        >
+          <Mail32.svg
+            height={16}
+            width={16}
+          />
+        </div>
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container multiline"
+          >
+            <textarea
+              disabled={true}
+              name="multiline"
+              onBlur={[Function]}
+              onChange={null}
+              onFocus={[Function]}
+              onKeyPress={null}
+              placeholder="disabled"
+              rows="1"
+              value=""
+            />
+            <label
+              className=""
+              htmlFor="multiline-shortid-mock"
+            >
+              Disabled
+            </label>
+            <div
+              className="expander"
+            >
+              
+              <br />
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Password default
+    </h2>
+    <div>
+      <div
+        className="input dark active"
+      >
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container"
+          >
+            <input
+              disabled={false}
+              id="email-shortid-mock"
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyPress={null}
+              placeholder="name@email.com"
+              type="password"
+              value="pagarme@pagar.me"
+            />
+            <button
+              className="displayPasswordIcon"
+              onClick={[Function]}
+              tabIndex="-1"
+              type="button"
+            >
+              <svg />
+            </button>
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your password
+            </label>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Secondary Text
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Password error
+    </h2>
+    <div>
+      <div
+        className="input dark active error"
+      >
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container"
+          >
+            <input
+              disabled={false}
+              id="email-shortid-mock"
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyPress={null}
+              placeholder="name@email.com"
+              type="password"
+              value="pagarme@pagar.me"
+            />
+            <button
+              className="displayPasswordIcon"
+              onClick={[Function]}
+              tabIndex="-1"
+              type="button"
+            >
+              <svg />
+            </button>
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your password
+            </label>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Error
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Password disabled
+    </h2>
+    <div>
+      <div
+        className="input dark disabled"
+      >
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container"
+          >
+            <input
+              disabled={true}
+              id="pass-shortid-mock"
+              name="pass"
+              onBlur={[Function]}
+              onChange={null}
+              onFocus={[Function]}
+              onKeyPress={null}
+              placeholder="disabled"
+              type="password"
+              value=""
+            />
+            <label
+              className=""
+              htmlFor="pass-shortid-mock"
+            >
+              Your password
+            </label>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Must have more than 12 pixel
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Password disabled with text
+    </h2>
+    <div>
+      <div
+        className="input dark disabled"
       >
         <div
           className="boxContainer"
@@ -19274,7 +20151,7 @@ exports[`Storyshots Landing Pagar.me login 1`] = `
             className={undefined}
           >
             <div
-              className="input"
+              className="input light"
             >
               <div
                 className="boxContainer"
@@ -19304,7 +20181,7 @@ exports[`Storyshots Landing Pagar.me login 1`] = `
               </div>
             </div>
             <div
-              className="input"
+              className="input light"
             >
               <div
                 className="boxContainer"
@@ -19433,7 +20310,7 @@ exports[`Storyshots Landing Pagar.me login light 1`] = `
             className={undefined}
           >
             <div
-              className="input"
+              className="input light"
             >
               <div
                 className="boxContainer"
@@ -19463,7 +20340,7 @@ exports[`Storyshots Landing Pagar.me login light 1`] = `
               </div>
             </div>
             <div
-              className="input"
+              className="input light"
             >
               <div
                 className="boxContainer"
@@ -19600,7 +20477,7 @@ exports[`Storyshots Landing Pagar.me password recovery 1`] = `
                 Digite o e-mail cadastrado para recuperar sua senha
               </p>
               <div
-                className="input"
+                className="input light"
               >
                 <div
                   className="boxContainer"
@@ -19844,7 +20721,7 @@ exports[`Storyshots Landing Pagar.me sign in 1`] = `
             className={undefined}
           >
             <div
-              className="input"
+              className="input light"
             >
               <div
                 className="boxContainer"
@@ -19874,7 +20751,7 @@ exports[`Storyshots Landing Pagar.me sign in 1`] = `
               </div>
             </div>
             <div
-              className="input"
+              className="input light"
             >
               <div
                 className="boxContainer"
@@ -19904,7 +20781,7 @@ exports[`Storyshots Landing Pagar.me sign in 1`] = `
               </div>
             </div>
             <div
-              className="input"
+              className="input light"
             >
               <div
                 className="boxContainer"
@@ -19934,7 +20811,7 @@ exports[`Storyshots Landing Pagar.me sign in 1`] = `
               </div>
             </div>
             <div
-              className="input"
+              className="input light"
             >
               <div
                 className="boxContainer"
@@ -20161,7 +21038,7 @@ exports[`Storyshots Landing Pagar.me two factor login 1`] = `
             className={undefined}
           >
             <div
-              className="input"
+              className="input light"
             >
               <div
                 className="boxContainer"
@@ -20191,7 +21068,7 @@ exports[`Storyshots Landing Pagar.me two factor login 1`] = `
               </div>
             </div>
             <div
-              className="input"
+              className="input light"
             >
               <div
                 className="boxContainer"
@@ -20221,7 +21098,7 @@ exports[`Storyshots Landing Pagar.me two factor login 1`] = `
               </div>
             </div>
             <div
-              className="input"
+              className="input light"
             >
               <div
                 className="boxContainer"

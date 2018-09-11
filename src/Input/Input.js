@@ -13,6 +13,7 @@ import {
 } from 'ramda'
 
 const omitOwnProps = omit([
+  'base',
   'className',
   'error',
   'hint',
@@ -178,6 +179,7 @@ class Input extends React.PureComponent {
 
   render () {
     const {
+      base,
       className,
       disabled,
       error,
@@ -197,6 +199,7 @@ class Input extends React.PureComponent {
     const root = classnames(
       className,
       theme.input,
+      theme[base],
       {
         [theme.active]: !disabled && !isNil(value) && value !== '',
         [theme.focused]: this.state.isFocused,
@@ -273,14 +276,21 @@ Input.propTypes = {
     boxContainer: PropTypes.string,
     container: PropTypes.string,
     contentPresent: PropTypes.string,
+    dark: PropTypes.string,
     error: PropTypes.string,
     expander: PropTypes.string,
     focused: PropTypes.string,
     icon: PropTypes.string,
     input: PropTypes.string,
+    light: PropTypes.string,
     multiline: PropTypes.string,
     secondaryText: PropTypes.string,
   }),
+
+  base: PropTypes.oneOf([
+    'dark',
+    'light',
+  ]),
   /**
    * Aditional CSS classes which can be applied to the input.
    */
@@ -374,6 +384,7 @@ Input.propTypes = {
 }
 
 Input.defaultProps = {
+  base: 'light',
   className: '',
   disabled: false,
   error: '',

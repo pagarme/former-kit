@@ -14,6 +14,7 @@ class InputState extends React.Component {
 
   render () {
     const {
+      base,
       error,
       icon,
       label,
@@ -29,6 +30,7 @@ class InputState extends React.Component {
 
     return (
       <Input
+        base={base}
         error={error}
         hint="Secondary text"
         icon={icon}
@@ -48,6 +50,7 @@ class InputState extends React.Component {
 }
 
 InputState.defaultProps = {
+  base: 'light',
   error: '',
   icon: null,
   label: 'Your email',
@@ -186,4 +189,3 @@ storiesOf('Inputs', module)
       </Section>
     </div>
   ))
-

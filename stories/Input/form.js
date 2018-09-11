@@ -14,6 +14,7 @@ class InputState extends React.Component {
 
   render () {
     const {
+      base,
       error,
       icon,
       mask,
@@ -29,6 +30,7 @@ class InputState extends React.Component {
 
     return (
       <Input
+        base={base}
         error={error}
         hint="Secondary Text"
         icon={icon}
@@ -48,6 +50,7 @@ class InputState extends React.Component {
 }
 
 InputState.defaultProps = {
+  base: 'light',
   error: '',
   icon: null,
   label: 'Your email',
@@ -124,11 +127,22 @@ storiesOf('Inputs', module)
       </Section>
 
       <Section title="Icon default">
-        <InputState type="text" icon={<IconMail width={16} height={16} />} />
+        <InputState
+          type="text"
+          icon={
+            <IconMail width={16} height={16} />
+          }
+        />
       </Section>
 
       <Section title="Icon error">
-        <InputState type="text" error="Error!" icon={<IconMail width={16} height={16} />} />
+        <InputState
+          type="text"
+          error="Error!"
+          icon={
+            <IconMail width={16} height={16} />
+          }
+        />
       </Section>
 
       <Section title="Icon disabled">
@@ -148,7 +162,13 @@ storiesOf('Inputs', module)
       </Section>
 
       <Section title="Icon multiline error">
-        <InputState multiline error="Error!" icon={<IconMail width={16} height={16} />} />
+        <InputState
+          multiline
+          error="Error!"
+          icon={
+            <IconMail width={16} height={16} />
+          }
+        />
       </Section>
 
       <Section title="Icon multiline disabled">
@@ -194,6 +214,186 @@ storiesOf('Inputs', module)
 
       <Section title="Password disabled with text">
         <Input
+          type="password"
+          name="pass"
+          label="Your password"
+          disabled
+          placeholder="disabled"
+          hint="Must have more than 12 pixel"
+          onChange={action('text changed')}
+          value="secret_pass"
+        />
+      </Section>
+
+      <Section title="Base Dark" base="dark">
+        <InputState type="text" base="dark" />
+      </Section>
+
+      <Section title="Error" base="dark">
+        <InputState type="text" error="Invalid email" base="dark" />
+      </Section>
+
+      <Section title="Disabled" base="dark">
+        <Input
+          base="dark"
+          name="email"
+          label="Your email"
+          disabled
+          hint="Secondary Text"
+          placeholder="disabled"
+          onChange={action('text changed')}
+          value=""
+        />
+      </Section>
+
+      <Section title="Disabled with text" base="dark">
+        <Input
+          base="dark"
+          name="email"
+          label="Your email"
+          disabled
+          hint="Secondary Text"
+          placeholder="disabled"
+          onChange={action('text changed')}
+          value="Disabled!"
+        />
+      </Section>
+
+      <Section title="Masked input" base="dark">
+        <InputState
+          base="dark"
+          label="Phone number"
+          mask="111-111-111"
+          placeholder="Type your phone number"
+          type="text"
+          value="431-051-080"
+        />
+      </Section>
+
+      <Section title="Multiline default" base="dark">
+        <InputState multiline placeholder="default" base="dark" />
+      </Section>
+
+      <Section title="Multiline error" base="dark">
+        <InputState multiline error="Error!" base="dark" />
+      </Section>
+
+      <Section title="Multiline disabled" base="dark">
+        <Input
+          base="dark"
+          name="multiline"
+          label="Disabled"
+          multiline
+          placeholder="disabled"
+          disabled
+          onChange={action('text changed')}
+          value="Multiline disabled!"
+        />
+      </Section>
+
+      <Section title="Icon default" base="dark">
+        <InputState
+          type="text"
+          icon={
+            <IconMail width={16} height={16} />
+          }
+          base="dark"
+        />
+      </Section>
+
+      <Section title="Icon error" base="dark">
+        <InputState
+          type="text"
+          error="Error!"
+          icon={
+            <IconMail width={16} height={16} />
+          }
+          base="dark"
+        />
+      </Section>
+
+      <Section title="Icon disabled" base="dark">
+        <Input
+          base="dark"
+          name="name"
+          label="Your email"
+          placeholder="disabled"
+          disabled
+          icon={<IconMail width={16} height={16} />}
+          onChange={action('text changed')}
+          value=""
+        />
+      </Section>
+
+      <Section title="Icon multiline default" base="dark">
+        <InputState
+          multiline
+          icon={
+            <IconMail width={16} height={16} />
+          }
+          base="dark"
+        />
+      </Section>
+
+      <Section title="Icon multiline error" base="dark">
+        <InputState
+          multiline
+          error="Error!"
+          icon={
+            <IconMail width={16} height={16} />
+          }
+          base="dark"
+        />
+      </Section>
+
+      <Section title="Icon multiline disabled" base="dark">
+        <Input
+          base="dark"
+          name="multiline"
+          label="Disabled"
+          placeholder="disabled"
+          multiline
+          disabled
+          icon={<IconMail width={16} height={16} />}
+          onChange={action('text changed')}
+          value=""
+        />
+      </Section>
+
+      <Section title="Password default" base="dark">
+        <InputState
+          base="dark"
+          type="password"
+          label="Your password"
+        />
+      </Section>
+
+      <Section title="Password error" base="dark">
+        <InputState
+          base="dark"
+          type="password"
+          label="Your password"
+          error="Error"
+        />
+      </Section>
+
+      <Section title="Password disabled" base="dark">
+        <Input
+          base="dark"
+          type="password"
+          name="pass"
+          label="Your password"
+          disabled
+          placeholder="disabled"
+          hint="Must have more than 12 pixel"
+          onChange={action('text changed')}
+          value=""
+        />
+      </Section>
+
+      <Section title="Password disabled with text" base="dark">
+        <Input
+          base="dark"
           type="password"
           name="pass"
           label="Your password"
