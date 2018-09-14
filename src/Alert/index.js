@@ -2,11 +2,11 @@ import React from 'react'
 import classNames from 'classnames'
 import { isNil } from 'ramda'
 import {
-  oneOf,
   element,
+  func,
+  oneOf,
   shape,
   string,
-  func,
 } from 'prop-types'
 import ThemeConsumer from '../ThemeConsumer'
 import Button from '../Button'
@@ -18,13 +18,14 @@ const consumeTheme = ThemeConsumer('UIAlert')
  */
 const Alert = ({
   action,
+  base,
   children,
   icon,
   onDismiss,
   theme,
   type,
 }) => (
-  <div className={theme.alert}>
+  <div className={classNames(theme.alert, theme[base])}>
     {!isNil(icon) && (
       <div className={classNames(theme.icon, theme[type])}>
         {icon}
@@ -54,6 +55,13 @@ Alert.propTypes = {
    */
   action: string,
   /**
+   * The action text.
+   */
+  base: oneOf([
+    'dark',
+    'light',
+  ]),
+  /**
    * The children element. It should contain a React element.
    */
   children: element.isRequired,
@@ -70,12 +78,12 @@ Alert.propTypes = {
    */
   theme: shape({
     alert: string,
-    icon: string,
     content: string,
-    warning: string,
-    info: string,
     error: string,
+    icon: string,
+    info: string,
     success: string,
+    warning: string,
   }),
   /**
    * The types the alert can have. The background color
@@ -91,6 +99,7 @@ Alert.propTypes = {
 
 Alert.defaultProps = {
   action: null,
+  base: 'light',
   icon: null,
   onDismiss: null,
   theme: {},
