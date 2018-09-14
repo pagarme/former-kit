@@ -30,7 +30,7 @@ const LandingSecondarySection = ({
   <Col
     tv={5}
     desk={5}
-    tablet={12}
+    tablet={5}
     palm={12}
     className={
       classNames(
