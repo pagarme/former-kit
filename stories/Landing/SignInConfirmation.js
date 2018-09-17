@@ -8,26 +8,23 @@ import {
   LandingSecondarySection,
 } from '../../src/Landing'
 
+import Logo from './logo.svg'
+
 const bakToLogin = () => {
   window.location.href = 'https://dashboard.pagar.me/#/login'
 }
 
-const SignIn = ({
-  base,
-}) => (
+const SignIn = () => (
   <Landing className={styles.container}>
-    <LandingPrimarySection base={base}>
+    <LandingPrimarySection>
       <div className={styles.columnContainer}>
         <div className={styles.contentRight}>
           <div className={styles.logo}>
-            <img
-              src=""
-              alt="Pagar.me"
-            />
+            <Logo />
           </div>
           <div className={styles.signIn}>
-            <p className={styles.uppercase}>
-              <b>pronto!</b> você receberá um e-mail com as
+            <p className={styles.paragraph}>
+              <b>Pronto!</b> você receberá um e-mail com as
               Instruções para a ativação de sua conta
             </p>
           </div>

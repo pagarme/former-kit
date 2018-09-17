@@ -9,8 +9,9 @@ import {
   LandingSecondarySection,
 } from '../../src/Landing'
 
+import Logo from './logo.svg'
+
 const SignIn = ({
-  base,
   company,
   companyError,
   email,
@@ -23,16 +24,13 @@ const SignIn = ({
   passwordError,
 }) => (
   <Landing className={styles.container}>
-    <LandingPrimarySection base={base}>
+    <LandingPrimarySection>
       <form
         onSubmit={handleLogIn}
         className={styles.contentRight}
       >
         <div className={styles.logo}>
-          <img
-            src=""
-            alt="Pagar.me"
-          />
+          <Logo />
         </div>
         <div className={styles.signIn}>
           <Input

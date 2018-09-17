@@ -37,7 +37,7 @@ const LandingPrimarySection = ({
     }
     tv={7}
     desk={7}
-    tablet={12}
+    tablet={7}
     palm={12}
   >
     {children}

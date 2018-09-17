@@ -6,9 +6,9 @@ import {
   LandingSecondarySection,
 } from '../../src/Landing'
 
-const EmptyLanding = ({ base }) => (
+const EmptyLanding = () => (
   <Landing className={styles.container}>
-    <LandingPrimarySection base={base}>
+    <LandingPrimarySection>
       <span>Empty</span>
     </LandingPrimarySection>
     <LandingSecondarySection>
