@@ -18332,6 +18332,839 @@ exports[`Storyshots Inputs Default 1`] = `
       </div>
     </div>
   </section>
+  <section
+    className=""
+  >
+    <h2>
+      Default
+    </h2>
+    <div>
+      <div
+        className="input dark active"
+      >
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container"
+          >
+            <input
+              disabled={false}
+              id="email-shortid-mock"
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyPress={null}
+              placeholder="name@email.com"
+              type="text"
+              value="pagarme@pagar.me"
+            />
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Secondary text
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Error
+    </h2>
+    <div>
+      <div
+        className="input dark active error"
+      >
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container"
+          >
+            <input
+              disabled={false}
+              id="email-shortid-mock"
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyPress={null}
+              placeholder="name@email.com"
+              type="text"
+              value="pagarme@pagar.me"
+            />
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Wrong email
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Disabled
+    </h2>
+    <div>
+      <div
+        className="input dark disabled"
+      >
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container"
+          >
+            <input
+              disabled={true}
+              id="email-shortid-mock"
+              name="email"
+              onBlur={[Function]}
+              onChange={null}
+              onFocus={[Function]}
+              onKeyPress={null}
+              placeholder="email@email.com"
+              type="text"
+              value=""
+            />
+            <label
+              className=""
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Secondary text
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Disabled with text
+    </h2>
+    <div>
+      <div
+        className="input dark disabled"
+      >
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container"
+          >
+            <input
+              disabled={true}
+              id="email-shortid-mock"
+              name="email"
+              onBlur={[Function]}
+              onChange={null}
+              onFocus={[Function]}
+              onKeyPress={null}
+              placeholder="email@email.com"
+              type="text"
+              value="Disabled!"
+            />
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Secondary text
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Masked input
+    </h2>
+    <div>
+      <div
+        className="input dark"
+      >
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container"
+          >
+            <input
+              disabled={false}
+              mask="111-111-111"
+              maxLength={11}
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyPress={[Function]}
+              onPaste={[Function]}
+              placeholder="Type your phone number"
+              size={11}
+              value=""
+            />
+            <label
+              className=""
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Secondary text
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Multiline default
+    </h2>
+    <div>
+      <div
+        className="input dark active"
+      >
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container multiline"
+          >
+            <textarea
+              disabled={false}
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyPress={null}
+              placeholder="default"
+              rows="1"
+              value="pagarme@pagar.me"
+            />
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+            <div
+              className="expander"
+            >
+              pagarme@pagar.me
+              <br />
+            </div>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Secondary text
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Multiline error
+    </h2>
+    <div>
+      <div
+        className="input dark active error"
+      >
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container multiline"
+          >
+            <textarea
+              disabled={false}
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyPress={null}
+              placeholder="name@email.com"
+              rows="1"
+              value="pagarme@pagar.me"
+            />
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+            <div
+              className="expander"
+            >
+              pagarme@pagar.me
+              <br />
+            </div>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Error!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Multiline disabled
+    </h2>
+    <div>
+      <div
+        className="input dark disabled"
+      >
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container multiline"
+          >
+            <textarea
+              disabled={true}
+              name="multiline"
+              onBlur={[Function]}
+              onChange={null}
+              onFocus={[Function]}
+              onKeyPress={null}
+              placeholder="this is disabled"
+              rows="1"
+              value=""
+            />
+            <label
+              className=""
+              htmlFor="multiline-shortid-mock"
+            >
+              Disabled
+            </label>
+            <div
+              className="expander"
+            >
+              
+              <br />
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Icon default
+    </h2>
+    <div>
+      <div
+        className="input dark active"
+      >
+        <div
+          className="icon"
+        >
+          <Mail32.svg
+            height={16}
+            width={16}
+          />
+        </div>
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container"
+          >
+            <input
+              disabled={false}
+              id="email-shortid-mock"
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyPress={null}
+              placeholder="name@email.com"
+              type="text"
+              value="pagarme@pagar.me"
+            />
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Secondary text
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Icon error
+    </h2>
+    <div>
+      <div
+        className="input dark active error"
+      >
+        <div
+          className="icon"
+        >
+          <Mail32.svg
+            height={16}
+            width={16}
+          />
+        </div>
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container"
+          >
+            <input
+              disabled={false}
+              id="email-shortid-mock"
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyPress={null}
+              placeholder="name@email.com"
+              type="text"
+              value="pagarme@pagar.me"
+            />
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Error!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Icon disabled
+    </h2>
+    <div>
+      <div
+        className="input dark disabled"
+      >
+        <div
+          className="icon"
+        >
+          <Mail32.svg
+            height={16}
+            width={16}
+          />
+        </div>
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container"
+          >
+            <input
+              disabled={true}
+              id="name-shortid-mock"
+              name="name"
+              onBlur={[Function]}
+              onChange={null}
+              onFocus={[Function]}
+              onKeyPress={null}
+              placeholder="disabled"
+              type="text"
+              value=""
+            />
+            <label
+              className=""
+              htmlFor="name-shortid-mock"
+            >
+              Your name
+            </label>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Icon multiline default
+    </h2>
+    <div>
+      <div
+        className="input dark active"
+      >
+        <div
+          className="icon"
+        >
+          <Mail32.svg
+            height={16}
+            width={16}
+          />
+        </div>
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container multiline"
+          >
+            <textarea
+              disabled={false}
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyPress={null}
+              placeholder="name@email.com"
+              rows="1"
+              value="pagarme@pagar.me"
+            />
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+            <div
+              className="expander"
+            >
+              pagarme@pagar.me
+              <br />
+            </div>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Secondary text
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Icon multiline error
+    </h2>
+    <div>
+      <div
+        className="input dark active error"
+      >
+        <div
+          className="icon"
+        >
+          <Mail32.svg
+            height={16}
+            width={16}
+          />
+        </div>
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container multiline"
+          >
+            <textarea
+              disabled={false}
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyPress={null}
+              placeholder="name@email.com"
+              rows="1"
+              value="pagarme@pagar.me"
+            />
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+            <div
+              className="expander"
+            >
+              pagarme@pagar.me
+              <br />
+            </div>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Error!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Icon multiline disabled
+    </h2>
+    <div>
+      <div
+        className="input dark disabled"
+      >
+        <div
+          className="icon"
+        >
+          <Mail32.svg
+            height={16}
+            width={16}
+          />
+        </div>
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container multiline"
+          >
+            <textarea
+              disabled={true}
+              name="multiline"
+              onBlur={[Function]}
+              onChange={null}
+              onFocus={[Function]}
+              onKeyPress={null}
+              placeholder="this is disabled"
+              rows="1"
+              value=""
+            />
+            <label
+              className=""
+              htmlFor="multiline-shortid-mock"
+            >
+              Disabled
+            </label>
+            <div
+              className="expander"
+            >
+              
+              <br />
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Password default
+    </h2>
+    <div>
+      <div
+        className="input dark active"
+      >
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container"
+          >
+            <input
+              disabled={false}
+              id="email-shortid-mock"
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyPress={null}
+              placeholder="name@email.com"
+              type="password"
+              value="pagarme@pagar.me"
+            />
+            <button
+              className="displayPasswordIcon"
+              onClick={[Function]}
+              tabIndex="-1"
+              type="button"
+            >
+              <svg />
+            </button>
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Secondary text
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Password error
+    </h2>
+    <div>
+      <div
+        className="input dark active error"
+      >
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container"
+          >
+            <input
+              disabled={false}
+              id="email-shortid-mock"
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyPress={null}
+              placeholder="name@email.com"
+              type="password"
+              value="pagarme@pagar.me"
+            />
+            <button
+              className="displayPasswordIcon"
+              onClick={[Function]}
+              tabIndex="-1"
+              type="button"
+            >
+              <svg />
+            </button>
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            must have more than 12 characters
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Password disabled
+    </h2>
+    <div>
+      <div
+        className="input dark disabled"
+      >
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container"
+          >
+            <input
+              disabled={true}
+              id="pass-shortid-mock"
+              name="pass"
+              onBlur={[Function]}
+              onChange={null}
+              onFocus={[Function]}
+              onKeyPress={null}
+              placeholder="disabled"
+              type="password"
+              value=""
+            />
+            <label
+              className=""
+              htmlFor="pass-shortid-mock"
+            >
+              Your password
+            </label>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            must have more than 12 characters
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
 `;
 
