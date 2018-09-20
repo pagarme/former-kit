@@ -8,6 +8,8 @@ describe('Input', () => {
   const theme = {
     secondaryText: 'secondary',
     contentPresent: 'secondary',
+    dark: 'dark',
+    light: 'light',
   }
 
   describe('singleline', () => {
@@ -129,6 +131,7 @@ describe('Input', () => {
       expect(component.props().mask).toEqual('1111 1111 1111 1111')
       expect(component.html()).toContain('4151 1124 ____ ____')
     })
+
     it('should trigger onFocus', () => {
       const onChange = jest.fn()
       const onFocus = jest.fn()
@@ -151,6 +154,7 @@ describe('Input', () => {
 
       expect(onFocus).toHaveBeenCalled()
     })
+
     it('should trigger onBlur', () => {
       const onChange = jest.fn()
       const onBlur = jest.fn()
@@ -172,6 +176,50 @@ describe('Input', () => {
         .simulate('blur')
 
       expect(onBlur).toHaveBeenCalled()
+    })
+
+    it('should mount with dark base prop', () => {
+      const onChange = jest.fn()
+
+      const component = shallow(
+        <Input
+          base="dark"
+          name="name"
+          theme={theme}
+          label="Name"
+          onChange={onChange}
+          value=""
+        />
+      )
+
+      const div = component
+        .dive()
+        .find('div')
+        .first()
+
+      expect(div.hasClass('dark')).toBe(true)
+    })
+
+    it('should mount with light base prop', () => {
+      const onChange = jest.fn()
+
+      const component = shallow(
+        <Input
+          base="light"
+          name="name"
+          theme={theme}
+          label="Name"
+          onChange={onChange}
+          value=""
+        />
+      )
+
+      const div = component
+        .dive()
+        .find('div')
+        .first()
+
+      expect(div.hasClass('light')).toBe(true)
     })
   })
 
