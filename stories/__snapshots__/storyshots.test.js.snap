@@ -15517,6 +15517,704 @@ exports[`Storyshots Dropdown Form 1`] = `
 </div>
 `;
 
+exports[`Storyshots Flexbox Align Items 1`] = `
+Array [
+  <section
+    className=""
+  >
+    <h2>
+      alignItems: flex-start
+    </h2>
+    <div>
+      <div
+        className="flexbox alignFlexStart justifyFlexStart row"
+      >
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            button
+          </span>
+        </button>
+        <div
+          className="spacing tiny"
+        />
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            button
+          </span>
+        </button>
+        <div
+          className="spacing tiny"
+        />
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            button
+          </span>
+        </button>
+      </div>
+    </div>
+  </section>,
+  <section
+    className=""
+  >
+    <h2>
+      alignItems: center
+    </h2>
+    <div>
+      <div
+        className="flexbox alignCenter justifyFlexStart row"
+      >
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            button
+          </span>
+        </button>
+        <div
+          className="spacing tiny"
+        />
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            button
+          </span>
+        </button>
+        <div
+          className="spacing tiny"
+        />
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            button
+          </span>
+        </button>
+      </div>
+    </div>
+  </section>,
+  <section
+    className=""
+  >
+    <h2>
+      alignItems: flex-end
+    </h2>
+    <div>
+      <div
+        className="flexbox alignFlexEnd justifyFlexStart row"
+      >
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            button
+          </span>
+        </button>
+        <div
+          className="spacing tiny"
+        />
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            button
+          </span>
+        </button>
+        <div
+          className="spacing tiny"
+        />
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            button
+          </span>
+        </button>
+      </div>
+    </div>
+  </section>,
+  <section
+    className=""
+  >
+    <h2>
+      alignItems: stretch
+    </h2>
+    <div>
+      <div
+        className="flexbox justifyFlexStart row stretch"
+      >
+        <div
+          className={undefined}
+        >
+          A long text
+          <br />
+           A long long text
+        </div>
+        <div
+          className="spacing tiny"
+        />
+        <div
+          className={undefined}
+        >
+          A small text.
+        </div>
+        <div
+          className="spacing tiny"
+        />
+        <div
+          className={undefined}
+        >
+          A small text.
+        </div>
+        <div
+          className="spacing tiny"
+        />
+        <div
+          className={undefined}
+        >
+          A small text.
+        </div>
+        <div
+          className="spacing tiny"
+        />
+      </div>
+    </div>
+  </section>,
+  <section
+    className=""
+  >
+    <h2>
+      alignItems: baseline
+    </h2>
+    <div>
+      <div
+        className="flexbox baseline justifyFlexStart row"
+      >
+        <div
+          className={undefined}
+        >
+          A long text
+          <br />
+           A long long text
+        </div>
+        <div
+          className="spacing tiny"
+        />
+        <div
+          className={undefined}
+        >
+          A small text.
+        </div>
+        <div
+          className="spacing tiny"
+        />
+        <div
+          className={undefined}
+        >
+          lets 
+          <br />
+          break 
+          <br />
+          lines.
+        </div>
+        <div
+          className="spacing tiny"
+        />
+        <div
+          className={undefined}
+        >
+          A small text.
+        </div>
+        <div
+          className="spacing tiny"
+        />
+      </div>
+    </div>
+  </section>,
+]
+`;
+
+exports[`Storyshots Flexbox Directions 1`] = `
+Array [
+  <section
+    className=""
+  >
+    <h2>
+      Direction: row
+    </h2>
+    <div>
+      <div
+        className="flexbox alignFlexStart justifyFlexStart row"
+      >
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            A Button
+          </span>
+        </button>
+        <div
+          className="spacing tiny"
+        />
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            Another Button
+          </span>
+        </button>
+      </div>
+    </div>
+  </section>,
+  <section
+    className=""
+  >
+    <h2>
+      Direction: column
+    </h2>
+    <div>
+      <div
+        className="flexbox alignFlexStart column justifyFlexStart"
+      >
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            A Button
+          </span>
+        </button>
+        <div
+          className="spacing tiny"
+        />
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            Another Button
+          </span>
+        </button>
+      </div>
+    </div>
+  </section>,
+  <section
+    className=""
+  >
+    <h2>
+      Direction: row-reverse
+    </h2>
+    <div>
+      <div
+        className="flexbox alignFlexStart justifyFlexStart rowReverse"
+      >
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            first button
+          </span>
+        </button>
+        <div
+          className="spacing tiny"
+        />
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            second Button
+          </span>
+        </button>
+      </div>
+    </div>
+  </section>,
+  <section
+    className=""
+  >
+    <h2>
+      Direction: column-reverse
+    </h2>
+    <div>
+      <div
+        className="flexbox alignFlexStart columnReverse justifyFlexStart"
+      >
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            first button
+          </span>
+        </button>
+        <div
+          className="spacing tiny"
+        />
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            second Button
+          </span>
+        </button>
+      </div>
+    </div>
+  </section>,
+]
+`;
+
+exports[`Storyshots Flexbox JustifyContent 1`] = `
+Array [
+  <section
+    className=""
+  >
+    <h2>
+      justifyContent: flex-start
+    </h2>
+    <div>
+      <div
+        className="flexbox alignFlexStart justifyFlexStart row"
+      >
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            button
+          </span>
+        </button>
+        <div
+          className="spacing tiny"
+        />
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            button
+          </span>
+        </button>
+        <div
+          className="spacing tiny"
+        />
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            button
+          </span>
+        </button>
+      </div>
+    </div>
+  </section>,
+  <section
+    className=""
+  >
+    <h2>
+      justifyContent: center
+    </h2>
+    <div>
+      <div
+        className="flexbox alignFlexStart justifyCenter row"
+      >
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            button
+          </span>
+        </button>
+        <div
+          className="spacing tiny"
+        />
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            button
+          </span>
+        </button>
+        <div
+          className="spacing tiny"
+        />
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            button
+          </span>
+        </button>
+      </div>
+    </div>
+  </section>,
+  <section
+    className=""
+  >
+    <h2>
+      justifyContent: flex-end
+    </h2>
+    <div>
+      <div
+        className="flexbox alignFlexStart justifyFlexEnd row"
+      >
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            button
+          </span>
+        </button>
+        <div
+          className="spacing tiny"
+        />
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            button
+          </span>
+        </button>
+        <div
+          className="spacing tiny"
+        />
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            button
+          </span>
+        </button>
+      </div>
+    </div>
+  </section>,
+  <section
+    className=""
+  >
+    <h2>
+      justifyContent: space-evenly
+    </h2>
+    <div>
+      <div
+        className="flexbox alignFlexStart row spaceEvenly"
+      >
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            button
+          </span>
+        </button>
+        <div
+          className="spacing tiny"
+        />
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            button
+          </span>
+        </button>
+        <div
+          className="spacing tiny"
+        />
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            button
+          </span>
+        </button>
+      </div>
+    </div>
+  </section>,
+  <section
+    className=""
+  >
+    <h2>
+      justifyContent: space-around
+    </h2>
+    <div>
+      <div
+        className="flexbox alignFlexStart row spaceAround"
+      >
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            button
+          </span>
+        </button>
+        <div
+          className="spacing tiny"
+        />
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            button
+          </span>
+        </button>
+        <div
+          className="spacing tiny"
+        />
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            button
+          </span>
+        </button>
+      </div>
+    </div>
+  </section>,
+  <section
+    className=""
+  >
+    <h2>
+      justifyContent: space-between
+    </h2>
+    <div>
+      <div
+        className="flexbox alignFlexStart row spaceBetween"
+      >
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            button
+          </span>
+        </button>
+        <div
+          className="spacing tiny"
+        />
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            button
+          </span>
+        </button>
+        <div
+          className="spacing tiny"
+        />
+        <button
+          className="button flat normalRelevance default"
+          disabled={false}
+          onClick={null}
+          type="button"
+        >
+          <span>
+            button
+          </span>
+        </button>
+      </div>
+    </div>
+  </section>,
+]
+`;
+
 exports[`Storyshots Footer Default 1`] = `
 <section
   className="typography"
