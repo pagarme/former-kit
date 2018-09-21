@@ -14,6 +14,7 @@ class InputState extends React.Component {
 
   render () {
     const {
+      base,
       error,
       icon,
       label,
@@ -29,6 +30,7 @@ class InputState extends React.Component {
 
     return (
       <Input
+        base={base}
         error={error}
         hint="Secondary text"
         icon={icon}
@@ -48,6 +50,7 @@ class InputState extends React.Component {
 }
 
 InputState.defaultProps = {
+  base: 'light',
   error: '',
   icon: null,
   label: 'Your email',
@@ -72,24 +75,24 @@ storiesOf('Inputs', module)
 
       <Section title="Disabled">
         <Input
-          name="email"
-          label="Your email"
           disabled
           hint="Secondary text"
-          placeholder="email@email.com"
+          label="Your email"
+          name="email"
           onChange={action('text changed')}
+          placeholder="email@email.com"
           value=""
         />
       </Section>
 
       <Section title="Disabled with text">
         <Input
-          name="email"
-          label="Your email"
           disabled
           hint="Secondary text"
-          placeholder="email@email.com"
+          label="Your email"
+          name="email"
           onChange={action('text changed')}
+          placeholder="email@email.com"
           value="Disabled!"
         />
       </Section>
@@ -113,12 +116,12 @@ storiesOf('Inputs', module)
 
       <Section title="Multiline disabled">
         <Input
-          name="multiline"
+          disabled
           label="Disabled"
           multiline
-          placeholder="this is disabled"
-          disabled
+          name="multiline"
           onChange={action('text changed')}
+          placeholder="this is disabled"
           value=""
         />
       </Section>
@@ -133,12 +136,12 @@ storiesOf('Inputs', module)
 
       <Section title="Icon disabled">
         <Input
-          name="name"
-          label="Your name"
-          placeholder="disabled"
           disabled
           icon={<IconMail width={16} height={16} />}
+          label="Your name"
+          name="name"
           onChange={action('text changed')}
+          placeholder="disabled"
           value=""
         />
       </Section>
@@ -153,13 +156,13 @@ storiesOf('Inputs', module)
 
       <Section title="Icon multiline disabled">
         <Input
-          name="multiline"
-          label="Disabled"
-          placeholder="this is disabled"
-          multiline
           disabled
           icon={<IconMail width={16} height={16} />}
+          label="Disabled"
+          multiline
+          name="multiline"
           onChange={action('text changed')}
+          placeholder="this is disabled"
           value=""
         />
       </Section>
@@ -174,16 +177,171 @@ storiesOf('Inputs', module)
 
       <Section title="Password disabled">
         <Input
-          type="password"
-          name="pass"
-          label="Your password"
           disabled
-          placeholder="disabled"
           hint="must have more than 12 characters"
+          label="Your password"
+          name="pass"
           onChange={action('text changed')}
+          placeholder="disabled"
+          type="password"
+          value=""
+        />
+      </Section>
+
+      <Section title="Default" base="dark">
+        <InputState type="text" base="dark" />
+      </Section>
+
+      <Section title="Error" base="dark">
+        <InputState
+          base="dark"
+          error="Wrong email"
+          type="text"
+        />
+      </Section>
+
+      <Section title="Disabled" base="dark">
+        <Input
+          base="dark"
+          disabled
+          hint="Secondary text"
+          label="Your email"
+          name="email"
+          onChange={action('text changed')}
+          placeholder="email@email.com"
+          value=""
+        />
+      </Section>
+
+      <Section title="Disabled with text" base="dark">
+        <Input
+          base="dark"
+          disabled
+          hint="Secondary text"
+          label="Your email"
+          name="email"
+          onChange={action('text changed')}
+          placeholder="email@email.com"
+          value="Disabled!"
+        />
+      </Section>
+
+      <Section title="Masked input" base="dark">
+        <InputState
+          base="dark"
+          mask="111-111-111"
+          placeholder="Type your phone number"
+          type="text"
+          value=""
+        />
+      </Section>
+
+      <Section title="Multiline default" base="dark">
+        <InputState multiline placeholder="default" base="dark" />
+      </Section>
+
+      <Section title="Multiline error" base="dark">
+        <InputState multiline error="Error!" base="dark" />
+      </Section>
+
+      <Section title="Multiline disabled" base="dark">
+        <Input
+          base="dark"
+          disabled
+          label="Disabled"
+          multiline
+          name="multiline"
+          onChange={action('text changed')}
+          placeholder="this is disabled"
+          value=""
+        />
+      </Section>
+
+      <Section title="Icon default" base="dark">
+        <InputState
+          base="dark"
+          icon={<IconMail width={16} height={16} />}
+          type="text"
+        />
+      </Section>
+
+      <Section title="Icon error" base="dark">
+        <InputState
+          base="dark"
+          error="Error!"
+          icon={<IconMail width={16} height={16} />}
+          type="text"
+        />
+      </Section>
+
+      <Section title="Icon disabled" base="dark">
+        <Input
+          base="dark"
+          disabled
+          icon={<IconMail width={16} height={16} />}
+          label="Your name"
+          name="name"
+          onChange={action('text changed')}
+          placeholder="disabled"
+          value=""
+        />
+      </Section>
+
+      <Section title="Icon multiline default" base="dark">
+        <InputState
+          base="dark"
+          icon={<IconMail width={16} height={16} />}
+          multiline
+        />
+      </Section>
+
+      <Section title="Icon multiline error" base="dark">
+        <InputState
+          base="dark"
+          error="Error!"
+          icon={<IconMail width={16} height={16} />}
+          multiline
+        />
+      </Section>
+
+      <Section title="Icon multiline disabled" base="dark">
+        <Input
+          base="dark"
+          disabled
+          icon={<IconMail width={16} height={16} />}
+          label="Disabled"
+          multiline
+          name="multiline"
+          onChange={action('text changed')}
+          placeholder="this is disabled"
+          value=""
+        />
+      </Section>
+
+      <Section title="Password default" base="dark">
+        <InputState type="password" base="dark" />
+      </Section>
+
+      <Section title="Password error" base="dark">
+        <InputState
+          base="dark"
+          error="must have more than 12 characters"
+          type="password"
+        />
+      </Section>
+
+      <Section title="Password disabled" base="dark">
+        <Input
+          base="dark"
+          disabled
+          hint="must have more than 12 characters"
+          label="Your password"
+          name="pass"
+          onChange={action('text changed')}
+          placeholder="disabled"
+          type="password"
           value=""
         />
       </Section>
     </div>
   ))
-

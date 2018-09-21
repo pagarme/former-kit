@@ -11,6 +11,7 @@ class InputState extends React.Component {
 
   render () {
     const {
+      base,
       error,
       icon,
       multiline,
@@ -29,6 +30,7 @@ class InputState extends React.Component {
     return inputStyle === 'default'
       ? (
         <DefaultInput
+          base={base}
           error={error}
           hint={hint}
           icon={icon}
@@ -45,6 +47,7 @@ class InputState extends React.Component {
       )
       : (
         <FormInput
+          base={base}
           error={error}
           hint={hint}
           icon={icon}
@@ -63,6 +66,10 @@ class InputState extends React.Component {
 }
 
 InputState.propTypes = {
+  base: PropTypes.oneOf([
+    'dark',
+    'light',
+  ]),
   error: PropTypes.string,
   success: PropTypes.string,
   icon: PropTypes.element,
@@ -75,6 +82,7 @@ InputState.propTypes = {
 }
 
 InputState.defaultProps = {
+  base: 'light',
   error: '',
   success: '',
   icon: null,
