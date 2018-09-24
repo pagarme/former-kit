@@ -79,9 +79,11 @@ Alert.propTypes = {
   theme: shape({
     alert: string,
     content: string,
+    dark: string,
     error: string,
     icon: string,
     info: string,
+    light: string,
     success: string,
     warning: string,
   }),
