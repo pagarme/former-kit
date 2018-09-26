@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import { isNil } from 'ramda'
@@ -7,45 +7,121 @@ import ThemeConsumer from '../ThemeConsumer'
 
 const consumeTheme = ThemeConsumer('UIButton')
 
+const createRipple = (e) => {
+  const {
+    clientX,
+    clientY,
+    currentTarget,
+  } = e
+
+  const { offsetHeight, offsetWidth } = currentTarget
+  const { left, top } = currentTarget.getBoundingClientRect()
+
+  const rippleSize = Math.max(offsetHeight, offsetWidth)
+  const centralize = rippleSize / 2
+  const rippleX = clientX - left - centralize
+  const rippleY = clientY - top - centralize
+
+  return {
+    rippleHeight: rippleSize,
+    rippleWidth: rippleSize,
+    rippleX,
+    rippleY,
+  }
+}
+
 /**
  * Simple HTML button in a beautiful skin.
  */
-const Button = ({
-  children,
-  circle,
-  disabled,
-  fill,
-  icon,
-  iconAlignment,
-  onClick,
-  relevance,
-  size,
-  theme,
-  type,
-}) => {
-  const buttonClasses = classNames(
-    theme.button,
-    theme[fill],
-    theme[`${relevance}Relevance`],
-    theme[size],
-    {
-      [theme.iconButton]: !isNil(icon) && isNil(children),
-      [theme.circle]: !isNil(icon) && isNil(children) && circle,
-    }
-  )
+class Button extends PureComponent {
+  constructor () {
+    super()
 
-  return (
-    <button
-      disabled={disabled}
-      className={buttonClasses}
-      onClick={onClick}
-      type={type}
-    >
-      {(!isNil(icon) && iconAlignment === 'start') && icon}
-      {!isNil(children) && <span>{children}</span>}
-      {(!isNil(icon) && iconAlignment === 'end') && icon}
-    </button>
-  )
+    this.state = {
+      rippleX: 0,
+      rippleY: 0,
+      rippleHeight: 0,
+      rippleWidth: 0,
+    }
+
+    this.handleClick = this.handleClick.bind(this)
+  }
+
+  handleClick (e) {
+    const {
+      rippleHeight,
+      rippleWidth,
+      rippleX,
+      rippleY,
+    } = createRipple(e)
+
+    this.setState({
+      rippleX,
+      rippleY,
+      rippleHeight,
+      rippleWidth,
+    })
+
+    if (this.props.onClick) {
+      this.props.onClick()
+    }
+  }
+
+  render () {
+    const {
+      children,
+      circle,
+      disabled,
+      fill,
+      icon,
+      iconAlignment,
+      relevance,
+      size,
+      theme,
+      type,
+    } = this.props
+
+    const {
+      rippleHeight,
+      rippleWidth,
+      rippleX,
+      rippleY,
+    } = this.state
+
+    const buttonClasses = classNames(
+      theme.button,
+      theme[fill],
+      theme[`${relevance}Relevance`],
+      theme[size],
+      {
+        [theme.iconButton]: !isNil(icon) && isNil(children),
+        [theme.circle]: !isNil(icon) && isNil(children) && circle,
+      }
+    )
+
+    return (
+      <button
+        disabled={disabled}
+        className={buttonClasses}
+        onClick={this.handleClick}
+        type={type}
+      >
+        {(!isNil(icon) && iconAlignment === 'start') && icon}
+        {!isNil(children) && <span>{children}</span>}
+        {(!isNil(icon) && iconAlignment === 'end') && icon}
+
+        <span
+          className={theme.ripple}
+          style={{
+            height: rippleHeight,
+            left: rippleX,
+            top: rippleY,
+            width: rippleWidth,
+          }}
+        />
+      </button>
+    )
+  }
 }
 
 Button.propTypes = {
@@ -112,6 +188,7 @@ Button.propTypes = {
     lowRelevance: PropTypes.string,
     normalRelevance: PropTypes.string,
     outline: PropTypes.string,
+    ripple: PropTypes.string,
     size: PropTypes.string,
     tiny: PropTypes.string,
   }),
