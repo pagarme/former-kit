@@ -21,6 +21,7 @@ class InputState extends React.Component {
       mask,
       multiline,
       placeholder,
+      size,
       type,
     } = this.props
 
@@ -42,6 +43,7 @@ class InputState extends React.Component {
         onChange={e => this.setState({ value: e.target.value })}
         onFocus={action('focus')}
         placeholder={placeholder}
+        size={size}
         type={type}
         value={value}
       />
@@ -67,6 +69,10 @@ storiesOf('Inputs', module)
     <div>
       <Section title="Default">
         <InputState type="text" />
+      </Section>
+
+      <Section title="Tiny size">
+        <InputState type="text" size="tiny" />
       </Section>
 
       <Section title="Error">
@@ -190,6 +196,10 @@ storiesOf('Inputs', module)
 
       <Section title="Default" base="dark">
         <InputState type="text" base="dark" />
+      </Section>
+
+      <Section title="Tiny Size" base="dark">
+        <InputState type="text" size="tiny" base="dark" />
       </Section>
 
       <Section title="Error" base="dark">

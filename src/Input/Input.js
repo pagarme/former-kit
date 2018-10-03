@@ -188,6 +188,7 @@ class Input extends React.PureComponent {
       label,
       multiline,
       onChange,
+      size,
       theme,
       value,
     } = this.props
@@ -205,6 +206,7 @@ class Input extends React.PureComponent {
         [theme.focused]: this.state.isFocused,
         [theme.disabled]: disabled,
         [theme.error]: error,
+        [theme[size]]: size,
       }
     )
 
@@ -285,6 +287,7 @@ Input.propTypes = {
     light: PropTypes.string,
     multiline: PropTypes.string,
     secondaryText: PropTypes.string,
+    size: PropTypes.string,
   }),
 
   base: PropTypes.oneOf([
@@ -368,6 +371,12 @@ Input.propTypes = {
    */
   renderer: PropTypes.func,
   /**
+   * Component's size.
+   */
+  size: PropTypes.oneOf([
+    'tiny',
+  ]),
+  /**
    * Input's type.
    */
   type: PropTypes.oneOf([
@@ -401,6 +410,7 @@ Input.defaultProps = {
   onKeyPress: null,
   placeholder: '',
   renderer: null,
+  size: null,
   theme: {},
   type: 'text',
   value: '',

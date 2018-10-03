@@ -18,6 +18,7 @@ class InputState extends React.Component {
       label,
       hint,
       disabled,
+      size,
     } = this.props
 
     const {
@@ -35,6 +36,7 @@ class InputState extends React.Component {
           name="email"
           onChange={e => this.setState({ email: e.target.value })}
           placeholder="name@email.com"
+          size={size}
           type={type}
           value={email}
           disabled={disabled}
@@ -101,6 +103,49 @@ Default
       label="Email!"
       hint="Hint!"
       multiline
+    />
+  </div>
+```
+
+Tiny size
+```jsx
+  const InputState = require('./example/InputState').default;
+  const IconMail = require('emblematic-icons/svg/Mail32.svg').default;
+  <div>
+    <InputState
+      type="text"
+      label="Email!"
+      size="tiny"
+    />
+    <br />
+    <InputState
+      type="text"
+      label="Email!"
+      hint="Hint!"
+      size="tiny"
+    />
+    <br />
+    <InputState
+      type="text"
+      label="Email!"
+      hint="Hint!"
+      icon={<IconMail width={16} height={16} />}
+      size="tiny"
+    />
+    <br />
+    <InputState
+      type="password"
+      label="Password"
+      hint="Hint!"
+      size="tiny"
+    />
+    <br />
+    <InputState
+      type="text"
+      label="Email!"
+      hint="Hint!"
+      multiline
+      size="tiny"
     />
   </div>
 ```
@@ -190,6 +235,7 @@ Error
     />
   </div>
 ```
+
 
 ### __Form input__ ###
 #### **States** ####
