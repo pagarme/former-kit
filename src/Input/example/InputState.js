@@ -15,6 +15,7 @@ class InputState extends React.Component {
       error,
       icon,
       multiline,
+      size,
       success,
       type,
       inputStyle,
@@ -39,6 +40,7 @@ class InputState extends React.Component {
           name="email"
           onChange={e => this.setState({ email: e.target.value })}
           placeholder="name@email.com"
+          size={size}
           success={success}
           type={type}
           value={email}
@@ -74,6 +76,7 @@ InputState.propTypes = {
   success: PropTypes.string,
   icon: PropTypes.element,
   multiline: PropTypes.bool,
+  size: PropTypes.string,
   type: PropTypes.string,
   inputStyle: PropTypes.string,
   label: PropTypes.string,
@@ -88,6 +91,7 @@ InputState.defaultProps = {
   icon: null,
   multiline: false,
   type: '',
+  size: null,
   inputStyle: 'default',
   label: '',
   hint: '',

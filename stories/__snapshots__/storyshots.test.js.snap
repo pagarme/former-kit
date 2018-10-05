@@ -19597,6 +19597,52 @@ exports[`Storyshots Inputs Default 1`] = `
               onFocus={[Function]}
               onKeyPress={null}
               placeholder="name@email.com"
+              size={null}
+              type="text"
+              value="pagarme@pagar.me"
+            />
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Secondary text
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Tiny size
+    </h2>
+    <div>
+      <div
+        className="input light active tiny"
+      >
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container"
+          >
+            <input
+              disabled={false}
+              id="email-shortid-mock"
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyPress={null}
+              placeholder="name@email.com"
+              size="tiny"
               type="text"
               value="pagarme@pagar.me"
             />
@@ -19641,6 +19687,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onFocus={[Function]}
               onKeyPress={null}
               placeholder="name@email.com"
+              size={null}
               type="text"
               value="pagarme@pagar.me"
             />
@@ -19685,6 +19732,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onFocus={[Function]}
               onKeyPress={null}
               placeholder="email@email.com"
+              size={null}
               type="text"
               value=""
             />
@@ -19729,6 +19777,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onFocus={[Function]}
               onKeyPress={null}
               placeholder="email@email.com"
+              size={null}
               type="text"
               value="Disabled!"
             />
@@ -19776,7 +19825,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onKeyPress={[Function]}
               onPaste={[Function]}
               placeholder="Type your phone number"
-              size={11}
+              size={null}
               value=""
             />
             <label
@@ -19820,6 +19869,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onKeyPress={null}
               placeholder="default"
               rows="1"
+              size={null}
               value="pagarme@pagar.me"
             />
             <label
@@ -19869,6 +19919,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onKeyPress={null}
               placeholder="name@email.com"
               rows="1"
+              size={null}
               value="pagarme@pagar.me"
             />
             <label
@@ -19918,6 +19969,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onKeyPress={null}
               placeholder="this is disabled"
               rows="1"
+              size={null}
               value=""
             />
             <label
@@ -19971,6 +20023,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onFocus={[Function]}
               onKeyPress={null}
               placeholder="name@email.com"
+              size={null}
               type="text"
               value="pagarme@pagar.me"
             />
@@ -20023,6 +20076,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onFocus={[Function]}
               onKeyPress={null}
               placeholder="name@email.com"
+              size={null}
               type="text"
               value="pagarme@pagar.me"
             />
@@ -20075,6 +20129,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onFocus={[Function]}
               onKeyPress={null}
               placeholder="disabled"
+              size={null}
               type="text"
               value=""
             />
@@ -20123,6 +20178,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onKeyPress={null}
               placeholder="name@email.com"
               rows="1"
+              size={null}
               value="pagarme@pagar.me"
             />
             <label
@@ -20180,6 +20236,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onKeyPress={null}
               placeholder="name@email.com"
               rows="1"
+              size={null}
               value="pagarme@pagar.me"
             />
             <label
@@ -20237,6 +20294,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onKeyPress={null}
               placeholder="this is disabled"
               rows="1"
+              size={null}
               value=""
             />
             <label
@@ -20282,6 +20340,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onFocus={[Function]}
               onKeyPress={null}
               placeholder="name@email.com"
+              size={null}
               type="password"
               value="pagarme@pagar.me"
             />
@@ -20334,6 +20393,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onFocus={[Function]}
               onKeyPress={null}
               placeholder="name@email.com"
+              size={null}
               type="password"
               value="pagarme@pagar.me"
             />
@@ -20386,6 +20446,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onFocus={[Function]}
               onKeyPress={null}
               placeholder="disabled"
+              size={null}
               type="password"
               value=""
             />
@@ -20430,6 +20491,52 @@ exports[`Storyshots Inputs Default 1`] = `
               onFocus={[Function]}
               onKeyPress={null}
               placeholder="name@email.com"
+              size={null}
+              type="text"
+              value="pagarme@pagar.me"
+            />
+            <label
+              className="contentPresent"
+              htmlFor="email-shortid-mock"
+            >
+              Your email
+            </label>
+          </div>
+          <p
+            className="secondaryText"
+          >
+            Secondary text
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      Tiny Size
+    </h2>
+    <div>
+      <div
+        className="input dark active tiny"
+      >
+        <div
+          className="boxContainer"
+        >
+          <div
+            className="container"
+          >
+            <input
+              disabled={false}
+              id="email-shortid-mock"
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyPress={null}
+              placeholder="name@email.com"
+              size="tiny"
               type="text"
               value="pagarme@pagar.me"
             />
@@ -20474,6 +20581,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onFocus={[Function]}
               onKeyPress={null}
               placeholder="name@email.com"
+              size={null}
               type="text"
               value="pagarme@pagar.me"
             />
@@ -20518,6 +20626,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onFocus={[Function]}
               onKeyPress={null}
               placeholder="email@email.com"
+              size={null}
               type="text"
               value=""
             />
@@ -20562,6 +20671,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onFocus={[Function]}
               onKeyPress={null}
               placeholder="email@email.com"
+              size={null}
               type="text"
               value="Disabled!"
             />
@@ -20609,7 +20719,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onKeyPress={[Function]}
               onPaste={[Function]}
               placeholder="Type your phone number"
-              size={11}
+              size={null}
               value=""
             />
             <label
@@ -20653,6 +20763,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onKeyPress={null}
               placeholder="default"
               rows="1"
+              size={null}
               value="pagarme@pagar.me"
             />
             <label
@@ -20702,6 +20813,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onKeyPress={null}
               placeholder="name@email.com"
               rows="1"
+              size={null}
               value="pagarme@pagar.me"
             />
             <label
@@ -20751,6 +20863,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onKeyPress={null}
               placeholder="this is disabled"
               rows="1"
+              size={null}
               value=""
             />
             <label
@@ -20804,6 +20917,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onFocus={[Function]}
               onKeyPress={null}
               placeholder="name@email.com"
+              size={null}
               type="text"
               value="pagarme@pagar.me"
             />
@@ -20856,6 +20970,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onFocus={[Function]}
               onKeyPress={null}
               placeholder="name@email.com"
+              size={null}
               type="text"
               value="pagarme@pagar.me"
             />
@@ -20908,6 +21023,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onFocus={[Function]}
               onKeyPress={null}
               placeholder="disabled"
+              size={null}
               type="text"
               value=""
             />
@@ -20956,6 +21072,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onKeyPress={null}
               placeholder="name@email.com"
               rows="1"
+              size={null}
               value="pagarme@pagar.me"
             />
             <label
@@ -21013,6 +21130,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onKeyPress={null}
               placeholder="name@email.com"
               rows="1"
+              size={null}
               value="pagarme@pagar.me"
             />
             <label
@@ -21070,6 +21188,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onKeyPress={null}
               placeholder="this is disabled"
               rows="1"
+              size={null}
               value=""
             />
             <label
@@ -21115,6 +21234,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onFocus={[Function]}
               onKeyPress={null}
               placeholder="name@email.com"
+              size={null}
               type="password"
               value="pagarme@pagar.me"
             />
@@ -21167,6 +21287,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onFocus={[Function]}
               onKeyPress={null}
               placeholder="name@email.com"
+              size={null}
               type="password"
               value="pagarme@pagar.me"
             />
@@ -21219,6 +21340,7 @@ exports[`Storyshots Inputs Default 1`] = `
               onFocus={[Function]}
               onKeyPress={null}
               placeholder="disabled"
+              size={null}
               type="password"
               value=""
             />
@@ -21270,6 +21392,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onFocus={[Function]}
               onKeyPress={null}
               placeholder="name@email.com"
+              size={null}
               type="text"
               value="pagarme@pagar.me"
             />
@@ -21314,6 +21437,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onFocus={[Function]}
               onKeyPress={null}
               placeholder="name@email.com"
+              size={null}
               type="text"
               value="pagarme@pagar.me"
             />
@@ -21358,6 +21482,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onFocus={[Function]}
               onKeyPress={null}
               placeholder="disabled"
+              size={null}
               type="text"
               value=""
             />
@@ -21402,6 +21527,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onFocus={[Function]}
               onKeyPress={null}
               placeholder="disabled"
+              size={null}
               type="text"
               value="Disabled!"
             />
@@ -21449,7 +21575,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onKeyPress={[Function]}
               onPaste={[Function]}
               placeholder="Type your phone number"
-              size={11}
+              size={null}
               value="431-051-080"
             />
             <label
@@ -21493,6 +21619,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onKeyPress={null}
               placeholder="default"
               rows="1"
+              size={null}
               value="pagarme@pagar.me"
             />
             <label
@@ -21542,6 +21669,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onKeyPress={null}
               placeholder="name@email.com"
               rows="1"
+              size={null}
               value="pagarme@pagar.me"
             />
             <label
@@ -21591,6 +21719,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onKeyPress={null}
               placeholder="disabled"
               rows="1"
+              size={null}
               value="Multiline disabled!"
             />
             <label
@@ -21644,6 +21773,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onFocus={[Function]}
               onKeyPress={null}
               placeholder="name@email.com"
+              size={null}
               type="text"
               value="pagarme@pagar.me"
             />
@@ -21696,6 +21826,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onFocus={[Function]}
               onKeyPress={null}
               placeholder="name@email.com"
+              size={null}
               type="text"
               value="pagarme@pagar.me"
             />
@@ -21748,6 +21879,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onFocus={[Function]}
               onKeyPress={null}
               placeholder="disabled"
+              size={null}
               type="text"
               value=""
             />
@@ -21796,6 +21928,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onKeyPress={null}
               placeholder="name@email.com"
               rows="1"
+              size={null}
               value="pagarme@pagar.me"
             />
             <label
@@ -21853,6 +21986,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onKeyPress={null}
               placeholder="name@email.com"
               rows="1"
+              size={null}
               value="pagarme@pagar.me"
             />
             <label
@@ -21910,6 +22044,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onKeyPress={null}
               placeholder="disabled"
               rows="1"
+              size={null}
               value=""
             />
             <label
@@ -21955,6 +22090,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onFocus={[Function]}
               onKeyPress={null}
               placeholder="name@email.com"
+              size={null}
               type="password"
               value="pagarme@pagar.me"
             />
@@ -22007,6 +22143,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onFocus={[Function]}
               onKeyPress={null}
               placeholder="name@email.com"
+              size={null}
               type="password"
               value="pagarme@pagar.me"
             />
@@ -22059,6 +22196,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onFocus={[Function]}
               onKeyPress={null}
               placeholder="disabled"
+              size={null}
               type="password"
               value=""
             />
@@ -22103,6 +22241,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onFocus={[Function]}
               onKeyPress={null}
               placeholder="disabled"
+              size={null}
               type="password"
               value="secret_pass"
             />
@@ -22147,6 +22286,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onFocus={[Function]}
               onKeyPress={null}
               placeholder="name@email.com"
+              size={null}
               type="text"
               value="pagarme@pagar.me"
             />
@@ -22191,6 +22331,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onFocus={[Function]}
               onKeyPress={null}
               placeholder="name@email.com"
+              size={null}
               type="text"
               value="pagarme@pagar.me"
             />
@@ -22235,6 +22376,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onFocus={[Function]}
               onKeyPress={null}
               placeholder="disabled"
+              size={null}
               type="text"
               value=""
             />
@@ -22279,6 +22421,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onFocus={[Function]}
               onKeyPress={null}
               placeholder="disabled"
+              size={null}
               type="text"
               value="Disabled!"
             />
@@ -22326,7 +22469,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onKeyPress={[Function]}
               onPaste={[Function]}
               placeholder="Type your phone number"
-              size={11}
+              size={null}
               value="431-051-080"
             />
             <label
@@ -22370,6 +22513,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onKeyPress={null}
               placeholder="default"
               rows="1"
+              size={null}
               value="pagarme@pagar.me"
             />
             <label
@@ -22419,6 +22563,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onKeyPress={null}
               placeholder="name@email.com"
               rows="1"
+              size={null}
               value="pagarme@pagar.me"
             />
             <label
@@ -22468,6 +22613,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onKeyPress={null}
               placeholder="disabled"
               rows="1"
+              size={null}
               value="Multiline disabled!"
             />
             <label
@@ -22521,6 +22667,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onFocus={[Function]}
               onKeyPress={null}
               placeholder="name@email.com"
+              size={null}
               type="text"
               value="pagarme@pagar.me"
             />
@@ -22573,6 +22720,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onFocus={[Function]}
               onKeyPress={null}
               placeholder="name@email.com"
+              size={null}
               type="text"
               value="pagarme@pagar.me"
             />
@@ -22625,6 +22773,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onFocus={[Function]}
               onKeyPress={null}
               placeholder="disabled"
+              size={null}
               type="text"
               value=""
             />
@@ -22673,6 +22822,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onKeyPress={null}
               placeholder="name@email.com"
               rows="1"
+              size={null}
               value="pagarme@pagar.me"
             />
             <label
@@ -22730,6 +22880,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onKeyPress={null}
               placeholder="name@email.com"
               rows="1"
+              size={null}
               value="pagarme@pagar.me"
             />
             <label
@@ -22787,6 +22938,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onKeyPress={null}
               placeholder="disabled"
               rows="1"
+              size={null}
               value=""
             />
             <label
@@ -22832,6 +22984,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onFocus={[Function]}
               onKeyPress={null}
               placeholder="name@email.com"
+              size={null}
               type="password"
               value="pagarme@pagar.me"
             />
@@ -22884,6 +23037,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onFocus={[Function]}
               onKeyPress={null}
               placeholder="name@email.com"
+              size={null}
               type="password"
               value="pagarme@pagar.me"
             />
@@ -22936,6 +23090,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onFocus={[Function]}
               onKeyPress={null}
               placeholder="disabled"
+              size={null}
               type="password"
               value=""
             />
@@ -22980,6 +23135,7 @@ exports[`Storyshots Inputs Form 1`] = `
               onFocus={[Function]}
               onKeyPress={null}
               placeholder="disabled"
+              size={null}
               type="password"
               value="secret_pass"
             />
@@ -23074,6 +23230,7 @@ exports[`Storyshots Landing Pagar.me login 1`] = `
                     onFocus={[Function]}
                     onKeyPress={null}
                     placeholder="emaillegal@pagar.me"
+                    size={null}
                     type="text"
                     value=""
                   />
@@ -23104,6 +23261,7 @@ exports[`Storyshots Landing Pagar.me login 1`] = `
                     onFocus={[Function]}
                     onKeyPress={null}
                     placeholder=""
+                    size={null}
                     type="password"
                     value=""
                   />
@@ -23244,6 +23402,7 @@ exports[`Storyshots Landing Pagar.me login light 1`] = `
                     onFocus={[Function]}
                     onKeyPress={null}
                     placeholder="emaillegal@pagar.me"
+                    size={null}
                     type="text"
                     value=""
                   />
@@ -23274,6 +23433,7 @@ exports[`Storyshots Landing Pagar.me login light 1`] = `
                     onFocus={[Function]}
                     onKeyPress={null}
                     placeholder=""
+                    size={null}
                     type="password"
                     value=""
                   />
@@ -23422,6 +23582,7 @@ exports[`Storyshots Landing Pagar.me password recovery 1`] = `
                       onFocus={[Function]}
                       onKeyPress={null}
                       placeholder="emaillegal@pagar.me"
+                      size={null}
                       type="text"
                       value=""
                     />
@@ -23688,6 +23849,7 @@ exports[`Storyshots Landing Pagar.me sign in 1`] = `
                     onFocus={[Function]}
                     onKeyPress={null}
                     placeholder="Nome completo"
+                    size={null}
                     type="text"
                     value=""
                   />
@@ -23718,6 +23880,7 @@ exports[`Storyshots Landing Pagar.me sign in 1`] = `
                     onFocus={[Function]}
                     onKeyPress={null}
                     placeholder="Empresa"
+                    size={null}
                     type="text"
                     value=""
                   />
@@ -23748,6 +23911,7 @@ exports[`Storyshots Landing Pagar.me sign in 1`] = `
                     onFocus={[Function]}
                     onKeyPress={null}
                     placeholder="emaillegal@pagar.me"
+                    size={null}
                     type="text"
                     value=""
                   />
@@ -23778,6 +23942,7 @@ exports[`Storyshots Landing Pagar.me sign in 1`] = `
                     onFocus={[Function]}
                     onKeyPress={null}
                     placeholder=""
+                    size={null}
                     type="password"
                     value=""
                   />
@@ -24027,6 +24192,7 @@ exports[`Storyshots Landing Pagar.me two factor login 1`] = `
                     onFocus={[Function]}
                     onKeyPress={null}
                     placeholder="emaillegal@pagar.me"
+                    size={null}
                     type="text"
                     value=""
                   />
@@ -24057,6 +24223,7 @@ exports[`Storyshots Landing Pagar.me two factor login 1`] = `
                     onFocus={[Function]}
                     onKeyPress={null}
                     placeholder=""
+                    size={null}
                     type="password"
                     value=""
                   />
@@ -24087,6 +24254,7 @@ exports[`Storyshots Landing Pagar.me two factor login 1`] = `
                     onFocus={[Function]}
                     onKeyPress={null}
                     placeholder="ABC123"
+                    size={null}
                     type="text"
                     value=""
                   />
