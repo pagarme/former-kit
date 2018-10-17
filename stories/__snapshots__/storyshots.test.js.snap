@@ -38482,6 +38482,365 @@ exports[`Storyshots Tooltip control visibility 1`] = `
 </section>
 `;
 
+exports[`Storyshots Transition Animation 1`] = `
+<section
+  className="typography"
+>
+  
+  <div>
+    <div
+      className="grid"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col desk4 tv4 tablet4 palm12 startAlign"
+        >
+          <h2>
+            Fade
+          </h2>
+          <div
+            className="grid"
+          >
+            <div
+              className="row"
+            >
+              <div
+                className="col desknull tvnull tabletnull palmnull startAlign"
+              >
+                <button
+                  className="button flat normalRelevance default"
+                  disabled={false}
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <span>
+                    Click me
+                  </span>
+                  <span
+                    className="ripple"
+                    style={
+                      Object {
+                        "height": 0,
+                        "left": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </button>
+              </div>
+            </div>
+            <div
+              className="row"
+            >
+              <div
+                className="col desknull tvnull tabletnull palmnull startAlign"
+              >
+                <div
+                  className={undefined}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col desk4 tv4 tablet4 palm12 startAlign"
+        >
+          <h2>
+            Grow
+          </h2>
+          <div
+            className="grid"
+          >
+            <div
+              className="row"
+            >
+              <div
+                className="col desknull tvnull tabletnull palmnull startAlign"
+              >
+                <button
+                  className="button flat normalRelevance default"
+                  disabled={false}
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <span>
+                    Click me
+                  </span>
+                  <span
+                    className="ripple"
+                    style={
+                      Object {
+                        "height": 0,
+                        "left": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </button>
+              </div>
+            </div>
+            <div
+              className="row"
+            >
+              <div
+                className="col desknull tvnull tabletnull palmnull startAlign"
+              >
+                <div
+                  className={undefined}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col desk4 tv4 tablet4 palm12 startAlign"
+        >
+          <h2>
+            Zoom
+          </h2>
+          <div
+            className="grid"
+          >
+            <div
+              className="row"
+            >
+              <div
+                className="col desknull tvnull tabletnull palmnull startAlign"
+              >
+                <button
+                  className="button flat normalRelevance default"
+                  disabled={false}
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <span>
+                    Click me
+                  </span>
+                  <span
+                    className="ripple"
+                    style={
+                      Object {
+                        "height": 0,
+                        "left": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </button>
+              </div>
+            </div>
+            <div
+              className="row"
+            >
+              <div
+                className="col desknull tvnull tabletnull palmnull startAlign"
+              >
+                <div
+                  className={undefined}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`Storyshots Transition Picker 1`] = `
+<section
+  className="typography"
+>
+  
+  <div>
+    <div
+      className="grid"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col desknull tvnull tabletnull palmnull startAlign"
+        >
+          <div
+            className="input light active"
+          >
+            <div
+              className="boxContainer"
+            >
+              <div
+                className="container"
+              >
+                <input
+                  disabled={false}
+                  id="damping"
+                  max={115}
+                  maxLength={3}
+                  name=""
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyPress={null}
+                  placeholder=""
+                  size={null}
+                  type="number"
+                  value="26"
+                />
+                <label
+                  className="contentPresent"
+                  htmlFor="-shortid-mock"
+                >
+                  Damping
+                </label>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="row"
+      >
+        <div
+          className="col desknull tvnull tabletnull palmnull startAlign"
+        >
+          <div
+            className="input light active"
+          >
+            <div
+              className="boxContainer"
+            >
+              <div
+                className="container"
+              >
+                <input
+                  disabled={false}
+                  id="precision"
+                  maxLength={10}
+                  name=""
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyPress={null}
+                  placeholder=""
+                  size={null}
+                  type="number"
+                  value="0.01"
+                />
+                <label
+                  className="contentPresent"
+                  htmlFor="-shortid-mock"
+                >
+                  Precision
+                </label>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="row"
+      >
+        <div
+          className="col desknull tvnull tabletnull palmnull startAlign"
+        >
+          <div
+            className="input light active"
+          >
+            <div
+              className="boxContainer"
+            >
+              <div
+                className="container"
+              >
+                <input
+                  disabled={false}
+                  id="stiffness"
+                  max={500}
+                  maxLength={3}
+                  name=""
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyPress={null}
+                  placeholder=""
+                  size={null}
+                  type="number"
+                  value="170"
+                />
+                <label
+                  className="contentPresent"
+                  htmlFor="-shortid-mock"
+                >
+                  Stiffness
+                </label>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="row"
+      >
+        <div
+          className="col desknull tvnull tabletnull palmnull startAlign"
+        >
+          <button
+            className="button flat normalRelevance default"
+            disabled={false}
+            onClick={[Function]}
+            type="button"
+          >
+            <span>
+              Animate
+            </span>
+            <span
+              className="ripple"
+              style={
+                Object {
+                  "height": 0,
+                  "left": 0,
+                  "top": 0,
+                  "width": 0,
+                }
+              }
+            />
+          </button>
+        </div>
+      </div>
+      <div
+        className="row"
+      >
+        <div
+          className="col desknull tvnull tabletnull palmnull startAlign"
+        >
+          <div
+            className={undefined}
+          >
+            <div
+              className={undefined}
+              style={
+                Object {
+                  "transform": "translate3d(0px, 0, 0)",
+                }
+              }
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
 exports[`Storyshots Typography Font families 1`] = `
 <section
   className="typography"
