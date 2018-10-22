@@ -13,16 +13,26 @@ const consumeTheme = ThemeConsumer('UIModal')
  */
 const Modal = ({
   children,
+  closeTimeoutMS,
   isOpen,
   onRequestClose,
   theme,
 }) => (
   <ReactModal
     appElement={document.body}
-    className={theme.modal}
+    className={{
+      base: theme.modal,
+      afterOpen: theme.modalAfterOpen,
+      beforeClose: theme.modalBeforeClose,
+    }}
+    closeTimeoutMS={closeTimeoutMS}
     isOpen={isOpen}
     onRequestClose={onRequestClose}
-    overlayClassName={theme.overlay}
+    overlayClassName={{
+      base: theme.overlay,
+      afterOpen: theme.overlayAfterOpen,
+      beforeClose: theme.overlayBeforeClose,
+    }}
     parentSelector={() => document.body}
     role="dialog"
   >
@@ -43,6 +53,10 @@ Modal.propTypes = {
    * Set of React elements which will be rendered inside the modal.
    */
   children: PropTypes.node.isRequired,
+  /**
+   * Set a close timeout in milliseconds for children components.
+   */
+  closeTimeoutMS: PropTypes.number.isRequired,
   /**
    * Indicates if the modal is being shown.
    */

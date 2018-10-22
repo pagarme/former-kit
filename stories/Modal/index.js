@@ -50,6 +50,7 @@ class ModalWithState extends Component {
 
         {/* modal content definition */}
         <Modal
+          closeTimeoutMS={200}
           label="Create a Transaction"
           isOpen={this.state.isOpen}
           onRequestClose={this.handleToggleModal}
