@@ -1,0 +1,36 @@
+.contentAnchor {
+  display: flex;
+  height: 100px;
+  position: relative;
+  width: 100px;
+}
+
+.animation {
+  align-items: center;
+  background-color: #cccccc;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+
+/* picker */
+
+.slide {
+  background-color: #eeeeee;
+  border-radius: 4px;
+  height: 50px;
+  margin: 5px 3px 10px;
+  width: 450px;
+}
+
+.slider {
+  background-color: #37cc9a;
+  border-radius: 4px;
+  height: 50px;
+  position: absolute;
+  width: 50px;
+}

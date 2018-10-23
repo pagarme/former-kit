@@ -43,6 +43,7 @@ module.exports = {
         '../src/Switch/index.js',
         '../src/Tag/index.js',
         '../src/Tooltip/index.js',
+        '../src/Transition/Transition.js',
         '../src/Typeset/index.js',
       ],
       sections: [
