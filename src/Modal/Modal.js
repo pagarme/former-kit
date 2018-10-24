@@ -13,7 +13,6 @@ const consumeTheme = ThemeConsumer('UIModal')
  */
 const Modal = ({
   children,
-  closeTimeoutMS,
   isOpen,
   onRequestClose,
   theme,
@@ -25,7 +24,7 @@ const Modal = ({
       afterOpen: theme.modalAfterOpen,
       beforeClose: theme.modalBeforeClose,
     }}
-    closeTimeoutMS={closeTimeoutMS}
+    closeTimeoutMS={200}
     isOpen={isOpen}
     onRequestClose={onRequestClose}
     overlayClassName={{
@@ -53,10 +52,6 @@ Modal.propTypes = {
    * Set of React elements which will be rendered inside the modal.
    */
   children: PropTypes.node.isRequired,
-  /**
-   * Set a close timeout in milliseconds for children components.
-   */
-  closeTimeoutMS: PropTypes.number.isRequired,
   /**
    * Indicates if the modal is being shown.
    */
