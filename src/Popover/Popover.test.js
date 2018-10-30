@@ -37,7 +37,7 @@ describe('Popover', () => {
     const component = mount(<PopoverComponent />)
 
     component.simulate('click')
-    expect(component.find('div > div').first()).toHaveLength(1)
+    expect(component.find('div > div > div').first()).toHaveLength(1)
   })
 
   it('should remove popover when button is clicked', () => {
@@ -46,7 +46,7 @@ describe('Popover', () => {
     component.simulate('click')
     component.simulate('click')
 
-    expect(component.find('div > div').first()).toHaveLength(0)
+    expect(component.find('div > div > div').first()).toHaveLength(0)
   })
 
   it('should remove popover when an menu item is clicked', () => {
@@ -56,6 +56,6 @@ describe('Popover', () => {
     const button = component.find(PopoverMenu).find('button').last()
     button.simulate('click')
 
-    expect(component.find('div > div').first()).toHaveLength(0)
+    expect(component.find('div > div > div').first()).toHaveLength(0)
   })
 })
