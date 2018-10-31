@@ -19,10 +19,19 @@ const Modal = ({
 }) => (
   <ReactModal
     appElement={document.body}
-    className={theme.modal}
+    className={{
+      base: theme.modal,
+      afterOpen: theme.modalAfterOpen,
+      beforeClose: theme.modalBeforeClose,
+    }}
+    closeTimeoutMS={200}
     isOpen={isOpen}
     onRequestClose={onRequestClose}
-    overlayClassName={theme.overlay}
+    overlayClassName={{
+      base: theme.overlay,
+      afterOpen: theme.overlayAfterOpen,
+      beforeClose: theme.overlayBeforeClose,
+    }}
     parentSelector={() => document.body}
     role="dialog"
   >
