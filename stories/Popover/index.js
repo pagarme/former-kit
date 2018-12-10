@@ -200,3 +200,16 @@ storiesOf('Popover', module)
       <PopoverControl />
     </Section>
   ))
+  .add('Don\'t close popover when click outside', () => (
+    <Section>
+      <Popover
+        closeWhenClickOutside={false}
+        content={<Menu />}
+        placement="rightStart"
+      >
+        <Button>
+          Open Popover
+        </Button>
+      </Popover>
+    </Section>
+  ))
