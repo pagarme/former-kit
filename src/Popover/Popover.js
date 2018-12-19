@@ -12,7 +12,7 @@ class Popover extends Component {
     super(props)
 
     this.state = {
-      visible: this.props.visible,
+      visible: props.visible,
     }
 
     this.handleOnClick = this.handleOnClick.bind(this)
@@ -26,9 +26,13 @@ class Popover extends Component {
   }
 
   handleClickOutside () {
-    this.setState({
-      visible: false,
-    })
+    const { closeWhenClickOutside } = this.props
+
+    if (closeWhenClickOutside) {
+      this.setState({
+        visible: false,
+      })
+    }
   }
 
   handleOnClick () {
@@ -92,6 +96,10 @@ Popover.propTypes = {
    */
   children: PropTypes.node.isRequired,
   /**
+   * The element should close when click outside popover.
+   */
+  closeWhenClickOutside: PropTypes.bool,
+  /**
    * The popover content.
    */
   content: PropTypes.node.isRequired,
@@ -111,6 +119,7 @@ Popover.propTypes = {
 
 Popover.defaultProps = {
   base: null,
+  closeWhenClickOutside: true,
   onClick: null,
   placement: 'bottomStart',
   theme: {},
