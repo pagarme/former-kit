@@ -9,6 +9,13 @@ import {
   element,
 } from 'prop-types'
 import shortid from 'shortid'
+import {
+  equals,
+  find,
+  flatten,
+  map,
+  pipe,
+} from 'ramda'
 import { momentObj } from 'react-moment-proptypes'
 import {
   DayPickerRangeController,
@@ -51,6 +58,7 @@ const defaultStrings = {
 class DateSelector extends Component {
   constructor (props) {
     super(props)
+
     this.state = {
       preset: calculatePreset(props.dates),
     }
@@ -62,12 +70,35 @@ class DateSelector extends Component {
     this.handlePresetChange = this.handlePresetChange.bind(this)
     this.handleConfirm = this.handleConfirm.bind(this)
     this.handleCancel = this.handleCancel.bind(this)
+    this.handleSelectedPresets = this.handleSelectedPresets.bind(this)
+  }
+
+  componentDidMount () {
+    this.handleSelectedPresets()
   }
 
   getStrings () {
     return {
       ...defaultStrings,
       ...this.props.strings,
+    }
+  }
+
+  handleSelectedPresets () {
+    const { selectedPreset, presets } = this.props
+
+    if (selectedPreset) {
+      const isEqualSelectedPreset = ({ key }) => equals(key, selectedPreset)
+
+      const findItemByKey = pipe(
+        map(({ items }) => items),
+        flatten,
+        find(item => isEqualSelectedPreset(item))
+      )
+
+      const foundPreset = findItemByKey(presets)
+
+      this.handlePresetChange(foundPreset.date(), selectedPreset)
     }
   }
 
@@ -393,6 +424,10 @@ DateSelector.propTypes = {
     })),
   })),
   /**
+   * The key of the selected preset.
+   */
+  selectedPreset: string,
+  /**
    * Texts used in the component internationalization (i18n).
    */
   strings: shape({
@@ -443,6 +478,7 @@ DateSelector.defaultProps = {
   onConfirm: () => undefined,
   onFocusChange: () => undefined,
   presets: [],
+  selectedPreset: null,
   strings: defaultStrings,
   theme: {},
 }

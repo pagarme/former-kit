@@ -75,6 +75,7 @@ class DateSelectorExample extends React.Component {
         onChange={this.handleChange}
         onConfirm={dates => action('onConfirm', dates)}
         onCancel={() => action('onCancel', '')}
+        selectedPreset={this.props.selectedPreset}
       />
     )
   }
@@ -84,5 +85,10 @@ storiesOf('DateSelector', module)
   .add('All types with defaultTheme', () => (
     <Section>
       <DateSelectorExample />
+    </Section>
+  ))
+  .add('With selected preset', () => (
+    <Section>
+      <DateSelectorExample selectedPreset="last-15" />
     </Section>
   ))
