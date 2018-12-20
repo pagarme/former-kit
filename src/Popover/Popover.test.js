@@ -1,19 +1,18 @@
-import React, { Fragment } from 'react'
-import { mount } from 'enzyme'
-
+import React from 'react'
+import { cleanup, render, fireEvent, waitForElement, wait } from 'react-testing-library'
 import Popover from './Popover'
 import PopoverMenu from './PopoverMenu'
-import Button from '../Button'
 
-const PopoverComponent = () => (
+const popoverComponent = (
   <Popover
     content={
-      <Fragment>
-        <div>
+      <div id="content" className="content">
+        <div id="batata">
           <strong>test@email.com</strong>
           <small>admin</small>
         </div>
         <PopoverMenu
+          className="popoverMenu"
           items={[
             {
               title: 'Account',
@@ -25,37 +24,85 @@ const PopoverComponent = () => (
             },
           ]}
         />
-      </Fragment>
+      </div>
     }
   >
-    <Button>click me</Button>
+    <button>click me</button>
   </Popover>
 )
 
+const defaultWaitTimeMs = 500
+
+const waitExpect = (callback, timeMs = defaultWaitTimeMs) =>
+  wait(callback, { timeout: timeMs })
+
 describe('Popover', () => {
-  it('should render popover when button is clicked', () => {
-    const component = mount(<PopoverComponent />)
+  afterEach(cleanup)
 
-    component.simulate('click')
-    expect(component.find('div > div > div').first()).toHaveLength(1)
+  it('should render popover when button is clicked', async () => {
+    const { container, getByText } = render(popoverComponent)
+    const button = getByText('click me')
+    let content = container.querySelector('#content')
+    expect.assertions(2)
+
+    expect(content).toBeNull()
+
+    // open popover
+    fireEvent.click(button)
+
+    content = await waitForElement(() => container.querySelector('#content'))
+
+    expect(content).not.toBeNull()
   })
 
-  it('should remove popover when button is clicked', () => {
-    const component = mount(<PopoverComponent />)
+  it('should remove popover when button is clicked', async () => {
+    const { container, getByText } = render(popoverComponent)
+    const button = getByText('click me')
+    let content = container.querySelector('#content')
 
-    component.simulate('click')
-    component.simulate('click')
+    expect(content).toBeNull()
 
-    expect(component.find('div > div > div').first()).toHaveLength(0)
+    // open popover
+    fireEvent.click(button)
+
+    content = await waitForElement(() => container.querySelector('#content'))
+
+    expect(content).toBeDefined()
+
+    // close popover
+    fireEvent.click(button)
+
+    await waitExpect(
+      () => {
+        content = container.querySelector('#content')
+        expect(content).toBeNull()
+      }
+    )
   })
 
-  it('should remove popover when an menu item is clicked', () => {
-    const component = mount(<PopoverComponent />)
-    component.simulate('click')
+  it('should remove popover when an menu item is clicked', async () => {
+    const { container, getByText } = render(popoverComponent)
+    const button = getByText('click me')
+    let content = container.querySelector('#content')
 
-    const button = component.find(PopoverMenu).find('button').last()
-    button.simulate('click')
+    expect(content).toBeNull()
 
-    expect(component.find('div > div > div').first()).toHaveLength(0)
+    // open popover
+    fireEvent.click(button)
+
+    const logoutButton = await waitForElement(() => getByText('Logout'), { container })
+
+    // close popover
+    fireEvent.click(logoutButton)
+
+    content = container.querySelector('#content')
+    expect(content).not.toBeNull()
+
+    await waitExpect(
+      () => {
+        content = container.querySelector('content')
+        expect(content).toBeNull()
+      }
+    )
   })
 })
