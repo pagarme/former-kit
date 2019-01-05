@@ -2,6 +2,10 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import ClickOutside from 'react-click-outside'
+import {
+  Grow,
+  Transition,
+} from '../../src/Transition'
 
 import ThemeConsumer from '../ThemeConsumer'
 
@@ -68,11 +72,22 @@ class Popover extends Component {
       >
         {children}
 
-        {(visible) &&
-          <div className={classNames(theme.popover, theme[base], theme[placement])}>
-            {content}
-          </div>
-        }
+        <Transition
+          atActive={Grow.atActive}
+          atEnter={Grow.atEnter}
+          atLeave={Grow.atLeave}
+          mapStyles={Grow.mapStyles}
+          springOptions={Grow.springOptions}
+        >
+          {(visible) &&
+            <div
+              className={classNames(theme.popover, theme[base], theme[placement])}
+              key="popover"
+            >
+              {content}
+            </div>
+          }
+        </Transition>
       </div>
     )
   }

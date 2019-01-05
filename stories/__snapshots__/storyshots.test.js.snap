@@ -29110,6 +29110,12 @@ exports[`Storyshots Popover Handle close popover 1`] = `
         </button>
         <div
           className="popover null bottomStart"
+          style={
+            Object {
+              "opacity": 1,
+              "transform": "scale(1)",
+            }
+          }
         >
           <div
             className="content"
@@ -29595,6 +29601,12 @@ exports[`Storyshots Popover Visible 1`] = `
         </button>
         <div
           className="popover null rightStart"
+          style={
+            Object {
+              "opacity": 1,
+              "transform": "scale(1)",
+            }
+          }
         >
           <div
             className="content"
@@ -29656,6 +29668,12 @@ exports[`Storyshots Popover Visible 1`] = `
         </button>
         <div
           className="popover null rightMiddle"
+          style={
+            Object {
+              "opacity": 1,
+              "transform": "scale(1)",
+            }
+          }
         >
           <div
             className="content"
@@ -29717,6 +29735,12 @@ exports[`Storyshots Popover Visible 1`] = `
         </button>
         <div
           className="popover null rightEnd"
+          style={
+            Object {
+              "opacity": 1,
+              "transform": "scale(1)",
+            }
+          }
         >
           <div
             className="content"
@@ -29778,6 +29802,12 @@ exports[`Storyshots Popover Visible 1`] = `
         </button>
         <div
           className="popover null leftStart"
+          style={
+            Object {
+              "opacity": 1,
+              "transform": "scale(1)",
+            }
+          }
         >
           <div
             className="content"
@@ -29839,6 +29869,12 @@ exports[`Storyshots Popover Visible 1`] = `
         </button>
         <div
           className="popover null leftMiddle"
+          style={
+            Object {
+              "opacity": 1,
+              "transform": "scale(1)",
+            }
+          }
         >
           <div
             className="content"
@@ -29900,6 +29936,12 @@ exports[`Storyshots Popover Visible 1`] = `
         </button>
         <div
           className="popover null leftEnd"
+          style={
+            Object {
+              "opacity": 1,
+              "transform": "scale(1)",
+            }
+          }
         >
           <div
             className="content"
@@ -29961,6 +30003,12 @@ exports[`Storyshots Popover Visible 1`] = `
         </button>
         <div
           className="popover null topStart"
+          style={
+            Object {
+              "opacity": 1,
+              "transform": "scale(1)",
+            }
+          }
         >
           <div
             className="content"
@@ -30022,6 +30070,12 @@ exports[`Storyshots Popover Visible 1`] = `
         </button>
         <div
           className="popover null topCenter"
+          style={
+            Object {
+              "opacity": 1,
+              "transform": "scale(1)",
+            }
+          }
         >
           <div
             className="content"
@@ -30083,6 +30137,12 @@ exports[`Storyshots Popover Visible 1`] = `
         </button>
         <div
           className="popover null topEnd"
+          style={
+            Object {
+              "opacity": 1,
+              "transform": "scale(1)",
+            }
+          }
         >
           <div
             className="content"
@@ -30144,6 +30204,12 @@ exports[`Storyshots Popover Visible 1`] = `
         </button>
         <div
           className="popover null bottomStart"
+          style={
+            Object {
+              "opacity": 1,
+              "transform": "scale(1)",
+            }
+          }
         >
           <div
             className="content"
@@ -30205,6 +30271,12 @@ exports[`Storyshots Popover Visible 1`] = `
         </button>
         <div
           className="popover null bottomCenter"
+          style={
+            Object {
+              "opacity": 1,
+              "transform": "scale(1)",
+            }
+          }
         >
           <div
             className="content"
@@ -30266,6 +30338,12 @@ exports[`Storyshots Popover Visible 1`] = `
         </button>
         <div
           className="popover null bottomEnd"
+          style={
+            Object {
+              "opacity": 1,
+              "transform": "scale(1)",
+            }
+          }
         >
           <div
             className="content"

@@ -1,65 +1,62 @@
 import React from 'react'
 import { mount, shallow } from 'enzyme'
+import { cleanup, render, fireEvent, waitForElement, wait } from 'react-testing-library'
 import moment from 'moment'
 import CalendarInput from './index'
-import Calendar from '../Calendar'
 
 const defaultDates = {
   start: moment('2018-06-27'),
   end: moment('2018-06-27'),
 }
 
+const defaultWaitTimeMs = 500
+
+const waitExpect = (callback, timeMs = defaultWaitTimeMs) =>
+  wait(callback, { timeout: timeMs })
+
+const getCalendarInput = (onChange = () => undefined) => (
+  <CalendarInput
+    dateSelection="single"
+    months={1}
+    onChange={onChange}
+    value={defaultDates}
+  />
+)
+
 describe('DateSelector', () => {
+  afterEach(cleanup)
+
   it('should mount component', () => {
-    shallow(
-      <CalendarInput
-        dateSelection="single"
-        months={1}
-        onChange={() => undefined}
-        value={defaultDates}
-      />
-    )
+    shallow(getCalendarInput())
   })
 
-  it('should render the Calendar when focused', () => {
-    const onChange = jest.fn()
+  it('should render the Calendar when focused', async () => {
+    const { container } = render(getCalendarInput())
+    let calendar = container.querySelector('.ReactDates-overrides .CalendarMonth')
+    const input = container.querySelector('input')
 
-    const component = mount(
-      <CalendarInput
-        dateSelection="single"
-        months={1}
-        onChange={onChange}
-        value={defaultDates}
-      />
-    )
+    expect(calendar).toBeNull()
 
-    let datePicker = component.find(Calendar)
-    expect(datePicker.length).toBe(0)
+    fireEvent.focus(input)
 
-    component.find('input').at(0).simulate('focus')
+    await waitExpect(() => {
+      calendar = container.querySelector('.ReactDates-overrides .CalendarMonth')
 
-    datePicker = component.find(Calendar)
-    expect(datePicker.length).toBe(1)
+      expect(calendar).not.toBeNull()
+    })
   })
 
-  it('should call onChange when a date is changed', () => {
+  it('should call onChange when a date is changed', async () => {
     const onChange = jest.fn()
+    const { container } = render(getCalendarInput(onChange))
+    const input = container.querySelector('input')
 
-    const component = mount(
-      <CalendarInput
-        dateSelection="single"
-        months={1}
-        onChange={onChange}
-        value={defaultDates}
-      />
-    )
+    fireEvent.focus(input)
 
-    component.find('input').first().simulate('focus')
-    component
-      .find(Calendar)
-      .find('td button')
-      .at(0)
-      .simulate('click')
+    const calendarButton = await waitForElement(() =>
+      container.querySelector('.CalendarMonth .CalendarDay--valid > .CalendarDay__button'))
+
+    fireEvent.click(calendarButton)
 
     expect(onChange).toHaveBeenCalledTimes(1)
   })
@@ -106,14 +103,7 @@ describe('DateSelector', () => {
   })
 
   it('should show only one input when the dateSelection is "single"', () => {
-    const component = mount(
-      <CalendarInput
-        dateSelection="single"
-        months={1}
-        onChange={() => undefined}
-        value={defaultDates}
-      />
-    )
+    const component = mount(getCalendarInput())
 
     const inputs = component.find('input').length
     expect(inputs).toBe(1)
@@ -133,21 +123,29 @@ describe('DateSelector', () => {
     expect(inputs).toBe(2)
   })
 
-  it('should show two calendars when the months props is 2', () => {
-    const component = mount(
+  it('should show two calendars when the months props is 2', async () => {
+    const { container } = render(
       <CalendarInput
         dateSelection="period"
         months={2}
         onChange={() => undefined}
         value={defaultDates}
-      />
-    )
-    component.find('input').first().simulate('focus')
-    const calendarsLength = component
-      .find(Calendar)
-      .find('.CalendarMonthGrid .CalendarMonth[data-visible=true]')
-      .length
-    expect(calendarsLength).toBe(2)
+      />)
+    let calendars = container.querySelectorAll('.CalendarMonthGrid > .CalendarMonth')
+    let weekHeaders = container.querySelectorAll('.DayPicker__week-headers > .DayPicker__week-header')
+    const input = container.querySelector('input')
+
+    expect(calendars).toHaveLength(0)
+
+    fireEvent.focus(input)
+
+    await waitExpect(() => {
+      calendars = container.querySelectorAll('.CalendarMonthGrid > .CalendarMonth')
+      weekHeaders = container.querySelectorAll('.DayPicker__week-headers > .DayPicker__week-header')
+
+      expect(weekHeaders).toHaveLength(2)
+      expect(calendars).toHaveLength(4)
+    })
   })
 })
 
