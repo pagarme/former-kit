@@ -1,4 +1,4 @@
-const Fade = {
+const fade = {
   springOptions: {
     damping: 30,
     precision: 0.01,
@@ -18,4 +18,4 @@ const Fade = {
   }),
 }
 
-export default Fade
+export default fade

@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import ClickOutside from 'react-click-outside'
 import {
-  Grow,
+  grow,
   Transition,
-} from '../../src/Transition'
+} from '../Transition'
 
 import ThemeConsumer from '../ThemeConsumer'
 
@@ -73,11 +73,11 @@ class Popover extends Component {
         {children}
 
         <Transition
-          atActive={Grow.atActive}
-          atEnter={Grow.atEnter}
-          atLeave={Grow.atLeave}
-          mapStyles={Grow.mapStyles}
-          springOptions={Grow.springOptions}
+          atActive={grow.atActive}
+          atEnter={grow.atEnter}
+          atLeave={grow.atLeave}
+          mapStyles={grow.mapStyles}
+          springOptions={grow.springOptions}
         >
           {(visible) &&
             <div

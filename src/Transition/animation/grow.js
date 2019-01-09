@@ -1,21 +1,25 @@
-const Zoom = {
+const grow = {
   springOptions: {
     damping: 30,
     precision: 0.01,
-    stiffness: 300,
+    stiffness: 450,
   },
   atEnter: {
+    opacity: 0.5,
     scale: 0.5,
   },
   atActive: {
+    opacity: 1,
     scale: 1,
   },
   atLeave: {
-    scale: 0,
+    opacity: 0,
+    scale: 0.9,
   },
-  mapStyles: ({ scale }) => ({
+  mapStyles: ({ scale, opacity }) => ({
+    opacity,
     transform: `scale(${scale})`,
   }),
 }
 
-export default Zoom
+export default grow
