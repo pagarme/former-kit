@@ -4,10 +4,10 @@ import { storiesOf } from '@storybook/react'
 import style from './style.css'
 import Section from '../Section'
 import {
-  Fade,
-  Grow,
+  fade,
+  grow,
   Transition,
-  Zoom,
+  zoom,
 } from '../../src/Transition'
 import Button from '../../src/Button'
 import {
@@ -118,33 +118,33 @@ storiesOf('Transition', module)
           <Col className={style.col} palm={12} tablet={4} desk={4} tv={4}>
             <h2>Fade</h2>
             <TransitionState
-              atActive={Fade.atActive}
-              atEnter={Fade.atEnter}
-              atLeave={Fade.atLeave}
-              mapStyles={Fade.mapStyles}
-              springOptions={Fade.springOptions}
+              atActive={fade.atActive}
+              atEnter={fade.atEnter}
+              atLeave={fade.atLeave}
+              mapStyles={fade.mapStyles}
+              springOptions={fade.springOptions}
             />
           </Col>
 
           <Col className={style.col} palm={12} tablet={4} desk={4} tv={4}>
             <h2>Grow</h2>
             <TransitionState
-              atActive={Grow.atActive}
-              atEnter={Grow.atEnter}
-              atLeave={Grow.atLeave}
-              mapStyles={Grow.mapStyles}
-              springOptions={Grow.springOptions}
+              atActive={grow.atActive}
+              atEnter={grow.atEnter}
+              atLeave={grow.atLeave}
+              mapStyles={grow.mapStyles}
+              springOptions={grow.springOptions}
             />
           </Col>
 
           <Col className={style.col} palm={12} tablet={4} desk={4} tv={4}>
             <h2>Zoom</h2>
             <TransitionState
-              atActive={Zoom.atActive}
-              atEnter={Zoom.atEnter}
-              atLeave={Zoom.atLeave}
-              mapStyles={Zoom.mapStyles}
-              springOptions={Zoom.springOptions}
+              atActive={zoom.atActive}
+              atEnter={zoom.atEnter}
+              atLeave={zoom.atLeave}
+              mapStyles={zoom.mapStyles}
+              springOptions={zoom.springOptions}
             />
           </Col>
         </Row>

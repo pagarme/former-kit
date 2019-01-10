@@ -111,40 +111,40 @@ export default TransitionState
 Fade
 ```jsx
   const TransitionState = require('./example/TransitionState').default;
-  const Fade = require('./animation/Fade').default;
+  const fade = require('./animation/fade').default;
 
   <TransitionState
-    atActive={Fade.atActive}
-    atEnter={Fade.atEnter}
-    atLeave={Fade.atLeave}
-    mapStyles={Fade.mapStyles}
-    springOptions={Fade.springOptions}
+    atActive={fade.atActive}
+    atEnter={fade.atEnter}
+    atLeave={fade.atLeave}
+    mapStyles={fade.mapStyles}
+    springOptions={fade.springOptions}
   />
 ```
 
 Grow
 ```jsx
   const TransitionState = require('./example/TransitionState').default;
-  const Grow = require('./animation/Grow').default;
+  const grow = require('./animation/grow').default;
 
   <TransitionState
-    atActive={Grow.atActive}
-    atEnter={Grow.atEnter}
-    atLeave={Grow.atLeave}
-    mapStyles={Grow.mapStyles}
-    springOptions={Grow.springOptions}
+    atActive={grow.atActive}
+    atEnter={grow.atEnter}
+    atLeave={grow.atLeave}
+    mapStyles={grow.mapStyles}
+    springOptions={grow.springOptions}
   />
 ```
 Zoom
 ```jsx
   const TransitionState = require('./example/TransitionState').default;
-  const Zoom = require('./animation/Zoom').default;
+  const zoom = require('./animation/zoom').default;
 
   <TransitionState
-    atActive={Zoom.atActive}
-    atEnter={Zoom.atEnter}
-    atLeave={Zoom.atLeave}
-    mapStyles={Zoom.mapStyles}
-    springOptions={Zoom.springOptions}
+    atActive={zoom.atActive}
+    atEnter={zoom.atEnter}
+    atLeave={zoom.atLeave}
+    mapStyles={zoom.mapStyles}
+    springOptions={zoom.springOptions}
   />
 ```
