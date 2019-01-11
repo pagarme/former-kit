@@ -32,6 +32,7 @@
     "react-addons-shallow-compare": "15.6.2",
     "react-click-outside": "3.0.0",
     "react-dates": "12.7.1",
+    "react-input-mask": "2.0.4",
     "react-maskedinput": "4.0.1",
     "react-modal": "3.1.11",
     "react-motion": "0.5.2",
