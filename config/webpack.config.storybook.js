@@ -12,6 +12,12 @@ const postCSSPlugins = [
   }),
 ]
 
+const postcssNextWhitoutCustomProps = require('postcss-cssnext')({
+  features: {
+    customProperties: false,
+  },
+})
+
 module.exports = {
   module: {
     rules: [
@@ -37,6 +43,7 @@ module.exports = {
           {
             loader: require.resolve('postcss-loader'),
             options: {
+              // ident: 'postcss',
               formatter: stylelintFormatter,
               plugins: () => [
                 require('stylelint'),
@@ -62,7 +69,7 @@ module.exports = {
             loader: require.resolve('css-loader'),
             options: {
               importLoaders: 1,
-              modules: 1,
+              modules: true,
               localIdentName: '[path]-[name]-[local]',
             },
           },
@@ -70,14 +77,11 @@ module.exports = {
             loader: require.resolve('postcss-loader'),
             options: {
               ident: 'postcss',
+              importLoaders: 1,
+              sourceMap: 'inline',
               plugins: () => [
                 ...postCSSPlugins,
-                require('postcss-cssnext')({
-                  // We don't transpile CSS variables module in Storybook
-                  features: {
-                    customProperties: false,
-                  },
-                }),
+                postcssNextWhitoutCustomProps,
               ],
             },
           },
@@ -104,12 +108,7 @@ module.exports = {
               ident: 'postcss',
               plugins: () => [
                 ...postCSSPlugins,
-                require('postcss-cssnext')({
-                  // We don't transpile CSS variables module in Storybook
-                  features: {
-                    customProperties: false,
-                  },
-                }),
+                postcssNextWhitoutCustomProps,
               ],
             },
           },
