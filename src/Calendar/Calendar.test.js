@@ -65,8 +65,8 @@ describe('DateSelector', () => {
     )
 
     component
-      .find('.CalendarMonthGrid .CalendarDay--valid button')
-      .at(1)
+      .find('.CalendarMonthGrid .CalendarDay__default')
+      .first()
       .simulate('click')
 
     const onChangeCalledWith = onChange.mock.calls[0][0]

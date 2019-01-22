@@ -1,3 +1,5 @@
+import 'react-dates/initialize'
+import 'react-dates/lib/css/_datepicker.css'
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import moment from 'moment'
