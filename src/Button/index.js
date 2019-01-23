@@ -19,8 +19,8 @@ const createRipple = (e) => {
 
   const rippleSize = Math.max(offsetHeight, offsetWidth)
   const centralize = rippleSize / 2
-  const rippleX = clientX - left - centralize
-  const rippleY = clientY - top - centralize
+  const rippleX = (clientX || 0) - (left || 0) - (centralize || 0)
+  const rippleY = (clientY || 0) - (top || 0) - (centralize || 0)
 
   return {
     rippleHeight: rippleSize,
