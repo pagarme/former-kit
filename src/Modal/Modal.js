@@ -46,7 +46,11 @@ Modal.propTypes = {
   theme: PropTypes.shape({
     frame: PropTypes.string,
     modal: PropTypes.string,
+    modalAfterOpen: PropTypes.string,
+    modalBeforeClose: PropTypes.string,
     overlay: PropTypes.string,
+    overlayAfterOpen: PropTypes.string,
+    overlayBeforeClose: PropTypes.string,
   }),
   /**
    * Set of React elements which will be rendered inside the modal.
@@ -65,7 +69,15 @@ Modal.propTypes = {
 
 Modal.defaultProps = {
   onRequestClose: null,
-  theme: {},
+  theme: {
+    frame: '',
+    modal: '',
+    modalAfterOpen: '',
+    modalBeforeClose: '',
+    overlay: '',
+    overlayAfterOpen: '',
+    overlayBeforeClose: '',
+  },
 }
 
 export default consumeTheme(Modal)
