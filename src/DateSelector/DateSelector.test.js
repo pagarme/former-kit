@@ -215,13 +215,22 @@ describe('DateSelector', () => {
       .last()
       .simulate('change')
 
-    // chose the startDate
-    component.find('table').at(2).find('button').at(4)
+    // choose the startDate
+    component
+      .find('.CalendarMonth_table')
+      .at(2)
+      .find('.CalendarDay')
+      .at(4)
       .simulate('click')
+
     expect(focusedInputHistory[0]).toBe('endDate')
 
-    // chose the endDate
-    component.find('table').at(2).find('button').at(10)
+    // choose the endDate
+    component
+      .find('.CalendarMonth_table')
+      .at(2)
+      .find('.CalendarDay')
+      .at(10)
       .simulate('click')
     expect(focusedInputHistory[1]).toBe('startDate')
   })

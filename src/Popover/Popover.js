@@ -30,7 +30,11 @@ class Popover extends Component {
   }
 
   handleClickOutside () {
-    const { closeWhenClickOutside } = this.props
+    const { closeWhenClickOutside, onClickOutside } = this.props
+
+    if (onClickOutside) {
+      onClickOutside()
+    }
 
     if (closeWhenClickOutside) {
       this.setState({
@@ -123,6 +127,10 @@ Popover.propTypes = {
    */
   onClick: PropTypes.func,
   /**
+   * on click function.
+   */
+  onClickOutside: PropTypes.func,
+  /**
    * The popover position when it's visible
    */
   placement: PropTypes.string,
@@ -136,6 +144,7 @@ Popover.defaultProps = {
   base: null,
   closeWhenClickOutside: true,
   onClick: null,
+  onClickOutside: null,
   placement: 'bottomStart',
   theme: {},
   visible: false,

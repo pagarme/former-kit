@@ -11,7 +11,7 @@ import {
   set,
 } from 'ramda'
 import MaskedInput from 'react-maskedinput'
-import clickOutside from 'react-click-outside'
+
 import {
   inputDateMask,
   isValidMoment,
@@ -64,9 +64,9 @@ class CalendarInput extends Component {
     this.changeSelectorDisplay = this.changeSelectorDisplay.bind(this)
     this.getDayBlockedValidation = this.getDayBlockedValidation.bind(this)
     this.getValidMomentDates = this.getValidMomentDates.bind(this)
-    this.handleClickOutside = this.handleClickOutside.bind(this)
     this.handleConfirm = this.handleConfirm.bind(this)
     this.handleDatesChange = this.handleDatesChange.bind(this)
+    this.handleExit = this.handleExit.bind(this)
     this.handleInputBlur = this.handleInputBlur.bind(this)
     this.handleInputChange = this.handleInputChange.bind(this)
     this.handleInputFocus = this.handleInputFocus.bind(this)
@@ -122,10 +122,6 @@ class CalendarInput extends Component {
     return start
   }
 
-  handleClickOutside () {
-    this.handleExit()
-  }
-
   handleConfirm (value) {
     const dates = value || this.state.value
     const { start, end } = textToMoment(dates)
@@ -153,7 +149,7 @@ class CalendarInput extends Component {
       })
     }
 
-    return null
+    return undefined
   }
 
   handleDatesChange ({ start, end }) {
@@ -183,6 +179,7 @@ class CalendarInput extends Component {
       focusedInput: null,
       showDateSelector: false,
     })
+    document.removeEventListener('keydown', this.handleKeyDown, true)
   }
 
   handleInputChange (input, event) {
@@ -299,6 +296,7 @@ class CalendarInput extends Component {
       <Popover
         visible={showDateSelector}
         onClick={() => undefined}
+        onClickOutside={this.handleExit}
         content={
           <Calendar
             dates={momentDates}
@@ -471,4 +469,4 @@ CalendarInput.defaultProps = {
   },
 }
 
-export default consumeTheme(clickOutside(CalendarInput))
+export default consumeTheme(CalendarInput)

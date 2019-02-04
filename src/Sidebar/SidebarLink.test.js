@@ -1,5 +1,5 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { shallow, mount } from 'enzyme'
 import SidebarLink from './SidebarLink'
 
 const arrowIcons = {
@@ -111,7 +111,7 @@ describe('SidebarLink', () => {
   })
 
   it('should render arrows when it has children and title', () => {
-    const component = shallow(
+    const component = mount(
       <SidebarLink
         title="Hello"
         icons={arrowIcons}
@@ -120,11 +120,11 @@ describe('SidebarLink', () => {
       </SidebarLink>
     )
 
-    expect(component.dive().find('svg').first().exists()).toBeTruthy()
+    expect(component.find('svg').first().exists()).toBeTruthy()
   })
 
   it('should render arrows when it has children and subtitle', () => {
-    const component = shallow(
+    const component = mount(
       <SidebarLink
         title="Hello"
         subtitle="Hihi"
@@ -134,7 +134,7 @@ describe('SidebarLink', () => {
       </SidebarLink>
     )
 
-    expect(component.dive().find('svg').first().exists()).toBeTruthy()
+    expect(component.find('svg').first().exists()).toBeTruthy()
   })
 
   it('should change arrows when item is active', () => {
@@ -178,7 +178,7 @@ describe('SidebarLink', () => {
   })
 
   it('should display only icons when sidebar is collapsed', () => {
-    const component = shallow(
+    const component = mount(
       <SidebarLink
         title="Hello"
         icon={<svg />}
@@ -186,6 +186,6 @@ describe('SidebarLink', () => {
       />
     )
 
-    expect(component.dive().find('p').first().text()).not.toBe('Hello')
+    expect(component.find('p').first().exists()).toBeFalsy()
   })
 })
