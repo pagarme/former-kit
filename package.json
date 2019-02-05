@@ -1,6 +1,6 @@
 {
   "name": "former-kit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "Apache-2.0",
   "main": "dist/index.js",
   "repository": {
@@ -23,7 +23,9 @@
     "storybook": "start-storybook -p 6006",
     "storybook:build": "build-storybook -o ./docs/storybook",
     "styleguide": "styleguidist server --config=./config/styleguide.config.js",
-    "styleguide:build": "styleguidist build --config=./config/styleguide.config.js"
+    "styleguide:build": "styleguidist build --config=./config/styleguide.config.js",
+    "prebuild": "rimraf ./dist",
+    "prepublish": "npm run build"
   },
   "dependencies": {
     "classnames": "2.2.6",
@@ -105,6 +107,7 @@
     "react-styleguidist": "8.0.6",
     "react-test-renderer": "16.7.0",
     "react-testing-library": "5.4.4",
+    "rimraf": "2.6.3",
     "style-loader": "0.23.1",
     "stylelint": "9.10.0",
     "stylelint-config-pagarme-react": "1.2.0",
