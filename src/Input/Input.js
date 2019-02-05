@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
 import shortid from 'shortid'
-import MaskedInput from 'react-maskedinput'
+import MaskedInput from 'react-input-mask'
 import {
   dissoc,
   isEmpty,
@@ -128,6 +128,9 @@ class Input extends React.PureComponent {
     if (mask) {
       return (
         <MaskedInput
+          formatChars={{
+            1: '[0-9]',
+          }}
           mask={mask}
           onChange={disabled ? null : onChange}
           onBlur={this.handleBlur}

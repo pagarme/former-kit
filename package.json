@@ -37,6 +37,7 @@
     "react-click-outside": "3.0.1",
     "react-dates": "18.4.1",
     "react-dom": "16.7.0",
+    "react-input-mask": "^2.0.4",
     "react-maskedinput": "4.0.1",
     "react-modal": "3.8.1",
     "react-motion": "0.5.2",

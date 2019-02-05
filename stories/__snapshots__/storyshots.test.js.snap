@@ -21553,14 +21553,12 @@ exports[`Storyshots Inputs Default 1`] = `
           >
             <input
               disabled={false}
-              mask="111-111-111"
-              maxLength={11}
               name="email"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
-              onKeyDown={[Function]}
-              onKeyPress={[Function]}
+              onKeyPress={null}
+              onMouseDown={[Function]}
               onPaste={[Function]}
               placeholder="Type your phone number"
               size={null}
@@ -22447,14 +22445,12 @@ exports[`Storyshots Inputs Default 1`] = `
           >
             <input
               disabled={false}
-              mask="111-111-111"
-              maxLength={11}
               name="email"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
-              onKeyDown={[Function]}
-              onKeyPress={[Function]}
+              onKeyPress={null}
+              onMouseDown={[Function]}
               onPaste={[Function]}
               placeholder="Type your phone number"
               size={null}
@@ -23303,14 +23299,12 @@ exports[`Storyshots Inputs Form 1`] = `
           >
             <input
               disabled={false}
-              mask="111-111-111"
-              maxLength={11}
               name="email"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
-              onKeyDown={[Function]}
-              onKeyPress={[Function]}
+              onKeyPress={null}
+              onMouseDown={[Function]}
               onPaste={[Function]}
               placeholder="Type your phone number"
               size={null}
@@ -24197,14 +24191,12 @@ exports[`Storyshots Inputs Form 1`] = `
           >
             <input
               disabled={false}
-              mask="111-111-111"
-              maxLength={11}
               name="email"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
-              onKeyDown={[Function]}
-              onKeyPress={[Function]}
+              onKeyPress={null}
+              onMouseDown={[Function]}
               onPaste={[Function]}
               placeholder="Type your phone number"
               size={null}
