@@ -117,7 +117,7 @@ class Dropdown extends React.Component {
           onBlur={this.handleBlur}
           onFocus={this.handleFocus}
           disabled={disabled}
-          defaultValue={value || 'placeholder'}
+          value={value || 'placeholder'}
         >
           <option
             disabled
