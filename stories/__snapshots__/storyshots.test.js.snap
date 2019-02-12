@@ -29655,6 +29655,69 @@ exports[`Storyshots Legend Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Loader Default 1`] = `
+<section
+  className=""
+>
+  <h2>
+    Loader
+  </h2>
+  <div>
+    <div
+      className="container"
+    >
+      <div
+        className="card"
+      >
+        <div
+          className="title"
+        >
+          <h2>
+            Lorem ipsum 
+            <small>
+              dolor sit amet
+            </small>
+          </h2>
+          <h3>
+            Lorem ipsum
+          </h3>
+        </div>
+        <div
+          className="content"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+        </div>
+        <div
+          className="actions"
+        >
+          <button
+            className="button flat normalRelevance default"
+            disabled={false}
+            onClick={[Function]}
+            type="button"
+          >
+            <span>
+              load
+            </span>
+            <span
+              className="ripple"
+              style={
+                Object {
+                  "height": 0,
+                  "left": 0,
+                  "top": 0,
+                  "width": 0,
+                }
+              }
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
 exports[`Storyshots Modal Default 1`] = `
 <section
   className="typography"

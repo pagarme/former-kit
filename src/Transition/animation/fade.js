@@ -2,7 +2,7 @@ const fade = {
   springOptions: {
     damping: 30,
     precision: 0.01,
-    stiffness: 300,
+    stiffness: 600,
   },
   atEnter: {
     opacity: 0.3,
