@@ -17491,12 +17491,12 @@ exports[`Storyshots Dropdown Default 1`] = `
           
           <select
             className="select"
-            defaultValue="placeholder"
             disabled={false}
             id="things-shortid-mock"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
+            value="placeholder"
           >
             <option
               className="option placeholder"
@@ -17553,12 +17553,12 @@ exports[`Storyshots Dropdown Default 1`] = `
           
           <select
             className="select"
-            defaultValue="placeholder"
             disabled={false}
             id="things-shortid-mock"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
+            value="placeholder"
           >
             <option
               className="option placeholder"
@@ -17615,12 +17615,12 @@ exports[`Storyshots Dropdown Default 1`] = `
           
           <select
             className="select"
-            defaultValue="placeholder"
             disabled={false}
             id="things-shortid-mock"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
+            value="placeholder"
           >
             <option
               className="option placeholder"
@@ -17677,12 +17677,12 @@ exports[`Storyshots Dropdown Default 1`] = `
           
           <select
             className="select"
-            defaultValue="placeholder"
             disabled={false}
             id="things-shortid-mock"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
+            value="placeholder"
           >
             <option
               className="option placeholder"
@@ -17743,12 +17743,12 @@ exports[`Storyshots Dropdown Default 1`] = `
           
           <select
             className="select"
-            defaultValue="placeholder"
             disabled={true}
             id="things-shortid-mock"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
+            value="placeholder"
           >
             <option
               className="option placeholder"
@@ -17805,12 +17805,12 @@ exports[`Storyshots Dropdown Default 1`] = `
           
           <select
             className="select"
-            defaultValue="placeholder"
             disabled={true}
             id="things-shortid-mock"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
+            value="placeholder"
           >
             <option
               className="option placeholder"
@@ -17867,12 +17867,12 @@ exports[`Storyshots Dropdown Default 1`] = `
           
           <select
             className="select"
-            defaultValue="open-source"
             disabled={false}
             id="things-shortid-mock"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
+            value="open-source"
           >
             <option
               className="option placeholder"
@@ -17941,12 +17941,12 @@ exports[`Storyshots Dropdown Form 1`] = `
           </label>
           <select
             className="select"
-            defaultValue="placeholder"
             disabled={false}
             id="Things-shortid-mock"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
+            value="placeholder"
           >
             <option
               className="option placeholder"
@@ -18008,12 +18008,12 @@ exports[`Storyshots Dropdown Form 1`] = `
           </label>
           <select
             className="select"
-            defaultValue="placeholder"
             disabled={false}
             id="Things-shortid-mock"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
+            value="placeholder"
           >
             <option
               className="option placeholder"
@@ -18075,12 +18075,12 @@ exports[`Storyshots Dropdown Form 1`] = `
           </label>
           <select
             className="select"
-            defaultValue="placeholder"
             disabled={false}
             id="Things-shortid-mock"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
+            value="placeholder"
           >
             <option
               className="option placeholder"
@@ -18146,12 +18146,12 @@ exports[`Storyshots Dropdown Form 1`] = `
           </label>
           <select
             className="select"
-            defaultValue="placeholder"
             disabled={true}
             id="Things-shortid-mock"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
+            value="placeholder"
           >
             <option
               className="option placeholder"
@@ -18213,12 +18213,12 @@ exports[`Storyshots Dropdown Form 1`] = `
           </label>
           <select
             className="select"
-            defaultValue="placeholder"
             disabled={true}
             id="Things-shortid-mock"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
+            value="placeholder"
           >
             <option
               className="option placeholder"
@@ -18280,12 +18280,12 @@ exports[`Storyshots Dropdown Form 1`] = `
           </label>
           <select
             className="select"
-            defaultValue="open-source"
             disabled={false}
             id="Things-shortid-mock"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
+            value="open-source"
           >
             <option
               className="option placeholder"
