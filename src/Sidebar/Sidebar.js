@@ -14,6 +14,7 @@ const Sidebar = ({
   <aside
     className={classNames(theme.sidebar, {
       [theme.collapsed]: collapsed,
+      [theme.expanded]: !collapsed,
     })}
   >
     {children}

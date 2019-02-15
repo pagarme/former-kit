@@ -10,14 +10,11 @@ import { contains } from 'ramda'
 import {
   Sidebar,
   SidebarHeader,
-  SidebarContent,
   SidebarLinks,
   SidebarLink,
 } from '../../src/Sidebar'
 
 import Button from '../../src/Button'
-import Tag from '../../src/Tag'
-import SegmentedSwitch from '../../src/SegmentedSwitch'
 
 import Logo from './logo.svg'
 
@@ -62,18 +59,10 @@ class SidebarState extends React.Component {
 
     this.state = {
       collapsed: props.collapsed || false,
-      selectedEnvironment: 'live',
       active: [],
     }
 
     this.handleClick = this.handleClick.bind(this)
-    this.handleEnvironment = this.handleEnvironment.bind(this)
-  }
-
-  handleEnvironment (env) {
-    this.setState({
-      selectedEnvironment: env,
-    })
   }
 
   handleClick (link) {
@@ -85,7 +74,6 @@ class SidebarState extends React.Component {
   render () {
     const {
       collapsed,
-      selectedEnvironment,
     } = this.state
 
     return (
@@ -127,27 +115,6 @@ class SidebarState extends React.Component {
             </SidebarLink>
           ))}
         </SidebarLinks>
-
-        <SidebarContent>
-          {collapsed
-            ? <Tag key={selectedEnvironment}>{selectedEnvironment}</Tag>
-            : <SegmentedSwitch
-              name={`${this.id}-live-test`}
-              onChange={this.handleEnvironment}
-              options={[
-                {
-                  title: 'Live',
-                  value: 'live',
-                },
-                {
-                  title: 'Test',
-                  value: 'test',
-                },
-              ]}
-              value={this.state.selectedEnvironment}
-            />
-          }
-        </SidebarContent>
       </Sidebar>
     )
   }

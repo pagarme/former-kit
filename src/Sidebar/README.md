@@ -58,13 +58,6 @@ class SidebarState extends React.Component {
     }
 
     this.handleClick = this.handleClick.bind(this)
-    this.handleEnvironment = this.handleEnvironment.bind(this)
-  }
-
-  handleEnvironment (env) {
-    this.setState({
-      selectedEnvironment: env,
-    })
   }
 
   handleClick (link) {
@@ -118,27 +111,6 @@ class SidebarState extends React.Component {
             </SidebarLink>
           ))}
         </SidebarLinks>
-
-        <SidebarContent>
-          {collapsed
-            ? <Tag key={selectedEnvironment}>{selectedEnvironment}</Tag>
-            : <SegmentedSwitch
-              options={[
-                {
-                  title: 'Test',
-                  value: 'test',
-                },
-                {
-                  title: 'Live',
-                  value: 'live',
-                },
-              ]}
-              value={this.state.selectedEnvironment}
-              name={`${this.id}-live-test`}
-              onChange={this.handleEnvironment}
-            />
-          }
-        </SidebarContent>
       </Sidebar>
     )
   }

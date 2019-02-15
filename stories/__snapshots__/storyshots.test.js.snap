@@ -26708,7 +26708,7 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
     className="layout"
   >
     <aside
-      className="sidebar"
+      className="sidebar expanded"
     >
       <header
         className="header"
@@ -26822,52 +26822,6 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
           </li>
         </ul>
       </nav>
-      <div
-        className="content"
-      >
-        <div
-          className="segmentedSwitch"
-        >
-          <label
-            className="item"
-            htmlFor="segmented-switch-shortid-mock-shortid-mock-live-test-live"
-          >
-            <input
-              checked={true}
-              disabled={false}
-              id="segmented-switch-shortid-mock-shortid-mock-live-test-live"
-              name="segmented-switch-shortid-mock"
-              onChange={[Function]}
-              type="radio"
-              value="live"
-            />
-            <span
-              className="label"
-            >
-              Live
-            </span>
-          </label>
-          <label
-            className="item"
-            htmlFor="segmented-switch-shortid-mock-shortid-mock-live-test-test"
-          >
-            <input
-              checked={false}
-              disabled={false}
-              id="segmented-switch-shortid-mock-shortid-mock-live-test-test"
-              name="segmented-switch-shortid-mock"
-              onChange={[Function]}
-              type="radio"
-              value="test"
-            />
-            <span
-              className="label"
-            >
-              Test
-            </span>
-          </label>
-        </div>
-      </div>
     </aside>
     <div
       className="wrapper"
@@ -27199,7 +27153,7 @@ exports[`Storyshots Layout Default with all props 1`] = `
     className="layout"
   >
     <aside
-      className="sidebar"
+      className="sidebar expanded"
     >
       <header
         className="header"
@@ -27313,52 +27267,6 @@ exports[`Storyshots Layout Default with all props 1`] = `
           </li>
         </ul>
       </nav>
-      <div
-        className="content"
-      >
-        <div
-          className="segmentedSwitch"
-        >
-          <label
-            className="item"
-            htmlFor="segmented-switch-shortid-mock-shortid-mock-live-test-live"
-          >
-            <input
-              checked={true}
-              disabled={false}
-              id="segmented-switch-shortid-mock-shortid-mock-live-test-live"
-              name="segmented-switch-shortid-mock"
-              onChange={[Function]}
-              type="radio"
-              value="live"
-            />
-            <span
-              className="label"
-            >
-              Live
-            </span>
-          </label>
-          <label
-            className="item"
-            htmlFor="segmented-switch-shortid-mock-shortid-mock-live-test-test"
-          >
-            <input
-              checked={false}
-              disabled={false}
-              id="segmented-switch-shortid-mock-shortid-mock-live-test-test"
-              name="segmented-switch-shortid-mock"
-              onChange={[Function]}
-              type="radio"
-              value="test"
-            />
-            <span
-              className="label"
-            >
-              Test
-            </span>
-          </label>
-        </div>
-      </div>
     </aside>
     <div
       className="wrapper"
@@ -27794,7 +27702,7 @@ exports[`Storyshots Layout Default without Footer 1`] = `
     className="layout"
   >
     <aside
-      className="sidebar"
+      className="sidebar expanded"
     >
       <header
         className="header"
@@ -27908,52 +27816,6 @@ exports[`Storyshots Layout Default without Footer 1`] = `
           </li>
         </ul>
       </nav>
-      <div
-        className="content"
-      >
-        <div
-          className="segmentedSwitch"
-        >
-          <label
-            className="item"
-            htmlFor="segmented-switch-shortid-mock-shortid-mock-live-test-live"
-          >
-            <input
-              checked={true}
-              disabled={false}
-              id="segmented-switch-shortid-mock-shortid-mock-live-test-live"
-              name="segmented-switch-shortid-mock"
-              onChange={[Function]}
-              type="radio"
-              value="live"
-            />
-            <span
-              className="label"
-            >
-              Live
-            </span>
-          </label>
-          <label
-            className="item"
-            htmlFor="segmented-switch-shortid-mock-shortid-mock-live-test-test"
-          >
-            <input
-              checked={false}
-              disabled={false}
-              id="segmented-switch-shortid-mock-shortid-mock-live-test-test"
-              name="segmented-switch-shortid-mock"
-              onChange={[Function]}
-              type="radio"
-              value="test"
-            />
-            <span
-              className="label"
-            >
-              Test
-            </span>
-          </label>
-        </div>
-      </div>
     </aside>
     <div
       className="wrapper"
@@ -28334,7 +28196,7 @@ exports[`Storyshots Layout Default without Header 1`] = `
     className="layout"
   >
     <aside
-      className="sidebar"
+      className="sidebar expanded"
     >
       <header
         className="header"
@@ -28448,52 +28310,6 @@ exports[`Storyshots Layout Default without Header 1`] = `
           </li>
         </ul>
       </nav>
-      <div
-        className="content"
-      >
-        <div
-          className="segmentedSwitch"
-        >
-          <label
-            className="item"
-            htmlFor="segmented-switch-shortid-mock-shortid-mock-live-test-live"
-          >
-            <input
-              checked={true}
-              disabled={false}
-              id="segmented-switch-shortid-mock-shortid-mock-live-test-live"
-              name="segmented-switch-shortid-mock"
-              onChange={[Function]}
-              type="radio"
-              value="live"
-            />
-            <span
-              className="label"
-            >
-              Live
-            </span>
-          </label>
-          <label
-            className="item"
-            htmlFor="segmented-switch-shortid-mock-shortid-mock-live-test-test"
-          >
-            <input
-              checked={false}
-              disabled={false}
-              id="segmented-switch-shortid-mock-shortid-mock-live-test-test"
-              name="segmented-switch-shortid-mock"
-              onChange={[Function]}
-              type="radio"
-              value="test"
-            />
-            <span
-              className="label"
-            >
-              Test
-            </span>
-          </label>
-        </div>
-      </div>
     </aside>
     <div
       className="wrapper"
@@ -33862,21 +33678,12 @@ exports[`Storyshots Sidebar Collapsed 1`] = `
       </li>
     </ul>
   </nav>
-  <div
-    className="content"
-  >
-    <div
-      className="tag"
-    >
-      live
-    </div>
-  </div>
 </aside>
 `;
 
 exports[`Storyshots Sidebar Default 1`] = `
 <aside
-  className="sidebar"
+  className="sidebar expanded"
 >
   <header
     className="header"
@@ -33990,52 +33797,6 @@ exports[`Storyshots Sidebar Default 1`] = `
       </li>
     </ul>
   </nav>
-  <div
-    className="content"
-  >
-    <div
-      className="segmentedSwitch"
-    >
-      <label
-        className="item"
-        htmlFor="segmented-switch-shortid-mock-shortid-mock-live-test-live"
-      >
-        <input
-          checked={true}
-          disabled={false}
-          id="segmented-switch-shortid-mock-shortid-mock-live-test-live"
-          name="segmented-switch-shortid-mock"
-          onChange={[Function]}
-          type="radio"
-          value="live"
-        />
-        <span
-          className="label"
-        >
-          Live
-        </span>
-      </label>
-      <label
-        className="item"
-        htmlFor="segmented-switch-shortid-mock-shortid-mock-live-test-test"
-      >
-        <input
-          checked={false}
-          disabled={false}
-          id="segmented-switch-shortid-mock-shortid-mock-live-test-test"
-          name="segmented-switch-shortid-mock"
-          onChange={[Function]}
-          type="radio"
-          value="test"
-        />
-        <span
-          className="label"
-        >
-          Test
-        </span>
-      </label>
-    </div>
-  </div>
 </aside>
 `;
 

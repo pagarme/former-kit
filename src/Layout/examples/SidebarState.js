@@ -8,13 +8,9 @@ import shortid from 'shortid'
 import {
   Sidebar,
   SidebarHeader,
-  SidebarContent,
   SidebarLinks,
   SidebarLink,
 } from '../../Sidebar'
-
-import Tag from '../../Tag'
-import SegmentedSwitch from '../../SegmentedSwitch'
 
 const items = [
   {
@@ -37,23 +33,13 @@ class SidebarState extends React.Component {
 
     this.state = {
       collapsed: false,
-      selectedEnvironment: 'live',
       active: '',
     }
-
-    this.handleEnvironment = this.handleEnvironment.bind(this)
-  }
-
-  handleEnvironment (env) {
-    this.setState({
-      selectedEnvironment: env,
-    })
   }
 
   render () {
     const {
       collapsed,
-      selectedEnvironment,
     } = this.state
 
     return (
@@ -70,27 +56,6 @@ class SidebarState extends React.Component {
             <IconMenu width="16" height="16" />
           </button>
         </SidebarHeader>
-
-        <SidebarContent>
-          {collapsed
-            ? <Tag key={selectedEnvironment}>{selectedEnvironment}</Tag>
-            : <SegmentedSwitch
-              options={[
-                {
-                  title: 'Test',
-                  value: 'test',
-                },
-                {
-                  title: 'Live',
-                  value: 'live',
-                },
-              ]}
-              value={this.state.selectedEnvironment}
-              name={`${this.id}-live-test`}
-              onChange={this.handleEnvironment}
-            />
-          }
-        </SidebarContent>
 
         <SidebarLinks>
           {items.map(item => (
