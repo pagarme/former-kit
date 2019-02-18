@@ -42,9 +42,18 @@ const isPeriodSelection = equals(PERIOD_SELECTION)
  * the end one. The date selection callback will always provide two dates, if
  * the component is showing only one date, the callback will receive the same date
  * as start and end.
+ * @deprecated CalendarInput component is being deprecated, use DateInput with
+ * showCalendar prop as "false" instead.
  */
 class CalendarInput extends Component {
   constructor (props) {
+    if (process.env.NODE_ENV !== 'test') {
+      // eslint-disable-next-line no-console
+      console.warn(
+        'CalendarInput component is being deprecated, use DateInput with showCalendar prop as "false" instead.'
+      )
+    }
+
     super(props)
     const { start, end } = props.value
     const isValidStart = (!start && !isPeriodSelection(props.dateSelection))
