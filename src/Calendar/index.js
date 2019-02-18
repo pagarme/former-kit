@@ -10,15 +10,12 @@ import {
 import {
   add,
   complement,
-  contains,
   omit,
   times,
 } from 'ramda'
-import shortid from 'shortid'
 import normalizeDates from './normalizeDates'
 import ThemeConsumer from '../ThemeConsumer'
 import {
-  isValidMoment,
   validateDate,
 } from '../DateInput/dateHelpers'
 
@@ -48,78 +45,34 @@ const getExtraProps = omit([
 ])
 
 const START_DATE = 'startDate'
-const isVisibleDate = (months, newDates, year) => {
-  const { start, end } = newDates
-  let isVisibleStart = false
-  let isVisibleEnd = false
-
-  if (isValidMoment(start) && start.year() === year) {
-    isVisibleStart = contains(start.month(), months)
-  }
-
-  if (isValidMoment(end) && end.year() === year) {
-    isVisibleEnd = contains(end.month(), months)
-  }
-
-  return {
-    isVisibleEnd,
-    isVisibleStart,
-  }
-}
-
-const needCalendarUpdate = (
-  focusedInput,
-  {
-    isVisibleStart,
-    isVisibleEnd,
-  }
-) => (!isVisibleEnd || (focusedInput === START_DATE && !isVisibleStart))
 
 const isOutsideRange = limits => complement(validateDate(limits))
 
-const validateVisibleMonths = (currentMonth, months) => times(add(currentMonth), months)
+const validateVisibleMonths = (currentMonth, months) =>
+  times(add(currentMonth), months)
 
-const getDatesYear = ({ end, start }) => {
-  if (isValidMoment(start)) {
-    return start.year()
-  }
-
-  if (isValidMoment(end)) {
-    return end.year()
-  }
-
-  return moment().year()
-}
 /**
  * Custom calendar based on `react-dates` from airbnb with a simple interface.
  * This component have some special props and the surplus props are passed down to
  * the `react-dates`.
  */
 class Calendar extends Component {
+  static getDerivedStateFromProps ({ focusedInput }, state) {
+    return {
+      focusedInput: focusedInput || state.focusedInput,
+    }
+  }
+
   constructor (props) {
     super(props)
     this.state = {
       focusedInput: props.focusedInput || START_DATE,
-      inputKey: shortid.generate(),
-      visibleMonths: this.getVisibleMonths(moment()),
+      visibleMonths: this.getVisibleMonths(moment()), // eslint-disable-line react/no-unused-state
     }
     this.getVisibleMonths = this.getVisibleMonths.bind(this)
     this.handleDatesChange = this.handleDatesChange.bind(this)
     this.handleFocusChange = this.handleFocusChange.bind(this)
     this.handleMonthChange = this.handleMonthChange.bind(this)
-  }
-
-  componentWillReceiveProps ({ dates, focusedInput }) {
-    if (this.state.visibleMonths) {
-      const year = getDatesYear(this.props.dates)
-      const visibleDates = isVisibleDate(this.state.visibleMonths, dates, year)
-
-      if (needCalendarUpdate(focusedInput, visibleDates)) {
-        this.setState({
-          inputKey: shortid.generate(),
-        })
-      }
-    }
   }
 
   getVisibleMonths (firstDay) {
@@ -138,17 +91,22 @@ class Calendar extends Component {
   }
 
   handleFocusChange (focusedInput) {
+    const {
+      onFocusChange,
+    } = this.props
+
     this.setState({
       focusedInput: focusedInput || START_DATE,
     })
-    if (this.onFocusChange) {
-      this.props.onFocusChange(focusedInput)
+
+    if (onFocusChange) {
+      onFocusChange(focusedInput)
     }
   }
 
   handleMonthChange (firstDay, callback) {
     this.setState({
-      visibleMonths: this.getVisibleMonths(firstDay),
+      visibleMonths: this.getVisibleMonths(firstDay), // eslint-disable-line react/no-unused-state
     }, callback)
   }
 
@@ -175,7 +133,6 @@ class Calendar extends Component {
               focused
               hideKeyboardShortcutsPanel
               isOutsideRange={isOutsideRange(limits)}
-              key={this.state.inputKey}
               navNext={icons.nextMonth}
               navPrev={icons.previousMonth}
               numberOfMonths={months}
@@ -284,7 +241,7 @@ Calendar.propTypes = {
 
 Calendar.defaultProps = {
   dateSelection: 'single',
-  focusedInput: START_DATE,
+  focusedInput: null,
   icons: {},
   limits: {
     lower: moment('1900-01-01', 'YYYY-MM-DD'),
