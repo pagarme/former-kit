@@ -1,18 +1,43 @@
 import React from 'react'
-import { shallow, mount } from 'enzyme'
+import {
+  cleanup,
+  render,
+  fireEvent,
+  waitForElement,
+} from 'react-testing-library'
 import moment from 'moment'
 
 import DateSelector from './index'
-import Button from '../Button'
 
 const presets = [
   {
-    title: 'Últimos:',
-    items: [
+    key: 'today',
+    label: 'today',
+    date: () => 0,
+    mode: 'single',
+  },
+  {
+    key: 'single',
+    label: 'single',
+    date: () => null,
+    mode: 'single',
+  },
+  {
+    key: 'period',
+    label: 'period',
+    date: () => null,
+    mode: 'period',
+  },
+  {
+    key: 'last',
+    label: 'last',
+    mode: 'period',
+    list: [
       {
         key: 'last-7',
-        title: '7 dias',
+        label: 'last 7',
         date: () => -7,
+        mode: 'period',
       },
     ],
   },
@@ -23,318 +48,228 @@ const defaultDates = {
   end: moment(),
 }
 
+class RenderWithButtons extends React.Component {
+  constructor (props) {
+    super(props)
+
+    this.state = {
+      visible: false,
+    }
+
+    this.toggleVisible = this.toggleVisible.bind(this)
+  }
+
+  toggleVisible () {
+    this.setState({
+      visible: !this.state.visible,
+    })
+  }
+
+  render () {
+    return (
+      <div>
+        <button id="close-button" onClick={this.toggleVisible}>Close!</button>
+        <DateSelector
+          {...this.props}
+          visible={this.state.visible}
+        >
+          <button id="open-button" onClick={this.toggleVisible}>Open!</button>
+        </DateSelector>
+      </div>
+    )
+  }
+}
+
+const waitForPopover = container =>
+  waitForElement(() => container.querySelector('.ReactDates-overrides'))
 
 describe('DateSelector', () => {
+  afterEach(cleanup)
+
   it('should mount component', () => {
-    shallow(
-      <DateSelector
+    render(
+      <RenderWithButtons
         presets={presets}
         dates={defaultDates}
         focusedInput="startDate"
+        onConfirm={() => null}
+        onChange={() => null}
       />
     )
   })
 
-  it('should render presets with default presets', () => {
-    const component = mount(
-      <DateSelector
-        presets={presets}
-        dates={defaultDates}
-      />
-    )
-
-    expect(component.find('ol li input').length).toBe(5)
-  })
-
-  it('should render buttons in default translation', () => {
-    const component = mount(
-      <DateSelector
-        presets={presets}
-        dates={defaultDates}
-      />
-    )
-
-    expect(component.find(Button).at(0).text()).toBe('cancel')
-    expect(component.find(Button).at(1).text()).toBe('confirm period')
-  })
-
-  it('should render buttons in portuguese', () => {
-    const component = mount(
-      <DateSelector
-        presets={presets}
-        dates={defaultDates}
-        strings={{
-          cancel: 'Cancelar',
-          confirmPeriod: 'Confirmar período',
-        }}
-      />
-    )
-
-    expect(component.find(Button).at(0).text()).toBe('Cancelar')
-    expect(component.find(Button).at(1).text()).toBe('Confirmar período')
-  })
-
-  it('should call onConfirm', () => {
+  it('should call onConfirm', async () => {
     const onConfirm = jest.fn()
 
-    const component = mount(
-      <DateSelector
+    const { container } = render(
+      <RenderWithButtons
         presets={presets}
         dates={defaultDates}
         focusedInput="startDate"
         onConfirm={onConfirm}
+        onChange={() => null}
       />
     )
 
-    component
-      .find(Button)
-      .at(1)
-      .simulate('click')
+    fireEvent.click(container.querySelector('#open-button'))
 
-    const lastOnConfirmCalledWith = onConfirm.mock.calls[0][0]
+    await waitForPopover(container)
 
-    expect(lastOnConfirmCalledWith.start).toBeInstanceOf(moment)
-    expect(lastOnConfirmCalledWith.end).toBeInstanceOf(moment)
+    fireEvent.click(container.querySelector('#close-button'))
+
+    expect(onConfirm).toHaveBeenCalledTimes(1)
   })
 
-  it('should call onCancel', () => {
-    const onCancel = jest.fn()
-
-    const component = mount(
-      <DateSelector
-        presets={presets}
-        dates={defaultDates}
-        focusedInput="startDate"
-        onCancel={onCancel}
-      />
-    )
-
-    component
-      .find(Button)
-      .first()
-      .simulate('click')
-
-    expect(onCancel).toHaveBeenCalled()
-  })
-
-  it('should return { start, end } onChange', () => {
+  it('should return { start, end } onChange', async () => {
     const onChange = jest.fn()
 
-    const component = mount(
-      <DateSelector
+    const { container } = render(
+      <RenderWithButtons
         presets={presets}
         dates={defaultDates}
         focusedInput="startDate"
+        onConfirm={() => null}
         onChange={onChange}
       />
     )
 
-    component
-      .find('li')
-      .at(2)
-      .find('input')
-      .simulate('change')
+    fireEvent.click(container.querySelector('#open-button'))
 
-    const dateReceived = onChange.mock.calls[0][0]
+    await waitForPopover(container)
 
-    expect(onChange).toHaveBeenCalled()
-    expect(dateReceived.start).toBeInstanceOf(moment)
-    expect(dateReceived.end).toBeInstanceOf(moment)
+    fireEvent.click(
+      container
+        .querySelector('table tr:nth-child(3) td:nth-child(1)')
+    )
+
+    expect(onChange).toHaveBeenCalledTimes(1)
+
+    const onChangeParams = onChange.mock.calls[0][0]
+    expect(onChangeParams.start).toBeInstanceOf(moment)
+    expect(onChangeParams.end).toBeInstanceOf(moment)
   })
 
-  it('should return a seven-day interval', () => {
+  it('should return a seven-day interval onChange', async () => {
     const onChange = jest.fn()
 
-    const component = mount(
-      <DateSelector
+    const { container } = render(
+      <RenderWithButtons
         presets={presets}
         dates={defaultDates}
         focusedInput="startDate"
+        selectionMode="period"
+        onConfirm={() => null}
         onChange={onChange}
       />
     )
 
-    component
-      .find('li')
-      .at(2)
-      .find('input')
-      .simulate('change')
+    fireEvent.click(container.querySelector('#open-button'))
 
-    const { start, end } = onChange.mock.calls[0][0]
-    const startDate = moment(start)
-    const endDate = moment(end)
+    await waitForPopover(container)
 
-    const dateDiff = startDate.diff(endDate, 'days')
+    const { name } = container.querySelector('input[type="radio"]')
+    fireEvent.click(container.querySelector(`input[type="radio"]#${name}last-7`))
 
-    expect(dateDiff).toBe(-7)
+    expect(onChange).toHaveBeenCalledTimes(1)
+
+    const onChangeParams = onChange.mock.calls[0][0]
+    expect(
+      onChangeParams.start.isSame(moment().subtract(7, 'day'), 'day')
+    ).toBeTruthy()
+
+    expect(
+      onChangeParams.end.isSame(moment(), 'day')
+    ).toBeTruthy()
   })
 
-  it('should call onFocusChange', () => {
-    const focusedInputHistory = []
-
-    class TestComponent extends React.Component {
-      constructor () {
-        super()
-
-        this.state = {
-          dates: {},
-          focusedInput: 'startDate',
-        }
-
-        this.onFocusChange = this.onFocusChange.bind(this)
-        this.onChange = this.onChange.bind(this)
-      }
-
-      onFocusChange (focusedInput) {
-        focusedInputHistory.push(focusedInput)
-        this.setState({ focusedInput })
-      }
-
-      onChange (dates) {
-        this.setState({ dates })
-      }
-
-      render () {
-        return (
-          <DateSelector
-            presets={presets}
-            dates={this.state.dates}
-            focusedInput={this.state.focusedInput}
-            onFocusChange={this.onFocusChange}
-            onChange={this.onChange}
-          />
-        )
-      }
-    }
-
-    const component = mount(<TestComponent />)
-
-    // select period preset
-    component
-      .find('ol input')
-      .last()
-      .simulate('change')
-
-    // choose the startDate
-    component
-      .find('.CalendarMonth_table')
-      .at(2)
-      .find('.CalendarDay')
-      .at(4)
-      .simulate('click')
-
-    expect(focusedInputHistory[0]).toBe('endDate')
-
-    // choose the endDate
-    component
-      .find('.CalendarMonth_table')
-      .at(2)
-      .find('.CalendarDay')
-      .at(10)
-      .simulate('click')
-    expect(focusedInputHistory[1]).toBe('startDate')
-  })
-
-  it("should work when 'dates' is null", () => {
+  it('should return null when unchanged', async () => {
     const datesNull = {
       end: null,
       start: null,
     }
 
-    const onChange = jest.fn()
+    const onConfirm = jest.fn()
 
-    const component = mount(
-      <DateSelector
+    const { container } = render(
+      <RenderWithButtons
         presets={presets}
         dates={datesNull}
         focusedInput="startDate"
-        onChange={onChange}
+        onConfirm={onConfirm}
+        onChange={() => null}
       />
     )
 
-    component
-      .find('li')
-      .at(2)
-      .find('input')
-      .simulate('change')
+    fireEvent.click(container.querySelector('#open-button'))
 
-    const dateReceived = onChange.mock.calls[0][0]
+    await waitForPopover(container)
 
-    expect(onChange).toHaveBeenCalled()
-    expect(dateReceived.start).toBeInstanceOf(moment)
-    expect(dateReceived.end).toBeInstanceOf(moment)
+    fireEvent.click(container.querySelector('#close-button'))
+
+    expect(onConfirm).toHaveBeenCalledTimes(1)
+
+    const onConfirmParams = onConfirm.mock.calls[0][0]
+
+    expect(onConfirmParams.start).toBeNull()
+    expect(onConfirmParams.end).toBeNull()
   })
 
-  it('should render SINGLE preset when start and end are null', () => {
-    const dates = { start: null, end: null }
+  it('should render TODAY preset when selected preset is today', async () => {
+    const onConfirm = jest.fn()
 
-    const component = mount(
-      <DateSelector
+    const { container } = render(
+      <RenderWithButtons
         presets={presets}
-        dates={dates}
         focusedInput="startDate"
+        selectedPreset="today"
+        onConfirm={onConfirm}
+        onChange={() => null}
       />
     )
 
-    expect(component.find('input').at(3).props().checked).toBeTruthy()
+    fireEvent.click(container.querySelector('#open-button'))
+
+    await waitForPopover(container)
+
+    fireEvent.click(container.querySelector('#close-button'))
+
+    expect(onConfirm).toHaveBeenCalledTimes(1)
+
+    const onConfirmParams = onConfirm.mock.calls[0][0]
+
+    const now = moment()
+
+    expect(onConfirmParams.start.isSame(now.startOf('day'))).toBeTruthy()
+    expect(onConfirmParams.end.isSame(now.endOf('day'))).toBeTruthy()
   })
 
-  it('should render TODAY preset when start and end are today', () => {
-    const dates = { start: moment(), end: moment() }
-
-    const component = mount(
-      <DateSelector
-        presets={presets}
-        dates={dates}
-        focusedInput="startDate"
-      />
-    )
-
-    expect(component.find('input').at(0).props().checked).toBeTruthy()
-  })
-
-  it('should render RANGE preset when start and end are different', () => {
-    const dates = { start: moment(), end: moment().add(10, 'days') }
-
-    const component = mount(
-      <DateSelector
-        presets={presets}
-        dates={dates}
-        focusedInput="startDate"
-      />
-    )
-
-    expect(component.find('input').at(4).props().checked).toBeTruthy()
-  })
-
-  it('should render RANGE preset with only start date when end is null', () => {
-    const dates = { start: moment(), end: null }
-
-    const component = mount(
-      <DateSelector
-        presets={presets}
-        dates={dates}
-        focusedInput="startDate"
-      />
-    )
-
-    expect(component.find('input').at(4).props().checked).toBeTruthy()
-  })
-
-  it('should dates change to null when anyDate preset is selected', () => {
+  it('should return startOf and endOf day when selecting single day', async () => {
     const onChange = jest.fn()
-    const dates = { start: moment(), end: moment() }
 
-    const component = mount(
-      <DateSelector
+    const { container } = render(
+      <RenderWithButtons
         presets={presets}
-        dates={dates}
         focusedInput="startDate"
+        onConfirm={() => null}
         onChange={onChange}
       />
     )
 
-    component.find('input').at(1).simulate('change')
-    expect(onChange).toHaveBeenCalledWith({ start: null, end: null })
+    fireEvent.click(container.querySelector('#open-button'))
+
+    await waitForPopover(container)
+
+    const now = moment()
+    fireEvent.click(
+      container
+        .querySelector(`td[aria-label="${now.format('dddd, MMMM D, YYYY')}"]`)
+    )
+
+    expect(onChange).toHaveBeenCalledTimes(1)
+
+    const onChangeParams = onChange.mock.calls[0][0]
+
+    expect(onChangeParams.start.isSame(now.startOf('day'))).toBeTruthy()
+    expect(onChangeParams.end.isSame(now.endOf('day'))).toBeTruthy()
   })
 })
