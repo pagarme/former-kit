@@ -1,33 +1,6 @@
 import moment from 'moment'
 
-import { is } from 'ramda'
-
-const isNumber = is(Number)
-
 export default function normalizeDates (dates) {
-  if (isNumber(dates)) {
-    if (dates === 0) {
-      return {
-        start: moment().startOf('day'),
-        end: moment().add(dates, 'day').endOf('day'),
-      }
-    }
-
-    if (dates > 0) {
-      return {
-        start: moment().startOf('day'),
-        end: moment().add(dates, 'day').endOf('day'),
-      }
-    }
-
-    if (dates < 0) {
-      return {
-        start: moment().add(dates, 'day').startOf('day'),
-        end: moment().endOf('day'),
-      }
-    }
-  }
-
   if (!dates) {
     return { start: null, end: null }
   }
@@ -39,25 +12,14 @@ export default function normalizeDates (dates) {
     }
   }
 
-  const normal = {
-    start: null,
-    end: null,
+  let normal = {
+    start: dates.start || null,
+    end: dates.end || null,
   }
 
-  if (dates.start) {
-    normal.start = dates.start.startOf('day')
-  }
-
-  if (dates.end) {
-    normal.end = dates.end.endOf('day')
-  }
-
-  if (dates.startDate) {
-    normal.start = dates.startDate.startOf('day')
-  }
-
-  if (dates.endDate) {
-    normal.end = dates.endDate.endOf('day')
+  normal = {
+    start: dates.start ? moment(normal.start).startOf('day') : null,
+    end: dates.end ? moment(normal.end).endOf('day') : null,
   }
 
   return normal

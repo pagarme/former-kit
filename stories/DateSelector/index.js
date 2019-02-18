@@ -1,94 +1,162 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { storiesOf } from '@storybook/react'
+import { action } from '@storybook/addon-actions'
 import moment from 'moment'
 
+import Button from '../../src/Button'
 import Section from '../Section'
 import DateSelector from '../../src/DateSelector'
+import AsideState from './aside'
 
-const presets = [
-  {
-    title: 'Last:',
-    items: [
-      {
-        key: 'last-7',
-        title: '7 days',
-        date: () => -7,
-      },
-      {
-        key: 'last-15',
-        title: '15 days',
-        date: () => -15,
-      },
-      {
-        key: 'last-30',
-        title: '30 days',
-        date: () => -30,
-      },
-      {
-        key: 'last-60',
-        title: '60 days',
-        date: () => -60,
-      },
-    ],
-  },
-]
-
-/*
-  Do not use storybook addon actions,
-  it changes context and crashes this component
-*/
-const action = (func, params) => {
-  console.log(func, params) // eslint-disable-line no-console
-}
+import presets from './presets'
 
 class DateSelectorExample extends React.Component {
   constructor (props) {
     super(props)
 
     this.state = {
-      dates: {
-        start: moment().subtract(5, 'days'),
-        end: moment().subtract(2, 'days'),
-      },
-      focusedInput: 'startDate',
+      dates: props.dates,
+      dateSelectorVisible: false,
+      selectedPreset: props.selectedPreset,
     }
 
-    this.handleChange = this.handleChange.bind(this)
-    this.handleFocusChange = this.handleFocusChange.bind(this)
+    this.handleButtonClick = this.handleButtonClick.bind(this)
+    this.handleDatesChange = this.handleDatesChange.bind(this)
+    this.handlePresetChange = this.handlePresetChange.bind(this)
   }
 
-  handleChange (dates) {
-    this.setState({ dates })
+  handleButtonClick () {
+    this.setState({
+      dateSelectorVisible: true,
+    })
   }
 
-  handleFocusChange (focusedInput) {
-    this.setState({ focusedInput })
+  handleDatesChange (dates) {
+    this.setState({
+      dates,
+    })
+
+    action('onChange')(dates)
+  }
+
+  handlePresetChange (dates, preset) {
+    this.setState({
+      dates,
+      selectedPreset: preset.key,
+    })
+
+    action('onPresetChange')({ dates, preset })
   }
 
   render () {
     return (
       <DateSelector
-        presets={presets}
         dates={this.state.dates}
-        focusedInput={this.state.focusedInput}
-        onFocusChange={this.handleFocusChange}
-        onChange={this.handleChange}
-        onConfirm={dates => action('onConfirm', dates)}
-        onCancel={() => action('onCancel', '')}
-        selectedPreset={this.props.selectedPreset}
-      />
+        onConfirm={dates => action('onConfirm')(dates)}
+        onChange={this.handleDatesChange}
+        onPresetChange={this.handlePresetChange}
+        presets={presets}
+        selectedPreset={this.state.selectedPreset}
+        selectionMode={this.props.selectionMode}
+        showCalendar={this.props.showCalendar}
+        showSidebar={this.props.showSidebar}
+        visible={this.state.dateSelectorVisible}
+      >
+        <Button onClick={this.handleButtonClick}>Button</Button>
+      </DateSelector>
     )
   }
 }
 
+DateSelectorExample.propTypes = {
+  dates: PropTypes.shape({
+    start: PropTypes.instanceOf(moment),
+    end: PropTypes.instanceOf(moment),
+  }),
+  selectedPreset: PropTypes.string,
+  showCalendar: PropTypes.bool,
+  showSidebar: PropTypes.bool,
+}
+
+DateSelectorExample.defaultProps = {
+  dates: {},
+  selectedPreset: '',
+  showCalendar: true,
+  showSidebar: true,
+}
+
 storiesOf('DateSelector', module)
-  .add('All types with defaultTheme', () => (
+  .add('Without sidebar', () => (
+    <Section>
+      <DateSelectorExample
+        showSidebar={false}
+      />
+    </Section>
+  ))
+  .add('Without sidebar and pre selected date', () => (
+    <Section>
+      <DateSelectorExample
+        dates={{
+          start: moment(),
+          end: moment(),
+        }}
+        showSidebar={false}
+      />
+    </Section>
+  ))
+  .add('Without sidebar and period mode', () => (
+    <Section>
+      <DateSelectorExample
+        selectionMode="period"
+        showSidebar={false}
+      />
+    </Section>
+  ))
+  .add('Without sidebar and pre selected period', () => (
+    <Section>
+      <DateSelectorExample
+        dates={{
+          start: moment().subtract(2, 'days'),
+          end: moment(),
+        }}
+        selectionMode="period"
+        showSidebar={false}
+      />
+    </Section>
+  ))
+  .add('With sidebar', () => (
     <Section>
       <DateSelectorExample />
     </Section>
   ))
-  .add('With selected preset', () => (
+  .add('With sidebar and selected preset', () => (
     <Section>
-      <DateSelectorExample selectedPreset="last-15" />
+      <DateSelectorExample
+        selectedPreset="last-7"
+      />
+    </Section>
+  ))
+  .add('With sidebar only', () => (
+    <Section>
+      <DateSelectorExample showCalendar={false} />
+    </Section>
+  ))
+  .add('With sidebar only and selected preset', () => (
+    <Section>
+      <DateSelectorExample
+        selectedPreset="last-7"
+        showCalendar={false}
+      />
+    </Section>
+  ))
+  .add('Aside', () => (
+    <Section>
+      <AsideState />
+    </Section>
+  ))
+  .add('Aside with initial selected preset', () => (
+    <Section>
+      <AsideState selectedPreset="last-7" />
     </Section>
   ))
