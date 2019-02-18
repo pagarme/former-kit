@@ -1,14 +1,7 @@
 import moment from 'moment'
 
-import {
-  invoker,
-  curry,
-} from 'ramda'
-
-
 const DATE_MASK = 'L'
 
-const formatMoment = invoker(1, 'format')(DATE_MASK)
 const parseMoment = date => moment(date, DATE_MASK, true)
 
 export const textToMoment = ({ start, end }) => ({
@@ -44,24 +37,6 @@ export const hasDifferentEnd = (dates) => {
 
   return true
 }
-
-export const clampRange = curry((limits, date) => {
-  if (date === null) {
-    return null
-  }
-
-  const momentDate = parseMoment(date)
-
-  if (date && limits.lower && momentDate.isBefore(limits.lower)) {
-    return formatMoment(limits.lower)
-  }
-
-  if (date && limits.upper && momentDate.isAfter(limits.upper)) {
-    return formatMoment(limits.upper)
-  }
-
-  return formatMoment(momentDate)
-})
 
 export const validateRange = (limits, dates) => {
   const { start, end } = textToMoment(dates)
@@ -104,5 +79,5 @@ export const validateDate = ({ upper, lower }) => (date) => {
 export const isValidMoment = date =>
   date && date.isValid()
 
-export const inputDateMask = moment()
+export const inputDateMask = () => moment()
   .format(DATE_MASK).replace(/\d/g, '1')
