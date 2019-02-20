@@ -29,9 +29,9 @@ Tag.propTypes = {
     tag: PropTypes.string,
   }),
   /*
-   * The 'children' prop is a string.
+   * The 'children' prop is a node, it could be a string or a react element
    */
-  children: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
 }
 
 Tag.defaultProps = {
