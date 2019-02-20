@@ -33800,6 +33800,245 @@ exports[`Storyshots Sidebar Default 1`] = `
 </aside>
 `;
 
+exports[`Storyshots Snackbar Default 1`] = `
+<div
+  className="typography"
+>
+  <section
+    className=""
+  >
+    <h2>
+      Error
+    </h2>
+    <div>
+      <div
+        className="snackbar error"
+        style={
+          Object {
+            "opacity": 0.3,
+          }
+        }
+      >
+        <div
+          className="content"
+        >
+          <p>
+            Something went wrong!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br />
+  <section
+    className=""
+  >
+    <h2>
+      Info
+    </h2>
+    <div>
+      <div
+        className="snackbar info"
+        style={
+          Object {
+            "opacity": 0.3,
+          }
+        }
+      >
+        <div
+          className="content"
+        >
+          <p>
+            Settings saved successfully
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br />
+  <section
+    className=""
+  >
+    <h2>
+      Success
+    </h2>
+    <div>
+      <div
+        className="snackbar success"
+        style={
+          Object {
+            "opacity": 0.3,
+          }
+        }
+      >
+        <div
+          className="content"
+        >
+          <p>
+            <strong>
+              Hurray!
+            </strong>
+             Your settings were saved successfully!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br />
+  <section
+    className=""
+  >
+    <h2>
+      Warning
+    </h2>
+    <div>
+      <div
+        className="snackbar warning"
+        style={
+          Object {
+            "opacity": 0.3,
+          }
+        }
+      >
+        <div
+          className="content"
+        >
+          <p>
+            <strong>
+              Warning!
+            </strong>
+             Something went wrong...
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br />
+  <section
+    className=""
+  >
+    <h2>
+      Event
+    </h2>
+    <div>
+      <div
+        className="snackbar info"
+        style={
+          Object {
+            "opacity": 0.3,
+          }
+        }
+      >
+        <div
+          className="content"
+        >
+          <p>
+            Settings saved successfully
+          </p>
+        </div>
+        <button
+          className="button clean normalRelevance default iconButton"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          <ClearClose24.svg
+            height={12}
+            width={12}
+          />
+          <span
+            className="ripple"
+            style={
+              Object {
+                "height": 0,
+                "left": 0,
+                "top": 0,
+                "width": 0,
+              }
+            }
+          />
+        </button>
+      </div>
+    </div>
+  </section>
+  <br />
+  <section
+    className=""
+  >
+    <h2>
+      With State
+    </h2>
+    <div>
+      <div>
+        <p>
+          This content will be hidden by the Snackbar Component
+        </p>
+        <div>
+          <button
+            className="button flat normalRelevance default"
+            disabled={false}
+            onClick={[Function]}
+            type="button"
+          >
+            <span>
+              test snackbar
+            </span>
+            <span
+              className="ripple"
+              style={
+                Object {
+                  "height": 0,
+                  "left": 0,
+                  "top": 0,
+                  "width": 0,
+                }
+              }
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className=""
+  >
+    <h2>
+      With TimeOut
+    </h2>
+    <div>
+      <div>
+        <p>
+          This content will be hidden by the Snackbar Component
+        </p>
+        <div>
+          <button
+            className="button flat normalRelevance default"
+            disabled={false}
+            onClick={[Function]}
+            type="button"
+          >
+            <span>
+              test snackbar
+            </span>
+            <span
+              className="ripple"
+              style={
+                Object {
+                  "height": 0,
+                  "left": 0,
+                  "top": 0,
+                  "width": 0,
+                }
+              }
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;
+
 exports[`Storyshots SpacedSegmentedSwitch Default 1`] = `
 <div
   className="typography"
@@ -39944,6 +40183,59 @@ exports[`Storyshots Transition Animation 1`] = `
         >
           <h2>
             Zoom
+          </h2>
+          <div
+            className="grid"
+          >
+            <div
+              className="row"
+            >
+              <div
+                className="col desknull tvnull tabletnull palmnull startAlign"
+              >
+                <button
+                  className="button flat normalRelevance default"
+                  disabled={false}
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <span>
+                    Click me
+                  </span>
+                  <span
+                    className="ripple"
+                    style={
+                      Object {
+                        "height": 0,
+                        "left": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </button>
+              </div>
+            </div>
+            <div
+              className="row"
+            >
+              <div
+                className="col desknull tvnull tabletnull palmnull startAlign"
+              >
+                <div />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="row"
+      >
+        <div
+          className="col desk4 tv4 tablet4 palm12 startAlign"
+        >
+          <h2>
+            Fold
           </h2>
           <div
             className="grid"
