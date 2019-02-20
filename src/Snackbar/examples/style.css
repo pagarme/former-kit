@@ -1,0 +1,9 @@
+.content {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.timer {
+  margin-left: 5px;
+}

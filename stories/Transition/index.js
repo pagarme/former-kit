@@ -5,6 +5,7 @@ import style from './style.css'
 import Section from '../Section'
 import {
   fade,
+  fold,
   grow,
   Transition,
   zoom,
@@ -145,6 +146,18 @@ storiesOf('Transition', module)
               atLeave={zoom.atLeave}
               mapStyles={zoom.mapStyles}
               springOptions={zoom.springOptions}
+            />
+          </Col>
+        </Row>
+        <Row>
+          <Col className={style.col} palm={12} tablet={4} desk={4} tv={4}>
+            <h2>Fold</h2>
+            <TransitionState
+              atActive={fold.atActive}
+              atEnter={fold.atEnter}
+              atLeave={fold.atLeave}
+              mapStyles={fold.mapStyles}
+              springOptions={fold.springOptions}
             />
           </Col>
         </Row>

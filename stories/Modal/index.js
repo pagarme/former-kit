@@ -60,9 +60,7 @@ class ModalWithState extends Component {
             onClose={this.handleCloseModal}
             title="Add Photo"
           />
-
           <hr />
-
           <ModalContent>
             This is the modal Content with React Modal module
           </ModalContent>
@@ -74,7 +72,6 @@ class ModalWithState extends Component {
               </ModalContent>
             </ModalSection>
           </ModalContent>
-
           <ModalActions>
             <Button
               fill="outline"
