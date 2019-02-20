@@ -39,7 +39,6 @@ const Icon = require('emblematic-icons/svg/Calendar32.svg').default;
 const { Fragment, Component } = require('react');
 const IconCalendar = require('emblematic-icons/svg/Calendar32.svg').default;
 
-const Button = require('../Button').default;
 const {
   Popover,
   PopoverMenu,
@@ -133,7 +132,5 @@ class CardSectionDoubleLineTitleState extends Component {
 }
 
 <CardSectionDoubleLineTitleState />
-
 ```
-
 
