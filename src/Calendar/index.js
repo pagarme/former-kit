@@ -57,22 +57,24 @@ const validateVisibleMonths = (currentMonth, months) =>
  * the `react-dates`.
  */
 class Calendar extends Component {
-  static getDerivedStateFromProps ({ focusedInput }, state) {
-    return {
-      focusedInput: focusedInput || state.focusedInput,
-    }
-  }
-
   constructor (props) {
     super(props)
     this.state = {
       focusedInput: props.focusedInput || START_DATE,
-      visibleMonths: this.getVisibleMonths(moment()), // eslint-disable-line react/no-unused-state
     }
     this.getVisibleMonths = this.getVisibleMonths.bind(this)
     this.handleDatesChange = this.handleDatesChange.bind(this)
     this.handleFocusChange = this.handleFocusChange.bind(this)
-    this.handleMonthChange = this.handleMonthChange.bind(this)
+  }
+
+  componentDidUpdate (prevProps, prevState) {
+    const { focusedInput } = this.props
+
+    if (focusedInput && focusedInput !== prevState.focusedInput) {
+      this.setState({ // eslint-disable-line react/no-did-update-set-state
+        focusedInput,
+      })
+    }
   }
 
   getVisibleMonths (firstDay) {
@@ -84,10 +86,7 @@ class Calendar extends Component {
   handleDatesChange (dates) {
     const normalizedDates = normalizeDates(dates)
 
-    this.handleMonthChange(
-      normalizedDates.start,
-      this.props.onChange(normalizedDates)
-    )
+    this.props.onChange(normalizedDates)
   }
 
   handleFocusChange (focusedInput) {
@@ -102,12 +101,6 @@ class Calendar extends Component {
     if (onFocusChange) {
       onFocusChange(focusedInput)
     }
-  }
-
-  handleMonthChange (firstDay, callback) {
-    this.setState({
-      visibleMonths: this.getVisibleMonths(firstDay), // eslint-disable-line react/no-unused-state
-    }, callback)
   }
 
   render () {
@@ -137,8 +130,6 @@ class Calendar extends Component {
               navPrev={icons.previousMonth}
               numberOfMonths={months}
               onDateChange={this.handleDatesChange}
-              onNextMonthClick={this.handleMonthChange}
-              onPrevMonthClick={this.handleMonthChange}
             />
           ) : (
             <DayPickerRangeController
@@ -153,8 +144,6 @@ class Calendar extends Component {
               numberOfMonths={months}
               onDatesChange={this.handleDatesChange}
               onFocusChange={this.handleFocusChange}
-              onNextMonthClick={this.handleMonthChange}
-              onPrevMonthClick={this.handleMonthChange}
               startDate={start}
             />
           )
