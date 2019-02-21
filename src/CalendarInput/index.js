@@ -47,13 +47,14 @@ class CalendarInput extends Component {
   constructor (props) {
     super(props)
     const { start, end } = props.value
-    const isVaidStart = (!start && !isPeriodSelection(props.dateSelection))
+    const isValidStart = (!start && !isPeriodSelection(props.dateSelection))
     || isValidMoment(start)
 
-    const validStart = isVaidStart ? start : moment()
+    const validStart = isValidStart ? start : moment()
     const swapDates = isValidMoment(end) && end.isBefore(validStart)
 
     this.state = {
+      focusedInput: null,
       value: momentToText({
         start: swapDates ? end : validStart,
         end: swapDates ? validStart : end,
@@ -234,7 +235,9 @@ class CalendarInput extends Component {
   }
 
   handleSelectorFocus (focusedInput) {
-    this.setState({ focusedInput })
+    this.setState({
+      focusedInput: focusedInput || 'startDate',
+    })
   }
 
   changeSelectorDisplay (showDateSelector, focusedInput) {
@@ -301,6 +304,7 @@ class CalendarInput extends Component {
           <Calendar
             dates={momentDates}
             dateSelection={dateSelection}
+            focusedInput={focusedInput}
             months={months}
             onChange={this.handleDatesChange}
             onFocusChange={this.handleSelectorFocus}
@@ -325,7 +329,6 @@ class CalendarInput extends Component {
             className={startClasses({
               focusedInput,
               isValid: validStart,
-              showDateSelector,
               theme,
             })}
           >
@@ -334,7 +337,7 @@ class CalendarInput extends Component {
               className={theme.input}
               disabled={disabled}
               id={`${this.name}-startDate`}
-              mask={inputDateMask}
+              mask={inputDateMask()}
               name="startDate"
               onBlur={this.handleInputBlur}
               onChange={val => this.handleInputChange('start', val)}
@@ -355,14 +358,13 @@ class CalendarInput extends Component {
                 className={endClasses({
                   focusedInput,
                   isValid: validEnd,
-                  showDateSelector,
                   theme,
                 })}
               >
                 <MaskedInput
                   autoComplete="off"
                   className={theme.input}
-                  mask={inputDateMask}
+                  mask={inputDateMask()}
                   name="endDate"
                   onBlur={this.handleInputBlur}
                   onChange={val => this.handleInputChange('end', val)}
