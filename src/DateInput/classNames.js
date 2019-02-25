@@ -16,28 +16,26 @@ export const inputClasses = ({
 
 export const startClasses = ({
   theme,
-  showDateSelector,
   focusedInput,
   isValid,
 }) =>
   classNames(
     theme.start,
     {
-      [theme.active]: isValid && focusedInput === 'startDate' && showDateSelector,
+      [theme.active]: isValid && focusedInput === 'startDate',
       [theme.error]: !isValid,
     }
   )
 
 export const endClasses = ({
   theme,
-  showDateSelector,
   focusedInput,
   isValid,
 }) =>
   classNames(
     theme.end,
     {
-      [theme.active]: isValid && focusedInput === 'endDate' && showDateSelector,
+      [theme.active]: isValid && focusedInput === 'endDate',
       [theme.error]: !isValid,
     }
   )

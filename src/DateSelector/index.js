@@ -2,48 +2,106 @@ import 'react-dates/initialize'
 import 'react-dates/lib/css/_datepicker.css'
 import React, { Component } from 'react'
 import {
+  bool,
   func,
   string,
   arrayOf,
   shape,
+  oneOf,
   oneOfType,
   object,
   element,
 } from 'prop-types'
 import shortid from 'shortid'
 import {
-  equals,
-  find,
+  defaultTo,
   flatten,
+  has,
+  identity,
+  ifElse,
+  isNil,
   map,
   pipe,
+  prop,
 } from 'ramda'
 import { momentObj } from 'react-moment-proptypes'
-import {
-  DayPickerRangeController,
-  DayPickerSingleDateController,
-} from 'react-dates'
+import moment from 'moment'
 
 import ThemeConsumer from '../ThemeConsumer'
-import Button from '../Button'
 import normalizeDates from './normalizeDates'
-import calculatePreset from './calculatePreset'
 
-const START_DATE = 'startDate'
+import {
+  Popover,
+} from '../Popover'
+import Calendar from '../Calendar'
+import Aside from './Aside'
+
 const consumeTheme = ThemeConsumer('UIDateSelector')
 
 const defaultStrings = {
-  cancel: 'cancel',
-  confirmPeriod: 'confirm period',
-  custom: 'custom',
-  day: 'day',
   daySelected: 'day selected',
   daysSelected: 'days selected',
-  noDayOrPeriodSelected: 'No day or period selected',
-  period: 'period',
-  today: 'today',
-  anyDate: 'Any Date',
 }
+
+const diffInDays = (leftDate, rightDate) => (
+  leftDate
+  && rightDate
+  && leftDate.diff(rightDate, 'days') + 1
+)
+
+const flattenPresets = pipe(
+  map(
+    pipe(
+      ifElse(
+        has('list'),
+        pipe(
+          prop('list'),
+          defaultTo([])
+        ),
+        identity
+      )
+    )
+  ),
+  flatten
+)
+
+const getPreset = (presetName, presets) => {
+  const flattenedPresets = flattenPresets(presets)
+  const foundPreset = flattenedPresets
+    .find(preset => preset.key === presetName)
+
+  return foundPreset
+}
+
+const getPresetLimits = (range) => {
+  // TODO: refactor range logic be based on
+  // selected date instead of current date
+
+  let start = null
+  let end = null
+
+  if (range < 0) {
+    start = moment().add(range, 'days').startOf('day')
+    end = moment().endOf('day')
+  } else if (range > 0) {
+    start = moment().startOf('day')
+    end = moment().add(range, 'days').endOf('day')
+  } else if (range === 0) {
+    start = moment().startOf('day')
+    end = moment().endOf('day')
+  }
+
+  return {
+    start,
+    end,
+  }
+}
+
+const isDateBetweenRange = (date, range) =>
+  date.isBetween(range.start, range.end, 'day', '[]')
+
+const isDayBlocked = (date, presetRange, { start, end }) =>
+  !isNil(presetRange) && !isDateBetweenRange(date, { start, end })
 
 /**
  * A calendarlike selector based on react-dates
@@ -61,22 +119,26 @@ class DateSelector extends Component {
   constructor (props) {
     super(props)
 
-    this.state = {
-      preset: calculatePreset(props.dates),
-    }
     this.instanceId = `dateselector-${shortid.generate()}`
 
+    this.state = {
+      visible: !!props.visible,
+    }
+
     this.getStrings = this.getStrings.bind(this)
-    this.handleFocusChange = this.handleFocusChange.bind(this)
-    this.handleDatesChange = this.handleDatesChange.bind(this)
     this.handlePresetChange = this.handlePresetChange.bind(this)
-    this.handleConfirm = this.handleConfirm.bind(this)
-    this.handleCancel = this.handleCancel.bind(this)
-    this.handleSelectedPresets = this.handleSelectedPresets.bind(this)
+    this.handlePopoverClose = this.handlePopoverClose.bind(this)
+    this.handleOnChange = this.handleOnChange.bind(this)
   }
 
-  componentDidMount () {
-    this.handleSelectedPresets()
+  componentDidUpdate (prevProps, prevState) {
+    const { visible } = this.props
+
+    if (visible !== prevState.visible) {
+      this.setState({ // eslint-disable-line react/no-did-update-set-state
+        visible,
+      })
+    }
   }
 
   getStrings () {
@@ -86,248 +148,158 @@ class DateSelector extends Component {
     }
   }
 
-  handleSelectedPresets () {
-    const { selectedPreset, presets } = this.props
+  handleOnChange (dates) {
+    const {
+      selectedPreset,
+      onChange,
+      presets,
+    } = this.props
 
-    if (selectedPreset) {
-      const isEqualSelectedPreset = ({ key }) => equals(key, selectedPreset)
+    const preset = getPreset(selectedPreset, presets)
 
-      const findItemByKey = pipe(
-        map(({ items }) => items),
-        flatten,
-        find(item => isEqualSelectedPreset(item))
-      )
-
-      const foundPreset = findItemByKey(presets)
-
-      this.handlePresetChange(foundPreset.date(), selectedPreset)
+    if (!selectedPreset || isNil(preset.date())) {
+      onChange(normalizeDates(dates))
     }
   }
 
-  handleFocusChange (focusedInput) {
-    this.props.onFocusChange(focusedInput || START_DATE)
+  handlePresetChange (dates, selectedPreset) {
+    const {
+      onChange,
+      onPresetChange,
+      presets,
+    } = this.props
+
+    const presetObject = getPreset(selectedPreset, presets)
+    const presetRange = getPresetLimits(dates)
+
+    onPresetChange(presetRange, presetObject)
+    onChange(presetRange)
   }
 
-  handleDatesChange (dates) {
-    const normalizedDates = normalizeDates(dates)
-    const preset = calculatePreset(dates)
-    const state = { preset }
+  handlePopoverClose () {
+    const {
+      dates,
+      onConfirm,
+      presets,
+      selectedPreset,
+    } = this.props
 
-    // Call onChange only after state is set, as calling onChange
-    // could trigger a state update via componentWillReceiveProps
-    this.setState(state, () => this.props.onChange(normalizedDates))
-  }
-
-  handlePresetChange (dates, key) {
-    const normalizedDates = normalizeDates(dates, key)
-
-    const state = {
-      preset: key,
-      dates: normalizedDates,
-    }
-
-    // Call onChange only after state is set, as calling onChange
-    // could trigger a state update via componentWillReceiveProps
-    this.setState(state, () => this.props.onChange(normalizedDates))
-  }
-
-  handleCancel () {
-    this.props.onCancel()
-  }
-
-  handleConfirm () {
-    const dates = normalizeDates(this.props.dates)
-    this.props.onConfirm(dates)
-  }
-
-  renderPreset ({ title, key, date }) {
-    const { preset } = this.state
-    const group = `${this.instanceId}-presets`
-    const selectedId = `${this.instanceId}-preset-${preset}`
-    const id = `${this.instanceId}-preset-${key}`
-
-    return (
-      <li key={`${key}${title}`}>
-        <input
-          type="radio"
-          name={group}
-          id={id}
-          onChange={() => this.handlePresetChange(date(), key)}
-          checked={selectedId === id}
-        />
-        <label htmlFor={id}>
-          {title}
-        </label>
-      </li>
-    )
-  }
-
-  renderPresets (presets) {
-    return presets.map(({
-      date,
-      items,
-      key,
-      title,
-    }) => {
-      if (items) {
-        return (
-          <ol key={`${key}${title}`}>
-            <h2>{title}</h2>
-            {this.renderPresets(items)}
-          </ol>
-        )
+    if (this.state.visible) {
+      if (selectedPreset) {
+        const currentPreset = getPreset(selectedPreset, presets)
+        onConfirm(getPresetLimits(currentPreset.date()))
+      } else {
+        onConfirm(dates)
       }
 
-      return this.renderPreset({
-        date,
-        title,
-        key,
+      this.setState({
+        visible: false,
       })
-    })
+    }
   }
 
   renderPicker () {
-    const { preset } = this.state
-    const { focusedInput, icons } = this.props
-    const { start, end } = this.props.dates || {}
+    const {
+      dates,
+      focusedInput,
+      icons,
+      presets,
+      selectedPreset,
+      selectionMode,
+    } = this.props
+
+    const currentPreset = getPreset(selectedPreset, presets)
+    const presetRange = currentPreset ? currentPreset.date() : null
+
+    const presetLimits = !isNil(presetRange)
+      ? getPresetLimits(presetRange)
+      : dates
+
+    const dateSelectionMode = currentPreset ? currentPreset.mode : selectionMode
 
     return (
       <div className="ReactDates-overrides">
-        {['single', 'today'].includes(preset)
-          ? (
-            <DayPickerSingleDateController
-              numberOfMonths={2}
-              daySize={40}
-              navPrev={icons.previousMonth}
-              navNext={icons.nextMonth}
-              date={start}
-              onDateChange={this.handleDatesChange}
-              hideKeyboardShortcutsPanel
-            />
-          ) : (
-            <DayPickerRangeController
-              numberOfMonths={2}
-              daySize={40}
-              focusedInput={focusedInput}
-              onFocusChange={this.handleFocusChange}
-              navPrev={icons.previousMonth}
-              navNext={icons.nextMonth}
-              startDate={start}
-              endDate={end}
-              onDatesChange={this.handleDatesChange}
-              hideKeyboardShortcutsPanel
-            />
-          )
-        }
+        <Calendar
+          numberOfMonths={2}
+          daySize={40}
+          isDayBlocked={date => isDayBlocked(date, presetRange, presetLimits)}
+          navPrev={icons.previousMonth}
+          navNext={icons.nextMonth}
+          dates={{
+            start: presetLimits.start,
+            end: presetLimits.end,
+          }}
+          dateSelection={dateSelectionMode}
+          focusedInput={focusedInput}
+          onChange={this.handleOnChange}
+        />
       </div>
     )
   }
 
   renderActions () {
-    const { theme, dates } = this.props
-    const { start, end } = dates || {}
-    const { preset } = this.state
     const {
-      cancel,
-      confirmPeriod,
+      dates,
+      theme,
+    } = this.props
+
+    const { start, end } = dates || {}
+    const {
       daySelected,
       daysSelected,
-      noDayOrPeriodSelected,
     } = this.getStrings()
 
-    let daysCount = 0
-
-    if (['single', 'today'].includes(preset)) {
-      daysCount = 1
-    } else if (end) {
-      daysCount = end.diff(start, 'days')
-    }
+    const daysCount = diffInDays(end, start)
 
     return (
       <div className={theme.actions}>
         <div className={theme.selectedDays}>
-          {daysCount === 0 ? noDayOrPeriodSelected : null}
           {daysCount === 1 ? `1 ${daySelected}` : null}
           {daysCount > 1 ? `${daysCount} ${daysSelected}` : null}
         </div>
-        <Button
-          size="default"
-          onClick={this.handleCancel}
-          fill="clean"
-          type="reset"
-          relevance="low"
-        >
-          {cancel}
-        </Button>
-        <span className={theme.separator} />
-        <Button
-          size="default"
-          onClick={this.handleConfirm}
-          fill="clean"
-        >
-          {confirmPeriod}
-        </Button>
-      </div>
-    )
-  }
-
-  renderSidebar () {
-    const {
-      custom,
-      day,
-      period,
-      today,
-      anyDate,
-    } = this.getStrings()
-
-    const { theme } = this.props
-
-    return (
-      <div className={theme.sidebar}>
-        <ol>
-          {this.renderPreset({
-            key: 'today',
-            title: today,
-            date: () => 0,
-          })}
-
-          {this.renderPreset({
-            key: 'any-date',
-            title: anyDate,
-            date: () => null,
-          })}
-
-          {this.renderPresets(this.props.presets)}
-          <li>
-            <h2>{`${custom}:`}</h2>
-            <ol>
-              {this.renderPreset({
-                key: 'single',
-                title: day,
-                date: () => -1,
-              })}
-              {this.renderPreset({
-                key: 'range',
-                title: period,
-                date: () => -3,
-              })}
-            </ol>
-          </li>
-        </ol>
       </div>
     )
   }
 
   render () {
-    const { theme } = this.props
+    const {
+      children,
+      presets,
+      selectedPreset,
+      showCalendar,
+      showSidebar,
+      theme,
+    } = this.props
 
     return (
-      <div className={theme.container}>
-        {this.renderSidebar()}
-        <div className={theme.stage}>
-          {this.renderPicker()}
-          {this.renderActions()}
-        </div>
+      <div className={theme.dateselector}>
+        <Popover
+          content={
+            <div className={theme.container}>
+              { showSidebar &&
+                <div className={theme.sidebar}>
+                  <Aside
+                    presets={presets}
+                    selectedPreset={selectedPreset}
+                    name={this.instanceId}
+                    onChange={this.handlePresetChange}
+                  />
+                </div>
+              }
+              { showCalendar &&
+                <div className={theme.stage}>
+                  {this.renderPicker()}
+                  {this.renderActions()}
+                </div>
+              }
+            </div>
+          }
+          onClick={() => null}
+          onClickOutside={this.handlePopoverClose}
+          visible={this.state.visible}
+        >
+          {children}
+        </Popover>
       </div>
     )
   }
@@ -341,33 +313,29 @@ DateSelector.propTypes = {
     actions: string,
     container: string,
     selectedDays: string,
-    separator: string,
     sidebar: string,
     stage: string,
   }),
   /**
-   * Trigger when the cancel button is clicked, stops the dates selection and
-   * fires the given callback without params,
-   * the callback should close the selector.
-   */
-  onCancel: func,
-  /**
-   * This function is trigged when dates or presets are changed,
+   * This function is trigged when dates are changed,
    * but only after the state was changed, could trigger a state
    * update via `componentWillReceiveProps`.
    * Its function is used to send the selected dates to the parent component.
    * @param {object} dates
    */
-  onChange: func,
+  onChange: func.isRequired,
   /**
-   * Trigged when the confirmarion button is clicked.
-   * @param {object} dates
+   * Triggered when a preset is selected.
    */
-  onConfirm: func,
+  onPresetChange: func,
+  /*
+   * Triggered when popover closes.
+   */
+  onConfirm: func.isRequired,
   /**
    *
    */
-  onFocusChange: func,
+  children: element.isRequired,
   /**
    * Selected dates.
    */
@@ -380,12 +348,7 @@ DateSelector.propTypes = {
      * End date based on `moment.js`.
      */
     end: oneOfType([momentObj, object]),
-  }).isRequired,
-  /**
-   * Date which will start with focus. It can be start or end.
-   * @see (DateRangePicker) [https://github.com/airbnb/react-dates#daterangepicker]
-   */
-  focusedInput: string,
+  }),
   /**
    * Default icons used in the month navigation.
    */
@@ -394,31 +357,47 @@ DateSelector.propTypes = {
     nextMonth: element,
   }),
   /**
+   * Mode to be used when showSidebar is false.
+  */
+  selectionMode: (props, propName) => {
+    if (props.showSidebar && !props[propName]) {
+      return new Error(
+        `${propName} must be 'single' or 'period' when showSidebar is true.`
+      )
+    }
+
+    return null
+  },
+  /**
    * Props structure which is used to create the left side menu, this menu allows
    * the user to select dates in preset dates, ranges, etc.
    */
   presets: arrayOf(shape({
     /**
-     * Preset identification.
+     * Preset/Preset Group identification.
      */
-    key: string,
+    key: string.isRequired,
     /**
      * Item text which will be shown in the list.
      */
-    title: string,
+    label: string.isRequired,
     /**
      * Item evaluation function.
      */
     date: func,
     /**
      * This items are used to create a sub-menu under the title of
-     * the current item.
+     * the current item. When this is specified, date prop will not be used.
      */
     items: arrayOf(shape({
       /**
+       * Preset identification.
+       */
+      key: string.isRequired,
+      /**
        * Item text which will be shown in the list.
        */
-      title: string,
+      label: string.isRequired,
       /**
        * Item evaluation function.
        */
@@ -433,54 +412,42 @@ DateSelector.propTypes = {
    * Texts used in the component internationalization (i18n).
    */
   strings: shape({
-    /**
-     * Cancel button text.
-     */
-    cancel: string,
-    /**
-     * Confirm button text.
-     */
-    confirmPeriod: string,
-    /**
-     * Custom presets subtitle.
-     */
-    custom: string,
-    /**
-     * Day label.
-     */
-    days: string,
-    /**
-     * Selected day label.
-     */
     daySelected: string,
     /**
      * Selected days label.
      */
     daysSelected: string,
-    /**
-     * No selected day/period label.
-     */
-    noDayOrPeriodSelected: string,
-    /**
-     * Period label.
-     */
-    period: string,
-    /**
-     * Today label.
-     */
-    today: string,
   }),
+  /**
+   * Indicates if calendar should be visible.
+   */
+  showCalendar: bool,
+  /**
+   * Indicates if sidebar should be visible.
+   */
+  showSidebar: bool,
+  /**
+   * Indicates if popover should be visible.
+   */
+  visible: bool,
+  /**
+   * The date that will be set on next
+   * click on calendar
+  */
+  focusedInput: oneOf(['startDate', 'endDate']),
 }
 
 DateSelector.defaultProps = {
-  focusedInput: START_DATE,
+  dates: {},
+  selectedPreset: '',
+  focusedInput: null,
   icons: {},
-  onCancel: () => undefined,
-  onChange: () => undefined,
-  onConfirm: () => undefined,
-  onFocusChange: () => undefined,
+  selectionMode: 'single',
+  onPresetChange: () => undefined,
   presets: [],
-  selectedPreset: null,
+  showCalendar: true,
+  showSidebar: true,
+  visible: false,
   strings: defaultStrings,
   theme: {},
 }

@@ -1,10 +1,8 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import shortid from 'shortid'
 import {
   isNil,
-  lensPath,
-  map,
-  set,
+  mergeRight,
 } from 'ramda'
 
 import {
@@ -13,20 +11,18 @@ import {
   element,
   func,
   instanceOf,
+  oneOf,
   shape,
   string,
 } from 'prop-types'
 
 import moment from 'moment'
 import MaskedInput from 'react-maskedinput'
-import clickOutside from 'react-click-outside'
 
 import ThemeConsumer from '../ThemeConsumer'
 import DateSelector from '../DateSelector'
 
 import {
-  clampRange,
-  hasDifferentEnd,
   inputDateMask,
   momentToText,
   textToMoment,
@@ -42,19 +38,9 @@ import {
 const consumeTheme = ThemeConsumer('UIDateInput')
 
 const defaultStrings = {
-  anyDate: 'Any Date',
-  cancel: 'cancel',
-  confirmPeriod: 'confirm period',
-  custom: 'custom',
-  day: 'day',
-  daySelected: 'day selected',
-  daysSelected: 'days selected',
   end: 'End',
-  noDayOrPeriodSelected: 'No day or period selected',
-  period: 'period',
-  select: 'Select a date or period',
+  select: 'Select a preset',
   start: 'Start',
-  today: 'today',
 }
 
 const getStrings = strings => ({
@@ -74,113 +60,40 @@ class DateInput extends React.Component {
   constructor (props) {
     super(props)
 
-    const {
-      value,
-    } = props
-
     this.state = {
-      focusedInput: 'startDate',
-      showDateSelector: false,
-      value: {
-        end: null,
-        start: null,
-      },
-    }
-
-    const { start, end } = momentToText(value)
-
-    if (value.start) {
-      this.state.value.start = start
-    }
-
-    if (value.end) {
-      this.state.value.end = end
+      dates: momentToText(props.dates),
+      focusedInput: null,
+      selectionMode: props.selectionMode,
+      selectedPreset: props.selectedPreset,
     }
 
     this.name = shortid.generate()
-
-    this.changeSelectorDisplay = this.changeSelectorDisplay.bind(this)
-    this.handleCancel = this.handleCancel.bind(this)
-    this.handleClickOutside = this.handleClickOutside.bind(this)
+    this.getNextInput = this.getNextInput.bind(this)
     this.handleConfirm = this.handleConfirm.bind(this)
     this.handleDatesChange = this.handleDatesChange.bind(this)
-    this.handleInputBlur = this.handleInputBlur.bind(this)
-    this.handleInputChange = this.handleInputChange.bind(this)
+    this.handleStartInputChange = this.handleInputChange.bind(this, 'start')
+    this.handleEndInputChange = this.handleInputChange.bind(this, 'end')
     this.handleInputFocus = this.handleInputFocus.bind(this)
-    this.handleKeyDown = this.handleKeyDown.bind(this)
-    this.handleSelectorFocus = this.handleSelectorFocus.bind(this)
+    this.handlePresetChange = this.handlePresetChange.bind(this)
   }
 
-  componentWillReceiveProps (props) {
-    if (props && props.value) {
-      const { value } = props
+  getNextInput () {
+    const {
+      dates,
+    } = this.state
 
-      this.setState({
-        value: momentToText(value),
-      })
-    }
-  }
-
-  componentWillUnmount () {
-    document.removeEventListener('keydown', this.handleKeyDown, true)
-  }
-
-  handleClickOutside () {
-    if (this.state.showDateSelector) {
-      this.handleCancel()
-    }
-  }
-
-  handleKeyDown (event) {
-    if (event.key === 'Enter') {
-      event.preventDefault()
-      this.handleConfirm(this.state.value)
-      return
-    }
-
-    if (event.key === 'Escape') {
-      this.handleCancel()
-    }
-  }
-
-  changeSelectorDisplay (showDateSelector, focusedInput) {
-    if (!showDateSelector) {
-      document.removeEventListener('keydown', this.handleKeyDown, true)
-    }
-    this.setState({ showDateSelector, focusedInput })
-  }
-
-  handleInputChange (input, event) {
-    const { value: evtValue } = event.target
-    const { end, start } = this.state.value
-
-    if (start === end) {
-      const value = {
-        end: evtValue,
-        start: evtValue,
-      }
-
-      this.setState({ value })
-      return
-    }
-
-    const inputLens = lensPath(['value', input])
-    const state = set(inputLens, evtValue, this.state)
-
-    this.setState(state)
-  }
-
-  handleDatesChange (value) {
-    const { limits } = this.props
-    const clampedDates = map(clampRange(limits), value)
-
-    this.setState({
-      value: clampedDates,
-    })
+    const nextInputToFocus = dates.start ? 'endDate' : 'startDate'
+    return nextInputToFocus
   }
 
   handleConfirm (value) {
-    const { limits } = this.props
+    const {
+      limits,
+      onConfirm,
+    } = this.props
+
+    const { showPopover } = this.state
+
     const momentDates = textToMoment(value)
 
     const {
@@ -188,78 +101,116 @@ class DateInput extends React.Component {
       isValidEnd,
     } = validateRange(limits, momentDates)
 
-    if (!isValidStart || !isValidEnd) {
-      return
-    }
+    if (isValidStart && isValidEnd && showPopover) {
+      this.setState({
+        focusedInput: null,
+        showPopover: false,
+      })
 
-    this.changeSelectorDisplay(false)
-    this.props.onChange(momentDates)
+      onConfirm(momentDates)
+    }
   }
 
-  handleCancel () {
-    const { value } = this.props
-    const textDates = momentToText(value)
+  handleDatesChange (dates) {
+    const {
+      focusedInput,
+      selectionMode,
+    } = this.state
 
     this.setState({
-      value: textDates,
-    }, () => {
-      // called in the callback as it will setState again
-      this.changeSelectorDisplay(false)
-      this.props.onChange(value)
+      dates: momentToText(dates),
+      focusedInput: selectionMode === 'period' && focusedInput === 'startDate'
+        ? 'endDate'
+        : 'startDate',
     })
+
+    this.props.onChange(dates)
+  }
+
+  handleInputChange (field, event) {
+    const {
+      limits,
+      onChange,
+    } = this.props
+
+    const { target: { value } } = event
+
+    const dates = mergeRight(
+      this.state.dates,
+      { [field]: value }
+    )
+
+    if (this.state.selectionMode === 'single') {
+      dates.start = value
+      dates.end = value
+    }
+
+    this.setState({
+      dates,
+      selectedPreset: '',
+    })
+
+    const momentDates = textToMoment(dates)
+    const { isValidStart, isValidEnd } = validateRange(limits, momentDates)
+
+    if (isValidStart && isValidEnd) {
+      onChange(momentDates)
+    }
   }
 
   handleInputFocus (focusedInput) {
-    document.addEventListener('keydown', this.handleKeyDown, true)
-    this.changeSelectorDisplay(true, focusedInput)
-  }
+    const state = {
+      focusedInput,
+    }
 
-  handleInputBlur () {
-    if (!this.state.showDateSelector) {
-      document.removeEventListener('keydown', this.handleKeyDown, true)
+    if (!this.state.showPopover) {
+      state.showPopover = true
+    }
+
+    if (this.state.focusedInput !== focusedInput) {
+      this.setState(state)
     }
   }
 
-  handleSelectorFocus (focusedInput) {
-    this.setState({ focusedInput })
+  handlePresetChange (dates, preset) {
+    this.setState({
+      dates: momentToText(dates),
+      selectedPreset: preset.key,
+      selectionMode: preset.mode,
+    })
+
+    this.props.onPresetChange(dates, preset)
+    this.props.onChange(dates)
   }
 
-  render () {
+  renderInputs () {
     const {
-      focusedInput,
-      showDateSelector,
-      value,
-    } = this.state
-
-    const {
-      active,
       icon,
       limits,
-      theme,
       strings,
+      showCalendar,
+      theme,
     } = this.props
+
+    const {
+      dates,
+      focusedInput,
+      selectionMode,
+    } = this.state
+
+    const momentDates = textToMoment(dates)
+    const { isValidStart, isValidEnd } = validateRange(limits, momentDates)
 
     const translatedStrings = getStrings(strings)
 
-    const { isValidStart, isValidEnd } = validateRange(limits, value)
-    const isValidDates = isValidStart && isValidEnd
-    const momentDates = textToMoment(value)
-
-    const initialPlaceholder = value.start || (
-      showDateSelector
+    const initialPlaceholder = dates.start || (
+      showCalendar
         ? translatedStrings.start
         : translatedStrings.select
     )
 
     return (
-      <div
-        className={inputClasses({
-          theme,
-          active,
-          error: !isValidDates,
-          focused: showDateSelector,
-        })}
-      >
+      <Fragment>
         {!isNil(icon) && (
           <div className={theme.icon}>
             {icon}
@@ -268,7 +219,6 @@ class DateInput extends React.Component {
         <div
           className={startClasses({
             theme,
-            showDateSelector,
             focusedInput,
             isValid: isValidStart,
           })}
@@ -277,31 +227,28 @@ class DateInput extends React.Component {
             autoComplete="off"
             className={theme.input}
             id={`${this.name}-startDate`}
-            mask={inputDateMask}
+            mask={inputDateMask()}
             name="startDate"
             onBlur={this.handleInputBlur}
-            onChange={val => this.handleInputChange('start', val)}
+            onChange={event => this.handleStartInputChange(event)}
             onFocus={() => this.handleInputFocus('startDate')}
             placeholder={initialPlaceholder}
             placeholderChar=" "
             size="8"
-            value={value.start}
+            value={dates.start}
           />
           <span className={theme.expander}>
             {initialPlaceholder}
           </span>
         </div>
-
-        {hasDifferentEnd(value) &&
+        { selectionMode === 'period' &&
           <div className={theme.separator} />
         }
-
-        {hasDifferentEnd(value)
+        { selectionMode === 'period'
           ? (
             <div
               className={endClasses({
                 theme,
-                showDateSelector,
                 focusedInput,
                 isValid: isValidEnd,
               })}
@@ -309,41 +256,76 @@ class DateInput extends React.Component {
               <MaskedInput
                 autoComplete="off"
                 className={theme.input}
-                mask={inputDateMask}
+                mask={inputDateMask()}
                 name="endDate"
-                onBlur={this.handleInputBlur}
-                onChange={val => this.handleInputChange('end', val)}
+                onChange={event => this.handleEndInputChange(event)}
                 onFocus={() => this.handleInputFocus('endDate')}
                 placeholder={translatedStrings.end}
                 placeholderChar=" "
                 size="8"
-                value={value.end}
+                value={dates.end}
               />
               <span className={theme.expander}>
-                {value.end || translatedStrings.end}
+                {dates.end || translatedStrings.end}
               </span>
             </div>
           ) : (
             null
           )
         }
+      </Fragment>
+    )
+  }
 
-        {showDateSelector ?
-          <div className={theme.dateSelector}>
-            <DateSelector
-              dates={isValidDates ? momentDates : {}}
-              focusedInput={this.state.focusedInput}
-              onCancel={this.handleCancel}
-              onChange={this.handleDatesChange}
-              onConfirm={this.handleConfirm}
-              onFocusChange={this.handleSelectorFocus}
-              presets={this.props.presets}
-              strings={strings}
-            />
-          </div>
-          : null
-        }
-      </div>
+  render () {
+    const {
+      active,
+      limits,
+      theme,
+      presets,
+      showCalendar,
+      showSidebar,
+      strings,
+    } = this.props
+
+    const {
+      dates,
+      focusedInput,
+      selectionMode,
+      selectedPreset,
+      showPopover,
+    } = this.state
+
+    const momentDates = textToMoment(dates)
+    const { isValidStart, isValidEnd } = validateRange(limits, momentDates)
+    const isValidDates = isValidStart && isValidEnd
+
+    return (
+      <DateSelector
+        dates={isValidDates ? momentDates : {}}
+        focusedInput={focusedInput}
+        onConfirm={this.handleConfirm}
+        onChange={this.handleDatesChange}
+        onPresetChange={this.handlePresetChange}
+        presets={presets}
+        selectedPreset={selectedPreset}
+        selectionMode={selectionMode}
+        showCalendar={showCalendar}
+        showSidebar={showSidebar}
+        strings={strings}
+        visible={showPopover}
+      >
+        <div
+          className={inputClasses({
+            theme,
+            active,
+            error: !isValidDates,
+            focused: showCalendar,
+          })}
+        >
+          {this.renderInputs()}
+        </div>
+      </DateSelector>
     )
   }
 }
@@ -353,6 +335,13 @@ DateInput.propTypes = {
    * Enable/disable the component.
    */
   active: bool,
+  /**
+   * Initial dates to be pre selected.
+   */
+  dates: shape({
+    start: instanceOf(moment),
+    end: instanceOf(moment),
+  }),
   /**
    * Custom icon which will be shown in the component left side.
    */
@@ -374,39 +363,55 @@ DateInput.propTypes = {
    * Triggers when a date is changed or selected.
    * @param {object} value
    */
-  onChange: func.isRequired,
+  onChange: func,
+  /**
+   * Triggers when DateSelector popover is closed.
+   */
+  onConfirm: func.isRequired,
+  /**
+   * Triggers when selected preset is changed.
+  */
+  onPresetChange: func,
   /**
    * Date selector presets, used for dates ranges and selection options.
    * @see [DateSelector](#dateselector)
    */
   presets: arrayOf(shape({
+    key: string.isRequired,
+    label: string.isRequired,
     date: func,
-    items: arrayOf(shape({
-      date: func,
-      key: string,
-      title: string,
+    list: arrayOf(shape({
+      key: string.isRequired,
+      label: string.isRequired,
+      date: func.isRequired,
     })),
-    key: string,
-    title: string,
   })),
+  /**
+   * Initial selected preset.
+  */
+  selectedPreset: string,
+  /**
+   * Date selection mode to be used initially.
+  */
+  selectionMode: oneOf(['single', 'period']),
   /**
    * Strings for component i18n.
    */
   strings: shape({
-    anyDate: string,
-    cancel: string,
-    confirmPeriod: string,
-    custom: string,
-    day: string,
     daySelected: string,
     daysSelected: string,
     end: string,
-    noDayOrPeriodSelected: string,
-    period: string,
     select: string,
     start: string,
-    today: string,
   }),
+  /**
+   * Show or hide DateSelector calendar.
+  */
+  showCalendar: bool,
+  /**
+   * Show or hide DateSelector sidebar.
+  */
+  showSidebar: bool,
   /**
    * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
@@ -422,35 +427,28 @@ DateInput.propTypes = {
     separator: string,
     start: string,
   }),
-  /**
-   * Default start and end dates.
-   */
-  value: shape({
-    /**
-     * End date based in `moment.js`.
-     */
-    end: instanceOf(moment),
-    /**
-     * Start date based in `moment.js`.
-     */
-    start: instanceOf(moment),
-  }),
 }
 
 DateInput.defaultProps = {
   active: false,
+  dates: {
+    start: null,
+    end: null,
+  },
   icon: null,
   limits: {
     lower: moment('1900-01-01', 'YYYY-MM-DD'),
     upper: moment('2100-01-01', 'YYYY-MM-DD'),
   },
+  onChange: () => null,
+  onPresetChange: () => null,
   presets: [],
-  strings: defaultStrings,
+  selectedPreset: '',
+  selectionMode: 'single',
+  showCalendar: true,
+  showSidebar: true,
+  strings: null,
   theme: {},
-  value: {
-    end: null,
-    start: null,
-  },
 }
 
-export default consumeTheme(clickOutside(DateInput))
+export default consumeTheme(DateInput)

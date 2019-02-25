@@ -6,15 +6,15 @@ export default [
     date: () => 0,
   },
   {
-    key: 'any-date',
-    label: 'any date',
-    mode: 'period',
+    key: 'any-day',
+    label: 'any day',
+    mode: 'single',
     date: () => null,
   },
   {
-    key: 'single-day',
-    label: 'single day',
-    mode: 'single',
+    key: 'any-date',
+    label: 'any period',
+    mode: 'period',
     date: () => null,
   },
   {
@@ -49,7 +49,7 @@ export default [
   },
   {
     key: 'next',
-    label: 'next:',
+    label: 'Next:',
     list: [
       {
         key: 'next-7',

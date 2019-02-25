@@ -1,28 +1,30 @@
 import React from 'react'
 import { mount } from 'enzyme'
+import {
+  cleanup,
+  render,
+  fireEvent,
+  waitForElement,
+} from 'react-testing-library'
 
 import moment from 'moment'
 
 import DateInput from './index'
-import DateSelector from '../DateSelector'
-import Button from '../Button'
 
-const presets = [{
-  title: 'Últimos x dias',
-  items: [{
-    title: 'title 1',
-    date: () => 1,
-    key: 'k1',
-  }, {
-    title: 'title 2',
-    date: () => 2,
-    key: 'k2',
-  }, {
-    title: 'title 3',
-    date: () => 3,
-    key: 'k3',
-  }],
-}]
+const presets = [
+  {
+    key: 'single',
+    label: 'single',
+    date: () => null,
+    mode: 'single',
+  },
+  {
+    key: 'period',
+    label: 'period',
+    date: () => null,
+    mode: 'period',
+  },
+]
 
 const initialDates = {
   start: moment(),
@@ -69,53 +71,62 @@ const confirmInput = () => {
 }
 
 describe('DateInput', () => {
+  afterEach(cleanup)
+
   it('should mount with basic props', () => {
-    const onChange = jest.fn()
+    const onConfirm = jest.fn()
 
     mount(
       <DateInput
         presets={[]}
         active
-        onChange={onChange}
+        onConfirm={onConfirm}
       />
     )
   })
 
-  it('should render DateSelector when focused', () => {
+  it('should render DateSelector when focused', async () => {
     const onChange = jest.fn()
 
-    const component = mount(
+    const { container } = render(
       <DateInput
+        onConfirm={() => null}
         onChange={onChange}
         presets={presets}
+        selectedPreset="period"
       />
     )
 
-    let datePicker = component.find(DateSelector)
-    expect(datePicker.length).toBe(0)
+    let popoverContent = container.querySelector('ReactDates-overrides')
+    expect(popoverContent).toBeNull()
 
-    component.find('input').at(0).simulate('focus')
+    fireEvent.focus(container.querySelector('input'))
 
-    datePicker = component.find(DateSelector)
-    expect(datePicker.length).toBe(1)
+    popoverContent = await waitForElement(() => container.querySelector('.ReactDates-overrides'))
+
+    expect(popoverContent).toBeDefined()
   })
 
-  it('should call onChange when confirmed on DateSelector', () => {
-    const onChange = jest.fn()
+  it('should call onConfirm when closed DateSelector', async () => {
+    const onConfirm = jest.fn()
 
-    const component = mount(
-      <DateInput
-        onChange={onChange}
-        presets={presets}
-        value={{ start: null, end: null }}
-      />
+    const { container } = render(
+      <div>
+        <button className="outside-popover">Close!</button>
+        <div>
+          <DateInput
+            onConfirm={onConfirm}
+            presets={presets}
+            value={{ start: null, end: null }}
+          />
+        </div>
+      </div>
     )
 
-    component.find('input').first().simulate('focus')
-    component.find('ol input').at(0).simulate('change')
-    component.find(Button).at(1).simulate('click')
+    fireEvent.focus(container.querySelector('input'))
 
-    expect(onChange).toHaveBeenCalledTimes(1)
+    fireEvent.click(container.querySelector('.outside-popover'))
+    expect(onConfirm).toHaveBeenCalledTimes(1)
   })
 
   it('should return start and end properties', () => {
@@ -123,15 +134,17 @@ describe('DateInput', () => {
 
     const component = mount(
       <DateInput
+        onConfirm={() => null}
         onChange={onChange}
         presets={presets}
+        selectedPreset="single"
         value={{ start: null, end: null }}
       />
     )
 
-    component.find('input').first().simulate('focus')
-    component.find('ol input').at(0).simulate('change')
-    component.find(Button).at(1).simulate('click')
+    const input = component.find('input')
+    input.instance().value = moment().format('MM/DD/YYYY')
+    input.simulate('change')
 
     const dates = onChange.mock.calls[0][0]
 
@@ -147,11 +160,12 @@ describe('DateInput', () => {
       .toBe(moment().endOf('day').toLocaleString())
   })
 
-  it('should show only one input when start and end are defined and equal', () => {
+  it('should show only one input when selectionMode is single', () => {
     const component = mount(
       <DateInput
         value={{ start: moment(), end: moment() }}
-        onChange={() => {}}
+        onConfirm={() => {}}
+        selectionMode="single"
       />
     )
 
@@ -159,37 +173,12 @@ describe('DateInput', () => {
     expect(inputs).toBe(1)
   })
 
-  it('should show only one input when start and end are null', () => {
-    const onChange = jest.fn()
-
+  it('should show two inputs when selectionMode is period', () => {
     const component = mount(
       <DateInput
-        onChange={onChange}
-        value={{ start: null, end: null }}
-      />
-    )
-
-    const inputs = component.find('input').length
-    expect(inputs).toBe(1)
-  })
-
-  it('should show two inputs when start and end are different', () => {
-    const component = mount(
-      <DateInput
+        onConfirm={() => null}
         value={{ start: moment(), end: moment().add(10, 'days') }}
-        onChange={() => {}}
-      />
-    )
-
-    const inputs = component.find('input').length
-    expect(inputs).toBe(2)
-  })
-
-  it('should show two inputs when start is defined and end is null', () => {
-    const component = mount(
-      <DateInput
-        value={{ start: moment(), end: null }}
-        onChange={() => {}}
+        selectionMode="period"
       />
     )
 
@@ -198,108 +187,45 @@ describe('DateInput', () => {
   })
 
   describe('when changing dates', () => {
-    it('should call onChange when both are null', () => {
+    it('should call onChange when date is valid', () => {
       const onChange = jest.fn()
 
       const component = mount(
         <DateInput
+          onConfirm={() => null}
           onChange={onChange}
           presets={presets}
-          value={initialDates}
+        />
+      )
+
+      const startInput = component.find('input').at(0)
+      startInput.instance().value = '02/01/201'
+      startInput.simulate('change')
+      expect(onChange).toBeCalledTimes(0)
+
+      startInput.instance().value = moment().subtract(7, 'day').format('MM/DD/YYYY')
+      startInput.simulate('change')
+
+      expect(onChange).toBeCalledTimes(1)
+    })
+
+    it('should call onChange when end is valid', () => {
+      const onChange = jest.fn()
+
+      const component = mount(
+        <DateInput
+          onConfirm={() => null}
+          onChange={onChange}
+          presets={presets}
+          selectionMode="period"
         />
       )
 
       const endInput = component.find('input').at(1)
-      endInput.simulate('focus')
-      inputText(endInput, null)
-      confirmInput()
+      endInput.instance().value = moment().format('MM/DD/YYYY')
+      endInput.simulate('change')
 
-      const startInput = component.find('input').at(0)
-      startInput.simulate('focus')
-      inputText(startInput, null)
-      confirmInput()
-
-      expect(onChange).not.toHaveBeenCalled()
-    })
-
-    it('should call onChange when only end is null', () => {
-      const onChange = jest.fn()
-
-      const component = mount(
-        <DateInput
-          onChange={onChange}
-          presets={presets}
-        />
-      )
-
-      const start = moment().format('L')
-      const expectedEnd = moment().format('L')
-
-      const startInput = component.find('input').at(0)
-      startInput.simulate('focus')
-      inputText(startInput, start)
-      confirmInput()
-
-      const endInput = component.find('input').at(0)
-      endInput.simulate('focus')
-      inputText(endInput, null)
-      confirmInput()
-
-      expect(onChange).toHaveBeenCalledTimes(2)
-      testDatesProp(onChange, start, expectedEnd)
-    })
-
-    it('should call onChange when end is greater than start', () => {
-      const onChange = jest.fn()
-
-      const startMoment = moment()
-      const start = startMoment.format('L')
-      const end = moment().add(10, 'days').format('L')
-
-      const dates = {
-        start: startMoment,
-        end: moment().add(1, 'days'),
-      }
-
-      const component = mount(
-        <DateInput
-          onChange={onChange}
-          presets={presets}
-          value={dates}
-        />
-      )
-
-      const endInput = component.find('input').at(1)
-      endInput.simulate('focus')
-      inputText(endInput, end)
-      confirmInput()
-
-      expect(onChange).toHaveBeenCalledTimes(1)
-      testDatesProp(onChange, start, end)
-    })
-
-    it('should NOT call onChange when start is greater than end', () => {
-      const onChange = jest.fn()
-
-      const dates = {
-        start: moment(),
-        end: moment().add(1, 'days'),
-      }
-
-      const component = mount(
-        <DateInput
-          onChange={onChange}
-          presets={presets}
-          value={dates}
-        />
-      )
-
-      const startInput = component.find('input').at(0)
-      startInput.simulate('focus')
-      inputText(startInput, moment().add(10, 'days').format('L'))
-      confirmInput()
-
-      expect(onChange).not.toHaveBeenCalled()
+      expect(onChange).toBeCalledTimes(1)
     })
 
     it('should NOT call onChange when start date is outside the lower limit', () => {
@@ -311,6 +237,7 @@ describe('DateInput', () => {
 
       const component = mount(
         <DateInput
+          onConfirm={() => null}
           onChange={onChange}
           presets={presets}
           value={initialDates}
@@ -335,6 +262,7 @@ describe('DateInput', () => {
 
       const component = mount(
         <DateInput
+          onConfirm={() => null}
           onChange={onChange}
           presets={presets}
           value={initialDates}
@@ -365,10 +293,12 @@ describe('DateInput', () => {
 
       const component = mount(
         <DateInput
+          onConfirm={() => null}
           onChange={onChange}
           presets={presets}
           value={dates}
           limits={limits}
+          selectionMode="period"
         />
       )
 
@@ -389,10 +319,12 @@ describe('DateInput', () => {
 
       const component = mount(
         <DateInput
+          onConfirm={() => null}
           onChange={onChange}
           presets={presets}
           value={initialDates}
           limits={limits}
+          selectionMode="period"
         />
       )
 
@@ -414,25 +346,25 @@ describe('DateInput', () => {
 
       const component = mount(
         <DateInput
+          onConfirm={() => null}
           onChange={onChange}
           presets={presets}
           value={initialDates}
           limits={limits}
+          selectionMode="period"
         />
       )
 
-      const start = moment().subtract(10, 'days').format('L')
-      const end = moment().add(10, 'days').format('L')
+      const start = moment().subtract(10, 'days').format('MM/DD/YYYY')
+      const end = moment().add(10, 'days').format('MM/DD/YYYY')
 
       const startInput = component.find('input').at(0)
-      startInput.simulate('focus')
-      inputText(startInput, start)
-      confirmInput()
+      startInput.instance().value = start
+      startInput.simulate('change')
 
       const endInput = component.find('input').at(1)
-      endInput.simulate('focus')
-      inputText(endInput, end)
-      confirmInput()
+      endInput.instance().value = end
+      endInput.simulate('change')
 
       expect(onChange).toHaveBeenCalledTimes(2)
       testDatesProp(onChange, start, end)

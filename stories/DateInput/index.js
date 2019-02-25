@@ -1,105 +1,123 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
+import { action } from '@storybook/addon-actions'
 import moment from 'moment'
 import IconCalendar from 'emblematic-icons/svg/Calendar32.svg'
 
 import Section from '../Section'
 import DateInput from '../../src/DateInput'
-import Button from '../../src/Button'
 
 import presets from './datePresets'
 import style from './style.css'
-
-const strings = {
-  start: 'Initial',
-  end: 'End',
-  select: 'Select a period or date',
-  cancel: 'cancel',
-  confirmPeriod: 'confirm selection',
-  custom: 'customizable',
-  day: 'one day',
-  daySelected: 'selected day',
-  daysSelected: 'selected days',
-  noDayOrPeriodSelected: 'Nothing selected',
-  period: 'period',
-  today: 'today',
-  anyDate: 'Any Date',
-}
 
 class DateInputState extends React.Component {
   constructor (props) {
     super(props)
 
     this.state = {
-      value: {
-        start: props.start,
-        end: props.end,
-      },
+      showCalendar: props.showCalendar,
     }
 
-    this.handleDatesChange = this.handleDatesChange.bind(this)
-    this.handleReset = this.handleReset.bind(this)
+    this.handlePresetChange = this.handlePresetChange.bind(this)
   }
 
-  componentWillReceiveProps ({ start, end }) {
-    this.setState({ value: { start, end } })
-  }
+  handlePresetChange (dates, preset) {
+    this.setState({
+      showCalendar: true,
+    })
 
-  handleReset () {
-    const { start, end } = this.props
-    this.setState({ value: { start, end } })
-  }
-
-  handleDatesChange (value) {
-    this.setState({ value })
+    action('onPresetChange')({ dates, preset })
   }
 
   render () {
-    const { value } = this.state
+    const {
+      dates,
+      selectedPreset,
+      selectionMode,
+      showSidebar,
+    } = this.props
 
     return (
       <div className={style.container}>
         <DateInput
-          presets={presets}
-          value={value}
-          onChange={this.handleDatesChange}
-          active={value.start && value.end && true}
-          limits={{
-            lower: moment('01-01-2013', 'DD-MM-YYYY'),
-            upper: moment('01-01-2025', 'DD-MM-YYYY'),
-          }}
+          dates={dates}
           icon={<IconCalendar width={16} height={16} />}
-          strings={strings}
+          onConfirm={action('onConfirm')}
+          onChange={action('onChange')}
+          onPresetChange={this.handlePresetChange}
+          presets={presets}
+          selectedPreset={selectedPreset}
+          selectionMode={selectionMode}
+          showCalendar={this.state.showCalendar}
+          showSidebar={showSidebar}
         />
-        <Button onClick={this.handleReset}>Reset dates</Button>
       </div>
     )
   }
 }
 
 DateInputState.defaultProps = {
+  selectedPreset: '',
   start: null,
   end: null,
 }
 
 storiesOf('DateInput', module)
-  .add('All styles', () => (
-    <div className={style.main}>
-      <Section title="Minimal setup">
-        <DateInputState />
-      </Section>
-
-      <Section title="Specifying single day as initial dates">
-        <DateInputState start={moment()} end={moment()} />
-      </Section>
-
-      <Section title="Specifying date range as initial dates">
-        <DateInputState start={moment().add(-7, 'days')} end={moment()} />
-      </Section>
-
-      <Section title="Specifying null end as initial dates">
-        <DateInputState start={moment().add(-7, 'days')} />
-      </Section>
-    </div>
+  .add('without sidebar and single selection', () => (
+    <Section>
+      <DateInputState
+        showSidebar={false}
+      />
+    </Section>
+  ))
+  .add('without sidebar and pre selected date', () => (
+    <Section>
+      <DateInputState
+        dates={{
+          start: moment(),
+          end: moment(),
+        }}
+        showSidebar={false}
+      />
+    </Section>
+  ))
+  .add('without sidebar and period selection', () => (
+    <Section>
+      <DateInputState
+        selectionMode="period"
+        showSidebar={false}
+      />
+    </Section>
+  ))
+  .add('without sidebar and pre selected period', () => (
+    <Section>
+      <DateInputState
+        dates={{
+          start: moment().subtract(4, 'days'),
+          end: moment(),
+        }}
+        selectionMode="period"
+        showSidebar={false}
+      />
+    </Section>
+  ))
+  .add('with sidebar', () => (
+    <Section>
+      <DateInputState />
+    </Section>
+  ))
+  .add('with sidebar and selected preset', () => (
+    <Section>
+      <DateInputState
+        selectedPreset="last-7"
+      />
+    </Section>
+  ))
+  .add('with sidebar first', () => (
+    <Section>
+      <DateInputState
+        showCalendar={false}
+      />
+    </Section>
   ))
 
