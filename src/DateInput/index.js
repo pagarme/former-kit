@@ -291,6 +291,7 @@ class DateInput extends React.Component {
   render () {
     const {
       active,
+      isValidDay,
       limits,
       theme,
       presets,
@@ -315,6 +316,7 @@ class DateInput extends React.Component {
       <DateSelector
         dates={isValidDates ? momentDates : {}}
         focusedInput={focusedInput}
+        isValidDay={isValidDay}
         onConfirm={this.handleConfirm}
         onChange={this.handleDatesChange}
         onPresetChange={this.handlePresetChange}
@@ -357,6 +359,10 @@ DateInput.propTypes = {
    * Custom icon which will be shown in the component left side.
    */
   icon: element,
+  /**
+   * Function that returns a boolean wheter the date is valid
+   */
+  isValidDay: func,
   /**
    * Limit dates for range selections.
    */
@@ -447,6 +453,7 @@ DateInput.defaultProps = {
     end: null,
   },
   icon: null,
+  isValidDay: null,
   limits: {
     lower: moment('1900-01-01', 'YYYY-MM-DD'),
     upper: moment('2100-01-01', 'YYYY-MM-DD'),

@@ -200,6 +200,7 @@ class DateSelector extends Component {
       dates,
       focusedInput,
       icons,
+      isValidDay,
       presets,
       selectedPreset,
       selectionMode,
@@ -219,7 +220,10 @@ class DateSelector extends Component {
         <Calendar
           numberOfMonths={2}
           daySize={40}
-          isDayBlocked={date => isDayBlocked(date, presetRange, presetLimits)}
+          isDayBlocked={date =>
+            (isValidDay && !isValidDay(date))
+            || isDayBlocked(date, presetRange, presetLimits)
+          }
           navPrev={icons.previousMonth}
           navNext={icons.nextMonth}
           dates={{
@@ -354,6 +358,10 @@ DateSelector.propTypes = {
     nextMonth: element,
   }),
   /**
+   * Function that returns a boolean wheter the date is valid
+   */
+  isValidDay: func,
+  /**
    * Mode to be used when showSidebar is false.
   */
   selectionMode: (props, propName) => {
@@ -439,6 +447,7 @@ DateSelector.defaultProps = {
   selectedPreset: '',
   focusedInput: null,
   icons: {},
+  isValidDay: null,
   selectionMode: 'single',
   onPresetChange: () => undefined,
   presets: [],
