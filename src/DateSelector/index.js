@@ -65,7 +65,7 @@ const flattenPresets = pipe(
   flatten
 )
 
-const getPreset = (presetName, presets) => {
+export const getPreset = (presetName, presets) => {
   const flattenedPresets = flattenPresets(presets)
   const foundPreset = flattenedPresets
     .find(preset => preset.key === presetName)
@@ -73,7 +73,7 @@ const getPreset = (presetName, presets) => {
   return foundPreset
 }
 
-const getPresetLimits = (range) => {
+export const getPresetLimits = (range) => {
   // TODO: refactor range logic be based on
   // selected date instead of current date
 

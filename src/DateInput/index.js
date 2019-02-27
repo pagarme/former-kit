@@ -20,7 +20,7 @@ import moment from 'moment'
 import MaskedInput from 'react-maskedinput'
 
 import ThemeConsumer from '../ThemeConsumer'
-import DateSelector from '../DateSelector'
+import DateSelector, { getPreset, getPresetLimits } from '../DateSelector'
 
 import {
   inputDateMask,
@@ -60,10 +60,22 @@ class DateInput extends React.Component {
   constructor (props) {
     super(props)
 
+    const presetObject = props.selectedPreset
+      ? getPreset(props.selectedPreset, props.presets)
+      : null
+
+    const dates = presetObject
+      ? momentToText(getPresetLimits(presetObject.date()))
+      : momentToText(props.dates)
+
+    const selectionMode = presetObject
+      ? presetObject.mode
+      : props.selectionMode
+
     this.state = {
-      dates: momentToText(props.dates),
+      dates,
       focusedInput: null,
-      selectionMode: props.selectionMode,
+      selectionMode,
       selectedPreset: props.selectedPreset,
     }
 
@@ -180,7 +192,6 @@ class DateInput extends React.Component {
     })
 
     this.props.onPresetChange(dates, preset)
-    this.props.onChange(dates)
   }
 
   renderInputs () {
@@ -367,7 +378,7 @@ DateInput.propTypes = {
   /**
    * Triggers when DateSelector popover is closed.
    */
-  onConfirm: func.isRequired,
+  onConfirm: func,
   /**
    * Triggers when selected preset is changed.
   */
@@ -440,6 +451,7 @@ DateInput.defaultProps = {
     lower: moment('1900-01-01', 'YYYY-MM-DD'),
     upper: moment('2100-01-01', 'YYYY-MM-DD'),
   },
+  onConfirm: () => null,
   onChange: () => null,
   onPresetChange: () => null,
   presets: [],
