@@ -8,8 +8,6 @@ import {
   arrayOf,
   shape,
   oneOf,
-  oneOfType,
-  object,
   element,
 } from 'prop-types'
 import shortid from 'shortid'
@@ -24,7 +22,6 @@ import {
   pipe,
   prop,
 } from 'ramda'
-import { momentObj } from 'react-moment-proptypes'
 import moment from 'moment'
 
 import ThemeConsumer from '../ThemeConsumer'
@@ -33,7 +30,7 @@ import normalizeDates from './normalizeDates'
 import {
   Popover,
 } from '../Popover'
-import Calendar from '../Calendar'
+import Calendar, { isMomentPropValidation } from '../Calendar'
 import Aside from './Aside'
 
 const consumeTheme = ThemeConsumer('UIDateSelector')
@@ -343,11 +340,11 @@ DateSelector.propTypes = {
     /**
      * Start date based on `moment.js`.
      */
-    start: oneOfType([momentObj, object]),
+    start: isMomentPropValidation,
     /**
      * End date based on `moment.js`.
      */
-    end: oneOfType([momentObj, object]),
+    end: isMomentPropValidation,
   }),
   /**
    * Default icons used in the month navigation.

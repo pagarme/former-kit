@@ -13,6 +13,7 @@ import {
   omit,
   times,
 } from 'ramda'
+
 import normalizeDates from './normalizeDates'
 import ThemeConsumer from '../ThemeConsumer'
 import {
@@ -50,6 +51,16 @@ const isOutsideRange = limits => complement(validateDate(limits))
 
 const validateVisibleMonths = (currentMonth, months) =>
   times(add(currentMonth), months)
+
+export const isMomentPropValidation = (props, propName) => {
+  const propValue = props[propName]
+
+  if (propValue && !moment.isMoment(propValue)) {
+    return new Error(`Prop ${propName} must be an instance of Moment`)
+  }
+
+  return null
+}
 
 /**
  * Custom calendar based on `react-dates` from airbnb with a simple interface.
@@ -162,11 +173,11 @@ Calendar.propTypes = {
     /**
      * End date based on `moment.js`.
      */
-    end: PropTypes.instanceOf(moment),
+    end: isMomentPropValidation,
     /**
      * Start date based on `moment.js`.
      */
-    start: PropTypes.instanceOf(moment),
+    start: isMomentPropValidation,
   }).isRequired,
   /**
    * This option allows the user to select one date or one priod in the calendar.
@@ -191,11 +202,11 @@ Calendar.propTypes = {
     /**
      * Lowest selectable date based in `moment.js`.
      */
-    lower: PropTypes.instanceOf(moment),
+    lower: isMomentPropValidation,
     /**
      * Biggest selectable date based in `moment.js`.
      */
-    upper: PropTypes.instanceOf(moment),
+    upper: isMomentPropValidation,
   }),
   /**
    * Number of months shown in the calendar.

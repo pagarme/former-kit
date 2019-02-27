@@ -10,7 +10,6 @@ import {
   bool,
   element,
   func,
-  instanceOf,
   oneOf,
   shape,
   string,
@@ -20,6 +19,7 @@ import moment from 'moment'
 import MaskedInput from 'react-maskedinput'
 
 import ThemeConsumer from '../ThemeConsumer'
+import { isMomentPropValidation } from '../Calendar'
 import DateSelector, { getPreset, getPresetLimits } from '../DateSelector'
 
 import {
@@ -350,8 +350,8 @@ DateInput.propTypes = {
    * Initial dates to be pre selected.
    */
   dates: shape({
-    start: instanceOf(moment),
-    end: instanceOf(moment),
+    start: isMomentPropValidation,
+    end: isMomentPropValidation,
   }),
   /**
    * Custom icon which will be shown in the component left side.
@@ -364,11 +364,11 @@ DateInput.propTypes = {
     /**
      * Lowest selectable date based in `moment.js`.
      */
-    lower: instanceOf(moment),
+    lower: isMomentPropValidation,
     /**
      * Biggest selectable date based in `moment.js`.
      */
-    upper: instanceOf(moment),
+    upper: isMomentPropValidation,
   }),
   /**
    * Triggers when a date is changed or selected.
