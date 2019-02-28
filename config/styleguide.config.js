@@ -27,6 +27,7 @@ const getExampleFilename = (pathname) => {
 module.exports = {
   title: 'FormerKit',
   pagePerSection: true,
+  styleguideDir: path.resolve(__dirname, '../docs'),
   sections: [
     {
       name: 'Introduction',
