@@ -117,6 +117,9 @@ module.exports = {
     SectionRenderer: path.join(__dirname, '../styleguide/components/Section.js'),
     'slots/IsolateButton': path.join(__dirname, '../styleguide/components/IsolateButton.js'),
   },
+  template: {
+    favicon: 'https://beta.dashboard.pagar.me/favicon.ico',
+  },
   theme: {
     color: {
       link: '#757575',
