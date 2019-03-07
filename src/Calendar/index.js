@@ -19,6 +19,7 @@ import ThemeConsumer from '../ThemeConsumer'
 import {
   validateDate,
 } from '../DateInput/dateHelpers'
+import isMomentPropValidation from '../validations'
 
 const consumeTheme = ThemeConsumer('UICalendar')
 
@@ -51,16 +52,6 @@ const isOutsideRange = limits => complement(validateDate(limits))
 
 const validateVisibleMonths = (currentMonth, months) =>
   times(add(currentMonth), months)
-
-export const isMomentPropValidation = (props, propName) => {
-  const propValue = props[propName]
-
-  if (propValue && !moment.isMoment(propValue)) {
-    return new Error(`Prop ${propName} must be an instance of Moment`)
-  }
-
-  return null
-}
 
 /**
  * Custom calendar based on `react-dates` from airbnb with a simple interface.

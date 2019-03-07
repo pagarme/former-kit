@@ -30,7 +30,8 @@ import normalizeDates from './normalizeDates'
 import {
   Popover,
 } from '../Popover'
-import Calendar, { isMomentPropValidation } from '../Calendar'
+import Calendar from '../Calendar'
+import isMomentPropValidation from '../validations'
 import Aside from './Aside'
 
 const consumeTheme = ThemeConsumer('UIDateSelector')

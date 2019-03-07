@@ -19,7 +19,7 @@ import moment from 'moment'
 import MaskedInput from 'react-maskedinput'
 
 import ThemeConsumer from '../ThemeConsumer'
-import { isMomentPropValidation } from '../Calendar'
+import { isMomentPropValidation } from '../validations'
 import DateSelector, { getPreset, getPresetLimits } from '../DateSelector'
 
 import {
