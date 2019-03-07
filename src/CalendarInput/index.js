@@ -261,7 +261,7 @@ class CalendarInput extends Component {
 
   isValidDate (date) {
     const { isValidDay } = this.props
-    const isValid = isValidDay ? isValidDay(moment(date)) : true
+    const isValid = isValidDay ? isValidDay(moment(date, 'L')) : true
 
     return !date || (isValid && date)
   }
