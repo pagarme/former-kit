@@ -100,6 +100,7 @@ module.exports = {
         '../src/Table/TableExpandedRow.js',
         '../src/Table/TableHead.js',
         '../src/Table/TableRow.js',
+        '../src/Table/TableLoadingRow.js',
         '../src/Tag/index.js',
         '../src/Tooltip/index.js',
         '../src/Transition/Transition.js',

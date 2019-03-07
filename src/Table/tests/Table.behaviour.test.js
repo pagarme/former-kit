@@ -163,5 +163,24 @@ describe('Table', () => {
         expect(onSelectRow).toBeCalledWith([0])
       })
     })
+
+    describe('Loading', () => {
+      it('should render a loading text', () => {
+        const { component } = createComponents({
+          loading: true,
+        })
+
+        expect(component.find('tr').last().text()).toBe('loading...')
+      })
+
+      it('should render a custom renderer', () => {
+        const { component } = createComponents({
+          loading: true,
+          loaderRenderer: 'no puedo estoy ocupadito...',
+        })
+
+        expect(component.find('tr').last().text()).toBe('no puedo estoy ocupadito...')
+      })
+    })
   })
 })
