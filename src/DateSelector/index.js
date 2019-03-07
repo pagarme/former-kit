@@ -8,8 +8,6 @@ import {
   arrayOf,
   shape,
   oneOf,
-  oneOfType,
-  object,
   element,
 } from 'prop-types'
 import shortid from 'shortid'
@@ -24,7 +22,6 @@ import {
   pipe,
   prop,
 } from 'ramda'
-import { momentObj } from 'react-moment-proptypes'
 import moment from 'moment'
 
 import ThemeConsumer from '../ThemeConsumer'
@@ -34,6 +31,7 @@ import {
   Popover,
 } from '../Popover'
 import Calendar from '../Calendar'
+import isMomentPropValidation from '../validations'
 import Aside from './Aside'
 
 const consumeTheme = ThemeConsumer('UIDateSelector')
@@ -65,7 +63,7 @@ const flattenPresets = pipe(
   flatten
 )
 
-const getPreset = (presetName, presets) => {
+export const getPreset = (presetName, presets) => {
   const flattenedPresets = flattenPresets(presets)
   const foundPreset = flattenedPresets
     .find(preset => preset.key === presetName)
@@ -73,7 +71,7 @@ const getPreset = (presetName, presets) => {
   return foundPreset
 }
 
-const getPresetLimits = (range) => {
+export const getPresetLimits = (range) => {
   // TODO: refactor range logic be based on
   // selected date instead of current date
 
@@ -203,6 +201,7 @@ class DateSelector extends Component {
       dates,
       focusedInput,
       icons,
+      isValidDay,
       presets,
       selectedPreset,
       selectionMode,
@@ -222,7 +221,10 @@ class DateSelector extends Component {
         <Calendar
           numberOfMonths={2}
           daySize={40}
-          isDayBlocked={date => isDayBlocked(date, presetRange, presetLimits)}
+          isDayBlocked={date =>
+            (isValidDay && !isValidDay(date))
+            || isDayBlocked(date, presetRange, presetLimits)
+          }
           navPrev={icons.previousMonth}
           navNext={icons.nextMonth}
           dates={{
@@ -343,11 +345,11 @@ DateSelector.propTypes = {
     /**
      * Start date based on `moment.js`.
      */
-    start: oneOfType([momentObj, object]),
+    start: isMomentPropValidation,
     /**
      * End date based on `moment.js`.
      */
-    end: oneOfType([momentObj, object]),
+    end: isMomentPropValidation,
   }),
   /**
    * Default icons used in the month navigation.
@@ -356,6 +358,10 @@ DateSelector.propTypes = {
     previousMonth: element,
     nextMonth: element,
   }),
+  /**
+   * Function that returns a boolean wheter the date is valid
+   */
+  isValidDay: func,
   /**
    * Mode to be used when showSidebar is false.
   */
@@ -442,6 +448,7 @@ DateSelector.defaultProps = {
   selectedPreset: '',
   focusedInput: null,
   icons: {},
+  isValidDay: null,
   selectionMode: 'single',
   onPresetChange: () => undefined,
   presets: [],

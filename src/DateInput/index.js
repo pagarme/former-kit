@@ -10,7 +10,6 @@ import {
   bool,
   element,
   func,
-  instanceOf,
   oneOf,
   shape,
   string,
@@ -20,7 +19,8 @@ import moment from 'moment'
 import MaskedInput from 'react-maskedinput'
 
 import ThemeConsumer from '../ThemeConsumer'
-import DateSelector from '../DateSelector'
+import { isMomentPropValidation } from '../validations'
+import DateSelector, { getPreset, getPresetLimits } from '../DateSelector'
 
 import {
   inputDateMask,
@@ -60,10 +60,22 @@ class DateInput extends React.Component {
   constructor (props) {
     super(props)
 
+    const presetObject = props.selectedPreset
+      ? getPreset(props.selectedPreset, props.presets)
+      : null
+
+    const dates = presetObject
+      ? momentToText(getPresetLimits(presetObject.date()))
+      : momentToText(props.dates)
+
+    const selectionMode = presetObject
+      ? presetObject.mode
+      : props.selectionMode
+
     this.state = {
-      dates: momentToText(props.dates),
+      dates,
       focusedInput: null,
-      selectionMode: props.selectionMode,
+      selectionMode,
       selectedPreset: props.selectedPreset,
     }
 
@@ -180,7 +192,6 @@ class DateInput extends React.Component {
     })
 
     this.props.onPresetChange(dates, preset)
-    this.props.onChange(dates)
   }
 
   renderInputs () {
@@ -280,6 +291,7 @@ class DateInput extends React.Component {
   render () {
     const {
       active,
+      isValidDay,
       limits,
       theme,
       presets,
@@ -304,6 +316,7 @@ class DateInput extends React.Component {
       <DateSelector
         dates={isValidDates ? momentDates : {}}
         focusedInput={focusedInput}
+        isValidDay={isValidDay}
         onConfirm={this.handleConfirm}
         onChange={this.handleDatesChange}
         onPresetChange={this.handlePresetChange}
@@ -339,13 +352,17 @@ DateInput.propTypes = {
    * Initial dates to be pre selected.
    */
   dates: shape({
-    start: instanceOf(moment),
-    end: instanceOf(moment),
+    start: isMomentPropValidation,
+    end: isMomentPropValidation,
   }),
   /**
    * Custom icon which will be shown in the component left side.
    */
   icon: element,
+  /**
+   * Function that returns a boolean wheter the date is valid
+   */
+  isValidDay: func,
   /**
    * Limit dates for range selections.
    */
@@ -353,11 +370,11 @@ DateInput.propTypes = {
     /**
      * Lowest selectable date based in `moment.js`.
      */
-    lower: instanceOf(moment),
+    lower: isMomentPropValidation,
     /**
      * Biggest selectable date based in `moment.js`.
      */
-    upper: instanceOf(moment),
+    upper: isMomentPropValidation,
   }),
   /**
    * Triggers when a date is changed or selected.
@@ -367,7 +384,7 @@ DateInput.propTypes = {
   /**
    * Triggers when DateSelector popover is closed.
    */
-  onConfirm: func.isRequired,
+  onConfirm: func,
   /**
    * Triggers when selected preset is changed.
   */
@@ -436,10 +453,12 @@ DateInput.defaultProps = {
     end: null,
   },
   icon: null,
+  isValidDay: null,
   limits: {
     lower: moment('1900-01-01', 'YYYY-MM-DD'),
     upper: moment('2100-01-01', 'YYYY-MM-DD'),
   },
+  onConfirm: () => null,
   onChange: () => null,
   onPresetChange: () => null,
   presets: [],

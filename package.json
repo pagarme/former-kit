@@ -103,7 +103,6 @@
     "postcss-url": "8.0.0",
     "react-dev-utils": "7.0.1",
     "react-error-overlay": "5.1.2",
-    "react-moment-proptypes": "1.5.0",
     "react-styleguidist": "8.0.6",
     "react-test-renderer": "16.7.0",
     "react-testing-library": "5.4.4",

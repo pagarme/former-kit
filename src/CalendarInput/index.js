@@ -50,7 +50,7 @@ class CalendarInput extends Component {
     if (process.env.NODE_ENV !== 'test') {
       // eslint-disable-next-line no-console
       console.warn(
-        'CalendarInput component is being deprecated, use DateInput with showCalendar prop as "false" instead.'
+        'CalendarInput component is being deprecated, use DateInput with showSidebar prop as "false" instead.'
       )
     }
 
@@ -261,7 +261,7 @@ class CalendarInput extends Component {
 
   isValidDate (date) {
     const { isValidDay } = this.props
-    const isValid = isValidDay ? isValidDay(moment(date)) : true
+    const isValid = isValidDay ? isValidDay(moment(date, 'L')) : true
 
     return !date || (isValid && date)
   }

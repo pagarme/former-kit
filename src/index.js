@@ -34,6 +34,7 @@ export { default as ThemeProvider } from './ThemeProvider'
 export { default as Tooltip } from './Tooltip'
 export { default as Typeset } from './Typeset'
 
+export * from './validations'
 export * from './Card'
 export * from './Grid'
 export * from './Header'

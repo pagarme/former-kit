@@ -13,11 +13,13 @@ import {
   omit,
   times,
 } from 'ramda'
+
 import normalizeDates from './normalizeDates'
 import ThemeConsumer from '../ThemeConsumer'
 import {
   validateDate,
 } from '../DateInput/dateHelpers'
+import isMomentPropValidation from '../validations'
 
 const consumeTheme = ThemeConsumer('UICalendar')
 
@@ -162,11 +164,11 @@ Calendar.propTypes = {
     /**
      * End date based on `moment.js`.
      */
-    end: PropTypes.instanceOf(moment),
+    end: isMomentPropValidation,
     /**
      * Start date based on `moment.js`.
      */
-    start: PropTypes.instanceOf(moment),
+    start: isMomentPropValidation,
   }).isRequired,
   /**
    * This option allows the user to select one date or one priod in the calendar.
@@ -191,11 +193,11 @@ Calendar.propTypes = {
     /**
      * Lowest selectable date based in `moment.js`.
      */
-    lower: PropTypes.instanceOf(moment),
+    lower: isMomentPropValidation,
     /**
      * Biggest selectable date based in `moment.js`.
      */
-    upper: PropTypes.instanceOf(moment),
+    upper: isMomentPropValidation,
   }),
   /**
    * Number of months shown in the calendar.

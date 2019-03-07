@@ -11272,14 +11272,41 @@ exports[`Storyshots DateInput with sidebar and selected preset 1`] = `
                 onKeyDown={[Function]}
                 onKeyPress={[Function]}
                 onPaste={[Function]}
-                placeholder="Start"
+                placeholder="09/23/2017"
                 size="8"
-                value=""
+                value="09/23/2017"
               />
               <span
                 className="expander"
               >
-                Start
+                09/23/2017
+              </span>
+            </div>
+            <div
+              className="separator"
+            />
+            <div
+              className="end"
+            >
+              <input
+                autoComplete="off"
+                className="input"
+                mask="11/11/1111"
+                maxLength={10}
+                name="endDate"
+                onChange={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyPress={[Function]}
+                onPaste={[Function]}
+                placeholder="End"
+                size="8"
+                value="09/30/2017"
+              />
+              <span
+                className="expander"
+              >
+                09/30/2017
               </span>
             </div>
           </div>
