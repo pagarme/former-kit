@@ -11231,6 +11231,86 @@ exports[`Storyshots DateInput with sidebar 1`] = `
 </section>
 `;
 
+exports[`Storyshots DateInput with sidebar and clear button 1`] = `
+<section
+  className="typography"
+>
+  
+  <div>
+    <div>
+      <div
+        className="dateselector"
+      >
+        <div
+          className="target"
+          onClick={[Function]}
+          role="presentation"
+        >
+          <div
+            className="dateInput focus"
+          >
+            <div
+              className="icon"
+            >
+              <Calendar32.svg
+                height={16}
+                width={16}
+              />
+            </div>
+            <div
+              className="start"
+            >
+              <input
+                autoComplete="off"
+                className="input"
+                id="shortid-mock-startDate"
+                mask="11/11/1111"
+                maxLength={10}
+                name="startDate"
+                onChange={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyPress={[Function]}
+                onPaste={[Function]}
+                placeholder="09/15/2017"
+                size="8"
+                value="09/15/2017"
+              />
+              <span
+                className="expander"
+              >
+                09/15/2017
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        className="button flat normalRelevance default"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span>
+          Reset Dates
+        </span>
+        <span
+          className="ripple"
+          style={
+            Object {
+              "height": 0,
+              "left": 0,
+              "top": 0,
+              "width": 0,
+            }
+          }
+        />
+      </button>
+    </div>
+  </div>
+</section>
+`;
+
 exports[`Storyshots DateInput with sidebar and selected preset 1`] = `
 <section
   className="typography"
