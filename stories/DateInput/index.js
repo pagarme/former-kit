@@ -4,6 +4,7 @@ import { action } from '@storybook/addon-actions'
 import moment from 'moment'
 import IconCalendar from 'emblematic-icons/svg/Calendar32.svg'
 
+import Button from '../../src/Button'
 import Section from '../Section'
 import DateInput from '../../src/DateInput'
 
@@ -15,10 +16,12 @@ class DateInputState extends React.Component {
     super(props)
 
     this.state = {
+      dates: props.dates || {},
       showCalendar: props.showCalendar,
     }
 
     this.handlePresetChange = this.handlePresetChange.bind(this)
+    this.resetDates = this.resetDates.bind(this)
   }
 
   handlePresetChange (dates, preset) {
@@ -29,18 +32,24 @@ class DateInputState extends React.Component {
     action('onPresetChange')({ dates, preset })
   }
 
+  resetDates () {
+    this.setState({
+      dates: this.props.dates,
+    })
+  }
+
   render () {
     const {
-      dates,
       selectedPreset,
       selectionMode,
+      showClearButton,
       showSidebar,
     } = this.props
 
     return (
       <div className={style.container}>
         <DateInput
-          dates={dates}
+          dates={this.state.dates}
           icon={<IconCalendar width={16} height={16} />}
           onConfirm={action('onConfirm')}
           onChange={action('onChange')}
@@ -51,6 +60,9 @@ class DateInputState extends React.Component {
           showCalendar={this.state.showCalendar}
           showSidebar={showSidebar}
         />
+        { showClearButton &&
+          <Button onClick={this.resetDates}>Reset Dates</Button>
+        }
       </div>
     )
   }
@@ -117,6 +129,17 @@ storiesOf('DateInput', module)
     <Section>
       <DateInputState
         showCalendar={false}
+      />
+    </Section>
+  ))
+  .add('with sidebar and clear button', () => (
+    <Section>
+      <DateInputState
+        dates={{
+          start: moment().subtract(15, 'day'),
+          end: moment().subtract(15, 'day'),
+        }}
+        showClearButton
       />
     </Section>
   ))
