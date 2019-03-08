@@ -35,3 +35,16 @@ Success
   <p><strong>Hurray!</strong> Your settings were saved successfully!</p>
 </Snackbar>
 ```
+
+Snackbar With Event
+```jsx
+const IconClose = require('emblematic-icons/svg/ClearClose24.svg').default;
+
+<Snackbar
+  icon={<IconClose height={12} width={12} />}
+  onDismiss={null}
+  type="info"
+>
+  <p>Settings saved successfully</p>
+</Snackbar>
+```

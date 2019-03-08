@@ -33,7 +33,6 @@ class SnackbarWithState extends Component {
       <div>
         { this.state.visible &&
         <Snackbar
-          action=""
           icon={<IconClose height={12} width={12} />}
           dismissTimeout={dismissTimeOutExample ? 2500 : 0}
           onDismiss={this.handleCloseSnackbar}
