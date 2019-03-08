@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import shortid from 'shortid'
 import {
+  equals,
   isNil,
   mergeRight,
 } from 'ramda'
@@ -87,6 +88,31 @@ class DateInput extends React.Component {
     this.handleEndInputChange = this.handleInputChange.bind(this, 'end')
     this.handleInputFocus = this.handleInputFocus.bind(this)
     this.handlePresetChange = this.handlePresetChange.bind(this)
+  }
+
+  componentDidUpdate (prevProps) {
+    const {
+      dates: {
+        end: receivedEnd,
+        start: receivedStart,
+      },
+    } = this.props
+
+    const {
+      dates: {
+        end: currentEnd,
+        start: currentStart,
+      },
+    } = this.state
+
+    const isSameStart = receivedStart && receivedStart.isSame(currentStart, 'day')
+    const isSameEnd = receivedEnd && receivedEnd.isSame(currentEnd, 'day')
+
+    if (!equals(prevProps, this.props) && (!isSameStart || !isSameEnd)) {
+      this.setState({ // eslint-disable-line react/no-did-update-set-state
+        dates: momentToText(this.props.dates),
+      })
+    }
   }
 
   getNextInput () {
