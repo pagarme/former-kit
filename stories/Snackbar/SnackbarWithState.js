@@ -2,10 +2,10 @@ import React, { Component } from 'react'
 import Proptypes from 'prop-types'
 import IconClose from 'emblematic-icons/svg/ClearClose32.svg'
 
-import Snackbar from '../'
+import Snackbar from '../../src/Snackbar'
 import Timer from './Timer'
 
-import Button from '../../Button'
+import Button from '../../src/Button'
 import style from './style.css'
 
 class SnackbarWithState extends Component {

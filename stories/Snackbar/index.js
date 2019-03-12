@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react'
 import IconClose from 'emblematic-icons/svg/ClearClose24.svg'
 
 import Snackbar from '../../src/Snackbar'
-import SnackbarWithState from '../../src/Snackbar/examples/SnackbarWithState'
+import SnackbarWithState from './SnackbarWithState'
 import Section from '../Section'
 
 storiesOf('Snackbar', module)
