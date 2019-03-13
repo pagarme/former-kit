@@ -304,3 +304,10 @@ const TableState = require('./examples/TableState').default;
   empty
 />
 ```
+
+Table with loader row
+``` jsx
+const TableLoader = require('./examples/TableLoader').default;
+
+<TableLoader />
+```

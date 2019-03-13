@@ -19,7 +19,7 @@ import ThemeConsumer from '../ThemeConsumer'
 import {
   validateDate,
 } from '../DateInput/dateHelpers'
-import isMomentPropValidation from '../validations'
+import { isMomentPropValidation } from '../validations'
 
 const consumeTheme = ThemeConsumer('UICalendar')
 

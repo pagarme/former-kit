@@ -3,6 +3,7 @@ import {
   arrayOf,
   bool,
   func,
+  node,
   number,
   oneOf,
   oneOfType,
@@ -27,6 +28,7 @@ import {
   path,
   pipe,
   prop,
+  times,
   take,
   without,
 } from 'ramda'
@@ -36,6 +38,7 @@ import TableEmptyRow from './TableEmptyRow'
 import TableExpandedRow from './TableExpandedRow'
 import TableHead from './TableHead'
 import TableRow from './TableRow'
+import TableLoadingRow from './TableLoadingRow'
 import ThemeConsumer from '../ThemeConsumer'
 
 const consumeTheme = ThemeConsumer('UITable')
@@ -190,6 +193,7 @@ class Table extends Component {
     this.handleRowSelect = this.handleRowSelect.bind(this)
     this.handleSelect = this.handleSelect.bind(this)
     this.renderRow = this.renderRow.bind(this)
+    this.renderLoadingRow = this.renderLoadingRow.bind(this)
   }
 
   handleRowSelect (rowIndex) {
@@ -264,8 +268,15 @@ class Table extends Component {
       emptyMessage,
       maxColumns,
       rows,
+      loading,
       showAggregationRow,
     } = this.props
+
+    if (loading) {
+      return {
+        contentRows: this.renderLoadingRow(),
+      }
+    }
 
     if (isEmpty(rows) && emptyMessage) {
       return {
@@ -297,6 +308,28 @@ class Table extends Component {
       aggregationRow: renderTotals(totals, columns),
       contentRows,
     }
+  }
+
+  renderLoadingRow () {
+    const {
+      columns,
+      rows,
+      loaderRenderer,
+    } = this.props
+
+    if (isNil(loaderRenderer)) {
+      return (
+        <TableLoadingRow colSpan={columns.length} />
+      )
+    }
+
+    return times(key => (
+      <TableLoadingRow
+        key={key}
+        colSpan={columns.length}
+        renderer={loaderRenderer}
+      />
+    ), rows.length)
   }
 
   renderRow (row, index) {
@@ -544,6 +577,14 @@ Table.propTypes = {
    */
   icons: validateIconsShape,
   /**
+   * When the data from table is fetching.
+   */
+  loading: bool,
+  /**
+   * The loader renderer, it can be a text or element. Defaults to 'loading' text.
+   */
+  loaderRenderer: node,
+  /**
    * Number of table columns, all the remaining columns will be dropped in an expandable
    * line if the expandable option is true.
    */
@@ -605,6 +646,8 @@ Table.defaultProps = {
   expandedRows: [],
   headerAlign: 'start',
   icons: {},
+  loading: false,
+  loaderRenderer: null,
   maxColumns: 7,
   onExpandRow: null,
   onOrderChange: null,

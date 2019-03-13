@@ -31,7 +31,7 @@ import {
   Popover,
 } from '../Popover'
 import Calendar from '../Calendar'
-import isMomentPropValidation from '../validations'
+import { isMomentPropValidation } from '../validations'
 import Aside from './Aside'
 
 const consumeTheme = ThemeConsumer('UIDateSelector')

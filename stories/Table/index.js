@@ -2,6 +2,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 
 import TableState from './TableState'
+import TableStateLoading from './TableStateLoading'
 import Section from '../Section'
 
 storiesOf('Table', module)
@@ -47,5 +48,10 @@ storiesOf('Table', module)
         empty
         disabled
       />
+    </Section>
+  ))
+  .add('Loading rows', () => (
+    <Section>
+      <TableStateLoading />
     </Section>
   ))

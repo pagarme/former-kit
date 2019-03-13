@@ -32449,6 +32449,256 @@ exports[`Storyshots Table Empty table 1`] = `
 </section>
 `;
 
+exports[`Storyshots Table Loading rows 1`] = `
+<section
+  className="typography"
+>
+  
+  <div>
+    <h2>
+      Without loaderRenderer
+    </h2>
+    <table
+      className="table"
+    >
+      <thead
+        className="tableHead"
+      >
+        <tr>
+          <th
+            className="startAlign"
+          >
+            <div
+              className="startAlign tableHeadItem"
+            >
+              Name
+            </div>
+          </th>
+          <th
+            className="startAlign"
+          >
+            <div
+              className="startAlign tableHeadItem"
+            >
+              Bank
+            </div>
+          </th>
+          <th
+            className="startAlign"
+          >
+            <div
+              className="startAlign tableHeadItem"
+            >
+              Agency
+            </div>
+          </th>
+          <th
+            className="startAlign"
+          >
+            <div
+              className="startAlign tableHeadItem"
+            >
+              Account
+            </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        className="tableBody"
+      >
+        <tr
+          className="even row"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          tabIndex="0"
+        >
+          <td
+            className="tableItem undefinedAlign"
+          >
+            Wallace Batista Oliveira
+          </td>
+          <td
+            className="tableItem undefinedAlign"
+          >
+            341
+          </td>
+          <td
+            className="tableItem endAlign"
+          >
+            0113
+          </td>
+          <td
+            className="tableItem endAlign"
+          >
+            33064-1
+          </td>
+        </tr>
+        <tr
+          className="odd row"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          tabIndex="0"
+        >
+          <td
+            className="tableItem undefinedAlign"
+          >
+            Deives Carlão
+          </td>
+          <td
+            className="tableItem undefinedAlign"
+          >
+            341
+          </td>
+          <td
+            className="tableItem endAlign"
+          >
+            0113
+          </td>
+          <td
+            className="tableItem endAlign"
+          >
+            33064-1
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>
+      With loaderRenderer
+    </h2>
+    <table
+      className="table"
+    >
+      <thead
+        className="tableHead"
+      >
+        <tr>
+          <th
+            className="startAlign"
+          >
+            <div
+              className="startAlign tableHeadItem"
+            >
+              Name
+            </div>
+          </th>
+          <th
+            className="startAlign"
+          >
+            <div
+              className="startAlign tableHeadItem"
+            >
+              Bank
+            </div>
+          </th>
+          <th
+            className="startAlign"
+          >
+            <div
+              className="startAlign tableHeadItem"
+            >
+              Agency
+            </div>
+          </th>
+          <th
+            className="startAlign"
+          >
+            <div
+              className="startAlign tableHeadItem"
+            >
+              Account
+            </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        className="tableBody"
+      >
+        <tr
+          className="even row"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          tabIndex="0"
+        >
+          <td
+            className="tableItem undefinedAlign"
+          >
+            Wallace Batista Oliveira
+          </td>
+          <td
+            className="tableItem undefinedAlign"
+          >
+            341
+          </td>
+          <td
+            className="tableItem endAlign"
+          >
+            0113
+          </td>
+          <td
+            className="tableItem endAlign"
+          >
+            33064-1
+          </td>
+        </tr>
+        <tr
+          className="odd row"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          tabIndex="0"
+        >
+          <td
+            className="tableItem undefinedAlign"
+          >
+            Deives Carlão
+          </td>
+          <td
+            className="tableItem undefinedAlign"
+          >
+            341
+          </td>
+          <td
+            className="tableItem endAlign"
+          >
+            0113
+          </td>
+          <td
+            className="tableItem endAlign"
+          >
+            33064-1
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <button
+      className="button flat normalRelevance default"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      <span>
+        load
+      </span>
+      <span
+        className="ripple"
+        style={
+          Object {
+            "height": 0,
+            "left": 0,
+            "top": 0,
+            "width": 0,
+          }
+        }
+      />
+    </button>
+  </div>
+</section>
+`;
+
 exports[`Storyshots Table Selectable and expandable 1`] = `
 <section
   className="typography"
