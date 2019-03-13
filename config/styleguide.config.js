@@ -88,6 +88,7 @@ module.exports = {
         '../src/Sidebar/SidebarLink.js',
         '../src/Sidebar/SidebarLinks.js',
         '../src/Spacing/index.js',
+        '../src/Snackbar/index.js',
         '../src/Steps/index.js',
         '../src/Switch/index.js',
         '../src/TabBar/TabBar.js',
