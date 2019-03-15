@@ -169,6 +169,23 @@ const getRowTotal = (row, column, total) => {
   return null
 }
 
+const getColSpan = ({
+  columns,
+  expandable,
+  maxColumns,
+}) => {
+  if (maxColumns < columns.length) {
+    if (expandable) {
+      return maxColumns + 1
+    }
+
+    return maxColumns
+  }
+
+  const extraColumnLength = columns.length + 1
+  return expandable ? extraColumnLength : columns.length
+}
+
 /**
  * This component is designed to show tabular data with some customizations,
  * allowing the user to sort, select and click rows, also show rows details
@@ -312,21 +329,22 @@ class Table extends Component {
 
   renderLoadingRow () {
     const {
-      columns,
-      rows,
       loaderRenderer,
+      rows,
     } = this.props
+
+    const colSpan = getColSpan(this.props)
 
     if (isNil(loaderRenderer)) {
       return (
-        <TableLoadingRow colSpan={columns.length} />
+        <TableLoadingRow colSpan={colSpan} />
       )
     }
 
     return times(key => (
       <TableLoadingRow
         key={key}
-        colSpan={columns.length}
+        colSpan={colSpan}
         renderer={loaderRenderer}
       />
     ), rows.length)
