@@ -35678,6 +35678,108 @@ exports[`Storyshots Transition Picker 1`] = `
 </section>
 `;
 
+exports[`Storyshots Truncate Block 1`] = `
+<section
+  className="typography"
+>
+  
+  <div>
+    <div>
+      <div
+        className=""
+        name="truncate"
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
+      >
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`Storyshots Truncate Inline 1`] = `
+<section
+  className="typography"
+>
+  
+  <div>
+    <div
+      style={
+        Object {
+          "border": "1px solid",
+          "height": "20px",
+          "width": "200px",
+        }
+      }
+    >
+      <div
+        className="truncate"
+        name="truncate"
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
+      >
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`Storyshots Truncate Resizable block 1`] = `
+<div>
+  <textarea
+    className=""
+    onChange={[Function]}
+    value=""
+  />
+  <div
+    className=""
+  >
+    <div
+      className=""
+      name="truncate"
+      style={
+        Object {
+          "visibility": "hidden",
+        }
+      }
+    >
+      
+    </div>
+  </div>
+  <div>
+    <button
+      className="button flat normalRelevance default"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      <span>
+        Fit text
+      </span>
+      <span
+        className="ripple"
+        style={
+          Object {
+            "height": 0,
+            "left": 0,
+            "top": 0,
+            "width": 0,
+          }
+        }
+      />
+    </button>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Typography Font families 1`] = `
 <section
   className="typography"
