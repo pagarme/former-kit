@@ -32,6 +32,7 @@ export { default as Tag } from './Tag'
 export { default as ThemeConsumer } from './ThemeConsumer'
 export { default as ThemeProvider } from './ThemeProvider'
 export { default as Tooltip } from './Tooltip'
+export { default as Truncate } from './Truncate'
 export { default as Typeset } from './Typeset'
 
 export * from './validations'
