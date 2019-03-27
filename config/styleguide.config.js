@@ -105,6 +105,7 @@ module.exports = {
         '../src/Tag/index.js',
         '../src/Tooltip/index.js',
         '../src/Transition/Transition.js',
+        '../src/Truncate/index.js',
         '../src/Typeset/index.js',
       ],
     },
