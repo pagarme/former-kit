@@ -4,6 +4,7 @@ module.exports = {
   ],
   setupFiles: [
     "<rootDir>/config/polyfills.js",
+    "<rootDir>/config/jest/canvas.js",
     "<rootDir>/config/jest/enzyme.js"
   ],
   testMatch: [
