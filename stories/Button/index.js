@@ -6,6 +6,7 @@ import { storiesOf } from '@storybook/react'
 
 import Section from '../Section'
 import Button from '../../src/Button'
+import ButtonLoading from './ButtonLoading'
 
 import styles from './style.css'
 
@@ -321,6 +322,12 @@ storiesOf('Buttons', module)
         </div>
       </Section>
 
-
+      <Section title="Loadings">
+        <div className={styles.spacingAround}>
+          <ButtonLoading>default</ButtonLoading>
+          <ButtonLoading fill="outline">outline</ButtonLoading>
+          <ButtonLoading icon={<IconAdd width={12} height={12} />} />
+        </div>
+      </Section>
     </div>
   ))
