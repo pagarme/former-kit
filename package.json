@@ -27,11 +27,13 @@
     "prebuild": "rimraf ./dist",
     "prepublish": "npm run build"
   },
+  "peerDependencies": {
+    "moment": "^2.24.0"
+  },
   "dependencies": {
     "classnames": "2.2.6",
     "emblematic-icons": "0.6.1",
     "former-kit-skin-pagarme": "1.1.0",
-    "moment": "2.24.0",
     "promise": "8.0.2",
     "prop-types": "15.6.2",
     "ramda": "0.26.1",
@@ -92,6 +94,7 @@
     "jest-cli": "23.6.0",
     "jest-in-case": "1.0.2",
     "mockdate": "2.0.2",
+    "moment": "2.24.0",
     "npm-run-all": "4.1.2",
     "nyc": "13.1.0",
     "object-assign": "4.1.1",
