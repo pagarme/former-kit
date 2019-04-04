@@ -325,8 +325,38 @@ storiesOf('Buttons', module)
       <Section title="Loadings">
         <div className={styles.spacingAround}>
           <ButtonLoading>default</ButtonLoading>
-          <ButtonLoading fill="outline">outline</ButtonLoading>
+          <ButtonLoading size="huge" fill="outline">outline</ButtonLoading>
           <ButtonLoading icon={<IconAdd width={12} height={12} />} />
+          <ButtonLoading
+            icon={<IconAdd width={12} height={12} />}
+            relevance="low"
+            size="tiny"
+          >
+            tiny
+          </ButtonLoading>
+          <ButtonLoading
+            displayChildrenWhenLoading
+            icon={<IconAdd width={12} height={12} />}
+            iconAlignment="end"
+            relevance="high"
+          >
+            High
+          </ButtonLoading>
+          <ButtonLoading
+            displayChildrenWhenLoading
+            icon={<IconAdd width={18} height={18} />}
+            relevance="high"
+            size="huge"
+          >
+            High
+          </ButtonLoading>
+          <ButtonLoading
+            disabled
+            displayChildrenWhenLoading
+            loading
+          >
+            outline
+          </ButtonLoading>
         </div>
       </Section>
     </div>

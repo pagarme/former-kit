@@ -1,18 +1,23 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import Button from '../../src/Button'
 
 const ButtonLoading = ({ children, ...props }) => {
   const [loading, setLoading] = useState(false)
 
-  // meh
-  if (loading) {
-    setTimeout(() => setLoading(false), 3000)
-  }
+  useEffect(() => {
+    let timer
+    if (loading) {
+      timer = setTimeout(() => setLoading(false), 3000)
+    }
+    return () => {
+      clearTimeout(timer)
+    }
+  })
 
   return (
     <Button
-      loading={loading}
+      loading={loading || props.loading}
       onClick={() => setLoading(!loading)}
       {...props}
     >
