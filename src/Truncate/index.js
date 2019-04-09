@@ -5,7 +5,8 @@ import {
   is,
   prop,
 } from 'ramda'
-import { usePrevious, useWindowResize } from '../hooks'
+// import { usePrevious, useWindowResize } from '../hooks'
+// import { usePrevious } from '../hooks'
 import ThemeConsumer from '../ThemeConsumer'
 import Tooltip from '../Tooltip'
 import matchTextToParentSize from './matchTextToParentSize'
@@ -51,133 +52,125 @@ const measureText = measuredText => (
 const Truncate = ({
   ellipsis,
   multiline,
-  resizableByWindow,
+  // resizableByWindow,
   text,
   theme,
   tooltipPlacement,
 }) => {
-  const [currentText, setText] = useState(text)
+  const [currentText, setCurrentText] = useState(text)
   const [isTruncated, setIsTruncated] = useState(false)
   const [parentMeasures, setParentMeasures] = useState(null)
-  const [wrapperElement, setWrapper] = useState(null)
-  const parentElement = useRef(null)
-  const prevText = usePrevious(text)
+  // const [wrapperElement, setWrapperElement] = useState(null)
+  // const parentElement = useRef(null)
+  const prevText = useRef(currentText)
   const wrapperRef = useRef(null)
 
-  const fitText = (parent, wrapper) => {
-    if (parent && wrapper) {
+  // const fitText = (parent) => {
+  //   console.log('fitText')
+  //   const wrapper = prop('current', wrapperRef)
+  //   const parent = prop('parentElement', wrapper)
+
+  //   if (parent && wrapper) {
+  //     const newText = matchTextToParentSize(
+  //       text,
+  //       parent,
+  //       ellipsis,
+  //       wrapper
+  //     )
+
+  //     setCurrentText(newText)
+  //     setParentMeasures({
+  //       height: parent.offsetHeight,
+  //       width: parent.offsetWidth,
+  //     })
+  //     setIsTruncated(newText.indexOf(ellipsis) >= 0)
+  //     // setWrapperElement(wrapper)
+
+  //     if (wrapper && wrapper.style) {
+  //       wrapper.style.visibility = 'visible'
+  //     }
+  //   }
+  // }
+
+  // const handleResize = () => {
+  //   const { current: parent } = parentElement
+  //   const wrapper = wrapperRef.current
+  //         || parent.querySelector('div[name="truncate"]')
+  //         || wrapperElement
+  //   if (parent && wrapper) {
+  //     fitText(parent, wrapper)
+  //   }
+  // }
+
+  const emptyStateEffect = () => {
+    const wrapper = prop('current', wrapperRef)
+    const parent = prop('parentElement', wrapper)
+    console.log({ currentText })
+    if (
+      parent
+      && wrapper
+      && hasElementChangedMeasures(parent, parentMeasures)
+    ) {
+      const parentStyle = window.getComputedStyle(parent)
+      const font = [
+        parentStyle['font-weight'],
+        parentStyle['font-style'],
+        parentStyle['font-size'],
+        parentStyle['font-family'],
+      ].join(' ')
+
+      canvasContext.font = font
       const newText = matchTextToParentSize(
-        text,
+        currentText,
         parent,
         ellipsis,
         wrapper
       )
 
-      setText(newText)
+      if (newText !== currentText) {
+        prevText.current = currentText
+        setCurrentText(newText)
+      }
+
+
+      if (multiline) {
+        setIsTruncated(measureText(currentText) > parent.offsetWidth)
+      } else {
+        setIsTruncated(newText.length < currentText.length)
+      }
       setParentMeasures({
         height: parent.offsetHeight,
         width: parent.offsetWidth,
       })
-      setIsTruncated(newText.indexOf(ellipsis) >= 0)
-      setWrapper(wrapper)
 
-      if (wrapper && wrapper.style) {
-        wrapper.style.visibility = 'visible' // eslint-disable-line no-param-reassign
-      }
+
+      // setWrapperElement(currentRef)
+
+      wrapper.style.visibility = 'visible'
     }
   }
 
-  const handleResize = () => {
-    const { current: parent } = parentElement
-    const wrapper = wrapperRef.current
-          || parent.querySelector('div[name="truncate"]')
-          || wrapperElement
-    if (parent && wrapper) {
-      fitText(parent, wrapper)
-    }
-  }
+  // const refreshEffect = () => {
+  //   if (multiline) {
+  //     const { current: parent } = parentElement
 
-  const emptyStateEffect = () => {
-    if (!wrapperElement) {
-      const currentRef = prop('current', wrapperRef)
-      const parent = prop('parentElement', currentRef)
+  //     if (wrapperRef.current && parent) {
+  //       if (
+  //         (!currentText && text)
+  //         || (prevText !== text)
+  //         || hasElementChangedMeasures(parent, parentMeasures)
+  //       ) {
+  //         fitText(parent)
+  //       }
+  //     }
+  //   }
+  // }
 
-      if (parent && currentRef) {
-        const parentStyle = window.getComputedStyle(parent)
-        const font = [
-          parentStyle['font-weight'],
-          parentStyle['font-style'],
-          parentStyle['font-size'],
-          parentStyle['font-family'],
-        ].join(' ')
-
-        canvasContext.font = font
-
-        if (!parentElement.current) {
-          parentElement.current = parent
-        }
-
-        if (multiline) {
-          const newText = matchTextToParentSize(
-            text,
-            parent,
-            ellipsis,
-            currentRef
-          )
-
-          setText(newText)
-        } else {
-          setText(text)
-        }
-
-        setIsTruncated(measureText(text) > parent.offsetWidth)
-        setParentMeasures({
-          height: parent.offsetHeight,
-          width: parent.offsetWidth,
-        })
-        setWrapper(currentRef)
-
-        currentRef.style.visibility = 'visible'
-      }
-    }
-  }
-
-  const refreshEffect = () => {
-    if (multiline) {
-      const { current: parent } = parentElement
-
-      if (wrapperElement && parent) {
-        if (
-          (!currentText && text)
-          || (prevText !== text)
-          || hasElementChangedMeasures(parent, parentMeasures)
-        ) {
-          const childWrapper = wrapperRef.current
-            || parent.querySelector('div[name="truncate"]')
-            || wrapperElement
-
-          fitText(parent, childWrapper)
-        }
-      }
-    }
-  }
-
-  useEffect(emptyStateEffect, [])
-  useEffect(refreshEffect)
-  if (multiline && resizableByWindow) {
-    useWindowResize(handleResize.bind(this))
-  }
-
-  const prepareTruncatedComponent = style => (
-    <div
-      name="truncate"
-      className={!multiline ? theme.truncate : ''}
-      style={style}
-      ref={wrapperRef}
-    >
-      {currentText}
-    </div>
-  )
+  useEffect(emptyStateEffect)
+  // useEffect(refreshEffect)
+  // if (multiline && resizableByWindow) {
+  //   useWindowResize(handleResize.bind(this))
+  // }
 
   if (isTruncated) {
     const width = parentMeasures.width
@@ -189,12 +182,27 @@ const Truncate = ({
         placement={tooltipPlacement}
         content={text}
       >
-        {prepareTruncatedComponent({ width })}
+        <div
+          name="truncate"
+          className={!multiline ? theme.truncate : ''}
+          style={{ width }}
+          ref={wrapperRef}
+        >
+          {currentText}
+        </div>
       </Tooltip>
     )
   }
-
-  return prepareTruncatedComponent({ visibility: 'hidden' })
+  return (
+    <div
+      name="truncate"
+      className={!multiline ? theme.truncate : ''}
+      // style={{ visibility: 'hidden' }}
+      ref={wrapperRef}
+    >
+      {currentText}
+    </div>
+  )
 }
 
 Truncate.propTypes = {
@@ -210,7 +218,7 @@ Truncate.propTypes = {
    * When true add a listener to window resize event which will
    * trigger the resize of the truncate element.
    */
-  resizableByWindow: PropTypes.bool,
+  // resizableByWindow: PropTypes.bool,
   /**
    * Text which will be truncated.
   */
@@ -246,9 +254,9 @@ Truncate.propTypes = {
 Truncate.defaultProps = {
   multiline: false,
   ellipsis: '',
-  resizableByWindow: false,
+  // resizableByWindow: false,
   theme: {},
   tooltipPlacement: 'bottomCenter',
 }
 
-export default consumeTheme(React.memo(Truncate))
+export default consumeTheme(Truncate)
