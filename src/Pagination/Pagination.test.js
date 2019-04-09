@@ -1,5 +1,6 @@
 import React from 'react'
 import { mount, shallow } from 'enzyme'
+import { render } from 'react-testing-library'
 import Pagination from './index'
 
 const icons = {
@@ -389,5 +390,80 @@ describe('Pagination', () => {
     expect(component.find('input').prop('disabled')).toBe(true)
     expect(component.find('button').first().prop('disabled')).toBe(true)
     expect(component.find('button').at(1).prop('disabled')).toBe(true)
+  })
+})
+
+describe('Pagination with single value', () => {
+  it('should disable both buttons if props disabled is true', () => {
+    const onChange = jest.fn()
+
+    const component = shallow(
+      <Pagination
+        currentPage={1}
+        totalPages={10}
+        onPageChange={onChange}
+        icons={icons}
+        format="single"
+        disabled
+      />
+    ).dive()
+
+    component.simulate('click')
+    expect(onChange).not.toHaveBeenCalled()
+    expect(component.find('input').prop('disabled')).toBe(true)
+    expect(component.find('button').first().prop('disabled')).toBe(true)
+    expect(component.find('button').at(1).prop('disabled')).toBe(true)
+  })
+
+  it('should have correct page after 3 next clicks and 1 prev clicks', () => {
+    let page = 4
+
+    const component = mount(
+      <Pagination
+        currentPage={page}
+        totalPages={10}
+        onPageChange={(newPage) => { page = newPage }}
+        icons={icons}
+        format="single"
+      />
+    )
+
+    const decButton = component.find('button').at(0)
+    const incButton = component.find('button').at(1)
+
+    incButton.simulate('click')
+    component.setProps({ currentPage: page })
+    incButton.simulate('click')
+    component.setProps({ currentPage: page })
+    incButton.simulate('click')
+    component.setProps({ currentPage: page })
+    decButton.simulate('click')
+    component.setProps({ currentPage: page })
+
+    expect(page).toBe(6)
+  })
+
+  it('should render only the current page if the format is single', () => {
+    const onChange = jest.fn()
+    const page = 7
+    const totalPages = 100
+
+    const { container, getByText } = render(
+      <Pagination
+        currentPage={page}
+        totalPages={totalPages}
+        icons={icons}
+        onPageChange={onChange}
+        format="single"
+      />
+    )
+
+    const input = container.querySelector('input')
+    expect(input).not.toBeNull()
+    expect(parseInt(input.value, 10)).toBe(page)
+    const pageNumber = getByText(`${totalPages}`)
+    expect(pageNumber).not.toBeNull()
+    const spanFound = container.querySelectorAll('label > span:first-child ~ span')
+    expect(spanFound.length).toBe(0)
   })
 })

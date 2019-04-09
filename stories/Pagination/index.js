@@ -155,7 +155,7 @@ storiesOf('Pagination', module)
       <Section title="Single Format">
         <PaginationState
           currentPage={1}
-          totalPages={100}
+          totalPages={10}
           format="single"
         />
       </Section>
