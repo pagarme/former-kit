@@ -30,7 +30,12 @@ class PaginationState extends React.Component {
 
   render () {
     const { currentPage, totalPages } = this.state
-    const { disabled } = this.props
+    const {
+      disabled,
+      format,
+      size,
+      strings,
+    } = this.props
 
     const error = totalPages < currentPage || currentPage === 0
 
@@ -39,9 +44,10 @@ class PaginationState extends React.Component {
         <Pagination
           currentPage={currentPage}
           disabled={disabled}
+          format={format}
           onPageChange={this.pageChanged}
-          size={this.props.size}
-          strings={this.props.strings}
+          size={size}
+          strings={strings}
           totalPages={totalPages}
         />
         {error &&
@@ -57,6 +63,14 @@ class PaginationState extends React.Component {
 PaginationState.propTypes = {
   currentPage: PropTypes.number.isRequired,
   totalPages: PropTypes.number.isRequired,
+  format: PropTypes.oneOf([
+    'range',
+    'single',
+  ]),
+}
+
+PaginationState.defaultProps = {
+  format: 'range',
 }
 
 
@@ -135,6 +149,14 @@ storiesOf('Pagination', module)
           currentPage={1}
           totalPages={10}
           disabled
+        />
+      </Section>
+
+      <Section title="Single Format">
+        <PaginationState
+          currentPage={1}
+          totalPages={100}
+          format="single"
         />
       </Section>
     </div>

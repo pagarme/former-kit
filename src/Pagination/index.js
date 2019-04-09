@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 import {
   F,
@@ -280,6 +280,7 @@ class Pagination extends React.Component {
     const {
       disabled,
       icons,
+      format,
       size,
       strings,
       theme,
@@ -331,12 +332,16 @@ class Pagination extends React.Component {
               {totalPages}
             </span>
           </span>
-          <span className={theme.separator}>
-            {translatedStrings.of}
-          </span>
-          <span className={theme.totalPages}>
-            {totalPages}
-          </span>
+          {format === 'range' &&
+            <Fragment>
+              <span className={theme.separator}>
+                {translatedStrings.of}
+              </span>
+              <span className={theme.totalPages}>
+                {totalPages}
+              </span>
+            </Fragment>
+          }
         </label>
 
         <button
@@ -360,6 +365,15 @@ Pagination.propTypes = {
    * Disable pagination changes.
    */
   disabled: PropTypes.bool,
+  /**
+   * Defines the component's type. The single format
+   * changes the component to show only the current page. The
+   * range format is the default which shows the current and last page.
+   */
+  format: PropTypes.oneOf([
+    'range',
+    'single',
+  ]),
   /**
    * The previous and next page icons.
    */
@@ -412,15 +426,17 @@ Pagination.propTypes = {
   /**
    * The total pages number.
    */
-  totalPages: PropTypes.number.isRequired,
+  totalPages: PropTypes.number,
 }
 
 Pagination.defaultProps = {
   disabled: false,
   icons: {},
+  format: 'range',
   size: null,
   strings: defaultStrings,
   theme: {},
+  totalPages: null,
 }
 
 export default consumeTheme(Pagination)
