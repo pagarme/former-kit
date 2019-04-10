@@ -30,6 +30,25 @@ const createRipple = (e) => {
   }
 }
 
+const createSpinnerClasses = ({
+  alignment,
+  children,
+  displayChildrenWhenLoading,
+  icon,
+  loading,
+  theme,
+}) => {
+  const alignmentClass = alignment === 'end' ? 'endAlign' : 'startAlign'
+  return classNames(
+    theme.spinner,
+    theme[alignmentClass],
+    {
+      [theme.spinnerOnly]: icon && loading && !children,
+      [theme.absolute]: !displayChildrenWhenLoading && loading && children,
+    }
+  )
+}
+
 /**
  * Simple HTML button in a beautiful skin.
  */
@@ -45,6 +64,8 @@ class Button extends PureComponent {
     }
 
     this.handleClick = this.handleClick.bind(this)
+    this.shouldRenderIconAt = this.shouldRenderIconAt.bind(this)
+    this.renderLoaderSpinnerAt = this.renderLoaderSpinnerAt.bind(this)
   }
 
   handleClick (e) {
@@ -67,14 +88,58 @@ class Button extends PureComponent {
     }
   }
 
+  shouldRenderIconAt (alignment) {
+    const {
+      icon,
+      iconAlignment,
+      displayChildrenWhenLoading,
+      loading,
+      children,
+    } = this.props
+
+    if (!isNil(children) && displayChildrenWhenLoading && loading) {
+      return false
+    }
+
+    return !isNil(icon) && iconAlignment === alignment
+  }
+
+  renderLoaderSpinnerAt (alignment) {
+    const {
+      children,
+      displayChildrenWhenLoading,
+      icon,
+      iconAlignment,
+      loading,
+      theme,
+    } = this.props
+
+    if (loading && iconAlignment === alignment) {
+      return (
+        <span className={createSpinnerClasses({
+          alignment,
+          children,
+          displayChildrenWhenLoading,
+          icon,
+          loading,
+          theme,
+        })}
+        />
+      )
+    }
+
+    return null
+  }
+
   render () {
     const {
       children,
       circle,
       disabled,
+      displayChildrenWhenLoading,
       fill,
+      loading,
       icon,
-      iconAlignment,
       relevance,
       size,
       theme,
@@ -96,6 +161,7 @@ class Button extends PureComponent {
       {
         [theme.iconButton]: !isNil(icon) && isNil(children),
         [theme.circle]: !isNil(icon) && isNil(children) && circle,
+        [theme.hiddenChildren]: !displayChildrenWhenLoading && loading,
       }
     )
 
@@ -106,9 +172,16 @@ class Button extends PureComponent {
         onClick={this.handleClick}
         type={type}
       >
-        {(!isNil(icon) && iconAlignment === 'start') && icon}
-        {!isNil(children) && <span>{children}</span>}
-        {(!isNil(icon) && iconAlignment === 'end') && icon}
+
+        { this.shouldRenderIconAt('start') && icon }
+
+        { this.renderLoaderSpinnerAt('start') }
+
+        { !isNil(children) && <span>{children}</span> }
+
+        { this.renderLoaderSpinnerAt('end') }
+
+        { this.shouldRenderIconAt('end') && icon }
 
         <span
           className={theme.ripple}
@@ -141,11 +214,22 @@ Button.propTypes = {
    */
   disabled: PropTypes.bool,
   /**
+   * This prop allows the loading usage keeping the children (icon and text
+   * in the loading state. When this prop is true the loading spinner will
+   * be placed over the icon and the text will stay in place. The spinner
+   * size is relative to the button's prop size.
+   */
+  displayChildrenWhenLoading: PropTypes.bool,
+  /**
    * The styles of color the button can have.
    */
   fill: PropTypes.oneOf([
     'flat', 'gradient', 'outline', 'clean',
   ]),
+  /**
+   * Indicates if the button is at loading state.
+   */
+  loading: PropTypes.bool,
   /**
    * Custom icon which stays on the left or right side of the input.
    */
@@ -190,6 +274,7 @@ Button.propTypes = {
     outline: PropTypes.string,
     ripple: PropTypes.string,
     size: PropTypes.string,
+    spinner: PropTypes.string,
     tiny: PropTypes.string,
   }),
   /**
@@ -202,7 +287,9 @@ Button.defaultProps = {
   children: null,
   circle: false,
   disabled: false,
+  displayChildrenWhenLoading: false,
   fill: 'flat',
+  loading: false,
   icon: null,
   iconAlignment: 'start',
   onClick: null,

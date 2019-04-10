@@ -43,7 +43,7 @@ And the button can be disabled:
 </div>
 ```
 
-Finally, the button can have an icon!
+The button can have an icon!
 ```jsx
 const IconAdd = require('emblematic-icons/svg/Add24.svg').default;
 
@@ -51,5 +51,16 @@ const IconAdd = require('emblematic-icons/svg/Add24.svg').default;
   <Button circle icon={<IconAdd width={12} height={12} />} />
   <Button icon={<IconAdd width={12} height={12} />} />
   <Button icon={<IconAdd width={12} height={12} />} >Call to Action</Button>
+</div>
+```
+
+You can add a loading state to the button
+```jsx
+const IconAdd = require('emblematic-icons/svg/Add24.svg').default;
+
+<div style={{ display: 'flex', justifyContent: 'space-around' }}>
+  <Button loading circle icon={<IconAdd width={12} height={12} />} />
+  <Button loading fill="outline">Call to Action</Button>
+  <Button loading>Call to Action</Button>
 </div>
 ```
