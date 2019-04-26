@@ -14,8 +14,8 @@ const matchTextToParentSize = (
 
   if (parent.scrollHeight <= parent.offsetHeight) {
     return {
-      newText: text,
       isTruncated: false,
+      newText: text,
     }
   }
 
@@ -34,8 +34,8 @@ const matchTextToParentSize = (
   }
 
   return {
-    newText,
     isTruncated: text !== newText,
+    newText,
   }
 }
 

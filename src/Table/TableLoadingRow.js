@@ -8,8 +8,8 @@ const consumeTheme = ThemeConsumer('UITable')
 
 const TableLoadingRow = ({
   colSpan,
-  theme,
   renderer,
+  theme,
 }) => (
   <tr
     className={theme.tableRow}
@@ -33,6 +33,10 @@ TableLoadingRow.propTypes = {
    */
   colSpan: PropTypes.number.isRequired,
   /**
+   * The loader renderer.
+   */
+  renderer: PropTypes.node,
+  /**
    * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: PropTypes.shape({
@@ -40,15 +44,11 @@ TableLoadingRow.propTypes = {
     tableItem: PropTypes.string,
     tableRow: PropTypes.string,
   }),
-  /**
-   * The loader renderer.
-   */
-  renderer: PropTypes.node,
 }
 
 TableLoadingRow.defaultProps = {
-  theme: {},
   renderer: 'loading...',
+  theme: {},
 }
 
 export default consumeTheme(TableLoadingRow)

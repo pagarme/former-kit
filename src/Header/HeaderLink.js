@@ -9,21 +9,37 @@ const consumeTheme = ThemeConsumer('UIHeader')
  * the `HeaderLinks` component.
 */
 const HeaderLink = ({
-  theme,
-  onClick,
-  icon,
   children,
+  icon,
+  onClick,
+  theme,
 }) => (
   <button
     onClick={onClick}
     role="link"
     className={theme.link}
+    type="button"
   >
     {icon || children}
   </button>
 )
 
 HeaderLink.propTypes = {
+  /**
+   * The children can contain any kind of element and is
+   * rendered if the icon is not defined.
+   */
+  children: PropTypes.node,
+  /**
+   * The icon of the link. It's used if `children` is not defined.
+   */
+  icon: PropTypes.element,
+  /**
+   * The onClick callback that may be used to redirect the user
+   * to another page.
+   * @param {object} event - the default event object.
+   */
+  onClick: PropTypes.func.isRequired,
   /**
    * The style classes for this element.
    */
@@ -33,27 +49,12 @@ HeaderLink.propTypes = {
      */
     link: PropTypes.string,
   }),
-  /**
-   * The onClick callback that may be used to redirect the user
-   * to another page.
-   * @param {object} event - the default event object.
-   */
-  onClick: PropTypes.func.isRequired,
-  /**
-   * The icon of the link. It's used if `children` is not defined.
-   */
-  icon: PropTypes.element,
-  /**
-   * The children can contain any kind of element and is
-   * rendered if the icon is not defined.
-   */
-  children: PropTypes.node,
 }
 
 HeaderLink.defaultProps = {
-  theme: {},
-  icon: null,
   children: null,
+  icon: null,
+  theme: {},
 }
 
 export default consumeTheme(HeaderLink)

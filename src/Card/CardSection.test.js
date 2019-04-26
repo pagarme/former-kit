@@ -19,7 +19,7 @@ describe('CardSection', () => {
     const onClick = jest.fn()
 
     shallow(
-      <CardSection >
+      <CardSection>
         <CardSectionTitle
           title="Hi"
           collapsed={false}
@@ -34,7 +34,7 @@ describe('CardSection', () => {
     const onClick = jest.fn()
 
     const component = shallow(
-      <CardSection >
+      <CardSection>
         <CardSectionTitle
           title="Hi"
           collapsed={false}

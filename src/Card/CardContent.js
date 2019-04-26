@@ -8,8 +8,8 @@ const consumeTheme = ThemeConsumer('UICard')
  * Content that is highlighted inside a card.
  */
 const CardContent = ({
-  className,
   children,
+  className,
   theme,
 }) => {
   const cardContentClass = classNames(
@@ -25,13 +25,6 @@ const CardContent = ({
 
 CardContent.propTypes = {
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
-   */
-  theme: PropTypes.shape({
-    base: PropTypes.string,
-    content: PropTypes.string,
-  }),
-  /**
    * Set of React elements which will be rendered inside the card.
    */
   children: PropTypes.node.isRequired,
@@ -39,11 +32,18 @@ CardContent.propTypes = {
    * Custom CSS class.
    */
   className: PropTypes.string,
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
+   */
+  theme: PropTypes.shape({
+    base: PropTypes.string,
+    content: PropTypes.string,
+  }),
 }
 
 CardContent.defaultProps = {
-  theme: {},
   className: null,
+  theme: {},
 }
 
 export default consumeTheme(CardContent)

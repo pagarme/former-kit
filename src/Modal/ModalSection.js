@@ -7,7 +7,7 @@ const consumeTheme = ThemeConsumer('UIModal')
 /**
  * Component that organizes its children in the middle of the Modal component.
  */
-const ModalContent = ({ theme, children }) => (
+const ModalContent = ({ children, theme }) => (
   <div className={theme.section}>
     {children}
   </div>

@@ -24,7 +24,8 @@ class ModalWithState extends Component {
   }
 
   handleToggleModal () {
-    this.setState({ isOpen: !this.state.isOpen })
+    const { isOpen } = this.state
+    this.setState({ isOpen: !isOpen })
   }
 
   handleCloseModal () {
@@ -39,6 +40,7 @@ class ModalWithState extends Component {
       withActions,
       withSection,
     } = this.props
+    const { isOpen } = this.state
     return (
       <div>
         {/* call to action to open the modal */}
@@ -52,20 +54,20 @@ class ModalWithState extends Component {
 
         {/* modal content definition */}
         <Modal
-          isOpen={this.state.isOpen}
+          isOpen={isOpen}
           label="Create a Transaction"
           onRequestClose={this.handleToggleModal}
         >
           {completeTitle
-            ?
+            ? (
               <ModalTitle
                 closeIcon={<IconClose width={16} height={16} />}
                 icon={<IconAddPhoto width={16} height={16} />}
                 onClose={this.handleCloseModal}
                 title={title}
               />
-            :
-              <ModalTitle title={title} />
+            )
+            : <ModalTitle title={title} />
           }
 
           <hr />
@@ -74,7 +76,7 @@ class ModalWithState extends Component {
             {message}
           </ModalContent>
 
-          {withSection &&
+          {withSection && (
             <ModalContent>
               <ModalSection>
                 <ModalContent>
@@ -82,9 +84,9 @@ class ModalWithState extends Component {
                 </ModalContent>
               </ModalSection>
             </ModalContent>
-          }
+          )}
 
-          {withActions &&
+          {withActions && (
             <ModalActions>
               <Button
                 fill="outline"
@@ -101,7 +103,7 @@ class ModalWithState extends Component {
                 Confirm
               </Button>
             </ModalActions>
-          }
+          )}
         </Modal>
       </div>
     )

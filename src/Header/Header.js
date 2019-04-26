@@ -9,13 +9,19 @@ const consumeTheme = ThemeConsumer('UIHeader')
  * Receives React component as children and gracefully shows
  * them in the top of the page.
  */
-const Header = ({ theme, children }) => (
+const Header = ({ children, theme }) => (
   <header className={theme.header}>
     {children}
   </header>
 )
 
 Header.propTypes = {
+  /**
+   * The children can contain any kind of element.
+   * However, it's recommended to have `HeaderTitle` and
+   * `HeaderContent` as direct children.
+   */
+  children: PropTypes.node.isRequired,
   /**
    * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
@@ -25,12 +31,6 @@ Header.propTypes = {
      */
     header: PropTypes.string,
   }),
-  /**
-   * The children can contain any kind of element.
-   * However, it's recommended to have `HeaderTitle` and
-   * `HeaderContent` as direct children.
-   */
-  children: PropTypes.node.isRequired,
 }
 
 Header.defaultProps = {

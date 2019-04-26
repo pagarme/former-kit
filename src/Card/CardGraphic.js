@@ -8,20 +8,13 @@ const consumeTheme = ThemeConsumer('UICard')
 /**
  * Section designated to graphic elements.
  */
-const CardGraphic = ({ className, children, theme }) => (
+const CardGraphic = ({ children, className, theme }) => (
   <div className={classNames(className, theme.graphic)}>
     {children}
   </div>
 )
 
 CardGraphic.propTypes = {
-  /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
-   */
-  theme: PropTypes.shape({
-    base: PropTypes.string,
-    graphic: PropTypes.string,
-  }),
   /**
    * Set of React elements which will be rendered inside the component.
    * The `children` should be a graphic.
@@ -31,11 +24,18 @@ CardGraphic.propTypes = {
    * Custom CSS class.
    */
   className: PropTypes.string,
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
+   */
+  theme: PropTypes.shape({
+    base: PropTypes.string,
+    graphic: PropTypes.string,
+  }),
 }
 
 CardGraphic.defaultProps = {
-  theme: {},
   className: null,
+  theme: {},
 }
 
 export default consumeTheme(CardGraphic)

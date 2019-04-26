@@ -55,7 +55,7 @@ class CalendarInput extends Component {
     }
 
     super(props)
-    const { start, end } = props.value
+    const { end, start } = props.value
     const isValidStart = (!start && !isPeriodSelection(props.dateSelection))
     || isValidMoment(start)
 
@@ -65,8 +65,8 @@ class CalendarInput extends Component {
     this.state = {
       focusedInput: null,
       value: momentToText({
-        start: swapDates ? end : validStart,
         end: swapDates ? validStart : end,
+        start: swapDates ? end : validStart,
       }),
     }
     this.name = shortid.generate()
@@ -115,7 +115,7 @@ class CalendarInput extends Component {
   }
 
   getStartPlaceHolder () {
-    const { strings, dateSelection } = this.props
+    const { dateSelection, strings } = this.props
     const {
       value: {
         start,
@@ -133,8 +133,9 @@ class CalendarInput extends Component {
   }
 
   handleConfirm (value) {
+    // eslint-disable-next-line react/destructuring-assignment
     const dates = value || this.state.value
-    const { start, end } = textToMoment(dates)
+    const { end, start } = textToMoment(dates)
     const { dateSelection, onChange } = this.props
     const validEnd = !end || isValidMoment(end)
     const emptyDates = (!start && !end)
@@ -162,24 +163,25 @@ class CalendarInput extends Component {
     return undefined
   }
 
-  handleDatesChange ({ start, end }) {
+  handleDatesChange ({ end, start }) {
     const isValid = this.isValidDate(start) && this.isValidDate(end)
     const {
       closeOnSelect,
       dateSelection,
       onChange,
     } = this.props
+    const { showDateSelector: isShowingDateSelector } = this.state
     const showDateSelector = !(
       !isPeriodSelection(dateSelection)
       && closeOnSelect
-      && this.state.showDateSelector
+      && isShowingDateSelector
     )
     if (isValid) {
       this.setState({
-        value: momentToText({ start, end }),
         showDateSelector,
+        value: momentToText({ end, start }),
       })
-      onChange({ start, end })
+      onChange({ end, start })
       this.handleInputBlur()
     }
   }
@@ -194,7 +196,7 @@ class CalendarInput extends Component {
 
   handleInputChange (input, event) {
     const { value: evtValue } = event.target
-    const { end, start } = this.state.value
+    const { value: { end, start } } = this.state
 
     if (start === end) {
       const value = {
@@ -219,9 +221,10 @@ class CalendarInput extends Component {
 
   handleKeyDown (event) {
     if (event.key === 'Enter') {
+      const { value } = this.state
       event.preventDefault()
       this.changeSelectorDisplay(false)
-      this.handleConfirm(this.state.value)
+      this.handleConfirm(value)
       return
     }
 
@@ -231,13 +234,15 @@ class CalendarInput extends Component {
   }
 
   handleInputBlur () {
-    if (!this.state.showDateSelector) {
+    const { showDateSelector } = this.state
+    if (!showDateSelector) {
       document.removeEventListener('keydown', this.handleKeyDown, true)
     }
   }
 
   handleInputFocus (focusedInput) {
-    if (!this.state.showDateSelector) {
+    const { showDateSelector } = this.state
+    if (!showDateSelector) {
       document.addEventListener('keydown', this.handleKeyDown, true)
     }
     this.changeSelectorDisplay(true, focusedInput)
@@ -292,8 +297,8 @@ class CalendarInput extends Component {
       disabled,
       icon,
       months,
-      theme,
       strings,
+      theme,
     } = this.props
     const momentDates = this.getValidMomentDates()
     const isValidPeriod = this.isValidPeriod(momentDates)
@@ -309,7 +314,7 @@ class CalendarInput extends Component {
         visible={showDateSelector}
         onClick={() => undefined}
         onClickOutside={this.handleExit}
-        content={
+        content={(
           <Calendar
             dates={momentDates}
             dateSelection={dateSelection}
@@ -319,14 +324,14 @@ class CalendarInput extends Component {
             onFocusChange={this.handleSelectorFocus}
             isDayBlocked={this.getDayBlockedValidation()}
           />
-        }
+        )}
       >
         <div
           className={inputClasses({
-            theme,
             active,
             error: !isValid,
             focused,
+            theme,
           })}
         >
           {!isNil(icon) && (
@@ -360,7 +365,7 @@ class CalendarInput extends Component {
               {startPlaceHolder}
             </span>
           </div>
-          {isPeriodSelection(dateSelection) &&
+          {isPeriodSelection(dateSelection) && (
             <Fragment>
               <div className={theme.separator} />
               <div
@@ -388,7 +393,7 @@ class CalendarInput extends Component {
                 </span>
               </div>
             </Fragment>
-          }
+          )}
         </div>
       </Popover>
     )

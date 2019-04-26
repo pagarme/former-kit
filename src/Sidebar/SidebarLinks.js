@@ -5,7 +5,7 @@ import ThemeConsumer from '../ThemeConsumer'
 
 const consumeTheme = ThemeConsumer('UISidebar')
 
-const SidebarLinks = ({ theme, children }) => (
+const SidebarLinks = ({ children, theme }) => (
   <nav>
     <ul className={theme.menu}>
       {children}

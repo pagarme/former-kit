@@ -31,11 +31,11 @@ const CardExample = () => (
 )
 
 const LayoutExample = ({
-  sidebar = null,
-  header = null,
   footer = null,
+  header = null,
+  sidebar = null,
 }) => (
-  <div style={{ height: 'calc(100vh - 16px)', backgroundColor: '#f9f9f9' }}>
+  <div style={{ backgroundColor: '#f9f9f9', height: 'calc(100vh - 16px)' }}>
     <Layout
       sidebar={sidebar}
       header={header}
@@ -70,15 +70,15 @@ const LayoutExample = ({
 )
 
 LayoutExample.propTypes = {
-  sidebar: PropTypes.element,
-  header: PropTypes.element,
   footer: PropTypes.element,
+  header: PropTypes.element,
+  sidebar: PropTypes.element,
 }
 
 LayoutExample.defaultProps = {
-  sidebar: null,
-  header: null,
   footer: null,
+  header: null,
+  sidebar: null,
 }
 
 export default LayoutExample

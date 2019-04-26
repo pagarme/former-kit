@@ -1,11 +1,17 @@
 import React from 'react'
-import { cleanup, render, fireEvent, waitForElement, wait } from 'react-testing-library'
+import {
+  cleanup,
+  fireEvent,
+  render,
+  wait,
+  waitForElement,
+} from 'react-testing-library'
 import Popover from './Popover'
 import PopoverMenu from './PopoverMenu'
 
 const popoverComponent = (
   <Popover
-    content={
+    content={(
       <div id="content" className="content">
         <div id="batata">
           <strong>test@email.com</strong>
@@ -15,26 +21,28 @@ const popoverComponent = (
           className="popoverMenu"
           items={[
             {
-              title: 'Account',
               action: () => undefined,
+              title: 'Account',
             },
             {
-              title: 'Logout',
               action: () => undefined,
+              title: 'Logout',
             },
           ]}
         />
       </div>
-    }
+    )}
   >
-    <button>click me</button>
+    <button type="button">click me</button>
   </Popover>
 )
 
 const defaultWaitTimeMs = 500
 
-const waitExpect = (callback, timeMs = defaultWaitTimeMs) =>
-  wait(callback, { timeout: timeMs })
+const waitExpect = (callback, timeMs = defaultWaitTimeMs) => wait(
+  callback,
+  { timeout: timeMs }
+)
 
 describe('Popover', () => {
   afterEach(cleanup)

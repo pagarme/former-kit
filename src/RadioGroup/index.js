@@ -45,10 +45,7 @@ class RadioGroup extends React.Component {
           name={name}
           value={option.value}
           id={`${this.instanceId}-${option.value}-${index}`}
-          checked={
-            (disabled && index === 0) ||
-              (value === option.value)
-          }
+          checked={(disabled && index === 0) || (value === option.value)}
           onChange={event => !disabled && onChange(event)}
           disabled={disabled}
         />
@@ -66,29 +63,13 @@ class RadioGroup extends React.Component {
         <div>
           {radioButtons}
         </div>
-        {error &&
-          <p
-            className={theme.secondaryText}
-          >
-            {error}
-          </p>
-        }
+        {error && <p className={theme.secondaryText}>{error}</p>}
       </div>
     )
   }
 }
 
 RadioGroup.propTypes = {
-  /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
-   */
-  theme: PropTypes.shape({
-    checkboxGroup: PropTypes.string,
-    disabled: PropTypes.string,
-    error: PropTypes.string,
-    label: PropTypes.string,
-    secondaryText: PropTypes.string,
-  }),
   /**
    * Disables/enables the component's functions.
    */
@@ -115,6 +96,16 @@ RadioGroup.propTypes = {
     name: PropTypes.string.isRequired,
     value: PropTypes.string.isRequired,
   })).isRequired,
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
+   */
+  theme: PropTypes.shape({
+    checkboxGroup: PropTypes.string,
+    disabled: PropTypes.string,
+    error: PropTypes.string,
+    label: PropTypes.string,
+    secondaryText: PropTypes.string,
+  }),
   /**
    * Selected value.
    */

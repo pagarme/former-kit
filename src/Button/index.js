@@ -57,10 +57,10 @@ class Button extends PureComponent {
     super()
 
     this.state = {
-      rippleX: 0,
-      rippleY: 0,
       rippleHeight: 0,
       rippleWidth: 0,
+      rippleX: 0,
+      rippleY: 0,
     }
 
     this.handleClick = this.handleClick.bind(this)
@@ -75,26 +75,26 @@ class Button extends PureComponent {
       rippleX,
       rippleY,
     } = createRipple(e)
-
+    const { onClick } = this.props
     this.setState({
-      rippleX,
-      rippleY,
       rippleHeight,
       rippleWidth,
+      rippleX,
+      rippleY,
     })
 
-    if (this.props.onClick) {
-      this.props.onClick()
+    if (onClick) {
+      onClick()
     }
   }
 
   shouldRenderIconAt (alignment) {
     const {
+      children,
+      displayChildrenWhenLoading,
       icon,
       iconAlignment,
-      displayChildrenWhenLoading,
       loading,
-      children,
     } = this.props
 
     if (!isNil(children) && displayChildrenWhenLoading && loading) {
@@ -138,8 +138,8 @@ class Button extends PureComponent {
       disabled,
       displayChildrenWhenLoading,
       fill,
-      loading,
       icon,
+      loading,
       relevance,
       size,
       theme,
@@ -164,7 +164,7 @@ class Button extends PureComponent {
         [theme.hiddenChildren]: !displayChildrenWhenLoading && loading,
       }
     )
-
+    /* eslint-disable react/button-has-type */
     return (
       <button
         disabled={disabled}
@@ -194,6 +194,7 @@ class Button extends PureComponent {
         />
       </button>
     )
+    /* eslint-enable react/button-has-type */
   }
 }
 
@@ -227,10 +228,6 @@ Button.propTypes = {
     'flat', 'gradient', 'outline', 'clean',
   ]),
   /**
-   * Indicates if the button is at loading state.
-   */
-  loading: PropTypes.bool,
-  /**
    * Custom icon which stays on the left or right side of the input.
    */
   icon: PropTypes.element,
@@ -240,6 +237,10 @@ Button.propTypes = {
   iconAlignment: PropTypes.oneOf([
     'start', 'end',
   ]),
+  /**
+   * Indicates if the button is at loading state.
+   */
+  loading: PropTypes.bool,
   /**
    * The `onClick` prop is triggered when the button is clicked.
    */
@@ -289,9 +290,9 @@ Button.defaultProps = {
   disabled: false,
   displayChildrenWhenLoading: false,
   fill: 'flat',
-  loading: false,
   icon: null,
   iconAlignment: 'start',
+  loading: false,
   onClick: null,
   relevance: 'normal',
   size: 'default',

@@ -33,11 +33,12 @@ class TabItem extends React.PureComponent {
   }
 
   handleBlur () {
+    const { onBlur } = this.props
     this.setState({
       isFocused: false,
     })
-    if (this.props.onBlur) {
-      this.props.onBlur()
+    if (onBlur) {
+      onBlur()
     }
   }
 
@@ -58,11 +59,12 @@ class TabItem extends React.PureComponent {
   }
 
   handleFocus () {
+    const { onFocus } = this.props
     this.setState({
       isFocused: true,
     })
-    if (this.props.onFocus) {
-      this.props.onFocus()
+    if (onFocus) {
+      onFocus()
     }
   }
 
@@ -76,12 +78,12 @@ class TabItem extends React.PureComponent {
       theme,
       variant,
     } = this.props
-
+    const { isFocused } = this.state
     const className = classNames(
       theme.tab,
       theme[variant],
       {
-        [theme.focused]: this.state.isFocused,
+        [theme.focused]: isFocused,
         [theme.selected]: selected,
       }
     )
@@ -100,11 +102,11 @@ class TabItem extends React.PureComponent {
           onChange={this.handleClick}
           onFocus={this.handleFocus}
         />
-        {variant !== 'just-text' &&
+        {variant !== 'just-text' && (
           <div className={theme.icon}>
             {icon}
           </div>
-        }
+        )}
         {variant !== 'just-icon' && text}
       </label>
     )
@@ -112,15 +114,9 @@ class TabItem extends React.PureComponent {
 }
 
 TabItem.propTypes = {
-  theme: shape({
-    icon: string,
-    focused: string,
-    selected: string,
-    tab: string,
-  }),
+  icon: element,
   id: string,
   index: number,
-  icon: element,
   instanceId: string,
   onBlur: func,
   onClick: func,
@@ -128,6 +124,12 @@ TabItem.propTypes = {
   onTabChange: func,
   selected: bool,
   text: string,
+  theme: shape({
+    focused: string,
+    icon: string,
+    selected: string,
+    tab: string,
+  }),
   variant: oneOf(variantList),
 }
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import ToolTip from '../'
+import ToolTip from '..'
 import Button from '../../Button'
 
 const lorem = `

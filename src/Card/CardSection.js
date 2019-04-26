@@ -15,6 +15,10 @@ const CardSection = ({ children, theme }) => (
 
 CardSection.propTypes = {
   /**
+   * Set of React elements which will be rendered inside the section.
+   */
+  children: PropTypes.node.isRequired,
+  /**
    * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: PropTypes.shape({
@@ -23,10 +27,6 @@ CardSection.propTypes = {
      */
     section: PropTypes.string,
   }),
-  /**
-   * Set of React elements which will be rendered inside the section.
-   */
-  children: PropTypes.node.isRequired,
 }
 
 CardSection.defaultProps = {

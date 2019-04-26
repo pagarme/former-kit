@@ -12,21 +12,16 @@ const HeaderBackButton = ({
   onClick,
   theme,
 }) => (
-  <button className={theme.backButton} onClick={onClick}>
+  <button
+    className={theme.backButton}
+    onClick={onClick}
+    type="button"
+  >
     {icons.back}
   </button>
 )
 
 HeaderBackButton.propTypes = {
-  /**
-   * The style classes for this element.
-   */
-  theme: PropTypes.shape({
-    /**
-     * The main class used to style the element.
-     */
-    backButton: PropTypes.string,
-  }),
   /**
    * The icon theme for this element.
    */
@@ -43,11 +38,20 @@ HeaderBackButton.propTypes = {
    * @param {object} event - the default event object.
    */
   onClick: PropTypes.func.isRequired,
+  /**
+   * The style classes for this element.
+   */
+  theme: PropTypes.shape({
+    /**
+     * The main class used to style the element.
+     */
+    backButton: PropTypes.string,
+  }),
 }
 
 HeaderBackButton.defaultProps = {
-  theme: {},
   icons: {},
+  theme: {},
 }
 
 export default consumeTheme(HeaderBackButton)

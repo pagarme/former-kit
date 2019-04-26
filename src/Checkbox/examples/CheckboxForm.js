@@ -10,10 +10,10 @@ class CheckState extends React.Component {
 
   render () {
     const {
+      disabled,
+      error,
       label,
       name,
-      error,
-      disabled,
       value,
     } = this.props
 

@@ -70,8 +70,7 @@ const getToggledOrder = ifElse(
   always('ascending')
 )
 
-const hasOrderableColumn = columns =>
-  columns.some(col => col.orderable)
+const hasOrderableColumn = columns => columns.some(col => col.orderable)
 
 const getArrowValidation = propName => pipe(
   prop(propName),
@@ -107,7 +106,7 @@ const validateElement = (element, key) => {
 
 const validateIconsShape = (props, propName) => {
   if (propName === 'icons') {
-    const { columns, icons, expandable } = props
+    const { columns, expandable, icons } = props
 
     if (hasOrderableColumn(columns) && hasNoHeadArrows(icons)) {
       throw new Error('The prop icons must have props descending, ascending and orderable when any column is sortable')
@@ -123,7 +122,7 @@ const validateIconsShape = (props, propName) => {
 
 const validateOrderableFunction = (props, propName) => {
   if (propName === 'onOrderChange') {
-    const { onOrderChange, columns } = props
+    const { columns, onOrderChange } = props
     if (hasOrderableColumn(columns) && isNil(onOrderChange)) {
       throw new Error('The prop onOrderChange must be a function when some column is orderable')
     }
@@ -233,7 +232,7 @@ class Table extends Component {
   }
 
   handleColumnOrder (index) {
-    const { orderSequence, onOrderChange, orderColumn } = this.props
+    const { onOrderChange, orderColumn, orderSequence } = this.props
     if (index === orderColumn) {
       onOrderChange(index, getToggledOrder(orderSequence))
     } else {
@@ -283,9 +282,9 @@ class Table extends Component {
     const {
       columns,
       emptyMessage,
+      loading,
       maxColumns,
       rows,
-      loading,
       showAggregationRow,
     } = this.props
 
@@ -314,12 +313,12 @@ class Table extends Component {
       } = previous
 
       return {
-        totals: this.accumulateRowTotals(row, totals),
         contentRows: append(this.renderRow(row, index), contentRows),
+        totals: this.accumulateRowTotals(row, totals),
       }
     }
 
-    const { totals, contentRows } = rows.reduce(accumulate, {})
+    const { contentRows, totals } = rows.reduce(accumulate, {})
 
     return {
       aggregationRow: renderTotals(totals, columns),
@@ -386,16 +385,17 @@ class Table extends Component {
     }
 
     if (expandable) {
-      const { expand, collapse } = icons
+      const { collapse, expand } = icons
       rowProps.icons = {
-        expand,
         collapse,
+        expand,
       }
     }
 
     if (isExpanded) {
+      const { hoveredRow } = this.state
       const hoverClass = classNames({
-        [theme.hoverRow]: equals(index, this.state.hoveredRow),
+        [theme.hoverRow]: equals(index, hoveredRow),
       })
       const expandedKey = `expanded_${key}`
       return [
@@ -486,10 +486,11 @@ class Table extends Component {
           { contentRows }
         </tbody>
         {
-          aggregationRow &&
-          <tfoot className={theme.tableFooter}>
-            { aggregationRow }
-          </tfoot>
+          aggregationRow && (
+            <tfoot className={theme.tableFooter}>
+              { aggregationRow }
+            </tfoot>
+          )
         }
       </table>
     )
@@ -497,15 +498,6 @@ class Table extends Component {
 }
 
 Table.propTypes = {
-  /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
-   */
-  theme: shape({
-    /**
-     * Base table class
-     */
-    table: string,
-  }),
   /**
    * Additional CSS classes which can be applied to the table component.
    */
@@ -523,6 +515,17 @@ Table.propTypes = {
       string,
       arrayOf(string),
     ]),
+    /**
+     * Function responsible for creating a cell component to be added to the total
+     * row in the footer, works like the renderer prop.
+     * @param {object} row - all row data
+     */
+    aggregationRenderer: func,
+    /**
+     * Text which will be used as title in the footer total row, when this prop is received
+     * the aggregator and aggregationRenderer props are ignored.
+     */
+    aggregationTitle: string,
     /**
      * Pure function which will receive the total accumulated and the current cell value.
      * Its return will be rendered in the total row in the footer or it will
@@ -554,17 +557,6 @@ Table.propTypes = {
      * column data in the expandable rows.
      */
     title: string.isRequired,
-    /**
-     * Function responsible for creating a cell component to be added to the total
-     * row in the footer, works like the renderer prop.
-     * @param {object} row - all row data
-     */
-    aggregationRenderer: func,
-    /**
-     * Text which will be used as title in the footer total row, when this prop is received
-     * the aggregator and aggregationRenderer props are ignored.
-     */
-    aggregationTitle: string,
   })).isRequired,
   /**
    * It disables all table functions.
@@ -595,13 +587,13 @@ Table.propTypes = {
    */
   icons: validateIconsShape,
   /**
-   * When the data from table is fetching.
-   */
-  loading: bool,
-  /**
    * The loader renderer, it can be a text or element. Defaults to 'loading' text.
    */
   loaderRenderer: node,
+  /**
+   * When the data from table is fetching.
+   */
+  loading: bool,
   /**
    * Number of table columns, all the remaining columns will be dropped in an expandable
    * line if the expandable option is true.
@@ -654,6 +646,15 @@ Table.propTypes = {
    * have the properties aggregationRenderer and aggregator or aggregationTitle
    */
   showAggregationRow: bool,
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
+   */
+  theme: shape({
+    /**
+     * Base table class
+     */
+    table: string,
+  }),
 }
 
 Table.defaultProps = {
@@ -664,8 +665,8 @@ Table.defaultProps = {
   expandedRows: [],
   headerAlign: 'start',
   icons: {},
-  loading: false,
   loaderRenderer: null,
+  loading: false,
   maxColumns: 7,
   onExpandRow: null,
   onOrderChange: null,

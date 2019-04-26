@@ -13,22 +13,22 @@ import DateInput from './index'
 
 const presets = [
   {
+    date: () => null,
     key: 'single',
     label: 'single',
-    date: () => null,
     mode: 'single',
   },
   {
+    date: () => null,
     key: 'period',
     label: 'period',
-    date: () => null,
     mode: 'period',
   },
 ]
 
 const initialDates = {
-  start: moment(),
   end: moment().add(1, 'days'),
+  start: moment(),
 }
 
 const testDateProp = (datesReceived, key, expected) => {
@@ -60,8 +60,7 @@ const inputText = (input, text) => {
       input.simulate('keypress', { key: backspaceKey })
     }
   } else {
-    text.split('').forEach(key =>
-      input.simulate('keypress', { key }))
+    text.split('').forEach(key => input.simulate('keypress', { key }))
   }
 }
 
@@ -112,12 +111,12 @@ describe('DateInput', () => {
 
     const { container } = render(
       <div>
-        <button className="outside-popover">Close!</button>
+        <button className="outside-popover" type="button">Close!</button>
         <div>
           <DateInput
             onConfirm={onConfirm}
             presets={presets}
-            value={{ start: null, end: null }}
+            value={{ end: null, start: null }}
           />
         </div>
       </div>
@@ -138,7 +137,7 @@ describe('DateInput', () => {
         onChange={onChange}
         presets={presets}
         selectedPreset="single"
-        value={{ start: null, end: null }}
+        value={{ end: null, start: null }}
       />
     )
 
@@ -163,7 +162,7 @@ describe('DateInput', () => {
   it('should show only one input when selectionMode is single', () => {
     const component = mount(
       <DateInput
-        value={{ start: moment(), end: moment() }}
+        value={{ end: moment(), start: moment() }}
         onConfirm={() => {}}
         selectionMode="single"
       />
@@ -177,7 +176,7 @@ describe('DateInput', () => {
     const component = mount(
       <DateInput
         onConfirm={() => null}
-        value={{ start: moment(), end: moment().add(10, 'days') }}
+        value={{ end: moment().add(10, 'days'), start: moment() }}
         selectionMode="period"
       />
     )

@@ -27,11 +27,15 @@ const validateCloseProp = (closeIcon, onClose, propName) => {
   }
 }
 
-const validateOnCloseFunction = ({ closeIcon, onClose }, propName) =>
-  validateCloseProp(closeIcon, onClose, propName)
+const validateOnCloseFunction = (
+  { closeIcon, onClose },
+  propName
+) => validateCloseProp(closeIcon, onClose, propName)
 
-const validateCloseIcon = ({ closeIcon, onClose }, propName) =>
-  validateCloseProp(closeIcon, onClose, propName)
+const validateCloseIcon = (
+  { closeIcon, onClose },
+  propName
+) => validateCloseProp(closeIcon, onClose, propName)
 
 /**
  * Modal component title. It renders its children at the top of the Modal.
@@ -47,7 +51,7 @@ const ModalTitle = ({
   <div className={theme.title}>
     {icon && <div className={theme.icon}>{icon}</div>}
     <h2 className={theme[`${titleAlign}Align`]}>{title}</h2>
-    {closeIcon &&
+    {closeIcon && (
       <Button
         fill="clean"
         icon={closeIcon}
@@ -55,18 +59,11 @@ const ModalTitle = ({
         relevance="low"
         size="tiny"
       />
-    }
+    )}
   </div>
 )
 
 ModalTitle.propTypes = {
-  /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
-   */
-  theme: PropTypes.shape({
-    icon: PropTypes.string,
-    title: PropTypes.string,
-  }),
   /**
    * Close button icon.
    */
@@ -79,6 +76,13 @@ ModalTitle.propTypes = {
    * Close action callback.
    */
   onClose: validateOnCloseFunction,
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
+   */
+  theme: PropTypes.shape({
+    icon: PropTypes.string,
+    title: PropTypes.string,
+  }),
   /**
    * Text which will be shown at the top of the Modal.
    */

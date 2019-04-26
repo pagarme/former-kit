@@ -12,16 +12,16 @@ class InputState extends React.Component {
   render () {
     const {
       base,
+      disabled,
       error,
+      hint,
       icon,
+      inputStyle,
+      label,
       multiline,
       size,
       success,
       type,
-      inputStyle,
-      label,
-      hint,
-      disabled,
     } = this.props
 
     const {
@@ -72,30 +72,30 @@ InputState.propTypes = {
     'dark',
     'light',
   ]),
+  disabled: PropTypes.bool,
   error: PropTypes.string,
-  success: PropTypes.string,
+  hint: PropTypes.string,
   icon: PropTypes.element,
-  multiline: PropTypes.bool,
-  size: PropTypes.string,
-  type: PropTypes.string,
   inputStyle: PropTypes.string,
   label: PropTypes.string,
-  hint: PropTypes.string,
-  disabled: PropTypes.bool,
+  multiline: PropTypes.bool,
+  size: PropTypes.string,
+  success: PropTypes.string,
+  type: PropTypes.string,
 }
 
 InputState.defaultProps = {
   base: 'light',
+  disabled: false,
   error: '',
-  success: '',
+  hint: '',
   icon: null,
-  multiline: false,
-  type: '',
-  size: null,
   inputStyle: 'default',
   label: '',
-  hint: '',
-  disabled: false,
+  multiline: false,
+  size: null,
+  success: '',
+  type: '',
 }
 
 export default InputState

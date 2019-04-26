@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Checkbox from '../'
+import Checkbox from '..'
 
 class CheckState extends React.Component {
   constructor (props) {
@@ -10,10 +10,10 @@ class CheckState extends React.Component {
 
   render () {
     const {
+      disabled,
+      error,
       label,
       name,
-      error,
-      disabled,
       value,
     } = this.props
 

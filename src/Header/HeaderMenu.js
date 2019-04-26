@@ -18,7 +18,7 @@ const HeaderMenu = ({
     content={children}
     placement="bottomEnd"
   >
-    <button className={theme.menu}>
+    <button className={theme.menu} type="button">
       {title}
       {icons.expand}
     </button>
@@ -26,15 +26,6 @@ const HeaderMenu = ({
 )
 
 HeaderMenu.propTypes = {
-  /**
-   * The style classes for this element.
-   */
-  theme: PropTypes.shape({
-    /**
-     * The main class used to style the component.
-     */
-    menu: PropTypes.string,
-  }),
   /**
    * The children can be any kind of element.
    */
@@ -47,6 +38,15 @@ HeaderMenu.propTypes = {
      * The icon that will be rendered to expand the options.
      */
     expand: PropTypes.element,
+  }),
+  /**
+   * The style classes for this element.
+   */
+  theme: PropTypes.shape({
+    /**
+     * The main class used to style the component.
+     */
+    menu: PropTypes.string,
   }),
   /**
    * The prop used to receive popover target.

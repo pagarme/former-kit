@@ -6,8 +6,8 @@ import { DayPickerRangeController } from 'react-dates'
 import Calendar from './index'
 
 const defaultDates = {
-  start: moment('2018-06-27'),
   end: moment('2018-06-27'),
+  start: moment('2018-06-27'),
 }
 
 describe('DateSelector', () => {

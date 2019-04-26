@@ -30,10 +30,10 @@ const renderItem = (theme, text, children) => {
 }
 
 const TableExpandedItem = ({
+  children,
+  text,
   theme,
   title,
-  text,
-  children,
 }) => (
   <div className={theme.expandedItem}>
     <span className={theme.title}>{title}</span>
@@ -43,14 +43,6 @@ const TableExpandedItem = ({
 
 TableExpandedItem.propTypes = {
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
-   */
-  theme: shape({
-    expandedItem: string,
-    text: string,
-    title: string,
-  }),
-  /**
    * React element which will be shown under the item title in the list.
    */
   children: oneOfType([arrayOf(node), node]),
@@ -58,6 +50,14 @@ TableExpandedItem.propTypes = {
    * Text that will be shown in the list if the 'children' prop isn't set.
    */
   text: oneOfType([string, number]),
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
+   */
+  theme: shape({
+    expandedItem: string,
+    text: string,
+    title: string,
+  }),
   /**
    * Item title in the expanded row items list.
    */

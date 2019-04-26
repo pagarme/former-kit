@@ -9,7 +9,7 @@ const consumeTheme = ThemeConsumer('UICard')
 const getArrowIcon = (props) => {
   const {
     collapsed,
-    icons: { expand, collapse },
+    icons: { collapse, expand },
   } = props
 
   if (collapsed) {

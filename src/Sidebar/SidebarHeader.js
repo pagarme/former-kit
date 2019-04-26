@@ -4,7 +4,7 @@ import ThemeConsumer from '../ThemeConsumer'
 
 const consumeTheme = ThemeConsumer('UISidebar')
 
-const SidebarHeader = ({ theme, children }) => (
+const SidebarHeader = ({ children, theme }) => (
   <header className={theme.header}>
     {children}
   </header>

@@ -34,10 +34,10 @@ class SidebarLink extends React.Component {
 
   handleClick () {
     const { children, onClick } = this.props
-
+    const { collapsed } = this.state
     if (children) {
       this.setState({
-        collapsed: !this.state.collapsed,
+        collapsed: !collapsed,
       })
     }
 
@@ -47,19 +47,17 @@ class SidebarLink extends React.Component {
   }
 
   handleBlur () {
+    const { onBlur } = this.props
     this.setState({
       focused: false,
-    }, () => (
-      this.props.onBlur && this.props.onBlur()
-    ))
+    }, () => (onBlur && onBlur()))
   }
 
   handleFocus () {
+    const { onFocus } = this.props
     this.setState({
       focused: true,
-    }, () => (
-      this.props.onFocus && this.props.onFocus()
-    ))
+    }, () => (onFocus && onFocus()))
   }
 
   renderButton () {
@@ -71,27 +69,26 @@ class SidebarLink extends React.Component {
       theme,
       title,
     } = this.props
-
+    const { collapsed: active } = this.state
     return (
       <button
         onBlur={this.handleBlur}
         onClick={this.handleClick}
         onFocus={this.handleFocus}
         role="link"
+        type="button"
       >
         <div className={theme.title}>
           <span className={theme.icon}>{icon}</span>
           {!collapsed && title}
-
-
-          {(!collapsed && children) &&
+          {(!collapsed && children) && (
             <span className={theme.arrow}>
               <Arrow
-                active={!this.state.collapsed}
+                active={!active}
                 icons={icons}
               />
             </span>
-          }
+          )}
         </div>
       </button>
     )
@@ -105,8 +102,8 @@ class SidebarLink extends React.Component {
       theme,
       title,
     } = this.props
-
-    const renderSubmenu = !this.state.collapsed && !collapsed && children
+    const { collapsed: isCollapsed, focused } = this.state
+    const renderSubmenu = !isCollapsed && !collapsed && children
 
     return (
       <li
@@ -114,7 +111,7 @@ class SidebarLink extends React.Component {
           theme.link,
           {
             [theme.active]: active,
-            [theme.focused]: this.state.focused,
+            [theme.focused]: focused,
             [theme.open]: renderSubmenu,
           }
         )}
@@ -131,11 +128,11 @@ class SidebarLink extends React.Component {
           : this.renderButton()
         }
 
-        {renderSubmenu &&
+        {renderSubmenu && (
           <ul className={theme.submenu}>
             {children}
           </ul>
-        }
+        )}
       </li>
     )
   }
@@ -146,7 +143,7 @@ const hasNoArrows = anyPass([
   propSatisfies(isNil, 'expand'),
 ])
 
-const hasNecessaryIcons = ({ icons, children }, propName) => {
+const hasNecessaryIcons = ({ children, icons }, propName) => {
   if (propName === 'icons') {
     if (!isNil(children) && hasNoArrows(icons)) {
       throw new Error(`
@@ -197,10 +194,6 @@ SidebarLink.propTypes = {
    */
   onFocus: PropTypes.func,
   /**
-   * The title of the component.
-   */
-  title: PropTypes.string.isRequired,
-  /**
    * The style classes for this element.
    */
   theme: PropTypes.shape({
@@ -229,6 +222,10 @@ SidebarLink.propTypes = {
      */
     title: PropTypes.string,
   }),
+  /**
+   * The title of the component.
+   */
+  title: PropTypes.string.isRequired,
 }
 
 SidebarLink.defaultProps = {

@@ -21,15 +21,15 @@ const Typeset = ({ children, theme }) => {
 
 Typeset.propTypes = {
   /**
+   * React element which will be rendered with the typography class.
+   */
+  children: element.isRequired,
+  /**
    * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: shape({
     typography: string,
   }),
-  /**
-   * React element which will be rendered with the typography class.
-   */
-  children: element.isRequired,
 }
 
 Typeset.defaultProps = {

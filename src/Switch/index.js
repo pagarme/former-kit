@@ -10,8 +10,8 @@ import classnames from 'classnames'
 import ThemeConsumer from '../ThemeConsumer'
 
 const defaultStrings = {
-  on: 'on',
   off: 'off',
+  on: 'on',
 }
 
 function getStrings (strings) {
@@ -44,7 +44,7 @@ const Switch = ({
     }
   )
 
-  const { on, off } = getStrings(strings)
+  const { off, on } = getStrings(strings)
 
   return (
     <div className={className}>
@@ -62,14 +62,6 @@ const Switch = ({
 }
 
 Switch.propTypes = {
-  /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
-  */
-  theme: shape({
-    switch: string,
-    checked: string,
-    disabled: string,
-  }),
   /**
    * Prop used to tell if the component is checked or not.
   */
@@ -91,22 +83,30 @@ Switch.propTypes = {
   */
   strings: shape({
     /**
-     * The message that is shown when the component is active.
-    */
-    on: string,
-    /**
      * The message that is shown when the component is not active.
     */
     off: string,
+    /**
+     * The message that is shown when the component is active.
+    */
+    on: string,
+  }),
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
+  */
+  theme: shape({
+    checked: string,
+    disabled: string,
+    switch: string,
   }),
 }
 
 Switch.defaultProps = {
-  theme: {},
   checked: false,
   disabled: false,
   name: '',
   strings: defaultStrings,
+  theme: {},
 }
 
 export default consumeTheme(Switch)

@@ -26,9 +26,9 @@ const defineInitials = pipe(
  * about the content. It can be customized with a color and an acronym.
  */
 const Legend = ({
-  color,
-  children,
   acronym,
+  children,
+  color,
   hideLabel,
   theme,
 }) => {
@@ -45,11 +45,11 @@ const Legend = ({
       >
         {acronym || defineInitials(children)}
       </abbr>
-      {!hideLabel &&
+      {!hideLabel && (
         <span className={theme.text}>
           {children}
         </span>
-      }
+      )}
     </div>
   )
 }

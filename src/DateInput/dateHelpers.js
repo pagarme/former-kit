@@ -4,14 +4,14 @@ const DATE_MASK = 'L'
 
 const parseMoment = date => moment(date, DATE_MASK, true)
 
-export const textToMoment = ({ start, end }) => ({
-  start: start ? parseMoment(start).startOf('day') : null,
+export const textToMoment = ({ end, start }) => ({
   end: end ? parseMoment(end).endOf('day') : null,
+  start: start ? parseMoment(start).startOf('day') : null,
 })
 
-export const momentToText = ({ start, end }) => ({
-  start: start ? start.format(DATE_MASK) : '',
+export const momentToText = ({ end, start }) => ({
   end: end ? end.format(DATE_MASK) : '',
+  start: start ? start.format(DATE_MASK) : '',
 })
 
 export const hasDifferentEnd = (dates) => {
@@ -19,7 +19,7 @@ export const hasDifferentEnd = (dates) => {
     return false
   }
 
-  const { start, end } = textToMoment(dates)
+  const { end, start } = textToMoment(dates)
 
   if (start === end) {
     return false
@@ -39,8 +39,8 @@ export const hasDifferentEnd = (dates) => {
 }
 
 export const validateRange = (limits, dates) => {
-  const { start, end } = textToMoment(dates)
-  const { upper, lower } = limits
+  const { end, start } = textToMoment(dates)
+  const { lower, upper } = limits
 
   let isValidStart = start === null || (start && start.isValid())
   let isValidEnd = end === null || (end && end.isValid())
@@ -62,7 +62,7 @@ export const validateRange = (limits, dates) => {
     isValidEnd = false
   }
 
-  return { isValidStart, isValidEnd }
+  return { isValidEnd, isValidStart }
 }
 // eslint-disable-next-line
 export const validateDate = ({ upper, lower }) => (date) => {
@@ -76,8 +76,7 @@ export const validateDate = ({ upper, lower }) => (date) => {
   return isValidDate
 }
 
-export const isValidMoment = date =>
-  date && date.isValid()
+export const isValidMoment = date => date && date.isValid()
 
 export const inputDateMask = () => moment()
   .format(DATE_MASK).replace(/\d/g, '1')

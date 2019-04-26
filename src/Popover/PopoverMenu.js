@@ -15,6 +15,7 @@ const PopoverMenu = ({
           className={theme.link}
           key={title}
           onClick={action}
+          type="button"
         >
           { title }
         </button>
@@ -25,19 +26,19 @@ const PopoverMenu = ({
 
 PopoverMenu.propTypes = {
   /**
- * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
- */
-  theme: PropTypes.shape({
-    link: PropTypes.string,
-    menu: PropTypes.string,
-  }),
-  /**
    * The items of menu.
    */
   items: PropTypes.arrayOf(PropTypes.shape({
     action: PropTypes.func,
     title: PropTypes.string.isRequired,
   })).isRequired,
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
+   */
+  theme: PropTypes.shape({
+    link: PropTypes.string,
+    menu: PropTypes.string,
+  }),
 }
 
 PopoverMenu.defaultProps = {

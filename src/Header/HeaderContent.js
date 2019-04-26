@@ -16,6 +16,10 @@ const HeaderContent = ({
 
 HeaderContent.propTypes = {
   /**
+   * The children can contain any kind of component.
+   */
+  children: PropTypes.node.isRequired,
+  /**
    * The style classes for this element.
    */
   theme: PropTypes.shape({
@@ -24,10 +28,6 @@ HeaderContent.propTypes = {
      */
     content: PropTypes.string,
   }),
-  /**
-   * The children can contain any kind of component.
-   */
-  children: PropTypes.node.isRequired,
 }
 
 HeaderContent.defaultProps = {

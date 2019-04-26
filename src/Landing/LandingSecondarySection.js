@@ -23,9 +23,9 @@ const consumeTheme = ThemeConsumer('UILanding')
  * under the primary section.
  */
 const LandingSecondarySection = ({
-  theme,
-  children,
   base,
+  children,
+  theme,
 }) => (
   <Col
     tv={5}
@@ -46,26 +46,26 @@ const LandingSecondarySection = ({
 
 LandingSecondarySection.propTypes = {
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
+   * Prop which will define the sections contrast.
    */
-  theme: shape({
-    secondary: string,
-    column: string,
-  }),
+  base: oneOf(['dark', 'light']),
   /**
    * React elements which will stay in the secondary column.
    */
   children: oneOfType([element, arrayOf(element)]),
   /**
-   * Prop which will define the sections contrast.
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
-  base: oneOf(['dark', 'light']),
+  theme: shape({
+    column: string,
+    secondary: string,
+  }),
 }
 
 LandingSecondarySection.defaultProps = {
-  theme: {},
-  children: null,
   base: 'light',
+  children: null,
+  theme: {},
 }
 
 export default consumeTheme(LandingSecondarySection)

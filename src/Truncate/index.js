@@ -1,4 +1,9 @@
-import React, { useEffect, useState, useRef, useCallback } from 'react'
+import React, {
+  useEffect,
+  useState,
+  useRef,
+  useCallback,
+} from 'react'
 import PropTypes from 'prop-types'
 import {
   is,
@@ -54,7 +59,7 @@ const Truncate = ({
 
   const fitText = useCallback((parent, wrapper) => {
     if (parent && wrapper) {
-      const { newText, isTruncated: truncated } = matchTextToParentSize(
+      const { isTruncated: truncated, newText } = matchTextToParentSize(
         text,
         parent,
         ellipsis,

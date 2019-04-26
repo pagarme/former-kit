@@ -28,14 +28,6 @@ const TableEmptyRow = ({
 
 TableEmptyRow.propTypes = {
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
-   */
-  theme: PropTypes.shape({
-    startAlign: PropTypes.string,
-    tableItem: PropTypes.string,
-    tableRow: PropTypes.string,
-  }),
-  /**
    * Indicates how many columns a cell should take up.
    */
   colSpan: PropTypes.number.isRequired,
@@ -43,6 +35,14 @@ TableEmptyRow.propTypes = {
    * Message which shown when the table row array is empty.
    */
   message: PropTypes.string.isRequired,
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
+   */
+  theme: PropTypes.shape({
+    startAlign: PropTypes.string,
+    tableItem: PropTypes.string,
+    tableRow: PropTypes.string,
+  }),
 }
 
 TableEmptyRow.defaultProps = {

@@ -6,8 +6,7 @@ import {
   CardGraphic,
 } from '../../Card'
 
-
-const CardSample = ({ size, color, children }) => (
+const CardSample = ({ children, color, size }) => (
   <Card>
     <CardGraphic>
       <div
@@ -24,15 +23,15 @@ const CardSample = ({ size, color, children }) => (
 )
 
 CardSample.propTypes = {
-  size: PropTypes.number,
-  color: PropTypes.string,
   children: PropTypes.node,
+  color: PropTypes.string,
+  size: PropTypes.number,
 }
 
 CardSample.defaultProps = {
-  size: 0,
-  color: '#ffffff',
   children: null,
+  color: '#ffffff',
+  size: 0,
 }
 
 export default CardSample

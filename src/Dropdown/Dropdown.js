@@ -30,31 +30,33 @@ class Dropdown extends React.Component {
   }
 
   handleBlur () {
+    const { onBlur } = this.props
     this.setState({
       isFocused: false,
     })
-    if (this.props.onBlur) {
-      this.props.onBlur()
+    if (onBlur) {
+      onBlur()
     }
   }
 
   handleFocus () {
+    const { onFocus } = this.props
     this.setState({
       isFocused: true,
     })
-    if (this.props.onFocus) {
-      this.props.onFocus()
+    if (onFocus) {
+      onFocus()
     }
   }
 
   renderOptions () {
     const {
-      theme,
       options,
+      theme,
       value,
     } = this.props
 
-    return options.map(({ value: optValue, name }) => {
+    return options.map(({ name, value: optValue }) => {
       const optionClasses = classNames(
         theme.option,
         {
@@ -85,13 +87,13 @@ class Dropdown extends React.Component {
       theme,
       value,
     } = this.props
-
+    const { isFocused } = this.state
     const rootClasses = classNames(
       theme.dropdown,
       {
         [theme.disabled]: disabled,
         [theme.error]: error,
-        [theme.focused]: this.state.isFocused,
+        [theme.focused]: isFocused,
         [theme[size]]: size,
       }
     )
@@ -101,14 +103,14 @@ class Dropdown extends React.Component {
 
     return (
       <div className={rootClasses}>
-        {hasLabel &&
+        {hasLabel && (
           <label
             htmlFor={this.instanceId}
             className={theme.label}
           >
             {label}
           </label>
-        }
+        )}
 
         <select
           id={this.instanceId}
@@ -134,11 +136,11 @@ class Dropdown extends React.Component {
           {icons.expand}
         </span>
 
-        {hasSecondaryText &&
+        {hasSecondaryText && (
           <p className={theme.secondaryText}>
             {error}
           </p>
-        }
+        )}
       </div>
     )
   }

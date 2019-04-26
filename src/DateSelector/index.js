@@ -90,16 +90,29 @@ export const getPresetLimits = (range) => {
   }
 
   return {
-    start,
     end,
+    start,
   }
 }
 
-const isDateBetweenRange = (date, range) =>
-  date.isBetween(range.start, range.end, 'day', '[]')
+const isDateBetweenRange = (date, range) => date
+  .isBetween(range.start, range.end, 'day', '[]')
 
-const isDayBlocked = (date, presetRange, { start, end }) =>
-  !isNil(presetRange) && !isDateBetweenRange(date, { start, end })
+const isDayBlocked = (
+  date,
+  presetRange,
+  limitDates
+) => !isNil(presetRange) && !isDateBetweenRange(date, limitDates)
+
+const validateSelectionMode = (propsObject, propName) => {
+  if (propsObject.showSidebar && !propsObject[propName]) {
+    return new Error(
+      `${propName} must be 'single' or 'period' when showSidebar is true.`
+    )
+  }
+
+  return null
+}
 
 /**
  * A calendarlike selector based on react-dates
@@ -140,17 +153,18 @@ class DateSelector extends Component {
   }
 
   getStrings () {
+    const { strings } = this.props
     return {
       ...defaultStrings,
-      ...this.props.strings,
+      ...strings,
     }
   }
 
   handleOnChange (dates) {
     const {
-      selectedPreset,
       onChange,
       presets,
+      selectedPreset,
     } = this.props
 
     const preset = getPreset(selectedPreset, presets)
@@ -181,8 +195,8 @@ class DateSelector extends Component {
       presets,
       selectedPreset,
     } = this.props
-
-    if (this.state.visible) {
+    const { visible } = this.state
+    if (visible) {
       if (selectedPreset) {
         const currentPreset = getPreset(selectedPreset, presets)
         onConfirm(getPresetLimits(currentPreset.date()))
@@ -221,15 +235,14 @@ class DateSelector extends Component {
         <Calendar
           numberOfMonths={2}
           daySize={40}
-          isDayBlocked={date =>
-            (isValidDay && !isValidDay(date))
+          isDayBlocked={date => (isValidDay && !isValidDay(date))
             || isDayBlocked(date, presetRange, presetLimits)
           }
           navPrev={icons.previousMonth}
           navNext={icons.nextMonth}
           dates={{
-            start: presetLimits.start,
             end: presetLimits.end,
+            start: presetLimits.start,
           }}
           dateSelection={dateSelectionMode}
           focusedInput={focusedInput}
@@ -245,7 +258,7 @@ class DateSelector extends Component {
       theme,
     } = this.props
 
-    const { start, end } = dates || {}
+    const { end, start } = dates || {}
     const {
       daySelected,
       daysSelected,
@@ -272,13 +285,13 @@ class DateSelector extends Component {
       showSidebar,
       theme,
     } = this.props
-
+    const { visible } = this.state
     return (
       <div className={theme.dateselector}>
         <Popover
-          content={
+          content={(
             <div className={theme.container}>
-              { showSidebar &&
+              { showSidebar && (
                 <div className={theme.sidebar}>
                   <Aside
                     presets={presets}
@@ -287,18 +300,18 @@ class DateSelector extends Component {
                     onChange={this.handlePresetChange}
                   />
                 </div>
-              }
-              { showCalendar &&
+              )}
+              { showCalendar && (
                 <div className={theme.stage}>
                   {this.renderPicker()}
                   {this.renderActions()}
                 </div>
-              }
+              )}
             </div>
-          }
+          )}
           onClick={() => null}
           onClickOutside={this.handlePopoverClose}
-          visible={this.state.visible}
+          visible={visible}
         >
           {children}
         </Popover>
@@ -309,32 +322,6 @@ class DateSelector extends Component {
 
 DateSelector.propTypes = {
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
-   */
-  theme: shape({
-    actions: string,
-    container: string,
-    selectedDays: string,
-    sidebar: string,
-    stage: string,
-  }),
-  /**
-   * This function is trigged when dates are changed,
-   * but only after the state was changed, could trigger a state
-   * update via `componentWillReceiveProps`.
-   * Its function is used to send the selected dates to the parent component.
-   * @param {object} dates
-   */
-  onChange: func.isRequired,
-  /**
-   * Triggered when a preset is selected.
-   */
-  onPresetChange: func,
-  /*
-   * Triggered when popover closes.
-   */
-  onConfirm: func.isRequired,
-  /**
    *
    */
   children: element.isRequired,
@@ -343,50 +330,51 @@ DateSelector.propTypes = {
    */
   dates: shape({
     /**
-     * Start date based on `moment.js`.
-     */
-    start: isMomentPropValidation,
-    /**
      * End date based on `moment.js`.
      */
     end: isMomentPropValidation,
+    /**
+     * Start date based on `moment.js`.
+     */
+    start: isMomentPropValidation,
   }),
+  /**
+   * The date that will be set on next
+   * click on calendar
+  */
+  focusedInput: oneOf(['startDate', 'endDate']),
   /**
    * Default icons used in the month navigation.
    */
   icons: shape({
-    previousMonth: element,
     nextMonth: element,
+    previousMonth: element,
   }),
   /**
    * Function that returns a boolean wheter the date is valid
    */
   isValidDay: func,
   /**
-   * Mode to be used when showSidebar is false.
-  */
-  selectionMode: (props, propName) => {
-    if (props.showSidebar && !props[propName]) {
-      return new Error(
-        `${propName} must be 'single' or 'period' when showSidebar is true.`
-      )
-    }
-
-    return null
-  },
+   * This function is trigged when dates are changed,
+   * but only after the state was changed, could trigger a state
+   * update via `componentWillReceiveProps`.
+   * Its function is used to send the selected dates to the parent component.
+   * @param {object} dates
+   */
+  onChange: func.isRequired,
+  /*
+   * Triggered when popover closes.
+   */
+  onConfirm: func.isRequired,
+  /**
+   * Triggered when a preset is selected.
+   */
+  onPresetChange: func,
   /**
    * Props structure which is used to create the left side menu, this menu allows
    * the user to select dates in preset dates, ranges, etc.
    */
   presets: arrayOf(shape({
-    /**
-     * Preset/Preset Group identification.
-     */
-    key: string.isRequired,
-    /**
-     * Item text which will be shown in the list.
-     */
-    label: string.isRequired,
     /**
      * Item evaluation function.
      */
@@ -397,6 +385,10 @@ DateSelector.propTypes = {
      */
     items: arrayOf(shape({
       /**
+       * Item evaluation function.
+       */
+      date: func,
+      /**
        * Preset identification.
        */
       key: string.isRequired,
@@ -404,16 +396,32 @@ DateSelector.propTypes = {
        * Item text which will be shown in the list.
        */
       label: string.isRequired,
-      /**
-       * Item evaluation function.
-       */
-      date: func,
     })),
+    /**
+     * Preset/Preset Group identification.
+     */
+    key: string.isRequired,
+    /**
+     * Item text which will be shown in the list.
+     */
+    label: string.isRequired,
   })),
   /**
    * The key of the selected preset.
    */
   selectedPreset: string,
+  /**
+   * Mode to be used when showSidebar is false.
+  */
+  selectionMode: validateSelectionMode,
+  /**
+   * Indicates if calendar should be visible.
+   */
+  showCalendar: bool,
+  /**
+   * Indicates if sidebar should be visible.
+   */
+  showSidebar: bool,
   /**
    * Texts used in the component internationalization (i18n).
    */
@@ -425,38 +433,35 @@ DateSelector.propTypes = {
     daysSelected: string,
   }),
   /**
-   * Indicates if calendar should be visible.
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
-  showCalendar: bool,
-  /**
-   * Indicates if sidebar should be visible.
-   */
-  showSidebar: bool,
+  theme: shape({
+    actions: string,
+    container: string,
+    selectedDays: string,
+    sidebar: string,
+    stage: string,
+  }),
   /**
    * Indicates if popover should be visible.
    */
   visible: bool,
-  /**
-   * The date that will be set on next
-   * click on calendar
-  */
-  focusedInput: oneOf(['startDate', 'endDate']),
 }
 
 DateSelector.defaultProps = {
   dates: {},
-  selectedPreset: '',
   focusedInput: null,
   icons: {},
   isValidDay: null,
-  selectionMode: 'single',
   onPresetChange: () => undefined,
   presets: [],
+  selectedPreset: '',
+  selectionMode: 'single',
   showCalendar: true,
   showSidebar: true,
-  visible: false,
   strings: defaultStrings,
   theme: {},
+  visible: false,
 }
 
 export default consumeTheme(DateSelector)

@@ -1,18 +1,26 @@
 import React from 'react'
 import { mount, shallow } from 'enzyme'
-import { cleanup, render, fireEvent, waitForElement, wait } from 'react-testing-library'
+import {
+  cleanup,
+  fireEvent,
+  render,
+  wait,
+  waitForElement,
+} from 'react-testing-library'
 import moment from 'moment'
 import CalendarInput from './index'
 
 const defaultDates = {
-  start: moment('2018-06-27'),
   end: moment('2018-06-27'),
+  start: moment('2018-06-27'),
 }
 
 const defaultWaitTimeMs = 500
 
-const waitExpect = (callback, timeMs = defaultWaitTimeMs) =>
-  wait(callback, { timeout: timeMs })
+const waitExpect = (callback, timeMs = defaultWaitTimeMs) => wait(
+  callback,
+  { timeout: timeMs }
+)
 
 const getCalendarInput = (onChange = () => undefined) => (
   <CalendarInput
@@ -51,7 +59,6 @@ describe('DateSelector', () => {
       .at(1)
       .simulate('focus')
       .simulate('change', { target: { value: '06/28/2018' } })
-
 
     expect(onChange).toHaveBeenCalledTimes(2)
 
@@ -100,8 +107,8 @@ describe('DateSelector', () => {
 
       fireEvent.focus(input)
 
-      const calendarButton = await waitForElement(() =>
-        container.querySelector('.CalendarMonth .CalendarDay__default'))
+      const calendarButton = await waitForElement(() => container
+        .querySelector('.CalendarMonth .CalendarDay__default'))
 
       fireEvent.click(calendarButton)
 
@@ -117,9 +124,8 @@ describe('DateSelector', () => {
 
       fireEvent.focus(input)
 
-      calendar = await waitForElement(() =>
-        container.querySelector('.ReactDates-overrides .CalendarMonth')
-      )
+      calendar = await waitForElement(() => container
+        .querySelector('.ReactDates-overrides .CalendarMonth'))
 
       expect(calendar).not.toBeNull()
     })
@@ -131,7 +137,8 @@ describe('DateSelector', () => {
           months={2}
           onChange={() => undefined}
           value={defaultDates}
-        />)
+        />
+      )
       let calendars = container.querySelectorAll('.CalendarMonthGrid > .CalendarMonthGrid_month__horizontal')
       let weekHeaders = container.querySelectorAll('.DayPicker_weekHeaders > .DayPicker_weekHeader')
       const input = container.querySelector('input')

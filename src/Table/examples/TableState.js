@@ -17,29 +17,34 @@ import getMock from './tableMock'
 
 const isAscending = equals('ascending')
 
-const rowSort = accessor =>
-  sortBy(compose(toLower, defaultTo(''), path(accessor)))
-
-const getSort = (accessor, order) => (
-  isAscending(order) ?
-    rowSort(accessor) :
-    pipe(rowSort(accessor), reverse)
+const rowSort = accessor => sortBy(
+  compose(
+    toLower,
+    defaultTo(''),
+    path(accessor)
+  )
 )
 
-const getRowsSort = (rows, columns) =>
-  (orderColumn, order) => {
-    const referenceColumn = columns[orderColumn]
-    const referenceAccessor = referenceColumn.accessor
-    const sort = getSort(referenceAccessor, order)
-    return sort(rows)
-  }
+const getSort = (accessor, order) => (
+  isAscending(order)
+    ? rowSort(accessor)
+    : pipe(rowSort(accessor), reverse)
+)
+
+const getRowsSort = (rows, columns) => (orderColumn, order) => {
+  const referenceColumn = columns[orderColumn]
+  const referenceAccessor = referenceColumn.accessor
+  const sort = getSort(referenceAccessor, order)
+  return sort(rows)
+}
 
 class TableState extends Component {
   constructor (props) {
     super(props)
 
     this.getColumns = this.getColumns.bind(this)
-    this.getColumnsWithPrimaryAction = this.getColumnsWithPrimaryAction.bind(this)
+    this.getColumnsWithPrimaryAction = this
+      .getColumnsWithPrimaryAction.bind(this)
     this.handleExpandRow = this.handleExpandRow.bind(this)
     this.handleOrderChange = this.handleOrderChange.bind(this)
     this.handleSelectRow = this.handleSelectRow.bind(this)
@@ -56,9 +61,9 @@ class TableState extends Component {
 
   getColumns (primaryActions) {
     return (
-      primaryActions ?
-        this.getColumnsWithPrimaryAction() :
-        this.mock.columns
+      primaryActions
+        ? this.getColumnsWithPrimaryAction()
+        : this.mock.columns
     )
   }
 
@@ -71,7 +76,7 @@ class TableState extends Component {
   }
 
   handleOrderChange (index, order) {
-    const { rows, columns } = this.state
+    const { columns, rows } = this.state
     const sortByOrderColumn = getRowsSort(rows, columns)
     const sortedRows = sortByOrderColumn(index, order)
 
@@ -136,11 +141,14 @@ class TableState extends Component {
 
         <div>
           {
-            expandable && selectable &&
-            <div>
-              <div> Selected rows { selectedRows.length } </div>
-              <div> Expanded rows { expandedRows.length } </div>
-            </div>
+            expandable
+              && selectable
+              && (
+                <div>
+                  <div> Selected rows { selectedRows.length } </div>
+                  <div> Expanded rows { expandedRows.length } </div>
+                </div>
+              )
           }
         </div>
       </div>

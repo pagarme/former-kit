@@ -21,8 +21,9 @@ class TransitionState extends PureComponent {
   }
 
   handleClick () {
+    const { animating } = this.state
     this.setState({
-      animating: !this.state.animating,
+      animating: !animating,
     })
   }
 
@@ -58,14 +59,14 @@ class TransitionState extends PureComponent {
                 mapStyles={mapStyles}
                 springOptions={springOptions}
               >
-                {animating &&
+                {animating && (
                   <div
                     key="animation"
                     className={style.animation}
                   >
                     <h3>Example</h3>
                   </div>
-                }
+                )}
               </Transition>
             </div>
           </Col>

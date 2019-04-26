@@ -1,10 +1,10 @@
 import classNames from 'classnames'
 
 export const inputClasses = ({
-  theme,
-  focused,
   active,
   error,
+  focused,
+  theme,
 }) => classNames(
   theme.dateInput,
   {
@@ -15,27 +15,25 @@ export const inputClasses = ({
 )
 
 export const startClasses = ({
-  theme,
   focusedInput,
   isValid,
-}) =>
-  classNames(
-    theme.start,
-    {
-      [theme.active]: isValid && focusedInput === 'startDate',
-      [theme.error]: !isValid,
-    }
-  )
+  theme,
+}) => classNames(
+  theme.start,
+  {
+    [theme.active]: isValid && focusedInput === 'startDate',
+    [theme.error]: !isValid,
+  }
+)
 
 export const endClasses = ({
-  theme,
   focusedInput,
   isValid,
-}) =>
-  classNames(
-    theme.end,
-    {
-      [theme.active]: isValid && focusedInput === 'endDate',
-      [theme.error]: !isValid,
-    }
-  )
+  theme,
+}) => classNames(
+  theme.end,
+  {
+    [theme.active]: isValid && focusedInput === 'endDate',
+    [theme.error]: !isValid,
+  }
+)

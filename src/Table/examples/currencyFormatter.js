@@ -9,10 +9,9 @@ import {
 import Intl from 'intl'
 import 'intl/locale-data/jsonp/pt'
 
-
 const formatter = new Intl.NumberFormat('pt-BR', {
-  style: 'currency',
   currency: 'BRL',
+  style: 'currency',
 })
 
 const currency = ifElse(

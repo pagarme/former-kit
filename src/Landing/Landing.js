@@ -25,8 +25,8 @@ const consumeTheme = ThemeConsumer('UILanding')
  */
 const Landing = ({
   children,
-  theme,
   className,
+  theme,
 }) => (
   <div className={classNames(theme.container, className)}>
     <Grid fullHeight>
@@ -39,16 +39,6 @@ const Landing = ({
 
 Landing.propTypes = {
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
-   */
-  theme: shape({
-    column: string,
-    columnContainer: string,
-    container: string,
-    dark: string,
-    light: string,
-  }),
-  /**
    * React elements which will stay in the secondary column.
   */
   children: oneOfType([
@@ -59,12 +49,22 @@ Landing.propTypes = {
    * Custom CSS classes.
    */
   className: string,
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
+   */
+  theme: shape({
+    column: string,
+    columnContainer: string,
+    container: string,
+    dark: string,
+    light: string,
+  }),
 }
 
 Landing.defaultProps = {
   children: null,
-  theme: {},
   className: '',
+  theme: {},
 }
 
 export default consumeTheme(Landing)
