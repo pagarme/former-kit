@@ -22,11 +22,7 @@ const TitleText = () => (
   <div className={style.showcase}>
     <Card>
       <CardTitle
-        title={
-          <h2>
-            Lorem ipsum <small>dolor sit amet</small>
-          </h2>
-        }
+        title={<h2>Lorem ipsum <small>dolor sit amet</small></h2>}
         subtitle="Lorem ipsum"
       />
       <CardContent>
@@ -180,7 +176,7 @@ const SimpleSection = () => (
       <CardTitle title="Lorem title" />
 
       <CardContent>
-        <CardSection >
+        <CardSection>
           <CardSectionTitle title="Lorem ipsum dolor sit amet" />
           <CardContent>
             {loremIpsum}
@@ -196,11 +192,11 @@ const SimpleSection = () => (
 )
 
 export default {
-  TitleText,
-  TitleIcon,
-  TitleCustomSubtitle,
-  TitleTextActions,
   GraphicTitleTextActions,
-  TitleTextAdvanced,
   SimpleSection,
+  TitleCustomSubtitle,
+  TitleIcon,
+  TitleText,
+  TitleTextActions,
+  TitleTextAdvanced,
 }

@@ -6,19 +6,18 @@ import styles from './style.css'
 
 const Section = ({
   base,
-  title,
   children,
   className,
+  title,
 }) => (
   <section className={
     classnames(
       styles[base],
       styles.section,
-      className)}
+      className
+    )}
   >
-    {title &&
-      <h2>{title}</h2>
-    }
+    {title && <h2>{title}</h2>}
     <div>{children}</div>
   </section>
 )
@@ -28,8 +27,8 @@ Section.propTypes = {
     'light',
     'dark',
   ]),
-  title: PropTypes.string,
   children: PropTypes.node.isRequired,
+  title: PropTypes.string,
 }
 
 Section.defaultProps = {

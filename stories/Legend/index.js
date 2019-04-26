@@ -6,21 +6,21 @@ import Section from '../Section'
 
 const hidingLabel = [
   {
-    color: '#4ca9d7',
-    text: 'Zazu',
     acronym: 'ZZ',
+    color: '#4ca9d7',
     hideLabel: true,
+    text: 'Zazu',
   },
   {
-    color: '#f16518',
-    text: 'Zeke',
     acronym: 'ZK',
+    color: '#f16518',
     hideLabel: true,
+    text: 'Zeke',
   },
   {
     color: '#41535b',
-    text: 'Macaroni',
     hideLabel: true,
+    text: 'Macaroni',
   },
 ]
 
@@ -53,29 +53,29 @@ const automaticAbbr = [
 
 const manualAbbr = [
   {
+    acronym: 'FN',
     color: '#951d3c',
     text: 'Fa-neenee',
-    acronym: 'FN',
   },
   {
+    acronym: 'FF',
     color: '#244d85',
     text: 'Fast Freddie',
-    acronym: 'FF',
   },
   {
+    acronym: 'TS',
     color: '#bf5316',
     text: 'Tangsodo',
-    acronym: 'TS',
   },
 ]
 
 const createLegends = (title, status) => (
   <Section title={title}>
     {status.map(({
-      color,
-      text,
       acronym,
+      color,
       hideLabel,
+      text,
     }) => (
       <div key={text} style={{ marginBottom: '10px' }}>
         <Legend

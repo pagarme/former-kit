@@ -15,9 +15,12 @@ const ButtonLoading = ({ children, ...props }) => {
     }
   })
 
+  // eslint-disable-next-line react/destructuring-assignment
+  const isLoading = loading || props.loading
+
   return (
     <Button
-      loading={loading || props.loading}
+      loading={isLoading}
       onClick={() => setLoading(!loading)}
       {...props}
     >

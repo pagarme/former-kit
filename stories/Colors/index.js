@@ -21,23 +21,23 @@ const getThemeColors = (theme) => {
   const isRoot = rule => rule.selectorText === ':root'
   const isColorProperty = prop => prop.startsWith(theme)
 
-  const result = Array.from(document.styleSheets).reduce((accProperties, sheet) => {
-    const rules = Array.from(sheet.cssRules).filter(isRoot)
+  const result = Array.from(document.styleSheets)
+    .reduce((accProperties, sheet) => {
+      const rules = Array.from(sheet.cssRules).filter(isRoot)
 
-    const cssText = rules.reduce((acc, rule) => {
-      let themeProperties = Array.from(rule.style).filter(isColorProperty)
+      const cssText = rules.reduce((acc, rule) => {
+        let themeProperties = Array.from(rule.style).filter(isColorProperty)
 
-      themeProperties = themeProperties.filter(prop => !acc.includes(prop))
+        themeProperties = themeProperties.filter(prop => !acc.includes(prop))
 
-      return acc.concat(themeProperties)
+        return acc.concat(themeProperties)
+      }, [])
+
+      return accProperties.concat(cssText)
     }, [])
-
-    return accProperties.concat(cssText)
-  }, [])
 
   return groupItemsAndSort(result)
 }
-
 
 class Colors extends React.Component {
   constructor (props) {
@@ -49,21 +49,23 @@ class Colors extends React.Component {
   }
 
   componentWillMount () {
-    const theme = getThemeColors(this.props.theme)
+    const { theme } = this.props
+    const themeColors = getThemeColors(theme)
 
     this.setState({
-      colorNames: Object.keys(theme),
-      colors: theme,
+      colorNames: Object.keys(themeColors),
+      colors: themeColors,
     })
   }
 
   render () {
+    const { colorNames, colors } = this.state
     return (
       <div className={style.container}>
-        {this.state.colorNames.map(name => (
+        {colorNames.map(name => (
           <Section key={name} title={name}>
             <div>
-              {this.state.colors[name].map(customProp => (
+              {colors[name].map(customProp => (
                 <div key={customProp}>
                   <div
                     style={{ background: `var(${customProp})` }}

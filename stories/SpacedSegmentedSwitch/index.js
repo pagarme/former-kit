@@ -20,9 +20,8 @@ class SpacedSegmentedSwitchState extends React.Component {
   }
 
   componentWillMount () {
-    this.setState({
-      value: this.props.value,
-    })
+    const { value } = this.props
+    this.setState({ value })
   }
 
   handleChange (value) {
@@ -32,16 +31,17 @@ class SpacedSegmentedSwitchState extends React.Component {
   render () {
     const {
       disabled,
+      name,
       options,
     } = this.props
-
+    const { value } = this.state
     return (
       <SpacedSegmentedSwitch
         disabled={disabled}
-        name={this.props.name}
+        name={name}
         onChange={this.handleChange}
         options={options}
-        value={this.state.value}
+        value={value}
       />
     )
   }

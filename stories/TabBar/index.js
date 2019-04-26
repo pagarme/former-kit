@@ -11,20 +11,20 @@ import { TabBar, TabItem } from '../../src/TabBar'
 import Section from '../Section'
 
 const i18n = {
-  TabBar: 'TabBar',
-  MyAccount: 'My account',
   Docs: 'Docs',
-  Letter: 'Letter',
-  JustText: 'Text',
-  TextIcon: 'Text and Icon',
   JustIcon: 'Icon',
+  JustText: 'Text',
+  Letter: 'Letter',
+  MyAccount: 'My account',
+  TabBar: 'TabBar',
+  TextIcon: 'Text and Icon',
   ThisIs: 'This is: ',
 }
 
 const variantList = [
-  { name: i18n.JustText, code: 'just-text' },
-  { name: i18n.TextIcon, code: 'text-icon' },
-  { name: i18n.JustIcon, code: 'just-icon' },
+  { code: 'just-text', name: i18n.JustText },
+  { code: 'text-icon', name: i18n.TextIcon },
+  { code: 'just-icon', name: i18n.JustIcon },
 ]
 
 const clicked = action('clicked')
@@ -41,10 +41,12 @@ class Tab extends React.Component {
   }
 
   render () {
+    const { selected } = this.state
+    const { variant } = this.props
     return (
       <TabBar
-        variant={this.props.variant}
-        selected={this.state.selected}
+        variant={variant}
+        selected={selected}
         onTabChange={this.changeTab}
       >
         <TabItem
@@ -52,7 +54,11 @@ class Tab extends React.Component {
           text={i18n.MyAccount}
           onClick={clicked}
         >
-          <h3>{i18n.ThisIs} {i18n.MyAccount} <IconMyAccount width={16} height={16} /></h3>
+          <h3>
+            {i18n.ThisIs}
+            {i18n.MyAccount}
+            <IconMyAccount width={16} height={16} />
+          </h3>
         </TabItem>
         <TabItem
           icon={<IconDocs width={16} height={16} />}
@@ -66,7 +72,11 @@ class Tab extends React.Component {
           text={i18n.Letter}
           onClick={clicked}
         >
-          <h3>{i18n.ThisIs} {i18n.Letter} <IconLetter width={16} height={16} /></h3>
+          <h3>
+            {i18n.ThisIs}
+            {i18n.Letter}
+            <IconLetter width={16} height={16} />
+          </h3>
         </TabItem>
       </TabBar>
     )

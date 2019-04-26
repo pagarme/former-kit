@@ -31,12 +31,12 @@ feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
 `
 const items = [
   {
-    title: 'Minha Conta',
     action: () => action('account'),
+    title: 'Minha Conta',
   },
   {
-    title: 'Logout',
     action: () => action('logout'),
+    title: 'Logout',
   },
 ]
 
@@ -52,14 +52,14 @@ const renderActions = () => (
 
     <Fragment>
       <Popover
-        content={
+        content={(
           <Fragment>
             <div>
               <strong>Teste</strong>
             </div>
             <PopoverMenu items={items} />
           </Fragment>
-        }
+        )}
       >
         <Button
           fill="outline"
@@ -73,7 +73,6 @@ const renderActions = () => (
   </Fragment>
 )
 
-
 class CardSectionDoubleLineTitleState extends Component {
   constructor () {
     super()
@@ -81,6 +80,8 @@ class CardSectionDoubleLineTitleState extends Component {
   }
 
   render () {
+    const { collapsed } = this.state
+    const { subtitle } = this.props
     return (
       <div className={style.showcase}>
         <Card>
@@ -90,19 +91,15 @@ class CardSectionDoubleLineTitleState extends Component {
             <CardSection>
               <CardSectionDoubleLineTitle
                 actions={renderActions()}
-                collapsed={this.state.collapsed}
+                collapsed={collapsed}
                 icon={<IconCalendar width={16} height={16} />}
                 onClick={
-                  () => this.setState({ collapsed: !this.state.collapsed })
+                  () => this.setState({ collapsed: !collapsed })
                 }
-                subtitle={this.props.subtitle}
-                title={this.state.collapsed ? 'Title collapsed' : 'Title opened'}
+                subtitle={subtitle}
+                title={collapsed ? 'Title collapsed' : 'Title opened'}
               />
-              {!this.state.collapsed &&
-                <CardContent>
-                  {loremIpsum}
-                </CardContent>
-              }
+              {!collapsed && <CardContent>{loremIpsum}</CardContent>}
             </CardSection>
           </CardContent>
         </Card>

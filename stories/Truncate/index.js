@@ -34,7 +34,7 @@ const TruncateState = () => {
         text: demoText,
       })
     }
-  })
+  }, [state])
 
   return (
     <div className={style.context}>

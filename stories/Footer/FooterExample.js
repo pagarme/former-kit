@@ -8,20 +8,20 @@ import Footer from '../../src/Footer'
 
 const links = [
   {
-    title: 'Documentation',
     onClick: () => action('Documentation'),
+    title: 'Documentation',
   },
   {
-    title: 'Support',
     onClick: () => action('Support'),
+    title: 'Support',
   },
   {
-    title: 'Privacy',
     onClick: () => action('Privacy'),
+    title: 'Privacy',
   },
   {
-    title: 'Contact',
     onClick: () => action('Contact'),
+    title: 'Contact',
   },
 ]
 
@@ -29,9 +29,15 @@ const FooterExample = () => (
   <Footer
     links={links}
   >
-    <button onClick={() => action('clicked')}><IconLink /></button>
-    <button onClick={() => action('clicked')}><IconGithub /></button>
-    <button onClick={() => action('clicked')}><IconFacebook /></button>
+    <button onClick={() => action('clicked')} type="button">
+      <IconLink />
+    </button>
+    <button onClick={() => action('clicked')} type="button">
+      <IconGithub />
+    </button>
+    <button onClick={() => action('clicked')} type="button">
+      <IconFacebook />
+    </button>
   </Footer>
 )
 

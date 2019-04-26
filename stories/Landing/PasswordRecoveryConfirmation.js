@@ -36,7 +36,7 @@ const PasswordRecovery = ({
             </p>
           </div>
           <div className={styles.actions}>
-            <div className={styles.hugeButton} >
+            <div className={styles.hugeButton}>
               <Button
                 type="button"
                 size="huge"

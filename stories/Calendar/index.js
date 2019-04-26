@@ -8,8 +8,9 @@ import { action } from '@storybook/addon-actions'
 import Section from '../Section'
 import Calendar from '../../src/Calendar'
 
-const isWeekendDay = date =>
-  date && date.weekday && contains(date.weekday(), [0, 6])
+const isWeekendDay = date => date
+  && date.weekday
+  && contains(date.weekday(), [0, 6])
 
 class CalendarState extends Component {
   constructor () {
@@ -35,11 +36,11 @@ class CalendarState extends Component {
       selection,
       ...props
     } = this.props
-
+    const { dates } = this.state
     return (
       <Section>
         <Calendar
-          dates={this.state.dates}
+          dates={dates}
           dateSelection={selection}
           months={months}
           onChange={this.handleChange}

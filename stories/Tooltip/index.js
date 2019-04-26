@@ -43,13 +43,14 @@ class TooltipState extends React.Component {
   }
 
   render () {
+    const { visible } = this.state
     return (
       <div className={style.flex}>
         <Tooltip
           content="Lorem ipsum dolor sit amet consectetur adipisicing elit."
           onMouseEnter={() => this.setState({ visible: true })}
           placement="rightMiddle"
-          visible={this.state.visible}
+          visible={visible}
         >
           <Button>Hover me</Button>
         </Tooltip>

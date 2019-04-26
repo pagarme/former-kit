@@ -50,11 +50,9 @@ class PaginationState extends React.Component {
           strings={strings}
           totalPages={totalPages}
         />
-        {error &&
-          <p>Epic fail!</p>
-        }
+        {error && <p>Epic fail!</p>}
         <p>Current page: {currentPage}</p>
-        <label htmlFor="totalPages" > Total pages: {totalPages}</label>
+        <label htmlFor="totalPages"> Total pages: {totalPages}</label>
       </div>
     )
   }
@@ -62,17 +60,16 @@ class PaginationState extends React.Component {
 
 PaginationState.propTypes = {
   currentPage: PropTypes.number.isRequired,
-  totalPages: PropTypes.number.isRequired,
   format: PropTypes.oneOf([
     'range',
     'single',
   ]),
+  totalPages: PropTypes.number.isRequired,
 }
 
 PaginationState.defaultProps = {
   format: 'range',
 }
-
 
 storiesOf('Pagination', module)
   .add('Default', () => (

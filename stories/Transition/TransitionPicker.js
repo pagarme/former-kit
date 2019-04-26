@@ -85,17 +85,17 @@ export default class Demo extends React.Component {
 
   handlePropChange (prop, event) {
     const value = +event.target.value
-    const { animationsStyles } = this.state
+    const { animationsStyles, errors } = this.state
 
-    let errors
+    let newErrors
 
     if (!isValidValue(prop, value)) {
-      errors = {
-        ...this.state.errors,
+      newErrors = {
+        ...errors,
         [prop]: getPropErrorMesage(prop),
       }
     } else {
-      errors = dissoc(prop, this.state.errors)
+      newErrors = dissoc(prop, errors)
     }
 
     this.setState({
@@ -106,7 +106,7 @@ export default class Demo extends React.Component {
           [prop]: +event.target.value,
         },
       },
-      errors,
+      errors: newErrors,
     })
   }
 
@@ -117,6 +117,7 @@ export default class Demo extends React.Component {
         enter,
         leave,
         mapStyles,
+        springOptions,
         springOptions: {
           damping,
           precision,
@@ -125,7 +126,6 @@ export default class Demo extends React.Component {
       },
       errors,
     } = this.state
-
     const isEmptyOrNill = either(isEmpty, isNil)
 
     const hasErrors = !isEmptyOrNill(errors)
@@ -191,7 +191,7 @@ export default class Demo extends React.Component {
                 atEnter={enter}
                 atLeave={leave}
                 mapStyles={mapStyles}
-                springOptions={this.state.animationsStyles.springOptions}
+                springOptions={springOptions}
               >
                 <div
                   key="animatedBlock"

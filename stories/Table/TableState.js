@@ -21,22 +21,26 @@ import getMock from './tableMock'
 
 const isAscending = equals('ascending')
 
-const rowSort = accessor =>
-  sortBy(compose(toLower, defaultTo(''), path(accessor)))
-
-const getSort = (accessor, order) => (
-  isAscending(order) ?
-    rowSort(accessor) :
-    pipe(rowSort(accessor), reverse)
+const rowSort = accessor => sortBy(
+  compose(
+    toLower,
+    defaultTo(''),
+    path(accessor)
+  )
 )
 
-const getRowsSort = (rows, columns) =>
-  (orderColumn, order) => {
-    const referenceColumn = columns[orderColumn]
-    const referenceAccessor = referenceColumn.accessor
-    const sort = getSort(referenceAccessor, order)
-    return sort(rows)
-  }
+const getSort = (accessor, order) => (
+  isAscending(order)
+    ? rowSort(accessor)
+    : pipe(rowSort(accessor), reverse)
+)
+
+const getRowsSort = (rows, columns) => (orderColumn, order) => {
+  const referenceColumn = columns[orderColumn]
+  const referenceAccessor = referenceColumn.accessor
+  const sort = getSort(referenceAccessor, order)
+  return sort(rows)
+}
 
 const formatSimpleTableColumns = map(
   assoc('orderable', false)
@@ -60,16 +64,18 @@ class TableState extends Component {
     this.handleRowClick = this.handleRowClick.bind(this)
     this.handleSelectRow = this.handleSelectRow.bind(this)
     this.getColumns = this.getColumns.bind(this)
-    this.getColumnsWithPrimaryAction = this.getColumnsWithPrimaryAction.bind(this)
+    this.getColumnsWithPrimaryAction = this
+      .getColumnsWithPrimaryAction
+      .bind(this)
     this.mock = getMock(this.handleDetailsClick, disabled)
     this.state = {
-      orderColumn: 0,
-      order: 'ascending',
-      rows: this.mock.rows,
       columns: this.getColumns(primaryAction, simple),
-      selectedRows: selectable ? [2] : [],
-      expandedRows: expandable ? [0, 1, 2, 3] : [],
       detailsClicks: 0,
+      expandedRows: expandable ? [0, 1, 2, 3] : [],
+      order: 'ascending',
+      orderColumn: 0,
+      rows: this.mock.rows,
+      selectedRows: selectable ? [2] : [],
     }
   }
 
@@ -78,9 +84,9 @@ class TableState extends Component {
       return formatSimpleTableColumns(this.mock.columns)
     }
     return (
-      primaryActions ?
-        this.getColumnsWithPrimaryAction() :
-        this.mock.columns
+      primaryActions
+        ? this.getColumnsWithPrimaryAction()
+        : this.mock.columns
     )
   }
 
@@ -93,15 +99,15 @@ class TableState extends Component {
   }
 
   handleOrderChange (index, order) {
-    const { rows, columns } = this.state
+    const { columns, rows } = this.state
     const sortByOrderColumn = getRowsSort(rows, columns)
     const sortedRows = sortByOrderColumn(index, order)
     this.setState({
-      orderColumn: index,
+      expandedRows: [],
       order,
+      orderColumn: index,
       rows: sortedRows,
       selectedRows: [],
-      expandedRows: [],
     })
   }
 
@@ -113,13 +119,14 @@ class TableState extends Component {
 
   handleExpandRow (expandedRows) {
     this.setState({
-      expandedRows,
       detailsClicks: 0,
+      expandedRows,
     })
   }
 
   handleDetailsClick () {
-    const clicks = 1 + this.state.detailsClicks
+    const { detailsClicks } = this.state
+    const clicks = detailsClicks + 1
     this.setState({
       detailsClicks: clicks,
     })
@@ -153,9 +160,9 @@ class TableState extends Component {
       selectedRows,
     } = this.state
     const columnWithEmptyRenderer = {
-      title: 'empty',
-      renderer: () => null,
       accessor: ['empty'],
+      renderer: () => null,
+      title: 'empty',
     }
     const emptyMessage = empty ? 'No items found' : null
     const maxColumns = expandable ? 6 : 7
@@ -189,21 +196,26 @@ class TableState extends Component {
 
         <div className={style.texts}>
           {
-            expandable && selectable &&
-            <div>
-              <div> Selected rows { selectedRows.length } </div>
-              <div> Expanded rows { expandedRows.length } </div>
-            </div>
+            expandable
+            && selectable
+            && (
+              <div>
+                <div> Selected rows { selectedRows.length } </div>
+                <div> Expanded rows { expandedRows.length } </div>
+              </div>
+            )
           }
           {
-            detailsClicks > 0 &&
-            <div>
-              Details link clicks: { detailsClicks }
-            </div>
+            detailsClicks > 0
+            && (
+              <div>
+                Details link clicks: { detailsClicks }
+              </div>
+            )
           }
           {
-            (clickedRowIndex || clickedRowIndex === 0) &&
-            <span> Last clicked row: { clickedRowIndex + 1 } </span>
+            (clickedRowIndex || clickedRowIndex === 0)
+            && <span> Last clicked row: { clickedRowIndex + 1 } </span>
           }
         </div>
       </div>

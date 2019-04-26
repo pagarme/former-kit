@@ -33,9 +33,8 @@ class DateInputState extends React.Component {
   }
 
   resetDates () {
-    this.setState({
-      dates: this.props.dates,
-    })
+    const { dates } = this.props
+    this.setState({ dates })
   }
 
   render () {
@@ -45,11 +44,11 @@ class DateInputState extends React.Component {
       showClearButton,
       showSidebar,
     } = this.props
-
+    const { dates, showCalendar } = this.state
     return (
       <div className={style.container}>
         <DateInput
-          dates={this.state.dates}
+          dates={dates}
           icon={<IconCalendar width={16} height={16} />}
           onConfirm={action('onConfirm')}
           onChange={action('onChange')}
@@ -57,21 +56,23 @@ class DateInputState extends React.Component {
           presets={presets}
           selectedPreset={selectedPreset}
           selectionMode={selectionMode}
-          showCalendar={this.state.showCalendar}
+          showCalendar={showCalendar}
           showSidebar={showSidebar}
         />
-        { showClearButton &&
-          <Button onClick={this.resetDates}>Reset Dates</Button>
-        }
+        { showClearButton && (
+          <Button onClick={this.resetDates}>
+            Reset Dates
+          </Button>
+        )}
       </div>
     )
   }
 }
 
 DateInputState.defaultProps = {
+  end: null,
   selectedPreset: '',
   start: null,
-  end: null,
 }
 
 storiesOf('DateInput', module)
@@ -86,8 +87,8 @@ storiesOf('DateInput', module)
     <Section>
       <DateInputState
         dates={{
-          start: moment(),
           end: moment(),
+          start: moment(),
         }}
         showSidebar={false}
       />
@@ -105,8 +106,8 @@ storiesOf('DateInput', module)
     <Section>
       <DateInputState
         dates={{
-          start: moment().subtract(4, 'days'),
           end: moment(),
+          start: moment().subtract(4, 'days'),
         }}
         selectionMode="period"
         showSidebar={false}
@@ -136,8 +137,8 @@ storiesOf('DateInput', module)
     <Section>
       <DateInputState
         dates={{
-          start: moment().subtract(15, 'day'),
           end: moment().subtract(15, 'day'),
+          start: moment().subtract(15, 'day'),
         }}
         showClearButton
       />

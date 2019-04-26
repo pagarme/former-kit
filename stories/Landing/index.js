@@ -53,8 +53,9 @@ class LandingState extends PureComponent {
   }
 
   render () {
+    const { children } = this.props
     const renderElement = React.cloneElement(
-      React.Children.only(this.props.children),
+      React.Children.only(children),
       {
         ...this.state,
         handleLogIn: this.handleLogIn,

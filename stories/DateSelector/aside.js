@@ -24,10 +24,11 @@ export default class AsideState extends React.Component {
   }
 
   render () {
+    const { selectedPreset } = this.state
     return (
       <Aside
         name="my-aside"
-        selectedPreset={this.state.selectedPreset}
+        selectedPreset={selectedPreset}
         onChange={this.handlePresetChange}
         presets={presets}
       />

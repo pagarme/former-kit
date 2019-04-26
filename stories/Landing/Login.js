@@ -57,7 +57,7 @@ const Login = ({
             type="password"
             value={password}
           />
-          { hasToken &&
+          { hasToken && (
             <Input
               error={tokenError}
               label="Token"
@@ -67,10 +67,10 @@ const Login = ({
               type="text"
               value={token}
             />
-          }
+          )}
         </div>
         <div className={styles.actions}>
-          <div className={styles.hugeButton} >
+          <div className={styles.hugeButton}>
             <Button
               type="submit"
               size="huge"
@@ -79,7 +79,7 @@ const Login = ({
               Entrar
             </Button>
           </div>
-          <a href="https://dashboard.pagar.me/#/forgot_password" >
+          <a href="https://dashboard.pagar.me/#/forgot_password">
             Redefinir senha
           </a>
         </div>

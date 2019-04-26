@@ -26,19 +26,27 @@ class DropdownState extends React.Component {
   }
 
   render () {
+    const {
+      disabled,
+      error,
+      placeholder,
+      size,
+    } = this.props
+    const { selected } = this.state
+
     return (
       <div>
         <Dropdown
           options={options}
           name="things"
           onChange={event => this.setState({ selected: event.target.value })}
-          value={this.state.selected}
-          disabled={this.props.disabled}
-          placeholder={this.props.placeholder}
-          error={this.props.error}
-          size={this.props.size}
+          value={selected}
+          disabled={disabled}
+          placeholder={placeholder}
+          error={error}
+          size={size}
         />
-        <p>Selected: {this.state.selected}</p>
+        <p>Selected: {selected}</p>
       </div>
     )
   }

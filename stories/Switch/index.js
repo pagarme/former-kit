@@ -14,11 +14,13 @@ class SwitchState extends Component {
   }
 
   render () {
+    const { value } = this.state
+    const { disabled } = this.props
     return (
       <Switch
-        disabled={this.props.disabled}
-        checked={this.state.value}
-        onChange={value => this.setState({ value })}
+        disabled={disabled}
+        checked={value}
+        onChange={newValue => this.setState({ value: newValue })}
       />
     )
   }

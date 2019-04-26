@@ -44,12 +44,12 @@ storiesOf('Cards', module)
       </Section>
       <Section title="Card section with node subtitle">
         <CardSectionDoubleLineTitle
-          subtitle={
+          subtitle={(
             <Fragment>
               <span>Bem vindo</span>
               <strong> usuário</strong>
             </Fragment>
-          }
+          )}
         />
       </Section>
     </div>

@@ -40,6 +40,9 @@ const getMock = (detailsClick, disabled) => ({
   columns: [
     {
       accessor: ['status'],
+      aggregationRenderer: null,
+      aggregationTitle: 'Total',
+      aggregator: null,
       align: 'center',
       orderable: true,
       renderer: item => (
@@ -54,115 +57,105 @@ const getMock = (detailsClick, disabled) => ({
         </div>
       ),
       title: 'Status',
-
-      aggregator: null,
-      aggregationRenderer: null,
-      aggregationTitle: 'Total',
     },
     {
       accessor: ['id'],
+      aggregationRenderer: null,
+      aggregationTitle: null,
+      aggregator: null,
       align: 'start',
       orderable: true,
       title: 'Transaction ID',
-
-      aggregator: null,
-      aggregationRenderer: null,
-      aggregationTitle: null,
     },
     {
       accessor: ['date_created'],
+      aggregationRenderer: null,
+      aggregationTitle: null,
+      aggregator: null,
       align: 'center',
       orderable: true,
       title: 'Date',
-
-      aggregator: null,
-      aggregationRenderer: null,
-      aggregationTitle: null,
     },
     {
       accessor: ['payment_method'],
+      aggregationRenderer: null,
+      aggregationTitle: null,
+      aggregator: null,
       align: 'center',
       orderable: true,
       title: 'Payment Method',
-
-      aggregator: null,
-      aggregationRenderer: null,
-      aggregationTitle: null,
     },
     {
       accessor: ['paid_amount'],
-      align: 'end',
-      orderable: true,
-      title: 'Paid Amount',
-      // eslint-disable-next-line camelcase
-      renderer: ({ paid_amount = 0 }) => currencyFormatter(paid_amount),
-      aggregator: sumParameters,
       aggregationRenderer: currencyFormatter,
       aggregationTitle: null,
+      aggregator: sumParameters,
+      align: 'end',
+      orderable: true,
+      // eslint-disable-next-line camelcase
+      renderer: ({ paid_amount = 0 }) => currencyFormatter(paid_amount),
+      title: 'Paid Amount',
     },
     {
       accessor: ['cost'],
+      aggregationRenderer: currencyFormatter,
+      aggregator: sumParameters,
       align: 'end',
       orderable: true,
-      title: 'Cost',
-
       renderer: ({ cost = 0 }) => currencyFormatter(cost),
-      aggregator: sumParameters,
-      aggregationRenderer: currencyFormatter,
+      title: 'Cost',
     },
     {
       accessor: ['amount'],
-      align: 'end',
-      orderable: true,
-      title: 'Amount',
-
-      renderer: ({ amount = 0 }) => currencyFormatter(amount),
-      aggregator: sumParameters,
       aggregationRenderer: currencyFormatter,
       aggregationTitle: null,
+      aggregator: sumParameters,
+      align: 'end',
+      orderable: true,
+      renderer: ({ amount = 0 }) => currencyFormatter(amount),
+      title: 'Amount',
     },
     {
       accessor: ['customer', 'email'],
+      aggregationRenderer: null,
+      aggregationTitle: null,
+      aggregator: null,
       align: 'center',
       orderable: true,
       title: 'E-mail',
-
-      aggregator: null,
-      aggregationRenderer: null,
-      aggregationTitle: null,
     },
     {
       accessor: ['antifraud_score'],
+      aggregationRenderer: null,
+      aggregationTitle: null,
+      aggregator: null,
       align: 'center',
       orderable: true,
       title: 'Antifraud Score',
-
-      aggregator: null,
-      aggregationRenderer: null,
-      aggregationTitle: null,
     },
     {
       accessor: ['installments'],
+      aggregationRenderer: null,
+      aggregationTitle: null,
+      aggregator: null,
       align: 'center',
       orderable: true,
       title: 'Installments',
-
-      aggregator: null,
-      aggregationRenderer: null,
-      aggregationTitle: null,
     },
     {
       accessor: ['customer', 'name'],
+      aggregationRenderer: null,
+      aggregationTitle: null,
+      aggregator: null,
       align: 'start',
       orderable: true,
       title: 'Name',
-
-      aggregator: null,
-      aggregationRenderer: null,
-      aggregationTitle: null,
     },
     {
       accessor: ['card_brand'],
+      aggregationRenderer: null,
+      aggregationTitle: null,
+      aggregator: null,
       align: 'center',
       orderable: true,
       renderer: item => (
@@ -171,35 +164,34 @@ const getMock = (detailsClick, disabled) => ({
           title={item.card_brand}
         >
           {
-            item.card_brand &&
-            <span className={style.capitalize}>
-              {getBrandIcon(item.card_brand)}
-              {item.card_brand}
-            </span>
+            item.card_brand
+              && (
+                <span className={style.capitalize}>
+                  {getBrandIcon(item.card_brand)}
+                  {item.card_brand}
+                </span>
+              )
           }
           {
-            !item.card_brand &&
-            <TableEmptyItem className={style.empty} />
+            !item.card_brand && <TableEmptyItem className={style.empty} />
           }
         </div>
       ),
       title: 'Card brand',
-
-      aggregator: null,
-      aggregationRenderer: null,
-      aggregationTitle: null,
     },
     {
       accessor: ['link'],
+      aggregationRenderer: null,
+      aggregationTitle: null,
+      aggregator: null,
       align: 'start',
       orderable: true,
       title: 'Boleto link',
-
-      aggregator: null,
-      aggregationRenderer: null,
-      aggregationTitle: null,
     },
     {
+      aggregationRenderer: null,
+      aggregationTitle: null,
+      aggregator: null,
       align: 'center',
       isAction: true,
       orderable: false,
@@ -213,14 +205,11 @@ const getMock = (detailsClick, disabled) => ({
         </Button>
       ),
       title: 'Details',
-
-      aggregator: null,
-      aggregationRenderer: null,
-      aggregationTitle: null,
     },
   ],
   rows: [
     {
+      amount: 99999999900,
       antifraud_score: null,
       card_brand: null,
       cost: 10000000,
@@ -234,7 +223,6 @@ const getMock = (detailsClick, disabled) => ({
       installments: 1,
       link: 'boleto link',
       paid_amount: 99999999900,
-      amount: 99999999900,
       payment_method: 'Boleto',
       refuse_reason: null,
       status: 'Boleto paid with inferior value',
@@ -242,10 +230,10 @@ const getMock = (detailsClick, disabled) => ({
       status_color: '#244d85',
     },
     {
+      amount: 40000000,
       antifraud_score: 'Approved',
       card_brand: 'mastercard',
       cost: 1200000,
-      paid_amount: 10000000,
       customer: {
         email: 'null@undefined.com',
         name: 'undefined is not a function',
@@ -255,7 +243,7 @@ const getMock = (detailsClick, disabled) => ({
       id: '2229597001',
       installments: '4X',
       link: null,
-      amount: 40000000,
+      paid_amount: 10000000,
       payment_method: 'Credit card',
       refuse_reason: null,
       status: 'Pago',
@@ -263,10 +251,10 @@ const getMock = (detailsClick, disabled) => ({
       status_color: '#57be76',
     },
     {
+      amount: 50000000,
       antifraud_score: 'Approved',
       card_brand: 'visa',
       cost: 1300000,
-      paid_amount: 10000000,
       customer: {
         email: 'null@undefined.com',
         name: 'null of undefined of NaN',
@@ -276,7 +264,7 @@ const getMock = (detailsClick, disabled) => ({
       id: '2229597003',
       installments: '5X',
       link: null,
-      amount: 50000000,
+      paid_amount: 10000000,
       payment_method: 'Credit card',
       refuse_reason: null,
       status: 'Chargeback',

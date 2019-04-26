@@ -49,6 +49,14 @@
   width: 100%;
 }
 
+.signInBlock {
+  padding-bottom: 16px;
+
+  & span {
+    line-height: 30px;
+  }
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -115,14 +123,6 @@
 
   & > div {
     padding-top: 45px;
-  }
-}
-
-.signInBlock {
-  padding-bottom: 16px;
-
-  & span {
-    line-height: 30px;
   }
 }
 

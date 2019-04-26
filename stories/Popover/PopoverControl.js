@@ -16,12 +16,13 @@ class PopoverControl extends Component {
   }
 
   render () {
+    const { visible } = this.state
     return (
       <div className={style.flex}>
         <Popover
           content={<Menu />}
           placement="bottomStart"
-          visible={this.state.visible}
+          visible={visible}
           onClick={() => this.setState({ visible: true })}
         >
           <Button>
@@ -31,10 +32,7 @@ class PopoverControl extends Component {
 
         <Spacing size="flex" />
 
-        <Button onClick={() => this.setState({
-            visible: false,
-          })}
-        >
+        <Button onClick={() => this.setState({ visible: false })}>
           Close popover
         </Button>
       </div>
