@@ -29,18 +29,19 @@ class SnackbarWithState extends Component {
 
   render () {
     const { dismissTimeOutExample } = this.props
+    const { visible } = this.state
     return (
       <div>
-        { this.state.visible &&
-        <Snackbar
-          icon={<IconClose height={12} width={12} />}
-          dismissTimeout={dismissTimeOutExample ? 2500 : 0}
-          onDismiss={this.handleCloseSnackbar}
-          type="success"
-        >
-          <p>Settings saved successfully</p>
-        </Snackbar>
-      }
+        { visible && (
+          <Snackbar
+            icon={<IconClose height={12} width={12} />}
+            dismissTimeout={dismissTimeOutExample ? 2500 : 0}
+            onDismiss={this.handleCloseSnackbar}
+            type="success"
+          >
+            <p>Settings saved successfully</p>
+          </Snackbar>
+        )}
 
         <p>This content will be hidden by the Snackbar Component</p>
         <div className={style.content}>
@@ -49,8 +50,8 @@ class SnackbarWithState extends Component {
           >
             test snackbar
           </Button>
-          {(this.state.visible && dismissTimeOutExample) &&
-            <Timer start={Date.now()} />
+          {
+            (visible && dismissTimeOutExample) && <Timer start={Date.now()} />
           }
         </div>
       </div>

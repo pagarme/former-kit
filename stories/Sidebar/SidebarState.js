@@ -20,34 +20,34 @@ import Logo from './logo.svg'
 
 const items = [
   {
-    value: 'home',
-    title: 'Home',
-    path: ['home'],
     icon: <IconHome width={16} height={16} />,
+    path: ['home'],
+    title: 'Home',
+    value: 'home',
   },
   {
-    value: 'transactions',
-    title: 'Transactions',
-    path: ['transactions'],
     icon: <IconTransaction width={16} height={16} />,
+    path: ['transactions'],
+    title: 'Transactions',
+    value: 'transactions',
   },
   {
-    value: 'account',
-    title: 'My Account',
     icon: <IconConfig width={16} height={16} />,
     path: ['account'],
     sublinks: [
       {
-        value: 'general',
-        title: 'General',
         path: ['account', 'general'],
+        title: 'General',
+        value: 'general',
       },
       {
-        value: 'user',
-        title: 'User',
         path: ['account', 'user'],
+        title: 'User',
+        value: 'user',
       },
     ],
+    title: 'My Account',
+    value: 'account',
   },
 ]
 
@@ -58,8 +58,8 @@ class SidebarState extends React.Component {
     this.id = shortid.generate()
 
     this.state = {
-      collapsed: props.collapsed || false,
       active: [],
+      collapsed: props.collapsed || false,
     }
 
     this.handleClick = this.handleClick.bind(this)
@@ -73,16 +73,14 @@ class SidebarState extends React.Component {
 
   render () {
     const {
+      active,
       collapsed,
     } = this.state
 
     return (
       <Sidebar collapsed={collapsed}>
         <SidebarHeader>
-          {!collapsed &&
-            <Logo width="140" />
-          }
-
+          { !collapsed && <Logo width="140" /> }
           <Button
             onClick={() => this.setState({ collapsed: !collapsed })}
             icon={<IconMenu width={16} height={16} />}
@@ -96,15 +94,15 @@ class SidebarState extends React.Component {
             <SidebarLink
               key={item.value}
               title={item.title}
-              active={contains(item.value, this.state.active)}
+              active={contains(item.value, active)}
               onClick={() => this.handleClick(item)}
               icon={item.icon}
               collapsed={collapsed}
             >
-              {item.sublinks &&
-                item.sublinks.map(sublink => (
+              {item.sublinks
+                && item.sublinks.map(sublink => (
                   <SidebarLink
-                    active={contains(sublink.value, this.state.active)}
+                    active={contains(sublink.value, active)}
                     key={sublink.value}
                     onClick={() => this.handleClick(sublink)}
                     title={sublink.title}

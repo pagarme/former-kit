@@ -22,13 +22,15 @@ class TimerExample extends Component {
   }
 
   counter () {
+    const { start } = this.props
     this.setState({
-      time: new Date() - this.props.start,
+      time: new Date() - start,
     })
   }
 
   render () {
-    const elapsedTime = Math.round(this.state.time / 100)
+    const { time } = this.state
+    const elapsedTime = Math.round(time / 100)
     const seconds = (elapsedTime / 10).toFixed(1)
     return (
       <span className={style.timer}><b>{seconds} seconds</b></span>

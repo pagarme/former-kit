@@ -37,12 +37,12 @@ class CheckboxState extends React.Component {
 }
 
 CheckboxState.defaultProps = {
-  name: '',
-  value: '',
-  label: '',
   checked: false,
   disabled: false,
   error: '',
+  label: '',
+  name: '',
+  value: '',
 }
 
 storiesOf('Checkbox', module)

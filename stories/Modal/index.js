@@ -28,7 +28,8 @@ class ModalWithState extends Component {
   }
 
   handleToggleModal () {
-    this.setState({ isOpen: !this.state.isOpen })
+    const { isOpen } = this.state
+    this.setState({ isOpen: !isOpen })
   }
 
   handleCloseModal () {
@@ -36,6 +37,8 @@ class ModalWithState extends Component {
   }
 
   render () {
+    const { isOpen } = this.state
+
     return (
       <div>
         {/* call to action to open the modal */}
@@ -51,7 +54,7 @@ class ModalWithState extends Component {
         {/* modal content definition */}
         <Modal
           label="Create a Transaction"
-          isOpen={this.state.isOpen}
+          isOpen={isOpen}
           onRequestClose={this.handleToggleModal}
         >
           <ModalTitle

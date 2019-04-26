@@ -9,8 +9,8 @@ function createNodeMock (element) {
     return {
       __consolidated_events_handlers__: null,
       addEventListener: () => 1,
-      removeEventListener: () => true,
       querySelectorAll: () => [],
+      removeEventListener: () => true,
       style: {
         height: 0,
       },
@@ -36,18 +36,16 @@ global.getComputedStyle = () => ({
   styleSheets: {},
 })
 
-
 jest.mock('former-kit-skin-pagarme', () => {
-  const buildProxy = value =>
-    new Proxy(
-      {},
-      { get: (_, name) => value || name }
-    )
+  const buildProxy = value => new Proxy(
+    {},
+    { get: (_, name) => value || name }
+  )
 
   return {
+    icons: buildProxy(buildProxy(<svg />)),
     name: 'Pagar.me',
     styles: buildProxy(buildProxy()),
-    icons: buildProxy(buildProxy(<svg />)),
   }
 })
 

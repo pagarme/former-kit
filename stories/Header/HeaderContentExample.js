@@ -21,12 +21,12 @@ const HeaderContentExample = ({ photo }) => (
       icon={<IconMessage />}
     />
     <HeaderMenu
-      title={
+      title={(
         <Fragment>
           <Avatar alt="alt text" photo={photo} />
           <span>Current username</span>
         </Fragment>
-      }
+      )}
       onClick={() => null}
     >
       <div>
@@ -35,8 +35,8 @@ const HeaderContentExample = ({ photo }) => (
       </div>
       <PopoverMenu
         items={[
-          { title: 'Account', action: action('account') },
-          { title: 'Logout', action: action('logout') },
+          { action: action('account'), title: 'Account' },
+          { action: action('logout'), title: 'Logout' },
         ]}
       />
     </HeaderMenu>

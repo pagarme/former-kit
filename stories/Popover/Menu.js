@@ -4,12 +4,12 @@ import { PopoverMenu, PopoverContent } from '../../src/Popover'
 
 const items = [
   {
-    title: 'Minha Conta',
     action: () => action('account'),
+    title: 'Minha Conta',
   },
   {
-    title: 'Logout',
     action: () => action('logout'),
+    title: 'Logout',
   },
 ]
 

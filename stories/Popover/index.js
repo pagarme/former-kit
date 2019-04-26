@@ -20,7 +20,7 @@ import PopoverControl from './PopoverControl'
 
 import style from './style.css'
 
-const PopoverExample = ({ placement, base }) => (
+const PopoverExample = ({ base, placement }) => (
   <Popover
     content={<Menu />}
     base={base}

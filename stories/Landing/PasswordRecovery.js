@@ -43,7 +43,7 @@ const PasswordRecovery = ({
             />
           </div>
           <div className={styles.actions}>
-            <div className={styles.hugeButton} >
+            <div className={styles.hugeButton}>
               <Button
                 type="submit"
                 size="huge"
@@ -52,7 +52,7 @@ const PasswordRecovery = ({
                 Enviar
               </Button>
             </div>
-            <a href="https://dashboard.pagar.me/#/forgot_password" >
+            <a href="https://dashboard.pagar.me/#/forgot_password">
               Voltar para o login
             </a>
           </div>

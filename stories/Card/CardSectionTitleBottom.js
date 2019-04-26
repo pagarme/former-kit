@@ -27,8 +27,9 @@ class CardSectionTitleState extends React.Component {
   }
 
   handleClick () {
+    const { collapsed } = this.state
     this.setState({
-      collapsed: !this.state.collapsed,
+      collapsed: !collapsed,
     })
   }
 
@@ -52,7 +53,7 @@ class CardSectionTitleState extends React.Component {
         <Card>
           <CardTitle title="Lorem title" />
           <CardContent>
-            <CardSection >
+            <CardSection>
               {!collapsed && (
                 <CardContent>
                   {loremIpsum}

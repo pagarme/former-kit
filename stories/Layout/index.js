@@ -46,11 +46,11 @@ const CardExample = () => (
 )
 
 const LayoutExample = ({
-  sidebar = null,
-  header = null,
   footer = null,
+  header = null,
+  sidebar = null,
 }) => (
-  <div style={{ height: 'calc(100vh - 16px)', backgroundColor: '#f9f9f9' }}>
+  <div style={{ backgroundColor: '#f9f9f9', height: 'calc(100vh - 16px)' }}>
     <Layout
       sidebar={sidebar}
       header={header}

@@ -28,7 +28,7 @@ storiesOf('Buttons', module)
 
         <div className={styles.spacingAround}>
           <Button>Default</Button>
-          <Button icon={<IconAdd width={12} height={12} />} >Default</Button>
+          <Button icon={<IconAdd width={12} height={12} />}>Default</Button>
           <Button
             icon={<IconAdd width={12} height={12} />}
             iconAlignment="end"

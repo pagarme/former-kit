@@ -9,8 +9,9 @@ import Section from '../Section'
 import CalendarInput from '../../src/CalendarInput'
 import style from './style.css'
 
-const isWeekendDay = date =>
-  date && date.weekday && contains(date.weekday(), [0, 6])
+const isWeekendDay = date => date
+  && date.weekday
+  && contains(date.weekday(), [0, 6])
 
 const isWeekDay = complement(isWeekendDay)
 
@@ -47,10 +48,11 @@ class CalendarInputState extends Component {
   }
 
   render () {
+    const { value } = this.state
     const {
       months,
-      selection,
       sectionTitle,
+      selection,
     } = this.props
     return (
       <Section title={sectionTitle}>
@@ -65,7 +67,7 @@ class CalendarInputState extends Component {
             select: 'Select a date',
             start: 'Initial',
           }}
-          value={this.state.value}
+          value={value}
         />
       </Section>
     )
@@ -74,8 +76,8 @@ class CalendarInputState extends Component {
 
 CalendarInputState.propTypes = {
   months: PropTypes.oneOf([1, 2]).isRequired,
-  selection: PropTypes.oneOf(['single', 'period']).isRequired,
   sectionTitle: PropTypes.string,
+  selection: PropTypes.oneOf(['single', 'period']).isRequired,
   value: PropTypes.shape({
     end: PropTypes.instanceOf(moment),
     start: PropTypes.instanceOf(moment),

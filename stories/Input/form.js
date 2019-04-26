@@ -17,11 +17,11 @@ class InputState extends React.Component {
       base,
       error,
       icon,
+      label,
       mask,
       multiline,
       placeholder,
       type,
-      label,
     } = this.props
 
     const {

@@ -26,26 +26,23 @@ export default class CardSectionTitleState extends React.Component {
   }
 
   render () {
+    const { collapsed } = this.state
     return (
       <div className={style.showcase}>
         <Card>
           <CardTitle title="Lorem title" />
 
           <CardContent>
-            <CardSection >
+            <CardSection>
               <CardSectionTitle
-                title={this.state.collapsed ? 'Title collapsed' : 'Title opened'}
-                collapsed={this.state.collapsed}
+                title={collapsed ? 'Title collapsed' : 'Title opened'}
+                collapsed={collapsed}
                 onClick={
-                  collapsed => this.setState({ collapsed: !collapsed })
+                  isCollapsed => this.setState({ collapsed: !isCollapsed })
                 }
                 subtitle="It's over 9000!"
               />
-              {!this.state.collapsed &&
-                <CardContent>
-                  {loremIpsum}
-                </CardContent>
-              }
+              {!collapsed && <CardContent>{loremIpsum}</CardContent>}
             </CardSection>
           </CardContent>
         </Card>

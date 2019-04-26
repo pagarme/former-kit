@@ -41,7 +41,7 @@ class CheckboxGroupState extends React.Component {
       error,
       name,
     } = this.props
-
+    const { values } = this.state
     return (
       <div>
         <CheckboxGroup
@@ -49,12 +49,12 @@ class CheckboxGroupState extends React.Component {
           disabled={disabled}
           error={error}
           name={name}
-          onChange={values => this.setState({ values })}
+          onChange={newValues => this.setState({ values: newValues })}
           options={options}
-          value={this.state.values}
+          value={values}
         />
 
-        <p>Selected: {this.state.values.join(', ')}</p>
+        <p>Selected: {values.join(', ')}</p>
       </div>
     )
   }

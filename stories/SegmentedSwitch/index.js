@@ -19,9 +19,8 @@ class SegmentedSwitchState extends React.Component {
   }
 
   componentWillMount () {
-    this.setState({
-      value: this.props.value,
-    })
+    const { value } = this.props
+    this.setState({ value })
   }
 
   handleChange (value) {
@@ -31,16 +30,17 @@ class SegmentedSwitchState extends React.Component {
   render () {
     const {
       disabled,
+      name,
       options,
     } = this.props
-
+    const { value } = this.state
     return (
       <SegmentedSwitch
         disabled={disabled}
         options={options}
         onChange={this.handleChange}
-        name={this.props.name}
-        value={this.state.value}
+        name={name}
+        value={value}
       />
     )
   }

@@ -27,16 +27,16 @@ const columns = [
 
 const rows = [
   {
-    name: 'Wallace Batista Oliveira',
-    bank_code: '341',
-    agency: '0113',
     account: '33064-1',
+    agency: '0113',
+    bank_code: '341',
+    name: 'Wallace Batista Oliveira',
   },
   {
-    name: 'Deives Carlão',
-    bank_code: '341',
-    agency: '0113',
     account: '33064-1',
+    agency: '0113',
+    bank_code: '341',
+    name: 'Deives Carlão',
   },
 ]
 
@@ -85,7 +85,7 @@ class TableStateLoading extends Component {
 
         <br />
         <Button
-          disabled={this.state.loading}
+          disabled={loading}
           onClick={this.handleLoader}
         >
           load

@@ -50,18 +50,20 @@ class DateSelectorExample extends React.Component {
   }
 
   render () {
+    const { dateSelectorVisible, dates, selectedPreset } = this.state
+    const { selectionMode, showCalendar, showSidebar } = this.props
     return (
       <DateSelector
-        dates={this.state.dates}
-        onConfirm={dates => action('onConfirm')(dates)}
+        dates={dates}
+        onConfirm={newDates => action('onConfirm')(newDates)}
         onChange={this.handleDatesChange}
         onPresetChange={this.handlePresetChange}
         presets={presets}
-        selectedPreset={this.state.selectedPreset}
-        selectionMode={this.props.selectionMode}
-        showCalendar={this.props.showCalendar}
-        showSidebar={this.props.showSidebar}
-        visible={this.state.dateSelectorVisible}
+        selectedPreset={selectedPreset}
+        selectionMode={selectionMode}
+        showCalendar={showCalendar}
+        showSidebar={showSidebar}
+        visible={dateSelectorVisible}
       >
         <Button onClick={this.handleButtonClick}>Button</Button>
       </DateSelector>
@@ -71,8 +73,8 @@ class DateSelectorExample extends React.Component {
 
 DateSelectorExample.propTypes = {
   dates: PropTypes.shape({
-    start: PropTypes.instanceOf(moment),
     end: PropTypes.instanceOf(moment),
+    start: PropTypes.instanceOf(moment),
   }),
   selectedPreset: PropTypes.string,
   showCalendar: PropTypes.bool,
@@ -98,8 +100,8 @@ storiesOf('DateSelector', module)
     <Section>
       <DateSelectorExample
         dates={{
-          start: moment(),
           end: moment(),
+          start: moment(),
         }}
         showSidebar={false}
       />
@@ -117,8 +119,8 @@ storiesOf('DateSelector', module)
     <Section>
       <DateSelectorExample
         dates={{
-          start: moment().subtract(2, 'days'),
           end: moment(),
+          start: moment().subtract(2, 'days'),
         }}
         selectionMode="period"
         showSidebar={false}

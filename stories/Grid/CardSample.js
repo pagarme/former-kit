@@ -7,8 +7,7 @@ import {
 
 import style from './CardSample.style.css'
 
-
-const CardSample = ({ size, color, children }) => (
+const CardSample = ({ children, color, size }) => (
   <Card>
     <CardGraphic>
       <div
@@ -26,9 +25,9 @@ const CardSample = ({ size, color, children }) => (
 )
 
 CardSample.defaultProps = {
-  size: 0,
-  color: '#ffffff',
   children: null,
+  color: '#ffffff',
+  size: 0,
 }
 
 export default CardSample
