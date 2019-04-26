@@ -6,10 +6,10 @@ import Input from './form'
 describe('Input', () => {
   const value = 'Leonardo'
   const theme = {
-    secondaryText: 'secondary',
     contentPresent: 'secondary',
     dark: 'dark',
     light: 'light',
+    secondaryText: 'secondary',
   }
 
   describe('singleline', () => {
@@ -270,7 +270,6 @@ describe('Input', () => {
       expect(onChange).not.toHaveBeenCalled()
       expect(onChange).not.toHaveBeenLastCalledWith(value)
     })
-
 
     it('should mount with error', () => {
       const onChange = jest.fn()

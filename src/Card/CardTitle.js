@@ -17,12 +17,12 @@ const consumeTheme = ThemeConsumer('UICard')
  * The title for cards. The component should be added inside a card.
  */
 export const CardTitle = ({
-  title,
-  subtitle,
-  icon,
   className,
+  icon,
   onClick,
+  subtitle,
   theme,
+  title,
 }) => {
   const cardTitleClasses = classNames(
     className,
@@ -34,10 +34,10 @@ export const CardTitle = ({
   }
 
   const isInteractiveProps = {
-    role: 'button',
-    tabIndex: '0',
     onClick,
     onKeyUp: event => event.keyCode === 32 && onClick(),
+    role: 'button',
+    tabIndex: '0',
   }
 
   const getProps = ifElse(
@@ -49,36 +49,26 @@ export const CardTitle = ({
   return (
     <div {...getProps(onClick)}>
       {
-        (typeof title === 'string') &&
-          <h2>
-            {icon}
-            {title}
-          </h2>
+        (typeof title === 'string') && (
+          <h2> {icon} {title} </h2>
+        )
       }
       {
-        (typeof title !== 'string') &&
-          title
+        (typeof title !== 'string') && title
       }
       {
-        (typeof subtitle === 'string') &&
+        (typeof subtitle === 'string') && (
           <h3>{subtitle}</h3>
+        )
       }
       {
-        (typeof subtitle !== 'string') &&
-          subtitle
+        (typeof subtitle !== 'string') && subtitle
       }
     </div>
   )
 }
 
 CardTitle.propTypes = {
-  /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
-   */
-  theme: PropTypes.shape({
-    icon: PropTypes.string,
-    title: PropTypes.string,
-  }),
   /**
    * Custom class added to the component.
    */
@@ -97,17 +87,24 @@ CardTitle.propTypes = {
    */
   subtitle: PropTypes.node,
   /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
+   */
+  theme: PropTypes.shape({
+    icon: PropTypes.string,
+    title: PropTypes.string,
+  }),
+  /**
    * The main text of the component.
    */
   title: PropTypes.node.isRequired,
 }
 
 CardTitle.defaultProps = {
-  theme: {},
-  icon: null,
   className: null,
+  icon: null,
   onClick: null,
   subtitle: '',
+  theme: {},
 }
 
 export default consumeTheme(CardTitle)

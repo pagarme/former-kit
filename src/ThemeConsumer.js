@@ -9,11 +9,11 @@ import { object } from 'prop-types'
  */
 export default function ThemeConsumer (name) {
   return (Component) => {
-    const themed = function Themed (props, context) {
+    const themed = function Themed (props, { theme }) {
       const {
         styles = {},
         icons = {},
-      } = context.theme ? context.theme : {}
+      } = theme || {}
 
       return (
         <Component
@@ -30,7 +30,7 @@ export default function ThemeConsumer (name) {
        * passing the `theme` and `icons` objects as props to the child component.
        * @see [ThemeProvider](#themeprovider)
        */
-      theme: object,
+      theme: object, // eslint-disable-line react/forbid-prop-types
     }
 
     Object.defineProperty(

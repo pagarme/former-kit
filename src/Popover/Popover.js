@@ -45,10 +45,10 @@ class Popover extends Component {
 
   handleOnClick () {
     const { onClick } = this.props
-
+    const { visible } = this.state
     if (!onClick) {
       this.setState({
-        visible: !this.state.visible,
+        visible: !visible,
       })
     }
 
@@ -83,14 +83,20 @@ class Popover extends Component {
           mapStyles={grow.mapStyles}
           springOptions={grow.springOptions}
         >
-          {(visible) &&
+          {visible && (
             <div
-              className={classNames(theme.popover, theme[base], theme[placement])}
+              className={
+                classNames(
+                  theme.popover,
+                  theme[base],
+                  theme[placement]
+                )
+              }
               key="popover"
             >
               {content}
             </div>
-          }
+          )}
         </Transition>
       </div>
     )
@@ -98,14 +104,6 @@ class Popover extends Component {
 }
 
 Popover.propTypes = {
-  /**
-    * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
-    */
-  theme: PropTypes.shape({
-    base: PropTypes.string,
-    popover: PropTypes.string,
-    target: PropTypes.string,
-  }),
   /**
    * Popover base theme.
    */
@@ -134,6 +132,14 @@ Popover.propTypes = {
    * The popover position when it's visible
    */
   placement: PropTypes.string,
+  /**
+    * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
+    */
+  theme: PropTypes.shape({
+    base: PropTypes.string,
+    popover: PropTypes.string,
+    target: PropTypes.string,
+  }),
   /**
    * The prop that indicates if the popover is visible or not.
    */

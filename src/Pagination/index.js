@@ -136,9 +136,9 @@ class Pagination extends React.Component {
 
   handleSubmit () {
     const {
-      totalPages,
-      onPageChange,
       currentPage,
+      onPageChange,
+      totalPages,
     } = this.props
 
     const { inputPage } = this.state
@@ -174,8 +174,8 @@ class Pagination extends React.Component {
   goTo (path) {
     const {
       currentPage,
-      totalPages,
       onPageChange,
+      totalPages,
     } = this.props
 
     const normilizeRange = clamp(1, totalPages)
@@ -218,8 +218,8 @@ class Pagination extends React.Component {
   disableButton (path) {
     const {
       currentPage,
-      totalPages,
       disabled,
+      totalPages,
     } = this.props
     const { inputPage } = this.state
 
@@ -279,19 +279,17 @@ class Pagination extends React.Component {
   render () {
     const {
       disabled,
-      icons,
       format,
+      icons,
       size,
       strings,
       theme,
       totalPages,
     } = this.props
-
+    const { inputPage } = this.state
     const translatedStrings = getStrings(strings)
 
-    const inputPage = +this.state.inputPage
-
-    const error = totalPages < inputPage || inputPage === 0
+    const error = totalPages < +inputPage || +inputPage === 0
 
     const paginationClasses = classNames(theme.pagination, {
       [theme.error]: error,
@@ -302,9 +300,10 @@ class Pagination extends React.Component {
     return (
       <div className={paginationClasses}>
         <button
-          onClick={() => this.goTo('prev')}
-          disabled={this.disableButton('prev')}
           className={theme.prev}
+          disabled={this.disableButton('prev')}
+          onClick={() => this.goTo('prev')}
+          type="button"
         >
           {icons.previous}
         </button>
@@ -332,7 +331,7 @@ class Pagination extends React.Component {
               {totalPages}
             </span>
           </span>
-          {format === 'range' &&
+          {format === 'range' && (
             <Fragment>
               <span className={theme.separator}>
                 {translatedStrings.of}
@@ -341,13 +340,14 @@ class Pagination extends React.Component {
                 {totalPages}
               </span>
             </Fragment>
-          }
+          )}
         </label>
 
         <button
-          onClick={() => this.goTo('next')}
-          disabled={this.disableButton('next')}
           className={theme.next}
+          disabled={this.disableButton('next')}
+          onClick={() => this.goTo('next')}
+          type="button"
         >
           {icons.next}
         </button>
@@ -431,8 +431,8 @@ Pagination.propTypes = {
 
 Pagination.defaultProps = {
   disabled: false,
-  icons: {},
   format: 'range',
+  icons: {},
   size: null,
   strings: defaultStrings,
   theme: {},

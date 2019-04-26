@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import RadioGroup from '../'
+import RadioGroup from '..'
 
 const options = [
   {

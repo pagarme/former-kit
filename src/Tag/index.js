@@ -10,8 +10,8 @@ const consumeTheme = ThemeConsumer('UITag')
  * in a gracefully way.
  */
 const Tag = ({
-  theme,
   children,
+  theme,
 }) => (
   <div className={theme.tag}>
     {children}
@@ -19,6 +19,10 @@ const Tag = ({
 )
 
 Tag.propTypes = {
+  /*
+   * The 'children' prop is a node, it could be a string or a react element
+   */
+  children: PropTypes.node.isRequired,
   /**
    * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
@@ -28,10 +32,6 @@ Tag.propTypes = {
      */
     tag: PropTypes.string,
   }),
-  /*
-   * The 'children' prop is a node, it could be a string or a react element
-   */
-  children: PropTypes.node.isRequired,
 }
 
 Tag.defaultProps = {

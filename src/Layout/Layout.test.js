@@ -10,8 +10,8 @@ import {
 
 const links = [
   {
-    title: 'Documentação',
     onClick: () => {},
+    title: 'Documentação',
   },
 ]
 

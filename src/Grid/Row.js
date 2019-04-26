@@ -12,36 +12,35 @@ import ThemeConsumer from '../ThemeConsumer'
 const consumeTheme = ThemeConsumer('UIGrid')
 
 const classnames = ({
-  theme,
+  className,
   flex,
   stretch,
+  theme,
+}) => classNames(
   className,
-}) =>
-  classNames(
-    className,
-    theme.row,
-    {
-      [theme.flex]: flex,
-      [theme.stretch]: stretch,
-    }
-  )
+  theme.row,
+  {
+    [theme.flex]: flex,
+    [theme.stretch]: stretch,
+  }
+)
 
 /**
  * Row structure used in the Grid component.
  */
 const Row = ({
-  theme,
   children,
+  className,
   flex,
   stretch,
-  className,
+  theme,
 }) => (
   <div className={classnames({
-    theme,
+    className,
     flex,
     stretch,
-    className,
-    })}
+    theme,
+  })}
   >
     {children}
   </div>
@@ -49,17 +48,13 @@ const Row = ({
 
 Row.propTypes = {
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
-   */
-  theme: shape({
-    row: string,
-    flex: string,
-    stretch: string,
-  }),
-  /**
    * The columns which will be rendered inside the row.
    */
   children: node,
+  /**
+   * Custom CSS class which will be applied to the row.
+   */
+  className: string,
   /**
    * Make columns grow horizontally.
    */
@@ -69,17 +64,21 @@ Row.propTypes = {
    */
   stretch: bool,
   /**
-   * Custom CSS class which will be applied to the row.
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
-  className: string,
+  theme: shape({
+    flex: string,
+    row: string,
+    stretch: string,
+  }),
 }
 
 Row.defaultProps = {
-  theme: {},
   children: null,
+  className: null,
   flex: false,
   stretch: false,
-  className: null,
+  theme: {},
 }
 
 export default consumeTheme(Row)

@@ -30,7 +30,6 @@ import Checkbox from '../Checkbox'
 import ThemeConsumer from '../ThemeConsumer'
 import TableEmptyItem from './TableEmptyItem'
 
-
 const consumeTheme = ThemeConsumer('UITable')
 
 const hasRenderer = has('renderer')
@@ -96,8 +95,8 @@ const renderCell = (column, data, key, theme) => {
   )
 }
 
-const renderCells = (columns, data, lineIndex, theme) =>
-  columns.map((col, index) => renderCell(col, data, `${lineIndex}_${index}`, theme))
+const renderCells = (columns, data, lineIndex, theme) => columns
+  .map((col, index) => renderCell(col, data, `${lineIndex}_${index}`, theme))
 
 class TableRow extends Component {
   constructor (props) {
@@ -113,7 +112,7 @@ class TableRow extends Component {
   }
 
   getArrowIcon (expanded) {
-    const { expand, collapse } = this.props.icons
+    const { icons: { collapse, expand } } = this.props
 
     if (expanded) {
       return collapse
@@ -137,14 +136,14 @@ class TableRow extends Component {
   }
 
   handleMouseEnter () {
-    const { onMouseEnter, index } = this.props
+    const { index, onMouseEnter } = this.props
     if (onMouseEnter) {
       onMouseEnter(index)
     }
   }
 
   handleMouseLeave () {
-    const { onMouseLeave, index } = this.props
+    const { index, onMouseLeave } = this.props
     if (onMouseLeave) {
       onMouseLeave(index)
     }
@@ -164,12 +163,12 @@ class TableRow extends Component {
       columns,
       data,
       disabled,
-      expanded,
       expandable,
+      expanded,
       index,
+      parity,
       selectable,
       selected,
-      parity,
       theme,
     } = this.props
 
@@ -184,11 +183,13 @@ class TableRow extends Component {
 
     const lineIndex = `line_${index}`
 
-    const trProps = disabled ? {} : {
-      onClick: this.handleClick,
-      onMouseEnter: this.handleMouseEnter,
-      onMouseLeave: this.handleMouseLeave,
-    }
+    const trProps = disabled
+      ? {}
+      : {
+        onClick: this.handleClick,
+        onMouseEnter: this.handleMouseEnter,
+        onMouseLeave: this.handleMouseLeave,
+      }
 
     return (
       <tr
@@ -197,39 +198,41 @@ class TableRow extends Component {
         {...trProps}
       >
         {
-          selectable &&
-          <td className={theme.check}>
-            <Checkbox
-              checked={selected}
-              disabled={disabled}
-              id={this.checkboxId}
-              label=""
-              name={lineIndex}
-              onChange={this.handleSelect}
-              value={`${index}`}
-            />
-          </td>
+          selectable && (
+            <td className={theme.check}>
+              <Checkbox
+                checked={selected}
+                disabled={disabled}
+                id={this.checkboxId}
+                label=""
+                name={lineIndex}
+                onChange={this.handleSelect}
+                value={`${index}`}
+              />
+            </td>
+          )
         }
         {renderCells(columns, data, lineIndex, theme)}
         {
-          expandable &&
-          <td className={
-              classNames(
-                theme.open,
-                theme.unselectable
-              )
-            }
-          >
-            <Button
-              disabled={disabled}
-              fill="outline"
-              icon={this.getArrowIcon(expanded)}
-              onClick={this.handleExpand}
-              relevance="low"
-              size="tiny"
-              type="button"
-            />
-          </td>
+          expandable && (
+            <td className={
+                classNames(
+                  theme.open,
+                  theme.unselectable
+                )
+              }
+            >
+              <Button
+                disabled={disabled}
+                fill="outline"
+                icon={this.getArrowIcon(expanded)}
+                onClick={this.handleExpand}
+                relevance="low"
+                size="tiny"
+                type="button"
+              />
+            </td>
+          )
         }
       </tr>
     )
@@ -237,17 +240,6 @@ class TableRow extends Component {
 }
 
 TableRow.propTypes = {
-  /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
-   */
-  theme: shape({
-    check: string,
-    disabled: string,
-    even: string,
-    odd: string,
-    open: string,
-    status: string,
-  }),
   /**
    * Additional CSS classes which can be applyed to the expanded row.
    */
@@ -270,6 +262,17 @@ TableRow.propTypes = {
       string,
       arrayOf(string),
     ]),
+    /**
+     * Function responsible for creating a cell component to be added to the total
+     * row in the footer, works like the renderer prop.
+     * @param {object} row - all row data.
+     */
+    aggregationRenderer: func,
+    /**
+     * Text which will be used as title in the footer total row, when this prop is received
+     * the aggregator and aggregationRenderer props are ignored.
+     */
+    aggregationTitle: string,
     /**
      * Pure function which will receive the total accumulated and the current cell value.
      * Its return will be rendered in the total row in the footer or it will
@@ -301,17 +304,6 @@ TableRow.propTypes = {
      * column data in the expandable rows.
      */
     title: string.isRequired,
-    /**
-     * Function responsible for creating a cell component to be added to the total
-     * row in the footer, works like the renderer prop.
-     * @param {object} row - all row data.
-     */
-    aggregationRenderer: func,
-    /**
-     * Text which will be used as title in the footer total row, when this prop is received
-     * the aggregator and aggregationRenderer props are ignored.
-     */
-    aggregationTitle: string,
   })).isRequired,
   /**
    * Set of data native of row data from the table.
@@ -369,6 +361,10 @@ TableRow.propTypes = {
    */
   onSelect: func,
   /**
+   * It defines the line color.
+   */
+  parity: oneOf(['even', 'odd']),
+  /**
    * It indicates that the line can be selected.
    */
   selectable: bool,
@@ -378,9 +374,16 @@ TableRow.propTypes = {
    */
   selected: bool,
   /**
-   * It defines the line color.
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
-  parity: oneOf(['even', 'odd']),
+  theme: shape({
+    check: string,
+    disabled: string,
+    even: string,
+    odd: string,
+    open: string,
+    status: string,
+  }),
 }
 
 TableRow.defaultProps = {

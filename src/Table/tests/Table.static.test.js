@@ -25,16 +25,17 @@ const isOdd = modulo(__, 2)
 describe('Table', () => {
   describe('Static cases', () => {
     describe('Columns', () => {
-      cases('should render columns', ({ component, columns }) => {
+      cases('should render columns', ({ columns, component }) => {
         const firstRow = component.find(TableRow).first()
         const header = component.find(TableHead)
 
         const dataColumns = firstRow
-          .findWhere(node =>
-            node.length > 0 && node.type() === 'td' &&
-            !node.find(Checkbox).exists() &&
-            !node.find(Button).exists()
-          )
+          .findWhere(node => (
+            node.length > 0
+              && node.type() === 'td'
+              && !node.find(Checkbox).exists()
+              && !node.find(Button).exists()
+          ))
 
         expect(firstRow.find('td').length)
           .toBe(header.find('th').length)
@@ -136,15 +137,16 @@ describe('Table', () => {
       })
 
       cases('should render headercolumns with correct titles',
-        ({ component, columns }) => {
+        ({ columns, component }) => {
           const header = component.find(TableHead)
           const headerColumns = header
             .find('th')
-            .findWhere(node =>
-              node.length > 0 && node.type() === 'div' &&
-              node.find('span').length > 0 &&
-              node.find('input').lenght <= 0
-            )
+            .findWhere(node => (
+              node.length > 0
+              && node.type() === 'div'
+              && node.find('span').length > 0
+              && node.find('input').length <= 0
+            ))
 
           headerColumns.forEach((colElement, index) => {
             const sp = colElement.find('span').first()
@@ -153,11 +155,10 @@ describe('Table', () => {
             expect(sp.text().trim()).toBe(title)
           })
         },
-        columnsCases
-      )
+        columnsCases)
 
       cases('should render column with correct render function',
-        ({ component, columns, rows }) => {
+        ({ columns, component, rows }) => {
           const column = columns.find(col => col.renderer)
           const columnIndex = findIndex(equals(column))(columns)
           const rendererResult = column.renderer(rows[columnIndex])
@@ -165,11 +166,10 @@ describe('Table', () => {
 
           expect(resultCell).toBeDefined()
         },
-        columnsCases
-      )
+        columnsCases)
 
       cases('should render column with correct accessor prop',
-        ({ component, columns, rows }) => {
+        ({ columns, component, rows }) => {
           const column = columns.find(col => col.accessor && !col.renderer)
           const columnIndex = findIndex(equals(column))(columns)
           const text = path(column.accessor, rows[0])
@@ -179,18 +179,18 @@ describe('Table', () => {
             .find('tr')
             .first()
           const cell = line
-            .findWhere(node =>
-              node.length > 0 && node.type() === 'td' &&
-              !node.find(Checkbox).exists() &&
-              !node.find(Button).exists()
-            )
+            .findWhere(node => (
+              node.length > 0
+              && node.type() === 'td'
+              && !node.find(Checkbox).exists()
+              && !node.find(Button).exists()
+            ))
             .at(columnIndex)
 
           expect(cell.exists()).toBe(true)
           expect(cell.text()).toBe(text)
         },
-        columnsCases
-      )
+        columnsCases)
     })
 
     describe('Rows', () => {
@@ -211,16 +211,17 @@ describe('Table', () => {
           .toBe(component.find(TableRow).length)
       }, rowsCases)
 
-      cases('should render the a row with correct data', ({ component, rows, columns }) => {
+      cases('should render the a row with correct data', ({ columns, component, rows }) => {
         const firstRow = component.find(TableRow).first()
         const firstRowData = rows[0]
 
         const cells = firstRow
-          .findWhere(node =>
-            node.length > 0 && node.type() === 'td' &&
-            !node.find(Checkbox).exists() &&
-            !node.find(Button).exists()
-          )
+          .findWhere(node => (
+            node.length > 0
+            && node.type() === 'td'
+            && !node.find(Checkbox).exists()
+            && !node.find(Button).exists()
+          ))
         cells.forEach((cell, index) => {
           const { accessor } = columns[index]
           if (accessor) {
@@ -315,15 +316,15 @@ describe('Table', () => {
         })
       }, columnsCases)
 
-      cases('should render falsy cells with a dash ', ({ component, rows, columns }) => {
+      cases('should render falsy cells with a dash ', ({ columns, component, rows }) => {
         const renderedRows = component.find(TableRow)
         renderedRows.forEach((renderedRow, rowIndex) => {
           const cells = renderedRow.findWhere(node => (
-            node.length > 0 &&
-            node.type() === 'td' &&
-            !node.find(Checkbox).exists() &&
-            !node.find(Button).exists())
-          )
+            node.length > 0
+            && node.type() === 'td'
+            && !node.find(Checkbox).exists()
+            && !node.find(Button).exists()
+          ))
 
           const row = rows[rowIndex]
           cells.forEach((cell, index) => {

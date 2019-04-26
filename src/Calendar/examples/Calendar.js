@@ -26,10 +26,10 @@ class CalendarExample extends Component {
       months,
       selection,
     } = this.props
-
+    const { dates } = this.state
     return (
       <Calendar
-        dates={this.state.dates}
+        dates={dates}
         dateSelection={selection}
         months={months}
         onChange={this.handleChange}
@@ -37,7 +37,6 @@ class CalendarExample extends Component {
     )
   }
 }
-
 
 CalendarExample.propTypes = {
   months: PropTypes.oneOf([1, 2]),

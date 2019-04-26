@@ -16,7 +16,8 @@ export default class ThemeProvider extends React.Component {
   }
 
   render () {
-    return this.props.children
+    const { children } = this.props
+    return children
   }
 }
 
@@ -51,11 +52,11 @@ ThemeProvider.childContextTypes = {
 }
 
 ThemeProvider.propTypes = {
+  children: node.isRequired,
   theme: shape({
     name: string,
     version: string,
     styles: object, // eslint-disable-line
     icons: object, // eslint-disable-line
   }).isRequired,
-  children: node.isRequired,
 }

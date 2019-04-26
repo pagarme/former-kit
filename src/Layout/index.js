@@ -10,11 +10,11 @@ const consumeTheme = ThemeConsumer('UILayout')
  * sidebar, header, footer and content.
  */
 const Layout = ({
-  theme,
+  children,
+  footer,
   header,
   sidebar,
-  footer,
-  children,
+  theme,
 }) => (
   <div className={theme.layout}>
     {sidebar}
@@ -32,13 +32,13 @@ const Layout = ({
 
 Layout.propTypes = {
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
+   * The content that can be scrolled.
    */
-  theme: PropTypes.shape({
-    layout: PropTypes.string,
-    content: PropTypes.string,
-    children: PropTypes.string,
-  }),
+  children: PropTypes.node.isRequired,
+  /**
+   * The Footer component. Must be a React element.
+   */
+  footer: PropTypes.element,
   /**
    * The Header component. Must be a React element.
    */
@@ -48,20 +48,20 @@ Layout.propTypes = {
    */
   sidebar: PropTypes.element,
   /**
-   * The Footer component. Must be a React element.
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
-  footer: PropTypes.element,
-  /**
-   * The content that can be scrolled.
-   */
-  children: PropTypes.node.isRequired,
+  theme: PropTypes.shape({
+    children: PropTypes.string,
+    content: PropTypes.string,
+    layout: PropTypes.string,
+  }),
 }
 
 Layout.defaultProps = {
-  theme: {},
+  footer: null,
   header: null,
   sidebar: null,
-  footer: null,
+  theme: {},
 }
 
 export default consumeTheme(Layout)

@@ -55,6 +55,7 @@ class Snackbar extends Component {
       theme,
       type,
     } = this.props
+    const { visible } = this.state
     return (
       <Transition
         atActive={fade.atActive}
@@ -65,7 +66,7 @@ class Snackbar extends Component {
         runOnMount
         springOptions={fade.springOptions}
       >
-        {this.state.visible &&
+        {visible && (
           <div
             className={classNames(theme.snackbar, theme[type])}
             key={this.id}
@@ -73,16 +74,16 @@ class Snackbar extends Component {
             <div className={theme.content}>
               {children}
             </div>
-            {!isNil(onDismiss) &&
+            {!isNil(onDismiss) && (
               <Button
                 fill="clean"
                 icon={icon}
                 iconAlignment="end"
                 onClick={this.handleDismiss}
               />
-            }
+            )}
           </div>
-        }
+        )}
       </Transition>
     )
   }

@@ -5,29 +5,29 @@ import Aside from './Aside'
 
 const presets = [
   {
+    date: () => null,
     key: 'single',
     label: 'single',
-    date: () => null,
     mode: 'single',
   },
   {
+    date: () => null,
     key: 'period',
     label: 'period',
-    date: () => null,
     mode: 'period',
   },
   {
     key: 'last',
     label: 'last',
-    mode: 'period',
     list: [
       {
+        date: () => -7,
         key: 'last-7',
         label: 'last 7',
-        date: () => -7,
         mode: 'period',
       },
     ],
+    mode: 'period',
   },
 ]
 

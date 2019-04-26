@@ -1,6 +1,11 @@
 import React from 'react'
-import { cleanup, fireEvent, render, wait } from 'react-testing-library'
-import Snackbar from '../Snackbar/'
+import {
+  cleanup,
+  fireEvent,
+  render,
+  wait,
+} from 'react-testing-library'
+import Snackbar from '.'
 import ThemeProvider from '../ThemeProvider'
 
 const theme = {
@@ -18,8 +23,10 @@ const renderWithProvider = component => render(
   <ThemeProvider theme={theme}>{component}</ThemeProvider>
 )
 
-const waitExpect = (callback, timeMs = 500) =>
-  wait(callback, { timeout: timeMs })
+const waitExpect = (callback, timeMs = 500) => wait(
+  callback,
+  { timeout: timeMs }
+)
 
 describe('snackbar', () => {
   afterEach(cleanup)

@@ -32,6 +32,7 @@ class Aside extends Component {
   renderRadio ({ date, key, label }) {
     const {
       name,
+      onChange,
       selectedPreset,
     } = this.props
 
@@ -45,7 +46,7 @@ class Aside extends Component {
           name={name}
           id={id}
           checked={selectedPreset && selectedPreset === key}
-          onChange={() => this.props.onChange(date(), key)}
+          onChange={() => onChange(date(), key)}
         />
         <label htmlFor={id}>
           {label}
@@ -57,8 +58,8 @@ class Aside extends Component {
   renderPresets (namedPresets) {
     return namedPresets.map(({
       date,
-      label,
       key,
+      label,
       list,
     }) => {
       if (list) {
@@ -91,23 +92,9 @@ class Aside extends Component {
 
 Aside.propTypes = {
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
-   */
-  theme: PropType.shape({
-    actions: PropType.string,
-    container: PropType.string,
-    selectedDays: PropType.string,
-    sidebar: PropType.string,
-    stage: PropType.string,
-  }),
-  /**
    * The name to be used on every rendered radio.
    */
   name: PropType.string.isRequired,
-  /**
-   * First radio id to be selected.
-   */
-  selectedPreset: PropType.string,
   /**
    * Triggers when another preset is selected.
    */
@@ -118,14 +105,6 @@ Aside.propTypes = {
   presets: PropType.arrayOf(
     PropType.shape({
       /**
-       * Preset label to be presented with the radio.
-       */
-      label: PropType.string.isRequired,
-      /**
-       * Preset identifier, must be unique.
-       */
-      key: PropType.string.isRequired,
-      /**
        * Preset date to return. Must be a function that return one
        * of the following values:
        * - zero for current day
@@ -135,26 +114,48 @@ Aside.propTypes = {
        */
       date: PropType.func,
       /**
+       * Preset identifier, must be unique.
+       */
+      key: PropType.string.isRequired,
+      /**
+       * Preset label to be presented with the radio.
+       */
+      label: PropType.string.isRequired,
+      /**
        * Preset can be a list of dates, this prop must be used on this case.
        */
       list: PropType.arrayOf(
         PropType.shape({
           /**
-           * Preset label to be presented with the radio.
+           * Preset date to return.
            */
-          label: PropType.string.isRequired,
+          date: PropType.func,
           /**
            * Preset identifier, must be unique.
            */
           key: PropType.string.isRequired,
           /**
-           * Preset date to return.
+           * Preset label to be presented with the radio.
            */
-          date: PropType.func,
+          label: PropType.string.isRequired,
         })
       ),
     })
   ).isRequired,
+  /**
+   * First radio id to be selected.
+   */
+  selectedPreset: PropType.string,
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
+   */
+  theme: PropType.shape({
+    actions: PropType.string,
+    container: PropType.string,
+    selectedDays: PropType.string,
+    sidebar: PropType.string,
+    stage: PropType.string,
+  }),
 }
 
 Aside.defaultProps = {

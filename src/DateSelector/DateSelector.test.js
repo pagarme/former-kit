@@ -11,41 +11,41 @@ import DateSelector from './index'
 
 const presets = [
   {
+    date: () => 0,
     key: 'today',
     label: 'today',
-    date: () => 0,
     mode: 'single',
   },
   {
+    date: () => null,
     key: 'single',
     label: 'single',
-    date: () => null,
     mode: 'single',
   },
   {
+    date: () => null,
     key: 'period',
     label: 'period',
-    date: () => null,
     mode: 'period',
   },
   {
     key: 'last',
     label: 'last',
-    mode: 'period',
     list: [
       {
+        date: () => -7,
         key: 'last-7',
         label: 'last 7',
-        date: () => -7,
         mode: 'period',
       },
     ],
+    mode: 'period',
   },
 ]
 
 const defaultDates = {
-  start: moment(),
   end: moment(),
+  start: moment(),
 }
 
 class RenderWithButtons extends React.Component {
@@ -60,28 +60,43 @@ class RenderWithButtons extends React.Component {
   }
 
   toggleVisible () {
+    const { visible } = this.state
     this.setState({
-      visible: !this.state.visible,
+      visible: !visible,
     })
   }
 
   render () {
+    const { visible } = this.state
     return (
       <div>
-        <button id="close-button" onClick={this.toggleVisible}>Close!</button>
+        <button
+          id="close-button"
+          onClick={this.toggleVisible}
+          type="button"
+        >
+          Close!
+        </button>
         <DateSelector
           {...this.props}
-          visible={this.state.visible}
+          visible={visible}
         >
-          <button id="open-button" onClick={this.toggleVisible}>Open!</button>
+          <button
+            id="open-button"
+            onClick={this.toggleVisible}
+            type="button"
+          >
+            Open!
+          </button>
         </DateSelector>
       </div>
     )
   }
 }
 
-const waitForPopover = container =>
-  waitForElement(() => container.querySelector('.ReactDates-overrides'))
+const waitForPopover = container => waitForElement(
+  () => container.querySelector('.ReactDates-overrides')
+)
 
 describe('DateSelector', () => {
   afterEach(cleanup)

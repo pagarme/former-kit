@@ -2,24 +2,24 @@ import moment from 'moment'
 
 export default function normalizeDates (dates) {
   if (!dates) {
-    return { start: null, end: null }
+    return { end: null, start: null }
   }
 
   if (moment.isMoment(dates)) {
     return {
-      start: dates.startOf('day'),
       end: dates.endOf('day'),
+      start: dates.startOf('day'),
     }
   }
 
   let normal = {
-    start: dates.start || null,
     end: dates.end || null,
+    start: dates.start || null,
   }
 
   normal = {
-    start: dates.start ? moment(normal.start).startOf('day') : null,
     end: dates.end ? moment(normal.end).endOf('day') : null,
+    start: dates.start ? moment(normal.start).startOf('day') : null,
   }
 
   return normal

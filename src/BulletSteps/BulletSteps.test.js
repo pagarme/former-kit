@@ -1,7 +1,7 @@
 import React from 'react'
 import { mount } from 'enzyme'
 
-import BulletSteps from './'
+import BulletSteps from '.'
 import BulletStep from './BulletStep'
 
 const Component = () => (

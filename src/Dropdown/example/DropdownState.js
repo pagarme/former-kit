@@ -21,17 +21,25 @@ class DropdownState extends React.Component {
   }
 
   render () {
-    return this.props.type !== 'form'
+    const {
+      disabled,
+      error,
+      placeholder,
+      size,
+      type,
+    } = this.props
+    const { selected } = this.state
+    return type !== 'form'
       ? (
         <DropdownDefault
           options={options}
           name="things"
           onChange={value => this.setState({ selected: value })}
-          value={this.state.selected}
-          disabled={this.props.disabled}
-          placeholder={this.props.placeholder}
-          error={this.props.error}
-          size={this.props.size}
+          value={selected}
+          disabled={disabled}
+          placeholder={placeholder}
+          error={error}
+          size={size}
         />
       )
       : (
@@ -39,10 +47,10 @@ class DropdownState extends React.Component {
           options={options}
           name="things"
           onChange={event => this.setState({ selected: event.target.value })}
-          value={this.state.selected}
-          disabled={this.props.disabled}
-          placeholder={this.props.placeholder}
-          error={this.props.error}
+          value={selected}
+          disabled={disabled}
+          placeholder={placeholder}
+          error={error}
         />
       )
   }

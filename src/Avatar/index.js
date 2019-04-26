@@ -21,11 +21,11 @@ const Avatar = ({
   <Image
     alt={alt}
     className={theme.avatar}
-    fallback={
+    fallback={(
       <div className={classNames(theme.avatar, theme.placeholder)}>
         { icons.placeholder }
       </div>
-    }
+    )}
     height={size}
     source={photo}
     width={size}

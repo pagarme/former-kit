@@ -12,14 +12,14 @@ import classNames from 'classnames'
  * element, but with an awesome skin.
  */
 const Checkbox = ({
+  checked,
   disabled,
   error,
-  checked,
+  label,
   name,
+  onChange,
   theme,
   value,
-  onChange,
-  label,
 }) => {
   const containerClass = classNames(
     theme.checkbox,
@@ -52,27 +52,14 @@ const Checkbox = ({
         </span>
       </label>
 
-      {error &&
-        <p className={theme.secondaryText}>
-          {error}
-        </p>
-      }
+      {error && (
+        <p className={theme.secondaryText}>{error}</p>
+      )}
     </div>
   )
 }
 
 Checkbox.propTypes = {
-  /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
-   */
-  theme: shape({
-    checkbox: string,
-    check: string,
-    disabled: string,
-    error: string,
-    label: string,
-    secondaryText: string,
-  }),
   /**
    * Same as the `checked` value prop from the HTML checkbox.
    */
@@ -98,15 +85,26 @@ Checkbox.propTypes = {
    */
   onChange: func.isRequired,
   /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
+   */
+  theme: shape({
+    check: string,
+    checkbox: string,
+    disabled: string,
+    error: string,
+    label: string,
+    secondaryText: string,
+  }),
+  /**
    * Same as the native `value` prop from the HTML checkbox.
    */
   value: string.isRequired,
 }
 
 Checkbox.defaultProps = {
-  theme: {},
   disabled: false,
   error: '',
+  theme: {},
 }
 
 export default Checkbox

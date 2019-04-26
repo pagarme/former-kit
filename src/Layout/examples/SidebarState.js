@@ -14,14 +14,14 @@ import {
 
 const items = [
   {
-    value: 'my-account',
-    title: 'My Account',
     icon: <IconHome width={16} height={16} />,
+    title: 'My Account',
+    value: 'my-account',
   },
   {
-    value: 'transactions',
-    title: 'Transactions',
     icon: <IconTransaction width={16} height={16} />,
+    title: 'Transactions',
+    value: 'transactions',
   },
 ]
 
@@ -32,27 +32,31 @@ class SidebarState extends React.Component {
     this.id = shortid.generate()
 
     this.state = {
-      collapsed: false,
       active: '',
+      collapsed: false,
     }
   }
 
   render () {
     const {
+      active,
       collapsed,
     } = this.state
 
     return (
       <Sidebar collapsed={collapsed}>
         <SidebarHeader>
-          {!collapsed &&
+          {!collapsed && (
             <img
+              alt="sidebar logo"
               src="https://pagar.me/wp-content/uploads/2018/04/logo_pagarme.svg"
               width={120}
-              alt="sidebar logo"
             />
-          }
-          <button onClick={() => this.setState({ collapsed: !collapsed })}>
+          )}
+          <button
+            onClick={() => this.setState({ collapsed: !collapsed })}
+            type="button"
+          >
             <IconMenu width="16" height="16" />
           </button>
         </SidebarHeader>
@@ -62,7 +66,7 @@ class SidebarState extends React.Component {
             <SidebarLink
               key={item.value}
               title={item.title}
-              active={item.value === this.state.active}
+              active={item.value === active}
               onClick={() => this.setState({ active: item.value })}
               icon={item.icon}
               collapsed={collapsed}

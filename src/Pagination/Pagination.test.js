@@ -4,8 +4,8 @@ import { render } from 'react-testing-library'
 import Pagination from './index'
 
 const icons = {
-  previous: <svg />,
   next: <svg />,
+  previous: <svg />,
 }
 
 describe('Pagination', () => {
@@ -325,7 +325,6 @@ describe('Pagination', () => {
     input.simulate('keydown', { key: 'Enter' })
     input.simulate('keydown', { key: 'Enter' })
     input.simulate('keydown', { key: 'Enter' })
-
 
     input = component.find('input').first()
 

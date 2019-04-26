@@ -36,7 +36,7 @@ class TableHead extends Component {
   }
 
   getOrderIcon (order) {
-    const { ascending, descending } = this.props.icons
+    const { icons: { ascending, descending } } = this.props
 
     if (isAscending(order)) {
       return ascending
@@ -46,7 +46,8 @@ class TableHead extends Component {
   }
 
   handleOrderChange (index) {
-    this.props.onOrderChange(index)
+    const { onOrderChange } = this.props
+    onOrderChange(index)
   }
 
   validateSelectedColumn (columnIndex) {
@@ -59,12 +60,11 @@ class TableHead extends Component {
   }
 
   renderColumn ({
-    orderable,
     isAction,
+    orderable,
     title,
   },
-  index
-  ) {
+  index) {
     const {
       align,
       disabled,
@@ -92,11 +92,11 @@ class TableHead extends Component {
         >
           <div
             className={classNames(
-                {
-                  [theme[`${align}Align`]]: !orderable,
-                },
-                theme.tableHeadItem
-              )}
+              {
+                [theme[`${align}Align`]]: !orderable,
+              },
+              theme.tableHeadItem
+            )}
           >
             {title}
           </div>
@@ -104,10 +104,9 @@ class TableHead extends Component {
       )
     }
 
-    const thProps = disabled || not(onOrderChange) ? {} :
-      {
-        onClick: () => this.handleOrderChange(index),
-      }
+    const thProps = disabled || not(onOrderChange)
+      ? {}
+      : { onClick: () => this.handleOrderChange(index) }
 
     return (
       <th
@@ -118,14 +117,8 @@ class TableHead extends Component {
         <div className={theme.tableHeadItem}>
           <span> {title} </span>
           <span className={theme.unselectable}>
-            {
-              selected &&
-              this.getOrderIcon(order)
-            }
-            {
-              !selected &&
-              icons.orderable
-            }
+            {selected && this.getOrderIcon(order)}
+            {!selected && icons.orderable}
           </span>
         </div>
       </th>
@@ -147,24 +140,22 @@ class TableHead extends Component {
       <thead className={theme.tableHead}>
         <tr>
           {
-            selectable &&
-            <th className={theme.check}>
-              <Checkbox
-                checked={selected}
-                disabled={disabled}
-                id={this.checkboxId}
-                label=""
-                name="all"
-                onChange={onSelect}
-                value="all"
-              />
-            </th>
+            selectable && (
+              <th className={theme.check}>
+                <Checkbox
+                  checked={selected}
+                  disabled={disabled}
+                  id={this.checkboxId}
+                  label=""
+                  name="all"
+                  onChange={onSelect}
+                  value="all"
+                />
+              </th>
+            )
           }
           {columns.map(this.renderColumn)}
-          {
-            expandable &&
-            <th className={theme.open} />
-          }
+          {expandable && <th className={theme.open} />}
         </tr>
       </thead>
     )
@@ -172,18 +163,6 @@ class TableHead extends Component {
 }
 
 TableHead.propTypes = {
-  /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
-   */
-  theme: shape({
-    ascending: string,
-    descending: string,
-    disabled: string,
-    open: string,
-    tableHeadItem: string,
-    unselectable: string,
-    tableHead: string,
-  }),
   /**
    * It defines the cell's content alignment.
   */
@@ -200,6 +179,17 @@ TableHead.propTypes = {
       string,
       arrayOf(string),
     ]),
+    /**
+     * Function responsible for creating a cell component to be added to the total
+     * row in the footer, works like the renderer prop.
+     * @param {object} row - all row data.
+     */
+    aggregationRenderer: func,
+    /**
+     * Text which will be used as title in the footer total row, when this prop is received
+     * the aggregator and aggregationRenderer props are ignored.
+     */
+    aggregationTitle: string,
     /**
      * Pure function which will receive the total accumulated and the current cell value.
      * Its return will be rendered in the total row in the footer or it will
@@ -231,17 +221,6 @@ TableHead.propTypes = {
      * column data in the expandable rows.
      */
     title: string.isRequired,
-    /**
-     * Function responsible for creating a cell component to be added to the total
-     * row in the footer, works like the renderer prop.
-     * @param {object} row - all row data.
-     */
-    aggregationRenderer: func,
-    /**
-     * Text which will be used as title in the footer total row, when this prop is received
-     * the aggregator and aggregationRenderer props are ignored.
-     */
-    aggregationTitle: string,
   })).isRequired,
   /**
    * It disables the click on orderable columns.
@@ -284,6 +263,18 @@ TableHead.propTypes = {
    * Selectable column checkbox state.
    */
   selected: bool,
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
+   */
+  theme: shape({
+    ascending: string,
+    descending: string,
+    disabled: string,
+    open: string,
+    tableHead: string,
+    tableHeadItem: string,
+    unselectable: string,
+  }),
 }
 
 TableHead.defaultProps = {

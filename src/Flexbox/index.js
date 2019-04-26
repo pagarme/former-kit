@@ -14,22 +14,22 @@ const Flexbox = ({
   theme,
 }) => (
   <div className={classNames(theme.flexbox, className, {
-      [theme.alignCenter]: alignItems === 'center',
-      [theme.alignFlexEnd]: alignItems === 'flex-end',
-      [theme.alignFlexStart]: alignItems === 'flex-start',
-      [theme.baseline]: alignItems === 'baseline',
-      [theme.column]: direction === 'column',
-      [theme.columnReverse]: direction === 'column-reverse',
-      [theme.justifyCenter]: justifyContent === 'center',
-      [theme.justifyFlexEnd]: justifyContent === 'flex-end',
-      [theme.justifyFlexStart]: justifyContent === 'flex-start',
-      [theme.row]: direction === 'row',
-      [theme.rowReverse]: direction === 'row-reverse',
-      [theme.spaceAround]: justifyContent === 'space-around',
-      [theme.spaceBetween]: justifyContent === 'space-between',
-      [theme.spaceEvenly]: justifyContent === 'space-evenly',
-      [theme.stretch]: alignItems === 'stretch',
-    })}
+    [theme.alignCenter]: alignItems === 'center',
+    [theme.alignFlexEnd]: alignItems === 'flex-end',
+    [theme.alignFlexStart]: alignItems === 'flex-start',
+    [theme.baseline]: alignItems === 'baseline',
+    [theme.column]: direction === 'column',
+    [theme.columnReverse]: direction === 'column-reverse',
+    [theme.justifyCenter]: justifyContent === 'center',
+    [theme.justifyFlexEnd]: justifyContent === 'flex-end',
+    [theme.justifyFlexStart]: justifyContent === 'flex-start',
+    [theme.row]: direction === 'row',
+    [theme.rowReverse]: direction === 'row-reverse',
+    [theme.spaceAround]: justifyContent === 'space-around',
+    [theme.spaceBetween]: justifyContent === 'space-between',
+    [theme.spaceEvenly]: justifyContent === 'space-evenly',
+    [theme.stretch]: alignItems === 'stretch',
+  })}
   >
     {children}
   </div>

@@ -16,6 +16,11 @@ const HeaderTitle = ({
 
 HeaderTitle.propTypes = {
   /**
+   * The children can contain any kind of element.
+   * It will probably be a string.
+   */
+  children: PropTypes.node.isRequired,
+  /**
    * The style classes for this element.
    */
   theme: PropTypes.shape({
@@ -24,11 +29,6 @@ HeaderTitle.propTypes = {
      */
     title: PropTypes.string,
   }),
-  /**
-   * The children can contain any kind of element.
-   * It will probably be a string.
-   */
-  children: PropTypes.node.isRequired,
 }
 
 HeaderTitle.defaultProps = {

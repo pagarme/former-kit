@@ -14,8 +14,8 @@ jest.mock(
     const newText = text.replace(lastCharsRegex, ellipsis)
 
     return {
-      newText,
       isTruncated: true,
+      newText,
     }
   })
 )
@@ -42,13 +42,13 @@ describe('Truncate', () => {
   it('when is singleline', async () => {
     const { container } = renderWithProvider(
       <div style={{
-          border: '1px solid',
-          height: '20px',
-          position: 'absolute',
-          width: '200px',
-          left: 0,
-          top: 0,
-        }}
+        border: '1px solid',
+        height: '20px',
+        left: 0,
+        position: 'absolute',
+        top: 0,
+        width: '200px',
+      }}
       >
         <Truncate text={originalText} />
       </div>
@@ -67,10 +67,10 @@ describe('Truncate', () => {
         style={{
           border: '1px solid',
           height: '100px',
-          position: 'absolute',
-          width: '200px',
           left: 0,
+          position: 'absolute',
           top: 0,
+          width: '200px',
         }}
       >
         <Truncate

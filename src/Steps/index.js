@@ -31,14 +31,6 @@ const Steps = ({
 
 Steps.propTypes = {
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
-   */
-  theme: PropTypes.shape({
-    indicator: PropTypes.string,
-    step: PropTypes.string,
-    steps: PropTypes.string,
-  }),
-  /**
    * Status of each step.
    */
   status: PropTypes.arrayOf(PropTypes.shape({
@@ -69,6 +61,14 @@ Steps.propTypes = {
      */
     title: PropTypes.string,
   })).isRequired,
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
+   */
+  theme: PropTypes.shape({
+    indicator: PropTypes.string,
+    step: PropTypes.string,
+    steps: PropTypes.string,
+  }),
 }
 
 Steps.defaultProps = {

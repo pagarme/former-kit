@@ -1,6 +1,7 @@
 import { isMoment } from 'moment'
 
 export default (props, propName) => {
+  // eslint-disable-next-line react/destructuring-assignment
   const propValue = props[propName]
 
   if (propValue && !isMoment(propValue)) {

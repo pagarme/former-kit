@@ -18,8 +18,8 @@ const Spacing = ({
   theme,
 }) => (
   <div className={classNames(theme.spacing, {
-      [theme[size]]: size,
-    })}
+    [theme[size]]: size,
+  })}
   />
 )
 

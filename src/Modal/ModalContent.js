@@ -7,7 +7,7 @@ const consumeTheme = ThemeConsumer('UIModal')
 /**
  * Component that organizes its children in the middle of the Modal component.
  */
-const ModalContent = ({ theme, children }) => (
+const ModalContent = ({ children, theme }) => (
   <div className={theme.content}>
     {children}
   </div>
@@ -15,15 +15,15 @@ const ModalContent = ({ theme, children }) => (
 
 ModalContent.propTypes = {
   /**
+   * Set of React elements which will be rendered inside the component.
+   */
+  children: PropTypes.node.isRequired,
+  /**
    * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: PropTypes.shape({
     content: PropTypes.string,
   }),
-  /**
-   * Set of React elements which will be rendered inside the component.
-   */
-  children: PropTypes.node.isRequired,
 }
 
 ModalContent.defaultProps = {

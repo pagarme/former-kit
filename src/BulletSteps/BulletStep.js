@@ -12,14 +12,6 @@ const BulletStep = ({ status, theme }) => (
 
 BulletStep.propTypes = {
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
-   */
-  theme: PropTypes.shape({
-    indicator: PropTypes.string,
-    status: PropTypes.string,
-    step: PropTypes.string,
-  }),
-  /**
    * Status of each step.
    */
   status: PropTypes.oneOf([
@@ -27,6 +19,14 @@ BulletStep.propTypes = {
     'current',
     'next',
   ]).isRequired,
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
+   */
+  theme: PropTypes.shape({
+    indicator: PropTypes.string,
+    status: PropTypes.string,
+    step: PropTypes.string,
+  }),
 }
 
 BulletStep.defaultProps = {

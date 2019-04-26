@@ -9,19 +9,19 @@ const springOptions = {
 }
 
 const enterStyles = {
+  opacity: 0,
   width: 0,
   zIndex: 10,
-  opacity: 0,
 }
 
 const activeStyles = {
-  width: 100,
   opacity: 1,
+  width: 100,
 }
 
 const leaveStyles = {
-  width: 15,
   opacity: 0,
+  width: 15,
 }
 
 describe('Legend', () => {
@@ -35,7 +35,7 @@ describe('Legend', () => {
         mapStyles={mapStyles}
         springOptions={springOptions}
       >
-        <div key="overlay" >
+        <div key="overlay">
           <div>
             <h3>Loading</h3>
           </div>
@@ -55,7 +55,7 @@ describe('Legend', () => {
         runOnMount
         springOptions={springOptions}
       >
-        <div key="overlay" >
+        <div key="overlay">
           <div>
             <h3>Loading</h3>
           </div>

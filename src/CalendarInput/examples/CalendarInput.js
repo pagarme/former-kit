@@ -4,8 +4,9 @@ import { complement, contains } from 'ramda'
 import IconCalendar from 'emblematic-icons/svg/Calendar32.svg'
 import CalendarInput from '../index'
 
-const isWeekendDay = date =>
-  date && date.weekday && contains(date.weekday(), [0, 6])
+const isWeekendDay = date => date
+  && date.weekday
+  && contains(date.weekday(), [0, 6])
 
 const isWeekDay = complement(isWeekendDay)
 
@@ -38,6 +39,7 @@ class CalendarInputExample extends Component {
       months,
       selection,
     } = this.props
+    const { value } = this.state
     return (
       <CalendarInput
         dateSelection={selection}
@@ -50,7 +52,7 @@ class CalendarInputExample extends Component {
           select: 'Select a date',
           start: 'Initial',
         }}
-        value={this.state.value}
+        value={value}
       />
     )
   }

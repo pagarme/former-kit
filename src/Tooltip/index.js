@@ -69,14 +69,14 @@ class Tooltip extends Component {
       >
         { children }
 
-        {visible &&
+        {visible && (
           <div
             className={classNames(theme.tooltip, theme[placement])}
             role="tooltip"
           >
             {content}
           </div>
-        }
+        )}
       </div>
     )
   }

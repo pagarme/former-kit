@@ -8,40 +8,40 @@ export default function normalizeDates (dates) {
   if (isNumber(dates)) {
     if (dates === 0) {
       return {
-        start: moment().startOf('day'),
         end: moment().add(dates, 'day').endOf('day'),
+        start: moment().startOf('day'),
       }
     }
 
     if (dates > 0) {
       return {
-        start: moment().startOf('day'),
         end: moment().add(dates, 'day').endOf('day'),
+        start: moment().startOf('day'),
       }
     }
 
     if (dates < 0) {
       return {
-        start: moment().add(dates, 'day').startOf('day'),
         end: moment().endOf('day'),
+        start: moment().add(dates, 'day').startOf('day'),
       }
     }
   }
 
   if (!dates) {
-    return { start: null, end: null }
+    return { end: null, start: null }
   }
 
   if (moment.isMoment(dates)) {
     return {
-      start: dates.startOf('day'),
       end: dates.endOf('day'),
+      start: dates.startOf('day'),
     }
   }
 
   const normal = {
-    start: null,
     end: null,
+    start: null,
   }
 
   if (dates.start) {

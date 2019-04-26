@@ -42,7 +42,6 @@ const normalizeRendererResult = pipe(
   )
 )
 
-
 class TableExpandedRow extends PureComponent {
   constructor (props) {
     super(props)
@@ -54,7 +53,7 @@ class TableExpandedRow extends PureComponent {
   }
 
   getColspan () {
-    const { selectable, maxColumns } = this.props
+    const { maxColumns, selectable } = this.props
 
     if (selectable) {
       return maxColumns + 2
@@ -64,12 +63,12 @@ class TableExpandedRow extends PureComponent {
   }
 
   handleMouseEnter () {
-    const { onMouseEnter, index } = this.props
+    const { index, onMouseEnter } = this.props
     onMouseEnter(index)
   }
 
   handleMouseLeave () {
-    const { onMouseLeave, index } = this.props
+    const { index, onMouseLeave } = this.props
     onMouseLeave(index)
   }
 
@@ -81,10 +80,7 @@ class TableExpandedRow extends PureComponent {
           title={column.title}
           text={path(column.accessor, data)}
         >
-          {
-            column.renderer &&
-            normalizeRendererResult(column.renderer, data)
-          }
+          {column.renderer && normalizeRendererResult(column.renderer, data)}
         </TableExpandedItem>
 
       </li>
@@ -118,8 +114,9 @@ class TableExpandedRow extends PureComponent {
         [theme.disabled]: disabled,
       }
     )
-    const trProps = disabled ? {} :
-      {
+    const trProps = disabled
+      ? {}
+      : {
         onMouseEnter: this.handleMouseEnter,
         onMouseLeave: this.handleMouseLeave,
       }
@@ -136,16 +133,17 @@ class TableExpandedRow extends PureComponent {
               {cols}
             </ul>
             {
-              !isEmpty(actions) &&
-              <div className={
-                  classNames(
-                    theme.expandableActions,
-                    theme.unselectable
-                  )
-                }
-              >
-                {actions}
-              </div>
+              !isEmpty(actions) && (
+                <div className={
+                    classNames(
+                      theme.expandableActions,
+                      theme.unselectable
+                    )
+                  }
+                >
+                  {actions}
+                </div>
+              )
             }
           </div>
         </td>
@@ -156,16 +154,6 @@ class TableExpandedRow extends PureComponent {
 
 TableExpandedRow.propTypes = {
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
-   */
-  theme: shape({
-    disabled: string,
-    even: string,
-    expandable: string,
-    odd: string,
-    tableRow: string,
-  }),
-  /**
    * Aditional CSS classes which can be applyed to the expanded row.
    */
   className: string,
@@ -174,12 +162,12 @@ TableExpandedRow.propTypes = {
    * These columns are the columns which are not shown in the table.
    */
   columns: arrayOf(shape({
-    title: string.isRequired,
     accessor: oneOfType([
       string,
       arrayOf(string),
     ]),
     renderer: func,
+    title: string.isRequired,
   })).isRequired,
   /**
    * Set of data native of row data from the table.
@@ -217,13 +205,23 @@ TableExpandedRow.propTypes = {
    * many or all of the rows.
    */
   selectable: bool,
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
+   */
+  theme: shape({
+    disabled: string,
+    even: string,
+    expandable: string,
+    odd: string,
+    tableRow: string,
+  }),
 }
 
 TableExpandedRow.defaultProps = {
   className: '',
   disabled: false,
-  parity: '',
   maxColumns: 7,
+  parity: '',
   selectable: false,
   theme: {},
 }

@@ -50,8 +50,10 @@ const START_DATE = 'startDate'
 
 const isOutsideRange = limits => complement(validateDate(limits))
 
-const validateVisibleMonths = (currentMonth, months) =>
-  times(add(currentMonth), months)
+const validateVisibleMonths = (currentMonth, months) => times(
+  add(currentMonth),
+  months
+)
 
 /**
  * Custom calendar based on `react-dates` from airbnb with a simple interface.
@@ -87,8 +89,8 @@ class Calendar extends Component {
 
   handleDatesChange (dates) {
     const normalizedDates = normalizeDates(dates)
-
-    this.props.onChange(normalizedDates)
+    const { onChange } = this.props
+    onChange(normalizedDates)
   }
 
   handleFocusChange (focusedInput) {
@@ -107,13 +109,14 @@ class Calendar extends Component {
 
   render () {
     const {
+      dateSelection,
       dates,
       icons,
-      months,
-      dateSelection,
       limits,
+      months,
     } = this.props
-    const { start, end } = dates || {}
+    const { focusedInput } = this.state
+    const { end, start } = dates || {}
     const extraProps = getExtraProps(this.props)
 
     return (
@@ -138,7 +141,7 @@ class Calendar extends Component {
               {...extraProps}
               daySize={40}
               endDate={end}
-              focusedInput={this.state.focusedInput}
+              focusedInput={focusedInput}
               hideKeyboardShortcutsPanel
               isOutsideRange={isOutsideRange(limits)}
               navNext={icons.nextMonth}

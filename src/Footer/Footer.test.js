@@ -5,20 +5,20 @@ import Footer from './index'
 
 const links = [
   {
+    onClick: () => null,
     title: 'Documentação',
-    onClick: () => null,
   },
   {
+    onClick: () => null,
     title: 'Suporte',
-    onClick: () => null,
   },
   {
+    onClick: () => null,
     title: 'Política de Privacidade',
-    onClick: () => null,
   },
   {
-    title: 'Contato',
     onClick: () => null,
+    title: 'Contato',
   },
 ]
 
@@ -28,9 +28,9 @@ describe('Footer', () => {
       <Footer
         links={links}
       >
-        <button onClick={() => null}><svg /></button>
-        <button onClick={() => null}><svg /></button>
-        <button onClick={() => null}><svg /></button>
+        <button onClick={() => null} type="button"><svg /></button>
+        <button onClick={() => null} type="button"><svg /></button>
+        <button onClick={() => null} type="button"><svg /></button>
       </Footer>
     )
   })
@@ -40,9 +40,9 @@ describe('Footer', () => {
       <Footer
         links={links}
       >
-        <button onClick={() => null}><svg /></button>
-        <button onClick={() => null}><svg /></button>
-        <button onClick={() => null}><svg /></button>
+        <button onClick={() => null} type="button"><svg /></button>
+        <button onClick={() => null} type="button"><svg /></button>
+        <button onClick={() => null} type="button"><svg /></button>
       </Footer>
     )
 

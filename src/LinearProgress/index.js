@@ -60,14 +60,12 @@ const LinearProgress = ({
                   aria-valuemax="100"
                 />
               </div>
-              {label &&
+              {label && (
                 <div
                   className={classNames(
                     theme.number,
-                    (percentageNumber >= 1) &&
-                      theme.filledLabel
-                    )
-                  }
+                    (percentageNumber >= 1) && theme.filledLabel
+                  )}
                   style={{
                     width: (percentageNumber > 94) ? '100%' : percentage,
                   }}
@@ -83,7 +81,7 @@ const LinearProgress = ({
                     }
                   </div>
                 </div>
-              }
+              )}
             </Fragment>
           )
         }}
@@ -93,17 +91,6 @@ const LinearProgress = ({
 }
 
 LinearProgress.propTypes = {
-  /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
-   */
-  theme: PropTypes.shape({
-    background: PropTypes.string,
-    disabled: PropTypes.string,
-    fill: PropTypes.string,
-    filledLabel: PropTypes.string,
-    linearProgress: PropTypes.string,
-    number: PropTypes.string,
-  }),
   /**
    * It disables/enables the component's functionality.
    */
@@ -120,6 +107,17 @@ LinearProgress.propTypes = {
    * It changes the component's label to a percentage number.
    */
   percent: PropTypes.bool,
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
+   */
+  theme: PropTypes.shape({
+    background: PropTypes.string,
+    disabled: PropTypes.string,
+    fill: PropTypes.string,
+    filledLabel: PropTypes.string,
+    linearProgress: PropTypes.string,
+    number: PropTypes.string,
+  }),
   /**
    * Value in the progress label.
    */

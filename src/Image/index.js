@@ -33,13 +33,13 @@ class Image extends Component {
       ],
       this.props
     )
-
+    const { errored } = this.state
     const {
       fallback,
       source,
     } = this.props
 
-    if (this.state.errored) {
+    if (errored) {
       return fallback
     }
 

@@ -1,33 +1,33 @@
 import React from 'react'
 import moment from 'moment'
 
-import DateSelector from '../'
+import DateSelector from '..'
 
 const presets = [
   {
-    title: 'Last:',
     items: [
       {
+        date: () => -7,
         key: 'last-7',
         title: '7 days',
-        date: () => -7,
       },
       {
+        date: () => -15,
         key: 'last-15',
         title: '15 days',
-        date: () => -15,
       },
       {
+        date: () => -30,
         key: 'last-30',
         title: '30 days',
-        date: () => -30,
       },
       {
+        date: () => -60,
         key: 'last-60',
         title: '60 days',
-        date: () => -60,
       },
     ],
+    title: 'Last:',
   },
 ]
 
@@ -37,8 +37,8 @@ class DateSelectorExample extends React.Component {
 
     this.state = {
       dates: {
-        start: moment(),
         end: moment(),
+        start: moment(),
       },
       focusedInput: 'startDate',
     }
@@ -66,19 +66,20 @@ class DateSelectorExample extends React.Component {
   handleCancel () {
     this.setState({
       dates: {
-        start: moment(),
         end: moment(),
+        start: moment(),
       },
     })
   }
 
   render () {
+    const { dates, focusedInput } = this.state
     return (
       <div>
         <DateSelector
           presets={presets}
-          dates={this.state.dates}
-          focusedInput={this.state.focusedInput}
+          dates={dates}
+          focusedInput={focusedInput}
           onFocusChange={this.handleFocusChange}
           onChange={this.handleChange}
           onConfirm={this.handleConfirm}
@@ -91,11 +92,11 @@ class DateSelectorExample extends React.Component {
           <div>
             <div>
               <b> Start: </b>
-              { moment(this.state.dates.start).format('DD/MM/YYYY') }
+              { moment(dates.start).format('DD/MM/YYYY') }
             </div>
             <div>
               <b> End: </b>
-              { moment(this.state.dates.end).format('DD/MM/YYYY') }
+              { moment(dates.end).format('DD/MM/YYYY') }
             </div>
           </div>
         </div>

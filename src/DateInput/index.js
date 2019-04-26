@@ -76,8 +76,8 @@ class DateInput extends React.Component {
     this.state = {
       dates,
       focusedInput: null,
-      selectionMode,
       selectedPreset: props.selectedPreset,
+      selectionMode,
     }
 
     this.name = shortid.generate()
@@ -96,6 +96,7 @@ class DateInput extends React.Component {
         end: receivedEnd,
         start: receivedStart,
       },
+      dates,
     } = this.props
 
     const {
@@ -110,7 +111,7 @@ class DateInput extends React.Component {
 
     if (!equals(prevProps, this.props) && (!isSameStart || !isSameEnd)) {
       this.setState({ // eslint-disable-line react/no-did-update-set-state
-        dates: momentToText(this.props.dates),
+        dates: momentToText(dates),
       })
     }
   }
@@ -135,8 +136,8 @@ class DateInput extends React.Component {
     const momentDates = textToMoment(value)
 
     const {
-      isValidStart,
       isValidEnd,
+      isValidStart,
     } = validateRange(limits, momentDates)
 
     if (isValidStart && isValidEnd && showPopover) {
@@ -154,7 +155,7 @@ class DateInput extends React.Component {
       focusedInput,
       selectionMode,
     } = this.state
-
+    const { onChange } = this.props
     this.setState({
       dates: momentToText(dates),
       focusedInput: selectionMode === 'period' && focusedInput === 'startDate'
@@ -162,7 +163,7 @@ class DateInput extends React.Component {
         : 'startDate',
     })
 
-    this.props.onChange(dates)
+    onChange(dates)
   }
 
   handleInputChange (field, event) {
@@ -170,62 +171,60 @@ class DateInput extends React.Component {
       limits,
       onChange,
     } = this.props
-
+    const { dates, selectionMode } = this.state
     const { target: { value } } = event
 
-    const dates = mergeRight(
-      this.state.dates,
+    const newDates = mergeRight(
+      dates,
       { [field]: value }
     )
 
-    if (this.state.selectionMode === 'single') {
-      dates.start = value
-      dates.end = value
+    if (selectionMode === 'single') {
+      newDates.start = value
+      newDates.end = value
     }
 
     this.setState({
-      dates,
+      dates: newDates,
       selectedPreset: '',
     })
 
-    const momentDates = textToMoment(dates)
-    const { isValidStart, isValidEnd } = validateRange(limits, momentDates)
+    const momentDates = textToMoment(newDates)
+    const { isValidEnd, isValidStart } = validateRange(limits, momentDates)
 
     if (isValidStart && isValidEnd) {
       onChange(momentDates)
     }
   }
 
-  handleInputFocus (focusedInput) {
-    const state = {
-      focusedInput,
-    }
+  handleInputFocus (newFocusedInput) {
+    const { focusedInput } = this.state
 
-    if (!this.state.showPopover) {
-      state.showPopover = true
-    }
-
-    if (this.state.focusedInput !== focusedInput) {
-      this.setState(state)
+    if (focusedInput !== newFocusedInput) {
+      this.setState({
+        focusedInput: newFocusedInput,
+        showPopover: true,
+      })
     }
   }
 
   handlePresetChange (dates, preset) {
+    const { onPresetChange } = this.props
     this.setState({
       dates: momentToText(dates),
       selectedPreset: preset.key,
       selectionMode: preset.mode,
     })
 
-    this.props.onPresetChange(dates, preset)
+    onPresetChange(dates, preset)
   }
 
   renderInputs () {
     const {
       icon,
       limits,
-      strings,
       showCalendar,
+      strings,
       theme,
     } = this.props
 
@@ -236,7 +235,7 @@ class DateInput extends React.Component {
     } = this.state
 
     const momentDates = textToMoment(dates)
-    const { isValidStart, isValidEnd } = validateRange(limits, momentDates)
+    const { isValidEnd, isValidStart } = validateRange(limits, momentDates)
 
     const translatedStrings = getStrings(strings)
 
@@ -255,9 +254,9 @@ class DateInput extends React.Component {
         )}
         <div
           className={startClasses({
-            theme,
             focusedInput,
             isValid: isValidStart,
+            theme,
           })}
         >
           <MaskedInput
@@ -278,16 +277,14 @@ class DateInput extends React.Component {
             {initialPlaceholder}
           </span>
         </div>
-        { selectionMode === 'period' &&
-          <div className={theme.separator} />
-        }
-        { selectionMode === 'period'
+        {selectionMode === 'period' && <div className={theme.separator} />}
+        {selectionMode === 'period'
           ? (
             <div
               className={endClasses({
-                theme,
                 focusedInput,
                 isValid: isValidEnd,
+                theme,
               })}
             >
               <MaskedInput
@@ -319,23 +316,23 @@ class DateInput extends React.Component {
       active,
       isValidDay,
       limits,
-      theme,
       presets,
       showCalendar,
       showSidebar,
       strings,
+      theme,
     } = this.props
 
     const {
       dates,
       focusedInput,
-      selectionMode,
       selectedPreset,
+      selectionMode,
       showPopover,
     } = this.state
 
     const momentDates = textToMoment(dates)
-    const { isValidStart, isValidEnd } = validateRange(limits, momentDates)
+    const { isValidEnd, isValidStart } = validateRange(limits, momentDates)
     const isValidDates = isValidStart && isValidEnd
 
     return (
@@ -356,10 +353,10 @@ class DateInput extends React.Component {
       >
         <div
           className={inputClasses({
-            theme,
             active,
             error: !isValidDates,
             focused: showCalendar,
+            theme,
           })}
         >
           {this.renderInputs()}
@@ -378,8 +375,8 @@ DateInput.propTypes = {
    * Initial dates to be pre selected.
    */
   dates: shape({
-    start: isMomentPropValidation,
     end: isMomentPropValidation,
+    start: isMomentPropValidation,
   }),
   /**
    * Custom icon which will be shown in the component left side.
@@ -420,13 +417,13 @@ DateInput.propTypes = {
    * @see [DateSelector](#dateselector)
    */
   presets: arrayOf(shape({
+    date: func,
     key: string.isRequired,
     label: string.isRequired,
-    date: func,
     list: arrayOf(shape({
+      date: func.isRequired,
       key: string.isRequired,
       label: string.isRequired,
-      date: func.isRequired,
     })),
   })),
   /**
@@ -438,6 +435,14 @@ DateInput.propTypes = {
   */
   selectionMode: oneOf(['single', 'period']),
   /**
+   * Show or hide DateSelector calendar.
+  */
+  showCalendar: bool,
+  /**
+   * Show or hide DateSelector sidebar.
+  */
+  showSidebar: bool,
+  /**
    * Strings for component i18n.
    */
   strings: shape({
@@ -447,14 +452,6 @@ DateInput.propTypes = {
     select: string,
     start: string,
   }),
-  /**
-   * Show or hide DateSelector calendar.
-  */
-  showCalendar: bool,
-  /**
-   * Show or hide DateSelector sidebar.
-  */
-  showSidebar: bool,
   /**
    * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
@@ -475,8 +472,8 @@ DateInput.propTypes = {
 DateInput.defaultProps = {
   active: false,
   dates: {
-    start: null,
     end: null,
+    start: null,
   },
   icon: null,
   isValidDay: null,
@@ -484,8 +481,8 @@ DateInput.defaultProps = {
     lower: moment('1900-01-01', 'YYYY-MM-DD'),
     upper: moment('2100-01-01', 'YYYY-MM-DD'),
   },
-  onConfirm: () => null,
   onChange: () => null,
+  onConfirm: () => null,
   onPresetChange: () => null,
   presets: [],
   selectedPreset: '',

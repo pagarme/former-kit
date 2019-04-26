@@ -37,7 +37,7 @@ class CheckboxGroup extends React.Component {
   }
 
   handleChange (toggled) {
-    const { disabled, value, onChange } = this.props
+    const { disabled, onChange, value } = this.props
 
     if (disabled) return
 
@@ -52,8 +52,8 @@ class CheckboxGroup extends React.Component {
 
   render () {
     const {
-      disabled,
       columns,
+      disabled,
       error,
       name,
       options,
@@ -74,55 +74,43 @@ class CheckboxGroup extends React.Component {
 
     const elementsByColumn = Math.ceil(options.length / columns)
 
-    const optionsSplitted =
-      splitEvery(elementsByColumn, options)
+    const optionsSplitted = splitEvery(elementsByColumn, options)
 
     const hashList = list => list.map(({ value: val }) => `${val}`).join('')
 
-    const checkboxes =
-      optionsSplitted.map(list => (
-        <div key={hashList(list)}>
-          {
-            list.map(({ value: checkboxValue, label }) => (
-              <Checkbox
-                key={`${name}-${checkboxValue}`}
-                name={`${name}-${checkboxValue}`}
-                id={`${name}-${checkboxValue}`}
-                value={checkboxValue}
-                label={label}
-                checked={contains(checkboxValue, value)}
-                onChange={partial(this.handleChange, [checkboxValue])}
-                disabled={disabled}
-              />
-            ))
-          }
-        </div>
-      ))
+    const checkboxes = optionsSplitted.map(list => (
+      <div key={hashList(list)}>
+        {
+          list.map(({ label, value: checkboxValue }) => (
+            <Checkbox
+              key={`${name}-${checkboxValue}`}
+              name={`${name}-${checkboxValue}`}
+              id={`${name}-${checkboxValue}`}
+              value={checkboxValue}
+              label={label}
+              checked={contains(checkboxValue, value)}
+              onChange={partial(this.handleChange, [checkboxValue])}
+              disabled={disabled}
+            />
+          ))
+        }
+      </div>
+    ))
 
     return (
       <div className={rootClassName}>
         <div>
           {checkboxes}
         </div>
-        {error &&
-          <p className={secondaryTextClass}>
-            {error}
-          </p>
-        }
+        {error && (
+          <p className={secondaryTextClass}>{error}</p>
+        )}
       </div>
     )
   }
 }
 
 CheckboxGroup.propTypes = {
-  /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
-   */
-  theme: PropTypes.shape({
-    checkboxGroup: PropTypes.string,
-    error: PropTypes.string,
-    secondaryText: PropTypes.string,
-  }),
   /**
    * The number of columns in which the list will be divided.
    * The groups disposition is in columns.
@@ -160,16 +148,24 @@ CheckboxGroup.propTypes = {
     value: PropTypes.string,
   })).isRequired,
   /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
+   */
+  theme: PropTypes.shape({
+    checkboxGroup: PropTypes.string,
+    error: PropTypes.string,
+    secondaryText: PropTypes.string,
+  }),
+  /**
    * List of checked options.
    */
   value: PropTypes.arrayOf(PropTypes.string),
 }
 
 CheckboxGroup.defaultProps = {
-  theme: {},
   columns: 1,
   disabled: false,
   error: '',
+  theme: {},
   value: [],
 }
 

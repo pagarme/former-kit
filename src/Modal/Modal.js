@@ -20,16 +20,16 @@ const Modal = ({
   <ReactModal
     appElement={document.body}
     className={{
-      base: theme.modal,
       afterOpen: theme.modalAfterOpen,
+      base: theme.modal,
       beforeClose: theme.modalBeforeClose,
     }}
     closeTimeoutMS={200}
     isOpen={isOpen}
     onRequestClose={onRequestClose}
     overlayClassName={{
-      base: theme.overlay,
       afterOpen: theme.overlayAfterOpen,
+      base: theme.overlay,
       beforeClose: theme.overlayBeforeClose,
     }}
     parentSelector={() => document.body}
@@ -40,18 +40,6 @@ const Modal = ({
 )
 
 Modal.propTypes = {
-  /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
-   */
-  theme: PropTypes.shape({
-    frame: PropTypes.string,
-    modal: PropTypes.string,
-    modalAfterOpen: PropTypes.string,
-    modalBeforeClose: PropTypes.string,
-    overlay: PropTypes.string,
-    overlayAfterOpen: PropTypes.string,
-    overlayBeforeClose: PropTypes.string,
-  }),
   /**
    * Set of React elements which will be rendered inside the modal.
    */
@@ -65,6 +53,18 @@ Modal.propTypes = {
    * @param event
    */
   onRequestClose: PropTypes.func,
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
+   */
+  theme: PropTypes.shape({
+    frame: PropTypes.string,
+    modal: PropTypes.string,
+    modalAfterOpen: PropTypes.string,
+    modalBeforeClose: PropTypes.string,
+    overlay: PropTypes.string,
+    overlayAfterOpen: PropTypes.string,
+    overlayBeforeClose: PropTypes.string,
+  }),
 }
 
 Modal.defaultProps = {

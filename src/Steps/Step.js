@@ -18,26 +18,17 @@ const Step = ({
     className={classNames(theme.step, theme[status])}
   >
     <span className={theme.indicator}>
-      {status === 'success' &&
-        <IconChecked width={12} height={12} />
-      }
-      {status === 'error' &&
-        <IconClose width={12} height={12} />
-      }
-      {!(['error', 'success'].includes(status)) &&
+      {status === 'success' && <IconChecked width={12} height={12} />}
+      {status === 'error' && <IconClose width={12} height={12} />}
+      {!(['error', 'success'].includes(status)) && (
         <span className={theme.number}>{number}</span>
-      }
+      )}
     </span>
     {title}
   </div>
 )
 
 Step.propTypes = {
-  theme: PropTypes.shape({
-    indicator: PropTypes.string,
-    number: PropTypes.string,
-    step: PropTypes.string,
-  }),
   number: PropTypes.number.isRequired,
   status: PropTypes.oneOf([
     'current',
@@ -45,12 +36,17 @@ Step.propTypes = {
     'pending',
     'success',
   ]),
+  theme: PropTypes.shape({
+    indicator: PropTypes.string,
+    number: PropTypes.string,
+    step: PropTypes.string,
+  }),
   title: PropTypes.string.isRequired,
 }
 
 Step.defaultProps = {
-  theme: {},
   status: null,
+  theme: {},
 }
 
 export default ConsumeTheme(Step)

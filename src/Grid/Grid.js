@@ -12,45 +12,38 @@ import ThemeConsumer from '../ThemeConsumer'
 const consumeTheme = ThemeConsumer('UIGrid')
 
 const classnames = ({
-  theme,
-  fullHeight,
   className,
-}) =>
-  classNames(
-    theme.grid,
-    className,
-    {
-      [theme.fullHeight]: fullHeight,
-    }
-  )
+  fullHeight,
+  theme,
+}) => classNames(
+  theme.grid,
+  className,
+  {
+    [theme.fullHeight]: fullHeight,
+  }
+)
 
 /**
  * Grid structure with 4 break points and a variable number of columns.
  * Useful for organizing content in a page.
  */
 const Grid = ({
-  theme,
   children,
   className,
   fullHeight,
+  theme,
 }) => (
   <div className={classnames({
-    theme,
     className,
     fullHeight,
-    })}
+    theme,
+  })}
   >
     {children}
   </div>
 )
 
 Grid.propTypes = {
-  /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
-   */
-  theme: shape({
-    grid: string,
-  }),
   /**
    * Sets of rows which will be rendered inside the grid.
    */
@@ -63,13 +56,19 @@ Grid.propTypes = {
    * The grid and their children will have the total height of its parent.
    */
   fullHeight: bool,
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
+   */
+  theme: shape({
+    grid: string,
+  }),
 }
 
 Grid.defaultProps = {
-  theme: {},
-  fullHeight: false,
   children: null,
   className: null,
+  fullHeight: false,
+  theme: {},
 }
 
 export default consumeTheme(Grid)

@@ -19,7 +19,7 @@ class CardSectionTitle extends Component {
   getArrowIcon () {
     const {
       collapsed,
-      icons: { expand, collapse },
+      icons: { collapse, expand },
     } = this.props
 
     if (collapsed) {
@@ -31,8 +31,8 @@ class CardSectionTitle extends Component {
 
   arrowUpDown () {
     const {
-      onClick,
       icons,
+      onClick,
       theme,
     } = this.props
 
@@ -49,10 +49,11 @@ class CardSectionTitle extends Component {
 
   handleClick () {
     const { collapsed } = this.state
+    const { onClick } = this.props
     this.setState({
       collapsed: !collapsed,
     })
-    this.props.onClick(!collapsed)
+    onClick(!collapsed)
   }
 
   render () {
@@ -88,14 +89,14 @@ class CardSectionTitle extends Component {
           {this.arrowUpDown()}
         </span>
         {
-          (typeof subtitle === 'string') &&
-          <span className={theme.sectionSubtitle}>
-            {subtitle}
-          </span>
+          (typeof subtitle === 'string') && (
+            <span className={theme.sectionSubtitle}>
+              {subtitle}
+            </span>
+          )
         }
         {
-          (typeof subtitle !== 'string') &&
-            subtitle
+          (typeof subtitle !== 'string') && subtitle
         }
       </div>
     )
@@ -103,27 +104,6 @@ class CardSectionTitle extends Component {
 }
 
 CardSectionTitle.propTypes = {
-  /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
-   */
-  theme: PropTypes.shape({
-    /**
-     * The expand/collapse arrow icon class
-     */
-    arrow: PropTypes.string,
-    /**
-     * The class applied when the title is clickable (onClick is set)
-     */
-    clickableTitle: PropTypes.string,
-    /**
-     * The section subtitle class
-     */
-    sectionSubtitle: PropTypes.string,
-    /**
-     * The section title class
-     */
-    sectionTitle: PropTypes.string,
-  }),
   /**
    * Changes the component style
    */
@@ -150,18 +130,39 @@ CardSectionTitle.propTypes = {
    */
   subtitle: PropTypes.node,
   /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
+   */
+  theme: PropTypes.shape({
+    /**
+     * The expand/collapse arrow icon class
+     */
+    arrow: PropTypes.string,
+    /**
+     * The class applied when the title is clickable (onClick is set)
+     */
+    clickableTitle: PropTypes.string,
+    /**
+     * The section subtitle class
+     */
+    sectionSubtitle: PropTypes.string,
+    /**
+     * The section title class
+     */
+    sectionTitle: PropTypes.string,
+  }),
+  /**
    * Main component text
    */
   title: PropTypes.string.isRequired,
 }
 
 CardSectionTitle.defaultProps = {
-  theme: {},
   collapsed: false,
   icon: null,
   icons: {},
   onClick: null,
   subtitle: null,
+  theme: {},
 }
 
 export default consumeTheme(CardSectionTitle)

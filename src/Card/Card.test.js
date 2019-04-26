@@ -7,7 +7,7 @@ import {
   CardGraphic,
   CardActions,
 } from './index'
-import Button from './../Button'
+import Button from '../Button'
 
 describe('Card', () => {
   it('should mount', () => {

@@ -90,7 +90,8 @@ class TableAggregationRow extends PureComponent {
   }
 
   renderCells () {
-    return this.props.totals.map(this.renderCell)
+    const { totals } = this.props
+    return totals.map(this.renderCell)
   }
 
   render () {
@@ -115,14 +116,6 @@ class TableAggregationRow extends PureComponent {
 
 TableAggregationRow.propTypes = {
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
-   */
-  theme: shape({
-    footer: string,
-    even: string,
-    odd: string,
-  }),
-  /**
    * Additional CSS classes which can be applied to the expanded row.
    */
   className: string,
@@ -138,6 +131,17 @@ TableAggregationRow.propTypes = {
       string,
       arrayOf(string),
     ]),
+    /**
+     * Function responsible for creating a cell component to be added to the total
+     * row in the footer, works like the renderer prop.
+     * @param {object} row - all row data
+     */
+    aggregationRenderer: func,
+    /**
+     * Text which will be used as title in the footer total row, when this prop is received
+     * the aggregator and aggregationRenderer props are ignored.
+     */
+    aggregationTitle: string,
     /**
      * Pure function which will receive the total accumulated and the current cell value.
      * Its return will be rendered in the total row in the footer or it will
@@ -165,22 +169,19 @@ TableAggregationRow.propTypes = {
      * column data in the expandable rows.
      */
     title: string.isRequired,
-    /**
-     * Function responsible for creating a cell component to be added to the total
-     * row in the footer, works like the renderer prop.
-     * @param {object} row - all row data
-     */
-    aggregationRenderer: func,
-    /**
-     * Text which will be used as title in the footer total row, when this prop is received
-     * the aggregator and aggregationRenderer props are ignored.
-     */
-    aggregationTitle: string,
   })).isRequired,
   /**
    * It defines the line color.
    */
   parity: oneOf(['even', 'odd']),
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
+   */
+  theme: shape({
+    even: string,
+    footer: string,
+    odd: string,
+  }),
   /**
    * Array of aggregated data which will be rendered by renderer functions
    * or directly in the aggregation row

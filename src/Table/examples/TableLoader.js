@@ -25,10 +25,10 @@ const columns = [
 
 const rows = [
   {
-    name: 'Jhon Doe',
-    bank_code: '341',
-    agency: '0113',
     account: '99099-9',
+    agency: '0113',
+    bank_code: '341',
+    name: 'Jhon Doe',
   },
 ]
 
@@ -49,11 +49,12 @@ class TableLoader extends React.Component {
   }
 
   render () {
+    const { loading } = this.state
     return (
       <React.Fragment>
         <Table
           columns={columns}
-          loading={this.state.loading}
+          loading={loading}
           rows={rows}
         />
         <br />

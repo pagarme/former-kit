@@ -15,8 +15,8 @@ describe('Table', () => {
     describe('Columns', () => {
       it('should call a sort callback when a header column is clicked', () => {
         const { component, onOrderChange } = createComponents({
-          selectable: false,
           expandable: false,
+          selectable: false,
         })
 
         component
@@ -30,8 +30,8 @@ describe('Table', () => {
 
       it('should call a select all callback when the header select column is checked', () => {
         const { component, onSelectRow, rows } = createComponents({
-          selectable: true,
           expandable: false,
+          selectable: true,
         })
         const expectedResult = rows.map((row, index) => index)
         component
@@ -45,14 +45,14 @@ describe('Table', () => {
 
       describe('should throw the surplus columns in the expansible space', () => {
         const {
+          columns,
           component,
           rows,
-          columns,
           visibleColumnsCount,
         } = createComponents({
-          selectable: false,
           expandable: true,
           expandedRows: [0],
+          selectable: false,
         })
         const rowData = rows[0]
         const expandedRow = component
@@ -69,15 +69,15 @@ describe('Table', () => {
 
           surplusItems.forEach((item, index) => {
             const { accessor, renderer } = surplusColumns[index]
-            it(`should ${accessor} child exists`, () =>
-              expect(item.children().exists()).toBe(true)
-            )
+            it(`should ${accessor} child exists`, () => expect(
+              item.children().exists()
+            ).toBe(true))
             if (renderer) {
               const nodeItem = item
-                .findWhere(node =>
-                  node.type() === 'p' &&
-                  node.find('span').exists()
-                ).first()
+                .findWhere(node => (
+                  node.type() === 'p'
+                  && node.find('span').exists()
+                )).first()
               const text = path(accessor, rowData) || 'no data'
 
               it(`should ${accessor} child  use renderer function`, () => {
@@ -88,12 +88,13 @@ describe('Table', () => {
               const contentSpan = item.find('span').last()
               it(`should ${accessor} child use accessor prop`, () => {
                 expect(contentSpan.exists()).toBe(true)
-                expect(contentSpan.text()).toBe(path(accessor, rowData).toString())
+                expect(contentSpan.text())
+                  .toBe(path(accessor, rowData).toString())
               })
             } else {
-              it(`should ${accessor} child be empty'`, () =>
-                expect(item.find(TableEmptyItem).exists()).toBe(true)
-              )
+              it(`should ${accessor} child be empty'`, () => expect(
+                item.find(TableEmptyItem).exists()
+              ).toBe(true))
             }
           })
         })
@@ -103,8 +104,8 @@ describe('Table', () => {
     describe('Rows', () => {
       it('should call a expand function when expand button is cilcked', () => {
         const { component, onExpandRow } = createComponents({
-          selectable: false,
           expandable: true,
+          selectable: false,
         })
         component
           .find(TableRow)
@@ -134,9 +135,9 @@ describe('Table', () => {
 
       it('should call a callback for the button inside the expansible data', () => {
         const { component, onActionButtonClick } = createComponents({
-          selectable: false,
           expandable: true,
           expandedRows: [0],
+          selectable: false,
         })
         const tr = component
           .find(TableExpandedRow)
@@ -175,8 +176,8 @@ describe('Table', () => {
 
       it('should render a custom renderer', () => {
         const { component } = createComponents({
-          loading: true,
           loaderRenderer: 'no puedo estoy ocupadito...',
+          loading: true,
         })
 
         expect(component.find('tr').last().text()).toBe('no puedo estoy ocupadito...')

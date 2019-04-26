@@ -1,14 +1,9 @@
 const fade = {
-  springOptions: {
-    damping: 30,
-    precision: 0.01,
-    stiffness: 300,
+  atActive: {
+    opacity: 1,
   },
   atEnter: {
     opacity: 0.3,
-  },
-  atActive: {
-    opacity: 1,
   },
   atLeave: {
     opacity: 0,
@@ -16,6 +11,11 @@ const fade = {
   mapStyles: ({ opacity }) => ({
     opacity,
   }),
+  springOptions: {
+    damping: 30,
+    precision: 0.01,
+    stiffness: 300,
+  },
 }
 
 export default fade

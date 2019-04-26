@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import CheckboxGroup from '../'
+import CheckboxGroup from '..'
 
 class CheckboxGroupState extends React.Component {
   constructor (props) {
@@ -38,16 +38,16 @@ class CheckboxGroupState extends React.Component {
       error,
       name,
     } = this.props
-
+    const { value } = this.state
     return (
       <CheckboxGroup
         columns={2}
         disabled={disabled}
         error={error}
         name={name}
-        onChange={value => this.setState({ value })}
+        onChange={newValue => this.setState({ value: newValue })}
         options={options}
-        value={this.state.value}
+        value={value}
       />
     )
   }

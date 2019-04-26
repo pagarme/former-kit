@@ -7,20 +7,13 @@ const consumeTheme = ThemeConsumer('UICard')
 /**
  * Actions which will be used on the card.
  */
-const CardActions = ({ className, children, theme }) => (
+const CardActions = ({ children, className, theme }) => (
   <div className={classNames(className, theme.actions)}>
     {children}
   </div>
 )
 
 CardActions.propTypes = {
-  /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
-   */
-  theme: PropTypes.shape({
-    base: PropTypes.string,
-    actions: PropTypes.string,
-  }),
   /**
    * Set of React elements which will be rendered inside the card actions.
    * These elements should contain actions.
@@ -30,11 +23,18 @@ CardActions.propTypes = {
    * Custom CSS class.
    */
   className: PropTypes.string,
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
+   */
+  theme: PropTypes.shape({
+    actions: PropTypes.string,
+    base: PropTypes.string,
+  }),
 }
 
 CardActions.defaultProps = {
-  theme: {},
   className: null,
+  theme: {},
 }
 
 export default consumeTheme(CardActions)

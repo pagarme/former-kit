@@ -30,28 +30,31 @@ class TabBar extends React.Component {
   }
 
   getContent () {
-    const selected = this.props.children[this.props.selected]
-    return selected.props.children
+    const { children, selected } = this.props
+    const selectedChild = children[selected]
+    return selectedChild.props.children
   }
 
   cloneChild (tabItemChild, index) {
+    const { onTabChange, selected, variant } = this.props
     return React.cloneElement(
       tabItemChild,
       {
         id: `${this.instanceId}-tab-${index}`,
         index,
-        variant: this.props.variant,
-        onTabChange: this.props.onTabChange,
-        selected: this.props.selected === index,
-        key: index,
         instanceId: this.instanceId,
+        key: index,
+        onTabChange,
+        selected: selected === index,
+        variant,
       }
     )
   }
 
   populateChildren () {
+    const { children } = this.props
     return React.Children.map(
-      this.props.children,
+      children,
       this.cloneChild
     )
   }
@@ -74,14 +77,6 @@ class TabBar extends React.Component {
 
 TabBar.propTypes = {
   /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
-   */
-  theme: shape({
-    content: string,
-    tabBar: string,
-    tabs: string,
-  }),
-  /**
    * Set of React components which will be rendered inside the component.
    */
   children: arrayOf(TabItem).isRequired,
@@ -94,6 +89,14 @@ TabBar.propTypes = {
    */
   selected: number,
   /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
+   */
+  theme: shape({
+    content: string,
+    tabBar: string,
+    tabs: string,
+  }),
+  /**
    * Component structure variant which can be: just-text, text-icon, just-icon.
    * This changes the way which every item will be rendered in the component.
    */
@@ -103,8 +106,8 @@ TabBar.propTypes = {
 TabBar.defaultProps = {
   onTabChange: null,
   selected: 0,
-  variant: variantDefault,
   theme: {},
+  variant: variantDefault,
 }
 
 export default consumeTheme(TabBar)

@@ -38,26 +38,26 @@ const validateMultiline = ({
   type,
 }, propName) => {
   if (
-    propName === 'multiline' &&
-    multiline &&
-    type !== 'text' &&
-    !isNil(type)
+    propName === 'multiline'
+    && multiline
+    && type !== 'text'
+    && !isNil(type)
   ) {
     throw new Error('Multiline inputs must have the type "text"')
   }
 
   if (
-    propName === 'multiline' &&
-    multiline &&
-    !isEmpty(mask)
+    propName === 'multiline'
+    && multiline
+    && !isEmpty(mask)
   ) {
     throw new Error('Adding a mask to a multiline component is not possible, it was rendered without the mask.')
   }
 
   if (
-    propName === 'multiline' &&
-    multiline &&
-    !isNil(renderer)
+    propName === 'multiline'
+    && multiline
+    && !isNil(renderer)
   ) {
     throw new Error('Adding renderer to a multiline component is not possible, it was rendered as a multiline input.')
   }
@@ -74,35 +74,39 @@ class Input extends React.PureComponent {
     this.instanceId = `${props.name}-${shortid.generate()}`
     this.handleBlur = this.handleBlur.bind(this)
     this.handleFocus = this.handleFocus.bind(this)
-    this.handlePasswordVisibilityChange = this.handlePasswordVisibilityChange.bind(this)
+    this.handlePasswordVisibilityChange = this
+      .handlePasswordVisibilityChange.bind(this)
     this.state = {
-      showPassword: false,
       isFocused: false,
+      showPassword: false,
     }
   }
 
   handleBlur (event) {
+    const { onBlur } = this.props
     this.setState({
       isFocused: false,
     })
-    if (this.props.onBlur) {
-      this.props.onBlur(event)
+    if (onBlur) {
+      onBlur(event)
     }
   }
 
   handleFocus (event) {
+    const { onFocus } = this.props
     this.setState({
       isFocused: true,
     })
-    if (this.props.onFocus) {
-      this.props.onFocus(event)
+    if (onFocus) {
+      onFocus(event)
     }
   }
 
   handlePasswordVisibilityChange (event) {
+    const { showPassword } = this.state
     event.preventDefault()
     this.setState({
-      showPassword: !(this.state.showPassword),
+      showPassword: !showPassword,
     })
   }
 
@@ -115,8 +119,8 @@ class Input extends React.PureComponent {
       renderer,
       type,
     } = this.props
-
-    const inputType = (type === 'password' && this.state.showPassword)
+    const { showPassword } = this.state
+    const inputType = (type === 'password' && showPassword)
       || multiline
       ? 'text'
       : type
@@ -154,13 +158,13 @@ class Input extends React.PureComponent {
 
   renderPasswordVisibilityIcon () {
     const {
-      value,
-      type,
-      theme,
-      icons,
       disabled,
+      icons,
+      theme,
+      type,
+      value,
     } = this.props
-
+    const { showPassword } = this.state
     if (disabled || value === '' || type !== 'password') {
       return null
     }
@@ -172,7 +176,7 @@ class Input extends React.PureComponent {
         className={theme.displayPasswordIcon}
         onClick={this.handlePasswordVisibilityChange}
       >
-        {this.state.showPassword
+        {showPassword
           ? icons.hidePassword
           : icons.showPassword
         }
@@ -195,7 +199,7 @@ class Input extends React.PureComponent {
       theme,
       value,
     } = this.props
-
+    const { isFocused } = this.state
     const container = classnames(theme.container, {
       [theme.multiline]: multiline,
     })
@@ -206,7 +210,7 @@ class Input extends React.PureComponent {
       theme[base],
       {
         [theme.active]: !disabled && !isNil(value) && value !== '',
-        [theme.focused]: this.state.isFocused,
+        [theme.focused]: isFocused,
         [theme.disabled]: disabled,
         [theme.error]: error,
         [theme[size]]: size,
@@ -230,9 +234,7 @@ class Input extends React.PureComponent {
 
     return (
       <div className={root}>
-        {icon &&
-          <div className={theme.icon}>{icon}</div>
-        }
+        {icon && <div className={theme.icon}>{icon}</div>}
         <div className={theme.boxContainer}>
           <div className={container}>
             {multiline && (
@@ -246,26 +248,26 @@ class Input extends React.PureComponent {
             )}
             {!multiline && this.renderInput(inputProps)}
             {this.renderPasswordVisibilityIcon()}
-            {hasLabel &&
+            {hasLabel && (
               <label
                 htmlFor={this.instanceId}
                 className={contentPresent}
               >
                 {label}
               </label>
-            }
-            {multiline &&
+            )}
+            {multiline && (
               <div className={theme.expander}>
                 {value}
                 <br />
               </div>
-            }
+            )}
           </div>
-          {hasSecondaryText &&
+          {hasSecondaryText && (
             <p className={theme.secondaryText}>
               {error || hint}
             </p>
-          }
+          )}
         </div>
       </div>
     )
@@ -273,26 +275,6 @@ class Input extends React.PureComponent {
 }
 
 Input.propTypes = {
-  /**
-   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
-   */
-  theme: PropTypes.shape({
-    active: PropTypes.string,
-    boxContainer: PropTypes.string,
-    container: PropTypes.string,
-    contentPresent: PropTypes.string,
-    dark: PropTypes.string,
-    error: PropTypes.string,
-    expander: PropTypes.string,
-    focused: PropTypes.string,
-    icon: PropTypes.string,
-    input: PropTypes.string,
-    light: PropTypes.string,
-    multiline: PropTypes.string,
-    secondaryText: PropTypes.string,
-    size: PropTypes.string,
-  }),
-
   base: PropTypes.oneOf([
     'dark',
     'light',
@@ -321,8 +303,8 @@ Input.propTypes = {
    * Default icons used to tell the user if the password is being shown or not.
    */
   icons: PropTypes.shape({
-    showPassword: PropTypes.element,
     hidePassword: PropTypes.element,
+    showPassword: PropTypes.element,
   }),
   /**
    * Associated with `ref` prop from React.
@@ -379,6 +361,25 @@ Input.propTypes = {
   size: PropTypes.oneOf([
     'tiny',
   ]),
+  /**
+   * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
+   */
+  theme: PropTypes.shape({
+    active: PropTypes.string,
+    boxContainer: PropTypes.string,
+    container: PropTypes.string,
+    contentPresent: PropTypes.string,
+    dark: PropTypes.string,
+    error: PropTypes.string,
+    expander: PropTypes.string,
+    focused: PropTypes.string,
+    icon: PropTypes.string,
+    input: PropTypes.string,
+    light: PropTypes.string,
+    multiline: PropTypes.string,
+    secondaryText: PropTypes.string,
+    size: PropTypes.string,
+  }),
   /**
    * Input's type.
    */

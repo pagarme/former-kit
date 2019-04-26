@@ -1,7 +1,7 @@
 import React from 'react'
 import { mount } from 'enzyme'
 
-import Steps from './'
+import Steps from '.'
 
 const Component = () => (
   <Steps
