@@ -8,9 +8,16 @@ import IconInfo from 'emblematic-icons/svg/Info32.svg'
 import IconWarning from 'emblematic-icons/svg/Warning32.svg'
 
 import Alert from '../../src/Alert'
+import AlertReadme from '../../src/Alert/index.md'
 import Section from '../Section'
 
 storiesOf('Alerts', module)
+  .addParameters({
+    readme: {
+      // Show readme at the addons panel
+      sidebar: AlertReadme,
+    },
+  })
   .add('Default', () => (
     <div>
       <Section title="Warning">
