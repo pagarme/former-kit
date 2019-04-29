@@ -19,4 +19,3 @@ configure(loadStories, module)
 setAddon(percyAddon)
 
 serializeStories(getStorybook)
-
