@@ -23,9 +23,10 @@
 }
 
 .singleLine {
-  border: 1px solid;
   height: 20px;
-  width: 200px;
+  padding: 0 5px;
+  margin: 5px;
+  box-sizing: border-box;
 }
 
 .textarea {
