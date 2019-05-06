@@ -1,6 +1,6 @@
 {
   "name": "former-kit",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "license": "Apache-2.0",
   "main": "dist/index.js",
   "repository": {
@@ -28,7 +28,9 @@
     "prepublish": "npm run build"
   },
   "peerDependencies": {
-    "moment": "^2.24.0"
+    "moment": "^2.24.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
   "dependencies": {
     "classnames": "2.2.6",
@@ -37,10 +39,8 @@
     "promise": "8.0.2",
     "prop-types": "15.6.2",
     "ramda": "0.26.1",
-    "react": "16.8.6",
     "react-click-outside": "3.0.1",
     "react-dates": "18.4.1",
-    "react-dom": "16.8.6",
     "react-input-mask": "2.0.4",
     "react-maskedinput": "4.0.1",
     "react-modal": "3.8.1",
@@ -107,7 +107,9 @@
     "postcss-loader": "3.0.0",
     "postcss-sass-each": "0.1.0",
     "postcss-url": "8.0.0",
+    "react": "16.8.6",
     "react-dev-utils": "7.0.1",
+    "react-dom": "16.8.6",
     "react-error-overlay": "5.1.2",
     "react-styleguidist": "8.0.6",
     "react-test-renderer": "16.8.6",
