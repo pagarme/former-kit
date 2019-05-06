@@ -6,8 +6,12 @@ import React, {
 } from 'react'
 import PropTypes from 'prop-types'
 import {
+  always,
   is,
+  pipe,
   prop,
+  replace,
+  when,
 } from 'ramda'
 import { usePrevious } from '../hooks'
 import ThemeConsumer from '../ThemeConsumer'
@@ -39,6 +43,32 @@ const measureText = measuredText => (
     : 0
 )
 
+const getNumericValue = pipe(
+  replace(/[a-zA-z]/gi, ''),
+  when(
+    isNaN, // eslint-disable-line no-restricted-globals
+    always(0)
+  ),
+  Number // eslint-disable-line no-restricted-globals
+)
+
+const measureAvailableWidth = (parentWidth = 0, parentStyle) => {
+  const {
+    borderLeftWidth,
+    borderRightWidth,
+    boxSizing,
+    paddingLeft,
+    paddingRight,
+  } = parentStyle
+  const borderTotal = boxSizing === 'border-box'
+    ? getNumericValue(borderRightWidth) + getNumericValue(borderLeftWidth)
+    : 0
+  const paddingTotal = getNumericValue(paddingLeft)
+    + getNumericValue(paddingRight)
+
+  return parentWidth - (borderTotal + paddingTotal)
+}
+
 /**
  * Visual line breaking with ellipsis
  */
@@ -52,7 +82,7 @@ const Truncate = ({
 }) => {
   const [currentText, setCurrentText] = useState(text)
   const [isTruncated, setIsTruncated] = useState(false)
-  const [parentMeasures, setParentMeasures] = useState(null)
+  const [textWidth, setTextWidth] = useState(null)
   const prevText = usePrevious(text)
   const parentRef = useRef(null)
   const wrapperRef = useRef(null)
@@ -67,10 +97,7 @@ const Truncate = ({
       )
 
       setCurrentText(newText)
-      setParentMeasures({
-        height: parent.offsetHeight,
-        width: parent.offsetWidth,
-      })
+      setTextWidth(parent.offsetWidth)
       setIsTruncated(truncated)
 
       if (wrapper.style) {
@@ -113,11 +140,13 @@ const Truncate = ({
           setCurrentText(text)
         }
 
-        setIsTruncated(measureText(text) > parent.offsetWidth)
-        setParentMeasures({
-          height: parent.offsetHeight,
-          width: parent.offsetWidth,
-        })
+        const availableWidth = measureAvailableWidth(
+          parent.offsetWidth,
+          parentStyle
+        )
+
+        setIsTruncated(measureText(text) > availableWidth)
+        setTextWidth(availableWidth)
 
         wrapper.style.visibility = 'visible'
       }
@@ -160,14 +189,15 @@ const Truncate = ({
   )
 
   if (isTruncated) {
-    const width = parentMeasures.width
-      ? `${parentMeasures.width}px`
+    const width = textWidth && multiline
+      ? `${textWidth}px`
       : '100%'
 
     return (
       <Tooltip
         placement={tooltipPlacement}
         content={text}
+        style={{ width }}
       >
         {prepareTruncatedComponent({ width })}
       </Tooltip>
