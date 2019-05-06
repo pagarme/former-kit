@@ -1,9 +1,24 @@
 import React, { Component } from 'react'
 import classNames from 'classnames'
 import PropTypes from 'prop-types'
+import { omit } from 'ramda'
 import ThemeConsumer from '../ThemeConsumer'
 
 const ConsumeTheme = ThemeConsumer('UITooltip')
+
+const customProps = [
+  'children',
+  'className',
+  'content',
+  'icons',
+  'onMouseEnter',
+  'onMouseLeave',
+  'placement',
+  'theme',
+  'visible',
+]
+
+const omitCustomProps = omit(customProps)
 
 class Tooltip extends Component {
   constructor (props) {
@@ -66,6 +81,7 @@ class Tooltip extends Component {
         className={theme.target}
         onMouseEnter={this.handleMouseEnter}
         onMouseLeave={this.handleMouseLeave}
+        {...omitCustomProps(this.props)}
       >
         { children }
 
