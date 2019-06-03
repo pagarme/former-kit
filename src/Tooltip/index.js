@@ -69,6 +69,7 @@ class Tooltip extends Component {
   render () {
     const {
       children,
+      className,
       content,
       placement,
       theme,
@@ -87,7 +88,13 @@ class Tooltip extends Component {
 
         {visible && (
           <div
-            className={classNames(theme.tooltip, theme[placement])}
+            className={
+              classNames(
+                className,
+                theme.tooltip,
+                theme[placement]
+              )
+            }
             role="tooltip"
           >
             {content}
@@ -103,6 +110,10 @@ Tooltip.propTypes = {
    * The children can be any kind of component.
    */
   children: PropTypes.node.isRequired,
+  /**
+   * Allows adding className in the component.
+   */
+  className: PropTypes.string,
   /**
    * The content is used to tooltip and can be any kind of component.
    */
@@ -145,6 +156,7 @@ Tooltip.propTypes = {
 }
 
 Tooltip.defaultProps = {
+  className: null,
   onMouseEnter: null,
   onMouseLeave: null,
   placement: 'leftMiddle',
