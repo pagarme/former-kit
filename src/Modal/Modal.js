@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
 import ReactModal from 'react-modal'
 import ThemeConsumer from '../ThemeConsumer'
 
@@ -15,29 +16,37 @@ const Modal = ({
   children,
   isOpen,
   onRequestClose,
+  size,
   theme,
-}) => (
-  <ReactModal
-    appElement={document.body}
-    className={{
-      afterOpen: theme.modalAfterOpen,
-      base: theme.modal,
-      beforeClose: theme.modalBeforeClose,
-    }}
-    closeTimeoutMS={200}
-    isOpen={isOpen}
-    onRequestClose={onRequestClose}
-    overlayClassName={{
-      afterOpen: theme.overlayAfterOpen,
-      base: theme.overlay,
-      beforeClose: theme.overlayBeforeClose,
-    }}
-    parentSelector={() => document.body}
-    role="dialog"
-  >
-    {children}
-  </ReactModal>
-)
+}) => {
+  const modalClasses = classNames(
+    theme.modal,
+    theme[size]
+  )
+
+  return (
+    <ReactModal
+      appElement={document.body}
+      className={{
+        afterOpen: theme.modalAfterOpen,
+        base: modalClasses,
+        beforeClose: theme.modalBeforeClose,
+      }}
+      closeTimeoutMS={200}
+      isOpen={isOpen}
+      onRequestClose={onRequestClose}
+      overlayClassName={{
+        afterOpen: theme.overlayAfterOpen,
+        base: theme.overlay,
+        beforeClose: theme.overlayBeforeClose,
+      }}
+      parentSelector={() => document.body}
+      role="dialog"
+    >
+      {children}
+    </ReactModal>
+  )
+}
 
 Modal.propTypes = {
   /**
@@ -54,6 +63,12 @@ Modal.propTypes = {
    */
   onRequestClose: PropTypes.func,
   /**
+   * Component's size.
+   */
+  size: PropTypes.oneOf([
+    'default', 'huge',
+  ]),
+  /**
    * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: PropTypes.shape({
@@ -64,11 +79,13 @@ Modal.propTypes = {
     overlay: PropTypes.string,
     overlayAfterOpen: PropTypes.string,
     overlayBeforeClose: PropTypes.string,
+    size: PropTypes.string,
   }),
 }
 
 Modal.defaultProps = {
   onRequestClose: null,
+  size: 'default',
   theme: {
     frame: '',
     modal: '',
