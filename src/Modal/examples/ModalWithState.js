@@ -36,6 +36,7 @@ class ModalWithState extends Component {
     const {
       completeTitle,
       message,
+      size,
       title,
       withActions,
       withSection,
@@ -57,6 +58,7 @@ class ModalWithState extends Component {
           isOpen={isOpen}
           label="Create a Transaction"
           onRequestClose={this.handleToggleModal}
+          size={size}
         >
           {completeTitle
             ? (
@@ -113,6 +115,7 @@ class ModalWithState extends Component {
 ModalWithState.propTypes = {
   completeTitle: PropTypes.bool,
   message: PropTypes.string,
+  size: PropTypes.string,
   title: PropTypes.string,
   withActions: PropTypes.bool,
   withSection: PropTypes.bool,
@@ -121,6 +124,7 @@ ModalWithState.propTypes = {
 ModalWithState.defaultProps = {
   completeTitle: false,
   message: 'This is the modal Content with React Modal module',
+  size: 'default',
   title: 'Add photo',
   withActions: false,
   withSection: false,
