@@ -25198,148 +25198,282 @@ exports[`Storyshots Modal Default 1`] = `
 <div
   className="storybook-readme-story"
 >
-  <section
+  <div
     className="typography"
   >
-    
-    <div>
+    <section
+      className=""
+    >
+      
       <div>
-        <button
-          className="button flat lowRelevance default"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        >
-          <Camera32.svg
-            height={16}
-            width={16}
-          />
-          <span>
-            Add Photo
-          </span>
-          <span
-            className="ripple"
-            style={
-              Object {
-                "height": 0,
-                "left": 0,
-                "top": 0,
-                "width": 0,
-              }
-            }
-          />
-        </button>
-        <div
-          className="modal"
-        >
-          <div
-            className="title"
+        <div>
+          <button
+            className="button flat lowRelevance default"
+            disabled={false}
+            onClick={[Function]}
+            type="button"
           >
-            <div
-              className="icon"
-            >
-              <Camera32.svg
-                height={16}
-                width={16}
-              />
-            </div>
-            <h2
-              className="centerAlign"
-            >
+            <Camera32.svg
+              height={16}
+              width={16}
+            />
+            <span>
               Add Photo
-            </h2>
-            <button
-              className="button clean lowRelevance tiny iconButton"
-              disabled={false}
-              onClick={[Function]}
-              type="button"
-            >
-              <ClearClose32.svg
-                height={16}
-                width={16}
-              />
-              <span
-                className="ripple"
-                style={
-                  Object {
-                    "height": 0,
-                    "left": 0,
-                    "top": 0,
-                    "width": 0,
-                  }
+            </span>
+            <span
+              className="ripple"
+              style={
+                Object {
+                  "height": 0,
+                  "left": 0,
+                  "top": 0,
+                  "width": 0,
                 }
-              />
-            </button>
-          </div>
-          <hr />
+              }
+            />
+          </button>
           <div
-            className="content"
-          >
-            This is the modal Content with React Modal module
-          </div>
-          <div
-            className="content"
+            className="modal"
           >
             <div
-              className="section"
+              className="title"
             >
               <div
-                className="content"
+                className="icon"
               >
-                This is the modal Section
+                <Camera32.svg
+                  height={16}
+                  width={16}
+                />
+              </div>
+              <h2
+                className="centerAlign"
+              >
+                Add Photo
+              </h2>
+              <button
+                className="button clean lowRelevance tiny iconButton"
+                disabled={false}
+                onClick={[Function]}
+                type="button"
+              >
+                <ClearClose32.svg
+                  height={16}
+                  width={16}
+                />
+                <span
+                  className="ripple"
+                  style={
+                    Object {
+                      "height": 0,
+                      "left": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+              </button>
+            </div>
+            <hr />
+            <div
+              className="content"
+            >
+              This is the modal Content with React Modal module
+            </div>
+            <div
+              className="content"
+            >
+              <div
+                className="section"
+              >
+                <div
+                  className="content"
+                >
+                  This is the modal Section
+                </div>
               </div>
             </div>
-          </div>
-          <div
-            className="actions"
-          >
-            <button
-              className="button outline normalRelevance default"
-              disabled={false}
-              onClick={[Function]}
-              type="button"
+            <div
+              className="actions"
             >
-              <span>
-                Cancel
-              </span>
-              <span
-                className="ripple"
-                style={
-                  Object {
-                    "height": 0,
-                    "left": 0,
-                    "top": 0,
-                    "width": 0,
+              <button
+                className="button outline normalRelevance default"
+                disabled={false}
+                onClick={[Function]}
+                type="button"
+              >
+                <span>
+                  Cancel
+                </span>
+                <span
+                  className="ripple"
+                  style={
+                    Object {
+                      "height": 0,
+                      "left": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
                   }
-                }
-              />
-            </button>
-            <button
-              className="button flat normalRelevance default"
-              disabled={false}
-              onClick={[Function]}
-              type="button"
-            >
-              <span>
-                Confirm
-              </span>
-              <span
-                className="ripple"
-                style={
-                  Object {
-                    "height": 0,
-                    "left": 0,
-                    "top": 0,
-                    "width": 0,
+                />
+              </button>
+              <button
+                className="button flat normalRelevance default"
+                disabled={false}
+                onClick={[Function]}
+                type="button"
+              >
+                <span>
+                  Confirm
+                </span>
+                <span
+                  className="ripple"
+                  style={
+                    Object {
+                      "height": 0,
+                      "left": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
                   }
-                }
-              />
-            </button>
+                />
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+    <section
+      className=""
+    >
+      
+      <div>
+        <div>
+          <button
+            className="button flat lowRelevance default"
+            disabled={false}
+            onClick={[Function]}
+            type="button"
+          >
+            <span>
+              Modal with huge size
+            </span>
+            <span
+              className="ripple"
+              style={
+                Object {
+                  "height": 0,
+                  "left": 0,
+                  "top": 0,
+                  "width": 0,
+                }
+              }
+            />
+          </button>
+          <div
+            className="modal"
+          >
+            <div
+              className="title"
+            >
+              <h2
+                className="centerAlign"
+              >
+                Modal With Huge Size
+              </h2>
+              <button
+                className="button clean lowRelevance tiny iconButton"
+                disabled={false}
+                onClick={[Function]}
+                type="button"
+              >
+                <ClearClose32.svg
+                  height={16}
+                  width={16}
+                />
+                <span
+                  className="ripple"
+                  style={
+                    Object {
+                      "height": 0,
+                      "left": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+              </button>
+            </div>
+            <hr />
+            <div
+              className="content"
+            >
+              This is the modal Content with React Modal module
+            </div>
+            <div
+              className="content"
+            >
+              <div
+                className="section"
+              >
+                <div
+                  className="content"
+                >
+                  This is the modal Section
+                </div>
+              </div>
+            </div>
+            <div
+              className="actions"
+            >
+              <button
+                className="button outline normalRelevance default"
+                disabled={false}
+                onClick={[Function]}
+                type="button"
+              >
+                <span>
+                  Cancel
+                </span>
+                <span
+                  className="ripple"
+                  style={
+                    Object {
+                      "height": 0,
+                      "left": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+              </button>
+              <button
+                className="button flat normalRelevance default"
+                disabled={false}
+                onClick={[Function]}
+                type="button"
+              >
+                <span>
+                  Confirm
+                </span>
+                <span
+                  className="ripple"
+                  style={
+                    Object {
+                      "height": 0,
+                      "left": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 </div>
 `;
 
