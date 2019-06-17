@@ -35,3 +35,13 @@ const ModalWithState = require('./examples/ModalWithState').default;
   withSection
 />
 ```
+
+Modal with huge size
+``` jsx
+const ModalWithState = require('./examples/ModalWithState').default;
+<ModalWithState
+  completeTitle
+  message="Modal with all features"
+  size="huge"
+/>
+```
