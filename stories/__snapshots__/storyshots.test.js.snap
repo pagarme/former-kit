@@ -11476,14 +11476,41 @@ exports[`Storyshots DateInput with sidebar 1`] = `
                   onKeyDown={[Function]}
                   onKeyPress={[Function]}
                   onPaste={[Function]}
-                  placeholder="Start"
+                  placeholder="09/23/2017"
                   size="8"
-                  value=""
+                  value="09/23/2017"
                 />
                 <span
                   className="expander"
                 >
-                  Start
+                  09/23/2017
+                </span>
+              </div>
+              <div
+                className="separator"
+              />
+              <div
+                className="end"
+              >
+                <input
+                  autoComplete="off"
+                  className="input"
+                  mask="11/11/1111"
+                  maxLength={10}
+                  name="endDate"
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyPress={[Function]}
+                  onPaste={[Function]}
+                  placeholder="End"
+                  size="8"
+                  value="09/30/2017"
+                />
+                <span
+                  className="expander"
+                >
+                  09/30/2017
                 </span>
               </div>
             </div>
@@ -11539,14 +11566,41 @@ exports[`Storyshots DateInput with sidebar and clear button 1`] = `
                   onKeyDown={[Function]}
                   onKeyPress={[Function]}
                   onPaste={[Function]}
-                  placeholder="09/15/2017"
+                  placeholder="09/23/2017"
                   size="8"
-                  value="09/15/2017"
+                  value="09/23/2017"
                 />
                 <span
                   className="expander"
                 >
-                  09/15/2017
+                  09/23/2017
+                </span>
+              </div>
+              <div
+                className="separator"
+              />
+              <div
+                className="end"
+              >
+                <input
+                  autoComplete="off"
+                  className="input"
+                  mask="11/11/1111"
+                  maxLength={10}
+                  name="endDate"
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyPress={[Function]}
+                  onPaste={[Function]}
+                  placeholder="End"
+                  size="8"
+                  value="09/30/2017"
+                />
+                <span
+                  className="expander"
+                >
+                  09/30/2017
                 </span>
               </div>
             </div>
@@ -11588,7 +11642,68 @@ exports[`Storyshots DateInput with sidebar and selected preset 1`] = `
   >
     
     <div>
+      <h3>
+        Available presets
+      </h3>
+      <p>
+        The presets can be changed by a parent component
+      </p>
       <div>
+        <div>
+          <div
+            className="dropdown"
+          >
+            
+            <select
+              className="select"
+              disabled={false}
+              id="presets-shortid-mock"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              value="last-7"
+            >
+              <option
+                className="option placeholder"
+                disabled={true}
+                hidden={true}
+                value="placeholder"
+              >
+                
+              </option>
+              <option
+                className="option active"
+                value="last-7"
+              >
+                7 days
+              </option>
+              <option
+                className="option"
+                value="last-15"
+              >
+                15 days
+              </option>
+              <option
+                className="option"
+                value="last-30"
+              >
+                30 days
+              </option>
+              <option
+                className="option"
+                value="today"
+              >
+                Today
+              </option>
+            </select>
+            <span
+              className="arrow"
+            >
+              <svg />
+            </span>
+            
+          </div>
+        </div>
         <div
           className="dateselector"
         >
@@ -11713,14 +11828,41 @@ exports[`Storyshots DateInput with sidebar first 1`] = `
                   onKeyDown={[Function]}
                   onKeyPress={[Function]}
                   onPaste={[Function]}
-                  placeholder="Select a preset"
+                  placeholder="09/23/2017"
                   size="8"
-                  value=""
+                  value="09/23/2017"
                 />
                 <span
                   className="expander"
                 >
-                  Select a preset
+                  09/23/2017
+                </span>
+              </div>
+              <div
+                className="separator"
+              />
+              <div
+                className="end"
+              >
+                <input
+                  autoComplete="off"
+                  className="input"
+                  mask="11/11/1111"
+                  maxLength={10}
+                  name="endDate"
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyPress={[Function]}
+                  onPaste={[Function]}
+                  placeholder="End"
+                  size="8"
+                  value="09/30/2017"
+                />
+                <span
+                  className="expander"
+                >
+                  09/30/2017
                 </span>
               </div>
             </div>
@@ -11776,14 +11918,14 @@ exports[`Storyshots DateInput without sidebar and period selection 1`] = `
                   onKeyDown={[Function]}
                   onKeyPress={[Function]}
                   onPaste={[Function]}
-                  placeholder="Start"
+                  placeholder="09/23/2017"
                   size="8"
-                  value=""
+                  value="09/23/2017"
                 />
                 <span
                   className="expander"
                 >
-                  Start
+                  09/23/2017
                 </span>
               </div>
               <div
@@ -11805,12 +11947,12 @@ exports[`Storyshots DateInput without sidebar and period selection 1`] = `
                   onPaste={[Function]}
                   placeholder="End"
                   size="8"
-                  value=""
+                  value="09/30/2017"
                 />
                 <span
                   className="expander"
                 >
-                  End
+                  09/30/2017
                 </span>
               </div>
             </div>
@@ -11866,7 +12008,34 @@ exports[`Storyshots DateInput without sidebar and pre selected date 1`] = `
                   onKeyDown={[Function]}
                   onKeyPress={[Function]}
                   onPaste={[Function]}
-                  placeholder="09/30/2017"
+                  placeholder="09/23/2017"
+                  size="8"
+                  value="09/23/2017"
+                />
+                <span
+                  className="expander"
+                >
+                  09/23/2017
+                </span>
+              </div>
+              <div
+                className="separator"
+              />
+              <div
+                className="end"
+              >
+                <input
+                  autoComplete="off"
+                  className="input"
+                  mask="11/11/1111"
+                  maxLength={10}
+                  name="endDate"
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyPress={[Function]}
+                  onPaste={[Function]}
+                  placeholder="End"
                   size="8"
                   value="09/30/2017"
                 />
@@ -11929,14 +12098,14 @@ exports[`Storyshots DateInput without sidebar and pre selected period 1`] = `
                   onKeyDown={[Function]}
                   onKeyPress={[Function]}
                   onPaste={[Function]}
-                  placeholder="09/26/2017"
+                  placeholder="09/23/2017"
                   size="8"
-                  value="09/26/2017"
+                  value="09/23/2017"
                 />
                 <span
                   className="expander"
                 >
-                  09/26/2017
+                  09/23/2017
                 </span>
               </div>
               <div
@@ -12019,14 +12188,41 @@ exports[`Storyshots DateInput without sidebar and single selection 1`] = `
                   onKeyDown={[Function]}
                   onKeyPress={[Function]}
                   onPaste={[Function]}
-                  placeholder="Start"
+                  placeholder="09/23/2017"
                   size="8"
-                  value=""
+                  value="09/23/2017"
                 />
                 <span
                   className="expander"
                 >
-                  Start
+                  09/23/2017
+                </span>
+              </div>
+              <div
+                className="separator"
+              />
+              <div
+                className="end"
+              >
+                <input
+                  autoComplete="off"
+                  className="input"
+                  mask="11/11/1111"
+                  maxLength={10}
+                  name="endDate"
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyPress={[Function]}
+                  onPaste={[Function]}
+                  placeholder="End"
+                  size="8"
+                  value="09/30/2017"
+                />
+                <span
+                  className="expander"
+                >
+                  09/30/2017
                 </span>
               </div>
             </div>
