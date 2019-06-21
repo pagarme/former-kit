@@ -136,7 +136,7 @@ class DateInput extends React.Component {
       },
       dates,
       presets,
-      selectedPreset,
+      selectedPreset: propsSelectedPreset,
     } = this.props
 
     const {
@@ -151,17 +151,17 @@ class DateInput extends React.Component {
     const isSameEnd = receivedEnd && receivedEnd.isSame(currentEnd, 'day')
 
     if (!equals(prevProps, this.props) && (!isSameStart || !isSameEnd)) {
-      let presetDates
+      const prevPropsSelectedPreset = prevProps.selectedPreset
+      const selectedPreset = prevPropsSelectedPreset !== propsSelectedPreset
+        ? propsSelectedPreset
+        : currentSelectedPreset
+
       const preset = findPreset(selectedPreset, presets)
-      if (selectedPreset !== currentSelectedPreset) {
-        presetDates = getDatesFromPreset(preset)
-      }
+      const presetDates = getDatesFromPreset(preset)
 
       this.setState({ // eslint-disable-line react/no-did-update-set-state
         dates: momentToText(presetDates || dates),
-        selectedPreset: prevProps.selectedPreset !== selectedPreset
-          ? selectedPreset
-          : currentSelectedPreset,
+        selectedPreset,
         selectionMode: preset.mode,
       })
     }
