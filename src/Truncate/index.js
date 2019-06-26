@@ -261,4 +261,4 @@ Truncate.defaultProps = {
   tooltipPlacement: 'bottomCenter',
 }
 
-export default consumeTheme(React.memo(Truncate))
+export default consumeTheme(Truncate)
