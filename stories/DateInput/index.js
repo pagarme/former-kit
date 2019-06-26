@@ -1,15 +1,35 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import moment from 'moment'
 import IconCalendar from 'emblematic-icons/svg/Calendar32.svg'
 
 import Button from '../../src/Button'
-import Section from '../Section'
 import DateInput from '../../src/DateInput'
+import DropDown from '../../src/Dropdown'
+import Section from '../Section'
 
 import presets from './datePresets'
 import style from './style.css'
+
+const presetsOptions = [
+  {
+    name: '7 days',
+    value: 'last-7',
+  },
+  {
+    name: '15 days',
+    value: 'last-15',
+  },
+  {
+    name: '30 days',
+    value: 'last-30',
+  },
+  {
+    name: 'Today',
+    value: 'today',
+  },
+]
 
 class DateInputState extends React.Component {
   constructor (props) {
@@ -17,6 +37,7 @@ class DateInputState extends React.Component {
 
     this.state = {
       dates: props.dates || {},
+      selectedPreset: props.selectedPreset || 'last-7',
       showCalendar: props.showCalendar,
     }
 
@@ -39,38 +60,69 @@ class DateInputState extends React.Component {
 
   render () {
     const {
-      selectedPreset,
+      selectablePresets,
       selectionMode,
       showClearButton,
       showSidebar,
     } = this.props
-    const { dates, showCalendar } = this.state
+    const {
+      dates,
+      selectedPreset,
+      showCalendar,
+    } = this.state
     return (
-      <div className={style.container}>
-        <DateInput
-          dates={dates}
-          icon={<IconCalendar width={16} height={16} />}
-          onConfirm={action('onConfirm')}
-          onChange={action('onChange')}
-          onPresetChange={this.handlePresetChange}
-          presets={presets}
-          selectedPreset={selectedPreset}
-          selectionMode={selectionMode}
-          showCalendar={showCalendar}
-          showSidebar={showSidebar}
-        />
-        { showClearButton && (
-          <Button onClick={this.resetDates}>
-            Reset Dates
-          </Button>
-        )}
-      </div>
+      <Fragment>
+        {
+          selectablePresets
+          && (
+            <Fragment>
+              <h3>Available presets</h3>
+              <p>The presets can be changed by a parent component</p>
+            </Fragment>
+          )
+        }
+        <div className={style.container}>
+          {
+            selectablePresets
+            && (
+              <div className={style.presetSelector}>
+                <DropDown
+                  name="presets"
+                  onChange={event => this.setState({
+                    selectedPreset: event.target.value,
+                  })}
+                  options={presetsOptions}
+                  value={selectedPreset}
+                />
+              </div>
+            )
+          }
+          <DateInput
+            dates={dates}
+            icon={<IconCalendar width={16} height={16} />}
+            onConfirm={action('onConfirm')}
+            onChange={action('onChange')}
+            onPresetChange={this.handlePresetChange}
+            presets={presets}
+            selectedPreset={selectedPreset}
+            selectionMode={selectionMode}
+            showCalendar={showCalendar}
+            showSidebar={showSidebar}
+          />
+          { showClearButton && (
+            <Button onClick={this.resetDates}>
+              Reset Dates
+            </Button>
+          )}
+        </div>
+      </Fragment>
     )
   }
 }
 
 DateInputState.defaultProps = {
   end: null,
+  selectablePresets: null,
   selectedPreset: '',
   start: null,
 }
@@ -122,6 +174,7 @@ storiesOf('DateInput', module)
   .add('with sidebar and selected preset', () => (
     <Section>
       <DateInputState
+        selectablePresets={['last-7', 'last-15', 'last-30', 'today']}
         selectedPreset="last-7"
       />
     </Section>

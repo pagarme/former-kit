@@ -2,8 +2,15 @@ import React, { Fragment } from 'react'
 import shortid from 'shortid'
 import {
   equals,
+  find,
+  flatten,
+  has,
   isNil,
+  map,
   mergeRight,
+  pipe,
+  prop,
+  when,
 } from 'ramda'
 
 import {
@@ -48,6 +55,37 @@ const getStrings = strings => ({
   ...defaultStrings,
   ...strings,
 })
+
+const getFlattenPresets = pipe(
+  map(when(
+    has('list'),
+    prop('list')
+  )),
+  flatten
+)
+
+const findPreset = (presetKey, presets) => {
+  const presetList = getFlattenPresets(presets)
+  return find(preset => (preset.key === presetKey), presetList)
+}
+
+const getDatesFromPreset = (preset) => {
+  if (preset && preset.date) {
+    const datesDiff = preset.date()
+    if (datesDiff <= 0) {
+      return {
+        end: moment(),
+        start: moment().subtract(Math.abs(datesDiff), 'days'),
+      }
+    }
+    return {
+      end: moment().add(datesDiff, 'days'),
+      start: moment(),
+    }
+  }
+
+  return null
+}
 
 /**
  * Input component designed to receive one or two dates, can have a mask
@@ -97,6 +135,8 @@ class DateInput extends React.Component {
         start: receivedStart,
       },
       dates,
+      presets,
+      selectedPreset,
     } = this.props
 
     const {
@@ -104,14 +144,25 @@ class DateInput extends React.Component {
         end: currentEnd,
         start: currentStart,
       },
+      selectedPreset: currentSelectedPreset,
     } = this.state
 
     const isSameStart = receivedStart && receivedStart.isSame(currentStart, 'day')
     const isSameEnd = receivedEnd && receivedEnd.isSame(currentEnd, 'day')
 
     if (!equals(prevProps, this.props) && (!isSameStart || !isSameEnd)) {
+      let presetDates
+      const preset = findPreset(selectedPreset, presets)
+      if (selectedPreset !== currentSelectedPreset) {
+        presetDates = getDatesFromPreset(preset)
+      }
+
       this.setState({ // eslint-disable-line react/no-did-update-set-state
-        dates: momentToText(dates),
+        dates: momentToText(presetDates || dates),
+        selectedPreset: prevProps.selectedPreset !== selectedPreset
+          ? selectedPreset
+          : currentSelectedPreset,
+        selectionMode: preset.mode,
       })
     }
   }
