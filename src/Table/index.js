@@ -557,6 +557,10 @@ Table.propTypes = {
      * column data in the expandable rows.
      */
     title: string.isRequired,
+    /**
+     * Defines the column width in pixels
+     */
+    width: number,
   })).isRequired,
   /**
    * It disables all table functions.

@@ -63,6 +63,7 @@ class TableHead extends Component {
     isAction,
     orderable,
     title,
+    width,
   },
   index) {
     const {
@@ -84,11 +85,18 @@ class TableHead extends Component {
       }
     )
 
+    const thStyle = {}
+
+    if (width) {
+      thStyle.width = `${width}px`
+    }
+
     if (!orderable || not(onOrderChange)) {
       return (
         <th
           key={`header_column_${index + 1}`}
           className={columnClasses}
+          style={thStyle}
         >
           <div
             className={classNames(
@@ -113,6 +121,7 @@ class TableHead extends Component {
         key={`column_${index + 1}`}
         className={columnClasses}
         {...thProps}
+        style={thStyle}
       >
         <div className={theme.tableHeadItem}>
           <span> {title} </span>
@@ -221,6 +230,10 @@ TableHead.propTypes = {
      * column data in the expandable rows.
      */
     title: string.isRequired,
+    /**
+     * Defines the column width in pixels
+     */
+    width: number,
   })).isRequired,
   /**
    * It disables the click on orderable columns.
