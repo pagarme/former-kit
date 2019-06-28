@@ -38,6 +38,11 @@ const getRowsSort = (rows, columns) => (orderColumn, order) => {
   return sort(rows)
 }
 
+const addSizeProp = list => list.map((column, i) => ({
+  ...column,
+  width: i % 2 === 0 ? 80 : 200,
+}))
+
 class TableState extends Component {
   constructor (props) {
     super(props)
@@ -48,7 +53,11 @@ class TableState extends Component {
     this.handleExpandRow = this.handleExpandRow.bind(this)
     this.handleOrderChange = this.handleOrderChange.bind(this)
     this.handleSelectRow = this.handleSelectRow.bind(this)
-    this.mock = getMock(this.handleDetailsClick)
+    const mock = getMock(this.handleDetailsClick)
+    this.mock = {
+      ...mock,
+      columns: addSizeProp(mock.columns),
+    }
     this.state = {
       columns: this.getColumns(props.primaryAction),
       expandedRows: [],
