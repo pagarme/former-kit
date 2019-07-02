@@ -3,6 +3,7 @@ import { storiesOf } from '@storybook/react'
 
 import TableState from './TableState'
 import TableStateLoading from './TableStateLoading'
+import TableStateWidthControl from './TableStateWidthControl'
 import Section from '../Section'
 
 storiesOf('Table', module)
@@ -53,5 +54,10 @@ storiesOf('Table', module)
   .add('Loading rows', () => (
     <Section>
       <TableStateLoading />
+    </Section>
+  ))
+  .add('Width Control', () => (
+    <Section>
+      <TableStateWidthControl />
     </Section>
   ))

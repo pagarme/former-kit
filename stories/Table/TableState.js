@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React, { Component } from 'react'
 import { bool } from 'prop-types'
 import {
@@ -47,11 +46,6 @@ const formatSimpleTableColumns = map(
   assoc('orderable', false)
 )
 
-const addSizeProp = list => list.map((column, i) => ({
-  ...column,
-  width: i % 2 === 0 ? 80 : 200,
-}))
-
 class TableState extends Component {
   constructor (props) {
     super(props)
@@ -73,12 +67,7 @@ class TableState extends Component {
     this.getColumnsWithPrimaryAction = this
       .getColumnsWithPrimaryAction
       .bind(this)
-
-    const mock = getMock(this.handleDetailsClick, disabled)
-    this.mock = {
-      ...mock,
-      columns: addSizeProp(mock.columns),
-    }
+    this.mock = getMock(this.handleDetailsClick, disabled)
 
     this.state = {
       columns: this.getColumns(primaryAction, simple),
