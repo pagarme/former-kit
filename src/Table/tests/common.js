@@ -223,4 +223,5 @@ const createComponents = ({
 export {
   columnWithRenderer,
   createComponents,
+  mock,
 }
