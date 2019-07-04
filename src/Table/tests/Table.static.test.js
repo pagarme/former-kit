@@ -14,7 +14,10 @@ import TableEmptyItem from '../TableEmptyItem'
 import TableEmptyRow from '../TableEmptyRow'
 import TableHead from '../TableHead'
 import TableRow from '../TableRow'
-import { createComponents } from './common'
+import {
+  createComponents,
+  mock,
+} from './common'
 import {
   columnsCases,
   rowsCases,
@@ -133,6 +136,30 @@ describe('Table', () => {
 
           expect(lastColumn.exists()).toBe(true)
           expect(lastColumn.children().exists()).toBe(true)
+        })
+      })
+
+      describe('should control columns width correctly', () => {
+        it('when a width prop is received', () => {
+          const { columns } = mock
+          const columnsWithWidthProps = columns.map(column => ({
+            ...column,
+            width: 120,
+          }))
+
+          const { component } = createComponents({
+            columns: columnsWithWidthProps,
+          })
+          const firstRow = component.find(TableRow).first()
+          const header = component.find(TableHead)
+          let lastColumn = firstRow
+
+          lastColumn = header
+            .find('th[style]')
+            .last()
+
+          expect(lastColumn.exists()).toBe(true)
+          expect(lastColumn.prop('style').width).toBe('120px')
         })
       })
 
