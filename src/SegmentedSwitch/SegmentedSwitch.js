@@ -45,12 +45,17 @@ class SegmentedSwitch extends PureComponent {
     const {
       disabled,
       options,
+      spacing,
       theme,
     } = this.props
 
-    const containerClass = classnames(theme.segmentedSwitch, {
-      [theme.disabled]: disabled,
-    })
+    const containerClass = classnames(
+      theme.segmentedSwitch,
+      theme[`spacing-${spacing}`],
+      {
+        [theme.disabled]: disabled,
+      }
+    )
 
     return (
       <div className={containerClass}>
@@ -83,6 +88,12 @@ SegmentedSwitch.propTypes = {
     value: PropTypes.string,
   })).isRequired,
   /**
+   * The spacing to be used between the buttons
+   */
+  spacing: PropTypes.oneOf([
+    'tiny', 'small', 'medium', 'large',
+  ]),
+  /**
    * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: PropTypes.shape({
@@ -107,6 +118,8 @@ SegmentedSwitch.propTypes = {
 
 SegmentedSwitch.defaultProps = {
   disabled: false,
+  relevance: 'normal',
+  spacing: 'medium',
   theme: {},
 }
 
