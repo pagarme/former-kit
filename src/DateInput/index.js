@@ -162,7 +162,7 @@ class DateInput extends React.Component {
       this.setState({ // eslint-disable-line react/no-did-update-set-state
         dates: momentToText(presetDates || dates),
         selectedPreset,
-        selectionMode: preset.mode,
+        selectionMode: preset && preset.mode,
       })
     }
   }
