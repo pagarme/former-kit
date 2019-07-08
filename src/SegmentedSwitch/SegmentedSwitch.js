@@ -45,6 +45,7 @@ class SegmentedSwitch extends PureComponent {
     const {
       disabled,
       options,
+      relevance,
       spacing,
       theme,
     } = this.props
@@ -52,6 +53,7 @@ class SegmentedSwitch extends PureComponent {
     const containerClass = classnames(
       theme.segmentedSwitch,
       theme[`spacing-${spacing}`],
+      theme[`relevance-${relevance}`],
       {
         [theme.disabled]: disabled,
       }
@@ -87,6 +89,12 @@ SegmentedSwitch.propTypes = {
     title: PropTypes.node,
     value: PropTypes.string,
   })).isRequired,
+  /**
+   * The relevance to be used on the buttons
+   */
+  relevance: PropTypes.oneOf([
+    'normal', 'low',
+  ]),
   /**
    * The spacing to be used between the buttons
    */
