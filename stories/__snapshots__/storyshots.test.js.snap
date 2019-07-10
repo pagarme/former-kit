@@ -29517,7 +29517,7 @@ exports[`Storyshots SegmentedSwitch Default 1`] = `
       </h2>
       <div>
         <div
-          className="segmentedSwitch"
+          className="segmentedSwitch spacing-medium relevance-normal"
         >
           <label
             className="item"
@@ -29568,7 +29568,7 @@ exports[`Storyshots SegmentedSwitch Default 1`] = `
       </h2>
       <div>
         <div
-          className="segmentedSwitch"
+          className="segmentedSwitch spacing-medium relevance-normal"
         >
           <label
             className="item"
@@ -29657,7 +29657,7 @@ exports[`Storyshots SegmentedSwitch Default 1`] = `
       </h2>
       <div>
         <div
-          className="segmentedSwitch"
+          className="segmentedSwitch spacing-medium relevance-normal"
         >
           <label
             className="item"
@@ -29714,7 +29714,7 @@ exports[`Storyshots SegmentedSwitch Default 1`] = `
       </h2>
       <div>
         <div
-          className="segmentedSwitch disabled"
+          className="segmentedSwitch spacing-medium relevance-normal disabled"
         >
           <label
             className="item"
@@ -30284,7 +30284,7 @@ exports[`Storyshots SpacedSegmentedSwitch Default 1`] = `
       </h2>
       <div>
         <div
-          className="segmentedSwitch"
+          className="segmentedSwitch spacing-medium relevance-normal"
         >
           <label
             className="item"
@@ -30359,7 +30359,96 @@ exports[`Storyshots SpacedSegmentedSwitch Default 1`] = `
             <span
               className="label"
             >
-              More than R$100
+              More than $100
+            </span>
+          </label>
+        </div>
+      </div>
+    </section>
+    <section
+      className=""
+    >
+      <h2>
+        With low relevance and tiny spacing
+      </h2>
+      <div>
+        <div
+          className="segmentedSwitch spacing-tiny relevance-low"
+        >
+          <label
+            className="item"
+            htmlFor="segmented-switch-shortid-mock-table-chart-from0to25"
+          >
+            <input
+              checked={false}
+              disabled={false}
+              id="segmented-switch-shortid-mock-table-chart-from0to25"
+              name="segmented-switch-shortid-mock"
+              onChange={[Function]}
+              type="radio"
+              value="from0to25"
+            />
+            <span
+              className="label"
+            >
+              From $0 to $25
+            </span>
+          </label>
+          <label
+            className="item"
+            htmlFor="segmented-switch-shortid-mock-table-chart-from25to100"
+          >
+            <input
+              checked={false}
+              disabled={false}
+              id="segmented-switch-shortid-mock-table-chart-from25to100"
+              name="segmented-switch-shortid-mock"
+              onChange={[Function]}
+              type="radio"
+              value="from25to100"
+            />
+            <span
+              className="label"
+            >
+              From $25 to $50
+            </span>
+          </label>
+          <label
+            className="item"
+            htmlFor="segmented-switch-shortid-mock-table-chart-from50to100"
+          >
+            <input
+              checked={false}
+              disabled={false}
+              id="segmented-switch-shortid-mock-table-chart-from50to100"
+              name="segmented-switch-shortid-mock"
+              onChange={[Function]}
+              type="radio"
+              value="from50to100"
+            />
+            <span
+              className="label"
+            >
+              From $50 to $100
+            </span>
+          </label>
+          <label
+            className="item"
+            htmlFor="segmented-switch-shortid-mock-table-chart-moreThan100"
+          >
+            <input
+              checked={false}
+              disabled={false}
+              id="segmented-switch-shortid-mock-table-chart-moreThan100"
+              name="segmented-switch-shortid-mock"
+              onChange={[Function]}
+              type="radio"
+              value="moreThan100"
+            />
+            <span
+              className="label"
+            >
+              More than $100
             </span>
           </label>
         </div>
@@ -30373,7 +30462,86 @@ exports[`Storyshots SpacedSegmentedSwitch Default 1`] = `
       </h2>
       <div>
         <div
-          className="segmentedSwitch"
+          className="segmentedSwitch spacing-medium relevance-normal"
+        >
+          <label
+            className="item"
+            htmlFor="segmented-switch-shortid-mock-table-chart-table"
+          >
+            <input
+              checked={true}
+              disabled={false}
+              id="segmented-switch-shortid-mock-table-chart-table"
+              name="segmented-switch-shortid-mock"
+              onChange={[Function]}
+              type="radio"
+              value="table"
+            />
+            <span
+              className="label"
+            >
+              <Menu32.svg
+                height={16}
+                width={16}
+              />
+            </span>
+          </label>
+          <label
+            className="item"
+            htmlFor="segmented-switch-shortid-mock-table-chart-chart"
+          >
+            <input
+              checked={false}
+              disabled={false}
+              id="segmented-switch-shortid-mock-table-chart-chart"
+              name="segmented-switch-shortid-mock"
+              onChange={[Function]}
+              type="radio"
+              value="chart"
+            />
+            <span
+              className="label"
+            >
+              <TrendingUp32.svg
+                height={16}
+                width={16}
+              />
+            </span>
+          </label>
+          <label
+            className="item"
+            htmlFor="segmented-switch-shortid-mock-table-chart-lock"
+          >
+            <input
+              checked={false}
+              disabled={false}
+              id="segmented-switch-shortid-mock-table-chart-lock"
+              name="segmented-switch-shortid-mock"
+              onChange={[Function]}
+              type="radio"
+              value="lock"
+            />
+            <span
+              className="label"
+            >
+              <Lock32.svg
+                height={16}
+                width={16}
+              />
+            </span>
+          </label>
+        </div>
+      </div>
+    </section>
+    <section
+      className=""
+    >
+      <h2>
+        With icons and low relevance
+      </h2>
+      <div>
+        <div
+          className="segmentedSwitch spacing-medium relevance-low"
         >
           <label
             className="item"
@@ -30452,7 +30620,7 @@ exports[`Storyshots SpacedSegmentedSwitch Default 1`] = `
       </h2>
       <div>
         <div
-          className="segmentedSwitch disabled"
+          className="segmentedSwitch spacing-medium relevance-normal disabled"
         >
           <label
             className="item"
