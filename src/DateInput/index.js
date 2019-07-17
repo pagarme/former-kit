@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react'
 import shortid from 'shortid'
 import {
-  equals,
   find,
   flatten,
   has,
@@ -134,7 +133,6 @@ class DateInput extends React.Component {
         end: receivedEnd,
         start: receivedStart,
       },
-      dates,
       presets,
       selectedPreset: propsSelectedPreset,
     } = this.props
@@ -144,24 +142,20 @@ class DateInput extends React.Component {
         end: currentEnd,
         start: currentStart,
       },
-      selectedPreset: currentSelectedPreset,
     } = this.state
 
     const isSameStart = receivedStart && receivedStart.isSame(currentStart, 'day')
     const isSameEnd = receivedEnd && receivedEnd.isSame(currentEnd, 'day')
 
-    if (!equals(prevProps, this.props) && (!isSameStart || !isSameEnd)) {
-      const prevPropsSelectedPreset = prevProps.selectedPreset
-      const selectedPreset = prevPropsSelectedPreset !== propsSelectedPreset
-        ? propsSelectedPreset
-        : currentSelectedPreset
-
-      const preset = findPreset(selectedPreset, presets)
+    const prevPropsSelectedPreset = prevProps.selectedPreset
+    const presetChanged = prevPropsSelectedPreset !== propsSelectedPreset
+    if (presetChanged && (!isSameStart || !isSameEnd)) {
+      const preset = findPreset(propsSelectedPreset, presets)
       const presetDates = getDatesFromPreset(preset)
 
       this.setState({ // eslint-disable-line react/no-did-update-set-state
-        dates: momentToText(presetDates || dates),
-        selectedPreset,
+        dates: momentToText(presetDates),
+        selectedPreset: propsSelectedPreset,
         selectionMode: preset && preset.mode,
       })
     }
