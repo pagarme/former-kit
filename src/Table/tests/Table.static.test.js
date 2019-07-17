@@ -150,6 +150,7 @@ describe('Table', () => {
           const { component } = createComponents({
             columns: columnsWithWidthProps,
           })
+
           const firstRow = component.find(TableRow).first()
           const header = component.find(TableHead)
           let lastColumn = firstRow

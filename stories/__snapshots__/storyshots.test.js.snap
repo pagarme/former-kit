@@ -31687,6 +31687,7 @@ exports[`Storyshots Table Action column 1`] = `
               <th
                 className="active orderable"
                 onClick={[Function]}
+                style={Object {}}
               >
                 <div
                   className="tableHeadItem"
@@ -31706,6 +31707,7 @@ exports[`Storyshots Table Action column 1`] = `
               <th
                 className="orderable"
                 onClick={[Function]}
+                style={Object {}}
               >
                 <div
                   className="tableHeadItem"
@@ -31725,6 +31727,7 @@ exports[`Storyshots Table Action column 1`] = `
               <th
                 className="orderable"
                 onClick={[Function]}
+                style={Object {}}
               >
                 <div
                   className="tableHeadItem"
@@ -31744,6 +31747,7 @@ exports[`Storyshots Table Action column 1`] = `
               <th
                 className="orderable"
                 onClick={[Function]}
+                style={Object {}}
               >
                 <div
                   className="tableHeadItem"
@@ -31763,6 +31767,7 @@ exports[`Storyshots Table Action column 1`] = `
               <th
                 className="orderable"
                 onClick={[Function]}
+                style={Object {}}
               >
                 <div
                   className="tableHeadItem"
@@ -31782,6 +31787,7 @@ exports[`Storyshots Table Action column 1`] = `
               <th
                 className="orderable"
                 onClick={[Function]}
+                style={Object {}}
               >
                 <div
                   className="tableHeadItem"
@@ -31800,6 +31806,7 @@ exports[`Storyshots Table Action column 1`] = `
               </th>
               <th
                 className="startAlign unselectable"
+                style={Object {}}
               >
                 <div
                   className="startAlign tableHeadItem"
@@ -32193,6 +32200,7 @@ exports[`Storyshots Table Disabled orderable 1`] = `
               </th>
               <th
                 className="active orderable disabled"
+                style={Object {}}
               >
                 <div
                   className="tableHeadItem"
@@ -32211,6 +32219,7 @@ exports[`Storyshots Table Disabled orderable 1`] = `
               </th>
               <th
                 className="orderable disabled"
+                style={Object {}}
               >
                 <div
                   className="tableHeadItem"
@@ -32229,6 +32238,7 @@ exports[`Storyshots Table Disabled orderable 1`] = `
               </th>
               <th
                 className="orderable disabled"
+                style={Object {}}
               >
                 <div
                   className="tableHeadItem"
@@ -32247,6 +32257,7 @@ exports[`Storyshots Table Disabled orderable 1`] = `
               </th>
               <th
                 className="orderable disabled"
+                style={Object {}}
               >
                 <div
                   className="tableHeadItem"
@@ -32265,6 +32276,7 @@ exports[`Storyshots Table Disabled orderable 1`] = `
               </th>
               <th
                 className="orderable disabled"
+                style={Object {}}
               >
                 <div
                   className="tableHeadItem"
@@ -32283,6 +32295,7 @@ exports[`Storyshots Table Disabled orderable 1`] = `
               </th>
               <th
                 className="orderable disabled"
+                style={Object {}}
               >
                 <div
                   className="tableHeadItem"
@@ -33371,6 +33384,7 @@ exports[`Storyshots Table Empty renderer column 1`] = `
             <tr>
               <th
                 className="startAlign active"
+                style={Object {}}
               >
                 <div
                   className="startAlign tableHeadItem"
@@ -33381,6 +33395,7 @@ exports[`Storyshots Table Empty renderer column 1`] = `
               <th
                 className="orderable"
                 onClick={[Function]}
+                style={Object {}}
               >
                 <div
                   className="tableHeadItem"
@@ -33400,6 +33415,7 @@ exports[`Storyshots Table Empty renderer column 1`] = `
               <th
                 className="orderable"
                 onClick={[Function]}
+                style={Object {}}
               >
                 <div
                   className="tableHeadItem"
@@ -33419,6 +33435,7 @@ exports[`Storyshots Table Empty renderer column 1`] = `
               <th
                 className="orderable"
                 onClick={[Function]}
+                style={Object {}}
               >
                 <div
                   className="tableHeadItem"
@@ -33438,6 +33455,7 @@ exports[`Storyshots Table Empty renderer column 1`] = `
               <th
                 className="orderable"
                 onClick={[Function]}
+                style={Object {}}
               >
                 <div
                   className="tableHeadItem"
@@ -33457,6 +33475,7 @@ exports[`Storyshots Table Empty renderer column 1`] = `
               <th
                 className="orderable"
                 onClick={[Function]}
+                style={Object {}}
               >
                 <div
                   className="tableHeadItem"
@@ -33476,6 +33495,7 @@ exports[`Storyshots Table Empty renderer column 1`] = `
               <th
                 className="orderable"
                 onClick={[Function]}
+                style={Object {}}
               >
                 <div
                   className="tableHeadItem"
@@ -33775,6 +33795,7 @@ exports[`Storyshots Table Empty table 1`] = `
             <tr>
               <th
                 className="active orderable disabled"
+                style={Object {}}
               >
                 <div
                   className="tableHeadItem"
@@ -33793,6 +33814,7 @@ exports[`Storyshots Table Empty table 1`] = `
               </th>
               <th
                 className="orderable disabled"
+                style={Object {}}
               >
                 <div
                   className="tableHeadItem"
@@ -33811,6 +33833,7 @@ exports[`Storyshots Table Empty table 1`] = `
               </th>
               <th
                 className="orderable disabled"
+                style={Object {}}
               >
                 <div
                   className="tableHeadItem"
@@ -33829,6 +33852,7 @@ exports[`Storyshots Table Empty table 1`] = `
               </th>
               <th
                 className="orderable disabled"
+                style={Object {}}
               >
                 <div
                   className="tableHeadItem"
@@ -33847,6 +33871,7 @@ exports[`Storyshots Table Empty table 1`] = `
               </th>
               <th
                 className="orderable disabled"
+                style={Object {}}
               >
                 <div
                   className="tableHeadItem"
@@ -33865,6 +33890,7 @@ exports[`Storyshots Table Empty table 1`] = `
               </th>
               <th
                 className="orderable disabled"
+                style={Object {}}
               >
                 <div
                   className="tableHeadItem"
@@ -33883,6 +33909,7 @@ exports[`Storyshots Table Empty table 1`] = `
               </th>
               <th
                 className="orderable disabled"
+                style={Object {}}
               >
                 <div
                   className="tableHeadItem"
@@ -33947,6 +33974,7 @@ exports[`Storyshots Table Loading rows 1`] = `
           <tr>
             <th
               className="startAlign"
+              style={Object {}}
             >
               <div
                 className="startAlign tableHeadItem"
@@ -33956,6 +33984,7 @@ exports[`Storyshots Table Loading rows 1`] = `
             </th>
             <th
               className="startAlign"
+              style={Object {}}
             >
               <div
                 className="startAlign tableHeadItem"
@@ -33965,6 +33994,7 @@ exports[`Storyshots Table Loading rows 1`] = `
             </th>
             <th
               className="startAlign"
+              style={Object {}}
             >
               <div
                 className="startAlign tableHeadItem"
@@ -33974,6 +34004,7 @@ exports[`Storyshots Table Loading rows 1`] = `
             </th>
             <th
               className="startAlign"
+              style={Object {}}
             >
               <div
                 className="startAlign tableHeadItem"
@@ -34056,6 +34087,7 @@ exports[`Storyshots Table Loading rows 1`] = `
           <tr>
             <th
               className="startAlign"
+              style={Object {}}
             >
               <div
                 className="startAlign tableHeadItem"
@@ -34065,6 +34097,7 @@ exports[`Storyshots Table Loading rows 1`] = `
             </th>
             <th
               className="startAlign"
+              style={Object {}}
             >
               <div
                 className="startAlign tableHeadItem"
@@ -34074,6 +34107,7 @@ exports[`Storyshots Table Loading rows 1`] = `
             </th>
             <th
               className="startAlign"
+              style={Object {}}
             >
               <div
                 className="startAlign tableHeadItem"
@@ -34083,6 +34117,7 @@ exports[`Storyshots Table Loading rows 1`] = `
             </th>
             <th
               className="startAlign"
+              style={Object {}}
             >
               <div
                 className="startAlign tableHeadItem"
@@ -34231,6 +34266,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
               <th
                 className="active orderable"
                 onClick={[Function]}
+                style={Object {}}
               >
                 <div
                   className="tableHeadItem"
@@ -34250,6 +34286,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
               <th
                 className="orderable"
                 onClick={[Function]}
+                style={Object {}}
               >
                 <div
                   className="tableHeadItem"
@@ -34269,6 +34306,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
               <th
                 className="orderable"
                 onClick={[Function]}
+                style={Object {}}
               >
                 <div
                   className="tableHeadItem"
@@ -34288,6 +34326,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
               <th
                 className="orderable"
                 onClick={[Function]}
+                style={Object {}}
               >
                 <div
                   className="tableHeadItem"
@@ -34307,6 +34346,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
               <th
                 className="orderable"
                 onClick={[Function]}
+                style={Object {}}
               >
                 <div
                   className="tableHeadItem"
@@ -34326,6 +34366,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
               <th
                 className="orderable"
                 onClick={[Function]}
+                style={Object {}}
               >
                 <div
                   className="tableHeadItem"
@@ -35434,6 +35475,7 @@ exports[`Storyshots Table Simple 1`] = `
             <tr>
               <th
                 className="startAlign"
+                style={Object {}}
               >
                 <div
                   className="startAlign tableHeadItem"
@@ -35443,6 +35485,7 @@ exports[`Storyshots Table Simple 1`] = `
               </th>
               <th
                 className="startAlign"
+                style={Object {}}
               >
                 <div
                   className="startAlign tableHeadItem"
@@ -35452,6 +35495,7 @@ exports[`Storyshots Table Simple 1`] = `
               </th>
               <th
                 className="startAlign"
+                style={Object {}}
               >
                 <div
                   className="startAlign tableHeadItem"
@@ -35461,6 +35505,7 @@ exports[`Storyshots Table Simple 1`] = `
               </th>
               <th
                 className="startAlign"
+                style={Object {}}
               >
                 <div
                   className="startAlign tableHeadItem"
@@ -35470,6 +35515,7 @@ exports[`Storyshots Table Simple 1`] = `
               </th>
               <th
                 className="startAlign"
+                style={Object {}}
               >
                 <div
                   className="startAlign tableHeadItem"
@@ -35479,6 +35525,7 @@ exports[`Storyshots Table Simple 1`] = `
               </th>
               <th
                 className="startAlign"
+                style={Object {}}
               >
                 <div
                   className="startAlign tableHeadItem"
@@ -35488,6 +35535,7 @@ exports[`Storyshots Table Simple 1`] = `
               </th>
               <th
                 className="startAlign"
+                style={Object {}}
               >
                 <div
                   className="startAlign tableHeadItem"
@@ -35805,8 +35853,12 @@ exports[`Storyshots Table Width Control 1`] = `
         >
           <tr>
             <th
-              className="startAlign"
-              width={80}
+              className="startAlign active"
+              style={
+                Object {
+                  "width": "80px",
+                }
+              }
             >
               <div
                 className="startAlign tableHeadItem"
@@ -35816,7 +35868,11 @@ exports[`Storyshots Table Width Control 1`] = `
             </th>
             <th
               className="startAlign"
-              width={200}
+              style={
+                Object {
+                  "width": "200px",
+                }
+              }
             >
               <div
                 className="startAlign tableHeadItem"
@@ -35826,7 +35882,11 @@ exports[`Storyshots Table Width Control 1`] = `
             </th>
             <th
               className="startAlign"
-              width={80}
+              style={
+                Object {
+                  "width": "80px",
+                }
+              }
             >
               <div
                 className="startAlign tableHeadItem"
@@ -35836,7 +35896,11 @@ exports[`Storyshots Table Width Control 1`] = `
             </th>
             <th
               className="startAlign"
-              width={200}
+              style={
+                Object {
+                  "width": "200px",
+                }
+              }
             >
               <div
                 className="startAlign tableHeadItem"
@@ -35846,7 +35910,11 @@ exports[`Storyshots Table Width Control 1`] = `
             </th>
             <th
               className="startAlign"
-              width={80}
+              style={
+                Object {
+                  "width": "80px",
+                }
+              }
             >
               <div
                 className="startAlign tableHeadItem"
@@ -35856,7 +35924,11 @@ exports[`Storyshots Table Width Control 1`] = `
             </th>
             <th
               className="startAlign"
-              width={200}
+              style={
+                Object {
+                  "width": "200px",
+                }
+              }
             >
               <div
                 className="startAlign tableHeadItem"
@@ -35866,7 +35938,11 @@ exports[`Storyshots Table Width Control 1`] = `
             </th>
             <th
               className="startAlign"
-              width={80}
+              style={
+                Object {
+                  "width": "80px",
+                }
+              }
             >
               <div
                 className="startAlign tableHeadItem"
