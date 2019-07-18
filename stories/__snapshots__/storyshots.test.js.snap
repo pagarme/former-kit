@@ -36201,7 +36201,7 @@ exports[`Storyshots Table Width Control 1`] = `
       </table>
       <br />
       <div
-        className="segmentedSwitch"
+        className="segmentedSwitch spacing-medium relevance-normal"
       >
         <label
           className="item"
