@@ -11,30 +11,30 @@ storiesOf('Typography', module)
       <div className={style.fontBook}>
         <div>
           <span>Heading 1</span>
-          <h1>Assistant 24</h1>
+          <h1>Rubik 24</h1>
         </div>
         <div>
           <span>Heading 2</span>
-          <h2>Assistant 20</h2>
+          <h2>Rubik 20</h2>
         </div>
         <div>
           <span>Heading 3</span>
-          <h3>Assistant 18</h3>
+          <h3>Rubik 18</h3>
         </div>
         <div>
           <span>Body</span>
           <div>
             <p>
-              Assistant Regular 14
+              Rubik Regular 14
             </p>
             <p>
               <i>
-                Assistant Italic 14
+                Rubik Italic 14
               </i>
             </p>
             <p>
               <b>
-                Assistant Bold 14
+                Rubik Bold 14
               </b>
             </p>
           </div>
