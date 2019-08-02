@@ -14,6 +14,7 @@ import {
 
 import {
   Popover,
+  PopoverContent,
   PopoverMenu,
 } from '../../src/Popover'
 
@@ -53,12 +54,12 @@ const renderActions = () => (
     <Fragment>
       <Popover
         content={(
-          <Fragment>
-            <div>
+          <div>
+            <PopoverContent>
               <strong>Teste</strong>
-            </div>
+            </PopoverContent>
             <PopoverMenu items={items} />
-          </Fragment>
+          </div>
         )}
       >
         <Button
