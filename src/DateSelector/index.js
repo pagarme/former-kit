@@ -279,6 +279,7 @@ class DateSelector extends Component {
   render () {
     const {
       children,
+      placement,
       presets,
       selectedPreset,
       showCalendar,
@@ -311,6 +312,7 @@ class DateSelector extends Component {
           )}
           onClick={() => null}
           onClickOutside={this.handlePopoverClose}
+          placement={placement}
           visible={visible}
         >
           {children}
@@ -370,6 +372,14 @@ DateSelector.propTypes = {
    * Triggered when a preset is selected.
    */
   onPresetChange: func,
+  /**
+   * @see [Popover](#popover) - The placement to be used on Popover component.
+   * This will change the calendar's position to open from the left or right
+   * corner of the child component.
+   */
+  placement: oneOf([
+    'bottomEnd', 'bottomStart',
+  ]),
   /**
    * Props structure which is used to create the left side menu, this menu allows
    * the user to select dates in preset dates, ranges, etc.
@@ -454,6 +464,7 @@ DateSelector.defaultProps = {
   icons: {},
   isValidDay: null,
   onPresetChange: () => undefined,
+  placement: 'bottomStart',
   presets: [],
   selectedPreset: '',
   selectionMode: 'single',

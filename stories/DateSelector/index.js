@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import moment from 'moment'
 
 import Button from '../../src/Button'
-import Section from '../Section'
+import Flexbox from '../../src/Flexbox'
+import Spacing from '../../src/Spacing'
 import DateSelector from '../../src/DateSelector'
+import Section from '../Section'
 import AsideState from './aside'
 
 import presets from './presets'
@@ -50,14 +52,26 @@ class DateSelectorExample extends React.Component {
   }
 
   render () {
-    const { dateSelectorVisible, dates, selectedPreset } = this.state
-    const { selectionMode, showCalendar, showSidebar } = this.props
+    const {
+      dateSelectorVisible,
+      dates,
+      selectedPreset,
+    } = this.state
+
+    const {
+      placement,
+      selectionMode,
+      showCalendar,
+      showSidebar,
+    } = this.props
+
     return (
       <DateSelector
         dates={dates}
         onConfirm={newDates => action('onConfirm')(newDates)}
         onChange={this.handleDatesChange}
         onPresetChange={this.handlePresetChange}
+        placement={placement}
         presets={presets}
         selectedPreset={selectedPreset}
         selectionMode={selectionMode}
@@ -95,6 +109,24 @@ storiesOf('DateSelector', module)
         showSidebar={false}
       />
     </Section>
+  ))
+  .add('With alternate placement', () => (
+    <Fragment>
+      <Section title="default">
+        <DateSelectorExample
+          showSidebar={false}
+        />
+      </Section>
+      <Section title="bottomEnd">
+        <Flexbox justifyContent="flex-end">
+          <DateSelectorExample
+            placement="bottomEnd"
+            showSidebar={false}
+          />
+          <Spacing size="tiny" />
+        </Flexbox>
+      </Section>
+    </Fragment>
   ))
   .add('Without sidebar and pre selected date', () => (
     <Section>
