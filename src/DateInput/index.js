@@ -129,6 +129,7 @@ class DateInput extends React.Component {
 
   componentDidUpdate (prevProps) {
     const {
+      dates,
       dates: {
         end: receivedEnd,
         start: receivedStart,
@@ -154,7 +155,7 @@ class DateInput extends React.Component {
       const presetDates = getDatesFromPreset(preset)
 
       this.setState({ // eslint-disable-line react/no-did-update-set-state
-        dates: momentToText(presetDates),
+        dates: momentToText(presetDates || dates),
         selectedPreset: propsSelectedPreset,
         selectionMode: preset && preset.mode,
       })
