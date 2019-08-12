@@ -37865,7 +37865,7 @@ exports[`Storyshots Typography Font families 1`] = `
             Heading 1
           </span>
           <h1>
-            Assistant 24
+            Rubik 24
           </h1>
         </div>
         <div>
@@ -37873,7 +37873,7 @@ exports[`Storyshots Typography Font families 1`] = `
             Heading 2
           </span>
           <h2>
-            Assistant 20
+            Rubik 20
           </h2>
         </div>
         <div>
@@ -37881,7 +37881,7 @@ exports[`Storyshots Typography Font families 1`] = `
             Heading 3
           </span>
           <h3>
-            Assistant 18
+            Rubik 18
           </h3>
         </div>
         <div>
@@ -37890,16 +37890,16 @@ exports[`Storyshots Typography Font families 1`] = `
           </span>
           <div>
             <p>
-              Assistant Regular 14
+              Rubik Regular 14
             </p>
             <p>
               <i>
-                Assistant Italic 14
+                Rubik Italic 14
               </i>
             </p>
             <p>
               <b>
-                Assistant Bold 14
+                Rubik Bold 14
               </b>
             </p>
           </div>
