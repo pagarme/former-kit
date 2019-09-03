@@ -31,10 +31,7 @@ exports[`Storyshots Alerts Default 1`] = `
             role="status"
           >
             <p>
-              <strong>
-                Warning.
-              </strong>
-               Something is going on!
+              Warning. Something is going on!
             </p>
           </div>
         </div>
@@ -64,10 +61,7 @@ exports[`Storyshots Alerts Default 1`] = `
             role="status"
           >
             <p>
-              <strong>
-                Info.
-              </strong>
-               You can do it better!
+              Info. You can do it better!
             </p>
           </div>
         </div>
@@ -97,10 +91,7 @@ exports[`Storyshots Alerts Default 1`] = `
             role="status"
           >
             <p>
-              <strong>
-                Error.
-              </strong>
-               Something went wrong!
+              Error. Something went wrong!
             </p>
           </div>
         </div>
@@ -130,10 +121,7 @@ exports[`Storyshots Alerts Default 1`] = `
             role="status"
           >
             <p>
-              <strong>
-                Success.
-              </strong>
-               Awesome, it worked!
+              Success. Awesome, it worked!
             </p>
           </div>
         </div>
@@ -163,10 +151,7 @@ exports[`Storyshots Alerts Default 1`] = `
             role="status"
           >
             <p>
-              <strong>
-                Warning.
-              </strong>
-               Something is going on!
+              Warning. Something is going on!
             </p>
             <button
               className="button clean normalRelevance default"
@@ -217,10 +202,7 @@ exports[`Storyshots Alerts Default 1`] = `
             role="status"
           >
             <p>
-              <strong>
-                Warning.
-              </strong>
-               Something is going on!
+              Warning. Something is going on!
             </p>
           </div>
         </div>
@@ -250,10 +232,7 @@ exports[`Storyshots Alerts Default 1`] = `
             role="status"
           >
             <p>
-              <strong>
-                Info.
-              </strong>
-               You can do it better!
+              Info. You can do it better!
             </p>
           </div>
         </div>
@@ -283,10 +262,7 @@ exports[`Storyshots Alerts Default 1`] = `
             role="status"
           >
             <p>
-              <strong>
-                Error.
-              </strong>
-               Something went wrong!
+              Error. Something went wrong!
             </p>
           </div>
         </div>
@@ -316,10 +292,7 @@ exports[`Storyshots Alerts Default 1`] = `
             role="status"
           >
             <p>
-              <strong>
-                Success.
-              </strong>
-               Awesome, it worked!
+              Success. Awesome, it worked!
             </p>
           </div>
         </div>
@@ -349,10 +322,7 @@ exports[`Storyshots Alerts Default 1`] = `
             role="status"
           >
             <p>
-              <strong>
-                Warning.
-              </strong>
-               Something is going on!
+              Warning. Something is going on!
             </p>
             <button
               className="button clean normalRelevance default"
@@ -26770,9 +26740,7 @@ exports[`Storyshots Popover Handle close popover 1`] = `
             <div
               className="content"
             >
-              <strong>
-                test@email.com
-              </strong>
+              test@email.com
               <small>
                 Admin
               </small>
@@ -27269,9 +27237,7 @@ exports[`Storyshots Popover Visible 1`] = `
             <div
               className="content"
             >
-              <strong>
-                test@email.com
-              </strong>
+              test@email.com
               <small>
                 Admin
               </small>
@@ -27336,9 +27302,7 @@ exports[`Storyshots Popover Visible 1`] = `
             <div
               className="content"
             >
-              <strong>
-                test@email.com
-              </strong>
+              test@email.com
               <small>
                 Admin
               </small>
@@ -27405,9 +27369,7 @@ exports[`Storyshots Popover Visible 1`] = `
             <div
               className="content"
             >
-              <strong>
-                test@email.com
-              </strong>
+              test@email.com
               <small>
                 Admin
               </small>
@@ -27474,9 +27436,7 @@ exports[`Storyshots Popover Visible 1`] = `
             <div
               className="content"
             >
-              <strong>
-                test@email.com
-              </strong>
+              test@email.com
               <small>
                 Admin
               </small>
@@ -27543,9 +27503,7 @@ exports[`Storyshots Popover Visible 1`] = `
             <div
               className="content"
             >
-              <strong>
-                test@email.com
-              </strong>
+              test@email.com
               <small>
                 Admin
               </small>
@@ -27612,9 +27570,7 @@ exports[`Storyshots Popover Visible 1`] = `
             <div
               className="content"
             >
-              <strong>
-                test@email.com
-              </strong>
+              test@email.com
               <small>
                 Admin
               </small>
@@ -27681,9 +27637,7 @@ exports[`Storyshots Popover Visible 1`] = `
             <div
               className="content"
             >
-              <strong>
-                test@email.com
-              </strong>
+              test@email.com
               <small>
                 Admin
               </small>
@@ -27750,9 +27704,7 @@ exports[`Storyshots Popover Visible 1`] = `
             <div
               className="content"
             >
-              <strong>
-                test@email.com
-              </strong>
+              test@email.com
               <small>
                 Admin
               </small>
@@ -27819,9 +27771,7 @@ exports[`Storyshots Popover Visible 1`] = `
             <div
               className="content"
             >
-              <strong>
-                test@email.com
-              </strong>
+              test@email.com
               <small>
                 Admin
               </small>
@@ -27888,9 +27838,7 @@ exports[`Storyshots Popover Visible 1`] = `
             <div
               className="content"
             >
-              <strong>
-                test@email.com
-              </strong>
+              test@email.com
               <small>
                 Admin
               </small>
@@ -27957,9 +27905,7 @@ exports[`Storyshots Popover Visible 1`] = `
             <div
               className="content"
             >
-              <strong>
-                test@email.com
-              </strong>
+              test@email.com
               <small>
                 Admin
               </small>
@@ -28026,9 +27972,7 @@ exports[`Storyshots Popover Visible 1`] = `
             <div
               className="content"
             >
-              <strong>
-                test@email.com
-              </strong>
+              test@email.com
               <small>
                 Admin
               </small>
