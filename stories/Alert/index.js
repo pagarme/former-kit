@@ -25,7 +25,7 @@ storiesOf('Alerts', module)
           icon={<IconWarning height={16} width={16} />}
           type="warning"
         >
-          <p><strong>Warning.</strong> Something is going on!</p>
+          <p>Warning. Something is going on!</p>
         </Alert>
       </Section>
 
@@ -34,7 +34,7 @@ storiesOf('Alerts', module)
           icon={<IconInfo height={16} width={16} />}
           type="info"
         >
-          <p><strong>Info.</strong> You can do it better!</p>
+          <p>Info. You can do it better!</p>
         </Alert>
       </Section>
 
@@ -43,7 +43,7 @@ storiesOf('Alerts', module)
           icon={<IconClear height={16} width={16} />}
           type="error"
         >
-          <p><strong>Error.</strong> Something went wrong!</p>
+          <p>Error. Something went wrong!</p>
         </Alert>
       </Section>
 
@@ -52,7 +52,7 @@ storiesOf('Alerts', module)
           icon={<IconCheck height={16} width={16} />}
           type="success"
         >
-          <p><strong>Success.</strong> Awesome, it worked!</p>
+          <p>Success. Awesome, it worked!</p>
         </Alert>
       </Section>
 
@@ -63,7 +63,7 @@ storiesOf('Alerts', module)
           onDismiss={action('dismiss')}
           type="warning"
         >
-          <p><strong>Warning.</strong> Something is going on!</p>
+          <p>Warning. Something is going on!</p>
         </Alert>
       </Section>
 
@@ -73,7 +73,7 @@ storiesOf('Alerts', module)
           icon={<IconWarning height={16} width={16} />}
           type="warning"
         >
-          <p><strong>Warning.</strong> Something is going on!</p>
+          <p>Warning. Something is going on!</p>
         </Alert>
       </Section>
 
@@ -83,7 +83,7 @@ storiesOf('Alerts', module)
           icon={<IconInfo height={16} width={16} />}
           type="info"
         >
-          <p><strong>Info.</strong> You can do it better!</p>
+          <p>Info. You can do it better!</p>
         </Alert>
       </Section>
 
@@ -93,7 +93,7 @@ storiesOf('Alerts', module)
           icon={<IconClear height={16} width={16} />}
           type="error"
         >
-          <p><strong>Error.</strong> Something went wrong!</p>
+          <p>Error. Something went wrong!</p>
         </Alert>
       </Section>
 
@@ -103,7 +103,7 @@ storiesOf('Alerts', module)
           icon={<IconCheck height={16} width={16} />}
           type="success"
         >
-          <p><strong>Success.</strong> Awesome, it worked!</p>
+          <p>Success. Awesome, it worked!</p>
         </Alert>
       </Section>
 
@@ -115,7 +115,7 @@ storiesOf('Alerts', module)
           onDismiss={action('dismiss')}
           type="warning"
         >
-          <p><strong>Warning.</strong> Something is going on!</p>
+          <p>Warning. Something is going on!</p>
         </Alert>
       </Section>
     </div>
