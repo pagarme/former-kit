@@ -16,7 +16,7 @@ const items = [
 const Menu = () => (
   <Fragment>
     <PopoverContent>
-      <strong>test@email.com</strong>
+      test@email.com
       <small>Admin</small>
     </PopoverContent>
     <PopoverMenu items={items} />
