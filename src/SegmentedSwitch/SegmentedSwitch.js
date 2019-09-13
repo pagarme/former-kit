@@ -106,6 +106,10 @@ SegmentedSwitch.propTypes = {
    */
   theme: PropTypes.shape({
     /**
+     * The class used when the item is disabled.
+     */
+    disabled: PropTypes.string,
+    /**
      * The class used to stylize an option.
      */
     item: PropTypes.string,

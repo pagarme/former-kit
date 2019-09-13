@@ -216,11 +216,14 @@ Dropdown.propTypes = {
    * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: PropTypes.shape({
+    active: PropTypes.string,
     arrow: PropTypes.string,
     disabled: PropTypes.string,
     dropdown: PropTypes.string,
     error: PropTypes.string,
     focused: PropTypes.string,
+    label: PropTypes.string,
+    option: PropTypes.string,
     placeholder: PropTypes.string,
     secondaryText: PropTypes.string,
     select: PropTypes.string,

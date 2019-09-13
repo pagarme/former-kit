@@ -449,6 +449,7 @@ CalendarInput.propTypes = {
     dateSelector: PropTypes.string,
     end: PropTypes.string,
     error: PropTypes.string,
+    expander: PropTypes.string,
     focused: PropTypes.string,
     icon: PropTypes.string,
     input: PropTypes.string,

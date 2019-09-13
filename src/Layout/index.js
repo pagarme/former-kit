@@ -54,6 +54,7 @@ Layout.propTypes = {
     children: PropTypes.string,
     content: PropTypes.string,
     layout: PropTypes.string,
+    wrapper: PropTypes.string,
   }),
 }
 

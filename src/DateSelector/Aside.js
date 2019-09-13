@@ -151,6 +151,7 @@ Aside.propTypes = {
    */
   theme: PropType.shape({
     actions: PropType.string,
+    aside: PropType.string,
     container: PropType.string,
     selectedDays: PropType.string,
     sidebar: PropType.string,

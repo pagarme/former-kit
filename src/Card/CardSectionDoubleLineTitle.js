@@ -102,6 +102,10 @@ CardSectionDoubleLineTitle.propTypes = {
    */
   theme: PropTypes.shape({
     /**
+     * The action double line class.
+     */
+    actionDoubleLine: PropTypes.string,
+    /**
      * The expand/collapse arrow icon class.
      */
     arrow: PropTypes.string,
@@ -118,6 +122,10 @@ CardSectionDoubleLineTitle.propTypes = {
      */
     doubleLineHead: PropTypes.string,
     /**
+     * The doubline title class.
+     */
+    doubleLineTitle: PropTypes.string,
+    /**
      * The section double title class.
      */
     sectionDoubleLineTitle: PropTypes.string,
@@ -125,6 +133,10 @@ CardSectionDoubleLineTitle.propTypes = {
      * The icon outer box class.
      */
     sectionIconBox: PropTypes.string,
+    /**
+     * The section subtitle class name.
+     */
+    sectionSubtitle: PropTypes.string,
     /**
      * The vertical aligned titles class name.
      */

@@ -103,8 +103,11 @@ RadioGroup.propTypes = {
     checkboxGroup: PropTypes.string,
     disabled: PropTypes.string,
     error: PropTypes.string,
+    input: PropTypes.string,
     label: PropTypes.string,
+    radioGroup: PropTypes.string,
     secondaryText: PropTypes.string,
+    title: PropTypes.string,
   }),
   /**
    * Selected value.
