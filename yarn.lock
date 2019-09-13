@@ -5206,11 +5206,6 @@ elliptic@^6.0.0:
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.0"
 
-emblematic-icons@0.6.1:
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/emblematic-icons/-/emblematic-icons-0.6.1.tgz#c9eba3cc90d818cf451cebf35b360e5e3dcf0b06"
-  integrity sha512-y9SC6R9wT5B82V0xNNmKswkf6ulB8Fbgs7oenxDsGEqUsMKBFajcwE27BlCwB7WC3bzaRZqSuQjERAI5xINoAw==
-
 emblematic-icons@0.7.1:
   version "0.7.1"
   resolved "https://registry.yarnpkg.com/emblematic-icons/-/emblematic-icons-0.7.1.tgz#2771340af07f31628cb9afc678108fa61542d76e"
@@ -6293,13 +6288,13 @@ format@^0.2.2:
   resolved "https://registry.yarnpkg.com/format/-/format-0.2.2.tgz#d6170107e9efdc4ed30c9dc39016df942b5cb58b"
   integrity sha1-1hcBB+nv3E7TDJ3DkBbflCtctYs=
 
-former-kit-skin-pagarme@1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/former-kit-skin-pagarme/-/former-kit-skin-pagarme-1.4.0.tgz#9f583f051dc6db0d010e2fcf62977495aa55dbe7"
-  integrity sha512-Ma2yf+R7ETaEg3ZZhiu1wK2N5FkVWqzd6SrLbJqOdI47rbTk9QzVUCx71SJeN6zVs+RIFFgII8fy0NErnC+G5w==
+former-kit-skin-pagarme@1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/former-kit-skin-pagarme/-/former-kit-skin-pagarme-1.5.0.tgz#6d3d9dd51e3b6834261911f656498dbab85dccd4"
+  integrity sha512-07amXZD793F4ZVyfoGkg9ZXS0lDk297OG9efEMf8RYCqmmtHpnx0moFU7ghUWYn17cqgJOafz2nj18DJmNlg8Q==
   dependencies:
-    emblematic-icons "0.6.1"
-    react-dates "18.4.0"
+    emblematic-icons "0.7.1"
+    react-dates "18.4.1"
 
 forwarded@~0.1.2:
   version "0.1.2"
@@ -11978,26 +11973,6 @@ react-codemirror2@^5.1.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/react-codemirror2/-/react-codemirror2-5.1.0.tgz#62de4460178adea40eb52eabf7491669bf3794b8"
   integrity sha512-Cksbgbviuf2mJfMyrKmcu7ycK6zX/ukuQO8dvRZdFWqATf5joalhjFc6etnBdGCcPA2LbhIwz+OPnQxLN/j1Fw==
-
-react-dates@18.4.0:
-  version "18.4.0"
-  resolved "https://registry.yarnpkg.com/react-dates/-/react-dates-18.4.0.tgz#c74da8b6f7eb3e70ea640b3a4b0d4f152fc8d602"
-  integrity sha512-EcGS8MH2eclD4838yme4g46e1mjN7Wh4doYJn2aYT6/IKGgz1YOR4Oxd2LlEVH34CfN4DiuqYPjmwPNgvFrKWQ==
-  dependencies:
-    airbnb-prop-types "^2.10.0"
-    consolidated-events "^1.1.1 || ^2.0.0"
-    is-touch-device "^1.0.1"
-    lodash "^4.1.1"
-    object.assign "^4.1.0"
-    object.values "^1.0.4"
-    prop-types "^15.6.1"
-    react-addons-shallow-compare "^15.6.2"
-    react-moment-proptypes "^1.6.0"
-    react-outside-click-handler "^1.2.0"
-    react-portal "^4.1.5"
-    react-with-direction "^1.3.0"
-    react-with-styles "^3.2.0"
-    react-with-styles-interface-css "^4.0.2"
 
 react-dates@18.4.1:
   version "18.4.1"
