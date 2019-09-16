@@ -84,6 +84,7 @@ Flexbox.propTypes = {
     baseline: PropTypes.string,
     column: PropTypes.string,
     columnReverse: PropTypes.string,
+    flexbox: PropTypes.string,
     justifyCenter: PropTypes.string,
     justifyFlexEnd: PropTypes.string,
     justifyFlexStart: PropTypes.string,

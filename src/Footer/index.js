@@ -52,7 +52,9 @@ Footer.propTypes = {
    * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: PropTypes.shape({
+    buttons: PropTypes.string,
     footer: PropTypes.string,
+    links: PropTypes.string,
   }),
 }
 

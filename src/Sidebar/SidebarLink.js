@@ -218,6 +218,14 @@ SidebarLink.propTypes = {
      */
     link: PropTypes.string,
     /**
+     * The class used to opened menu.
+     */
+    open: PropTypes.string,
+    /**
+     * The class used to submenu.
+     */
+    submenu: PropTypes.string,
+    /**
      * The class used to style the title.
      */
     title: PropTypes.string,

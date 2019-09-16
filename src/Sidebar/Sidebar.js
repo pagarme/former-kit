@@ -41,6 +41,10 @@ Sidebar.propTypes = {
      */
     collapsed: PropTypes.string,
     /**
+     * The class that will be used when the sidebar is expanded.
+     */
+    expanded: PropTypes.string,
+    /**
      * The main class used to stylize the component.
      */
     sidebar: PropTypes.string,

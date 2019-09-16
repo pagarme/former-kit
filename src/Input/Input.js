@@ -370,6 +370,8 @@ Input.propTypes = {
     container: PropTypes.string,
     contentPresent: PropTypes.string,
     dark: PropTypes.string,
+    disabled: PropTypes.string,
+    displayPasswordIcon: PropTypes.string,
     error: PropTypes.string,
     expander: PropTypes.string,
     focused: PropTypes.string,
