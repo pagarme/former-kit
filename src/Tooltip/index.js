@@ -129,7 +129,20 @@ Tooltip.propTypes = {
   /**
    * The position you want to render the tooltip when it's visible.
    */
-  placement: PropTypes.string,
+  placement: PropTypes.oneOf([
+    'rightStart',
+    'rightMiddle',
+    'rightEnd',
+    'topStart',
+    'bottomStart',
+    'bottomCenter',
+    'bottomEnd',
+    'topCenter',
+    'leftStart',
+    'leftMiddle',
+    'leftEnd',
+    'topEnd',
+  ]),
   /**
    * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
