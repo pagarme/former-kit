@@ -19,11 +19,13 @@ const Arrow = ({ active, icons }) => {
 }
 
 class SidebarLink extends React.Component {
-  constructor () {
-    super()
+  constructor (props) {
+    super(props)
+
+    const { beginExpanded } = this.props
 
     this.state = {
-      collapsed: true,
+      collapsed: !beginExpanded,
       focused: false,
     }
 
@@ -160,6 +162,10 @@ SidebarLink.propTypes = {
    */
   active: PropTypes.bool,
   /**
+   * Indicates if the children should starts collapsed or not.
+   */
+  beginExpanded: PropTypes.bool,
+  /**
    * The children can contain any kind of component.
    */
   children: PropTypes.node,
@@ -238,6 +244,7 @@ SidebarLink.propTypes = {
 
 SidebarLink.defaultProps = {
   active: false,
+  beginExpanded: false,
   children: null,
   collapsed: false,
   icon: null,
