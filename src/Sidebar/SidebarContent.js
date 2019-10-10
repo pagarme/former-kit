@@ -1,11 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
 import ThemeConsumer from '../ThemeConsumer'
 
 const consumeTheme = ThemeConsumer('UISidebar')
 
-const SidebarContent = ({ children, theme }) => (
-  <div className={theme.content}>
+const SidebarContent = ({ children, className, theme }) => (
+  <div className={classNames(theme.content, className)}>
     {children}
   </div>
 )
@@ -15,6 +16,10 @@ SidebarContent.propTypes = {
    * The children can contain any kind of component.
    */
   children: PropTypes.node.isRequired,
+  /**
+   * Custom CSS class.
+   */
+  className: PropTypes.string,
   /**
    * The style classes for this element.
    */
@@ -27,6 +32,7 @@ SidebarContent.propTypes = {
 }
 
 SidebarContent.defaultProps = {
+  className: null,
   theme: {},
 }
 
