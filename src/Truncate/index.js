@@ -116,10 +116,10 @@ const Truncate = ({
     }
   }, [fitText, parentRef, wrapperRef])
 
-  const emptyStateEffect = () => {
+  const inlineEffect = () => {
     const wrapper = prop('current', wrapperRef)
 
-    if (wrapper && !wrapper.innerText) {
+    if (wrapper && (!wrapper.innerText || prevText !== text)) {
       const parent = prop('parentElement', wrapper)
       if (parent) {
         const parentStyle = window.getComputedStyle(parent)
@@ -153,7 +153,10 @@ const Truncate = ({
     }
   }
 
-  useEffect(emptyStateEffect, [multiline, parentRef, text, wrapperRef])
+  useEffect(
+    inlineEffect,
+    [multiline, parentRef, prevText, text, wrapperRef]
+  )
   useEffect(() => {
     const wrapper = prop('current', wrapperRef)
     if (multiline) {
