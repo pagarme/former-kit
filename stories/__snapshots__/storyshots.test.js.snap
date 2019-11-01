@@ -25124,6 +25124,7 @@ exports[`Storyshots Legend Default 1`] = `
               style={
                 Object {
                   "background": "#53be76",
+                  "color": "#ffffff",
                 }
               }
               title="MacGuybird"
@@ -25152,6 +25153,7 @@ exports[`Storyshots Legend Default 1`] = `
               style={
                 Object {
                   "background": "#fcb20a",
+                  "color": "#ffffff",
                 }
               }
               title="Mad Dog"
@@ -25180,6 +25182,7 @@ exports[`Storyshots Legend Default 1`] = `
               style={
                 Object {
                   "background": "#5b2886",
+                  "color": "#ffffff",
                 }
               }
               title="Dabblit"
@@ -25208,6 +25211,7 @@ exports[`Storyshots Legend Default 1`] = `
               style={
                 Object {
                   "background": "#9d9fa0",
+                  "color": "#ffffff",
                 }
               }
               title="Danger Mouse"
@@ -25236,6 +25240,7 @@ exports[`Storyshots Legend Default 1`] = `
               style={
                 Object {
                   "background": "#e00403",
+                  "color": "#ffffff",
                 }
               }
               title="Dandelion"
@@ -25264,6 +25269,7 @@ exports[`Storyshots Legend Default 1`] = `
               style={
                 Object {
                   "background": "#8c68d4",
+                  "color": "#ffffff",
                 }
               }
               title="Caboodles"
@@ -25301,6 +25307,7 @@ exports[`Storyshots Legend Default 1`] = `
               style={
                 Object {
                   "background": "#951d3c",
+                  "color": "#ffffff",
                 }
               }
               title="Fa-neenee"
@@ -25329,6 +25336,7 @@ exports[`Storyshots Legend Default 1`] = `
               style={
                 Object {
                   "background": "#244d85",
+                  "color": "#ffffff",
                 }
               }
               title="Fast Freddie"
@@ -25357,6 +25365,7 @@ exports[`Storyshots Legend Default 1`] = `
               style={
                 Object {
                   "background": "#bf5316",
+                  "color": "#ffffff",
                 }
               }
               title="Tangsodo"
@@ -25394,6 +25403,7 @@ exports[`Storyshots Legend Default 1`] = `
               style={
                 Object {
                   "background": "#4ca9d7",
+                  "color": "#ffffff",
                 }
               }
               title="Zazu"
@@ -25417,6 +25427,7 @@ exports[`Storyshots Legend Default 1`] = `
               style={
                 Object {
                   "background": "#f16518",
+                  "color": "#ffffff",
                 }
               }
               title="Zeke"
@@ -25440,6 +25451,7 @@ exports[`Storyshots Legend Default 1`] = `
               style={
                 Object {
                   "background": "#41535b",
+                  "color": "#ffffff",
                 }
               }
               title="Macaroni"
@@ -31876,6 +31888,7 @@ exports[`Storyshots Table Action column 1`] = `
                       style={
                         Object {
                           "background": "#244d85",
+                          "color": "#ffffff",
                         }
                       }
                       title="Boleto paid with inferior value"
@@ -31955,6 +31968,7 @@ exports[`Storyshots Table Action column 1`] = `
                       style={
                         Object {
                           "background": "#57be76",
+                          "color": "#ffffff",
                         }
                       }
                       title="Pago"
@@ -32034,6 +32048,7 @@ exports[`Storyshots Table Action column 1`] = `
                       style={
                         Object {
                           "background": "#e47735",
+                          "color": "#ffffff",
                         }
                       }
                       title="Chargeback"
@@ -32113,6 +32128,7 @@ exports[`Storyshots Table Action column 1`] = `
                       style={
                         Object {
                           "background": "#951e3c",
+                          "color": "#ffffff",
                         }
                       }
                       title="Processing"
@@ -32405,6 +32421,7 @@ exports[`Storyshots Table Disabled orderable 1`] = `
                       style={
                         Object {
                           "background": "#244d85",
+                          "color": "#ffffff",
                         }
                       }
                       title="Boleto paid with inferior value"
@@ -32656,6 +32673,7 @@ exports[`Storyshots Table Disabled orderable 1`] = `
                       style={
                         Object {
                           "background": "#57be76",
+                          "color": "#ffffff",
                         }
                       }
                       title="Pago"
@@ -32912,6 +32930,7 @@ exports[`Storyshots Table Disabled orderable 1`] = `
                       style={
                         Object {
                           "background": "#e47735",
+                          "color": "#ffffff",
                         }
                       }
                       title="Chargeback"
@@ -33168,6 +33187,7 @@ exports[`Storyshots Table Disabled orderable 1`] = `
                       style={
                         Object {
                           "background": "#951e3c",
+                          "color": "#ffffff",
                         }
                       }
                       title="Processing"
@@ -33581,6 +33601,7 @@ exports[`Storyshots Table Empty renderer column 1`] = `
                       style={
                         Object {
                           "background": "#244d85",
+                          "color": "#ffffff",
                         }
                       }
                       title="Boleto paid with inferior value"
@@ -33642,6 +33663,7 @@ exports[`Storyshots Table Empty renderer column 1`] = `
                       style={
                         Object {
                           "background": "#57be76",
+                          "color": "#ffffff",
                         }
                       }
                       title="Pago"
@@ -33703,6 +33725,7 @@ exports[`Storyshots Table Empty renderer column 1`] = `
                       style={
                         Object {
                           "background": "#e47735",
+                          "color": "#ffffff",
                         }
                       }
                       title="Chargeback"
@@ -33764,6 +33787,7 @@ exports[`Storyshots Table Empty renderer column 1`] = `
                       style={
                         Object {
                           "background": "#951e3c",
+                          "color": "#ffffff",
                         }
                       }
                       title="Processing"
@@ -34479,6 +34503,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                       style={
                         Object {
                           "background": "#244d85",
+                          "color": "#ffffff",
                         }
                       }
                       title="Boleto paid with inferior value"
@@ -34735,6 +34760,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                       style={
                         Object {
                           "background": "#57be76",
+                          "color": "#ffffff",
                         }
                       }
                       title="Pago"
@@ -34996,6 +35022,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                       style={
                         Object {
                           "background": "#e47735",
+                          "color": "#ffffff",
                         }
                       }
                       title="Chargeback"
@@ -35257,6 +35284,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                       style={
                         Object {
                           "background": "#951e3c",
+                          "color": "#ffffff",
                         }
                       }
                       title="Processing"
@@ -35605,6 +35633,7 @@ exports[`Storyshots Table Simple 1`] = `
                       style={
                         Object {
                           "background": "#244d85",
+                          "color": "#ffffff",
                         }
                       }
                       title="Boleto paid with inferior value"
@@ -35664,6 +35693,7 @@ exports[`Storyshots Table Simple 1`] = `
                       style={
                         Object {
                           "background": "#57be76",
+                          "color": "#ffffff",
                         }
                       }
                       title="Pago"
@@ -35723,6 +35753,7 @@ exports[`Storyshots Table Simple 1`] = `
                       style={
                         Object {
                           "background": "#e47735",
+                          "color": "#ffffff",
                         }
                       }
                       title="Chargeback"
@@ -35782,6 +35813,7 @@ exports[`Storyshots Table Simple 1`] = `
                       style={
                         Object {
                           "background": "#951e3c",
+                          "color": "#ffffff",
                         }
                       }
                       title="Processing"
@@ -36012,6 +36044,7 @@ exports[`Storyshots Table Width Control 1`] = `
                     style={
                       Object {
                         "background": "#244d85",
+                        "color": "#ffffff",
                       }
                     }
                     title="Boleto paid with inferior value"
@@ -36071,6 +36104,7 @@ exports[`Storyshots Table Width Control 1`] = `
                     style={
                       Object {
                         "background": "#57be76",
+                        "color": "#ffffff",
                       }
                     }
                     title="Pago"
@@ -36130,6 +36164,7 @@ exports[`Storyshots Table Width Control 1`] = `
                     style={
                       Object {
                         "background": "#e47735",
+                        "color": "#ffffff",
                       }
                     }
                     title="Chargeback"
@@ -36189,6 +36224,7 @@ exports[`Storyshots Table Width Control 1`] = `
                     style={
                       Object {
                         "background": "#951e3c",
+                        "color": "#ffffff",
                       }
                     }
                     title="Processing"
