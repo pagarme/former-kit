@@ -30,6 +30,7 @@ const Legend = ({
   children,
   color,
   hideLabel,
+  textColor,
   theme,
 }) => {
   const labelClasses = cx(
@@ -41,7 +42,10 @@ const Legend = ({
       <abbr
         title={children}
         className={labelClasses}
-        style={{ background: color }}
+        style={{
+          background: color,
+          color: textColor,
+        }}
       >
         {acronym || defineInitials(children)}
       </abbr>
@@ -64,13 +68,17 @@ Legend.propTypes = {
    */
   children: PropTypes.string.isRequired,
   /**
-   * The color of the Legend.
+   * The background color of the Legend.
    */
   color: PropTypes.string.isRequired,
   /**
    * Hides the received label and shows only the acronym.
    */
   hideLabel: PropTypes.bool,
+  /**
+   * The text color of the Legend.
+   */
+  textColor: PropTypes.string,
   /**
    * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
@@ -84,6 +92,7 @@ Legend.propTypes = {
 Legend.defaultProps = {
   acronym: '',
   hideLabel: false,
+  textColor: '#ffffff',
   theme: {},
 }
 
