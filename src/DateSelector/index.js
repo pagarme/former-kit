@@ -216,6 +216,7 @@ class DateSelector extends Component {
       focusedInput,
       icons,
       isValidDay,
+      onFocusChange,
       presets,
       selectedPreset,
       selectionMode,
@@ -247,6 +248,7 @@ class DateSelector extends Component {
           dateSelection={dateSelectionMode}
           focusedInput={focusedInput}
           onChange={this.handleOnChange}
+          onFocusChange={onFocusChange}
         />
       </div>
     )
@@ -368,6 +370,10 @@ DateSelector.propTypes = {
    * Triggered when popover closes.
    */
   onConfirm: func.isRequired,
+  /*
+   * Triggered when a day is selected on Calendar
+   */
+  onFocusChange: func,
   /**
    * Triggered when a preset is selected.
    */
@@ -463,7 +469,8 @@ DateSelector.defaultProps = {
   focusedInput: null,
   icons: {},
   isValidDay: null,
-  onPresetChange: () => undefined,
+  onFocusChange: identity,
+  onPresetChange: identity,
   placement: 'bottomStart',
   presets: [],
   selectedPreset: '',
