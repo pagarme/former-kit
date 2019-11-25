@@ -110,7 +110,7 @@ class Input extends React.PureComponent {
     })
   }
 
-  renderInput (inputProps) {
+  renderInput (receivedProps) {
     const {
       disabled,
       mask,
@@ -120,13 +120,22 @@ class Input extends React.PureComponent {
       type,
     } = this.props
     const { showPassword } = this.state
-    const inputType = (type === 'password' && showPassword)
+    let inputType = (type === 'password' && showPassword)
       || multiline
       ? 'text'
       : type
 
+    inputType = inputType === 'phone'
+      ? 'phone'
+      : inputType
+
     if (!isNil(renderer)) {
       return renderer(dissoc('renderer', this.props))
+    }
+
+    const inputProps = {
+      ...receivedProps,
+      type: inputType,
     }
 
     if (mask) {
@@ -147,7 +156,6 @@ class Input extends React.PureComponent {
     return (
       <input
         id={this.instanceId}
-        type={inputType}
         onChange={disabled ? null : onChange}
         onBlur={this.handleBlur}
         onFocus={this.handleFocus}
@@ -391,6 +399,7 @@ Input.propTypes = {
     'number',
     'email',
     'phone',
+    'tel',
   ]),
   /**
    * Input's value.
