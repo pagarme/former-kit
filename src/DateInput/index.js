@@ -118,12 +118,12 @@ class DateInput extends React.Component {
     }
 
     this.name = shortid.generate()
-    this.getNextInput = this.getNextInput.bind(this)
     this.handleConfirm = this.handleConfirm.bind(this)
     this.handleDatesChange = this.handleDatesChange.bind(this)
     this.handleStartInputChange = this.handleInputChange.bind(this, 'start')
     this.handleEndInputChange = this.handleInputChange.bind(this, 'end')
     this.handleInputFocus = this.handleInputFocus.bind(this)
+    this.handleFocusChange = this.handleFocusChange.bind(this)
     this.handlePresetChange = this.handlePresetChange.bind(this)
   }
 
@@ -162,15 +162,6 @@ class DateInput extends React.Component {
     }
   }
 
-  getNextInput () {
-    const {
-      dates,
-    } = this.state
-
-    const nextInputToFocus = dates.start ? 'endDate' : 'startDate'
-    return nextInputToFocus
-  }
-
   handleConfirm (value) {
     const {
       limits,
@@ -197,16 +188,9 @@ class DateInput extends React.Component {
   }
 
   handleDatesChange (dates) {
-    const {
-      focusedInput,
-      selectionMode,
-    } = this.state
     const { onChange } = this.props
     this.setState({
       dates: momentToText(dates),
-      focusedInput: selectionMode === 'period' && focusedInput === 'startDate'
-        ? 'endDate'
-        : 'startDate',
     })
 
     onChange(dates)
@@ -252,6 +236,12 @@ class DateInput extends React.Component {
         showPopover: true,
       })
     }
+  }
+
+  handleFocusChange (focusedInput) {
+    this.setState({
+      focusedInput,
+    })
   }
 
   handlePresetChange (dates, preset) {
@@ -388,6 +378,7 @@ class DateInput extends React.Component {
         isValidDay={isValidDay}
         onConfirm={this.handleConfirm}
         onChange={this.handleDatesChange}
+        onFocusChange={this.handleFocusChange}
         onPresetChange={this.handlePresetChange}
         presets={presets}
         selectedPreset={selectedPreset}
