@@ -107,7 +107,7 @@ storiesOf('Inputs', module)
         <InputState
           mask="111-111-111"
           placeholder="Type your phone number"
-          type="text"
+          type="tel"
           value=""
         />
       </Section>
@@ -241,7 +241,7 @@ storiesOf('Inputs', module)
           base="dark"
           mask="111-111-111"
           placeholder="Type your phone number"
-          type="text"
+          type="phone"
           value=""
         />
       </Section>

@@ -63,6 +63,18 @@ const validateMultiline = ({
   }
 }
 
+const getInputType = (type, showPassword, multiline) => {
+  if ((type === 'password' && showPassword) || multiline) {
+    return 'text'
+  }
+
+  if (type === 'phone') {
+    return 'tel'
+  }
+
+  return type
+}
+
 /**
  * Custom Input component, which is the native HTML input on steroids.
  * It also has an awesome skin and a multiline version.
@@ -120,14 +132,7 @@ class Input extends React.PureComponent {
       type,
     } = this.props
     const { showPassword } = this.state
-    let inputType = (type === 'password' && showPassword)
-      || multiline
-      ? 'text'
-      : type
-
-    inputType = inputType === 'phone'
-      ? 'phone'
-      : inputType
+    const inputType = getInputType(type, showPassword, multiline)
 
     if (!isNil(renderer)) {
       return renderer(dissoc('renderer', this.props))
