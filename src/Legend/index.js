@@ -31,9 +31,11 @@ const Legend = ({
   color,
   hideLabel,
   textColor,
+  textFormat,
   theme,
 }) => {
   const labelClasses = cx(
+    theme[textFormat],
     theme.acronym
   )
 
@@ -80,6 +82,10 @@ Legend.propTypes = {
    */
   textColor: PropTypes.string,
   /**
+ * The text format of the acronym
+ */
+  textFormat: PropTypes.oneOf(['capitalize', 'uppercase']),
+  /**
    * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: PropTypes.shape({
@@ -93,6 +99,7 @@ Legend.defaultProps = {
   acronym: '',
   hideLabel: false,
   textColor: '#ffffff',
+  textFormat: 'uppercase',
   theme: {},
 }
 
