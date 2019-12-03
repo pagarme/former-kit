@@ -69,6 +69,45 @@ const manualAbbr = [
   },
 ]
 
+const acronymCapitalize = [
+  {
+    acronym: 'Lois Cooper',
+    color: '#453aa6',
+    text: 'Lois Cooper',
+    textFormat: 'capitalize',
+  },
+  {
+    acronym: 'Ibrahim Ferguson',
+    color: '#a63a82',
+    text: 'Ibrahim Ferguson',
+    textFormat: 'capitalize',
+  },
+  {
+    acronym: 'Cells',
+    color: '#9bc355',
+    text: 'Cells',
+    textFormat: 'capitalize',
+  },
+]
+
+const acronymUppercase = [
+  {
+    acronym: 'Amber Bajee',
+    color: '#c37355',
+    text: 'Amber Bajee',
+  },
+  {
+    acronym: 'AreBeeJee',
+    color: '#226cf7',
+    text: 'AreBeeJee',
+  },
+  {
+    acronym: 'Strong Muffin',
+    color: '#b60707',
+    text: 'Strong Muffin',
+  },
+]
+
 const createLegends = (title, status) => (
   <Section title={title}>
     {status.map(({
@@ -76,12 +115,14 @@ const createLegends = (title, status) => (
       color,
       hideLabel,
       text,
+      textFormat,
     }) => (
       <div key={text} style={{ marginBottom: '10px' }}>
         <Legend
           color={color}
           acronym={acronym}
           hideLabel={hideLabel}
+          textFormat={textFormat}
         >
           {text}
         </Legend>
@@ -96,5 +137,7 @@ storiesOf('Legend', module)
       {createLegends('Without acronym prop', automaticAbbr)}
       {createLegends('With acronym prop', manualAbbr)}
       {createLegends('With hideLabel prop', hidingLabel)}
+      {createLegends('With capitalize letters', acronymCapitalize)}
+      {createLegends('With uppercase letters', acronymUppercase)}
     </div>
   ))

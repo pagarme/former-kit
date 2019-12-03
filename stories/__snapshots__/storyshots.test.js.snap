@@ -25120,7 +25120,7 @@ exports[`Storyshots Legend Default 1`] = `
             className="legend"
           >
             <abbr
-              className="acronym"
+              className="uppercase acronym"
               style={
                 Object {
                   "background": "#53be76",
@@ -25149,7 +25149,7 @@ exports[`Storyshots Legend Default 1`] = `
             className="legend"
           >
             <abbr
-              className="acronym"
+              className="uppercase acronym"
               style={
                 Object {
                   "background": "#fcb20a",
@@ -25178,7 +25178,7 @@ exports[`Storyshots Legend Default 1`] = `
             className="legend"
           >
             <abbr
-              className="acronym"
+              className="uppercase acronym"
               style={
                 Object {
                   "background": "#5b2886",
@@ -25207,7 +25207,7 @@ exports[`Storyshots Legend Default 1`] = `
             className="legend"
           >
             <abbr
-              className="acronym"
+              className="uppercase acronym"
               style={
                 Object {
                   "background": "#9d9fa0",
@@ -25236,7 +25236,7 @@ exports[`Storyshots Legend Default 1`] = `
             className="legend"
           >
             <abbr
-              className="acronym"
+              className="uppercase acronym"
               style={
                 Object {
                   "background": "#e00403",
@@ -25265,7 +25265,7 @@ exports[`Storyshots Legend Default 1`] = `
             className="legend"
           >
             <abbr
-              className="acronym"
+              className="uppercase acronym"
               style={
                 Object {
                   "background": "#8c68d4",
@@ -25303,7 +25303,7 @@ exports[`Storyshots Legend Default 1`] = `
             className="legend"
           >
             <abbr
-              className="acronym"
+              className="uppercase acronym"
               style={
                 Object {
                   "background": "#951d3c",
@@ -25332,7 +25332,7 @@ exports[`Storyshots Legend Default 1`] = `
             className="legend"
           >
             <abbr
-              className="acronym"
+              className="uppercase acronym"
               style={
                 Object {
                   "background": "#244d85",
@@ -25361,7 +25361,7 @@ exports[`Storyshots Legend Default 1`] = `
             className="legend"
           >
             <abbr
-              className="acronym"
+              className="uppercase acronym"
               style={
                 Object {
                   "background": "#bf5316",
@@ -25399,7 +25399,7 @@ exports[`Storyshots Legend Default 1`] = `
             className="legend"
           >
             <abbr
-              className="acronym"
+              className="uppercase acronym"
               style={
                 Object {
                   "background": "#4ca9d7",
@@ -25423,7 +25423,7 @@ exports[`Storyshots Legend Default 1`] = `
             className="legend"
           >
             <abbr
-              className="acronym"
+              className="uppercase acronym"
               style={
                 Object {
                   "background": "#f16518",
@@ -25447,7 +25447,7 @@ exports[`Storyshots Legend Default 1`] = `
             className="legend"
           >
             <abbr
-              className="acronym"
+              className="uppercase acronym"
               style={
                 Object {
                   "background": "#41535b",
@@ -25458,6 +25458,198 @@ exports[`Storyshots Legend Default 1`] = `
             >
               M
             </abbr>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      className=""
+    >
+      <h2>
+        With capitalize letters
+      </h2>
+      <div>
+        <div
+          style={
+            Object {
+              "marginBottom": "10px",
+            }
+          }
+        >
+          <div
+            className="legend"
+          >
+            <abbr
+              className="capitalize acronym"
+              style={
+                Object {
+                  "background": "#453aa6",
+                  "color": "#ffffff",
+                }
+              }
+              title="Lois Cooper"
+            >
+              Lois Cooper
+            </abbr>
+            <span
+              className="text"
+            >
+              Lois Cooper
+            </span>
+          </div>
+        </div>
+        <div
+          style={
+            Object {
+              "marginBottom": "10px",
+            }
+          }
+        >
+          <div
+            className="legend"
+          >
+            <abbr
+              className="capitalize acronym"
+              style={
+                Object {
+                  "background": "#a63a82",
+                  "color": "#ffffff",
+                }
+              }
+              title="Ibrahim Ferguson"
+            >
+              Ibrahim Ferguson
+            </abbr>
+            <span
+              className="text"
+            >
+              Ibrahim Ferguson
+            </span>
+          </div>
+        </div>
+        <div
+          style={
+            Object {
+              "marginBottom": "10px",
+            }
+          }
+        >
+          <div
+            className="legend"
+          >
+            <abbr
+              className="capitalize acronym"
+              style={
+                Object {
+                  "background": "#9bc355",
+                  "color": "#ffffff",
+                }
+              }
+              title="Cells"
+            >
+              Cells
+            </abbr>
+            <span
+              className="text"
+            >
+              Cells
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      className=""
+    >
+      <h2>
+        With uppercase letters
+      </h2>
+      <div>
+        <div
+          style={
+            Object {
+              "marginBottom": "10px",
+            }
+          }
+        >
+          <div
+            className="legend"
+          >
+            <abbr
+              className="uppercase acronym"
+              style={
+                Object {
+                  "background": "#c37355",
+                  "color": "#ffffff",
+                }
+              }
+              title="Amber Bajee"
+            >
+              Amber Bajee
+            </abbr>
+            <span
+              className="text"
+            >
+              Amber Bajee
+            </span>
+          </div>
+        </div>
+        <div
+          style={
+            Object {
+              "marginBottom": "10px",
+            }
+          }
+        >
+          <div
+            className="legend"
+          >
+            <abbr
+              className="uppercase acronym"
+              style={
+                Object {
+                  "background": "#226cf7",
+                  "color": "#ffffff",
+                }
+              }
+              title="AreBeeJee"
+            >
+              AreBeeJee
+            </abbr>
+            <span
+              className="text"
+            >
+              AreBeeJee
+            </span>
+          </div>
+        </div>
+        <div
+          style={
+            Object {
+              "marginBottom": "10px",
+            }
+          }
+        >
+          <div
+            className="legend"
+          >
+            <abbr
+              className="uppercase acronym"
+              style={
+                Object {
+                  "background": "#b60707",
+                  "color": "#ffffff",
+                }
+              }
+              title="Strong Muffin"
+            >
+              Strong Muffin
+            </abbr>
+            <span
+              className="text"
+            >
+              Strong Muffin
+            </span>
           </div>
         </div>
       </div>
@@ -31884,7 +32076,7 @@ exports[`Storyshots Table Action column 1`] = `
                     className="legend"
                   >
                     <abbr
-                      className="acronym"
+                      className="uppercase acronym"
                       style={
                         Object {
                           "background": "#244d85",
@@ -31964,7 +32156,7 @@ exports[`Storyshots Table Action column 1`] = `
                     className="legend"
                   >
                     <abbr
-                      className="acronym"
+                      className="uppercase acronym"
                       style={
                         Object {
                           "background": "#57be76",
@@ -32044,7 +32236,7 @@ exports[`Storyshots Table Action column 1`] = `
                     className="legend"
                   >
                     <abbr
-                      className="acronym"
+                      className="uppercase acronym"
                       style={
                         Object {
                           "background": "#e47735",
@@ -32124,7 +32316,7 @@ exports[`Storyshots Table Action column 1`] = `
                     className="legend"
                   >
                     <abbr
-                      className="acronym"
+                      className="uppercase acronym"
                       style={
                         Object {
                           "background": "#951e3c",
@@ -32417,7 +32609,7 @@ exports[`Storyshots Table Disabled orderable 1`] = `
                     className="legend"
                   >
                     <abbr
-                      className="acronym"
+                      className="uppercase acronym"
                       style={
                         Object {
                           "background": "#244d85",
@@ -32669,7 +32861,7 @@ exports[`Storyshots Table Disabled orderable 1`] = `
                     className="legend"
                   >
                     <abbr
-                      className="acronym"
+                      className="uppercase acronym"
                       style={
                         Object {
                           "background": "#57be76",
@@ -32926,7 +33118,7 @@ exports[`Storyshots Table Disabled orderable 1`] = `
                     className="legend"
                   >
                     <abbr
-                      className="acronym"
+                      className="uppercase acronym"
                       style={
                         Object {
                           "background": "#e47735",
@@ -33183,7 +33375,7 @@ exports[`Storyshots Table Disabled orderable 1`] = `
                     className="legend"
                   >
                     <abbr
-                      className="acronym"
+                      className="uppercase acronym"
                       style={
                         Object {
                           "background": "#951e3c",
@@ -33597,7 +33789,7 @@ exports[`Storyshots Table Empty renderer column 1`] = `
                     className="legend"
                   >
                     <abbr
-                      className="acronym"
+                      className="uppercase acronym"
                       style={
                         Object {
                           "background": "#244d85",
@@ -33659,7 +33851,7 @@ exports[`Storyshots Table Empty renderer column 1`] = `
                     className="legend"
                   >
                     <abbr
-                      className="acronym"
+                      className="uppercase acronym"
                       style={
                         Object {
                           "background": "#57be76",
@@ -33721,7 +33913,7 @@ exports[`Storyshots Table Empty renderer column 1`] = `
                     className="legend"
                   >
                     <abbr
-                      className="acronym"
+                      className="uppercase acronym"
                       style={
                         Object {
                           "background": "#e47735",
@@ -33783,7 +33975,7 @@ exports[`Storyshots Table Empty renderer column 1`] = `
                     className="legend"
                   >
                     <abbr
-                      className="acronym"
+                      className="uppercase acronym"
                       style={
                         Object {
                           "background": "#951e3c",
@@ -34499,7 +34691,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                     className="legend"
                   >
                     <abbr
-                      className="acronym"
+                      className="uppercase acronym"
                       style={
                         Object {
                           "background": "#244d85",
@@ -34756,7 +34948,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                     className="legend"
                   >
                     <abbr
-                      className="acronym"
+                      className="uppercase acronym"
                       style={
                         Object {
                           "background": "#57be76",
@@ -35018,7 +35210,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                     className="legend"
                   >
                     <abbr
-                      className="acronym"
+                      className="uppercase acronym"
                       style={
                         Object {
                           "background": "#e47735",
@@ -35280,7 +35472,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                     className="legend"
                   >
                     <abbr
-                      className="acronym"
+                      className="uppercase acronym"
                       style={
                         Object {
                           "background": "#951e3c",
@@ -35629,7 +35821,7 @@ exports[`Storyshots Table Simple 1`] = `
                     className="legend"
                   >
                     <abbr
-                      className="acronym"
+                      className="uppercase acronym"
                       style={
                         Object {
                           "background": "#244d85",
@@ -35689,7 +35881,7 @@ exports[`Storyshots Table Simple 1`] = `
                     className="legend"
                   >
                     <abbr
-                      className="acronym"
+                      className="uppercase acronym"
                       style={
                         Object {
                           "background": "#57be76",
@@ -35749,7 +35941,7 @@ exports[`Storyshots Table Simple 1`] = `
                     className="legend"
                   >
                     <abbr
-                      className="acronym"
+                      className="uppercase acronym"
                       style={
                         Object {
                           "background": "#e47735",
@@ -35809,7 +36001,7 @@ exports[`Storyshots Table Simple 1`] = `
                     className="legend"
                   >
                     <abbr
-                      className="acronym"
+                      className="uppercase acronym"
                       style={
                         Object {
                           "background": "#951e3c",
@@ -36040,7 +36232,7 @@ exports[`Storyshots Table Width Control 1`] = `
                   className="legend"
                 >
                   <abbr
-                    className="acronym"
+                    className="uppercase acronym"
                     style={
                       Object {
                         "background": "#244d85",
@@ -36100,7 +36292,7 @@ exports[`Storyshots Table Width Control 1`] = `
                   className="legend"
                 >
                   <abbr
-                    className="acronym"
+                    className="uppercase acronym"
                     style={
                       Object {
                         "background": "#57be76",
@@ -36160,7 +36352,7 @@ exports[`Storyshots Table Width Control 1`] = `
                   className="legend"
                 >
                   <abbr
-                    className="acronym"
+                    className="uppercase acronym"
                     style={
                       Object {
                         "background": "#e47735",
@@ -36220,7 +36412,7 @@ exports[`Storyshots Table Width Control 1`] = `
                   className="legend"
                 >
                   <abbr
-                    className="acronym"
+                    className="uppercase acronym"
                     style={
                       Object {
                         "background": "#951e3c",
