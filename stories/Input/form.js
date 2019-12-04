@@ -101,7 +101,7 @@ storiesOf('Inputs', module)
           label="Phone number"
           mask="111-111-111"
           placeholder="Type your phone number"
-          type="text"
+          type="tel"
           value="431-051-080"
         />
       </Section>
@@ -265,7 +265,7 @@ storiesOf('Inputs', module)
           label="Phone number"
           mask="111-111-111"
           placeholder="Type your phone number"
-          type="text"
+          type="phone"
           value="431-051-080"
         />
       </Section>

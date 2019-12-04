@@ -17172,6 +17172,7 @@ exports[`Storyshots Inputs Default 1`] = `
                 onPaste={[Function]}
                 placeholder="Type your phone number"
                 size={null}
+                type="tel"
                 value=""
               />
               <label
@@ -18064,6 +18065,7 @@ exports[`Storyshots Inputs Default 1`] = `
                 onPaste={[Function]}
                 placeholder="Type your phone number"
                 size={null}
+                type="tel"
                 value=""
               />
               <label
@@ -18922,6 +18924,7 @@ exports[`Storyshots Inputs Form 1`] = `
                 onPaste={[Function]}
                 placeholder="Type your phone number"
                 size={null}
+                type="tel"
                 value="431-051-080"
               />
               <label
@@ -19814,6 +19817,7 @@ exports[`Storyshots Inputs Form 1`] = `
                 onPaste={[Function]}
                 placeholder="Type your phone number"
                 size={null}
+                type="tel"
                 value="431-051-080"
               />
               <label
