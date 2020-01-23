@@ -29349,6 +29349,227 @@ exports[`Storyshots Progress Linear 1`] = `
 </div>
 `;
 
+exports[`Storyshots Progress SecondaryLinearProgress 1`] = `
+<div
+  className="storybook-readme-story"
+>
+  <div
+    className="typography"
+    style={
+      Object {
+        "maxWidth": 500,
+      }
+    }
+  >
+    <section
+      className=""
+    >
+      
+      <div>
+        <div
+          className="linearProgress"
+        >
+          <div
+            className="background"
+          >
+            <div
+              aria-valuemax="100"
+              aria-valuemin="0"
+              aria-valuenow={0}
+              className="fill"
+              role="progressbar"
+              style={
+                Object {
+                  "width": "0%",
+                }
+              }
+            />
+          </div>
+          <div
+            className="number"
+          >
+            <div
+              style={
+                Object {
+                  "marginRight": "100%",
+                }
+              }
+            >
+              0%
+            </div>
+          </div>
+        </div>
+        <div
+          className="linearProgress"
+        >
+          <div
+            className="background"
+          >
+            <div
+              aria-valuemax="100"
+              aria-valuemin="0"
+              aria-valuenow={0}
+              className="fill"
+              role="progressbar"
+              style={
+                Object {
+                  "width": "0%",
+                }
+              }
+            />
+          </div>
+          <div
+            className="number"
+          >
+            <div
+              style={
+                Object {
+                  "marginRight": "100%",
+                }
+              }
+            >
+              0%
+            </div>
+          </div>
+        </div>
+        <div
+          className="linearProgress"
+        >
+          <div
+            className="background"
+          >
+            <div
+              aria-valuemax="100"
+              aria-valuemin="0"
+              aria-valuenow={0}
+              className="fill"
+              role="progressbar"
+              style={
+                Object {
+                  "width": "0%",
+                }
+              }
+            />
+          </div>
+          <div
+            className="number"
+          >
+            <div
+              style={
+                Object {
+                  "marginRight": "100%",
+                }
+              }
+            >
+              0%
+            </div>
+          </div>
+        </div>
+        <div
+          className="linearProgress"
+        >
+          <div
+            className="background"
+          >
+            <div
+              aria-valuemax="100"
+              aria-valuemin="0"
+              aria-valuenow={0}
+              className="fill"
+              role="progressbar"
+              style={
+                Object {
+                  "width": "0%",
+                }
+              }
+            />
+          </div>
+          <div
+            className="number"
+          >
+            <div
+              style={
+                Object {
+                  "marginRight": "100%",
+                }
+              }
+            >
+              0%
+            </div>
+          </div>
+        </div>
+        <div
+          className="linearProgress"
+        >
+          <div
+            className="background"
+          >
+            <div
+              aria-valuemax="100"
+              aria-valuemin="0"
+              aria-valuenow={0}
+              className="fill"
+              role="progressbar"
+              style={
+                Object {
+                  "width": "0%",
+                }
+              }
+            />
+          </div>
+          <div
+            className="number"
+          >
+            <div
+              style={
+                Object {
+                  "marginRight": "100%",
+                }
+              }
+            >
+              0%
+            </div>
+          </div>
+        </div>
+        <div
+          className="linearProgress"
+        >
+          <div
+            className="background"
+          >
+            <div
+              aria-valuemax="100"
+              aria-valuemin="0"
+              aria-valuenow={0}
+              className="fill"
+              role="progressbar"
+              style={
+                Object {
+                  "width": "0%",
+                }
+              }
+            />
+          </div>
+          <div
+            className="number"
+          >
+            <div
+              style={
+                Object {
+                  "marginRight": "100%",
+                }
+              }
+            >
+              0%
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Radio Group Default 1`] = `
 <div
   className="storybook-readme-story"

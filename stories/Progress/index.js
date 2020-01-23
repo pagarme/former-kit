@@ -1,1 +1,2 @@
 import './default'
+import './secondaryLinearProgress'
