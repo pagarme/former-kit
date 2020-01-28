@@ -66,13 +66,10 @@ const LinearProgress = ({
                     theme.number,
                     (percentageNumber >= 1) && theme.filledLabel
                   )}
-                  style={{
-                    width: (percentageNumber > 94) ? '100%' : percentage,
-                  }}
                 >
                   <div
                     style={{
-                      marginRight: (percentageNumber > 94) ? '0' : '-0.5em',
+                      marginRight: `${100 - percentageNumber}%`,
                     }}
                   >
                     {percent
