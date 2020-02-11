@@ -35,7 +35,7 @@
   "dependencies": {
     "classnames": "2.2.6",
     "emblematic-icons": "0.7.1",
-    "former-kit-skin-pagarme": "1.5.4",
+    "former-kit-skin-pagarme": "1.6.0",
     "promise": "8.0.2",
     "prop-types": "15.6.2",
     "ramda": "0.26.1",
