@@ -43,6 +43,7 @@ class SegmentedSwitch extends PureComponent {
 
   render () {
     const {
+      className,
       disabled,
       options,
       relevance,
@@ -51,6 +52,7 @@ class SegmentedSwitch extends PureComponent {
     } = this.props
 
     const containerClass = classnames(
+      className,
       theme.segmentedSwitch,
       theme[`spacing-${spacing}`],
       theme[`relevance-${relevance}`],
@@ -68,6 +70,10 @@ class SegmentedSwitch extends PureComponent {
 }
 
 SegmentedSwitch.propTypes = {
+  /**
+   * Additional CSS classes which can be applied to the table component.
+   */
+  className: PropTypes.string,
   /**
    * It disables/enables the component's functions.
    */
@@ -129,6 +135,7 @@ SegmentedSwitch.propTypes = {
 }
 
 SegmentedSwitch.defaultProps = {
+  className: '',
   disabled: false,
   relevance: 'normal',
   spacing: 'medium',
