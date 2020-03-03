@@ -18,10 +18,12 @@ const Modal = ({
   onRequestClose,
   size,
   theme,
+  verticalAlign,
 }) => {
   const modalClasses = classNames(
     theme.modal,
-    theme[size]
+    theme[size],
+    theme[verticalAlign]
   )
 
   return (
@@ -66,7 +68,7 @@ Modal.propTypes = {
    * Component's size.
    */
   size: PropTypes.oneOf([
-    'default', 'huge',
+    'mobile', 'default', 'huge',
   ]),
   /**
    * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
@@ -81,6 +83,12 @@ Modal.propTypes = {
     overlayBeforeClose: PropTypes.string,
     size: PropTypes.string,
   }),
+  /**
+   * Component's vertical align
+   */
+  verticalAlign: PropTypes.oneOf([
+    'top', 'center', 'bottom',
+  ]),
 }
 
 Modal.defaultProps = {
@@ -95,6 +103,7 @@ Modal.defaultProps = {
     overlayAfterOpen: '',
     overlayBeforeClose: '',
   },
+  verticalAlign: 'center',
 }
 
 export default consumeTheme(Modal)
