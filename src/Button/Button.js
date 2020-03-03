@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import { isNil } from 'ramda'
@@ -48,51 +48,37 @@ const createSpinnerClasses = ({
 /**
  * Simple HTML button in a beautiful skin.
  */
-class Button extends PureComponent {
-  constructor () {
-    super()
+const Button = ({
+  children,
+  circle,
+  disabled,
+  displayChildrenWhenLoading,
+  fill,
+  icon,
+  iconAlignment,
+  loading,
+  onClick,
+  relevance,
+  size,
+  theme,
+  type,
+}) => {
+  const [ripple, setRipple] = useState({
+    rippleHeight: 0,
+    rippleWidth: 0,
+    rippleX: 0,
+    rippleY: 0,
+  })
 
-    this.state = {
-      rippleHeight: 0,
-      rippleWidth: 0,
-      rippleX: 0,
-      rippleY: 0,
-    }
-
-    this.handleClick = this.handleClick.bind(this)
-    this.shouldRenderIconAt = this.shouldRenderIconAt.bind(this)
-    this.renderLoaderSpinnerAt = this.renderLoaderSpinnerAt.bind(this)
-  }
-
-  handleClick (e) {
-    const {
-      rippleHeight,
-      rippleWidth,
-      rippleX,
-      rippleY,
-    } = createRipple(e)
-    const { onClick } = this.props
-    this.setState({
-      rippleHeight,
-      rippleWidth,
-      rippleX,
-      rippleY,
-    })
+  const handleClick = (e) => {
+    setRipple(createRipple(e))
 
     if (onClick) {
       onClick()
     }
   }
 
-  shouldRenderIconAt (alignment) {
-    const {
-      children,
-      displayChildrenWhenLoading,
-      icon,
-      iconAlignment,
-      loading,
-    } = this.props
-
+  const shouldRenderIconAt = (alignment) => {
     if (!isNil(children) && displayChildrenWhenLoading && loading) {
       return false
     }
@@ -100,16 +86,7 @@ class Button extends PureComponent {
     return !isNil(icon) && iconAlignment === alignment
   }
 
-  renderLoaderSpinnerAt (alignment) {
-    const {
-      children,
-      displayChildrenWhenLoading,
-      icon,
-      iconAlignment,
-      loading,
-      theme,
-    } = this.props
-
+  const renderLoaderSpinnerAt = (alignment) => {
     if (loading && iconAlignment === alignment) {
       return (
         <span className={createSpinnerClasses({
@@ -127,71 +104,49 @@ class Button extends PureComponent {
     return null
   }
 
-  render () {
-    const {
-      children,
-      circle,
-      disabled,
-      displayChildrenWhenLoading,
-      fill,
-      icon,
-      loading,
-      relevance,
-      size,
-      theme,
-      type,
-    } = this.props
+  const buttonClasses = classNames(
+    theme.button,
+    theme[fill],
+    theme[`${relevance}Relevance`],
+    theme[size],
+    {
+      [theme.iconButton]: !isNil(icon) && isNil(children),
+      [theme.circle]: !isNil(icon) && isNil(children) && circle,
+      [theme.hiddenChildren]: !displayChildrenWhenLoading && loading,
+    }
+  )
 
-    const {
-      rippleHeight,
-      rippleWidth,
-      rippleX,
-      rippleY,
-    } = this.state
+  /* eslint-disable react/button-has-type */
+  return (
+    <button
+      disabled={disabled}
+      className={buttonClasses}
+      onClick={handleClick}
+      type={type}
+    >
 
-    const buttonClasses = classNames(
-      theme.button,
-      theme[fill],
-      theme[`${relevance}Relevance`],
-      theme[size],
-      {
-        [theme.iconButton]: !isNil(icon) && isNil(children),
-        [theme.circle]: !isNil(icon) && isNil(children) && circle,
-        [theme.hiddenChildren]: !displayChildrenWhenLoading && loading,
-      }
-    )
-    /* eslint-disable react/button-has-type */
-    return (
-      <button
-        disabled={disabled}
-        className={buttonClasses}
-        onClick={this.handleClick}
-        type={type}
-      >
+      { shouldRenderIconAt('start') && icon }
 
-        { this.shouldRenderIconAt('start') && icon }
+      { renderLoaderSpinnerAt('start') }
 
-        { this.renderLoaderSpinnerAt('start') }
+      { !isNil(children) && <span>{children}</span> }
 
-        { !isNil(children) && <span>{children}</span> }
+      { renderLoaderSpinnerAt('end') }
 
-        { this.renderLoaderSpinnerAt('end') }
+      { shouldRenderIconAt('end') && icon }
 
-        { this.shouldRenderIconAt('end') && icon }
-
-        <span
-          className={theme.ripple}
-          style={{
-            height: rippleHeight,
-            left: rippleX,
-            top: rippleY,
-            width: rippleWidth,
-          }}
-        />
-      </button>
-    )
-    /* eslint-enable react/button-has-type */
-  }
+      <span
+        className={theme.ripple}
+        style={{
+          height: ripple.rippleHeight,
+          left: ripple.rippleX,
+          top: ripple.rippleY,
+          width: ripple.rippleWidth,
+        }}
+      />
+    </button>
+  )
+  /* eslint-enable react/button-has-type */
 }
 
 Button.propTypes = {
@@ -203,22 +158,20 @@ Button.propTypes = {
     PropTypes.string,
   ]),
   /**
-   * It changes the border-radius of the icon Button.
+   * Applies border radius to the Button icon.
    */
   circle: PropTypes.bool,
   /**
-   * The prop that indicates if the button is disabled or not.
+   * Disables the button.
    */
   disabled: PropTypes.bool,
   /**
-   * This prop allows the loading usage keeping the children (icon and text
-   * in the loading state. When this prop is true the loading spinner will
-   * be placed over the icon and the text will stay in place. The spinner
-   * size is relative to the button's prop size.
+   * Displays icon and text with an overlay loading spinner. If false, does not
+   * display icon and children while loading.
    */
   displayChildrenWhenLoading: PropTypes.bool,
   /**
-   * The styles of color the button can have.
+   * Defines fill style.
    */
   fill: PropTypes.oneOf([
     'flat', 'gradient', 'outline', 'clean',
@@ -228,7 +181,7 @@ Button.propTypes = {
    */
   icon: PropTypes.element,
   /**
-   * The prop that indicates the icon alignment.
+   * Defines icon alignment.
    */
   iconAlignment: PropTypes.oneOf([
     'start', 'end',
@@ -242,7 +195,8 @@ Button.propTypes = {
    */
   onClick: PropTypes.func,
   /**
-   * The prop that indicates the component's color relevance.
+   * Defines relevance resulting in different colors. By default high is red,
+   * normal is green and low is grey.
    */
   relevance: PropTypes.oneOf([
     'high', 'normal', 'low',
@@ -277,7 +231,8 @@ Button.propTypes = {
     tiny: PropTypes.string,
   }),
   /**
-   * Button's type.
+   * Defines the button type. For forms, you can use 'submit' and 'reset'. For general
+   * use, 'button'.
    */
   type: PropTypes.oneOf(['button', 'submit', 'reset']),
 }
