@@ -25941,6 +25941,136 @@ exports[`Storyshots Modal Default 1`] = `
         </div>
       </div>
     </section>
+    <section
+      className=""
+    >
+      
+      <div>
+        <div>
+          <button
+            className="button flat lowRelevance default"
+            disabled={false}
+            onClick={[Function]}
+            type="button"
+          >
+            <span>
+              Modal with mobile size
+            </span>
+            <span
+              className="ripple"
+              style={
+                Object {
+                  "height": 0,
+                  "left": 0,
+                  "top": 0,
+                  "width": 0,
+                }
+              }
+            />
+          </button>
+          <div
+            className="modal"
+          >
+            <div
+              className="title"
+            >
+              <h2
+                className="centerAlign"
+              >
+                Modal With Mobile Size
+              </h2>
+              <button
+                className="button clean lowRelevance tiny iconButton"
+                disabled={false}
+                onClick={[Function]}
+                type="button"
+              >
+                <ClearClose32.svg
+                  height={16}
+                  width={16}
+                />
+                <span
+                  className="ripple"
+                  style={
+                    Object {
+                      "height": 0,
+                      "left": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+              </button>
+            </div>
+            <hr />
+            <div
+              className="content"
+            >
+              This is the modal Content with React Modal module
+            </div>
+            <div
+              className="content"
+            >
+              <div
+                className="section"
+              >
+                <div
+                  className="content"
+                >
+                  This is the modal Section
+                </div>
+              </div>
+            </div>
+            <div
+              className="actions"
+            >
+              <button
+                className="button outline normalRelevance default"
+                disabled={false}
+                onClick={[Function]}
+                type="button"
+              >
+                <span>
+                  Cancel
+                </span>
+                <span
+                  className="ripple"
+                  style={
+                    Object {
+                      "height": 0,
+                      "left": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+              </button>
+              <button
+                className="button flat normalRelevance default"
+                disabled={false}
+                onClick={[Function]}
+                type="button"
+              >
+                <span>
+                  Confirm
+                </span>
+                <span
+                  className="ripple"
+                  style={
+                    Object {
+                      "height": 0,
+                      "left": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </div>
 `;
