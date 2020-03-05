@@ -5,6 +5,7 @@ import Section from '../Section'
 
 import ModalWithState from './ModalWithState'
 import ModalWithHugeSize from './ModalWithHugeSize'
+import ModalWithMobileSize from './ModalWithMobileSize'
 
 storiesOf('Modal', module)
   .add('Default', () => (
@@ -14,6 +15,9 @@ storiesOf('Modal', module)
       </Section>
       <Section>
         <ModalWithHugeSize />
+      </Section>
+      <Section>
+        <ModalWithMobileSize />
       </Section>
     </div>
   ))
