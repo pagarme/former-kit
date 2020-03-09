@@ -1,6 +1,6 @@
 {
   "name": "former-kit",
-  "version": "1.8.1",
+  "version": "1.8.2",
   "license": "Apache-2.0",
   "main": "dist/index.js",
   "repository": {
@@ -35,7 +35,7 @@
   "dependencies": {
     "classnames": "2.2.6",
     "emblematic-icons": "0.7.1",
-    "former-kit-skin-pagarme": "1.6.0",
+    "former-kit-skin-pagarme": "1.7.0",
     "promise": "8.0.2",
     "prop-types": "15.6.2",
     "ramda": "0.26.1",
