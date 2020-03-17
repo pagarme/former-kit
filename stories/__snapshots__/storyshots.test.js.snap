@@ -14349,6 +14349,455 @@ exports[`Storyshots Dropdown Form 1`] = `
 </div>
 `;
 
+exports[`Storyshots Dropdown SecondaryForm 1`] = `
+<div
+  className="storybook-readme-story"
+>
+  <div
+    className="typography"
+  >
+    <section
+      className=""
+    >
+      <h2>
+        Default
+      </h2>
+      <div>
+        <div>
+          <div
+            className="dropdown"
+          >
+            
+            <select
+              className="select"
+              disabled={false}
+              id="Things-shortid-mock"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              value="placeholder"
+            >
+              <option
+                className="option placeholder"
+                disabled={true}
+                hidden={true}
+                value="placeholder"
+              >
+                
+              </option>
+              <option
+                className="option"
+                value="github"
+              >
+                Github
+              </option>
+              <option
+                className="option"
+                value="open-source"
+              >
+                Open Source
+              </option>
+              <option
+                className="option"
+                value="pilot"
+              >
+                Pilot
+              </option>
+            </select>
+            <span
+              className="arrow"
+            >
+              <svg />
+            </span>
+            
+          </div>
+          <p>
+            Selected: 
+            
+          </p>
+        </div>
+      </div>
+    </section>
+    <section
+      className=""
+    >
+      <h2>
+        Huge dropdown
+      </h2>
+      <div>
+        <div>
+          <div
+            className="dropdown huge"
+          >
+            
+            <select
+              className="select"
+              disabled={false}
+              id="Things-shortid-mock"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              value="placeholder"
+            >
+              <option
+                className="option placeholder"
+                disabled={true}
+                hidden={true}
+                value="placeholder"
+              >
+                Select
+              </option>
+              <option
+                className="option"
+                value="github"
+              >
+                Github
+              </option>
+              <option
+                className="option"
+                value="open-source"
+              >
+                Open Source
+              </option>
+              <option
+                className="option"
+                value="pilot"
+              >
+                Pilot
+              </option>
+            </select>
+            <span
+              className="arrow"
+            >
+              <svg />
+            </span>
+            
+          </div>
+          <p>
+            Selected: 
+            
+          </p>
+        </div>
+      </div>
+    </section>
+    <section
+      className=""
+    >
+      <h2>
+        With placeholder
+      </h2>
+      <div>
+        <div>
+          <div
+            className="dropdown"
+          >
+            
+            <select
+              className="select"
+              disabled={false}
+              id="Things-shortid-mock"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              value="placeholder"
+            >
+              <option
+                className="option placeholder"
+                disabled={true}
+                hidden={true}
+                value="placeholder"
+              >
+                Select
+              </option>
+              <option
+                className="option"
+                value="github"
+              >
+                Github
+              </option>
+              <option
+                className="option"
+                value="open-source"
+              >
+                Open Source
+              </option>
+              <option
+                className="option"
+                value="pilot"
+              >
+                Pilot
+              </option>
+            </select>
+            <span
+              className="arrow"
+            >
+              <svg />
+            </span>
+            
+          </div>
+          <p>
+            Selected: 
+            
+          </p>
+        </div>
+      </div>
+    </section>
+    <section
+      className=""
+    >
+      <h2>
+        Error
+      </h2>
+      <div>
+        <div>
+          <div
+            className="dropdown error"
+          >
+            
+            <select
+              className="select"
+              disabled={false}
+              id="Things-shortid-mock"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              value="placeholder"
+            >
+              <option
+                className="option placeholder"
+                disabled={true}
+                hidden={true}
+                value="placeholder"
+              >
+                
+              </option>
+              <option
+                className="option"
+                value="github"
+              >
+                Github
+              </option>
+              <option
+                className="option"
+                value="open-source"
+              >
+                Open Source
+              </option>
+              <option
+                className="option"
+                value="pilot"
+              >
+                Pilot
+              </option>
+            </select>
+            <span
+              className="arrow"
+            >
+              <svg />
+            </span>
+            <p
+              className="secondaryText"
+            >
+              Something went wrong
+            </p>
+          </div>
+          <p>
+            Selected: 
+            
+          </p>
+        </div>
+      </div>
+    </section>
+    <section
+      className=""
+    >
+      <h2>
+        Disabled
+      </h2>
+      <div>
+        <div>
+          <div
+            className="dropdown disabled"
+          >
+            
+            <select
+              className="select"
+              disabled={true}
+              id="Things-shortid-mock"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              value="placeholder"
+            >
+              <option
+                className="option placeholder"
+                disabled={true}
+                hidden={true}
+                value="placeholder"
+              >
+                
+              </option>
+              <option
+                className="option"
+                value="github"
+              >
+                Github
+              </option>
+              <option
+                className="option"
+                value="open-source"
+              >
+                Open Source
+              </option>
+              <option
+                className="option"
+                value="pilot"
+              >
+                Pilot
+              </option>
+            </select>
+            <span
+              className="arrow"
+            >
+              <svg />
+            </span>
+            
+          </div>
+          <p>
+            Selected: 
+            
+          </p>
+        </div>
+      </div>
+    </section>
+    <section
+      className=""
+    >
+      <h2>
+        Disabled with placeholder
+      </h2>
+      <div>
+        <div>
+          <div
+            className="dropdown disabled"
+          >
+            
+            <select
+              className="select"
+              disabled={true}
+              id="Things-shortid-mock"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              value="placeholder"
+            >
+              <option
+                className="option placeholder"
+                disabled={true}
+                hidden={true}
+                value="placeholder"
+              >
+                Select
+              </option>
+              <option
+                className="option"
+                value="github"
+              >
+                Github
+              </option>
+              <option
+                className="option"
+                value="open-source"
+              >
+                Open Source
+              </option>
+              <option
+                className="option"
+                value="pilot"
+              >
+                Pilot
+              </option>
+            </select>
+            <span
+              className="arrow"
+            >
+              <svg />
+            </span>
+            
+          </div>
+          <p>
+            Selected: 
+            
+          </p>
+        </div>
+      </div>
+    </section>
+    <section
+      className=""
+    >
+      <h2>
+        dropdown with value
+      </h2>
+      <div>
+        <div>
+          <div
+            className="dropdown"
+          >
+            
+            <select
+              className="select"
+              disabled={false}
+              id="Things-shortid-mock"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              value="open-source"
+            >
+              <option
+                className="option placeholder"
+                disabled={true}
+                hidden={true}
+                value="placeholder"
+              >
+                
+              </option>
+              <option
+                className="option"
+                value="github"
+              >
+                Github
+              </option>
+              <option
+                className="option active"
+                value="open-source"
+              >
+                Open Source
+              </option>
+              <option
+                className="option"
+                value="pilot"
+              >
+                Pilot
+              </option>
+            </select>
+            <span
+              className="arrow"
+            >
+              <svg />
+            </span>
+            
+          </div>
+          <p>
+            Selected: 
+            open-source
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Flexbox Align Items 1`] = `
 <div
   className="storybook-readme-story"
