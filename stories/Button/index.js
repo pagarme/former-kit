@@ -1,2 +1,1 @@
 import './default'
-import './secondaryButton'
