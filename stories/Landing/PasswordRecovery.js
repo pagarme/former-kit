@@ -47,7 +47,7 @@ const PasswordRecovery = ({
               <Button
                 type="submit"
                 size="huge"
-                fill="gradient"
+                fill="flat"
               >
                 Enviar
               </Button>

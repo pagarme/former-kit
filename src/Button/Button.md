@@ -26,7 +26,7 @@ You can add relevance to buttons!
 You can also "fill" the buttons in different ways:
 ```jsx
 <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-  <Button fill="gradient">Call to Action</Button>
+  <Button fill="flat">Call to Action</Button>
   <Button relevance="high" fill="outline">Call to Action</Button>
   <Button relevance="low" fill="clean">Call to Action</Button>
   <Button fill="flat">Call to Action</Button>
@@ -36,7 +36,7 @@ You can also "fill" the buttons in different ways:
 And the button can be disabled:
 ```jsx
 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-around' }}>
-  <Button disabled fill="gradient">Call to Action</Button>
+  <Button disabled fill="flat">Call to Action</Button>
   <Button disabled relevance="high" fill="outline">Call to Action</Button>
   <Button disabled relevance="low" fill="clean">Call to Action</Button>
   <Button disabled fill="flat">Call to Action</Button>
