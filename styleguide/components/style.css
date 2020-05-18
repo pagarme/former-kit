@@ -3,7 +3,7 @@
 @import "former-kit-skin-pagarme/dist/styles/typography.css";
 
 .logo {
-  color: var(--color-light-greenish-100);
+  color: var(--color-picklerick-green-100);
   font-size: var(--body-font-size);
   margin-bottom: var(--spacing-tiny);
 }
@@ -14,19 +14,19 @@
 
 [data-preview] {
   border-radius: 4px 4px 0 0;
-  border-color: #dfe3e6;
-  background-color: #fefefe;
+  border-color: var(--color-squanchy-gray-50);
+  background-color: var(--color-squanchy-gray-20);
 }
 
 /* stylelint-disable selector-max-type */
 
 [data-preview] + div {
-  border-left: 1px solid #dfe3e6;
-  border-right: 1px solid #dfe3e6;
+  border-left: 1px solid var(--color-squanchy-gray-50);
+  border-right: 1px solid var(--color-squanchy-gray-50);
 }
 
 [data-preview] + div + div {
-  border: 1px solid #dfe3e6;
+  border: 1px solid var(--color-squanchy-gray-50);
   border-radius: 0 0 4px 4px;
   overflow: hidden;
 }
@@ -36,15 +36,16 @@
 /* stylelint-enable */
 
 .headers > div > h1 {
+  border-left: 4px solid var(--color-picklerick-green-100);
   font-size: 36px;
   font-weight: bold;
-  color: #333333;
+  color: var(--color-squanchy-gray-400);
   padding-left: var(--spacing-small);
   margin: var(--spacing-medium) 0;
-  border-left: 4px solid var(--color-light-greenish-100);
 }
 
 .headers h2 {
+  border-left: 4px solid var(--color-picklerick-green-100);
   color: #333333;
   font-size: 28px;
   font-weight: bold;
@@ -53,4 +54,14 @@
 .headers h2 > a {
   margin-top: 16px;
   display: block;
+}
+
+.headers a:hover {
+  text-decoration: none;
+}
+
+.headers h2 {
+  color: var(--color-squanchy-gray-400);
+  font-size: 28px;
+  font-weight: bold;
 }
