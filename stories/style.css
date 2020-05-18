@@ -10,7 +10,7 @@
 }
 
 .dark {
-  background-color: var(--color-light-carbon-50);
+  background-color: var(--color-squanchy-gray-100);
 
   & h2 {
     color: var(--color-white);
@@ -21,6 +21,6 @@
   background-color: var(--color-white);
 
   & h2 {
-    color: var(--color-light-coal-100);
+    color: var(--color-squanchy-gray-400);
   }
 }
