@@ -174,7 +174,7 @@ Button.propTypes = {
    * Defines fill style.
    */
   fill: PropTypes.oneOf([
-    'flat', 'gradient', 'outline', 'clean',
+    'flat', 'outline', 'clean',
   ]),
   /**
    * Custom icon which stays on the left or right side of the input.
@@ -217,7 +217,6 @@ Button.propTypes = {
     default: PropTypes.string,
     disabled: PropTypes.string,
     flat: PropTypes.string,
-    gradient: PropTypes.string,
     hiddenChildren: PropTypes.string,
     highRelevance: PropTypes.string,
     huge: PropTypes.string,

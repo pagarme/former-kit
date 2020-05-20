@@ -794,79 +794,6 @@ exports[`Storyshots Buttons Default 1`] = `
         </div>
         <div>
           <button
-            className="button gradient normalRelevance default"
-            disabled={false}
-            onClick={[Function]}
-            type="button"
-          >
-            <span>
-              Gradient
-            </span>
-            <span
-              className="ripple"
-              style={
-                Object {
-                  "height": 0,
-                  "left": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-          </button>
-          <button
-            className="button gradient normalRelevance default"
-            disabled={false}
-            onClick={[Function]}
-            type="button"
-          >
-            <Add24.svg
-              height={12}
-              width={12}
-            />
-            <span>
-              Gradient
-            </span>
-            <span
-              className="ripple"
-              style={
-                Object {
-                  "height": 0,
-                  "left": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-          </button>
-          <button
-            className="button gradient normalRelevance default"
-            disabled={false}
-            onClick={[Function]}
-            type="button"
-          >
-            <span>
-              Gradient
-            </span>
-            <Add24.svg
-              height={12}
-              width={12}
-            />
-            <span
-              className="ripple"
-              style={
-                Object {
-                  "height": 0,
-                  "left": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-          </button>
-        </div>
-        <div>
-          <button
             className="button outline normalRelevance default"
             disabled={false}
             onClick={[Function]}
@@ -1095,79 +1022,6 @@ exports[`Storyshots Buttons Default 1`] = `
         </div>
         <div>
           <button
-            className="button gradient highRelevance default"
-            disabled={false}
-            onClick={[Function]}
-            type="button"
-          >
-            <span>
-              Gradient
-            </span>
-            <span
-              className="ripple"
-              style={
-                Object {
-                  "height": 0,
-                  "left": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-          </button>
-          <button
-            className="button gradient highRelevance default"
-            disabled={false}
-            onClick={[Function]}
-            type="button"
-          >
-            <Add24.svg
-              height={12}
-              width={12}
-            />
-            <span>
-              Gradient
-            </span>
-            <span
-              className="ripple"
-              style={
-                Object {
-                  "height": 0,
-                  "left": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-          </button>
-          <button
-            className="button gradient highRelevance default"
-            disabled={false}
-            onClick={[Function]}
-            type="button"
-          >
-            <span>
-              Gradient
-            </span>
-            <Add24.svg
-              height={12}
-              width={12}
-            />
-            <span
-              className="ripple"
-              style={
-                Object {
-                  "height": 0,
-                  "left": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-          </button>
-        </div>
-        <div>
-          <button
             className="button outline highRelevance default"
             disabled={false}
             onClick={[Function]}
@@ -1376,79 +1230,6 @@ exports[`Storyshots Buttons Default 1`] = `
           >
             <span>
               Flat
-            </span>
-            <Add24.svg
-              height={12}
-              width={12}
-            />
-            <span
-              className="ripple"
-              style={
-                Object {
-                  "height": 0,
-                  "left": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-          </button>
-        </div>
-        <div>
-          <button
-            className="button gradient lowRelevance default"
-            disabled={false}
-            onClick={[Function]}
-            type="button"
-          >
-            <span>
-              Gradient
-            </span>
-            <span
-              className="ripple"
-              style={
-                Object {
-                  "height": 0,
-                  "left": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-          </button>
-          <button
-            className="button gradient lowRelevance default"
-            disabled={false}
-            onClick={[Function]}
-            type="button"
-          >
-            <Add24.svg
-              height={12}
-              width={12}
-            />
-            <span>
-              Gradient
-            </span>
-            <span
-              className="ripple"
-              style={
-                Object {
-                  "height": 0,
-                  "left": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-          </button>
-          <button
-            className="button gradient lowRelevance default"
-            disabled={false}
-            onClick={[Function]}
-            type="button"
-          >
-            <span>
-              Gradient
             </span>
             <Add24.svg
               height={12}
@@ -1753,79 +1534,6 @@ exports[`Storyshots Buttons Default 1`] = `
           >
             <span>
               Flat
-            </span>
-            <Add24.svg
-              height={12}
-              width={12}
-            />
-            <span
-              className="ripple"
-              style={
-                Object {
-                  "height": 0,
-                  "left": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-          </button>
-        </div>
-        <div>
-          <button
-            className="button gradient normalRelevance default"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
-          >
-            <span>
-              Gradient
-            </span>
-            <span
-              className="ripple"
-              style={
-                Object {
-                  "height": 0,
-                  "left": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-          </button>
-          <button
-            className="button gradient normalRelevance default"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
-          >
-            <Add24.svg
-              height={12}
-              width={12}
-            />
-            <span>
-              Gradient
-            </span>
-            <span
-              className="ripple"
-              style={
-                Object {
-                  "height": 0,
-                  "left": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-          </button>
-          <button
-            className="button gradient normalRelevance default"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
-          >
-            <span>
-              Gradient
             </span>
             <Add24.svg
               height={12}
@@ -2242,467 +1950,6 @@ exports[`Storyshots Buttons Default 1`] = `
             />
             <span>
               outline
-            </span>
-            <span
-              className="ripple"
-              style={
-                Object {
-                  "height": 0,
-                  "left": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-          </button>
-        </div>
-      </div>
-    </section>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Buttons SecondaryButton 1`] = `
-<div
-  className="storybook-readme-story"
->
-  <div
-    className="typography"
-  >
-    <section
-      className=""
-    >
-      <h2>
-        Sizes
-      </h2>
-      <div>
-        <div>
-          <button
-            className="button flat normalRelevance tiny"
-            disabled={false}
-            onClick={[Function]}
-            type="button"
-          >
-            <span>
-              Tiny
-            </span>
-            <span
-              className="ripple"
-              style={
-                Object {
-                  "height": 0,
-                  "left": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-          </button>
-          <button
-            className="button flat normalRelevance tiny"
-            disabled={false}
-            onClick={[Function]}
-            type="button"
-          >
-            <Add24.svg
-              height={12}
-              width={12}
-            />
-            <span>
-              Tiny
-            </span>
-            <span
-              className="ripple"
-              style={
-                Object {
-                  "height": 0,
-                  "left": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-          </button>
-          <button
-            className="button flat normalRelevance tiny"
-            disabled={false}
-            onClick={[Function]}
-            type="button"
-          >
-            <span>
-              Tiny
-            </span>
-            <Add24.svg
-              height={12}
-              width={12}
-            />
-            <span
-              className="ripple"
-              style={
-                Object {
-                  "height": 0,
-                  "left": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-          </button>
-        </div>
-        <div>
-          <button
-            className="button flat normalRelevance default"
-            disabled={false}
-            onClick={[Function]}
-            type="button"
-          >
-            <span>
-              Default
-            </span>
-            <span
-              className="ripple"
-              style={
-                Object {
-                  "height": 0,
-                  "left": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-          </button>
-          <button
-            className="button flat normalRelevance default"
-            disabled={false}
-            onClick={[Function]}
-            type="button"
-          >
-            <Add24.svg
-              height={12}
-              width={12}
-            />
-            <span>
-              Default
-            </span>
-            <span
-              className="ripple"
-              style={
-                Object {
-                  "height": 0,
-                  "left": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-          </button>
-          <button
-            className="button flat normalRelevance default"
-            disabled={false}
-            onClick={[Function]}
-            type="button"
-          >
-            <span>
-              Default
-            </span>
-            <Add24.svg
-              height={12}
-              width={12}
-            />
-            <span
-              className="ripple"
-              style={
-                Object {
-                  "height": 0,
-                  "left": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-          </button>
-        </div>
-        <div>
-          <button
-            className="button flat normalRelevance huge"
-            disabled={false}
-            onClick={[Function]}
-            type="button"
-          >
-            <span>
-              Huge
-            </span>
-            <span
-              className="ripple"
-              style={
-                Object {
-                  "height": 0,
-                  "left": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-          </button>
-          <button
-            className="button flat normalRelevance huge"
-            disabled={false}
-            onClick={[Function]}
-            type="button"
-          >
-            <Add24.svg
-              height={12}
-              width={12}
-            />
-            <span>
-              Huge
-            </span>
-            <span
-              className="ripple"
-              style={
-                Object {
-                  "height": 0,
-                  "left": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-          </button>
-          <button
-            className="button flat normalRelevance huge"
-            disabled={false}
-            onClick={[Function]}
-            type="button"
-          >
-            <span>
-              Huge
-            </span>
-            <Add24.svg
-              height={12}
-              width={12}
-            />
-            <span
-              className="ripple"
-              style={
-                Object {
-                  "height": 0,
-                  "left": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-          </button>
-        </div>
-      </div>
-    </section>
-    <section
-      className=""
-    >
-      <h2>
-        Normal Relevance
-      </h2>
-      <div>
-        <div>
-          <button
-            className="button flat normalRelevance default"
-            disabled={false}
-            onClick={[Function]}
-            type="button"
-          >
-            <span>
-              Flat
-            </span>
-            <span
-              className="ripple"
-              style={
-                Object {
-                  "height": 0,
-                  "left": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-          </button>
-          <button
-            className="button flat normalRelevance default"
-            disabled={false}
-            onClick={[Function]}
-            type="button"
-          >
-            <Add24.svg
-              height={12}
-              width={12}
-            />
-            <span>
-              Flat
-            </span>
-            <span
-              className="ripple"
-              style={
-                Object {
-                  "height": 0,
-                  "left": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-          </button>
-          <button
-            className="button flat normalRelevance default"
-            disabled={false}
-            onClick={[Function]}
-            type="button"
-          >
-            <span>
-              Flat
-            </span>
-            <Add24.svg
-              height={12}
-              width={12}
-            />
-            <span
-              className="ripple"
-              style={
-                Object {
-                  "height": 0,
-                  "left": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-          </button>
-        </div>
-      </div>
-    </section>
-    <section
-      className=""
-    >
-      <h2>
-        Disabled
-      </h2>
-      <div>
-        <div>
-          <button
-            className="button flat normalRelevance default"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
-          >
-            <span>
-              Flat
-            </span>
-            <span
-              className="ripple"
-              style={
-                Object {
-                  "height": 0,
-                  "left": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-          </button>
-          <button
-            className="button flat normalRelevance default"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
-          >
-            <span>
-              Flat
-            </span>
-            <Add24.svg
-              height={12}
-              width={12}
-            />
-            <span
-              className="ripple"
-              style={
-                Object {
-                  "height": 0,
-                  "left": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-          </button>
-        </div>
-      </div>
-    </section>
-    <section
-      className=""
-    >
-      <h2>
-        Loadings
-      </h2>
-      <div>
-        <div>
-          <button
-            className="button flat normalRelevance default hiddenChildren"
-            disabled={false}
-            onClick={[Function]}
-            type="button"
-          >
-            <span
-              className="spinner startAlign absolute"
-            />
-            <span>
-              default
-            </span>
-            <span
-              className="ripple"
-              style={
-                Object {
-                  "height": 0,
-                  "left": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-          </button>
-          <button
-            className="button flat normalRelevance default hiddenChildren"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
-          >
-            <span
-              className="spinner startAlign absolute"
-            />
-            <span>
-              disabled
-            </span>
-            <span
-              className="ripple"
-              style={
-                Object {
-                  "height": 0,
-                  "left": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-          </button>
-          <button
-            className="button flat normalRelevance default"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
-          >
-            <span
-              className="spinner startAlign"
-            />
-            <span>
-              Disabled and Loading
             </span>
             <span
               className="ripple"
@@ -21539,7 +20786,7 @@ exports[`Storyshots Landing Pagar.me login 1`] = `
             <div>
               <div>
                 <button
-                  className="button gradient normalRelevance huge"
+                  className="button flat normalRelevance huge"
                   disabled={false}
                   onClick={[Function]}
                   type="submit"
@@ -21697,7 +20944,7 @@ exports[`Storyshots Landing Pagar.me login light 1`] = `
             <div>
               <div>
                 <button
-                  className="button gradient normalRelevance huge"
+                  className="button flat normalRelevance huge"
                   disabled={false}
                   onClick={[Function]}
                   type="submit"
@@ -21826,7 +21073,7 @@ exports[`Storyshots Landing Pagar.me password recovery 1`] = `
               <div>
                 <div>
                   <button
-                    className="button gradient normalRelevance huge"
+                    className="button flat normalRelevance huge"
                     disabled={false}
                     onClick={[Function]}
                     type="submit"
@@ -21930,7 +21177,7 @@ exports[`Storyshots Landing Pagar.me password recovery confirmation 1`] = `
               <div>
                 <div>
                   <button
-                    className="button gradient normalRelevance huge"
+                    className="button flat normalRelevance huge"
                     disabled={false}
                     onClick={[Function]}
                     type="button"
@@ -22148,7 +21395,7 @@ exports[`Storyshots Landing Pagar.me sign in 1`] = `
             <div>
               <div>
                 <button
-                  className="button gradient normalRelevance huge"
+                  className="button flat normalRelevance huge"
                   disabled={false}
                   onClick={[Function]}
                   type="submit"
@@ -22241,7 +21488,7 @@ exports[`Storyshots Landing Pagar.me sign in confirmation 1`] = `
               <div>
                 <div>
                   <button
-                    className="button gradient normalRelevance huge"
+                    className="button flat normalRelevance huge"
                     disabled={false}
                     onClick={[Function]}
                     type="button"
@@ -22425,7 +21672,7 @@ exports[`Storyshots Landing Pagar.me two factor login 1`] = `
             <div>
               <div>
                 <button
-                  className="button gradient normalRelevance huge"
+                  className="button flat normalRelevance huge"
                   disabled={false}
                   onClick={[Function]}
                   type="submit"
@@ -39182,7 +38429,7 @@ exports[`Storyshots Typography Font families 1`] = `
             Heading 1
           </span>
           <h1>
-            Rubik 24
+            Lato 24
           </h1>
         </div>
         <div>
@@ -39190,7 +38437,7 @@ exports[`Storyshots Typography Font families 1`] = `
             Heading 2
           </span>
           <h2>
-            Rubik 20
+            Lato 20
           </h2>
         </div>
         <div>
@@ -39198,7 +38445,7 @@ exports[`Storyshots Typography Font families 1`] = `
             Heading 3
           </span>
           <h3>
-            Rubik 18
+            Lato 18
           </h3>
         </div>
         <div>
@@ -39207,16 +38454,16 @@ exports[`Storyshots Typography Font families 1`] = `
           </span>
           <div>
             <p>
-              Rubik Regular 14
+              Lato Regular 14
             </p>
             <p>
               <i>
-                Rubik Italic 14
+                Lato Italic 14
               </i>
             </p>
             <p>
               <b>
-                Rubik Bold 14
+                Lato Bold 14
               </b>
             </p>
           </div>

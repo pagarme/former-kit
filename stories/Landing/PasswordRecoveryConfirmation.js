@@ -40,7 +40,7 @@ const PasswordRecovery = ({
               <Button
                 type="button"
                 size="huge"
-                fill="gradient"
+                fill="flat"
                 onClick={backToLogin}
               >
                 Voltar para o login

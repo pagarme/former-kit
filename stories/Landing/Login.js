@@ -74,7 +74,7 @@ const Login = ({
             <Button
               type="submit"
               size="huge"
-              fill="gradient"
+              fill="flat"
             >
               Entrar
             </Button>

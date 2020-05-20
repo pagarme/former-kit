@@ -33,7 +33,7 @@ const SignIn = () => (
               <Button
                 type="button"
                 size="huge"
-                fill="gradient"
+                fill="flat"
                 onClick={bakToLogin}
               >
                 Voltar para o cadastro

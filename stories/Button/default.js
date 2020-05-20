@@ -63,18 +63,6 @@ storiesOf('Buttons', module)
         </div>
 
         <div className={styles.spacingAround}>
-          <Button fill="gradient">Gradient</Button>
-          <Button fill="gradient" icon={<IconAdd width={12} height={12} />}>Gradient</Button>
-          <Button
-            fill="gradient"
-            icon={<IconAdd width={12} height={12} />}
-            iconAlignment="end"
-          >
-            Gradient
-          </Button>
-        </div>
-
-        <div className={styles.spacingAround}>
           <Button fill="outline">Outline</Button>
           <Button fill="outline" icon={<IconAdd width={12} height={12} />}>Outline</Button>
           <Button
@@ -110,25 +98,6 @@ storiesOf('Buttons', module)
             iconAlignment="end"
           >
             Flat
-          </Button>
-        </div>
-
-        <div className={styles.spacingAround}>
-          <Button relevance="high" fill="gradient">Gradient</Button>
-          <Button
-            relevance="high"
-            fill="gradient"
-            icon={<IconAdd width={12} height={12} />}
-          >
-            Gradient
-          </Button>
-          <Button
-            relevance="high"
-            fill="gradient"
-            icon={<IconAdd width={12} height={12} />}
-            iconAlignment="end"
-          >
-            Gradient
           </Button>
         </div>
 
@@ -181,25 +150,6 @@ storiesOf('Buttons', module)
             iconAlignment="end"
           >
             Flat
-          </Button>
-        </div>
-
-        <div className={styles.spacingAround}>
-          <Button relevance="low" fill="gradient">Gradient</Button>
-          <Button
-            relevance="low"
-            fill="gradient"
-            icon={<IconAdd width={12} height={12} />}
-          >
-            Gradient
-          </Button>
-          <Button
-            relevance="low"
-            fill="gradient"
-            icon={<IconAdd width={12} height={12} />}
-            iconAlignment="end"
-          >
-            Gradient
           </Button>
         </div>
 
@@ -263,25 +213,6 @@ storiesOf('Buttons', module)
             iconAlignment="end"
           >
             Flat
-          </Button>
-        </div>
-
-        <div className={styles.spacingAround}>
-          <Button disabled fill="gradient">Gradient</Button>
-          <Button
-            disabled
-            fill="gradient"
-            icon={<IconAdd width={12} height={12} />}
-          >
-            Gradient
-          </Button>
-          <Button
-            disabled
-            fill="gradient"
-            icon={<IconAdd width={12} height={12} />}
-            iconAlignment="end"
-          >
-            Gradient
           </Button>
         </div>
 
