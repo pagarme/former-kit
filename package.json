@@ -1,6 +1,6 @@
 {
   "name": "former-kit",
-  "version": "1.9.1",
+  "version": "2.0.0",
   "license": "Apache-2.0",
   "main": "dist/index.js",
   "repository": {
