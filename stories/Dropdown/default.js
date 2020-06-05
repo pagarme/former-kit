@@ -66,10 +66,6 @@ storiesOf('Dropdown', module)
         <DropdownState />
       </Section>
 
-      <Section title="Tiny size">
-        <DropdownState size="tiny" />
-      </Section>
-
       <Section title="Default with placeholder">
         <DropdownState placeholder="Select" />
       </Section>

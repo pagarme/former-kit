@@ -68,7 +68,7 @@ Modal.propTypes = {
    * Component's size.
    */
   size: PropTypes.oneOf([
-    'mobile', 'default', 'huge',
+    'mobile', 'default', 'huge', 'small',
   ]),
   /**
    * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
