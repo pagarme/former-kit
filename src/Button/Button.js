@@ -74,7 +74,7 @@ const Button = ({
     setRipple(createRipple(e))
 
     if (onClick) {
-      onClick()
+      onClick(e)
     }
   }
 

@@ -43,9 +43,12 @@ class Popover extends Component {
     }
   }
 
-  handleOnClick () {
+  handleOnClick (e) {
     const { onClick } = this.props
     const { visible } = this.state
+
+    e.stopPropagation()
+
     if (!onClick) {
       this.setState({
         visible: !visible,
