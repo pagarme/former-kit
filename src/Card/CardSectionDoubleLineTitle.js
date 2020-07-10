@@ -37,7 +37,13 @@ const CardSectionDoubleLineTitle = ({
   )
 
   return (
-    <div className={headerClassNames}>
+    // eslint-disable-next-line jsx-a11y/click-events-have-key-events
+    <div
+      className={headerClassNames}
+      onClick={onClick}
+      role="button"
+      tabIndex={0}
+    >
       <div className={theme.doubleLineHead}>
         <div className={theme.doubleLineTitle}>
           <span className={theme.sectionIconBox}>
@@ -55,8 +61,8 @@ const CardSectionDoubleLineTitle = ({
           <Button
             fill="outline"
             icon={getArrowIcon({ collapsed, icons })}
-            onClick={onClick}
             relevance="low"
+            onKey={onClick}
             size="default"
             type="button"
           />

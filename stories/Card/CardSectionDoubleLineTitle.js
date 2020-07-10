@@ -47,7 +47,10 @@ const renderActions = () => (
       fill="outline"
       icon={<IconCalendar width={16} height={16} />}
       key="Item 1"
-      onClick={() => action('item 1')}
+      onClick={(e) => {
+        e.stopPropagation()
+        action('item 1')
+      }}
       size="default"
     />
 
