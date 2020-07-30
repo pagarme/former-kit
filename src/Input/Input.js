@@ -373,6 +373,7 @@ Input.propTypes = {
    */
   size: PropTypes.oneOf([
     'tiny',
+    'huge',
   ]),
   /**
    * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.

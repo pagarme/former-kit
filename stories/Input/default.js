@@ -75,6 +75,14 @@ storiesOf('Inputs', module)
         <InputState type="text" size="tiny" />
       </Section>
 
+      <Section title="Huge size">
+        <InputState type="text" size="huge" />
+      </Section>
+
+      <Section title="Huge size for password">
+        <InputState type="password" size="huge" />
+      </Section>
+
       <Section title="Error">
         <InputState type="text" error="Wrong email" />
       </Section>
