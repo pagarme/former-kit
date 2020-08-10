@@ -131,7 +131,11 @@ const Button = ({
 
       { renderLoaderSpinnerAt('start') }
 
-      { !isNil(children) && <span>{children}</span> }
+      { !isNil(children) && (
+        <span className={theme.textButton}>
+          {children}
+        </span>
+      )}
 
       { renderLoaderSpinnerAt('end') }
 
@@ -234,6 +238,7 @@ Button.propTypes = {
     ripple: PropTypes.string,
     size: PropTypes.string,
     spinner: PropTypes.string,
+    textButton: PropTypes.string,
     tiny: PropTypes.string,
   }),
   /**
