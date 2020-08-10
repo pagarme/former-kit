@@ -54,6 +54,7 @@ const Button = ({
   disabled,
   displayChildrenWhenLoading,
   fill,
+  fullWidth,
   icon,
   iconAlignment,
   loading,
@@ -113,6 +114,7 @@ const Button = ({
       [theme.iconButton]: !isNil(icon) && isNil(children),
       [theme.circle]: !isNil(icon) && isNil(children) && circle,
       [theme.hiddenChildren]: !displayChildrenWhenLoading && loading,
+      [theme.fullWidth]: fullWidth,
     }
   )
 
@@ -177,6 +179,10 @@ Button.propTypes = {
     'flat', 'outline', 'clean',
   ]),
   /**
+  * Defines if button have full width.
+  */
+  fullWidth: PropTypes.bool,
+  /**
    * Custom icon which stays on the left or right side of the input.
    */
   icon: PropTypes.element,
@@ -217,6 +223,7 @@ Button.propTypes = {
     default: PropTypes.string,
     disabled: PropTypes.string,
     flat: PropTypes.string,
+    fullWidth: PropTypes.string,
     hiddenChildren: PropTypes.string,
     highRelevance: PropTypes.string,
     huge: PropTypes.string,
@@ -242,6 +249,7 @@ Button.defaultProps = {
   disabled: false,
   displayChildrenWhenLoading: false,
   fill: 'flat',
+  fullWidth: false,
   icon: null,
   iconAlignment: 'start',
   loading: false,

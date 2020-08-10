@@ -18,16 +18,15 @@ const consumeTheme = ThemeConsumer('UIAlert')
  */
 const Alert = ({
   action,
-  base,
   children,
   icon,
   onDismiss,
   theme,
   type,
 }) => (
-  <div className={classNames(theme.alert, theme[base])}>
+  <div className={classNames(theme.alert, theme[type])}>
     {!isNil(icon) && (
-      <div className={classNames(theme.icon, theme[type])}>
+      <div className={theme.icon}>
         {icon}
       </div>
     )}
@@ -40,6 +39,7 @@ const Alert = ({
       {(!isNil(action) && !isNil(onDismiss)) && (
         <Button
           fill="clean"
+          relevance="high"
           onClick={onDismiss}
         >
           {action}
@@ -54,13 +54,6 @@ Alert.propTypes = {
    * The action text.
    */
   action: string,
-  /**
-   * The action text.
-   */
-  base: oneOf([
-    'dark',
-    'light',
-  ]),
   /**
    * The children element. It should contain a React element.
    */
@@ -79,11 +72,9 @@ Alert.propTypes = {
   theme: shape({
     alert: string,
     content: string,
-    dark: string,
     error: string,
     icon: string,
     info: string,
-    light: string,
     success: string,
     warning: string,
   }),
@@ -101,7 +92,6 @@ Alert.propTypes = {
 
 Alert.defaultProps = {
   action: null,
-  base: 'light',
   icon: null,
   onDismiss: null,
   theme: {},

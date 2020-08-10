@@ -15,12 +15,12 @@ exports[`Storyshots Alerts Default 1`] = `
       </h2>
       <div>
         <div
-          className="alert light"
+          className="alert warning"
         >
           <div
-            className="icon warning"
+            className="icon"
           >
-            <Warning32.svg
+            <ExclamationCircle32.svg
               height={16}
               width={16}
             />
@@ -45,12 +45,12 @@ exports[`Storyshots Alerts Default 1`] = `
       </h2>
       <div>
         <div
-          className="alert light"
+          className="alert info"
         >
           <div
-            className="icon info"
+            className="icon"
           >
-            <Info32.svg
+            <InfoCircle32.svg
               height={16}
               width={16}
             />
@@ -75,12 +75,12 @@ exports[`Storyshots Alerts Default 1`] = `
       </h2>
       <div>
         <div
-          className="alert light"
+          className="alert error"
         >
           <div
-            className="icon error"
+            className="icon"
           >
-            <ClearClose32.svg
+            <CloseCircle32.svg
               height={16}
               width={16}
             />
@@ -105,12 +105,12 @@ exports[`Storyshots Alerts Default 1`] = `
       </h2>
       <div>
         <div
-          className="alert light"
+          className="alert success"
         >
           <div
-            className="icon success"
+            className="icon"
           >
-            <Check32.svg
+            <CheckCircle32.svg
               height={16}
               width={16}
             />
@@ -135,12 +135,12 @@ exports[`Storyshots Alerts Default 1`] = `
       </h2>
       <div>
         <div
-          className="alert light"
+          className="alert warning"
         >
           <div
-            className="icon warning"
+            className="icon"
           >
-            <Warning32.svg
+            <ExclamationCircle32.svg
               height={16}
               width={16}
             />
@@ -154,178 +154,7 @@ exports[`Storyshots Alerts Default 1`] = `
               Warning. Something is going on!
             </p>
             <button
-              className="button clean normalRelevance default"
-              disabled={false}
-              onClick={[Function]}
-              type="button"
-            >
-              <span>
-                dismiss
-              </span>
-              <span
-                className="ripple"
-                style={
-                  Object {
-                    "height": 0,
-                    "left": 0,
-                    "top": 0,
-                    "width": 0,
-                  }
-                }
-              />
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section
-      className=""
-    >
-      <h2>
-        Warning
-      </h2>
-      <div>
-        <div
-          className="alert dark"
-        >
-          <div
-            className="icon warning"
-          >
-            <Warning32.svg
-              height={16}
-              width={16}
-            />
-          </div>
-          <div
-            aria-live="polite"
-            className="content"
-            role="status"
-          >
-            <p>
-              Warning. Something is going on!
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section
-      className=""
-    >
-      <h2>
-        Info
-      </h2>
-      <div>
-        <div
-          className="alert dark"
-        >
-          <div
-            className="icon info"
-          >
-            <Info32.svg
-              height={16}
-              width={16}
-            />
-          </div>
-          <div
-            aria-live="polite"
-            className="content"
-            role="status"
-          >
-            <p>
-              Info. You can do it better!
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section
-      className=""
-    >
-      <h2>
-        Error
-      </h2>
-      <div>
-        <div
-          className="alert dark"
-        >
-          <div
-            className="icon error"
-          >
-            <ClearClose32.svg
-              height={16}
-              width={16}
-            />
-          </div>
-          <div
-            aria-live="polite"
-            className="content"
-            role="status"
-          >
-            <p>
-              Error. Something went wrong!
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section
-      className=""
-    >
-      <h2>
-        Success
-      </h2>
-      <div>
-        <div
-          className="alert dark"
-        >
-          <div
-            className="icon success"
-          >
-            <Check32.svg
-              height={16}
-              width={16}
-            />
-          </div>
-          <div
-            aria-live="polite"
-            className="content"
-            role="status"
-          >
-            <p>
-              Success. Awesome, it worked!
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section
-      className=""
-    >
-      <h2>
-        Event
-      </h2>
-      <div>
-        <div
-          className="alert dark"
-        >
-          <div
-            className="icon warning"
-          >
-            <Warning32.svg
-              height={16}
-              width={16}
-            />
-          </div>
-          <div
-            aria-live="polite"
-            className="content"
-            role="status"
-          >
-            <p>
-              Warning. Something is going on!
-            </p>
-            <button
-              className="button clean normalRelevance default"
+              className="button clean highRelevance default"
               disabled={false}
               onClick={[Function]}
               type="button"
