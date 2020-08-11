@@ -159,7 +159,9 @@ exports[`Storyshots Alerts Default 1`] = `
               onClick={[Function]}
               type="button"
             >
-              <span>
+              <span
+                className="textButton"
+              >
                 dismiss
               </span>
               <span
@@ -327,7 +329,9 @@ exports[`Storyshots Buttons Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Tiny
             </span>
             <span
@@ -352,7 +356,9 @@ exports[`Storyshots Buttons Default 1`] = `
               height={12}
               width={12}
             />
-            <span>
+            <span
+              className="textButton"
+            >
               Tiny
             </span>
             <span
@@ -373,7 +379,9 @@ exports[`Storyshots Buttons Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Tiny
             </span>
             <Add24.svg
@@ -400,7 +408,9 @@ exports[`Storyshots Buttons Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Default
             </span>
             <span
@@ -425,7 +435,9 @@ exports[`Storyshots Buttons Default 1`] = `
               height={12}
               width={12}
             />
-            <span>
+            <span
+              className="textButton"
+            >
               Default
             </span>
             <span
@@ -446,7 +458,9 @@ exports[`Storyshots Buttons Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Default
             </span>
             <Add24.svg
@@ -473,7 +487,9 @@ exports[`Storyshots Buttons Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Huge
             </span>
             <span
@@ -498,7 +514,9 @@ exports[`Storyshots Buttons Default 1`] = `
               height={12}
               width={12}
             />
-            <span>
+            <span
+              className="textButton"
+            >
               Huge
             </span>
             <span
@@ -519,7 +537,9 @@ exports[`Storyshots Buttons Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Huge
             </span>
             <Add24.svg
@@ -555,7 +575,9 @@ exports[`Storyshots Buttons Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Flat
             </span>
             <span
@@ -580,7 +602,9 @@ exports[`Storyshots Buttons Default 1`] = `
               height={12}
               width={12}
             />
-            <span>
+            <span
+              className="textButton"
+            >
               Flat
             </span>
             <span
@@ -601,7 +625,9 @@ exports[`Storyshots Buttons Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Flat
             </span>
             <Add24.svg
@@ -628,7 +654,9 @@ exports[`Storyshots Buttons Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Outline
             </span>
             <span
@@ -653,7 +681,9 @@ exports[`Storyshots Buttons Default 1`] = `
               height={12}
               width={12}
             />
-            <span>
+            <span
+              className="textButton"
+            >
               Outline
             </span>
             <span
@@ -674,7 +704,9 @@ exports[`Storyshots Buttons Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Outline
             </span>
             <Add24.svg
@@ -701,7 +733,9 @@ exports[`Storyshots Buttons Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Clean
             </span>
             <span
@@ -726,7 +760,9 @@ exports[`Storyshots Buttons Default 1`] = `
               height={12}
               width={12}
             />
-            <span>
+            <span
+              className="textButton"
+            >
               Clean
             </span>
             <span
@@ -747,7 +783,9 @@ exports[`Storyshots Buttons Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Clean
             </span>
             <Add24.svg
@@ -783,7 +821,9 @@ exports[`Storyshots Buttons Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Flat
             </span>
             <span
@@ -808,7 +848,9 @@ exports[`Storyshots Buttons Default 1`] = `
               height={12}
               width={12}
             />
-            <span>
+            <span
+              className="textButton"
+            >
               Flat
             </span>
             <span
@@ -829,7 +871,9 @@ exports[`Storyshots Buttons Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Flat
             </span>
             <Add24.svg
@@ -856,7 +900,9 @@ exports[`Storyshots Buttons Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Outline
             </span>
             <span
@@ -881,7 +927,9 @@ exports[`Storyshots Buttons Default 1`] = `
               height={12}
               width={12}
             />
-            <span>
+            <span
+              className="textButton"
+            >
               Outline
             </span>
             <span
@@ -902,7 +950,9 @@ exports[`Storyshots Buttons Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Outline
             </span>
             <Add24.svg
@@ -929,7 +979,9 @@ exports[`Storyshots Buttons Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Clean
             </span>
             <span
@@ -954,7 +1006,9 @@ exports[`Storyshots Buttons Default 1`] = `
               height={12}
               width={12}
             />
-            <span>
+            <span
+              className="textButton"
+            >
               Clean
             </span>
             <span
@@ -975,7 +1029,9 @@ exports[`Storyshots Buttons Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Clean
             </span>
             <Add24.svg
@@ -1011,7 +1067,9 @@ exports[`Storyshots Buttons Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Flat
             </span>
             <span
@@ -1036,7 +1094,9 @@ exports[`Storyshots Buttons Default 1`] = `
               height={12}
               width={12}
             />
-            <span>
+            <span
+              className="textButton"
+            >
               Flat
             </span>
             <span
@@ -1057,7 +1117,9 @@ exports[`Storyshots Buttons Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Flat
             </span>
             <Add24.svg
@@ -1084,7 +1146,9 @@ exports[`Storyshots Buttons Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Outline
             </span>
             <span
@@ -1109,7 +1173,9 @@ exports[`Storyshots Buttons Default 1`] = `
               height={12}
               width={12}
             />
-            <span>
+            <span
+              className="textButton"
+            >
               Outline
             </span>
             <span
@@ -1130,7 +1196,9 @@ exports[`Storyshots Buttons Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Outline
             </span>
             <Add24.svg
@@ -1157,7 +1225,9 @@ exports[`Storyshots Buttons Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Clean
             </span>
             <span
@@ -1182,7 +1252,9 @@ exports[`Storyshots Buttons Default 1`] = `
               height={12}
               width={12}
             />
-            <span>
+            <span
+              className="textButton"
+            >
               Clean
             </span>
             <span
@@ -1203,7 +1275,9 @@ exports[`Storyshots Buttons Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Clean
             </span>
             <Add24.svg
@@ -1340,7 +1414,9 @@ exports[`Storyshots Buttons Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Flat
             </span>
             <span
@@ -1361,7 +1437,9 @@ exports[`Storyshots Buttons Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Flat
             </span>
             <Add24.svg
@@ -1388,7 +1466,9 @@ exports[`Storyshots Buttons Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Outline
             </span>
             <span
@@ -1413,7 +1493,9 @@ exports[`Storyshots Buttons Default 1`] = `
               height={12}
               width={12}
             />
-            <span>
+            <span
+              className="textButton"
+            >
               Outline
             </span>
             <span
@@ -1434,7 +1516,9 @@ exports[`Storyshots Buttons Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Outline
             </span>
             <Add24.svg
@@ -1461,7 +1545,9 @@ exports[`Storyshots Buttons Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Clean
             </span>
             <span
@@ -1486,7 +1572,9 @@ exports[`Storyshots Buttons Default 1`] = `
               height={12}
               width={12}
             />
-            <span>
+            <span
+              className="textButton"
+            >
               Clean
             </span>
             <span
@@ -1507,7 +1595,9 @@ exports[`Storyshots Buttons Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Clean
             </span>
             <Add24.svg
@@ -1635,7 +1725,9 @@ exports[`Storyshots Buttons Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               default
             </span>
             <span
@@ -1656,7 +1748,9 @@ exports[`Storyshots Buttons Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               outline
             </span>
             <span
@@ -1703,7 +1797,9 @@ exports[`Storyshots Buttons Default 1`] = `
               height={12}
               width={12}
             />
-            <span>
+            <span
+              className="textButton"
+            >
               tiny
             </span>
             <span
@@ -1724,7 +1820,9 @@ exports[`Storyshots Buttons Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               High
             </span>
             <Add24.svg
@@ -1753,7 +1851,9 @@ exports[`Storyshots Buttons Default 1`] = `
               height={18}
               width={18}
             />
-            <span>
+            <span
+              className="textButton"
+            >
               High
             </span>
             <span
@@ -1777,7 +1877,9 @@ exports[`Storyshots Buttons Default 1`] = `
             <span
               className="spinner startAlign"
             />
-            <span>
+            <span
+              className="textButton"
+            >
               outline
             </span>
             <span
@@ -9223,7 +9325,9 @@ exports[`Storyshots Cards Default 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   Action
                 </span>
                 <span
@@ -9244,7 +9348,9 @@ exports[`Storyshots Cards Default 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   Action
                 </span>
                 <span
@@ -9265,7 +9371,9 @@ exports[`Storyshots Cards Default 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   Action
                 </span>
                 <span
@@ -9286,7 +9394,9 @@ exports[`Storyshots Cards Default 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   Action
                 </span>
                 <span
@@ -9352,7 +9462,9 @@ exports[`Storyshots Cards Default 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   Action
                 </span>
                 <span
@@ -9373,7 +9485,9 @@ exports[`Storyshots Cards Default 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   Action
                 </span>
                 <span
@@ -9394,7 +9508,9 @@ exports[`Storyshots Cards Default 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   Action
                 </span>
                 <span
@@ -9415,7 +9531,9 @@ exports[`Storyshots Cards Default 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   Action
                 </span>
                 <span
@@ -9477,7 +9595,9 @@ exports[`Storyshots Cards Default 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   Action
                 </span>
                 <span
@@ -9498,7 +9618,9 @@ exports[`Storyshots Cards Default 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   Action
                 </span>
                 <span
@@ -9519,7 +9641,9 @@ exports[`Storyshots Cards Default 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   Action
                 </span>
                 <span
@@ -9540,7 +9664,9 @@ exports[`Storyshots Cards Default 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   Action
                 </span>
                 <span
@@ -9861,7 +9987,9 @@ feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
                           onClick={[Function]}
                           type="button"
                         >
-                          <span>
+                          <span
+                            className="textButton"
+                          >
                             Actions
                           </span>
                           <span
@@ -10020,7 +10148,9 @@ feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
                           onClick={[Function]}
                           type="button"
                         >
-                          <span>
+                          <span
+                            className="textButton"
+                          >
                             Actions
                           </span>
                           <span
@@ -11125,7 +11255,9 @@ exports[`Storyshots DateInput with sidebar and clear button 1`] = `
           onClick={[Function]}
           type="button"
         >
-          <span>
+          <span
+            className="textButton"
+          >
             Reset Dates
           </span>
           <span
@@ -12136,7 +12268,9 @@ exports[`Storyshots DateSelector With alternate placement 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Button
             </span>
             <span
@@ -12179,7 +12313,9 @@ exports[`Storyshots DateSelector With alternate placement 1`] = `
               onClick={[Function]}
               type="button"
             >
-              <span>
+              <span
+                className="textButton"
+              >
                 Button
               </span>
               <span
@@ -12228,7 +12364,9 @@ exports[`Storyshots DateSelector With sidebar 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Button
             </span>
             <span
@@ -12273,7 +12411,9 @@ exports[`Storyshots DateSelector With sidebar and selected preset 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Button
             </span>
             <span
@@ -12318,7 +12458,9 @@ exports[`Storyshots DateSelector With sidebar only 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Button
             </span>
             <span
@@ -12363,7 +12505,9 @@ exports[`Storyshots DateSelector With sidebar only and selected preset 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Button
             </span>
             <span
@@ -12408,7 +12552,9 @@ exports[`Storyshots DateSelector Without sidebar 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Button
             </span>
             <span
@@ -12453,7 +12599,9 @@ exports[`Storyshots DateSelector Without sidebar and period mode 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Button
             </span>
             <span
@@ -12498,7 +12646,9 @@ exports[`Storyshots DateSelector Without sidebar and pre selected date 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Button
             </span>
             <span
@@ -12543,7 +12693,9 @@ exports[`Storyshots DateSelector Without sidebar and pre selected period 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Button
             </span>
             <span
@@ -13838,7 +13990,9 @@ exports[`Storyshots Flexbox Align Items 1`] = `
           onClick={[Function]}
           type="button"
         >
-          <span>
+          <span
+            className="textButton"
+          >
             button
           </span>
           <span
@@ -13862,7 +14016,9 @@ exports[`Storyshots Flexbox Align Items 1`] = `
           onClick={[Function]}
           type="button"
         >
-          <span>
+          <span
+            className="textButton"
+          >
             button
           </span>
           <span
@@ -13886,7 +14042,9 @@ exports[`Storyshots Flexbox Align Items 1`] = `
           onClick={[Function]}
           type="button"
         >
-          <span>
+          <span
+            className="textButton"
+          >
             button
           </span>
           <span
@@ -13920,7 +14078,9 @@ exports[`Storyshots Flexbox Align Items 1`] = `
           onClick={[Function]}
           type="button"
         >
-          <span>
+          <span
+            className="textButton"
+          >
             button
           </span>
           <span
@@ -13944,7 +14104,9 @@ exports[`Storyshots Flexbox Align Items 1`] = `
           onClick={[Function]}
           type="button"
         >
-          <span>
+          <span
+            className="textButton"
+          >
             button
           </span>
           <span
@@ -13968,7 +14130,9 @@ exports[`Storyshots Flexbox Align Items 1`] = `
           onClick={[Function]}
           type="button"
         >
-          <span>
+          <span
+            className="textButton"
+          >
             button
           </span>
           <span
@@ -14002,7 +14166,9 @@ exports[`Storyshots Flexbox Align Items 1`] = `
           onClick={[Function]}
           type="button"
         >
-          <span>
+          <span
+            className="textButton"
+          >
             button
           </span>
           <span
@@ -14026,7 +14192,9 @@ exports[`Storyshots Flexbox Align Items 1`] = `
           onClick={[Function]}
           type="button"
         >
-          <span>
+          <span
+            className="textButton"
+          >
             button
           </span>
           <span
@@ -14050,7 +14218,9 @@ exports[`Storyshots Flexbox Align Items 1`] = `
           onClick={[Function]}
           type="button"
         >
-          <span>
+          <span
+            className="textButton"
+          >
             button
           </span>
           <span
@@ -14173,7 +14343,9 @@ exports[`Storyshots Flexbox Directions 1`] = `
           onClick={[Function]}
           type="button"
         >
-          <span>
+          <span
+            className="textButton"
+          >
             A Button
           </span>
           <span
@@ -14197,7 +14369,9 @@ exports[`Storyshots Flexbox Directions 1`] = `
           onClick={[Function]}
           type="button"
         >
-          <span>
+          <span
+            className="textButton"
+          >
             Another Button
           </span>
           <span
@@ -14231,7 +14405,9 @@ exports[`Storyshots Flexbox Directions 1`] = `
           onClick={[Function]}
           type="button"
         >
-          <span>
+          <span
+            className="textButton"
+          >
             A Button
           </span>
           <span
@@ -14255,7 +14431,9 @@ exports[`Storyshots Flexbox Directions 1`] = `
           onClick={[Function]}
           type="button"
         >
-          <span>
+          <span
+            className="textButton"
+          >
             Another Button
           </span>
           <span
@@ -14289,7 +14467,9 @@ exports[`Storyshots Flexbox Directions 1`] = `
           onClick={[Function]}
           type="button"
         >
-          <span>
+          <span
+            className="textButton"
+          >
             first button
           </span>
           <span
@@ -14313,7 +14493,9 @@ exports[`Storyshots Flexbox Directions 1`] = `
           onClick={[Function]}
           type="button"
         >
-          <span>
+          <span
+            className="textButton"
+          >
             second Button
           </span>
           <span
@@ -14347,7 +14529,9 @@ exports[`Storyshots Flexbox Directions 1`] = `
           onClick={[Function]}
           type="button"
         >
-          <span>
+          <span
+            className="textButton"
+          >
             first button
           </span>
           <span
@@ -14371,7 +14555,9 @@ exports[`Storyshots Flexbox Directions 1`] = `
           onClick={[Function]}
           type="button"
         >
-          <span>
+          <span
+            className="textButton"
+          >
             second Button
           </span>
           <span
@@ -14412,7 +14598,9 @@ exports[`Storyshots Flexbox JustifyContent 1`] = `
           onClick={[Function]}
           type="button"
         >
-          <span>
+          <span
+            className="textButton"
+          >
             button
           </span>
           <span
@@ -14436,7 +14624,9 @@ exports[`Storyshots Flexbox JustifyContent 1`] = `
           onClick={[Function]}
           type="button"
         >
-          <span>
+          <span
+            className="textButton"
+          >
             button
           </span>
           <span
@@ -14460,7 +14650,9 @@ exports[`Storyshots Flexbox JustifyContent 1`] = `
           onClick={[Function]}
           type="button"
         >
-          <span>
+          <span
+            className="textButton"
+          >
             button
           </span>
           <span
@@ -14494,7 +14686,9 @@ exports[`Storyshots Flexbox JustifyContent 1`] = `
           onClick={[Function]}
           type="button"
         >
-          <span>
+          <span
+            className="textButton"
+          >
             button
           </span>
           <span
@@ -14518,7 +14712,9 @@ exports[`Storyshots Flexbox JustifyContent 1`] = `
           onClick={[Function]}
           type="button"
         >
-          <span>
+          <span
+            className="textButton"
+          >
             button
           </span>
           <span
@@ -14542,7 +14738,9 @@ exports[`Storyshots Flexbox JustifyContent 1`] = `
           onClick={[Function]}
           type="button"
         >
-          <span>
+          <span
+            className="textButton"
+          >
             button
           </span>
           <span
@@ -14576,7 +14774,9 @@ exports[`Storyshots Flexbox JustifyContent 1`] = `
           onClick={[Function]}
           type="button"
         >
-          <span>
+          <span
+            className="textButton"
+          >
             button
           </span>
           <span
@@ -14600,7 +14800,9 @@ exports[`Storyshots Flexbox JustifyContent 1`] = `
           onClick={[Function]}
           type="button"
         >
-          <span>
+          <span
+            className="textButton"
+          >
             button
           </span>
           <span
@@ -14624,7 +14826,9 @@ exports[`Storyshots Flexbox JustifyContent 1`] = `
           onClick={[Function]}
           type="button"
         >
-          <span>
+          <span
+            className="textButton"
+          >
             button
           </span>
           <span
@@ -14658,7 +14862,9 @@ exports[`Storyshots Flexbox JustifyContent 1`] = `
           onClick={[Function]}
           type="button"
         >
-          <span>
+          <span
+            className="textButton"
+          >
             button
           </span>
           <span
@@ -14682,7 +14888,9 @@ exports[`Storyshots Flexbox JustifyContent 1`] = `
           onClick={[Function]}
           type="button"
         >
-          <span>
+          <span
+            className="textButton"
+          >
             button
           </span>
           <span
@@ -14706,7 +14914,9 @@ exports[`Storyshots Flexbox JustifyContent 1`] = `
           onClick={[Function]}
           type="button"
         >
-          <span>
+          <span
+            className="textButton"
+          >
             button
           </span>
           <span
@@ -14740,7 +14950,9 @@ exports[`Storyshots Flexbox JustifyContent 1`] = `
           onClick={[Function]}
           type="button"
         >
-          <span>
+          <span
+            className="textButton"
+          >
             button
           </span>
           <span
@@ -14764,7 +14976,9 @@ exports[`Storyshots Flexbox JustifyContent 1`] = `
           onClick={[Function]}
           type="button"
         >
-          <span>
+          <span
+            className="textButton"
+          >
             button
           </span>
           <span
@@ -14788,7 +15002,9 @@ exports[`Storyshots Flexbox JustifyContent 1`] = `
           onClick={[Function]}
           type="button"
         >
-          <span>
+          <span
+            className="textButton"
+          >
             button
           </span>
           <span
@@ -14822,7 +15038,9 @@ exports[`Storyshots Flexbox JustifyContent 1`] = `
           onClick={[Function]}
           type="button"
         >
-          <span>
+          <span
+            className="textButton"
+          >
             button
           </span>
           <span
@@ -14846,7 +15064,9 @@ exports[`Storyshots Flexbox JustifyContent 1`] = `
           onClick={[Function]}
           type="button"
         >
-          <span>
+          <span
+            className="textButton"
+          >
             button
           </span>
           <span
@@ -14870,7 +15090,9 @@ exports[`Storyshots Flexbox JustifyContent 1`] = `
           onClick={[Function]}
           type="button"
         >
-          <span>
+          <span
+            className="textButton"
+          >
             button
           </span>
           <span
@@ -20564,7 +20786,9 @@ exports[`Storyshots Landing Pagar.me login 1`] = `
                   onClick={[Function]}
                   type="submit"
                 >
-                  <span>
+                  <span
+                    className="textButton"
+                  >
                     Entrar
                   </span>
                   <span
@@ -20722,7 +20946,9 @@ exports[`Storyshots Landing Pagar.me login light 1`] = `
                   onClick={[Function]}
                   type="submit"
                 >
-                  <span>
+                  <span
+                    className="textButton"
+                  >
                     Entrar
                   </span>
                   <span
@@ -20851,7 +21077,9 @@ exports[`Storyshots Landing Pagar.me password recovery 1`] = `
                     onClick={[Function]}
                     type="submit"
                   >
-                    <span>
+                    <span
+                      className="textButton"
+                    >
                       Enviar
                     </span>
                     <span
@@ -20955,7 +21183,9 @@ exports[`Storyshots Landing Pagar.me password recovery confirmation 1`] = `
                     onClick={[Function]}
                     type="button"
                   >
-                    <span>
+                    <span
+                      className="textButton"
+                    >
                       Voltar para o login
                     </span>
                     <span
@@ -21173,7 +21403,9 @@ exports[`Storyshots Landing Pagar.me sign in 1`] = `
                   onClick={[Function]}
                   type="submit"
                 >
-                  <span>
+                  <span
+                    className="textButton"
+                  >
                     Cadastrar
                   </span>
                   <span
@@ -21266,7 +21498,9 @@ exports[`Storyshots Landing Pagar.me sign in confirmation 1`] = `
                     onClick={[Function]}
                     type="button"
                   >
-                    <span>
+                    <span
+                      className="textButton"
+                    >
                       Voltar para o cadastro
                     </span>
                     <span
@@ -21450,7 +21684,9 @@ exports[`Storyshots Landing Pagar.me two factor login 1`] = `
                   onClick={[Function]}
                   type="submit"
                 >
-                  <span>
+                  <span
+                    className="textButton"
+                  >
                     Entrar
                   </span>
                   <span
@@ -25615,7 +25851,9 @@ exports[`Storyshots Modal Default 1`] = `
               height={16}
               width={16}
             />
-            <span>
+            <span
+              className="textButton"
+            >
               Add Photo
             </span>
             <span
@@ -25700,7 +25938,9 @@ exports[`Storyshots Modal Default 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   Cancel
                 </span>
                 <span
@@ -25721,7 +25961,9 @@ exports[`Storyshots Modal Default 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   Confirm
                 </span>
                 <span
@@ -25753,7 +25995,9 @@ exports[`Storyshots Modal Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Modal with huge size
             </span>
             <span
@@ -25830,7 +26074,9 @@ exports[`Storyshots Modal Default 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   Cancel
                 </span>
                 <span
@@ -25851,7 +26097,9 @@ exports[`Storyshots Modal Default 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   Confirm
                 </span>
                 <span
@@ -25883,7 +26131,9 @@ exports[`Storyshots Modal Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Modal with mobile size
             </span>
             <span
@@ -25960,7 +26210,9 @@ exports[`Storyshots Modal Default 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   Cancel
                 </span>
                 <span
@@ -25981,7 +26233,9 @@ exports[`Storyshots Modal Default 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   Confirm
                 </span>
                 <span
@@ -26013,7 +26267,9 @@ exports[`Storyshots Modal Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Modal with small size
             </span>
             <span
@@ -26090,7 +26346,9 @@ exports[`Storyshots Modal Default 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   Cancel
                 </span>
                 <span
@@ -26111,7 +26369,9 @@ exports[`Storyshots Modal Default 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   Confirm
                 </span>
                 <span
@@ -27028,7 +27288,9 @@ exports[`Storyshots Popover Default 1`] = `
           onClick={[Function]}
           type="button"
         >
-          <span>
+          <span
+            className="textButton"
+          >
             click me
           </span>
           <span
@@ -27069,7 +27331,9 @@ exports[`Storyshots Popover Don't close popover when click outside 1`] = `
           onClick={[Function]}
           type="button"
         >
-          <span>
+          <span
+            className="textButton"
+          >
             Open Popover
           </span>
           <span
@@ -27111,7 +27375,9 @@ exports[`Storyshots Popover Handle close popover 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Open popover
             </span>
             <span
@@ -27172,7 +27438,9 @@ exports[`Storyshots Popover Handle close popover 1`] = `
           onClick={[Function]}
           type="button"
         >
-          <span>
+          <span
+            className="textButton"
+          >
             Close popover
           </span>
           <span
@@ -27225,7 +27493,9 @@ exports[`Storyshots Popover Positions 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   click me
                 </span>
                 <span
@@ -27255,7 +27525,9 @@ exports[`Storyshots Popover Positions 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   click me
                 </span>
                 <span
@@ -27285,7 +27557,9 @@ exports[`Storyshots Popover Positions 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   click me
                 </span>
                 <span
@@ -27315,7 +27589,9 @@ exports[`Storyshots Popover Positions 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   click me
                 </span>
                 <span
@@ -27349,7 +27625,9 @@ exports[`Storyshots Popover Positions 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   click me
                 </span>
                 <span
@@ -27379,7 +27657,9 @@ exports[`Storyshots Popover Positions 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   click me
                 </span>
                 <span
@@ -27409,7 +27689,9 @@ exports[`Storyshots Popover Positions 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   click me
                 </span>
                 <span
@@ -27439,7 +27721,9 @@ exports[`Storyshots Popover Positions 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   click me
                 </span>
                 <span
@@ -27473,7 +27757,9 @@ exports[`Storyshots Popover Positions 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   click me
                 </span>
                 <span
@@ -27503,7 +27789,9 @@ exports[`Storyshots Popover Positions 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   click me
                 </span>
                 <span
@@ -27533,7 +27821,9 @@ exports[`Storyshots Popover Positions 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   click me
                 </span>
                 <span
@@ -27563,7 +27853,9 @@ exports[`Storyshots Popover Positions 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   click me
                 </span>
                 <span
@@ -27608,7 +27900,9 @@ exports[`Storyshots Popover Visible 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Right start
             </span>
             <span
@@ -27673,7 +27967,9 @@ exports[`Storyshots Popover Visible 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Right middle
             </span>
             <span
@@ -27740,7 +28036,9 @@ exports[`Storyshots Popover Visible 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Right end
             </span>
             <span
@@ -27807,7 +28105,9 @@ exports[`Storyshots Popover Visible 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Left start
             </span>
             <span
@@ -27874,7 +28174,9 @@ exports[`Storyshots Popover Visible 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Left middle
             </span>
             <span
@@ -27941,7 +28243,9 @@ exports[`Storyshots Popover Visible 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Left end
             </span>
             <span
@@ -28008,7 +28312,9 @@ exports[`Storyshots Popover Visible 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Top start
             </span>
             <span
@@ -28075,7 +28381,9 @@ exports[`Storyshots Popover Visible 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Top center
             </span>
             <span
@@ -28142,7 +28450,9 @@ exports[`Storyshots Popover Visible 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Top end
             </span>
             <span
@@ -28209,7 +28519,9 @@ exports[`Storyshots Popover Visible 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Bottom start
             </span>
             <span
@@ -28276,7 +28588,9 @@ exports[`Storyshots Popover Visible 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Bottom center
             </span>
             <span
@@ -28343,7 +28657,9 @@ exports[`Storyshots Popover Visible 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Bottom end
             </span>
             <span
@@ -28421,7 +28737,9 @@ exports[`Storyshots Popover With base dark 1`] = `
           onClick={[Function]}
           type="button"
         >
-          <span>
+          <span
+            className="textButton"
+          >
             click me
           </span>
           <span
@@ -30746,7 +31064,9 @@ exports[`Storyshots Snackbar Default 1`] = `
               onClick={[Function]}
               type="button"
             >
-              <span>
+              <span
+                className="textButton"
+              >
                 test snackbar
               </span>
               <span
@@ -30783,7 +31103,9 @@ exports[`Storyshots Snackbar Default 1`] = `
               onClick={[Function]}
               type="button"
             >
-              <span>
+              <span
+                className="textButton"
+              >
                 test snackbar
               </span>
               <span
@@ -31253,7 +31575,9 @@ exports[`Storyshots Spacing Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Button
             </span>
             <span
@@ -31277,7 +31601,9 @@ exports[`Storyshots Spacing Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Button
             </span>
             <span
@@ -31309,7 +31635,9 @@ exports[`Storyshots Spacing Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Button
             </span>
             <span
@@ -31333,7 +31661,9 @@ exports[`Storyshots Spacing Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Button
             </span>
             <span
@@ -31365,7 +31695,9 @@ exports[`Storyshots Spacing Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Button
             </span>
             <span
@@ -31389,7 +31721,9 @@ exports[`Storyshots Spacing Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Button
             </span>
             <span
@@ -31421,7 +31755,9 @@ exports[`Storyshots Spacing Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Button
             </span>
             <span
@@ -31445,7 +31781,9 @@ exports[`Storyshots Spacing Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Button
             </span>
             <span
@@ -31477,7 +31815,9 @@ exports[`Storyshots Spacing Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Button
             </span>
             <span
@@ -31501,7 +31841,9 @@ exports[`Storyshots Spacing Default 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Button
             </span>
             <span
@@ -32419,7 +32761,9 @@ exports[`Storyshots Table Action column 1`] = `
                   onClick={[Function]}
                   type="button"
                 >
-                  <span>
+                  <span
+                    className="textButton"
+                  >
                     Show details
                   </span>
                   <span
@@ -32499,7 +32843,9 @@ exports[`Storyshots Table Action column 1`] = `
                   onClick={[Function]}
                   type="button"
                 >
-                  <span>
+                  <span
+                    className="textButton"
+                  >
                     Show details
                   </span>
                   <span
@@ -32579,7 +32925,9 @@ exports[`Storyshots Table Action column 1`] = `
                   onClick={[Function]}
                   type="button"
                 >
-                  <span>
+                  <span
+                    className="textButton"
+                  >
                     Show details
                   </span>
                   <span
@@ -32665,7 +33013,9 @@ exports[`Storyshots Table Action column 1`] = `
                   onClick={[Function]}
                   type="button"
                 >
-                  <span>
+                  <span
+                    className="textButton"
+                  >
                     Show details
                   </span>
                   <span
@@ -33093,7 +33443,9 @@ exports[`Storyshots Table Disabled orderable 1`] = `
                         onClick={[Function]}
                         type="button"
                       >
-                        <span>
+                        <span
+                          className="textButton"
+                        >
                           Show details
                         </span>
                         <span
@@ -33350,7 +33702,9 @@ exports[`Storyshots Table Disabled orderable 1`] = `
                         onClick={[Function]}
                         type="button"
                       >
-                        <span>
+                        <span
+                          className="textButton"
+                        >
                           Show details
                         </span>
                         <span
@@ -33607,7 +33961,9 @@ exports[`Storyshots Table Disabled orderable 1`] = `
                         onClick={[Function]}
                         type="button"
                       >
-                        <span>
+                        <span
+                          className="textButton"
+                        >
                           Show details
                         </span>
                         <span
@@ -33868,7 +34224,9 @@ exports[`Storyshots Table Disabled orderable 1`] = `
                         onClick={[Function]}
                         type="button"
                       >
-                        <span>
+                        <span
+                          className="textButton"
+                        >
                           Show details
                         </span>
                         <span
@@ -34744,7 +35102,9 @@ exports[`Storyshots Table Loading rows 1`] = `
         onClick={[Function]}
         type="button"
       >
-        <span>
+        <span
+          className="textButton"
+        >
           load
         </span>
         <span
@@ -35177,7 +35537,9 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                         onClick={[Function]}
                         type="button"
                       >
-                        <span>
+                        <span
+                          className="textButton"
+                        >
                           Show details
                         </span>
                         <span
@@ -35439,7 +35801,9 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                         onClick={[Function]}
                         type="button"
                       >
-                        <span>
+                        <span
+                          className="textButton"
+                        >
                           Show details
                         </span>
                         <span
@@ -35701,7 +36065,9 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                         onClick={[Function]}
                         type="button"
                       >
-                        <span>
+                        <span
+                          className="textButton"
+                        >
                           Show details
                         </span>
                         <span
@@ -35967,7 +36333,9 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                         onClick={[Function]}
                         type="button"
                       >
-                        <span>
+                        <span
+                          className="textButton"
+                        >
                           Show details
                         </span>
                         <span
@@ -36881,7 +37249,9 @@ exports[`Storyshots Tooltip Default 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   Hover me
                 </span>
                 <span
@@ -36911,7 +37281,9 @@ exports[`Storyshots Tooltip Default 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   Hover me
                 </span>
                 <span
@@ -36941,7 +37313,9 @@ exports[`Storyshots Tooltip Default 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   Hover me
                 </span>
                 <span
@@ -36971,7 +37345,9 @@ exports[`Storyshots Tooltip Default 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   Hover me
                 </span>
                 <span
@@ -37005,7 +37381,9 @@ exports[`Storyshots Tooltip Default 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   Hover me
                 </span>
                 <span
@@ -37035,7 +37413,9 @@ exports[`Storyshots Tooltip Default 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   Hover me
                 </span>
                 <span
@@ -37065,7 +37445,9 @@ exports[`Storyshots Tooltip Default 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   Hover me
                 </span>
                 <span
@@ -37095,7 +37477,9 @@ exports[`Storyshots Tooltip Default 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   Hover me
                 </span>
                 <span
@@ -37129,7 +37513,9 @@ exports[`Storyshots Tooltip Default 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   Hover me
                 </span>
                 <span
@@ -37159,7 +37545,9 @@ exports[`Storyshots Tooltip Default 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   Hover me
                 </span>
                 <span
@@ -37189,7 +37577,9 @@ exports[`Storyshots Tooltip Default 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   Hover me
                 </span>
                 <span
@@ -37219,7 +37609,9 @@ exports[`Storyshots Tooltip Default 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                <span>
+                <span
+                  className="textButton"
+                >
                   Hover me
                 </span>
                 <span
@@ -37267,7 +37659,9 @@ exports[`Storyshots Tooltip Visible 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Hover me
             </span>
             <span
@@ -37305,7 +37699,9 @@ exports[`Storyshots Tooltip Visible 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Hover me
             </span>
             <span
@@ -37343,7 +37739,9 @@ exports[`Storyshots Tooltip Visible 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Hover me
             </span>
             <span
@@ -37383,7 +37781,9 @@ exports[`Storyshots Tooltip Visible 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Hover me
             </span>
             <span
@@ -37423,7 +37823,9 @@ exports[`Storyshots Tooltip Visible 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Hover me
             </span>
             <span
@@ -37463,7 +37865,9 @@ exports[`Storyshots Tooltip Visible 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Hover me
             </span>
             <span
@@ -37503,7 +37907,9 @@ exports[`Storyshots Tooltip Visible 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Hover me
             </span>
             <span
@@ -37543,7 +37949,9 @@ exports[`Storyshots Tooltip Visible 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Hover me
             </span>
             <span
@@ -37583,7 +37991,9 @@ exports[`Storyshots Tooltip Visible 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Hover me
             </span>
             <span
@@ -37623,7 +38033,9 @@ exports[`Storyshots Tooltip Visible 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Hover me
             </span>
             <span
@@ -37663,7 +38075,9 @@ exports[`Storyshots Tooltip Visible 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Hover me
             </span>
             <span
@@ -37703,7 +38117,9 @@ exports[`Storyshots Tooltip Visible 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Hover me
             </span>
             <span
@@ -37754,7 +38170,9 @@ exports[`Storyshots Tooltip control visibility 1`] = `
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="textButton"
+            >
               Hover me
             </span>
             <span
@@ -37779,7 +38197,9 @@ exports[`Storyshots Tooltip control visibility 1`] = `
           onClick={[Function]}
           type="button"
         >
-          <span>
+          <span
+            className="textButton"
+          >
             show tooltip
           </span>
           <span
@@ -37836,7 +38256,9 @@ exports[`Storyshots Transition Animation 1`] = `
                     onClick={[Function]}
                     type="button"
                   >
-                    <span>
+                    <span
+                      className="textButton"
+                    >
                       Click me
                     </span>
                     <span
@@ -37885,7 +38307,9 @@ exports[`Storyshots Transition Animation 1`] = `
                     onClick={[Function]}
                     type="button"
                   >
-                    <span>
+                    <span
+                      className="textButton"
+                    >
                       Click me
                     </span>
                     <span
@@ -37934,7 +38358,9 @@ exports[`Storyshots Transition Animation 1`] = `
                     onClick={[Function]}
                     type="button"
                   >
-                    <span>
+                    <span
+                      className="textButton"
+                    >
                       Click me
                     </span>
                     <span
@@ -37987,7 +38413,9 @@ exports[`Storyshots Transition Animation 1`] = `
                     onClick={[Function]}
                     type="button"
                   >
-                    <span>
+                    <span
+                      className="textButton"
+                    >
                       Click me
                     </span>
                     <span
@@ -38171,7 +38599,9 @@ exports[`Storyshots Transition Picker 1`] = `
               onClick={[Function]}
               type="button"
             >
-              <span>
+              <span
+                className="textButton"
+              >
                 Animate
               </span>
               <span
@@ -38297,7 +38727,9 @@ exports[`Storyshots Truncate Resizable block 1`] = `
         onClick={[Function]}
         type="button"
       >
-        <span>
+        <span
+          className="textButton"
+        >
           Fit text
         </span>
         <span
