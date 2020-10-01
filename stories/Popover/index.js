@@ -20,8 +20,9 @@ import PopoverControl from './PopoverControl'
 
 import style from './style.css'
 
-const PopoverExample = ({ base, placement }) => (
+const PopoverExample = ({ arrow = true, base, placement }) => (
   <Popover
+    arrow={arrow}
     content={<Menu />}
     base={base}
     placement={placement}
@@ -51,6 +52,11 @@ storiesOf('Popover', module)
   .add('With base dark', () => (
     <Section>
       <PopoverExample base="dark" />
+    </Section>
+  ))
+  .add('Without arrow', () => (
+    <Section>
+      <PopoverExample arrow={false} />
     </Section>
   ))
   .add('Positions', () => (
