@@ -62,6 +62,7 @@ class Popover extends Component {
 
   render () {
     const {
+      arrow,
       base,
       children,
       content,
@@ -70,6 +71,7 @@ class Popover extends Component {
     } = this.props
 
     const { visible } = this.state
+    const withoutArrow = arrow ? '' : 'withoutArrow'
 
     return (
       <div
@@ -92,7 +94,8 @@ class Popover extends Component {
                 classNames(
                   theme.popover,
                   theme[base],
-                  theme[placement]
+                  theme[placement],
+                  theme[withoutArrow]
                 )
               }
               key="popover"
@@ -107,6 +110,10 @@ class Popover extends Component {
 }
 
 Popover.propTypes = {
+  /**
+   * Popover set arrow.
+   */
+  arrow: PropTypes.bool,
   /**
    * Popover base theme.
    */
@@ -155,6 +162,7 @@ Popover.propTypes = {
     base: PropTypes.string,
     popover: PropTypes.string,
     target: PropTypes.string,
+    withoutArrow: PropTypes.string,
   }),
   /**
    * The prop that indicates if the popover is visible or not.
@@ -163,6 +171,7 @@ Popover.propTypes = {
 }
 
 Popover.defaultProps = {
+  arrow: true,
   base: null,
   closeWhenClickOutside: true,
   onClick: null,

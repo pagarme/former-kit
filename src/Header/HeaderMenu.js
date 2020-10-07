@@ -15,6 +15,7 @@ const HeaderMenu = ({
   title,
 }) => (
   <Popover
+    arrow={false}
     content={children}
     placement="bottomEnd"
   >
