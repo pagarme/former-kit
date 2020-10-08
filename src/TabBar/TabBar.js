@@ -8,6 +8,7 @@ import {
   string,
 } from 'prop-types'
 import shortid from 'shortid'
+import classnames from 'classnames'
 
 import {
   variantList,
@@ -60,11 +61,11 @@ class TabBar extends React.Component {
   }
 
   render () {
-    const { theme } = this.props
+    const { align, theme } = this.props
 
     return (
       <div className={theme.tabBar}>
-        <div className={theme.tabs}>
+        <div className={classnames(theme.tabs, theme[align])}>
           {this.populateChildren()}
         </div>
         <div className={theme.content}>
@@ -76,6 +77,10 @@ class TabBar extends React.Component {
 }
 
 TabBar.propTypes = {
+  /**
+   * Set the align of the TabBar.
+   */
+  align: oneOf(['start', 'center', 'end']),
   /**
    * Set of React components which will be rendered inside the component.
    */
@@ -95,6 +100,9 @@ TabBar.propTypes = {
     content: string,
     tabBar: string,
     tabs: string,
+    start: string,
+    end: string,
+    center: string,
   }),
   /**
    * Component structure variant which can be: just-text, text-icon, just-icon.
@@ -104,6 +112,7 @@ TabBar.propTypes = {
 }
 
 TabBar.defaultProps = {
+  align: 'center',
   onTabChange: null,
   selected: 0,
   theme: {},
