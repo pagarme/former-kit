@@ -8,7 +8,7 @@ const consumeTheme = ThemeConsumer('UICard')
  * Actions which will be used on the card.
  */
 const CardActions = ({ children, className, theme }) => (
-  <div className={classNames(className, theme.actions)}>
+  <div className={classNames(theme.actions, className)}>
     {children}
   </div>
 )
