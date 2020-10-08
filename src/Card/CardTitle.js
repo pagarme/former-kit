@@ -23,6 +23,7 @@ export const CardTitle = ({
   subtitle,
   theme,
   title,
+  titleSize,
 }) => {
   const cardTitleClasses = classNames(
     className,
@@ -50,7 +51,7 @@ export const CardTitle = ({
     <div {...getProps(onClick)}>
       {
         (typeof title === 'string') && (
-          <h2> {icon} {title} </h2>
+          <h2 className={theme[titleSize]}> {icon} {title} </h2>
         )
       }
       {
@@ -90,13 +91,19 @@ CardTitle.propTypes = {
    * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: PropTypes.shape({
+    default: PropTypes.string,
     icon: PropTypes.string,
+    large: PropTypes.string,
     title: PropTypes.string,
   }),
   /**
    * The main text of the component.
    */
   title: PropTypes.node.isRequired,
+  /**
+   * The text size of the component.
+   */
+  titleSize: PropTypes.oneOf(['default', 'large'])
 }
 
 CardTitle.defaultProps = {
@@ -105,6 +112,7 @@ CardTitle.defaultProps = {
   onClick: null,
   subtitle: '',
   theme: {},
+  titleSize: 'default',
 }
 
 export default consumeTheme(CardTitle)
