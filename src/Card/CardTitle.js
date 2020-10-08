@@ -103,7 +103,7 @@ CardTitle.propTypes = {
   /**
    * The text size of the component.
    */
-  titleSize: PropTypes.oneOf(['default', 'large'])
+  titleSize: PropTypes.oneOf(['default', 'large']),
 }
 
 CardTitle.defaultProps = {

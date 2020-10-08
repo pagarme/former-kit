@@ -97,12 +97,12 @@ TabBar.propTypes = {
    * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: shape({
+    center: string,
     content: string,
+    end: string,
+    start: string,
     tabBar: string,
     tabs: string,
-    start: string,
-    end: string,
-    center: string,
   }),
   /**
    * Component structure variant which can be: just-text, text-icon, just-icon.
