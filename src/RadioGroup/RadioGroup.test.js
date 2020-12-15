@@ -2,6 +2,7 @@ import React from 'react'
 import { shallow } from 'enzyme'
 
 import RadioGroup from './index'
+import Radio from '../Radio'
 
 describe('RadioGroup', () => {
   const options = [
@@ -24,7 +25,7 @@ describe('RadioGroup', () => {
   it('should trigger onChange', () => {
     const onChange = jest.fn()
 
-    const component = shallow(
+    let component = shallow(
       <RadioGroup
         options={options}
         name="artefatos"
@@ -38,10 +39,13 @@ describe('RadioGroup', () => {
       },
     }
 
-    component
+    component = component
       .dive()
-      .find('input[type="radio"]')
+      .find(Radio)
+
+    component
       .first()
+      .dive()
       .simulate('change', changeEvent)
 
     expect(onChange).toHaveBeenCalled()
@@ -54,9 +58,8 @@ describe('RadioGroup', () => {
     }
 
     component
-      .dive()
-      .find('input[type="radio"]')
       .last()
+      .dive()
       .simulate('change', otherEvent)
 
     expect(onChange).toHaveBeenLastCalledWith(otherEvent)
@@ -78,8 +81,9 @@ describe('RadioGroup', () => {
 
     component
       .dive()
-      .find('input[type="radio"]')
+      .find(Radio)
       .first()
+      .dive()
       .simulate('change', {
         target: { value },
       })

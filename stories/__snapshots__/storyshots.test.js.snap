@@ -30330,19 +30330,19 @@ exports[`Storyshots Radio Group Default 1`] = `
             <div>
               <label
                 className="label"
-                htmlFor="radio-group-shortid-mock-github-0"
+                htmlFor="radio-group-shortid-mock-github"
               >
                 <input
                   checked={true}
                   disabled={false}
-                  id="radio-group-shortid-mock-github-0"
+                  id="radio-group-shortid-mock-github"
                   name="default"
                   onChange={[Function]}
                   type="radio"
                   value="github"
                 />
                 <span
-                  className="input"
+                  className="input default"
                 />
                 <span
                   className="title"
@@ -30352,19 +30352,19 @@ exports[`Storyshots Radio Group Default 1`] = `
               </label>
               <label
                 className="label"
-                htmlFor="radio-group-shortid-mock-open-source-1"
+                htmlFor="radio-group-shortid-mock-open-source"
               >
                 <input
                   checked={false}
                   disabled={false}
-                  id="radio-group-shortid-mock-open-source-1"
+                  id="radio-group-shortid-mock-open-source"
                   name="default"
                   onChange={[Function]}
                   type="radio"
                   value="open-source"
                 />
                 <span
-                  className="input"
+                  className="input default"
                 />
                 <span
                   className="title"
@@ -30374,19 +30374,19 @@ exports[`Storyshots Radio Group Default 1`] = `
               </label>
               <label
                 className="label"
-                htmlFor="radio-group-shortid-mock-pilot-2"
+                htmlFor="radio-group-shortid-mock-pilot"
               >
                 <input
                   checked={false}
                   disabled={false}
-                  id="radio-group-shortid-mock-pilot-2"
+                  id="radio-group-shortid-mock-pilot"
                   name="default"
                   onChange={[Function]}
                   type="radio"
                   value="pilot"
                 />
                 <span
-                  className="input"
+                  className="input default"
                 />
                 <span
                   className="title"
@@ -30418,19 +30418,19 @@ exports[`Storyshots Radio Group Default 1`] = `
             <div>
               <label
                 className="label"
-                htmlFor="radio-group-shortid-mock-github-0"
+                htmlFor="radio-group-shortid-mock-github"
               >
                 <input
                   checked={true}
                   disabled={false}
-                  id="radio-group-shortid-mock-github-0"
+                  id="radio-group-shortid-mock-github"
                   name="error"
                   onChange={[Function]}
                   type="radio"
                   value="github"
                 />
                 <span
-                  className="input"
+                  className="input default"
                 />
                 <span
                   className="title"
@@ -30440,19 +30440,19 @@ exports[`Storyshots Radio Group Default 1`] = `
               </label>
               <label
                 className="label"
-                htmlFor="radio-group-shortid-mock-open-source-1"
+                htmlFor="radio-group-shortid-mock-open-source"
               >
                 <input
                   checked={false}
                   disabled={false}
-                  id="radio-group-shortid-mock-open-source-1"
+                  id="radio-group-shortid-mock-open-source"
                   name="error"
                   onChange={[Function]}
                   type="radio"
                   value="open-source"
                 />
                 <span
-                  className="input"
+                  className="input default"
                 />
                 <span
                   className="title"
@@ -30462,19 +30462,19 @@ exports[`Storyshots Radio Group Default 1`] = `
               </label>
               <label
                 className="label"
-                htmlFor="radio-group-shortid-mock-pilot-2"
+                htmlFor="radio-group-shortid-mock-pilot"
               >
                 <input
                   checked={false}
                   disabled={false}
-                  id="radio-group-shortid-mock-pilot-2"
+                  id="radio-group-shortid-mock-pilot"
                   name="error"
                   onChange={[Function]}
                   type="radio"
                   value="pilot"
                 />
                 <span
-                  className="input"
+                  className="input default"
                 />
                 <span
                   className="title"
@@ -30505,24 +30505,24 @@ exports[`Storyshots Radio Group Default 1`] = `
       <div>
         <div>
           <div
-            className="radioGroup disabled"
+            className="radioGroup"
           >
             <div>
               <label
-                className="label"
-                htmlFor="radio-group-shortid-mock-github-0"
+                className="label disabled"
+                htmlFor="radio-group-shortid-mock-github"
               >
                 <input
                   checked={true}
                   disabled={true}
-                  id="radio-group-shortid-mock-github-0"
+                  id="radio-group-shortid-mock-github"
                   name="disabled"
                   onChange={[Function]}
                   type="radio"
                   value="github"
                 />
                 <span
-                  className="input"
+                  className="input default"
                 />
                 <span
                   className="title"
@@ -30531,20 +30531,20 @@ exports[`Storyshots Radio Group Default 1`] = `
                 </span>
               </label>
               <label
-                className="label"
-                htmlFor="radio-group-shortid-mock-open-source-1"
+                className="label disabled"
+                htmlFor="radio-group-shortid-mock-open-source"
               >
                 <input
                   checked={false}
                   disabled={true}
-                  id="radio-group-shortid-mock-open-source-1"
+                  id="radio-group-shortid-mock-open-source"
                   name="disabled"
                   onChange={[Function]}
                   type="radio"
                   value="open-source"
                 />
                 <span
-                  className="input"
+                  className="input default"
                 />
                 <span
                   className="title"
@@ -30553,20 +30553,20 @@ exports[`Storyshots Radio Group Default 1`] = `
                 </span>
               </label>
               <label
-                className="label"
-                htmlFor="radio-group-shortid-mock-pilot-2"
+                className="label disabled"
+                htmlFor="radio-group-shortid-mock-pilot"
               >
                 <input
                   checked={false}
                   disabled={true}
-                  id="radio-group-shortid-mock-pilot-2"
+                  id="radio-group-shortid-mock-pilot"
                   name="disabled"
                   onChange={[Function]}
                   type="radio"
                   value="pilot"
                 />
                 <span
-                  className="input"
+                  className="input default"
                 />
                 <span
                   className="title"
