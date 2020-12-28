@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import classnames from 'classnames'
 import shortid from 'shortid'
 
+import Radio from '../Radio'
+
 import ThemeConsumer from '../ThemeConsumer'
 
 const consumeTheme = ThemeConsumer('UIRadioGroup')
@@ -30,32 +32,20 @@ class RadioGroup extends React.Component {
     } = this.props
 
     const containerClass = classnames(theme.radioGroup, {
-      [theme.disabled]: disabled,
       [theme.error]: error,
     })
 
     const radioButtons = options.map((option, index) => (
-      <label
-        key={option.value}
-        className={theme.label}
-        htmlFor={`${this.instanceId}-${option.value}-${index}`}
-      >
-        <input
-          type="radio"
-          name={name}
-          value={option.value}
-          id={`${this.instanceId}-${option.value}-${index}`}
-          checked={(disabled && index === 0) || (value === option.value)}
-          onChange={event => !disabled && onChange(event)}
-          disabled={disabled}
-        />
-
-        <span className={theme.input} />
-
-        <span className={theme.title}>
-          {option.name}
-        </span>
-      </label>
+      <Radio
+        key={`${this.instanceId}-${option.value}`}
+        id={`${this.instanceId}-${option.value}`}
+        name={name}
+        value={option.value}
+        label={option.name}
+        checked={(disabled && index === 0) || (value === option.value)}
+        disabled={disabled}
+        onChange={event => !disabled && onChange(event)}
+      />
     ))
 
     return (
@@ -100,14 +90,9 @@ RadioGroup.propTypes = {
    * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
   theme: PropTypes.shape({
-    checkboxGroup: PropTypes.string,
-    disabled: PropTypes.string,
     error: PropTypes.string,
-    input: PropTypes.string,
-    label: PropTypes.string,
     radioGroup: PropTypes.string,
     secondaryText: PropTypes.string,
-    title: PropTypes.string,
   }),
   /**
    * Selected value.
