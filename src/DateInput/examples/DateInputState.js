@@ -51,7 +51,8 @@ class DateInputState extends React.Component {
     this.handleReset = this.handleReset.bind(this)
   }
 
-  componentWillReceiveProps ({ end, start }) {
+  // eslint-disable-next-line
+  UNSAFE_componentWillReceiveProps ({ end, start }) {
     this.setState({ dates: { end, start } })
   }
 
