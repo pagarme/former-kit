@@ -43,19 +43,13 @@ class Colors extends React.Component {
   constructor (props) {
     super(props)
 
-    this.state = {
-      colors: [],
-    }
-  }
-
-  componentWillMount () {
-    const { theme } = this.props
+    const { theme } = props
     const themeColors = getThemeColors(theme)
 
-    this.setState({
+    this.state = {
       colorNames: Object.keys(themeColors),
       colors: themeColors,
-    })
+    }
   }
 
   render () {

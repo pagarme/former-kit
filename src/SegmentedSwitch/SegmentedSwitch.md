@@ -14,16 +14,10 @@ class SegmentedSwitchState extends React.Component {
     super()
 
     this.state = {
-      selected: '',
+      selected: this.props.value
     }
 
     this.handleChange = this.handleChange.bind(this)
-  }
-
-  componentWillMount () {
-    this.setState({
-      selected: this.props.value,
-    })
   }
 
   handleChange (selected) {
@@ -111,20 +105,14 @@ const IconTable = require('emblematic-icons/svg/Menu32.svg').default;
 const SpacedSegmentedSwitch = require('./Spaced').default;
 
 class SpacedSegmentedSwitchState extends React.Component {
-  constructor () {
-    super()
+  constructor (props) {
+    super(props)
 
     this.state = {
-      selected: '',
+      selected: props.value,
     }
 
     this.handleChange = this.handleChange.bind(this)
-  }
-
-  componentWillMount () {
-    this.setState({
-      selected: this.props.value,
-    })
   }
 
   handleChange (selected) {
