@@ -1,4 +1,5 @@
 
+// based on https://github.com/kentor/react-click-outside
 import hoistNonReactStatic from 'hoist-non-react-statics'
 import React from 'react'
 import ReactDOM from 'react-dom'
@@ -64,7 +65,10 @@ function enhanceWithClickOutside (Component) {
 
   EnhancedComponent.propTypes = {
     ...Component.propTypes,
-    wrappedRef: PropTypes.node,
+    wrappedRef: PropTypes.oneOfType([
+      PropTypes.func,
+      PropTypes.shape({ current: PropTypes.elementType }),
+    ]),
   }
 
   EnhancedComponent.defaultProps = {
