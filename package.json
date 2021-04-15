@@ -36,6 +36,7 @@
     "classnames": "2.2.6",
     "emblematic-icons": "0.12.0",
     "former-kit-skin-pagarme": "2.10.0",
+    "hoist-non-react-statics": "2.1.1",
     "promise": "8.0.2",
     "prop-types": "15.6.2",
     "ramda": "0.26.1",
