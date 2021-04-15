@@ -39,7 +39,6 @@
     "promise": "8.0.2",
     "prop-types": "15.6.2",
     "ramda": "0.26.1",
-    "react-click-outside": "3.0.1",
     "react-dates": "18.4.1",
     "react-input-mask": "2.0.4",
     "react-maskedinput": "4.0.1",
