@@ -78,4 +78,4 @@ function enhanceWithClickOutside (Component) {
   return hoistNonReactStatic(EnhancedComponent, Component)
 }
 
-module.exports = enhanceWithClickOutside
+export default enhanceWithClickOutside

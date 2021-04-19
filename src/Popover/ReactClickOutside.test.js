@@ -3,15 +3,15 @@
 
 global.requestAnimationFrame = callback => setTimeout(callback, 0);
 
-const Adapter = require('enzyme-adapter-react-16');
-const { configure } = require('enzyme');
+import Adapter from 'enzyme-adapter-react-16';
+import { configure } from 'enzyme';
 
 configure({ adapter: new Adapter() });
 
-const createReactClass = require('create-react-class');
-const enhanceWithClickOutside = require('./ReactClickOutside');
-const enzyme = require('enzyme');
-const React = require('react');
+import createReactClass from 'create-react-class';
+import enhanceWithClickOutside from './ReactClickOutside';
+import enzyme from 'enzyme';
+import React from 'react';
 
 const mountNode = document.createElement('div');
 document.body.appendChild(mountNode);
