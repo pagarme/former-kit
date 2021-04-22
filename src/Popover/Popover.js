@@ -23,7 +23,8 @@ class Popover extends Component {
     this.handleClickOutside = this.handleClickOutside.bind(this)
   }
 
-  componentWillReceiveProps ({ visible }) {
+  // eslint-disable-next-line
+  UNSAFE_componentWillReceiveProps ({ visible }) {
     this.setState({
       visible,
     })

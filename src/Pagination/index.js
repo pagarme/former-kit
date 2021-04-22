@@ -84,7 +84,8 @@ class Pagination extends React.Component {
     this.disableButton = this.disableButton.bind(this)
   }
 
-  componentWillReceiveProps (nextProps) {
+  // eslint-disable-next-line
+  UNSAFE_componentWillReceiveProps (nextProps) {
     this.setState({
       inputPage: nextProps.currentPage,
     })

@@ -32,7 +32,8 @@ class Tooltip extends Component {
     this.handleMouseLeave = this.handleMouseLeave.bind(this)
   }
 
-  componentWillReceiveProps ({ visible }) {
+  // eslint-disable-next-line
+  UNSAFE_componentWillReceiveProps ({ visible }) {
     this.setState({
       visible,
     })

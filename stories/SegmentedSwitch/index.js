@@ -12,15 +12,10 @@ class SegmentedSwitchState extends React.Component {
     super(props)
 
     this.state = {
-      value: '',
+      value: props.value,
     }
 
     this.handleChange = this.handleChange.bind(this)
-  }
-
-  componentWillMount () {
-    const { value } = this.props
-    this.setState({ value })
   }
 
   handleChange (value) {

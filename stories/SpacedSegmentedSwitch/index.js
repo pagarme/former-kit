@@ -9,19 +9,15 @@ import Section from '../Section'
 import SpacedSegmentedSwitch from '../../src/SegmentedSwitch/Spaced'
 
 class SpacedSegmentedSwitchState extends React.Component {
-  constructor () {
-    super()
+  constructor (props) {
+    super(props)
 
+    const { value } = props
     this.state = {
-      value: '',
+      value,
     }
 
     this.handleChange = this.handleChange.bind(this)
-  }
-
-  componentWillMount () {
-    const { value } = this.props
-    this.setState({ value })
   }
 
   handleChange (value) {

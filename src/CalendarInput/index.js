@@ -86,7 +86,8 @@ class CalendarInput extends Component {
     this.isValidPeriod = this.isValidPeriod.bind(this)
   }
 
-  componentWillReceiveProps (props) {
+  // eslint-disable-next-line
+  UNSAFE_componentWillReceiveProps (props) {
     if (props && props.value) {
       const { value } = props
       this.setState({
