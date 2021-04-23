@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
-import ClickOutside from 'react-click-outside'
+import ClickOutside from './ReactClickOutside'
 import {
   grow,
   Transition,
