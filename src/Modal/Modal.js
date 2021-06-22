@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import ReactModal from 'react-modal'
@@ -26,27 +26,38 @@ const Modal = ({
     theme[verticalAlign]
   )
 
+  const ref = useRef(null)
+
+  let rootNode = null
+  if (ref.current) {
+    rootNode = ref.current.getRootNode()
+  }
+
   return (
-    <ReactModal
-      appElement={document.body}
-      className={{
-        afterOpen: theme.modalAfterOpen,
-        base: modalClasses,
-        beforeClose: theme.modalBeforeClose,
-      }}
-      closeTimeoutMS={200}
-      isOpen={isOpen}
-      onRequestClose={onRequestClose}
-      overlayClassName={{
-        afterOpen: theme.overlayAfterOpen,
-        base: theme.overlay,
-        beforeClose: theme.overlayBeforeClose,
-      }}
-      parentSelector={() => document.body}
-      role="dialog"
-    >
-      {children}
-    </ReactModal>
+    <div ref={ref}>
+      {rootNode && (
+        <ReactModal
+          appElement={rootNode.body || rootNode.firstElementChild}
+          className={{
+            afterOpen: theme.modalAfterOpen,
+            base: modalClasses,
+            beforeClose: theme.modalBeforeClose,
+          }}
+          closeTimeoutMS={200}
+          isOpen={isOpen}
+          onRequestClose={onRequestClose}
+          overlayClassName={{
+            afterOpen: theme.overlayAfterOpen,
+            base: theme.overlay,
+            beforeClose: theme.overlayBeforeClose,
+          }}
+          parentSelector={() => (rootNode.body || rootNode.firstElementChild)}
+          role="dialog"
+        >
+          {children}
+        </ReactModal>
+      )}
+    </div>
   )
 }
 
