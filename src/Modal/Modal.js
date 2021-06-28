@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import ReactModal from 'react-modal'
@@ -26,7 +26,7 @@ const Modal = ({
     theme[verticalAlign]
   )
 
-  const ref = useRef(null)
+  const ref = React.useRef(null)
 
   let rootNode = null
   if (ref.current) {
