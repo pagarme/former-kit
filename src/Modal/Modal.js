@@ -1,8 +1,21 @@
-import React from 'react'
+import React, { useCallback, useState } from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import ReactModal from 'react-modal'
 import ThemeConsumer from '../ThemeConsumer'
+
+const getRootNode = (node) => {
+  if (node) {
+    if (!node.getRootNode) {
+      return document.body
+    }
+    const rootNode = node.getRootNode()
+
+    return rootNode.body || rootNode.firstElementChild
+  }
+
+  return null
+}
 
 const consumeTheme = ThemeConsumer('UIModal')
 
@@ -26,18 +39,15 @@ const Modal = ({
     theme[verticalAlign]
   )
 
-  const ref = React.useRef(null)
+  const [rootNode, setRootNode] = useState(null)
 
-  let rootNode = null
-  if (ref.current) {
-    rootNode = ref.current.getRootNode()
-  }
+  const wrapperRef = useCallback(node => setRootNode(getRootNode(node)), [])
 
   return (
-    <div ref={ref}>
+    <div ref={wrapperRef}>
       {rootNode && (
         <ReactModal
-          appElement={rootNode.body || rootNode.firstElementChild}
+          appElement={rootNode}
           className={{
             afterOpen: theme.modalAfterOpen,
             base: modalClasses,
@@ -51,7 +61,7 @@ const Modal = ({
             base: theme.overlay,
             beforeClose: theme.overlayBeforeClose,
           }}
-          parentSelector={() => (rootNode.body || rootNode.firstElementChild)}
+          parentSelector={() => rootNode}
           role="dialog"
         >
           {children}
