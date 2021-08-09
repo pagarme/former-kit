@@ -1303,6 +1303,95 @@ exports[`Storyshots Buttons Default 1`] = `
       className=""
     >
       <h2>
+        Inline
+      </h2>
+      <div>
+        <div>
+          <p>
+            Use with text
+            <button
+              className="button clean normalRelevance huge inline"
+              disabled={false}
+              onClick={[Function]}
+              type="button"
+            >
+              <span
+                className="textButton"
+              >
+                Inline
+              </span>
+              <span
+                className="ripple"
+                style={
+                  Object {
+                    "height": 0,
+                    "left": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              />
+            </button>
+          </p>
+          <p>
+            Use with text
+            <button
+              className="button clean highRelevance huge inline"
+              disabled={false}
+              onClick={[Function]}
+              type="button"
+            >
+              <span
+                className="textButton"
+              >
+                Inline
+              </span>
+              <span
+                className="ripple"
+                style={
+                  Object {
+                    "height": 0,
+                    "left": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              />
+            </button>
+          </p>
+          <p>
+            Use with text
+            <button
+              className="button clean lowRelevance huge inline"
+              disabled={false}
+              onClick={[Function]}
+              type="button"
+            >
+              <span
+                className="textButton"
+              >
+                Inline
+              </span>
+              <span
+                className="ripple"
+                style={
+                  Object {
+                    "height": 0,
+                    "left": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              />
+            </button>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section
+      className=""
+    >
+      <h2>
         Icon only
       </h2>
       <div>
