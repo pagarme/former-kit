@@ -192,6 +192,23 @@ storiesOf('Buttons', module)
         </div>
       </Section>
 
+      <Section title="Inline">
+        <div className={styles.spacingAround}>
+          <p>
+            Use with text
+            <Button inline fill="clean" size="huge">Inline</Button>
+          </p>
+          <p>
+            Use with text
+            <Button inline fill="clean" relevance="high" size="huge">Inline</Button>
+          </p>
+          <p>
+            Use with text
+            <Button inline fill="clean" relevance="low" size="huge">Inline</Button>
+          </p>
+        </div>
+      </Section>
+
       <Section title="Icon only">
         <div className={styles.spacingAround}>
           <Button icon={<IconAdd width={12} height={12} />} />

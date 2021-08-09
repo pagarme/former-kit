@@ -43,6 +43,16 @@ And the button can be disabled:
 </div>
 ```
 
+You can put the button inside a text!
+```jsx
+<div>
+  <p>
+    your text
+    <Button inline>Call to Action</Button>
+  </p>
+</div>
+```
+
 The button can have an icon!
 ```jsx
 const IconAdd = require('emblematic-icons/svg/Add24.svg').default;

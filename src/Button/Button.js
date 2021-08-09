@@ -57,6 +57,7 @@ const Button = ({
   fullWidth,
   icon,
   iconAlignment,
+  inline,
   loading,
   onClick,
   relevance,
@@ -115,6 +116,7 @@ const Button = ({
       [theme.circle]: !isNil(icon) && isNil(children) && circle,
       [theme.hiddenChildren]: !displayChildrenWhenLoading && loading,
       [theme.fullWidth]: fullWidth,
+      [theme.inline]: inline,
     }
   )
 
@@ -197,6 +199,10 @@ Button.propTypes = {
     'start', 'end',
   ]),
   /**
+  * Defines if button has no paddings to stay inline with texts
+  */
+  inline: PropTypes.bool,
+  /**
    * Indicates if the button is at loading state.
    */
   loading: PropTypes.bool,
@@ -232,6 +238,7 @@ Button.propTypes = {
     highRelevance: PropTypes.string,
     huge: PropTypes.string,
     iconButton: PropTypes.string,
+    inline: PropTypes.string,
     lowRelevance: PropTypes.string,
     normalRelevance: PropTypes.string,
     outline: PropTypes.string,
@@ -257,6 +264,7 @@ Button.defaultProps = {
   fullWidth: false,
   icon: null,
   iconAlignment: 'start',
+  inline: false,
   loading: false,
   onClick: null,
   relevance: 'normal',
