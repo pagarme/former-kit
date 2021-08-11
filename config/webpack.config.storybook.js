@@ -138,7 +138,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(woff|woff2|eot|ttf)$/,
+        test: /\.(woff|woff2|eot|ttf|png)$/,
         loader: require.resolve('file-loader'),
         options: {
           name: 'static/media/[name].[hash:8].[ext]',
