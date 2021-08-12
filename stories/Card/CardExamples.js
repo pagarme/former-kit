@@ -6,6 +6,8 @@ import IconChart from 'emblematic-icons/svg/ChartBars32.svg'
 
 import style from './style.css'
 
+import bannerImg from './banner.png'
+
 import {
   Card,
   CardTitle,
@@ -111,7 +113,7 @@ const GraphicTitleTextActions = () => (
     <Card>
       <CardGraphic>
         <img
-          src="https://maxicharts.com/wp-content/uploads/2017/07/banner-1544x500.png"
+          src={bannerImg}
           alt="placeholder"
         />
       </CardGraphic>
