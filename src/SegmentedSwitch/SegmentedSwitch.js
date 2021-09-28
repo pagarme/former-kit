@@ -69,6 +69,11 @@ class SegmentedSwitch extends PureComponent {
   }
 }
 
+const numberOrString = PropTypes.oneOfType([
+  PropTypes.string.isRequired,
+  PropTypes.number.isRequired,
+])
+
 SegmentedSwitch.propTypes = {
   /**
    * Additional CSS classes which can be applied to the table component.
@@ -93,7 +98,7 @@ SegmentedSwitch.propTypes = {
    */
   options: PropTypes.arrayOf(PropTypes.shape({
     title: PropTypes.node,
-    value: PropTypes.string,
+    value: numberOrString,
   })).isRequired,
   /**
    * The relevance to be used on the buttons
@@ -131,7 +136,7 @@ SegmentedSwitch.propTypes = {
   /**
    * The prop responsible for identifying the selected option value.
    */
-  value: PropTypes.string.isRequired,
+  value: numberOrString.isRequired,
 }
 
 SegmentedSwitch.defaultProps = {
