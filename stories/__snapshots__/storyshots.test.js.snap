@@ -17230,6 +17230,51 @@ exports[`Storyshots Inputs Default 1`] = `
       className=""
     >
       <h2>
+        With number
+      </h2>
+      <div>
+        <div
+          className="input light active"
+        >
+          <div
+            className="boxContainer"
+          >
+            <div
+              className="container"
+            >
+              <input
+                disabled={false}
+                id="email-shortid-mock"
+                name="email"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onKeyPress={null}
+                placeholder="name@email.com"
+                size={null}
+                type="text"
+                value={12345}
+              />
+              <label
+                className="contentPresent"
+                htmlFor="email-shortid-mock"
+              >
+                Your email
+              </label>
+            </div>
+            <p
+              className="secondaryText"
+            >
+              Secondary text
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      className=""
+    >
+      <h2>
         Tiny size
       </h2>
       <div>
@@ -26101,6 +26146,96 @@ exports[`Storyshots Legend Default 1`] = `
         </div>
       </div>
     </section>
+    <section
+      className=""
+    >
+      <h2>
+        With no children
+      </h2>
+      <div>
+        <div
+          style={
+            Object {
+              "marginBottom": "10px",
+            }
+          }
+        >
+          <div
+            className="legend"
+          >
+            <abbr
+              className="uppercase acronym"
+              style={
+                Object {
+                  "background": "#453aa6",
+                  "color": "#ffffff",
+                }
+              }
+              title={Array []}
+            >
+              No children
+            </abbr>
+            <span
+              className="text"
+            />
+          </div>
+        </div>
+        <div
+          style={
+            Object {
+              "marginBottom": "10px",
+            }
+          }
+        >
+          <div
+            className="legend"
+          >
+            <abbr
+              className="uppercase acronym"
+              style={
+                Object {
+                  "background": "#a63a82",
+                  "color": "#ffffff",
+                }
+              }
+              title={Array []}
+            >
+              No children
+            </abbr>
+            <span
+              className="text"
+            />
+          </div>
+        </div>
+        <div
+          style={
+            Object {
+              "marginBottom": "10px",
+            }
+          }
+        >
+          <div
+            className="legend"
+          >
+            <abbr
+              className="uppercase acronym"
+              style={
+                Object {
+                  "background": "#9bc355",
+                  "color": "#ffffff",
+                }
+              }
+              title={Array []}
+            >
+              No children
+            </abbr>
+            <span
+              className="text"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </div>
 `;
@@ -30827,6 +30962,76 @@ exports[`Storyshots SegmentedSwitch Default 1`] = `
               className="label"
             >
               Extra Live
+            </span>
+          </label>
+        </div>
+      </div>
+    </section>
+    <section
+      className=""
+    >
+      <h2>
+        With number values
+      </h2>
+      <div>
+        <div
+          className="segmentedSwitch spacing-medium relevance-normal"
+        >
+          <label
+            className="item"
+            htmlFor="segmented-switch-shortid-mock-table-with-number-1"
+          >
+            <input
+              checked={true}
+              disabled={false}
+              id="segmented-switch-shortid-mock-table-with-number-1"
+              name="segmented-switch-shortid-mock"
+              onChange={[Function]}
+              type="radio"
+              value={1}
+            />
+            <span
+              className="label"
+            >
+              Number 1
+            </span>
+          </label>
+          <label
+            className="item"
+            htmlFor="segmented-switch-shortid-mock-table-with-number-2"
+          >
+            <input
+              checked={false}
+              disabled={false}
+              id="segmented-switch-shortid-mock-table-with-number-2"
+              name="segmented-switch-shortid-mock"
+              onChange={[Function]}
+              type="radio"
+              value={2}
+            />
+            <span
+              className="label"
+            >
+              Number 2
+            </span>
+          </label>
+          <label
+            className="item"
+            htmlFor="segmented-switch-shortid-mock-table-with-number-3"
+          >
+            <input
+              checked={false}
+              disabled={false}
+              id="segmented-switch-shortid-mock-table-with-number-3"
+              name="segmented-switch-shortid-mock"
+              onChange={[Function]}
+              type="radio"
+              value={3}
+            />
+            <span
+              className="label"
+            >
+              Number 3
             </span>
           </label>
         </div>
