@@ -16,7 +16,11 @@ function ColorPicker ({
   }
 
   const closeDisplayColorPicker = () => {
-    setDisplayColorPicker(false)
+    if (displayColorPicker) {
+      setDisplayColorPicker(false)
+      return
+    }
+
     onCancel()
   }
 

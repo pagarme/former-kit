@@ -11172,6 +11172,72 @@ exports[`Storyshots Checkbox Group Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots ColorPicker Default 1`] = `
+<div
+  className="storybook-readme-story"
+>
+  <div
+    className="typography"
+  >
+    <section
+      className=""
+    >
+      <h2>
+        Default color picker
+      </h2>
+      <div>
+        <h3>
+          Color: 
+          #65a300
+        </h3>
+        <div
+          className="container"
+        >
+          <div
+            className="containerLeft"
+          >
+            <div
+              className="color"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              role="button"
+              style={
+                Object {
+                  "backgroundColor": "#65a300",
+                }
+              }
+              tabIndex="0"
+            />
+            <div
+              className="textColor"
+            >
+              <input
+                onChange={[Function]}
+                value="#65a300"
+              />
+            </div>
+          </div>
+          <div
+            className="containerRigth"
+          >
+            <button
+              className="buttonCancel"
+              onClick={[Function]}
+              type="button"
+            >
+              <CloseCircle32.svg
+                height={16}
+                width={16}
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Colors Light theme 1`] = `
 <div
   className="storybook-readme-story"
