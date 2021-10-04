@@ -4176,9 +4176,9 @@ code-point-at@^1.0.0:
   integrity sha1-DQcLTQQ6W+ozovGkDi7bPZpMz3c=
 
 codemirror@^5.39.0:
-  version "5.48.2"
-  resolved "https://registry.yarnpkg.com/codemirror/-/codemirror-5.48.2.tgz#a9dd3d426dea4cd59efd59cd98e20a9152a30922"
-  integrity sha512-i9VsmC8AfA5ji6EDIZ+aoSe4vt9FcwPLdHB1k1ItFbVyuOFRrcfvnoKqwZlC7EVA2UmTRiNEypE4Uo7YvzVY8Q==
+  version "5.63.1"
+  resolved "https://registry.yarnpkg.com/codemirror/-/codemirror-5.63.1.tgz#b0b9e8444206fd6a43a58a4b31d5740bb891fa57"
+  integrity sha512-baivaNZreZOGh1/tYyTvCupC9NeWk7qlZeGUDi4nFKj/J0JU8FYKZND4QqLw70P7HOttlCt4JJAOj9GoIhHEkA==
 
 collapse-white-space@^1.0.2:
   version "1.0.5"
