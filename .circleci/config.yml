@@ -3,7 +3,7 @@ image: ubuntu:16.04
 jobs:
   build:
     docker:
-      - image: circleci/node:10.15.1-jessie-browsers
+      - image: circleci/node:12-browsers
 
     working_directory: ~/repo
 
