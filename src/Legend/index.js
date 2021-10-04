@@ -68,7 +68,7 @@ Legend.propTypes = {
   /**
    * React element which will be shown if the label is not hidden.
    */
-  children: PropTypes.string.isRequired,
+  children: PropTypes.node,
   /**
    * The background color of the Legend.
    */
@@ -97,6 +97,7 @@ Legend.propTypes = {
 
 Legend.defaultProps = {
   acronym: '',
+  children: [],
   hideLabel: false,
   textColor: '#ffffff',
   textFormat: 'uppercase',

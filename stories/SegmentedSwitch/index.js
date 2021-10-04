@@ -89,6 +89,26 @@ storiesOf('SegmentedSwitch', module)
           value="super-test"
         />
       </Section>
+      <Section title="With number values">
+        <SegmentedSwitchState
+          name="table-with-number"
+          options={[
+            {
+              title: 'Number 1',
+              value: 1,
+            },
+            {
+              title: 'Number 2',
+              value: 2,
+            },
+            {
+              title: 'Number 3',
+              value: 3,
+            },
+          ]}
+          value={1}
+        />
+      </Section>
       <Section title="With icons">
         <SegmentedSwitchState
           name="table-chart"

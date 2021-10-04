@@ -71,6 +71,10 @@ storiesOf('Inputs', module)
         <InputState type="text" />
       </Section>
 
+      <Section title="With number">
+        <InputState type="text" value={12345} />
+      </Section>
+
       <Section title="Tiny size">
         <InputState type="text" size="tiny" />
       </Section>

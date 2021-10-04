@@ -104,7 +104,22 @@ const acronymUppercase = [
   {
     acronym: 'Strong Muffin',
     color: '#b60707',
-    text: 'Strong Muffin',
+    text: ('Strong Muffin'),
+  },
+]
+
+const withoutChildren = [
+  {
+    acronym: 'No children',
+    color: '#453aa6',
+  },
+  {
+    acronym: 'No children',
+    color: '#a63a82',
+  },
+  {
+    acronym: 'No children',
+    color: '#9bc355',
   },
 ]
 
@@ -139,5 +154,6 @@ storiesOf('Legend', module)
       {createLegends('With hideLabel prop', hidingLabel)}
       {createLegends('With capitalize letters', acronymCapitalize)}
       {createLegends('With uppercase letters', acronymUppercase)}
+      {createLegends('With no children', withoutChildren)}
     </div>
   ))
