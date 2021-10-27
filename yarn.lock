@@ -6507,10 +6507,10 @@ format@^0.2.2:
   resolved "https://registry.yarnpkg.com/format/-/format-0.2.2.tgz#d6170107e9efdc4ed30c9dc39016df942b5cb58b"
   integrity sha1-1hcBB+nv3E7TDJ3DkBbflCtctYs=
 
-former-kit-skin-pagarme@2.12.0:
-  version "2.12.0"
-  resolved "https://registry.yarnpkg.com/former-kit-skin-pagarme/-/former-kit-skin-pagarme-2.12.0.tgz#dfa70420c07c218552db69f32644a86846f80beb"
-  integrity sha512-yr92CDn98l6ijtf8hvI4oA9+Dv8PQduKA6YA3bv4M+GUNHu/Ja2/mH4tyxmDzUImIL83EGPjKg6ACLf/bhhNBQ==
+former-kit-skin-pagarme@2.13.0:
+  version "2.13.0"
+  resolved "https://registry.yarnpkg.com/former-kit-skin-pagarme/-/former-kit-skin-pagarme-2.13.0.tgz#fdf21f4cb730a912e368170cdf880aba96ba7c60"
+  integrity sha512-/9nDiV0bbKIBoz3Zkpm2sbIC6KU+zoTxliEkj0TlvWpcHj2yBrE62UKY32Qjen9lzrADjMY6I8IUTKwGXfFjpw==
   dependencies:
     emblematic-icons "0.11.0"
     react-dates "18.4.1"
