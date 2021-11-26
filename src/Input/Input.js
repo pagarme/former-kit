@@ -126,6 +126,7 @@ class Input extends React.PureComponent {
     const {
       disabled,
       mask,
+      maskChar,
       multiline,
       onChange,
       renderer,
@@ -150,6 +151,7 @@ class Input extends React.PureComponent {
             1: '[0-9]',
           }}
           mask={mask}
+          maskChar={maskChar}
           onChange={disabled ? null : onChange}
           onBlur={this.handleBlur}
           onFocus={this.handleFocus}
@@ -338,6 +340,11 @@ Input.propTypes = {
    * Allow multiline texts if the component type is text.
    * This prop is prioritized over the render options mask and renderer
    */
+  maskChar: PropTypes.string,
+  /**
+   * Character to cover unfilled parts of the mask. Default character is "_".
+   * If set to null or empty string, unfilled parts will be empty as in ordinary input.
+   */
   multiline: validateMultiline,
   /**
    * Input's name.
@@ -423,6 +430,7 @@ Input.defaultProps = {
   inputRef: null,
   label: '',
   mask: '',
+  maskChar: '_',
   multiline: false,
   name: '',
   onBlur: null,

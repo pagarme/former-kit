@@ -132,6 +132,29 @@ describe('Input', () => {
       expect(component.html()).toContain('4151 1124 ____ ____')
     })
 
+    it('should mount with a mask without masked char', () => {
+      const onChange = jest.fn()
+
+      const component = mount(
+        <Input
+          name="name"
+          label="Name"
+          onChange={onChange}
+          value="4151 1124"
+          type="password"
+          placeholder="Your name"
+          mask="1111 1111 1111 1111"
+          maskChar={null}
+          hint="Hi"
+          error="Error"
+        />
+      )
+
+      expect(component.props().mask).not.toBeUndefined()
+      expect(component.props().mask).toEqual('1111 1111 1111 1111')
+      expect(component.html()).toContain('4151 1124 ')
+    })
+
     it('should trigger onFocus', () => {
       const onChange = jest.fn()
       const onFocus = jest.fn()
