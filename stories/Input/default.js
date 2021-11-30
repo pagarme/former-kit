@@ -19,6 +19,7 @@ class InputState extends React.Component {
       icon,
       label,
       mask,
+      maskChar,
       multiline,
       placeholder,
       size,
@@ -37,6 +38,7 @@ class InputState extends React.Component {
         icon={icon}
         label={label}
         mask={mask}
+        maskChar={maskChar}
         multiline={multiline}
         name="email"
         onBlur={action('blur')}
@@ -110,6 +112,16 @@ storiesOf('Inputs', module)
       <Section title="Masked input">
         <InputState
           mask="111-111-111"
+          placeholder="Type your phone number"
+          type="tel"
+          value=""
+        />
+      </Section>
+
+      <Section title="Masked input without Masked Char">
+        <InputState
+          mask="111-111-111"
+          maskChar={null}
           placeholder="Type your phone number"
           type="tel"
           value=""
@@ -244,6 +256,17 @@ storiesOf('Inputs', module)
         <InputState
           base="dark"
           mask="111-111-111"
+          placeholder="Type your phone number"
+          type="phone"
+          value=""
+        />
+      </Section>
+
+      <Section title="Masked input without Masked Char" base="dark">
+        <InputState
+          base="dark"
+          mask="111-111-111"
+          maskChar={null}
           placeholder="Type your phone number"
           type="phone"
           value=""

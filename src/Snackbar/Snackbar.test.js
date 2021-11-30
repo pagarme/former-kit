@@ -124,7 +124,7 @@ describe('snackbar', () => {
       () => {
         content = container.querySelector('p')
         expect(content).toBeNull()
-      }
+      }, 1000
     )
   })
 
