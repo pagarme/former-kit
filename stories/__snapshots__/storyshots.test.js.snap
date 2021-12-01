@@ -23141,7 +23141,7 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
             className="menu"
           >
             <li
-              className="link"
+              className="borderButton link"
             >
               <button
                 onBlur={[Function]}
@@ -23166,7 +23166,7 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
               </button>
             </li>
             <li
-              className="link"
+              className="borderButton link"
             >
               <button
                 onBlur={[Function]}
@@ -23191,7 +23191,7 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
               </button>
             </li>
             <li
-              className="link"
+              className="borderButton link"
             >
               <button
                 onBlur={[Function]}
@@ -23653,7 +23653,7 @@ exports[`Storyshots Layout Default with all props 1`] = `
             className="menu"
           >
             <li
-              className="link"
+              className="borderButton link"
             >
               <button
                 onBlur={[Function]}
@@ -23678,7 +23678,7 @@ exports[`Storyshots Layout Default with all props 1`] = `
               </button>
             </li>
             <li
-              className="link"
+              className="borderButton link"
             >
               <button
                 onBlur={[Function]}
@@ -23703,7 +23703,7 @@ exports[`Storyshots Layout Default with all props 1`] = `
               </button>
             </li>
             <li
-              className="link"
+              className="borderButton link"
             >
               <button
                 onBlur={[Function]}
@@ -24279,7 +24279,7 @@ exports[`Storyshots Layout Default without Footer 1`] = `
             className="menu"
           >
             <li
-              className="link"
+              className="borderButton link"
             >
               <button
                 onBlur={[Function]}
@@ -24304,7 +24304,7 @@ exports[`Storyshots Layout Default without Footer 1`] = `
               </button>
             </li>
             <li
-              className="link"
+              className="borderButton link"
             >
               <button
                 onBlur={[Function]}
@@ -24329,7 +24329,7 @@ exports[`Storyshots Layout Default without Footer 1`] = `
               </button>
             </li>
             <li
-              className="link"
+              className="borderButton link"
             >
               <button
                 onBlur={[Function]}
@@ -24843,7 +24843,7 @@ exports[`Storyshots Layout Default without Header 1`] = `
             className="menu"
           >
             <li
-              className="link"
+              className="borderButton link"
             >
               <button
                 onBlur={[Function]}
@@ -24868,7 +24868,7 @@ exports[`Storyshots Layout Default without Header 1`] = `
               </button>
             </li>
             <li
-              className="link"
+              className="borderButton link"
             >
               <button
                 onBlur={[Function]}
@@ -24893,7 +24893,7 @@ exports[`Storyshots Layout Default without Header 1`] = `
               </button>
             </li>
             <li
-              className="link"
+              className="borderButton link"
             >
               <button
                 onBlur={[Function]}
@@ -31478,7 +31478,7 @@ exports[`Storyshots Sidebar Collapsed 1`] = `
         className="menu"
       >
         <li
-          className="link"
+          className="borderButton link"
         >
           <div
             className="target"
@@ -31508,7 +31508,7 @@ exports[`Storyshots Sidebar Collapsed 1`] = `
           </div>
         </li>
         <li
-          className="link"
+          className="borderButton link"
         >
           <div
             className="target"
@@ -31538,7 +31538,7 @@ exports[`Storyshots Sidebar Collapsed 1`] = `
           </div>
         </li>
         <li
-          className="link"
+          className="borderButton link"
         >
           <div
             className="target"
@@ -31614,7 +31614,7 @@ exports[`Storyshots Sidebar Default 1`] = `
         className="menu"
       >
         <li
-          className="link"
+          className="borderButton link"
         >
           <button
             onBlur={[Function]}
@@ -31639,7 +31639,7 @@ exports[`Storyshots Sidebar Default 1`] = `
           </button>
         </li>
         <li
-          className="link"
+          className="borderButton link"
         >
           <button
             onBlur={[Function]}
@@ -31664,7 +31664,7 @@ exports[`Storyshots Sidebar Default 1`] = `
           </button>
         </li>
         <li
-          className="link"
+          className="borderButton link"
         >
           <button
             onBlur={[Function]}

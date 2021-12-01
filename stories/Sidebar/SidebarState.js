@@ -107,6 +107,7 @@ class SidebarState extends React.Component {
                     onClick={() => this.handleClick(sublink)}
                     title={sublink.title}
                     value={sublink.value}
+                    borderButton
                   />
                 ))
               }
