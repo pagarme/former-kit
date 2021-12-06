@@ -99,6 +99,7 @@ class SidebarLink extends React.Component {
   render () {
     const {
       active,
+      borderButton,
       children,
       collapsed,
       theme,
@@ -106,10 +107,13 @@ class SidebarLink extends React.Component {
     } = this.props
     const { collapsed: isCollapsed, focused } = this.state
     const renderSubmenu = !isCollapsed && !collapsed && children
-
+    const className = borderButton
+      ? theme.borderButton
+      : null
     return (
       <li
         className={classNames(
+          className,
           theme.link,
           {
             [theme.active]: active,
@@ -166,6 +170,10 @@ SidebarLink.propTypes = {
    */
   beginExpanded: PropTypes.bool,
   /**
+ * Indicates if the border left style.
+ */
+  borderButton: PropTypes.bool,
+  /**
    * The children can contain any kind of component.
    */
   children: PropTypes.node,
@@ -212,6 +220,10 @@ SidebarLink.propTypes = {
      */
     arrow: PropTypes.string,
     /**
+   * Indicates if the border left style.
+   */
+    borderButton: PropTypes.string,
+    /**
      * The class used to style when links is focused.
      */
     focused: PropTypes.string,
@@ -245,6 +257,7 @@ SidebarLink.propTypes = {
 SidebarLink.defaultProps = {
   active: false,
   beginExpanded: false,
+  borderButton: false,
   children: null,
   collapsed: false,
   icon: null,
