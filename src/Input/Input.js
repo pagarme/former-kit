@@ -22,6 +22,7 @@ const omitOwnProps = omit([
   'inputRef',
   'label',
   'mask',
+  'maskChar',
   'multiline',
   'onBlur',
   'onChange',
