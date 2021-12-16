@@ -79,7 +79,7 @@ Checkbox.propTypes = {
   /**
    * Same as the native `name` prop from the HTML checkbox.
    */
-  name: string.isRequired,
+  name: string,
   /**
    * Triggers when the checkbox or label is clicked.
    */
@@ -98,13 +98,15 @@ Checkbox.propTypes = {
   /**
    * Same as the native `value` prop from the HTML checkbox.
    */
-  value: string.isRequired,
+  value: string,
 }
 
 Checkbox.defaultProps = {
   disabled: false,
   error: '',
+  name: '',
   theme: {},
+  value: '',
 }
 
 export default Checkbox
