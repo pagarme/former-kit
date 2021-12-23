@@ -17266,7 +17266,6 @@ exports[`Storyshots Inputs Default 1`] = `
               <input
                 disabled={false}
                 id="email-shortid-mock"
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -17312,7 +17311,6 @@ exports[`Storyshots Inputs Default 1`] = `
               <input
                 disabled={false}
                 id="email-shortid-mock"
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -17358,7 +17356,6 @@ exports[`Storyshots Inputs Default 1`] = `
               <input
                 disabled={false}
                 id="email-shortid-mock"
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -17404,7 +17401,6 @@ exports[`Storyshots Inputs Default 1`] = `
               <input
                 disabled={false}
                 id="email-shortid-mock"
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -17450,7 +17446,6 @@ exports[`Storyshots Inputs Default 1`] = `
               <input
                 disabled={true}
                 id="email-shortid-mock"
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={null}
@@ -17496,7 +17491,6 @@ exports[`Storyshots Inputs Default 1`] = `
               <input
                 disabled={true}
                 id="email-shortid-mock"
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={null}
@@ -17633,7 +17627,6 @@ exports[`Storyshots Inputs Default 1`] = `
             >
               <textarea
                 disabled={false}
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -17684,7 +17677,6 @@ exports[`Storyshots Inputs Default 1`] = `
             >
               <textarea
                 disabled={false}
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -17735,7 +17727,6 @@ exports[`Storyshots Inputs Default 1`] = `
             >
               <textarea
                 disabled={true}
-                maskChar="_"
                 name="multiline"
                 onBlur={[Function]}
                 onChange={null}
@@ -17791,7 +17782,6 @@ exports[`Storyshots Inputs Default 1`] = `
               <input
                 disabled={false}
                 id="email-shortid-mock"
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -17845,7 +17835,6 @@ exports[`Storyshots Inputs Default 1`] = `
               <input
                 disabled={false}
                 id="email-shortid-mock"
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -17899,7 +17888,6 @@ exports[`Storyshots Inputs Default 1`] = `
               <input
                 disabled={true}
                 id="name-shortid-mock"
-                maskChar="_"
                 name="name"
                 onBlur={[Function]}
                 onChange={null}
@@ -17948,7 +17936,6 @@ exports[`Storyshots Inputs Default 1`] = `
             >
               <textarea
                 disabled={false}
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -18007,7 +17994,6 @@ exports[`Storyshots Inputs Default 1`] = `
             >
               <textarea
                 disabled={false}
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -18066,7 +18052,6 @@ exports[`Storyshots Inputs Default 1`] = `
             >
               <textarea
                 disabled={true}
-                maskChar="_"
                 name="multiline"
                 onBlur={[Function]}
                 onChange={null}
@@ -18114,7 +18099,6 @@ exports[`Storyshots Inputs Default 1`] = `
               <input
                 disabled={false}
                 id="email-shortid-mock"
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -18168,7 +18152,6 @@ exports[`Storyshots Inputs Default 1`] = `
               <input
                 disabled={false}
                 id="email-shortid-mock"
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -18222,7 +18205,6 @@ exports[`Storyshots Inputs Default 1`] = `
               <input
                 disabled={true}
                 id="pass-shortid-mock"
-                maskChar="_"
                 name="pass"
                 onBlur={[Function]}
                 onChange={null}
@@ -18268,7 +18250,6 @@ exports[`Storyshots Inputs Default 1`] = `
               <input
                 disabled={false}
                 id="email-shortid-mock"
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -18314,7 +18295,6 @@ exports[`Storyshots Inputs Default 1`] = `
               <input
                 disabled={false}
                 id="email-shortid-mock"
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -18360,7 +18340,6 @@ exports[`Storyshots Inputs Default 1`] = `
               <input
                 disabled={false}
                 id="email-shortid-mock"
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -18406,7 +18385,6 @@ exports[`Storyshots Inputs Default 1`] = `
               <input
                 disabled={true}
                 id="email-shortid-mock"
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={null}
@@ -18452,7 +18430,6 @@ exports[`Storyshots Inputs Default 1`] = `
               <input
                 disabled={true}
                 id="email-shortid-mock"
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={null}
@@ -18589,7 +18566,6 @@ exports[`Storyshots Inputs Default 1`] = `
             >
               <textarea
                 disabled={false}
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -18640,7 +18616,6 @@ exports[`Storyshots Inputs Default 1`] = `
             >
               <textarea
                 disabled={false}
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -18691,7 +18666,6 @@ exports[`Storyshots Inputs Default 1`] = `
             >
               <textarea
                 disabled={true}
-                maskChar="_"
                 name="multiline"
                 onBlur={[Function]}
                 onChange={null}
@@ -18747,7 +18721,6 @@ exports[`Storyshots Inputs Default 1`] = `
               <input
                 disabled={false}
                 id="email-shortid-mock"
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -18801,7 +18774,6 @@ exports[`Storyshots Inputs Default 1`] = `
               <input
                 disabled={false}
                 id="email-shortid-mock"
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -18855,7 +18827,6 @@ exports[`Storyshots Inputs Default 1`] = `
               <input
                 disabled={true}
                 id="name-shortid-mock"
-                maskChar="_"
                 name="name"
                 onBlur={[Function]}
                 onChange={null}
@@ -18904,7 +18875,6 @@ exports[`Storyshots Inputs Default 1`] = `
             >
               <textarea
                 disabled={false}
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -18963,7 +18933,6 @@ exports[`Storyshots Inputs Default 1`] = `
             >
               <textarea
                 disabled={false}
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -19022,7 +18991,6 @@ exports[`Storyshots Inputs Default 1`] = `
             >
               <textarea
                 disabled={true}
-                maskChar="_"
                 name="multiline"
                 onBlur={[Function]}
                 onChange={null}
@@ -19070,7 +19038,6 @@ exports[`Storyshots Inputs Default 1`] = `
               <input
                 disabled={false}
                 id="email-shortid-mock"
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -19124,7 +19091,6 @@ exports[`Storyshots Inputs Default 1`] = `
               <input
                 disabled={false}
                 id="email-shortid-mock"
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -19178,7 +19144,6 @@ exports[`Storyshots Inputs Default 1`] = `
               <input
                 disabled={true}
                 id="pass-shortid-mock"
-                maskChar="_"
                 name="pass"
                 onBlur={[Function]}
                 onChange={null}
@@ -19235,7 +19200,6 @@ exports[`Storyshots Inputs Form 1`] = `
               <input
                 disabled={false}
                 id="email-shortid-mock"
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -19281,7 +19245,6 @@ exports[`Storyshots Inputs Form 1`] = `
               <input
                 disabled={false}
                 id="email-shortid-mock"
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -19327,7 +19290,6 @@ exports[`Storyshots Inputs Form 1`] = `
               <input
                 disabled={true}
                 id="email-shortid-mock"
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={null}
@@ -19373,7 +19335,6 @@ exports[`Storyshots Inputs Form 1`] = `
               <input
                 disabled={true}
                 id="email-shortid-mock"
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={null}
@@ -19510,7 +19471,6 @@ exports[`Storyshots Inputs Form 1`] = `
             >
               <textarea
                 disabled={false}
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -19561,7 +19521,6 @@ exports[`Storyshots Inputs Form 1`] = `
             >
               <textarea
                 disabled={false}
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -19612,7 +19571,6 @@ exports[`Storyshots Inputs Form 1`] = `
             >
               <textarea
                 disabled={true}
-                maskChar="_"
                 name="multiline"
                 onBlur={[Function]}
                 onChange={null}
@@ -19668,7 +19626,6 @@ exports[`Storyshots Inputs Form 1`] = `
               <input
                 disabled={false}
                 id="email-shortid-mock"
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -19722,7 +19679,6 @@ exports[`Storyshots Inputs Form 1`] = `
               <input
                 disabled={false}
                 id="email-shortid-mock"
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -19776,7 +19732,6 @@ exports[`Storyshots Inputs Form 1`] = `
               <input
                 disabled={true}
                 id="name-shortid-mock"
-                maskChar="_"
                 name="name"
                 onBlur={[Function]}
                 onChange={null}
@@ -19825,7 +19780,6 @@ exports[`Storyshots Inputs Form 1`] = `
             >
               <textarea
                 disabled={false}
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -19884,7 +19838,6 @@ exports[`Storyshots Inputs Form 1`] = `
             >
               <textarea
                 disabled={false}
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -19943,7 +19896,6 @@ exports[`Storyshots Inputs Form 1`] = `
             >
               <textarea
                 disabled={true}
-                maskChar="_"
                 name="multiline"
                 onBlur={[Function]}
                 onChange={null}
@@ -19991,7 +19943,6 @@ exports[`Storyshots Inputs Form 1`] = `
               <input
                 disabled={false}
                 id="email-shortid-mock"
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -20045,7 +19996,6 @@ exports[`Storyshots Inputs Form 1`] = `
               <input
                 disabled={false}
                 id="email-shortid-mock"
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -20099,7 +20049,6 @@ exports[`Storyshots Inputs Form 1`] = `
               <input
                 disabled={true}
                 id="pass-shortid-mock"
-                maskChar="_"
                 name="pass"
                 onBlur={[Function]}
                 onChange={null}
@@ -20145,7 +20094,6 @@ exports[`Storyshots Inputs Form 1`] = `
               <input
                 disabled={true}
                 id="pass-shortid-mock"
-                maskChar="_"
                 name="pass"
                 onBlur={[Function]}
                 onChange={null}
@@ -20191,7 +20139,6 @@ exports[`Storyshots Inputs Form 1`] = `
               <input
                 disabled={false}
                 id="email-shortid-mock"
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -20237,7 +20184,6 @@ exports[`Storyshots Inputs Form 1`] = `
               <input
                 disabled={false}
                 id="email-shortid-mock"
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -20283,7 +20229,6 @@ exports[`Storyshots Inputs Form 1`] = `
               <input
                 disabled={true}
                 id="email-shortid-mock"
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={null}
@@ -20329,7 +20274,6 @@ exports[`Storyshots Inputs Form 1`] = `
               <input
                 disabled={true}
                 id="email-shortid-mock"
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={null}
@@ -20420,7 +20364,6 @@ exports[`Storyshots Inputs Form 1`] = `
             >
               <textarea
                 disabled={false}
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -20471,7 +20414,6 @@ exports[`Storyshots Inputs Form 1`] = `
             >
               <textarea
                 disabled={false}
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -20522,7 +20464,6 @@ exports[`Storyshots Inputs Form 1`] = `
             >
               <textarea
                 disabled={true}
-                maskChar="_"
                 name="multiline"
                 onBlur={[Function]}
                 onChange={null}
@@ -20578,7 +20519,6 @@ exports[`Storyshots Inputs Form 1`] = `
               <input
                 disabled={false}
                 id="email-shortid-mock"
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -20632,7 +20572,6 @@ exports[`Storyshots Inputs Form 1`] = `
               <input
                 disabled={false}
                 id="email-shortid-mock"
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -20686,7 +20625,6 @@ exports[`Storyshots Inputs Form 1`] = `
               <input
                 disabled={true}
                 id="name-shortid-mock"
-                maskChar="_"
                 name="name"
                 onBlur={[Function]}
                 onChange={null}
@@ -20735,7 +20673,6 @@ exports[`Storyshots Inputs Form 1`] = `
             >
               <textarea
                 disabled={false}
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -20794,7 +20731,6 @@ exports[`Storyshots Inputs Form 1`] = `
             >
               <textarea
                 disabled={false}
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -20853,7 +20789,6 @@ exports[`Storyshots Inputs Form 1`] = `
             >
               <textarea
                 disabled={true}
-                maskChar="_"
                 name="multiline"
                 onBlur={[Function]}
                 onChange={null}
@@ -20901,7 +20836,6 @@ exports[`Storyshots Inputs Form 1`] = `
               <input
                 disabled={false}
                 id="email-shortid-mock"
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -20955,7 +20889,6 @@ exports[`Storyshots Inputs Form 1`] = `
               <input
                 disabled={false}
                 id="email-shortid-mock"
-                maskChar="_"
                 name="email"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -21009,7 +20942,6 @@ exports[`Storyshots Inputs Form 1`] = `
               <input
                 disabled={true}
                 id="pass-shortid-mock"
-                maskChar="_"
                 name="pass"
                 onBlur={[Function]}
                 onChange={null}
@@ -21055,7 +20987,6 @@ exports[`Storyshots Inputs Form 1`] = `
               <input
                 disabled={true}
                 id="pass-shortid-mock"
-                maskChar="_"
                 name="pass"
                 onBlur={[Function]}
                 onChange={null}
@@ -21154,7 +21085,6 @@ exports[`Storyshots Landing Pagar.me login 1`] = `
                     <input
                       disabled={false}
                       id="email-shortid-mock"
-                      maskChar="_"
                       name="email"
                       onBlur={[Function]}
                       onChange={[Function]}
@@ -21186,7 +21116,6 @@ exports[`Storyshots Landing Pagar.me login 1`] = `
                     <input
                       disabled={false}
                       id="password-shortid-mock"
-                      maskChar="_"
                       name="password"
                       onBlur={[Function]}
                       onChange={[Function]}
@@ -21316,7 +21245,6 @@ exports[`Storyshots Landing Pagar.me login light 1`] = `
                     <input
                       disabled={false}
                       id="email-shortid-mock"
-                      maskChar="_"
                       name="email"
                       onBlur={[Function]}
                       onChange={[Function]}
@@ -21348,7 +21276,6 @@ exports[`Storyshots Landing Pagar.me login light 1`] = `
                     <input
                       disabled={false}
                       id="password-shortid-mock"
-                      maskChar="_"
                       name="password"
                       onBlur={[Function]}
                       onChange={[Function]}
@@ -21480,7 +21407,6 @@ exports[`Storyshots Landing Pagar.me password recovery 1`] = `
                       <input
                         disabled={false}
                         id="email-shortid-mock"
-                        maskChar="_"
                         name="email"
                         onBlur={[Function]}
                         onChange={[Function]}
@@ -21714,7 +21640,6 @@ exports[`Storyshots Landing Pagar.me sign in 1`] = `
                     <input
                       disabled={false}
                       id="name-shortid-mock"
-                      maskChar="_"
                       name="name"
                       onBlur={[Function]}
                       onChange={[Function]}
@@ -21746,7 +21671,6 @@ exports[`Storyshots Landing Pagar.me sign in 1`] = `
                     <input
                       disabled={false}
                       id="company-shortid-mock"
-                      maskChar="_"
                       name="company"
                       onBlur={[Function]}
                       onChange={[Function]}
@@ -21778,7 +21702,6 @@ exports[`Storyshots Landing Pagar.me sign in 1`] = `
                     <input
                       disabled={false}
                       id="email-shortid-mock"
-                      maskChar="_"
                       name="email"
                       onBlur={[Function]}
                       onChange={[Function]}
@@ -21810,7 +21733,6 @@ exports[`Storyshots Landing Pagar.me sign in 1`] = `
                     <input
                       disabled={false}
                       id="password-shortid-mock"
-                      maskChar="_"
                       name="password"
                       onBlur={[Function]}
                       onChange={[Function]}
@@ -22030,7 +21952,6 @@ exports[`Storyshots Landing Pagar.me two factor login 1`] = `
                     <input
                       disabled={false}
                       id="email-shortid-mock"
-                      maskChar="_"
                       name="email"
                       onBlur={[Function]}
                       onChange={[Function]}
@@ -22062,7 +21983,6 @@ exports[`Storyshots Landing Pagar.me two factor login 1`] = `
                     <input
                       disabled={false}
                       id="password-shortid-mock"
-                      maskChar="_"
                       name="password"
                       onBlur={[Function]}
                       onChange={[Function]}
@@ -22094,7 +22014,6 @@ exports[`Storyshots Landing Pagar.me two factor login 1`] = `
                     <input
                       disabled={false}
                       id="token-shortid-mock"
-                      maskChar="_"
                       name="token"
                       onBlur={[Function]}
                       onChange={[Function]}
@@ -39298,7 +39217,6 @@ exports[`Storyshots Transition Picker 1`] = `
                   <input
                     disabled={false}
                     id="damping"
-                    maskChar="_"
                     max={115}
                     maxLength={3}
                     name=""
@@ -39341,7 +39259,6 @@ exports[`Storyshots Transition Picker 1`] = `
                   <input
                     disabled={false}
                     id="precision"
-                    maskChar="_"
                     maxLength={10}
                     name=""
                     onBlur={[Function]}
@@ -39383,7 +39300,6 @@ exports[`Storyshots Transition Picker 1`] = `
                   <input
                     disabled={false}
                     id="stiffness"
-                    maskChar="_"
                     max={500}
                     maxLength={3}
                     name=""
