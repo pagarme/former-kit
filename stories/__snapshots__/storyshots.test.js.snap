@@ -29427,6 +29427,98 @@ exports[`Storyshots Popover Without arrow 1`] = `
 </div>
 `;
 
+exports[`Storyshots PopoverCheckboxGroup Already selected 1`] = `
+<div
+  className="storybook-readme-story"
+>
+  <div>
+    <div
+      className="target"
+      onClick={[Function]}
+      role="presentation"
+    >
+      <button
+        className="button outline lowRelevance default"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="textButton"
+        >
+          Open
+        </span>
+        <ChevronDown32.svg
+          height={16}
+          width={16}
+        />
+        <span
+          className="ripple"
+          style={
+            Object {
+              "height": 0,
+              "left": 0,
+              "top": 0,
+              "width": 0,
+            }
+          }
+        />
+      </button>
+    </div>
+    <div>
+      Selected: 
+      mastercard
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots PopoverCheckboxGroup Default 1`] = `
+<div
+  className="storybook-readme-story"
+>
+  <div>
+    <div
+      className="target"
+      onClick={[Function]}
+      role="presentation"
+    >
+      <button
+        className="button outline lowRelevance default"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="textButton"
+        >
+          Open
+        </span>
+        <ChevronDown32.svg
+          height={16}
+          width={16}
+        />
+        <span
+          className="ripple"
+          style={
+            Object {
+              "height": 0,
+              "left": 0,
+              "top": 0,
+              "width": 0,
+            }
+          }
+        />
+      </button>
+    </div>
+    <div>
+      Selected: 
+      
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Progress Linear 1`] = `
 <div
   className="storybook-readme-story"
