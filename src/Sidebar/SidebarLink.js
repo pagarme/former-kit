@@ -66,6 +66,7 @@ class SidebarLink extends React.Component {
     const {
       children,
       collapsed,
+      'data-testid': dataTestId,
       icon,
       icons,
       theme,
@@ -74,6 +75,7 @@ class SidebarLink extends React.Component {
     const { collapsed: active } = this.state
     return (
       <button
+        data-testid={dataTestId}
         onBlur={this.handleBlur}
         onClick={this.handleClick}
         onFocus={this.handleFocus}
@@ -182,6 +184,10 @@ SidebarLink.propTypes = {
    */
   collapsed: PropTypes.bool,
   /**
+   * Test selectors
+   */
+  'data-testid': PropTypes.string,
+  /**
    * The icon defined by the user. It's shown with the title
    * and is also shown alone when the sidebar is collapsed.
    */
@@ -260,6 +266,7 @@ SidebarLink.defaultProps = {
   borderButton: false,
   children: null,
   collapsed: false,
+  'data-testid': null,
   icon: null,
   icons: {},
   onBlur: null,
