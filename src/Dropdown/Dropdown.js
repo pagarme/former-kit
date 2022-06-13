@@ -78,6 +78,7 @@ class Dropdown extends React.Component {
 
   render () {
     const {
+      'data-testid': dataTestId,
       disabled,
       error,
       icons,
@@ -113,6 +114,7 @@ class Dropdown extends React.Component {
         )}
 
         <select
+          data-testid={dataTestId}
           id={this.instanceId}
           className={theme.select}
           onChange={this.handleChange}
@@ -147,6 +149,10 @@ class Dropdown extends React.Component {
 }
 
 Dropdown.propTypes = {
+  /**
+   * Test selectors
+   */
+  'data-testid': PropTypes.string,
   /**
    * Disables the component.
    */
@@ -237,6 +243,7 @@ Dropdown.propTypes = {
 }
 
 Dropdown.defaultProps = {
+  'data-testid': null,
   disabled: false,
   error: '',
   icons: {},

@@ -51,6 +51,7 @@ const createSpinnerClasses = ({
 const Button = ({
   children,
   circle,
+  'data-testid': dataTestId,
   disabled,
   displayChildrenWhenLoading,
   fill,
@@ -123,6 +124,7 @@ const Button = ({
   /* eslint-disable react/button-has-type */
   return (
     <button
+      data-testid={dataTestId}
       disabled={disabled}
       className={buttonClasses}
       onClick={handleClick}
@@ -169,6 +171,10 @@ Button.propTypes = {
    * Applies border radius to the Button icon.
    */
   circle: PropTypes.bool,
+  /**
+   * Test selectors
+   */
+  'data-testid': PropTypes.string,
   /**
    * Disables the button.
    */
@@ -258,6 +264,7 @@ Button.propTypes = {
 Button.defaultProps = {
   children: null,
   circle: false,
+  'data-testid': null,
   disabled: false,
   displayChildrenWhenLoading: false,
   fill: 'flat',
