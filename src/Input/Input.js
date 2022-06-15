@@ -202,6 +202,7 @@ class Input extends React.PureComponent {
 
   render () {
     const {
+      'data-test': dataTestId,
       base,
       className,
       disabled,
@@ -280,7 +281,7 @@ class Input extends React.PureComponent {
             )}
           </div>
           {hasSecondaryText && (
-            <p className={theme.secondaryText}>
+            <p className={theme.secondaryText} data-test={dataTestId}>
               {error || hint}
             </p>
           )}
@@ -299,6 +300,10 @@ Input.propTypes = {
    * Aditional CSS classes which can be applied to the input.
    */
   className: PropTypes.string,
+  /**
+   * Test selectors
+   */
+  'data-test': PropTypes.string,
   /**
    * The prop that disables the component.
    */
@@ -423,6 +428,7 @@ Input.propTypes = {
 Input.defaultProps = {
   base: 'light',
   className: '',
+  'data-test': null,
   disabled: false,
   error: '',
   hint: '',
