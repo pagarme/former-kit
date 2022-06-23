@@ -36,12 +36,14 @@ const Row = ({
   stretch,
   theme,
 }) => (
-  <div data-testid={dataTestId} className={classnames({
-    className,
-    flex,
-    stretch,
-    theme,
-  })}
+  <div
+    data-testid={dataTestId}
+    className={classnames({
+      className,
+      flex,
+      stretch,
+      theme,
+    })}
   >
     {children}
   </div>

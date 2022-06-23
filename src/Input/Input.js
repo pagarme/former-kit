@@ -202,9 +202,9 @@ class Input extends React.PureComponent {
 
   render () {
     const {
-      'data-test': dataTestId,
       base,
       className,
+      'data-test': dataTestId,
       disabled,
       error,
       hint,
