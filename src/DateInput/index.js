@@ -257,11 +257,13 @@ class DateInput extends React.Component {
 
   renderInputs () {
     const {
+      'data-testid': dataTestId,
       icon,
       limits,
       showCalendar,
       strings,
       theme,
+
     } = this.props
 
     const {
@@ -296,6 +298,7 @@ class DateInput extends React.Component {
           })}
         >
           <MaskedInput
+            data-testid={`${dataTestId}-start-date`}
             autoComplete="off"
             className={theme.input}
             id={`${this.name}-startDate`}
@@ -324,6 +327,7 @@ class DateInput extends React.Component {
               })}
             >
               <MaskedInput
+                data-testid={`${dataTestId}-end-date`}
                 autoComplete="off"
                 className={theme.input}
                 mask={inputDateMask()}
@@ -350,6 +354,7 @@ class DateInput extends React.Component {
   render () {
     const {
       active,
+      'data-testid': dataTestId,
       isValidDay,
       limits,
       presets,
@@ -373,6 +378,7 @@ class DateInput extends React.Component {
 
     return (
       <DateSelector
+        data-testid={dataTestId}
         dates={isValidDates ? momentDates : {}}
         focusedInput={focusedInput}
         isValidDay={isValidDay}
@@ -408,6 +414,10 @@ DateInput.propTypes = {
    * Enable/disable the component.
    */
   active: bool,
+  /**
+   * Test selectors
+   */
+  'data-testid': string,
   /**
    * Initial dates to be pre selected.
    */
@@ -508,6 +518,7 @@ DateInput.propTypes = {
 
 DateInput.defaultProps = {
   active: false,
+  'data-testid': null,
   dates: {
     end: null,
     start: null,
