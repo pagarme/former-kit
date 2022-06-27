@@ -11391,6 +11391,7 @@ exports[`Storyshots DateInput with sidebar 1`] = `
                 <input
                   autoComplete="off"
                   className="input"
+                  data-testid="null-start-date"
                   id="shortid-mock-startDate"
                   mask="11/11/1111"
                   maxLength={10}
@@ -11419,6 +11420,7 @@ exports[`Storyshots DateInput with sidebar 1`] = `
                 <input
                   autoComplete="off"
                   className="input"
+                  data-testid="null-end-date"
                   mask="11/11/1111"
                   maxLength={10}
                   name="endDate"
@@ -11481,6 +11483,7 @@ exports[`Storyshots DateInput with sidebar and clear button 1`] = `
                 <input
                   autoComplete="off"
                   className="input"
+                  data-testid="null-start-date"
                   id="shortid-mock-startDate"
                   mask="11/11/1111"
                   maxLength={10}
@@ -11509,6 +11512,7 @@ exports[`Storyshots DateInput with sidebar and clear button 1`] = `
                 <input
                   autoComplete="off"
                   className="input"
+                  data-testid="null-end-date"
                   mask="11/11/1111"
                   maxLength={10}
                   name="endDate"
@@ -11657,6 +11661,7 @@ exports[`Storyshots DateInput with sidebar and selected preset 1`] = `
                 <input
                   autoComplete="off"
                   className="input"
+                  data-testid="null-start-date"
                   id="shortid-mock-startDate"
                   mask="11/11/1111"
                   maxLength={10}
@@ -11685,6 +11690,7 @@ exports[`Storyshots DateInput with sidebar and selected preset 1`] = `
                 <input
                   autoComplete="off"
                   className="input"
+                  data-testid="null-end-date"
                   mask="11/11/1111"
                   maxLength={10}
                   name="endDate"
@@ -11747,6 +11753,7 @@ exports[`Storyshots DateInput with sidebar first 1`] = `
                 <input
                   autoComplete="off"
                   className="input"
+                  data-testid="null-start-date"
                   id="shortid-mock-startDate"
                   mask="11/11/1111"
                   maxLength={10}
@@ -11775,6 +11782,7 @@ exports[`Storyshots DateInput with sidebar first 1`] = `
                 <input
                   autoComplete="off"
                   className="input"
+                  data-testid="null-end-date"
                   mask="11/11/1111"
                   maxLength={10}
                   name="endDate"
@@ -11837,6 +11845,7 @@ exports[`Storyshots DateInput without sidebar and period selection 1`] = `
                 <input
                   autoComplete="off"
                   className="input"
+                  data-testid="null-start-date"
                   id="shortid-mock-startDate"
                   mask="11/11/1111"
                   maxLength={10}
@@ -11865,6 +11874,7 @@ exports[`Storyshots DateInput without sidebar and period selection 1`] = `
                 <input
                   autoComplete="off"
                   className="input"
+                  data-testid="null-end-date"
                   mask="11/11/1111"
                   maxLength={10}
                   name="endDate"
@@ -11927,6 +11937,7 @@ exports[`Storyshots DateInput without sidebar and pre selected date 1`] = `
                 <input
                   autoComplete="off"
                   className="input"
+                  data-testid="null-start-date"
                   id="shortid-mock-startDate"
                   mask="11/11/1111"
                   maxLength={10}
@@ -11955,6 +11966,7 @@ exports[`Storyshots DateInput without sidebar and pre selected date 1`] = `
                 <input
                   autoComplete="off"
                   className="input"
+                  data-testid="null-end-date"
                   mask="11/11/1111"
                   maxLength={10}
                   name="endDate"
@@ -12017,6 +12029,7 @@ exports[`Storyshots DateInput without sidebar and pre selected period 1`] = `
                 <input
                   autoComplete="off"
                   className="input"
+                  data-testid="null-start-date"
                   id="shortid-mock-startDate"
                   mask="11/11/1111"
                   maxLength={10}
@@ -12045,6 +12058,7 @@ exports[`Storyshots DateInput without sidebar and pre selected period 1`] = `
                 <input
                   autoComplete="off"
                   className="input"
+                  data-testid="null-end-date"
                   mask="11/11/1111"
                   maxLength={10}
                   name="endDate"
@@ -12107,6 +12121,7 @@ exports[`Storyshots DateInput without sidebar and single selection 1`] = `
                 <input
                   autoComplete="off"
                   className="input"
+                  data-testid="null-start-date"
                   id="shortid-mock-startDate"
                   mask="11/11/1111"
                   maxLength={10}
@@ -12135,6 +12150,7 @@ exports[`Storyshots DateInput without sidebar and single selection 1`] = `
                 <input
                   autoComplete="off"
                   className="input"
+                  data-testid="null-end-date"
                   mask="11/11/1111"
                   maxLength={10}
                   name="endDate"
@@ -12183,6 +12199,7 @@ exports[`Storyshots DateSelector Aside 1`] = `
             type="radio"
           />
           <label
+            data-testid="null-aside-today"
             htmlFor="my-asidetoday"
           >
             today
@@ -12197,6 +12214,7 @@ exports[`Storyshots DateSelector Aside 1`] = `
             type="radio"
           />
           <label
+            data-testid="null-aside-any-day"
             htmlFor="my-asideany-day"
           >
             any day
@@ -12211,6 +12229,7 @@ exports[`Storyshots DateSelector Aside 1`] = `
             type="radio"
           />
           <label
+            data-testid="null-aside-any-period"
             htmlFor="my-asideany-date"
           >
             any period
@@ -12229,6 +12248,7 @@ exports[`Storyshots DateSelector Aside 1`] = `
               type="radio"
             />
             <label
+              data-testid="null-aside-7-days"
               htmlFor="my-asidelast-7"
             >
               7 days
@@ -12243,6 +12263,7 @@ exports[`Storyshots DateSelector Aside 1`] = `
               type="radio"
             />
             <label
+              data-testid="null-aside-15-days"
               htmlFor="my-asidelast-15"
             >
               15 days
@@ -12257,6 +12278,7 @@ exports[`Storyshots DateSelector Aside 1`] = `
               type="radio"
             />
             <label
+              data-testid="null-aside-30-days"
               htmlFor="my-asidelast-30"
             >
               30 days
@@ -12271,6 +12293,7 @@ exports[`Storyshots DateSelector Aside 1`] = `
               type="radio"
             />
             <label
+              data-testid="null-aside-60-days"
               htmlFor="my-asidelast-60"
             >
               60 days
@@ -12290,6 +12313,7 @@ exports[`Storyshots DateSelector Aside 1`] = `
               type="radio"
             />
             <label
+              data-testid="null-aside-7-days"
               htmlFor="my-asidenext-7"
             >
               7 days
@@ -12304,6 +12328,7 @@ exports[`Storyshots DateSelector Aside 1`] = `
               type="radio"
             />
             <label
+              data-testid="null-aside-15-days"
               htmlFor="my-asidenext-15"
             >
               15 days
@@ -12318,6 +12343,7 @@ exports[`Storyshots DateSelector Aside 1`] = `
               type="radio"
             />
             <label
+              data-testid="null-aside-30-days"
               htmlFor="my-asidenext-30"
             >
               30 days
@@ -12332,6 +12358,7 @@ exports[`Storyshots DateSelector Aside 1`] = `
               type="radio"
             />
             <label
+              data-testid="null-aside-60-days"
               htmlFor="my-asidenext-60"
             >
               60 days
@@ -12365,6 +12392,7 @@ exports[`Storyshots DateSelector Aside with initial selected preset 1`] = `
             type="radio"
           />
           <label
+            data-testid="null-aside-today"
             htmlFor="my-asidetoday"
           >
             today
@@ -12379,6 +12407,7 @@ exports[`Storyshots DateSelector Aside with initial selected preset 1`] = `
             type="radio"
           />
           <label
+            data-testid="null-aside-any-day"
             htmlFor="my-asideany-day"
           >
             any day
@@ -12393,6 +12422,7 @@ exports[`Storyshots DateSelector Aside with initial selected preset 1`] = `
             type="radio"
           />
           <label
+            data-testid="null-aside-any-period"
             htmlFor="my-asideany-date"
           >
             any period
@@ -12411,6 +12441,7 @@ exports[`Storyshots DateSelector Aside with initial selected preset 1`] = `
               type="radio"
             />
             <label
+              data-testid="null-aside-7-days"
               htmlFor="my-asidelast-7"
             >
               7 days
@@ -12425,6 +12456,7 @@ exports[`Storyshots DateSelector Aside with initial selected preset 1`] = `
               type="radio"
             />
             <label
+              data-testid="null-aside-15-days"
               htmlFor="my-asidelast-15"
             >
               15 days
@@ -12439,6 +12471,7 @@ exports[`Storyshots DateSelector Aside with initial selected preset 1`] = `
               type="radio"
             />
             <label
+              data-testid="null-aside-30-days"
               htmlFor="my-asidelast-30"
             >
               30 days
@@ -12453,6 +12486,7 @@ exports[`Storyshots DateSelector Aside with initial selected preset 1`] = `
               type="radio"
             />
             <label
+              data-testid="null-aside-60-days"
               htmlFor="my-asidelast-60"
             >
               60 days
@@ -12472,6 +12506,7 @@ exports[`Storyshots DateSelector Aside with initial selected preset 1`] = `
               type="radio"
             />
             <label
+              data-testid="null-aside-7-days"
               htmlFor="my-asidenext-7"
             >
               7 days
@@ -12486,6 +12521,7 @@ exports[`Storyshots DateSelector Aside with initial selected preset 1`] = `
               type="radio"
             />
             <label
+              data-testid="null-aside-15-days"
               htmlFor="my-asidenext-15"
             >
               15 days
@@ -12500,6 +12536,7 @@ exports[`Storyshots DateSelector Aside with initial selected preset 1`] = `
               type="radio"
             />
             <label
+              data-testid="null-aside-30-days"
               htmlFor="my-asidenext-30"
             >
               30 days
@@ -12514,6 +12551,7 @@ exports[`Storyshots DateSelector Aside with initial selected preset 1`] = `
               type="radio"
             />
             <label
+              data-testid="null-aside-60-days"
               htmlFor="my-asidenext-60"
             >
               60 days
