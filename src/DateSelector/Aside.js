@@ -40,7 +40,7 @@ class Aside extends Component {
     const id = `${name}${key}`
     const asideKey = `${key}${label}`
     const labelFormat = label.replace(' ', '-').toLowerCase()
-    const uniqueDataTestId= `${dataTestId}-aside-${labelFormat}`
+    const uniqueDataTestId = `${dataTestId}-aside-${labelFormat}`
 
     return (
       <li key={asideKey}>
