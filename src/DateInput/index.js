@@ -312,7 +312,7 @@ class DateInput extends React.Component {
             size="8"
             value={dates.start}
           />
-          <span className={theme.expander}>
+          <span className={theme.expander} data-testid="span-start-date">
             {initialPlaceholder}
           </span>
         </div>
@@ -339,7 +339,7 @@ class DateInput extends React.Component {
                 size="8"
                 value={dates.end}
               />
-              <span className={theme.expander}>
+              <span className={theme.expander} data-testid="span-end-date">
                 {dates.end || translatedStrings.end}
               </span>
             </div>
