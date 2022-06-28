@@ -11407,6 +11407,7 @@ exports[`Storyshots DateInput with sidebar 1`] = `
                 />
                 <span
                   className="expander"
+                  data-testid="span-start-date"
                 >
                   09/23/2017
                 </span>
@@ -11435,6 +11436,7 @@ exports[`Storyshots DateInput with sidebar 1`] = `
                 />
                 <span
                   className="expander"
+                  data-testid="span-end-date"
                 >
                   09/30/2017
                 </span>
@@ -11499,6 +11501,7 @@ exports[`Storyshots DateInput with sidebar and clear button 1`] = `
                 />
                 <span
                   className="expander"
+                  data-testid="span-start-date"
                 >
                   09/23/2017
                 </span>
@@ -11527,6 +11530,7 @@ exports[`Storyshots DateInput with sidebar and clear button 1`] = `
                 />
                 <span
                   className="expander"
+                  data-testid="span-end-date"
                 >
                   09/30/2017
                 </span>
@@ -11677,6 +11681,7 @@ exports[`Storyshots DateInput with sidebar and selected preset 1`] = `
                 />
                 <span
                   className="expander"
+                  data-testid="span-start-date"
                 >
                   09/23/2017
                 </span>
@@ -11705,6 +11710,7 @@ exports[`Storyshots DateInput with sidebar and selected preset 1`] = `
                 />
                 <span
                   className="expander"
+                  data-testid="span-end-date"
                 >
                   09/30/2017
                 </span>
@@ -11769,6 +11775,7 @@ exports[`Storyshots DateInput with sidebar first 1`] = `
                 />
                 <span
                   className="expander"
+                  data-testid="span-start-date"
                 >
                   09/23/2017
                 </span>
@@ -11797,6 +11804,7 @@ exports[`Storyshots DateInput with sidebar first 1`] = `
                 />
                 <span
                   className="expander"
+                  data-testid="span-end-date"
                 >
                   09/30/2017
                 </span>
@@ -11861,6 +11869,7 @@ exports[`Storyshots DateInput without sidebar and period selection 1`] = `
                 />
                 <span
                   className="expander"
+                  data-testid="span-start-date"
                 >
                   09/23/2017
                 </span>
@@ -11889,6 +11898,7 @@ exports[`Storyshots DateInput without sidebar and period selection 1`] = `
                 />
                 <span
                   className="expander"
+                  data-testid="span-end-date"
                 >
                   09/30/2017
                 </span>
@@ -11953,6 +11963,7 @@ exports[`Storyshots DateInput without sidebar and pre selected date 1`] = `
                 />
                 <span
                   className="expander"
+                  data-testid="span-start-date"
                 >
                   09/23/2017
                 </span>
@@ -11981,6 +11992,7 @@ exports[`Storyshots DateInput without sidebar and pre selected date 1`] = `
                 />
                 <span
                   className="expander"
+                  data-testid="span-end-date"
                 >
                   09/30/2017
                 </span>
@@ -12045,6 +12057,7 @@ exports[`Storyshots DateInput without sidebar and pre selected period 1`] = `
                 />
                 <span
                   className="expander"
+                  data-testid="span-start-date"
                 >
                   09/23/2017
                 </span>
@@ -12073,6 +12086,7 @@ exports[`Storyshots DateInput without sidebar and pre selected period 1`] = `
                 />
                 <span
                   className="expander"
+                  data-testid="span-end-date"
                 >
                   09/30/2017
                 </span>
@@ -12137,6 +12151,7 @@ exports[`Storyshots DateInput without sidebar and single selection 1`] = `
                 />
                 <span
                   className="expander"
+                  data-testid="span-start-date"
                 >
                   09/23/2017
                 </span>
@@ -12165,6 +12180,7 @@ exports[`Storyshots DateInput without sidebar and single selection 1`] = `
                 />
                 <span
                   className="expander"
+                  data-testid="span-end-date"
                 >
                   09/30/2017
                 </span>
