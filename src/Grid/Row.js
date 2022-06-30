@@ -31,16 +31,19 @@ const classnames = ({
 const Row = ({
   children,
   className,
+  'data-testid': dataTestId,
   flex,
   stretch,
   theme,
 }) => (
-  <div className={classnames({
-    className,
-    flex,
-    stretch,
-    theme,
-  })}
+  <div
+    data-testid={dataTestId}
+    className={classnames({
+      className,
+      flex,
+      stretch,
+      theme,
+    })}
   >
     {children}
   </div>
@@ -55,6 +58,10 @@ Row.propTypes = {
    * Custom CSS class which will be applied to the row.
    */
   className: string,
+  /**
+   * Test selectors
+   */
+  'data-testid': string,
   /**
    * Make columns grow horizontally.
    */
@@ -76,6 +83,7 @@ Row.propTypes = {
 Row.defaultProps = {
   children: null,
   className: null,
+  'data-testid': null,
   flex: false,
   stretch: false,
   theme: {},

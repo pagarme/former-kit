@@ -31,6 +31,7 @@ const addProp = uncurryN(2, property => map(
 class Aside extends Component {
   renderRadio ({ date, key, label }) {
     const {
+      'data-testid': dataTestId,
       name,
       onChange,
       selectedPreset,
@@ -38,6 +39,8 @@ class Aside extends Component {
 
     const id = `${name}${key}`
     const asideKey = `${key}${label}`
+    const labelFormat = label.replace(' ', '-').toLowerCase()
+    const uniqueDataTestId = `${dataTestId}-aside-${labelFormat}`
 
     return (
       <li key={asideKey}>
@@ -48,7 +51,7 @@ class Aside extends Component {
           checked={selectedPreset && selectedPreset === key}
           onChange={() => onChange(date(), key)}
         />
-        <label htmlFor={id}>
+        <label htmlFor={id} data-testid={uniqueDataTestId}>
           {label}
         </label>
       </li>
@@ -91,6 +94,10 @@ class Aside extends Component {
 }
 
 Aside.propTypes = {
+  /**
+   * Test selectors
+   */
+  'data-testid': PropType.string,
   /**
    * The name to be used on every rendered radio.
    */
@@ -160,6 +167,7 @@ Aside.propTypes = {
 }
 
 Aside.defaultProps = {
+  'data-testid': null,
   selectedPreset: null,
   theme: {},
 }

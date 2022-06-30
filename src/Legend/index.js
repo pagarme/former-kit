@@ -29,6 +29,7 @@ const Legend = ({
   acronym,
   children,
   color,
+  'data-testid': dataTestId,
   hideLabel,
   textColor,
   textFormat,
@@ -42,6 +43,7 @@ const Legend = ({
   return (
     <div className={theme.legend}>
       <abbr
+        data-testid={dataTestId}
         title={children}
         className={labelClasses}
         style={{
@@ -74,6 +76,10 @@ Legend.propTypes = {
    */
   color: PropTypes.string.isRequired,
   /**
+   * Test selectors
+   */
+  'data-testid': PropTypes.string,
+  /**
    * Hides the received label and shows only the acronym.
    */
   hideLabel: PropTypes.bool,
@@ -98,6 +104,7 @@ Legend.propTypes = {
 Legend.defaultProps = {
   acronym: '',
   children: [],
+  'data-testid': null,
   hideLabel: false,
   textColor: '#ffffff',
   textFormat: 'uppercase',

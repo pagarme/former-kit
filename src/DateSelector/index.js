@@ -281,6 +281,7 @@ class DateSelector extends Component {
   render () {
     const {
       children,
+      'data-testid': dataTestId,
       placement,
       presets,
       selectedPreset,
@@ -297,6 +298,7 @@ class DateSelector extends Component {
               { showSidebar && (
                 <div className={theme.sidebar}>
                   <Aside
+                    data-testid={dataTestId}
                     presets={presets}
                     selectedPreset={selectedPreset}
                     name={this.instanceId}
@@ -329,6 +331,10 @@ DateSelector.propTypes = {
    *
    */
   children: element.isRequired,
+  /**
+   * Test selectors
+   */
+  'data-testid': string,
   /**
    * Selected dates.
    */
@@ -465,6 +471,7 @@ DateSelector.propTypes = {
 }
 
 DateSelector.defaultProps = {
+  'data-testid': null,
   dates: {},
   focusedInput: null,
   icons: {},

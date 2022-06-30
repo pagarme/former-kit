@@ -13,6 +13,7 @@ import classNames from 'classnames'
  */
 const Checkbox = ({
   checked,
+  'data-testid': dataTestId,
   disabled,
   error,
   label,
@@ -36,6 +37,7 @@ const Checkbox = ({
         className={theme.label}
       >
         <input
+          data-testid={dataTestId}
           type="checkbox"
           name={name}
           value={value}
@@ -64,6 +66,10 @@ Checkbox.propTypes = {
    * Same as the `checked` value prop from the HTML checkbox.
    */
   checked: bool.isRequired,
+  /**
+   * Test selectors
+   */
+  'data-testid': string,
   /**
    * Same as the `disabled` value prop from the HTML checkbox.
    */
@@ -102,6 +108,7 @@ Checkbox.propTypes = {
 }
 
 Checkbox.defaultProps = {
+  'data-testid': null,
   disabled: false,
   error: '',
   name: '',

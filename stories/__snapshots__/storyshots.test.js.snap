@@ -10424,6 +10424,7 @@ exports[`Storyshots Checkbox Default 1`] = `
           >
             <input
               checked={false}
+              data-testid={null}
               disabled={false}
               id="default-"
               name="default"
@@ -10451,6 +10452,7 @@ exports[`Storyshots Checkbox Default 1`] = `
           >
             <input
               checked={true}
+              data-testid={null}
               disabled={false}
               id="checkedDefault-"
               name="checkedDefault"
@@ -10487,6 +10489,7 @@ exports[`Storyshots Checkbox Default 1`] = `
           >
             <input
               checked={true}
+              data-testid={null}
               disabled={false}
               id="default-Error"
               name="default"
@@ -10527,6 +10530,7 @@ exports[`Storyshots Checkbox Default 1`] = `
           >
             <input
               checked={false}
+              data-testid={null}
               disabled={true}
               id="disabled-"
               name="disabled"
@@ -10554,6 +10558,7 @@ exports[`Storyshots Checkbox Default 1`] = `
           >
             <input
               checked={true}
+              data-testid={null}
               disabled={true}
               id="checkedDisabled-"
               name="checkedDisabled"
@@ -10601,6 +10606,7 @@ exports[`Storyshots Checkbox Form 1`] = `
           >
             <input
               checked={false}
+              data-testid={null}
               disabled={false}
               id="default-"
               name="default"
@@ -10628,6 +10634,7 @@ exports[`Storyshots Checkbox Form 1`] = `
           >
             <input
               checked={true}
+              data-testid={null}
               disabled={false}
               id="checkedDefault-"
               name="checkedDefault"
@@ -10664,6 +10671,7 @@ exports[`Storyshots Checkbox Form 1`] = `
           >
             <input
               checked={true}
+              data-testid={null}
               disabled={false}
               id="default-Error"
               name="default"
@@ -10704,6 +10712,7 @@ exports[`Storyshots Checkbox Form 1`] = `
           >
             <input
               checked={false}
+              data-testid={null}
               disabled={true}
               id="disabled-"
               name="disabled"
@@ -10731,6 +10740,7 @@ exports[`Storyshots Checkbox Form 1`] = `
           >
             <input
               checked={true}
+              data-testid={null}
               disabled={true}
               id="checkedDisabled-"
               name="checkedDisabled"
@@ -10784,6 +10794,7 @@ exports[`Storyshots Checkbox Group Default 1`] = `
                   >
                     <input
                       checked={true}
+                      data-testid={null}
                       disabled={false}
                       id="default-github-github"
                       name="default-github"
@@ -10811,6 +10822,7 @@ exports[`Storyshots Checkbox Group Default 1`] = `
                   >
                     <input
                       checked={false}
+                      data-testid={null}
                       disabled={false}
                       id="default-open-source-open-source"
                       name="default-open-source"
@@ -10838,6 +10850,7 @@ exports[`Storyshots Checkbox Group Default 1`] = `
                   >
                     <input
                       checked={false}
+                      data-testid={null}
                       disabled={false}
                       id="default-pilot-pilot"
                       name="default-pilot"
@@ -10867,6 +10880,7 @@ exports[`Storyshots Checkbox Group Default 1`] = `
                   >
                     <input
                       checked={false}
+                      data-testid={null}
                       disabled={false}
                       id="default-react-react"
                       name="default-react"
@@ -10894,6 +10908,7 @@ exports[`Storyshots Checkbox Group Default 1`] = `
                   >
                     <input
                       checked={false}
+                      data-testid={null}
                       disabled={false}
                       id="default-Storybook-Storybook"
                       name="default-Storybook"
@@ -10945,6 +10960,7 @@ exports[`Storyshots Checkbox Group Default 1`] = `
                   >
                     <input
                       checked={true}
+                      data-testid={null}
                       disabled={false}
                       id="error-github-github"
                       name="error-github"
@@ -10972,6 +10988,7 @@ exports[`Storyshots Checkbox Group Default 1`] = `
                   >
                     <input
                       checked={false}
+                      data-testid={null}
                       disabled={false}
                       id="error-open-source-open-source"
                       name="error-open-source"
@@ -10999,6 +11016,7 @@ exports[`Storyshots Checkbox Group Default 1`] = `
                   >
                     <input
                       checked={false}
+                      data-testid={null}
                       disabled={false}
                       id="error-pilot-pilot"
                       name="error-pilot"
@@ -11028,6 +11046,7 @@ exports[`Storyshots Checkbox Group Default 1`] = `
                   >
                     <input
                       checked={false}
+                      data-testid={null}
                       disabled={false}
                       id="error-react-react"
                       name="error-react"
@@ -11055,6 +11074,7 @@ exports[`Storyshots Checkbox Group Default 1`] = `
                   >
                     <input
                       checked={false}
+                      data-testid={null}
                       disabled={false}
                       id="error-Storybook-Storybook"
                       name="error-Storybook"
@@ -11110,6 +11130,7 @@ exports[`Storyshots Checkbox Group Default 1`] = `
                   >
                     <input
                       checked={true}
+                      data-testid={null}
                       disabled={true}
                       id="disabled-github-github"
                       name="disabled-github"
@@ -11137,6 +11158,7 @@ exports[`Storyshots Checkbox Group Default 1`] = `
                   >
                     <input
                       checked={false}
+                      data-testid={null}
                       disabled={true}
                       id="disabled-open-source-open-source"
                       name="disabled-open-source"
@@ -11164,6 +11186,7 @@ exports[`Storyshots Checkbox Group Default 1`] = `
                   >
                     <input
                       checked={false}
+                      data-testid={null}
                       disabled={true}
                       id="disabled-pilot-pilot"
                       name="disabled-pilot"
@@ -11193,6 +11216,7 @@ exports[`Storyshots Checkbox Group Default 1`] = `
                   >
                     <input
                       checked={false}
+                      data-testid={null}
                       disabled={true}
                       id="disabled-react-react"
                       name="disabled-react"
@@ -11220,6 +11244,7 @@ exports[`Storyshots Checkbox Group Default 1`] = `
                   >
                     <input
                       checked={false}
+                      data-testid={null}
                       disabled={true}
                       id="disabled-Storybook-Storybook"
                       name="disabled-Storybook"
@@ -11366,6 +11391,7 @@ exports[`Storyshots DateInput with sidebar 1`] = `
                 <input
                   autoComplete="off"
                   className="input"
+                  data-testid="null-start-date"
                   id="shortid-mock-startDate"
                   mask="11/11/1111"
                   maxLength={10}
@@ -11381,6 +11407,7 @@ exports[`Storyshots DateInput with sidebar 1`] = `
                 />
                 <span
                   className="expander"
+                  data-testid="span-start-date"
                 >
                   09/23/2017
                 </span>
@@ -11394,6 +11421,7 @@ exports[`Storyshots DateInput with sidebar 1`] = `
                 <input
                   autoComplete="off"
                   className="input"
+                  data-testid="null-end-date"
                   mask="11/11/1111"
                   maxLength={10}
                   name="endDate"
@@ -11408,6 +11436,7 @@ exports[`Storyshots DateInput with sidebar 1`] = `
                 />
                 <span
                   className="expander"
+                  data-testid="span-end-date"
                 >
                   09/30/2017
                 </span>
@@ -11456,6 +11485,7 @@ exports[`Storyshots DateInput with sidebar and clear button 1`] = `
                 <input
                   autoComplete="off"
                   className="input"
+                  data-testid="null-start-date"
                   id="shortid-mock-startDate"
                   mask="11/11/1111"
                   maxLength={10}
@@ -11471,6 +11501,7 @@ exports[`Storyshots DateInput with sidebar and clear button 1`] = `
                 />
                 <span
                   className="expander"
+                  data-testid="span-start-date"
                 >
                   09/23/2017
                 </span>
@@ -11484,6 +11515,7 @@ exports[`Storyshots DateInput with sidebar and clear button 1`] = `
                 <input
                   autoComplete="off"
                   className="input"
+                  data-testid="null-end-date"
                   mask="11/11/1111"
                   maxLength={10}
                   name="endDate"
@@ -11498,6 +11530,7 @@ exports[`Storyshots DateInput with sidebar and clear button 1`] = `
                 />
                 <span
                   className="expander"
+                  data-testid="span-end-date"
                 >
                   09/30/2017
                 </span>
@@ -11632,6 +11665,7 @@ exports[`Storyshots DateInput with sidebar and selected preset 1`] = `
                 <input
                   autoComplete="off"
                   className="input"
+                  data-testid="null-start-date"
                   id="shortid-mock-startDate"
                   mask="11/11/1111"
                   maxLength={10}
@@ -11647,6 +11681,7 @@ exports[`Storyshots DateInput with sidebar and selected preset 1`] = `
                 />
                 <span
                   className="expander"
+                  data-testid="span-start-date"
                 >
                   09/23/2017
                 </span>
@@ -11660,6 +11695,7 @@ exports[`Storyshots DateInput with sidebar and selected preset 1`] = `
                 <input
                   autoComplete="off"
                   className="input"
+                  data-testid="null-end-date"
                   mask="11/11/1111"
                   maxLength={10}
                   name="endDate"
@@ -11674,6 +11710,7 @@ exports[`Storyshots DateInput with sidebar and selected preset 1`] = `
                 />
                 <span
                   className="expander"
+                  data-testid="span-end-date"
                 >
                   09/30/2017
                 </span>
@@ -11722,6 +11759,7 @@ exports[`Storyshots DateInput with sidebar first 1`] = `
                 <input
                   autoComplete="off"
                   className="input"
+                  data-testid="null-start-date"
                   id="shortid-mock-startDate"
                   mask="11/11/1111"
                   maxLength={10}
@@ -11737,6 +11775,7 @@ exports[`Storyshots DateInput with sidebar first 1`] = `
                 />
                 <span
                   className="expander"
+                  data-testid="span-start-date"
                 >
                   09/23/2017
                 </span>
@@ -11750,6 +11789,7 @@ exports[`Storyshots DateInput with sidebar first 1`] = `
                 <input
                   autoComplete="off"
                   className="input"
+                  data-testid="null-end-date"
                   mask="11/11/1111"
                   maxLength={10}
                   name="endDate"
@@ -11764,6 +11804,7 @@ exports[`Storyshots DateInput with sidebar first 1`] = `
                 />
                 <span
                   className="expander"
+                  data-testid="span-end-date"
                 >
                   09/30/2017
                 </span>
@@ -11812,6 +11853,7 @@ exports[`Storyshots DateInput without sidebar and period selection 1`] = `
                 <input
                   autoComplete="off"
                   className="input"
+                  data-testid="null-start-date"
                   id="shortid-mock-startDate"
                   mask="11/11/1111"
                   maxLength={10}
@@ -11827,6 +11869,7 @@ exports[`Storyshots DateInput without sidebar and period selection 1`] = `
                 />
                 <span
                   className="expander"
+                  data-testid="span-start-date"
                 >
                   09/23/2017
                 </span>
@@ -11840,6 +11883,7 @@ exports[`Storyshots DateInput without sidebar and period selection 1`] = `
                 <input
                   autoComplete="off"
                   className="input"
+                  data-testid="null-end-date"
                   mask="11/11/1111"
                   maxLength={10}
                   name="endDate"
@@ -11854,6 +11898,7 @@ exports[`Storyshots DateInput without sidebar and period selection 1`] = `
                 />
                 <span
                   className="expander"
+                  data-testid="span-end-date"
                 >
                   09/30/2017
                 </span>
@@ -11902,6 +11947,7 @@ exports[`Storyshots DateInput without sidebar and pre selected date 1`] = `
                 <input
                   autoComplete="off"
                   className="input"
+                  data-testid="null-start-date"
                   id="shortid-mock-startDate"
                   mask="11/11/1111"
                   maxLength={10}
@@ -11917,6 +11963,7 @@ exports[`Storyshots DateInput without sidebar and pre selected date 1`] = `
                 />
                 <span
                   className="expander"
+                  data-testid="span-start-date"
                 >
                   09/23/2017
                 </span>
@@ -11930,6 +11977,7 @@ exports[`Storyshots DateInput without sidebar and pre selected date 1`] = `
                 <input
                   autoComplete="off"
                   className="input"
+                  data-testid="null-end-date"
                   mask="11/11/1111"
                   maxLength={10}
                   name="endDate"
@@ -11944,6 +11992,7 @@ exports[`Storyshots DateInput without sidebar and pre selected date 1`] = `
                 />
                 <span
                   className="expander"
+                  data-testid="span-end-date"
                 >
                   09/30/2017
                 </span>
@@ -11992,6 +12041,7 @@ exports[`Storyshots DateInput without sidebar and pre selected period 1`] = `
                 <input
                   autoComplete="off"
                   className="input"
+                  data-testid="null-start-date"
                   id="shortid-mock-startDate"
                   mask="11/11/1111"
                   maxLength={10}
@@ -12007,6 +12057,7 @@ exports[`Storyshots DateInput without sidebar and pre selected period 1`] = `
                 />
                 <span
                   className="expander"
+                  data-testid="span-start-date"
                 >
                   09/23/2017
                 </span>
@@ -12020,6 +12071,7 @@ exports[`Storyshots DateInput without sidebar and pre selected period 1`] = `
                 <input
                   autoComplete="off"
                   className="input"
+                  data-testid="null-end-date"
                   mask="11/11/1111"
                   maxLength={10}
                   name="endDate"
@@ -12034,6 +12086,7 @@ exports[`Storyshots DateInput without sidebar and pre selected period 1`] = `
                 />
                 <span
                   className="expander"
+                  data-testid="span-end-date"
                 >
                   09/30/2017
                 </span>
@@ -12082,6 +12135,7 @@ exports[`Storyshots DateInput without sidebar and single selection 1`] = `
                 <input
                   autoComplete="off"
                   className="input"
+                  data-testid="null-start-date"
                   id="shortid-mock-startDate"
                   mask="11/11/1111"
                   maxLength={10}
@@ -12097,6 +12151,7 @@ exports[`Storyshots DateInput without sidebar and single selection 1`] = `
                 />
                 <span
                   className="expander"
+                  data-testid="span-start-date"
                 >
                   09/23/2017
                 </span>
@@ -12110,6 +12165,7 @@ exports[`Storyshots DateInput without sidebar and single selection 1`] = `
                 <input
                   autoComplete="off"
                   className="input"
+                  data-testid="null-end-date"
                   mask="11/11/1111"
                   maxLength={10}
                   name="endDate"
@@ -12124,6 +12180,7 @@ exports[`Storyshots DateInput without sidebar and single selection 1`] = `
                 />
                 <span
                   className="expander"
+                  data-testid="span-end-date"
                 >
                   09/30/2017
                 </span>
@@ -12158,6 +12215,7 @@ exports[`Storyshots DateSelector Aside 1`] = `
             type="radio"
           />
           <label
+            data-testid="null-aside-today"
             htmlFor="my-asidetoday"
           >
             today
@@ -12172,6 +12230,7 @@ exports[`Storyshots DateSelector Aside 1`] = `
             type="radio"
           />
           <label
+            data-testid="null-aside-any-day"
             htmlFor="my-asideany-day"
           >
             any day
@@ -12186,6 +12245,7 @@ exports[`Storyshots DateSelector Aside 1`] = `
             type="radio"
           />
           <label
+            data-testid="null-aside-any-period"
             htmlFor="my-asideany-date"
           >
             any period
@@ -12204,6 +12264,7 @@ exports[`Storyshots DateSelector Aside 1`] = `
               type="radio"
             />
             <label
+              data-testid="null-aside-7-days"
               htmlFor="my-asidelast-7"
             >
               7 days
@@ -12218,6 +12279,7 @@ exports[`Storyshots DateSelector Aside 1`] = `
               type="radio"
             />
             <label
+              data-testid="null-aside-15-days"
               htmlFor="my-asidelast-15"
             >
               15 days
@@ -12232,6 +12294,7 @@ exports[`Storyshots DateSelector Aside 1`] = `
               type="radio"
             />
             <label
+              data-testid="null-aside-30-days"
               htmlFor="my-asidelast-30"
             >
               30 days
@@ -12246,6 +12309,7 @@ exports[`Storyshots DateSelector Aside 1`] = `
               type="radio"
             />
             <label
+              data-testid="null-aside-60-days"
               htmlFor="my-asidelast-60"
             >
               60 days
@@ -12265,6 +12329,7 @@ exports[`Storyshots DateSelector Aside 1`] = `
               type="radio"
             />
             <label
+              data-testid="null-aside-7-days"
               htmlFor="my-asidenext-7"
             >
               7 days
@@ -12279,6 +12344,7 @@ exports[`Storyshots DateSelector Aside 1`] = `
               type="radio"
             />
             <label
+              data-testid="null-aside-15-days"
               htmlFor="my-asidenext-15"
             >
               15 days
@@ -12293,6 +12359,7 @@ exports[`Storyshots DateSelector Aside 1`] = `
               type="radio"
             />
             <label
+              data-testid="null-aside-30-days"
               htmlFor="my-asidenext-30"
             >
               30 days
@@ -12307,6 +12374,7 @@ exports[`Storyshots DateSelector Aside 1`] = `
               type="radio"
             />
             <label
+              data-testid="null-aside-60-days"
               htmlFor="my-asidenext-60"
             >
               60 days
@@ -12340,6 +12408,7 @@ exports[`Storyshots DateSelector Aside with initial selected preset 1`] = `
             type="radio"
           />
           <label
+            data-testid="null-aside-today"
             htmlFor="my-asidetoday"
           >
             today
@@ -12354,6 +12423,7 @@ exports[`Storyshots DateSelector Aside with initial selected preset 1`] = `
             type="radio"
           />
           <label
+            data-testid="null-aside-any-day"
             htmlFor="my-asideany-day"
           >
             any day
@@ -12368,6 +12438,7 @@ exports[`Storyshots DateSelector Aside with initial selected preset 1`] = `
             type="radio"
           />
           <label
+            data-testid="null-aside-any-period"
             htmlFor="my-asideany-date"
           >
             any period
@@ -12386,6 +12457,7 @@ exports[`Storyshots DateSelector Aside with initial selected preset 1`] = `
               type="radio"
             />
             <label
+              data-testid="null-aside-7-days"
               htmlFor="my-asidelast-7"
             >
               7 days
@@ -12400,6 +12472,7 @@ exports[`Storyshots DateSelector Aside with initial selected preset 1`] = `
               type="radio"
             />
             <label
+              data-testid="null-aside-15-days"
               htmlFor="my-asidelast-15"
             >
               15 days
@@ -12414,6 +12487,7 @@ exports[`Storyshots DateSelector Aside with initial selected preset 1`] = `
               type="radio"
             />
             <label
+              data-testid="null-aside-30-days"
               htmlFor="my-asidelast-30"
             >
               30 days
@@ -12428,6 +12502,7 @@ exports[`Storyshots DateSelector Aside with initial selected preset 1`] = `
               type="radio"
             />
             <label
+              data-testid="null-aside-60-days"
               htmlFor="my-asidelast-60"
             >
               60 days
@@ -12447,6 +12522,7 @@ exports[`Storyshots DateSelector Aside with initial selected preset 1`] = `
               type="radio"
             />
             <label
+              data-testid="null-aside-7-days"
               htmlFor="my-asidenext-7"
             >
               7 days
@@ -12461,6 +12537,7 @@ exports[`Storyshots DateSelector Aside with initial selected preset 1`] = `
               type="radio"
             />
             <label
+              data-testid="null-aside-15-days"
               htmlFor="my-asidenext-15"
             >
               15 days
@@ -12475,6 +12552,7 @@ exports[`Storyshots DateSelector Aside with initial selected preset 1`] = `
               type="radio"
             />
             <label
+              data-testid="null-aside-30-days"
               htmlFor="my-asidenext-30"
             >
               30 days
@@ -12489,6 +12567,7 @@ exports[`Storyshots DateSelector Aside with initial selected preset 1`] = `
               type="radio"
             />
             <label
+              data-testid="null-aside-60-days"
               htmlFor="my-asidenext-60"
             >
               60 days
@@ -15525,6 +15604,7 @@ exports[`Storyshots Grid Column sizes 1`] = `
       >
         <div
           className="row"
+          data-testid={null}
         >
           <div
             className="col desk1 tv1 tablet1 palm1 startAlign"
@@ -15550,6 +15630,7 @@ exports[`Storyshots Grid Column sizes 1`] = `
         </div>
         <div
           className="row"
+          data-testid={null}
         >
           <div
             className="col desk2 tv2 tablet2 palm2 startAlign"
@@ -15575,6 +15656,7 @@ exports[`Storyshots Grid Column sizes 1`] = `
         </div>
         <div
           className="row"
+          data-testid={null}
         >
           <div
             className="col desk3 tv3 tablet3 palm3 startAlign"
@@ -15600,6 +15682,7 @@ exports[`Storyshots Grid Column sizes 1`] = `
         </div>
         <div
           className="row"
+          data-testid={null}
         >
           <div
             className="col desk4 tv4 tablet4 palm4 startAlign"
@@ -15625,6 +15708,7 @@ exports[`Storyshots Grid Column sizes 1`] = `
         </div>
         <div
           className="row"
+          data-testid={null}
         >
           <div
             className="col desk5 tv5 tablet5 palm5 startAlign"
@@ -15650,6 +15734,7 @@ exports[`Storyshots Grid Column sizes 1`] = `
         </div>
         <div
           className="row"
+          data-testid={null}
         >
           <div
             className="col desk6 tv6 tablet6 palm6 startAlign"
@@ -15675,6 +15760,7 @@ exports[`Storyshots Grid Column sizes 1`] = `
         </div>
         <div
           className="row"
+          data-testid={null}
         >
           <div
             className="col desk7 tv7 tablet7 palm7 startAlign"
@@ -15700,6 +15786,7 @@ exports[`Storyshots Grid Column sizes 1`] = `
         </div>
         <div
           className="row"
+          data-testid={null}
         >
           <div
             className="col desk8 tv8 tablet8 palm8 startAlign"
@@ -15725,6 +15812,7 @@ exports[`Storyshots Grid Column sizes 1`] = `
         </div>
         <div
           className="row"
+          data-testid={null}
         >
           <div
             className="col desk9 tv9 tablet9 palm9 startAlign"
@@ -15750,6 +15838,7 @@ exports[`Storyshots Grid Column sizes 1`] = `
         </div>
         <div
           className="row"
+          data-testid={null}
         >
           <div
             className="col desk10 tv10 tablet10 palm10 startAlign"
@@ -15775,6 +15864,7 @@ exports[`Storyshots Grid Column sizes 1`] = `
         </div>
         <div
           className="row"
+          data-testid={null}
         >
           <div
             className="col desk11 tv11 tablet11 palm11 startAlign"
@@ -15800,6 +15890,7 @@ exports[`Storyshots Grid Column sizes 1`] = `
         </div>
         <div
           className="row"
+          data-testid={null}
         >
           <div
             className="col desk12 tv12 tablet12 palm12 startAlign"
@@ -15843,6 +15934,7 @@ exports[`Storyshots Grid Flexible 1`] = `
       >
         <div
           className="row flex"
+          data-testid={null}
         >
           <div
             className="col desk8 tv6 tablet10 palm12 startAlign"
@@ -15887,6 +15979,7 @@ exports[`Storyshots Grid Flexible 1`] = `
         </div>
         <div
           className="row flex"
+          data-testid={null}
         >
           <div
             className="col desknull tvnull tabletnull palmnull startAlign"
@@ -15931,6 +16024,7 @@ exports[`Storyshots Grid Flexible 1`] = `
         </div>
         <div
           className="row flex"
+          data-testid={null}
         >
           <div
             className="col desknull tvnull tabletnull palmnull startAlign"
@@ -15993,6 +16087,7 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
       >
         <div
           className="row"
+          data-testid={null}
         >
           <div
             className="col desk12 tv12 tablet12 palm12 startAlign"
@@ -16018,6 +16113,7 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
         </div>
         <div
           className="row"
+          data-testid={null}
         >
           <div
             className="col desk6 tv6 tablet6 palm6 startAlign"
@@ -16064,6 +16160,7 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
         </div>
         <div
           className="row"
+          data-testid={null}
         >
           <div
             className="col desk4 tv4 tablet4 palm4 startAlign"
@@ -16131,6 +16228,7 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
         </div>
         <div
           className="row"
+          data-testid={null}
         >
           <div
             className="col desk3 tv3 tablet3 palm3 startAlign"
@@ -16219,6 +16317,7 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
         </div>
         <div
           className="row"
+          data-testid={null}
         >
           <div
             className="col desk2 tv2 tablet2 palm2 startAlign"
@@ -16349,6 +16448,7 @@ exports[`Storyshots Grid Proportional sizes 1`] = `
         </div>
         <div
           className="row"
+          data-testid={null}
         >
           <div
             className="col desk1 tv1 tablet1 palm1 startAlign"
@@ -16623,6 +16723,7 @@ exports[`Storyshots Grid Responsive 1`] = `
       >
         <div
           className="row stretch"
+          data-testid={null}
         >
           <div
             className="col desk3 tv3 tablet6 palm12 startAlign"
@@ -16703,6 +16804,7 @@ exports[`Storyshots Grid Responsive 1`] = `
         </div>
         <div
           className="row stretch"
+          data-testid={null}
         >
           <div
             className="col desk12 tv12 tablet12 palm12 startAlign"
@@ -16726,6 +16828,7 @@ exports[`Storyshots Grid Responsive 1`] = `
         </div>
         <div
           className="row stretch"
+          data-testid={null}
         >
           <div
             className="col desk6 tv6 tablet6 palm12 startAlign"
@@ -16768,6 +16871,7 @@ exports[`Storyshots Grid Responsive 1`] = `
         </div>
         <div
           className="row stretch"
+          data-testid={null}
         >
           <div
             className="col desk6 tv6 tablet6 palm12 startAlign"
@@ -16793,6 +16897,7 @@ exports[`Storyshots Grid Responsive 1`] = `
           >
             <div
               className="row stretch"
+              data-testid={null}
             >
               <div
                 className="col desk6 tv6 tablet12 palm12 startAlign"
@@ -16893,6 +16998,7 @@ exports[`Storyshots Grid Size combinations 1`] = `
       >
         <div
           className="row"
+          data-testid={null}
         >
           <div
             className="col desk3 tv3 tablet3 palm3 startAlign"
@@ -16939,6 +17045,7 @@ exports[`Storyshots Grid Size combinations 1`] = `
         </div>
         <div
           className="row"
+          data-testid={null}
         >
           <div
             className="col desk4 tv4 tablet4 palm4 startAlign"
@@ -16985,6 +17092,7 @@ exports[`Storyshots Grid Size combinations 1`] = `
         </div>
         <div
           className="row"
+          data-testid={null}
         >
           <div
             className="col desk5 tv5 tablet5 palm5 startAlign"
@@ -17031,6 +17139,7 @@ exports[`Storyshots Grid Size combinations 1`] = `
         </div>
         <div
           className="row"
+          data-testid={null}
         >
           <div
             className="col desk6 tv6 tablet6 palm6 startAlign"
@@ -17077,6 +17186,7 @@ exports[`Storyshots Grid Size combinations 1`] = `
         </div>
         <div
           className="row"
+          data-testid={null}
         >
           <div
             className="col desk7 tv7 tablet7 palm7 startAlign"
@@ -17123,6 +17233,7 @@ exports[`Storyshots Grid Size combinations 1`] = `
         </div>
         <div
           className="row"
+          data-testid={null}
         >
           <div
             className="col desk8 tv8 tablet8 palm8 startAlign"
@@ -17411,6 +17522,7 @@ exports[`Storyshots Inputs Default 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={false}
                 id="email-shortid-mock"
                 name="email"
@@ -17432,6 +17544,7 @@ exports[`Storyshots Inputs Default 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Secondary text
             </p>
@@ -17456,6 +17569,7 @@ exports[`Storyshots Inputs Default 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={false}
                 id="email-shortid-mock"
                 name="email"
@@ -17477,6 +17591,7 @@ exports[`Storyshots Inputs Default 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Secondary text
             </p>
@@ -17501,6 +17616,7 @@ exports[`Storyshots Inputs Default 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={false}
                 id="email-shortid-mock"
                 name="email"
@@ -17522,6 +17638,7 @@ exports[`Storyshots Inputs Default 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Secondary text
             </p>
@@ -17546,6 +17663,7 @@ exports[`Storyshots Inputs Default 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={false}
                 id="email-shortid-mock"
                 name="email"
@@ -17567,6 +17685,7 @@ exports[`Storyshots Inputs Default 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Wrong email
             </p>
@@ -17591,6 +17710,7 @@ exports[`Storyshots Inputs Default 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={true}
                 id="email-shortid-mock"
                 name="email"
@@ -17612,6 +17732,7 @@ exports[`Storyshots Inputs Default 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Secondary text
             </p>
@@ -17636,6 +17757,7 @@ exports[`Storyshots Inputs Default 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={true}
                 id="email-shortid-mock"
                 name="email"
@@ -17657,6 +17779,7 @@ exports[`Storyshots Inputs Default 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Secondary text
             </p>
@@ -17681,6 +17804,7 @@ exports[`Storyshots Inputs Default 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={false}
                 name="email"
                 onBlur={[Function]}
@@ -17703,6 +17827,7 @@ exports[`Storyshots Inputs Default 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Secondary text
             </p>
@@ -17727,6 +17852,7 @@ exports[`Storyshots Inputs Default 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={false}
                 name="email"
                 onBlur={[Function]}
@@ -17749,6 +17875,7 @@ exports[`Storyshots Inputs Default 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Secondary text
             </p>
@@ -17773,6 +17900,7 @@ exports[`Storyshots Inputs Default 1`] = `
               className="container multiline"
             >
               <textarea
+                data-test={null}
                 disabled={false}
                 name="email"
                 onBlur={[Function]}
@@ -17799,6 +17927,7 @@ exports[`Storyshots Inputs Default 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Secondary text
             </p>
@@ -17823,6 +17952,7 @@ exports[`Storyshots Inputs Default 1`] = `
               className="container multiline"
             >
               <textarea
+                data-test={null}
                 disabled={false}
                 name="email"
                 onBlur={[Function]}
@@ -17849,6 +17979,7 @@ exports[`Storyshots Inputs Default 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Error!
             </p>
@@ -17873,6 +18004,7 @@ exports[`Storyshots Inputs Default 1`] = `
               className="container multiline"
             >
               <textarea
+                data-test={null}
                 disabled={true}
                 name="multiline"
                 onBlur={[Function]}
@@ -17927,6 +18059,7 @@ exports[`Storyshots Inputs Default 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={false}
                 id="email-shortid-mock"
                 name="email"
@@ -17948,6 +18081,7 @@ exports[`Storyshots Inputs Default 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Secondary text
             </p>
@@ -17980,6 +18114,7 @@ exports[`Storyshots Inputs Default 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={false}
                 id="email-shortid-mock"
                 name="email"
@@ -18001,6 +18136,7 @@ exports[`Storyshots Inputs Default 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Error!
             </p>
@@ -18033,6 +18169,7 @@ exports[`Storyshots Inputs Default 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={true}
                 id="name-shortid-mock"
                 name="name"
@@ -18082,6 +18219,7 @@ exports[`Storyshots Inputs Default 1`] = `
               className="container multiline"
             >
               <textarea
+                data-test={null}
                 disabled={false}
                 name="email"
                 onBlur={[Function]}
@@ -18108,6 +18246,7 @@ exports[`Storyshots Inputs Default 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Secondary text
             </p>
@@ -18140,6 +18279,7 @@ exports[`Storyshots Inputs Default 1`] = `
               className="container multiline"
             >
               <textarea
+                data-test={null}
                 disabled={false}
                 name="email"
                 onBlur={[Function]}
@@ -18166,6 +18306,7 @@ exports[`Storyshots Inputs Default 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Error!
             </p>
@@ -18198,6 +18339,7 @@ exports[`Storyshots Inputs Default 1`] = `
               className="container multiline"
             >
               <textarea
+                data-test={null}
                 disabled={true}
                 name="multiline"
                 onBlur={[Function]}
@@ -18244,6 +18386,7 @@ exports[`Storyshots Inputs Default 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={false}
                 id="email-shortid-mock"
                 name="email"
@@ -18273,6 +18416,7 @@ exports[`Storyshots Inputs Default 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Secondary text
             </p>
@@ -18297,6 +18441,7 @@ exports[`Storyshots Inputs Default 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={false}
                 id="email-shortid-mock"
                 name="email"
@@ -18326,6 +18471,7 @@ exports[`Storyshots Inputs Default 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               must have more than 12 characters
             </p>
@@ -18350,6 +18496,7 @@ exports[`Storyshots Inputs Default 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={true}
                 id="pass-shortid-mock"
                 name="pass"
@@ -18371,6 +18518,7 @@ exports[`Storyshots Inputs Default 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               must have more than 12 characters
             </p>
@@ -18395,6 +18543,7 @@ exports[`Storyshots Inputs Default 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={false}
                 id="email-shortid-mock"
                 name="email"
@@ -18416,6 +18565,7 @@ exports[`Storyshots Inputs Default 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Secondary text
             </p>
@@ -18440,6 +18590,7 @@ exports[`Storyshots Inputs Default 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={false}
                 id="email-shortid-mock"
                 name="email"
@@ -18461,6 +18612,7 @@ exports[`Storyshots Inputs Default 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Secondary text
             </p>
@@ -18485,6 +18637,7 @@ exports[`Storyshots Inputs Default 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={false}
                 id="email-shortid-mock"
                 name="email"
@@ -18506,6 +18659,7 @@ exports[`Storyshots Inputs Default 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Wrong email
             </p>
@@ -18530,6 +18684,7 @@ exports[`Storyshots Inputs Default 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={true}
                 id="email-shortid-mock"
                 name="email"
@@ -18551,6 +18706,7 @@ exports[`Storyshots Inputs Default 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Secondary text
             </p>
@@ -18575,6 +18731,7 @@ exports[`Storyshots Inputs Default 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={true}
                 id="email-shortid-mock"
                 name="email"
@@ -18596,6 +18753,7 @@ exports[`Storyshots Inputs Default 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Secondary text
             </p>
@@ -18620,6 +18778,7 @@ exports[`Storyshots Inputs Default 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={false}
                 name="email"
                 onBlur={[Function]}
@@ -18642,6 +18801,7 @@ exports[`Storyshots Inputs Default 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Secondary text
             </p>
@@ -18666,6 +18826,7 @@ exports[`Storyshots Inputs Default 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={false}
                 name="email"
                 onBlur={[Function]}
@@ -18688,6 +18849,7 @@ exports[`Storyshots Inputs Default 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Secondary text
             </p>
@@ -18712,6 +18874,7 @@ exports[`Storyshots Inputs Default 1`] = `
               className="container multiline"
             >
               <textarea
+                data-test={null}
                 disabled={false}
                 name="email"
                 onBlur={[Function]}
@@ -18738,6 +18901,7 @@ exports[`Storyshots Inputs Default 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Secondary text
             </p>
@@ -18762,6 +18926,7 @@ exports[`Storyshots Inputs Default 1`] = `
               className="container multiline"
             >
               <textarea
+                data-test={null}
                 disabled={false}
                 name="email"
                 onBlur={[Function]}
@@ -18788,6 +18953,7 @@ exports[`Storyshots Inputs Default 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Error!
             </p>
@@ -18812,6 +18978,7 @@ exports[`Storyshots Inputs Default 1`] = `
               className="container multiline"
             >
               <textarea
+                data-test={null}
                 disabled={true}
                 name="multiline"
                 onBlur={[Function]}
@@ -18866,6 +19033,7 @@ exports[`Storyshots Inputs Default 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={false}
                 id="email-shortid-mock"
                 name="email"
@@ -18887,6 +19055,7 @@ exports[`Storyshots Inputs Default 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Secondary text
             </p>
@@ -18919,6 +19088,7 @@ exports[`Storyshots Inputs Default 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={false}
                 id="email-shortid-mock"
                 name="email"
@@ -18940,6 +19110,7 @@ exports[`Storyshots Inputs Default 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Error!
             </p>
@@ -18972,6 +19143,7 @@ exports[`Storyshots Inputs Default 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={true}
                 id="name-shortid-mock"
                 name="name"
@@ -19021,6 +19193,7 @@ exports[`Storyshots Inputs Default 1`] = `
               className="container multiline"
             >
               <textarea
+                data-test={null}
                 disabled={false}
                 name="email"
                 onBlur={[Function]}
@@ -19047,6 +19220,7 @@ exports[`Storyshots Inputs Default 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Secondary text
             </p>
@@ -19079,6 +19253,7 @@ exports[`Storyshots Inputs Default 1`] = `
               className="container multiline"
             >
               <textarea
+                data-test={null}
                 disabled={false}
                 name="email"
                 onBlur={[Function]}
@@ -19105,6 +19280,7 @@ exports[`Storyshots Inputs Default 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Error!
             </p>
@@ -19137,6 +19313,7 @@ exports[`Storyshots Inputs Default 1`] = `
               className="container multiline"
             >
               <textarea
+                data-test={null}
                 disabled={true}
                 name="multiline"
                 onBlur={[Function]}
@@ -19183,6 +19360,7 @@ exports[`Storyshots Inputs Default 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={false}
                 id="email-shortid-mock"
                 name="email"
@@ -19212,6 +19390,7 @@ exports[`Storyshots Inputs Default 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Secondary text
             </p>
@@ -19236,6 +19415,7 @@ exports[`Storyshots Inputs Default 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={false}
                 id="email-shortid-mock"
                 name="email"
@@ -19265,6 +19445,7 @@ exports[`Storyshots Inputs Default 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               must have more than 12 characters
             </p>
@@ -19289,6 +19470,7 @@ exports[`Storyshots Inputs Default 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={true}
                 id="pass-shortid-mock"
                 name="pass"
@@ -19310,6 +19492,7 @@ exports[`Storyshots Inputs Default 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               must have more than 12 characters
             </p>
@@ -19345,6 +19528,7 @@ exports[`Storyshots Inputs Form 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={false}
                 id="email-shortid-mock"
                 name="email"
@@ -19366,6 +19550,7 @@ exports[`Storyshots Inputs Form 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Secondary Text
             </p>
@@ -19390,6 +19575,7 @@ exports[`Storyshots Inputs Form 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={false}
                 id="email-shortid-mock"
                 name="email"
@@ -19411,6 +19597,7 @@ exports[`Storyshots Inputs Form 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Invalid email
             </p>
@@ -19435,6 +19622,7 @@ exports[`Storyshots Inputs Form 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={true}
                 id="email-shortid-mock"
                 name="email"
@@ -19456,6 +19644,7 @@ exports[`Storyshots Inputs Form 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Secondary Text
             </p>
@@ -19480,6 +19669,7 @@ exports[`Storyshots Inputs Form 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={true}
                 id="email-shortid-mock"
                 name="email"
@@ -19501,6 +19691,7 @@ exports[`Storyshots Inputs Form 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Secondary Text
             </p>
@@ -19525,6 +19716,7 @@ exports[`Storyshots Inputs Form 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={false}
                 name="email"
                 onBlur={[Function]}
@@ -19547,6 +19739,7 @@ exports[`Storyshots Inputs Form 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Secondary Text
             </p>
@@ -19571,6 +19764,7 @@ exports[`Storyshots Inputs Form 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={false}
                 name="email"
                 onBlur={[Function]}
@@ -19593,6 +19787,7 @@ exports[`Storyshots Inputs Form 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Secondary Text
             </p>
@@ -19617,6 +19812,7 @@ exports[`Storyshots Inputs Form 1`] = `
               className="container multiline"
             >
               <textarea
+                data-test={null}
                 disabled={false}
                 name="email"
                 onBlur={[Function]}
@@ -19643,6 +19839,7 @@ exports[`Storyshots Inputs Form 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Secondary Text
             </p>
@@ -19667,6 +19864,7 @@ exports[`Storyshots Inputs Form 1`] = `
               className="container multiline"
             >
               <textarea
+                data-test={null}
                 disabled={false}
                 name="email"
                 onBlur={[Function]}
@@ -19693,6 +19891,7 @@ exports[`Storyshots Inputs Form 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Error!
             </p>
@@ -19717,6 +19916,7 @@ exports[`Storyshots Inputs Form 1`] = `
               className="container multiline"
             >
               <textarea
+                data-test={null}
                 disabled={true}
                 name="multiline"
                 onBlur={[Function]}
@@ -19771,6 +19971,7 @@ exports[`Storyshots Inputs Form 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={false}
                 id="email-shortid-mock"
                 name="email"
@@ -19792,6 +19993,7 @@ exports[`Storyshots Inputs Form 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Secondary Text
             </p>
@@ -19824,6 +20026,7 @@ exports[`Storyshots Inputs Form 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={false}
                 id="email-shortid-mock"
                 name="email"
@@ -19845,6 +20048,7 @@ exports[`Storyshots Inputs Form 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Error!
             </p>
@@ -19877,6 +20081,7 @@ exports[`Storyshots Inputs Form 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={true}
                 id="name-shortid-mock"
                 name="name"
@@ -19926,6 +20131,7 @@ exports[`Storyshots Inputs Form 1`] = `
               className="container multiline"
             >
               <textarea
+                data-test={null}
                 disabled={false}
                 name="email"
                 onBlur={[Function]}
@@ -19952,6 +20158,7 @@ exports[`Storyshots Inputs Form 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Secondary Text
             </p>
@@ -19984,6 +20191,7 @@ exports[`Storyshots Inputs Form 1`] = `
               className="container multiline"
             >
               <textarea
+                data-test={null}
                 disabled={false}
                 name="email"
                 onBlur={[Function]}
@@ -20010,6 +20218,7 @@ exports[`Storyshots Inputs Form 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Error!
             </p>
@@ -20042,6 +20251,7 @@ exports[`Storyshots Inputs Form 1`] = `
               className="container multiline"
             >
               <textarea
+                data-test={null}
                 disabled={true}
                 name="multiline"
                 onBlur={[Function]}
@@ -20088,6 +20298,7 @@ exports[`Storyshots Inputs Form 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={false}
                 id="email-shortid-mock"
                 name="email"
@@ -20117,6 +20328,7 @@ exports[`Storyshots Inputs Form 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Secondary Text
             </p>
@@ -20141,6 +20353,7 @@ exports[`Storyshots Inputs Form 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={false}
                 id="email-shortid-mock"
                 name="email"
@@ -20170,6 +20383,7 @@ exports[`Storyshots Inputs Form 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Error
             </p>
@@ -20194,6 +20408,7 @@ exports[`Storyshots Inputs Form 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={true}
                 id="pass-shortid-mock"
                 name="pass"
@@ -20215,6 +20430,7 @@ exports[`Storyshots Inputs Form 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Must have more than 12 pixel
             </p>
@@ -20239,6 +20455,7 @@ exports[`Storyshots Inputs Form 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={true}
                 id="pass-shortid-mock"
                 name="pass"
@@ -20260,6 +20477,7 @@ exports[`Storyshots Inputs Form 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Must have more than 12 pixel
             </p>
@@ -20284,6 +20502,7 @@ exports[`Storyshots Inputs Form 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={false}
                 id="email-shortid-mock"
                 name="email"
@@ -20305,6 +20524,7 @@ exports[`Storyshots Inputs Form 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Secondary Text
             </p>
@@ -20329,6 +20549,7 @@ exports[`Storyshots Inputs Form 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={false}
                 id="email-shortid-mock"
                 name="email"
@@ -20350,6 +20571,7 @@ exports[`Storyshots Inputs Form 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Invalid email
             </p>
@@ -20374,6 +20596,7 @@ exports[`Storyshots Inputs Form 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={true}
                 id="email-shortid-mock"
                 name="email"
@@ -20395,6 +20618,7 @@ exports[`Storyshots Inputs Form 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Secondary Text
             </p>
@@ -20419,6 +20643,7 @@ exports[`Storyshots Inputs Form 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={true}
                 id="email-shortid-mock"
                 name="email"
@@ -20440,6 +20665,7 @@ exports[`Storyshots Inputs Form 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Secondary Text
             </p>
@@ -20464,6 +20690,7 @@ exports[`Storyshots Inputs Form 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={false}
                 name="email"
                 onBlur={[Function]}
@@ -20486,6 +20713,7 @@ exports[`Storyshots Inputs Form 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Secondary Text
             </p>
@@ -20510,6 +20738,7 @@ exports[`Storyshots Inputs Form 1`] = `
               className="container multiline"
             >
               <textarea
+                data-test={null}
                 disabled={false}
                 name="email"
                 onBlur={[Function]}
@@ -20536,6 +20765,7 @@ exports[`Storyshots Inputs Form 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Secondary Text
             </p>
@@ -20560,6 +20790,7 @@ exports[`Storyshots Inputs Form 1`] = `
               className="container multiline"
             >
               <textarea
+                data-test={null}
                 disabled={false}
                 name="email"
                 onBlur={[Function]}
@@ -20586,6 +20817,7 @@ exports[`Storyshots Inputs Form 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Error!
             </p>
@@ -20610,6 +20842,7 @@ exports[`Storyshots Inputs Form 1`] = `
               className="container multiline"
             >
               <textarea
+                data-test={null}
                 disabled={true}
                 name="multiline"
                 onBlur={[Function]}
@@ -20664,6 +20897,7 @@ exports[`Storyshots Inputs Form 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={false}
                 id="email-shortid-mock"
                 name="email"
@@ -20685,6 +20919,7 @@ exports[`Storyshots Inputs Form 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Secondary Text
             </p>
@@ -20717,6 +20952,7 @@ exports[`Storyshots Inputs Form 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={false}
                 id="email-shortid-mock"
                 name="email"
@@ -20738,6 +20974,7 @@ exports[`Storyshots Inputs Form 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Error!
             </p>
@@ -20770,6 +21007,7 @@ exports[`Storyshots Inputs Form 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={true}
                 id="name-shortid-mock"
                 name="name"
@@ -20819,6 +21057,7 @@ exports[`Storyshots Inputs Form 1`] = `
               className="container multiline"
             >
               <textarea
+                data-test={null}
                 disabled={false}
                 name="email"
                 onBlur={[Function]}
@@ -20845,6 +21084,7 @@ exports[`Storyshots Inputs Form 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Secondary Text
             </p>
@@ -20877,6 +21117,7 @@ exports[`Storyshots Inputs Form 1`] = `
               className="container multiline"
             >
               <textarea
+                data-test={null}
                 disabled={false}
                 name="email"
                 onBlur={[Function]}
@@ -20903,6 +21144,7 @@ exports[`Storyshots Inputs Form 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Error!
             </p>
@@ -20935,6 +21177,7 @@ exports[`Storyshots Inputs Form 1`] = `
               className="container multiline"
             >
               <textarea
+                data-test={null}
                 disabled={true}
                 name="multiline"
                 onBlur={[Function]}
@@ -20981,6 +21224,7 @@ exports[`Storyshots Inputs Form 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={false}
                 id="email-shortid-mock"
                 name="email"
@@ -21010,6 +21254,7 @@ exports[`Storyshots Inputs Form 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Secondary Text
             </p>
@@ -21034,6 +21279,7 @@ exports[`Storyshots Inputs Form 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={false}
                 id="email-shortid-mock"
                 name="email"
@@ -21063,6 +21309,7 @@ exports[`Storyshots Inputs Form 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Error
             </p>
@@ -21087,6 +21334,7 @@ exports[`Storyshots Inputs Form 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={true}
                 id="pass-shortid-mock"
                 name="pass"
@@ -21108,6 +21356,7 @@ exports[`Storyshots Inputs Form 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Must have more than 12 pixel
             </p>
@@ -21132,6 +21381,7 @@ exports[`Storyshots Inputs Form 1`] = `
               className="container"
             >
               <input
+                data-test={null}
                 disabled={true}
                 id="pass-shortid-mock"
                 name="pass"
@@ -21153,6 +21403,7 @@ exports[`Storyshots Inputs Form 1`] = `
             </div>
             <p
               className="secondaryText"
+              data-test={null}
             >
               Must have more than 12 pixel
             </p>
@@ -21176,6 +21427,7 @@ exports[`Storyshots Landing Empty dark landing 1`] = `
     >
       <div
         className="row stretch"
+        data-testid={null}
       >
         <div
           className="dark primary column col desk7 tv7 tablet7 palm12 startAlign"
@@ -21209,6 +21461,7 @@ exports[`Storyshots Landing Pagar.me login 1`] = `
     >
       <div
         className="row stretch"
+        data-testid={null}
       >
         <div
           className="dark primary column col desk7 tv7 tablet7 palm12 startAlign"
@@ -21230,6 +21483,7 @@ exports[`Storyshots Landing Pagar.me login 1`] = `
                     className="container"
                   >
                     <input
+                      data-test={null}
                       disabled={false}
                       id="email-shortid-mock"
                       name="email"
@@ -21261,6 +21515,7 @@ exports[`Storyshots Landing Pagar.me login 1`] = `
                     className="container"
                   >
                     <input
+                      data-test={null}
                       disabled={false}
                       id="password-shortid-mock"
                       name="password"
@@ -21370,6 +21625,7 @@ exports[`Storyshots Landing Pagar.me login light 1`] = `
     >
       <div
         className="row stretch"
+        data-testid={null}
       >
         <div
           className="light primary column col desk7 tv7 tablet7 palm12 startAlign"
@@ -21391,6 +21647,7 @@ exports[`Storyshots Landing Pagar.me login light 1`] = `
                     className="container"
                   >
                     <input
+                      data-test={null}
                       disabled={false}
                       id="email-shortid-mock"
                       name="email"
@@ -21422,6 +21679,7 @@ exports[`Storyshots Landing Pagar.me login light 1`] = `
                     className="container"
                   >
                     <input
+                      data-test={null}
                       disabled={false}
                       id="password-shortid-mock"
                       name="password"
@@ -21531,6 +21789,7 @@ exports[`Storyshots Landing Pagar.me password recovery 1`] = `
     >
       <div
         className="row stretch"
+        data-testid={null}
       >
         <div
           className="dark primary column col desk7 tv7 tablet7 palm12 startAlign"
@@ -21554,6 +21813,7 @@ exports[`Storyshots Landing Pagar.me password recovery 1`] = `
                       className="container"
                     >
                       <input
+                        data-test={null}
                         disabled={false}
                         id="email-shortid-mock"
                         name="email"
@@ -21666,6 +21926,7 @@ exports[`Storyshots Landing Pagar.me password recovery confirmation 1`] = `
     >
       <div
         className="row stretch"
+        data-testid={null}
       >
         <div
           className="dark primary column col desk7 tv7 tablet7 palm12 startAlign"
@@ -21768,6 +22029,7 @@ exports[`Storyshots Landing Pagar.me sign in 1`] = `
     >
       <div
         className="row stretch"
+        data-testid={null}
       >
         <div
           className="dark primary column col desk7 tv7 tablet7 palm12 startAlign"
@@ -21789,6 +22051,7 @@ exports[`Storyshots Landing Pagar.me sign in 1`] = `
                     className="container"
                   >
                     <input
+                      data-test={null}
                       disabled={false}
                       id="name-shortid-mock"
                       name="name"
@@ -21820,6 +22083,7 @@ exports[`Storyshots Landing Pagar.me sign in 1`] = `
                     className="container"
                   >
                     <input
+                      data-test={null}
                       disabled={false}
                       id="company-shortid-mock"
                       name="company"
@@ -21851,6 +22115,7 @@ exports[`Storyshots Landing Pagar.me sign in 1`] = `
                     className="container"
                   >
                     <input
+                      data-test={null}
                       disabled={false}
                       id="email-shortid-mock"
                       name="email"
@@ -21882,6 +22147,7 @@ exports[`Storyshots Landing Pagar.me sign in 1`] = `
                     className="container"
                   >
                     <input
+                      data-test={null}
                       disabled={false}
                       id="password-shortid-mock"
                       name="password"
@@ -21983,6 +22249,7 @@ exports[`Storyshots Landing Pagar.me sign in confirmation 1`] = `
     >
       <div
         className="row stretch"
+        data-testid={null}
       >
         <div
           className="dark primary column col desk7 tv7 tablet7 palm12 startAlign"
@@ -22082,6 +22349,7 @@ exports[`Storyshots Landing Pagar.me two factor login 1`] = `
     >
       <div
         className="row stretch"
+        data-testid={null}
       >
         <div
           className="dark primary column col desk7 tv7 tablet7 palm12 startAlign"
@@ -22103,6 +22371,7 @@ exports[`Storyshots Landing Pagar.me two factor login 1`] = `
                     className="container"
                   >
                     <input
+                      data-test={null}
                       disabled={false}
                       id="email-shortid-mock"
                       name="email"
@@ -22134,6 +22403,7 @@ exports[`Storyshots Landing Pagar.me two factor login 1`] = `
                     className="container"
                   >
                     <input
+                      data-test={null}
                       disabled={false}
                       id="password-shortid-mock"
                       name="password"
@@ -22165,6 +22435,7 @@ exports[`Storyshots Landing Pagar.me two factor login 1`] = `
                     className="container"
                   >
                     <input
+                      data-test={null}
                       disabled={false}
                       id="token-shortid-mock"
                       name="token"
@@ -22292,6 +22563,7 @@ exports[`Storyshots Layout Default only Footer 1`] = `
             >
               <div
                 className="row flex"
+                data-testid={null}
               >
                 <div
                   className="col desknull tvnull tablet12 palm12 startAlign"
@@ -22352,6 +22624,7 @@ exports[`Storyshots Layout Default only Footer 1`] = `
               </div>
               <div
                 className="row"
+                data-testid={null}
               >
                 <div
                   className="col desknull tvnull tablet12 palm12 startAlign"
@@ -22384,123 +22657,8 @@ exports[`Storyshots Layout Default only Footer 1`] = `
               </div>
               <div
                 className="row flex"
+                data-testid={null}
               >
-                <div
-                  className="col desknull tvnull tablet12 palm12 startAlign"
-                >
-                  <div
-                    className="card"
-                  >
-                    <div
-                      className="title"
-                    >
-                      <h2
-                        className="default"
-                      >
-                         
-                         
-                        Lorem ipsum dolor sit amet
-                         
-                      </h2>
-                      <h3>
-                        
-                      </h3>
-                    </div>
-                    <div
-                      className="content"
-                    >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="col desknull tvnull tablet12 palm12 startAlign"
-                >
-                  <div
-                    className="card"
-                  >
-                    <div
-                      className="title"
-                    >
-                      <h2
-                        className="default"
-                      >
-                         
-                         
-                        Lorem ipsum dolor sit amet
-                         
-                      </h2>
-                      <h3>
-                        
-                      </h3>
-                    </div>
-                    <div
-                      className="content"
-                    >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="col desknull tvnull tablet12 palm12 startAlign"
-                >
-                  <div
-                    className="card"
-                  >
-                    <div
-                      className="title"
-                    >
-                      <h2
-                        className="default"
-                      >
-                         
-                         
-                        Lorem ipsum dolor sit amet
-                         
-                      </h2>
-                      <h3>
-                        
-                      </h3>
-                    </div>
-                    <div
-                      className="content"
-                    >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="row flex"
-              >
-                <div
-                  className="col desknull tvnull tablet12 palm12 startAlign"
-                >
-                  <div
-                    className="card"
-                  >
-                    <div
-                      className="title"
-                    >
-                      <h2
-                        className="default"
-                      >
-                         
-                         
-                        Lorem ipsum dolor sit amet
-                         
-                      </h2>
-                      <h3>
-                        
-                      </h3>
-                    </div>
-                    <div
-                      className="content"
-                    >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                    </div>
-                  </div>
-                </div>
                 <div
                   className="col desknull tvnull tablet12 palm12 startAlign"
                 >
@@ -22588,6 +22746,124 @@ exports[`Storyshots Layout Default only Footer 1`] = `
               </div>
               <div
                 className="row flex"
+                data-testid={null}
+              >
+                <div
+                  className="col desknull tvnull tablet12 palm12 startAlign"
+                >
+                  <div
+                    className="card"
+                  >
+                    <div
+                      className="title"
+                    >
+                      <h2
+                        className="default"
+                      >
+                         
+                         
+                        Lorem ipsum dolor sit amet
+                         
+                      </h2>
+                      <h3>
+                        
+                      </h3>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="col desknull tvnull tablet12 palm12 startAlign"
+                >
+                  <div
+                    className="card"
+                  >
+                    <div
+                      className="title"
+                    >
+                      <h2
+                        className="default"
+                      >
+                         
+                         
+                        Lorem ipsum dolor sit amet
+                         
+                      </h2>
+                      <h3>
+                        
+                      </h3>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="col desknull tvnull tablet12 palm12 startAlign"
+                >
+                  <div
+                    className="card"
+                  >
+                    <div
+                      className="title"
+                    >
+                      <h2
+                        className="default"
+                      >
+                         
+                         
+                        Lorem ipsum dolor sit amet
+                         
+                      </h2>
+                      <h3>
+                        
+                      </h3>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="col desknull tvnull tablet12 palm12 startAlign"
+                >
+                  <div
+                    className="card"
+                  >
+                    <div
+                      className="title"
+                    >
+                      <h2
+                        className="default"
+                      >
+                         
+                         
+                        Lorem ipsum dolor sit amet
+                         
+                      </h2>
+                      <h3>
+                        
+                      </h3>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="row flex"
+                data-testid={null}
               >
                 <div
                   className="col desknull tvnull tablet12 palm12 startAlign"
@@ -22799,6 +23075,7 @@ exports[`Storyshots Layout Default only Header 1`] = `
             >
               <div
                 className="row flex"
+                data-testid={null}
               >
                 <div
                   className="col desknull tvnull tablet12 palm12 startAlign"
@@ -22859,6 +23136,7 @@ exports[`Storyshots Layout Default only Header 1`] = `
               </div>
               <div
                 className="row"
+                data-testid={null}
               >
                 <div
                   className="col desknull tvnull tablet12 palm12 startAlign"
@@ -22891,123 +23169,8 @@ exports[`Storyshots Layout Default only Header 1`] = `
               </div>
               <div
                 className="row flex"
+                data-testid={null}
               >
-                <div
-                  className="col desknull tvnull tablet12 palm12 startAlign"
-                >
-                  <div
-                    className="card"
-                  >
-                    <div
-                      className="title"
-                    >
-                      <h2
-                        className="default"
-                      >
-                         
-                         
-                        Lorem ipsum dolor sit amet
-                         
-                      </h2>
-                      <h3>
-                        
-                      </h3>
-                    </div>
-                    <div
-                      className="content"
-                    >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="col desknull tvnull tablet12 palm12 startAlign"
-                >
-                  <div
-                    className="card"
-                  >
-                    <div
-                      className="title"
-                    >
-                      <h2
-                        className="default"
-                      >
-                         
-                         
-                        Lorem ipsum dolor sit amet
-                         
-                      </h2>
-                      <h3>
-                        
-                      </h3>
-                    </div>
-                    <div
-                      className="content"
-                    >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="col desknull tvnull tablet12 palm12 startAlign"
-                >
-                  <div
-                    className="card"
-                  >
-                    <div
-                      className="title"
-                    >
-                      <h2
-                        className="default"
-                      >
-                         
-                         
-                        Lorem ipsum dolor sit amet
-                         
-                      </h2>
-                      <h3>
-                        
-                      </h3>
-                    </div>
-                    <div
-                      className="content"
-                    >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="row flex"
-              >
-                <div
-                  className="col desknull tvnull tablet12 palm12 startAlign"
-                >
-                  <div
-                    className="card"
-                  >
-                    <div
-                      className="title"
-                    >
-                      <h2
-                        className="default"
-                      >
-                         
-                         
-                        Lorem ipsum dolor sit amet
-                         
-                      </h2>
-                      <h3>
-                        
-                      </h3>
-                    </div>
-                    <div
-                      className="content"
-                    >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                    </div>
-                  </div>
-                </div>
                 <div
                   className="col desknull tvnull tablet12 palm12 startAlign"
                 >
@@ -23095,6 +23258,124 @@ exports[`Storyshots Layout Default only Header 1`] = `
               </div>
               <div
                 className="row flex"
+                data-testid={null}
+              >
+                <div
+                  className="col desknull tvnull tablet12 palm12 startAlign"
+                >
+                  <div
+                    className="card"
+                  >
+                    <div
+                      className="title"
+                    >
+                      <h2
+                        className="default"
+                      >
+                         
+                         
+                        Lorem ipsum dolor sit amet
+                         
+                      </h2>
+                      <h3>
+                        
+                      </h3>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="col desknull tvnull tablet12 palm12 startAlign"
+                >
+                  <div
+                    className="card"
+                  >
+                    <div
+                      className="title"
+                    >
+                      <h2
+                        className="default"
+                      >
+                         
+                         
+                        Lorem ipsum dolor sit amet
+                         
+                      </h2>
+                      <h3>
+                        
+                      </h3>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="col desknull tvnull tablet12 palm12 startAlign"
+                >
+                  <div
+                    className="card"
+                  >
+                    <div
+                      className="title"
+                    >
+                      <h2
+                        className="default"
+                      >
+                         
+                         
+                        Lorem ipsum dolor sit amet
+                         
+                      </h2>
+                      <h3>
+                        
+                      </h3>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="col desknull tvnull tablet12 palm12 startAlign"
+                >
+                  <div
+                    className="card"
+                  >
+                    <div
+                      className="title"
+                    >
+                      <h2
+                        className="default"
+                      >
+                         
+                         
+                        Lorem ipsum dolor sit amet
+                         
+                      </h2>
+                      <h3>
+                        
+                      </h3>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="row flex"
+                data-testid={null}
               >
                 <div
                   className="col desknull tvnull tablet12 palm12 startAlign"
@@ -23315,6 +23596,7 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
             >
               <div
                 className="row flex"
+                data-testid={null}
               >
                 <div
                   className="col desknull tvnull tablet12 palm12 startAlign"
@@ -23375,6 +23657,7 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
               </div>
               <div
                 className="row"
+                data-testid={null}
               >
                 <div
                   className="col desknull tvnull tablet12 palm12 startAlign"
@@ -23407,123 +23690,8 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
               </div>
               <div
                 className="row flex"
+                data-testid={null}
               >
-                <div
-                  className="col desknull tvnull tablet12 palm12 startAlign"
-                >
-                  <div
-                    className="card"
-                  >
-                    <div
-                      className="title"
-                    >
-                      <h2
-                        className="default"
-                      >
-                         
-                         
-                        Lorem ipsum dolor sit amet
-                         
-                      </h2>
-                      <h3>
-                        
-                      </h3>
-                    </div>
-                    <div
-                      className="content"
-                    >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="col desknull tvnull tablet12 palm12 startAlign"
-                >
-                  <div
-                    className="card"
-                  >
-                    <div
-                      className="title"
-                    >
-                      <h2
-                        className="default"
-                      >
-                         
-                         
-                        Lorem ipsum dolor sit amet
-                         
-                      </h2>
-                      <h3>
-                        
-                      </h3>
-                    </div>
-                    <div
-                      className="content"
-                    >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="col desknull tvnull tablet12 palm12 startAlign"
-                >
-                  <div
-                    className="card"
-                  >
-                    <div
-                      className="title"
-                    >
-                      <h2
-                        className="default"
-                      >
-                         
-                         
-                        Lorem ipsum dolor sit amet
-                         
-                      </h2>
-                      <h3>
-                        
-                      </h3>
-                    </div>
-                    <div
-                      className="content"
-                    >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="row flex"
-              >
-                <div
-                  className="col desknull tvnull tablet12 palm12 startAlign"
-                >
-                  <div
-                    className="card"
-                  >
-                    <div
-                      className="title"
-                    >
-                      <h2
-                        className="default"
-                      >
-                         
-                         
-                        Lorem ipsum dolor sit amet
-                         
-                      </h2>
-                      <h3>
-                        
-                      </h3>
-                    </div>
-                    <div
-                      className="content"
-                    >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                    </div>
-                  </div>
-                </div>
                 <div
                   className="col desknull tvnull tablet12 palm12 startAlign"
                 >
@@ -23611,6 +23779,124 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
               </div>
               <div
                 className="row flex"
+                data-testid={null}
+              >
+                <div
+                  className="col desknull tvnull tablet12 palm12 startAlign"
+                >
+                  <div
+                    className="card"
+                  >
+                    <div
+                      className="title"
+                    >
+                      <h2
+                        className="default"
+                      >
+                         
+                         
+                        Lorem ipsum dolor sit amet
+                         
+                      </h2>
+                      <h3>
+                        
+                      </h3>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="col desknull tvnull tablet12 palm12 startAlign"
+                >
+                  <div
+                    className="card"
+                  >
+                    <div
+                      className="title"
+                    >
+                      <h2
+                        className="default"
+                      >
+                         
+                         
+                        Lorem ipsum dolor sit amet
+                         
+                      </h2>
+                      <h3>
+                        
+                      </h3>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="col desknull tvnull tablet12 palm12 startAlign"
+                >
+                  <div
+                    className="card"
+                  >
+                    <div
+                      className="title"
+                    >
+                      <h2
+                        className="default"
+                      >
+                         
+                         
+                        Lorem ipsum dolor sit amet
+                         
+                      </h2>
+                      <h3>
+                        
+                      </h3>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="col desknull tvnull tablet12 palm12 startAlign"
+                >
+                  <div
+                    className="card"
+                  >
+                    <div
+                      className="title"
+                    >
+                      <h2
+                        className="default"
+                      >
+                         
+                         
+                        Lorem ipsum dolor sit amet
+                         
+                      </h2>
+                      <h3>
+                        
+                      </h3>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="row flex"
+                data-testid={null}
               >
                 <div
                   className="col desknull tvnull tablet12 palm12 startAlign"
@@ -23883,6 +24169,7 @@ exports[`Storyshots Layout Default with all props 1`] = `
             >
               <div
                 className="row flex"
+                data-testid={null}
               >
                 <div
                   className="col desknull tvnull tablet12 palm12 startAlign"
@@ -23943,6 +24230,7 @@ exports[`Storyshots Layout Default with all props 1`] = `
               </div>
               <div
                 className="row"
+                data-testid={null}
               >
                 <div
                   className="col desknull tvnull tablet12 palm12 startAlign"
@@ -23975,123 +24263,8 @@ exports[`Storyshots Layout Default with all props 1`] = `
               </div>
               <div
                 className="row flex"
+                data-testid={null}
               >
-                <div
-                  className="col desknull tvnull tablet12 palm12 startAlign"
-                >
-                  <div
-                    className="card"
-                  >
-                    <div
-                      className="title"
-                    >
-                      <h2
-                        className="default"
-                      >
-                         
-                         
-                        Lorem ipsum dolor sit amet
-                         
-                      </h2>
-                      <h3>
-                        
-                      </h3>
-                    </div>
-                    <div
-                      className="content"
-                    >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="col desknull tvnull tablet12 palm12 startAlign"
-                >
-                  <div
-                    className="card"
-                  >
-                    <div
-                      className="title"
-                    >
-                      <h2
-                        className="default"
-                      >
-                         
-                         
-                        Lorem ipsum dolor sit amet
-                         
-                      </h2>
-                      <h3>
-                        
-                      </h3>
-                    </div>
-                    <div
-                      className="content"
-                    >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="col desknull tvnull tablet12 palm12 startAlign"
-                >
-                  <div
-                    className="card"
-                  >
-                    <div
-                      className="title"
-                    >
-                      <h2
-                        className="default"
-                      >
-                         
-                         
-                        Lorem ipsum dolor sit amet
-                         
-                      </h2>
-                      <h3>
-                        
-                      </h3>
-                    </div>
-                    <div
-                      className="content"
-                    >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="row flex"
-              >
-                <div
-                  className="col desknull tvnull tablet12 palm12 startAlign"
-                >
-                  <div
-                    className="card"
-                  >
-                    <div
-                      className="title"
-                    >
-                      <h2
-                        className="default"
-                      >
-                         
-                         
-                        Lorem ipsum dolor sit amet
-                         
-                      </h2>
-                      <h3>
-                        
-                      </h3>
-                    </div>
-                    <div
-                      className="content"
-                    >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                    </div>
-                  </div>
-                </div>
                 <div
                   className="col desknull tvnull tablet12 palm12 startAlign"
                 >
@@ -24179,6 +24352,124 @@ exports[`Storyshots Layout Default with all props 1`] = `
               </div>
               <div
                 className="row flex"
+                data-testid={null}
+              >
+                <div
+                  className="col desknull tvnull tablet12 palm12 startAlign"
+                >
+                  <div
+                    className="card"
+                  >
+                    <div
+                      className="title"
+                    >
+                      <h2
+                        className="default"
+                      >
+                         
+                         
+                        Lorem ipsum dolor sit amet
+                         
+                      </h2>
+                      <h3>
+                        
+                      </h3>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="col desknull tvnull tablet12 palm12 startAlign"
+                >
+                  <div
+                    className="card"
+                  >
+                    <div
+                      className="title"
+                    >
+                      <h2
+                        className="default"
+                      >
+                         
+                         
+                        Lorem ipsum dolor sit amet
+                         
+                      </h2>
+                      <h3>
+                        
+                      </h3>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="col desknull tvnull tablet12 palm12 startAlign"
+                >
+                  <div
+                    className="card"
+                  >
+                    <div
+                      className="title"
+                    >
+                      <h2
+                        className="default"
+                      >
+                         
+                         
+                        Lorem ipsum dolor sit amet
+                         
+                      </h2>
+                      <h3>
+                        
+                      </h3>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="col desknull tvnull tablet12 palm12 startAlign"
+                >
+                  <div
+                    className="card"
+                  >
+                    <div
+                      className="title"
+                    >
+                      <h2
+                        className="default"
+                      >
+                         
+                         
+                        Lorem ipsum dolor sit amet
+                         
+                      </h2>
+                      <h3>
+                        
+                      </h3>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="row flex"
+                data-testid={null}
               >
                 <div
                   className="col desknull tvnull tablet12 palm12 startAlign"
@@ -24513,6 +24804,7 @@ exports[`Storyshots Layout Default without Footer 1`] = `
             >
               <div
                 className="row flex"
+                data-testid={null}
               >
                 <div
                   className="col desknull tvnull tablet12 palm12 startAlign"
@@ -24573,6 +24865,7 @@ exports[`Storyshots Layout Default without Footer 1`] = `
               </div>
               <div
                 className="row"
+                data-testid={null}
               >
                 <div
                   className="col desknull tvnull tablet12 palm12 startAlign"
@@ -24605,123 +24898,8 @@ exports[`Storyshots Layout Default without Footer 1`] = `
               </div>
               <div
                 className="row flex"
+                data-testid={null}
               >
-                <div
-                  className="col desknull tvnull tablet12 palm12 startAlign"
-                >
-                  <div
-                    className="card"
-                  >
-                    <div
-                      className="title"
-                    >
-                      <h2
-                        className="default"
-                      >
-                         
-                         
-                        Lorem ipsum dolor sit amet
-                         
-                      </h2>
-                      <h3>
-                        
-                      </h3>
-                    </div>
-                    <div
-                      className="content"
-                    >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="col desknull tvnull tablet12 palm12 startAlign"
-                >
-                  <div
-                    className="card"
-                  >
-                    <div
-                      className="title"
-                    >
-                      <h2
-                        className="default"
-                      >
-                         
-                         
-                        Lorem ipsum dolor sit amet
-                         
-                      </h2>
-                      <h3>
-                        
-                      </h3>
-                    </div>
-                    <div
-                      className="content"
-                    >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="col desknull tvnull tablet12 palm12 startAlign"
-                >
-                  <div
-                    className="card"
-                  >
-                    <div
-                      className="title"
-                    >
-                      <h2
-                        className="default"
-                      >
-                         
-                         
-                        Lorem ipsum dolor sit amet
-                         
-                      </h2>
-                      <h3>
-                        
-                      </h3>
-                    </div>
-                    <div
-                      className="content"
-                    >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="row flex"
-              >
-                <div
-                  className="col desknull tvnull tablet12 palm12 startAlign"
-                >
-                  <div
-                    className="card"
-                  >
-                    <div
-                      className="title"
-                    >
-                      <h2
-                        className="default"
-                      >
-                         
-                         
-                        Lorem ipsum dolor sit amet
-                         
-                      </h2>
-                      <h3>
-                        
-                      </h3>
-                    </div>
-                    <div
-                      className="content"
-                    >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                    </div>
-                  </div>
-                </div>
                 <div
                   className="col desknull tvnull tablet12 palm12 startAlign"
                 >
@@ -24809,6 +24987,124 @@ exports[`Storyshots Layout Default without Footer 1`] = `
               </div>
               <div
                 className="row flex"
+                data-testid={null}
+              >
+                <div
+                  className="col desknull tvnull tablet12 palm12 startAlign"
+                >
+                  <div
+                    className="card"
+                  >
+                    <div
+                      className="title"
+                    >
+                      <h2
+                        className="default"
+                      >
+                         
+                         
+                        Lorem ipsum dolor sit amet
+                         
+                      </h2>
+                      <h3>
+                        
+                      </h3>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="col desknull tvnull tablet12 palm12 startAlign"
+                >
+                  <div
+                    className="card"
+                  >
+                    <div
+                      className="title"
+                    >
+                      <h2
+                        className="default"
+                      >
+                         
+                         
+                        Lorem ipsum dolor sit amet
+                         
+                      </h2>
+                      <h3>
+                        
+                      </h3>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="col desknull tvnull tablet12 palm12 startAlign"
+                >
+                  <div
+                    className="card"
+                  >
+                    <div
+                      className="title"
+                    >
+                      <h2
+                        className="default"
+                      >
+                         
+                         
+                        Lorem ipsum dolor sit amet
+                         
+                      </h2>
+                      <h3>
+                        
+                      </h3>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="col desknull tvnull tablet12 palm12 startAlign"
+                >
+                  <div
+                    className="card"
+                  >
+                    <div
+                      className="title"
+                    >
+                      <h2
+                        className="default"
+                      >
+                         
+                         
+                        Lorem ipsum dolor sit amet
+                         
+                      </h2>
+                      <h3>
+                        
+                      </h3>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="row flex"
+                data-testid={null}
               >
                 <div
                   className="col desknull tvnull tablet12 palm12 startAlign"
@@ -25029,6 +25325,7 @@ exports[`Storyshots Layout Default without Header 1`] = `
             >
               <div
                 className="row flex"
+                data-testid={null}
               >
                 <div
                   className="col desknull tvnull tablet12 palm12 startAlign"
@@ -25089,6 +25386,7 @@ exports[`Storyshots Layout Default without Header 1`] = `
               </div>
               <div
                 className="row"
+                data-testid={null}
               >
                 <div
                   className="col desknull tvnull tablet12 palm12 startAlign"
@@ -25121,123 +25419,8 @@ exports[`Storyshots Layout Default without Header 1`] = `
               </div>
               <div
                 className="row flex"
+                data-testid={null}
               >
-                <div
-                  className="col desknull tvnull tablet12 palm12 startAlign"
-                >
-                  <div
-                    className="card"
-                  >
-                    <div
-                      className="title"
-                    >
-                      <h2
-                        className="default"
-                      >
-                         
-                         
-                        Lorem ipsum dolor sit amet
-                         
-                      </h2>
-                      <h3>
-                        
-                      </h3>
-                    </div>
-                    <div
-                      className="content"
-                    >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="col desknull tvnull tablet12 palm12 startAlign"
-                >
-                  <div
-                    className="card"
-                  >
-                    <div
-                      className="title"
-                    >
-                      <h2
-                        className="default"
-                      >
-                         
-                         
-                        Lorem ipsum dolor sit amet
-                         
-                      </h2>
-                      <h3>
-                        
-                      </h3>
-                    </div>
-                    <div
-                      className="content"
-                    >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="col desknull tvnull tablet12 palm12 startAlign"
-                >
-                  <div
-                    className="card"
-                  >
-                    <div
-                      className="title"
-                    >
-                      <h2
-                        className="default"
-                      >
-                         
-                         
-                        Lorem ipsum dolor sit amet
-                         
-                      </h2>
-                      <h3>
-                        
-                      </h3>
-                    </div>
-                    <div
-                      className="content"
-                    >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="row flex"
-              >
-                <div
-                  className="col desknull tvnull tablet12 palm12 startAlign"
-                >
-                  <div
-                    className="card"
-                  >
-                    <div
-                      className="title"
-                    >
-                      <h2
-                        className="default"
-                      >
-                         
-                         
-                        Lorem ipsum dolor sit amet
-                         
-                      </h2>
-                      <h3>
-                        
-                      </h3>
-                    </div>
-                    <div
-                      className="content"
-                    >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                    </div>
-                  </div>
-                </div>
                 <div
                   className="col desknull tvnull tablet12 palm12 startAlign"
                 >
@@ -25325,6 +25508,124 @@ exports[`Storyshots Layout Default without Header 1`] = `
               </div>
               <div
                 className="row flex"
+                data-testid={null}
+              >
+                <div
+                  className="col desknull tvnull tablet12 palm12 startAlign"
+                >
+                  <div
+                    className="card"
+                  >
+                    <div
+                      className="title"
+                    >
+                      <h2
+                        className="default"
+                      >
+                         
+                         
+                        Lorem ipsum dolor sit amet
+                         
+                      </h2>
+                      <h3>
+                        
+                      </h3>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="col desknull tvnull tablet12 palm12 startAlign"
+                >
+                  <div
+                    className="card"
+                  >
+                    <div
+                      className="title"
+                    >
+                      <h2
+                        className="default"
+                      >
+                         
+                         
+                        Lorem ipsum dolor sit amet
+                         
+                      </h2>
+                      <h3>
+                        
+                      </h3>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="col desknull tvnull tablet12 palm12 startAlign"
+                >
+                  <div
+                    className="card"
+                  >
+                    <div
+                      className="title"
+                    >
+                      <h2
+                        className="default"
+                      >
+                         
+                         
+                        Lorem ipsum dolor sit amet
+                         
+                      </h2>
+                      <h3>
+                        
+                      </h3>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="col desknull tvnull tablet12 palm12 startAlign"
+                >
+                  <div
+                    className="card"
+                  >
+                    <div
+                      className="title"
+                    >
+                      <h2
+                        className="default"
+                      >
+                         
+                         
+                        Lorem ipsum dolor sit amet
+                         
+                      </h2>
+                      <h3>
+                        
+                      </h3>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="row flex"
+                data-testid={null}
               >
                 <div
                   className="col desknull tvnull tablet12 palm12 startAlign"
@@ -25536,6 +25837,7 @@ exports[`Storyshots Layout Default without Sidebar 1`] = `
             >
               <div
                 className="row flex"
+                data-testid={null}
               >
                 <div
                   className="col desknull tvnull tablet12 palm12 startAlign"
@@ -25596,6 +25898,7 @@ exports[`Storyshots Layout Default without Sidebar 1`] = `
               </div>
               <div
                 className="row"
+                data-testid={null}
               >
                 <div
                   className="col desknull tvnull tablet12 palm12 startAlign"
@@ -25628,123 +25931,8 @@ exports[`Storyshots Layout Default without Sidebar 1`] = `
               </div>
               <div
                 className="row flex"
+                data-testid={null}
               >
-                <div
-                  className="col desknull tvnull tablet12 palm12 startAlign"
-                >
-                  <div
-                    className="card"
-                  >
-                    <div
-                      className="title"
-                    >
-                      <h2
-                        className="default"
-                      >
-                         
-                         
-                        Lorem ipsum dolor sit amet
-                         
-                      </h2>
-                      <h3>
-                        
-                      </h3>
-                    </div>
-                    <div
-                      className="content"
-                    >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="col desknull tvnull tablet12 palm12 startAlign"
-                >
-                  <div
-                    className="card"
-                  >
-                    <div
-                      className="title"
-                    >
-                      <h2
-                        className="default"
-                      >
-                         
-                         
-                        Lorem ipsum dolor sit amet
-                         
-                      </h2>
-                      <h3>
-                        
-                      </h3>
-                    </div>
-                    <div
-                      className="content"
-                    >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="col desknull tvnull tablet12 palm12 startAlign"
-                >
-                  <div
-                    className="card"
-                  >
-                    <div
-                      className="title"
-                    >
-                      <h2
-                        className="default"
-                      >
-                         
-                         
-                        Lorem ipsum dolor sit amet
-                         
-                      </h2>
-                      <h3>
-                        
-                      </h3>
-                    </div>
-                    <div
-                      className="content"
-                    >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="row flex"
-              >
-                <div
-                  className="col desknull tvnull tablet12 palm12 startAlign"
-                >
-                  <div
-                    className="card"
-                  >
-                    <div
-                      className="title"
-                    >
-                      <h2
-                        className="default"
-                      >
-                         
-                         
-                        Lorem ipsum dolor sit amet
-                         
-                      </h2>
-                      <h3>
-                        
-                      </h3>
-                    </div>
-                    <div
-                      className="content"
-                    >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
-                    </div>
-                  </div>
-                </div>
                 <div
                   className="col desknull tvnull tablet12 palm12 startAlign"
                 >
@@ -25832,6 +26020,124 @@ exports[`Storyshots Layout Default without Sidebar 1`] = `
               </div>
               <div
                 className="row flex"
+                data-testid={null}
+              >
+                <div
+                  className="col desknull tvnull tablet12 palm12 startAlign"
+                >
+                  <div
+                    className="card"
+                  >
+                    <div
+                      className="title"
+                    >
+                      <h2
+                        className="default"
+                      >
+                         
+                         
+                        Lorem ipsum dolor sit amet
+                         
+                      </h2>
+                      <h3>
+                        
+                      </h3>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="col desknull tvnull tablet12 palm12 startAlign"
+                >
+                  <div
+                    className="card"
+                  >
+                    <div
+                      className="title"
+                    >
+                      <h2
+                        className="default"
+                      >
+                         
+                         
+                        Lorem ipsum dolor sit amet
+                         
+                      </h2>
+                      <h3>
+                        
+                      </h3>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="col desknull tvnull tablet12 palm12 startAlign"
+                >
+                  <div
+                    className="card"
+                  >
+                    <div
+                      className="title"
+                    >
+                      <h2
+                        className="default"
+                      >
+                         
+                         
+                        Lorem ipsum dolor sit amet
+                         
+                      </h2>
+                      <h3>
+                        
+                      </h3>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="col desknull tvnull tablet12 palm12 startAlign"
+                >
+                  <div
+                    className="card"
+                  >
+                    <div
+                      className="title"
+                    >
+                      <h2
+                        className="default"
+                      >
+                         
+                         
+                        Lorem ipsum dolor sit amet
+                         
+                      </h2>
+                      <h3>
+                        
+                      </h3>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis placerat lacus et pretium. Aenean porttitor mi odio, vel blandit nulla malesuada et. Duis a tellus quis est iaculis accumsan. In diam est, egestas eu lobortis eu, laoreet ut tortor. Sed mattis sapien vel malesuada sodales. Curabitur hendrerit purus sed ex feugiat hendrerit. Vivamus eleifend odio a congue consectetur.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="row flex"
+                data-testid={null}
               >
                 <div
                   className="col desknull tvnull tablet12 palm12 startAlign"
@@ -25987,6 +26293,7 @@ exports[`Storyshots Legend Default 1`] = `
           >
             <abbr
               className="uppercase acronym"
+              data-testid={null}
               style={
                 Object {
                   "background": "#53be76",
@@ -26016,6 +26323,7 @@ exports[`Storyshots Legend Default 1`] = `
           >
             <abbr
               className="uppercase acronym"
+              data-testid={null}
               style={
                 Object {
                   "background": "#fcb20a",
@@ -26045,6 +26353,7 @@ exports[`Storyshots Legend Default 1`] = `
           >
             <abbr
               className="uppercase acronym"
+              data-testid={null}
               style={
                 Object {
                   "background": "#5b2886",
@@ -26074,6 +26383,7 @@ exports[`Storyshots Legend Default 1`] = `
           >
             <abbr
               className="uppercase acronym"
+              data-testid={null}
               style={
                 Object {
                   "background": "#9d9fa0",
@@ -26103,6 +26413,7 @@ exports[`Storyshots Legend Default 1`] = `
           >
             <abbr
               className="uppercase acronym"
+              data-testid={null}
               style={
                 Object {
                   "background": "#e00403",
@@ -26132,6 +26443,7 @@ exports[`Storyshots Legend Default 1`] = `
           >
             <abbr
               className="uppercase acronym"
+              data-testid={null}
               style={
                 Object {
                   "background": "#8c68d4",
@@ -26170,6 +26482,7 @@ exports[`Storyshots Legend Default 1`] = `
           >
             <abbr
               className="uppercase acronym"
+              data-testid={null}
               style={
                 Object {
                   "background": "#951d3c",
@@ -26199,6 +26512,7 @@ exports[`Storyshots Legend Default 1`] = `
           >
             <abbr
               className="uppercase acronym"
+              data-testid={null}
               style={
                 Object {
                   "background": "#244d85",
@@ -26228,6 +26542,7 @@ exports[`Storyshots Legend Default 1`] = `
           >
             <abbr
               className="uppercase acronym"
+              data-testid={null}
               style={
                 Object {
                   "background": "#bf5316",
@@ -26266,6 +26581,7 @@ exports[`Storyshots Legend Default 1`] = `
           >
             <abbr
               className="uppercase acronym"
+              data-testid={null}
               style={
                 Object {
                   "background": "#4ca9d7",
@@ -26290,6 +26606,7 @@ exports[`Storyshots Legend Default 1`] = `
           >
             <abbr
               className="uppercase acronym"
+              data-testid={null}
               style={
                 Object {
                   "background": "#f16518",
@@ -26314,6 +26631,7 @@ exports[`Storyshots Legend Default 1`] = `
           >
             <abbr
               className="uppercase acronym"
+              data-testid={null}
               style={
                 Object {
                   "background": "#41535b",
@@ -26347,6 +26665,7 @@ exports[`Storyshots Legend Default 1`] = `
           >
             <abbr
               className="capitalize acronym"
+              data-testid={null}
               style={
                 Object {
                   "background": "#453aa6",
@@ -26376,6 +26695,7 @@ exports[`Storyshots Legend Default 1`] = `
           >
             <abbr
               className="capitalize acronym"
+              data-testid={null}
               style={
                 Object {
                   "background": "#a63a82",
@@ -26405,6 +26725,7 @@ exports[`Storyshots Legend Default 1`] = `
           >
             <abbr
               className="capitalize acronym"
+              data-testid={null}
               style={
                 Object {
                   "background": "#9bc355",
@@ -26443,6 +26764,7 @@ exports[`Storyshots Legend Default 1`] = `
           >
             <abbr
               className="uppercase acronym"
+              data-testid={null}
               style={
                 Object {
                   "background": "#c37355",
@@ -26472,6 +26794,7 @@ exports[`Storyshots Legend Default 1`] = `
           >
             <abbr
               className="uppercase acronym"
+              data-testid={null}
               style={
                 Object {
                   "background": "#226cf7",
@@ -26501,6 +26824,7 @@ exports[`Storyshots Legend Default 1`] = `
           >
             <abbr
               className="uppercase acronym"
+              data-testid={null}
               style={
                 Object {
                   "background": "#b60707",
@@ -26539,6 +26863,7 @@ exports[`Storyshots Legend Default 1`] = `
           >
             <abbr
               className="uppercase acronym"
+              data-testid={null}
               style={
                 Object {
                   "background": "#453aa6",
@@ -26566,6 +26891,7 @@ exports[`Storyshots Legend Default 1`] = `
           >
             <abbr
               className="uppercase acronym"
+              data-testid={null}
               style={
                 Object {
                   "background": "#a63a82",
@@ -26593,6 +26919,7 @@ exports[`Storyshots Legend Default 1`] = `
           >
             <abbr
               className="uppercase acronym"
+              data-testid={null}
               style={
                 Object {
                   "background": "#9bc355",
@@ -28289,6 +28616,7 @@ exports[`Storyshots Popover Positions 1`] = `
       >
         <div
           className="row"
+          data-testid={null}
         >
           <div
             className="col desk4 tv4 tablet4 palm12 startAlign"
@@ -33782,6 +34110,7 @@ exports[`Storyshots Table Action column 1`] = `
                   >
                     <abbr
                       className="uppercase acronym"
+                      data-testid={null}
                       style={
                         Object {
                           "background": "#244d85",
@@ -33865,6 +34194,7 @@ exports[`Storyshots Table Action column 1`] = `
                   >
                     <abbr
                       className="uppercase acronym"
+                      data-testid={null}
                       style={
                         Object {
                           "background": "#57be76",
@@ -33948,6 +34278,7 @@ exports[`Storyshots Table Action column 1`] = `
                   >
                     <abbr
                       className="uppercase acronym"
+                      data-testid={null}
                       style={
                         Object {
                           "background": "#e47735",
@@ -34031,6 +34362,7 @@ exports[`Storyshots Table Action column 1`] = `
                   >
                     <abbr
                       className="uppercase acronym"
+                      data-testid={null}
                       style={
                         Object {
                           "background": "#951e3c",
@@ -34142,6 +34474,7 @@ exports[`Storyshots Table Disabled orderable 1`] = `
                   >
                     <input
                       checked={false}
+                      data-testid={null}
                       disabled={true}
                       id="all-all"
                       name="all"
@@ -34299,6 +34632,7 @@ exports[`Storyshots Table Disabled orderable 1`] = `
                   >
                     <input
                       checked={false}
+                      data-testid={null}
                       disabled={true}
                       id="line_0-0"
                       name="line_0"
@@ -34327,6 +34661,7 @@ exports[`Storyshots Table Disabled orderable 1`] = `
                   >
                     <abbr
                       className="uppercase acronym"
+                      data-testid={null}
                       style={
                         Object {
                           "background": "#244d85",
@@ -34555,6 +34890,7 @@ exports[`Storyshots Table Disabled orderable 1`] = `
                   >
                     <input
                       checked={false}
+                      data-testid={null}
                       disabled={true}
                       id="line_1-1"
                       name="line_1"
@@ -34583,6 +34919,7 @@ exports[`Storyshots Table Disabled orderable 1`] = `
                   >
                     <abbr
                       className="uppercase acronym"
+                      data-testid={null}
                       style={
                         Object {
                           "background": "#57be76",
@@ -34816,6 +35153,7 @@ exports[`Storyshots Table Disabled orderable 1`] = `
                   >
                     <input
                       checked={true}
+                      data-testid={null}
                       disabled={true}
                       id="line_2-2"
                       name="line_2"
@@ -34844,6 +35182,7 @@ exports[`Storyshots Table Disabled orderable 1`] = `
                   >
                     <abbr
                       className="uppercase acronym"
+                      data-testid={null}
                       style={
                         Object {
                           "background": "#e47735",
@@ -35077,6 +35416,7 @@ exports[`Storyshots Table Disabled orderable 1`] = `
                   >
                     <input
                       checked={false}
+                      data-testid={null}
                       disabled={true}
                       id="line_3-3"
                       name="line_3"
@@ -35105,6 +35445,7 @@ exports[`Storyshots Table Disabled orderable 1`] = `
                   >
                     <abbr
                       className="uppercase acronym"
+                      data-testid={null}
                       style={
                         Object {
                           "background": "#951e3c",
@@ -35523,6 +35864,7 @@ exports[`Storyshots Table Empty renderer column 1`] = `
                   >
                     <abbr
                       className="uppercase acronym"
+                      data-testid={null}
                       style={
                         Object {
                           "background": "#244d85",
@@ -35585,6 +35927,7 @@ exports[`Storyshots Table Empty renderer column 1`] = `
                   >
                     <abbr
                       className="uppercase acronym"
+                      data-testid={null}
                       style={
                         Object {
                           "background": "#57be76",
@@ -35647,6 +35990,7 @@ exports[`Storyshots Table Empty renderer column 1`] = `
                   >
                     <abbr
                       className="uppercase acronym"
+                      data-testid={null}
                       style={
                         Object {
                           "background": "#e47735",
@@ -35709,6 +36053,7 @@ exports[`Storyshots Table Empty renderer column 1`] = `
                   >
                     <abbr
                       className="uppercase acronym"
+                      data-testid={null}
                       style={
                         Object {
                           "background": "#951e3c",
@@ -36234,6 +36579,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                   >
                     <input
                       checked={false}
+                      data-testid={null}
                       disabled={false}
                       id="all-all"
                       name="all"
@@ -36400,6 +36746,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                   >
                     <input
                       checked={false}
+                      data-testid={null}
                       disabled={false}
                       id="line_0-0"
                       name="line_0"
@@ -36428,6 +36775,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                   >
                     <abbr
                       className="uppercase acronym"
+                      data-testid={null}
                       style={
                         Object {
                           "background": "#244d85",
@@ -36661,6 +37009,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                   >
                     <input
                       checked={false}
+                      data-testid={null}
                       disabled={false}
                       id="line_1-1"
                       name="line_1"
@@ -36689,6 +37038,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                   >
                     <abbr
                       className="uppercase acronym"
+                      data-testid={null}
                       style={
                         Object {
                           "background": "#57be76",
@@ -36927,6 +37277,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                   >
                     <input
                       checked={true}
+                      data-testid={null}
                       disabled={false}
                       id="line_2-2"
                       name="line_2"
@@ -36955,6 +37306,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                   >
                     <abbr
                       className="uppercase acronym"
+                      data-testid={null}
                       style={
                         Object {
                           "background": "#e47735",
@@ -37193,6 +37545,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                   >
                     <input
                       checked={false}
+                      data-testid={null}
                       disabled={false}
                       id="line_3-3"
                       name="line_3"
@@ -37221,6 +37574,7 @@ exports[`Storyshots Table Selectable and expandable 1`] = `
                   >
                     <abbr
                       className="uppercase acronym"
+                      data-testid={null}
                       style={
                         Object {
                           "background": "#951e3c",
@@ -37574,6 +37928,7 @@ exports[`Storyshots Table Simple 1`] = `
                   >
                     <abbr
                       className="uppercase acronym"
+                      data-testid={null}
                       style={
                         Object {
                           "background": "#244d85",
@@ -37634,6 +37989,7 @@ exports[`Storyshots Table Simple 1`] = `
                   >
                     <abbr
                       className="uppercase acronym"
+                      data-testid={null}
                       style={
                         Object {
                           "background": "#57be76",
@@ -37694,6 +38050,7 @@ exports[`Storyshots Table Simple 1`] = `
                   >
                     <abbr
                       className="uppercase acronym"
+                      data-testid={null}
                       style={
                         Object {
                           "background": "#e47735",
@@ -37754,6 +38111,7 @@ exports[`Storyshots Table Simple 1`] = `
                   >
                     <abbr
                       className="uppercase acronym"
+                      data-testid={null}
                       style={
                         Object {
                           "background": "#951e3c",
@@ -37985,6 +38343,7 @@ exports[`Storyshots Table Width Control 1`] = `
                 >
                   <abbr
                     className="uppercase acronym"
+                    data-testid={null}
                     style={
                       Object {
                         "background": "#244d85",
@@ -38045,6 +38404,7 @@ exports[`Storyshots Table Width Control 1`] = `
                 >
                   <abbr
                     className="uppercase acronym"
+                    data-testid={null}
                     style={
                       Object {
                         "background": "#57be76",
@@ -38105,6 +38465,7 @@ exports[`Storyshots Table Width Control 1`] = `
                 >
                   <abbr
                     className="uppercase acronym"
+                    data-testid={null}
                     style={
                       Object {
                         "background": "#e47735",
@@ -38165,6 +38526,7 @@ exports[`Storyshots Table Width Control 1`] = `
                 >
                   <abbr
                     className="uppercase acronym"
+                    data-testid={null}
                     style={
                       Object {
                         "background": "#951e3c",
@@ -38320,6 +38682,7 @@ exports[`Storyshots Tooltip Default 1`] = `
       >
         <div
           className="row"
+          data-testid={null}
         >
           <div
             className="col desk4 tv4 tablet4 palm12 startAlign"
@@ -39349,6 +39712,7 @@ exports[`Storyshots Transition Animation 1`] = `
       >
         <div
           className="row"
+          data-testid={null}
         >
           <div
             className="col desk4 tv4 tablet4 palm12 startAlign"
@@ -39361,6 +39725,7 @@ exports[`Storyshots Transition Animation 1`] = `
             >
               <div
                 className="row"
+                data-testid={null}
               >
                 <div
                   className="col desknull tvnull tabletnull palmnull startAlign"
@@ -39393,6 +39758,7 @@ exports[`Storyshots Transition Animation 1`] = `
               </div>
               <div
                 className="row"
+                data-testid={null}
               >
                 <div
                   className="col desknull tvnull tabletnull palmnull startAlign"
@@ -39413,6 +39779,7 @@ exports[`Storyshots Transition Animation 1`] = `
             >
               <div
                 className="row"
+                data-testid={null}
               >
                 <div
                   className="col desknull tvnull tabletnull palmnull startAlign"
@@ -39445,6 +39812,7 @@ exports[`Storyshots Transition Animation 1`] = `
               </div>
               <div
                 className="row"
+                data-testid={null}
               >
                 <div
                   className="col desknull tvnull tabletnull palmnull startAlign"
@@ -39465,6 +39833,7 @@ exports[`Storyshots Transition Animation 1`] = `
             >
               <div
                 className="row"
+                data-testid={null}
               >
                 <div
                   className="col desknull tvnull tabletnull palmnull startAlign"
@@ -39497,6 +39866,7 @@ exports[`Storyshots Transition Animation 1`] = `
               </div>
               <div
                 className="row"
+                data-testid={null}
               >
                 <div
                   className="col desknull tvnull tabletnull palmnull startAlign"
@@ -39509,6 +39879,7 @@ exports[`Storyshots Transition Animation 1`] = `
         </div>
         <div
           className="row"
+          data-testid={null}
         >
           <div
             className="col desk4 tv4 tablet4 palm12 startAlign"
@@ -39521,6 +39892,7 @@ exports[`Storyshots Transition Animation 1`] = `
             >
               <div
                 className="row"
+                data-testid={null}
               >
                 <div
                   className="col desknull tvnull tabletnull palmnull startAlign"
@@ -39553,6 +39925,7 @@ exports[`Storyshots Transition Animation 1`] = `
               </div>
               <div
                 className="row"
+                data-testid={null}
               >
                 <div
                   className="col desknull tvnull tabletnull palmnull startAlign"
@@ -39583,6 +39956,7 @@ exports[`Storyshots Transition Picker 1`] = `
       >
         <div
           className="row"
+          data-testid={null}
         >
           <div
             className="col desknull tvnull tabletnull palmnull startAlign"
@@ -39597,6 +39971,7 @@ exports[`Storyshots Transition Picker 1`] = `
                   className="container"
                 >
                   <input
+                    data-test={null}
                     disabled={false}
                     id="damping"
                     max={115}
@@ -39625,6 +40000,7 @@ exports[`Storyshots Transition Picker 1`] = `
         </div>
         <div
           className="row"
+          data-testid={null}
         >
           <div
             className="col desknull tvnull tabletnull palmnull startAlign"
@@ -39639,6 +40015,7 @@ exports[`Storyshots Transition Picker 1`] = `
                   className="container"
                 >
                   <input
+                    data-test={null}
                     disabled={false}
                     id="precision"
                     maxLength={10}
@@ -39666,6 +40043,7 @@ exports[`Storyshots Transition Picker 1`] = `
         </div>
         <div
           className="row"
+          data-testid={null}
         >
           <div
             className="col desknull tvnull tabletnull palmnull startAlign"
@@ -39680,6 +40058,7 @@ exports[`Storyshots Transition Picker 1`] = `
                   className="container"
                 >
                   <input
+                    data-test={null}
                     disabled={false}
                     id="stiffness"
                     max={500}
@@ -39708,6 +40087,7 @@ exports[`Storyshots Transition Picker 1`] = `
         </div>
         <div
           className="row"
+          data-testid={null}
         >
           <div
             className="col desknull tvnull tabletnull palmnull startAlign"
@@ -39740,6 +40120,7 @@ exports[`Storyshots Transition Picker 1`] = `
         </div>
         <div
           className="row"
+          data-testid={null}
         >
           <div
             className="col desknull tvnull tabletnull palmnull startAlign"
