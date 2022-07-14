@@ -93,7 +93,7 @@ describe('SidebarLink', () => {
     expect(onClick).toHaveBeenCalled()
   })
 
-  it('should dont call onClick when has children', () => {
+  it('should call onClick when has children', () => {
     const onClick = jest.fn()
 
     const component = shallow(
@@ -107,7 +107,7 @@ describe('SidebarLink', () => {
     )
 
     component.dive().find('button').simulate('click')
-    expect(onClick).not.toHaveBeenCalled()
+    expect(onClick).toHaveBeenCalled()
   })
 
   it('should render arrows when it has children and title', () => {
