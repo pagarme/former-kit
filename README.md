@@ -38,6 +38,19 @@ Check the [full documentation][docs] to understand how to use components.
 
 Check the [contributing][contributing] guide.
 
+## Publishing to NPM
+
+The publishing process is automated using a combination of GitHub Actions and CircleCI. We're using the [release-please-action](https://github.com/GoogleCloudPlatform/release-please-action) in order to automatically create GitHub releases and bump the package.json version based on commit messages conventions known as [Conventional Commits](https://www.conventionalcommits.org/).
+
+By following those commit conventions the release-please-action will automatically identify when you're merging a pull request which is in accordance and immediately after will create another pull request which will contain the changelog, the package.json version bump, a tag, and a release indicating the new version.
+
+You're not required to merge this release pull request, but when you do it will trigger a workflow on CircleCI which will publish the new version of the package to NPM.
+
+if you can't get it through CI you need to have access to NPM publish and run
+```
+npm publish
+```
+
 
 ## Licensing
 

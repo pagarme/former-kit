@@ -22,10 +22,7 @@ class SidebarLink extends React.Component {
   constructor (props) {
     super(props)
 
-    const { beginExpanded } = this.props
-
     this.state = {
-      collapsed: !beginExpanded,
       focused: false,
     }
 
@@ -35,17 +32,8 @@ class SidebarLink extends React.Component {
   }
 
   handleClick () {
-    const { children, onClick } = this.props
-    const { collapsed } = this.state
-    if (children) {
-      this.setState({
-        collapsed: !collapsed,
-      })
-    }
-
-    if (!children) {
-      onClick()
-    }
+    const { onClick } = this.props
+    onClick()
   }
 
   handleBlur () {
@@ -72,7 +60,6 @@ class SidebarLink extends React.Component {
       theme,
       title,
     } = this.props
-    const { collapsed: active } = this.state
     return (
       <button
         data-testid={dataTestId}
@@ -84,11 +71,11 @@ class SidebarLink extends React.Component {
       >
         <div className={theme.title}>
           <span className={theme.icon}>{icon}</span>
-          {!collapsed && title}
-          {(!collapsed && children) && (
+          {title}
+          {children && (
             <span className={theme.arrow}>
               <Arrow
-                active={!active}
+                active={collapsed}
                 icons={icons}
               />
             </span>
@@ -101,21 +88,16 @@ class SidebarLink extends React.Component {
   render () {
     const {
       active,
-      borderButton,
       children,
       collapsed,
       theme,
       title,
     } = this.props
-    const { collapsed: isCollapsed, focused } = this.state
-    const renderSubmenu = !isCollapsed && !collapsed && children
-    const className = borderButton
-      ? theme.borderButton
-      : null
+    const { focused } = this.state
+    const renderSubmenu = children !== null && collapsed
     return (
       <li
         className={classNames(
-          className,
           theme.link,
           {
             [theme.active]: active,
@@ -167,14 +149,6 @@ SidebarLink.propTypes = {
    * Indicates if the element is active or not.
    */
   active: PropTypes.bool,
-  /**
-   * Indicates if the children should starts collapsed or not.
-   */
-  beginExpanded: PropTypes.bool,
-  /**
- * Indicates if the border left style.
- */
-  borderButton: PropTypes.bool,
   /**
    * The children can contain any kind of component.
    */
@@ -262,8 +236,6 @@ SidebarLink.propTypes = {
 
 SidebarLink.defaultProps = {
   active: false,
-  beginExpanded: false,
-  borderButton: false,
   children: null,
   collapsed: false,
   'data-testid': null,
