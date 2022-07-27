@@ -115,17 +115,17 @@ class SidebarState extends React.Component {
               relevance="low"
             />
           </SidebarHeader>
-
-          <SidebarLinks>
-            {itemData.map(item => (
-              <SidebarLink
-                key={item.value}
-                title={item.title.toUpperCase()}
-                active={contains(item.value, active)}
-                onClick={() => this.handleClick(item)}
-                collapsed={item.collapsed}
-              >
-                {item.sublinks
+          <div className={style.sublinksContainer}>
+            <SidebarLinks>
+              {itemData.map(item => (
+                <SidebarLink
+                  key={item.value}
+                  title={item.title.toUpperCase()}
+                  active={contains(item.value, active)}
+                  onClick={() => this.handleClick(item)}
+                  collapsed={item.collapsed}
+                >
+                  {item.sublinks
                   && item.sublinks.map(sublink => (
                     <SidebarLink
                       active={contains(sublink.value, active)}
@@ -136,9 +136,10 @@ class SidebarState extends React.Component {
                     />
                   ))
                 }
-              </SidebarLink>
-            ))}
-          </SidebarLinks>
+                </SidebarLink>
+              ))}
+            </SidebarLinks>
+          </div>
         </Sidebar>
       </Section>
     )
