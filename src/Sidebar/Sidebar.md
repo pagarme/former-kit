@@ -52,7 +52,6 @@ class SidebarState extends React.Component {
     this.id = shortid.generate()
 
     this.state = {
-      collapsed: props.collapsed || false,
       selectedEnvironment: 'live',
       active: [],
     }
@@ -68,23 +67,17 @@ class SidebarState extends React.Component {
 
   render () {
     const {
-      collapsed,
       selectedEnvironment,
     } = this.state
 
     return (
-      <Sidebar collapsed={collapsed}>
+      <Sidebar>
         <SidebarHeader>
-          {!collapsed &&
             <img
               src="https://pagar.me/wp-content/uploads/2018/04/logo_pagarme.svg"
               width={120}
               alt="sidebar logo"
             />
-          }
-          <button onClick={() => this.setState({ collapsed: !collapsed })}>
-            <IconMenu width="16" height="16" />
-          </button>
         </SidebarHeader>
 
         <SidebarLinks>

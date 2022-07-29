@@ -23472,132 +23472,107 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
               <logo.svg
                 width="140"
               />
-              <button
-                className="button clean lowRelevance default iconButton"
-                data-testid={null}
-                disabled={false}
-                onClick={[Function]}
-                type="button"
-              >
-                <Menu32.svg
-                  height={16}
-                  width={16}
-                />
-                <span
-                  className="ripple"
-                  style={
-                    Object {
-                      "height": 0,
-                      "left": 0,
-                      "top": 0,
-                      "width": 0,
-                    }
-                  }
-                />
-              </button>
             </header>
-            <div>
-              <nav>
-                <ul
-                  className="menu"
+            <nav>
+              <ul
+                className="menu"
+              >
+                <li
+                  className="link"
                 >
-                  <li
-                    className="link"
+                  <button
+                    data-testid={null}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    role="link"
+                    type="button"
                   >
-                    <button
-                      data-testid={null}
-                      onBlur={[Function]}
-                      onClick={[Function]}
-                      onFocus={[Function]}
-                      role="link"
-                      type="button"
+                    <div
+                      className="title"
                     >
-                      <div
-                        className="title"
-                      >
-                        <span
-                          className="icon"
-                        />
-                        HOME
-                      </div>
-                    </button>
-                  </li>
-                  <li
-                    className="link"
+                      <span
+                        className="icon"
+                      />
+                      HOME
+                    </div>
+                  </button>
+                </li>
+                <li
+                  className="link"
+                >
+                  <button
+                    data-testid={null}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    role="link"
+                    type="button"
                   >
-                    <button
-                      data-testid={null}
-                      onBlur={[Function]}
-                      onClick={[Function]}
-                      onFocus={[Function]}
-                      role="link"
-                      type="button"
+                    <div
+                      className="title"
                     >
-                      <div
-                        className="title"
-                      >
-                        <span
-                          className="icon"
-                        />
-                        TRANSACTIONS
-                      </div>
-                    </button>
-                  </li>
-                  <li
-                    className="link"
+                      <span
+                        className="icon"
+                      />
+                      TRANSACTIONS
+                    </div>
+                  </button>
+                </li>
+                <li
+                  className="link"
+                >
+                  <button
+                    data-testid={null}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    role="link"
+                    type="button"
                   >
-                    <button
-                      data-testid={null}
-                      onBlur={[Function]}
-                      onClick={[Function]}
-                      onFocus={[Function]}
-                      role="link"
-                      type="button"
+                    <div
+                      className="title"
                     >
-                      <div
-                        className="title"
+                      <span
+                        className="icon"
+                      />
+                      MY ACCOUNT
+                      <span
+                        className="arrow"
                       >
-                        <span
-                          className="icon"
-                        />
-                        MY ACCOUNT
-                        <span
-                          className="arrow"
-                        >
-                          <svg />
-                        </span>
-                      </div>
-                    </button>
-                  </li>
-                  <li
-                    className="link"
+                        <svg />
+                      </span>
+                    </div>
+                  </button>
+                </li>
+                <li
+                  className="link"
+                >
+                  <button
+                    data-testid={null}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    role="link"
+                    type="button"
                   >
-                    <button
-                      data-testid={null}
-                      onBlur={[Function]}
-                      onClick={[Function]}
-                      onFocus={[Function]}
-                      role="link"
-                      type="button"
+                    <div
+                      className="title"
                     >
-                      <div
-                        className="title"
+                      <span
+                        className="icon"
+                      />
+                      CONFIG
+                      <span
+                        className="arrow"
                       >
-                        <span
-                          className="icon"
-                        />
-                        CONFIG
-                        <span
-                          className="arrow"
-                        >
-                          <svg />
-                        </span>
-                      </div>
-                    </button>
-                  </li>
-                </ul>
-              </nav>
-            </div>
+                        <svg />
+                      </span>
+                    </div>
+                  </button>
+                </li>
+              </ul>
+            </nav>
           </aside>
         </div>
       </section>
@@ -24013,132 +23988,107 @@ exports[`Storyshots Layout Default with all props 1`] = `
               <logo.svg
                 width="140"
               />
-              <button
-                className="button clean lowRelevance default iconButton"
-                data-testid={null}
-                disabled={false}
-                onClick={[Function]}
-                type="button"
-              >
-                <Menu32.svg
-                  height={16}
-                  width={16}
-                />
-                <span
-                  className="ripple"
-                  style={
-                    Object {
-                      "height": 0,
-                      "left": 0,
-                      "top": 0,
-                      "width": 0,
-                    }
-                  }
-                />
-              </button>
             </header>
-            <div>
-              <nav>
-                <ul
-                  className="menu"
+            <nav>
+              <ul
+                className="menu"
+              >
+                <li
+                  className="link"
                 >
-                  <li
-                    className="link"
+                  <button
+                    data-testid={null}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    role="link"
+                    type="button"
                   >
-                    <button
-                      data-testid={null}
-                      onBlur={[Function]}
-                      onClick={[Function]}
-                      onFocus={[Function]}
-                      role="link"
-                      type="button"
+                    <div
+                      className="title"
                     >
-                      <div
-                        className="title"
-                      >
-                        <span
-                          className="icon"
-                        />
-                        HOME
-                      </div>
-                    </button>
-                  </li>
-                  <li
-                    className="link"
+                      <span
+                        className="icon"
+                      />
+                      HOME
+                    </div>
+                  </button>
+                </li>
+                <li
+                  className="link"
+                >
+                  <button
+                    data-testid={null}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    role="link"
+                    type="button"
                   >
-                    <button
-                      data-testid={null}
-                      onBlur={[Function]}
-                      onClick={[Function]}
-                      onFocus={[Function]}
-                      role="link"
-                      type="button"
+                    <div
+                      className="title"
                     >
-                      <div
-                        className="title"
-                      >
-                        <span
-                          className="icon"
-                        />
-                        TRANSACTIONS
-                      </div>
-                    </button>
-                  </li>
-                  <li
-                    className="link"
+                      <span
+                        className="icon"
+                      />
+                      TRANSACTIONS
+                    </div>
+                  </button>
+                </li>
+                <li
+                  className="link"
+                >
+                  <button
+                    data-testid={null}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    role="link"
+                    type="button"
                   >
-                    <button
-                      data-testid={null}
-                      onBlur={[Function]}
-                      onClick={[Function]}
-                      onFocus={[Function]}
-                      role="link"
-                      type="button"
+                    <div
+                      className="title"
                     >
-                      <div
-                        className="title"
+                      <span
+                        className="icon"
+                      />
+                      MY ACCOUNT
+                      <span
+                        className="arrow"
                       >
-                        <span
-                          className="icon"
-                        />
-                        MY ACCOUNT
-                        <span
-                          className="arrow"
-                        >
-                          <svg />
-                        </span>
-                      </div>
-                    </button>
-                  </li>
-                  <li
-                    className="link"
+                        <svg />
+                      </span>
+                    </div>
+                  </button>
+                </li>
+                <li
+                  className="link"
+                >
+                  <button
+                    data-testid={null}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    role="link"
+                    type="button"
                   >
-                    <button
-                      data-testid={null}
-                      onBlur={[Function]}
-                      onClick={[Function]}
-                      onFocus={[Function]}
-                      role="link"
-                      type="button"
+                    <div
+                      className="title"
                     >
-                      <div
-                        className="title"
+                      <span
+                        className="icon"
+                      />
+                      CONFIG
+                      <span
+                        className="arrow"
                       >
-                        <span
-                          className="icon"
-                        />
-                        CONFIG
-                        <span
-                          className="arrow"
-                        >
-                          <svg />
-                        </span>
-                      </div>
-                    </button>
-                  </li>
-                </ul>
-              </nav>
-            </div>
+                        <svg />
+                      </span>
+                    </div>
+                  </button>
+                </li>
+              </ul>
+            </nav>
           </aside>
         </div>
       </section>
@@ -24668,132 +24618,107 @@ exports[`Storyshots Layout Default without Footer 1`] = `
               <logo.svg
                 width="140"
               />
-              <button
-                className="button clean lowRelevance default iconButton"
-                data-testid={null}
-                disabled={false}
-                onClick={[Function]}
-                type="button"
-              >
-                <Menu32.svg
-                  height={16}
-                  width={16}
-                />
-                <span
-                  className="ripple"
-                  style={
-                    Object {
-                      "height": 0,
-                      "left": 0,
-                      "top": 0,
-                      "width": 0,
-                    }
-                  }
-                />
-              </button>
             </header>
-            <div>
-              <nav>
-                <ul
-                  className="menu"
+            <nav>
+              <ul
+                className="menu"
+              >
+                <li
+                  className="link"
                 >
-                  <li
-                    className="link"
+                  <button
+                    data-testid={null}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    role="link"
+                    type="button"
                   >
-                    <button
-                      data-testid={null}
-                      onBlur={[Function]}
-                      onClick={[Function]}
-                      onFocus={[Function]}
-                      role="link"
-                      type="button"
+                    <div
+                      className="title"
                     >
-                      <div
-                        className="title"
-                      >
-                        <span
-                          className="icon"
-                        />
-                        HOME
-                      </div>
-                    </button>
-                  </li>
-                  <li
-                    className="link"
+                      <span
+                        className="icon"
+                      />
+                      HOME
+                    </div>
+                  </button>
+                </li>
+                <li
+                  className="link"
+                >
+                  <button
+                    data-testid={null}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    role="link"
+                    type="button"
                   >
-                    <button
-                      data-testid={null}
-                      onBlur={[Function]}
-                      onClick={[Function]}
-                      onFocus={[Function]}
-                      role="link"
-                      type="button"
+                    <div
+                      className="title"
                     >
-                      <div
-                        className="title"
-                      >
-                        <span
-                          className="icon"
-                        />
-                        TRANSACTIONS
-                      </div>
-                    </button>
-                  </li>
-                  <li
-                    className="link"
+                      <span
+                        className="icon"
+                      />
+                      TRANSACTIONS
+                    </div>
+                  </button>
+                </li>
+                <li
+                  className="link"
+                >
+                  <button
+                    data-testid={null}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    role="link"
+                    type="button"
                   >
-                    <button
-                      data-testid={null}
-                      onBlur={[Function]}
-                      onClick={[Function]}
-                      onFocus={[Function]}
-                      role="link"
-                      type="button"
+                    <div
+                      className="title"
                     >
-                      <div
-                        className="title"
+                      <span
+                        className="icon"
+                      />
+                      MY ACCOUNT
+                      <span
+                        className="arrow"
                       >
-                        <span
-                          className="icon"
-                        />
-                        MY ACCOUNT
-                        <span
-                          className="arrow"
-                        >
-                          <svg />
-                        </span>
-                      </div>
-                    </button>
-                  </li>
-                  <li
-                    className="link"
+                        <svg />
+                      </span>
+                    </div>
+                  </button>
+                </li>
+                <li
+                  className="link"
+                >
+                  <button
+                    data-testid={null}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    role="link"
+                    type="button"
                   >
-                    <button
-                      data-testid={null}
-                      onBlur={[Function]}
-                      onClick={[Function]}
-                      onFocus={[Function]}
-                      role="link"
-                      type="button"
+                    <div
+                      className="title"
                     >
-                      <div
-                        className="title"
+                      <span
+                        className="icon"
+                      />
+                      CONFIG
+                      <span
+                        className="arrow"
                       >
-                        <span
-                          className="icon"
-                        />
-                        CONFIG
-                        <span
-                          className="arrow"
-                        >
-                          <svg />
-                        </span>
-                      </div>
-                    </button>
-                  </li>
-                </ul>
-              </nav>
-            </div>
+                        <svg />
+                      </span>
+                    </div>
+                  </button>
+                </li>
+              </ul>
+            </nav>
           </aside>
         </div>
       </section>
@@ -25261,132 +25186,107 @@ exports[`Storyshots Layout Default without Header 1`] = `
               <logo.svg
                 width="140"
               />
-              <button
-                className="button clean lowRelevance default iconButton"
-                data-testid={null}
-                disabled={false}
-                onClick={[Function]}
-                type="button"
-              >
-                <Menu32.svg
-                  height={16}
-                  width={16}
-                />
-                <span
-                  className="ripple"
-                  style={
-                    Object {
-                      "height": 0,
-                      "left": 0,
-                      "top": 0,
-                      "width": 0,
-                    }
-                  }
-                />
-              </button>
             </header>
-            <div>
-              <nav>
-                <ul
-                  className="menu"
+            <nav>
+              <ul
+                className="menu"
+              >
+                <li
+                  className="link"
                 >
-                  <li
-                    className="link"
+                  <button
+                    data-testid={null}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    role="link"
+                    type="button"
                   >
-                    <button
-                      data-testid={null}
-                      onBlur={[Function]}
-                      onClick={[Function]}
-                      onFocus={[Function]}
-                      role="link"
-                      type="button"
+                    <div
+                      className="title"
                     >
-                      <div
-                        className="title"
-                      >
-                        <span
-                          className="icon"
-                        />
-                        HOME
-                      </div>
-                    </button>
-                  </li>
-                  <li
-                    className="link"
+                      <span
+                        className="icon"
+                      />
+                      HOME
+                    </div>
+                  </button>
+                </li>
+                <li
+                  className="link"
+                >
+                  <button
+                    data-testid={null}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    role="link"
+                    type="button"
                   >
-                    <button
-                      data-testid={null}
-                      onBlur={[Function]}
-                      onClick={[Function]}
-                      onFocus={[Function]}
-                      role="link"
-                      type="button"
+                    <div
+                      className="title"
                     >
-                      <div
-                        className="title"
-                      >
-                        <span
-                          className="icon"
-                        />
-                        TRANSACTIONS
-                      </div>
-                    </button>
-                  </li>
-                  <li
-                    className="link"
+                      <span
+                        className="icon"
+                      />
+                      TRANSACTIONS
+                    </div>
+                  </button>
+                </li>
+                <li
+                  className="link"
+                >
+                  <button
+                    data-testid={null}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    role="link"
+                    type="button"
                   >
-                    <button
-                      data-testid={null}
-                      onBlur={[Function]}
-                      onClick={[Function]}
-                      onFocus={[Function]}
-                      role="link"
-                      type="button"
+                    <div
+                      className="title"
                     >
-                      <div
-                        className="title"
+                      <span
+                        className="icon"
+                      />
+                      MY ACCOUNT
+                      <span
+                        className="arrow"
                       >
-                        <span
-                          className="icon"
-                        />
-                        MY ACCOUNT
-                        <span
-                          className="arrow"
-                        >
-                          <svg />
-                        </span>
-                      </div>
-                    </button>
-                  </li>
-                  <li
-                    className="link"
+                        <svg />
+                      </span>
+                    </div>
+                  </button>
+                </li>
+                <li
+                  className="link"
+                >
+                  <button
+                    data-testid={null}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    role="link"
+                    type="button"
                   >
-                    <button
-                      data-testid={null}
-                      onBlur={[Function]}
-                      onClick={[Function]}
-                      onFocus={[Function]}
-                      role="link"
-                      type="button"
+                    <div
+                      className="title"
                     >
-                      <div
-                        className="title"
+                      <span
+                        className="icon"
+                      />
+                      CONFIG
+                      <span
+                        className="arrow"
                       >
-                        <span
-                          className="icon"
-                        />
-                        CONFIG
-                        <span
-                          className="arrow"
-                        >
-                          <svg />
-                        </span>
-                      </div>
-                    </button>
-                  </li>
-                </ul>
-              </nav>
-            </div>
+                        <svg />
+                      </span>
+                    </div>
+                  </button>
+                </li>
+              </ul>
+            </nav>
           </aside>
         </div>
       </section>
@@ -32077,153 +31977,6 @@ exports[`Storyshots SegmentedSwitch Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Sidebar Collapsed 1`] = `
-<div
-  className="storybook-readme-story"
->
-  <section
-    className=""
-  >
-    
-    <div>
-      <aside
-        className="sidebar collapsed"
-      >
-        <header
-          className="header"
-        >
-          <button
-            className="button clean lowRelevance default iconButton"
-            data-testid={null}
-            disabled={false}
-            onClick={[Function]}
-            type="button"
-          >
-            <Menu32.svg
-              height={16}
-              width={16}
-            />
-            <span
-              className="ripple"
-              style={
-                Object {
-                  "height": 0,
-                  "left": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-          </button>
-        </header>
-        <div>
-          <nav>
-            <ul
-              className="menu"
-            >
-              <li
-                className="link"
-              >
-                <button
-                  data-testid={null}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  role="link"
-                  type="button"
-                >
-                  <div
-                    className="title"
-                  >
-                    <span
-                      className="icon"
-                    />
-                    HOME
-                  </div>
-                </button>
-              </li>
-              <li
-                className="link"
-              >
-                <button
-                  data-testid={null}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  role="link"
-                  type="button"
-                >
-                  <div
-                    className="title"
-                  >
-                    <span
-                      className="icon"
-                    />
-                    TRANSACTIONS
-                  </div>
-                </button>
-              </li>
-              <li
-                className="link"
-              >
-                <button
-                  data-testid={null}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  role="link"
-                  type="button"
-                >
-                  <div
-                    className="title"
-                  >
-                    <span
-                      className="icon"
-                    />
-                    MY ACCOUNT
-                    <span
-                      className="arrow"
-                    >
-                      <svg />
-                    </span>
-                  </div>
-                </button>
-              </li>
-              <li
-                className="link"
-              >
-                <button
-                  data-testid={null}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  role="link"
-                  type="button"
-                >
-                  <div
-                    className="title"
-                  >
-                    <span
-                      className="icon"
-                    />
-                    CONFIG
-                    <span
-                      className="arrow"
-                    >
-                      <svg />
-                    </span>
-                  </div>
-                </button>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </aside>
-    </div>
-  </section>
-</div>
-`;
-
 exports[`Storyshots Sidebar Default 1`] = `
 <div
   className="storybook-readme-story"
@@ -32242,132 +31995,107 @@ exports[`Storyshots Sidebar Default 1`] = `
           <logo.svg
             width="140"
           />
-          <button
-            className="button clean lowRelevance default iconButton"
-            data-testid={null}
-            disabled={false}
-            onClick={[Function]}
-            type="button"
-          >
-            <Menu32.svg
-              height={16}
-              width={16}
-            />
-            <span
-              className="ripple"
-              style={
-                Object {
-                  "height": 0,
-                  "left": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-          </button>
         </header>
-        <div>
-          <nav>
-            <ul
-              className="menu"
+        <nav>
+          <ul
+            className="menu"
+          >
+            <li
+              className="link"
             >
-              <li
-                className="link"
+              <button
+                data-testid={null}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                role="link"
+                type="button"
               >
-                <button
-                  data-testid={null}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  role="link"
-                  type="button"
+                <div
+                  className="title"
                 >
-                  <div
-                    className="title"
-                  >
-                    <span
-                      className="icon"
-                    />
-                    HOME
-                  </div>
-                </button>
-              </li>
-              <li
-                className="link"
+                  <span
+                    className="icon"
+                  />
+                  HOME
+                </div>
+              </button>
+            </li>
+            <li
+              className="link"
+            >
+              <button
+                data-testid={null}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                role="link"
+                type="button"
               >
-                <button
-                  data-testid={null}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  role="link"
-                  type="button"
+                <div
+                  className="title"
                 >
-                  <div
-                    className="title"
-                  >
-                    <span
-                      className="icon"
-                    />
-                    TRANSACTIONS
-                  </div>
-                </button>
-              </li>
-              <li
-                className="link"
+                  <span
+                    className="icon"
+                  />
+                  TRANSACTIONS
+                </div>
+              </button>
+            </li>
+            <li
+              className="link"
+            >
+              <button
+                data-testid={null}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                role="link"
+                type="button"
               >
-                <button
-                  data-testid={null}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  role="link"
-                  type="button"
+                <div
+                  className="title"
                 >
-                  <div
-                    className="title"
+                  <span
+                    className="icon"
+                  />
+                  MY ACCOUNT
+                  <span
+                    className="arrow"
                   >
-                    <span
-                      className="icon"
-                    />
-                    MY ACCOUNT
-                    <span
-                      className="arrow"
-                    >
-                      <svg />
-                    </span>
-                  </div>
-                </button>
-              </li>
-              <li
-                className="link"
+                    <svg />
+                  </span>
+                </div>
+              </button>
+            </li>
+            <li
+              className="link"
+            >
+              <button
+                data-testid={null}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                role="link"
+                type="button"
               >
-                <button
-                  data-testid={null}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  role="link"
-                  type="button"
+                <div
+                  className="title"
                 >
-                  <div
-                    className="title"
+                  <span
+                    className="icon"
+                  />
+                  CONFIG
+                  <span
+                    className="arrow"
                   >
-                    <span
-                      className="icon"
-                    />
-                    CONFIG
-                    <span
-                      className="arrow"
-                    >
-                      <svg />
-                    </span>
-                  </div>
-                </button>
-              </li>
-            </ul>
-          </nav>
-        </div>
+                    <svg />
+                  </span>
+                </div>
+              </button>
+            </li>
+          </ul>
+        </nav>
       </aside>
     </div>
   </section>
