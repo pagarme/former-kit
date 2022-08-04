@@ -1,6 +1,5 @@
 import React from 'react'
 
-import IconMenu from 'emblematic-icons/svg/Menu32.svg'
 import IconHome from 'emblematic-icons/svg/Home32.svg'
 import IconTransaction from 'emblematic-icons/svg/Transaction32.svg'
 import shortid from 'shortid'
@@ -44,21 +43,13 @@ class SidebarState extends React.Component {
     } = this.state
 
     return (
-      <Sidebar collapsed={collapsed}>
+      <Sidebar>
         <SidebarHeader>
-          {!collapsed && (
-            <img
-              alt="sidebar logo"
-              src="https://pagar.me/wp-content/uploads/2018/04/logo_pagarme.svg"
-              width={120}
-            />
-          )}
-          <button
-            onClick={() => this.setState({ collapsed: !collapsed })}
-            type="button"
-          >
-            <IconMenu width="16" height="16" />
-          </button>
+          <img
+            alt="sidebar logo"
+            src="https://pagar.me/wp-content/uploads/2018/04/logo_pagarme.svg"
+            width={120}
+          />
         </SidebarHeader>
 
         <SidebarLinks>

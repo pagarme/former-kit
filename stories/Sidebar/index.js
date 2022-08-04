@@ -5,4 +5,3 @@ import SidebarState from './SidebarState'
 
 storiesOf('Sidebar', module)
   .add('Default', () => <SidebarState />)
-  .add('Collapsed', () => <SidebarState collapsed />)

@@ -8,14 +8,10 @@ const consumeTheme = ThemeConsumer('UISidebar')
 
 const Sidebar = ({
   children,
-  collapsed,
   theme,
 }) => (
   <aside
-    className={classNames(theme.sidebar, {
-      [theme.collapsed]: collapsed,
-      [theme.expanded]: !collapsed,
-    })}
+    className={classNames(theme.sidebar, theme.expanded)}
   >
     {children}
   </aside>
@@ -28,10 +24,6 @@ Sidebar.propTypes = {
    * `SidebarLinks` as direct children.
    */
   children: PropTypes.node.isRequired,
-  /**
-   * Indicates if the sidebar is collapsed or not.
-   */
-  collapsed: PropTypes.bool,
   /**
    * @see [ThemeProvider](#themeprovider) - Theme received from `consumeTheme` wrapper.
    */
@@ -52,7 +44,6 @@ Sidebar.propTypes = {
 }
 
 Sidebar.defaultProps = {
-  collapsed: false,
   theme: {},
 }
 

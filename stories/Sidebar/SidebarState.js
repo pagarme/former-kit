@@ -1,6 +1,5 @@
 import React from 'react'
 
-import IconMenu from 'emblematic-icons/svg/Menu32.svg'
 import shortid from 'shortid'
 import { contains } from 'ramda'
 
@@ -10,8 +9,6 @@ import {
   SidebarLinks,
   SidebarLink,
 } from '../../src/Sidebar'
-
-import Button from '../../src/Button'
 
 import Logo from './logo.svg'
 import Section from '../Section'
@@ -72,7 +69,6 @@ class SidebarState extends React.Component {
 
     this.state = {
       active: [],
-      collapsed: props.collapsed || false,
       itemData: items.map(item => ({ ...item, collapsed: false })),
     }
 
@@ -99,23 +95,15 @@ class SidebarState extends React.Component {
   render () {
     const {
       active,
-      collapsed,
       itemData,
     } = this.state
 
     return (
       <Section className={style.background}>
-        <Sidebar collapsed={collapsed}>
+        <Sidebar>
           <SidebarHeader>
-            { !collapsed && <Logo width="140" /> }
-            <Button
-              onClick={() => this.setState({ collapsed: !collapsed })}
-              icon={<IconMenu width={16} height={16} />}
-              fill="clean"
-              relevance="low"
-            />
+            <Logo width="140" />
           </SidebarHeader>
-
           <SidebarLinks>
             {itemData.map(item => (
               <SidebarLink

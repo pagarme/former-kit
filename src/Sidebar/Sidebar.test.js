@@ -21,7 +21,7 @@ class SidebarComponent extends React.Component {
     } = this.state
 
     return (
-      <Sidebar collapsed={collapsed}>
+      <Sidebar>
         <SidebarHeader>
           {!collapsed
             && <img src="https://assets.pagar.me/site/general/logo-light-3812e7ea6b596bdcc8c041f0edc4ff15.png" alt="Pagar.me" />
