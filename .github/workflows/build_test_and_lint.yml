@@ -1,0 +1,51 @@
+name: Build, Test and Lint
+
+on:
+  push:
+    branches:
+      - 'master'
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint_and_tests:
+    name: Build, Lint and Test
+    runs-on: ubuntu-latest
+    steps:
+    -
+      name: Project checkout
+      uses: actions/checkout@v3
+    -
+      name: Setup Node
+      uses: actions/setup-node@v3
+      with:
+        node-version: 12
+    -
+      name: Setup browser
+      uses: browser-actions/setup-chrome@latest
+    -
+      name: Execute browser
+      run: chrome --version
+    -
+      name: Install dependencies
+      run: yarn
+    -
+      name: Run linter
+      run: yarn lint
+    -
+      name: Build production bundle
+      run: yarn build
+    -
+      name: Run Tests
+      run: yarn test
+    -
+      name: Build styleguidist
+      run: yarn styleguide:build
+    -
+      name: Build and upload storybook for visual diff
+      run: |
+        scripts/fetch-skin.sh
+        yarn percy; true
