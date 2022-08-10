@@ -1,4 +1,4 @@
-name: Build, Test and Lint
+name: Build, Test, Lint and Sonar
 
 on:
   push:
@@ -49,3 +49,31 @@ jobs:
       run: |
         scripts/fetch-skin.sh
         yarn percy; true
+    -
+      name: Upload Coverage
+      uses: actions/upload-artifact@v3
+      with:
+        name: former-kit-coverage
+        path: coverage/
+        retention-days: 1
+
+  sonar:
+    name: Sonar
+    needs: lint_and_tests
+    runs-on: ubuntu-latest
+    steps:
+    -
+      name: Checkout
+      uses: actions/checkout@v3
+    -
+      name: Download coverage
+      uses: actions/download-artifact@v2
+      with:
+        name: former-kit-coverage
+        path: coverage/
+    -
+      name: Run Sonar
+      uses: sonarsource/sonarcloud-github-action@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
