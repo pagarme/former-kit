@@ -1,4 +1,4 @@
-name: Build, Test and Lint
+name: Build, Test, Lint and Sonar
 
 on:
   push:
@@ -40,7 +40,14 @@ jobs:
       run: yarn build
     -
       name: Run Tests
-      run: yarn test
+      run: yarn test-coverage
+    -
+      name: Upload Coverage
+      uses: actions/upload-artifact@v3
+      with:
+        name: former-kit-coverage
+        path: coverage/
+        retention-days: 1
     -
       name: Build styleguidist
       run: yarn styleguide:build
@@ -49,3 +56,29 @@ jobs:
       run: |
         scripts/fetch-skin.sh
         yarn percy; true
+
+  sonar:
+    name: Sonar
+    needs: lint_and_tests
+    runs-on: ubuntu-latest
+    steps:
+    -
+      name: Checkout
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+    -
+      name: Download coverage
+      uses: actions/download-artifact@v2
+      with:
+        name: former-kit-coverage
+        path: coverage/
+    -
+      name: Rename source from coverage file
+      run: sed -i 's/\/home\/runner\/work\/former-kit\/former-kit\///g' coverage/lcov.info
+    -
+      name: Run Sonar
+      uses: sonarsource/sonarcloud-github-action@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
