@@ -285,6 +285,7 @@ class DateSelector extends Component {
       placement,
       presets,
       selectedPreset,
+      showActions,
       showCalendar,
       showSidebar,
       theme,
@@ -309,7 +310,7 @@ class DateSelector extends Component {
               { showCalendar && (
                 <div className={theme.stage}>
                   {this.renderPicker()}
-                  {this.renderActions()}
+                  {showActions && this.renderActions()}
                 </div>
               )}
             </div>
@@ -437,6 +438,10 @@ DateSelector.propTypes = {
   */
   selectionMode: validateSelectionMode,
   /**
+   * Indicates if the actions should be displayed.
+   */
+  showActions: bool,
+  /**
    * Indicates if calendar should be visible.
    */
   showCalendar: bool,
@@ -482,6 +487,7 @@ DateSelector.defaultProps = {
   presets: [],
   selectedPreset: '',
   selectionMode: 'single',
+  showActions: true,
   showCalendar: true,
   showSidebar: true,
   strings: defaultStrings,

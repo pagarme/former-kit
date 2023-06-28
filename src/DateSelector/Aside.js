@@ -41,7 +41,6 @@ class Aside extends Component {
     const asideKey = `${key}${label}`
     const labelFormat = label.replace(' ', '-').toLowerCase()
     const uniqueDataTestId = `${dataTestId}-aside-${labelFormat}`
-
     return (
       <li key={asideKey}>
         <input
@@ -84,7 +83,6 @@ class Aside extends Component {
       presets,
       theme,
     } = this.props
-
     return (
       <div className={theme.aside}>
         {this.renderPresets(addProp({ name }, presets))}
