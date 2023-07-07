@@ -121,7 +121,7 @@
     "rimraf": "2.6.3",
     "storybook-readme": "5.0.2",
     "style-loader": "0.23.1",
-    "stylelint": "10.1.0",
+    "stylelint": "15.10.1",
     "stylelint-config-pagarme-react": "2.0.0",
     "sw-precache-webpack-plugin": "0.11.5",
     "url-loader": "1.1.2",
