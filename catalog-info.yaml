@@ -1,0 +1,22 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: FORMER-KIT
+  title: FORMER-KIT
+  description: Biblioteca de componentes React baseada no design system desenvolvido pela equipe de UIUX. Esta biblioteca disponibiliza compontes que podem ser utilizados no desenvolvimento de outros sistemas front-end
+  namespace: pagarme-psp
+  annotations:
+    legacy.stone.tech/owner-email: CHANGE_ME
+    legacy.stone.tech/prod-date: CHANGE_ME
+    stone.tech/cloud-accounts: AWS/ADD_CLOUD_ACCOUNT
+  labels:
+    legacy.stone.tech/internal-user-auth-base: CHANGE_ME
+    legacy.stone.tech/access-request-type:  CHANGE_ME
+    legacy.stone.tech/handle-lgpd:  CHANGE_ME
+    legacy.stone.tech/customer-auth-method:  CHANGE_ME
+    stone.tech/endpoint-type:  CHANGE_ME
+spec:
+  type: CHANGE_ME
+  lifecycle: production
+  owner: pagarme/ADD_OWNER_TEAM #CHANGE IF NOT OWNER TEAM IS CORRECTLY
