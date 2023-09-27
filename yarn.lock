@@ -6632,10 +6632,10 @@ format@^0.2.2:
   resolved "https://registry.npmjs.org/format/-/format-0.2.2.tgz"
   integrity sha1-1hcBB+nv3E7TDJ3DkBbflCtctYs=
 
-former-kit-skin-pagarme@2.15.5:
-  version "2.15.5"
-  resolved "https://registry.yarnpkg.com/former-kit-skin-pagarme/-/former-kit-skin-pagarme-2.15.5.tgz#c116764becaf721dc42a8472fec848e2cdae8a64"
-  integrity sha512-nnPYsSuZN5XLAzJxc5jqxpFjy3r7t4tbgn2e2CdvOJgTGqBwqEdLmtBBB/8OtNkCbt3lVI6thi5VvS2wp2vm+w==
+former-kit-skin-pagarme@2.16.0:
+  version "2.16.0"
+  resolved "https://registry.yarnpkg.com/former-kit-skin-pagarme/-/former-kit-skin-pagarme-2.16.0.tgz#6a71f1a67e386154c69dd8576f1d25f3d19e67f2"
+  integrity sha512-bVak93IiYVVy3Wr2Hwuil9S/c5D5ITOQE7O0nUs96S5RM20hXUv2hRvC0bhHMHqC/CuGW4Fysqq4xYO6+lHEAA==
   dependencies:
     emblematic-icons "0.11.0"
     react-dates "18.4.1"
@@ -6792,9 +6792,9 @@ get-caller-file@^2.0.1:
   integrity sha512-DyFP3BM/3YHTQOCUL/w0OZHR0lpKeGrxotcHWcqNEdnltqFwXVfhEBQ94eIo34AfQpo0rGki4cyIiftY06h2Fg==
 
 get-func-name@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.npmjs.org/get-func-name/-/get-func-name-2.0.0.tgz"
-  integrity sha1-6td0q+5y4gQJQzoGY2YCPdaIekE=
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/get-func-name/-/get-func-name-2.0.2.tgz#0d7cf20cd13fda808669ffa88f4ffc7a3943fc41"
+  integrity sha512-8vXOvuE167CtIc3OyItco7N/dpRtBbYOsPsXCz7X/PMnlGjYjSGuZJgM1Y7mmew7BKf9BqvLX2tnOVy1BBUsxQ==
 
 get-intrinsic@^1.0.2:
   version "1.1.1"
