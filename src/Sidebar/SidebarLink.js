@@ -55,29 +55,40 @@ class SidebarLink extends React.Component {
       children,
       collapsed,
       'data-testid': dataTestId,
+      hasSeparator,
       icon,
+      iconRight,
       icons,
       theme,
       title,
     } = this.props
+
     return (
       <button
         data-testid={dataTestId}
         onBlur={this.handleBlur}
         onClick={this.handleClick}
         onFocus={this.handleFocus}
+        className={hasSeparator ? theme.separator : ''}
         role="link"
         type="button"
       >
         <div className={theme.title}>
-          <span className={theme.icon}>{icon}</span>
-          {title}
+          <div>
+            <span className={theme.icon}>{icon}</span>
+            {title}
+          </div>
           {children && (
             <span className={theme.arrow}>
               <Arrow
                 active={collapsed}
                 icons={icons}
               />
+            </span>
+          )}
+          {!children && !!iconRight && (
+            <span className={theme.arrow}>
+              {iconRight}
             </span>
           )}
         </div>
@@ -162,10 +173,18 @@ SidebarLink.propTypes = {
    */
   'data-testid': PropTypes.string,
   /**
+   * If true, includes a border at the top of the link
+   */
+  hasSeparator: PropTypes.bool,
+  /**
    * The icon defined by the user. It's shown with the title
    * and is also shown alone when the sidebar is collapsed.
    */
   icon: PropTypes.element,
+  /**
+   * The icon defined by the user. It's shown with the title
+   */
+  iconRight: PropTypes.element,
   /**
    * The icon theme for this element.
    * The icons 'collapse' and 'expand' are mandatory if
@@ -220,6 +239,10 @@ SidebarLink.propTypes = {
      */
     open: PropTypes.string,
     /**
+     * The class used to style the link that are a separator.
+     */
+    separator: PropTypes.string,
+    /**
      * The class used to submenu.
      */
     submenu: PropTypes.string,
@@ -239,7 +262,9 @@ SidebarLink.defaultProps = {
   children: null,
   collapsed: false,
   'data-testid': null,
+  hasSeparator: false,
   icon: null,
+  iconRight: null,
   icons: {},
   onBlur: null,
   onClick: null,

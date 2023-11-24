@@ -2,6 +2,7 @@ import React from 'react'
 
 import shortid from 'shortid'
 import { contains } from 'ramda'
+import IconHelp from 'emblematic-icons/svg/Help24.svg'
 
 import {
   Sidebar,
@@ -59,6 +60,13 @@ const items = [
     title: 'Config',
     value: 'config',
   },
+  {
+    hasSeparator: true,
+    iconRight: <IconHelp width="18" height="18" />,
+    path: ['helpCenter'],
+    title: 'Help Center',
+    value: 'helpCenter',
+  },
 ]
 
 class SidebarState extends React.Component {
@@ -108,9 +116,11 @@ class SidebarState extends React.Component {
             {itemData.map(item => (
               <SidebarLink
                 key={item.value}
+                hasSeparator={item.hasSeparator}
                 title={item.title.toUpperCase()}
                 active={contains(item.value, active)}
                 onClick={() => this.handleClick(item)}
+                iconRight={item.iconRight}
                 collapsed={item.collapsed}
               >
                 {item.sublinks
