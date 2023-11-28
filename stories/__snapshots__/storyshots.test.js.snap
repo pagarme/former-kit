@@ -23481,6 +23481,7 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
                   className="link"
                 >
                   <button
+                    className=""
                     data-testid={null}
                     onBlur={[Function]}
                     onClick={[Function]}
@@ -23491,10 +23492,12 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
                     <div
                       className="title"
                     >
-                      <span
-                        className="icon"
-                      />
-                      HOME
+                      <div>
+                        <span
+                          className="icon"
+                        />
+                        HOME
+                      </div>
                     </div>
                   </button>
                 </li>
@@ -23502,6 +23505,7 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
                   className="link"
                 >
                   <button
+                    className=""
                     data-testid={null}
                     onBlur={[Function]}
                     onClick={[Function]}
@@ -23512,10 +23516,12 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
                     <div
                       className="title"
                     >
-                      <span
-                        className="icon"
-                      />
-                      TRANSACTIONS
+                      <div>
+                        <span
+                          className="icon"
+                        />
+                        TRANSACTIONS
+                      </div>
                     </div>
                   </button>
                 </li>
@@ -23523,6 +23529,7 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
                   className="link"
                 >
                   <button
+                    className=""
                     data-testid={null}
                     onBlur={[Function]}
                     onClick={[Function]}
@@ -23533,10 +23540,12 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
                     <div
                       className="title"
                     >
-                      <span
-                        className="icon"
-                      />
-                      MY ACCOUNT
+                      <div>
+                        <span
+                          className="icon"
+                        />
+                        MY ACCOUNT
+                      </div>
                       <span
                         className="arrow"
                       >
@@ -23549,6 +23558,7 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
                   className="link"
                 >
                   <button
+                    className=""
                     data-testid={null}
                     onBlur={[Function]}
                     onClick={[Function]}
@@ -23559,14 +23569,48 @@ exports[`Storyshots Layout Default only Sidebar 1`] = `
                     <div
                       className="title"
                     >
-                      <span
-                        className="icon"
-                      />
-                      CONFIG
+                      <div>
+                        <span
+                          className="icon"
+                        />
+                        CONFIG
+                      </div>
                       <span
                         className="arrow"
                       >
                         <svg />
+                      </span>
+                    </div>
+                  </button>
+                </li>
+                <li
+                  className="link"
+                >
+                  <button
+                    className="separator"
+                    data-testid={null}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    role="link"
+                    type="button"
+                  >
+                    <div
+                      className="title"
+                    >
+                      <div>
+                        <span
+                          className="icon"
+                        />
+                        HELP CENTER
+                      </div>
+                      <span
+                        className="arrow"
+                      >
+                        <Help24.svg
+                          height="18"
+                          width="18"
+                        />
                       </span>
                     </div>
                   </button>
@@ -23997,6 +24041,7 @@ exports[`Storyshots Layout Default with all props 1`] = `
                   className="link"
                 >
                   <button
+                    className=""
                     data-testid={null}
                     onBlur={[Function]}
                     onClick={[Function]}
@@ -24007,10 +24052,12 @@ exports[`Storyshots Layout Default with all props 1`] = `
                     <div
                       className="title"
                     >
-                      <span
-                        className="icon"
-                      />
-                      HOME
+                      <div>
+                        <span
+                          className="icon"
+                        />
+                        HOME
+                      </div>
                     </div>
                   </button>
                 </li>
@@ -24018,6 +24065,7 @@ exports[`Storyshots Layout Default with all props 1`] = `
                   className="link"
                 >
                   <button
+                    className=""
                     data-testid={null}
                     onBlur={[Function]}
                     onClick={[Function]}
@@ -24028,10 +24076,12 @@ exports[`Storyshots Layout Default with all props 1`] = `
                     <div
                       className="title"
                     >
-                      <span
-                        className="icon"
-                      />
-                      TRANSACTIONS
+                      <div>
+                        <span
+                          className="icon"
+                        />
+                        TRANSACTIONS
+                      </div>
                     </div>
                   </button>
                 </li>
@@ -24039,6 +24089,7 @@ exports[`Storyshots Layout Default with all props 1`] = `
                   className="link"
                 >
                   <button
+                    className=""
                     data-testid={null}
                     onBlur={[Function]}
                     onClick={[Function]}
@@ -24049,10 +24100,12 @@ exports[`Storyshots Layout Default with all props 1`] = `
                     <div
                       className="title"
                     >
-                      <span
-                        className="icon"
-                      />
-                      MY ACCOUNT
+                      <div>
+                        <span
+                          className="icon"
+                        />
+                        MY ACCOUNT
+                      </div>
                       <span
                         className="arrow"
                       >
@@ -24065,6 +24118,7 @@ exports[`Storyshots Layout Default with all props 1`] = `
                   className="link"
                 >
                   <button
+                    className=""
                     data-testid={null}
                     onBlur={[Function]}
                     onClick={[Function]}
@@ -24075,14 +24129,48 @@ exports[`Storyshots Layout Default with all props 1`] = `
                     <div
                       className="title"
                     >
-                      <span
-                        className="icon"
-                      />
-                      CONFIG
+                      <div>
+                        <span
+                          className="icon"
+                        />
+                        CONFIG
+                      </div>
                       <span
                         className="arrow"
                       >
                         <svg />
+                      </span>
+                    </div>
+                  </button>
+                </li>
+                <li
+                  className="link"
+                >
+                  <button
+                    className="separator"
+                    data-testid={null}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    role="link"
+                    type="button"
+                  >
+                    <div
+                      className="title"
+                    >
+                      <div>
+                        <span
+                          className="icon"
+                        />
+                        HELP CENTER
+                      </div>
+                      <span
+                        className="arrow"
+                      >
+                        <Help24.svg
+                          height="18"
+                          width="18"
+                        />
                       </span>
                     </div>
                   </button>
@@ -24627,6 +24715,7 @@ exports[`Storyshots Layout Default without Footer 1`] = `
                   className="link"
                 >
                   <button
+                    className=""
                     data-testid={null}
                     onBlur={[Function]}
                     onClick={[Function]}
@@ -24637,10 +24726,12 @@ exports[`Storyshots Layout Default without Footer 1`] = `
                     <div
                       className="title"
                     >
-                      <span
-                        className="icon"
-                      />
-                      HOME
+                      <div>
+                        <span
+                          className="icon"
+                        />
+                        HOME
+                      </div>
                     </div>
                   </button>
                 </li>
@@ -24648,6 +24739,7 @@ exports[`Storyshots Layout Default without Footer 1`] = `
                   className="link"
                 >
                   <button
+                    className=""
                     data-testid={null}
                     onBlur={[Function]}
                     onClick={[Function]}
@@ -24658,10 +24750,12 @@ exports[`Storyshots Layout Default without Footer 1`] = `
                     <div
                       className="title"
                     >
-                      <span
-                        className="icon"
-                      />
-                      TRANSACTIONS
+                      <div>
+                        <span
+                          className="icon"
+                        />
+                        TRANSACTIONS
+                      </div>
                     </div>
                   </button>
                 </li>
@@ -24669,6 +24763,7 @@ exports[`Storyshots Layout Default without Footer 1`] = `
                   className="link"
                 >
                   <button
+                    className=""
                     data-testid={null}
                     onBlur={[Function]}
                     onClick={[Function]}
@@ -24679,10 +24774,12 @@ exports[`Storyshots Layout Default without Footer 1`] = `
                     <div
                       className="title"
                     >
-                      <span
-                        className="icon"
-                      />
-                      MY ACCOUNT
+                      <div>
+                        <span
+                          className="icon"
+                        />
+                        MY ACCOUNT
+                      </div>
                       <span
                         className="arrow"
                       >
@@ -24695,6 +24792,7 @@ exports[`Storyshots Layout Default without Footer 1`] = `
                   className="link"
                 >
                   <button
+                    className=""
                     data-testid={null}
                     onBlur={[Function]}
                     onClick={[Function]}
@@ -24705,14 +24803,48 @@ exports[`Storyshots Layout Default without Footer 1`] = `
                     <div
                       className="title"
                     >
-                      <span
-                        className="icon"
-                      />
-                      CONFIG
+                      <div>
+                        <span
+                          className="icon"
+                        />
+                        CONFIG
+                      </div>
                       <span
                         className="arrow"
                       >
                         <svg />
+                      </span>
+                    </div>
+                  </button>
+                </li>
+                <li
+                  className="link"
+                >
+                  <button
+                    className="separator"
+                    data-testid={null}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    role="link"
+                    type="button"
+                  >
+                    <div
+                      className="title"
+                    >
+                      <div>
+                        <span
+                          className="icon"
+                        />
+                        HELP CENTER
+                      </div>
+                      <span
+                        className="arrow"
+                      >
+                        <Help24.svg
+                          height="18"
+                          width="18"
+                        />
                       </span>
                     </div>
                   </button>
@@ -25195,6 +25327,7 @@ exports[`Storyshots Layout Default without Header 1`] = `
                   className="link"
                 >
                   <button
+                    className=""
                     data-testid={null}
                     onBlur={[Function]}
                     onClick={[Function]}
@@ -25205,10 +25338,12 @@ exports[`Storyshots Layout Default without Header 1`] = `
                     <div
                       className="title"
                     >
-                      <span
-                        className="icon"
-                      />
-                      HOME
+                      <div>
+                        <span
+                          className="icon"
+                        />
+                        HOME
+                      </div>
                     </div>
                   </button>
                 </li>
@@ -25216,6 +25351,7 @@ exports[`Storyshots Layout Default without Header 1`] = `
                   className="link"
                 >
                   <button
+                    className=""
                     data-testid={null}
                     onBlur={[Function]}
                     onClick={[Function]}
@@ -25226,10 +25362,12 @@ exports[`Storyshots Layout Default without Header 1`] = `
                     <div
                       className="title"
                     >
-                      <span
-                        className="icon"
-                      />
-                      TRANSACTIONS
+                      <div>
+                        <span
+                          className="icon"
+                        />
+                        TRANSACTIONS
+                      </div>
                     </div>
                   </button>
                 </li>
@@ -25237,6 +25375,7 @@ exports[`Storyshots Layout Default without Header 1`] = `
                   className="link"
                 >
                   <button
+                    className=""
                     data-testid={null}
                     onBlur={[Function]}
                     onClick={[Function]}
@@ -25247,10 +25386,12 @@ exports[`Storyshots Layout Default without Header 1`] = `
                     <div
                       className="title"
                     >
-                      <span
-                        className="icon"
-                      />
-                      MY ACCOUNT
+                      <div>
+                        <span
+                          className="icon"
+                        />
+                        MY ACCOUNT
+                      </div>
                       <span
                         className="arrow"
                       >
@@ -25263,6 +25404,7 @@ exports[`Storyshots Layout Default without Header 1`] = `
                   className="link"
                 >
                   <button
+                    className=""
                     data-testid={null}
                     onBlur={[Function]}
                     onClick={[Function]}
@@ -25273,14 +25415,48 @@ exports[`Storyshots Layout Default without Header 1`] = `
                     <div
                       className="title"
                     >
-                      <span
-                        className="icon"
-                      />
-                      CONFIG
+                      <div>
+                        <span
+                          className="icon"
+                        />
+                        CONFIG
+                      </div>
                       <span
                         className="arrow"
                       >
                         <svg />
+                      </span>
+                    </div>
+                  </button>
+                </li>
+                <li
+                  className="link"
+                >
+                  <button
+                    className="separator"
+                    data-testid={null}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    role="link"
+                    type="button"
+                  >
+                    <div
+                      className="title"
+                    >
+                      <div>
+                        <span
+                          className="icon"
+                        />
+                        HELP CENTER
+                      </div>
+                      <span
+                        className="arrow"
+                      >
+                        <Help24.svg
+                          height="18"
+                          width="18"
+                        />
                       </span>
                     </div>
                   </button>
@@ -32004,6 +32180,7 @@ exports[`Storyshots Sidebar Default 1`] = `
               className="link"
             >
               <button
+                className=""
                 data-testid={null}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -32014,10 +32191,12 @@ exports[`Storyshots Sidebar Default 1`] = `
                 <div
                   className="title"
                 >
-                  <span
-                    className="icon"
-                  />
-                  HOME
+                  <div>
+                    <span
+                      className="icon"
+                    />
+                    HOME
+                  </div>
                 </div>
               </button>
             </li>
@@ -32025,6 +32204,7 @@ exports[`Storyshots Sidebar Default 1`] = `
               className="link"
             >
               <button
+                className=""
                 data-testid={null}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -32035,10 +32215,12 @@ exports[`Storyshots Sidebar Default 1`] = `
                 <div
                   className="title"
                 >
-                  <span
-                    className="icon"
-                  />
-                  TRANSACTIONS
+                  <div>
+                    <span
+                      className="icon"
+                    />
+                    TRANSACTIONS
+                  </div>
                 </div>
               </button>
             </li>
@@ -32046,6 +32228,7 @@ exports[`Storyshots Sidebar Default 1`] = `
               className="link"
             >
               <button
+                className=""
                 data-testid={null}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -32056,10 +32239,12 @@ exports[`Storyshots Sidebar Default 1`] = `
                 <div
                   className="title"
                 >
-                  <span
-                    className="icon"
-                  />
-                  MY ACCOUNT
+                  <div>
+                    <span
+                      className="icon"
+                    />
+                    MY ACCOUNT
+                  </div>
                   <span
                     className="arrow"
                   >
@@ -32072,6 +32257,7 @@ exports[`Storyshots Sidebar Default 1`] = `
               className="link"
             >
               <button
+                className=""
                 data-testid={null}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -32082,14 +32268,48 @@ exports[`Storyshots Sidebar Default 1`] = `
                 <div
                   className="title"
                 >
-                  <span
-                    className="icon"
-                  />
-                  CONFIG
+                  <div>
+                    <span
+                      className="icon"
+                    />
+                    CONFIG
+                  </div>
                   <span
                     className="arrow"
                   >
                     <svg />
+                  </span>
+                </div>
+              </button>
+            </li>
+            <li
+              className="link"
+            >
+              <button
+                className="separator"
+                data-testid={null}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                role="link"
+                type="button"
+              >
+                <div
+                  className="title"
+                >
+                  <div>
+                    <span
+                      className="icon"
+                    />
+                    HELP CENTER
+                  </div>
+                  <span
+                    className="arrow"
+                  >
+                    <Help24.svg
+                      height="18"
+                      width="18"
+                    />
                   </span>
                 </div>
               </button>
